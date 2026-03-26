@@ -1,0 +1,37 @@
+{
+    "name":  "skills-ai-llm-agents",
+    "main_hub":  "ai",
+    "sub_hub":  "llm-agents",
+    "description":  "AI engineering: LLM prompting, RAG pipelines, embeddings, and autonomous agent patterns",
+    "skill_count":  157,
+    "src_count":  8,
+    "top_triggers":  [
+                         "agent",
+                         "bmad",
+                         "ai",
+                         "agents",
+                         "llm",
+                         "skill",
+                         "azure",
+                         "cis",
+                         "prompt",
+                         "development",
+                         "multi",
+                         "review",
+                         "memory",
+                         "patterns",
+                         "dev",
+                         "builder",
+                         "ts",
+                         "code",
+                         "claude",
+                         "design"
+                     ],
+    "generated_at":  "2026-03-27T00:33:01+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

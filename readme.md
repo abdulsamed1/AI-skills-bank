@@ -127,17 +127,6 @@ Policy:
 | OpenCode | `.opencode/skills/` | `~/.config/opencode/skills/` | OpenCode Skills |
 | Windsurf | `.windsurf/skills/` | `~/.codeium/windsurf/skills/` | Windsurf Cascade Skills |
 
-Optional workspace targets:
-
-- `.agent/skills`
-- `.claude/skills`
-- `.agents/skills`
-- `.cursor/skills`
-- `.gemini/skills`
-- `.github/skills`
-- `.opencode/skills`
-- `.windsurf/skills`
-
 ---
 
 ## src Onboarding

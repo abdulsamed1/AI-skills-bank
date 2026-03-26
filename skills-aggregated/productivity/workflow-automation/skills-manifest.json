@@ -1,0 +1,37 @@
+{
+    "name":  "skills-productivity-workflow-automation",
+    "main_hub":  "productivity",
+    "sub_hub":  "workflow-automation",
+    "description":  "Productivity systems: workflow automation, project orchestration, and delivery optimization",
+    "skill_count":  153,
+    "src_count":  13,
+    "top_triggers":  [
+                         "automation",
+                         "workflow",
+                         "tdd",
+                         "workflows",
+                         "pr",
+                         "patterns",
+                         "git",
+                         "n8n",
+                         "github",
+                         "figma",
+                         "wordpress",
+                         "official",
+                         "user",
+                         "story",
+                         "design",
+                         "go",
+                         "outlook",
+                         "cli",
+                         "odoo",
+                         "review"
+                     ],
+    "generated_at":  "2026-03-27T00:33:02+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

@@ -11,6 +11,11 @@ param(
     [string[]] $srcRepoNames = @(),
     [Switch] $DryRun = $false,
     [Switch] $AllowMultiHub = $false,
+    [ValidateRange(1, 500)]
+    [int] $MinSkillsPerHub = 10,
+    [ValidateRange(1, 500)]
+    [int] $CategoryGapThreshold = 30,
+    [Switch] $FailOnCategoryGaps = $false,
     [ValidateRange(1, 5)]
     [int] $MaxHubsPerSkill = 3,
     [ValidateRange(1, 20)]
@@ -457,11 +462,194 @@ $SUB_HUB_DEFINITIONS = @{
             )
         }
     }
+
+    "marketing" = @{
+        "strategy" = @{
+            keywords = @("marketing", "strategy", "brand", "positioning", "customer", "audience", "market-analysis", "competitive-analysis", "go-to-market")
+            anchor_keywords = @("marketing-strategy", "brand-strategy", "positioning")
+            negative_keywords = @("email", "seo", "content", "social", "copywrite", "html", "css")
+            description = "Marketing strategy: brand positioning, customer acquisition, market analysis, and GTM planning"
+            best_for = @(
+                "Developing marketing strategies",
+                "Brand positioning",
+                "Customer acquisition planning"
+            )
+        }
+        "content" = @{
+            keywords = @("content", "copywriting", "seo", "blog", "article", "writing", "editorial", "keyword", "search-engine")
+            anchor_keywords = @("seo", "content-marketing", "copywriting")
+            negative_keywords = @("email", "social", "video", "design", "html", "css")
+            description = "Content marketing & SEO: copywriting, blog strategy, search optimization, and editorial best practices"
+            best_for = @(
+                "Creating SEO-optimized content",
+                "Building blog strategies",
+                "Improving search rankings"
+            )
+        }
+        "email" = @{
+            keywords = @("email", "newsletter", "email-marketing", "campaigns", "subscribers", "automation", "segmentation")
+            anchor_keywords = @("email-marketing", "email-campaigns", "newsletter")
+            negative_keywords = @("social", "seo", "video", "design")
+            description = "Email marketing: campaigns, automation, segmentation, and subscriber engagement strategies"
+            best_for = @(
+                "Building email campaigns",
+                "Marketing automation",
+                "List segmentation"
+            )
+        }
+        "social" = @{
+            keywords = @("social", "twitter", "linkedin", "instagram", "tiktok", "youtube", "content-calendar", "engagement", "viral", "publisher", "posting", "article-publisher")
+            anchor_keywords = @("social-media", "social-marketing", "twitter-strategy")
+            negative_keywords = @("email", "seo", "copywrite")
+            description = "Social media marketing: strategy, content distribution, engagement, and multi-platform publishing"
+            best_for = @(
+                "Social media strategy",
+                "Content distribution",
+                "Engagement optimization"
+            )
+        }
+    }
+
+    "security" = @{
+        "core" = @{
+            keywords = @("security", "authentication", "authorization", "oauth", "jwt", "encryption", "tls", "ssl", "vulnerability", "secure")
+            anchor_keywords = @("security", "authentication", "oauth", "jwt")
+            negative_keywords = @("marketing", "seo", "newsletter", "ui", "css")
+            description = "Application security: authentication, authorization, encryption, and vulnerability hardening"
+            best_for = @(
+                "Designing secure authentication flows",
+                "Implementing encryption and key handling",
+                "Reducing common web security risks"
+            )
+        }
+    }
+
+    "testing" = @{
+        "automation" = @{
+            keywords = @("testing", "test", "unit-test", "integration-test", "e2e", "qa", "cypress", "playwright", "vitest", "jest", "automation")
+            anchor_keywords = @("testing", "unit-test", "integration-test", "e2e", "qa")
+            negative_keywords = @("marketing", "seo", "newsletter")
+            description = "Software testing: unit, integration, E2E, and automated quality workflows"
+            best_for = @(
+                "Building reliable automated test suites",
+                "Designing integration and end-to-end tests",
+                "Improving test coverage and quality gates"
+            )
+        }
+    }
+
+    "ai" = @{
+        "llm-agents" = @{
+            keywords = @("llm", "gpt", "prompt", "rag", "embedding", "vector", "agent", "transformer", "chatbot", "fine-tuning")
+            anchor_keywords = @("llm", "gpt", "rag", "agent")
+            negative_keywords = @("newsletter", "seo", "css", "html")
+            description = "AI engineering: LLM prompting, RAG pipelines, embeddings, and autonomous agent patterns"
+            best_for = @(
+                "Building LLM-powered assistants",
+                "Designing RAG and retrieval workflows",
+                "Improving prompt and agent reliability"
+            )
+        }
+    }
+
+    "productivity" = @{
+        "workflow-automation" = @{
+            keywords = @("productivity", "workflow", "automation", "task-management", "project-management", "agile", "scrum", "kanban", "notion", "planning")
+            anchor_keywords = @("workflow", "automation", "productivity")
+            negative_keywords = @("encryption", "oauth", "jwt")
+            description = "Productivity systems: workflow automation, project orchestration, and delivery optimization"
+            best_for = @(
+                "Automating repetitive delivery tasks",
+                "Structuring team workflows",
+                "Improving execution velocity"
+            )
+        }
+    }
+
+    "mobile" = @{
+        "cross-platform" = @{
+            keywords = @("mobile", "android", "ios", "react-native", "flutter", "swift", "kotlin", "mobile-app")
+            anchor_keywords = @("mobile", "android", "ios", "react-native", "flutter")
+            negative_keywords = @("seo", "newsletter", "email-marketing")
+            description = "Mobile development: iOS, Android, and cross-platform application engineering"
+            best_for = @(
+                "Building native and cross-platform apps",
+                "Designing mobile architecture",
+                "Improving mobile UX and performance"
+            )
+        }
+    }
+}
+
+$CATEGORY_GAP_PATTERNS = @{
+    "marketing" = @("marketing", "seo", "email", "newsletter", "campaign", "audience", "publisher", "social-media", "content-marketing")
+    "security" = @("security", "auth", "authentication", "authorization", "oauth", "jwt", "encryption", "tls", "ssl", "vulnerability")
+    "testing" = @("test", "testing", "unit-test", "integration-test", "e2e", "qa", "cypress", "vitest", "jest")
+    "ai-llm" = @("llm", "gpt", "prompt", "embedding", "rag", "agent", "transformer", "chatbot")
+    "data-science" = @("machine-learning", "ml", "data-science", "pandas", "numpy", "tensorflow", "pytorch", "analytics")
+    "mobile" = @("mobile", "android", "ios", "flutter", "react-native", "swift", "kotlin")
+}
+
+$CATEGORY_PATTERN_TO_MAIN_HUB = @{
+    "marketing" = "marketing"
+    "security" = "security"
+    "testing" = "testing"
+    "ai-llm" = "ai"
+    "data-science" = "data-science"
+    "mobile" = "mobile"
 }
 
 # ============================================================================
 # MAIN AGGREGATION LOGIC
 # ============================================================================
+
+function Get-CategoryGapSignals {
+    param(
+        [array] $Skills,
+        [hashtable] $Patterns,
+        [int] $MinCount
+    )
+
+    $signals = @()
+    if (-not $Skills -or $Skills.Count -eq 0) {
+        return $signals
+    }
+
+    foreach ($category in $Patterns.Keys) {
+        $count = 0
+        $samples = @()
+
+        foreach ($skill in $Skills) {
+            $skillText = ("{0} {1} {2} {3}" -f $skill.id, $skill.description, $skill.path, ($skill.triggers -join " ")).ToLower()
+            $matched = $false
+
+            foreach ($keyword in $Patterns[$category]) {
+                if ($skillText -match [regex]::Escape($keyword)) {
+                    $matched = $true
+                    break
+                }
+            }
+
+            if ($matched) {
+                $count++
+                if ($samples.Count -lt 3) {
+                    $samples += $skill.id
+                }
+            }
+        }
+
+        if ($count -ge $MinCount) {
+            $signals += [PSCustomObject]@{
+                category = $category
+                count = $count
+                threshold = $MinCount
+                sample_skills = @($samples)
+            }
+        }
+    }
+
+    return @($signals | Sort-Object count -Descending)
+}
 
 function Get-Skillsrc {
     param([string] $Path)
@@ -949,6 +1137,19 @@ $subHubMap = @{}
 $unmatchedSkills = @()
 $multiAssignedSkillCount = 0
 $totalAssignments = 0
+$categoryGapSignals = @()
+$uncoveredGapPatterns = @{}
+
+foreach ($category in $CATEGORY_GAP_PATTERNS.Keys) {
+    $mappedMainHub = $category
+    if ($CATEGORY_PATTERN_TO_MAIN_HUB.ContainsKey($category)) {
+        $mappedMainHub = $CATEGORY_PATTERN_TO_MAIN_HUB[$category]
+    }
+
+    if (-not $SUB_HUB_DEFINITIONS.ContainsKey($mappedMainHub)) {
+        $uncoveredGapPatterns[$category] = $CATEGORY_GAP_PATTERNS[$category]
+    }
+}
 
 foreach ($skill in $allSkills) {
     $assignments = @(Get-SkillAssignments -Skill $skill -SubHubDefs $SUB_HUB_DEFINITIONS -EnableMultiHub:$AllowMultiHub -PrimaryThreshold $PrimaryMinScore -SecondaryThreshold $SecondaryMinScore -MaxAssignments $MaxHubsPerSkill)
@@ -994,15 +1195,31 @@ if ($unmatchedSkills.Count -gt 0) {
     }
 
     $totalAssignments += $unmatchedSkills.Count
+
+    # Guardrail: detect large hidden categories only for categories that still have no dedicated main hub.
+    $categoryGapSignals = @(Get-CategoryGapSignals -Skills $unmatchedSkills -Patterns $uncoveredGapPatterns -MinCount $CategoryGapThreshold)
 }
 
 Write-Host "[✓] Categorized into $($subHubMap.Count) sub-hubs (unmatched routed: $($unmatchedSkills.Count), multi-assigned skills: $multiAssignedSkillCount, total assignments: $totalAssignments)"
+if ($categoryGapSignals.Count -gt 0) {
+    Write-Host "[WARN] Potential missing hub categories detected in general/misc:" -ForegroundColor Yellow
+    foreach ($signal in $categoryGapSignals) {
+        Write-Host ("  - {0}: {1} skills (threshold: {2}) e.g. {3}" -f $signal.category, $signal.count, $signal.threshold, ($signal.sample_skills -join ", ")) -ForegroundColor Yellow
+    }
+
+    if ($FailOnCategoryGaps) {
+        throw "Category gap guard failed. Add dedicated hubs for the categories above or raise -CategoryGapThreshold."
+    }
+}
 Write-Host ""
 
 # Generate BMAD-style files for each sub-hub
 Write-Host "[INFO] Step 3: Generating BMAD-style sub-hubs (SKILL router + workflow + catalog)..."
 
+$MIN_SKILLS_PER_HUB = $MinSkillsPerHub
 $routingIndex = @()
+$skippedHubsCount = 0
+$skippedSkillsCount = 0
 
 foreach ($subHubKey in $subHubMap.Keys) {
     $subHubData = $subHubMap[$subHubKey]
@@ -1010,6 +1227,14 @@ foreach ($subHubKey in $subHubMap.Keys) {
     
     # Deduplicate
     $uniqueSkills = Deduplicate-Skills -Skills $subHubData.skills
+    
+    # Skip hubs with fewer than minimum required skills
+    if ($uniqueSkills.Count -lt $MIN_SKILLS_PER_HUB) {
+        Write-Host "[!] $subHubKey skipped: $($uniqueSkills.Count) skills < $MIN_SKILLS_PER_HUB min" -ForegroundColor Yellow
+        $skippedHubsCount++
+        $skippedSkillsCount += $uniqueSkills.Count
+        continue
+    }
     
     # Create output path
     $subFolder = Join-Path -Path $OutputDir -ChildPath $subHubData.main
@@ -1040,6 +1265,18 @@ if (-not $DryRun) {
         generated_at = (Get-Date -Format "yyyy-MM-ddTHH:mm:ssK")
         src_repo_mode = $srcRepoMode
         selected_src_repos = @($SelectedsrcRepos)
+        min_skills_per_hub = $MinSkillsPerHub
+        category_gap_threshold = $CategoryGapThreshold
+        category_gaps = @(
+            $categoryGapSignals | ForEach-Object {
+                [ordered]@{
+                    category = $_.category
+                    count = $_.count
+                    threshold = $_.threshold
+                    sample_skills = @($_.sample_skills)
+                }
+            }
+        )
         src_repositories = @(
             $CurrentsrcRepoStates |
                 Sort-Object name |
@@ -1061,7 +1298,10 @@ if (-not $DryRun) {
 Write-Host ""
 Write-Host "[INFO] ============================================"
 Write-Host "[✓] Aggregation Complete"
-Write-Host "[INFO]   Sub-hubs created: $($subHubMap.Count)"
-Write-Host "[INFO]   Total skills: $($allSkills.Count)"
+Write-Host "[INFO]   Sub-hubs created: $(($routingIndex | Measure-Object).Count)"
+Write-Host "[INFO]   Sub-hubs skipped (< $MIN_SKILLS_PER_HUB skills): $skippedHubsCount"
+Write-Host "[INFO]   Total skills in active hubs: $(($routingIndex | ForEach-Object { $_.skill_count } | Measure-Object -Sum).Sum)"
+Write-Host "[INFO]   Skills removed from undersized hubs: $skippedSkillsCount"
+Write-Host "[INFO]   Category-gap signals in misc: $($categoryGapSignals.Count)"
 Write-Host "[INFO]   Output dir: $OutputDir"
 Write-Host "[INFO] ============================================"

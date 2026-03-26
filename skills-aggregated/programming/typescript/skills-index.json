@@ -68,20 +68,6 @@
         "match_score":  7
     },
     {
-        "id":  "frontend-mobile-development-component-scaffold",
-        "triggers":  [
-                         "frontend",
-                         "mobile",
-                         "development",
-                         "component",
-                         "scaffold"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/typescript",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "javascript-typescript-typescript-scaffold",
         "triggers":  [
                          "javascript",
@@ -102,6 +88,17 @@
                          "ts"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "netlify-functions",
+        "triggers":  [
+                         "netlify",
+                         "functions"
+                     ],
+        "src":  "external:context-and-tools",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  7
@@ -129,6 +126,19 @@
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "tinybird-typescript-sdk-guidelines",
+        "triggers":  [
+                         "tinybird",
+                         "typescript",
+                         "sdk",
+                         "guidelines"
+                     ],
+        "src":  "external:tinybird-agent-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  14
     },
     {
         "id":  "trigger-dev",

@@ -1,0 +1,762 @@
+[
+    {
+        "id":  "007",
+        "triggers":  [
+                         "007"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "anti-reversing-techniques",
+        "triggers":  [
+                         "anti",
+                         "reversing",
+                         "techniques"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "api-security-best-practices",
+        "triggers":  [
+                         "api",
+                         "security",
+                         "best",
+                         "practices"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  19
+    },
+    {
+        "id":  "api-security-testing",
+        "triggers":  [
+                         "api",
+                         "security",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "auth-implementation-patterns",
+        "triggers":  [
+                         "auth",
+                         "implementation",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "aws-security-audit",
+        "triggers":  [
+                         "aws",
+                         "security",
+                         "audit"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-identity-dotnet",
+        "triggers":  [
+                         "azure",
+                         "identity",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-security-keyvault-keys-dotnet",
+        "triggers":  [
+                         "azure",
+                         "security",
+                         "keyvault",
+                         "keys",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "backend-security-coder",
+        "triggers":  [
+                         "backend",
+                         "security",
+                         "coder"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "broken-authentication",
+        "triggers":  [
+                         "broken",
+                         "authentication"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "cc-skill-security-review",
+        "triggers":  [
+                         "cc",
+                         "skill",
+                         "security",
+                         "review"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "clerk-auth",
+        "triggers":  [
+                         "clerk",
+                         "auth"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "codebase-audit-pre-push",
+        "triggers":  [
+                         "codebase",
+                         "audit",
+                         "pre",
+                         "push"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "codebase-cleanup-deps-audit",
+        "triggers":  [
+                         "codebase",
+                         "cleanup",
+                         "deps",
+                         "audit"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "code-review-checklist",
+        "triggers":  [
+                         "code",
+                         "review",
+                         "checklist"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "dependency-management-deps-audit",
+        "triggers":  [
+                         "dependency",
+                         "management",
+                         "deps",
+                         "audit"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "differential-review",
+        "triggers":  [
+                         "differential",
+                         "review"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "file-uploads",
+        "triggers":  [
+                         "file",
+                         "uploads"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "find-bugs",
+        "triggers":  [
+                         "find",
+                         "bugs"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "firebase",
+        "triggers":  [
+                         "firebase"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "firmware-analyst",
+        "triggers":  [
+                         "firmware",
+                         "analyst"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "frontend-mobile-security-xss-scan",
+        "triggers":  [
+                         "frontend",
+                         "mobile",
+                         "security",
+                         "xss",
+                         "scan"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "frontend-security-coder",
+        "triggers":  [
+                         "frontend",
+                         "security",
+                         "coder"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "gmail-automation",
+        "triggers":  [
+                         "gmail",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "google-calendar-automation",
+        "triggers":  [
+                         "google",
+                         "calendar",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "google-docs-automation",
+        "triggers":  [
+                         "google",
+                         "docs",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "google-drive-automation",
+        "triggers":  [
+                         "google",
+                         "drive",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "google-sheets-automation",
+        "triggers":  [
+                         "google",
+                         "sheets",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "google-slides-automation",
+        "triggers":  [
+                         "google",
+                         "slides",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "hubspot-integration",
+        "triggers":  [
+                         "hubspot",
+                         "integration"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "laravel-expert",
+        "triggers":  [
+                         "laravel",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "laravel-security-audit",
+        "triggers":  [
+                         "laravel",
+                         "security",
+                         "audit"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "linkerd-patterns",
+        "triggers":  [
+                         "linkerd",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "linux-privilege-escalation",
+        "triggers":  [
+                         "linux",
+                         "privilege",
+                         "escalation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "metasploit-framework",
+        "triggers":  [
+                         "metasploit",
+                         "framework"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "microsoft-azure-webjobs-extensions-authentication-events-dotnet",
+        "triggers":  [
+                         "microsoft",
+                         "azure",
+                         "webjobs",
+                         "extensions",
+                         "authentication"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "mobile-security-coder",
+        "triggers":  [
+                         "mobile",
+                         "security",
+                         "coder"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "network-engineer",
+        "triggers":  [
+                         "network",
+                         "engineer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "nextjs-supabase-auth",
+        "triggers":  [
+                         "nextjs",
+                         "supabase",
+                         "auth"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "nodejs-best-practices",
+        "triggers":  [
+                         "nodejs",
+                         "best",
+                         "practices"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "odoo-rpc-api",
+        "triggers":  [
+                         "odoo",
+                         "rpc",
+                         "api"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "odoo-security-rules",
+        "triggers":  [
+                         "odoo",
+                         "security",
+                         "rules"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "pci-compliance",
+        "triggers":  [
+                         "pci",
+                         "compliance"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "protocol-reverse-engineering",
+        "triggers":  [
+                         "protocol",
+                         "reverse",
+                         "engineering"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "red-team-tools",
+        "triggers":  [
+                         "red",
+                         "team",
+                         "tools"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "scanning-tools",
+        "triggers":  [
+                         "scanning",
+                         "tools"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "security-audit",
+        "triggers":  [
+                         "security",
+                         "audit"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "security-auditor",
+        "triggers":  [
+                         "security",
+                         "auditor"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "security-scanning-security-dependencies",
+        "triggers":  [
+                         "security",
+                         "scanning",
+                         "security",
+                         "dependencies"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "security-scanning-security-hardening",
+        "triggers":  [
+                         "security",
+                         "scanning",
+                         "security",
+                         "hardening"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "security-scanning-security-sast",
+        "triggers":  [
+                         "security",
+                         "scanning",
+                         "security",
+                         "sast"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "service-mesh-expert",
+        "triggers":  [
+                         "service",
+                         "mesh",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "smtp-penetration-testing",
+        "triggers":  [
+                         "smtp",
+                         "penetration",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "solidity-security",
+        "triggers":  [
+                         "solidity",
+                         "security"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "sql-injection-testing",
+        "triggers":  [
+                         "sql",
+                         "injection",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "ssh-penetration-testing",
+        "triggers":  [
+                         "ssh",
+                         "penetration",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "stride-analysis-patterns",
+        "triggers":  [
+                         "stride",
+                         "analysis",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "supply-chain-risk-auditor",
+        "triggers":  [
+                         "supply",
+                         "chain",
+                         "risk",
+                         "auditor"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "threat-mitigation-mapping",
+        "triggers":  [
+                         "threat",
+                         "mitigation",
+                         "mapping"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "threat-modeling-expert",
+        "triggers":  [
+                         "threat",
+                         "modeling",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "top-web-vulnerabilities",
+        "triggers":  [
+                         "top",
+                         "web",
+                         "vulnerabilities"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "vulnerability-scanner",
+        "triggers":  [
+                         "vulnerability",
+                         "scanner"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "web-security-testing",
+        "triggers":  [
+                         "web",
+                         "security",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "wireshark-analysis",
+        "triggers":  [
+                         "wireshark",
+                         "analysis"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    }
+]

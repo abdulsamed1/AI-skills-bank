@@ -1,0 +1,37 @@
+{
+    "name":  "skills-marketing-content",
+    "main_hub":  "marketing",
+    "sub_hub":  "content",
+    "description":  "Content marketing \u0026 SEO: copywriting, blog strategy, search optimization, and editorial best practices",
+    "skill_count":  57,
+    "src_count":  9,
+    "top_triggers":  [
+                         "seo",
+                         "content",
+                         "audit",
+                         "ai",
+                         "competitor",
+                         "programmatic",
+                         "brand",
+                         "schema",
+                         "writing",
+                         "local",
+                         "strategy",
+                         "marketer",
+                         "lead",
+                         "ad",
+                         "odoo",
+                         "alternatives",
+                         "doc",
+                         "ecommerce",
+                         "gen",
+                         "architect"
+                     ],
+    "generated_at":  "2026-03-27T00:33:02+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

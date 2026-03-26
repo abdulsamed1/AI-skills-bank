@@ -38,22 +38,22 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - ts
 - fp
 - expert
-- scaffold
-- frontend
-- flow
-- zustand
-- javascript
-- types
 - zod
+- zustand
+- types
+- scaffold
+- refactor
+- frontend
+- sdk
 - errors
-- dev
+- javascript
 - node
-- mobile
-- component
 - react
+- flow
 - m365
-- development
-- orm
+- guidelines
+- tinybird
+- store
 
 ## Data Contract
 

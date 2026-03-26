@@ -1,0 +1,37 @@
+{
+    "name":  "skills-marketing-strategy",
+    "main_hub":  "marketing",
+    "sub_hub":  "strategy",
+    "description":  "Marketing strategy: brand positioning, customer acquisition, market analysis, and GTM planning",
+    "skill_count":  29,
+    "src_count":  7,
+    "top_triggers":  [
+                         "strategy",
+                         "positioning",
+                         "product",
+                         "gtm",
+                         "context",
+                         "competitive",
+                         "canvas",
+                         "marketing",
+                         "to",
+                         "competitor",
+                         "free",
+                         "workshop",
+                         "rating",
+                         "tool",
+                         "planning",
+                         "startup",
+                         "name",
+                         "pricing",
+                         "jobs",
+                         "beachhead"
+                     ],
+    "generated_at":  "2026-03-27T00:33:02+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

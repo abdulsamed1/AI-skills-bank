@@ -1,0 +1,37 @@
+{
+    "name":  "skills-testing-automation",
+    "main_hub":  "testing",
+    "sub_hub":  "automation",
+    "description":  "Software testing: unit, integration, E2E, and automated quality workflows",
+    "skill_count":  75,
+    "src_count":  6,
+    "top_triggers":  [
+                         "testing",
+                         "patterns",
+                         "qa",
+                         "e2e",
+                         "bmad",
+                         "playwright",
+                         "test",
+                         "upgrade",
+                         "framework",
+                         "data",
+                         "brainstorm",
+                         "expert",
+                         "experiments",
+                         "api",
+                         "git",
+                         "agent",
+                         "penetration",
+                         "existing",
+                         "azure",
+                         "privilege"
+                     ],
+    "generated_at":  "2026-03-27T00:33:02+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

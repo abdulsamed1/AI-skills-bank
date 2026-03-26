@@ -1,70 +1,9 @@
 [
     {
-        "id":  "agent-orchestration-improve-agent",
-        "triggers":  [
-                         "agent",
-                         "orchestration",
-                         "improve",
-                         "agent"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/docker-k8s",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "agent-orchestration-multi-agent-optimize",
-        "triggers":  [
-                         "agent",
-                         "orchestration",
-                         "multi",
-                         "agent",
-                         "optimize"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/docker-k8s",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "ai-agent-development",
-        "triggers":  [
-                         "ai",
-                         "agent",
-                         "development"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/docker-k8s",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "ai-engineer",
-        "triggers":  [
-                         "ai",
-                         "engineer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/docker-k8s",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "c4-container",
         "triggers":  [
                          "c4",
                          "container"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/docker-k8s",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "design-orchestration",
-        "triggers":  [
-                         "design",
-                         "orchestration"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
@@ -102,17 +41,6 @@
                          "orchestration",
                          "full",
                          "stack"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/docker-k8s",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "gitops-workflow",
-        "triggers":  [
-                         "gitops",
-                         "workflow"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
@@ -178,40 +106,6 @@
         "match_score":  20
     },
     {
-        "id":  "linkerd-patterns",
-        "triggers":  [
-                         "linkerd",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/docker-k8s",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "ml-pipeline-workflow",
-        "triggers":  [
-                         "ml",
-                         "pipeline",
-                         "workflow"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/docker-k8s",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "parallel-agents",
-        "triggers":  [
-                         "parallel",
-                         "agents"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/docker-k8s",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "saga-orchestration",
         "triggers":  [
                          "saga",
@@ -223,13 +117,12 @@
         "match_score":  4
     },
     {
-        "id":  "workflow-orchestration-patterns",
+        "id":  "windows-vm",
         "triggers":  [
-                         "workflow",
-                         "orchestration",
-                         "patterns"
+                         "windows",
+                         "vm"
                      ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:superpowers-lab",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  4

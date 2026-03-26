@@ -1,0 +1,190 @@
+[
+    {
+        "id":  "apify-audience-analysis",
+        "triggers":  [
+                         "apify",
+                         "audience",
+                         "analysis"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "apify-competitor-intelligence",
+        "triggers":  [
+                         "apify",
+                         "competitor",
+                         "intelligence"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "apify-content-analytics",
+        "triggers":  [
+                         "apify",
+                         "content",
+                         "analytics"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "apify-influencer-discovery",
+        "triggers":  [
+                         "apify",
+                         "influencer",
+                         "discovery"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "apify-trend-analysis",
+        "triggers":  [
+                         "apify",
+                         "trend",
+                         "analysis"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "lead-magnet-generator",
+        "triggers":  [
+                         "lead",
+                         "magnet",
+                         "generator"
+                     ],
+        "src":  "external:founder-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "linkedin-authority-builder",
+        "triggers":  [
+                         "linkedin",
+                         "authority",
+                         "builder"
+                     ],
+        "src":  "external:ai-marketing-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "linkedin-writer",
+        "triggers":  [
+                         "linkedin",
+                         "writer"
+                     ],
+        "src":  "external:founder-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "paid-ads",
+        "triggers":  [
+                         "paid",
+                         "ads"
+                     ],
+        "src":  "external:marketingskills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "social-card-gen",
+        "triggers":  [
+                         "social",
+                         "card",
+                         "gen"
+                     ],
+        "src":  "external:ai-marketing-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  18
+    },
+    {
+        "id":  "social-content",
+        "triggers":  [
+                         "social",
+                         "content"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "social-orchestrator",
+        "triggers":  [
+                         "social",
+                         "orchestrator"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "viral-hook-creator",
+        "triggers":  [
+                         "viral",
+                         "hook",
+                         "creator"
+                     ],
+        "src":  "external:founder-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "x-article-publisher-skill",
+        "triggers":  [
+                         "x",
+                         "article",
+                         "publisher",
+                         "skill"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "x-twitter-scraper",
+        "triggers":  [
+                         "x",
+                         "twitter",
+                         "scraper"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "x-writer",
+        "triggers":  [
+                         "x",
+                         "writer"
+                     ],
+        "src":  "external:founder-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  5
+    }
+]

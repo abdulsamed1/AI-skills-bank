@@ -34,26 +34,26 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 ## Quick Trigger Hints
 
-- automation
 - bmad
-- agent
-- patterns
-- seo
-- review
 - design
+- review
+- patterns
 - context
-- ai
 - code
-- security
-- development
-- testing
 - analyzer
-- odoo
-- expert
-- pro
+- analysis
 - hig
+- makepad
+- pro
+- error
+- odoo
+- development
+- app
+- advisor
 - builder
-- audit
+- setup
+- threejs
+- project
 
 ## Data Contract
 

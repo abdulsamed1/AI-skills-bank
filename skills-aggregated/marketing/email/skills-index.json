@@ -1,0 +1,124 @@
+[
+    {
+        "id":  "churn-prevention",
+        "triggers":  [
+                         "churn",
+                         "prevention"
+                     ],
+        "src":  "external:marketingskills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "cold-email",
+        "triggers":  [
+                         "cold",
+                         "email"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "email-marketing-bible",
+        "triggers":  [
+                         "email",
+                         "marketing",
+                         "bible"
+                     ],
+        "src":  "external:email-marketing-bible",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  14
+    },
+    {
+        "id":  "email-sequence",
+        "triggers":  [
+                         "email",
+                         "sequence"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "email-systems",
+        "triggers":  [
+                         "email",
+                         "systems"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "internal-comms",
+        "triggers":  [
+                         "internal",
+                         "comms"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "klaviyo-automation",
+        "triggers":  [
+                         "klaviyo",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "mailchimp-automation",
+        "triggers":  [
+                         "mailchimp",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "newsletter-creation-curation",
+        "triggers":  [
+                         "newsletter",
+                         "creation",
+                         "curation"
+                     ],
+        "src":  "external:ai-marketing-skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "revops",
+        "triggers":  [
+                         "revops"
+                     ],
+        "src":  "external:marketingskills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "sendgrid-automation",
+        "triggers":  [
+                         "sendgrid",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  9
+    }
+]

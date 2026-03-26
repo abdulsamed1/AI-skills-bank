@@ -34,26 +34,26 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 ## Quick Trigger Hints
 
-- fixing
 - design
-- html
+- fixing
+- frontend
+- netlify
 - tailwind
-- development
-- injection
-- algorithmic
 - official
-- pdf
-- testing
+- cro
+- algorithmic
+- core
+- health
+- html
+- development
 - xss
-- performance
+- image
 - analyzer
+- pdf
 - antigravity
-- vitepress
-- wordpress
+- performance
 - theme
-- patterns
-- metadata
-- motion
+- factory
 
 ## Data Contract
 

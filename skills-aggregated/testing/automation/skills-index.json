@@ -1,0 +1,883 @@
+[
+    {
+        "id":  "active-directory-attacks",
+        "triggers":  [
+                         "active",
+                         "directory",
+                         "attacks"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "ad-creative",
+        "triggers":  [
+                         "ad",
+                         "creative"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "airflow-dag-patterns",
+        "triggers":  [
+                         "airflow",
+                         "dag",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "android_ui_verification",
+        "triggers":  [
+                         "android_ui_verification"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "api-testing-observability-api-mock",
+        "triggers":  [
+                         "api",
+                         "testing",
+                         "observability",
+                         "api",
+                         "mock"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "app-analytics",
+        "triggers":  [
+                         "app",
+                         "analytics"
+                     ],
+        "src":  "external:aso-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "aws-penetration-testing",
+        "triggers":  [
+                         "aws",
+                         "penetration",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "awt-e2e-testing",
+        "triggers":  [
+                         "awt",
+                         "e2e",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "azure-microsoft-playwright-testing-ts",
+        "triggers":  [
+                         "azure",
+                         "microsoft",
+                         "playwright",
+                         "testing",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "azure-resrc-manager-playwright-dotnet",
+        "triggers":  [
+                         "azure",
+                         "resrc",
+                         "manager",
+                         "playwright",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "backtesting-frameworks",
+        "triggers":  [
+                         "backtesting",
+                         "frameworks"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bash-scripting",
+        "triggers":  [
+                         "bash",
+                         "scripting"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "bats-testing-patterns",
+        "triggers":  [
+                         "bats",
+                         "testing",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "bmad-agent-qa",
+        "triggers":  [
+                         "bmad",
+                         "agent",
+                         "qa"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "bmad-qa-generate-e2e-tests",
+        "triggers":  [
+                         "bmad",
+                         "qa",
+                         "generate",
+                         "e2e",
+                         "tests"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "bmad-teach-me-testing",
+        "triggers":  [
+                         "bmad",
+                         "teach",
+                         "me",
+                         "testing"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "bmad-testarch-framework",
+        "triggers":  [
+                         "bmad",
+                         "testarch",
+                         "framework"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  19
+    },
+    {
+        "id":  "brainstorm-experiments-existing",
+        "triggers":  [
+                         "brainstorm",
+                         "experiments",
+                         "existing"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "brainstorm-experiments-new",
+        "triggers":  [
+                         "brainstorm",
+                         "experiments",
+                         "new"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "browser-automation",
+        "triggers":  [
+                         "browser",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "burp-suite-testing",
+        "triggers":  [
+                         "burp",
+                         "suite",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "circleci-automation",
+        "triggers":  [
+                         "circleci",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "csharp-pro",
+        "triggers":  [
+                         "csharp",
+                         "pro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "data-engineering-data-driven-feature",
+        "triggers":  [
+                         "data",
+                         "engineering",
+                         "data",
+                         "driven",
+                         "feature"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "dbt-transformation-patterns",
+        "triggers":  [
+                         "dbt",
+                         "transformation",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "dependency-upgrade",
+        "triggers":  [
+                         "dependency",
+                         "upgrade"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "deployment-validation-config-validate",
+        "triggers":  [
+                         "deployment",
+                         "validation",
+                         "config",
+                         "validate"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "doc-coauthoring",
+        "triggers":  [
+                         "doc",
+                         "coauthoring"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "dummy-dataset",
+        "triggers":  [
+                         "dummy",
+                         "dataset"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "e2e-testing",
+        "triggers":  [
+                         "e2e",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  21
+    },
+    {
+        "id":  "e2e-testing-patterns",
+        "triggers":  [
+                         "e2e",
+                         "testing",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "ethical-hacking-methodology",
+        "triggers":  [
+                         "ethical",
+                         "hacking",
+                         "methodology"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "evaluation",
+        "triggers":  [
+                         "evaluation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "ffuf-web-fuzzing",
+        "triggers":  [
+                         "ffuf",
+                         "web",
+                         "fuzzing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "framework-migration-deps-upgrade",
+        "triggers":  [
+                         "framework",
+                         "migration",
+                         "deps",
+                         "upgrade"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "github-actions-templates",
+        "triggers":  [
+                         "github",
+                         "actions",
+                         "templates"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "gitlab-ci-patterns",
+        "triggers":  [
+                         "gitlab",
+                         "ci",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "git-pr-workflows-git-workflow",
+        "triggers":  [
+                         "git",
+                         "pr",
+                         "workflows",
+                         "git",
+                         "workflow"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "html-injection-testing",
+        "triggers":  [
+                         "html",
+                         "injection",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "identify-assumptions-existing",
+        "triggers":  [
+                         "identify",
+                         "assumptions",
+                         "existing"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "idor-testing",
+        "triggers":  [
+                         "idor",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "javascript-testing-patterns",
+        "triggers":  [
+                         "javascript",
+                         "testing",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "k6-load-testing",
+        "triggers":  [
+                         "k6",
+                         "load",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "kotlin-coroutines-expert",
+        "triggers":  [
+                         "kotlin",
+                         "coroutines",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "lean-canvas",
+        "triggers":  [
+                         "lean",
+                         "canvas"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "linux-shell-scripting",
+        "triggers":  [
+                         "linux",
+                         "shell",
+                         "scripting"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "llm-evaluation",
+        "triggers":  [
+                         "llm",
+                         "evaluation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "ml-engineer",
+        "triggers":  [
+                         "ml",
+                         "engineer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "nestjs-expert",
+        "triggers":  [
+                         "nestjs",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "netlify-edge-functions",
+        "triggers":  [
+                         "netlify",
+                         "edge",
+                         "functions"
+                     ],
+        "src":  "external:context-and-tools",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "network-101",
+        "triggers":  [
+                         "network",
+                         "101"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "pentest-commands",
+        "triggers":  [
+                         "pentest",
+                         "commands"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "performance-testing-review-multi-agent-review",
+        "triggers":  [
+                         "performance",
+                         "testing",
+                         "review",
+                         "multi",
+                         "agent"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "playwright-java",
+        "triggers":  [
+                         "playwright",
+                         "java"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "pre-mortem",
+        "triggers":  [
+                         "pre",
+                         "mortem"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "privilege-escalation-methods",
+        "triggers":  [
+                         "privilege",
+                         "escalation",
+                         "methods"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "qa",
+        "triggers":  [
+                         "qa"
+                     ],
+        "src":  "external:gstack",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "qa-only",
+        "triggers":  [
+                         "qa",
+                         "only"
+                     ],
+        "src":  "external:gstack",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "ruby-pro",
+        "triggers":  [
+                         "ruby",
+                         "pro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "sast-configuration",
+        "triggers":  [
+                         "sast",
+                         "configuration"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "screen-reader-testing",
+        "triggers":  [
+                         "screen",
+                         "reader",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "screenshot-optimization",
+        "triggers":  [
+                         "screenshot",
+                         "optimization"
+                     ],
+        "src":  "external:aso-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "shodan-reconnaissance",
+        "triggers":  [
+                         "shodan",
+                         "reconnaissance"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "test-automator",
+        "triggers":  [
+                         "test",
+                         "automator"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "testing-patterns",
+        "triggers":  [
+                         "testing",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "testing-qa",
+        "triggers":  [
+                         "testing",
+                         "qa"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  21
+    },
+    {
+        "id":  "test-scenarios",
+        "triggers":  [
+                         "test",
+                         "scenarios"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "ui-visual-validator",
+        "triggers":  [
+                         "ui",
+                         "visual",
+                         "validator"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "unit-testing-test-generate",
+        "triggers":  [
+                         "unit",
+                         "testing",
+                         "test",
+                         "generate"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "wds-5-agentic-development",
+        "triggers":  [
+                         "wds",
+                         "5",
+                         "agentic",
+                         "development"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "web3-testing",
+        "triggers":  [
+                         "web3",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "webapp-testing",
+        "triggers":  [
+                         "webapp",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "wiki-qa",
+        "triggers":  [
+                         "wiki",
+                         "qa"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "windows-privilege-escalation",
+        "triggers":  [
+                         "windows",
+                         "privilege",
+                         "escalation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "wordpress-penetration-testing",
+        "triggers":  [
+                         "wordpress",
+                         "penetration",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    }
+]

@@ -137,17 +137,6 @@
         "match_score":  12
     },
     {
-        "id":  "database-admin",
-        "triggers":  [
-                         "database",
-                         "admin"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/databases",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "database-architect",
         "triggers":  [
                          "database",
@@ -265,6 +254,17 @@
         "match_score":  6
     },
     {
+        "id":  "marketing-ideas",
+        "triggers":  [
+                         "marketing",
+                         "ideas"
+                     ],
+        "src":  "external:founder-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
         "id":  "neon-postgres",
         "triggers":  [
                          "neon",
@@ -276,15 +276,15 @@
         "match_score":  4
     },
     {
-        "id":  "nestjs-expert",
+        "id":  "netlify-db",
         "triggers":  [
-                         "nestjs",
-                         "expert"
+                         "netlify",
+                         "db"
                      ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:context-and-tools",
         "primary_hub":  "backend/databases",
         "is_primary":  true,
-        "match_score":  4
+        "match_score":  16
     },
     {
         "id":  "nosql-expert",
@@ -307,18 +307,6 @@
         "primary_hub":  "backend/databases",
         "is_primary":  true,
         "match_score":  6
-    },
-    {
-        "id":  "odoo-backup-strategy",
-        "triggers":  [
-                         "odoo",
-                         "backup",
-                         "strategy"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/databases",
-        "is_primary":  true,
-        "match_score":  4
     },
     {
         "id":  "odoo-docker-deployment",
@@ -412,17 +400,6 @@
         "match_score":  12
     },
     {
-        "id":  "rag-implementation",
-        "triggers":  [
-                         "rag",
-                         "implementation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/databases",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "similarity-search-patterns",
         "triggers":  [
                          "similarity",
@@ -433,18 +410,6 @@
         "primary_hub":  "backend/databases",
         "is_primary":  true,
         "match_score":  4
-    },
-    {
-        "id":  "sql-injection-testing",
-        "triggers":  [
-                         "sql",
-                         "injection",
-                         "testing"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/databases",
-        "is_primary":  true,
-        "match_score":  8
     },
     {
         "id":  "sqlmap-database-pentesting",
@@ -482,6 +447,17 @@
         "match_score":  8
     },
     {
+        "id":  "sql-queries",
+        "triggers":  [
+                         "sql",
+                         "queries"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
         "id":  "supabase-automation",
         "triggers":  [
                          "supabase",
@@ -493,6 +469,29 @@
         "match_score":  8
     },
     {
+        "id":  "supabase-postgres-best-practices",
+        "triggers":  [
+                         "supabase",
+                         "postgres",
+                         "best",
+                         "practices"
+                     ],
+        "src":  "external:agent-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "tinybird",
+        "triggers":  [
+                         "tinybird"
+                     ],
+        "src":  "external:tinybird-agent-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
         "id":  "using-neon",
         "triggers":  [
                          "using",
@@ -502,17 +501,5 @@
         "primary_hub":  "backend/databases",
         "is_primary":  true,
         "match_score":  8
-    },
-    {
-        "id":  "vector-database-engineer",
-        "triggers":  [
-                         "vector",
-                         "database",
-                         "engineer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/databases",
-        "is_primary":  true,
-        "match_score":  4
     }
 ]

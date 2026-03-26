@@ -111,17 +111,6 @@
         "match_score":  5
     },
     {
-        "id":  "file-uploads",
-        "triggers":  [
-                         "file",
-                         "uploads"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/rust",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "lightning-architecture-review",
         "triggers":  [
                          "lightning",

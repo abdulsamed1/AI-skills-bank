@@ -34,24 +34,12 @@
         "match_score":  20
     },
     {
-        "id":  "go-playwright",
+        "id":  "go-mode",
         "triggers":  [
                          "go",
-                         "playwright"
+                         "mode"
                      ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/golang",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "go-rod-master",
-        "triggers":  [
-                         "go",
-                         "rod",
-                         "master"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:ai-marketing-skills",
         "primary_hub":  "programming/golang",
         "is_primary":  true,
         "match_score":  7
@@ -66,6 +54,18 @@
         "primary_hub":  "programming/golang",
         "is_primary":  true,
         "match_score":  20
+    },
+    {
+        "id":  "identify-assumptions-new",
+        "triggers":  [
+                         "identify",
+                         "assumptions",
+                         "new"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "programming/golang",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "micro-saas-launcher",

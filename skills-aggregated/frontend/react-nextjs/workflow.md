@@ -37,23 +37,23 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - react
 - patterns
 - nextjs
-- ui
-- practices
-- expert
 - frontend
+- practices
+- ui
 - best
-- developer
+- gsap
+- fp
+- expert
 - skill
 - ts
-- fp
+- frameworks
 - cc
-- native
-- automation
-- apps
-- spline
-- architecture
+- trpc
+- artifacts
+- fullstack
+- shopify
 - development
-- setup
+- ai
 
 ## Data Contract
 

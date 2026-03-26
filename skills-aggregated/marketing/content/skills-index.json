@@ -1,0 +1,652 @@
+[
+    {
+        "id":  "ad-creative",
+        "triggers":  [
+                         "ad",
+                         "creative"
+                     ],
+        "src":  "external:marketingskills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "ai-seo",
+        "triggers":  [
+                         "ai",
+                         "seo"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "aso-audit",
+        "triggers":  [
+                         "aso",
+                         "audit"
+                     ],
+        "src":  "external:aso-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "avoid-ai-writing",
+        "triggers":  [
+                         "avoid",
+                         "ai",
+                         "writing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "azure-ai-contentsafety-ts",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "contentsafety",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "blog-writing-guide",
+        "triggers":  [
+                         "blog",
+                         "writing",
+                         "guide"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "brand-copywriter",
+        "triggers":  [
+                         "brand",
+                         "copywriter"
+                     ],
+        "src":  "external:founder-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "brand-guidelines",
+        "triggers":  [
+                         "brand",
+                         "guidelines"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "competitor-alternatives",
+        "triggers":  [
+                         "competitor",
+                         "alternatives"
+                     ],
+        "src":  "external:marketingskills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "content-creator",
+        "triggers":  [
+                         "content",
+                         "creator"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "content-idea-generator",
+        "triggers":  [
+                         "content",
+                         "idea",
+                         "generator"
+                     ],
+        "src":  "external:ai-marketing-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "content-marketer",
+        "triggers":  [
+                         "content",
+                         "marketer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "content-strategy",
+        "triggers":  [
+                         "content",
+                         "strategy"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "copy-editing",
+        "triggers":  [
+                         "copy",
+                         "editing"
+                     ],
+        "src":  "external:marketingskills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "copywriting",
+        "triggers":  [
+                         "copywriting"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "defuddle",
+        "triggers":  [
+                         "defuddle"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "doc-coauthoring",
+        "triggers":  [
+                         "doc",
+                         "coauthoring"
+                     ],
+        "src":  "external:skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "free-tool-strategy",
+        "triggers":  [
+                         "free",
+                         "tool",
+                         "strategy"
+                     ],
+        "src":  "external:marketingskills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "grammar-check",
+        "triggers":  [
+                         "grammar",
+                         "check"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "hig-components-content",
+        "triggers":  [
+                         "hig",
+                         "components",
+                         "content"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "lead-magnets",
+        "triggers":  [
+                         "lead",
+                         "magnets"
+                     ],
+        "src":  "external:marketingskills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "localization",
+        "triggers":  [
+                         "localization"
+                     ],
+        "src":  "external:aso-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "local-legal-seo-audit",
+        "triggers":  [
+                         "local",
+                         "legal",
+                         "seo",
+                         "audit"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "odoo-ecommerce-configurator",
+        "triggers":  [
+                         "odoo",
+                         "ecommerce",
+                         "configurator"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "press-and-pr",
+        "triggers":  [
+                         "press",
+                         "and",
+                         "pr"
+                     ],
+        "src":  "external:aso-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "programmatic-seo",
+        "triggers":  [
+                         "programmatic",
+                         "seo"
+                     ],
+        "src":  "external:marketingskills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "sales-enablement",
+        "triggers":  [
+                         "sales",
+                         "enablement"
+                     ],
+        "src":  "external:marketingskills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "schema-markup",
+        "triggers":  [
+                         "schema",
+                         "markup"
+                     ],
+        "src":  "external:marketingskills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "seo",
+        "triggers":  [
+                         "seo"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "seo-aeo-best-practices",
+        "triggers":  [
+                         "seo",
+                         "aeo",
+                         "best",
+                         "practices"
+                     ],
+        "src":  "external:agent-toolkit",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "seo-audit",
+        "triggers":  [
+                         "seo",
+                         "audit"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "seo-authority-builder",
+        "triggers":  [
+                         "seo",
+                         "authority",
+                         "builder"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "seo-cannibalization-detector",
+        "triggers":  [
+                         "seo",
+                         "cannibalization",
+                         "detector"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "seo-competitor-pages",
+        "triggers":  [
+                         "seo",
+                         "competitor",
+                         "pages"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "seo-content",
+        "triggers":  [
+                         "seo",
+                         "content"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "seo-content-auditor",
+        "triggers":  [
+                         "seo",
+                         "content",
+                         "auditor"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "seo-content-planner",
+        "triggers":  [
+                         "seo",
+                         "content",
+                         "planner"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "seo-content-refresher",
+        "triggers":  [
+                         "seo",
+                         "content",
+                         "refresher"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "seo-content-writer",
+        "triggers":  [
+                         "seo",
+                         "content",
+                         "writer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  18
+    },
+    {
+        "id":  "seo-dataforseo",
+        "triggers":  [
+                         "seo",
+                         "dataforseo"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "seo-forensic-incident-response",
+        "triggers":  [
+                         "seo",
+                         "forensic",
+                         "incident",
+                         "response"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "seo-fundamentals",
+        "triggers":  [
+                         "seo",
+                         "fundamentals"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "seo-geo",
+        "triggers":  [
+                         "seo",
+                         "geo"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "seo-hreflang",
+        "triggers":  [
+                         "seo",
+                         "hreflang"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "seo-image-gen",
+        "triggers":  [
+                         "seo",
+                         "image",
+                         "gen"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "seo-images",
+        "triggers":  [
+                         "seo",
+                         "images"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "seo-keyword-strategist",
+        "triggers":  [
+                         "seo",
+                         "keyword",
+                         "strategist"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "seo-local",
+        "triggers":  [
+                         "seo",
+                         "local"
+                     ],
+        "src":  "external:claude-seo",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "seo-meta-optimizer",
+        "triggers":  [
+                         "seo",
+                         "meta",
+                         "optimizer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "seo-page",
+        "triggers":  [
+                         "seo",
+                         "page"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "seo-plan",
+        "triggers":  [
+                         "seo",
+                         "plan"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "seo-programmatic",
+        "triggers":  [
+                         "seo",
+                         "programmatic"
+                     ],
+        "src":  "external:claude-seo",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "seo-schema",
+        "triggers":  [
+                         "seo",
+                         "schema"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "seo-sitemap",
+        "triggers":  [
+                         "seo",
+                         "sitemap"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "seo-snippet-hunter",
+        "triggers":  [
+                         "seo",
+                         "snippet",
+                         "hunter"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "seo-structure-architect",
+        "triggers":  [
+                         "seo",
+                         "structure",
+                         "architect"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "seo-technical",
+        "triggers":  [
+                         "seo",
+                         "technical"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    }
+]

@@ -1,0 +1,1842 @@
+[
+    {
+        "id":  "advanced-evaluation",
+        "triggers":  [
+                         "advanced",
+                         "evaluation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "agent-evaluation",
+        "triggers":  [
+                         "agent",
+                         "evaluation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "agentfolio",
+        "triggers":  [
+                         "agentfolio"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "agentic-actions-auditor",
+        "triggers":  [
+                         "agentic",
+                         "actions",
+                         "auditor"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "agentmail",
+        "triggers":  [
+                         "agentmail"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "agent-manager-skill",
+        "triggers":  [
+                         "agent",
+                         "manager",
+                         "skill"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "agent-memory-mcp",
+        "triggers":  [
+                         "agent",
+                         "memory",
+                         "mcp"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "agent-memory-systems",
+        "triggers":  [
+                         "agent",
+                         "memory",
+                         "systems"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "agent-orchestration-improve-agent",
+        "triggers":  [
+                         "agent",
+                         "orchestration",
+                         "improve",
+                         "agent"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "agent-orchestration-multi-agent-optimize",
+        "triggers":  [
+                         "agent",
+                         "orchestration",
+                         "multi",
+                         "agent",
+                         "optimize"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "agent-orchestrator",
+        "triggers":  [
+                         "agent",
+                         "orchestrator"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "agents-md",
+        "triggers":  [
+                         "agents",
+                         "md"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "agent-tool-builder",
+        "triggers":  [
+                         "agent",
+                         "tool",
+                         "builder"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "ai-agent-development",
+        "triggers":  [
+                         "ai",
+                         "agent",
+                         "development"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "ai-agents-architect",
+        "triggers":  [
+                         "ai",
+                         "agents",
+                         "architect"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "ai-discoverability-audit",
+        "triggers":  [
+                         "ai",
+                         "discoverability",
+                         "audit"
+                     ],
+        "src":  "external:ai-marketing-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "ai-engineer",
+        "triggers":  [
+                         "ai",
+                         "engineer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  19
+    },
+    {
+        "id":  "ai-engineering-toolkit",
+        "triggers":  [
+                         "ai",
+                         "engineering",
+                         "toolkit"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "ai-ml",
+        "triggers":  [
+                         "ai",
+                         "ml"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "ai-native-cli",
+        "triggers":  [
+                         "ai",
+                         "native",
+                         "cli"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "ai-product",
+        "triggers":  [
+                         "ai",
+                         "product"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "andrej-karpathy",
+        "triggers":  [
+                         "andrej",
+                         "karpathy"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "antigravity-skill-orchestrator",
+        "triggers":  [
+                         "antigravity",
+                         "skill",
+                         "orchestrator"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "antigravity-workflows",
+        "triggers":  [
+                         "antigravity",
+                         "workflows"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "apify-actor-development",
+        "triggers":  [
+                         "apify",
+                         "actor",
+                         "development"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "app-builder",
+        "triggers":  [
+                         "app",
+                         "builder"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "appdeploy",
+        "triggers":  [
+                         "appdeploy"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "audio-transcriber",
+        "triggers":  [
+                         "audio",
+                         "transcriber"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "autonomous-agent-patterns",
+        "triggers":  [
+                         "autonomous",
+                         "agent",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "autonomous-agents",
+        "triggers":  [
+                         "autonomous",
+                         "agents"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-ai-agents-persistent-dotnet",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "agents",
+                         "persistent",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "azure-ai-projects-dotnet",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "projects",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "azure-ai-projects-ts",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "projects",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "azure-storage-blob-ts",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "blob",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "azure-storage-file-share-ts",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "file",
+                         "share",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "azure-storage-queue-ts",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "queue",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "bdi-mental-states",
+        "triggers":  [
+                         "bdi",
+                         "mental",
+                         "states"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bill-gates",
+        "triggers":  [
+                         "bill",
+                         "gates"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "blueprint",
+        "triggers":  [
+                         "blueprint"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-advanced-elicitation",
+        "triggers":  [
+                         "bmad",
+                         "advanced",
+                         "elicitation"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-agent-analyst",
+        "triggers":  [
+                         "bmad",
+                         "agent",
+                         "analyst"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-agent-architect",
+        "triggers":  [
+                         "bmad",
+                         "agent",
+                         "architect"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-agent-builder",
+        "triggers":  [
+                         "bmad",
+                         "agent",
+                         "builder"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-agent-dev",
+        "triggers":  [
+                         "bmad",
+                         "agent",
+                         "dev"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-agent-pm",
+        "triggers":  [
+                         "bmad",
+                         "agent",
+                         "pm"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-agent-quick-flow-solo-dev",
+        "triggers":  [
+                         "bmad",
+                         "agent",
+                         "quick",
+                         "flow",
+                         "solo"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-agent-sm",
+        "triggers":  [
+                         "bmad",
+                         "agent",
+                         "sm"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-agent-tech-writer",
+        "triggers":  [
+                         "bmad",
+                         "agent",
+                         "tech",
+                         "writer"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-agent-ux-designer",
+        "triggers":  [
+                         "bmad",
+                         "agent",
+                         "ux",
+                         "designer"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-cis-agent-brainstorming-coach",
+        "triggers":  [
+                         "bmad",
+                         "cis",
+                         "agent",
+                         "brainstorming",
+                         "coach"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-cis-agent-creative-problem-solver",
+        "triggers":  [
+                         "bmad",
+                         "cis",
+                         "agent",
+                         "creative",
+                         "problem"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-cis-agent-design-thinking-coach",
+        "triggers":  [
+                         "bmad",
+                         "cis",
+                         "agent",
+                         "design",
+                         "thinking"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-cis-agent-innovation-strategist",
+        "triggers":  [
+                         "bmad",
+                         "cis",
+                         "agent",
+                         "innovation",
+                         "strategist"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-cis-agent-presentation-master",
+        "triggers":  [
+                         "bmad",
+                         "cis",
+                         "agent",
+                         "presentation",
+                         "master"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-cis-agent-storyteller",
+        "triggers":  [
+                         "bmad",
+                         "cis",
+                         "agent",
+                         "storyteller"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-create-architecture",
+        "triggers":  [
+                         "bmad",
+                         "create",
+                         "architecture"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-create-story",
+        "triggers":  [
+                         "bmad",
+                         "create",
+                         "story"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-distillator",
+        "triggers":  [
+                         "bmad",
+                         "distillator"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-party-mode",
+        "triggers":  [
+                         "bmad",
+                         "party",
+                         "mode"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "bmad-testarch-trace",
+        "triggers":  [
+                         "bmad",
+                         "testarch",
+                         "trace"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "bullmq-specialist",
+        "triggers":  [
+                         "bullmq",
+                         "specialist"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "claude-api",
+        "triggers":  [
+                         "claude",
+                         "api"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "claude-code-expert",
+        "triggers":  [
+                         "claude",
+                         "code",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "claude-code-guide",
+        "triggers":  [
+                         "claude",
+                         "code",
+                         "guide"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "code-review-ai-ai-review",
+        "triggers":  [
+                         "code",
+                         "review",
+                         "ai",
+                         "ai",
+                         "review"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "computer-use-agents",
+        "triggers":  [
+                         "computer",
+                         "use",
+                         "agents"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "conductor-setup",
+        "triggers":  [
+                         "conductor",
+                         "setup"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "context-agent",
+        "triggers":  [
+                         "context",
+                         "agent"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "context-compression",
+        "triggers":  [
+                         "context",
+                         "compression"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "context-window-management",
+        "triggers":  [
+                         "context",
+                         "window",
+                         "management"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "conversation-memory",
+        "triggers":  [
+                         "conversation",
+                         "memory"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "crewai",
+        "triggers":  [
+                         "crewai"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "crypto-bd-agent",
+        "triggers":  [
+                         "crypto",
+                         "bd",
+                         "agent"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "data-structure-protocol",
+        "triggers":  [
+                         "data",
+                         "structure",
+                         "protocol"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "design-orchestration",
+        "triggers":  [
+                         "design",
+                         "orchestration"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "dispatching-parallel-agents",
+        "triggers":  [
+                         "dispatching",
+                         "parallel",
+                         "agents"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "elon-musk",
+        "triggers":  [
+                         "elon",
+                         "musk"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "embedding-strategies",
+        "triggers":  [
+                         "embedding",
+                         "strategies"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "emblemai-crypto-wallet",
+        "triggers":  [
+                         "emblemai",
+                         "crypto",
+                         "wallet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "error-debugging-multi-agent-review",
+        "triggers":  [
+                         "error",
+                         "debugging",
+                         "multi",
+                         "agent",
+                         "review"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "finding-duplicate-functions",
+        "triggers":  [
+                         "finding",
+                         "duplicate",
+                         "functions"
+                     ],
+        "src":  "external:superpowers-lab",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "firecrawl-agent",
+        "triggers":  [
+                         "firecrawl",
+                         "agent"
+                     ],
+        "src":  "external:cli",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "fp-pragmatic",
+        "triggers":  [
+                         "fp",
+                         "pragmatic"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "gdb-cli",
+        "triggers":  [
+                         "gdb",
+                         "cli"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "gemini-interactions-api",
+        "triggers":  [
+                         "gemini",
+                         "interactions",
+                         "api"
+                     ],
+        "src":  "external:gemini-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "geoffrey-hinton",
+        "triggers":  [
+                         "geoffrey",
+                         "hinton"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "geo-fundamentals",
+        "triggers":  [
+                         "geo",
+                         "fundamentals"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "gsap-plugins",
+        "triggers":  [
+                         "gsap",
+                         "plugins"
+                     ],
+        "src":  "external:gsap-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "hierarchical-agent-memory",
+        "triggers":  [
+                         "hierarchical",
+                         "agent",
+                         "memory"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "hosted-agents",
+        "triggers":  [
+                         "hosted",
+                         "agents"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "hugging-face-evaluation",
+        "triggers":  [
+                         "hugging",
+                         "face",
+                         "evaluation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "hybrid-search-implementation",
+        "triggers":  [
+                         "hybrid",
+                         "search",
+                         "implementation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "ilya-sutskever",
+        "triggers":  [
+                         "ilya",
+                         "sutskever"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "infinite-gratitude",
+        "triggers":  [
+                         "infinite",
+                         "gratitude"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "ios-debugger-agent",
+        "triggers":  [
+                         "ios",
+                         "debugger",
+                         "agent"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "langchain-architecture",
+        "triggers":  [
+                         "langchain",
+                         "architecture"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "langfuse",
+        "triggers":  [
+                         "langfuse"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "langgraph",
+        "triggers":  [
+                         "langgraph"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "linkedin-profile-optimizer",
+        "triggers":  [
+                         "linkedin",
+                         "profile",
+                         "optimizer"
+                     ],
+        "src":  "external:ai-marketing-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "llm-application-dev-ai-assistant",
+        "triggers":  [
+                         "llm",
+                         "application",
+                         "dev",
+                         "ai",
+                         "assistant"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "llm-application-dev-langchain-agent",
+        "triggers":  [
+                         "llm",
+                         "application",
+                         "dev",
+                         "langchain",
+                         "agent"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "llm-application-dev-prompt-optimize",
+        "triggers":  [
+                         "llm",
+                         "application",
+                         "dev",
+                         "prompt",
+                         "optimize"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "llm-app-patterns",
+        "triggers":  [
+                         "llm",
+                         "app",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "llm-ops",
+        "triggers":  [
+                         "llm",
+                         "ops"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  23
+    },
+    {
+        "id":  "llm-prompt-optimizer",
+        "triggers":  [
+                         "llm",
+                         "prompt",
+                         "optimizer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "llm-structured-output",
+        "triggers":  [
+                         "llm",
+                         "structured",
+                         "output"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "local-llm-expert",
+        "triggers":  [
+                         "local",
+                         "llm",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "loki-mode",
+        "triggers":  [
+                         "loki",
+                         "mode"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "m365-agents-dotnet",
+        "triggers":  [
+                         "m365",
+                         "agents",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "manifest",
+        "triggers":  [
+                         "manifest"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "marketing-psychology",
+        "triggers":  [
+                         "marketing",
+                         "psychology"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "mcp-builder",
+        "triggers":  [
+                         "mcp",
+                         "builder"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "memory-systems",
+        "triggers":  [
+                         "memory",
+                         "systems"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "multi-advisor",
+        "triggers":  [
+                         "multi",
+                         "advisor"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "multi-agent-brainstorming",
+        "triggers":  [
+                         "multi",
+                         "agent",
+                         "brainstorming"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "multi-agent-patterns",
+        "triggers":  [
+                         "multi",
+                         "agent",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "netlify-blobs",
+        "triggers":  [
+                         "netlify",
+                         "blobs"
+                     ],
+        "src":  "external:context-and-tools",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "parallel-agents",
+        "triggers":  [
+                         "parallel",
+                         "agents"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performance-testing-review-ai-review",
+        "triggers":  [
+                         "performance",
+                         "testing",
+                         "review",
+                         "ai",
+                         "review"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "pipecat-friday-agent",
+        "triggers":  [
+                         "pipecat",
+                         "friday",
+                         "agent"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "product-manager",
+        "triggers":  [
+                         "product",
+                         "manager"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "progressive-estimation",
+        "triggers":  [
+                         "progressive",
+                         "estimation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "project-development",
+        "triggers":  [
+                         "project",
+                         "development"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "prompt-caching",
+        "triggers":  [
+                         "prompt",
+                         "caching"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "prompt-engineering",
+        "triggers":  [
+                         "prompt",
+                         "engineering"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "prompt-engineering-patterns",
+        "triggers":  [
+                         "prompt",
+                         "engineering",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "prompt-library",
+        "triggers":  [
+                         "prompt",
+                         "library"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "pydantic-ai",
+        "triggers":  [
+                         "pydantic",
+                         "ai"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "quant-analyst",
+        "triggers":  [
+                         "quant",
+                         "analyst"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "rag-engineer",
+        "triggers":  [
+                         "rag",
+                         "engineer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "rag-implementation",
+        "triggers":  [
+                         "rag",
+                         "implementation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "recallmax",
+        "triggers":  [
+                         "recallmax"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "sam-altman",
+        "triggers":  [
+                         "sam",
+                         "altman"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "shader-programming-glsl",
+        "triggers":  [
+                         "shader",
+                         "programming",
+                         "glsl"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "skill-check",
+        "triggers":  [
+                         "skill",
+                         "check"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "skill-creator-ms",
+        "triggers":  [
+                         "skill",
+                         "creator",
+                         "ms"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "skill-improver",
+        "triggers":  [
+                         "skill",
+                         "improver"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "skill-scanner",
+        "triggers":  [
+                         "skill",
+                         "scanner"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "skill-writer",
+        "triggers":  [
+                         "skill",
+                         "writer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "steve-jobs",
+        "triggers":  [
+                         "steve",
+                         "jobs"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "stitch-loop",
+        "triggers":  [
+                         "stitch",
+                         "loop"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "subagent-driven-development",
+        "triggers":  [
+                         "subagent",
+                         "driven",
+                         "development"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "task-intelligence",
+        "triggers":  [
+                         "task",
+                         "intelligence"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "tdd-orchestrator",
+        "triggers":  [
+                         "tdd",
+                         "orchestrator"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "threejs-shaders",
+        "triggers":  [
+                         "threejs",
+                         "shaders"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "tool-design",
+        "triggers":  [
+                         "tool",
+                         "design"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "ui-skills",
+        "triggers":  [
+                         "ui",
+                         "skills"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "vector-database-engineer",
+        "triggers":  [
+                         "vector",
+                         "database",
+                         "engineer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "vibe-code-auditor",
+        "triggers":  [
+                         "vibe",
+                         "code",
+                         "auditor"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "voice-agents",
+        "triggers":  [
+                         "voice",
+                         "agents"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "voice-ai-engine-development",
+        "triggers":  [
+                         "voice",
+                         "ai",
+                         "engine",
+                         "development"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "warren-buffett",
+        "triggers":  [
+                         "warren",
+                         "buffett"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "wds-agent-freya-ux",
+        "triggers":  [
+                         "wds",
+                         "agent",
+                         "freya",
+                         "ux"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "wds-agent-saga-analyst",
+        "triggers":  [
+                         "wds",
+                         "agent",
+                         "saga",
+                         "analyst"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "writing-skills",
+        "triggers":  [
+                         "writing",
+                         "skills"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "yann-lecun",
+        "triggers":  [
+                         "yann",
+                         "lecun"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "yann-lecun-debate",
+        "triggers":  [
+                         "yann",
+                         "lecun",
+                         "debate"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    }
+]

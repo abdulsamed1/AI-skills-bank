@@ -375,15 +375,12 @@
         "match_score":  12
     },
     {
-        "id":  "frontend-mobile-security-xss-scan",
+        "id":  "figma-use",
         "triggers":  [
-                         "frontend",
-                         "mobile",
-                         "security",
-                         "xss",
-                         "scan"
+                         "figma",
+                         "use"
                      ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:mcp-server-guide",
         "primary_hub":  "programming/java",
         "is_primary":  true,
         "match_score":  5
@@ -422,18 +419,6 @@
         "match_score":  10
     },
     {
-        "id":  "javascript-testing-patterns",
-        "triggers":  [
-                         "javascript",
-                         "testing",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/java",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "latex-paper-conversion",
         "triggers":  [
                          "latex",
@@ -470,17 +455,6 @@
         "match_score":  10
     },
     {
-        "id":  "playwright-java",
-        "triggers":  [
-                         "playwright",
-                         "java"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/java",
-        "is_primary":  true,
-        "match_score":  12
-    },
-    {
         "id":  "sankhya-dashboard-html-jsp-custom-best-pratices",
         "triggers":  [
                          "sankhya",
@@ -493,16 +467,5 @@
         "primary_hub":  "programming/java",
         "is_primary":  true,
         "match_score":  7
-    },
-    {
-        "id":  "seo-technical",
-        "triggers":  [
-                         "seo",
-                         "technical"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/java",
-        "is_primary":  true,
-        "match_score":  5
     }
 ]

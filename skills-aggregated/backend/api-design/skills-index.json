@@ -1,10 +1,20 @@
 [
     {
-        "id":  "agentmail",
+        "id":  "algo",
         "triggers":  [
-                         "agentmail"
+                         "algo"
                      ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:binance-skills-hub",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "alpha",
+        "triggers":  [
+                         "alpha"
+                     ],
+        "src":  "external:binance-skills-hub",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -92,50 +102,11 @@
         "match_score":  16
     },
     {
-        "id":  "api-security-best-practices",
+        "id":  "assets",
         "triggers":  [
-                         "api",
-                         "security",
-                         "best",
-                         "practices"
+                         "assets"
                      ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "api-security-testing",
-        "triggers":  [
-                         "api",
-                         "security",
-                         "testing"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  12
-    },
-    {
-        "id":  "api-testing-observability-api-mock",
-        "triggers":  [
-                         "api",
-                         "testing",
-                         "observability",
-                         "api",
-                         "mock"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "appdeploy",
-        "triggers":  [
-                         "appdeploy"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:binance-skills-hub",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -203,18 +174,6 @@
         "match_score":  4
     },
     {
-        "id":  "backend-security-coder",
-        "triggers":  [
-                         "backend",
-                         "security",
-                         "coder"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "bdistill-behavioral-xray",
         "triggers":  [
                          "bdistill",
@@ -252,41 +211,6 @@
         "match_score":  4
     },
     {
-        "id":  "cc-skill-security-review",
-        "triggers":  [
-                         "cc",
-                         "skill",
-                         "security",
-                         "review"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "claude-api",
-        "triggers":  [
-                         "claude",
-                         "api"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "claude-monitor",
-        "triggers":  [
-                         "claude",
-                         "monitor"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "code-documentation-doc-generate",
         "triggers":  [
                          "code",
@@ -311,11 +235,76 @@
         "match_score":  8
     },
     {
-        "id":  "documentation",
+        "id":  "convert",
         "triggers":  [
-                         "documentation"
+                         "convert"
                      ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:binance-skills-hub",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "derivatives-trading-coin-futures",
+        "triggers":  [
+                         "derivatives",
+                         "trading",
+                         "coin",
+                         "futures"
+                     ],
+        "src":  "external:binance-skills-hub",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "derivatives-trading-options",
+        "triggers":  [
+                         "derivatives",
+                         "trading",
+                         "options"
+                     ],
+        "src":  "external:binance-skills-hub",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "derivatives-trading-portfolio-margin",
+        "triggers":  [
+                         "derivatives",
+                         "trading",
+                         "portfolio",
+                         "margin"
+                     ],
+        "src":  "external:binance-skills-hub",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "derivatives-trading-portfolio-margin-pro",
+        "triggers":  [
+                         "derivatives",
+                         "trading",
+                         "portfolio",
+                         "margin",
+                         "pro"
+                     ],
+        "src":  "external:binance-skills-hub",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "derivatives-trading-usds-futures",
+        "triggers":  [
+                         "derivatives",
+                         "trading",
+                         "usds",
+                         "futures"
+                     ],
+        "src":  "external:binance-skills-hub",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -356,18 +345,6 @@
         "match_score":  4
     },
     {
-        "id":  "emblemai-crypto-wallet",
-        "triggers":  [
-                         "emblemai",
-                         "crypto",
-                         "wallet"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "exa-search",
         "triggers":  [
                          "exa",
@@ -386,6 +363,28 @@
                          "routes"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "fiat",
+        "triggers":  [
+                         "fiat"
+                     ],
+        "src":  "external:binance-skills-hub",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "figma-generate-library",
+        "triggers":  [
+                         "figma",
+                         "generate",
+                         "library"
+                     ],
+        "src":  "external:mcp-server-guide",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -449,6 +448,19 @@
         "match_score":  4
     },
     {
+        "id":  "gemini-live-api-dev",
+        "triggers":  [
+                         "gemini",
+                         "live",
+                         "api",
+                         "dev"
+                     ],
+        "src":  "external:gemini-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
         "id":  "github",
         "triggers":  [
                          "github"
@@ -480,31 +492,6 @@
         "match_score":  4
     },
     {
-        "id":  "hugging-face-dataset-viewer",
-        "triggers":  [
-                         "hugging",
-                         "face",
-                         "dataset",
-                         "viewer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "hugging-face-evaluation",
-        "triggers":  [
-                         "hugging",
-                         "face",
-                         "evaluation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "hugging-face-tool-builder",
         "triggers":  [
                          "hugging",
@@ -518,33 +505,12 @@
         "match_score":  4
     },
     {
-        "id":  "instagram",
+        "id":  "margin-trading",
         "triggers":  [
-                         "instagram"
+                         "margin",
+                         "trading"
                      ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "k6-load-testing",
-        "triggers":  [
-                         "k6",
-                         "load",
-                         "testing"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "manifest",
-        "triggers":  [
-                         "manifest"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:binance-skills-hub",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -563,37 +529,11 @@
         "match_score":  4
     },
     {
-        "id":  "multi-platform-apps-multi-platform",
-        "triggers":  [
-                         "multi",
-                         "platform",
-                         "apps",
-                         "multi",
-                         "platform"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "odoo-migration-helper",
         "triggers":  [
                          "odoo",
                          "migration",
                          "helper"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "odoo-rpc-api",
-        "triggers":  [
-                         "odoo",
-                         "rpc",
-                         "api"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
@@ -623,6 +563,19 @@
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  8
+    },
+    {
+        "id":  "onchain-pay-open-api",
+        "triggers":  [
+                         "onchain",
+                         "pay",
+                         "open",
+                         "api"
+                     ],
+        "src":  "external:binance-skills-hub",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "openapi-spec-generation",
@@ -670,17 +623,6 @@
         "match_score":  4
     },
     {
-        "id":  "security-audit",
-        "triggers":  [
-                         "security",
-                         "audit"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "shopify-development",
         "triggers":  [
                          "shopify",
@@ -690,6 +632,38 @@
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  8
+    },
+    {
+        "id":  "simple-earn",
+        "triggers":  [
+                         "simple",
+                         "earn"
+                     ],
+        "src":  "external:binance-skills-hub",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "spot",
+        "triggers":  [
+                         "spot"
+                     ],
+        "src":  "external:binance-skills-hub",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "sub-account",
+        "triggers":  [
+                         "sub",
+                         "account"
+                     ],
+        "src":  "external:binance-skills-hub",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "sveltekit",
@@ -724,11 +698,25 @@
         "match_score":  8
     },
     {
-        "id":  "wordpress",
+        "id":  "vertex-ai-api-dev",
         "triggers":  [
-                         "wordpress"
+                         "vertex",
+                         "ai",
+                         "api",
+                         "dev"
                      ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:gemini-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "vip-loan",
+        "triggers":  [
+                         "vip",
+                         "loan"
+                     ],
+        "src":  "external:binance-skills-hub",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4

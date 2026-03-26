@@ -1,0 +1,304 @@
+[
+    {
+        "id":  "android-aso",
+        "triggers":  [
+                         "android",
+                         "aso"
+                     ],
+        "src":  "external:aso-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "android-jetpack-compose-expert",
+        "triggers":  [
+                         "android",
+                         "jetpack",
+                         "compose",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "app-store-optimization",
+        "triggers":  [
+                         "app",
+                         "store",
+                         "optimization"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "attack-tree-construction",
+        "triggers":  [
+                         "attack",
+                         "tree",
+                         "construction"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "audit-skills",
+        "triggers":  [
+                         "audit",
+                         "skills"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "carrier-relationship-management",
+        "triggers":  [
+                         "carrier",
+                         "relationship",
+                         "management"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "claude-monitor",
+        "triggers":  [
+                         "claude",
+                         "monitor"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "development",
+        "triggers":  [
+                         "development"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "earllm-build",
+        "triggers":  [
+                         "earllm",
+                         "build"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "expo-tailwind-setup",
+        "triggers":  [
+                         "expo",
+                         "tailwind",
+                         "setup"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "flutter-expert",
+        "triggers":  [
+                         "flutter",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "frontend-mobile-development-component-scaffold",
+        "triggers":  [
+                         "frontend",
+                         "mobile",
+                         "development",
+                         "component",
+                         "scaffold"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "instagram",
+        "triggers":  [
+                         "instagram"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "ios-developer",
+        "triggers":  [
+                         "ios",
+                         "developer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "leiloeiro-risco",
+        "triggers":  [
+                         "leiloeiro",
+                         "risco"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "mobile-design",
+        "triggers":  [
+                         "mobile",
+                         "design"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "mobile-developer",
+        "triggers":  [
+                         "mobile",
+                         "developer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "mobile-games",
+        "triggers":  [
+                         "mobile",
+                         "games"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "multi-platform-apps-multi-platform",
+        "triggers":  [
+                         "multi",
+                         "platform",
+                         "apps",
+                         "multi",
+                         "platform"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "product-design",
+        "triggers":  [
+                         "product",
+                         "design"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "react-native-architecture",
+        "triggers":  [
+                         "react",
+                         "native",
+                         "architecture"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "skill-sentinel",
+        "triggers":  [
+                         "skill",
+                         "sentinel"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "stitch-ui-design",
+        "triggers":  [
+                         "stitch",
+                         "ui",
+                         "design"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "swiftui-expert-skill",
+        "triggers":  [
+                         "swiftui",
+                         "expert",
+                         "skill"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "ui-ux-pro-max",
+        "triggers":  [
+                         "ui",
+                         "ux",
+                         "pro",
+                         "max"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "wds-3-scenarios",
+        "triggers":  [
+                         "wds",
+                         "3",
+                         "scenarios"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    }
+]

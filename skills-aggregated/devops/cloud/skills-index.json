@@ -82,30 +82,6 @@
         "match_score":  4
     },
     {
-        "id":  "aws-penetration-testing",
-        "triggers":  [
-                         "aws",
-                         "penetration",
-                         "testing"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  8
-    },
-    {
-        "id":  "aws-security-audit",
-        "triggers":  [
-                         "aws",
-                         "security",
-                         "audit"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "aws-serverless",
         "triggers":  [
                          "aws",
@@ -117,48 +93,10 @@
         "match_score":  12
     },
     {
-        "id":  "aws-skills",
-        "triggers":  [
-                         "aws",
-                         "skills"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "azd-deployment",
         "triggers":  [
                          "azd",
                          "deployment"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "azure-ai-agents-persistent-dotnet",
-        "triggers":  [
-                         "azure",
-                         "ai",
-                         "agents",
-                         "persistent",
-                         "dotnet"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "azure-ai-contentsafety-ts",
-        "triggers":  [
-                         "azure",
-                         "ai",
-                         "contentsafety",
-                         "ts"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/cloud",
@@ -200,32 +138,6 @@
                          "ai",
                          "openai",
                          "dotnet"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "azure-ai-projects-dotnet",
-        "triggers":  [
-                         "azure",
-                         "ai",
-                         "projects",
-                         "dotnet"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "azure-ai-projects-ts",
-        "triggers":  [
-                         "azure",
-                         "ai",
-                         "projects",
-                         "ts"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/cloud",
@@ -330,18 +242,6 @@
         "match_score":  4
     },
     {
-        "id":  "azure-identity-dotnet",
-        "triggers":  [
-                         "azure",
-                         "identity",
-                         "dotnet"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "azure-identity-ts",
         "triggers":  [
                          "azure",
@@ -432,20 +332,6 @@
         "match_score":  4
     },
     {
-        "id":  "azure-microsoft-playwright-testing-ts",
-        "triggers":  [
-                         "azure",
-                         "microsoft",
-                         "playwright",
-                         "testing",
-                         "ts"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "azure-monitor-opentelemetry-ts",
         "triggers":  [
                          "azure",
@@ -487,20 +373,6 @@
         "match_score":  4
     },
     {
-        "id":  "azure-resrc-manager-playwright-dotnet",
-        "triggers":  [
-                         "azure",
-                         "resrc",
-                         "manager",
-                         "playwright",
-                         "dotnet"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "azure-search-documents-dotnet",
         "triggers":  [
                          "azure",
@@ -527,20 +399,6 @@
         "match_score":  4
     },
     {
-        "id":  "azure-security-keyvault-keys-dotnet",
-        "triggers":  [
-                         "azure",
-                         "security",
-                         "keyvault",
-                         "keys",
-                         "dotnet"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "azure-servicebus-dotnet",
         "triggers":  [
                          "azure",
@@ -557,46 +415,6 @@
         "triggers":  [
                          "azure",
                          "servicebus",
-                         "ts"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "azure-storage-blob-ts",
-        "triggers":  [
-                         "azure",
-                         "storage",
-                         "blob",
-                         "ts"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "azure-storage-file-share-ts",
-        "triggers":  [
-                         "azure",
-                         "storage",
-                         "file",
-                         "share",
-                         "ts"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "azure-storage-queue-ts",
-        "triggers":  [
-                         "azure",
-                         "storage",
-                         "queue",
                          "ts"
                      ],
         "src":  "external:antigravity-awesome-skills",
@@ -769,41 +587,6 @@
         "match_score":  5
     },
     {
-        "id":  "inngest",
-        "triggers":  [
-                         "inngest"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "loki-mode",
-        "triggers":  [
-                         "loki",
-                         "mode"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "microsoft-azure-webjobs-extensions-authentication-events-dotnet",
-        "triggers":  [
-                         "microsoft",
-                         "azure",
-                         "webjobs",
-                         "extensions",
-                         "authentication"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "multi-cloud-architecture",
         "triggers":  [
                          "multi",
@@ -820,18 +603,6 @@
         "triggers":  [
                          "secrets",
                          "management"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "skill-creator-ms",
-        "triggers":  [
-                         "skill",
-                         "creator",
-                         "ms"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/cloud",

@@ -1,0 +1,35 @@
+{
+    "name":  "skills-marketing-email",
+    "main_hub":  "marketing",
+    "sub_hub":  "email",
+    "description":  "Email marketing: campaigns, automation, segmentation, and subscriber engagement strategies",
+    "skill_count":  11,
+    "src_count":  4,
+    "top_triggers":  [
+                         "email",
+                         "automation",
+                         "systems",
+                         "marketing",
+                         "curation",
+                         "prevention",
+                         "internal",
+                         "creation",
+                         "bible",
+                         "sequence",
+                         "sendgrid",
+                         "cold",
+                         "klaviyo",
+                         "comms",
+                         "revops",
+                         "churn",
+                         "newsletter",
+                         "mailchimp"
+                     ],
+    "generated_at":  "2026-03-27T00:33:02+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

@@ -861,12 +861,28 @@
         "match_score":  12
     },
     {
-        "id":  "webapp-testing",
+        "id":  "tinybird-python-sdk-guidelines",
         "triggers":  [
-                         "webapp",
-                         "testing"
+                         "tinybird",
+                         "python",
+                         "sdk",
+                         "guidelines"
                      ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:tinybird-agent-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "using-tmux-for-interactive-commands",
+        "triggers":  [
+                         "using",
+                         "tmux",
+                         "for",
+                         "interactive",
+                         "commands"
+                     ],
+        "src":  "external:superpowers-lab",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -879,6 +895,16 @@
                          "api"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "xlsx",
+        "triggers":  [
+                         "xlsx"
+                     ],
+        "src":  "external:skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7

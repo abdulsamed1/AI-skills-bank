@@ -1,0 +1,37 @@
+{
+    "name":  "skills-marketing-social",
+    "main_hub":  "marketing",
+    "sub_hub":  "social",
+    "description":  "Social media marketing: strategy, content distribution, engagement, and multi-platform publishing",
+    "skill_count":  16,
+    "src_count":  4,
+    "top_triggers":  [
+                         "apify",
+                         "x",
+                         "social",
+                         "linkedin",
+                         "content",
+                         "analysis",
+                         "writer",
+                         "analytics",
+                         "ads",
+                         "orchestrator",
+                         "twitter",
+                         "paid",
+                         "influencer",
+                         "hook",
+                         "publisher",
+                         "discovery",
+                         "viral",
+                         "article",
+                         "magnet",
+                         "trend"
+                     ],
+    "generated_at":  "2026-03-27T00:33:02+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

@@ -34,26 +34,26 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 ## Quick Trigger Hints
 
-- orchestration
-- agent
-- workflow
-- patterns
-- stack
-- ai
-- full
 - k8s
+- orchestration
+- full
 - kubernetes
 - architect
-- ml
-- linkerd
-- manifest
-- c4
-- generator
-- pipeline
-- security
+- stack
+- windows
+- chart
+- expert
 - event
+- sourcing
+- vm
+- c4
+- policies
+- manifest
+- saga
+- docker
+- container
+- generator
 - scaffolding
-- engineer
 
 ## Data Contract
 
