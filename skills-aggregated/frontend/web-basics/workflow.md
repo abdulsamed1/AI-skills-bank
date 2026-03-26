@@ -13,6 +13,13 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 3. Load only relevant lines from `skills-catalog.ndjson`.
 4. Avoid loading the entire catalog unless explicitly needed.
 
+## Execution Rule (Mandatory)
+
+1. Do not stop at `SKILL.md`, `workflow.md`, or `skills-manifest.json`.
+2. After filtering candidate entries from `skills-catalog.ndjson`, open at least one concrete skill file from the `path` field.
+3. If multiple candidates exist, open the best match first, then continue with implementation using that skill.
+4. If a `path` under `AI-skills-bank/src/` is missing, report it explicitly and request re-aggregation with src repos included.
+
 ## Files
 
 - `skills-manifest.json`: Summary, counts, and top triggers.
@@ -53,13 +60,13 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 Each index item contains:
 
 ```json
-{"id":"...","triggers":["..."],"source":"...","primary_hub":"...","is_primary":true,"match_score":8}
+{"id":"...","triggers":["..."],"src":"...","primary_hub":"...","is_primary":true,"match_score":8}
 ```
 
 Each NDJSON item contains:
 
 ```json
-{"id":"...","description":"...","path":"...","triggers":["..."],"source":"...","primary_hub":"...","assigned_hubs":["..."],"match_score":8,"is_primary":true}
+{"id":"...","description":"...","path":"...","triggers":["..."],"src":"...","primary_hub":"...","assigned_hubs":["..."],"match_score":8,"is_primary":true}
 ```
 
 ## Notes

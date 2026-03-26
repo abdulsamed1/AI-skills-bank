@@ -8,7 +8,7 @@
                          "ai",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -20,7 +20,7 @@
                          "v2",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -30,7 +30,7 @@
         "triggers":  [
                          "astropy"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -42,7 +42,7 @@
                          "python",
                          "patterns"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  20
@@ -55,7 +55,7 @@
                          "contentsafety",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -68,7 +68,7 @@
                          "contentunderstanding",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -81,7 +81,7 @@
                          "ml",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -94,7 +94,7 @@
                          "projects",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -107,7 +107,7 @@
                          "textanalytics",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -120,7 +120,7 @@
                          "transcription",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -134,7 +134,7 @@
                          "document",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -148,7 +148,7 @@
                          "text",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -162,7 +162,7 @@
                          "imageanalysis",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -175,7 +175,7 @@
                          "voicelive",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -187,7 +187,7 @@
                          "appconfiguration",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -199,7 +199,7 @@
                          "containerregistry",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -212,7 +212,7 @@
                          "db",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -224,7 +224,7 @@
                          "cosmos",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -237,7 +237,7 @@
                          "tables",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -249,7 +249,7 @@
                          "eventgrid",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -261,7 +261,7 @@
                          "eventhub",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -273,7 +273,7 @@
                          "identity",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -285,7 +285,7 @@
                          "keyvault",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -298,7 +298,7 @@
                          "webpubsubservice",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -311,7 +311,7 @@
                          "apicenter",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -324,7 +324,7 @@
                          "apimanagement",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -337,7 +337,7 @@
                          "botservice",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -350,7 +350,7 @@
                          "fabric",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -363,7 +363,7 @@
                          "ingestion",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -377,7 +377,7 @@
                          "exporter",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -390,7 +390,7 @@
                          "opentelemetry",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -403,7 +403,7 @@
                          "query",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -416,7 +416,7 @@
                          "documents",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -428,7 +428,7 @@
                          "servicebus",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -442,7 +442,7 @@
                          "text",
                          "rest"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -455,7 +455,7 @@
                          "blob",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -469,7 +469,7 @@
                          "datalake",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -483,7 +483,7 @@
                          "share",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -496,7 +496,7 @@
                          "queue",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  13
@@ -506,7 +506,7 @@
         "triggers":  [
                          "biopython"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  12
@@ -517,7 +517,7 @@
                          "copilot",
                          "sdk"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -528,7 +528,7 @@
                          "dbos",
                          "python"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  12
@@ -540,7 +540,7 @@
                          "access",
                          "review"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -551,7 +551,7 @@
                          "django",
                          "pro"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -562,7 +562,7 @@
                          "fastapi",
                          "pro"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  15
@@ -574,7 +574,7 @@
                          "router",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -585,7 +585,7 @@
                          "fastapi",
                          "templates"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -598,7 +598,7 @@
                          "v2",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -609,7 +609,7 @@
                          "junta",
                          "leiloeiros"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -621,7 +621,7 @@
                          "agents",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
@@ -631,7 +631,7 @@
         "triggers":  [
                          "matplotlib"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -643,7 +643,7 @@
                          "code",
                          "python"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  12
@@ -653,7 +653,7 @@
         "triggers":  [
                          "networkx"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -665,7 +665,7 @@
                          "module",
                          "developer"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -677,7 +677,7 @@
                          "models",
                          "py"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -690,7 +690,7 @@
                          "python",
                          "scaffold"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  20
@@ -702,7 +702,7 @@
                          "fastapi",
                          "development"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  20
@@ -713,7 +713,7 @@
                          "python",
                          "packaging"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  12
@@ -724,7 +724,7 @@
                          "python",
                          "patterns"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  16
@@ -736,7 +736,7 @@
                          "performance",
                          "optimization"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  12
@@ -747,7 +747,7 @@
                          "python",
                          "pro"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  20
@@ -759,7 +759,7 @@
                          "testing",
                          "patterns"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  12
@@ -769,7 +769,7 @@
         "triggers":  [
                          "scanpy"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -780,7 +780,7 @@
                          "scikit",
                          "learn"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -790,7 +790,7 @@
         "triggers":  [
                          "seaborn"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -801,7 +801,7 @@
                          "snowflake",
                          "development"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -811,7 +811,7 @@
         "triggers":  [
                          "statsmodels"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -821,7 +821,7 @@
         "triggers":  [
                          "sympy"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -831,7 +831,7 @@
         "triggers":  [
                          "telegram"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -843,7 +843,7 @@
                          "python",
                          "pro"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  16
@@ -855,7 +855,7 @@
                          "python",
                          "testing"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  12
@@ -866,7 +866,7 @@
                          "webapp",
                          "testing"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -878,7 +878,7 @@
                          "cloud",
                          "api"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -890,7 +890,7 @@
                          "stock",
                          "research"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7

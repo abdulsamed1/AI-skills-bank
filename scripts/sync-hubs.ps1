@@ -6,8 +6,13 @@ Sync Hub System to all Tools
 .DESCRIPTION
 Syncs AI-skills-bank/skills-aggregated/ to:
 - ~/.gemini/antigravity/skills/
+- ~/.claude/skills/
+- ~/.agents/skills/
+- ~/.cursor/skills/
 - ~/.gemini/skills/
 - ~/.copilot/skills/
+- ~/.config/opencode/skills/
+- ~/.codeium/windsurf/skills/
 
 Workspace-local targets are optional and disabled by default to avoid duplicate indexing conflicts.
 
@@ -19,7 +24,7 @@ Supports two strategies:
 #>
 
 param(
-    [string]$HubSource = ".\AI-skills-bank\skills-aggregated",
+    [string]$Hubsrc = ".\AI-skills-bank\skills-aggregated",
     [array]$TargetTools,
     [switch]$IncludeWorkspaceTargets,
     [switch]$PruneWorkspaceTargets,
@@ -40,22 +45,32 @@ else {
     $RepoRoot = $candidateRoot.FullName
 }
 
-# Also resolve HubSource dynamically if it's the default
-if ($HubSource -eq ".\AI-skills-bank\skills-aggregated") {
-    $HubSource = Join-Path $RepoRoot "AI-skills-bank\skills-aggregated"
+# Also resolve Hubsrc dynamically if it's the default
+if ($Hubsrc -eq ".\AI-skills-bank\skills-aggregated") {
+    $Hubsrc = Join-Path $RepoRoot "AI-skills-bank\skills-aggregated"
 }
 
 $WorkspaceTargets = @(
     (Join-Path $RepoRoot ".agent\skills"),
+    (Join-Path $RepoRoot ".claude\skills"),
+    (Join-Path $RepoRoot ".agents\skills"),
+    (Join-Path $RepoRoot ".cursor\skills"),
     (Join-Path $RepoRoot ".gemini\skills"),
-    (Join-Path $RepoRoot ".github\skills")
+    (Join-Path $RepoRoot ".github\skills"),
+    (Join-Path $RepoRoot ".opencode\skills"),
+    (Join-Path $RepoRoot ".windsurf\skills")
 )
 
 $userHome = [Environment]::GetFolderPath("UserProfile")
 $GlobalTargets = @(
     (Join-Path $userHome ".gemini\antigravity\skills"),
+    (Join-Path $userHome ".claude\skills"),
+    (Join-Path $userHome ".agents\skills"),
+    (Join-Path $userHome ".cursor\skills"),
     (Join-Path $userHome ".gemini\skills"),
-    (Join-Path $userHome ".copilot\skills")
+    (Join-Path $userHome ".copilot\skills"),
+    (Join-Path $userHome ".config\opencode\skills"),
+    (Join-Path $userHome ".codeium\windsurf\skills")
 )
 
 # If TargetTools not specified, default to global-only targets.
@@ -225,22 +240,29 @@ if ($PruneWorkspaceTargets) {
     }
 }
 
-# Verify hub source exists
-if (-not (Test-Path $HubSource)) {
-    Write-Log "ERROR: Hub source not found at $HubSource" "ERROR"
+# Verify hub src exists
+if (-not (Test-Path $Hubsrc)) {
+    Write-Log "ERROR: Hub src not found at $Hubsrc" "ERROR"
     exit 1
 }
 
 # Find all hub directories that actually contain a SKILL.md file (supports nested sub-hubs)
-$skillFiles = Get-ChildItem -Path $HubSource -Filter "SKILL.md" -Recurse -File
+$skillFiles = Get-ChildItem -Path $Hubsrc -Filter "SKILL.md" -Recurse -File
 $hubs = @()
+$resolvedHubsrc = (Resolve-Path -LiteralPath $Hubsrc).Path
 foreach ($skillFile in $skillFiles) {
     $hubDir = Split-Path -Path $skillFile.FullName -Parent
-    $relativePath = $hubDir.Substring((Resolve-Path $HubSource).Path.Length).TrimStart('\', '/')
+    $resolvedHubDir = (Resolve-Path -LiteralPath $hubDir).Path
+    if (-not $resolvedHubDir.StartsWith($resolvedHubsrc, [System.StringComparison]::OrdinalIgnoreCase)) {
+        Write-Log "Skipping unsafe hub path outside src root: $resolvedHubDir" "WARN"
+        continue
+    }
+
+    $relativePath = $resolvedHubDir.Substring($resolvedHubsrc.Length).TrimStart('\', '/')
     if (-not [string]::IsNullOrWhiteSpace($relativePath)) {
         $hubs += [PSCustomObject]@{
             RelativePath = $relativePath
-            FullPath = $hubDir
+            FullPath = $resolvedHubDir
         }
     }
 }
@@ -288,8 +310,8 @@ foreach ($toolPath in $TargetTools) {
 Write-Log ""
 Write-Log "Copying catalog and lock files..."
 
-$catalogSrc = Join-Path $HubSource "master-catalog.json"
-$lockSrc = Join-Path $HubSource ".skill-lock.json"
+$catalogSrc = Join-Path $Hubsrc "master-catalog.json"
+$lockSrc = Join-Path $Hubsrc ".skill-lock.json"
 
 foreach ($toolPath in $TargetTools) {
     if (Test-Path $catalogSrc) {

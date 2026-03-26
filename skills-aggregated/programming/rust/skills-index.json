@@ -6,7 +6,7 @@
                          "cosmos",
                          "rust"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  12
@@ -18,7 +18,7 @@
                          "eventhub",
                          "rust"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  12
@@ -30,7 +30,7 @@
                          "identity",
                          "rust"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  12
@@ -43,7 +43,7 @@
                          "certificates",
                          "rust"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  12
@@ -56,7 +56,7 @@
                          "keys",
                          "rust"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  12
@@ -69,7 +69,7 @@
                          "secrets",
                          "rust"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  12
@@ -82,7 +82,7 @@
                          "blob",
                          "rust"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  12
@@ -94,7 +94,7 @@
                          "ecs",
                          "expert"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  7
@@ -105,7 +105,7 @@
                          "debugging",
                          "strategies"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  5
@@ -116,7 +116,7 @@
                          "file",
                          "uploads"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  5
@@ -128,7 +128,7 @@
                          "architecture",
                          "review"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  5
@@ -139,7 +139,7 @@
                          "makepad",
                          "skills"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  7
@@ -151,7 +151,7 @@
                          "safety",
                          "patterns"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  7
@@ -162,7 +162,7 @@
                          "mtls",
                          "configuration"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  5
@@ -173,7 +173,7 @@
                          "popup",
                          "cro"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  5
@@ -185,7 +185,7 @@
                          "async",
                          "patterns"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  12
@@ -196,7 +196,7 @@
                          "rust",
                          "pro"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  12
@@ -209,7 +209,7 @@
                          "rust",
                          "project"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  16
@@ -220,7 +220,7 @@
                          "zeroize",
                          "audit"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  7

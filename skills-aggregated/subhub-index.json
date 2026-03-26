@@ -165,8 +165,8 @@
                              "cloud",
                              "mgmt",
                              "cost",
-                             "manager",
-                             "resource"
+                             "resrc",
+                             "manager"
                          ],
         "path":  "devops/cloud"
     },
@@ -174,7 +174,7 @@
         "key":  "general-misc",
         "main_hub":  "general",
         "sub_hub":  "misc",
-        "skill_count":  916,
+        "skill_count":  915,
         "top_triggers":  [
                              "automation",
                              "bmad",
@@ -184,8 +184,8 @@
                              "review",
                              "design",
                              "context",
-                             "code",
-                             "ai"
+                             "ai",
+                             "code"
                          ],
         "path":  "general/misc"
     },
@@ -218,12 +218,12 @@
                              "azure",
                              "dotnet",
                              "sql",
-                             "odoo",
-                             "manager",
-                             "resource",
                              "postgres",
+                             "odoo",
+                             "resrc",
+                             "manager",
                              "expert",
-                             "postgresql"
+                             "migrations"
                          ],
         "path":  "backend/databases"
     }

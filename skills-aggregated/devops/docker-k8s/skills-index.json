@@ -7,7 +7,7 @@
                          "improve",
                          "agent"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  4
@@ -21,7 +21,7 @@
                          "agent",
                          "optimize"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  4
@@ -33,7 +33,7 @@
                          "agent",
                          "development"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  4
@@ -44,7 +44,7 @@
                          "ai",
                          "engineer"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  4
@@ -55,7 +55,7 @@
                          "c4",
                          "container"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  4
@@ -66,7 +66,7 @@
                          "design",
                          "orchestration"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  4
@@ -77,7 +77,7 @@
                          "docker",
                          "expert"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  12
@@ -89,7 +89,7 @@
                          "sourcing",
                          "architect"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  4
@@ -103,7 +103,7 @@
                          "full",
                          "stack"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  4
@@ -114,7 +114,7 @@
                          "gitops",
                          "workflow"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  4
@@ -126,7 +126,7 @@
                          "chart",
                          "scaffolding"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  8
@@ -138,7 +138,7 @@
                          "manifest",
                          "generator"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  8
@@ -150,7 +150,7 @@
                          "security",
                          "policies"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  8
@@ -161,7 +161,7 @@
                          "kubernetes",
                          "architect"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  12
@@ -172,7 +172,7 @@
                          "kubernetes",
                          "deployment"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  20
@@ -183,7 +183,7 @@
                          "linkerd",
                          "patterns"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  4
@@ -195,7 +195,7 @@
                          "pipeline",
                          "workflow"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  4
@@ -206,7 +206,7 @@
                          "parallel",
                          "agents"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  4
@@ -217,7 +217,7 @@
                          "saga",
                          "orchestration"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  4
@@ -229,7 +229,7 @@
                          "orchestration",
                          "patterns"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  4

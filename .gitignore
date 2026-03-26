@@ -1,0 +1,56 @@
+# Environment and secrets
+.env
+.env.*
+*.env
+
+# Node and package manager artifacts
+node_modules/
+**/node_modules/
+.pnpm-store/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build/cache artifacts
+dist/
+build/
+.cache/
+coverage/
+.turbo/
+
+# Local CLI artifacts
+cli/*.tgz
+cli/.npmrc
+
+# Runtime temp files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.pid
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Patch/merge leftovers
+*.orig
+*.rej
+
+# Optional local probes and transient files created during testing
+**/.changed-only-probe.tmp
+
+# Generated lock snapshot (runtime state)
+skills-aggregated/.skill-lock.json
+
+# External src repositories (local clones)
+src/*
+!src/src.md
+!src/README.md
+!src/.gitkeep

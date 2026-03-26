@@ -3,12 +3,12 @@
 # Generates lightweight SKILL.md router + workflow.md + external catalog data
 
 param(
-    [string] $SourceHubsDir = ".\AI-skills-bank\hub-skills",
+    [string] $srcHubsDir = ".\AI-skills-bank\hub-skills",
     [string] $OutputDir = ".\AI-skills-bank\skills-aggregated",
-    [array] $FallbackSkillRoots = @(".\_bmad", ".\AI-skills-bank\source"),
+    [array] $FallbackSkillRoots = @(".\_bmad", ".\AI-skills-bank\src"),
     [ValidateSet("latest", "all", "selected", "changed-only")]
-    [string] $SourceRepoMode = "latest",
-    [string[]] $SourceRepoNames = @(),
+    [string] $srcRepoMode = "latest",
+    [string[]] $srcRepoNames = @(),
     [Switch] $DryRun = $false,
     [Switch] $AllowMultiHub = $false,
     [ValidateRange(1, 5)]
@@ -18,6 +18,19 @@ param(
     [ValidateRange(1, 20)]
     [int] $SecondaryMinScore = 6
 )
+
+# src validation module (load from same directory)
+$validationScriptPath = Join-Path $PSScriptRoot "validate-generated-skills.ps1"
+if (-not (Test-Path $validationScriptPath)) {
+    Write-Warning "Validation module not found at $validationScriptPath; attempting fallback..."
+    $validationScriptPath = Join-Path (Split-Path $PSScriptRoot -Parent) "validate-generated-skills.ps1"
+}
+if (Test-Path $validationScriptPath) {
+    . $validationScriptPath
+    Write-Host "[✓] Loaded validation module from $validationScriptPath" -ForegroundColor Green
+} else {
+    Write-Error "Cannot load validation module; script will fail at validation checks."
+}
 
 # Use $PSScriptRoot to resolve paths relative to the script location
 if ($PSScriptRoot) {
@@ -32,20 +45,20 @@ if ($PSScriptRoot) {
     }
     $RepoRoot = $RepoRootObj.FullName
     
-    $SourceHubsDir = Join-Path $RepoRoot "AI-skills-bank/hub-skills"
+    $srcHubsDir = Join-Path $RepoRoot "AI-skills-bank/hub-skills"
     $OutputDir = Join-Path $RepoRoot "AI-skills-bank/skills-aggregated"
     $FallbackSkillRoots = @(
         (Join-Path $RepoRoot "_bmad"),
-        (Join-Path $RepoRoot "AI-skills-bank/source")
+        (Join-Path $RepoRoot "AI-skills-bank/src")
     )
 }
 
-$SourceRootPath = Join-Path $RepoRoot "AI-skills-bank/source"
+$srcRootPath = Join-Path $RepoRoot "AI-skills-bank/src"
 $SkillLockPath = Join-Path $OutputDir ".skill-lock.json"
-$RestrictSourceRepos = ($SourceRepoMode -ne "all")
+$RestrictsrcRepos = ($srcRepoMode -ne "all")
 $ChangedOnlyFallbackToLatest = $false
 
-function Get-SourceRepoState {
+function Get-srcRepoState {
     param([string] $RepoPath)
 
     $repoName = Split-Path -Leaf $RepoPath
@@ -98,13 +111,13 @@ function Get-SourceRepoState {
     return [PSCustomObject] $state
 }
 
-function Get-ChangedSourceRepos {
+function Get-ChangedsrcRepos {
     param(
-        [string] $SourceRoot,
+        [string] $srcRoot,
         [string] $LockPath
     )
 
-    if (-not (Test-Path $SourceRoot)) {
+    if (-not (Test-Path $srcRoot)) {
         return [PSCustomObject]@{
             HasLock = $false
             ChangedRepos = @()
@@ -112,15 +125,15 @@ function Get-ChangedSourceRepos {
         }
     }
 
-    $repos = @(Get-ChildItem -Path $SourceRoot -Directory)
-    $repoStates = @($repos | ForEach-Object { Get-SourceRepoState -RepoPath $_.FullName })
+    $repos = @(Get-ChildItem -Path $srcRoot -Directory)
+    $repoStates = @($repos | ForEach-Object { Get-srcRepoState -RepoPath $_.FullName })
 
     $hasLock = Test-Path $LockPath
     $previousByName = @{}
     if ($hasLock) {
         try {
             $lock = Get-Content $LockPath -Raw | ConvertFrom-Json
-            foreach ($repo in @($lock.source_repositories)) {
+            foreach ($repo in @($lock.src_repositories)) {
                 if ($repo.name) {
                     $previousByName[$repo.name] = $repo
                 }
@@ -161,18 +174,18 @@ function Get-ChangedSourceRepos {
     }
 }
 
-function Resolve-SelectedSourceRepos {
+function Resolve-SelectedsrcRepos {
     param(
-        [string] $SourceRoot,
+        [string] $srcRoot,
         [string] $Mode,
         [string[]] $RequestedNames
     )
 
-    if (-not (Test-Path $SourceRoot)) {
+    if (-not (Test-Path $srcRoot)) {
         return @()
     }
 
-    $repos = @(Get-ChildItem -Path $SourceRoot -Directory)
+    $repos = @(Get-ChildItem -Path $srcRoot -Directory)
     if ($repos.Count -eq 0) {
         return @()
     }
@@ -183,13 +196,13 @@ function Resolve-SelectedSourceRepos {
 
     if ($Mode -eq "selected") {
         if (-not $RequestedNames -or $RequestedNames.Count -eq 0) {
-            throw "SourceRepoMode=selected requires at least one value in SourceRepoNames."
+            throw "srcRepoMode=selected requires at least one value in srcRepoNames."
         }
 
         $available = @($repos | ForEach-Object { $_.Name })
         $missing = @($RequestedNames | Where-Object { $_ -notin $available })
         if ($missing.Count -gt 0) {
-            throw "Selected source repositories not found: $($missing -join ', ')"
+            throw "Selected src repositories not found: $($missing -join ', ')"
         }
 
         return @($RequestedNames)
@@ -203,23 +216,23 @@ function Resolve-SelectedSourceRepos {
 
     return @($latest.Name)
 }
-$CurrentSourceRepoStates = @()
-if ($SourceRepoMode -eq "changed-only") {
-    $changedResult = Get-ChangedSourceRepos -SourceRoot $SourceRootPath -LockPath $SkillLockPath
-    $CurrentSourceRepoStates = @($changedResult.RepoStates)
+$CurrentsrcRepoStates = @()
+if ($srcRepoMode -eq "changed-only") {
+    $changedResult = Get-ChangedsrcRepos -srcRoot $srcRootPath -LockPath $SkillLockPath
+    $CurrentsrcRepoStates = @($changedResult.RepoStates)
 
     if (-not $changedResult.HasLock) {
         $ChangedOnlyFallbackToLatest = $true
-        $SelectedSourceRepos = @(Resolve-SelectedSourceRepos -SourceRoot $SourceRootPath -Mode "latest" -RequestedNames @())
+        $SelectedsrcRepos = @(Resolve-SelectedsrcRepos -srcRoot $srcRootPath -Mode "latest" -RequestedNames @())
     }
     else {
-        $SelectedSourceRepos = @($changedResult.ChangedRepos)
+        $SelectedsrcRepos = @($changedResult.ChangedRepos)
     }
 }
 else {
-    $SelectedSourceRepos = @(Resolve-SelectedSourceRepos -SourceRoot $SourceRootPath -Mode $SourceRepoMode -RequestedNames $SourceRepoNames)
-    if (Test-Path $SourceRootPath) {
-        $CurrentSourceRepoStates = @(Get-ChildItem -Path $SourceRootPath -Directory | ForEach-Object { Get-SourceRepoState -RepoPath $_.FullName })
+    $SelectedsrcRepos = @(Resolve-SelectedsrcRepos -srcRoot $srcRootPath -Mode $srcRepoMode -RequestedNames $srcRepoNames)
+    if (Test-Path $srcRootPath) {
+        $CurrentsrcRepoStates = @(Get-ChildItem -Path $srcRootPath -Directory | ForEach-Object { Get-srcRepoState -RepoPath $_.FullName })
     }
 }
 
@@ -256,6 +269,13 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 3. Load only relevant lines from `skills-catalog.ndjson`.
 4. Avoid loading the entire catalog unless explicitly needed.
 
+## Execution Rule (Mandatory)
+
+1. Do not stop at `SKILL.md`, `workflow.md`, or `skills-manifest.json`.
+2. After filtering candidate entries from `skills-catalog.ndjson`, open at least one concrete skill file from the `path` field.
+3. If multiple candidates exist, open the best match first, then continue with implementation using that skill.
+4. If a `path` under `AI-skills-bank/src/` is missing, report it explicitly and request re-aggregation with src repos included.
+
 ## Files
 
 - `skills-manifest.json`: Summary, counts, and top triggers.
@@ -277,13 +297,13 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 Each index item contains:
 
 ```json
-{"id":"...","triggers":["..."],"source":"...","primary_hub":"...","is_primary":true,"match_score":8}
+{"id":"...","triggers":["..."],"src":"...","primary_hub":"...","is_primary":true,"match_score":8}
 ```
 
 Each NDJSON item contains:
 
 ```json
-{"id":"...","description":"...","path":"...","triggers":["..."],"source":"...","primary_hub":"...","assigned_hubs":["..."],"match_score":8,"is_primary":true}
+{"id":"...","description":"...","path":"...","triggers":["..."],"src":"...","primary_hub":"...","assigned_hubs":["..."],"match_score":8,"is_primary":true}
 ```
 
 ## Notes
@@ -443,13 +463,13 @@ $SUB_HUB_DEFINITIONS = @{
 # MAIN AGGREGATION LOGIC
 # ============================================================================
 
-function Get-SkillSource {
+function Get-Skillsrc {
     param([string] $Path)
     
     if ($Path -match '_bmad') {
         return "internal:BMad"
     }
-    elseif ($Path -match 'AI-skills-bank[\\/]source[\\/]([^\\/]+)') {
+    elseif ($Path -match 'AI-skills-bank[\\/]src[\\/]([^\\/]+)') {
         return "external:$($matches[1])"
     }
     elseif ($Path -match 'antigravity-awesome-skills') {
@@ -509,9 +529,9 @@ function Load-SkillsFromFiles {
     param([array] $Roots)
 
     $skills = @()
-    $sourceRootResolved = $null
-    if ($SourceRootPath -and (Test-Path $SourceRootPath)) {
-        $sourceRootResolved = (Resolve-Path -LiteralPath $SourceRootPath).Path
+    $srcRootResolved = $null
+    if ($srcRootPath -and (Test-Path $srcRootPath)) {
+        $srcRootResolved = (Resolve-Path -LiteralPath $srcRootPath).Path
     }
 
     foreach ($root in $Roots) {
@@ -521,11 +541,11 @@ function Load-SkillsFromFiles {
 
         $skillFiles = Get-ChildItem -Path $root -Filter "SKILL.md" -Recurse -File
         foreach ($skillFile in $skillFiles) {
-            if ($sourceRootResolved) {
-                if ($skillFile.FullName.StartsWith($sourceRootResolved, [System.StringComparison]::OrdinalIgnoreCase)) {
-                    $relativeSourcePath = $skillFile.FullName.Substring($sourceRootResolved.Length).TrimStart('\', '/')
-                    $repoName = @($relativeSourcePath -split '[\\/]')[0]
-                    if (-not [string]::IsNullOrWhiteSpace($repoName) -and $RestrictSourceRepos -and ($repoName -notin $SelectedSourceRepos)) {
+            if ($srcRootResolved) {
+                if ($skillFile.FullName.StartsWith($srcRootResolved, [System.StringComparison]::OrdinalIgnoreCase)) {
+                    $relativesrcPath = $skillFile.FullName.Substring($srcRootResolved.Length).TrimStart('\', '/')
+                    $repoName = @($relativesrcPath -split '[\\/]')[0]
+                    if (-not [string]::IsNullOrWhiteSpace($repoName) -and $RestrictsrcRepos -and ($repoName -notin $SelectedsrcRepos)) {
                         continue
                     }
                 }
@@ -550,7 +570,7 @@ function Load-SkillsFromFiles {
                 description = $description
                 path = $skillPath
                 triggers = @(Build-TriggersFromId -Id $id)
-                source = Get-SkillSource -Path $skillFile.FullName
+                src = Get-Skillsrc -Path $skillFile.FullName
             }
         }
     }
@@ -724,7 +744,7 @@ function New-AssignedSkillRecord {
         description = $Skill.description
         path = $Skill.path
         triggers = @($Skill.triggers)
-        source = $Skill.source
+        src = $Skill.src
         primary_hub = $PrimaryHub
         assigned_hubs = @($AssignedHubs)
         match_score = [int] $MatchScore
@@ -772,7 +792,9 @@ function Write-SubHubFiles {
         [string] $MainHub,
         [string] $SubHub,
         [array] $Skills,
-        [hashtable] $SubHubDef
+        [hashtable] $SubHubDef,
+        [string] $RepoRoot,
+        [bool] $ValidateQuality = $true
     )
 
     $skillName = "skills-$MainHub-$SubHub"
@@ -799,7 +821,7 @@ function Write-SubHubFiles {
         sub_hub = $SubHub
         description = $SubHubDef.description
         skill_count = $Skills.Count
-        source_count = (@($Skills.source | Select-Object -Unique)).Count
+        src_count = (@($Skills.src | Select-Object -Unique)).Count
         top_triggers = @($topTriggers)
         generated_at = (Get-Date -Format "yyyy-MM-ddTHH:mm:ssK")
         files = [ordered]@{
@@ -814,7 +836,7 @@ function Write-SubHubFiles {
         [ordered]@{
             id = $skill.id
             triggers = @($skill.triggers | Select-Object -First 5)
-            source = $skill.source
+            src = $skill.src
             primary_hub = $skill.primary_hub
             is_primary = [bool] $skill.is_primary
             match_score = [int] $skill.match_score
@@ -827,12 +849,24 @@ function Write-SubHubFiles {
             description = $skill.description
             path = $skill.path
             triggers = @($skill.triggers)
-            source = $skill.source
+            src = $skill.src
             primary_hub = $skill.primary_hub
             assigned_hubs = @($skill.assigned_hubs)
             match_score = [int] $skill.match_score
             is_primary = [bool] $skill.is_primary
         } | ConvertTo-Json -Compress
+    }
+
+    # Run quality validation if enabled
+    if ($ValidateQuality) {
+        # Simply convert manifest hashtable to PSCustomObject (PowerShell handles nested objects)
+        $manifestObj = [PSCustomObject]$manifest
+        $report = New-ValidationReport -SubHubKey "$MainHub/$SubHub" -Manifest $manifestObj -CatalogItems $catalogLines -WorkflowText $workflowMd -RepoRoot $RepoRoot
+        Write-ValidationReport -Report $report
+        if (-not $report.passed) {
+            Write-Host "[ERROR] Quality validation failed for $MainHub/$SubHub. Fix issues above before proceeding." -ForegroundColor Red
+            return $false
+        }
     }
 
     if (-not $DryRun) {
@@ -843,6 +877,8 @@ function Write-SubHubFiles {
         Write-FileUtf8NoBom -Path (Join-Path $OutPath "skills-index.json") -Content (($indexItems | ConvertTo-Json -Depth 6) + [Environment]::NewLine)
         Write-FileUtf8NoBom -Path (Join-Path $OutPath "skills-catalog.ndjson") -Content (($catalogLines -join [Environment]::NewLine) + [Environment]::NewLine)
     }
+    
+    return $true
 }
 
 # ============================================================================
@@ -850,16 +886,16 @@ function Write-SubHubFiles {
 # ============================================================================
 
 Write-Host "[INFO] Aggregated Skill System - Initialization" -ForegroundColor Cyan
-Write-Host "[INFO] Source dir: $SourceHubsDir"
+Write-Host "[INFO] src dir: $srcHubsDir"
 Write-Host "[INFO] Output dir: $OutputDir"
-if ($SourceRepoMode -eq "changed-only" -and $ChangedOnlyFallbackToLatest) {
-    Write-Host "[WARN] Source repo mode: changed-only (no previous lock found). Falling back to latest: $($SelectedSourceRepos -join ', ')" -ForegroundColor Yellow
+if ($srcRepoMode -eq "changed-only" -and $ChangedOnlyFallbackToLatest) {
+    Write-Host "[WARN] src repo mode: changed-only (no previous lock found). Falling back to latest: $($SelectedsrcRepos -join ', ')" -ForegroundColor Yellow
 }
-elseif ($SelectedSourceRepos.Count -gt 0) {
-    Write-Host "[INFO] Source repo mode: $SourceRepoMode (selected: $($SelectedSourceRepos -join ', '))"
+elseif ($SelectedsrcRepos.Count -gt 0) {
+    Write-Host "[INFO] src repo mode: $srcRepoMode (selected: $($SelectedsrcRepos -join ', '))"
 }
 else {
-    Write-Host "[INFO] Source repo mode: $SourceRepoMode (no external source repos selected)"
+    Write-Host "[INFO] src repo mode: $srcRepoMode (no external src repos selected)"
 }
 Write-Host "[INFO] Multi-hub mode: $AllowMultiHub (max hubs per skill: $MaxHubsPerSkill, primary>=${PrimaryMinScore}, secondary>=${SecondaryMinScore})"
 Write-Host ""
@@ -873,11 +909,11 @@ if (-not $DryRun) {
 # Load all skills from existing hubs or fallback file discovery
 Write-Host "[INFO] Step 1: Loading skills..."
 $allSkills = @()
-$sourceCount = 0
+$srcCount = 0
 
 $manifestFiles = @()
-if (Test-Path $SourceHubsDir) {
-    $manifestFiles = Get-ChildItem -Path $SourceHubsDir -Filter "hub-manifest.json" -Recurse
+if (Test-Path $srcHubsDir) {
+    $manifestFiles = Get-ChildItem -Path $srcHubsDir -Filter "hub-manifest.json" -Recurse
 }
 
 if ($manifestFiles.Count -gt 0) {
@@ -891,20 +927,20 @@ if ($manifestFiles.Count -gt 0) {
                 description = $skill.description
                 path = $skillPath
                 triggers = @($skill.triggers)
-                source = Get-SkillSource -Path $skill.path
+                src = Get-Skillsrc -Path $skill.path
             }
 
             $allSkills += $skillObj
-            $sourceCount++
+            $srcCount++
         }
     }
 }
 else {
-    Write-Host "[WARN] No hub-manifest.json found in $SourceHubsDir; using fallback roots: $($FallbackSkillRoots -join ', ')" -ForegroundColor Yellow
+    Write-Host "[WARN] No hub-manifest.json found in $srcHubsDir; using fallback roots: $($FallbackSkillRoots -join ', ')" -ForegroundColor Yellow
     $allSkills = Load-SkillsFromFiles -Roots $FallbackSkillRoots
 }
 
-Write-Host "[✓] Loaded $($allSkills.Count) skills from $(($allSkills.source | Select-Object -Unique).Count) sources"
+Write-Host "[✓] Loaded $($allSkills.Count) skills from $(($allSkills.src | Select-Object -Unique).Count) srcs"
 Write-Host ""
 
 # Categorize into sub-hubs
@@ -991,7 +1027,10 @@ foreach ($subHubKey in $subHubMap.Keys) {
         path = ((Join-Path $subHubData.main $subHubData.sub) -replace '\\', '/')
     }
     
-    Write-SubHubFiles -OutPath $outPath -MainHub $subHubData.main -SubHub $subHubData.sub -Skills $uniqueSkills -SubHubDef $subHubDef
+    $success = Write-SubHubFiles -OutPath $outPath -MainHub $subHubData.main -SubHub $subHubData.sub -Skills $uniqueSkills -SubHubDef $subHubDef -RepoRoot $RepoRoot -ValidateQuality $true
+    if (-not $success) {
+        Write-Host "  [!] Skipped $($subHubData.main)/$($subHubData.sub) - validation failed" -ForegroundColor Yellow
+    }
 }
 
 if (-not $DryRun) {
@@ -999,10 +1038,10 @@ if (-not $DryRun) {
 
     $lockPayload = [ordered]@{
         generated_at = (Get-Date -Format "yyyy-MM-ddTHH:mm:ssK")
-        source_repo_mode = $SourceRepoMode
-        selected_source_repos = @($SelectedSourceRepos)
-        source_repositories = @(
-            $CurrentSourceRepoStates |
+        src_repo_mode = $srcRepoMode
+        selected_src_repos = @($SelectedsrcRepos)
+        src_repositories = @(
+            $CurrentsrcRepoStates |
                 Sort-Object name |
                 ForEach-Object {
                     [ordered]@{

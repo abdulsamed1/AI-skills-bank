@@ -1,186 +1,186 @@
 [
     {
-        "id":  "algorithmic-art",
-        "triggers":  [
-                         "algorithmic",
-                         "art"
-                     ],
-        "source":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
+        "id": "algorithmic-art",
+        "triggers": [
+            "algorithmic",
+            "art"
+        ],
+        "src": "external:antigravity-awesome-skills",
+        "primary_hub": "frontend/web-basics",
+        "is_primary": true,
+        "match_score": 4
     },
     {
-        "id":  "antigravity-design-expert",
-        "triggers":  [
-                         "antigravity",
-                         "design",
-                         "expert"
-                     ],
-        "source":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
+        "id": "antigravity-design-expert",
+        "triggers": [
+            "antigravity",
+            "design",
+            "expert"
+        ],
+        "src": "external:antigravity-awesome-skills",
+        "primary_hub": "frontend/web-basics",
+        "is_primary": true,
+        "match_score": 4
     },
     {
-        "id":  "bun-development",
-        "triggers":  [
-                         "bun",
-                         "development"
-                     ],
-        "source":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
+        "id": "bun-development",
+        "triggers": [
+            "bun",
+            "development"
+        ],
+        "src": "external:antigravity-awesome-skills",
+        "primary_hub": "frontend/web-basics",
+        "is_primary": true,
+        "match_score": 4
     },
     {
-        "id":  "discord-bot-architect",
-        "triggers":  [
-                         "discord",
-                         "bot",
-                         "architect"
-                     ],
-        "source":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
+        "id": "discord-bot-architect",
+        "triggers": [
+            "discord",
+            "bot",
+            "architect"
+        ],
+        "src": "external:antigravity-awesome-skills",
+        "primary_hub": "frontend/web-basics",
+        "is_primary": true,
+        "match_score": 4
     },
     {
-        "id":  "fixing-accessibility",
-        "triggers":  [
-                         "fixing",
-                         "accessibility"
-                     ],
-        "source":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
+        "id": "fixing-accessibility",
+        "triggers": [
+            "fixing",
+            "accessibility"
+        ],
+        "src": "external:antigravity-awesome-skills",
+        "primary_hub": "frontend/web-basics",
+        "is_primary": true,
+        "match_score": 4
     },
     {
-        "id":  "fixing-metadata",
-        "triggers":  [
-                         "fixing",
-                         "metadata"
-                     ],
-        "source":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
+        "id": "fixing-metadata",
+        "triggers": [
+            "fixing",
+            "metadata"
+        ],
+        "src": "external:antigravity-awesome-skills",
+        "primary_hub": "frontend/web-basics",
+        "is_primary": true,
+        "match_score": 4
     },
     {
-        "id":  "fixing-motion-performance",
-        "triggers":  [
-                         "fixing",
-                         "motion",
-                         "performance"
-                     ],
-        "source":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
+        "id": "fixing-motion-performance",
+        "triggers": [
+            "fixing",
+            "motion",
+            "performance"
+        ],
+        "src": "external:antigravity-awesome-skills",
+        "primary_hub": "frontend/web-basics",
+        "is_primary": true,
+        "match_score": 4
     },
     {
-        "id":  "frontend-slides",
-        "triggers":  [
-                         "frontend",
-                         "slides"
-                     ],
-        "source":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
+        "id": "frontend-slides",
+        "triggers": [
+            "frontend",
+            "slides"
+        ],
+        "src": "external:antigravity-awesome-skills",
+        "primary_hub": "frontend/web-basics",
+        "is_primary": true,
+        "match_score": 4
     },
     {
-        "id":  "health-trend-analyzer",
-        "triggers":  [
-                         "health",
-                         "trend",
-                         "analyzer"
-                     ],
-        "source":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
+        "id": "health-trend-analyzer",
+        "triggers": [
+            "health",
+            "trend",
+            "analyzer"
+        ],
+        "src": "external:antigravity-awesome-skills",
+        "primary_hub": "frontend/web-basics",
+        "is_primary": true,
+        "match_score": 4
     },
     {
-        "id":  "html-injection-testing",
-        "triggers":  [
-                         "html",
-                         "injection",
-                         "testing"
-                     ],
-        "source":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
+        "id": "html-injection-testing",
+        "triggers": [
+            "html",
+            "injection",
+            "testing"
+        ],
+        "src": "external:antigravity-awesome-skills",
+        "primary_hub": "frontend/web-basics",
+        "is_primary": true,
+        "match_score": 4
     },
     {
-        "id":  "pdf-official",
-        "triggers":  [
-                         "pdf",
-                         "official"
-                     ],
-        "source":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
+        "id": "pdf-official",
+        "triggers": [
+            "pdf",
+            "official"
+        ],
+        "src": "external:antigravity-awesome-skills",
+        "primary_hub": "frontend/web-basics",
+        "is_primary": true,
+        "match_score": 4
     },
     {
-        "id":  "tailwind-design-system",
-        "triggers":  [
-                         "tailwind",
-                         "design",
-                         "system"
-                     ],
-        "source":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  8
+        "id": "tailwind-design-system",
+        "triggers": [
+            "tailwind",
+            "design",
+            "system"
+        ],
+        "src": "external:antigravity-awesome-skills",
+        "primary_hub": "frontend/web-basics",
+        "is_primary": true,
+        "match_score": 8
     },
     {
-        "id":  "tailwind-patterns",
-        "triggers":  [
-                         "tailwind",
-                         "patterns"
-                     ],
-        "source":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
+        "id": "tailwind-patterns",
+        "triggers": [
+            "tailwind",
+            "patterns"
+        ],
+        "src": "external:antigravity-awesome-skills",
+        "primary_hub": "frontend/web-basics",
+        "is_primary": true,
+        "match_score": 4
     },
     {
-        "id":  "wiki-vitepress",
-        "triggers":  [
-                         "wiki",
-                         "vitepress"
-                     ],
-        "source":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
+        "id": "wiki-vitepress",
+        "triggers": [
+            "wiki",
+            "vitepress"
+        ],
+        "src": "external:antigravity-awesome-skills",
+        "primary_hub": "frontend/web-basics",
+        "is_primary": true,
+        "match_score": 4
     },
     {
-        "id":  "wordpress-theme-development",
-        "triggers":  [
-                         "wordpress",
-                         "theme",
-                         "development"
-                     ],
-        "source":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
+        "id": "wordpress-theme-development",
+        "triggers": [
+            "wordpress",
+            "theme",
+            "development"
+        ],
+        "src": "external:antigravity-awesome-skills",
+        "primary_hub": "frontend/web-basics",
+        "is_primary": true,
+        "match_score": 4
     },
     {
-        "id":  "xss-html-injection",
-        "triggers":  [
-                         "xss",
-                         "html",
-                         "injection"
-                     ],
-        "source":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
+        "id": "xss-html-injection",
+        "triggers": [
+            "xss",
+            "html",
+            "injection"
+        ],
+        "src": "external:antigravity-awesome-skills",
+        "primary_hub": "frontend/web-basics",
+        "is_primary": true,
+        "match_score": 4
     }
 ]

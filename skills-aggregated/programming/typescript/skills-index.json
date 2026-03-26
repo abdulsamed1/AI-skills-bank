@@ -4,7 +4,7 @@
         "triggers":  [
                          "convex"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  7
@@ -15,7 +15,7 @@
                          "dbos",
                          "typescript"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  12
@@ -27,7 +27,7 @@
                          "orm",
                          "expert"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  9
@@ -38,7 +38,7 @@
                          "fp",
                          "refactor"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  7
@@ -50,7 +50,7 @@
                          "ts",
                          "errors"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  7
@@ -62,7 +62,7 @@
                          "ts",
                          "pragmatic"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  7
@@ -76,7 +76,7 @@
                          "component",
                          "scaffold"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  7
@@ -89,7 +89,7 @@
                          "typescript",
                          "scaffold"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  7
@@ -101,7 +101,7 @@
                          "agents",
                          "ts"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  7
@@ -114,7 +114,7 @@
                          "node",
                          "ts"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  7
@@ -125,7 +125,7 @@
                          "senior",
                          "frontend"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  7
@@ -136,7 +136,7 @@
                          "trigger",
                          "dev"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  7
@@ -148,7 +148,7 @@
                          "advanced",
                          "types"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  18
@@ -159,7 +159,7 @@
                          "typescript",
                          "expert"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  7
@@ -170,7 +170,7 @@
                          "typescript",
                          "pro"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  16
@@ -182,7 +182,7 @@
                          "validation",
                          "expert"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  7
@@ -194,7 +194,7 @@
                          "store",
                          "ts"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  7

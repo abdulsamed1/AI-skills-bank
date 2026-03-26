@@ -4,7 +4,7 @@
         "triggers":  [
                          "agentmail"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -16,7 +16,7 @@
                          "design",
                          "principles"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  17
@@ -27,7 +27,7 @@
                          "api",
                          "documentation"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  8
@@ -39,7 +39,7 @@
                          "documentation",
                          "generator"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -50,7 +50,7 @@
                          "api",
                          "documenter"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  8
@@ -62,7 +62,7 @@
                          "endpoint",
                          "builder"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  8
@@ -75,7 +75,7 @@
                          "bug",
                          "bounty"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  12
@@ -86,7 +86,7 @@
                          "api",
                          "patterns"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  16
@@ -99,7 +99,7 @@
                          "best",
                          "practices"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -111,7 +111,7 @@
                          "security",
                          "testing"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  12
@@ -125,7 +125,7 @@
                          "api",
                          "mock"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -135,7 +135,7 @@
         "triggers":  [
                          "appdeploy"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -147,7 +147,7 @@
                          "secrets",
                          "rotation"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -160,7 +160,7 @@
                          "translation",
                          "ts"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -173,7 +173,7 @@
                          "apicenter",
                          "dotnet"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -186,7 +186,7 @@
                          "apimanagement",
                          "dotnet"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -197,7 +197,7 @@
                          "backend",
                          "architect"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -209,7 +209,7 @@
                          "security",
                          "coder"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -221,7 +221,7 @@
                          "behavioral",
                          "xray"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -233,7 +233,7 @@
                          "knowledge",
                          "extraction"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -246,7 +246,7 @@
                          "backend",
                          "patterns"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -259,7 +259,7 @@
                          "security",
                          "review"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -270,7 +270,7 @@
                          "claude",
                          "api"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -281,7 +281,7 @@
                          "claude",
                          "monitor"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -294,7 +294,7 @@
                          "doc",
                          "generate"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -305,7 +305,7 @@
                          "comfyui",
                          "gateway"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  8
@@ -315,7 +315,7 @@
         "triggers":  [
                          "documentation"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -328,7 +328,7 @@
                          "doc",
                          "generate"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -339,7 +339,7 @@
                          "documentation",
                          "templates"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -350,7 +350,7 @@
                          "dotnet",
                          "backend"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -362,7 +362,7 @@
                          "crypto",
                          "wallet"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -373,7 +373,7 @@
                          "exa",
                          "search"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -385,7 +385,7 @@
                          "api",
                          "routes"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -396,7 +396,7 @@
                          "firecrawl",
                          "scraper"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -407,7 +407,7 @@
                          "fp",
                          "async"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -419,7 +419,7 @@
                          "taskeither",
                          "ref"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -431,7 +431,7 @@
                          "api",
                          "dev"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -443,7 +443,7 @@
                          "api",
                          "integration"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -453,7 +453,7 @@
         "triggers":  [
                          "github"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -463,7 +463,7 @@
         "triggers":  [
                          "graphql"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  6
@@ -474,7 +474,7 @@
                          "graphql",
                          "architect"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -487,7 +487,7 @@
                          "dataset",
                          "viewer"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -499,7 +499,7 @@
                          "face",
                          "evaluation"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -512,7 +512,7 @@
                          "tool",
                          "builder"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -522,7 +522,7 @@
         "triggers":  [
                          "instagram"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -534,7 +534,7 @@
                          "load",
                          "testing"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -544,7 +544,7 @@
         "triggers":  [
                          "manifest"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -557,7 +557,7 @@
                          "api",
                          "development"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -571,7 +571,7 @@
                          "multi",
                          "platform"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -583,7 +583,7 @@
                          "migration",
                          "helper"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -595,7 +595,7 @@
                          "rpc",
                          "api"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -607,7 +607,7 @@
                          "shopify",
                          "integration"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -619,7 +619,7 @@
                          "woocommerce",
                          "bridge"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  8
@@ -631,7 +631,7 @@
                          "spec",
                          "generation"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  8
@@ -642,7 +642,7 @@
                          "podcast",
                          "generation"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -653,7 +653,7 @@
                          "pubmed",
                          "database"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  8
@@ -664,7 +664,7 @@
                          "reference",
                          "builder"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -675,7 +675,7 @@
                          "security",
                          "audit"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -686,7 +686,7 @@
                          "shopify",
                          "development"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  8
@@ -696,7 +696,7 @@
         "triggers":  [
                          "sveltekit"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -707,7 +707,7 @@
                          "tavily",
                          "web"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -718,7 +718,7 @@
                          "uniprot",
                          "database"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  8
@@ -728,7 +728,7 @@
         "triggers":  [
                          "wordpress"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -740,7 +740,7 @@
                          "plugin",
                          "development"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  8

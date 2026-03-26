@@ -4,7 +4,7 @@
     "sub_hub":  "react-nextjs",
     "description":  "React and Next.js: components, hooks, server-side rendering, and performance optimization",
     "skill_count":  36,
-    "source_count":  1,
+    "src_count":  1,
     "top_triggers":  [
                          "react",
                          "patterns",
@@ -27,7 +27,7 @@
                          "development",
                          "setup"
                      ],
-    "generated_at":  "2026-03-26T22:32:45+02:00",
+    "generated_at":  "2026-03-26T23:44:16+02:00",
     "files":  {
                   "skill":  "SKILL.md",
                   "workflow":  "workflow.md",

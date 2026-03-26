@@ -5,7 +5,7 @@
                          "algolia",
                          "search"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -17,7 +17,7 @@
                          "e2e",
                          "testing"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -28,7 +28,7 @@
                          "baseline",
                          "ui"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -41,7 +41,7 @@
                          "coding",
                          "standards"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -54,7 +54,7 @@
                          "frontend",
                          "patterns"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -66,7 +66,7 @@
                          "code",
                          "expert"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -78,7 +78,7 @@
                          "auto",
                          "research"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -89,7 +89,7 @@
                          "discord",
                          "automation"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -101,7 +101,7 @@
                          "tailwind",
                          "setup"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -112,7 +112,7 @@
                          "fp",
                          "react"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  8
@@ -124,7 +124,7 @@
                          "ts",
                          "react"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  8
@@ -135,7 +135,7 @@
                          "frontend",
                          "developer"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -148,7 +148,7 @@
                          "dark",
                          "ts"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -160,7 +160,7 @@
                          "hooks",
                          "automation"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -172,7 +172,7 @@
                          "page",
                          "generator"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -183,7 +183,7 @@
                          "mobile",
                          "developer"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -195,7 +195,7 @@
                          "data",
                          "fetching"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -208,7 +208,7 @@
                          "router",
                          "patterns"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  10
@@ -220,7 +220,7 @@
                          "best",
                          "practices"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -232,7 +232,7 @@
                          "supabase",
                          "auth"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -244,7 +244,7 @@
                          "best",
                          "practices"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -256,7 +256,7 @@
                          "component",
                          "performance"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -268,7 +268,7 @@
                          "flow",
                          "architect"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -279,7 +279,7 @@
                          "react",
                          "modernization"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  8
@@ -291,7 +291,7 @@
                          "native",
                          "architecture"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -303,7 +303,7 @@
                          "nextjs",
                          "development"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  13
@@ -314,7 +314,7 @@
                          "react",
                          "patterns"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  8
@@ -326,7 +326,7 @@
                          "state",
                          "management"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -338,7 +338,7 @@
                          "ui",
                          "patterns"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -350,7 +350,7 @@
                          "best",
                          "practices"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -361,7 +361,7 @@
                          "shopify",
                          "apps"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -373,7 +373,7 @@
                          "3d",
                          "integration"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -385,7 +385,7 @@
                          "query",
                          "expert"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -396,7 +396,7 @@
                          "trpc",
                          "fullstack"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -409,7 +409,7 @@
                          "sdk",
                          "expert"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  8
@@ -420,7 +420,7 @@
                          "yes",
                          "md"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4

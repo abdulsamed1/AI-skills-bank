@@ -92,7 +92,7 @@ triggers: [array of keywords for skill discovery]
 [Table preview showing 50 skills with count of remainder]
 
 ## Detailed Skills
-[Full skill definitions with triggers and source attribution]
+[Full skill definitions with triggers and src attribution]
 
 ## When to Use This Skill Pack
 [Usage guidance]
@@ -100,16 +100,16 @@ triggers: [array of keywords for skill discovery]
 ## Token Optimization Notes
 [Deduplication and efficiency metrics]
 
-## Sourced From
+## srcd From
 [Repository attribution]
 ```
 
-## Skill Source Attribution
+## Skill src Attribution
 
 Each skill indicates its origin:
 
 - **internal:BMad** — From internal _bmad/ repository (framework tools, processes)
-- **external:Antigravity** — From external AI-skills-bank/source/ repository (domain expertise)
+- **external:Antigravity** — From external AI-skills-bank/src/ repository (domain expertise)
 
 ## Automation & Maintenance
 
@@ -117,18 +117,18 @@ Each skill indicates its origin:
 
 | Script | Purpose |
 |--------|---------|
-| `build-hubs-multi-source.ps1` | Discover & categorize skills from multiple repos |
+| `build-hubs-multi-src.ps1` | Discover & categorize skills from multiple repos |
 | `aggregate-skills-to-subhubs.ps1` | Create deduplicated sub-hub SKILL.md files |
 | `populate-skill-triggers.ps1` | Extract triggers from skills into YAML frontmatter |
 | `sync-hubs.ps1` | Distribute sub-hubs to 3 AI tools (Gemini, Antigravity, Copilot) |
 
 ### Adding New Skills
 
-If you add skills to `_bmad/` or `AI-skills-bank/source/`:
+If you add skills to `_bmad/` or `AI-skills-bank/src/`:
 
 ```powershell
 # Step 1: Rebuild discovery
-./build-hubs-multi-source.ps1
+./build-hubs-multi-src.ps1
 
 # Step 2: Reaggregate with deduplication
 ./aggregate-skills-to-subhubs.ps1
@@ -215,7 +215,7 @@ When this project context loads, the AI tool automatically loads ONLY these 5 su
 - [Full System Summary](../AGGREGATED-SKILLS-SUMMARY.md)
 - [Parent Directory](../)
 - [Inner Repository](_bmad/)
-- [External Repository](../source/)
+- [External Repository](../src/)
 
 ## Last Updated
 

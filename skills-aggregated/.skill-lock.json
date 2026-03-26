@@ -1,24 +1,23 @@
 {
-    "generated_at":  "2026-03-26T22:32:46+02:00",
-    "source_repo_mode":  "changed-only",
-    "selected_source_repos":  [
-                                  "antigravity-awesome-skills",
-                                  "awesome-claude-code-subagents"
-                              ],
-    "source_repositories":  [
-                                {
-                                    "name":  "antigravity-awesome-skills",
-                                    "vcs":  "git",
-                                    "revision":  "eaebf3e101d87aa5906323604065f76001ac7e6f",
-                                    "dirty":  false,
-                                    "fingerprint":  "git:6d22aa4dd8796912e807397ec92ffe31a0f3d32c69673fc1456cf009851e8071"
-                                },
-                                {
-                                    "name":  "awesome-claude-code-subagents",
-                                    "vcs":  "git",
-                                    "revision":  "8146b953a6951ea25268cf6d9ff5765f2483a58f",
-                                    "dirty":  true,
-                                    "fingerprint":  "git:0816fb5378a96159fc19e4f9700eee4bffe2db44407a9a6f3de9b758e94e6cc7"
-                                }
-                            ]
+    "generated_at":  "2026-03-26T23:44:17+02:00",
+    "src_repo_mode":  "latest",
+    "selected_src_repos":  [
+                               "antigravity-awesome-skills"
+                           ],
+    "src_repositories":  [
+                             {
+                                 "name":  "antigravity-awesome-skills",
+                                 "vcs":  "git",
+                                 "revision":  "eaebf3e101d87aa5906323604065f76001ac7e6f",
+                                 "dirty":  true,
+                                 "fingerprint":  "git:4e9dfa74056df8171eb45b902e2bbbff7d24428ed47efe4f0b60978ac821b2c4"
+                             },
+                             {
+                                 "name":  "awesome-claude-code-subagents",
+                                 "vcs":  "git",
+                                 "revision":  "8146b953a6951ea25268cf6d9ff5765f2483a58f",
+                                 "dirty":  true,
+                                 "fingerprint":  "git:2ab6bd6e2d2a90345ee1d269032d4b144e4b5356688dd064548213b0b3126b3d"
+                             }
+                         ]
 }

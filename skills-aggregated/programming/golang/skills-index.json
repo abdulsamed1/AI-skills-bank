@@ -5,7 +5,7 @@
                          "dbos",
                          "golang"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/golang",
         "is_primary":  true,
         "match_score":  20
@@ -17,7 +17,7 @@
                          "concurrency",
                          "patterns"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/golang",
         "is_primary":  true,
         "match_score":  15
@@ -28,7 +28,7 @@
                          "golang",
                          "pro"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/golang",
         "is_primary":  true,
         "match_score":  20
@@ -39,7 +39,7 @@
                          "go",
                          "playwright"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/golang",
         "is_primary":  true,
         "match_score":  7
@@ -51,7 +51,7 @@
                          "rod",
                          "master"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/golang",
         "is_primary":  true,
         "match_score":  7
@@ -62,7 +62,7 @@
                          "grpc",
                          "golang"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/golang",
         "is_primary":  true,
         "match_score":  20
@@ -74,7 +74,7 @@
                          "saas",
                          "launcher"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/golang",
         "is_primary":  true,
         "match_score":  7
@@ -85,7 +85,7 @@
                          "scroll",
                          "experience"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/golang",
         "is_primary":  true,
         "match_score":  7
@@ -97,7 +97,7 @@
                          "work",
                          "summary"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/golang",
         "is_primary":  true,
         "match_score":  7
@@ -109,7 +109,7 @@
                          "golang",
                          "pro"
                      ],
-        "source":  "external:antigravity-awesome-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/golang",
         "is_primary":  true,
         "match_score":  16

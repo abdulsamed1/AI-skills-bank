@@ -4,7 +4,7 @@
     "sub_hub":  "typescript",
     "description":  "TypeScript language expertise: types, patterns, advanced features, configuration, and best practices",
     "skill_count":  17,
-    "source_count":  1,
+    "src_count":  1,
     "top_triggers":  [
                          "typescript",
                          "ts",
@@ -27,7 +27,7 @@
                          "development",
                          "orm"
                      ],
-    "generated_at":  "2026-03-26T22:32:45+02:00",
+    "generated_at":  "2026-03-26T23:44:16+02:00",
     "files":  {
                   "skill":  "SKILL.md",
                   "workflow":  "workflow.md",
