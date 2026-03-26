@@ -1,0 +1,428 @@
+﻿[
+    {
+        "id":  "algolia-search",
+        "triggers":  [
+                         "algolia",
+                         "search"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "awt-e2e-testing",
+        "triggers":  [
+                         "awt",
+                         "e2e",
+                         "testing"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "baseline-ui",
+        "triggers":  [
+                         "baseline",
+                         "ui"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "cc-skill-coding-standards",
+        "triggers":  [
+                         "cc",
+                         "skill",
+                         "coding",
+                         "standards"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "cc-skill-frontend-patterns",
+        "triggers":  [
+                         "cc",
+                         "skill",
+                         "frontend",
+                         "patterns"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "claude-code-expert",
+        "triggers":  [
+                         "claude",
+                         "code",
+                         "expert"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "context7-auto-research",
+        "triggers":  [
+                         "context7",
+                         "auto",
+                         "research"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "discord-automation",
+        "triggers":  [
+                         "discord",
+                         "automation"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "expo-tailwind-setup",
+        "triggers":  [
+                         "expo",
+                         "tailwind",
+                         "setup"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "fp-react",
+        "triggers":  [
+                         "fp",
+                         "react"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "fp-ts-react",
+        "triggers":  [
+                         "fp",
+                         "ts",
+                         "react"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "frontend-developer",
+        "triggers":  [
+                         "frontend",
+                         "developer"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "frontend-ui-dark-ts",
+        "triggers":  [
+                         "frontend",
+                         "ui",
+                         "dark",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "git-hooks-automation",
+        "triggers":  [
+                         "git",
+                         "hooks",
+                         "automation"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "landing-page-generator",
+        "triggers":  [
+                         "landing",
+                         "page",
+                         "generator"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "mobile-developer",
+        "triggers":  [
+                         "mobile",
+                         "developer"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "native-data-fetching",
+        "triggers":  [
+                         "native",
+                         "data",
+                         "fetching"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "nextjs-app-router-patterns",
+        "triggers":  [
+                         "nextjs",
+                         "app",
+                         "router",
+                         "patterns"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "nextjs-best-practices",
+        "triggers":  [
+                         "nextjs",
+                         "best",
+                         "practices"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "nextjs-supabase-auth",
+        "triggers":  [
+                         "nextjs",
+                         "supabase",
+                         "auth"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "react-best-practices",
+        "triggers":  [
+                         "react",
+                         "best",
+                         "practices"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "react-component-performance",
+        "triggers":  [
+                         "react",
+                         "component",
+                         "performance"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "react-flow-architect",
+        "triggers":  [
+                         "react",
+                         "flow",
+                         "architect"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "react-modernization",
+        "triggers":  [
+                         "react",
+                         "modernization"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "react-native-architecture",
+        "triggers":  [
+                         "react",
+                         "native",
+                         "architecture"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "react-nextjs-development",
+        "triggers":  [
+                         "react",
+                         "nextjs",
+                         "development"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "react-patterns",
+        "triggers":  [
+                         "react",
+                         "patterns"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "react-state-management",
+        "triggers":  [
+                         "react",
+                         "state",
+                         "management"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "react-ui-patterns",
+        "triggers":  [
+                         "react",
+                         "ui",
+                         "patterns"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "remotion-best-practices",
+        "triggers":  [
+                         "remotion",
+                         "best",
+                         "practices"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "shopify-apps",
+        "triggers":  [
+                         "shopify",
+                         "apps"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "spline-3d-integration",
+        "triggers":  [
+                         "spline",
+                         "3d",
+                         "integration"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "tanstack-query-expert",
+        "triggers":  [
+                         "tanstack",
+                         "query",
+                         "expert"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "trpc-fullstack",
+        "triggers":  [
+                         "trpc",
+                         "fullstack"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "vercel-ai-sdk-expert",
+        "triggers":  [
+                         "vercel",
+                         "ai",
+                         "sdk",
+                         "expert"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "yes-md",
+        "triggers":  [
+                         "yes",
+                         "md"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    }
+]

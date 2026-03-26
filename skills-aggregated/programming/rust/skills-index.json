@@ -1,0 +1,228 @@
+﻿[
+    {
+        "id":  "azure-cosmos-rust",
+        "triggers":  [
+                         "azure",
+                         "cosmos",
+                         "rust"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-eventhub-rust",
+        "triggers":  [
+                         "azure",
+                         "eventhub",
+                         "rust"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-identity-rust",
+        "triggers":  [
+                         "azure",
+                         "identity",
+                         "rust"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-keyvault-certificates-rust",
+        "triggers":  [
+                         "azure",
+                         "keyvault",
+                         "certificates",
+                         "rust"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-keyvault-keys-rust",
+        "triggers":  [
+                         "azure",
+                         "keyvault",
+                         "keys",
+                         "rust"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-keyvault-secrets-rust",
+        "triggers":  [
+                         "azure",
+                         "keyvault",
+                         "secrets",
+                         "rust"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-storage-blob-rust",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "blob",
+                         "rust"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "bevy-ecs-expert",
+        "triggers":  [
+                         "bevy",
+                         "ecs",
+                         "expert"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "debugging-strategies",
+        "triggers":  [
+                         "debugging",
+                         "strategies"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "file-uploads",
+        "triggers":  [
+                         "file",
+                         "uploads"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "lightning-architecture-review",
+        "triggers":  [
+                         "lightning",
+                         "architecture",
+                         "review"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "makepad-skills",
+        "triggers":  [
+                         "makepad",
+                         "skills"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "memory-safety-patterns",
+        "triggers":  [
+                         "memory",
+                         "safety",
+                         "patterns"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "mtls-configuration",
+        "triggers":  [
+                         "mtls",
+                         "configuration"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "popup-cro",
+        "triggers":  [
+                         "popup",
+                         "cro"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "rust-async-patterns",
+        "triggers":  [
+                         "rust",
+                         "async",
+                         "patterns"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "rust-pro",
+        "triggers":  [
+                         "rust",
+                         "pro"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "systems-programming-rust-project",
+        "triggers":  [
+                         "systems",
+                         "programming",
+                         "rust",
+                         "project"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "zeroize-audit",
+        "triggers":  [
+                         "zeroize",
+                         "audit"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  7
+    }
+]

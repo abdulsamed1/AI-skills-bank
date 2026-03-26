@@ -1,0 +1,37 @@
+﻿{
+    "name":  "skills-devops-docker-k8s",
+    "main_hub":  "devops",
+    "sub_hub":  "docker-k8s",
+    "description":  "Container orchestration: Docker, Kubernetes, and deployment strategies",
+    "skill_count":  20,
+    "source_count":  1,
+    "top_triggers":  [
+                         "orchestration",
+                         "agent",
+                         "workflow",
+                         "patterns",
+                         "stack",
+                         "ai",
+                         "full",
+                         "k8s",
+                         "kubernetes",
+                         "architect",
+                         "ml",
+                         "linkerd",
+                         "manifest",
+                         "c4",
+                         "generator",
+                         "pipeline",
+                         "security",
+                         "event",
+                         "scaffolding",
+                         "engineer"
+                     ],
+    "generated_at":  "2026-03-26T21:39:41+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

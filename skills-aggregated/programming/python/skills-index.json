@@ -1,0 +1,898 @@
+﻿[
+    {
+        "id":  "agent-framework-azure-ai-py",
+        "triggers":  [
+                         "agent",
+                         "framework",
+                         "azure",
+                         "ai",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "agents-v2-py",
+        "triggers":  [
+                         "agents",
+                         "v2",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "astropy",
+        "triggers":  [
+                         "astropy"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "async-python-patterns",
+        "triggers":  [
+                         "async",
+                         "python",
+                         "patterns"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  20
+    },
+    {
+        "id":  "azure-ai-contentsafety-py",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "contentsafety",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-ai-contentunderstanding-py",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "contentunderstanding",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-ai-ml-py",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "ml",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-ai-projects-py",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "projects",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-ai-textanalytics-py",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "textanalytics",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-ai-transcription-py",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "transcription",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-ai-translation-document-py",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "translation",
+                         "document",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-ai-translation-text-py",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "translation",
+                         "text",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-ai-vision-imageanalysis-py",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "vision",
+                         "imageanalysis",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-ai-voicelive-py",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "voicelive",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-appconfiguration-py",
+        "triggers":  [
+                         "azure",
+                         "appconfiguration",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-containerregistry-py",
+        "triggers":  [
+                         "azure",
+                         "containerregistry",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-cosmos-db-py",
+        "triggers":  [
+                         "azure",
+                         "cosmos",
+                         "db",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-cosmos-py",
+        "triggers":  [
+                         "azure",
+                         "cosmos",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-data-tables-py",
+        "triggers":  [
+                         "azure",
+                         "data",
+                         "tables",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-eventgrid-py",
+        "triggers":  [
+                         "azure",
+                         "eventgrid",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-eventhub-py",
+        "triggers":  [
+                         "azure",
+                         "eventhub",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-identity-py",
+        "triggers":  [
+                         "azure",
+                         "identity",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-keyvault-py",
+        "triggers":  [
+                         "azure",
+                         "keyvault",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-messaging-webpubsubservice-py",
+        "triggers":  [
+                         "azure",
+                         "messaging",
+                         "webpubsubservice",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-mgmt-apicenter-py",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "apicenter",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-mgmt-apimanagement-py",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "apimanagement",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-mgmt-botservice-py",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "botservice",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-mgmt-fabric-py",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "fabric",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-monitor-ingestion-py",
+        "triggers":  [
+                         "azure",
+                         "monitor",
+                         "ingestion",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-monitor-opentelemetry-exporter-py",
+        "triggers":  [
+                         "azure",
+                         "monitor",
+                         "opentelemetry",
+                         "exporter",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-monitor-opentelemetry-py",
+        "triggers":  [
+                         "azure",
+                         "monitor",
+                         "opentelemetry",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-monitor-query-py",
+        "triggers":  [
+                         "azure",
+                         "monitor",
+                         "query",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-search-documents-py",
+        "triggers":  [
+                         "azure",
+                         "search",
+                         "documents",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-servicebus-py",
+        "triggers":  [
+                         "azure",
+                         "servicebus",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-speech-to-text-rest-py",
+        "triggers":  [
+                         "azure",
+                         "speech",
+                         "to",
+                         "text",
+                         "rest"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-storage-blob-py",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "blob",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-storage-file-datalake-py",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "file",
+                         "datalake",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-storage-file-share-py",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "file",
+                         "share",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-storage-queue-py",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "queue",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "biopython",
+        "triggers":  [
+                         "biopython"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "copilot-sdk",
+        "triggers":  [
+                         "copilot",
+                         "sdk"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "dbos-python",
+        "triggers":  [
+                         "dbos",
+                         "python"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "django-access-review",
+        "triggers":  [
+                         "django",
+                         "access",
+                         "review"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "django-pro",
+        "triggers":  [
+                         "django",
+                         "pro"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "fastapi-pro",
+        "triggers":  [
+                         "fastapi",
+                         "pro"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "fastapi-router-py",
+        "triggers":  [
+                         "fastapi",
+                         "router",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "fastapi-templates",
+        "triggers":  [
+                         "fastapi",
+                         "templates"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "hosted-agents-v2-py",
+        "triggers":  [
+                         "hosted",
+                         "agents",
+                         "v2",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "junta-leiloeiros",
+        "triggers":  [
+                         "junta",
+                         "leiloeiros"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "m365-agents-py",
+        "triggers":  [
+                         "m365",
+                         "agents",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "matplotlib",
+        "triggers":  [
+                         "matplotlib"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "n8n-code-python",
+        "triggers":  [
+                         "n8n",
+                         "code",
+                         "python"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "networkx",
+        "triggers":  [
+                         "networkx"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "odoo-module-developer",
+        "triggers":  [
+                         "odoo",
+                         "module",
+                         "developer"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "pydantic-models-py",
+        "triggers":  [
+                         "pydantic",
+                         "models",
+                         "py"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "python-development-python-scaffold",
+        "triggers":  [
+                         "python",
+                         "development",
+                         "python",
+                         "scaffold"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  20
+    },
+    {
+        "id":  "python-fastapi-development",
+        "triggers":  [
+                         "python",
+                         "fastapi",
+                         "development"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  20
+    },
+    {
+        "id":  "python-packaging",
+        "triggers":  [
+                         "python",
+                         "packaging"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "python-patterns",
+        "triggers":  [
+                         "python",
+                         "patterns"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "python-performance-optimization",
+        "triggers":  [
+                         "python",
+                         "performance",
+                         "optimization"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "python-pro",
+        "triggers":  [
+                         "python",
+                         "pro"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  20
+    },
+    {
+        "id":  "python-testing-patterns",
+        "triggers":  [
+                         "python",
+                         "testing",
+                         "patterns"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "scanpy",
+        "triggers":  [
+                         "scanpy"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "scikit-learn",
+        "triggers":  [
+                         "scikit",
+                         "learn"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "seaborn",
+        "triggers":  [
+                         "seaborn"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "snowflake-development",
+        "triggers":  [
+                         "snowflake",
+                         "development"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "statsmodels",
+        "triggers":  [
+                         "statsmodels"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "sympy",
+        "triggers":  [
+                         "sympy"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "telegram",
+        "triggers":  [
+                         "telegram"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "temporal-python-pro",
+        "triggers":  [
+                         "temporal",
+                         "python",
+                         "pro"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "temporal-python-testing",
+        "triggers":  [
+                         "temporal",
+                         "python",
+                         "testing"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "webapp-testing",
+        "triggers":  [
+                         "webapp",
+                         "testing"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "whatsapp-cloud-api",
+        "triggers":  [
+                         "whatsapp",
+                         "cloud",
+                         "api"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "xvary-stock-research",
+        "triggers":  [
+                         "xvary",
+                         "stock",
+                         "research"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    }
+]

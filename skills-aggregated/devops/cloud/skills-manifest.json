@@ -1,0 +1,37 @@
+﻿{
+    "name":  "skills-devops-cloud",
+    "main_hub":  "devops",
+    "sub_hub":  "cloud",
+    "description":  "Cloud platforms: AWS, GCP, Azure, and serverless architecture",
+    "skill_count":  71,
+    "source_count":  1,
+    "top_triggers":  [
+                         "azure",
+                         "dotnet",
+                         "ts",
+                         "ai",
+                         "aws",
+                         "cloud",
+                         "mgmt",
+                         "cost",
+                         "manager",
+                         "resource",
+                         "testing",
+                         "search",
+                         "storage",
+                         "practices",
+                         "document",
+                         "documents",
+                         "identity",
+                         "servicebus",
+                         "intelligence",
+                         "best"
+                     ],
+    "generated_at":  "2026-03-26T21:39:41+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

@@ -1,0 +1,876 @@
+﻿[
+    {
+        "id":  "amazon-alexa",
+        "triggers":  [
+                         "amazon",
+                         "alexa"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "apify-actorization",
+        "triggers":  [
+                         "apify",
+                         "actorization"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "auri-core",
+        "triggers":  [
+                         "auri",
+                         "core"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-compliance-checker",
+        "triggers":  [
+                         "aws",
+                         "compliance",
+                         "checker"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-cost-cleanup",
+        "triggers":  [
+                         "aws",
+                         "cost",
+                         "cleanup"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-cost-optimizer",
+        "triggers":  [
+                         "aws",
+                         "cost",
+                         "optimizer"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-iam-best-practices",
+        "triggers":  [
+                         "aws",
+                         "iam",
+                         "best",
+                         "practices"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-penetration-testing",
+        "triggers":  [
+                         "aws",
+                         "penetration",
+                         "testing"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "aws-security-audit",
+        "triggers":  [
+                         "aws",
+                         "security",
+                         "audit"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-serverless",
+        "triggers":  [
+                         "aws",
+                         "serverless"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "aws-skills",
+        "triggers":  [
+                         "aws",
+                         "skills"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azd-deployment",
+        "triggers":  [
+                         "azd",
+                         "deployment"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-ai-agents-persistent-dotnet",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "agents",
+                         "persistent",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-ai-contentsafety-ts",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "contentsafety",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-ai-document-intelligence-dotnet",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "document",
+                         "intelligence",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-ai-document-intelligence-ts",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "document",
+                         "intelligence",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-ai-openai-dotnet",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "openai",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-ai-projects-dotnet",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "projects",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-ai-projects-ts",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "projects",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-ai-voicelive-dotnet",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "voicelive",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-ai-voicelive-ts",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "voicelive",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-appconfiguration-ts",
+        "triggers":  [
+                         "azure",
+                         "appconfiguration",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-cosmos-ts",
+        "triggers":  [
+                         "azure",
+                         "cosmos",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-eventgrid-dotnet",
+        "triggers":  [
+                         "azure",
+                         "eventgrid",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-eventhub-dotnet",
+        "triggers":  [
+                         "azure",
+                         "eventhub",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-eventhub-ts",
+        "triggers":  [
+                         "azure",
+                         "eventhub",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-functions",
+        "triggers":  [
+                         "azure",
+                         "functions"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-identity-dotnet",
+        "triggers":  [
+                         "azure",
+                         "identity",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-identity-ts",
+        "triggers":  [
+                         "azure",
+                         "identity",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-maps-search-dotnet",
+        "triggers":  [
+                         "azure",
+                         "maps",
+                         "search",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-mgmt-applicationinsights-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "applicationinsights",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-mgmt-arizeaiobservabilityeval-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "arizeaiobservabilityeval",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-mgmt-botservice-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "botservice",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-mgmt-fabric-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "fabric",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-mgmt-weightsandbiases-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "weightsandbiases",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-microsoft-playwright-testing-ts",
+        "triggers":  [
+                         "azure",
+                         "microsoft",
+                         "playwright",
+                         "testing",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-monitor-opentelemetry-ts",
+        "triggers":  [
+                         "azure",
+                         "monitor",
+                         "opentelemetry",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-resource-manager-cosmosdb-dotnet",
+        "triggers":  [
+                         "azure",
+                         "resource",
+                         "manager",
+                         "cosmosdb",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-resource-manager-durabletask-dotnet",
+        "triggers":  [
+                         "azure",
+                         "resource",
+                         "manager",
+                         "durabletask",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-resource-manager-playwright-dotnet",
+        "triggers":  [
+                         "azure",
+                         "resource",
+                         "manager",
+                         "playwright",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-search-documents-dotnet",
+        "triggers":  [
+                         "azure",
+                         "search",
+                         "documents",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-search-documents-ts",
+        "triggers":  [
+                         "azure",
+                         "search",
+                         "documents",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-security-keyvault-keys-dotnet",
+        "triggers":  [
+                         "azure",
+                         "security",
+                         "keyvault",
+                         "keys",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-servicebus-dotnet",
+        "triggers":  [
+                         "azure",
+                         "servicebus",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-servicebus-ts",
+        "triggers":  [
+                         "azure",
+                         "servicebus",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-storage-blob-ts",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "blob",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-storage-file-share-ts",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "file",
+                         "share",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-storage-queue-ts",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "queue",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-web-pubsub-ts",
+        "triggers":  [
+                         "azure",
+                         "web",
+                         "pubsub",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "cdk-patterns",
+        "triggers":  [
+                         "cdk",
+                         "patterns"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "cloud-architect",
+        "triggers":  [
+                         "cloud",
+                         "architect"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "cloud-devops",
+        "triggers":  [
+                         "cloud",
+                         "devops"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "cloudflare-workers-expert",
+        "triggers":  [
+                         "cloudflare",
+                         "workers",
+                         "expert"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "cloudformation-best-practices",
+        "triggers":  [
+                         "cloudformation",
+                         "best",
+                         "practices"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "cloud-penetration-testing",
+        "triggers":  [
+                         "cloud",
+                         "penetration",
+                         "testing"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "cost-optimization",
+        "triggers":  [
+                         "cost",
+                         "optimization"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "database-cloud-optimization-cost-optimize",
+        "triggers":  [
+                         "database",
+                         "cloud",
+                         "optimization",
+                         "cost",
+                         "optimize"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "devops-deploy",
+        "triggers":  [
+                         "devops",
+                         "deploy"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "gcp-cloud-run",
+        "triggers":  [
+                         "gcp",
+                         "cloud",
+                         "run"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "hono",
+        "triggers":  [
+                         "hono"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "hybrid-cloud-architect",
+        "triggers":  [
+                         "hybrid",
+                         "cloud",
+                         "architect"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "hybrid-cloud-networking",
+        "triggers":  [
+                         "hybrid",
+                         "cloud",
+                         "networking"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "inngest",
+        "triggers":  [
+                         "inngest"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "loki-mode",
+        "triggers":  [
+                         "loki",
+                         "mode"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "microsoft-azure-webjobs-extensions-authentication-events-dotnet",
+        "triggers":  [
+                         "microsoft",
+                         "azure",
+                         "webjobs",
+                         "extensions",
+                         "authentication"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "multi-cloud-architecture",
+        "triggers":  [
+                         "multi",
+                         "cloud",
+                         "architecture"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "secrets-management",
+        "triggers":  [
+                         "secrets",
+                         "management"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "skill-creator-ms",
+        "triggers":  [
+                         "skill",
+                         "creator",
+                         "ms"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "terraform-aws-modules",
+        "triggers":  [
+                         "terraform",
+                         "aws",
+                         "modules"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "terraform-module-library",
+        "triggers":  [
+                         "terraform",
+                         "module",
+                         "library"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "upstash-qstash",
+        "triggers":  [
+                         "upstash",
+                         "qstash"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    }
+]

@@ -1,0 +1,37 @@
+﻿{
+    "name":  "skills-frontend-react-nextjs",
+    "main_hub":  "frontend",
+    "sub_hub":  "react-nextjs",
+    "description":  "React and Next.js: components, hooks, server-side rendering, and performance optimization",
+    "skill_count":  36,
+    "source_count":  1,
+    "top_triggers":  [
+                         "react",
+                         "patterns",
+                         "nextjs",
+                         "ui",
+                         "practices",
+                         "expert",
+                         "frontend",
+                         "best",
+                         "developer",
+                         "skill",
+                         "ts",
+                         "fp",
+                         "cc",
+                         "native",
+                         "automation",
+                         "apps",
+                         "spline",
+                         "architecture",
+                         "development",
+                         "setup"
+                     ],
+    "generated_at":  "2026-03-26T21:39:41+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

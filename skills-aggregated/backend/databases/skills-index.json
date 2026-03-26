@@ -1,0 +1,518 @@
+﻿[
+    {
+        "id":  "azure-mgmt-mongodbatlas-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "mongodbatlas",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-postgres-ts",
+        "triggers":  [
+                         "azure",
+                         "postgres",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "azure-resource-manager-mysql-dotnet",
+        "triggers":  [
+                         "azure",
+                         "resource",
+                         "manager",
+                         "mysql",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "azure-resource-manager-postgresql-dotnet",
+        "triggers":  [
+                         "azure",
+                         "resource",
+                         "manager",
+                         "postgresql",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "azure-resource-manager-redis-dotnet",
+        "triggers":  [
+                         "azure",
+                         "resource",
+                         "manager",
+                         "redis",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-resource-manager-sql-dotnet",
+        "triggers":  [
+                         "azure",
+                         "resource",
+                         "manager",
+                         "sql",
+                         "dotnet"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "backend-dev-guidelines",
+        "triggers":  [
+                         "backend",
+                         "dev",
+                         "guidelines"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "base",
+        "triggers":  [
+                         "base"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "cc-skill-clickhouse-io",
+        "triggers":  [
+                         "cc",
+                         "skill",
+                         "clickhouse",
+                         "io"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "claimable-postgres",
+        "triggers":  [
+                         "claimable",
+                         "postgres"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "database",
+        "triggers":  [
+                         "database"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "database-admin",
+        "triggers":  [
+                         "database",
+                         "admin"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "database-architect",
+        "triggers":  [
+                         "database",
+                         "architect"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "database-design",
+        "triggers":  [
+                         "database",
+                         "design"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "database-migration",
+        "triggers":  [
+                         "database",
+                         "migration"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "database-migrations-migration-observability",
+        "triggers":  [
+                         "database",
+                         "migrations",
+                         "migration",
+                         "observability"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "database-migrations-sql-migrations",
+        "triggers":  [
+                         "database",
+                         "migrations",
+                         "sql",
+                         "migrations"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "database-optimizer",
+        "triggers":  [
+                         "database",
+                         "optimizer"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "debug-buttercup",
+        "triggers":  [
+                         "debug",
+                         "buttercup"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "django-perf-review",
+        "triggers":  [
+                         "django",
+                         "perf",
+                         "review"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "food-database-query",
+        "triggers":  [
+                         "food",
+                         "database",
+                         "query"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "hugging-face-datasets",
+        "triggers":  [
+                         "hugging",
+                         "face",
+                         "datasets"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "neon-postgres",
+        "triggers":  [
+                         "neon",
+                         "postgres"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "nestjs-expert",
+        "triggers":  [
+                         "nestjs",
+                         "expert"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "nosql-expert",
+        "triggers":  [
+                         "nosql",
+                         "expert"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "obsidian-bases",
+        "triggers":  [
+                         "obsidian",
+                         "bases"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "odoo-backup-strategy",
+        "triggers":  [
+                         "odoo",
+                         "backup",
+                         "strategy"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "odoo-docker-deployment",
+        "triggers":  [
+                         "odoo",
+                         "docker",
+                         "deployment"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "odoo-orm-expert",
+        "triggers":  [
+                         "odoo",
+                         "orm",
+                         "expert"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "odoo-performance-tuner",
+        "triggers":  [
+                         "odoo",
+                         "performance",
+                         "tuner"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "performance-optimizer",
+        "triggers":  [
+                         "performance",
+                         "optimizer"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "postgres-best-practices",
+        "triggers":  [
+                         "postgres",
+                         "best",
+                         "practices"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "postgresql",
+        "triggers":  [
+                         "postgresql"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "postgresql-optimization",
+        "triggers":  [
+                         "postgresql",
+                         "optimization"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "prisma-expert",
+        "triggers":  [
+                         "prisma",
+                         "expert"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "rag-implementation",
+        "triggers":  [
+                         "rag",
+                         "implementation"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "similarity-search-patterns",
+        "triggers":  [
+                         "similarity",
+                         "search",
+                         "patterns"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "sql-injection-testing",
+        "triggers":  [
+                         "sql",
+                         "injection",
+                         "testing"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "sqlmap-database-pentesting",
+        "triggers":  [
+                         "sqlmap",
+                         "database",
+                         "pentesting"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "sql-optimization-patterns",
+        "triggers":  [
+                         "sql",
+                         "optimization",
+                         "patterns"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "sql-pro",
+        "triggers":  [
+                         "sql",
+                         "pro"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "supabase-automation",
+        "triggers":  [
+                         "supabase",
+                         "automation"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "using-neon",
+        "triggers":  [
+                         "using",
+                         "neon"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "vector-database-engineer",
+        "triggers":  [
+                         "vector",
+                         "database",
+                         "engineer"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    }
+]

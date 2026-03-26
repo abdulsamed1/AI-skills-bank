@@ -1,0 +1,36 @@
+﻿{
+    "name":  "skills-programming-golang",
+    "main_hub":  "programming",
+    "sub_hub":  "golang",
+    "description":  "Go programming: concurrency patterns, microservices, and system programming",
+    "skill_count":  10,
+    "source_count":  1,
+    "top_triggers":  [
+                         "golang",
+                         "go",
+                         "pro",
+                         "experience",
+                         "micro",
+                         "summary",
+                         "grpc",
+                         "patterns",
+                         "dbos",
+                         "sred",
+                         "playwright",
+                         "rod",
+                         "concurrency",
+                         "work",
+                         "master",
+                         "temporal",
+                         "scroll",
+                         "saas",
+                         "launcher"
+                     ],
+    "generated_at":  "2026-03-26T21:39:41+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

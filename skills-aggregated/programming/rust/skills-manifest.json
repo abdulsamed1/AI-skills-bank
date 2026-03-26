@@ -1,0 +1,37 @@
+﻿{
+    "name":  "skills-programming-rust",
+    "main_hub":  "programming",
+    "sub_hub":  "rust",
+    "description":  "Rust: memory safety, performance, systems programming, and async patterns",
+    "skill_count":  19,
+    "source_count":  1,
+    "top_triggers":  [
+                         "rust",
+                         "azure",
+                         "keyvault",
+                         "patterns",
+                         "secrets",
+                         "memory",
+                         "bevy",
+                         "programming",
+                         "strategies",
+                         "lightning",
+                         "storage",
+                         "zeroize",
+                         "certificates",
+                         "keys",
+                         "ecs",
+                         "safety",
+                         "cro",
+                         "async",
+                         "skills",
+                         "uploads"
+                     ],
+    "generated_at":  "2026-03-26T21:39:41+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

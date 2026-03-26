@@ -1,0 +1,117 @@
+﻿[
+    {
+        "id":  "dbos-golang",
+        "triggers":  [
+                         "dbos",
+                         "golang"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/golang",
+        "is_primary":  true,
+        "match_score":  20
+    },
+    {
+        "id":  "go-concurrency-patterns",
+        "triggers":  [
+                         "go",
+                         "concurrency",
+                         "patterns"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/golang",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "golang-pro",
+        "triggers":  [
+                         "golang",
+                         "pro"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/golang",
+        "is_primary":  true,
+        "match_score":  20
+    },
+    {
+        "id":  "go-playwright",
+        "triggers":  [
+                         "go",
+                         "playwright"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/golang",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "go-rod-master",
+        "triggers":  [
+                         "go",
+                         "rod",
+                         "master"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/golang",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "grpc-golang",
+        "triggers":  [
+                         "grpc",
+                         "golang"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/golang",
+        "is_primary":  true,
+        "match_score":  20
+    },
+    {
+        "id":  "micro-saas-launcher",
+        "triggers":  [
+                         "micro",
+                         "saas",
+                         "launcher"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/golang",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "scroll-experience",
+        "triggers":  [
+                         "scroll",
+                         "experience"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/golang",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "sred-work-summary",
+        "triggers":  [
+                         "sred",
+                         "work",
+                         "summary"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/golang",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "temporal-golang-pro",
+        "triggers":  [
+                         "temporal",
+                         "golang",
+                         "pro"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/golang",
+        "is_primary":  true,
+        "match_score":  16
+    }
+]

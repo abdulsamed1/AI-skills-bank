@@ -1,0 +1,508 @@
+﻿[
+    {
+        "id":  "animejs-animation",
+        "triggers":  [
+                         "animejs",
+                         "animation"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "azure-ai-agents-persistent-java",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "agents",
+                         "persistent",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-ai-anomalydetector-java",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "anomalydetector",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-ai-contentsafety-java",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "contentsafety",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-ai-formrecognizer-java",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "formrecognizer",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-ai-projects-java",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "projects",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-ai-vision-imageanalysis-java",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "vision",
+                         "imageanalysis",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-ai-voicelive-java",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "voicelive",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-appconfiguration-java",
+        "triggers":  [
+                         "azure",
+                         "appconfiguration",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-communication-callautomation-java",
+        "triggers":  [
+                         "azure",
+                         "communication",
+                         "callautomation",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-communication-callingserver-java",
+        "triggers":  [
+                         "azure",
+                         "communication",
+                         "callingserver",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-communication-chat-java",
+        "triggers":  [
+                         "azure",
+                         "communication",
+                         "chat",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-communication-common-java",
+        "triggers":  [
+                         "azure",
+                         "communication",
+                         "common",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-communication-sms-java",
+        "triggers":  [
+                         "azure",
+                         "communication",
+                         "sms",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-compute-batch-java",
+        "triggers":  [
+                         "azure",
+                         "compute",
+                         "batch",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-cosmos-java",
+        "triggers":  [
+                         "azure",
+                         "cosmos",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-data-tables-java",
+        "triggers":  [
+                         "azure",
+                         "data",
+                         "tables",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-eventgrid-java",
+        "triggers":  [
+                         "azure",
+                         "eventgrid",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-eventhub-java",
+        "triggers":  [
+                         "azure",
+                         "eventhub",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-identity-java",
+        "triggers":  [
+                         "azure",
+                         "identity",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-keyvault-keys-ts",
+        "triggers":  [
+                         "azure",
+                         "keyvault",
+                         "keys",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "azure-keyvault-secrets-ts",
+        "triggers":  [
+                         "azure",
+                         "keyvault",
+                         "secrets",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "azure-messaging-webpubsub-java",
+        "triggers":  [
+                         "azure",
+                         "messaging",
+                         "webpubsub",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-monitor-ingestion-java",
+        "triggers":  [
+                         "azure",
+                         "monitor",
+                         "ingestion",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-monitor-opentelemetry-exporter-java",
+        "triggers":  [
+                         "azure",
+                         "monitor",
+                         "opentelemetry",
+                         "exporter",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-monitor-query-java",
+        "triggers":  [
+                         "azure",
+                         "monitor",
+                         "query",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-security-keyvault-keys-java",
+        "triggers":  [
+                         "azure",
+                         "security",
+                         "keyvault",
+                         "keys",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-security-keyvault-secrets-java",
+        "triggers":  [
+                         "azure",
+                         "security",
+                         "keyvault",
+                         "secrets",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-storage-blob-java",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "blob",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "frontend-mobile-security-xss-scan",
+        "triggers":  [
+                         "frontend",
+                         "mobile",
+                         "security",
+                         "xss",
+                         "scan"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "java-pro",
+        "triggers":  [
+                         "java",
+                         "pro"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "javascript-mastery",
+        "triggers":  [
+                         "javascript",
+                         "mastery"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "javascript-pro",
+        "triggers":  [
+                         "javascript",
+                         "pro"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "javascript-testing-patterns",
+        "triggers":  [
+                         "javascript",
+                         "testing",
+                         "patterns"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "latex-paper-conversion",
+        "triggers":  [
+                         "latex",
+                         "paper",
+                         "conversion"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "modern-javascript-patterns",
+        "triggers":  [
+                         "modern",
+                         "javascript",
+                         "patterns"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "n8n-code-javascript",
+        "triggers":  [
+                         "n8n",
+                         "code",
+                         "javascript"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "playwright-java",
+        "triggers":  [
+                         "playwright",
+                         "java"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "sankhya-dashboard-html-jsp-custom-best-pratices",
+        "triggers":  [
+                         "sankhya",
+                         "dashboard",
+                         "html",
+                         "jsp",
+                         "custom"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "seo-technical",
+        "triggers":  [
+                         "seo",
+                         "technical"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    }
+]

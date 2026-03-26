@@ -1,0 +1,37 @@
+﻿{
+    "name":  "skills-programming-typescript",
+    "main_hub":  "programming",
+    "sub_hub":  "typescript",
+    "description":  "TypeScript language expertise: types, patterns, advanced features, configuration, and best practices",
+    "skill_count":  17,
+    "source_count":  1,
+    "top_triggers":  [
+                         "typescript",
+                         "ts",
+                         "fp",
+                         "expert",
+                         "scaffold",
+                         "frontend",
+                         "flow",
+                         "zustand",
+                         "javascript",
+                         "types",
+                         "zod",
+                         "errors",
+                         "dev",
+                         "node",
+                         "mobile",
+                         "component",
+                         "react",
+                         "m365",
+                         "development",
+                         "orm"
+                     ],
+    "generated_at":  "2026-03-26T21:39:41+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

@@ -1,0 +1,37 @@
+﻿{
+    "name":  "skills-general-misc",
+    "main_hub":  "general",
+    "sub_hub":  "misc",
+    "description":  "General fallback skills that do not confidently match a specialized sub-hub",
+    "skill_count":  916,
+    "source_count":  2,
+    "top_triggers":  [
+                         "automation",
+                         "bmad",
+                         "agent",
+                         "patterns",
+                         "seo",
+                         "review",
+                         "design",
+                         "context",
+                         "code",
+                         "ai",
+                         "security",
+                         "development",
+                         "testing",
+                         "odoo",
+                         "pro",
+                         "expert",
+                         "analyzer",
+                         "hig",
+                         "builder",
+                         "audit"
+                     ],
+    "generated_at":  "2026-03-26T21:39:41+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

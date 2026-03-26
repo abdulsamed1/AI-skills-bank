@@ -1,0 +1,37 @@
+﻿{
+    "name":  "skills-programming-java",
+    "main_hub":  "programming",
+    "sub_hub":  "java",
+    "description":  "Java development: Spring ecosystem, modern Java features, and JVM optimization",
+    "skill_count":  40,
+    "source_count":  1,
+    "top_triggers":  [
+                         "java",
+                         "azure",
+                         "ai",
+                         "communication",
+                         "javascript",
+                         "keyvault",
+                         "security",
+                         "monitor",
+                         "keys",
+                         "patterns",
+                         "ts",
+                         "pro",
+                         "secrets",
+                         "voicelive",
+                         "appconfiguration",
+                         "eventgrid",
+                         "data",
+                         "code",
+                         "callingserver",
+                         "imageanalysis"
+                     ],
+    "generated_at":  "2026-03-26T21:39:41+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

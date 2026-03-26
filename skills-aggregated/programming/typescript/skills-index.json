@@ -1,0 +1,202 @@
+﻿[
+    {
+        "id":  "convex",
+        "triggers":  [
+                         "convex"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "dbos-typescript",
+        "triggers":  [
+                         "dbos",
+                         "typescript"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "drizzle-orm-expert",
+        "triggers":  [
+                         "drizzle",
+                         "orm",
+                         "expert"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "fp-refactor",
+        "triggers":  [
+                         "fp",
+                         "refactor"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "fp-ts-errors",
+        "triggers":  [
+                         "fp",
+                         "ts",
+                         "errors"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "fp-ts-pragmatic",
+        "triggers":  [
+                         "fp",
+                         "ts",
+                         "pragmatic"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "frontend-mobile-development-component-scaffold",
+        "triggers":  [
+                         "frontend",
+                         "mobile",
+                         "development",
+                         "component",
+                         "scaffold"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "javascript-typescript-typescript-scaffold",
+        "triggers":  [
+                         "javascript",
+                         "typescript",
+                         "typescript",
+                         "scaffold"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "m365-agents-ts",
+        "triggers":  [
+                         "m365",
+                         "agents",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "react-flow-node-ts",
+        "triggers":  [
+                         "react",
+                         "flow",
+                         "node",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "senior-frontend",
+        "triggers":  [
+                         "senior",
+                         "frontend"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "trigger-dev",
+        "triggers":  [
+                         "trigger",
+                         "dev"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "typescript-advanced-types",
+        "triggers":  [
+                         "typescript",
+                         "advanced",
+                         "types"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  18
+    },
+    {
+        "id":  "typescript-expert",
+        "triggers":  [
+                         "typescript",
+                         "expert"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "typescript-pro",
+        "triggers":  [
+                         "typescript",
+                         "pro"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "zod-validation-expert",
+        "triggers":  [
+                         "zod",
+                         "validation",
+                         "expert"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "zustand-store-ts",
+        "triggers":  [
+                         "zustand",
+                         "store",
+                         "ts"
+                     ],
+        "source":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    }
+]
