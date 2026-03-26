@@ -1,4 +1,4 @@
-﻿# devops / cloud
+# devops / cloud
 
 ## Purpose
 

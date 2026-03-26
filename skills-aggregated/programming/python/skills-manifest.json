@@ -1,4 +1,4 @@
-﻿{
+{
     "name":  "skills-programming-python",
     "main_hub":  "programming",
     "sub_hub":  "python",
@@ -27,7 +27,7 @@
                          "translation",
                          "django"
                      ],
-    "generated_at":  "2026-03-26T21:39:41+02:00",
+    "generated_at":  "2026-03-26T22:32:46+02:00",
     "files":  {
                   "skill":  "SKILL.md",
                   "workflow":  "workflow.md",

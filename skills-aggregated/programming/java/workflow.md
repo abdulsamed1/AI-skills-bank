@@ -1,4 +1,4 @@
-﻿# programming / java
+# programming / java
 
 ## Purpose
 

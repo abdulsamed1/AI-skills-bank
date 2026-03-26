@@ -52,9 +52,49 @@ Run these commands (now with dynamic path support):
 # Step 1: Aggregate skills into sub-hubs
 pwsh -ExecutionPolicy Bypass -File "AI-skills-bank/aggregate-skills-to-subhubs.ps1"
 
+# Optional: scan only the latest repository under source (default behavior)
+pwsh -ExecutionPolicy Bypass -File "AI-skills-bank/aggregate-skills-to-subhubs.ps1" -SourceRepoMode latest
+
+# Optional: scan all repositories under source (legacy behavior)
+pwsh -ExecutionPolicy Bypass -File "AI-skills-bank/aggregate-skills-to-subhubs.ps1" -SourceRepoMode all
+
+# Optional: scan specific repositories only
+pwsh -ExecutionPolicy Bypass -File "AI-skills-bank/aggregate-skills-to-subhubs.ps1" -SourceRepoMode selected -SourceRepoNames antigravity-awesome-skills
+
+# Optional: scan only repositories changed since last lock
+pwsh -ExecutionPolicy Bypass -File "AI-skills-bank/aggregate-skills-to-subhubs.ps1" -SourceRepoMode changed-only
+
 # Step 2: Sync to all supported AI tools
 pwsh -ExecutionPolicy Bypass -File "AI-skills-bank/sync-hubs.ps1" -Force
+
+# Optional: avoid duplicate hub files by syncing as links (default is Auto)
+pwsh -ExecutionPolicy Bypass -File "AI-skills-bank/sync-hubs.ps1" -SyncMode Auto -Force
+
+# Optional: include workspace-local targets too (not recommended by default)
+pwsh -ExecutionPolicy Bypass -File "AI-skills-bank/sync-hubs.ps1" -SyncMode Auto -IncludeWorkspaceTargets -Force
 ```
+
+Default policy:
+- Sync to global locations only to avoid duplicate skill indexing conflicts.
+- Workspace-local target folders are NOT deleted automatically.
+
+`-SyncMode` options:
+- `Auto`: tries `Junction` first, then falls back to `Copy` if linking fails
+- `Junction`: creates directory junctions (best for Windows local workflow)
+- `SymbolicLink`: creates directory symlinks
+- `Copy`: legacy full copy mode
+
+Global targets (default):
+- `~/.gemini/antigravity/skills`
+- `~/.gemini/skills`
+- `~/.copilot/skills`
+
+`-IncludeWorkspaceTargets` adds these workspace-local targets:
+- `.agent/skills`
+- `.gemini/skills`
+- `.github/skills`
+
+`-PruneWorkspaceTargets` explicitly deletes workspace-local target folders.
 
 ## Add a New Source Repository (From the Internet)
 
@@ -114,9 +154,9 @@ Never fully load large catalogs unless explicitly required.
 
 Generated output is mirrored to:
 
-- `.github/skills` (GitHub Copilot)
-- `.gemini/skills` (Gemini CLI)
-- `.agent/skills` (Antigravity)
+- `~/.copilot/skills` (GitHub Copilot)
+- `~/.gemini/skills` (Gemini CLI)
+- `~/.gemini/antigravity/skills` (Antigravity)
 
 ## Project Integration Template
 
@@ -145,6 +185,19 @@ When classification needs tuning:
 1. Edit rules in `AI-skills-bank/aggregate-skills-to-subhubs.ps1`.
 2. Update `keywords` and `negative_keywords`.
 3. Regenerate and sync again.
+
+## Source Scan Policy
+
+Aggregation now supports selective scan for repositories under `AI-skills-bank/source`:
+
+- `-SourceRepoMode latest` (default): scans only the newest repository inside `source`
+- `-SourceRepoMode all`: scans all repositories inside `source` (legacy behavior)
+- `-SourceRepoMode selected -SourceRepoNames <names>`: scans only named repositories
+- `-SourceRepoMode changed-only`: scans only repositories changed since last `skills-aggregated/.skill-lock.json`
+
+Notes for `changed-only`:
+- The lock file is written after each non-dry aggregation run at `AI-skills-bank/skills-aggregated/.skill-lock.json`.
+- If no previous lock exists, `changed-only` falls back to `latest` for bootstrap.
 
 ## Operational Checks
 

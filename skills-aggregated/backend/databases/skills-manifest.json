@@ -1,4 +1,4 @@
-﻿{
+{
     "name":  "skills-backend-databases",
     "main_hub":  "backend",
     "sub_hub":  "databases",
@@ -27,7 +27,7 @@
                          "food",
                          "cc"
                      ],
-    "generated_at":  "2026-03-26T21:39:42+02:00",
+    "generated_at":  "2026-03-26T22:32:46+02:00",
     "files":  {
                   "skill":  "SKILL.md",
                   "workflow":  "workflow.md",

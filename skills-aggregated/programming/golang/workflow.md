@@ -1,4 +1,4 @@
-﻿# programming / golang
+# programming / golang
 
 ## Purpose
 

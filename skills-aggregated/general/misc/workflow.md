@@ -1,4 +1,4 @@
-﻿# general / misc
+# general / misc
 
 ## Purpose
 

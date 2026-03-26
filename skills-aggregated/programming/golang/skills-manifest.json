@@ -1,4 +1,4 @@
-﻿{
+{
     "name":  "skills-programming-golang",
     "main_hub":  "programming",
     "sub_hub":  "golang",
@@ -26,7 +26,7 @@
                          "saas",
                          "launcher"
                      ],
-    "generated_at":  "2026-03-26T21:39:41+02:00",
+    "generated_at":  "2026-03-26T22:32:45+02:00",
     "files":  {
                   "skill":  "SKILL.md",
                   "workflow":  "workflow.md",

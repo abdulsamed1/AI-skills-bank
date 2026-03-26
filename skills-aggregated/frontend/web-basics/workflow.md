@@ -1,4 +1,4 @@
-﻿# frontend / web-basics
+# frontend / web-basics
 
 ## Purpose
 

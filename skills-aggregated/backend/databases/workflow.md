@@ -1,4 +1,4 @@
-﻿# backend / databases
+# backend / databases
 
 ## Purpose
 

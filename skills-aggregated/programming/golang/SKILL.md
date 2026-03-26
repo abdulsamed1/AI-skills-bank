@@ -1,4 +1,4 @@
-﻿---
+---
 name: skills-programming-golang
 description: 'Go programming: concurrency patterns, microservices, and system programming'
 ---

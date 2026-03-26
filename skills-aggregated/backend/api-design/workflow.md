@@ -1,4 +1,4 @@
-﻿# backend / api-design
+# backend / api-design
 
 ## Purpose
 

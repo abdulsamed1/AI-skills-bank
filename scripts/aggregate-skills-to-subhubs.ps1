@@ -6,6 +6,9 @@ param(
     [string] $SourceHubsDir = ".\AI-skills-bank\hub-skills",
     [string] $OutputDir = ".\AI-skills-bank\skills-aggregated",
     [array] $FallbackSkillRoots = @(".\_bmad", ".\AI-skills-bank\source"),
+    [ValidateSet("latest", "all", "selected", "changed-only")]
+    [string] $SourceRepoMode = "latest",
+    [string[]] $SourceRepoNames = @(),
     [Switch] $DryRun = $false,
     [Switch] $AllowMultiHub = $false,
     [ValidateRange(1, 5)]
@@ -18,9 +21,15 @@ param(
 
 # Use $PSScriptRoot to resolve paths relative to the script location
 if ($PSScriptRoot) {
-    # Normalize $PSScriptRoot and parent directory path
+    # Normalize script root and derive repository root even when script lives under AI-skills-bank/scripts.
     $normalizedScriptRoot = (Get-Item $PSScriptRoot).FullName
-    $RepoRootObj = Get-Item (Join-Path $normalizedScriptRoot "..")
+    $candidateRootObj = Get-Item (Join-Path $normalizedScriptRoot "..")
+    if ($candidateRootObj.Name -ieq "AI-skills-bank") {
+        $RepoRootObj = Get-Item (Join-Path $candidateRootObj.FullName "..")
+    }
+    else {
+        $RepoRootObj = $candidateRootObj
+    }
     $RepoRoot = $RepoRootObj.FullName
     
     $SourceHubsDir = Join-Path $RepoRoot "AI-skills-bank/hub-skills"
@@ -29,6 +38,189 @@ if ($PSScriptRoot) {
         (Join-Path $RepoRoot "_bmad"),
         (Join-Path $RepoRoot "AI-skills-bank/source")
     )
+}
+
+$SourceRootPath = Join-Path $RepoRoot "AI-skills-bank/source"
+$SkillLockPath = Join-Path $OutputDir ".skill-lock.json"
+$RestrictSourceRepos = ($SourceRepoMode -ne "all")
+$ChangedOnlyFallbackToLatest = $false
+
+function Get-SourceRepoState {
+    param([string] $RepoPath)
+
+    $repoName = Split-Path -Leaf $RepoPath
+    $state = [ordered]@{
+        name = $repoName
+        vcs = "filesystem"
+        revision = $null
+        dirty = $false
+        fingerprint = $null
+    }
+
+    $hasGitRepo = Test-Path (Join-Path $RepoPath ".git")
+    $gitCommand = Get-Command git -ErrorAction SilentlyContinue
+    if ($hasGitRepo -and $gitCommand) {
+        try {
+            $revision = (& git -C $RepoPath rev-parse HEAD 2>$null)
+            if ($LASTEXITCODE -eq 0 -and -not [string]::IsNullOrWhiteSpace($revision)) {
+                $state.vcs = "git"
+                $state.revision = ($revision | Select-Object -First 1).Trim()
+
+                $statusOutput = (& git -C $RepoPath status --porcelain 2>$null)
+                $statusText = ""
+                if ($LASTEXITCODE -eq 0) {
+                    $statusText = (($statusOutput | ForEach-Object { $_.TrimEnd() }) -join "`n")
+                }
+
+                if (-not [string]::IsNullOrWhiteSpace($statusText)) {
+                    $state.dirty = $true
+                }
+
+                $statusHashInput = "$($state.revision)`n$statusText"
+                $statusHash = [System.BitConverter]::ToString((New-Object Security.Cryptography.SHA256Managed).ComputeHash([System.Text.Encoding]::UTF8.GetBytes($statusHashInput))).Replace("-", "").ToLower()
+                $state.fingerprint = "git:$statusHash"
+            }
+        }
+        catch {
+            # Fallback to filesystem fingerprint below.
+        }
+    }
+
+    if ($state.vcs -ne "git") {
+        $files = @(Get-ChildItem -Path $RepoPath -Recurse -File -ErrorAction SilentlyContinue)
+        $latestTicks = 0
+        if ($files.Count -gt 0) {
+            $latestTicks = ($files | Sort-Object LastWriteTimeUtc -Descending | Select-Object -First 1).LastWriteTimeUtc.Ticks
+        }
+        $state.fingerprint = "files:$($files.Count)|ticks:$latestTicks"
+    }
+
+    return [PSCustomObject] $state
+}
+
+function Get-ChangedSourceRepos {
+    param(
+        [string] $SourceRoot,
+        [string] $LockPath
+    )
+
+    if (-not (Test-Path $SourceRoot)) {
+        return [PSCustomObject]@{
+            HasLock = $false
+            ChangedRepos = @()
+            RepoStates = @()
+        }
+    }
+
+    $repos = @(Get-ChildItem -Path $SourceRoot -Directory)
+    $repoStates = @($repos | ForEach-Object { Get-SourceRepoState -RepoPath $_.FullName })
+
+    $hasLock = Test-Path $LockPath
+    $previousByName = @{}
+    if ($hasLock) {
+        try {
+            $lock = Get-Content $LockPath -Raw | ConvertFrom-Json
+            foreach ($repo in @($lock.source_repositories)) {
+                if ($repo.name) {
+                    $previousByName[$repo.name] = $repo
+                }
+            }
+        }
+        catch {
+            $hasLock = $false
+        }
+    }
+
+    $changed = @()
+    foreach ($state in $repoStates) {
+        if (-not $previousByName.ContainsKey($state.name)) {
+            $changed += $state.name
+            continue
+        }
+
+        $previous = $previousByName[$state.name]
+        if ($state.vcs -eq "git") {
+            $prevRevision = [string] $previous.revision
+            $prevFingerprint = [string] $previous.fingerprint
+            if ([string]::IsNullOrWhiteSpace($prevRevision) -or $prevRevision -ne $state.revision -or [string]::IsNullOrWhiteSpace($prevFingerprint) -or $prevFingerprint -ne $state.fingerprint) {
+                $changed += $state.name
+            }
+            continue
+        }
+
+        $prevFingerprint = [string] $previous.fingerprint
+        if ([string]::IsNullOrWhiteSpace($prevFingerprint) -or $prevFingerprint -ne $state.fingerprint) {
+            $changed += $state.name
+        }
+    }
+
+    return [PSCustomObject]@{
+        HasLock = $hasLock
+        ChangedRepos = @($changed)
+        RepoStates = @($repoStates)
+    }
+}
+
+function Resolve-SelectedSourceRepos {
+    param(
+        [string] $SourceRoot,
+        [string] $Mode,
+        [string[]] $RequestedNames
+    )
+
+    if (-not (Test-Path $SourceRoot)) {
+        return @()
+    }
+
+    $repos = @(Get-ChildItem -Path $SourceRoot -Directory)
+    if ($repos.Count -eq 0) {
+        return @()
+    }
+
+    if ($Mode -eq "all") {
+        return @($repos | ForEach-Object { $_.Name })
+    }
+
+    if ($Mode -eq "selected") {
+        if (-not $RequestedNames -or $RequestedNames.Count -eq 0) {
+            throw "SourceRepoMode=selected requires at least one value in SourceRepoNames."
+        }
+
+        $available = @($repos | ForEach-Object { $_.Name })
+        $missing = @($RequestedNames | Where-Object { $_ -notin $available })
+        if ($missing.Count -gt 0) {
+            throw "Selected source repositories not found: $($missing -join ', ')"
+        }
+
+        return @($RequestedNames)
+    }
+
+    # latest mode
+    $latest = $repos | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+    if ($null -eq $latest) {
+        return @()
+    }
+
+    return @($latest.Name)
+}
+$CurrentSourceRepoStates = @()
+if ($SourceRepoMode -eq "changed-only") {
+    $changedResult = Get-ChangedSourceRepos -SourceRoot $SourceRootPath -LockPath $SkillLockPath
+    $CurrentSourceRepoStates = @($changedResult.RepoStates)
+
+    if (-not $changedResult.HasLock) {
+        $ChangedOnlyFallbackToLatest = $true
+        $SelectedSourceRepos = @(Resolve-SelectedSourceRepos -SourceRoot $SourceRootPath -Mode "latest" -RequestedNames @())
+    }
+    else {
+        $SelectedSourceRepos = @($changedResult.ChangedRepos)
+    }
+}
+else {
+    $SelectedSourceRepos = @(Resolve-SelectedSourceRepos -SourceRoot $SourceRootPath -Mode $SourceRepoMode -RequestedNames $SourceRepoNames)
+    if (Test-Path $SourceRootPath) {
+        $CurrentSourceRepoStates = @(Get-ChildItem -Path $SourceRootPath -Directory | ForEach-Object { Get-SourceRepoState -RepoPath $_.FullName })
+    }
 }
 
 if ($AllowMultiHub -and $SecondaryMinScore -lt $PrimaryMinScore) {
@@ -317,6 +509,10 @@ function Load-SkillsFromFiles {
     param([array] $Roots)
 
     $skills = @()
+    $sourceRootResolved = $null
+    if ($SourceRootPath -and (Test-Path $SourceRootPath)) {
+        $sourceRootResolved = (Resolve-Path -LiteralPath $SourceRootPath).Path
+    }
 
     foreach ($root in $Roots) {
         if (-not (Test-Path $root)) {
@@ -325,6 +521,16 @@ function Load-SkillsFromFiles {
 
         $skillFiles = Get-ChildItem -Path $root -Filter "SKILL.md" -Recurse -File
         foreach ($skillFile in $skillFiles) {
+            if ($sourceRootResolved) {
+                if ($skillFile.FullName.StartsWith($sourceRootResolved, [System.StringComparison]::OrdinalIgnoreCase)) {
+                    $relativeSourcePath = $skillFile.FullName.Substring($sourceRootResolved.Length).TrimStart('\', '/')
+                    $repoName = @($relativeSourcePath -split '[\\/]')[0]
+                    if (-not [string]::IsNullOrWhiteSpace($repoName) -and $RestrictSourceRepos -and ($repoName -notin $SelectedSourceRepos)) {
+                        continue
+                    }
+                }
+            }
+
             $content = Get-Content $skillFile.FullName -Raw
             $id = Extract-FieldFromFrontmatter -Content $content -FieldName "name"
             $description = Extract-FieldFromFrontmatter -Content $content -FieldName "description"
@@ -550,6 +756,16 @@ function Build-TopTriggers {
         ForEach-Object { $_.Key }
 }
 
+function Write-FileUtf8NoBom {
+    param(
+        [string] $Path,
+        [string] $Content
+    )
+
+    $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+    [System.IO.File]::WriteAllText($Path, $Content, $utf8NoBom)
+}
+
 function Write-SubHubFiles {
     param(
         [string] $OutPath,
@@ -621,11 +837,11 @@ function Write-SubHubFiles {
 
     if (-not $DryRun) {
         mkdir -Path $OutPath -Force | Out-Null
-        $skillMd | Set-Content -Path (Join-Path $OutPath "SKILL.md") -Encoding UTF8 -Force
-        $workflowMd | Set-Content -Path (Join-Path $OutPath "workflow.md") -Encoding UTF8 -Force
-        ($manifest | ConvertTo-Json -Depth 8) | Set-Content -Path (Join-Path $OutPath "skills-manifest.json") -Encoding UTF8 -Force
-        ($indexItems | ConvertTo-Json -Depth 6) | Set-Content -Path (Join-Path $OutPath "skills-index.json") -Encoding UTF8 -Force
-        $catalogLines | Set-Content -Path (Join-Path $OutPath "skills-catalog.ndjson") -Encoding UTF8 -Force
+        Write-FileUtf8NoBom -Path (Join-Path $OutPath "SKILL.md") -Content $skillMd
+        Write-FileUtf8NoBom -Path (Join-Path $OutPath "workflow.md") -Content $workflowMd
+        Write-FileUtf8NoBom -Path (Join-Path $OutPath "skills-manifest.json") -Content (($manifest | ConvertTo-Json -Depth 8) + [Environment]::NewLine)
+        Write-FileUtf8NoBom -Path (Join-Path $OutPath "skills-index.json") -Content (($indexItems | ConvertTo-Json -Depth 6) + [Environment]::NewLine)
+        Write-FileUtf8NoBom -Path (Join-Path $OutPath "skills-catalog.ndjson") -Content (($catalogLines -join [Environment]::NewLine) + [Environment]::NewLine)
     }
 }
 
@@ -636,6 +852,15 @@ function Write-SubHubFiles {
 Write-Host "[INFO] Aggregated Skill System - Initialization" -ForegroundColor Cyan
 Write-Host "[INFO] Source dir: $SourceHubsDir"
 Write-Host "[INFO] Output dir: $OutputDir"
+if ($SourceRepoMode -eq "changed-only" -and $ChangedOnlyFallbackToLatest) {
+    Write-Host "[WARN] Source repo mode: changed-only (no previous lock found). Falling back to latest: $($SelectedSourceRepos -join ', ')" -ForegroundColor Yellow
+}
+elseif ($SelectedSourceRepos.Count -gt 0) {
+    Write-Host "[INFO] Source repo mode: $SourceRepoMode (selected: $($SelectedSourceRepos -join ', '))"
+}
+else {
+    Write-Host "[INFO] Source repo mode: $SourceRepoMode (no external source repos selected)"
+}
 Write-Host "[INFO] Multi-hub mode: $AllowMultiHub (max hubs per skill: $MaxHubsPerSkill, primary>=${PrimaryMinScore}, secondary>=${SecondaryMinScore})"
 Write-Host ""
 
@@ -770,7 +995,28 @@ foreach ($subHubKey in $subHubMap.Keys) {
 }
 
 if (-not $DryRun) {
-    ($routingIndex | ConvertTo-Json -Depth 8) | Set-Content -Path (Join-Path $OutputDir "subhub-index.json") -Encoding UTF8 -Force
+    Write-FileUtf8NoBom -Path (Join-Path $OutputDir "subhub-index.json") -Content (($routingIndex | ConvertTo-Json -Depth 8) + [Environment]::NewLine)
+
+    $lockPayload = [ordered]@{
+        generated_at = (Get-Date -Format "yyyy-MM-ddTHH:mm:ssK")
+        source_repo_mode = $SourceRepoMode
+        selected_source_repos = @($SelectedSourceRepos)
+        source_repositories = @(
+            $CurrentSourceRepoStates |
+                Sort-Object name |
+                ForEach-Object {
+                    [ordered]@{
+                        name = $_.name
+                        vcs = $_.vcs
+                        revision = $_.revision
+                        dirty = [bool] $_.dirty
+                        fingerprint = $_.fingerprint
+                    }
+                }
+        )
+    }
+
+    Write-FileUtf8NoBom -Path (Join-Path $OutputDir ".skill-lock.json") -Content (($lockPayload | ConvertTo-Json -Depth 8) + [Environment]::NewLine)
 }
 
 Write-Host ""

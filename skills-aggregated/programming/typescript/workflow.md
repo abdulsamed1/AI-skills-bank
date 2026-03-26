@@ -1,4 +1,4 @@
-﻿# programming / typescript
+# programming / typescript
 
 ## Purpose
 

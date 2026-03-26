@@ -1,4 +1,4 @@
-﻿# frontend / react-nextjs
+# frontend / react-nextjs
 
 ## Purpose
 

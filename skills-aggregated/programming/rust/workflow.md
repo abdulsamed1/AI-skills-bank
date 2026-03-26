@@ -1,4 +1,4 @@
-﻿# programming / rust
+# programming / rust
 
 ## Purpose
 
