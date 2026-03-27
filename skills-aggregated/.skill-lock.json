@@ -1,333 +1,335 @@
 {
-    "generated_at": "2026-03-27T01:36:52+02:00",
-    "src_repo_mode": "all",
-    "selected_src_repos": [
-        "agent-skills",
-        "agent-toolkit",
-        "ai-marketing-skills",
-        "antigravity-awesome-skills",
-        "aso-skills",
-        "awesome-claude-code-subagents",
-        "beautiful_prose",
-        "binance-skills-hub",
-        "charlie-cfo-skill",
-        "claude-seo",
-        "cli",
-        "context-and-tools",
-        "creative-director-skill",
-        "duckdb-skills",
-        "email-marketing-bible",
-        "founder-skills",
-        "frontend-slides",
-        "gemini-skills",
-        "gsap-skills",
-        "gstack",
-        "humanizer",
-        "linear-claude-skill",
-        "marketingskills",
-        "mcp-server-guide",
-        "NanoBanana-PPT-Skills",
-        "notebooklm-skill",
-        "nutrient-agent-skill",
-        "pm-skills",
-        "Product-Manager-Skills",
-        "skills",
-        "stitch-skills",
-        "superpowers",
-        "superpowers-lab",
-        "tinybird-agent-skills",
-        "tweetclaw",
-        "x-article-publisher-skill",
-        "Youtube-clipper-skill"
-    ],
-    "exclude_categories": [
-        "games",
-        "law-legal",
-        "medicine-medical",
-        "pharmacy",
-        "biology",
-        "chemistry",
-        "llm-from-scratch"
-    ],
-    "exclusion_stats": {
-        "total": 34,
-        "by_category": {
-            "biology": 2,
-            "games": 20,
-            "law-legal": 7,
-            "medicine-medical": 4,
-            "pharmacy": 1
-        }
-    },
-    "min_skills_per_hub": 10,
-    "score_policy": {
-        "review_band_enabled": false,
-        "review_min_score": 4,
-        "auto_accept_min_score": 8,
-        "secondary_min_score": 6,
-        "review_candidates": 0
-    },
-    "category_gap_threshold": 30,
-    "category_gaps": [],
-    "src_repositories": [
-        {
-            "name": "agent-skills",
-            "vcs": "git",
-            "revision": "760460c221d30d0db904ff28e8fa52af85672255",
-            "dirty": false,
-            "fingerprint": "git:f53c49c9716bac75a185dce5fcb8c00b6ad83c82edbe79f7f3acff46914702f3"
-        },
-        {
-            "name": "agent-toolkit",
-            "vcs": "git",
-            "revision": "4b1fb10bd707a22cf0cdfad5374ffc885f2ffa8d",
-            "dirty": false,
-            "fingerprint": "git:4a55e277b8884ea3ad5e0eddc3d584bfd4789206f33b1aa8252beec660feb936"
-        },
-        {
-            "name": "ai-marketing-skills",
-            "vcs": "git",
-            "revision": "f36b34fc539a7a3b801839bfff2c26277fd7ec69",
-            "dirty": false,
-            "fingerprint": "git:9a843429881221c97d4f631e20ada39f957c54e7144fe5000505402a06f9dcb9"
-        },
-        {
-            "name": "antigravity-awesome-skills",
-            "vcs": "git",
-            "revision": "eaebf3e101d87aa5906323604065f76001ac7e6f",
-            "dirty": true,
-            "fingerprint": "git:4e9dfa74056df8171eb45b902e2bbbff7d24428ed47efe4f0b60978ac821b2c4"
-        },
-        {
-            "name": "aso-skills",
-            "vcs": "git",
-            "revision": "15d9e62c2701b460e5cfb2e0cab32a072a99baca",
-            "dirty": false,
-            "fingerprint": "git:c36fe8498cffcd8cada2f2ab2f2bafeccd4cc06616fa99a331894391b14a30f0"
-        },
-        {
-            "name": "awesome-claude-code-subagents",
-            "vcs": "git",
-            "revision": "8146b953a6951ea25268cf6d9ff5765f2483a58f",
-            "dirty": true,
-            "fingerprint": "git:2ab6bd6e2d2a90345ee1d269032d4b144e4b5356688dd064548213b0b3126b3d"
-        },
-        {
-            "name": "beautiful_prose",
-            "vcs": "git",
-            "revision": "bf44efb7f9706f8f563af3b6913a3784c7c52a12",
-            "dirty": false,
-            "fingerprint": "git:9f331771ed5ff2ea6c6f78b98bbaff8b82a6332de45eec02875ae286a0b447fd"
-        },
-        {
-            "name": "binance-skills-hub",
-            "vcs": "git",
-            "revision": "8f1ffb0c8b40bca2594bab7e33a2e931b83cf8d3",
-            "dirty": false,
-            "fingerprint": "git:478b275453a9bac94e76d04d18ff5a24f859003e65065c0cd305be8eb8d58abe"
-        },
-        {
-            "name": "charlie-cfo-skill",
-            "vcs": "git",
-            "revision": "429f61bc0eb728cbc88db22cb1b1b1be6f21cafb",
-            "dirty": false,
-            "fingerprint": "git:ff91237a1497651431dc5f74b99bad5e80e72aaa3f8dbd000f601cfb076f426b"
-        },
-        {
-            "name": "claude-seo",
-            "vcs": "git",
-            "revision": "c701ef56739c790d873e8245df64969dfd5f9b23",
-            "dirty": false,
-            "fingerprint": "git:47091facece157af2dd25b2d01ca089c9eee9dd945870b119311a58348c19ac0"
-        },
-        {
-            "name": "cli",
-            "vcs": "git",
-            "revision": "6838c4b8d2d1294b8571d133aafeab6700b5dd50",
-            "dirty": false,
-            "fingerprint": "git:a2b70b3043b84f2f40078b16d23c59158d7ed0f37a7e6bb9d3593d124257ba34"
-        },
-        {
-            "name": "context-and-tools",
-            "vcs": "git",
-            "revision": "d388e4bc413d3931c3182f80a3b8c414f3e74ef4",
-            "dirty": false,
-            "fingerprint": "git:f4987b82fa30c343cd44dc175b58585cc368d4334b261e9c252f9c4cd569c299"
-        },
-        {
-            "name": "creative-director-skill",
-            "vcs": "git",
-            "revision": "1609cef55f65e9f643d112cca400ff90ef16b9a1",
-            "dirty": false,
-            "fingerprint": "git:6967ec40cfc2fecc74fde62fb73d7051e6d3a8981f14ad4ecf95baf9d66330c7"
-        },
-        {
-            "name": "duckdb-skills",
-            "vcs": "git",
-            "revision": "f6114c786311232360c30856432b4014ebd3604c",
-            "dirty": false,
-            "fingerprint": "git:080cde8eb6a1e48a0284c16d5f5eb0044f9eb48a2c590d68708f483acb7446d5"
-        },
-        {
-            "name": "email-marketing-bible",
-            "vcs": "git",
-            "revision": "df9903ce1f94061993a6d7afc561f9e0ea3e3485",
-            "dirty": false,
-            "fingerprint": "git:e0d93904e4f297c32254c6f8ac63aea4d632b48980e93e7c840906c6c343407c"
-        },
-        {
-            "name": "founder-skills",
-            "vcs": "git",
-            "revision": "1d2907706697fa48e8487deec58275c520276f16",
-            "dirty": false,
-            "fingerprint": "git:f66ef19828629e56c3ddf2d497cb8e587953f62c468742d82a2cf01da805bdfb"
-        },
-        {
-            "name": "frontend-slides",
-            "vcs": "git",
-            "revision": "fbf2c17fa4356e7802b055a3626c7dd6a5d509ea",
-            "dirty": false,
-            "fingerprint": "git:34a4757c3dc86645c2da653ad093df50e4e3ba1af25207855d608c09475fb3fd"
-        },
-        {
-            "name": "gemini-skills",
-            "vcs": "git",
-            "revision": "51f1bedafbd15776826dae6242482b2017f2e568",
-            "dirty": false,
-            "fingerprint": "git:b7ad2573169abcb37967399b593aae77a1d4b2eda812d3e95288dc737498a027"
-        },
-        {
-            "name": "gsap-skills",
-            "vcs": "git",
-            "revision": "03d9f0c3dbf91e0b60582b64ed040c8911ca0174",
-            "dirty": false,
-            "fingerprint": "git:54fbe61a6a906646a4ccb972abed08dd06a5e25a9d762b38195d6561ee2d4cff"
-        },
-        {
-            "name": "gstack",
-            "vcs": "git",
-            "revision": "4f435e45c517822014a852804c3da57bab121516",
-            "dirty": false,
-            "fingerprint": "git:6e3a43c20e106efc6d6d7c32fa070b7c6e2cbb66fd72b24369fa31b86fa8e57c"
-        },
-        {
-            "name": "humanizer",
-            "vcs": "git",
-            "revision": "12881abf6671c4ab62eceeb56f911b752f9fd6d2",
-            "dirty": false,
-            "fingerprint": "git:3f0a4ff4f47dd6b99f19bd5f2e3fb5e898b9fc45f9407388c003a5d5ed6bfa17"
-        },
-        {
-            "name": "linear-claude-skill",
-            "vcs": "git",
-            "revision": "d9378986068bef5ecc757a648912c3951a0b8d6d",
-            "dirty": false,
-            "fingerprint": "git:e8fca77e907147d422d9105e9dc4824361b3c2d43ee34981085f223dd58b37b1"
-        },
-        {
-            "name": "marketingskills",
-            "vcs": "git",
-            "revision": "9d4d29a795113c492b22e01c9b48a8396e140b8d",
-            "dirty": false,
-            "fingerprint": "git:b9f07ec8ce75f03e63d15cc6f61ad4df392c1943a37732b439fe90fcfd0d5452"
-        },
-        {
-            "name": "mcp-server-guide",
-            "vcs": "git",
-            "revision": "512f1c770037f8bb4a86748df54e219716d64414",
-            "dirty": false,
-            "fingerprint": "git:9fe1fea32a95d8024fe0792091097ceaa27633c2098b9e1e0ecc7fa7262440bc"
-        },
-        {
-            "name": "NanoBanana-PPT-Skills",
-            "vcs": "git",
-            "revision": "0c18b9abde04ad42f4f62c7e9ead346b7bb39260",
-            "dirty": false,
-            "fingerprint": "git:c9af19c46aab3aa14acabf69edcdfb175c0dda01bcb1870ff1f71e9d82c89ed8"
-        },
-        {
-            "name": "notebooklm-skill",
-            "vcs": "git",
-            "revision": "eea5cb28ba79ab8b078a1eaa44ce9ec44f75dbf8",
-            "dirty": false,
-            "fingerprint": "git:e6f2a8c1d083e860e9b2f4943f4cd24f29a594e6dff3eda059ff7127275b7e09"
-        },
-        {
-            "name": "nutrient-agent-skill",
-            "vcs": "git",
-            "revision": "4d150575a5bb852306a9b72c78a97a62557651ed",
-            "dirty": false,
-            "fingerprint": "git:bb1f16ffbcf1dc6e28aeebabb6f442c6451e20ccb1f91d2220b20d222f4c46b1"
-        },
-        {
-            "name": "pm-skills",
-            "vcs": "git",
-            "revision": "36ccefdc6c2e00d7c0c12cb0a52bf93e8ec50da4",
-            "dirty": false,
-            "fingerprint": "git:2d407f4f6194042710758d2cdf054da574836e62f2724fdf7ba35eb595ec227e"
-        },
-        {
-            "name": "Product-Manager-Skills",
-            "vcs": "git",
-            "revision": "2a2f27c71c562dd6b6797c8f4d224825d6005c7f",
-            "dirty": false,
-            "fingerprint": "git:777b2857eec7796c64cd7df102f3fa67b6392448ddc9d559fcd20da422deeff7"
-        },
-        {
-            "name": "skills",
-            "vcs": "git",
-            "revision": "98669c11ca63e9c81c11501e1437e5c47b556621",
-            "dirty": false,
-            "fingerprint": "git:b1c5d315a09e5975352edf71123399e3d6be12f260b6e4e3b4a18304d7eec086"
-        },
-        {
-            "name": "stitch-skills",
-            "vcs": "git",
-            "revision": "ad0b5cc5d5c3569e12a3105b0dee7409c3227e1b",
-            "dirty": false,
-            "fingerprint": "git:878b905fc27c8663e7d7b257731251ea74d65adf127374a74c15a048fb63d3bd"
-        },
-        {
-            "name": "superpowers",
-            "vcs": "git",
-            "revision": "eafe962b18f6c5dc70fb7c8cc7e83e61f4cdde06",
-            "dirty": false,
-            "fingerprint": "git:49060aa815814dd1dd6be575835ca20b4094de1061ca5737ba5399005d00e794"
-        },
-        {
-            "name": "superpowers-lab",
-            "vcs": "git",
-            "revision": "59389b1506e2d476980ee05c7c98c2f5e211fcb1",
-            "dirty": false,
-            "fingerprint": "git:2316a15606570432b9b840891dbd42df8ba019ec1e0110b2c6555cb5a1670457"
-        },
-        {
-            "name": "tinybird-agent-skills",
-            "vcs": "git",
-            "revision": "a33c7fbc1a4684f2732267c12a106ee8ad853d53",
-            "dirty": false,
-            "fingerprint": "git:d44a29af1fbf6cdc4b383620ae36be705af89161671b375aa2d51911ca7bd74b"
-        },
-        {
-            "name": "tweetclaw",
-            "vcs": "git",
-            "revision": "51d67d6920d018ea2fd026c8a5c4cae5f243be49",
-            "dirty": false,
-            "fingerprint": "git:43dc8be083e659afb8b17847d28dda48de83379ae0b624483ca8aa22c69af317"
-        },
-        {
-            "name": "x-article-publisher-skill",
-            "vcs": "git",
-            "revision": "eb3197d1d8579556aea5018d5c0b141d55fc2df6",
-            "dirty": false,
-            "fingerprint": "git:5e2c12f435d92b0f263da8e48bb9895e3c6147088e199efc16b809ec10c9aa0b"
-        },
-        {
-            "name": "Youtube-clipper-skill",
-            "vcs": "git",
-            "revision": "f31f077ee0905c95a510a6f34bbd0c3c85b15129",
-            "dirty": false,
-            "fingerprint": "git:a3a0a8c5efc2785bccb98c01537910d3b5ff18b3f6f81fe19fda4cba7237e211"
-        }
-    ]
+    "generated_at":  "2026-03-27T03:10:06+02:00",
+    "src_repo_mode":  "all",
+    "selected_src_repos":  [
+                               "agent-skills",
+                               "agent-toolkit",
+                               "ai-marketing-skills",
+                               "antigravity-awesome-skills",
+                               "aso-skills",
+                               "awesome-claude-code-subagents",
+                               "beautiful_prose",
+                               "binance-skills-hub",
+                               "charlie-cfo-skill",
+                               "claude-seo",
+                               "cli",
+                               "context-and-tools",
+                               "creative-director-skill",
+                               "duckdb-skills",
+                               "email-marketing-bible",
+                               "founder-skills",
+                               "frontend-slides",
+                               "gemini-skills",
+                               "gsap-skills",
+                               "gstack",
+                               "humanizer",
+                               "linear-claude-skill",
+                               "marketingskills",
+                               "mcp-server-guide",
+                               "NanoBanana-PPT-Skills",
+                               "notebooklm-skill",
+                               "nutrient-agent-skill",
+                               "pm-skills",
+                               "Product-Manager-Skills",
+                               "skills",
+                               "stitch-skills",
+                               "superpowers",
+                               "superpowers-lab",
+                               "tinybird-agent-skills",
+                               "tweetclaw",
+                               "x-article-publisher-skill",
+                               "Youtube-clipper-skill"
+                           ],
+    "exclude_categories":  [
+                               "games",
+                               "law-legal",
+                               "medicine-medical",
+                               "pharmacy",
+                               "biology",
+                               "chemistry",
+                               "llm-from-scratch"
+                           ],
+    "exclusion_stats":  {
+                            "total":  34,
+                            "by_category":  {
+                                                "biology":  2,
+                                                "games":  20,
+                                                "law-legal":  7,
+                                                "medicine-medical":  4,
+                                                "pharmacy":  1
+                                            }
+                        },
+    "min_skills_per_hub":  10,
+    "score_policy":  {
+                         "review_band_enabled":  false,
+                         "review_min_score":  4,
+                         "auto_accept_min_score":  8,
+                         "secondary_min_score":  6,
+                         "review_candidates":  0
+                     },
+    "category_gap_threshold":  30,
+    "category_gaps":  [
+
+                      ],
+    "src_repositories":  [
+                             {
+                                 "name":  "agent-skills",
+                                 "vcs":  "git",
+                                 "revision":  "760460c221d30d0db904ff28e8fa52af85672255",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:f53c49c9716bac75a185dce5fcb8c00b6ad83c82edbe79f7f3acff46914702f3"
+                             },
+                             {
+                                 "name":  "agent-toolkit",
+                                 "vcs":  "git",
+                                 "revision":  "4b1fb10bd707a22cf0cdfad5374ffc885f2ffa8d",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:4a55e277b8884ea3ad5e0eddc3d584bfd4789206f33b1aa8252beec660feb936"
+                             },
+                             {
+                                 "name":  "ai-marketing-skills",
+                                 "vcs":  "git",
+                                 "revision":  "f36b34fc539a7a3b801839bfff2c26277fd7ec69",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:9a843429881221c97d4f631e20ada39f957c54e7144fe5000505402a06f9dcb9"
+                             },
+                             {
+                                 "name":  "antigravity-awesome-skills",
+                                 "vcs":  "git",
+                                 "revision":  "eaebf3e101d87aa5906323604065f76001ac7e6f",
+                                 "dirty":  true,
+                                 "fingerprint":  "git:4e9dfa74056df8171eb45b902e2bbbff7d24428ed47efe4f0b60978ac821b2c4"
+                             },
+                             {
+                                 "name":  "aso-skills",
+                                 "vcs":  "git",
+                                 "revision":  "15d9e62c2701b460e5cfb2e0cab32a072a99baca",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:c36fe8498cffcd8cada2f2ab2f2bafeccd4cc06616fa99a331894391b14a30f0"
+                             },
+                             {
+                                 "name":  "awesome-claude-code-subagents",
+                                 "vcs":  "git",
+                                 "revision":  "8146b953a6951ea25268cf6d9ff5765f2483a58f",
+                                 "dirty":  true,
+                                 "fingerprint":  "git:2ab6bd6e2d2a90345ee1d269032d4b144e4b5356688dd064548213b0b3126b3d"
+                             },
+                             {
+                                 "name":  "beautiful_prose",
+                                 "vcs":  "git",
+                                 "revision":  "bf44efb7f9706f8f563af3b6913a3784c7c52a12",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:9f331771ed5ff2ea6c6f78b98bbaff8b82a6332de45eec02875ae286a0b447fd"
+                             },
+                             {
+                                 "name":  "binance-skills-hub",
+                                 "vcs":  "git",
+                                 "revision":  "8f1ffb0c8b40bca2594bab7e33a2e931b83cf8d3",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:478b275453a9bac94e76d04d18ff5a24f859003e65065c0cd305be8eb8d58abe"
+                             },
+                             {
+                                 "name":  "charlie-cfo-skill",
+                                 "vcs":  "git",
+                                 "revision":  "429f61bc0eb728cbc88db22cb1b1b1be6f21cafb",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:ff91237a1497651431dc5f74b99bad5e80e72aaa3f8dbd000f601cfb076f426b"
+                             },
+                             {
+                                 "name":  "claude-seo",
+                                 "vcs":  "git",
+                                 "revision":  "c701ef56739c790d873e8245df64969dfd5f9b23",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:47091facece157af2dd25b2d01ca089c9eee9dd945870b119311a58348c19ac0"
+                             },
+                             {
+                                 "name":  "cli",
+                                 "vcs":  "git",
+                                 "revision":  "6838c4b8d2d1294b8571d133aafeab6700b5dd50",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:a2b70b3043b84f2f40078b16d23c59158d7ed0f37a7e6bb9d3593d124257ba34"
+                             },
+                             {
+                                 "name":  "context-and-tools",
+                                 "vcs":  "git",
+                                 "revision":  "d388e4bc413d3931c3182f80a3b8c414f3e74ef4",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:f4987b82fa30c343cd44dc175b58585cc368d4334b261e9c252f9c4cd569c299"
+                             },
+                             {
+                                 "name":  "creative-director-skill",
+                                 "vcs":  "git",
+                                 "revision":  "1609cef55f65e9f643d112cca400ff90ef16b9a1",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:6967ec40cfc2fecc74fde62fb73d7051e6d3a8981f14ad4ecf95baf9d66330c7"
+                             },
+                             {
+                                 "name":  "duckdb-skills",
+                                 "vcs":  "git",
+                                 "revision":  "f6114c786311232360c30856432b4014ebd3604c",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:080cde8eb6a1e48a0284c16d5f5eb0044f9eb48a2c590d68708f483acb7446d5"
+                             },
+                             {
+                                 "name":  "email-marketing-bible",
+                                 "vcs":  "git",
+                                 "revision":  "df9903ce1f94061993a6d7afc561f9e0ea3e3485",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:e0d93904e4f297c32254c6f8ac63aea4d632b48980e93e7c840906c6c343407c"
+                             },
+                             {
+                                 "name":  "founder-skills",
+                                 "vcs":  "git",
+                                 "revision":  "1d2907706697fa48e8487deec58275c520276f16",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:f66ef19828629e56c3ddf2d497cb8e587953f62c468742d82a2cf01da805bdfb"
+                             },
+                             {
+                                 "name":  "frontend-slides",
+                                 "vcs":  "git",
+                                 "revision":  "fbf2c17fa4356e7802b055a3626c7dd6a5d509ea",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:34a4757c3dc86645c2da653ad093df50e4e3ba1af25207855d608c09475fb3fd"
+                             },
+                             {
+                                 "name":  "gemini-skills",
+                                 "vcs":  "git",
+                                 "revision":  "51f1bedafbd15776826dae6242482b2017f2e568",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:b7ad2573169abcb37967399b593aae77a1d4b2eda812d3e95288dc737498a027"
+                             },
+                             {
+                                 "name":  "gsap-skills",
+                                 "vcs":  "git",
+                                 "revision":  "03d9f0c3dbf91e0b60582b64ed040c8911ca0174",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:54fbe61a6a906646a4ccb972abed08dd06a5e25a9d762b38195d6561ee2d4cff"
+                             },
+                             {
+                                 "name":  "gstack",
+                                 "vcs":  "git",
+                                 "revision":  "4f435e45c517822014a852804c3da57bab121516",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:6e3a43c20e106efc6d6d7c32fa070b7c6e2cbb66fd72b24369fa31b86fa8e57c"
+                             },
+                             {
+                                 "name":  "humanizer",
+                                 "vcs":  "git",
+                                 "revision":  "12881abf6671c4ab62eceeb56f911b752f9fd6d2",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:3f0a4ff4f47dd6b99f19bd5f2e3fb5e898b9fc45f9407388c003a5d5ed6bfa17"
+                             },
+                             {
+                                 "name":  "linear-claude-skill",
+                                 "vcs":  "git",
+                                 "revision":  "d9378986068bef5ecc757a648912c3951a0b8d6d",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:e8fca77e907147d422d9105e9dc4824361b3c2d43ee34981085f223dd58b37b1"
+                             },
+                             {
+                                 "name":  "marketingskills",
+                                 "vcs":  "git",
+                                 "revision":  "9d4d29a795113c492b22e01c9b48a8396e140b8d",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:b9f07ec8ce75f03e63d15cc6f61ad4df392c1943a37732b439fe90fcfd0d5452"
+                             },
+                             {
+                                 "name":  "mcp-server-guide",
+                                 "vcs":  "git",
+                                 "revision":  "512f1c770037f8bb4a86748df54e219716d64414",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:9fe1fea32a95d8024fe0792091097ceaa27633c2098b9e1e0ecc7fa7262440bc"
+                             },
+                             {
+                                 "name":  "NanoBanana-PPT-Skills",
+                                 "vcs":  "git",
+                                 "revision":  "0c18b9abde04ad42f4f62c7e9ead346b7bb39260",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:c9af19c46aab3aa14acabf69edcdfb175c0dda01bcb1870ff1f71e9d82c89ed8"
+                             },
+                             {
+                                 "name":  "notebooklm-skill",
+                                 "vcs":  "git",
+                                 "revision":  "eea5cb28ba79ab8b078a1eaa44ce9ec44f75dbf8",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:e6f2a8c1d083e860e9b2f4943f4cd24f29a594e6dff3eda059ff7127275b7e09"
+                             },
+                             {
+                                 "name":  "nutrient-agent-skill",
+                                 "vcs":  "git",
+                                 "revision":  "4d150575a5bb852306a9b72c78a97a62557651ed",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:bb1f16ffbcf1dc6e28aeebabb6f442c6451e20ccb1f91d2220b20d222f4c46b1"
+                             },
+                             {
+                                 "name":  "pm-skills",
+                                 "vcs":  "git",
+                                 "revision":  "36ccefdc6c2e00d7c0c12cb0a52bf93e8ec50da4",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:2d407f4f6194042710758d2cdf054da574836e62f2724fdf7ba35eb595ec227e"
+                             },
+                             {
+                                 "name":  "Product-Manager-Skills",
+                                 "vcs":  "git",
+                                 "revision":  "2a2f27c71c562dd6b6797c8f4d224825d6005c7f",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:777b2857eec7796c64cd7df102f3fa67b6392448ddc9d559fcd20da422deeff7"
+                             },
+                             {
+                                 "name":  "skills",
+                                 "vcs":  "git",
+                                 "revision":  "98669c11ca63e9c81c11501e1437e5c47b556621",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:b1c5d315a09e5975352edf71123399e3d6be12f260b6e4e3b4a18304d7eec086"
+                             },
+                             {
+                                 "name":  "stitch-skills",
+                                 "vcs":  "git",
+                                 "revision":  "ad0b5cc5d5c3569e12a3105b0dee7409c3227e1b",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:878b905fc27c8663e7d7b257731251ea74d65adf127374a74c15a048fb63d3bd"
+                             },
+                             {
+                                 "name":  "superpowers",
+                                 "vcs":  "git",
+                                 "revision":  "eafe962b18f6c5dc70fb7c8cc7e83e61f4cdde06",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:49060aa815814dd1dd6be575835ca20b4094de1061ca5737ba5399005d00e794"
+                             },
+                             {
+                                 "name":  "superpowers-lab",
+                                 "vcs":  "git",
+                                 "revision":  "59389b1506e2d476980ee05c7c98c2f5e211fcb1",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:2316a15606570432b9b840891dbd42df8ba019ec1e0110b2c6555cb5a1670457"
+                             },
+                             {
+                                 "name":  "tinybird-agent-skills",
+                                 "vcs":  "git",
+                                 "revision":  "a33c7fbc1a4684f2732267c12a106ee8ad853d53",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:d44a29af1fbf6cdc4b383620ae36be705af89161671b375aa2d51911ca7bd74b"
+                             },
+                             {
+                                 "name":  "tweetclaw",
+                                 "vcs":  "git",
+                                 "revision":  "51d67d6920d018ea2fd026c8a5c4cae5f243be49",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:43dc8be083e659afb8b17847d28dda48de83379ae0b624483ca8aa22c69af317"
+                             },
+                             {
+                                 "name":  "x-article-publisher-skill",
+                                 "vcs":  "git",
+                                 "revision":  "eb3197d1d8579556aea5018d5c0b141d55fc2df6",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:5e2c12f435d92b0f263da8e48bb9895e3c6147088e199efc16b809ec10c9aa0b"
+                             },
+                             {
+                                 "name":  "Youtube-clipper-skill",
+                                 "vcs":  "git",
+                                 "revision":  "f31f077ee0905c95a510a6f34bbd0c3c85b15129",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:a3a0a8c5efc2785bccb98c01537910d3b5ff18b3f6f81fe19fda4cba7237e211"
+                             }
+                         ]
 }

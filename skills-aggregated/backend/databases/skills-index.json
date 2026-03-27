@@ -242,17 +242,6 @@
         "match_score":  6
     },
     {
-        "id":  "marketing-ideas",
-        "triggers":  [
-                         "marketing",
-                         "ideas"
-                     ],
-        "src":  "external:founder-skills",
-        "primary_hub":  "backend/databases",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "neon-postgres",
         "triggers":  [
                          "neon",

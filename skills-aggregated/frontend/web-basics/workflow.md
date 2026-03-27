@@ -36,14 +36,13 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 - netlify
 - fixing
-- cro
 - xss
 - official
+- factory
 - core
 - health
 - frontend
 - algorithmic
-- factory
 - performance
 - analyzer
 - cdn
@@ -51,9 +50,10 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - theme
 - image
 - pdf
-- optimization
 - metadata
 - motion
+- gsap
+- tailwind
 
 ## Data Contract
 

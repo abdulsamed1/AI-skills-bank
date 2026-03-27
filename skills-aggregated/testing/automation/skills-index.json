@@ -410,6 +410,17 @@
         "match_score":  7
     },
     {
+        "id":  "debugging-strategies",
+        "triggers":  [
+                         "debugging",
+                         "strategies"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "dependency-upgrade",
         "triggers":  [
                          "dependency",

@@ -1,16 +1,5 @@
 [
     {
-        "id":  "animejs-animation",
-        "triggers":  [
-                         "animejs",
-                         "animation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/java",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "azure-ai-agents-persistent-java",
         "triggers":  [
                          "azure",

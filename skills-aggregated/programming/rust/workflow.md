@@ -34,26 +34,26 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 ## Quick Trigger Hints
 
+- makepad
 - rust
 - azure
 - keyvault
 - patterns
-- secrets
-- bevy
-- strategies
-- storage
-- lightning
-- programming
 - async
-- zeroize
+- bevy
+- animation
+- widgets
+- programming
+- storage
+- platform
+- secrets
+- event
 - ecs
 - keys
-- certificates
-- cro
+- reference
+- zeroize
 - configuration
-- safety
-- audit
-- debugging
+- layout
 
 ## Data Contract
 

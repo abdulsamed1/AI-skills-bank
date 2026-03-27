@@ -3096,139 +3096,6 @@
         "match_score":  0
     },
     {
-        "id":  "makepad-animation",
-        "triggers":  [
-                         "makepad",
-                         "animation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "makepad-basics",
-        "triggers":  [
-                         "makepad",
-                         "basics"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "makepad-deployment",
-        "triggers":  [
-                         "makepad",
-                         "deployment"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "makepad-dsl",
-        "triggers":  [
-                         "makepad",
-                         "dsl"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "makepad-event-action",
-        "triggers":  [
-                         "makepad",
-                         "event",
-                         "action"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "makepad-font",
-        "triggers":  [
-                         "makepad",
-                         "font"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "makepad-layout",
-        "triggers":  [
-                         "makepad",
-                         "layout"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "makepad-platform",
-        "triggers":  [
-                         "makepad",
-                         "platform"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "makepad-reference",
-        "triggers":  [
-                         "makepad",
-                         "reference"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "makepad-shaders",
-        "triggers":  [
-                         "makepad",
-                         "shaders"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "makepad-splash",
-        "triggers":  [
-                         "makepad",
-                         "splash"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "makepad-widgets",
-        "triggers":  [
-                         "makepad",
-                         "widgets"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "malware-analyst",
         "triggers":  [
                          "malware",
@@ -3351,34 +3218,12 @@
         "match_score":  0
     },
     {
-        "id":  "mermaid-expert",
-        "triggers":  [
-                         "mermaid",
-                         "expert"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "metadata-optimization",
         "triggers":  [
                          "metadata",
                          "optimization"
                      ],
         "src":  "external:aso-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "microservices-patterns",
-        "triggers":  [
-                         "microservices",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -4003,17 +3848,6 @@
                          "advisor"
                      ],
         "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "popup-cro",
-        "triggers":  [
-                         "popup",
-                         "cro"
-                     ],
-        "src":  "external:marketingskills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -5092,116 +4926,6 @@
         "id":  "templates",
         "triggers":  [
                          "templates"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "threejs-animation",
-        "triggers":  [
-                         "threejs",
-                         "animation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "threejs-fundamentals",
-        "triggers":  [
-                         "threejs",
-                         "fundamentals"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "threejs-geometry",
-        "triggers":  [
-                         "threejs",
-                         "geometry"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "threejs-interaction",
-        "triggers":  [
-                         "threejs",
-                         "interaction"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "threejs-lighting",
-        "triggers":  [
-                         "threejs",
-                         "lighting"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "threejs-loaders",
-        "triggers":  [
-                         "threejs",
-                         "loaders"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "threejs-materials",
-        "triggers":  [
-                         "threejs",
-                         "materials"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "threejs-postprocessing",
-        "triggers":  [
-                         "threejs",
-                         "postprocessing"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "threejs-skills",
-        "triggers":  [
-                         "threejs",
-                         "skills"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "threejs-textures",
-        "triggers":  [
-                         "threejs",
-                         "textures"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",

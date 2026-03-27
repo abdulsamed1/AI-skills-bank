@@ -25,6 +25,17 @@
         "match_score":  7
     },
     {
+        "id":  "animejs-animation",
+        "triggers":  [
+                         "animejs",
+                         "animation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "antigravity-design-expert",
         "triggers":  [
                          "antigravity",
@@ -206,7 +217,7 @@
         "src":  "external:mcp-server-guide",
         "primary_hub":  "frontend/ui-ux",
         "is_primary":  true,
-        "match_score":  13
+        "match_score":  100
     },
     {
         "id":  "figma-create-new-file",
@@ -379,7 +390,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/ui-ux",
         "is_primary":  true,
-        "match_score":  13
+        "match_score":  100
     },
     {
         "id":  "product-design",
@@ -427,6 +438,17 @@
         "primary_hub":  "frontend/ui-ux",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "scroll-experience",
+        "triggers":  [
+                         "scroll",
+                         "experience"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "senior-frontend",
@@ -506,6 +528,116 @@
         "primary_hub":  "frontend/ui-ux",
         "is_primary":  true,
         "match_score":  13
+    },
+    {
+        "id":  "threejs-animation",
+        "triggers":  [
+                         "threejs",
+                         "animation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "threejs-fundamentals",
+        "triggers":  [
+                         "threejs",
+                         "fundamentals"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "threejs-geometry",
+        "triggers":  [
+                         "threejs",
+                         "geometry"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "threejs-interaction",
+        "triggers":  [
+                         "threejs",
+                         "interaction"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "threejs-lighting",
+        "triggers":  [
+                         "threejs",
+                         "lighting"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "threejs-loaders",
+        "triggers":  [
+                         "threejs",
+                         "loaders"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "threejs-materials",
+        "triggers":  [
+                         "threejs",
+                         "materials"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "threejs-postprocessing",
+        "triggers":  [
+                         "threejs",
+                         "postprocessing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "threejs-skills",
+        "triggers":  [
+                         "threejs",
+                         "skills"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "threejs-textures",
+        "triggers":  [
+                         "threejs",
+                         "textures"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "ui-skills",

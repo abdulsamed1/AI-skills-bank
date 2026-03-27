@@ -378,17 +378,6 @@
         "match_score":  9
     },
     {
-        "id":  "churn-prevention",
-        "triggers":  [
-                         "churn",
-                         "prevention"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "cloudformation-best-practices",
         "triggers":  [
                          "cloudformation",
@@ -440,17 +429,6 @@
                          "analysis"
                      ],
         "src":  "external:aso-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "content-strategy",
-        "triggers":  [
-                         "content",
-                         "strategy"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  11
@@ -679,28 +657,6 @@
         "match_score":  7
     },
     {
-        "id":  "gtm-motions",
-        "triggers":  [
-                         "gtm",
-                         "motions"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "gtm-strategy",
-        "triggers":  [
-                         "gtm",
-                         "strategy"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
         "id":  "identify-assumptions-new",
         "triggers":  [
                          "identify",
@@ -710,7 +666,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
-        "match_score":  15
+        "match_score":  100
     },
     {
         "id":  "incident-runbook-templates",
@@ -781,17 +737,6 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  9
-    },
-    {
-        "id":  "marketing-ideas",
-        "triggers":  [
-                         "marketing",
-                         "ideas"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "market-segments",
@@ -976,28 +921,6 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  6
-    },
-    {
-        "id":  "positioning-basics",
-        "triggers":  [
-                         "positioning",
-                         "basics"
-                     ],
-        "src":  "external:ai-marketing-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  13
-    },
-    {
-        "id":  "positioning-ideas",
-        "triggers":  [
-                         "positioning",
-                         "ideas"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  15
     },
     {
         "id":  "positioning-workshop",
@@ -1269,16 +1192,6 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  7
-    },
-    {
-        "id":  "revops",
-        "triggers":  [
-                         "revops"
-                     ],
-        "src":  "external:marketingskills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  9
     },
     {
         "id":  "roadmap-planning",

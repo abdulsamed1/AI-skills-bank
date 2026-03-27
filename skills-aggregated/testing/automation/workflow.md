@@ -41,17 +41,17 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - testarch
 - qa
 - e2e
-- derivatives
 - trading
+- derivatives
+- development
 - data
 - playwright
-- development
-- assumptions
-- agent
-- optimization
-- pro
-- pentest
+- app
 - creator
+- pentest
+- assumptions
+- optimization
+- agent
 - review
 - generate
 

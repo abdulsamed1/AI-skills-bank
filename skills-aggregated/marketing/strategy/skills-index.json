@@ -12,41 +12,6 @@
         "match_score":  11
     },
     {
-        "id":  "beachhead-segment",
-        "triggers":  [
-                         "beachhead",
-                         "segment"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "bmad-cis-innovation-strategy",
-        "triggers":  [
-                         "bmad",
-                         "cis",
-                         "innovation",
-                         "strategy"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "competitive-battlecard",
-        "triggers":  [
-                         "competitive",
-                         "battlecard"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "competitive-landscape",
         "triggers":  [
                          "competitive",
@@ -56,17 +21,6 @@
         "primary_hub":  "marketing/strategy",
         "is_primary":  true,
         "match_score":  7
-    },
-    {
-        "id":  "competitor-analysis",
-        "triggers":  [
-                         "competitor",
-                         "analysis"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  11
     },
     {
         "id":  "competitor-intel",
@@ -100,7 +54,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "marketing/strategy",
         "is_primary":  true,
-        "match_score":  5
+        "match_score":  100
     },
     {
         "id":  "gtm-strategy",
@@ -111,42 +65,18 @@
         "src":  "external:pm-skills",
         "primary_hub":  "marketing/strategy",
         "is_primary":  true,
-        "match_score":  12
+        "match_score":  100
     },
     {
-        "id":  "jobs-to-be-done",
+        "id":  "marketing-ideas",
         "triggers":  [
-                         "jobs",
-                         "to",
-                         "be",
-                         "done"
+                         "marketing",
+                         "ideas"
                      ],
-        "src":  "external:Product-Manager-Skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/strategy",
         "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "launch-strategy",
-        "triggers":  [
-                         "launch",
-                         "strategy"
-                     ],
-        "src":  "external:marketingskills",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  12
-    },
-    {
-        "id":  "monetization-strategy",
-        "triggers":  [
-                         "monetization",
-                         "strategy"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  6
+        "match_score":  100
     },
     {
         "id":  "positioning-basics",
@@ -157,7 +87,7 @@
         "src":  "external:ai-marketing-skills",
         "primary_hub":  "marketing/strategy",
         "is_primary":  true,
-        "match_score":  11
+        "match_score":  100
     },
     {
         "id":  "positioning-ideas",
@@ -168,7 +98,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "marketing/strategy",
         "is_primary":  true,
-        "match_score":  15
+        "match_score":  100
     },
     {
         "id":  "positioning-statement",
@@ -180,17 +110,6 @@
         "primary_hub":  "marketing/strategy",
         "is_primary":  true,
         "match_score":  7
-    },
-    {
-        "id":  "positioning-workshop",
-        "triggers":  [
-                         "positioning",
-                         "workshop"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  11
     },
     {
         "id":  "pricing-strategy",
@@ -214,95 +133,5 @@
         "primary_hub":  "marketing/strategy",
         "is_primary":  true,
         "match_score":  15
-    },
-    {
-        "id":  "product-name",
-        "triggers":  [
-                         "product",
-                         "name"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "product-strategy",
-        "triggers":  [
-                         "product",
-                         "strategy"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "product-strategy-session",
-        "triggers":  [
-                         "product",
-                         "strategy",
-                         "session"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  16
-    },
-    {
-        "id":  "rating-prompt-strategy",
-        "triggers":  [
-                         "rating",
-                         "prompt",
-                         "strategy"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "recommendation-canvas",
-        "triggers":  [
-                         "recommendation",
-                         "canvas"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "startup-canvas",
-        "triggers":  [
-                         "startup",
-                         "canvas"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "strategic-planning",
-        "triggers":  [
-                         "strategic",
-                         "planning"
-                     ],
-        "src":  "external:founder-skills",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "value-proposition",
-        "triggers":  [
-                         "value",
-                         "proposition"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  6
     }
 ]

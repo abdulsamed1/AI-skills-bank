@@ -419,6 +419,18 @@
         "match_score":  4
     },
     {
+        "id":  "lightning-architecture-review",
+        "triggers":  [
+                         "lightning",
+                         "architecture",
+                         "review"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "margin-trading",
         "triggers":  [
                          "margin",
@@ -428,6 +440,28 @@
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
+    },
+    {
+        "id":  "mermaid-expert",
+        "triggers":  [
+                         "mermaid",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "microservices-patterns",
+        "triggers":  [
+                         "microservices",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "moodle-external-api-development",

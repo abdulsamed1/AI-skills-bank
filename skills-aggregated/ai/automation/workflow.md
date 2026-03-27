@@ -38,22 +38,22 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - workflow
 - tdd
 - workflows
-- pr
 - review
-- git
-- patterns
-- google
 - development
+- google
+- patterns
+- pr
+- git
 - orchestration
+- odoo
 - code
 - n8n
-- odoo
-- agent
 - orchestrator
-- skill
 - ai
-- github
+- skill
+- agent
 - expert
+- github
 
 ## Data Contract
 

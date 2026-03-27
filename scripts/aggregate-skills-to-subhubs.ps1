@@ -680,7 +680,59 @@ $CATEGORY_PATTERN_TO_MAIN_HUB = @{
 }
 
 $MANUAL_HUB_OVERRIDES = @{
-    "iterate-pr" = @{ main = "ai"; sub = "automation"; score = 100 }
+    # 1. MISPLACED SKILLS (Fixing misclassifications)
+    "popup-cro"                    = @{ main = "marketing"; sub = "content"; score = 100 }
+    "cro-optimization"             = @{ main = "marketing"; sub = "content"; score = 100 }
+    "lightning-architecture-review" = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "debugging-strategies"         = @{ main = "testing"; sub = "automation"; score = 100 }
+    "marketing-ideas"              = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "animejs-animation"            = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+    "identify-assumptions-new"      = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "micro-saas-launcher"          = @{ main = "business"; sub = "saas"; score = 100 }
+    "scroll-experience"            = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+    "sred-work-summary"            = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "go-mode"                      = @{ main = "ai"; sub = "automation"; score = 100 }
+
+    # 2. DUPLICATES (Consolidating to primary hub)
+    "email-sequence"               = @{ main = "marketing"; sub = "email"; score = 100 }
+    "revops"                       = @{ main = "marketing"; sub = "email"; score = 100 }
+    "churn-prevention"             = @{ main = "marketing"; sub = "email"; score = 100 }
+    "content-strategy"             = @{ main = "marketing"; sub = "content"; score = 100 }
+    "positioning-ideas"            = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "positioning-basics"           = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "figma-create-design-system-rules" = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+    "nerdzao-elite"                = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+    "gtm-strategy"                 = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "gtm-motions"                  = @{ main = "marketing"; sub = "strategy"; score = 100 }
+
+    # 3. GENERAL TO SPECIFIC (Moving misc to specialized hubs)
+    "mermaid-expert"               = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "microservices-patterns"       = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "threejs-animation"            = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+    "threejs-fundamentals"         = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+    "threejs-geometry"             = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+    "threejs-interaction"          = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+    "threejs-lighting"             = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+    "threejs-loaders"              = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+    "threejs-materials"            = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+    "threejs-postprocessing"       = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+    "threejs-skills"               = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+    "threejs-textures"             = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+    "makepad-animation"            = @{ main = "programming"; sub = "rust"; score = 100 }
+    "makepad-basics"               = @{ main = "programming"; sub = "rust"; score = 100 }
+    "makepad-deployment"           = @{ main = "programming"; sub = "rust"; score = 100 }
+    "makepad-dsl"                  = @{ main = "programming"; sub = "rust"; score = 100 }
+    "makepad-event-action"         = @{ main = "programming"; sub = "rust"; score = 100 }
+    "makepad-font"                 = @{ main = "programming"; sub = "rust"; score = 100 }
+    "makepad-layout"               = @{ main = "programming"; sub = "rust"; score = 100 }
+    "makepad-platform"             = @{ main = "programming"; sub = "rust"; score = 100 }
+    "makepad-reference"            = @{ main = "programming"; sub = "rust"; score = 100 }
+    "makepad-shaders"              = @{ main = "programming"; sub = "rust"; score = 100 }
+    "makepad-splash"               = @{ main = "programming"; sub = "rust"; score = 100 }
+    "makepad-widgets"              = @{ main = "programming"; sub = "rust"; score = 100 }
+    
+    # 4. LEGACY (Existing)
+    "iterate-pr"                   = @{ main = "ai"; sub = "automation"; score = 100 }
 }
 
 $EXCLUDE_CATEGORY_PATTERNS = [ordered]@{

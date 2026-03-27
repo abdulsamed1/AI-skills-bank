@@ -38,22 +38,22 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - java
 - ai
 - communication
-- keyvault
 - javascript
+- keyvault
 - monitor
-- pro
-- keys
-- secrets
 - ts
+- pro
+- secrets
+- keys
 - security
+- sms
+- html
 - conversion
 - storage
-- voicelive
-- animejs
+- compute
 - vision
 - contentsafety
-- chat
-- sms
+- appconfiguration
 
 ## Data Contract
 

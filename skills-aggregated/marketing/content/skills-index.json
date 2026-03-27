@@ -108,10 +108,10 @@
                          "content",
                          "strategy"
                      ],
-        "src":  "external:marketingskills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
-        "match_score":  27
+        "match_score":  100
     },
     {
         "id":  "copy-editing",
@@ -133,6 +133,17 @@
         "primary_hub":  "marketing/content",
         "is_primary":  true,
         "match_score":  4
+    },
+    {
+        "id":  "cro-optimization",
+        "triggers":  [
+                         "cro",
+                         "optimization"
+                     ],
+        "src":  "external:founder-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "defuddle",
@@ -199,6 +210,17 @@
         "primary_hub":  "marketing/content",
         "is_primary":  true,
         "match_score":  5
+    },
+    {
+        "id":  "popup-cro",
+        "triggers":  [
+                         "popup",
+                         "cro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "programmatic-seo",

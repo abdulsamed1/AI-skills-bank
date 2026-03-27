@@ -37,8 +37,8 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - database
 - azure
 - sql
-- postgres
 - dotnet
+- postgres
 - resrc
 - manager
 - migrations
@@ -46,14 +46,14 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - expert
 - odoo
 - best
-- migration
 - practices
-- neon
+- migration
 - performance
-- patterns
 - optimization
+- patterns
+- neon
 - optimizer
-- prisma
+- skill
 
 ## Data Contract
 

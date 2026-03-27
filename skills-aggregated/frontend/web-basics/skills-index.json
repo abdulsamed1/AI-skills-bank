@@ -22,17 +22,6 @@
         "match_score":  4
     },
     {
-        "id":  "cro-optimization",
-        "triggers":  [
-                         "cro",
-                         "optimization"
-                     ],
-        "src":  "external:founder-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  8
-    },
-    {
         "id":  "fixing-metadata",
         "triggers":  [
                          "fixing",
