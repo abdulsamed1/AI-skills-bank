@@ -41,19 +41,19 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - patterns
 - async
 - bevy
+- platform
 - animation
-- widgets
 - programming
 - storage
-- platform
+- widgets
 - secrets
-- event
+- blob
 - ecs
 - keys
 - reference
 - zeroize
+- dsl
 - configuration
-- layout
 
 ## Data Contract
 

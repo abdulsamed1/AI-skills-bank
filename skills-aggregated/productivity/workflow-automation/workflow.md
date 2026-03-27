@@ -39,21 +39,21 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - tdd
 - workflows
 - development
-- git
-- code
 - n8n
+- code
+- git
 - pr
 - patterns
 - review
 - orchestration
-- github
-- wordpress
-- go
 - orchestrator
-- hubspot
-- stack
-- migration
+- github
+- go
+- wordpress
 - expert
+- stack
+- make
+- automate
 
 ## Data Contract
 

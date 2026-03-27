@@ -41,14 +41,14 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - google
 - scanning
 - coder
-- azure
 - api
+- azure
 - dotnet
-- odoo
+- codebase
 - threat
-- web
 - authentication
 - patterns
+- web
 - laravel
 - expert
 - mobile

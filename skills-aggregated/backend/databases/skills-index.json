@@ -25,10 +25,10 @@
         "match_score":  5
     },
     {
-        "id":  "azure-resrc-manager-mysql-dotnet",
+        "id":  "azure-resource-manager-mysql-dotnet",
         "triggers":  [
                          "azure",
-                         "resrc",
+                         "resource",
                          "manager",
                          "mysql",
                          "dotnet"
@@ -39,10 +39,10 @@
         "match_score":  6
     },
     {
-        "id":  "azure-resrc-manager-postgresql-dotnet",
+        "id":  "azure-resource-manager-postgresql-dotnet",
         "triggers":  [
                          "azure",
-                         "resrc",
+                         "resource",
                          "manager",
                          "postgresql",
                          "dotnet"
@@ -53,10 +53,10 @@
         "match_score":  8
     },
     {
-        "id":  "azure-resrc-manager-redis-dotnet",
+        "id":  "azure-resource-manager-redis-dotnet",
         "triggers":  [
                          "azure",
-                         "resrc",
+                         "resource",
                          "manager",
                          "redis",
                          "dotnet"
@@ -67,10 +67,10 @@
         "match_score":  4
     },
     {
-        "id":  "azure-resrc-manager-sql-dotnet",
+        "id":  "azure-resource-manager-sql-dotnet",
         "triggers":  [
                          "azure",
-                         "resrc",
+                         "resource",
                          "manager",
                          "sql",
                          "dotnet"

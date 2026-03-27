@@ -1268,18 +1268,6 @@
         "match_score":  18
     },
     {
-        "id":  "rating-prompt-strategy",
-        "triggers":  [
-                         "rating",
-                         "prompt",
-                         "strategy"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "recommendation-canvas",
         "triggers":  [
                          "recommendation",

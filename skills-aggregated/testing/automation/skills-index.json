@@ -109,10 +109,10 @@
         "match_score":  13
     },
     {
-        "id":  "azure-resrc-manager-playwright-dotnet",
+        "id":  "azure-resource-manager-playwright-dotnet",
         "triggers":  [
                          "azure",
-                         "resrc",
+                         "resource",
                          "manager",
                          "playwright",
                          "dotnet"

@@ -36,8 +36,8 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 - expert
 - mobile
-- platform
 - multi
+- platform
 - developer
 - development
 - android

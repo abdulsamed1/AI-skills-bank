@@ -39,21 +39,21 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - ts
 - cloud
 - aws
-- ai
 - mgmt
+- ai
 - cost
 - search
-- documents
+- document
+- resource
+- manager
 - terraform
+- documents
+- servicebus
 - keyvault
 - deploy
 - architect
-- intelligence
-- manager
-- voicelive
+- secrets
 - eventhub
-- servicebus
-- document
 
 ## Data Contract
 

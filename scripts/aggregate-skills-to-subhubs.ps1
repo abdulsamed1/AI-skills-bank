@@ -613,6 +613,20 @@ $SUB_HUB_DEFINITIONS = @{
                 "Improving prompt and agent reliability"
             )
         }
+        "prompting-builder" = @{
+            keywords = @("prompt", "prompt-engineering", "context", "system-prompt", "llm-prompt", "tuning", "compression")
+            anchor_keywords = @("prompt-engineering", "system-prompt", "context-compression")
+            negative_keywords = @("ui", "css", "html", "saas")
+            description = "Prompt engineering: advanced prompt techniques, context management, compression, and fine-tuning prompts"
+            best_for = @(
+                "Optimizing LLM instructions",
+                "Managing large context windows",
+                "Structuring model outputs",
+                "Improving prompt and agent reliability",
+                "enhancing prompt reliability"
+
+            )
+        }
     }
 
     "productivity" = @{
@@ -650,7 +664,7 @@ $CATEGORY_GAP_PATTERNS = @{
     "ui-ux" = @("ui", "ux", "wireframe", "prototype", "design-system", "accessibility", "usability", "figma")
     "marketing" = @("marketing", "seo", "email", "newsletter", "campaign", "audience", "publisher", "social-media", "content-marketing")
     "security" = @("security", "auth", "authentication", "authorization", "oauth", "jwt", "encryption", "tls", "ssl", "vulnerability")
-    "testing" = @("test", "testing", "unit-test", "integration-test", "e2e", "qa", "cypress", "vitest", "jest")
+    "testing" = @("test", "testing", "unit-test", "integration-test", "e2e", "qa", "cypress", "vitest", "jest", "playwright", "playwright-test", "black-box", "white-box", "grey-box")
     "ai-llm" = @("llm", "gpt", "prompt", "embedding", "rag", "agent", "transformer", "chatbot")
     "data-science" = @("machine-learning", "ml", "data-science", "pandas", "numpy", "tensorflow", "pytorch", "analytics")
     "mobile" = @("mobile", "android", "ios", "flutter", "react-native", "swift", "kotlin")
@@ -717,7 +731,8 @@ $MANUAL_HUB_OVERRIDES = @{
     "threejs-postprocessing"       = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
     "threejs-skills"               = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
     "threejs-textures"             = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-
+    "google-stitch"                = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+    
     # =========================================================================
     # TARGET: frontend/web-basics
     # =========================================================================
@@ -785,30 +800,41 @@ $MANUAL_HUB_OVERRIDES = @{
     "code-review-checklist"        = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
 
     # =========================================================================
+    # TARGET: ai/prompting-builder
+    # =========================================================================
+    "llm-prompt-optimizer"                = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "llm-application-dev-prompt-optimize" = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "enhance-prompt"                      = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "prompt-library"                      = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "prompt-engineering"                  = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "prompt-engineering-patterns"         = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "prompt-engineer"                     = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "prompt-caching"                      = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "llm-structured-output"               = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "context-compression"                 = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "rating-prompt-strategy"              = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "context-engineering-advisor"         = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+
+    # =========================================================================
     # TARGET: general/misc
     # =========================================================================
     "latex-paper-conversion"       = @{ main = "general"; sub = "misc"; score = 100 }
     "sankhya-dashboard-html-jsp-custom-best-pratices" = @{ main = "general"; sub = "misc"; score = 100 }
     "skill-creator"                = @{ main = "general"; sub = "misc"; score = 100 }
-    "ruby-pro"                     = @{ main = "general"; sub = "misc"; score = 100 }
     "ml-engineer"                  = @{ main = "general"; sub = "misc"; score = 100 }
     "dbt-transformation-patterns"  = @{ main = "general"; sub = "misc"; score = 100 }
     "data-quality-frameworks"      = @{ main = "general"; sub = "misc"; score = 100 }
     "data-engineering-data-driven-feature" = @{ main = "general"; sub = "misc"; score = 100 }
     "leiloeiro-risco"              = @{ main = "general"; sub = "misc"; score = 100 }
     "skill-sentinel"               = @{ main = "general"; sub = "misc"; score = 100 }
-    "data-storytelling"            = @{ main = "general"; sub = "misc"; score = 100 }
-    "podcast-generation"           = @{ main = "general"; sub = "misc"; score = 100 }
     "polars"                       = @{ main = "general"; sub = "misc"; score = 100 }
     "carrier-relationship-management" = @{ main = "general"; sub = "misc"; score = 100 }
     "logistics-exception-management" = @{ main = "general"; sub = "misc"; score = 100 }
     "returns-reverse-logistics"    = @{ main = "general"; sub = "misc"; score = 100 }
-    "bmad-cis-storytelling"        = @{ main = "general"; sub = "misc"; score = 100 }
-    "context-engineering-advisor"  = @{ main = "general"; sub = "misc"; score = 100 }
     "skill-authoring-workflow"     = @{ main = "general"; sub = "misc"; score = 100 }
     "yes-md"                       = @{ main = "general"; sub = "misc"; score = 100 }
     "notebooklm"                   = @{ main = "general"; sub = "misc"; score = 100 }
-
+   
     # =========================================================================
     # TARGET: devops/cloud
     # =========================================================================
@@ -817,7 +843,8 @@ $MANUAL_HUB_OVERRIDES = @{
     "netlify-cli-and-deploy"       = @{ main = "devops"; sub = "cloud"; score = 100 }
     "firebase"                     = @{ main = "devops"; sub = "cloud"; score = 100 }
     "network-engineer"             = @{ main = "devops"; sub = "cloud"; score = 100 }
-
+    "cloudflare" = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "deploy" = @{ main = "devops"; sub = "cloud"; score = 100 }
     # =========================================================================
     # TARGET: devops/docker-k8s
     # =========================================================================
@@ -830,7 +857,7 @@ $MANUAL_HUB_OVERRIDES = @{
     "email-sequence"               = @{ main = "marketing"; sub = "email"; score = 100 }
     "revops"                       = @{ main = "marketing"; sub = "email"; score = 100 }
     "churn-prevention"             = @{ main = "marketing"; sub = "email"; score = 100 }
-
+    "email-marketing"              = @{ main = "marketing"; sub = "email"; score = 100 }
     # =========================================================================
     # TARGET: marketing/social
     # =========================================================================
@@ -852,7 +879,9 @@ $MANUAL_HUB_OVERRIDES = @{
     "popup-cro"                    = @{ main = "marketing"; sub = "content"; score = 100 }
     "cro-optimization"             = @{ main = "marketing"; sub = "content"; score = 100 }
     "content-strategy"             = @{ main = "marketing"; sub = "content"; score = 100 }
-
+    "bmad-cis-storytelling"        = @{ main = "marketing"; sub = "content"; score = 100 }
+    "data-storytelling"            = @{ main = "marketing"; sub = "content"; score = 100 }
+    "podcast-generation"           = @{ main = "marketing"; sub = "content"; score = 100 }
     # =========================================================================
     # TARGET: marketing/strategy
     # =========================================================================
@@ -918,8 +947,7 @@ $DEFAULT_EXCLUDE_CATEGORIES = @(
     "medicine-medical",
     "pharmacy",
     "biology",
-    "chemistry",
-    "llm-from-scratch"
+    "chemistry"
 )
 
 $LLM_FROM_SCRATCH_PATTERNS = @(

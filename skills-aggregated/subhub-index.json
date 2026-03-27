@@ -3,18 +3,18 @@
         "key":  "ai-llm-agents",
         "main_hub":  "ai",
         "sub_hub":  "llm-agents",
-        "skill_count":  140,
+        "skill_count":  134,
         "top_triggers":  [
                              "agent",
                              "bmad",
                              "ai",
                              "agents",
-                             "llm",
                              "skill",
-                             "azure",
-                             "prompt",
                              "cis",
-                             "memory"
+                             "azure",
+                             "review",
+                             "multi",
+                             "llm"
                          ],
         "path":  "ai/llm-agents"
     },
@@ -84,34 +84,34 @@
                              "api",
                              "documentation",
                              "patterns",
+                             "azure",
+                             "dev",
                              "builder",
                              "development",
-                             "dev",
-                             "azure",
                              "generation",
-                             "graphql",
+                             "expert",
                              "gemini"
                          ],
         "path":  "backend/api-design"
     },
     {
-        "key":  "security-core",
-        "main_hub":  "security",
-        "sub_hub":  "core",
-        "skill_count":  55,
+        "key":  "ai-prompting-builder",
+        "main_hub":  "ai",
+        "sub_hub":  "prompting-builder",
+        "skill_count":  13,
         "top_triggers":  [
-                             "security",
-                             "audit",
-                             "automation",
-                             "testing",
-                             "google",
-                             "scanning",
-                             "coder",
-                             "azure",
-                             "api",
-                             "dotnet"
+                             "prompt",
+                             "engineering",
+                             "llm",
+                             "context",
+                             "patterns",
+                             "optimize",
+                             "structured",
+                             "application",
+                             "engineer",
+                             "rating"
                          ],
-        "path":  "security/core"
+        "path":  "ai/prompting-builder"
     },
     {
         "key":  "mobile-cross-platform",
@@ -121,8 +121,8 @@
         "top_triggers":  [
                              "expert",
                              "mobile",
-                             "platform",
                              "multi",
+                             "platform",
                              "developer",
                              "development",
                              "android",
@@ -164,8 +164,8 @@
                              "patterns",
                              "async",
                              "bevy",
+                             "platform",
                              "animation",
-                             "widgets",
                              "programming"
                          ],
         "path":  "programming/rust"
@@ -179,13 +179,13 @@
                              "seo",
                              "content",
                              "ai",
+                             "competitor",
                              "programmatic",
                              "audit",
-                             "competitor",
                              "schema",
                              "cro",
                              "strategy",
-                             "local"
+                             "alternatives"
                          ],
         "path":  "marketing/content"
     },
@@ -203,8 +203,8 @@
                              "patterns",
                              "e2e",
                              "playwright",
-                             "penetration",
-                             "review"
+                             "review",
+                             "evaluation"
                          ],
         "path":  "testing/automation"
     },
@@ -228,21 +228,40 @@
         "path":  "business/saas"
     },
     {
+        "key":  "security-core",
+        "main_hub":  "security",
+        "sub_hub":  "core",
+        "skill_count":  55,
+        "top_triggers":  [
+                             "security",
+                             "audit",
+                             "automation",
+                             "testing",
+                             "google",
+                             "scanning",
+                             "coder",
+                             "api",
+                             "azure",
+                             "dotnet"
+                         ],
+        "path":  "security/core"
+    },
+    {
         "key":  "business-product-strategy",
         "main_hub":  "business",
         "sub_hub":  "product-strategy",
-        "skill_count":  142,
+        "skill_count":  141,
         "top_triggers":  [
                              "product",
                              "wds",
                              "bmad",
-                             "strategy",
-                             "error",
                              "prd",
+                             "error",
+                             "strategy",
                              "analysis",
                              "brainstorm",
                              "advisor",
-                             "optimization"
+                             "app"
                          ],
         "path":  "business/product-strategy"
     },
@@ -288,7 +307,7 @@
         "key":  "frontend-ui-ux",
         "main_hub":  "frontend",
         "sub_hub":  "ui-ux",
-        "skill_count":  66,
+        "skill_count":  65,
         "top_triggers":  [
                              "ui",
                              "design",
@@ -298,7 +317,7 @@
                              "patterns",
                              "frontend",
                              "system",
-                             "create",
+                             "skills",
                              "components"
                          ],
         "path":  "frontend/ui-ux"
@@ -314,9 +333,9 @@
                              "tdd",
                              "workflows",
                              "development",
-                             "git",
-                             "code",
                              "n8n",
+                             "code",
+                             "git",
                              "pr",
                              "patterns"
                          ],
@@ -326,18 +345,18 @@
         "key":  "devops-cloud",
         "main_hub":  "devops",
         "sub_hub":  "cloud",
-        "skill_count":  56,
+        "skill_count":  58,
         "top_triggers":  [
                              "azure",
                              "dotnet",
                              "ts",
                              "cloud",
                              "aws",
-                             "ai",
                              "mgmt",
+                             "ai",
                              "cost",
                              "search",
-                             "documents"
+                             "document"
                          ],
         "path":  "devops/cloud"
     },
@@ -345,7 +364,7 @@
         "key":  "general-misc",
         "main_hub":  "general",
         "sub_hub":  "misc",
-        "skill_count":  462,
+        "skill_count":  460,
         "top_triggers":  [
                              "bmad",
                              "review",
@@ -355,8 +374,8 @@
                              "code",
                              "hig",
                              "odoo",
-                             "builder",
-                             "pro"
+                             "pro",
+                             "builder"
                          ],
         "path":  "general/misc"
     },
@@ -370,12 +389,12 @@
                              "azure",
                              "python",
                              "ai",
-                             "storage",
-                             "monitor",
-                             "fastapi",
                              "mgmt",
+                             "monitor",
                              "pro",
-                             "development"
+                             "storage",
+                             "fastapi",
+                             "agents"
                          ],
         "path":  "programming/python"
     },
@@ -390,8 +409,8 @@
                              "dotnet",
                              "postgres",
                              "sql",
-                             "resrc",
                              "manager",
+                             "resource",
                              "migrations",
                              "expert",
                              "odoo"
@@ -404,15 +423,15 @@
         "sub_hub":  "docker-k8s",
         "skill_count":  10,
         "top_triggers":  [
+                             "expert",
                              "k8s",
                              "kubernetes",
-                             "expert",
-                             "service",
-                             "windows",
                              "container",
+                             "windows",
+                             "security",
                              "linkerd",
                              "patterns",
-                             "manifest",
+                             "generator",
                              "mesh"
                          ],
         "path":  "devops/docker-k8s"

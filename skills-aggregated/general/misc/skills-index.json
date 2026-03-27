@@ -1407,17 +1407,6 @@
         "match_score":  0
     },
     {
-        "id":  "context-optimization",
-        "triggers":  [
-                         "context",
-                         "optimization"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "copy-editing",
         "triggers":  [
                          "copy",
@@ -3916,17 +3905,6 @@
         "triggers":  [
                          "prometheus",
                          "configuration"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "prompt-engineer",
-        "triggers":  [
-                         "prompt",
-                         "engineer"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",

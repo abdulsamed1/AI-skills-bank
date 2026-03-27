@@ -42,18 +42,18 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - patterns
 - e2e
 - playwright
-- penetration
 - review
-- pentest
-- azure
 - evaluation
+- generate
+- azure
 - privilege
-- scripting
 - ab
+- scripting
 - ci
 - tests
 - escalation
-- debugging
+- penetration
+- pentest
 
 ## Data Contract
 

@@ -42,17 +42,17 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - code
 - hig
 - odoo
-- builder
 - pro
-- setup
+- builder
 - patterns
+- setup
 - project
-- management
-- ai
 - firecrawl
-- optimization
+- ai
+- management
+- plan
 - health
-- architect
+- app
 - components
 
 ## Data Contract

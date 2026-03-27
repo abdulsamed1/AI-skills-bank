@@ -37,23 +37,23 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - api
 - documentation
 - patterns
+- azure
+- dev
 - builder
 - development
-- dev
-- azure
 - generation
-- graphql
-- gemini
 - expert
+- gemini
+- graphql
 - backend
-- dotnet
 - ai
-- mgmt
-- doc
-- fp
 - odoo
-- architect
+- doc
+- mgmt
 - generate
+- fp
+- dotnet
+- architecture
 
 ## Data Contract
 

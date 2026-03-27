@@ -42,18 +42,18 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - patterns
 - frontend
 - system
-- create
-- components
 - skills
-- wds
+- components
+- create
 - accessibility
+- wds
 - animation
-- designer
-- generate
-- avalonia
 - zafiro
+- generate
 - expo
-- stitch
+- avalonia
+- magic
+- bmad
 
 ## Data Contract
 

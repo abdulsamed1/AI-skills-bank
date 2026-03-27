@@ -1,5 +1,5 @@
 {
-    "generated_at":  "2026-03-27T10:44:28+02:00",
+    "generated_at":  "2026-03-27T11:34:43+02:00",
     "src_repo_mode":  "all",
     "selected_src_repos":  [
                                "agent-skills",
@@ -49,10 +49,10 @@
                                "llm-from-scratch"
                            ],
     "exclusion_stats":  {
-                            "total":  34,
+                            "total":  40,
                             "by_category":  {
                                                 "biology":  2,
-                                                "games":  20,
+                                                "games":  26,
                                                 "law-legal":  7,
                                                 "medicine-medical":  4,
                                                 "pharmacy":  1
@@ -95,9 +95,9 @@
                              {
                                  "name":  "antigravity-awesome-skills",
                                  "vcs":  "git",
-                                 "revision":  "eaebf3e101d87aa5906323604065f76001ac7e6f",
-                                 "dirty":  true,
-                                 "fingerprint":  "git:4e9dfa74056df8171eb45b902e2bbbff7d24428ed47efe4f0b60978ac821b2c4"
+                                 "revision":  "dffac91d3b437d01b62444da25c5a4f1e00f9047",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:4b0ac98bd55042eb2a545cc1a3d2fba2014ea45a52486d6a8dea0ce1b15bdbf0"
                              },
                              {
                                  "name":  "aso-skills",

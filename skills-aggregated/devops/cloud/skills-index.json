@@ -79,7 +79,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/cloud",
         "is_primary":  true,
-        "match_score":  12
+        "match_score":  17
     },
     {
         "id":  "azd-deployment",
@@ -90,7 +90,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/cloud",
         "is_primary":  true,
-        "match_score":  4
+        "match_score":  9
     },
     {
         "id":  "azure-ai-document-intelligence-dotnet",
@@ -131,7 +131,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/cloud",
         "is_primary":  true,
-        "match_score":  4
+        "match_score":  9
     },
     {
         "id":  "azure-ai-voicelive-dotnet",
@@ -228,7 +228,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/cloud",
         "is_primary":  true,
-        "match_score":  4
+        "match_score":  9
     },
     {
         "id":  "azure-identity-ts",
@@ -357,13 +357,13 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/cloud",
         "is_primary":  true,
-        "match_score":  4
+        "match_score":  9
     },
     {
-        "id":  "azure-resrc-manager-cosmosdb-dotnet",
+        "id":  "azure-resource-manager-cosmosdb-dotnet",
         "triggers":  [
                          "azure",
-                         "resrc",
+                         "resource",
                          "manager",
                          "cosmosdb",
                          "dotnet"
@@ -374,10 +374,10 @@
         "match_score":  4
     },
     {
-        "id":  "azure-resrc-manager-durabletask-dotnet",
+        "id":  "azure-resource-manager-durabletask-dotnet",
         "triggers":  [
                          "azure",
-                         "resrc",
+                         "resource",
                          "manager",
                          "durabletask",
                          "dotnet"
@@ -449,6 +449,17 @@
         "primary_hub":  "devops/cloud",
         "is_primary":  true,
         "match_score":  4
+    },
+    {
+        "id":  "bash-linux",
+        "triggers":  [
+                         "bash",
+                         "linux"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "cdk-patterns",
@@ -542,6 +553,18 @@
         "primary_hub":  "devops/cloud",
         "is_primary":  true,
         "match_score":  8
+    },
+    {
+        "id":  "environment-setup-guide",
+        "triggers":  [
+                         "environment",
+                         "setup",
+                         "guide"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "firebase",

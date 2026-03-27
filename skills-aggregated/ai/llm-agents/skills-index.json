@@ -1,5 +1,15 @@
 [
     {
+        "id":  "adhx",
+        "triggers":  [
+                         "adhx"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "advanced-evaluation",
         "triggers":  [
                          "advanced",
@@ -652,6 +662,18 @@
         "match_score":  5
     },
     {
+        "id":  "clarvia-aeo-check",
+        "triggers":  [
+                         "clarvia",
+                         "aeo",
+                         "check"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "claude-api",
         "triggers":  [
                          "claude",
@@ -716,17 +738,6 @@
         "triggers":  [
                          "context",
                          "agent"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "context-compression",
-        "triggers":  [
-                         "context",
-                         "compression"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "ai/llm-agents",
@@ -1073,20 +1084,6 @@
         "match_score":  11
     },
     {
-        "id":  "llm-application-dev-prompt-optimize",
-        "triggers":  [
-                         "llm",
-                         "application",
-                         "dev",
-                         "prompt",
-                         "optimize"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
         "id":  "llm-app-patterns",
         "triggers":  [
                          "llm",
@@ -1108,30 +1105,6 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  23
-    },
-    {
-        "id":  "llm-prompt-optimizer",
-        "triggers":  [
-                         "llm",
-                         "prompt",
-                         "optimizer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "llm-structured-output",
-        "triggers":  [
-                         "llm",
-                         "structured",
-                         "output"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "local-llm-expert",
@@ -1315,51 +1288,6 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  11
-    },
-    {
-        "id":  "prompt-caching",
-        "triggers":  [
-                         "prompt",
-                         "caching"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "prompt-engineering",
-        "triggers":  [
-                         "prompt",
-                         "engineering"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "prompt-engineering-patterns",
-        "triggers":  [
-                         "prompt",
-                         "engineering",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "prompt-library",
-        "triggers":  [
-                         "prompt",
-                         "library"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  9
     },
     {
         "id":  "pydantic-ai",

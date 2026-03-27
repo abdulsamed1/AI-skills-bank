@@ -1,8 +1,8 @@
-# marketing / content
+# ai / prompting-builder
 
 ## Purpose
 
-Content marketing & SEO: copywriting, blog strategy, search optimization, and editorial best practices
+Prompt engineering: advanced prompt techniques, context management, compression, and fine-tuning prompts
 
 This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub Copilot) with minimal context overhead.
 
@@ -28,32 +28,32 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 ## Recommended Use Cases
 
-- Creating SEO-optimized content
-- Building blog strategies
-- Improving search rankings
+- Optimizing LLM instructions
+- Managing large context windows
+- Structuring model outputs
 
 ## Quick Trigger Hints
 
-- seo
-- content
-- ai
-- competitor
-- programmatic
-- audit
-- schema
-- cro
+- prompt
+- engineering
+- llm
+- context
+- patterns
+- optimize
+- structured
+- application
+- engineer
+- rating
+- dev
+- enhance
 - strategy
-- alternatives
-- architect
-- local
-- ad
-- snippet
-- copy
-- marketer
-- geo
+- compression
 - optimization
-- copywriting
-- magnets
+- library
+- optimizer
+- caching
+- advisor
+- output
 
 ## Data Contract
 

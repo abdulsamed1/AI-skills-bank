@@ -38,22 +38,22 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - bmad
 - ai
 - agents
-- llm
 - skill
-- azure
-- prompt
 - cis
-- memory
+- azure
 - review
 - multi
-- dev
-- ts
+- llm
+- memory
 - development
-- patterns
-- engineering
+- ts
+- storage
+- dotnet
 - code
 - engineer
-- application
+- evaluation
+- builder
+- dev
 
 ## Data Contract
 

@@ -8,8 +8,8 @@
     "top_triggers":  [
                          "expert",
                          "mobile",
-                         "platform",
                          "multi",
+                         "platform",
                          "developer",
                          "development",
                          "android",
@@ -27,7 +27,7 @@
                          "architecture",
                          "build"
                      ],
-    "generated_at":  "2026-03-27T10:44:26+02:00",
+    "generated_at":  "2026-03-27T11:34:41+02:00",
     "files":  {
                   "skill":  "SKILL.md",
                   "workflow":  "workflow.md",
