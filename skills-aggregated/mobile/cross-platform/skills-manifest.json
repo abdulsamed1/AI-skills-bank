@@ -6,31 +6,11 @@
     "skill_count":  27,
     "src_count":  2,
     "top_triggers":  [
-                         "expo",
-                         "expert",
-                         "app",
-                         "mobile",
-                         "macos",
-                         "developer",
-                         "ui",
-                         "swift",
-                         "development",
-                         "android",
-                         "native",
-                         "store",
-                         "analytics",
-                         "upgrading",
-                         "spm",
-                         "scaffold",
-                         "flutter",
-                         "component",
-                         "jetpack",
-                         "kotlin"
+                         null
                      ],
-    "generated_at":  "2026-03-27T17:38:38+02:00",
+    "generated_at":  "2026-03-28T01:39:22+02:00",
     "files":  {
                   "skill":  "SKILL.md",
-                  "workflow":  "workflow.md",
                   "index":  "skills-index.json",
                   "catalog":  "skills-catalog.ndjson"
               }

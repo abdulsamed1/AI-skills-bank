@@ -6,31 +6,11 @@
     "skill_count":  76,
     "src_count":  3,
     "top_triggers":  [
-                         "py",
-                         "azure",
-                         "python",
-                         "ai",
-                         "pro",
-                         "storage",
-                         "monitor",
-                         "mgmt",
-                         "fastapi",
-                         "agents",
-                         "patterns",
-                         "development",
-                         "temporal",
-                         "cosmos",
-                         "file",
-                         "django",
-                         "v2",
-                         "text",
-                         "opentelemetry",
-                         "translation"
+                         null
                      ],
-    "generated_at":  "2026-03-27T17:38:38+02:00",
+    "generated_at":  "2026-03-28T01:39:23+02:00",
     "files":  {
                   "skill":  "SKILL.md",
-                  "workflow":  "workflow.md",
                   "index":  "skills-index.json",
                   "catalog":  "skills-catalog.ndjson"
               }

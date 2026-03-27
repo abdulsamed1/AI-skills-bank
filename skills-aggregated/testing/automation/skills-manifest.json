@@ -3,34 +3,14 @@
     "main_hub":  "testing",
     "sub_hub":  "automation",
     "description":  "Software testing: unit, integration, E2E, and automated quality workflows",
-    "skill_count":  55,
-    "src_count":  5,
+    "skill_count":  51,
+    "src_count":  4,
     "top_triggers":  [
-                         "testing",
-                         "tdd",
-                         "qa",
-                         "test",
-                         "e2e",
-                         "bmad",
-                         "workflows",
-                         "patterns",
-                         "debugging",
-                         "playwright",
-                         "review",
-                         "generate",
-                         "automation",
-                         "api",
-                         "azure",
-                         "tests",
-                         "ab",
-                         "agent",
-                         "scripting",
-                         "ts"
+                         null
                      ],
-    "generated_at":  "2026-03-27T17:38:39+02:00",
+    "generated_at":  "2026-03-28T01:39:22+02:00",
     "files":  {
                   "skill":  "SKILL.md",
-                  "workflow":  "workflow.md",
                   "index":  "skills-index.json",
                   "catalog":  "skills-catalog.ndjson"
               }

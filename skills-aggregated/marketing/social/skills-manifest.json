@@ -6,31 +6,11 @@
     "skill_count":  16,
     "src_count":  4,
     "top_triggers":  [
-                         "apify",
-                         "social",
-                         "x",
-                         "content",
-                         "article",
-                         "analysis",
-                         "publisher",
-                         "generator",
-                         "linkedin",
-                         "influencer",
-                         "paid",
-                         "orchestrator",
-                         "ads",
-                         "discovery",
-                         "magnet",
-                         "hook",
-                         "analytics",
-                         "viral",
-                         "twitter",
-                         "audience"
+                         null
                      ],
-    "generated_at":  "2026-03-27T17:38:38+02:00",
+    "generated_at":  "2026-03-28T01:39:21+02:00",
     "files":  {
                   "skill":  "SKILL.md",
-                  "workflow":  "workflow.md",
                   "index":  "skills-index.json",
                   "catalog":  "skills-catalog.ndjson"
               }

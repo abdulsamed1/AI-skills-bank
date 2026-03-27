@@ -6,31 +6,11 @@
     "skill_count":  39,
     "src_count":  4,
     "top_triggers":  [
-                         "ts",
-                         "typescript",
-                         "azure",
-                         "javascript",
-                         "fp",
-                         "angular",
-                         "expert",
-                         "storage",
-                         "practices",
-                         "development",
-                         "pro",
-                         "best",
-                         "n8n",
-                         "file",
-                         "react",
-                         "data",
-                         "specialist",
-                         "bullmq",
-                         "management",
-                         "netlify"
+                         null
                      ],
-    "generated_at":  "2026-03-27T17:38:38+02:00",
+    "generated_at":  "2026-03-28T01:39:22+02:00",
     "files":  {
                   "skill":  "SKILL.md",
-                  "workflow":  "workflow.md",
                   "index":  "skills-index.json",
                   "catalog":  "skills-catalog.ndjson"
               }

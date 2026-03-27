@@ -81,18 +81,6 @@
         "match_score":  100
     },
     {
-        "id":  "bmad-cis-storytelling",
-        "triggers":  [
-                         "bmad",
-                         "cis",
-                         "storytelling"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "marketing/content",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
         "id":  "citation-management",
         "triggers":  [
                          "citation",

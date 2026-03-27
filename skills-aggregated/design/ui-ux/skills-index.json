@@ -95,32 +95,6 @@
         "match_score":  15
     },
     {
-        "id":  "bmad-agent-ux-designer",
-        "triggers":  [
-                         "bmad",
-                         "agent",
-                         "ux",
-                         "designer"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  17
-    },
-    {
-        "id":  "bmad-create-ux-design",
-        "triggers":  [
-                         "bmad",
-                         "create",
-                         "ux",
-                         "design"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
         "id":  "building-native-ui",
         "triggers":  [
                          "building",
@@ -1034,45 +1008,6 @@
         "primary_hub":  "design/ui-ux",
         "is_primary":  true,
         "match_score":  7
-    },
-    {
-        "id":  "wds-4-ux-design",
-        "triggers":  [
-                         "wds",
-                         "4",
-                         "ux",
-                         "design"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "wds-7-design-system",
-        "triggers":  [
-                         "wds",
-                         "7",
-                         "design",
-                         "system"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "wds-agent-freya-ux",
-        "triggers":  [
-                         "wds",
-                         "agent",
-                         "freya",
-                         "ux"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  15
     },
     {
         "id":  "x-writer",

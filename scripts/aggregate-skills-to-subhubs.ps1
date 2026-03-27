@@ -1,6 +1,6 @@
 # Skill Aggregation System - BMAD Style Builder
 # Transforms flat hub-manifest structure to sub-hub architecture
-# Generates lightweight SKILL.md router + workflow.md + external catalog data
+# Generates lightweight SKILL.md router + external catalog data
 
 param(
     [string] $srcHubsDir = ".\AI-skills-bank\hub-skills",
@@ -296,68 +296,10 @@ name: {SKILL_NAME}
 description: '{SKILL_DESCRIPTION}'
 ---
 
-Follow the instructions in ./workflow.md.
+Read routing.tsv to find the exact skill file path needed for the user request.
 '@
 
-$WORKFLOW_TEMPLATE = @'
-# {TITLE}
 
-## Purpose
-
-{DESCRIPTION}
-
-This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub Copilot) with minimal context overhead.
-
-## Loading Strategy
-
-1. Start with `skills-manifest.json` to understand scope and top triggers.
-2. Narrow by user intent and trigger keywords first.
-3. Load only relevant lines from `skills-catalog.ndjson`.
-4. Avoid loading the entire catalog unless explicitly needed.
-
-## Execution Rule (Mandatory)
-
-1. Do not stop at `SKILL.md`, `workflow.md`, or `skills-manifest.json`.
-2. After filtering candidate entries from `skills-catalog.ndjson`, open at least one concrete skill file from the `path` field.
-3. If multiple candidates exist, open the best match first, then continue with implementation using that skill.
-4. If a `path` under `AI-skills-bank/src/` is missing, report it explicitly and request re-aggregation with src repos included.
-
-## Files
-
-- `skills-manifest.json`: Summary, counts, and top triggers.
-- `skills-index.json`: Lightweight index for quick filtering before deep reads.
-- `skills-catalog.ndjson`: One JSON object per skill (stream-friendly).
-
-## Recommended Use Cases
-
-- {USE_CASE_1}
-- {USE_CASE_2}
-- {USE_CASE_3}
-
-## Quick Trigger Hints
-
-{TRIGGER_HINTS}
-
-## Data Contract
-
-Each index item contains:
-
-```json
-{"id":"...","triggers":["..."],"src":"...","primary_hub":"...","is_primary":true,"match_score":8}
-```
-
-Each NDJSON item contains:
-
-```json
-{"id":"...","description":"...","path":"...","triggers":["..."],"src":"...","primary_hub":"...","assigned_hubs":["..."],"match_score":8,"is_primary":true}
-```
-
-## Notes
-
-- Keep this workflow lightweight.
-- Prefer selective reads from the catalog.
-- This mirrors BMAD's router pattern (`SKILL.md` delegates to `workflow.md`).
-'@
 
 # ============================================================================
 # SKILL DEFINITIONS (TAXONOMY)
@@ -1676,17 +1618,6 @@ function Write-SubHubFiles {
     $skillName = "skills-$MainHub-$SubHub"
     $skillDescription = $SubHubDef.description.Replace("'", "''")
     $title = "$MainHub / $SubHub"
-    $topTriggers = Build-TopTriggers -Skills $Skills -Limit 20
-    $triggerHints = ($topTriggers | ForEach-Object { "- $_" }) -join "`n"
-
-    $workflowMd = $WORKFLOW_TEMPLATE `
-        -replace "{TITLE}", $title `
-        -replace "{DESCRIPTION}", $SubHubDef.description `
-        -replace "{USE_CASE_1}", $SubHubDef.best_for[0] `
-        -replace "{USE_CASE_2}", $SubHubDef.best_for[1] `
-        -replace "{USE_CASE_3}", $SubHubDef.best_for[2] `
-        -replace "{TRIGGER_HINTS}", $triggerHints
-
     $skillMd = $SKILL_ROUTER_TEMPLATE `
         -replace "{SKILL_NAME}", $skillName `
         -replace "{SKILL_DESCRIPTION}", $skillDescription
@@ -1702,7 +1633,6 @@ function Write-SubHubFiles {
         generated_at = (Get-Date -Format "yyyy-MM-ddTHH:mm:ssK")
         files = [ordered]@{
             skill = "SKILL.md"
-            workflow = "workflow.md"
             index = "skills-index.json"
             catalog = "skills-catalog.ndjson"
         }
@@ -1737,7 +1667,7 @@ function Write-SubHubFiles {
     if ($ValidateQuality) {
         # Simply convert manifest hashtable to PSCustomObject (PowerShell handles nested objects)
         $manifestObj = [PSCustomObject]$manifest
-        $report = New-ValidationReport -SubHubKey "$MainHub/$SubHub" -Manifest $manifestObj -CatalogItems $catalogLines -WorkflowText $workflowMd -RepoRoot $RepoRoot
+        $report = New-ValidationReport -SubHubKey "$MainHub/$SubHub" -Manifest $manifestObj -CatalogItems $catalogLines -WorkflowText "" -RepoRoot $RepoRoot
         Write-ValidationReport -Report $report
         if (-not $report.passed) {
             Write-Host "[ERROR] Quality validation failed for $MainHub/$SubHub. Fix issues above before proceeding." -ForegroundColor Red
@@ -1748,7 +1678,6 @@ function Write-SubHubFiles {
     if (-not $DryRun) {
         mkdir -Path $OutPath -Force | Out-Null
         Write-FileUtf8NoBom -Path (Join-Path $OutPath "SKILL.md") -Content $skillMd
-        Write-FileUtf8NoBom -Path (Join-Path $OutPath "workflow.md") -Content $workflowMd
         Write-FileUtf8NoBom -Path (Join-Path $OutPath "skills-manifest.json") -Content (($manifest | ConvertTo-Json -Depth 8) + [Environment]::NewLine)
         Write-FileUtf8NoBom -Path (Join-Path $OutPath "skills-index.json") -Content (($indexItems | ConvertTo-Json -Depth 6) + [Environment]::NewLine)
         Write-FileUtf8NoBom -Path (Join-Path $OutPath "skills-catalog.ndjson") -Content (($catalogLines -join [Environment]::NewLine) + [Environment]::NewLine)

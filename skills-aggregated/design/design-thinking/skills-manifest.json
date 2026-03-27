@@ -15,7 +15,6 @@
     "generated_at":  "2026-03-27T17:38:40+02:00",
     "files":  {
                   "skill":  "SKILL.md",
-                  "workflow":  "workflow.md",
                   "index":  "skills-index.json",
                   "catalog":  "skills-catalog.ndjson"
               }

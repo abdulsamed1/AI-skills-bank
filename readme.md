@@ -30,19 +30,25 @@ Unified, visual, multi-tool skill routing platform for AI workflows.
 AI-skills-bank/
 ├─ scripts/
 │  ├─ aggregate-skills-to-subhubs.ps1
-│  └─ sync-hubs.ps1
+│  ├─ sync-hubs.ps1
+│  ├─ generate-quick-index.ps1
+│  ├─ generate-routing-tsv.ps1
+│  └─ validate-skill-invocation.ps1
 ├─ cli/
 │  ├─ package.json
 │  └─ src/index.mjs
+├─ hub-manifests.csv         <-- Build source (do not read via agents)
 ├─ skills-aggregated/
+│  ├─ quick-index.json       <-- Step 1: Keyword routing
+│  ├─ AGENT-PROTOCOL.md      <-- Mandatory agent usage rules
 │  ├─ subhub-index.json
-│  ├─ <main>/<sub>/
+│  ├─ <hub>/<sub_hub>/
+│  │  ├─ routing.tsv         <-- Step 2: Skill lookup & src_path
 │  │  ├─ SKILL.md
-│  │  ├─ workflow.md
 │  │  ├─ skills-manifest.json
 │  │  ├─ skills-index.json
 │  │  └─ skills-catalog.ndjson
-└─ src/
+└─ src/                      <-- Step 3: Raw skill files
 ```
 
 ---
@@ -156,12 +162,19 @@ Requirements for imported srcs:
 
 ---
 
-## Loading Strategy for Agents
+## Loading Strategy for Agents (v2.0 Protocol)
 
-1. Read `skills-aggregated/subhub-index.json`
-2. Pick 2-4 relevant sub-hubs
-3. Read per-hub: `SKILL.md`, `workflow.md`, `skills-manifest.json`, `skills-index.json`
-4. Read only needed records from `skills-catalog.ndjson`
+To minimize token usage (typically <150 tokens) and eliminate hallucinations, AI agents **MUST** follow the 3-Step Flow:
+
+1. **Step 1 (Route):** Read `skills-aggregated/quick-index.json`
+   - Extract keywords from user intent and map to `{hub}/{sub_hub}`.
+2. **Step 2 (Lookup):** Read `skills-aggregated/{hub}/{sub_hub}/routing.tsv`
+   - Match user intent against the `triggers` column.
+   - Extract `skill_id` and `src_path` from the row with the highest score.
+3. **Step 3 (Invoke):** Read `{project-root}/AI-skills-bank/{src_path}`
+   - Load the exact file referenced by the routing layer.
+
+> **Note:** Agents should NEVER read `hub-manifests.csv` (too large) or guess file paths. Always use `routing.tsv` for exact resolution. Reference `skills-aggregated/AGENT-PROTOCOL.md` for full implementation rules.
 
 ---
 
@@ -169,18 +182,16 @@ Requirements for imported srcs:
 
 ```yaml
 ai_skills_routing:
-  default_subhubs:
-    - programming/typescript
-    - backend/api-design
-    - backend/databases
-  optional_subhubs:
-    - frontend/react-nextjs
-    - devops/cloud
-  loading_rule:
-    - read SKILL.md
-    - read workflow.md
-    - filter via skills-index.json
-    - selective read from skills-catalog.ndjson
+  protocol: v2.0
+  entrypoint: AI-skills-bank/skills-aggregated/quick-index.json
+  rules:
+    - Step 1: Route via quick-index.json
+    - Step 2: Extract src_path from {hub}/{sub_hub}/routing.tsv
+    - Step 3: Load exact contents of {src_path}
+  anti_hallucination:
+    - never invent skill_ids
+    - never guess path locations
+    - never read hub-manifests.csv
 ```
 
 ---

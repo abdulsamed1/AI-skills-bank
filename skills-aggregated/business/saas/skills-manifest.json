@@ -6,31 +6,11 @@
     "skill_count":  34,
     "src_count":  5,
     "top_triggers":  [
-                         "startup",
-                         "metrics",
-                         "saas",
-                         "market",
-                         "odoo",
-                         "business",
-                         "integration",
-                         "analyst",
-                         "setup",
-                         "financial",
-                         "analysis",
-                         "management",
-                         "sizing",
-                         "finance",
-                         "logistics",
-                         "launcher",
-                         "economics",
-                         "pricing",
-                         "hubspot",
-                         "monetization"
+                         null
                      ],
-    "generated_at":  "2026-03-27T17:38:40+02:00",
+    "generated_at":  "2026-03-28T01:39:22+02:00",
     "files":  {
                   "skill":  "SKILL.md",
-                  "workflow":  "workflow.md",
                   "index":  "skills-index.json",
                   "catalog":  "skills-catalog.ndjson"
               }

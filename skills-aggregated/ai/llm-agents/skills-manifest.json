@@ -3,34 +3,14 @@
     "main_hub":  "ai",
     "sub_hub":  "llm-agents",
     "description":  "AI engineering: LLM prompting, RAG pipelines, embeddings, and autonomous agent patterns",
-    "skill_count":  168,
-    "src_count":  7,
+    "skill_count":  154,
+    "src_count":  6,
     "top_triggers":  [
-                         "agent",
-                         "bmad",
-                         "ai",
-                         "claude",
-                         "face",
-                         "hugging",
-                         "agents",
-                         "fal",
-                         "automation",
-                         "builder",
-                         "skill",
-                         "engineer",
-                         "development",
-                         "multi",
-                         "llm",
-                         "google",
-                         "cis",
-                         "context",
-                         "cli",
-                         "hig"
+                         null
                      ],
-    "generated_at":  "2026-03-27T17:38:38+02:00",
+    "generated_at":  "2026-03-28T01:39:21+02:00",
     "files":  {
                   "skill":  "SKILL.md",
-                  "workflow":  "workflow.md",
                   "index":  "skills-index.json",
                   "catalog":  "skills-catalog.ndjson"
               }

@@ -6,26 +6,11 @@
     "skill_count":  8,
     "src_count":  3,
     "top_triggers":  [
-                         "email",
-                         "prevention",
-                         "curation",
-                         "systems",
-                         "automation",
-                         "creation",
-                         "bible",
-                         "internal",
-                         "cold",
-                         "comms",
-                         "churn",
-                         "newsletter",
-                         "marketing",
-                         "sequence",
-                         "mailchimp"
+                         null
                      ],
-    "generated_at":  "2026-03-27T17:38:39+02:00",
+    "generated_at":  "2026-03-28T01:39:23+02:00",
     "files":  {
                   "skill":  "SKILL.md",
-                  "workflow":  "workflow.md",
                   "index":  "skills-index.json",
                   "catalog":  "skills-catalog.ndjson"
               }

@@ -105,65 +105,34 @@ description: |
   Auto-generated router for $HubName/$SubHubName.
 
   Skills: $skillCount
-  Required gates: $requiredCount
   Generated: $generatedAt
 metadata:
-    agent_party: '{project-root}/AI-skills-bank/hub-manifests.csv'
-    bmad_compatible: true
-    version: '1.0'
+    version: '2.0'
 ---
 
 # $HubName / $SubHubName Skill Router
 
 ## Critical Instructions
 
-1. Load hub-manifests.csv first.
-2. Filter only rows where hub=$HubName and sub_hub=$SubHubName.
-3. Match user intent against triggers exactly.
-4. Never invent a skill_id.
-5. Verify score, phase, and dependencies before selection.
+1. Read routing.tsv in this directory.
+2. Match Task against triggers column.
+3. Pick the highest score match.
+4. Use src_path to load the actual skill.
+5. Never invent a skill_id or guess a path.
 
 ## Hub Snapshot
 
 - Total skills: $skillCount
-- Required skills: $requiredCount
 - Phase distribution: P1=$phase1Count, P2=$phase2Count, P3=$phase3Count, P4=$phase4Count
 - Top triggers: $topTriggersText
 
-## Quick Intent Matcher
+## Quick Intent Matcher (top $TopCount by score)
 
 $($tableLines -join "`r`n")
 
-## Selection Rules
+## Full Catalog
 
-1. Select candidates with score >= 10.
-2. If multiple candidates remain, sort by score descending.
-3. If the best candidate has required=true and unmet dependency (after), block and explain the prerequisite.
-4. If user intent is ambiguous, present top 3 candidates and ask user to choose.
-
-## Dependency Rules
-
-- after: prerequisite skill IDs that must be completed first.
-- before: reverse dependency links for planning only.
-- required=true: blocking gate for progression.
-
-## Output Format
-
-When proposing a skill, respond with:
-- skill_id
-- reason (trigger + score)
-- phase
-- required
-- dependencies (after)
-- next step
-
-## Verification Checklist
-
-- Skill exists in hub-manifests.csv
-- Trigger overlap is explicit
-- Score is >= 10
-- Dependency gates are respected
-- No hallucinated IDs
+See routing.tsv for all $skillCount skills with src_path resolution.
 "@
 
     return $content

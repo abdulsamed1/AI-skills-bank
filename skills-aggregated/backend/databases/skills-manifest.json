@@ -6,31 +6,11 @@
     "skill_count":  46,
     "src_count":  6,
     "top_triggers":  [
-                         "database",
-                         "data",
-                         "postgres",
-                         "sql",
-                         "patterns",
-                         "postgresql",
-                         "netlify",
-                         "optimization",
-                         "best",
-                         "practices",
-                         "supabase",
-                         "duckdb",
-                         "query",
-                         "performance",
-                         "migrations",
-                         "db",
-                         "read",
-                         "optimizer",
-                         "migration",
-                         "tinybird"
+                         null
                      ],
-    "generated_at":  "2026-03-27T17:38:39+02:00",
+    "generated_at":  "2026-03-28T01:39:23+02:00",
     "files":  {
                   "skill":  "SKILL.md",
-                  "workflow":  "workflow.md",
                   "index":  "skills-index.json",
                   "catalog":  "skills-catalog.ndjson"
               }

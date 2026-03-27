@@ -267,24 +267,24 @@ python, javascript, go, rust        → programming/*
 
 ### Step 1: Match Intent
 ```
-User: "I need API documentation"
+AI Agent: "write a epic for a new feature"
 Scan "Quick Intent → Hub Router" table
-Result: backend hub, api-documentation skill
-Next: Go to backend/api-design hub
+Result: business hub, prd-creator skill
+Next: Go to business/product-strategy hub
 ```
 
 ### Step 2: Navigate to Sub-hub
 ```
-Hub: backend
-Sub-hub: api-design
-Entry point: backend/api-design/SKILL.md
+Hub: business
+Sub-hub: product-strategy
+Entry point: business/product-strategy/SKILL.md
 Next: Use that hub's Quick Intent Matcher
 ```
 
 ### Step 3: Select Exact Skill
 ```
 Hub SKILL.md shows Quick Intent Matcher
-Match: "API documentation" → `api-documentation` skill
+Match: "write a epic for a new feature" → `prd-creator` skill
 Invoke: Use exact ID from table
 STOP: Do not invent alternatives
 ```
@@ -343,7 +343,6 @@ AI-skills-bank/skills-aggregated/
 │  ├─ SKILL.md (hub router with Quick Intent Matcher)
 │  ├─ api-design/
 │  │  ├─ SKILL.md (use this for API selection)
-│  │  ├─ workflow.md (detailed instructions)
 │  │  ├─ skills-index.json (lightweight filter)
 │  │  └─ skills-catalog.ndjson (read specific lines only)
 │  └─ databases/
@@ -363,11 +362,10 @@ AI-skills-bank/skills-aggregated/
 |------|----------|-----------|-----------|
 | This file (SKILL.md) | Initial hub discovery | 3-5 min | 50-80 |
 | Hub SKILL.md | Sub-hub selection + Quick Intent | 2-3 min | 30-50 |
-| workflow.md | Detailed execution rules | 5-10 min | 70-100 |
 | skills-index.json | Filter by triggers/scores | 1-2 min | 20-30 |
 | skills-catalog.ndjson | Read specific skill lines | 30 sec | 5-15 |
 
-**Optimal path: This file → Hub SKILL.md → Invoke (skip workflow.md if confident)**
+**Optimal path: This file → Hub SKILL.md → Invoke**
 
 ---
 

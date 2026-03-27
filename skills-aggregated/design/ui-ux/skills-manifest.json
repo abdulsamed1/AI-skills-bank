@@ -3,34 +3,14 @@
     "main_hub":  "design",
     "sub_hub":  "ui-ux",
     "description":  "UI/UX design: interface design, wireframes, design systems, accessibility, and interaction patterns",
-    "skill_count":  93,
-    "src_count":  6,
+    "skill_count":  88,
+    "src_count":  5,
     "top_triggers":  [
-                         "design",
-                         "ui",
-                         "threejs",
-                         "hig",
-                         "components",
-                         "figma",
-                         "ux",
-                         "patterns",
-                         "system",
-                         "audit",
-                         "swiftui",
-                         "frontend",
-                         "skill",
-                         "accessibility",
-                         "expert",
-                         "skills",
-                         "create",
-                         "wds",
-                         "c4",
-                         "designer"
+                         null
                      ],
-    "generated_at":  "2026-03-27T17:38:39+02:00",
+    "generated_at":  "2026-03-28T01:39:22+02:00",
     "files":  {
                   "skill":  "SKILL.md",
-                  "workflow":  "workflow.md",
                   "index":  "skills-index.json",
                   "catalog":  "skills-catalog.ndjson"
               }

@@ -1,5 +1,5 @@
 {
-    "generated_at":  "2026-03-27T17:38:40+02:00",
+    "generated_at":  "2026-03-28T01:39:23+02:00",
     "src_repo_mode":  "all",
     "selected_src_repos":  [
                                "agent-skills",
@@ -49,12 +49,12 @@
                                "chemistry"
                            ],
     "exclusion_stats":  {
-                            "total":  64,
+                            "total":  63,
                             "by_category":  {
                                                 "biology":  2,
                                                 "games":  26,
                                                 "law-legal":  16,
-                                                "medicine-medical":  20
+                                                "medicine-medical":  19
                                             }
                         },
     "min_skills_per_hub":  5,
@@ -95,8 +95,8 @@
                                  "name":  "antigravity-awesome-skills",
                                  "vcs":  "git",
                                  "revision":  "dffac91d3b437d01b62444da25c5a4f1e00f9047",
-                                 "dirty":  false,
-                                 "fingerprint":  "git:4b0ac98bd55042eb2a545cc1a3d2fba2014ea45a52486d6a8dea0ce1b15bdbf0"
+                                 "dirty":  true,
+                                 "fingerprint":  "git:e5b2cacabb2aa9ea3f5bd9791d1dde6496c5b926e981748c10f84dc711cabe72"
                              },
                              {
                                  "name":  "aso-skills",

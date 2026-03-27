@@ -1,1105 +1,1105 @@
 [
     {
-        "id": "007",
-        "triggers": [
-            "007"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "apify-actorization",
-        "triggers": [
-            "apify",
-            "actorization"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "apify-brand-reputation-monitoring",
-        "triggers": [
-            "apify",
-            "brand",
-            "reputation",
-            "monitoring"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "application-performance-performance-optimization",
-        "triggers": [
-            "application",
-            "performance",
-            "performance",
-            "optimization"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "aws-compliance-checker",
-        "triggers": [
-            "aws",
-            "compliance",
-            "checker"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "aws-cost-cleanup",
-        "triggers": [
-            "aws",
-            "cost",
-            "cleanup"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "aws-cost-optimizer",
-        "triggers": [
-            "aws",
-            "cost",
-            "optimizer"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "aws-iam-best-practices",
-        "triggers": [
-            "aws",
-            "iam",
-            "best",
-            "practices"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "aws-serverless",
-        "triggers": [
-            "aws",
-            "serverless"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 17
-    },
-    {
-        "id": "aws-skills",
-        "triggers": [
-            "aws",
-            "skills"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "azd-deployment",
-        "triggers": [
-            "azd",
-            "deployment"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 17
-    },
-    {
-        "id": "azure-ai-document-intelligence-ts",
-        "triggers": [
-            "azure",
-            "ai",
-            "document",
-            "intelligence",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "azure-ai-openai-dotnet",
-        "triggers": [
-            "azure",
-            "ai",
-            "openai",
-            "dotnet"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "azure-ai-projects-ts",
-        "triggers": [
-            "azure",
-            "ai",
-            "projects",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "azure-appconfiguration-ts",
-        "triggers": [
-            "azure",
-            "appconfiguration",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "azure-functions",
-        "triggers": [
-            "azure",
-            "functions"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "azure-identity-ts",
-        "triggers": [
-            "azure",
-            "identity",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "azure-keyvault-keys-ts",
-        "triggers": [
-            "azure",
-            "keyvault",
-            "keys",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "azure-keyvault-secrets-ts",
-        "triggers": [
-            "azure",
-            "keyvault",
-            "secrets",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "azure-mgmt-applicationinsights-dotnet",
-        "triggers": [
-            "azure",
-            "mgmt",
-            "applicationinsights",
-            "dotnet"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "azure-mgmt-arizeaiobservabilityeval-dotnet",
-        "triggers": [
-            "azure",
-            "mgmt",
-            "arizeaiobservabilityeval",
-            "dotnet"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "azure-mgmt-weightsandbiases-dotnet",
-        "triggers": [
-            "azure",
-            "mgmt",
-            "weightsandbiases",
-            "dotnet"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "azure-monitor-opentelemetry-ts",
-        "triggers": [
-            "azure",
-            "monitor",
-            "opentelemetry",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "azure-search-documents-ts",
-        "triggers": [
-            "azure",
-            "search",
-            "documents",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "azure-servicebus-ts",
-        "triggers": [
-            "azure",
-            "servicebus",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "azure-web-pubsub-ts",
-        "triggers": [
-            "azure",
-            "web",
-            "pubsub",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "bash-defensive-patterns",
-        "triggers": [
-            "bash",
-            "defensive",
-            "patterns"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 16
-    },
-    {
-        "id": "bash-linux",
-        "triggers": [
-            "bash",
-            "linux"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 13
-    },
-    {
-        "id": "bash-pro",
-        "triggers": [
-            "bash",
-            "pro"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "bats-testing-patterns",
-        "triggers": [
-            "bats",
-            "testing",
-            "patterns"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 16
-    },
-    {
-        "id": "bazel-build-optimization",
-        "triggers": [
-            "bazel",
-            "build",
-            "optimization"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "busybox-on-windows",
-        "triggers": [
-            "busybox",
-            "on",
-            "windows"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "cdk-patterns",
-        "triggers": [
-            "cdk",
-            "patterns"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "changelog-automation",
-        "triggers": [
-            "changelog",
-            "automation"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "cicd-automation-workflow-automate",
-        "triggers": [
-            "cicd",
-            "automation",
-            "workflow",
-            "automate"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "closed-loop-delivery",
-        "triggers": [
-            "closed",
-            "loop",
-            "delivery"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "cloud-architect",
-        "triggers": [
-            "cloud",
-            "architect"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 25
-    },
-    {
-        "id": "cloud-devops",
-        "triggers": [
-            "cloud",
-            "devops"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 41
-    },
-    {
-        "id": "cloudflare-workers-expert",
-        "triggers": [
-            "cloudflare",
-            "workers",
-            "expert"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "cloudformation-best-practices",
-        "triggers": [
-            "cloudformation",
-            "best",
-            "practices"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "cloud-penetration-testing",
-        "triggers": [
-            "cloud",
-            "penetration",
-            "testing"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 21
-    },
-    {
-        "id": "cost-optimization",
-        "triggers": [
-            "cost",
-            "optimization"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "database-cloud-optimization-cost-optimize",
-        "triggers": [
-            "database",
-            "cloud",
-            "optimization",
-            "cost",
-            "optimize"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 21
-    },
-    {
-        "id": "database-migrations-migration-observability",
-        "triggers": [
-            "database",
-            "migrations",
-            "migration",
-            "observability"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "deployment-engineer",
-        "triggers": [
-            "deployment",
-            "engineer"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "deployment-pipeline-design",
-        "triggers": [
-            "deployment",
-            "pipeline",
-            "design"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "deployment-procedures",
-        "triggers": [
-            "deployment",
-            "procedures"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "devops-deploy",
-        "triggers": [
-            "devops",
-            "deploy"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 24
-    },
-    {
-        "id": "devops-troubleshooter",
-        "triggers": [
-            "devops",
-            "troubleshooter"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "environment-setup-guide",
-        "triggers": [
-            "environment",
-            "setup",
-            "guide"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 5
-    },
-    {
-        "id": "error-debugging-error-analysis",
-        "triggers": [
-            "error",
-            "debugging",
-            "error",
-            "analysis"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "error-debugging-error-trace",
-        "triggers": [
-            "error",
-            "debugging",
-            "error",
-            "trace"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "error-diagnostics-error-analysis",
-        "triggers": [
-            "error",
-            "diagnostics",
-            "error",
-            "analysis"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "error-diagnostics-error-trace",
-        "triggers": [
-            "error",
-            "diagnostics",
-            "error",
-            "trace"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "event-store-design",
-        "triggers": [
-            "event",
-            "store",
-            "design"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "firebase",
-        "triggers": [
-            "firebase"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "gcp-cloud-run",
-        "triggers": [
-            "gcp",
-            "cloud",
-            "run"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "github-actions-templates",
-        "triggers": [
-            "github",
-            "actions",
-            "templates"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "gitlab-ci-patterns",
-        "triggers": [
-            "gitlab",
-            "ci",
-            "patterns"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "gitops-workflow",
-        "triggers": [
-            "gitops",
-            "workflow"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "grafana-dashboards",
-        "triggers": [
-            "grafana",
-            "dashboards"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "hono",
-        "triggers": [
-            "hono"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "hybrid-cloud-architect",
-        "triggers": [
-            "hybrid",
-            "cloud",
-            "architect"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 17
-    },
-    {
-        "id": "incident-responder",
-        "triggers": [
-            "incident",
-            "responder"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "incident-response-incident-response",
-        "triggers": [
-            "incident",
-            "response",
-            "incident",
-            "response"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "multi-cloud-architecture",
-        "triggers": [
-            "multi",
-            "cloud",
-            "architecture"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 17
-    },
-    {
-        "id": "netlify-cli-and-deploy",
-        "triggers": [
-            "netlify",
-            "cli",
-            "and",
-            "deploy"
-        ],
-        "src": "external:context-and-tools",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "netlify-deploy",
-        "triggers": [
-            "netlify",
-            "deploy"
-        ],
-        "src": "external:context-and-tools",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "observability-engineer",
-        "triggers": [
-            "observability",
-            "engineer"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 20
-    },
-    {
-        "id": "observability-monitoring-monitor-setup",
-        "triggers": [
-            "observability",
-            "monitoring",
-            "monitor",
-            "setup"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "observability-monitoring-slo-implement",
-        "triggers": [
-            "observability",
-            "monitoring",
-            "slo",
-            "implement"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 14
-    },
-    {
-        "id": "odoo-backup-strategy",
-        "triggers": [
-            "odoo",
-            "backup",
-            "strategy"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "on-call-handoff-patterns",
-        "triggers": [
-            "on",
-            "call",
-            "handoff",
-            "patterns"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "os-scripting",
-        "triggers": [
-            "os",
-            "scripting"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 16
-    },
-    {
-        "id": "performance-engineer",
-        "triggers": [
-            "performance",
-            "engineer"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "posix-shell-pro",
-        "triggers": [
-            "posix",
-            "shell",
-            "pro"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "postmortem-writing",
-        "triggers": [
-            "postmortem",
-            "writing"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "powershell-windows",
-        "triggers": [
-            "powershell",
-            "windows"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 10
-    },
-    {
-        "id": "prometheus-configuration",
-        "triggers": [
-            "prometheus",
-            "configuration"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "render-automation",
-        "triggers": [
-            "render",
-            "automation"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "service-mesh-observability",
-        "triggers": [
-            "service",
-            "mesh",
-            "observability"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "shellcheck-configuration",
-        "triggers": [
-            "shellcheck",
-            "configuration"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "slo-implementation",
-        "triggers": [
-            "slo",
-            "implementation"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "terraform-aws-modules",
-        "triggers": [
-            "terraform",
-            "aws",
-            "modules"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "terraform-infrastructure",
-        "triggers": [
-            "terraform",
-            "infrastructure"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "terraform-module-library",
-        "triggers": [
-            "terraform",
-            "module",
-            "library"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 20
-    },
-    {
-        "id": "terraform-skill",
-        "triggers": [
-            "terraform",
-            "skill"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "terraform-specialist",
-        "triggers": [
-            "terraform",
-            "specialist"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 13
-    },
-    {
-        "id": "upstash-qstash",
-        "triggers": [
-            "upstash",
-            "qstash"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "vector-index-tuning",
-        "triggers": [
-            "vector",
-            "index",
-            "tuning"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "vercel-automation",
-        "triggers": [
-            "vercel",
-            "automation"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "vercel-deployment",
-        "triggers": [
-            "vercel",
-            "deployment"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "windows-shell-reliability",
-        "triggers": [
-            "windows",
-            "shell",
-            "reliability"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
+        "id":  "007",
+        "triggers":  [
+                         "007"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "apify-actorization",
+        "triggers":  [
+                         "apify",
+                         "actorization"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "apify-brand-reputation-monitoring",
+        "triggers":  [
+                         "apify",
+                         "brand",
+                         "reputation",
+                         "monitoring"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "application-performance-performance-optimization",
+        "triggers":  [
+                         "application",
+                         "performance",
+                         "performance",
+                         "optimization"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-compliance-checker",
+        "triggers":  [
+                         "aws",
+                         "compliance",
+                         "checker"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-cost-cleanup",
+        "triggers":  [
+                         "aws",
+                         "cost",
+                         "cleanup"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-cost-optimizer",
+        "triggers":  [
+                         "aws",
+                         "cost",
+                         "optimizer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-iam-best-practices",
+        "triggers":  [
+                         "aws",
+                         "iam",
+                         "best",
+                         "practices"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-serverless",
+        "triggers":  [
+                         "aws",
+                         "serverless"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "aws-skills",
+        "triggers":  [
+                         "aws",
+                         "skills"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "azd-deployment",
+        "triggers":  [
+                         "azd",
+                         "deployment"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "azure-ai-document-intelligence-ts",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "document",
+                         "intelligence",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-ai-openai-dotnet",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "openai",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "azure-ai-projects-ts",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "projects",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "azure-appconfiguration-ts",
+        "triggers":  [
+                         "azure",
+                         "appconfiguration",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-functions",
+        "triggers":  [
+                         "azure",
+                         "functions"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "azure-identity-ts",
+        "triggers":  [
+                         "azure",
+                         "identity",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-keyvault-keys-ts",
+        "triggers":  [
+                         "azure",
+                         "keyvault",
+                         "keys",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "azure-keyvault-secrets-ts",
+        "triggers":  [
+                         "azure",
+                         "keyvault",
+                         "secrets",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "azure-mgmt-applicationinsights-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "applicationinsights",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-mgmt-arizeaiobservabilityeval-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "arizeaiobservabilityeval",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "azure-mgmt-weightsandbiases-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "weightsandbiases",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "azure-monitor-opentelemetry-ts",
+        "triggers":  [
+                         "azure",
+                         "monitor",
+                         "opentelemetry",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "azure-search-documents-ts",
+        "triggers":  [
+                         "azure",
+                         "search",
+                         "documents",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-servicebus-ts",
+        "triggers":  [
+                         "azure",
+                         "servicebus",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-web-pubsub-ts",
+        "triggers":  [
+                         "azure",
+                         "web",
+                         "pubsub",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "bash-defensive-patterns",
+        "triggers":  [
+                         "bash",
+                         "defensive",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "bash-linux",
+        "triggers":  [
+                         "bash",
+                         "linux"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "bash-pro",
+        "triggers":  [
+                         "bash",
+                         "pro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "bats-testing-patterns",
+        "triggers":  [
+                         "bats",
+                         "testing",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "bazel-build-optimization",
+        "triggers":  [
+                         "bazel",
+                         "build",
+                         "optimization"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "busybox-on-windows",
+        "triggers":  [
+                         "busybox",
+                         "on",
+                         "windows"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "cdk-patterns",
+        "triggers":  [
+                         "cdk",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "changelog-automation",
+        "triggers":  [
+                         "changelog",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "cicd-automation-workflow-automate",
+        "triggers":  [
+                         "cicd",
+                         "automation",
+                         "workflow",
+                         "automate"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "closed-loop-delivery",
+        "triggers":  [
+                         "closed",
+                         "loop",
+                         "delivery"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "cloud-architect",
+        "triggers":  [
+                         "cloud",
+                         "architect"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  25
+    },
+    {
+        "id":  "cloud-devops",
+        "triggers":  [
+                         "cloud",
+                         "devops"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  41
+    },
+    {
+        "id":  "cloudflare-workers-expert",
+        "triggers":  [
+                         "cloudflare",
+                         "workers",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "cloudformation-best-practices",
+        "triggers":  [
+                         "cloudformation",
+                         "best",
+                         "practices"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "cloud-penetration-testing",
+        "triggers":  [
+                         "cloud",
+                         "penetration",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  21
+    },
+    {
+        "id":  "cost-optimization",
+        "triggers":  [
+                         "cost",
+                         "optimization"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "database-cloud-optimization-cost-optimize",
+        "triggers":  [
+                         "database",
+                         "cloud",
+                         "optimization",
+                         "cost",
+                         "optimize"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  21
+    },
+    {
+        "id":  "database-migrations-migration-observability",
+        "triggers":  [
+                         "database",
+                         "migrations",
+                         "migration",
+                         "observability"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "deployment-engineer",
+        "triggers":  [
+                         "deployment",
+                         "engineer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "deployment-pipeline-design",
+        "triggers":  [
+                         "deployment",
+                         "pipeline",
+                         "design"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "deployment-procedures",
+        "triggers":  [
+                         "deployment",
+                         "procedures"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "devops-deploy",
+        "triggers":  [
+                         "devops",
+                         "deploy"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  24
+    },
+    {
+        "id":  "devops-troubleshooter",
+        "triggers":  [
+                         "devops",
+                         "troubleshooter"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "environment-setup-guide",
+        "triggers":  [
+                         "environment",
+                         "setup",
+                         "guide"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "error-debugging-error-analysis",
+        "triggers":  [
+                         "error",
+                         "debugging",
+                         "error",
+                         "analysis"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "error-debugging-error-trace",
+        "triggers":  [
+                         "error",
+                         "debugging",
+                         "error",
+                         "trace"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "error-diagnostics-error-analysis",
+        "triggers":  [
+                         "error",
+                         "diagnostics",
+                         "error",
+                         "analysis"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "error-diagnostics-error-trace",
+        "triggers":  [
+                         "error",
+                         "diagnostics",
+                         "error",
+                         "trace"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "event-store-design",
+        "triggers":  [
+                         "event",
+                         "store",
+                         "design"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "firebase",
+        "triggers":  [
+                         "firebase"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "gcp-cloud-run",
+        "triggers":  [
+                         "gcp",
+                         "cloud",
+                         "run"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "github-actions-templates",
+        "triggers":  [
+                         "github",
+                         "actions",
+                         "templates"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "gitlab-ci-patterns",
+        "triggers":  [
+                         "gitlab",
+                         "ci",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "gitops-workflow",
+        "triggers":  [
+                         "gitops",
+                         "workflow"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "grafana-dashboards",
+        "triggers":  [
+                         "grafana",
+                         "dashboards"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "hono",
+        "triggers":  [
+                         "hono"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "hybrid-cloud-architect",
+        "triggers":  [
+                         "hybrid",
+                         "cloud",
+                         "architect"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "incident-responder",
+        "triggers":  [
+                         "incident",
+                         "responder"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "incident-response-incident-response",
+        "triggers":  [
+                         "incident",
+                         "response",
+                         "incident",
+                         "response"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "multi-cloud-architecture",
+        "triggers":  [
+                         "multi",
+                         "cloud",
+                         "architecture"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "netlify-cli-and-deploy",
+        "triggers":  [
+                         "netlify",
+                         "cli",
+                         "and",
+                         "deploy"
+                     ],
+        "src":  "external:context-and-tools",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "netlify-deploy",
+        "triggers":  [
+                         "netlify",
+                         "deploy"
+                     ],
+        "src":  "external:context-and-tools",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "observability-engineer",
+        "triggers":  [
+                         "observability",
+                         "engineer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  20
+    },
+    {
+        "id":  "observability-monitoring-monitor-setup",
+        "triggers":  [
+                         "observability",
+                         "monitoring",
+                         "monitor",
+                         "setup"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "observability-monitoring-slo-implement",
+        "triggers":  [
+                         "observability",
+                         "monitoring",
+                         "slo",
+                         "implement"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  14
+    },
+    {
+        "id":  "odoo-backup-strategy",
+        "triggers":  [
+                         "odoo",
+                         "backup",
+                         "strategy"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "on-call-handoff-patterns",
+        "triggers":  [
+                         "on",
+                         "call",
+                         "handoff",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "os-scripting",
+        "triggers":  [
+                         "os",
+                         "scripting"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "performance-engineer",
+        "triggers":  [
+                         "performance",
+                         "engineer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "posix-shell-pro",
+        "triggers":  [
+                         "posix",
+                         "shell",
+                         "pro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "postmortem-writing",
+        "triggers":  [
+                         "postmortem",
+                         "writing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "powershell-windows",
+        "triggers":  [
+                         "powershell",
+                         "windows"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "prometheus-configuration",
+        "triggers":  [
+                         "prometheus",
+                         "configuration"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "render-automation",
+        "triggers":  [
+                         "render",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "service-mesh-observability",
+        "triggers":  [
+                         "service",
+                         "mesh",
+                         "observability"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "shellcheck-configuration",
+        "triggers":  [
+                         "shellcheck",
+                         "configuration"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "slo-implementation",
+        "triggers":  [
+                         "slo",
+                         "implementation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "terraform-aws-modules",
+        "triggers":  [
+                         "terraform",
+                         "aws",
+                         "modules"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "terraform-infrastructure",
+        "triggers":  [
+                         "terraform",
+                         "infrastructure"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "terraform-module-library",
+        "triggers":  [
+                         "terraform",
+                         "module",
+                         "library"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  20
+    },
+    {
+        "id":  "terraform-skill",
+        "triggers":  [
+                         "terraform",
+                         "skill"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "terraform-specialist",
+        "triggers":  [
+                         "terraform",
+                         "specialist"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "upstash-qstash",
+        "triggers":  [
+                         "upstash",
+                         "qstash"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "vector-index-tuning",
+        "triggers":  [
+                         "vector",
+                         "index",
+                         "tuning"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "vercel-automation",
+        "triggers":  [
+                         "vercel",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "vercel-deployment",
+        "triggers":  [
+                         "vercel",
+                         "deployment"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "windows-shell-reliability",
+        "triggers":  [
+                         "windows",
+                         "shell",
+                         "reliability"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
     }
 ]

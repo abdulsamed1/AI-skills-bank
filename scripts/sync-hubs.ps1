@@ -454,27 +454,17 @@ function Ensure-MainHubRouters {
         }
 
         $skillPath = Join-Path $mainHubPath "SKILL.md"
-        $workflowPath = Join-Path $mainHubPath "workflow.md"
-
         $skillContent = @"
 ---
 name: $mainHub
 description: Main router for the $mainHub hub. Choose a concrete sub-hub under this folder.
 ---
 
-Read workflow.md, then route to the most relevant sub-hub SKILL.md in this folder.
-"@
-
-        $workflowContent = @"
-# $mainHub Router Workflow
-
 1. List available sub-folders in this hub.
 2. Choose the most relevant sub-hub for the user request.
-3. Open that sub-hub SKILL.md and follow its workflow.
+3. Open that sub-hub's SKILL.md and follow its instructions to find the exact skill.
 "@
-
         Write-FileUtf8NoBom -Path $skillPath -Content $skillContent
-        Write-FileUtf8NoBom -Path $workflowPath -Content $workflowContent
     }
 }
 

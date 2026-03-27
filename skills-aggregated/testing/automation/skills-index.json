@@ -99,57 +99,6 @@
         "match_score":  9
     },
     {
-        "id":  "bmad-agent-qa",
-        "triggers":  [
-                         "bmad",
-                         "agent",
-                         "qa"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "bmad-qa-generate-e2e-tests",
-        "triggers":  [
-                         "bmad",
-                         "qa",
-                         "generate",
-                         "e2e",
-                         "tests"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  13
-    },
-    {
-        "id":  "bmad-teach-me-testing",
-        "triggers":  [
-                         "bmad",
-                         "teach",
-                         "me",
-                         "testing"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "bmad-testarch-framework",
-        "triggers":  [
-                         "bmad",
-                         "testarch",
-                         "framework"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  19
-    },
-    {
         "id":  "browser-automation",
         "triggers":  [
                          "browser",

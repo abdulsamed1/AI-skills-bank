@@ -6,31 +6,11 @@
     "skill_count":  19,
     "src_count":  6,
     "top_triggers":  [
-                         "marketing",
-                         "positioning",
-                         "strategy",
-                         "competitor",
-                         "competitive",
-                         "context",
-                         "gtm",
-                         "ideas",
-                         "pricing",
-                         "tracking",
-                         "battlecard",
-                         "ua",
-                         "planning",
-                         "movers",
-                         "market",
-                         "campaign",
-                         "app",
-                         "basics",
-                         "monetization",
-                         "product"
+                         null
                      ],
-    "generated_at":  "2026-03-27T17:38:38+02:00",
+    "generated_at":  "2026-03-28T01:39:22+02:00",
     "files":  {
                   "skill":  "SKILL.md",
-                  "workflow":  "workflow.md",
                   "index":  "skills-index.json",
                   "catalog":  "skills-catalog.ndjson"
               }

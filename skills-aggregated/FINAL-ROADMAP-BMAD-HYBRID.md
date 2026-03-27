@@ -49,7 +49,6 @@ BEFORE:
 AI-Skills-Bank/
 ├── skills-aggregated/
 │   ├── SKILL.md (ضعيف)
-│   ├── workflow.md
 │   ├── skills-index.json
 │   └── skills-catalog.ndjson
 

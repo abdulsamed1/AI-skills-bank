@@ -6,31 +6,11 @@
     "skill_count":  64,
     "src_count":  1,
     "top_triggers":  [
-                         "azure",
-                         "java",
-                         "dotnet",
-                         "ai",
-                         "pro",
-                         "communication",
-                         "resource",
-                         "manager",
-                         "mgmt",
-                         "agents",
-                         "architect",
-                         "monitor",
-                         "data",
-                         "security",
-                         "projects",
-                         "persistent",
-                         "eventgrid",
-                         "voicelive",
-                         "keyvault",
-                         "identity"
+                         null
                      ],
-    "generated_at":  "2026-03-27T17:38:39+02:00",
+    "generated_at":  "2026-03-28T01:39:23+02:00",
     "files":  {
                   "skill":  "SKILL.md",
-                  "workflow":  "workflow.md",
                   "index":  "skills-index.json",
                   "catalog":  "skills-catalog.ndjson"
               }

@@ -6,31 +6,11 @@
     "skill_count":  11,
     "src_count":  2,
     "top_triggers":  [
-                         "k8s",
-                         "kubernetes",
-                         "expert",
-                         "security",
-                         "service",
-                         "windows",
-                         "container",
-                         "patterns",
-                         "c4",
-                         "generator",
-                         "linkerd",
-                         "mesh",
-                         "vm",
-                         "management",
-                         "istio",
-                         "traffic",
-                         "architect",
-                         "docker",
-                         "deployment",
-                         "scaffolding"
+                         null
                      ],
-    "generated_at":  "2026-03-27T17:38:40+02:00",
+    "generated_at":  "2026-03-28T01:39:23+02:00",
     "files":  {
                   "skill":  "SKILL.md",
-                  "workflow":  "workflow.md",
                   "index":  "skills-index.json",
                   "catalog":  "skills-catalog.ndjson"
               }
