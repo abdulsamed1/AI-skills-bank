@@ -13,6 +13,7 @@ param(
     [Switch] $AllowMultiHub = $false,
     [string[]] $ExcludeCategories = @(),
     [Switch] $NoCategoryExclusions = $false,
+    [Switch] $SyncToTools = $false,
     [ValidateRange(1, 500)]
     [int] $MinSkillsPerHub = 5,
     [ValidateRange(1, 500)]
@@ -2099,3 +2100,13 @@ if ($EnableReviewBand) {
 }
 Write-Host "[INFO]   Output dir: $OutputDir"
 Write-Host "[INFO] ============================================"
+
+if ($SyncToTools -and -not $DryRun) {
+    # Find sync-hubs.ps1 in the same directory as this script
+    $syncScript = Join-Path $PSScriptRoot "sync-hubs.ps1"
+    if (Test-Path $syncScript) {
+        Write-Host ""
+        Write-Host "[INFO] Automatically syncing to tools..." -ForegroundColor Cyan
+        powershell -ExecutionPolicy Bypass -File $syncScript -Force
+    }
+}
