@@ -5,7 +5,7 @@
 param(
     [string] $srcHubsDir = ".\AI-skills-bank\hub-skills",
     [string] $OutputDir = ".\AI-skills-bank\skills-aggregated",
-    [array] $FallbackSkillRoots = @(".\_bmad", ".\AI-skills-bank\src"),
+    [array] $FallbackSkillRoots = @(".\AI-skills-bank\src"),
     [ValidateSet("latest", "all", "selected", "changed-only")]
     [string] $srcRepoMode = "latest",
     [string[]] $srcRepoNames = @(),
@@ -97,10 +97,6 @@ if ($PSScriptRoot) {
         $srcHubsDir = $srcReposDir
     }
     $OutputDir = Join-Path $RepoRoot "AI-skills-bank/skills-aggregated"
-    $FallbackSkillRoots = @(
-        (Join-Path $RepoRoot "_bmad"),
-        $srcReposDir
-    )
 }
 
 $srcRootPath = Join-Path $RepoRoot "AI-skills-bank/src"
@@ -1236,14 +1232,8 @@ function Get-ExcludedCategory {
 function Get-Skillsrc {
     param([string] $Path)
     
-    if ($Path -match '_bmad') {
-        return "internal:BMad"
-    }
-    elseif ($Path -match 'AI-skills-bank[\\/]src[\\/]([^\\/]+)') {
+    if ($Path -match 'AI-skills-bank[\\/]src[\\/]([^\\/]+)') {
         return "external:$($matches[1])"
-    }
-    elseif ($Path -match 'antigravity-awesome-skills') {
-        return "external:antigravity-awesome-skills"
     }
     else {
         return "unknown:$(Split-Path -Leaf $Path)"
