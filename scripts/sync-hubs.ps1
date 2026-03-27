@@ -30,6 +30,7 @@ param(
     [switch]$IncludeGlobal,
     [ValidateSet("Auto", "Copy", "Junction", "SymbolicLink")]
     [string]$SyncMode = "Auto",
+    [switch]$NoPrompt,
     [switch]$Force
 )
 
@@ -72,18 +73,43 @@ $GlobalTargets = @(
     (Join-Path $userHome ".codeium\windsurf\skills")
 )
 
-# If TargetTools not specified, default to global-only targets.
-if (-not $TargetTools -or $TargetTools.Count -eq 0) {
-    $TargetTools = @($GlobalTargets)
-    if ($IncludeWorkspaceTargets) {
-        $TargetTools = @($TargetTools + $WorkspaceTargets | Select-Object -Unique)
-    }
-} elseif ($IncludeGlobal) {
-    # Backward compatibility: add global targets to explicit custom targets.
-    $TargetTools = @($TargetTools + $GlobalTargets | Select-Object -Unique)
+$TargetNameMap = @{
+    (Join-Path $userHome ".gemini\antigravity\skills") = "Antigravity"
+    (Join-Path $userHome ".claude\skills") = "Claude"
+    (Join-Path $userHome ".agents\skills") = "Codex"
+    (Join-Path $userHome ".cursor\skills") = "Cursor"
+    (Join-Path $userHome ".gemini\skills") = "Gemini"
+    (Join-Path $userHome ".copilot\skills") = "GitHub Copilot"
+    (Join-Path $userHome ".config\opencode\skills") = "OpenCode"
+    (Join-Path $userHome ".codeium\windsurf\skills") = "Windsurf"
+    (Join-Path $RepoRoot ".agent\skills") = "Workspace Antigravity"
+    (Join-Path $RepoRoot ".claude\skills") = "Workspace Claude"
+    (Join-Path $RepoRoot ".agents\skills") = "Workspace Codex"
+    (Join-Path $RepoRoot ".cursor\skills") = "Workspace Cursor"
+    (Join-Path $RepoRoot ".gemini\skills") = "Workspace Gemini"
+    (Join-Path $RepoRoot ".github\skills") = "Workspace GitHub"
+    (Join-Path $RepoRoot ".opencode\skills") = "Workspace OpenCode"
+    (Join-Path $RepoRoot ".windsurf\skills") = "Workspace Windsurf"
 }
 
-$TargetTools = @($TargetTools | Where-Object { -not [string]::IsNullOrWhiteSpace($_) } | Select-Object -Unique)
+$TargetDetectionMap = @{
+    (Join-Path $userHome ".gemini\antigravity\skills") = @((Join-Path $userHome ".gemini\antigravity"), (Join-Path $userHome ".gemini"))
+    (Join-Path $userHome ".claude\skills") = @((Join-Path $userHome ".claude"))
+    (Join-Path $userHome ".agents\skills") = @((Join-Path $userHome ".agents"))
+    (Join-Path $userHome ".cursor\skills") = @((Join-Path $userHome ".cursor"))
+    (Join-Path $userHome ".gemini\skills") = @((Join-Path $userHome ".gemini"))
+    (Join-Path $userHome ".copilot\skills") = @((Join-Path $userHome ".copilot"))
+    (Join-Path $userHome ".config\opencode\skills") = @((Join-Path $userHome ".config\opencode"))
+    (Join-Path $userHome ".codeium\windsurf\skills") = @((Join-Path $userHome ".codeium\windsurf"), (Join-Path $userHome ".codeium"))
+    (Join-Path $RepoRoot ".agent\skills") = @((Join-Path $RepoRoot ".agent\skills"), (Join-Path $RepoRoot ".agent\settings.json"), (Join-Path $RepoRoot ".agent\config.json"), (Join-Path $RepoRoot ".agent\README.md"))
+    (Join-Path $RepoRoot ".claude\skills") = @((Join-Path $RepoRoot ".claude\skills"), (Join-Path $RepoRoot ".claude\settings.json"), (Join-Path $RepoRoot "CLAUDE.md"))
+    (Join-Path $RepoRoot ".agents\skills") = @((Join-Path $RepoRoot ".agents\skills"), (Join-Path $RepoRoot ".agents\settings.json"), (Join-Path $RepoRoot ".agents\config.json"), (Join-Path $RepoRoot ".agents\README.md"))
+    (Join-Path $RepoRoot ".cursor\skills") = @((Join-Path $RepoRoot ".cursor\skills"), (Join-Path $RepoRoot ".cursor\mcp.json"), (Join-Path $RepoRoot ".cursor\settings.json"))
+    (Join-Path $RepoRoot ".gemini\skills") = @((Join-Path $RepoRoot ".gemini\skills"), (Join-Path $RepoRoot ".gemini\settings.json"), (Join-Path $RepoRoot ".gemini\antigravity"))
+    (Join-Path $RepoRoot ".github\skills") = @((Join-Path $RepoRoot ".github\skills"), (Join-Path $RepoRoot ".github\copilot-instructions.md"), (Join-Path $RepoRoot ".github\workflows"))
+    (Join-Path $RepoRoot ".opencode\skills") = @((Join-Path $RepoRoot ".opencode\skills"), (Join-Path $RepoRoot ".opencode\config.json"))
+    (Join-Path $RepoRoot ".windsurf\skills") = @((Join-Path $RepoRoot ".windsurf\skills"), (Join-Path $RepoRoot ".windsurf\settings.json"), (Join-Path $RepoRoot ".windsurf\mcp.json"))
+}
 
 $ErrorActionPreference = "Stop"
 
@@ -129,6 +155,280 @@ function Write-FileUtf8NoBom {
 
     $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
     [System.IO.File]::WriteAllText($Path, $Content, $utf8NoBom)
+}
+
+function Read-ConsoleSingleSelect {
+    param(
+        [string]$Title,
+        [array]$Options,
+        [int]$DefaultIndex = 0
+    )
+
+    if ($Options.Count -eq 0) {
+        return $null
+    }
+
+    $index = [Math]::Min([Math]::Max($DefaultIndex, 0), $Options.Count - 1)
+
+    while ($true) {
+        Clear-Host
+        Write-Host $Title -ForegroundColor Cyan
+        Write-Host "Use Up/Down arrows and Enter to select." -ForegroundColor DarkGray
+        Write-Host ""
+
+        for ($i = 0; $i -lt $Options.Count; $i++) {
+            $prefix = if ($i -eq $index) { ">" } else { " " }
+            Write-Host ("{0} {1}" -f $prefix, $Options[$i].Label)
+        }
+
+        $key = [Console]::ReadKey($true)
+        switch ($key.Key) {
+            "UpArrow" { $index = if ($index -le 0) { $Options.Count - 1 } else { $index - 1 } }
+            "DownArrow" { $index = if ($index -ge ($Options.Count - 1)) { 0 } else { $index + 1 } }
+            "Enter" { return $Options[$index] }
+            "Escape" { return $null }
+        }
+    }
+}
+
+function Read-ConsoleMultiSelect {
+    param(
+        [string]$Title,
+        [array]$Options,
+        [bool]$DefaultSelected = $true
+    )
+
+    if ($Options.Count -eq 0) {
+        return @()
+    }
+
+    $index = 0
+    $selected = @{}
+    for ($i = 0; $i -lt $Options.Count; $i++) {
+        $selected[$i] = $DefaultSelected
+    }
+
+    while ($true) {
+        Clear-Host
+        Write-Host $Title -ForegroundColor Cyan
+        Write-Host "Use Up/Down arrows, Space to toggle, Enter to confirm." -ForegroundColor DarkGray
+        Write-Host "Press A to select all, N to clear all." -ForegroundColor DarkGray
+        Write-Host ""
+
+        for ($i = 0; $i -lt $Options.Count; $i++) {
+            $cursor = if ($i -eq $index) { ">" } else { " " }
+            $check = if ($selected[$i]) { "[x]" } else { "[ ]" }
+            Write-Host ("{0} {1} {2}" -f $cursor, $check, $Options[$i].Label)
+        }
+
+        $key = [Console]::ReadKey($true)
+        switch ($key.Key) {
+            "UpArrow" { $index = if ($index -le 0) { $Options.Count - 1 } else { $index - 1 } }
+            "DownArrow" { $index = if ($index -ge ($Options.Count - 1)) { 0 } else { $index + 1 } }
+            "Spacebar" { $selected[$index] = -not $selected[$index] }
+            "A" {
+                for ($j = 0; $j -lt $Options.Count; $j++) { $selected[$j] = $true }
+            }
+            "N" {
+                for ($j = 0; $j -lt $Options.Count; $j++) { $selected[$j] = $false }
+            }
+            "Enter" {
+                $picked = @()
+                for ($j = 0; $j -lt $Options.Count; $j++) {
+                    if ($selected[$j]) {
+                        $picked += $Options[$j]
+                    }
+                }
+
+                if ($picked.Count -gt 0) {
+                    return $picked
+                }
+            }
+            "Escape" { return @() }
+        }
+    }
+}
+
+function Get-InteractiveSyncScope {
+    param([switch]$AllowScopeSelection)
+
+    if (-not $AllowScopeSelection) {
+        return [PSCustomObject]@{ Scope = "keep"; Cancelled = $false }
+    }
+
+    $scopeOptions = @(
+        [PSCustomObject]@{ Label = "Global only"; Value = "global" },
+        [PSCustomObject]@{ Label = "Workspace local only"; Value = "workspace" },
+        [PSCustomObject]@{ Label = "Both global + workspace"; Value = "both" },
+        [PSCustomObject]@{ Label = "Cancel"; Value = "cancel" }
+    )
+
+    $selected = Read-ConsoleSingleSelect -Title "Select sync destination scope" -Options $scopeOptions -DefaultIndex 0
+    if (-not $selected -or $selected.Value -eq "cancel") {
+        return [PSCustomObject]@{ Scope = "cancel"; Cancelled = $true }
+    }
+
+    return [PSCustomObject]@{ Scope = [string]$selected.Value; Cancelled = $false }
+}
+
+function Get-ToolName {
+    param([string]$TargetPath)
+
+    if ($TargetNameMap.ContainsKey($TargetPath)) {
+        return [string]$TargetNameMap[$TargetPath]
+    }
+
+    return [string](Split-Path (Split-Path $TargetPath -Parent) -Leaf)
+}
+
+function Test-TargetInstalled {
+    param([string]$TargetPath)
+
+    $isWorkspaceTarget = $TargetPath.StartsWith($RepoRoot, [System.StringComparison]::OrdinalIgnoreCase)
+
+    if ($TargetDetectionMap.ContainsKey($TargetPath)) {
+        foreach ($checkPath in @($TargetDetectionMap[$TargetPath])) {
+            if (-not [string]::IsNullOrWhiteSpace($checkPath) -and (Test-Path $checkPath)) {
+                return $true
+            }
+        }
+    }
+
+    if (Test-Path $TargetPath) {
+        return $true
+    }
+
+    if ($isWorkspaceTarget) {
+        return $false
+    }
+
+    $parent = Split-Path $TargetPath -Parent
+    return (-not [string]::IsNullOrWhiteSpace($parent) -and (Test-Path $parent))
+}
+
+function Filter-InstalledTargets {
+    param([array]$Targets)
+
+    $installed = @()
+    foreach ($target in @($Targets | Select-Object -Unique)) {
+        if (Test-TargetInstalled -TargetPath $target) {
+            $installed += $target
+        }
+    }
+
+    return @($installed | Select-Object -Unique)
+}
+
+function Select-InstalledTargetsInteractive {
+    param([array]$InstalledTargets)
+
+    if ($InstalledTargets.Count -le 1) {
+        return $InstalledTargets
+    }
+
+    $options = @()
+    foreach ($target in $InstalledTargets) {
+        $options += [PSCustomObject]@{
+            Label = ("{0} -> {1}" -f (Get-ToolName -TargetPath $target), $target)
+            Value = $target
+        }
+    }
+
+    $picked = Read-ConsoleMultiSelect -Title "Detected installed tools" -Options $options -DefaultSelected $true
+    if ($picked.Count -eq 0) {
+        return @()
+    }
+
+    return @($picked | ForEach-Object { $_.Value } | Select-Object -Unique)
+}
+
+function Confirm-OrExit {
+    param(
+        [string]$Message,
+        [switch]$Enabled
+    )
+
+    if (-not $Enabled) {
+        return
+    }
+
+    $options = @(
+        [PSCustomObject]@{ Label = "Yes"; Value = "yes" },
+        [PSCustomObject]@{ Label = "No"; Value = "no" }
+    )
+
+    $confirmation = Read-ConsoleSingleSelect -Title $Message -Options $options -DefaultIndex 1
+    if (-not $confirmation -or $confirmation.Value -ne "yes") {
+        Write-Log "Cancelled by user." "WARN"
+        exit 0
+    }
+}
+
+function Resolve-TargetTools {
+    param(
+        [array]$InputTargetTools,
+        [switch]$IncludeWorkspace,
+        [switch]$IncludeGlobalTargets,
+        [switch]$InteractivePrompt,
+        [array]$GlobalTargetsSet,
+        [array]$WorkspaceTargetsSet
+    )
+
+    $explicitTargetsProvided = $PSBoundParameters.ContainsKey("InputTargetTools") -and $InputTargetTools -and $InputTargetTools.Count -gt 0
+    $targets = @()
+
+    if ($explicitTargetsProvided) {
+        $targets = @($InputTargetTools)
+        if ($IncludeGlobalTargets) {
+            $targets = @($targets + $GlobalTargetsSet | Select-Object -Unique)
+        }
+    }
+    else {
+        $scopeSelection = Get-InteractiveSyncScope -AllowScopeSelection:$InteractivePrompt
+        if ($scopeSelection.Cancelled) {
+            Write-Log "Cancelled by user before sync started." "WARN"
+            exit 0
+        }
+
+        switch ($scopeSelection.Scope) {
+            "workspace" { $targets = @($WorkspaceTargetsSet) }
+            "both" { $targets = @($GlobalTargetsSet + $WorkspaceTargetsSet | Select-Object -Unique) }
+            default {
+                $targets = @($GlobalTargetsSet)
+                if ($IncludeWorkspace) {
+                    $targets = @($targets + $WorkspaceTargetsSet | Select-Object -Unique)
+                }
+            }
+        }
+    }
+
+    $targets = @($targets | Where-Object { -not [string]::IsNullOrWhiteSpace($_) } | Select-Object -Unique)
+    $installedTargets = Filter-InstalledTargets -Targets $targets
+
+    if ($installedTargets.Count -eq 0) {
+        Write-Log "No installed tool targets were detected for the selected scope. Nothing to sync." "WARN"
+        return @()
+    }
+
+    if ($InteractivePrompt -and -not $explicitTargetsProvided) {
+        return Select-InstalledTargetsInteractive -InstalledTargets $installedTargets
+    }
+
+    return $installedTargets
+}
+
+$interactivePrompt = -not $NoPrompt -and [Environment]::UserInteractive
+$TargetTools = Resolve-TargetTools `
+    -InputTargetTools $TargetTools `
+    -IncludeWorkspace:$IncludeWorkspaceTargets `
+    -IncludeGlobalTargets:$IncludeGlobal `
+    -InteractivePrompt:$interactivePrompt `
+    -GlobalTargetsSet $GlobalTargets `
+    -WorkspaceTargetsSet $WorkspaceTargets
+
+if ($TargetTools.Count -eq 0) {
+    Write-Log "No valid targets resolved. Nothing to do." "WARN"
+    exit 0
 }
 
 function Ensure-MainHubRouters {
@@ -229,8 +529,18 @@ if (-not $IncludeWorkspaceTargets) {
     Write-Log "Workspace targets: disabled (global-only policy)"
 }
 
+if ($interactivePrompt) {
+    Write-Host ""
+    Write-Host "Targets selected for sync:" -ForegroundColor Cyan
+    foreach ($target in $TargetTools) {
+        Write-Host "  - $target"
+    }
+    Confirm-OrExit -Message "Proceed with sync to these targets?" -Enabled:$true
+}
+
 # Remove workspace-local targets only when explicitly requested.
 if ($PruneWorkspaceTargets) {
+    Confirm-OrExit -Message "Prune workspace-local targets? This removes directories under the repository" -Enabled:$interactivePrompt
     foreach ($workspaceTarget in $WorkspaceTargets) {
         if (Test-Path $workspaceTarget) {
             Remove-Item -Path $workspaceTarget -Recurse -Force

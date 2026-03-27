@@ -1,10 +1,26 @@
 param(
     [string] $SkillsAggregatedDir = ".\AI-skills-bank\skills-aggregated",
-    [string] $OutputCsv = ".\AI-skills-bank\hub-manifests.csv"
+    [string] $OutputCsv = ".\AI-skills-bank\hub-manifests.csv",
+    [switch] $NoPrompt
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
+$interactivePrompt = -not $NoPrompt -and [Environment]::UserInteractive
+
+function Confirm-OrExit {
+    param([string] $Message)
+
+    if (-not $interactivePrompt) {
+        return
+    }
+
+    $confirmation = (Read-Host "$Message [y/N]").Trim().ToLowerInvariant()
+    if ($confirmation -ne "y" -and $confirmation -ne "yes") {
+        Write-Warning "Cancelled by user before write operations started."
+        exit 0
+    }
+}
 
 function Resolve-Phase {
     param([int] $Score)
@@ -129,6 +145,7 @@ $sorted = $allRows | Sort-Object hub, sub_hub, @{ Expression = "match_score"; De
 
 $outputPath = Join-Path $repoRoot $OutputCsv
 $outputDir = Split-Path -Parent $outputPath
+Confirm-OrExit -Message "Proceed with writing hub manifest CSV to '$outputPath'?"
 if (-not (Test-Path $outputDir)) {
     New-Item -ItemType Directory -Path $outputDir | Out-Null
 }

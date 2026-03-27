@@ -1,11 +1,27 @@
 param(
     [string] $ManifestCsv = ".\AI-skills-bank\hub-manifests.csv",
     [string] $SkillsRoot = ".\AI-skills-bank\skills-aggregated",
-    [string] $ReportPath = ".\AI-skills-bank\skills-aggregated\VALIDATION-20-SCENARIOS.md"
+    [string] $ReportPath = ".\AI-skills-bank\skills-aggregated\VALIDATION-20-SCENARIOS.md",
+    [switch] $NoPrompt
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
+$interactivePrompt = -not $NoPrompt -and [Environment]::UserInteractive
+
+function Confirm-OrExit {
+    param([string] $Message)
+
+    if (-not $interactivePrompt) {
+        return
+    }
+
+    $confirmation = (Read-Host "$Message [y/N]").Trim().ToLowerInvariant()
+    if ($confirmation -ne "y" -and $confirmation -ne "yes") {
+        Write-Warning "Cancelled by user before report write."
+        exit 0
+    }
+}
 
 $results = New-Object System.Collections.Generic.List[psobject]
 
@@ -163,6 +179,8 @@ $reportDir = Split-Path -Parent $reportFilePath
 if (-not (Test-Path $reportDir)) {
     New-Item -ItemType Directory -Path $reportDir | Out-Null
 }
+
+Confirm-OrExit -Message "Proceed with writing validation report to '$reportFilePath'?"
 
 $reportLines = New-Object System.Collections.Generic.List[string]
 $reportLines.Add("# BMAD Hybrid Validation Report (20 Scenarios)") | Out-Null

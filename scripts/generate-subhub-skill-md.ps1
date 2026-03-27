@@ -6,11 +6,27 @@ param(
     [ValidateRange(3, 10)]
     [int] $TopN = 5,
     [switch] $All,
-    [switch] $DryRun
+    [switch] $DryRun,
+    [switch] $NoPrompt
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
+$interactivePrompt = -not $NoPrompt -and [Environment]::UserInteractive
+
+function Confirm-OrExit {
+    param([string] $Message)
+
+    if (-not $interactivePrompt -or $DryRun) {
+        return
+    }
+
+    $confirmation = (Read-Host "$Message [y/N]").Trim().ToLowerInvariant()
+    if ($confirmation -ne "y" -and $confirmation -ne "yes") {
+        Write-Warning "Cancelled by user before write operations started."
+        exit 0
+    }
+}
 
 function Get-IntentLabel {
     param([string] $Triggers, [string] $SkillId)
@@ -183,6 +199,8 @@ else {
     }
     $targets = @([PSCustomObject]@{ Hub = $Hub; SubHub = $SubHub })
 }
+
+Confirm-OrExit -Message "Proceed with generating/updating $($targets.Count) SKILL.md file(s) under '$skillsRootPath'?"
 
 $written = 0
 foreach ($target in $targets) {

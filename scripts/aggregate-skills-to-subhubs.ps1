@@ -33,7 +33,8 @@ param(
     [Switch] $EnableSemanticScoring = $false,
     [string] $SemanticClassificationsFile = ".\AI-skills-bank\skills-aggregated\semantic-classifications.json",
     [ValidateRange(0.0, 1.0)]
-    [double] $SemanticWeightFactor = 0.6
+    [double] $SemanticWeightFactor = 0.6,
+    [Switch] $NoPrompt = $false
 )
 
 if ($ReviewMinScore -gt $AutoAcceptMinScore) {
@@ -42,6 +43,22 @@ if ($ReviewMinScore -gt $AutoAcceptMinScore) {
 
 if ($EnableReviewBand -and $SecondaryMinScore -lt $AutoAcceptMinScore) {
     $SecondaryMinScore = $AutoAcceptMinScore
+}
+
+$InteractivePrompt = -not $NoPrompt -and [Environment]::UserInteractive
+
+function Confirm-OrExit {
+    param([string] $Message)
+
+    if (-not $InteractivePrompt) {
+        return
+    }
+
+    $confirmation = (Read-Host "$Message [y/N]").Trim().ToLowerInvariant()
+    if ($confirmation -ne "y" -and $confirmation -ne "yes") {
+        Write-Host "[WARN] Cancelled by user before write operations started." -ForegroundColor Yellow
+        exit 0
+    }
 }
 
 # src validation module (load from same directory)
@@ -1768,6 +1785,10 @@ else {
 }
 Write-Host "[INFO] Multi-hub mode: $AllowMultiHub (max hubs per skill: $MaxHubsPerSkill, primary>=${PrimaryMinScore}, secondary>=${SecondaryMinScore})"
 Write-Host ""
+
+if (-not $DryRun) {
+    Confirm-OrExit -Message "Proceed with generating aggregated outputs in '$OutputDir'?"
+}
 
 if (-not $DryRun) {
     if (-not (Test-Path $OutputDir)) {
