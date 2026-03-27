@@ -34,24 +34,22 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 ## Quick Trigger Hints
 
-- strategy
 - marketing
 - positioning
 - gtm
 - context
+- strategy
 - ideas
-- product
 - motions
-- tool
+- product
 - pricing
-- free
-- competitor
-- competitive
-- intel
 - statement
+- competitor
+- intel
+- competitive
+- basics
 - landscape
 - app
-- basics
 
 ## Data Contract
 

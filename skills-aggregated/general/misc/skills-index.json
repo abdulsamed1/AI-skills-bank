@@ -424,19 +424,6 @@
         "match_score":  0
     },
     {
-        "id":  "binance-tokenized-securities-info",
-        "triggers":  [
-                         "binance",
-                         "tokenized",
-                         "securities",
-                         "info"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "binary-analysis-patterns",
         "triggers":  [
                          "binary",
@@ -1531,18 +1518,6 @@
         "match_score":  0
     },
     {
-        "id":  "crypto-market-rank",
-        "triggers":  [
-                         "crypto",
-                         "market",
-                         "rank"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "cso",
         "triggers":  [
                          "cso"
@@ -1573,6 +1548,17 @@
                          "workshop"
                      ],
         "src":  "external:Product-Manager-Skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  0
+    },
+    {
+        "id":  "customer-support",
+        "triggers":  [
+                         "customer",
+                         "support"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -1802,6 +1788,16 @@
         "triggers":  [
                          "devops",
                          "troubleshooter"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  0
+    },
+    {
+        "id":  "diary",
+        "triggers":  [
+                         "diary"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -2381,6 +2377,19 @@
                          "fp",
                          "types",
                          "ref"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  0
+    },
+    {
+        "id":  "framework-migration-code-migrate",
+        "triggers":  [
+                         "framework",
+                         "migration",
+                         "code",
+                         "migrate"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -3184,17 +3193,6 @@
         "match_score":  0
     },
     {
-        "id":  "meme-rush",
-        "triggers":  [
-                         "meme",
-                         "rush"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "memory-forensics",
         "triggers":  [
                          "memory",
@@ -3363,16 +3361,6 @@
         "match_score":  0
     },
     {
-        "id":  "notebooklm",
-        "triggers":  [
-                         "notebooklm"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "nutrient-document-processing",
         "triggers":  [
                          "nutrient",
@@ -3493,6 +3481,18 @@
         "match_score":  0
     },
     {
+        "id":  "odoo-edi-connector",
+        "triggers":  [
+                         "odoo",
+                         "edi",
+                         "connector"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  0
+    },
+    {
         "id":  "odoo-hr-payroll-setup",
         "triggers":  [
                          "odoo",
@@ -3603,17 +3603,6 @@
         "match_score":  0
     },
     {
-        "id":  "onboarding-cro",
-        "triggers":  [
-                         "onboarding",
-                         "cro"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "on-call-handoff-patterns",
         "triggers":  [
                          "on",
@@ -3661,16 +3650,6 @@
         "match_score":  0
     },
     {
-        "id":  "p2p",
-        "triggers":  [
-                         "p2p"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "page-cro",
         "triggers":  [
                          "page",
@@ -3682,33 +3661,10 @@
         "match_score":  0
     },
     {
-        "id":  "paid-ads",
-        "triggers":  [
-                         "paid",
-                         "ads"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "payment-integration",
         "triggers":  [
                          "payment",
                          "integration"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "paywall-upgrade-cro",
-        "triggers":  [
-                         "paywall",
-                         "upgrade",
-                         "cro"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -3933,17 +3889,6 @@
         "match_score":  0
     },
     {
-        "id":  "programmatic-seo",
-        "triggers":  [
-                         "programmatic",
-                         "seo"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "progressive-web-app",
         "triggers":  [
                          "progressive",
@@ -4042,42 +3987,6 @@
         "match_score":  0
     },
     {
-        "id":  "query-address-info",
-        "triggers":  [
-                         "query",
-                         "address",
-                         "info"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "query-token-audit",
-        "triggers":  [
-                         "query",
-                         "token",
-                         "audit"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "query-token-info",
-        "triggers":  [
-                         "query",
-                         "token",
-                         "info"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "read-file",
         "triggers":  [
                          "read",
@@ -4138,17 +4047,6 @@
                          "red",
                          "team",
                          "tactics"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "referral-program",
-        "triggers":  [
-                         "referral",
-                         "program"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -4369,17 +4267,6 @@
         "match_score":  0
     },
     {
-        "id":  "schema-markup",
-        "triggers":  [
-                         "schema",
-                         "markup"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "search-specialist",
         "triggers":  [
                          "search",
@@ -4587,17 +4474,6 @@
         "match_score":  0
     },
     {
-        "id":  "site-architecture",
-        "triggers":  [
-                         "site",
-                         "architecture"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "slack-bot-builder",
         "triggers":  [
                          "slack",
@@ -4695,17 +4571,6 @@
                          "plan"
                      ],
         "src":  "external:pm-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "square-post",
-        "triggers":  [
-                         "square",
-                         "post"
-                     ],
-        "src":  "external:binance-skills-hub",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -4940,17 +4805,6 @@
                          "guardian"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "trading-signal",
-        "triggers":  [
-                         "trading",
-                         "signal"
-                     ],
-        "src":  "external:binance-skills-hub",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -5244,18 +5098,6 @@
                          "wcag",
                          "audit",
                          "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "web-artifacts-builder",
-        "triggers":  [
-                         "web",
-                         "artifacts",
-                         "builder"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",

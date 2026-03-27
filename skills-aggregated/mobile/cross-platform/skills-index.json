@@ -36,38 +36,14 @@
         "match_score":  7
     },
     {
-        "id":  "attack-tree-construction",
+        "id":  "development",
         "triggers":  [
-                         "attack",
-                         "tree",
-                         "construction"
+                         "development"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "mobile/cross-platform",
         "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "audit-skills",
-        "triggers":  [
-                         "audit",
-                         "skills"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "mobile/cross-platform",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "claude-monitor",
-        "triggers":  [
-                         "claude",
-                         "monitor"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "mobile/cross-platform",
-        "is_primary":  true,
-        "match_score":  5
+        "match_score":  7
     },
     {
         "id":  "earllm-build",
@@ -118,16 +94,6 @@
         "match_score":  7
     },
     {
-        "id":  "instagram",
-        "triggers":  [
-                         "instagram"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "mobile/cross-platform",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "ios-developer",
         "triggers":  [
                          "ios",
@@ -137,6 +103,18 @@
         "primary_hub":  "mobile/cross-platform",
         "is_primary":  true,
         "match_score":  11
+    },
+    {
+        "id":  "kotlin-coroutines-expert",
+        "triggers":  [
+                         "kotlin",
+                         "coroutines",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "mobile-design",
@@ -175,22 +153,23 @@
         "match_score":  7
     },
     {
+        "id":  "native-data-fetching",
+        "triggers":  [
+                         "native",
+                         "data",
+                         "fetching"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "react-native-architecture",
         "triggers":  [
                          "react",
                          "native",
                          "architecture"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "mobile/cross-platform",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "skill-sentinel",
-        "triggers":  [
-                         "skill",
-                         "sentinel"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "mobile/cross-platform",

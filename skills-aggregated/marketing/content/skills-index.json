@@ -5,10 +5,10 @@
                          "ad",
                          "creative"
                      ],
-        "src":  "external:marketingskills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
-        "match_score":  9
+        "match_score":  100
     },
     {
         "id":  "ai-seo",
@@ -63,10 +63,10 @@
                          "competitor",
                          "alternatives"
                      ],
-        "src":  "external:marketingskills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
-        "match_score":  11
+        "match_score":  100
     },
     {
         "id":  "content-creator",
@@ -132,7 +132,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
-        "match_score":  4
+        "match_score":  100
     },
     {
         "id":  "cro-optimization",
@@ -162,10 +162,10 @@
                          "tool",
                          "strategy"
                      ],
-        "src":  "external:marketingskills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
-        "match_score":  11
+        "match_score":  100
     },
     {
         "id":  "grammar-check",
@@ -228,10 +228,10 @@
                          "programmatic",
                          "seo"
                      ],
-        "src":  "external:marketingskills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
-        "match_score":  15
+        "match_score":  100
     },
     {
         "id":  "sales-enablement",
@@ -243,6 +243,17 @@
         "primary_hub":  "marketing/content",
         "is_primary":  true,
         "match_score":  4
+    },
+    {
+        "id":  "schema-markup",
+        "triggers":  [
+                         "schema",
+                         "markup"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "seo",
@@ -440,7 +451,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
-        "match_score":  11
+        "match_score":  100
     },
     {
         "id":  "seo-images",
@@ -577,5 +588,27 @@
         "primary_hub":  "marketing/content",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "site-architecture",
+        "triggers":  [
+                         "site",
+                         "architecture"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "testimonial-collector",
+        "triggers":  [
+                         "testimonial",
+                         "collector"
+                     ],
+        "src":  "external:ai-marketing-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  100
     }
 ]

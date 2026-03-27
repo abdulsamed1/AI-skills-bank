@@ -34,18 +34,6 @@
         "match_score":  7
     },
     {
-        "id":  "free-tool-strategy",
-        "triggers":  [
-                         "free",
-                         "tool",
-                         "strategy"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  14
-    },
-    {
         "id":  "gtm-motions",
         "triggers":  [
                          "gtm",
@@ -120,7 +108,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/strategy",
         "is_primary":  true,
-        "match_score":  10
+        "match_score":  100
     },
     {
         "id":  "product-marketing-context",

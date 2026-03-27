@@ -105,6 +105,19 @@
         "match_score":  12
     },
     {
+        "id":  "azure-communication-callautomation-java",
+        "triggers":  [
+                         "azure",
+                         "communication",
+                         "callautomation",
+                         "java"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
         "id":  "azure-communication-callingserver-java",
         "triggers":  [
                          "azure",
@@ -231,32 +244,6 @@
         "match_score":  12
     },
     {
-        "id":  "azure-keyvault-keys-ts",
-        "triggers":  [
-                         "azure",
-                         "keyvault",
-                         "keys",
-                         "ts"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/java",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "azure-keyvault-secrets-ts",
-        "triggers":  [
-                         "azure",
-                         "keyvault",
-                         "secrets",
-                         "ts"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/java",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "azure-messaging-webpubsub-java",
         "triggers":  [
                          "azure",
@@ -351,15 +338,15 @@
         "match_score":  12
     },
     {
-        "id":  "figma-use",
+        "id":  "csharp-pro",
         "triggers":  [
-                         "figma",
-                         "use"
+                         "csharp",
+                         "pro"
                      ],
-        "src":  "external:mcp-server-guide",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/java",
         "is_primary":  true,
-        "match_score":  5
+        "match_score":  100
     },
     {
         "id":  "java-pro",
@@ -371,77 +358,5 @@
         "primary_hub":  "programming/java",
         "is_primary":  true,
         "match_score":  16
-    },
-    {
-        "id":  "javascript-mastery",
-        "triggers":  [
-                         "javascript",
-                         "mastery"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/java",
-        "is_primary":  true,
-        "match_score":  10
-    },
-    {
-        "id":  "javascript-pro",
-        "triggers":  [
-                         "javascript",
-                         "pro"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/java",
-        "is_primary":  true,
-        "match_score":  10
-    },
-    {
-        "id":  "latex-paper-conversion",
-        "triggers":  [
-                         "latex",
-                         "paper",
-                         "conversion"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/java",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "modern-javascript-patterns",
-        "triggers":  [
-                         "modern",
-                         "javascript",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/java",
-        "is_primary":  true,
-        "match_score":  10
-    },
-    {
-        "id":  "n8n-code-javascript",
-        "triggers":  [
-                         "n8n",
-                         "code",
-                         "javascript"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/java",
-        "is_primary":  true,
-        "match_score":  10
-    },
-    {
-        "id":  "sankhya-dashboard-html-jsp-custom-best-pratices",
-        "triggers":  [
-                         "sankhya",
-                         "dashboard",
-                         "html",
-                         "jsp",
-                         "custom"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/java",
-        "is_primary":  true,
-        "match_score":  7
     }
 ]

@@ -34,26 +34,26 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 ## Quick Trigger Hints
 
-- azure
 - java
+- azure
 - ai
 - communication
-- javascript
-- keyvault
 - monitor
-- ts
 - pro
-- secrets
-- keys
+- keyvault
 - security
-- sms
-- html
-- conversion
 - storage
-- compute
+- voicelive
+- chat
 - vision
-- contentsafety
-- appconfiguration
+- sms
+- compute
+- ingestion
+- anomalydetector
+- common
+- keys
+- callingserver
+- formrecognizer
 
 ## Data Contract
 

@@ -36,24 +36,24 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 - security
 - audit
+- automation
 - testing
+- google
 - scanning
 - coder
-- auth
-- review
-- patterns
 - azure
 - api
-- expert
+- dotnet
+- odoo
 - threat
 - web
 - authentication
+- patterns
 - laravel
-- odoo
-- tools
-- dotnet
+- expert
 - mobile
-- codebase
+- practices
+- tools
 
 ## Data Contract
 

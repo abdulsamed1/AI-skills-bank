@@ -35,25 +35,25 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 ## Quick Trigger Hints
 
 - apify
-- x
 - social
-- linkedin
+- x
 - content
-- analysis
 - writer
-- analytics
-- ads
-- orchestrator
-- twitter
-- paid
+- analysis
+- linkedin
 - influencer
-- hook
+- generator
 - publisher
-- discovery
 - viral
+- paid
+- orchestrator
+- discovery
 - article
 - magnet
-- trend
+- ads
+- analytics
+- hook
+- twitter
 
 ## Data Contract
 

@@ -1,25 +1,5 @@
 [
     {
-        "id":  "algo",
-        "triggers":  [
-                         "algo"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "alpha",
-        "triggers":  [
-                         "alpha"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "api-design-principles",
         "triggers":  [
                          "api",
@@ -102,14 +82,15 @@
         "match_score":  16
     },
     {
-        "id":  "assets",
+        "id":  "architecture-patterns",
         "triggers":  [
-                         "assets"
+                         "architecture",
+                         "patterns"
                      ],
-        "src":  "external:binance-skills-hub",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
-        "match_score":  4
+        "match_score":  100
     },
     {
         "id":  "aws-secrets-rotation",
@@ -235,30 +216,6 @@
         "match_score":  8
     },
     {
-        "id":  "convert",
-        "triggers":  [
-                         "convert"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "derivatives-trading-portfolio-margin-pro",
-        "triggers":  [
-                         "derivatives",
-                         "trading",
-                         "portfolio",
-                         "margin",
-                         "pro"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "documentation-generation-doc-generate",
         "triggers":  [
                          "documentation",
@@ -306,14 +263,15 @@
         "match_score":  4
     },
     {
-        "id":  "fiat",
+        "id":  "file-uploads",
         "triggers":  [
-                         "fiat"
+                         "file",
+                         "uploads"
                      ],
-        "src":  "external:binance-skills-hub",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
-        "match_score":  4
+        "match_score":  100
     },
     {
         "id":  "firecrawl-scraper",
@@ -431,17 +389,6 @@
         "match_score":  100
     },
     {
-        "id":  "margin-trading",
-        "triggers":  [
-                         "margin",
-                         "trading"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "mermaid-expert",
         "triggers":  [
                          "mermaid",
@@ -477,6 +424,17 @@
         "match_score":  4
     },
     {
+        "id":  "nestjs-expert",
+        "triggers":  [
+                         "nestjs",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "odoo-migration-helper",
         "triggers":  [
                          "odoo",
@@ -499,19 +457,6 @@
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  8
-    },
-    {
-        "id":  "onchain-pay-open-api",
-        "triggers":  [
-                         "onchain",
-                         "pay",
-                         "open",
-                         "api"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
     },
     {
         "id":  "openapi-spec-generation",
@@ -559,28 +504,6 @@
         "match_score":  8
     },
     {
-        "id":  "simple-earn",
-        "triggers":  [
-                         "simple",
-                         "earn"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "sub-account",
-        "triggers":  [
-                         "sub",
-                         "account"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "sveltekit",
         "triggers":  [
                          "sveltekit"
@@ -610,17 +533,6 @@
                          "dev"
                      ],
         "src":  "external:gemini-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "vip-loan",
-        "triggers":  [
-                         "vip",
-                         "loan"
-                     ],
-        "src":  "external:binance-skills-hub",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4

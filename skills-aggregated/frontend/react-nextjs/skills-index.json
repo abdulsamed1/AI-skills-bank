@@ -24,6 +24,17 @@
         "match_score":  4
     },
     {
+        "id":  "clerk-auth",
+        "triggers":  [
+                         "clerk",
+                         "auth"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "fp-react",
         "triggers":  [
                          "fp",
@@ -58,45 +69,11 @@
         "match_score":  4
     },
     {
-        "id":  "gsap-frameworks",
-        "triggers":  [
-                         "gsap",
-                         "frameworks"
-                     ],
-        "src":  "external:gsap-skills",
-        "primary_hub":  "frontend/react-nextjs",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "gsap-react",
-        "triggers":  [
-                         "gsap",
-                         "react"
-                     ],
-        "src":  "external:gsap-skills",
-        "primary_hub":  "frontend/react-nextjs",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "landing-page-generator",
         "triggers":  [
                          "landing",
                          "page",
                          "generator"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/react-nextjs",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "native-data-fetching",
-        "triggers":  [
-                         "native",
-                         "data",
-                         "fetching"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
@@ -140,14 +117,16 @@
         "match_score":  4
     },
     {
-        "id":  "react:components",
+        "id":  "nextjs-supabase-auth",
         "triggers":  [
-                         "react:components"
+                         "nextjs",
+                         "supabase",
+                         "auth"
                      ],
-        "src":  "external:stitch-skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
-        "match_score":  4
+        "match_score":  100
     },
     {
         "id":  "react-best-practices",
@@ -184,6 +163,17 @@
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
+    },
+    {
+        "id":  "react-modernization",
+        "triggers":  [
+                         "react",
+                         "modernization"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  8
     },
     {
         "id":  "react-nextjs-development",
@@ -298,20 +288,9 @@
                          "artifacts",
                          "builder"
                      ],
-        "src":  "external:skills",
-        "primary_hub":  "frontend/react-nextjs",
-        "is_primary":  true,
-        "match_score":  8
-    },
-    {
-        "id":  "yes-md",
-        "triggers":  [
-                         "yes",
-                         "md"
-                     ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
-        "match_score":  4
+        "match_score":  100
     }
 ]

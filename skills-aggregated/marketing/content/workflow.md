@@ -38,22 +38,22 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - content
 - ai
 - programmatic
-- competitor
 - audit
+- competitor
+- schema
 - cro
 - strategy
-- lead
 - local
-- ad
-- ts
+- lead
 - enablement
+- ad
 - alternatives
-- architect
-- auditor
-- copywriting
-- marketer
-- copy
 - snippet
+- auditor
+- gen
+- marketer
+- architect
+- sales
 
 ## Data Contract
 

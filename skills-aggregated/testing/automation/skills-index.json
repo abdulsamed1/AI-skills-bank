@@ -24,34 +24,11 @@
         "match_score":  7
     },
     {
-        "id":  "acquisition-channel-advisor",
-        "triggers":  [
-                         "acquisition",
-                         "channel",
-                         "advisor"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "active-directory-attacks",
         "triggers":  [
                          "active",
                          "directory",
                          "attacks"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "ad-creative",
-        "triggers":  [
-                         "ad",
-                         "creative"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "testing/automation",
@@ -70,11 +47,9 @@
         "match_score":  5
     },
     {
-        "id":  "airflow-dag-patterns",
+        "id":  "android_ui_verification",
         "triggers":  [
-                         "airflow",
-                         "dag",
-                         "patterns"
+                         "android_ui_verification"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "testing/automation",
@@ -94,40 +69,6 @@
         "primary_hub":  "testing/automation",
         "is_primary":  true,
         "match_score":  9
-    },
-    {
-        "id":  "app-analytics",
-        "triggers":  [
-                         "app",
-                         "analytics"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "app-icon-optimization",
-        "triggers":  [
-                         "app",
-                         "icon",
-                         "optimization"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "architecture-patterns",
-        "triggers":  [
-                         "architecture",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
     },
     {
         "id":  "aws-penetration-testing",
@@ -191,6 +132,18 @@
         "primary_hub":  "testing/automation",
         "is_primary":  true,
         "match_score":  9
+    },
+    {
+        "id":  "bats-testing-patterns",
+        "triggers":  [
+                         "bats",
+                         "testing",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  11
     },
     {
         "id":  "bmad-agent-qa",
@@ -316,18 +269,6 @@
         "match_score":  7
     },
     {
-        "id":  "brainstorm-experiments-existing",
-        "triggers":  [
-                         "brainstorm",
-                         "experiments",
-                         "existing"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
         "id":  "browser-automation",
         "triggers":  [
                          "browser",
@@ -339,65 +280,28 @@
         "match_score":  18
     },
     {
-        "id":  "context7-auto-research",
+        "id":  "circleci-automation",
         "triggers":  [
-                         "context7",
-                         "auto",
-                         "research"
+                         "circleci",
+                         "automation"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "testing/automation",
         "is_primary":  true,
-        "match_score":  5
+        "match_score":  16
     },
     {
-        "id":  "csharp-pro",
+        "id":  "content-experimentation-best-practices",
         "triggers":  [
-                         "csharp",
-                         "pro"
+                         "content",
+                         "experimentation",
+                         "best",
+                         "practices"
                      ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:agent-toolkit",
         "primary_hub":  "testing/automation",
         "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "data-engineering-data-driven-feature",
-        "triggers":  [
-                         "data",
-                         "engineering",
-                         "data",
-                         "driven",
-                         "feature"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "data-quality-frameworks",
-        "triggers":  [
-                         "data",
-                         "quality",
-                         "frameworks"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "dbt-transformation-patterns",
-        "triggers":  [
-                         "dbt",
-                         "transformation",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
+        "match_score":  100
     },
     {
         "id":  "debugger",
@@ -421,17 +325,6 @@
         "match_score":  100
     },
     {
-        "id":  "dependency-upgrade",
-        "triggers":  [
-                         "dependency",
-                         "upgrade"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
         "id":  "deployment-validation-config-validate",
         "triggers":  [
                          "deployment",
@@ -443,79 +336,6 @@
         "primary_hub":  "testing/automation",
         "is_primary":  true,
         "match_score":  9
-    },
-    {
-        "id":  "derivatives-trading-coin-futures",
-        "triggers":  [
-                         "derivatives",
-                         "trading",
-                         "coin",
-                         "futures"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "derivatives-trading-options",
-        "triggers":  [
-                         "derivatives",
-                         "trading",
-                         "options"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "derivatives-trading-portfolio-margin",
-        "triggers":  [
-                         "derivatives",
-                         "trading",
-                         "portfolio",
-                         "margin"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "derivatives-trading-usds-futures",
-        "triggers":  [
-                         "derivatives",
-                         "trading",
-                         "usds",
-                         "futures"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "doc-coauthoring",
-        "triggers":  [
-                         "doc",
-                         "coauthoring"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "dummy-dataset",
-        "triggers":  [
-                         "dummy",
-                         "dataset"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  11
     },
     {
         "id":  "e2e-testing",
@@ -587,25 +407,11 @@
         "match_score":  9
     },
     {
-        "id":  "finishing-a-development-branch",
+        "id":  "github-actions-templates",
         "triggers":  [
-                         "finishing",
-                         "a",
-                         "development",
-                         "branch"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "framework-migration-deps-upgrade",
-        "triggers":  [
-                         "framework",
-                         "migration",
-                         "deps",
-                         "upgrade"
+                         "github",
+                         "actions",
+                         "templates"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "testing/automation",
@@ -613,11 +419,11 @@
         "match_score":  9
     },
     {
-        "id":  "github-actions-templates",
+        "id":  "gitlab-ci-patterns",
         "triggers":  [
-                         "github",
-                         "actions",
-                         "templates"
+                         "gitlab",
+                         "ci",
+                         "patterns"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "testing/automation",
@@ -637,18 +443,6 @@
         "match_score":  9
     },
     {
-        "id":  "identify-assumptions-existing",
-        "triggers":  [
-                         "identify",
-                         "assumptions",
-                         "existing"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
         "id":  "idor-testing",
         "triggers":  [
                          "idor",
@@ -658,17 +452,6 @@
         "primary_hub":  "testing/automation",
         "is_primary":  true,
         "match_score":  9
-    },
-    {
-        "id":  "interview-script",
-        "triggers":  [
-                         "interview",
-                         "script"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "javascript-testing-patterns",
@@ -695,40 +478,6 @@
         "match_score":  9
     },
     {
-        "id":  "kotlin-coroutines-expert",
-        "triggers":  [
-                         "kotlin",
-                         "coroutines",
-                         "expert"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "lean-canvas",
-        "triggers":  [
-                         "lean",
-                         "canvas"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "leiloeiro-risco",
-        "triggers":  [
-                         "leiloeiro",
-                         "risco"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "linux-shell-scripting",
         "triggers":  [
                          "linux",
@@ -741,35 +490,12 @@
         "match_score":  13
     },
     {
-        "id":  "ml-engineer",
+        "id":  "llm-evaluation",
         "triggers":  [
-                         "ml",
-                         "engineer"
+                         "llm",
+                         "evaluation"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "nestjs-expert",
-        "triggers":  [
-                         "nestjs",
-                         "expert"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "netlify-edge-functions",
-        "triggers":  [
-                         "netlify",
-                         "edge",
-                         "functions"
-                     ],
-        "src":  "external:context-and-tools",
         "primary_hub":  "testing/automation",
         "is_primary":  true,
         "match_score":  9
@@ -786,16 +512,16 @@
         "match_score":  11
     },
     {
-        "id":  "opportunity-solution-tree",
+        "id":  "odoo-automated-tests",
         "triggers":  [
-                         "opportunity",
-                         "solution",
-                         "tree"
+                         "odoo",
+                         "automated",
+                         "tests"
                      ],
-        "src":  "external:Product-Manager-Skills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "testing/automation",
         "is_primary":  true,
-        "match_score":  5
+        "match_score":  7
     },
     {
         "id":  "pentest-checklist",
@@ -845,17 +571,6 @@
         "match_score":  13
     },
     {
-        "id":  "prioritize-assumptions",
-        "triggers":  [
-                         "prioritize",
-                         "assumptions"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "privilege-escalation-methods",
         "triggers":  [
                          "privilege",
@@ -900,17 +615,6 @@
         "match_score":  7
     },
     {
-        "id":  "ruby-pro",
-        "triggers":  [
-                         "ruby",
-                         "pro"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
         "id":  "sast-configuration",
         "triggers":  [
                          "sast",
@@ -932,17 +636,6 @@
         "primary_hub":  "testing/automation",
         "is_primary":  true,
         "match_score":  9
-    },
-    {
-        "id":  "screenshot-optimization",
-        "triggers":  [
-                         "screenshot",
-                         "optimization"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  11
     },
     {
         "id":  "security-requirement-extraction",
@@ -979,38 +672,6 @@
         "primary_hub":  "testing/automation",
         "is_primary":  true,
         "match_score":  9
-    },
-    {
-        "id":  "skill-creator",
-        "triggers":  [
-                         "skill",
-                         "creator"
-                     ],
-        "src":  "external:skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "slack-messaging",
-        "triggers":  [
-                         "slack",
-                         "messaging"
-                     ],
-        "src":  "external:superpowers-lab",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "spot",
-        "triggers":  [
-                         "spot"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
     },
     {
         "id":  "systematic-debugging",
@@ -1058,17 +719,6 @@
         "match_score":  7
     },
     {
-        "id":  "testimonial-collector",
-        "triggers":  [
-                         "testimonial",
-                         "collector"
-                     ],
-        "src":  "external:ai-marketing-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "testing-patterns",
         "triggers":  [
                          "testing",
@@ -1091,17 +741,6 @@
         "match_score":  21
     },
     {
-        "id":  "test-scenarios",
-        "triggers":  [
-                         "test",
-                         "scenarios"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
         "id":  "unit-testing-test-generate",
         "triggers":  [
                          "unit",
@@ -1113,30 +752,6 @@
         "primary_hub":  "testing/automation",
         "is_primary":  true,
         "match_score":  13
-    },
-    {
-        "id":  "user-story",
-        "triggers":  [
-                         "user",
-                         "story"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "wds-5-agentic-development",
-        "triggers":  [
-                         "wds",
-                         "5",
-                         "agentic",
-                         "development"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
     },
     {
         "id":  "web3-testing",

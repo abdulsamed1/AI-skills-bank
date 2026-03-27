@@ -37,23 +37,23 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - typescript
 - ts
 - fp
-- expert
 - javascript
+- expert
+- pro
+- scaffold
+- flow
+- zustand
 - types
 - zod
+- modern
+- errors
+- sdk
+- node
+- patterns
 - m365
-- pragmatic
-- scaffold
-- zustand
 - guidelines
 - react
-- errors
-- node
-- sdk
-- flow
-- store
-- netlify
-- orm
+- pragmatic
 
 ## Data Contract
 

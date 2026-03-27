@@ -67,6 +67,39 @@
         "match_score":  12
     },
     {
+        "id":  "gsap-frameworks",
+        "triggers":  [
+                         "gsap",
+                         "frameworks"
+                     ],
+        "src":  "external:gsap-skills",
+        "primary_hub":  "frontend/web-basics",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "gsap-react",
+        "triggers":  [
+                         "gsap",
+                         "react"
+                     ],
+        "src":  "external:gsap-skills",
+        "primary_hub":  "frontend/web-basics",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "gsap-utils",
+        "triggers":  [
+                         "gsap",
+                         "utils"
+                     ],
+        "src":  "external:gsap-skills",
+        "primary_hub":  "frontend/web-basics",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "health-trend-analyzer",
         "triggers":  [
                          "health",
@@ -77,6 +110,18 @@
         "primary_hub":  "frontend/web-basics",
         "is_primary":  true,
         "match_score":  4
+    },
+    {
+        "id":  "netlify-edge-functions",
+        "triggers":  [
+                         "netlify",
+                         "edge",
+                         "functions"
+                     ],
+        "src":  "external:context-and-tools",
+        "primary_hub":  "frontend/web-basics",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "netlify-forms",

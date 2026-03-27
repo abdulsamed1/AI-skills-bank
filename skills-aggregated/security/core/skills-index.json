@@ -47,6 +47,29 @@
         "match_score":  15
     },
     {
+        "id":  "attack-tree-construction",
+        "triggers":  [
+                         "attack",
+                         "tree",
+                         "construction"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "audit-skills",
+        "triggers":  [
+                         "audit",
+                         "skills"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "auth-implementation-patterns",
         "triggers":  [
                          "auth",
@@ -133,17 +156,6 @@
         "match_score":  15
     },
     {
-        "id":  "clerk-auth",
-        "triggers":  [
-                         "clerk",
-                         "auth"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "codebase-audit-pre-push",
         "triggers":  [
                          "codebase",
@@ -170,18 +182,6 @@
         "match_score":  11
     },
     {
-        "id":  "code-review-checklist",
-        "triggers":  [
-                         "code",
-                         "review",
-                         "checklist"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "dependency-management-deps-audit",
         "triggers":  [
                          "dependency",
@@ -193,49 +193,6 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  11
-    },
-    {
-        "id":  "differential-review",
-        "triggers":  [
-                         "differential",
-                         "review"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "file-uploads",
-        "triggers":  [
-                         "file",
-                         "uploads"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "find-bugs",
-        "triggers":  [
-                         "find",
-                         "bugs"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "firebase",
-        "triggers":  [
-                         "firebase"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "firmware-analyst",
@@ -275,15 +232,75 @@
         "match_score":  11
     },
     {
-        "id":  "hubspot-integration",
+        "id":  "gmail-automation",
         "triggers":  [
-                         "hubspot",
-                         "integration"
+                         "gmail",
+                         "automation"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "security/core",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  6
+    },
+    {
+        "id":  "google-calendar-automation",
+        "triggers":  [
+                         "google",
+                         "calendar",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "google-docs-automation",
+        "triggers":  [
+                         "google",
+                         "docs",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "google-drive-automation",
+        "triggers":  [
+                         "google",
+                         "drive",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "google-sheets-automation",
+        "triggers":  [
+                         "google",
+                         "sheets",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "google-slides-automation",
+        "triggers":  [
+                         "google",
+                         "slides",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
     },
     {
         "id":  "laravel-expert",
@@ -307,17 +324,6 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  9
-    },
-    {
-        "id":  "linkerd-patterns",
-        "triggers":  [
-                         "linkerd",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "linux-privilege-escalation",
@@ -367,29 +373,6 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  11
-    },
-    {
-        "id":  "network-engineer",
-        "triggers":  [
-                         "network",
-                         "engineer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "nextjs-supabase-auth",
-        "triggers":  [
-                         "nextjs",
-                         "supabase",
-                         "auth"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "nodejs-best-practices",
@@ -533,18 +516,6 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  11
-    },
-    {
-        "id":  "service-mesh-expert",
-        "triggers":  [
-                         "service",
-                         "mesh",
-                         "expert"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "smtp-penetration-testing",

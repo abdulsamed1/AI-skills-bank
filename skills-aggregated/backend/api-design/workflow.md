@@ -36,23 +36,23 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 - api
 - documentation
-- azure
-- development
 - patterns
-- dev
 - builder
-- bdistill
-- trading
+- development
+- dev
+- azure
 - generation
+- graphql
+- gemini
+- expert
 - backend
-- doc
-- odoo
+- dotnet
 - ai
 - mgmt
-- margin
-- gemini
-- graphql
+- doc
 - fp
+- odoo
+- architect
 - generate
 
 ## Data Contract

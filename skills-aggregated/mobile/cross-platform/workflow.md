@@ -34,26 +34,26 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 ## Quick Trigger Hints
 
-- mobile
 - expert
+- mobile
 - platform
-- developer
 - multi
-- android
-- skill
-- react
-- apps
-- construction
-- instagram
+- developer
 - development
-- jetpack
-- compose
-- skills
-- earllm
-- ios
-- tree
+- android
+- native
+- component
 - flutter
 - app
+- react
+- apps
+- coroutines
+- compose
+- jetpack
+- ios
+- earllm
+- architecture
+- build
 
 ## Data Contract
 

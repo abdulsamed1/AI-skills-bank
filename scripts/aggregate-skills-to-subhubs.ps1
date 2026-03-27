@@ -613,29 +613,18 @@ $SUB_HUB_DEFINITIONS = @{
                 "Improving prompt and agent reliability"
             )
         }
-        "automation" = @{
-            keywords = @("automation", "automate", "automated", "automates", "workflow", "orchestration", "orchestrate", "orchestrator", "agentic", "autonomous", "n8n", "zapier", "make", "langgraph", "crewai", "autogen", "tool-calling", "pipeline")
-            anchor_keywords = @("automation", "automated", "workflow", "orchestration", "orchestrate", "orchestrator", "agentic", "n8n", "zapier", "langgraph", "crewai")
-            negative_keywords = @("unit-test", "integration-test", "e2e", "qa", "marketing", "newsletter")
-            description = "AI automation: agentic workflows, orchestration pipelines, and tool-connected process automation"
-            best_for = @(
-                "Designing agentic automation workflows",
-                "Integrating tools and orchestration pipelines",
-                "Automating multi-step AI operations"
-            )
-        }
     }
 
     "productivity" = @{
         "workflow-automation" = @{
-            keywords = @("productivity", "workflow", "automation", "task-management", "project-management", "agile", "scrum", "kanban", "notion", "planning")
-            anchor_keywords = @("workflow", "automation", "productivity")
-            negative_keywords = @("encryption", "oauth", "jwt")
-            description = "Productivity systems: workflow automation, project orchestration, and delivery optimization"
+            keywords = @("productivity", "workflow", "automation", "automate", "automated", "automates", "task-management", "project-management", "agile", "scrum", "kanban", "notion", "planning", "orchestration", "orchestrate", "orchestrator", "agentic", "autonomous", "n8n", "zapier", "make", "langgraph", "crewai", "autogen", "tool-calling", "pipeline")
+            anchor_keywords = @("workflow", "automation", "productivity", "orchestration", "orchestrate", "orchestrator", "agentic", "n8n", "zapier", "langgraph", "crewai")
+            negative_keywords = @("encryption", "oauth", "jwt", "unit-test", "integration-test", "e2e", "qa")
+            description = "Productivity and automation: workflow automation, agentic orchestration, project delivery, and tool-connected process automation"
             best_for = @(
                 "Automating repetitive delivery tasks",
-                "Structuring team workflows",
-                "Improving execution velocity"
+                "Structuring team workflows and agentic pipelines",
+                "Improving execution velocity with orchestration tools"
             )
         }
     }
@@ -680,34 +669,44 @@ $CATEGORY_PATTERN_TO_MAIN_HUB = @{
 }
 
 $MANUAL_HUB_OVERRIDES = @{
-    # 1. MISPLACED SKILLS (Fixing misclassifications)
-    "popup-cro"                    = @{ main = "marketing"; sub = "content"; score = 100 }
-    "cro-optimization"             = @{ main = "marketing"; sub = "content"; score = 100 }
-    "lightning-architecture-review" = @{ main = "backend"; sub = "api-design"; score = 100 }
-    "debugging-strategies"         = @{ main = "testing"; sub = "automation"; score = 100 }
-    "marketing-ideas"              = @{ main = "marketing"; sub = "strategy"; score = 100 }
-    "animejs-animation"            = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "identify-assumptions-new"      = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    # =========================================================================
+    # TARGET: business/saas
+    # =========================================================================
     "micro-saas-launcher"          = @{ main = "business"; sub = "saas"; score = 100 }
+
+    # =========================================================================
+    # TARGET: business/product-strategy
+    # =========================================================================
+    "identify-assumptions-new"     = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "identify-assumptions-existing" = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "referral-program"             = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "onboarding-cro"               = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "paywall-upgrade-cro"          = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "opportunity-solution-tree"    = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "lean-canvas"                  = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "brainstorm-experiments-existing" = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "interview-script"             = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "user-story"                   = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "prioritize-assumptions"       = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "acquisition-channel-advisor"  = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "app-analytics"                = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "app-icon-optimization"        = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "screenshot-optimization"      = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "dummy-dataset"                = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "test-scenarios"               = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "user-story-mapping"           = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "user-story-mapping-workshop"  = @{ main = "business"; sub = "product-strategy"; score = 100 }
+
+    # =========================================================================
+    # TARGET: frontend/ui-ux
+    # =========================================================================
     "scroll-experience"            = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "sred-work-summary"            = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "go-mode"                      = @{ main = "ai"; sub = "automation"; score = 100 }
-
-    # 2. DUPLICATES (Consolidating to primary hub)
-    "email-sequence"               = @{ main = "marketing"; sub = "email"; score = 100 }
-    "revops"                       = @{ main = "marketing"; sub = "email"; score = 100 }
-    "churn-prevention"             = @{ main = "marketing"; sub = "email"; score = 100 }
-    "content-strategy"             = @{ main = "marketing"; sub = "content"; score = 100 }
-    "positioning-ideas"            = @{ main = "marketing"; sub = "strategy"; score = 100 }
-    "positioning-basics"           = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "figma-use"                    = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
     "figma-create-design-system-rules" = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+    "figma-generate-design"        = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
     "nerdzao-elite"                = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "gtm-strategy"                 = @{ main = "marketing"; sub = "strategy"; score = 100 }
-    "gtm-motions"                  = @{ main = "marketing"; sub = "strategy"; score = 100 }
-
-    # 3. GENERAL TO SPECIFIC (Moving misc to specialized hubs)
-    "mermaid-expert"               = @{ main = "backend"; sub = "api-design"; score = 100 }
-    "microservices-patterns"       = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "react:components"             = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+    "animejs-animation"            = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
     "threejs-animation"            = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
     "threejs-fundamentals"         = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
     "threejs-geometry"             = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
@@ -718,6 +717,33 @@ $MANUAL_HUB_OVERRIDES = @{
     "threejs-postprocessing"       = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
     "threejs-skills"               = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
     "threejs-textures"             = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
+
+    # =========================================================================
+    # TARGET: frontend/web-basics
+    # =========================================================================
+    "gsap-utils"                   = @{ main = "frontend"; sub = "web-basics"; score = 100 }
+    "gsap-frameworks"              = @{ main = "frontend"; sub = "web-basics"; score = 100 }
+    "gsap-react"                   = @{ main = "frontend"; sub = "web-basics"; score = 100 }
+    "netlify-edge-functions"       = @{ main = "frontend"; sub = "web-basics"; score = 100 }
+
+    # =========================================================================
+    # TARGET: frontend/react-nextjs
+    # =========================================================================
+    "web-artifacts-builder"        = @{ main = "frontend"; sub = "react-nextjs"; score = 100 }
+    "nextjs-supabase-auth"         = @{ main = "frontend"; sub = "react-nextjs"; score = 100 }
+    "clerk-auth"                   = @{ main = "frontend"; sub = "react-nextjs"; score = 100 }
+
+    # =========================================================================
+    # TARGET: programming/typescript
+    # =========================================================================
+    "javascript-mastery"           = @{ main = "programming"; sub = "typescript"; score = 100 }
+    "javascript-pro"               = @{ main = "programming"; sub = "typescript"; score = 100 }
+    "modern-javascript-patterns"   = @{ main = "programming"; sub = "typescript"; score = 100 }
+    "fp-data-transforms"           = @{ main = "programming"; sub = "typescript"; score = 100 }
+
+    # =========================================================================
+    # TARGET: programming/rust (makepad ecosystem)
+    # =========================================================================
     "makepad-animation"            = @{ main = "programming"; sub = "rust"; score = 100 }
     "makepad-basics"               = @{ main = "programming"; sub = "rust"; score = 100 }
     "makepad-deployment"           = @{ main = "programming"; sub = "rust"; score = 100 }
@@ -730,9 +756,151 @@ $MANUAL_HUB_OVERRIDES = @{
     "makepad-shaders"              = @{ main = "programming"; sub = "rust"; score = 100 }
     "makepad-splash"               = @{ main = "programming"; sub = "rust"; score = 100 }
     "makepad-widgets"              = @{ main = "programming"; sub = "rust"; score = 100 }
-    
-    # 4. LEGACY (Existing)
-    "iterate-pr"                   = @{ main = "ai"; sub = "automation"; score = 100 }
+
+    # =========================================================================
+    # TARGET: programming/java
+    # =========================================================================
+    "csharp-pro"                   = @{ main = "programming"; sub = "java"; score = 100 }
+
+    # =========================================================================
+    # TARGET: productivity/workflow-automation
+    # =========================================================================
+    "sred-work-summary"            = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "go-mode"                      = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "iterate-pr"                   = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "n8n-code-javascript"          = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "slack-messaging"              = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "doc-coauthoring"              = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "airflow-dag-patterns"         = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "context7-auto-research"       = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "wds-5-agentic-development"    = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "finishing-a-development-branch" = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "framework-migration-deps-upgrade" = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "dependency-upgrade"           = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "claude-monitor"               = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "code-documentation-code-explain" = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "hubspot-integration"          = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "find-bugs"                    = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "differential-review"          = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "code-review-checklist"        = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+
+    # =========================================================================
+    # TARGET: general/misc
+    # =========================================================================
+    "latex-paper-conversion"       = @{ main = "general"; sub = "misc"; score = 100 }
+    "sankhya-dashboard-html-jsp-custom-best-pratices" = @{ main = "general"; sub = "misc"; score = 100 }
+    "skill-creator"                = @{ main = "general"; sub = "misc"; score = 100 }
+    "ruby-pro"                     = @{ main = "general"; sub = "misc"; score = 100 }
+    "ml-engineer"                  = @{ main = "general"; sub = "misc"; score = 100 }
+    "dbt-transformation-patterns"  = @{ main = "general"; sub = "misc"; score = 100 }
+    "data-quality-frameworks"      = @{ main = "general"; sub = "misc"; score = 100 }
+    "data-engineering-data-driven-feature" = @{ main = "general"; sub = "misc"; score = 100 }
+    "leiloeiro-risco"              = @{ main = "general"; sub = "misc"; score = 100 }
+    "skill-sentinel"               = @{ main = "general"; sub = "misc"; score = 100 }
+    "data-storytelling"            = @{ main = "general"; sub = "misc"; score = 100 }
+    "podcast-generation"           = @{ main = "general"; sub = "misc"; score = 100 }
+    "polars"                       = @{ main = "general"; sub = "misc"; score = 100 }
+    "carrier-relationship-management" = @{ main = "general"; sub = "misc"; score = 100 }
+    "logistics-exception-management" = @{ main = "general"; sub = "misc"; score = 100 }
+    "returns-reverse-logistics"    = @{ main = "general"; sub = "misc"; score = 100 }
+    "bmad-cis-storytelling"        = @{ main = "general"; sub = "misc"; score = 100 }
+    "context-engineering-advisor"  = @{ main = "general"; sub = "misc"; score = 100 }
+    "skill-authoring-workflow"     = @{ main = "general"; sub = "misc"; score = 100 }
+    "yes-md"                       = @{ main = "general"; sub = "misc"; score = 100 }
+    "notebooklm"                   = @{ main = "general"; sub = "misc"; score = 100 }
+
+    # =========================================================================
+    # TARGET: devops/cloud
+    # =========================================================================
+    "azure-keyvault-keys-ts"       = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "azure-keyvault-secrets-ts"    = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "netlify-cli-and-deploy"       = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "firebase"                     = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "network-engineer"             = @{ main = "devops"; sub = "cloud"; score = 100 }
+
+    # =========================================================================
+    # TARGET: devops/docker-k8s
+    # =========================================================================
+    "linkerd-patterns"             = @{ main = "devops"; sub = "docker-k8s"; score = 100 }
+    "service-mesh-expert"          = @{ main = "devops"; sub = "docker-k8s"; score = 100 }
+
+    # =========================================================================
+    # TARGET: marketing/email (canonical hub for email skills)
+    # =========================================================================
+    "email-sequence"               = @{ main = "marketing"; sub = "email"; score = 100 }
+    "revops"                       = @{ main = "marketing"; sub = "email"; score = 100 }
+    "churn-prevention"             = @{ main = "marketing"; sub = "email"; score = 100 }
+
+    # =========================================================================
+    # TARGET: marketing/social
+    # =========================================================================
+    "paid-ads"                     = @{ main = "marketing"; sub = "social"; score = 100 }
+    "instagram"                    = @{ main = "marketing"; sub = "social"; score = 100 }
+
+    # =========================================================================
+    # TARGET: marketing/content
+    # =========================================================================
+    "competitor-alternatives"      = @{ main = "marketing"; sub = "content"; score = 100 }
+    "schema-markup"                = @{ main = "marketing"; sub = "content"; score = 100 }
+    "programmatic-seo"             = @{ main = "marketing"; sub = "content"; score = 100 }
+    "site-architecture"            = @{ main = "marketing"; sub = "content"; score = 100 }
+    "copywriting"                  = @{ main = "marketing"; sub = "content"; score = 100 }
+    "seo-image-gen"                = @{ main = "marketing"; sub = "content"; score = 100 }
+    "ad-creative"                  = @{ main = "marketing"; sub = "content"; score = 100 }
+    "testimonial-collector"        = @{ main = "marketing"; sub = "content"; score = 100 }
+    "free-tool-strategy"           = @{ main = "marketing"; sub = "content"; score = 100 }
+    "popup-cro"                    = @{ main = "marketing"; sub = "content"; score = 100 }
+    "cro-optimization"             = @{ main = "marketing"; sub = "content"; score = 100 }
+    "content-strategy"             = @{ main = "marketing"; sub = "content"; score = 100 }
+
+    # =========================================================================
+    # TARGET: marketing/strategy
+    # =========================================================================
+    "pricing-strategy"             = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "marketing-ideas"              = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "positioning-ideas"            = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "positioning-basics"           = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "gtm-strategy"                 = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "gtm-motions"                  = @{ main = "marketing"; sub = "strategy"; score = 100 }
+
+    # =========================================================================
+    # TARGET: backend/api-design
+    # =========================================================================
+    "lightning-architecture-review" = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "mermaid-expert"               = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "microservices-patterns"       = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "nestjs-expert"                = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "architecture-patterns"        = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "spot"                         = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "derivatives-trading-coin-futures" = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "derivatives-trading-options"  = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "derivatives-trading-portfolio-margin" = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "derivatives-trading-usds-futures" = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "nodejsbestpractices"          = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "file-uploads"                 = @{ main = "backend"; sub = "api-design"; score = 100 }
+
+    # =========================================================================
+    # TARGET: backend/databases
+    # =========================================================================
+    "tinybird-cli-guidelines"      = @{ main = "backend"; sub = "databases"; score = 100 }
+
+    # =========================================================================
+    # TARGET: mobile/cross-platform
+    # =========================================================================
+    "kotlin-coroutines-expert"     = @{ main = "mobile"; sub = "cross-platform"; score = 100 }
+    "native-data-fetching"         = @{ main = "mobile"; sub = "cross-platform"; score = 100 }
+
+    # =========================================================================
+    # TARGET: security/core
+    # =========================================================================
+    "attack-tree-construction"     = @{ main = "security"; sub = "core"; score = 100 }
+    "audit-skills"                 = @{ main = "security"; sub = "core"; score = 100 }
+
+    # =========================================================================
+    # TARGET: testing/automation
+    # =========================================================================
+    "debugging-strategies"         = @{ main = "testing"; sub = "automation"; score = 100 }
+    "content-experimentation-best-practices" = @{ main = "testing"; sub = "automation"; score = 100 }
 }
 
 $EXCLUDE_CATEGORY_PATTERNS = [ordered]@{

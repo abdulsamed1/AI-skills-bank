@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Productivity systems: workflow automation, project orchestration, and delivery optimization
+Productivity and automation: workflow automation, agentic orchestration, project delivery, and tool-connected process automation
 
 This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub Copilot) with minimal context overhead.
 
@@ -29,8 +29,8 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 ## Recommended Use Cases
 
 - Automating repetitive delivery tasks
-- Structuring team workflows
-- Improving execution velocity
+- Structuring team workflows and agentic pipelines
+- Improving execution velocity with orchestration tools
 
 ## Quick Trigger Hints
 
@@ -38,22 +38,22 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - workflow
 - tdd
 - workflows
+- development
+- git
+- code
+- n8n
 - pr
 - patterns
-- git
-- n8n
-- github
-- figma
-- wordpress
-- official
-- user
-- story
-- design
-- go
-- outlook
-- cli
-- odoo
 - review
+- orchestration
+- github
+- wordpress
+- go
+- orchestrator
+- hubspot
+- stack
+- migration
+- expert
 
 ## Data Contract
 

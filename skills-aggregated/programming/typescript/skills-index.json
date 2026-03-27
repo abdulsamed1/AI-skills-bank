@@ -33,6 +33,18 @@
         "match_score":  9
     },
     {
+        "id":  "fp-data-transforms",
+        "triggers":  [
+                         "fp",
+                         "data",
+                         "transforms"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "fp-refactor",
         "triggers":  [
                          "fp",
@@ -68,6 +80,28 @@
         "match_score":  7
     },
     {
+        "id":  "javascript-mastery",
+        "triggers":  [
+                         "javascript",
+                         "mastery"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "javascript-pro",
+        "triggers":  [
+                         "javascript",
+                         "pro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "javascript-typescript-typescript-scaffold",
         "triggers":  [
                          "javascript",
@@ -91,6 +125,18 @@
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "modern-javascript-patterns",
+        "triggers":  [
+                         "modern",
+                         "javascript",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "netlify-functions",

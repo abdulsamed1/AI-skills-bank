@@ -38,22 +38,22 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - nextjs
 - practices
 - best
-- frameworks
-- expert
+- auth
 - fp
+- expert
 - patterns
-- gsap
-- ai
-- apps
 - fullstack
-- shopify
-- development
+- integration
+- vercel
 - artifacts
+- shopify
+- netlify
 - frontend
-- fetching
-- flow
+- development
+- apps
 - performance
-- spline
+- remotion
+- sdk
 
 ## Data Contract
 

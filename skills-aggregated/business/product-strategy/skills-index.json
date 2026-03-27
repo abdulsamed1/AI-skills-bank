@@ -13,6 +13,18 @@
         "match_score":  7
     },
     {
+        "id":  "acquisition-channel-advisor",
+        "triggers":  [
+                         "acquisition",
+                         "channel",
+                         "advisor"
+                     ],
+        "src":  "external:Product-Manager-Skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "ai-shaped-readiness-advisor",
         "triggers":  [
                          "ai",
@@ -93,6 +105,29 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  11
+    },
+    {
+        "id":  "app-analytics",
+        "triggers":  [
+                         "app",
+                         "analytics"
+                     ],
+        "src":  "external:aso-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "app-icon-optimization",
+        "triggers":  [
+                         "app",
+                         "icon",
+                         "optimization"
+                     ],
+        "src":  "external:aso-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "app-launch",
@@ -320,6 +355,18 @@
         "match_score":  7
     },
     {
+        "id":  "brainstorm-experiments-existing",
+        "triggers":  [
+                         "brainstorm",
+                         "experiments",
+                         "existing"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "brainstorm-experiments-new",
         "triggers":  [
                          "brainstorm",
@@ -412,17 +459,6 @@
         "match_score":  11
     },
     {
-        "id":  "competitor-alternatives",
-        "triggers":  [
-                         "competitor",
-                         "alternatives"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "competitor-analysis",
         "triggers":  [
                          "competitor",
@@ -432,16 +468,6 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  11
-    },
-    {
-        "id":  "copywriting",
-        "triggers":  [
-                         "copywriting"
-                     ],
-        "src":  "external:marketingskills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  9
     },
     {
         "id":  "create-prd",
@@ -460,6 +486,17 @@
                          "defi",
                          "protocol",
                          "templates"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "deployment-procedures",
+        "triggers":  [
+                         "deployment",
+                         "procedures"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "business/product-strategy",
@@ -491,6 +528,19 @@
         "match_score":  11
     },
     {
+        "id":  "distributed-debugging-debug-trace",
+        "triggers":  [
+                         "distributed",
+                         "debugging",
+                         "debug",
+                         "trace"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "dotnet-backend",
         "triggers":  [
                          "dotnet",
@@ -512,6 +562,17 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  5
+    },
+    {
+        "id":  "dummy-dataset",
+        "triggers":  [
+                         "dummy",
+                         "dataset"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "eol-message",
@@ -657,6 +718,18 @@
         "match_score":  7
     },
     {
+        "id":  "identify-assumptions-existing",
+        "triggers":  [
+                         "identify",
+                         "assumptions",
+                         "existing"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "identify-assumptions-new",
         "triggers":  [
                          "identify",
@@ -679,6 +752,17 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  5
+    },
+    {
+        "id":  "interview-script",
+        "triggers":  [
+                         "interview",
+                         "script"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "istio-traffic-management",
@@ -726,6 +810,17 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  11
+    },
+    {
+        "id":  "lean-canvas",
+        "triggers":  [
+                         "lean",
+                         "canvas"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "loki-mode",
@@ -819,6 +914,41 @@
         "match_score":  5
     },
     {
+        "id":  "observability-engineer",
+        "triggers":  [
+                         "observability",
+                         "engineer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "odoo-backup-strategy",
+        "triggers":  [
+                         "odoo",
+                         "backup",
+                         "strategy"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "odoo-ecommerce-configurator",
+        "triggers":  [
+                         "odoo",
+                         "ecommerce",
+                         "configurator"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "odoo-shopify-integration",
         "triggers":  [
                          "odoo",
@@ -836,10 +966,10 @@
                          "onboarding",
                          "cro"
                      ],
-        "src":  "external:marketingskills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  100
     },
     {
         "id":  "onboarding-optimization",
@@ -862,7 +992,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
-        "match_score":  11
+        "match_score":  100
     },
     {
         "id":  "outcome-roadmap",
@@ -882,10 +1012,10 @@
                          "upgrade",
                          "cro"
                      ],
-        "src":  "external:marketingskills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
-        "match_score":  11
+        "match_score":  100
     },
     {
         "id":  "personal-tool-builder",
@@ -1001,17 +1131,6 @@
         "match_score":  11
     },
     {
-        "id":  "pricing-strategy",
-        "triggers":  [
-                         "pricing",
-                         "strategy"
-                     ],
-        "src":  "external:marketingskills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "prioritization-advisor",
         "triggers":  [
                          "prioritization",
@@ -1021,6 +1140,17 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  5
+    },
+    {
+        "id":  "prioritize-assumptions",
+        "triggers":  [
+                         "prioritize",
+                         "assumptions"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "prioritize-features",
@@ -1166,10 +1296,10 @@
                          "referral",
                          "program"
                      ],
-        "src":  "external:marketingskills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  100
     },
     {
         "id":  "release-notes",
@@ -1205,15 +1335,15 @@
         "match_score":  23
     },
     {
-        "id":  "schema-markup",
+        "id":  "screenshot-optimization",
         "triggers":  [
-                         "schema",
-                         "markup"
+                         "screenshot",
+                         "optimization"
                      ],
-        "src":  "external:marketingskills",
+        "src":  "external:aso-skills",
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  100
     },
     {
         "id":  "screenshots",
@@ -1248,35 +1378,12 @@
         "match_score":  7
     },
     {
-        "id":  "seo-image-gen",
-        "triggers":  [
-                         "seo",
-                         "image",
-                         "gen"
-                     ],
-        "src":  "external:claude-seo",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "server-management",
         "triggers":  [
                          "server",
                          "management"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "site-architecture",
-        "triggers":  [
-                         "site",
-                         "architecture"
-                     ],
-        "src":  "external:marketingskills",
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  7
@@ -1328,6 +1435,17 @@
         "match_score":  11
     },
     {
+        "id":  "test-scenarios",
+        "triggers":  [
+                         "test",
+                         "scenarios"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "user-personas",
         "triggers":  [
                          "user",
@@ -1337,6 +1455,42 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "user-story",
+        "triggers":  [
+                         "user",
+                         "story"
+                     ],
+        "src":  "external:Product-Manager-Skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "user-story-mapping",
+        "triggers":  [
+                         "user",
+                         "story",
+                         "mapping"
+                     ],
+        "src":  "external:Product-Manager-Skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "user-story-mapping-workshop",
+        "triggers":  [
+                         "user",
+                         "story",
+                         "mapping",
+                         "workshop"
+                     ],
+        "src":  "external:Product-Manager-Skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "value-proposition",

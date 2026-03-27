@@ -233,6 +233,18 @@
         "match_score":  5
     },
     {
+        "id":  "figma-generate-design",
+        "triggers":  [
+                         "figma",
+                         "generate",
+                         "design"
+                     ],
+        "src":  "external:mcp-server-guide",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "figma-generate-library",
         "triggers":  [
                          "figma",
@@ -255,6 +267,17 @@
         "primary_hub":  "frontend/ui-ux",
         "is_primary":  true,
         "match_score":  15
+    },
+    {
+        "id":  "figma-use",
+        "triggers":  [
+                         "figma",
+                         "use"
+                     ],
+        "src":  "external:mcp-server-guide",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "fixing-accessibility",
@@ -393,6 +416,19 @@
         "match_score":  100
     },
     {
+        "id":  "nerdzao-elite-gemini-high",
+        "triggers":  [
+                         "nerdzao",
+                         "elite",
+                         "gemini",
+                         "high"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "product-design",
         "triggers":  [
                          "product",
@@ -426,6 +462,16 @@
         "primary_hub":  "frontend/ui-ux",
         "is_primary":  true,
         "match_score":  13
+    },
+    {
+        "id":  "react:components",
+        "triggers":  [
+                         "react:components"
+                     ],
+        "src":  "external:stitch-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "react-ui-patterns",

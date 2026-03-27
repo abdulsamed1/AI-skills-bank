@@ -60,6 +60,16 @@
         "match_score":  9
     },
     {
+        "id":  "instagram",
+        "triggers":  [
+                         "instagram"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "lead-magnet-generator",
         "triggers":  [
                          "lead",
@@ -100,10 +110,10 @@
                          "paid",
                          "ads"
                      ],
-        "src":  "external:marketingskills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/social",
         "is_primary":  true,
-        "match_score":  9
+        "match_score":  100
     },
     {
         "id":  "social-card-gen",

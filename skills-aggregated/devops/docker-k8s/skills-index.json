@@ -22,32 +22,6 @@
         "match_score":  12
     },
     {
-        "id":  "event-sourcing-architect",
-        "triggers":  [
-                         "event",
-                         "sourcing",
-                         "architect"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/docker-k8s",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "full-stack-orchestration-full-stack-feature",
-        "triggers":  [
-                         "full",
-                         "stack",
-                         "orchestration",
-                         "full",
-                         "stack"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/docker-k8s",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "helm-chart-scaffolding",
         "triggers":  [
                          "helm",
@@ -106,15 +80,27 @@
         "match_score":  20
     },
     {
-        "id":  "saga-orchestration",
+        "id":  "linkerd-patterns",
         "triggers":  [
-                         "saga",
-                         "orchestration"
+                         "linkerd",
+                         "patterns"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
-        "match_score":  4
+        "match_score":  100
+    },
+    {
+        "id":  "service-mesh-expert",
+        "triggers":  [
+                         "service",
+                         "mesh",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "windows-vm",

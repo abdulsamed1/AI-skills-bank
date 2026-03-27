@@ -1,5 +1,5 @@
 {
-    "generated_at":  "2026-03-27T03:10:06+02:00",
+    "generated_at":  "2026-03-27T10:44:28+02:00",
     "src_repo_mode":  "all",
     "selected_src_repos":  [
                                "agent-skills",
@@ -9,7 +9,6 @@
                                "aso-skills",
                                "awesome-claude-code-subagents",
                                "beautiful_prose",
-                               "binance-skills-hub",
                                "charlie-cfo-skill",
                                "claude-seo",
                                "cli",
@@ -120,13 +119,6 @@
                                  "revision":  "bf44efb7f9706f8f563af3b6913a3784c7c52a12",
                                  "dirty":  false,
                                  "fingerprint":  "git:9f331771ed5ff2ea6c6f78b98bbaff8b82a6332de45eec02875ae286a0b447fd"
-                             },
-                             {
-                                 "name":  "binance-skills-hub",
-                                 "vcs":  "git",
-                                 "revision":  "8f1ffb0c8b40bca2594bab7e33a2e931b83cf8d3",
-                                 "dirty":  false,
-                                 "fingerprint":  "git:478b275453a9bac94e76d04d18ff5a24f859003e65065c0cd305be8eb8d58abe"
                              },
                              {
                                  "name":  "charlie-cfo-skill",

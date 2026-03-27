@@ -1,5 +1,16 @@
 [
     {
+        "id":  "advanced-evaluation",
+        "triggers":  [
+                         "advanced",
+                         "evaluation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "agent-evaluation",
         "triggers":  [
                          "agent",
@@ -78,6 +89,20 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  11
+    },
+    {
+        "id":  "agent-orchestration-multi-agent-optimize",
+        "triggers":  [
+                         "agent",
+                         "orchestration",
+                         "multi",
+                         "agent",
+                         "optimize"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "agents-md",
@@ -193,6 +218,18 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  5
+    },
+    {
+        "id":  "antigravity-skill-orchestrator",
+        "triggers":  [
+                         "antigravity",
+                         "skill",
+                         "orchestrator"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "antigravity-workflows",
@@ -624,6 +661,32 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "claude-code-expert",
+        "triggers":  [
+                         "claude",
+                         "code",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "code-review-ai-ai-review",
+        "triggers":  [
+                         "code",
+                         "review",
+                         "ai",
+                         "ai",
+                         "review"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
     },
     {
         "id":  "computer-use-agents",
@@ -1184,6 +1247,31 @@
         "match_score":  5
     },
     {
+        "id":  "parallel-agents",
+        "triggers":  [
+                         "parallel",
+                         "agents"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performance-testing-review-ai-review",
+        "triggers":  [
+                         "performance",
+                         "testing",
+                         "review",
+                         "ai",
+                         "review"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
         "id":  "pipecat-friday-agent",
         "triggers":  [
                          "pipecat",
@@ -1360,6 +1448,17 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  5
+    },
+    {
+        "id":  "skill-improver",
+        "triggers":  [
+                         "skill",
+                         "improver"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "skill-scanner",

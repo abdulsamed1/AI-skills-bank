@@ -1,17 +1,5 @@
 [
     {
-        "id":  "bmad-cis-storytelling",
-        "triggers":  [
-                         "bmad",
-                         "cis",
-                         "storytelling"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "business/saas",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "business-health-diagnostic",
         "triggers":  [
                          "business",
@@ -24,18 +12,6 @@
         "match_score":  7
     },
     {
-        "id":  "carrier-relationship-management",
-        "triggers":  [
-                         "carrier",
-                         "relationship",
-                         "management"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/saas",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "charlie",
         "triggers":  [
                          "charlie"
@@ -44,30 +20,6 @@
         "primary_hub":  "business/saas",
         "is_primary":  true,
         "match_score":  11
-    },
-    {
-        "id":  "code-documentation-code-explain",
-        "triggers":  [
-                         "code",
-                         "documentation",
-                         "code",
-                         "explain"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/saas",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "data-storytelling",
-        "triggers":  [
-                         "data",
-                         "storytelling"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/saas",
-        "is_primary":  true,
-        "match_score":  5
     },
     {
         "id":  "finance-based-pricing-advisor",
@@ -93,41 +45,6 @@
         "primary_hub":  "business/saas",
         "is_primary":  true,
         "match_score":  7
-    },
-    {
-        "id":  "fp-data-transforms",
-        "triggers":  [
-                         "fp",
-                         "data",
-                         "transforms"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/saas",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "gsap-utils",
-        "triggers":  [
-                         "gsap",
-                         "utils"
-                     ],
-        "src":  "external:gsap-skills",
-        "primary_hub":  "business/saas",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "logistics-exception-management",
-        "triggers":  [
-                         "logistics",
-                         "exception",
-                         "management"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/saas",
-        "is_primary":  true,
-        "match_score":  5
     },
     {
         "id":  "market-sizing",
@@ -185,39 +102,6 @@
         "primary_hub":  "business/saas",
         "is_primary":  true,
         "match_score":  7
-    },
-    {
-        "id":  "podcast-generation",
-        "triggers":  [
-                         "podcast",
-                         "generation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/saas",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "polars",
-        "triggers":  [
-                         "polars"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/saas",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "returns-reverse-logistics",
-        "triggers":  [
-                         "returns",
-                         "reverse",
-                         "logistics"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/saas",
-        "is_primary":  true,
-        "match_score":  5
     },
     {
         "id":  "saas-economics-efficiency-metrics",

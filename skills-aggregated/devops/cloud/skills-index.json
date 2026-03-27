@@ -22,6 +22,30 @@
         "match_score":  4
     },
     {
+        "id":  "aws-compliance-checker",
+        "triggers":  [
+                         "aws",
+                         "compliance",
+                         "checker"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-cost-cleanup",
+        "triggers":  [
+                         "aws",
+                         "cost",
+                         "cleanup"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
         "id":  "aws-cost-optimizer",
         "triggers":  [
                          "aws",
@@ -217,6 +241,32 @@
         "primary_hub":  "devops/cloud",
         "is_primary":  true,
         "match_score":  4
+    },
+    {
+        "id":  "azure-keyvault-keys-ts",
+        "triggers":  [
+                         "azure",
+                         "keyvault",
+                         "keys",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "azure-keyvault-secrets-ts",
+        "triggers":  [
+                         "azure",
+                         "keyvault",
+                         "secrets",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "azure-maps-search-dotnet",
@@ -494,6 +544,16 @@
         "match_score":  8
     },
     {
+        "id":  "firebase",
+        "triggers":  [
+                         "firebase"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "gcp-cloud-run",
         "triggers":  [
                          "gcp",
@@ -550,6 +610,30 @@
         "primary_hub":  "devops/cloud",
         "is_primary":  true,
         "match_score":  17
+    },
+    {
+        "id":  "netlify-cli-and-deploy",
+        "triggers":  [
+                         "netlify",
+                         "cli",
+                         "and",
+                         "deploy"
+                     ],
+        "src":  "external:context-and-tools",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "network-engineer",
+        "triggers":  [
+                         "network",
+                         "engineer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "secrets-management",

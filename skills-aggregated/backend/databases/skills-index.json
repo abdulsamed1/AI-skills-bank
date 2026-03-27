@@ -389,6 +389,18 @@
         "match_score":  4
     },
     {
+        "id":  "sqlmap-database-pentesting",
+        "triggers":  [
+                         "sqlmap",
+                         "database",
+                         "pentesting"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
         "id":  "sql-optimization-patterns",
         "triggers":  [
                          "sql",
@@ -444,6 +456,18 @@
         "primary_hub":  "backend/databases",
         "is_primary":  true,
         "match_score":  6
+    },
+    {
+        "id":  "tinybird-cli-guidelines",
+        "triggers":  [
+                         "tinybird",
+                         "cli",
+                         "guidelines"
+                     ],
+        "src":  "external:tinybird-agent-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "using-neon",
