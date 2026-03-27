@@ -35,25 +35,25 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 ## Quick Trigger Hints
 
 - strategy
-- positioning
 - product
+- positioning
 - gtm
-- context
-- competitive
-- canvas
-- marketing
-- to
 - competitor
+- marketing
+- competitive
+- context
+- canvas
+- to
 - free
-- workshop
-- rating
-- tool
-- planning
-- startup
-- name
+- bmad
+- be
 - pricing
-- jobs
-- beachhead
+- intel
+- workshop
+- tool
+- app
+- launch
+- recommendation
 
 ## Data Contract
 

@@ -11,18 +11,6 @@
         "match_score":  4
     },
     {
-        "id":  "antigravity-design-expert",
-        "triggers":  [
-                         "antigravity",
-                         "design",
-                         "expert"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "bun-development",
         "triggers":  [
                          "bun",
@@ -43,29 +31,6 @@
         "primary_hub":  "frontend/web-basics",
         "is_primary":  true,
         "match_score":  8
-    },
-    {
-        "id":  "discord-bot-architect",
-        "triggers":  [
-                         "discord",
-                         "bot",
-                         "architect"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "fixing-accessibility",
-        "triggers":  [
-                         "fixing",
-                         "accessibility"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
     },
     {
         "id":  "fixing-metadata",
@@ -89,17 +54,6 @@
         "primary_hub":  "frontend/web-basics",
         "is_primary":  true,
         "match_score":  4
-    },
-    {
-        "id":  "frontend-design",
-        "triggers":  [
-                         "frontend",
-                         "design"
-                     ],
-        "src":  "external:skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  8
     },
     {
         "id":  "frontend-slides",
@@ -168,18 +122,6 @@
         "primary_hub":  "frontend/web-basics",
         "is_primary":  true,
         "match_score":  4
-    },
-    {
-        "id":  "tailwind-design-system",
-        "triggers":  [
-                         "tailwind",
-                         "design",
-                         "system"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  8
     },
     {
         "id":  "tailwind-patterns",

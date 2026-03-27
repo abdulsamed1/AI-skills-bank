@@ -1,0 +1,37 @@
+{
+    "name":  "skills-ai-automation",
+    "main_hub":  "ai",
+    "sub_hub":  "automation",
+    "description":  "AI automation: agentic workflows, orchestration pipelines, and tool-connected process automation",
+    "skill_count":  204,
+    "src_count":  12,
+    "top_triggers":  [
+                         "automation",
+                         "workflow",
+                         "tdd",
+                         "workflows",
+                         "pr",
+                         "review",
+                         "git",
+                         "patterns",
+                         "google",
+                         "development",
+                         "orchestration",
+                         "code",
+                         "n8n",
+                         "odoo",
+                         "agent",
+                         "orchestrator",
+                         "skill",
+                         "ai",
+                         "github",
+                         "expert"
+                     ],
+    "generated_at":  "2026-03-27T01:36:51+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

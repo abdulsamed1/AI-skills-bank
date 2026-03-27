@@ -35,25 +35,25 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 ## Quick Trigger Hints
 
 - testing
+- bmad
+- test
 - patterns
+- testarch
 - qa
 - e2e
-- bmad
-- playwright
-- test
-- upgrade
-- framework
+- derivatives
+- trading
 - data
-- brainstorm
-- expert
-- experiments
-- api
-- git
+- playwright
+- development
+- assumptions
 - agent
-- penetration
-- existing
-- azure
-- privilege
+- optimization
+- pro
+- pentest
+- creator
+- review
+- generate
 
 ## Data Contract
 

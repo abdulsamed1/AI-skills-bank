@@ -59,18 +59,6 @@
         "match_score":  15
     },
     {
-        "id":  "carrier-relationship-management",
-        "triggers":  [
-                         "carrier",
-                         "relationship",
-                         "management"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "mobile/cross-platform",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "claude-monitor",
         "triggers":  [
                          "claude",
@@ -80,16 +68,6 @@
         "primary_hub":  "mobile/cross-platform",
         "is_primary":  true,
         "match_score":  5
-    },
-    {
-        "id":  "development",
-        "triggers":  [
-                         "development"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "mobile/cross-platform",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "earllm-build",
@@ -161,17 +139,6 @@
         "match_score":  11
     },
     {
-        "id":  "leiloeiro-risco",
-        "triggers":  [
-                         "leiloeiro",
-                         "risco"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "mobile/cross-platform",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "mobile-design",
         "triggers":  [
                          "mobile",
@@ -194,17 +161,6 @@
         "match_score":  11
     },
     {
-        "id":  "mobile-games",
-        "triggers":  [
-                         "mobile",
-                         "games"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "mobile/cross-platform",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "multi-platform-apps-multi-platform",
         "triggers":  [
                          "multi",
@@ -217,17 +173,6 @@
         "primary_hub":  "mobile/cross-platform",
         "is_primary":  true,
         "match_score":  7
-    },
-    {
-        "id":  "product-design",
-        "triggers":  [
-                         "product",
-                         "design"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "mobile/cross-platform",
-        "is_primary":  true,
-        "match_score":  5
     },
     {
         "id":  "react-native-architecture",
@@ -253,18 +198,6 @@
         "match_score":  5
     },
     {
-        "id":  "stitch-ui-design",
-        "triggers":  [
-                         "stitch",
-                         "ui",
-                         "design"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "mobile/cross-platform",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "swiftui-expert-skill",
         "triggers":  [
                          "swiftui",
@@ -275,30 +208,5 @@
         "primary_hub":  "mobile/cross-platform",
         "is_primary":  true,
         "match_score":  9
-    },
-    {
-        "id":  "ui-ux-pro-max",
-        "triggers":  [
-                         "ui",
-                         "ux",
-                         "pro",
-                         "max"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "mobile/cross-platform",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "wds-3-scenarios",
-        "triggers":  [
-                         "wds",
-                         "3",
-                         "scenarios"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "mobile/cross-platform",
-        "is_primary":  true,
-        "match_score":  5
     }
 ]

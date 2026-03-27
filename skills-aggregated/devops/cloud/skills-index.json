@@ -22,41 +22,6 @@
         "match_score":  4
     },
     {
-        "id":  "auri-core",
-        "triggers":  [
-                         "auri",
-                         "core"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "aws-compliance-checker",
-        "triggers":  [
-                         "aws",
-                         "compliance",
-                         "checker"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "aws-cost-cleanup",
-        "triggers":  [
-                         "aws",
-                         "cost",
-                         "cleanup"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "aws-cost-optimizer",
         "triggers":  [
                          "aws",
@@ -479,18 +444,6 @@
         "primary_hub":  "devops/cloud",
         "is_primary":  true,
         "match_score":  9
-    },
-    {
-        "id":  "cloudformation-best-practices",
-        "triggers":  [
-                         "cloudformation",
-                         "best",
-                         "practices"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  5
     },
     {
         "id":  "cloud-penetration-testing",

@@ -41,19 +41,19 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - keyvault
 - javascript
 - monitor
-- secrets
 - pro
 - keys
-- security
+- secrets
 - ts
-- vision
-- code
-- voicelive
+- security
 - conversion
-- sms
-- compute
-- animejs
 - storage
+- voicelive
+- animejs
+- vision
+- contentsafety
+- chat
+- sms
 
 ## Data Contract
 

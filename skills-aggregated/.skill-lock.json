@@ -1,5 +1,5 @@
 {
-    "generated_at":  "2026-03-27T00:33:03+02:00",
+    "generated_at":  "2026-03-27T01:36:52+02:00",
     "src_repo_mode":  "all",
     "selected_src_repos":  [
                                "agent-skills",
@@ -40,7 +40,33 @@
                                "x-article-publisher-skill",
                                "Youtube-clipper-skill"
                            ],
+    "exclude_categories":  [
+                               "games",
+                               "law-legal",
+                               "medicine-medical",
+                               "pharmacy",
+                               "biology",
+                               "chemistry",
+                               "llm-from-scratch"
+                           ],
+    "exclusion_stats":  {
+                            "total":  34,
+                            "by_category":  {
+                                                "biology":  2,
+                                                "games":  20,
+                                                "law-legal":  7,
+                                                "medicine-medical":  4,
+                                                "pharmacy":  1
+                                            }
+                        },
     "min_skills_per_hub":  10,
+    "score_policy":  {
+                         "review_band_enabled":  false,
+                         "review_min_score":  4,
+                         "auto_accept_min_score":  8,
+                         "secondary_min_score":  6,
+                         "review_candidates":  0
+                     },
     "category_gap_threshold":  30,
     "category_gaps":  [
 

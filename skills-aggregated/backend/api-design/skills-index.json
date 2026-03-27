@@ -245,44 +245,6 @@
         "match_score":  4
     },
     {
-        "id":  "derivatives-trading-coin-futures",
-        "triggers":  [
-                         "derivatives",
-                         "trading",
-                         "coin",
-                         "futures"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "derivatives-trading-options",
-        "triggers":  [
-                         "derivatives",
-                         "trading",
-                         "options"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "derivatives-trading-portfolio-margin",
-        "triggers":  [
-                         "derivatives",
-                         "trading",
-                         "portfolio",
-                         "margin"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "derivatives-trading-portfolio-margin-pro",
         "triggers":  [
                          "derivatives",
@@ -290,19 +252,6 @@
                          "portfolio",
                          "margin",
                          "pro"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "derivatives-trading-usds-futures",
-        "triggers":  [
-                         "derivatives",
-                         "trading",
-                         "usds",
-                         "futures"
                      ],
         "src":  "external:binance-skills-hub",
         "primary_hub":  "backend/api-design",
@@ -327,17 +276,6 @@
         "triggers":  [
                          "documentation",
                          "templates"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "dotnet-backend",
-        "triggers":  [
-                         "dotnet",
-                         "backend"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
@@ -373,18 +311,6 @@
                          "fiat"
                      ],
         "src":  "external:binance-skills-hub",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "figma-generate-library",
-        "triggers":  [
-                         "figma",
-                         "generate",
-                         "library"
-                     ],
-        "src":  "external:mcp-server-guide",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -429,18 +355,6 @@
                          "gemini",
                          "api",
                          "dev"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "gemini-api-integration",
-        "triggers":  [
-                         "gemini",
-                         "api",
-                         "integration"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
@@ -541,18 +455,6 @@
         "match_score":  4
     },
     {
-        "id":  "odoo-shopify-integration",
-        "triggers":  [
-                         "odoo",
-                         "shopify",
-                         "integration"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "odoo-woocommerce-bridge",
         "triggers":  [
                          "odoo",
@@ -588,17 +490,6 @@
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  8
-    },
-    {
-        "id":  "podcast-generation",
-        "triggers":  [
-                         "podcast",
-                         "generation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
     },
     {
         "id":  "pubmed-database",
@@ -645,16 +536,6 @@
         "match_score":  4
     },
     {
-        "id":  "spot",
-        "triggers":  [
-                         "spot"
-                     ],
-        "src":  "external:binance-skills-hub",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "sub-account",
         "triggers":  [
                          "sub",
@@ -685,17 +566,6 @@
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
-    },
-    {
-        "id":  "uniprot-database",
-        "triggers":  [
-                         "uniprot",
-                         "database"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  8
     },
     {
         "id":  "vertex-ai-api-dev",

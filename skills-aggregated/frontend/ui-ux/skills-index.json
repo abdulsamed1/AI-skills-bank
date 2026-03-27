@@ -1,0 +1,597 @@
+[
+    {
+        "id":  "accessibility-compliance-accessibility-audit",
+        "triggers":  [
+                         "accessibility",
+                         "compliance",
+                         "accessibility",
+                         "audit"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "angular-ui-patterns",
+        "triggers":  [
+                         "angular",
+                         "ui",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "antigravity-design-expert",
+        "triggers":  [
+                         "antigravity",
+                         "design",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "avalonia-layout-zafiro",
+        "triggers":  [
+                         "avalonia",
+                         "layout",
+                         "zafiro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "avalonia-zafiro-development",
+        "triggers":  [
+                         "avalonia",
+                         "zafiro",
+                         "development"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "baseline-ui",
+        "triggers":  [
+                         "baseline",
+                         "ui"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "bmad-agent-ux-designer",
+        "triggers":  [
+                         "bmad",
+                         "agent",
+                         "ux",
+                         "designer"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "bmad-create-ux-design",
+        "triggers":  [
+                         "bmad",
+                         "create",
+                         "ux",
+                         "design"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "brand-guidelines",
+        "triggers":  [
+                         "brand",
+                         "guidelines"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "building-native-ui",
+        "triggers":  [
+                         "building",
+                         "native",
+                         "ui"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "cc-skill-frontend-patterns",
+        "triggers":  [
+                         "cc",
+                         "skill",
+                         "frontend",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "core-components",
+        "triggers":  [
+                         "core",
+                         "components"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "enhance-prompt",
+        "triggers":  [
+                         "enhance",
+                         "prompt"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "expo-ui-jetpack-compose",
+        "triggers":  [
+                         "expo",
+                         "ui",
+                         "jetpack",
+                         "compose"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "expo-ui-swift-ui",
+        "triggers":  [
+                         "expo",
+                         "ui",
+                         "swift",
+                         "ui"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "figma-code-connect-components",
+        "triggers":  [
+                         "figma",
+                         "code",
+                         "connect",
+                         "components"
+                     ],
+        "src":  "external:mcp-server-guide",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "figma-create-design-system-rules",
+        "triggers":  [
+                         "figma",
+                         "create",
+                         "design",
+                         "system",
+                         "rules"
+                     ],
+        "src":  "external:mcp-server-guide",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "figma-create-new-file",
+        "triggers":  [
+                         "figma",
+                         "create",
+                         "new",
+                         "file"
+                     ],
+        "src":  "external:mcp-server-guide",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "figma-generate-library",
+        "triggers":  [
+                         "figma",
+                         "generate",
+                         "library"
+                     ],
+        "src":  "external:mcp-server-guide",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "figma-implement-design",
+        "triggers":  [
+                         "figma",
+                         "implement",
+                         "design"
+                     ],
+        "src":  "external:mcp-server-guide",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "fixing-accessibility",
+        "triggers":  [
+                         "fixing",
+                         "accessibility"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "frontend-design",
+        "triggers":  [
+                         "frontend",
+                         "design"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "frontend-ui-dark-ts",
+        "triggers":  [
+                         "frontend",
+                         "ui",
+                         "dark",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "hig-components-status",
+        "triggers":  [
+                         "hig",
+                         "components",
+                         "status"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "hig-patterns",
+        "triggers":  [
+                         "hig",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "iconsax-library",
+        "triggers":  [
+                         "iconsax",
+                         "library"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "imagen",
+        "triggers":  [
+                         "imagen"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "lean-ux-canvas",
+        "triggers":  [
+                         "lean",
+                         "ux",
+                         "canvas"
+                     ],
+        "src":  "external:Product-Manager-Skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "magic-animator",
+        "triggers":  [
+                         "magic",
+                         "animator"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "magic-ui-generator",
+        "triggers":  [
+                         "magic",
+                         "ui",
+                         "generator"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "makepad-skills",
+        "triggers":  [
+                         "makepad",
+                         "skills"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "nerdzao-elite",
+        "triggers":  [
+                         "nerdzao",
+                         "elite"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "product-design",
+        "triggers":  [
+                         "product",
+                         "design"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "product-inventor",
+        "triggers":  [
+                         "product",
+                         "inventor"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "radix-ui-design-system",
+        "triggers":  [
+                         "radix",
+                         "ui",
+                         "design",
+                         "system"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "react-ui-patterns",
+        "triggers":  [
+                         "react",
+                         "ui",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "senior-frontend",
+        "triggers":  [
+                         "senior",
+                         "frontend"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "shadcn",
+        "triggers":  [
+                         "shadcn"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "shadcn-ui",
+        "triggers":  [
+                         "shadcn",
+                         "ui"
+                     ],
+        "src":  "external:stitch-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "stitch-design",
+        "triggers":  [
+                         "stitch",
+                         "design"
+                     ],
+        "src":  "external:stitch-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "stitch-ui-design",
+        "triggers":  [
+                         "stitch",
+                         "ui",
+                         "design"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "swiftui-ui-patterns",
+        "triggers":  [
+                         "swiftui",
+                         "ui",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "tailwind-design-system",
+        "triggers":  [
+                         "tailwind",
+                         "design",
+                         "system"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "ui-skills",
+        "triggers":  [
+                         "ui",
+                         "skills"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "ui-ux-designer",
+        "triggers":  [
+                         "ui",
+                         "ux",
+                         "designer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  30
+    },
+    {
+        "id":  "ui-ux-pro-max",
+        "triggers":  [
+                         "ui",
+                         "ux",
+                         "pro",
+                         "max"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  20
+    },
+    {
+        "id":  "ui-visual-validator",
+        "triggers":  [
+                         "ui",
+                         "visual",
+                         "validator"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "wds-4-ux-design",
+        "triggers":  [
+                         "wds",
+                         "4",
+                         "ux",
+                         "design"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "wds-7-design-system",
+        "triggers":  [
+                         "wds",
+                         "7",
+                         "design",
+                         "system"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "wds-agent-freya-ux",
+        "triggers":  [
+                         "wds",
+                         "agent",
+                         "freya",
+                         "ux"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "frontend/ui-ux",
+        "is_primary":  true,
+        "match_score":  15
+    }
+]

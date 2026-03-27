@@ -1,0 +1,37 @@
+{
+    "name":  "skills-frontend-ui-ux",
+    "main_hub":  "frontend",
+    "sub_hub":  "ui-ux",
+    "description":  "UI/UX design: interface design, wireframes, design systems, accessibility, and interaction patterns",
+    "skill_count":  50,
+    "src_count":  5,
+    "top_triggers":  [
+                         "ui",
+                         "design",
+                         "ux",
+                         "figma",
+                         "patterns",
+                         "system",
+                         "frontend",
+                         "accessibility",
+                         "components",
+                         "wds",
+                         "create",
+                         "agent",
+                         "expo",
+                         "zafiro",
+                         "bmad",
+                         "magic",
+                         "avalonia",
+                         "stitch",
+                         "shadcn",
+                         "skills"
+                     ],
+    "generated_at":  "2026-03-27T01:36:52+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

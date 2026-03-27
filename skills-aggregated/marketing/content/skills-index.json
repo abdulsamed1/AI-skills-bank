@@ -58,40 +58,6 @@
         "match_score":  6
     },
     {
-        "id":  "blog-writing-guide",
-        "triggers":  [
-                         "blog",
-                         "writing",
-                         "guide"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "marketing/content",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "brand-copywriter",
-        "triggers":  [
-                         "brand",
-                         "copywriter"
-                     ],
-        "src":  "external:founder-skills",
-        "primary_hub":  "marketing/content",
-        "is_primary":  true,
-        "match_score":  8
-    },
-    {
-        "id":  "brand-guidelines",
-        "triggers":  [
-                         "brand",
-                         "guidelines"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "marketing/content",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "competitor-alternatives",
         "triggers":  [
                          "competitor",
@@ -142,10 +108,10 @@
                          "content",
                          "strategy"
                      ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:marketingskills",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
-        "match_score":  10
+        "match_score":  27
     },
     {
         "id":  "copy-editing",
@@ -177,17 +143,6 @@
         "primary_hub":  "marketing/content",
         "is_primary":  true,
         "match_score":  7
-    },
-    {
-        "id":  "doc-coauthoring",
-        "triggers":  [
-                         "doc",
-                         "coauthoring"
-                     ],
-        "src":  "external:skills",
-        "primary_hub":  "marketing/content",
-        "is_primary":  true,
-        "match_score":  5
     },
     {
         "id":  "free-tool-strategy",
@@ -246,43 +201,6 @@
         "match_score":  5
     },
     {
-        "id":  "local-legal-seo-audit",
-        "triggers":  [
-                         "local",
-                         "legal",
-                         "seo",
-                         "audit"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "marketing/content",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "odoo-ecommerce-configurator",
-        "triggers":  [
-                         "odoo",
-                         "ecommerce",
-                         "configurator"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "marketing/content",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "press-and-pr",
-        "triggers":  [
-                         "press",
-                         "and",
-                         "pr"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "marketing/content",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "programmatic-seo",
         "triggers":  [
                          "programmatic",
@@ -303,17 +221,6 @@
         "primary_hub":  "marketing/content",
         "is_primary":  true,
         "match_score":  4
-    },
-    {
-        "id":  "schema-markup",
-        "triggers":  [
-                         "schema",
-                         "markup"
-                     ],
-        "src":  "external:marketingskills",
-        "primary_hub":  "marketing/content",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "seo",

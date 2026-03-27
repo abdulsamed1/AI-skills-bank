@@ -1,0 +1,37 @@
+{
+    "name":  "skills-business-product-strategy",
+    "main_hub":  "business",
+    "sub_hub":  "product-strategy",
+    "description":  "Product and business strategy: discovery, roadmaps, prioritization, stakeholder alignment, and strategic planning",
+    "skill_count":  137,
+    "src_count":  11,
+    "top_triggers":  [
+                         "product",
+                         "strategy",
+                         "wds",
+                         "bmad",
+                         "prd",
+                         "error",
+                         "analysis",
+                         "ideas",
+                         "advisor",
+                         "brainstorm",
+                         "backend",
+                         "readiness",
+                         "onboarding",
+                         "patterns",
+                         "new",
+                         "positioning",
+                         "launch",
+                         "market",
+                         "create",
+                         "canvas"
+                     ],
+    "generated_at":  "2026-03-27T01:36:51+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

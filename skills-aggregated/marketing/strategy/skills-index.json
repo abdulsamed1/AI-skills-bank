@@ -92,19 +92,6 @@
         "match_score":  14
     },
     {
-        "id":  "go-to-market-plan",
-        "triggers":  [
-                         "go",
-                         "to",
-                         "market",
-                         "plan"
-                     ],
-        "src":  "external:founder-skills",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  13
-    },
-    {
         "id":  "gtm-motions",
         "triggers":  [
                          "gtm",
@@ -145,10 +132,10 @@
                          "launch",
                          "strategy"
                      ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:marketingskills",
         "primary_hub":  "marketing/strategy",
         "is_primary":  true,
-        "match_score":  6
+        "match_score":  12
     },
     {
         "id":  "monetization-strategy",
@@ -157,18 +144,6 @@
                          "strategy"
                      ],
         "src":  "external:aso-skills",
-        "primary_hub":  "marketing/strategy",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "odoo-backup-strategy",
-        "triggers":  [
-                         "odoo",
-                         "backup",
-                         "strategy"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/strategy",
         "is_primary":  true,
         "match_score":  6

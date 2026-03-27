@@ -123,17 +123,6 @@
         "match_score":  5
     },
     {
-        "id":  "makepad-skills",
-        "triggers":  [
-                         "makepad",
-                         "skills"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/rust",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "memory-safety-patterns",
         "triggers":  [
                          "memory",

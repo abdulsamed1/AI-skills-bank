@@ -11,6 +11,15 @@ import { dirname, join, resolve } from "node:path";
 
 const program = new Command();
 const PROC_TIMEOUT_MS = 10 * 60 * 1000;
+const EXCLUSION_CATEGORY_CHOICES = [
+  "games",
+  "law-legal",
+  "medicine-medical",
+  "pharmacy",
+  "biology",
+  "chemistry",
+  "llm-from-scratch"
+];
 
 function sanitizeOutput(value) {
   if (!value) return "";
@@ -71,6 +80,7 @@ function toReadableOutput(label, stdout, { verbose, rawOutput }) {
     /^src repo mode:/i,
     /^Multi-hub mode:/i,
     /Loaded \d+ skills/i,
+    /Excluded skills by policy/i,
     /Categorized into \d+ sub-hubs/i,
     /Aggregation Complete/i,
     /^Sub-hubs created:/i,
@@ -263,6 +273,30 @@ function parseRepoNames(value) {
     .filter(Boolean);
 }
 
+function parseExcludeCategories(value) {
+  if (value == null) return undefined;
+  const trimmed = String(value).trim();
+  if (!trimmed) return [];
+  if (trimmed.toLowerCase() === "none") return [];
+
+  return trimmed
+    .split(",")
+    .map((x) => x.trim().toLowerCase())
+    .filter(Boolean);
+}
+
+function sanitizeExcludeCategories(values) {
+  if (!values) return undefined;
+  const normalized = [...new Set(values.map((x) => String(x).trim().toLowerCase()).filter(Boolean))];
+  const invalid = normalized.filter((x) => !EXCLUSION_CATEGORY_CHOICES.includes(x));
+  if (invalid.length > 0) {
+    throw new Error(
+      `Invalid exclude categories: ${invalid.join(", ")}. Allowed: ${EXCLUSION_CATEGORY_CHOICES.join(", ")}`
+    );
+  }
+  return normalized;
+}
+
 async function executeAggregate(options) {
   const paths = resolveProjectPaths(options.project);
   const scriptPath = join(paths.scriptsDir, "aggregate-skills-to-subhubs.ps1");
@@ -277,9 +311,21 @@ async function executeAggregate(options) {
   if (options.maxHubsPerSkill) scriptArgs.push("-MaxHubsPerSkill", String(options.maxHubsPerSkill));
   if (options.primaryMinScore) scriptArgs.push("-PrimaryMinScore", String(options.primaryMinScore));
   if (options.secondaryMinScore) scriptArgs.push("-SecondaryMinScore", String(options.secondaryMinScore));
+  if (options.enableReviewBand) scriptArgs.push("-EnableReviewBand");
+  if (options.reviewMinScore) scriptArgs.push("-ReviewMinScore", String(options.reviewMinScore));
+  if (options.autoAcceptMinScore) scriptArgs.push("-AutoAcceptMinScore", String(options.autoAcceptMinScore));
+  if (options.enableSemanticScoring) scriptArgs.push("-EnableSemanticScoring");
+  if (options.semanticClassificationsFile) scriptArgs.push("-SemanticClassificationsFile", options.semanticClassificationsFile);
+  if (options.semanticWeightFactor) scriptArgs.push("-SemanticWeightFactor", String(options.semanticWeightFactor));
   if (options.srcRepoMode) scriptArgs.push("-srcRepoMode", options.srcRepoMode);
   if (options.srcRepoNames?.length) {
     scriptArgs.push("-srcRepoNames", ...options.srcRepoNames);
+  }
+  if (options.noCategoryExclusions) {
+    scriptArgs.push("-NoCategoryExclusions");
+  }
+  if (Array.isArray(options.excludeCategories) && options.excludeCategories.length > 0) {
+    scriptArgs.push("-ExcludeCategories", options.excludeCategories.join(","));
   }
 
   const spinner = ora(chalk.cyan("Running aggregate workflow...")).start();
@@ -428,6 +474,8 @@ async function executeInit(options) {
     project,
     srcRepoMode,
     srcRepoNames,
+    excludeCategories: options.excludeCategories,
+    noCategoryExclusions: Boolean(options.noCategoryExclusions),
     dryRun: Boolean(options.dryRun)
   });
 
@@ -489,10 +537,23 @@ async function executeInteractive(options) {
       default: false
     });
 
+    const selectedExclusions = await checkbox({
+      message: "Exclude categories for this project run",
+      choices: EXCLUSION_CATEGORY_CHOICES.map((x) => ({
+        name: x,
+        value: x,
+        checked: true
+      }))
+    });
+
+    const noCategoryExclusions = selectedExclusions.length === 0;
+
     await executeInit({
       project,
       srcRepoMode,
       srcRepoNames,
+      excludeCategories: selectedExclusions,
+      noCategoryExclusions,
       skipSync,
       syncMode: "Auto"
     });
@@ -575,11 +636,24 @@ async function executeInteractive(options) {
     default: false
   });
 
+  const selectedExclusions = await checkbox({
+    message: "Exclude categories for this run",
+    choices: EXCLUSION_CATEGORY_CHOICES.map((x) => ({
+      name: x,
+      value: x,
+      checked: true
+    }))
+  });
+
+  const noCategoryExclusions = selectedExclusions.length === 0;
+
   await executeAggregate({
     project,
     srcRepoMode,
     srcRepoNames,
     allowMultiHub,
+    excludeCategories: selectedExclusions,
+    noCategoryExclusions,
     dryRun
   });
 
@@ -620,16 +694,21 @@ program
   .option("--repo-url <url>", "Optional src repository URL to clone before setup")
   .option("--name <folderName>", "Optional custom folder name when using --repo-url")
   .option("--dry-run", "Run aggregate in dry-run mode")
+  .option("--exclude-categories <list>", `Comma-separated categories to exclude (${EXCLUSION_CATEGORY_CHOICES.join(" | ")})`)
+  .option("--no-category-exclusions", "Disable all category exclusions")
   .option("--skip-sync", "Skip sync step")
   .option("--sync-mode <mode>", "Auto | Copy | Junction | SymbolicLink", "Auto")
   .action(async (cmdOpts) => {
     const global = program.opts();
     const srcRepoNames = cmdOpts.srcRepoNames ? parseRepoNames(cmdOpts.srcRepoNames) : [];
+    const excludeCategories = sanitizeExcludeCategories(parseExcludeCategories(cmdOpts.excludeCategories));
 
     await executeInit({
       ...cmdOpts,
       project: global.project,
-      srcRepoNames
+      srcRepoNames,
+      excludeCategories,
+      noCategoryExclusions: cmdOpts.categoryExclusions === false
     });
   });
 
@@ -641,15 +720,26 @@ program
   .option("--max-hubs-per-skill <n>", "Max hubs per skill", Number)
   .option("--primary-min-score <n>", "Primary threshold score", Number)
   .option("--secondary-min-score <n>", "Secondary threshold score", Number)
+  .option("--enable-review-band", "Enable review-band routing (mid-confidence skills go to review-candidates.ndjson)")
+  .option("--review-min-score <n>", "Minimum score for review candidate", Number)
+  .option("--auto-accept-min-score <n>", "Minimum score for automatic routing when review band is enabled", Number)
+  .option("--enable-semantic-scoring", "Enable AI semantic understanding to improve skill routing")
+  .option("--semantic-classifications-file <path>", "Path to semantic classifications JSON file")
+  .option("--semantic-weight-factor <n>", "Weight factor for semantic scoring (0.0-1.0, default 0.6)", Number)
   .option("--src-repo-mode <mode>", "latest | all | selected | changed-only", "changed-only")
   .option("--src-repo-names <names>", "Comma-separated src repo names")
+  .option("--exclude-categories <list>", `Comma-separated categories to exclude (${EXCLUSION_CATEGORY_CHOICES.join(" | ")})`)
+  .option("--no-category-exclusions", "Disable all category exclusions")
   .action(async (cmdOpts) => {
     const global = program.opts();
     const srcRepoNames = cmdOpts.srcRepoNames ? parseRepoNames(cmdOpts.srcRepoNames) : [];
+    const excludeCategories = sanitizeExcludeCategories(parseExcludeCategories(cmdOpts.excludeCategories));
     await executeAggregate({
       ...cmdOpts,
       project: global.project,
-      srcRepoNames
+      srcRepoNames,
+      excludeCategories,
+      noCategoryExclusions: cmdOpts.categoryExclusions === false
     });
   });
 
@@ -684,17 +774,34 @@ program
 program
   .command("run")
   .description("Run aggregate then sync")
+  .option("--enable-review-band", "Enable review-band routing (mid-confidence skills go to review-candidates.ndjson)")
+  .option("--review-min-score <n>", "Minimum score for review candidate", Number)
+  .option("--auto-accept-min-score <n>", "Minimum score for automatic routing when review band is enabled", Number)
+  .option("--enable-semantic-scoring", "Enable AI semantic understanding to improve skill routing")
+  .option("--semantic-classifications-file <path>", "Path to semantic classifications JSON file")
+  .option("--semantic-weight-factor <n>", "Weight factor for semantic scoring (0.0-1.0, default 0.6)", Number)
   .option("--src-repo-mode <mode>", "latest | all | selected | changed-only", "changed-only")
   .option("--src-repo-names <names>", "Comma-separated src repo names")
+  .option("--exclude-categories <list>", `Comma-separated categories to exclude (${EXCLUSION_CATEGORY_CHOICES.join(" | ")})`)
+  .option("--no-category-exclusions", "Disable all category exclusions")
   .option("--sync-mode <mode>", "Auto | Copy | Junction | SymbolicLink", "Auto")
   .action(async (cmdOpts) => {
     const global = program.opts();
     const srcRepoNames = cmdOpts.srcRepoNames ? parseRepoNames(cmdOpts.srcRepoNames) : [];
+    const excludeCategories = sanitizeExcludeCategories(parseExcludeCategories(cmdOpts.excludeCategories));
 
     await executeAggregate({
       project: global.project,
+      enableReviewBand: Boolean(cmdOpts.enableReviewBand),
+      reviewMinScore: cmdOpts.reviewMinScore,
+      autoAcceptMinScore: cmdOpts.autoAcceptMinScore,
+      enableSemanticScoring: Boolean(cmdOpts.enableSemanticScoring),
+      semanticClassificationsFile: cmdOpts.semanticClassificationsFile,
+      semanticWeightFactor: cmdOpts.semanticWeightFactor,
       srcRepoMode: cmdOpts.srcRepoMode,
-      srcRepoNames
+      srcRepoNames,
+      excludeCategories,
+      noCategoryExclusions: cmdOpts.categoryExclusions === false
     });
 
     await executeSync({

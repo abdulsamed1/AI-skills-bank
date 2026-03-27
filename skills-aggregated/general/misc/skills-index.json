@@ -25,28 +25,6 @@
         "match_score":  0
     },
     {
-        "id":  "2d-games",
-        "triggers":  [
-                         "2d",
-                         "games"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "3d-games",
-        "triggers":  [
-                         "3d",
-                         "games"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "3d-web-experience",
         "triggers":  [
                          "3d",
@@ -54,79 +32,6 @@
                          "experience"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "ab-test-analysis",
-        "triggers":  [
-                         "ab",
-                         "test",
-                         "analysis"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "ab-test-setup",
-        "triggers":  [
-                         "ab",
-                         "test",
-                         "setup"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "ab-test-store-listing",
-        "triggers":  [
-                         "ab",
-                         "test",
-                         "store",
-                         "listing"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "acceptance-orchestrator",
-        "triggers":  [
-                         "acceptance",
-                         "orchestrator"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "accessibility-compliance-accessibility-audit",
-        "triggers":  [
-                         "accessibility",
-                         "compliance",
-                         "accessibility",
-                         "audit"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "acquisition-channel-advisor",
-        "triggers":  [
-                         "acquisition",
-                         "channel",
-                         "advisor"
-                     ],
-        "src":  "external:Product-Manager-Skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -188,47 +93,11 @@
         "match_score":  0
     },
     {
-        "id":  "ai-md",
-        "triggers":  [
-                         "ai",
-                         "md"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "ai-shaped-readiness-advisor",
-        "triggers":  [
-                         "ai",
-                         "shaped",
-                         "readiness",
-                         "advisor"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "ai-studio-image",
         "triggers":  [
                          "ai",
                          "studio",
                          "image"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "ai-wrapper-product",
-        "triggers":  [
-                         "ai",
-                         "wrapper",
-                         "product"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -270,35 +139,12 @@
         "match_score":  0
     },
     {
-        "id":  "analytics-product",
-        "triggers":  [
-                         "analytics",
-                         "product"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "analytics-tracking",
         "triggers":  [
                          "analytics",
                          "tracking"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "analyze-feature-requests",
-        "triggers":  [
-                         "analyze",
-                         "feature",
-                         "requests"
-                     ],
-        "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -360,46 +206,12 @@
         "match_score":  0
     },
     {
-        "id":  "angular-ui-patterns",
-        "triggers":  [
-                         "angular",
-                         "ui",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "ansoff-matrix",
-        "triggers":  [
-                         "ansoff",
-                         "matrix"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "apify-brand-reputation-monitoring",
         "triggers":  [
                          "apify",
                          "brand",
                          "reputation",
                          "monitoring"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "apify-ecommerce",
-        "triggers":  [
-                         "apify",
-                         "ecommerce"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -419,57 +231,10 @@
         "match_score":  0
     },
     {
-        "id":  "apify-market-research",
-        "triggers":  [
-                         "apify",
-                         "market",
-                         "research"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "app-clips",
         "triggers":  [
                          "app",
                          "clips"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "app-icon-optimization",
-        "triggers":  [
-                         "app",
-                         "icon",
-                         "optimization"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "app-launch",
-        "triggers":  [
-                         "app",
-                         "launch"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "apple-search-ads",
-        "triggers":  [
-                         "apple",
-                         "search",
-                         "ads"
                      ],
         "src":  "external:aso-skills",
         "primary_hub":  "general/misc",
@@ -497,18 +262,6 @@
                          "changelog"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "app-store-featured",
-        "triggers":  [
-                         "app",
-                         "store",
-                         "featured"
-                     ],
-        "src":  "external:aso-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -547,17 +300,6 @@
         "match_score":  0
     },
     {
-        "id":  "architecture-patterns",
-        "triggers":  [
-                         "architecture",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "arm-cortex-expert",
         "triggers":  [
                          "arm",
@@ -565,17 +307,6 @@
                          "expert"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "asc-metrics",
-        "triggers":  [
-                         "asc",
-                         "metrics"
-                     ],
-        "src":  "external:aso-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -637,60 +368,11 @@
         "match_score":  0
     },
     {
-        "id":  "avalonia-layout-zafiro",
-        "triggers":  [
-                         "avalonia",
-                         "layout",
-                         "zafiro"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "avalonia-viewmodels-zafiro",
         "triggers":  [
                          "avalonia",
                          "viewmodels",
                          "zafiro"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "avalonia-zafiro-development",
-        "triggers":  [
-                         "avalonia",
-                         "zafiro",
-                         "development"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "backend-development-feature-development",
-        "triggers":  [
-                         "backend",
-                         "development",
-                         "feature",
-                         "development"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "bash-defensive-patterns",
-        "triggers":  [
-                         "bash",
-                         "defensive",
-                         "patterns"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -725,17 +407,6 @@
         "triggers":  [
                          "beautiful",
                          "prose"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "behavioral-modes",
-        "triggers":  [
-                         "behavioral",
-                         "modes"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -778,17 +449,6 @@
         "match_score":  0
     },
     {
-        "id":  "blockchain-developer",
-        "triggers":  [
-                         "blockchain",
-                         "developer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "blockrun",
         "triggers":  [
                          "blockrun"
@@ -822,19 +482,6 @@
         "match_score":  0
     },
     {
-        "id":  "bmad-check-implementation-readiness",
-        "triggers":  [
-                         "bmad",
-                         "check",
-                         "implementation",
-                         "readiness"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "bmad-cis-design-thinking",
         "triggers":  [
                          "bmad",
@@ -854,18 +501,6 @@
                          "cis",
                          "problem",
                          "solving"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "bmad-cis-storytelling",
-        "triggers":  [
-                         "bmad",
-                         "cis",
-                         "storytelling"
                      ],
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
@@ -911,31 +546,6 @@
         "match_score":  0
     },
     {
-        "id":  "bmad-create-prd",
-        "triggers":  [
-                         "bmad",
-                         "create",
-                         "prd"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "bmad-create-ux-design",
-        "triggers":  [
-                         "bmad",
-                         "create",
-                         "ux",
-                         "design"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "bmad-dev-story",
         "triggers":  [
                          "bmad",
@@ -972,37 +582,12 @@
         "match_score":  0
     },
     {
-        "id":  "bmad-editorial-review-prose",
-        "triggers":  [
-                         "bmad",
-                         "editorial",
-                         "review",
-                         "prose"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "bmad-editorial-review-structure",
         "triggers":  [
                          "bmad",
                          "editorial",
                          "review",
                          "structure"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "bmad-edit-prd",
-        "triggers":  [
-                         "bmad",
-                         "edit",
-                         "prd"
                      ],
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
@@ -1040,18 +625,6 @@
                          "bmad",
                          "market",
                          "research"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "bmad-product-brief",
-        "triggers":  [
-                         "bmad",
-                         "product",
-                         "brief"
                      ],
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
@@ -1145,17 +718,6 @@
         "match_score":  0
     },
     {
-        "id":  "bmad-tea",
-        "triggers":  [
-                         "bmad",
-                         "tea"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "bmad-technical-research",
         "triggers":  [
                          "bmad",
@@ -1168,120 +730,11 @@
         "match_score":  0
     },
     {
-        "id":  "bmad-testarch-atdd",
-        "triggers":  [
-                         "bmad",
-                         "testarch",
-                         "atdd"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "bmad-testarch-ci",
-        "triggers":  [
-                         "bmad",
-                         "testarch",
-                         "ci"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "bmad-testarch-nfr",
-        "triggers":  [
-                         "bmad",
-                         "testarch",
-                         "nfr"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "bmad-testarch-test-design",
-        "triggers":  [
-                         "bmad",
-                         "testarch",
-                         "test",
-                         "design"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "bmad-testarch-test-review",
-        "triggers":  [
-                         "bmad",
-                         "testarch",
-                         "test",
-                         "review"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "bmad-validate-prd",
-        "triggers":  [
-                         "bmad",
-                         "validate",
-                         "prd"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "brainstorm-ideas-existing",
-        "triggers":  [
-                         "brainstorm",
-                         "ideas",
-                         "existing"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "brainstorm-ideas-new",
-        "triggers":  [
-                         "brainstorm",
-                         "ideas",
-                         "new"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "brainstorming",
         "triggers":  [
                          "brainstorming"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "brainstorm-okrs",
-        "triggers":  [
-                         "brainstorm",
-                         "okrs"
-                     ],
-        "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -1341,18 +794,6 @@
         "match_score":  0
     },
     {
-        "id":  "building-native-ui",
-        "triggers":  [
-                         "building",
-                         "native",
-                         "ui"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "burpsuite-project-parser",
         "triggers":  [
                          "burpsuite",
@@ -1371,18 +812,6 @@
                          "analyst"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "business-health-diagnostic",
-        "triggers":  [
-                         "business",
-                         "health",
-                         "diagnostic"
-                     ],
-        "src":  "external:Product-Manager-Skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -1500,16 +929,6 @@
         "match_score":  0
     },
     {
-        "id":  "charlie",
-        "triggers":  [
-                         "charlie"
-                     ],
-        "src":  "external:charlie-cfo-skill",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "chat-widget",
         "triggers":  [
                          "chat",
@@ -1526,17 +945,6 @@
                          "chrome",
                          "extension",
                          "developer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "churn-prevention",
-        "triggers":  [
-                         "churn",
-                         "prevention"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -1663,19 +1071,6 @@
         "match_score":  0
     },
     {
-        "id":  "code-documentation-code-explain",
-        "triggers":  [
-                         "code",
-                         "documentation",
-                         "code",
-                         "explain"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "code-refactoring-context-restore",
         "triggers":  [
                          "code",
@@ -1788,28 +1183,6 @@
                          "sequence"
                      ],
         "src":  "external:ai-marketing-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "company-research",
-        "triggers":  [
-                         "company",
-                         "research"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "competitor-alternatives",
-        "triggers":  [
-                         "competitor",
-                         "alternatives"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -2069,17 +1442,6 @@
         "match_score":  0
     },
     {
-        "id":  "core-components",
-        "triggers":  [
-                         "core",
-                         "components"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "cpp-pro",
         "triggers":  [
                          "cpp",
@@ -2142,17 +1504,6 @@
                          "gate"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "create-prd",
-        "triggers":  [
-                         "create",
-                         "prd"
-                     ],
-        "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -2222,17 +1573,6 @@
                          "workshop"
                      ],
         "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "customer-support",
-        "triggers":  [
-                         "customer",
-                         "support"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -2308,33 +1648,10 @@
         "match_score":  0
     },
     {
-        "id":  "data-quality-frameworks",
-        "triggers":  [
-                         "data",
-                         "quality",
-                         "frameworks"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "data-scientist",
         "triggers":  [
                          "data",
                          "scientist"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "data-storytelling",
-        "triggers":  [
-                         "data",
-                         "storytelling"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -2390,16 +1707,6 @@
         "match_score":  0
     },
     {
-        "id":  "debugger",
-        "triggers":  [
-                         "debugger"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "debugging-toolkit-smart-debug",
         "triggers":  [
                          "debugging",
@@ -2417,18 +1724,6 @@
         "triggers":  [
                          "deep",
                          "research"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "defi-protocol-templates",
-        "triggers":  [
-                         "defi",
-                         "protocol",
-                         "templates"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -2514,33 +1809,11 @@
         "match_score":  0
     },
     {
-        "id":  "diary",
-        "triggers":  [
-                         "diary"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "director-readiness-advisor",
         "triggers":  [
                          "director",
                          "readiness",
                          "advisor"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "discovery-interview-prep",
-        "triggers":  [
-                         "discovery",
-                         "interview",
-                         "prep"
                      ],
         "src":  "external:Product-Manager-Skills",
         "primary_hub":  "general/misc",
@@ -2610,29 +1883,6 @@
                          "architect"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "dotnet-backend-patterns",
-        "triggers":  [
-                         "dotnet",
-                         "backend",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "draft-nda",
-        "triggers":  [
-                         "draft",
-                         "nda"
-                     ],
-        "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -2726,17 +1976,6 @@
         "match_score":  0
     },
     {
-        "id":  "enhance-prompt",
-        "triggers":  [
-                         "enhance",
-                         "prompt"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "environment-setup-guide",
         "triggers":  [
                          "environment",
@@ -2744,17 +1983,6 @@
                          "guide"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "eol-message",
-        "triggers":  [
-                         "eol",
-                         "message"
-                     ],
-        "src":  "external:Product-Manager-Skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -2772,60 +2000,10 @@
         "match_score":  0
     },
     {
-        "id":  "epic-hypothesis",
-        "triggers":  [
-                         "epic",
-                         "hypothesis"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "error-debugging-error-analysis",
-        "triggers":  [
-                         "error",
-                         "debugging",
-                         "error",
-                         "analysis"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "error-debugging-error-trace",
-        "triggers":  [
-                         "error",
-                         "debugging",
-                         "error",
-                         "trace"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "error-detective",
         "triggers":  [
                          "error",
                          "detective"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "error-diagnostics-error-analysis",
-        "triggers":  [
-                         "error",
-                         "diagnostics",
-                         "error",
-                         "analysis"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -2894,72 +2072,11 @@
         "match_score":  0
     },
     {
-        "id":  "executive-onboarding-playbook",
-        "triggers":  [
-                         "executive",
-                         "onboarding",
-                         "playbook"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "explain-like-socrates",
         "triggers":  [
                          "explain",
                          "like",
                          "socrates"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "expo-deployment",
-        "triggers":  [
-                         "expo",
-                         "deployment"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "expo-dev-client",
-        "triggers":  [
-                         "expo",
-                         "dev",
-                         "client"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "expo-ui-jetpack-compose",
-        "triggers":  [
-                         "expo",
-                         "ui",
-                         "jetpack",
-                         "compose"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "expo-ui-swift-ui",
-        "triggers":  [
-                         "expo",
-                         "ui",
-                         "swift",
-                         "ui"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -3058,69 +2175,6 @@
         "match_score":  0
     },
     {
-        "id":  "fda-medtech-compliance-auditor",
-        "triggers":  [
-                         "fda",
-                         "medtech",
-                         "compliance",
-                         "auditor"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "feature-investment-advisor",
-        "triggers":  [
-                         "feature",
-                         "investment",
-                         "advisor"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "figma-code-connect-components",
-        "triggers":  [
-                         "figma",
-                         "code",
-                         "connect",
-                         "components"
-                     ],
-        "src":  "external:mcp-server-guide",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "figma-create-new-file",
-        "triggers":  [
-                         "figma",
-                         "create",
-                         "new",
-                         "file"
-                     ],
-        "src":  "external:mcp-server-guide",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "figma-implement-design",
-        "triggers":  [
-                         "figma",
-                         "implement",
-                         "design"
-                     ],
-        "src":  "external:mcp-server-guide",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "file-organizer",
         "triggers":  [
                          "file",
@@ -3148,44 +2202,6 @@
         "triggers":  [
                          "filesystem",
                          "context"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "finance-based-pricing-advisor",
-        "triggers":  [
-                         "finance",
-                         "based",
-                         "pricing",
-                         "advisor"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "finance-metrics-quickref",
-        "triggers":  [
-                         "finance",
-                         "metrics",
-                         "quickref"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "finishing-a-development-branch",
-        "triggers":  [
-                         "finishing",
-                         "a",
-                         "development",
-                         "branch"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -3313,18 +2329,6 @@
         "match_score":  0
     },
     {
-        "id":  "fp-data-transforms",
-        "triggers":  [
-                         "fp",
-                         "data",
-                         "transforms"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "fp-either-ref",
         "triggers":  [
                          "fp",
@@ -3384,32 +2388,6 @@
         "match_score":  0
     },
     {
-        "id":  "framework-migration-code-migrate",
-        "triggers":  [
-                         "framework",
-                         "migration",
-                         "code",
-                         "migrate"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "framework-migration-legacy-modernize",
-        "triggers":  [
-                         "framework",
-                         "migration",
-                         "legacy",
-                         "modernize"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "freeze",
         "triggers":  [
                          "freeze"
@@ -3420,55 +2398,11 @@
         "match_score":  0
     },
     {
-        "id":  "frontend-design",
-        "triggers":  [
-                         "frontend",
-                         "design"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "frontend-dev-guidelines",
         "triggers":  [
                          "frontend",
                          "dev",
                          "guidelines"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "game-audio",
-        "triggers":  [
-                         "game",
-                         "audio"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "game-design",
-        "triggers":  [
-                         "game",
-                         "design"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "game-development",
-        "triggers":  [
-                         "game",
-                         "development"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -3534,58 +2468,12 @@
         "match_score":  0
     },
     {
-        "id":  "godot-4-migration",
-        "triggers":  [
-                         "godot",
-                         "4",
-                         "migration"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "godot-gdscript-patterns",
-        "triggers":  [
-                         "godot",
-                         "gdscript",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "grafana-dashboards",
-        "triggers":  [
-                         "grafana",
-                         "dashboards"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "growth-engine",
         "triggers":  [
                          "growth",
                          "engine"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "growth-loops",
-        "triggers":  [
-                         "growth",
-                         "loops"
-                     ],
-        "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -3693,18 +2581,6 @@
         "match_score":  0
     },
     {
-        "id":  "hig-components-status",
-        "triggers":  [
-                         "hig",
-                         "components",
-                         "status"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "hig-components-system",
         "triggers":  [
                          "hig",
@@ -3732,17 +2608,6 @@
         "triggers":  [
                          "hig",
                          "inputs"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "hig-patterns",
-        "triggers":  [
-                         "hig",
-                         "patterns"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -3900,18 +2765,6 @@
         "match_score":  0
     },
     {
-        "id":  "in-app-events",
-        "triggers":  [
-                         "in",
-                         "app",
-                         "events"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "incident-responder",
         "triggers":  [
                          "incident",
@@ -3929,18 +2782,6 @@
                          "response",
                          "incident",
                          "response"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "incident-runbook-templates",
-        "triggers":  [
-                         "incident",
-                         "runbook",
-                         "templates"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -3981,17 +2822,6 @@
         "match_score":  0
     },
     {
-        "id":  "interview-script",
-        "triggers":  [
-                         "interview",
-                         "script"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "inventory-demand-planning",
         "triggers":  [
                          "inventory",
@@ -4024,29 +2854,6 @@
         "match_score":  0
     },
     {
-        "id":  "istio-traffic-management",
-        "triggers":  [
-                         "istio",
-                         "traffic",
-                         "management"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "iterate-pr",
-        "triggers":  [
-                         "iterate",
-                         "pr"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "job-stories",
         "triggers":  [
                          "job",
@@ -4062,17 +2869,6 @@
         "triggers":  [
                          "json",
                          "canvas"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "julia-pro",
-        "triggers":  [
-                         "julia",
-                         "pro"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -4147,33 +2943,10 @@
         "match_score":  0
     },
     {
-        "id":  "lean-ux-canvas",
-        "triggers":  [
-                         "lean",
-                         "ux",
-                         "canvas"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "legacy-modernizer",
         "triggers":  [
                          "legacy",
                          "modernizer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "legal-advisor",
-        "triggers":  [
-                         "legal",
-                         "advisor"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -4236,16 +3009,6 @@
         "match_score":  0
     },
     {
-        "id":  "lex",
-        "triggers":  [
-                         "lex"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "lightning-channel-factories",
         "triggers":  [
                          "lightning",
@@ -4293,18 +3056,6 @@
         "match_score":  0
     },
     {
-        "id":  "logistics-exception-management",
-        "triggers":  [
-                         "logistics",
-                         "exception",
-                         "management"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "machine-learning-ops-ml-pipeline",
         "triggers":  [
                          "machine",
@@ -4338,29 +3089,6 @@
                          "spm",
                          "app",
                          "packaging"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "magic-animator",
-        "triggers":  [
-                         "magic",
-                         "animator"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "magic-ui-generator",
-        "triggers":  [
-                         "magic",
-                         "ui",
-                         "generator"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -4512,17 +3240,6 @@
         "match_score":  0
     },
     {
-        "id":  "marketing-ideas",
-        "triggers":  [
-                         "marketing",
-                         "ideas"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "marketing-principles",
         "triggers":  [
                          "marketing",
@@ -4551,40 +3268,6 @@
                          "pulse"
                      ],
         "src":  "external:aso-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "market-segments",
-        "triggers":  [
-                         "market",
-                         "segments"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "market-sizing",
-        "triggers":  [
-                         "market",
-                         "sizing"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "market-sizing-analysis",
-        "triggers":  [
-                         "market",
-                         "sizing",
-                         "analysis"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -4690,17 +3373,6 @@
         "match_score":  0
     },
     {
-        "id":  "metrics-dashboard",
-        "triggers":  [
-                         "metrics",
-                         "dashboard"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "microservices-patterns",
         "triggers":  [
                          "microservices",
@@ -4745,16 +3417,6 @@
         "match_score":  0
     },
     {
-        "id":  "monetization",
-        "triggers":  [
-                         "monetization"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "monorepo-architect",
         "triggers":  [
                          "monorepo",
@@ -4780,40 +3442,6 @@
         "id":  "moyu",
         "triggers":  [
                          "moyu"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "multiplayer",
-        "triggers":  [
-                         "multiplayer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "n8n-node-configuration",
-        "triggers":  [
-                         "n8n",
-                         "node",
-                         "configuration"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "n8n-validation-expert",
-        "triggers":  [
-                         "n8n",
-                         "validation",
-                         "expert"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -4867,17 +3495,6 @@
         "match_score":  0
     },
     {
-        "id":  "netlify-deploy",
-        "triggers":  [
-                         "netlify",
-                         "deploy"
-                     ],
-        "src":  "external:context-and-tools",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "new-rails-project",
         "triggers":  [
                          "new",
@@ -4901,33 +3518,9 @@
         "match_score":  0
     },
     {
-        "id":  "nodejs-backend-patterns",
-        "triggers":  [
-                         "nodejs",
-                         "backend",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "notebooklm",
         "triggers":  [
                          "notebooklm"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "notion-template-business",
-        "triggers":  [
-                         "notion",
-                         "template",
-                         "business"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -5048,30 +3641,6 @@
                          "odoo",
                          "accounting",
                          "setup"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "odoo-automated-tests",
-        "triggers":  [
-                         "odoo",
-                         "automated",
-                         "tests"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "odoo-edi-connector",
-        "triggers":  [
-                         "odoo",
-                         "edi",
-                         "connector"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -5200,17 +3769,6 @@
         "match_score":  0
     },
     {
-        "id":  "onboarding-optimization",
-        "triggers":  [
-                         "onboarding",
-                         "optimization"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "on-call-handoff-patterns",
         "triggers":  [
                          "on",
@@ -5219,18 +3777,6 @@
                          "patterns"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "opportunity-solution-tree",
-        "triggers":  [
-                         "opportunity",
-                         "solution",
-                         "tree"
-                     ],
-        "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -5248,35 +3794,12 @@
         "match_score":  0
     },
     {
-        "id":  "orchestrate-batch-refactor",
-        "triggers":  [
-                         "orchestrate",
-                         "batch",
-                         "refactor"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "oss-hunter",
         "triggers":  [
                          "oss",
                          "hunter"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "outcome-roadmap",
-        "triggers":  [
-                         "outcome",
-                         "roadmap"
-                     ],
-        "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -5325,18 +3848,6 @@
         "match_score":  0
     },
     {
-        "id":  "pakistan-payments-stack",
-        "triggers":  [
-                         "pakistan",
-                         "payments",
-                         "stack"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "payment-integration",
         "triggers":  [
                          "payment",
@@ -5353,28 +3864,6 @@
                          "paywall",
                          "upgrade",
                          "cro"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "pc-games",
-        "triggers":  [
-                         "pc",
-                         "games"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "pentest-checklist",
-        "triggers":  [
-                         "pentest",
-                         "checklist"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -5399,40 +3888,6 @@
                          "profiling"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "personal-tool-builder",
-        "triggers":  [
-                         "personal",
-                         "tool",
-                         "builder"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "pestel-analysis",
-        "triggers":  [
-                         "pestel",
-                         "analysis"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "pestle-analysis",
-        "triggers":  [
-                         "pestle",
-                         "analysis"
-                     ],
-        "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -5541,27 +3996,6 @@
         "match_score":  0
     },
     {
-        "id":  "polars",
-        "triggers":  [
-                         "polars"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "pol-probe",
-        "triggers":  [
-                         "pol",
-                         "probe"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "pol-probe-advisor",
         "triggers":  [
                          "pol",
@@ -5580,18 +4014,6 @@
                          "cro"
                      ],
         "src":  "external:marketingskills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "porters-five-forces",
-        "triggers":  [
-                         "porters",
-                         "five",
-                         "forces"
-                     ],
-        "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -5631,87 +4053,10 @@
         "match_score":  0
     },
     {
-        "id":  "prd-development",
-        "triggers":  [
-                         "prd",
-                         "development"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "prd-generator",
-        "triggers":  [
-                         "prd",
-                         "generator"
-                     ],
-        "src":  "external:founder-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "press-release",
-        "triggers":  [
-                         "press",
-                         "release"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "pricing-strategist",
-        "triggers":  [
-                         "pricing",
-                         "strategist"
-                     ],
-        "src":  "external:founder-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "prioritization-advisor",
-        "triggers":  [
-                         "prioritization",
-                         "advisor"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "prioritization-frameworks",
         "triggers":  [
                          "prioritization",
                          "frameworks"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "prioritize-assumptions",
-        "triggers":  [
-                         "prioritize",
-                         "assumptions"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "prioritize-features",
-        "triggers":  [
-                         "prioritize",
-                         "features"
                      ],
         "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
@@ -5731,17 +4076,6 @@
         "match_score":  0
     },
     {
-        "id":  "privacy-policy",
-        "triggers":  [
-                         "privacy",
-                         "policy"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "problem-framing-canvas",
         "triggers":  [
                          "problem",
@@ -5749,87 +4083,6 @@
                          "canvas"
                      ],
         "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "problem-statement",
-        "triggers":  [
-                         "problem",
-                         "statement"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "product-hunt-launch-plan",
-        "triggers":  [
-                         "product",
-                         "hunt",
-                         "launch",
-                         "plan"
-                     ],
-        "src":  "external:founder-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "product-inventor",
-        "triggers":  [
-                         "product",
-                         "inventor"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "production-code-audit",
-        "triggers":  [
-                         "production",
-                         "code",
-                         "audit"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "production-scheduling",
-        "triggers":  [
-                         "production",
-                         "scheduling"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "product-manager-toolkit",
-        "triggers":  [
-                         "product",
-                         "manager",
-                         "toolkit"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "product-vision",
-        "triggers":  [
-                         "product",
-                         "vision"
-                     ],
-        "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -5991,19 +4244,6 @@
         "match_score":  0
     },
     {
-        "id":  "radix-ui-design-system",
-        "triggers":  [
-                         "radix",
-                         "ui",
-                         "design",
-                         "system"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "read-file",
         "triggers":  [
                          "read",
@@ -6093,17 +4333,6 @@
         "match_score":  0
     },
     {
-        "id":  "release-notes",
-        "triggers":  [
-                         "release",
-                         "notes"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "remotion",
         "triggers":  [
                          "remotion"
@@ -6126,34 +4355,11 @@
         "match_score":  0
     },
     {
-        "id":  "retention-optimization",
-        "triggers":  [
-                         "retention",
-                         "optimization"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "retro",
         "triggers":  [
                          "retro"
                      ],
         "src":  "external:gstack",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "returns-reverse-logistics",
-        "triggers":  [
-                         "returns",
-                         "reverse",
-                         "logistics"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -6225,17 +4431,6 @@
         "match_score":  0
     },
     {
-        "id":  "roadmap-planning",
-        "triggers":  [
-                         "roadmap",
-                         "planning"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "robius-app-architecture",
         "triggers":  [
                          "robius",
@@ -6296,44 +4491,6 @@
         "match_score":  0
     },
     {
-        "id":  "saas-economics-efficiency-metrics",
-        "triggers":  [
-                         "saas",
-                         "economics",
-                         "efficiency",
-                         "metrics"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "saas-mvp-launcher",
-        "triggers":  [
-                         "saas",
-                         "mvp",
-                         "launcher"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "saas-revenue-growth-metrics",
-        "triggers":  [
-                         "saas",
-                         "revenue",
-                         "growth",
-                         "metrics"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "sales-automator",
         "triggers":  [
                          "sales",
@@ -6389,33 +4546,12 @@
         "match_score":  0
     },
     {
-        "id":  "screenshots",
-        "triggers":  [
-                         "screenshots"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "search-specialist",
         "triggers":  [
                          "search",
                          "specialist"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "seasonal-aso",
-        "triggers":  [
-                         "seasonal",
-                         "aso"
-                     ],
-        "src":  "external:aso-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -6439,18 +4575,6 @@
                          "compliance",
                          "compliance",
                          "check"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "security-requirement-extraction",
-        "triggers":  [
-                         "security",
-                         "requirement",
-                         "extraction"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -6494,19 +4618,6 @@
         "match_score":  0
     },
     {
-        "id":  "semgrep-rule-variant-creator",
-        "triggers":  [
-                         "semgrep",
-                         "rule",
-                         "variant",
-                         "creator"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "senior-architect",
         "triggers":  [
                          "senior",
@@ -6529,32 +4640,10 @@
         "match_score":  0
     },
     {
-        "id":  "sentiment-analysis",
-        "triggers":  [
-                         "sentiment",
-                         "analysis"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "seo-programmatic",
         "triggers":  [
                          "seo",
                          "programmatic"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "server-management",
-        "triggers":  [
-                         "server",
-                         "management"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -6604,27 +4693,6 @@
                          "analyzer"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "shadcn",
-        "triggers":  [
-                         "shadcn"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "shadcn-ui",
-        "triggers":  [
-                         "shadcn",
-                         "ui"
-                     ],
-        "src":  "external:stitch-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -6696,18 +4764,6 @@
         "match_score":  0
     },
     {
-        "id":  "skin-health-analyzer",
-        "triggers":  [
-                         "skin",
-                         "health",
-                         "analyzer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "slack-bot-builder",
         "triggers":  [
                          "slack",
@@ -6727,17 +4783,6 @@
                          "creator"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "slack-messaging",
-        "triggers":  [
-                         "slack",
-                         "messaging"
-                     ],
-        "src":  "external:superpowers-lab",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -6891,46 +4936,6 @@
         "match_score":  0
     },
     {
-        "id":  "startup-business-analyst-financial-projections",
-        "triggers":  [
-                         "startup",
-                         "business",
-                         "analyst",
-                         "financial",
-                         "projections"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "startup-business-analyst-market-opportunity",
-        "triggers":  [
-                         "startup",
-                         "business",
-                         "analyst",
-                         "market",
-                         "opportunity"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "startup-financial-modeling",
-        "triggers":  [
-                         "startup",
-                         "financial",
-                         "modeling"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "startup-metrics-framework",
         "triggers":  [
                          "startup",
@@ -6943,44 +4948,12 @@
         "match_score":  0
     },
     {
-        "id":  "stitch-design",
-        "triggers":  [
-                         "stitch",
-                         "design"
-                     ],
-        "src":  "external:stitch-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "storyboard",
-        "triggers":  [
-                         "storyboard"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "stripe-integration",
         "triggers":  [
                          "stripe",
                          "integration"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "subscription-lifecycle",
-        "triggers":  [
-                         "subscription",
-                         "lifecycle"
-                     ],
-        "src":  "external:aso-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -7055,18 +5028,6 @@
         "match_score":  0
     },
     {
-        "id":  "swiftui-ui-patterns",
-        "triggers":  [
-                         "swiftui",
-                         "ui",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "swiftui-view-refactor",
         "triggers":  [
                          "swiftui",
@@ -7074,41 +5035,6 @@
                          "refactor"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "swot-analysis",
-        "triggers":  [
-                         "swot",
-                         "analysis"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "systematic-debugging",
-        "triggers":  [
-                         "systematic",
-                         "debugging"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "tam-sam-som-calculator",
-        "triggers":  [
-                         "tam",
-                         "sam",
-                         "som",
-                         "calculator"
-                     ],
-        "src":  "external:Product-Manager-Skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -7163,57 +5089,11 @@
         "match_score":  0
     },
     {
-        "id":  "telegram-mini-app",
-        "triggers":  [
-                         "telegram",
-                         "mini",
-                         "app"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "templates",
         "triggers":  [
                          "templates"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "test-driven-development",
-        "triggers":  [
-                         "test",
-                         "driven",
-                         "development"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "test-fixing",
-        "triggers":  [
-                         "test",
-                         "fixing"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "testimonial-collector",
-        "triggers":  [
-                         "testimonial",
-                         "collector"
-                     ],
-        "src":  "external:ai-marketing-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -7420,18 +5300,6 @@
         "match_score":  0
     },
     {
-        "id":  "ui-ux-designer",
-        "triggers":  [
-                         "ui",
-                         "ux",
-                         "designer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "uncle-bob-craft",
         "triggers":  [
                          "uncle",
@@ -7454,59 +5322,12 @@
         "match_score":  0
     },
     {
-        "id":  "unity-developer",
-        "triggers":  [
-                         "unity",
-                         "developer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "unity-ecs-patterns",
-        "triggers":  [
-                         "unity",
-                         "ecs",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "unreal-engine-cpp-pro",
-        "triggers":  [
-                         "unreal",
-                         "engine",
-                         "cpp",
-                         "pro"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "upgrading-expo",
         "triggers":  [
                          "upgrading",
                          "expo"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "user-personas",
-        "triggers":  [
-                         "user",
-                         "personas"
-                     ],
-        "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -7529,17 +5350,6 @@
                          "stories"
                      ],
         "src":  "external:pm-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "user-story",
-        "triggers":  [
-                         "user",
-                         "story"
-                     ],
-        "src":  "external:Product-Manager-Skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -7626,17 +5436,6 @@
         "match_score":  0
     },
     {
-        "id":  "vercel-deployment",
-        "triggers":  [
-                         "vercel",
-                         "deployment"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "verification-before-completion",
         "triggers":  [
                          "verification",
@@ -7693,16 +5492,6 @@
         "match_score":  0
     },
     {
-        "id":  "vizcom",
-        "triggers":  [
-                         "vizcom"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "voice-ai-development",
         "triggers":  [
                          "voice",
@@ -7726,30 +5515,6 @@
         "match_score":  0
     },
     {
-        "id":  "vp-cpo-readiness-advisor",
-        "triggers":  [
-                         "vp",
-                         "cpo",
-                         "readiness",
-                         "advisor"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "vr-ar",
-        "triggers":  [
-                         "vr",
-                         "ar"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
         "id":  "wcag-audit-patterns",
         "triggers":  [
                          "wcag",
@@ -7757,110 +5522,6 @@
                          "patterns"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "wds-0-alignment-signoff",
-        "triggers":  [
-                         "wds",
-                         "0",
-                         "alignment",
-                         "signoff"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "wds-0-project-setup",
-        "triggers":  [
-                         "wds",
-                         "0",
-                         "project",
-                         "setup"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "wds-1-project-brief",
-        "triggers":  [
-                         "wds",
-                         "1",
-                         "project",
-                         "brief"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "wds-2-trigger-mapping",
-        "triggers":  [
-                         "wds",
-                         "2",
-                         "trigger",
-                         "mapping"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "wds-4-ux-design",
-        "triggers":  [
-                         "wds",
-                         "4",
-                         "ux",
-                         "design"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "wds-6-asset-generation",
-        "triggers":  [
-                         "wds",
-                         "6",
-                         "asset",
-                         "generation"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "wds-7-design-system",
-        "triggers":  [
-                         "wds",
-                         "7",
-                         "design",
-                         "system"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "wds-8-product-evolution",
-        "triggers":  [
-                         "wds",
-                         "8",
-                         "product",
-                         "evolution"
-                     ],
-        "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0
@@ -7883,17 +5544,6 @@
                          "web",
                          "design",
                          "guidelines"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "web-games",
-        "triggers":  [
-                         "web",
-                         "games"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
@@ -8031,16 +5681,6 @@
                          "skills"
                      ],
         "src":  "external:superpowers",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "wwas",
-        "triggers":  [
-                         "wwas"
-                     ],
-        "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
         "match_score":  0

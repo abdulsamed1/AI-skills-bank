@@ -117,17 +117,6 @@
         "match_score":  7
     },
     {
-        "id":  "senior-frontend",
-        "triggers":  [
-                         "senior",
-                         "frontend"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/typescript",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "tinybird-typescript-sdk-guidelines",
         "triggers":  [
                          "tinybird",
@@ -139,17 +128,6 @@
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  14
-    },
-    {
-        "id":  "trigger-dev",
-        "triggers":  [
-                         "trigger",
-                         "dev"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/typescript",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "typescript-advanced-types",

@@ -11,48 +11,12 @@
         "match_score":  4
     },
     {
-        "id":  "baseline-ui",
-        "triggers":  [
-                         "baseline",
-                         "ui"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/react-nextjs",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "cc-skill-coding-standards",
         "triggers":  [
                          "cc",
                          "skill",
                          "coding",
                          "standards"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/react-nextjs",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "cc-skill-frontend-patterns",
-        "triggers":  [
-                         "cc",
-                         "skill",
-                         "frontend",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/react-nextjs",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "context7-auto-research",
-        "triggers":  [
-                         "context7",
-                         "auto",
-                         "research"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
@@ -87,19 +51,6 @@
         "triggers":  [
                          "frontend",
                          "developer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/react-nextjs",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "frontend-ui-dark-ts",
-        "triggers":  [
-                         "frontend",
-                         "ui",
-                         "dark",
-                         "ts"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",
@@ -235,17 +186,6 @@
         "match_score":  4
     },
     {
-        "id":  "react-modernization",
-        "triggers":  [
-                         "react",
-                         "modernization"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/react-nextjs",
-        "is_primary":  true,
-        "match_score":  8
-    },
-    {
         "id":  "react-nextjs-development",
         "triggers":  [
                          "react",
@@ -274,18 +214,6 @@
                          "react",
                          "state",
                          "management"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/react-nextjs",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "react-ui-patterns",
-        "triggers":  [
-                         "react",
-                         "ui",
-                         "patterns"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/react-nextjs",

@@ -83,6 +83,23 @@ skills-bank init --repo-url https://github.com/owner/repo.git --name awesome-ski
 skills-bank aggregate --src-repo-mode changed-only
 ```
 
+Custom exclusion policy per project/run:
+
+```powershell
+# Exclude only specific categories
+skills-bank aggregate --src-repo-mode all --exclude-categories games,law-legal
+
+# Disable exclusions entirely for this run
+skills-bank aggregate --src-repo-mode all --no-category-exclusions
+```
+
+Optional review band (AI/manual review queue for medium-confidence routing):
+
+```powershell
+# Route medium-confidence skills to review-candidates.ndjson
+skills-bank aggregate --src-repo-mode all --enable-review-band --review-min-score 4 --auto-accept-min-score 8
+```
+
 ### Sync
 
 ```powershell
@@ -93,6 +110,18 @@ skills-bank sync --sync-mode Auto --force
 
 ```powershell
 skills-bank run --src-repo-mode changed-only --sync-mode Auto
+```
+
+With custom exclusions:
+
+```powershell
+skills-bank run --src-repo-mode all --exclude-categories games,law-legal,medicine-medical
+```
+
+With review band enabled:
+
+```powershell
+skills-bank run --src-repo-mode all --enable-review-band --review-min-score 4 --auto-accept-min-score 8
 ```
 
 ### Add src Repo

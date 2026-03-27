@@ -541,17 +541,6 @@
         "match_score":  7
     },
     {
-        "id":  "game-art",
-        "triggers":  [
-                         "game",
-                         "art"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "gha-security-review",
         "triggers":  [
                          "gha",
@@ -1000,18 +989,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  5
-    },
-    {
-        "id":  "north-star-metric",
-        "triggers":  [
-                         "north",
-                         "star",
-                         "metric"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "notebooklm",

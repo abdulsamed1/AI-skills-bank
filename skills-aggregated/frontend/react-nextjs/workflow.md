@@ -35,25 +35,25 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 ## Quick Trigger Hints
 
 - react
-- patterns
 - nextjs
-- frontend
 - practices
-- ui
 - best
-- gsap
-- fp
-- expert
-- skill
-- ts
 - frameworks
-- cc
-- trpc
-- artifacts
+- expert
+- fp
+- patterns
+- gsap
+- ai
+- apps
 - fullstack
 - shopify
 - development
-- ai
+- artifacts
+- frontend
+- fetching
+- flow
+- performance
+- spline
 
 ## Data Contract
 

@@ -1,0 +1,321 @@
+[
+    {
+        "id":  "bmad-cis-storytelling",
+        "triggers":  [
+                         "bmad",
+                         "cis",
+                         "storytelling"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "business-health-diagnostic",
+        "triggers":  [
+                         "business",
+                         "health",
+                         "diagnostic"
+                     ],
+        "src":  "external:Product-Manager-Skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "carrier-relationship-management",
+        "triggers":  [
+                         "carrier",
+                         "relationship",
+                         "management"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "charlie",
+        "triggers":  [
+                         "charlie"
+                     ],
+        "src":  "external:charlie-cfo-skill",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "code-documentation-code-explain",
+        "triggers":  [
+                         "code",
+                         "documentation",
+                         "code",
+                         "explain"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "data-storytelling",
+        "triggers":  [
+                         "data",
+                         "storytelling"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "finance-based-pricing-advisor",
+        "triggers":  [
+                         "finance",
+                         "based",
+                         "pricing",
+                         "advisor"
+                     ],
+        "src":  "external:Product-Manager-Skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "finance-metrics-quickref",
+        "triggers":  [
+                         "finance",
+                         "metrics",
+                         "quickref"
+                     ],
+        "src":  "external:Product-Manager-Skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "fp-data-transforms",
+        "triggers":  [
+                         "fp",
+                         "data",
+                         "transforms"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "gsap-utils",
+        "triggers":  [
+                         "gsap",
+                         "utils"
+                     ],
+        "src":  "external:gsap-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "logistics-exception-management",
+        "triggers":  [
+                         "logistics",
+                         "exception",
+                         "management"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "market-sizing",
+        "triggers":  [
+                         "market",
+                         "sizing"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "market-sizing-analysis",
+        "triggers":  [
+                         "market",
+                         "sizing",
+                         "analysis"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  21
+    },
+    {
+        "id":  "micro-saas-launcher",
+        "triggers":  [
+                         "micro",
+                         "saas",
+                         "launcher"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "monetization",
+        "triggers":  [
+                         "monetization"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  19
+    },
+    {
+        "id":  "pakistan-payments-stack",
+        "triggers":  [
+                         "pakistan",
+                         "payments",
+                         "stack"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "podcast-generation",
+        "triggers":  [
+                         "podcast",
+                         "generation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "polars",
+        "triggers":  [
+                         "polars"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "returns-reverse-logistics",
+        "triggers":  [
+                         "returns",
+                         "reverse",
+                         "logistics"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "saas-economics-efficiency-metrics",
+        "triggers":  [
+                         "saas",
+                         "economics",
+                         "efficiency",
+                         "metrics"
+                     ],
+        "src":  "external:Product-Manager-Skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "saas-mvp-launcher",
+        "triggers":  [
+                         "saas",
+                         "mvp",
+                         "launcher"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "saas-revenue-growth-metrics",
+        "triggers":  [
+                         "saas",
+                         "revenue",
+                         "growth",
+                         "metrics"
+                     ],
+        "src":  "external:Product-Manager-Skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  20
+    },
+    {
+        "id":  "startup-business-analyst-financial-projections",
+        "triggers":  [
+                         "startup",
+                         "business",
+                         "analyst",
+                         "financial",
+                         "projections"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "startup-business-analyst-market-opportunity",
+        "triggers":  [
+                         "startup",
+                         "business",
+                         "analyst",
+                         "market",
+                         "opportunity"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "startup-financial-modeling",
+        "triggers":  [
+                         "startup",
+                         "financial",
+                         "modeling"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "storyboard",
+        "triggers":  [
+                         "storyboard"
+                     ],
+        "src":  "external:Product-Manager-Skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "subscription-lifecycle",
+        "triggers":  [
+                         "subscription",
+                         "lifecycle"
+                     ],
+        "src":  "external:aso-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  9
+    }
+]

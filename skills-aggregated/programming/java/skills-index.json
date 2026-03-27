@@ -116,19 +116,6 @@
         "match_score":  12
     },
     {
-        "id":  "azure-communication-callautomation-java",
-        "triggers":  [
-                         "azure",
-                         "communication",
-                         "callautomation",
-                         "java"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/java",
-        "is_primary":  true,
-        "match_score":  12
-    },
-    {
         "id":  "azure-communication-callingserver-java",
         "triggers":  [
                          "azure",

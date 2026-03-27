@@ -38,22 +38,22 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - azure
 - keyvault
 - patterns
-- async
+- secrets
 - bevy
 - strategies
 - storage
-- programming
-- secrets
 - lightning
+- programming
+- async
 - zeroize
-- certificates
-- keys
 - ecs
-- configuration
+- keys
+- certificates
 - cro
+- configuration
 - safety
-- skills
 - audit
+- debugging
 
 ## Data Contract
 

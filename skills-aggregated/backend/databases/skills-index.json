@@ -81,18 +81,6 @@
         "match_score":  4
     },
     {
-        "id":  "backend-dev-guidelines",
-        "triggers":  [
-                         "backend",
-                         "dev",
-                         "guidelines"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/databases",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "base",
         "triggers":  [
                          "base"
@@ -412,18 +400,6 @@
         "match_score":  4
     },
     {
-        "id":  "sqlmap-database-pentesting",
-        "triggers":  [
-                         "sqlmap",
-                         "database",
-                         "pentesting"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/databases",
-        "is_primary":  true,
-        "match_score":  8
-    },
-    {
         "id":  "sql-optimization-patterns",
         "triggers":  [
                          "sql",
@@ -456,17 +432,6 @@
         "primary_hub":  "backend/databases",
         "is_primary":  true,
         "match_score":  10
-    },
-    {
-        "id":  "supabase-automation",
-        "triggers":  [
-                         "supabase",
-                         "automation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/databases",
-        "is_primary":  true,
-        "match_score":  8
     },
     {
         "id":  "supabase-postgres-best-practices",

@@ -1,0 +1,37 @@
+{
+    "name":  "skills-business-saas",
+    "main_hub":  "business",
+    "sub_hub":  "saas",
+    "description":  "Business and SaaS strategy: pricing, growth metrics, unit economics, market sizing, and go-to-market planning",
+    "skill_count":  27,
+    "src_count":  7,
+    "top_triggers":  [
+                         "saas",
+                         "market",
+                         "startup",
+                         "business",
+                         "metrics",
+                         "data",
+                         "code",
+                         "management",
+                         "financial",
+                         "launcher",
+                         "analyst",
+                         "storytelling",
+                         "sizing",
+                         "finance",
+                         "logistics",
+                         "micro",
+                         "diagnostic",
+                         "opportunity",
+                         "advisor",
+                         "health"
+                     ],
+    "generated_at":  "2026-03-27T01:36:51+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

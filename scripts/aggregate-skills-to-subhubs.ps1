@@ -11,6 +11,8 @@ param(
     [string[]] $srcRepoNames = @(),
     [Switch] $DryRun = $false,
     [Switch] $AllowMultiHub = $false,
+    [string[]] $ExcludeCategories = @(),
+    [Switch] $NoCategoryExclusions = $false,
     [ValidateRange(1, 500)]
     [int] $MinSkillsPerHub = 10,
     [ValidateRange(1, 500)]
@@ -21,8 +23,25 @@ param(
     [ValidateRange(1, 20)]
     [int] $PrimaryMinScore = 4,
     [ValidateRange(1, 20)]
-    [int] $SecondaryMinScore = 6
+    [int] $SecondaryMinScore = 6,
+    [Switch] $EnableReviewBand = $false,
+    [ValidateRange(1, 30)]
+    [int] $ReviewMinScore = 4,
+    [ValidateRange(1, 30)]
+    [int] $AutoAcceptMinScore = 8,
+    [Switch] $EnableSemanticScoring = $false,
+    [string] $SemanticClassificationsFile = ".\AI-skills-bank\skills-aggregated\semantic-classifications.json",
+    [ValidateRange(0.0, 1.0)]
+    [double] $SemanticWeightFactor = 0.6
 )
+
+if ($ReviewMinScore -gt $AutoAcceptMinScore) {
+    throw "ReviewMinScore ($ReviewMinScore) cannot be greater than AutoAcceptMinScore ($AutoAcceptMinScore)."
+}
+
+if ($EnableReviewBand -and $SecondaryMinScore -lt $AutoAcceptMinScore) {
+    $SecondaryMinScore = $AutoAcceptMinScore
+}
 
 # src validation module (load from same directory)
 $validationScriptPath = Join-Path $PSScriptRoot "validate-generated-skills.ps1"
@@ -50,11 +69,19 @@ if ($PSScriptRoot) {
     }
     $RepoRoot = $RepoRootObj.FullName
     
-    $srcHubsDir = Join-Path $RepoRoot "AI-skills-bank/hub-skills"
+    $legacyHubsDir = Join-Path $RepoRoot "AI-skills-bank/hub-skills"
+    $srcReposDir = Join-Path $RepoRoot "AI-skills-bank/src"
+    if (Test-Path $legacyHubsDir) {
+        $srcHubsDir = $legacyHubsDir
+    }
+    else {
+        # New layout keeps skills under src repos; hub-manifest is optional.
+        $srcHubsDir = $srcReposDir
+    }
     $OutputDir = Join-Path $RepoRoot "AI-skills-bank/skills-aggregated"
     $FallbackSkillRoots = @(
         (Join-Path $RepoRoot "_bmad"),
-        (Join-Path $RepoRoot "AI-skills-bank/src")
+        $srcReposDir
     )
 }
 
@@ -405,6 +432,17 @@ $SUB_HUB_DEFINITIONS = @{
                 "Server and client component patterns"
             )
         }
+        "ui-ux" = @{
+            keywords = @("ui", "ux", "design", "designer", "wireframe", "prototype", "accessibility", "usability", "design-system", "figma", "interaction")
+            anchor_keywords = @("ui", "ux", "design-system", "wireframe", "accessibility")
+            negative_keywords = @("kubernetes", "docker", "postgres", "mongodb", "redis")
+            description = "UI/UX design: interface design, wireframes, design systems, accessibility, and interaction patterns"
+            best_for = @(
+                "Designing intuitive user interfaces",
+                "Building and maintaining design systems",
+                "Improving usability and accessibility"
+            )
+        }
         "web-basics" = @{
             keywords = @("html", "css", "javascript", "dom", "responsive", "web-standards")
             negative_keywords = @("postgres", "mongodb", "redis", "kubernetes")
@@ -459,6 +497,31 @@ $SUB_HUB_DEFINITIONS = @{
                 "Cloud infrastructure design",
                 "Serverless applications",
                 "Cost optimization"
+            )
+        }
+    }
+
+    "business" = @{
+        "saas" = @{
+            keywords = @("saas", "pricing", "revenue", "arr", "mrr", "churn", "ltv", "cac", "unit-economics", "go-to-market", "gtm", "market-sizing", "tam", "sam", "som", "roadmap", "startup")
+            anchor_keywords = @("saas", "arr", "mrr", "unit-economics", "go-to-market", "market-sizing")
+            negative_keywords = @("react", "nextjs", "html", "css", "kubernetes", "docker")
+            description = "Business and SaaS strategy: pricing, growth metrics, unit economics, market sizing, and go-to-market planning"
+            best_for = @(
+                "Evaluating SaaS business health",
+                "Designing pricing and growth strategies",
+                "Planning market entry and product strategy"
+            )
+        }
+        "product-strategy" = @{
+            keywords = @("product", "strategy", "roadmap", "prd", "stakeholder", "discovery", "market", "positioning", "vision", "prioritization", "alignment", "wds")
+            anchor_keywords = @("product", "strategy", "roadmap", "prd", "wds")
+            negative_keywords = @("react", "nextjs", "html", "css", "kubernetes", "docker")
+            description = "Product and business strategy: discovery, roadmaps, prioritization, stakeholder alignment, and strategic planning"
+            best_for = @(
+                "Defining product strategy and direction",
+                "Building roadmaps and prioritization frameworks",
+                "Aligning teams around business goals"
             )
         }
     }
@@ -527,7 +590,7 @@ $SUB_HUB_DEFINITIONS = @{
     "testing" = @{
         "automation" = @{
             keywords = @("testing", "test", "unit-test", "integration-test", "e2e", "qa", "cypress", "playwright", "vitest", "jest", "automation")
-            anchor_keywords = @("testing", "unit-test", "integration-test", "e2e", "qa")
+            anchor_keywords = @("testing", "test", "tdd", "test-driven-development", "unit-test", "integration-test", "e2e", "qa")
             negative_keywords = @("marketing", "seo", "newsletter")
             description = "Software testing: unit, integration, E2E, and automated quality workflows"
             best_for = @(
@@ -548,6 +611,17 @@ $SUB_HUB_DEFINITIONS = @{
                 "Building LLM-powered assistants",
                 "Designing RAG and retrieval workflows",
                 "Improving prompt and agent reliability"
+            )
+        }
+        "automation" = @{
+            keywords = @("automation", "automate", "automated", "automates", "workflow", "orchestration", "orchestrate", "orchestrator", "agentic", "autonomous", "n8n", "zapier", "make", "langgraph", "crewai", "autogen", "tool-calling", "pipeline")
+            anchor_keywords = @("automation", "automated", "workflow", "orchestration", "orchestrate", "orchestrator", "agentic", "n8n", "zapier", "langgraph", "crewai")
+            negative_keywords = @("unit-test", "integration-test", "e2e", "qa", "marketing", "newsletter")
+            description = "AI automation: agentic workflows, orchestration pipelines, and tool-connected process automation"
+            best_for = @(
+                "Designing agentic automation workflows",
+                "Integrating tools and orchestration pipelines",
+                "Automating multi-step AI operations"
             )
         }
     }
@@ -582,6 +656,9 @@ $SUB_HUB_DEFINITIONS = @{
 }
 
 $CATEGORY_GAP_PATTERNS = @{
+    "business" = @("saas", "pricing", "revenue", "arr", "mrr", "churn", "ltv", "cac", "unit-economics", "market-sizing", "tam", "sam", "som", "go-to-market", "startup")
+    "product-strategy" = @("product", "roadmap", "prd", "stakeholder", "prioritization", "discovery", "strategy", "wds")
+    "ui-ux" = @("ui", "ux", "wireframe", "prototype", "design-system", "accessibility", "usability", "figma")
     "marketing" = @("marketing", "seo", "email", "newsletter", "campaign", "audience", "publisher", "social-media", "content-marketing")
     "security" = @("security", "auth", "authentication", "authorization", "oauth", "jwt", "encryption", "tls", "ssl", "vulnerability")
     "testing" = @("test", "testing", "unit-test", "integration-test", "e2e", "qa", "cypress", "vitest", "jest")
@@ -591,6 +668,9 @@ $CATEGORY_GAP_PATTERNS = @{
 }
 
 $CATEGORY_PATTERN_TO_MAIN_HUB = @{
+    "business" = "business"
+    "product-strategy" = "business"
+    "ui-ux" = "frontend"
     "marketing" = "marketing"
     "security" = "security"
     "testing" = "testing"
@@ -598,6 +678,108 @@ $CATEGORY_PATTERN_TO_MAIN_HUB = @{
     "data-science" = "data-science"
     "mobile" = "mobile"
 }
+
+$MANUAL_HUB_OVERRIDES = @{
+    "iterate-pr" = @{ main = "ai"; sub = "automation"; score = 100 }
+}
+
+$EXCLUDE_CATEGORY_PATTERNS = [ordered]@{
+    "games" = @("game", "games", "gaming", "gameplay", "unity", "unreal", "godot")
+    "law-legal" = @("law", "legal", "lawyer", "attorney", "litigation", "court", "jurisdiction", "legal system", "legal systems")
+    "medicine-medical" = @("medicine", "medical", "clinical", "healthcare", "diagnosis", "patient", "hospital")
+    "pharmacy" = @("pharmacy", "pharmaceutical", "pharmacology", "drug discovery", "medication")
+    "biology" = @("biology", "biological", "genomics", "protein", "cell biology", "bioinformatics")
+    "chemistry" = @("chemistry", "chemical", "molecule", "molecular", "organic chemistry", "chemical reaction")
+}
+
+$DEFAULT_EXCLUDE_CATEGORIES = @(
+    "games",
+    "law-legal",
+    "medicine-medical",
+    "pharmacy",
+    "biology",
+    "chemistry",
+    "llm-from-scratch"
+)
+
+$LLM_FROM_SCRATCH_PATTERNS = @(
+    "from scratch llm",
+    "build llm from scratch",
+    "train llm from scratch",
+    "pretrain llm",
+    "pre-train llm",
+    "llm pretraining",
+    "tokenizer training",
+    "train transformer from scratch"
+)
+
+$APPLIED_AI_ALLOW_PATTERNS = @(
+    "applied ai",
+    "rag",
+    "retrieval",
+    "prompt",
+    "agent",
+    "tool calling",
+    "inference",
+    "fine-tuning",
+    "embedding",
+    "vector",
+    "evaluation"
+)
+
+$script:ExcludedSkillStats = @{}
+$script:ActiveExcludeCategoryPatterns = [ordered]@{}
+$script:EnableLlmFromScratchExclusion = $false
+$script:EffectiveExcludeCategories = @()
+
+function Initialize-ExcludePolicy {
+    $requested = @()
+
+    if (-not $NoCategoryExclusions) {
+        if ($ExcludeCategories -and $ExcludeCategories.Count -gt 0) {
+            foreach ($item in $ExcludeCategories) {
+                if (-not [string]::IsNullOrWhiteSpace($item)) {
+                    $parts = @($item -split ',')
+                    foreach ($part in $parts) {
+                        if (-not [string]::IsNullOrWhiteSpace($part)) {
+                            $requested += $part.Trim().ToLower()
+                        }
+                    }
+                }
+            }
+        }
+        else {
+            $requested = @($DEFAULT_EXCLUDE_CATEGORIES)
+        }
+    }
+
+    $requested = @($requested | Select-Object -Unique)
+    $script:EffectiveExcludeCategories = @($requested)
+
+    $script:ActiveExcludeCategoryPatterns = [ordered]@{}
+    foreach ($key in $EXCLUDE_CATEGORY_PATTERNS.Keys) {
+        if ($requested -contains $key) {
+            $script:ActiveExcludeCategoryPatterns[$key] = $EXCLUDE_CATEGORY_PATTERNS[$key]
+        }
+    }
+
+    $script:EnableLlmFromScratchExclusion = ($requested -contains "llm-from-scratch")
+
+    $known = @($EXCLUDE_CATEGORY_PATTERNS.Keys + @("llm-from-scratch"))
+    $unknown = @($requested | Where-Object { $_ -notin $known })
+    if ($unknown.Count -gt 0) {
+        Write-Host "[WARN] Unknown exclude categories ignored: $($unknown -join ', ')" -ForegroundColor Yellow
+    }
+
+    if ($script:EffectiveExcludeCategories.Count -gt 0) {
+        Write-Host "[INFO] Exclusion policy active: $($script:EffectiveExcludeCategories -join ', ')" -ForegroundColor Yellow
+    }
+    else {
+        Write-Host "[INFO] Exclusion policy active: none" -ForegroundColor Yellow
+    }
+}
+
+Initialize-ExcludePolicy
 
 # ============================================================================
 # MAIN AGGREGATION LOGIC
@@ -649,6 +831,69 @@ function Get-CategoryGapSignals {
     }
 
     return @($signals | Sort-Object count -Descending)
+}
+
+function Add-ExclusionStat {
+    param([string] $Category)
+
+    if ([string]::IsNullOrWhiteSpace($Category)) {
+        return
+    }
+
+    if (-not $script:ExcludedSkillStats.ContainsKey($Category)) {
+        $script:ExcludedSkillStats[$Category] = 0
+    }
+    $script:ExcludedSkillStats[$Category] += 1
+}
+
+function Get-ExcludedCategory {
+    param(
+        [string] $Id,
+        [string] $Description,
+        [string] $Path,
+        [array] $Triggers
+    )
+
+    $rawText = "{0} {1} {2} {3}" -f $Id, $Description, $Path, (@($Triggers) -join " ")
+    $normalized = (($rawText.ToLower() -replace "[^a-z0-9]+", " ").Trim())
+    $text = " $normalized "
+
+    foreach ($category in $script:ActiveExcludeCategoryPatterns.Keys) {
+        foreach ($keyword in $script:ActiveExcludeCategoryPatterns[$category]) {
+            $normalizedKeyword = (($keyword.ToLower() -replace "[^a-z0-9]+", " ").Trim())
+            if (-not [string]::IsNullOrWhiteSpace($normalizedKeyword) -and $text.Contains(" $normalizedKeyword ")) {
+                return $category
+            }
+        }
+    }
+
+    if ($script:EnableLlmFromScratchExclusion) {
+        $hasScratchSignal = $false
+        foreach ($pattern in $LLM_FROM_SCRATCH_PATTERNS) {
+            $normalizedPattern = (($pattern.ToLower() -replace "[^a-z0-9]+", " ").Trim())
+            if (-not [string]::IsNullOrWhiteSpace($normalizedPattern) -and $text.Contains(" $normalizedPattern ")) {
+                $hasScratchSignal = $true
+                break
+            }
+        }
+
+        if ($hasScratchSignal) {
+            $hasAppliedSignal = $false
+            foreach ($pattern in $APPLIED_AI_ALLOW_PATTERNS) {
+                $normalizedPattern = (($pattern.ToLower() -replace "[^a-z0-9]+", " ").Trim())
+                if (-not [string]::IsNullOrWhiteSpace($normalizedPattern) -and $text.Contains(" $normalizedPattern ")) {
+                    $hasAppliedSignal = $true
+                    break
+                }
+            }
+
+            if (-not $hasAppliedSignal) {
+                return "llm-from-scratch"
+            }
+        }
+    }
+
+    return $null
 }
 
 function Get-Skillsrc {
@@ -752,6 +997,11 @@ function Load-SkillsFromFiles {
             }
 
             $skillPath = Convert-ToRepoRelativePath -Path $skillFile.FullName
+            $excludedCategory = Get-ExcludedCategory -Id $id -Description $description -Path $skillPath -Triggers @(Build-TriggersFromId -Id $id)
+            if ($excludedCategory) {
+                Add-ExclusionStat -Category $excludedCategory
+                continue
+            }
 
             $skills += [PSCustomObject]@{
                 id = $id
@@ -791,6 +1041,117 @@ function Get-Tokens {
     }
 
     return ([regex]::Matches($Text.ToLower(), "[a-z0-9]+") | ForEach-Object { $_.Value })
+}
+
+function Load-SemanticClassifications {
+    param([string] $FilePath)
+
+    if (-not (Test-Path $FilePath)) {
+        Write-Warning "Semantic classifications file not found: $FilePath"
+        return @{}
+    }
+
+    try {
+        $json = Get-Content -Path $FilePath -Raw -ErrorAction Stop | ConvertFrom-Json -ErrorAction Stop
+        $lookup = @{}
+        
+        if ($json -is [array]) {
+            foreach ($item in $json) {
+                if ($item.skill_id) {
+                    $lookup[$item.skill_id] = $item
+                }
+            }
+        }
+        elseif ($json -is [object]) {
+            $lookup[$json.skill_id] = $json
+        }
+        
+        Write-Host "[✓] Loaded semantic classifications: $($lookup.Count) skills" -ForegroundColor Green
+        return $lookup
+    }
+    catch {
+        Write-Warning "Failed to load semantic classifications: $_"
+        return @{}
+    }
+}
+
+function Get-SemanticScoreForSkill {
+    param(
+        [PSCustomObject] $Skill,
+        [hashtable] $SemanticLookup,
+        [hashtable] $SubHubDefs
+    )
+
+    if (-not $SemanticLookup -or $SemanticLookup.Count -eq 0) {
+        return $null
+    }
+
+    $skillId = $Skill.id.ToLower()
+    $classification = $SemanticLookup[$skillId]
+    
+    if (-not $classification) {
+        return $null
+    }
+
+    # Map semantic hub to our internal hub structure
+    $primaryHub = $classification.primary_hub
+    if ([string]::IsNullOrWhiteSpace($primaryHub)) {
+        return $null
+    }
+
+    # Find best matching internal hub for semantic classification
+    $bestMatch = $null
+    $bestScore = 0
+
+    foreach ($mainHub in $SubHubDefs.Keys) {
+        foreach ($subHub in $SubHubDefs[$mainHub].Keys) {
+            $subHubLower = $subHub.ToLower()
+            $primaryHubLower = $primaryHub.ToLower()
+
+            # Direct match is best (10 points)
+            if ($subHubLower -eq $primaryHubLower) {
+                $bestMatch = @{
+                    main = $mainHub
+                    sub = $subHub
+                    score = 10
+                }
+                break
+            }
+            
+            # Partial match (5-8 points based on overlap)
+            if ($subHubLower.Contains($primaryHubLower) -or $primaryHubLower.Contains($subHubLower)) {
+                if (8 -gt $bestScore) {
+                    $bestScore = 8
+                    $bestMatch = @{
+                        main = $mainHub
+                        sub = $subHub
+                        score = $bestScore
+                    }
+                }
+            }
+        }
+        if ($bestMatch -and $bestMatch.score -eq 10) { break }
+    }
+
+    return $bestMatch
+}
+
+function Blend-KeywordAndSemanticScores {
+    param(
+        [int] $KeywordScore,
+        [int] $SemanticScore,
+        [double] $WeightFactor
+    )
+
+    # WeightFactor = 0.6 means: 60% semantic, 40% keyword
+    $keywordWeight = 1.0 - $WeightFactor
+    
+    # Normalize scores to 0-10 range
+    $normalizedKeyword = [Math]::Min(10, $KeywordScore / 1.5)  # typical keyword score 0-15
+    $normalizedSemantic = $SemanticScore  # already 0-10
+    
+    $blended = ($normalizedKeyword * $keywordWeight) + ($normalizedSemantic * $WeightFactor)
+    return [Math]::Round($blended, 1)
 }
 
 function Get-ScoreForSubHub {
@@ -1110,6 +1471,11 @@ if ($manifestFiles.Count -gt 0) {
 
         foreach ($skill in $manifest.skills) {
             $skillPath = Convert-ToRepoRelativePath -Path $skill.path
+            $excludedCategory = Get-ExcludedCategory -Id $skill.id -Description $skill.description -Path $skillPath -Triggers @($skill.triggers)
+            if ($excludedCategory) {
+                Add-ExclusionStat -Category $excludedCategory
+                continue
+            }
             $skillObj = [PSCustomObject]@{
                 id = $skill.id
                 description = $skill.description
@@ -1124,12 +1490,36 @@ if ($manifestFiles.Count -gt 0) {
     }
 }
 else {
-    Write-Host "[WARN] No hub-manifest.json found in $srcHubsDir; using fallback roots: $($FallbackSkillRoots -join ', ')" -ForegroundColor Yellow
-    $allSkills = Load-SkillsFromFiles -Roots $FallbackSkillRoots
+    $existingFallbackRoots = @($FallbackSkillRoots | Where-Object { Test-Path $_ })
+    if ($existingFallbackRoots.Count -eq 0) {
+        Write-Error "No hub-manifest.json found in $srcHubsDir and no valid fallback roots exist. Checked: $($FallbackSkillRoots -join ', ')"
+        exit 1
+    }
+
+    Write-Host "[INFO] hub-manifest.json not found in $srcHubsDir; using fallback skill discovery from: $($existingFallbackRoots -join ', ')" -ForegroundColor DarkCyan
+    $allSkills = Load-SkillsFromFiles -Roots $existingFallbackRoots
 }
 
 Write-Host "[✓] Loaded $($allSkills.Count) skills from $(($allSkills.src | Select-Object -Unique).Count) srcs"
+if ($script:ExcludedSkillStats.Count -gt 0) {
+    $excludedTotal = ($script:ExcludedSkillStats.Values | Measure-Object -Sum).Sum
+    Write-Host "[INFO] Excluded skills by policy: $excludedTotal" -ForegroundColor Yellow
+    foreach ($key in ($script:ExcludedSkillStats.Keys | Sort-Object)) {
+        Write-Host "  - ${key}: $($script:ExcludedSkillStats[$key])" -ForegroundColor Yellow
+    }
+}
 Write-Host ""
+
+# Load semantic classifications if enabled
+$semanticLookup = @{}
+if ($EnableSemanticScoring) {
+    Write-Host "[INFO] Loading semantic classifications..." -ForegroundColor Cyan
+    $semanticLookup = Load-SemanticClassifications -FilePath $SemanticClassificationsFile
+    if ($semanticLookup.Count -eq 0) {
+        Write-Host "[WARN] Semantic classifications not available; proceeding with keyword-based scoring only" -ForegroundColor Yellow
+        $EnableSemanticScoring = $false
+    }
+}
 
 # Categorize into sub-hubs
 Write-Host "[INFO] Step 2: Categorizing skills into sub-hubs..."
@@ -1139,6 +1529,7 @@ $multiAssignedSkillCount = 0
 $totalAssignments = 0
 $categoryGapSignals = @()
 $uncoveredGapPatterns = @{}
+$reviewCandidates = @()
 
 foreach ($category in $CATEGORY_GAP_PATTERNS.Keys) {
     $mappedMainHub = $category
@@ -1152,7 +1543,72 @@ foreach ($category in $CATEGORY_GAP_PATTERNS.Keys) {
 }
 
 foreach ($skill in $allSkills) {
-    $assignments = @(Get-SkillAssignments -Skill $skill -SubHubDefs $SUB_HUB_DEFINITIONS -EnableMultiHub:$AllowMultiHub -PrimaryThreshold $PrimaryMinScore -SecondaryThreshold $SecondaryMinScore -MaxAssignments $MaxHubsPerSkill)
+    $assignments = @()
+    if ($MANUAL_HUB_OVERRIDES.ContainsKey($skill.id)) {
+        $override = $MANUAL_HUB_OVERRIDES[$skill.id]
+        $assignments = @([PSCustomObject]@{
+                main = $override.main
+                sub = $override.sub
+                key = "$($override.main)-$($override.sub)"
+                score = [int] $override.score
+            })
+    }
+    else {
+        if ($EnableReviewBand) {
+            $sortedMatches = @(Match-Skill-ToSubHub -Skill $skill -SubHubDefs $SUB_HUB_DEFINITIONS)
+            
+            # Apply semantic scoring refinement if available
+            if ($EnableSemanticScoring -and $semanticLookup.Count -gt 0) {
+                $semanticMatch = Get-SemanticScoreForSkill -Skill $skill -SemanticLookup $semanticLookup -SubHubDefs $SUB_HUB_DEFINITIONS
+                if ($semanticMatch) {
+                    # Find matching hub in sortedMatches and boost its score
+                    $semanticHubKey = "$($semanticMatch.main)-$($semanticMatch.sub)"
+                    for ($i = 0; $i -lt $sortedMatches.Count; $i++) {
+                        $matchKey = "$($sortedMatches[$i].main)-$($sortedMatches[$i].sub)"
+                        if ($matchKey -eq $semanticHubKey) {
+                            $blendedScore = Blend-KeywordAndSemanticScores -KeywordScore $sortedMatches[$i].score -SemanticScore $semanticMatch.score -WeightFactor $SemanticWeightFactor
+                            $sortedMatches[$i].score = [int]$blendedScore
+                            $sortedMatches[$i] | Add-Member -NotePropertyName "semantic_boost" -NotePropertyValue $true -Force
+                            break
+                        }
+                    }
+                    # Re-sort after scoring update
+                    $sortedMatches = @($sortedMatches | Sort-Object -Property @{Expression = 'score'; Descending = $true}, @{Expression = 'key'; Descending = $false})
+                }
+            }
+            
+            if ($sortedMatches.Count -gt 0) {
+                $primary = $sortedMatches[0]
+                if ($primary.score -ge $AutoAcceptMinScore) {
+                    $assignments = @(Get-SkillAssignments -Skill $skill -SubHubDefs $SUB_HUB_DEFINITIONS -EnableMultiHub:$AllowMultiHub -PrimaryThreshold $AutoAcceptMinScore -SecondaryThreshold $SecondaryMinScore -MaxAssignments $MaxHubsPerSkill)
+                }
+                elseif ($primary.score -ge $ReviewMinScore) {
+                    $topMatches = @($sortedMatches | Select-Object -First 3)
+                    $reviewCandidates += [ordered]@{
+                        id = $skill.id
+                        path = $skill.path
+                        src = $skill.src
+                        suggested_primary_hub = "$($primary.main)/$($primary.sub)"
+                        suggested_score = [int] $primary.score
+                        semantic_boosted = if ($primary.semantic_boost) { $true } else { $false }
+                        top_matches = @(
+                            $topMatches | ForEach-Object {
+                                [ordered]@{
+                                    hub = "$($_.main)/$($_.sub)"
+                                    score = [int] $_.score
+                                    semantic_boosted = if ($_.semantic_boost) { $true } else { $false }
+                                }
+                            }
+                        )
+                        reason = "review-band"
+                    }
+                }
+            }
+        }
+        else {
+            $assignments = @(Get-SkillAssignments -Skill $skill -SubHubDefs $SUB_HUB_DEFINITIONS -EnableMultiHub:$AllowMultiHub -PrimaryThreshold $PrimaryMinScore -SecondaryThreshold $SecondaryMinScore -MaxAssignments $MaxHubsPerSkill)
+        }
+    }
 
     if ($assignments.Count -eq 0) {
         $unmatchedSkills += $skill
@@ -1201,6 +1657,9 @@ if ($unmatchedSkills.Count -gt 0) {
 }
 
 Write-Host "[✓] Categorized into $($subHubMap.Count) sub-hubs (unmatched routed: $($unmatchedSkills.Count), multi-assigned skills: $multiAssignedSkillCount, total assignments: $totalAssignments)"
+if ($EnableReviewBand) {
+    Write-Host "[INFO] Review candidates (score $ReviewMinScore..$($AutoAcceptMinScore - 1)): $($reviewCandidates.Count)"
+}
 if ($categoryGapSignals.Count -gt 0) {
     Write-Host "[WARN] Potential missing hub categories detected in general/misc:" -ForegroundColor Yellow
     foreach ($signal in $categoryGapSignals) {
@@ -1261,11 +1720,37 @@ foreach ($subHubKey in $subHubMap.Keys) {
 if (-not $DryRun) {
     Write-FileUtf8NoBom -Path (Join-Path $OutputDir "subhub-index.json") -Content (($routingIndex | ConvertTo-Json -Depth 8) + [Environment]::NewLine)
 
+    $reviewFilePath = Join-Path $OutputDir "review-candidates.ndjson"
+    if ($EnableReviewBand -and $reviewCandidates.Count -gt 0) {
+        $reviewLines = @($reviewCandidates | ForEach-Object { ($_ | ConvertTo-Json -Depth 6 -Compress) })
+        Write-FileUtf8NoBom -Path $reviewFilePath -Content (($reviewLines -join [Environment]::NewLine) + [Environment]::NewLine)
+    }
+    else {
+        Write-FileUtf8NoBom -Path $reviewFilePath -Content ""
+    }
+
+    $excludedByCategory = [ordered]@{}
+    foreach ($cat in ($script:ExcludedSkillStats.Keys | Sort-Object)) {
+        $excludedByCategory[$cat] = $script:ExcludedSkillStats[$cat]
+    }
+
     $lockPayload = [ordered]@{
         generated_at = (Get-Date -Format "yyyy-MM-ddTHH:mm:ssK")
         src_repo_mode = $srcRepoMode
         selected_src_repos = @($SelectedsrcRepos)
+        exclude_categories = @($script:EffectiveExcludeCategories)
+        exclusion_stats = [ordered]@{
+            total = if ($script:ExcludedSkillStats.Count -gt 0) { ($script:ExcludedSkillStats.Values | Measure-Object -Sum).Sum } else { 0 }
+            by_category = $excludedByCategory
+        }
         min_skills_per_hub = $MinSkillsPerHub
+        score_policy = [ordered]@{
+            review_band_enabled = [bool] $EnableReviewBand
+            review_min_score = $ReviewMinScore
+            auto_accept_min_score = $AutoAcceptMinScore
+            secondary_min_score = $SecondaryMinScore
+            review_candidates = $reviewCandidates.Count
+        }
         category_gap_threshold = $CategoryGapThreshold
         category_gaps = @(
             $categoryGapSignals | ForEach-Object {
@@ -1303,5 +1788,8 @@ Write-Host "[INFO]   Sub-hubs skipped (< $MIN_SKILLS_PER_HUB skills): $skippedHu
 Write-Host "[INFO]   Total skills in active hubs: $(($routingIndex | ForEach-Object { $_.skill_count } | Measure-Object -Sum).Sum)"
 Write-Host "[INFO]   Skills removed from undersized hubs: $skippedSkillsCount"
 Write-Host "[INFO]   Category-gap signals in misc: $($categoryGapSignals.Count)"
+if ($EnableReviewBand) {
+    Write-Host "[INFO]   Review candidates queued: $($reviewCandidates.Count)"
+}
 Write-Host "[INFO]   Output dir: $OutputDir"
 Write-Host "[INFO] ============================================"
