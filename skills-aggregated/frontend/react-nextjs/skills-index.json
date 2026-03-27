@@ -11,19 +11,6 @@
         "match_score":  4
     },
     {
-        "id":  "cc-skill-coding-standards",
-        "triggers":  [
-                         "cc",
-                         "skill",
-                         "coding",
-                         "standards"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/react-nextjs",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "clerk-auth",
         "triggers":  [
                          "clerk",
@@ -69,18 +56,6 @@
         "match_score":  4
     },
     {
-        "id":  "landing-page-generator",
-        "triggers":  [
-                         "landing",
-                         "page",
-                         "generator"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/react-nextjs",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "netlify-frameworks",
         "triggers":  [
                          "netlify",
@@ -89,7 +64,7 @@
         "src":  "external:context-and-tools",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
-        "match_score":  4
+        "match_score":  14
     },
     {
         "id":  "nextjs-app-router-patterns",

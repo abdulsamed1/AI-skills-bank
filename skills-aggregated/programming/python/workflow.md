@@ -44,16 +44,16 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - mgmt
 - fastapi
 - agents
-- development
 - patterns
-- file
-- sdk
+- development
 - temporal
-- v2
 - cosmos
-- testing
-- opentelemetry
+- file
+- django
+- v2
 - text
+- opentelemetry
+- translation
 
 ## Data Contract
 

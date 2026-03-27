@@ -14,7 +14,7 @@ param(
     [string[]] $ExcludeCategories = @(),
     [Switch] $NoCategoryExclusions = $false,
     [ValidateRange(1, 500)]
-    [int] $MinSkillsPerHub = 10,
+    [int] $MinSkillsPerHub = 5,
     [ValidateRange(1, 500)]
     [int] $CategoryGapThreshold = 30,
     [Switch] $FailOnCategoryGaps = $false,
@@ -350,23 +350,11 @@ Each NDJSON item contains:
 # ============================================================================
 
 $SUB_HUB_DEFINITIONS = @{
-    "general" = @{
-        "misc" = @{
-            keywords = @("skill")
-            negative_keywords = @()
-            description = "General fallback skills that do not confidently match a specialized sub-hub"
-            best_for = @(
-                "Capturing uncategorized capabilities",
-                "Manual review and future taxonomy refinement",
-                "Ensuring zero skill loss during aggregation"
-            )
-        }
-    }
 
     "programming" = @{
         "typescript" = @{
-            keywords = @("typescript", "tsconfig", "tsx", "type-system", "generics", "type-safe")
-            anchor_keywords = @("typescript", "tsconfig", "tsx")
+            keywords = @("typescript", "tsconfig", "tsx", "type-system", "generics", "type-safe", "javascript", "angular", "electron", "fp-ts", "zustand", "node", "eslint", "webpack", "vite", "sanity")
+            anchor_keywords = @("typescript", "tsconfig", "tsx", "angular", "electron")
             negative_keywords = @("python", "golang", "rust", "java", "postgres", "mongodb", "redis", "kubernetes")
             description = "TypeScript language expertise: types, patterns, advanced features, configuration, and best practices"
             best_for = @(
@@ -376,8 +364,8 @@ $SUB_HUB_DEFINITIONS = @{
             )
         }
         "python" = @{
-            keywords = @("python", "py", "django", "fastapi", "async", "asyncio")
-            anchor_keywords = @("python", "py", "django", "fastapi")
+            keywords = @("python", "py", "django", "fastapi", "async", "asyncio", "plotly", "polars", "pandas", "numpy", "scipy", "data-scientist", "data-science", "jupyter", "cirq", "qiskit")
+            anchor_keywords = @("python", "py", "django", "fastapi", "plotly", "polars", "cirq", "qiskit")
             negative_keywords = @("typescript", "golang", "rust", "java")
             description = "Python development: patterns, async, frameworks, and modern Python 3.10+ features"
             best_for = @(
@@ -398,8 +386,8 @@ $SUB_HUB_DEFINITIONS = @{
             )
         }
         "rust" = @{
-            keywords = @("rust", "cargo", "ownership", "lifetimes", "unsafe")
-            anchor_keywords = @("rust", "cargo", "ownership")
+            keywords = @("rust", "cargo", "ownership", "lifetimes", "unsafe", "robius", "bevy")
+            anchor_keywords = @("rust", "cargo", "ownership", "robius")
             negative_keywords = @("typescript", "python", "golang", "java")
             description = "Rust: memory safety, performance, systems programming, and async patterns"
             best_for = @(
@@ -409,8 +397,8 @@ $SUB_HUB_DEFINITIONS = @{
             )
         }
         "java" = @{
-            keywords = @("java", "spring", "maven", "jvm", "virtual-threads")
-            anchor_keywords = @("java", "spring", "jvm", "maven")
+            keywords = @("java", "spring", "maven", "jvm", "virtual-threads", "dotnet", "csharp", "php", "scala", "elixir", "haskell", "cpp", "avalonia", "salesforce", "arm-cortex", "minecraft-bukkit")
+            anchor_keywords = @("java", "spring", "jvm", "maven", "dotnet", "csharp", "php", "scala", "elixir", "haskell", "cpp", "salesforce")
             negative_keywords = @("typescript", "python", "golang", "rust")
             description = "Java development: Spring ecosystem, modern Java features, and JVM optimization"
             best_for = @(
@@ -423,7 +411,7 @@ $SUB_HUB_DEFINITIONS = @{
     
     "frontend" = @{
         "react-nextjs" = @{
-            keywords = @("react", "nextjs", "jsx", "hooks", "server-components", "app-router")
+            keywords = @("react", "nextjs", "jsx", "hooks", "server-components", "app-router", "astro", "svelte", "vue", "remix")
             negative_keywords = @("postgres", "mongodb", "redis", "sql")
             description = "React and Next.js: components, hooks, server-side rendering, and performance optimization"
             best_for = @(
@@ -432,19 +420,8 @@ $SUB_HUB_DEFINITIONS = @{
                 "Server and client component patterns"
             )
         }
-        "ui-ux" = @{
-            keywords = @("ui", "ux", "design", "designer", "wireframe", "prototype", "accessibility", "usability", "design-system", "figma", "interaction")
-            anchor_keywords = @("ui", "ux", "design-system", "wireframe", "accessibility")
-            negative_keywords = @("kubernetes", "docker", "postgres", "mongodb", "redis")
-            description = "UI/UX design: interface design, wireframes, design systems, accessibility, and interaction patterns"
-            best_for = @(
-                "Designing intuitive user interfaces",
-                "Building and maintaining design systems",
-                "Improving usability and accessibility"
-            )
-        }
         "web-basics" = @{
-            keywords = @("html", "css", "javascript", "dom", "responsive", "web-standards")
+            keywords = @("html", "css", "javascript", "dom", "responsive", "web-standards", "pwa", "progressive-web-app", "browser-extension", "chrome-extension", "web-performance", "favicon", "i18n", "localization")
             negative_keywords = @("postgres", "mongodb", "redis", "kubernetes")
             description = "Web fundamentals: HTML, CSS, JavaScript, accessibility, and web standards"
             best_for = @(
@@ -457,7 +434,7 @@ $SUB_HUB_DEFINITIONS = @{
     
     "backend" = @{
         "api-design" = @{
-            keywords = @("api", "rest", "graphql", "openapi", "swagger", "pagination")
+            keywords = @("api", "rest", "graphql", "openapi", "swagger", "pagination", "architecture", "cqrs", "ddd", "event-sourcing", "event-store", "microservices", "projection", "error-handling", "webhook", "stripe", "payment", "odoo", "rails", "monorepo", "clean-code", "refactoring", "code-review", "software-architecture", "domain-driven")
             negative_keywords = @("react", "nextjs", "html", "css")
             description = "API design: REST, GraphQL, and best practices for scalable web services"
             best_for = @(
@@ -467,7 +444,7 @@ $SUB_HUB_DEFINITIONS = @{
             )
         }
         "databases" = @{
-            keywords = @("database", "sql", "postgres", "mongodb", "redis", "nosql", "orm")
+            keywords = @("database", "sql", "postgres", "mongodb", "redis", "nosql", "orm", "data-engineer", "data-pipeline", "dbt", "etl", "spark", "duckdb", "data-quality", "data-warehouse", "migration")
             negative_keywords = @("react", "nextjs", "html", "css", "typescript")
             description = "Database expertise: SQL, NoSQL, schema design, and query optimization"
             best_for = @(
@@ -490,7 +467,7 @@ $SUB_HUB_DEFINITIONS = @{
             )
         }
         "cloud" = @{
-            keywords = @("aws", "gcp", "azure", "cloudflare", "lambda", "serverless")
+            keywords = @("aws", "gcp", "azure", "cloudflare", "lambda", "serverless", "terraform", "devops", "deployment", "devcontainer", "prometheus", "grafana", "observability", "monitoring", "slo", "sli", "incident", "on-call", "postmortem", "ci", "cd", "bazel", "infrastructure", "bash", "linux", "powershell", "windows", "posix", "shell")
             negative_keywords = @("react", "nextjs", "html", "css")
             description = "Cloud platforms: AWS, GCP, Azure, and serverless architecture"
             best_for = @(
@@ -503,7 +480,7 @@ $SUB_HUB_DEFINITIONS = @{
 
     "business" = @{
         "saas" = @{
-            keywords = @("saas", "pricing", "revenue", "arr", "mrr", "churn", "ltv", "cac", "unit-economics", "go-to-market", "gtm", "market-sizing", "tam", "sam", "som", "roadmap", "startup")
+            keywords = @("saas", "pricing", "revenue", "arr", "mrr", "churn", "ltv", "cac", "unit-economics", "go-to-market", "gtm", "market-sizing", "tam", "sam", "som", "roadmap", "startup", "fintech", "alpha-vantage", "risk-metrics", "cohort", "finance", "financial", "metrics", "business-analyst", "business-model", "risk-manager")
             anchor_keywords = @("saas", "arr", "mrr", "unit-economics", "go-to-market", "market-sizing")
             negative_keywords = @("react", "nextjs", "html", "css", "kubernetes", "docker")
             description = "Business and SaaS strategy: pricing, growth metrics, unit economics, market sizing, and go-to-market planning"
@@ -514,8 +491,8 @@ $SUB_HUB_DEFINITIONS = @{
             )
         }
         "product-strategy" = @{
-            keywords = @("product", "strategy", "roadmap", "prd", "stakeholder", "discovery", "market", "positioning", "vision", "prioritization", "alignment", "wds")
-            anchor_keywords = @("product", "strategy", "roadmap", "prd", "wds")
+            keywords = @("product", "strategy", "roadmap", "prd", "stakeholder", "discovery", "market", "positioning", "vision", "prioritization", "alignment", "wds", "user-stories", "user-story", "job-stories", "proto-persona", "persona", "epic", "brainstorming", "brainstorm", "workshop", "pestle", "customer-journey", "user-segmentation", "interview", "problem-framing", "hr", "employment", "team-composition")
+            anchor_keywords = @("product", "strategy", "roadmap", "prd", "wds", "user-stories", "persona", "customer-journey", "workshop")
             negative_keywords = @("react", "nextjs", "html", "css", "kubernetes", "docker")
             description = "Product and business strategy: discovery, roadmaps, prioritization, stakeholder alignment, and strategic planning"
             best_for = @(
@@ -528,7 +505,7 @@ $SUB_HUB_DEFINITIONS = @{
 
     "marketing" = @{
         "strategy" = @{
-            keywords = @("marketing", "strategy", "brand", "positioning", "customer", "audience", "market-analysis", "competitive-analysis", "go-to-market")
+            keywords = @("marketing", "strategy", "brand", "positioning", "customer", "audience", "market-analysis", "competitive-analysis", "go-to-market", "competitor", "outreach", "ideal-customer", "growth", "ua-campaign", "lead-generation", "lead-magnets", "cold-outreach", "acquisition", "sales")
             anchor_keywords = @("marketing-strategy", "brand-strategy", "positioning")
             negative_keywords = @("email", "seo", "content", "social", "copywrite", "html", "css")
             description = "Marketing strategy: brand positioning, customer acquisition, market analysis, and GTM planning"
@@ -539,7 +516,7 @@ $SUB_HUB_DEFINITIONS = @{
             )
         }
         "content" = @{
-            keywords = @("content", "copywriting", "seo", "blog", "article", "writing", "editorial", "keyword", "search-engine", "writing-style", "muscular-prose", "copy-editing", "prose")
+            keywords = @("content", "copywriting", "seo", "blog", "article", "writing", "editorial", "keyword", "search-engine", "writing-style", "muscular-prose", "copy-editing", "prose", "de-ai-ify", "voice-extractor", "proofreader", "homepage-audit", "page-cro", "form-cro", "signup-flow", "case-study", "storytelling", "humanizer", "citation")
             anchor_keywords = @("seo", "content-marketing", "copywriting", "writing-style")
             negative_keywords = @("email", "social", "video", "design", "html", "css")
             description = "Content marketing, SEO & Writing Styles: copywriting, blog strategy, search optimization, and high-quality prose standards"
@@ -561,7 +538,7 @@ $SUB_HUB_DEFINITIONS = @{
             )
         }
         "social" = @{
-            keywords = @("social", "twitter", "linkedin", "instagram", "tiktok", "youtube", "content-calendar", "engagement", "viral", "publisher", "posting", "article-publisher")
+            keywords = @("social", "twitter", "linkedin", "instagram", "tiktok", "youtube", "content-calendar", "engagement", "viral", "publisher", "posting", "article-publisher", "tweet", "x-article", "reddit")
             anchor_keywords = @("social-media", "social-marketing", "twitter-strategy")
             negative_keywords = @("email", "seo", "copywrite")
             description = "Social media marketing: strategy, content distribution, engagement, and multi-platform publishing"
@@ -575,8 +552,8 @@ $SUB_HUB_DEFINITIONS = @{
 
     "security" = @{
         "core" = @{
-            keywords = @("security", "authentication", "authorization", "oauth", "jwt", "encryption", "tls", "ssl", "vulnerability", "secure")
-            anchor_keywords = @("security", "authentication", "oauth", "jwt")
+            keywords = @("security", "authentication", "authorization", "oauth", "jwt", "encryption", "tls", "ssl", "vulnerability", "secure", "burpsuite", "malware", "red-team", "forensics", "binary-analysis", "reverse-engineer", "semgrep", "ffuf", "gdpr", "privacy", "compliance", "pentest", "constant-time", "variant-analysis")
+            anchor_keywords = @("security", "authentication", "oauth", "jwt", "burpsuite", "malware", "red-team", "forensics", "reverse-engineer", "semgrep", "gdpr", "privacy", "pentest")
             negative_keywords = @("marketing", "seo", "newsletter", "ui", "css")
             description = "Application security: authentication, authorization, encryption, and vulnerability hardening"
             best_for = @(
@@ -589,7 +566,7 @@ $SUB_HUB_DEFINITIONS = @{
 
     "testing" = @{
         "automation" = @{
-            keywords = @("testing", "test", "unit-test", "integration-test", "e2e", "qa", "cypress", "playwright", "vitest", "jest", "automation")
+            keywords = @("testing", "test", "unit-test", "integration-test", "e2e", "qa", "cypress", "playwright", "vitest", "jest", "automation", "debug", "debugging", "bug-hunter", "fix-review")
             anchor_keywords = @("testing", "test", "tdd", "test-driven-development", "unit-test", "integration-test", "e2e", "qa")
             negative_keywords = @("marketing", "seo", "newsletter")
             description = "Software testing: unit, integration, E2E, and automated quality workflows"
@@ -600,11 +577,46 @@ $SUB_HUB_DEFINITIONS = @{
             )
         }
     }
+    "design" = @{
+        "ui-ux" = @{
+            keywords = @("ui", "ux", "design", "designer", "wireframe", "prototype", "accessibility", "usability", "design-system", "figma", "interaction", "hig", "swiftui", "wcag", "a11y")
+            anchor_keywords = @("ui", "ux", "design-system", "wireframe", "accessibility", "hig", "swiftui", "wcag")
+            negative_keywords = @("kubernetes", "docker", "postgres", "mongodb", "redis")
+            description = "UI/UX design: interface design, wireframes, design systems, accessibility, and interaction patterns"
+            best_for = @(
+                "Designing intuitive user interfaces",
+                "Building and maintaining design systems",
+                "Improving usability and accessibility"
+            )
+        }
+        "design-thinking" = @{
+            keywords = @("design-thinking", "design-process", "design-strategy", "design-research", "design-sprint", "design-workshop", "double-diamond", "ideation", "empathy-mapping", "user-journey", "service-design")
+            anchor_keywords = @("design-thinking", "design-sprint", "design-workshop", "double-diamond", "service-design")
+            negative_keywords = @("marketing", "seo", "newsletter")
+            description = "Design Thinking: human-centered design methodology, strategic discovery, workshops, and innovation frameworks."
+            best_for = @(
+                "Mapping user psychology to business goals",
+                "Facilitating multi-stakeholder workshops",
+                "Solving complex, ambiguous product problems"
+            )
+        }
+        "brand-guidelines" = @{
+            keywords = @("brand-guidelines", "brand-strategy", "brand-identity", "visual-identity", "brand-voice", "brand-archetype", "logo-usage", "color-palette", "typography", "style-guide")
+            anchor_keywords = @("brand-guidelines", "brand-identity", "visual-identity", "style-guide")
+            negative_keywords = @("marketing", "seo", "newsletter")
+            description = "Brand Identity & Guidelines: visual systems, brand strategy, voice and tone, and identity governance."
+            best_for = @(
+                "Establishing consistent visual identities",
+                "Defining brand voice and communication standards",
+                "Creating and maintaining comprehensive style guides"
+            )
+        }
+    }
 
     "ai" = @{
         "llm-agents" = @{
-            keywords = @("llm", "gpt", "prompt", "rag", "embedding", "vector", "agent", "transformer", "chatbot", "fine-tuning")
-            anchor_keywords = @("llm", "gpt", "rag", "agent")
+            keywords = @("llm", "gpt", "prompt", "rag", "embedding", "vector", "agent", "transformer", "chatbot", "fine-tuning", "claude", "context", "fal", "hugging", "ml", "nlp", "voice-ai", "notebooklm", "stability", "image-studio", "computer-vision", "ml-engineer", "mlops", "machine-learning", "deep-research", "ai-studio", "mcp", "model")
+            anchor_keywords = @("llm", "gpt", "rag", "agent", "claude", "hugging", "ml-engineer", "mlops", "mcp", "fal", "computer-vision")
             negative_keywords = @("newsletter", "seo", "css", "html")
             description = "AI engineering: LLM prompting, RAG pipelines, embeddings, and autonomous agent patterns"
             best_for = @(
@@ -638,12 +650,13 @@ $SUB_HUB_DEFINITIONS = @{
                 "Providing an interactive skills builder experience"
             )
         }
+    
     }
 
     "productivity" = @{
         "workflow-automation" = @{
-            keywords = @("productivity", "workflow", "automation", "automate", "automated", "automates", "task-management", "project-management", "agile", "scrum", "kanban", "notion", "planning", "orchestration", "orchestrate", "orchestrator", "agentic", "autonomous", "n8n", "zapier", "make", "langgraph", "crewai", "autogen", "tool-calling", "pipeline")
-            anchor_keywords = @("workflow", "automation", "productivity", "orchestration", "orchestrate", "orchestrator", "agentic", "n8n", "zapier", "langgraph", "crewai")
+            keywords = @("productivity", "workflow", "automation", "automate", "automated", "automates", "task-management", "project-management", "agile", "scrum", "kanban", "notion", "planning", "orchestration", "orchestrate", "orchestrator", "agentic", "autonomous", "n8n", "zapier", "make", "langgraph", "crewai", "autogen", "tool-calling", "pipeline", "bmad", "commit", "git", "pr", "wiki", "ship", "issue", "diary", "daily", "conductor", "plan", "sprint", "standup", "documentation", "docs", "readme", "changelog", "onboarding", "tutorial", "obsidian", "json-canvas", "pdf", "pptx", "xlsx", "draw", "file-organizer", "kaizen", "closed-loop", "slack-bot", "telegram-bot", "chat-widget", "twilio")
+            anchor_keywords = @("workflow", "automation", "productivity", "orchestration", "orchestrate", "orchestrator", "agentic", "n8n", "zapier", "langgraph", "crewai", "bmad", "git", "conductor", "obsidian", "wiki")
             negative_keywords = @("encryption", "oauth", "jwt", "unit-test", "integration-test", "e2e", "qa")
             description = "Productivity and automation: workflow automation, agentic orchestration, project delivery, and tool-connected process automation"
             best_for = @(
@@ -656,8 +669,8 @@ $SUB_HUB_DEFINITIONS = @{
 
     "mobile" = @{
         "cross-platform" = @{
-            keywords = @("mobile", "android", "ios", "react-native", "flutter", "swift", "kotlin", "mobile-app")
-            anchor_keywords = @("mobile", "android", "ios", "react-native", "flutter")
+            keywords = @("mobile", "android", "ios", "react-native", "flutter", "swift", "kotlin", "mobile-app", "app-clip", "app-store", "crash-analytics", "expo", "macos", "tuist", "xcode", "swiftpm")
+            anchor_keywords = @("mobile", "android", "ios", "react-native", "flutter", "app-store", "expo", "macos", "swift")
             negative_keywords = @("seo", "newsletter", "email-marketing")
             description = "Mobile development: iOS, Android, and cross-platform application engineering"
             best_for = @(
@@ -672,7 +685,7 @@ $SUB_HUB_DEFINITIONS = @{
 $CATEGORY_GAP_PATTERNS = @{
     "business" = @("saas", "pricing", "revenue", "arr", "mrr", "churn", "ltv", "cac", "unit-economics", "market-sizing", "tam", "sam", "som", "go-to-market", "startup")
     "product-strategy" = @("product", "roadmap", "prd", "stakeholder", "prioritization", "discovery", "strategy", "wds")
-    "ui-ux" = @("ui", "ux", "wireframe", "prototype", "design-system", "accessibility", "usability", "figma")
+    "ui-ux" = @("ui", "ux", "wireframe", "prototype", "design-system", "accessibility", "usability", "figma", "design-thinking", "brand-guidelines")
     "marketing" = @("marketing", "seo", "email", "newsletter", "campaign", "audience", "publisher", "social-media", "content-marketing")
     "security" = @("security", "auth", "authentication", "authorization", "oauth", "jwt", "encryption", "tls", "ssl", "vulnerability")
     "testing" = @("test", "testing", "unit-test", "integration-test", "e2e", "qa", "cypress", "vitest", "jest", "playwright", "playwright-test", "black-box", "white-box", "grey-box")
@@ -743,14 +756,15 @@ $MANUAL_HUB_OVERRIDES = @{
     "threejs-skills"               = @{ main = "design"; sub = "ui-ux"; score = 100 }
     "threejs-textures"             = @{ main = "design"; sub = "ui-ux"; score = 100 }
     "google-stitch"                = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "brand-guidelines-anthropic"   = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "brand-guidelines-community"   = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "brand-guidelines-anthropic"   = @{ main = "design"; sub = "brand-guidelines"; score = 100 }
+    "brand-guidelines-community"   = @{ main = "design"; sub = "brand-guidelines"; score = 100 }
+    "brand-guidelines"             = @{ main = "design"; sub = "brand-guidelines"; score = 100 }
     "beautiful-prose"              = @{ main = "marketing"; sub = "content"; score = 100 }
-    "vexor"                        = @{ main = "general"; sub = "misc"; score = 100 }
-    "vexor-cli"                    = @{ main = "general"; sub = "misc"; score = 100 }
+    "vexor"                        = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "vexor-cli"                    = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
     "linear-claude-skill"          = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
     "scientific-writing"           = @{ main = "marketing"; sub = "content"; score = 100 }
-    "apify-ultimate-scraper"       = @{ main = "general"; sub = "misc"; score = 100 }
+    "apify-ultimate-scraper"       = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
     # =========================================================================
     # TARGET: frontend/web-basics
     # =========================================================================
@@ -858,19 +872,19 @@ $MANUAL_HUB_OVERRIDES = @{
     # =========================================================================
     # TARGET: general/misc
     # =========================================================================
-    "latex-paper-conversion"       = @{ main = "general"; sub = "misc"; score = 100 }
-    "sankhya-dashboard-html-jsp-custom-best-pratices" = @{ main = "general"; sub = "misc"; score = 100 }
-    "ml-engineer"                  = @{ main = "general"; sub = "misc"; score = 100 }
-    "dbt-transformation-patterns"  = @{ main = "general"; sub = "misc"; score = 100 }
-    "data-quality-frameworks"      = @{ main = "general"; sub = "misc"; score = 100 }
-    "data-engineering-data-driven-feature" = @{ main = "general"; sub = "misc"; score = 100 }
-    "leiloeiro-risco"              = @{ main = "general"; sub = "misc"; score = 100 }
-    "polars"                       = @{ main = "general"; sub = "misc"; score = 100 }
-    "carrier-relationship-management" = @{ main = "general"; sub = "misc"; score = 100 }
-    "logistics-exception-management" = @{ main = "general"; sub = "misc"; score = 100 }
-    "returns-reverse-logistics"    = @{ main = "general"; sub = "misc"; score = 100 }
-    "yes-md"                       = @{ main = "general"; sub = "misc"; score = 100 }
-    "notebooklm"                   = @{ main = "general"; sub = "misc"; score = 100 }
+    "latex-paper-conversion"       = @{ main = "marketing"; sub = "content"; score = 100 }
+    "sankhya-dashboard-html-jsp-custom-best-pratices" = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "ml-engineer"                  = @{ main = "ai"; sub = "llm-agents"; score = 100 }
+    "dbt-transformation-patterns"  = @{ main = "backend"; sub = "databases"; score = 100 }
+    "data-quality-frameworks"      = @{ main = "backend"; sub = "databases"; score = 100 }
+    "data-engineering-data-driven-feature" = @{ main = "backend"; sub = "databases"; score = 100 }
+    "leiloeiro-risco"              = @{ main = "business"; sub = "saas"; score = 100 }
+    "polars"                       = @{ main = "programming"; sub = "python"; score = 100 }
+    "carrier-relationship-management" = @{ main = "business"; sub = "saas"; score = 100 }
+    "logistics-exception-management" = @{ main = "business"; sub = "saas"; score = 100 }
+    "returns-reverse-logistics"    = @{ main = "business"; sub = "saas"; score = 100 }
+    "yes-md"                       = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "notebooklm"                   = @{ main = "ai"; sub = "llm-agents"; score = 100 }
    
     # =========================================================================
     # TARGET: devops/cloud
@@ -969,9 +983,9 @@ $MANUAL_HUB_OVERRIDES = @{
 }
 
 $EXCLUDE_CATEGORY_PATTERNS = [ordered]@{
-    "games" = @("game", "games", "gaming", "gameplay", "unity", "unreal", "godot")
-    "law-legal" = @("law", "legal", "lawyer", "attorney", "litigation", "court", "jurisdiction", "legal system", "legal systems")
-    "medicine-medical" = @("medicine", "medical", "clinical", "healthcare", "diagnosis", "patient", "hospital")
+    "games" = @("game", "games", "gaming", "gameplay", "unity", "unreal", "godot", "2d-games", "3d-games", "pc-games", "web-games", "multiplayer", "game-audio", "game-design")
+    "law-legal" = @("law", "legal", "lawyer", "attorney", "litigation", "court", "jurisdiction", "advogado", "leiloeiro", "juridico", "nda", "contract-templates")
+    "medicine-medical" = @("medicine", "medical", "clinical", "healthcare", "diagnosis", "patient", "hospital", "health-analyzer", "tcm-constitution", "oral-health", "skin-health", "mental-health", "sexual-health", "fitness-analyzer", "sleep-analyzer", "nutrition-analyzer", "rehabilitation", "weightloss", "wellally", "occupational-health", "family-health", "travel-health", "goal-analyzer", "fda-food-safety", "fda-medtech")
     "pharmacy" = @("pharmacy", "pharmaceutical", "pharmacology", "drug discovery", "medication")
     "biology" = @("biology", "biological", "genomics", "protein", "cell biology", "bioinformatics")
     "chemistry" = @("chemistry", "chemical", "molecule", "molecular", "organic chemistry", "chemical reaction")
@@ -1896,11 +1910,12 @@ foreach ($skill in $allSkills) {
     }
 
     if ($assignments.Count -eq 0) {
-        # SAFETY NET (Approved Policy 2A): Route unclassified non-empty skills to general/misc
+        # No general/misc fallback — route unclassified to productivity as last resort
+        Write-Host "[WARN] Skill '$($skill.id)' unclassified — routing to productivity/workflow-automation" -ForegroundColor Yellow
         $assignments = @([PSCustomObject]@{
-            main = "general"
-            sub = "misc"
-            key = "general-misc"
+            main = "productivity"
+            sub = "workflow-automation"
+            key = "productivity-workflow-automation"
             score = 4
         })
     }
@@ -1977,8 +1992,9 @@ foreach ($subHubKey in $subHubMap.Keys) {
     # Deduplicate
     $uniqueSkills = Deduplicate-Skills -Skills $subHubData.skills
     
-    # Skip hubs with fewer than minimum required skills
-    if ($uniqueSkills.Count -lt $MIN_SKILLS_PER_HUB) {
+    # Skip hubs with fewer than minimum required skills, EXCEPT if protected
+    $PROTECTED_HUBS = @("design-brand-guidelines", "design-design-thinking")
+    if ($uniqueSkills.Count -lt $MIN_SKILLS_PER_HUB -and $PROTECTED_HUBS -notcontains $subHubKey) {
         Write-Host "[!] $subHubKey skipped: $($uniqueSkills.Count) skills < $MIN_SKILLS_PER_HUB min" -ForegroundColor Yellow
         $skippedHubsCount++
         $skippedSkillsCount += $uniqueSkills.Count

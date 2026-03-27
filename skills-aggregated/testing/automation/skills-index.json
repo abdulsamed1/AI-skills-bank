@@ -36,17 +36,6 @@
         "match_score":  9
     },
     {
-        "id":  "ai-md",
-        "triggers":  [
-                         "ai",
-                         "md"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "android_ui_verification",
         "triggers":  [
                          "android_ui_verification"
@@ -134,18 +123,6 @@
         "match_score":  9
     },
     {
-        "id":  "bats-testing-patterns",
-        "triggers":  [
-                         "bats",
-                         "testing",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
         "id":  "bmad-agent-qa",
         "triggers":  [
                          "bmad",
@@ -172,17 +149,6 @@
         "match_score":  13
     },
     {
-        "id":  "bmad-tea",
-        "triggers":  [
-                         "bmad",
-                         "tea"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "bmad-teach-me-testing",
         "triggers":  [
                          "bmad",
@@ -194,30 +160,6 @@
         "primary_hub":  "testing/automation",
         "is_primary":  true,
         "match_score":  11
-    },
-    {
-        "id":  "bmad-testarch-atdd",
-        "triggers":  [
-                         "bmad",
-                         "testarch",
-                         "atdd"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "bmad-testarch-ci",
-        "triggers":  [
-                         "bmad",
-                         "testarch",
-                         "ci"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "bmad-testarch-framework",
@@ -232,43 +174,6 @@
         "match_score":  19
     },
     {
-        "id":  "bmad-testarch-nfr",
-        "triggers":  [
-                         "bmad",
-                         "testarch",
-                         "nfr"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "bmad-testarch-test-review",
-        "triggers":  [
-                         "bmad",
-                         "testarch",
-                         "test",
-                         "review"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "bmad-testarch-trace",
-        "triggers":  [
-                         "bmad",
-                         "testarch",
-                         "trace"
-                     ],
-        "src":  "internal:BMad",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "browser-automation",
         "triggers":  [
                          "browser",
@@ -277,7 +182,18 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "testing/automation",
         "is_primary":  true,
-        "match_score":  18
+        "match_score":  20
+    },
+    {
+        "id":  "bug-hunter",
+        "triggers":  [
+                         "bug",
+                         "hunter"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "circleci-automation",
@@ -311,7 +227,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "testing/automation",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  13
     },
     {
         "id":  "debugging-strategies",
@@ -323,6 +239,19 @@
         "primary_hub":  "testing/automation",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "debugging-toolkit-smart-debug",
+        "triggers":  [
+                         "debugging",
+                         "toolkit",
+                         "smart",
+                         "debug"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "deployment-validation-config-validate",
@@ -373,57 +302,11 @@
         "match_score":  9
     },
     {
-        "id":  "evaluation",
-        "triggers":  [
-                         "evaluation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "expo-dev-client",
-        "triggers":  [
-                         "expo",
-                         "dev",
-                         "client"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "ffuf-web-fuzzing",
         "triggers":  [
                          "ffuf",
                          "web",
                          "fuzzing"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "github-actions-templates",
-        "triggers":  [
-                         "github",
-                         "actions",
-                         "templates"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "gitlab-ci-patterns",
-        "triggers":  [
-                         "gitlab",
-                         "ci",
-                         "patterns"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "testing/automation",
@@ -524,17 +407,6 @@
         "match_score":  7
     },
     {
-        "id":  "pentest-checklist",
-        "triggers":  [
-                         "pentest",
-                         "checklist"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "pentest-commands",
         "triggers":  [
                          "pentest",
@@ -568,7 +440,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "testing/automation",
         "is_primary":  true,
-        "match_score":  13
+        "match_score":  17
     },
     {
         "id":  "privilege-escalation-methods",
@@ -661,19 +533,6 @@
         "match_score":  7
     },
     {
-        "id":  "semgrep-rule-variant-creator",
-        "triggers":  [
-                         "semgrep",
-                         "rule",
-                         "variant",
-                         "creator"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "shodan-reconnaissance",
         "triggers":  [
                          "shodan",
@@ -693,7 +552,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "testing/automation",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  13
     },
     {
         "id":  "test-automator",

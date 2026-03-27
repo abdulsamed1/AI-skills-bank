@@ -38,22 +38,22 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - wds
 - bmad
 - prd
-- error
 - strategy
-- analysis
-- advisor
-- app
 - brainstorm
-- patterns
-- backend
-- optimization
+- advisor
 - user
-- existing
+- app
+- workshop
+- optimization
+- mapping
+- readiness
+- assumptions
+- interview
 - new
 - market
-- readiness
+- existing
 - story
-- assumptions
+- onboarding
 
 ## Data Contract
 

@@ -34,26 +34,26 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 ## Quick Trigger Hints
 
-- typescript
 - ts
+- typescript
+- azure
+- angular
 - fp
 - javascript
+- storage
 - expert
+- development
+- practices
+- best
 - pro
+- migration
+- queue
 - scaffold
-- flow
 - zustand
-- types
-- zod
-- modern
-- errors
-- sdk
-- node
-- patterns
-- m365
-- guidelines
-- react
-- pragmatic
+- tinybird
+- postgres
+- specialist
+- ai
 
 ## Data Contract
 

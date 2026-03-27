@@ -22,18 +22,6 @@
         "match_score":  6
     },
     {
-        "id":  "cold-outreach-sequence",
-        "triggers":  [
-                         "cold",
-                         "outreach",
-                         "sequence"
-                     ],
-        "src":  "external:ai-marketing-skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  1
-    },
-    {
         "id":  "email-marketing-bible",
         "triggers":  [
                          "email",
@@ -102,29 +90,6 @@
         "match_score":  7
     },
     {
-        "id":  "odoo-qweb-templates",
-        "triggers":  [
-                         "odoo",
-                         "qweb",
-                         "templates"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  1
-    },
-    {
-        "id":  "outreach-specialist",
-        "triggers":  [
-                         "outreach",
-                         "specialist"
-                     ],
-        "src":  "external:founder-skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  1
-    },
-    {
         "id":  "revops",
         "triggers":  [
                          "revops"
@@ -133,27 +98,5 @@
         "primary_hub":  "marketing/email",
         "is_primary":  true,
         "match_score":  100
-    },
-    {
-        "id":  "ua-campaign",
-        "triggers":  [
-                         "ua",
-                         "campaign"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  1
-    },
-    {
-        "id":  "user-segmentation",
-        "triggers":  [
-                         "user",
-                         "segmentation"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  1
     }
 ]

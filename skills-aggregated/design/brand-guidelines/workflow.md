@@ -1,8 +1,8 @@
-# general / misc
+# design / brand-guidelines
 
 ## Purpose
 
-General fallback skills that do not confidently match a specialized sub-hub
+Brand Identity & Guidelines: visual systems, brand strategy, voice and tone, and identity governance.
 
 This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub Copilot) with minimal context overhead.
 
@@ -28,32 +28,16 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 ## Recommended Use Cases
 
-- Capturing uncategorized capabilities
-- Manual review and future taxonomy refinement
-- Ensuring zero skill loss during aggregation
+- Establishing consistent visual identities
+- Defining brand voice and communication standards
+- Creating and maintaining comprehensive style guides
 
 ## Quick Trigger Hints
 
-- bmad
-- review
-- context
-- design
-- analyzer
-- code
-- skill
-- hig
-- pro
-- project
-- odoo
-- management
-- builder
-- patterns
-- claude
-- health
-- data
-- setup
-- analysis
-- performance
+- guidelines
+- brand
+- anthropic
+- community
 
 ## Data Contract
 

@@ -97,7 +97,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/rust",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  11
     },
     {
         "id":  "makepad-animation",
@@ -254,6 +254,66 @@
         "primary_hub":  "programming/rust",
         "is_primary":  true,
         "match_score":  5
+    },
+    {
+        "id":  "robius-app-architecture",
+        "triggers":  [
+                         "robius",
+                         "app",
+                         "architecture"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "robius-event-action",
+        "triggers":  [
+                         "robius",
+                         "event",
+                         "action"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "robius-matrix-integration",
+        "triggers":  [
+                         "robius",
+                         "matrix",
+                         "integration"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "robius-state-management",
+        "triggers":  [
+                         "robius",
+                         "state",
+                         "management"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "robius-widget-patterns",
+        "triggers":  [
+                         "robius",
+                         "widget",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/rust",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "rust-async-patterns",

@@ -34,26 +34,26 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 ## Quick Trigger Hints
 
-- api
-- documentation
-- patterns
-- dev
-- azure
-- development
-- builder
-- architecture
-- graphql
-- dotnet
-- ai
-- mgmt
-- expert
 - odoo
-- fp
+- api
+- architecture
+- patterns
 - architect
+- code
+- expert
+- c4
+- review
+- integration
+- development
+- design
+- builder
+- ddd
+- dev
+- refactoring
+- fp
 - gemini
-- database
+- clean
 - backend
-- bdistill
 
 ## Data Contract
 

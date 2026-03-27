@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Productivity and automation: workflow automation, agentic orchestration, project delivery, and tool-connected process automation
+UI/UX design: interface design, wireframes, design systems, accessibility, and interaction patterns
 
 This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub Copilot) with minimal context overhead.
 
@@ -28,32 +28,32 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 ## Recommended Use Cases
 
-- Automating repetitive delivery tasks
-- Structuring team workflows and agentic pipelines
-- Improving execution velocity with orchestration tools
+- Designing intuitive user interfaces
+- Building and maintaining design systems
+- Improving usability and accessibility
 
 ## Quick Trigger Hints
 
-- threejs
-- figma
-- animation
-- guidelines
+- ui
 - design
-- brand
-- geometry
-- lighting
-- experience
-- rules
-- generate
-- nerdzao
-- fundamentals
-- skills
-- textures
-- community
-- react:components
-- create
+- threejs
+- hig
+- components
+- figma
+- ux
+- patterns
 - system
-- anthropic
+- swiftui
+- frontend
+- audit
+- skills
+- accessibility
+- wds
+- create
+- project
+- bmad
+- zafiro
+- skill
 
 ## Data Contract
 

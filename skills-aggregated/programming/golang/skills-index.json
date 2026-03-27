@@ -11,17 +11,6 @@
         "match_score":  20
     },
     {
-        "id":  "elixir-pro",
-        "triggers":  [
-                         "elixir",
-                         "pro"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/golang",
-        "is_primary":  true,
-        "match_score":  1
-    },
-    {
         "id":  "go-concurrency-patterns",
         "triggers":  [
                          "go",
@@ -54,18 +43,6 @@
         "primary_hub":  "programming/golang",
         "is_primary":  true,
         "match_score":  20
-    },
-    {
-        "id":  "lightning-channel-factories",
-        "triggers":  [
-                         "lightning",
-                         "channel",
-                         "factories"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/golang",
-        "is_primary":  true,
-        "match_score":  1
     },
     {
         "id":  "temporal-golang-pro",

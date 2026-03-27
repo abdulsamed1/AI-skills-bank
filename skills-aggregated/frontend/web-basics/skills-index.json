@@ -11,10 +11,9 @@
         "match_score":  4
     },
     {
-        "id":  "bun-development",
+        "id":  "favicon",
         "triggers":  [
-                         "bun",
-                         "development"
+                         "favicon"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/web-basics",
@@ -30,7 +29,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/web-basics",
         "is_primary":  true,
-        "match_score":  4
+        "match_score":  6
     },
     {
         "id":  "fixing-motion-performance",
@@ -112,6 +111,17 @@
         "match_score":  4
     },
     {
+        "id":  "i18n-localization",
+        "triggers":  [
+                         "i18n",
+                         "localization"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/web-basics",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
         "id":  "netlify-edge-functions",
         "triggers":  [
                          "netlify",
@@ -135,18 +145,6 @@
         "match_score":  4
     },
     {
-        "id":  "netlify-image-cdn",
-        "triggers":  [
-                         "netlify",
-                         "image",
-                         "cdn"
-                     ],
-        "src":  "external:context-and-tools",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "pdf-official",
         "triggers":  [
                          "pdf",
@@ -156,6 +154,18 @@
         "primary_hub":  "frontend/web-basics",
         "is_primary":  true,
         "match_score":  4
+    },
+    {
+        "id":  "progressive-web-app",
+        "triggers":  [
+                         "progressive",
+                         "web",
+                         "app"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/web-basics",
+        "is_primary":  true,
+        "match_score":  6
     },
     {
         "id":  "tailwind-patterns",
@@ -175,17 +185,6 @@
                          "factory"
                      ],
         "src":  "external:skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "wiki-vitepress",
-        "triggers":  [
-                         "wiki",
-                         "vitepress"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "frontend/web-basics",
         "is_primary":  true,
         "match_score":  4

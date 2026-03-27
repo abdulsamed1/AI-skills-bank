@@ -37,23 +37,23 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - makepad
 - rust
 - azure
-- keyvault
+- robius
 - patterns
+- keyvault
+- event
+- action
 - async
-- bevy
-- platform
-- animation
 - programming
-- storage
-- widgets
+- app
+- animation
 - secrets
+- platform
+- bevy
+- storage
+- configuration
 - blob
 - ecs
-- keys
 - reference
-- zeroize
-- dsl
-- configuration
 
 ## Data Contract
 

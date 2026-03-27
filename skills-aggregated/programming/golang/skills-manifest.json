@@ -3,23 +3,19 @@
     "main_hub":  "programming",
     "sub_hub":  "golang",
     "description":  "Go programming: concurrency patterns, microservices, and system programming",
-    "skill_count":  7,
+    "skill_count":  5,
     "src_count":  1,
     "top_triggers":  [
                          "golang",
                          "pro",
-                         "grpc",
                          "dbos",
-                         "temporal",
                          "patterns",
-                         "elixir",
-                         "factories",
-                         "lightning",
+                         "go",
+                         "temporal",
                          "concurrency",
-                         "channel",
-                         "go"
+                         "grpc"
                      ],
-    "generated_at":  "2026-03-27T12:36:55+02:00",
+    "generated_at":  "2026-03-27T14:01:18+02:00",
     "files":  {
                   "skill":  "SKILL.md",
                   "workflow":  "workflow.md",

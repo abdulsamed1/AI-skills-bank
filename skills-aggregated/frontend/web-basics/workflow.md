@@ -35,24 +35,24 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 ## Quick Trigger Hints
 
 - gsap
-- netlify
 - fixing
+- netlify
+- app
 - edge
-- slides
 - algorithmic
-- frontend
-- development
-- core
 - health
+- slides
+- core
+- react
 - official
 - performance
-- vitepress
-- pdf
 - analyzer
-- factory
-- xss
+- pdf
 - patterns
-- react
+- xss
+- factory
+- progressive
+- html
 - tailwind
 
 ## Data Contract

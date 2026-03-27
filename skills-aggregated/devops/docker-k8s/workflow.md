@@ -37,23 +37,22 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - expert
 - k8s
 - kubernetes
-- container
-- windows
-- security
 - linkerd
+- container
+- security
 - patterns
 - generator
 - mesh
 - c4
 - service
-- vm
 - policies
+- manifest
 - architect
 - docker
-- manifest
 - scaffolding
 - chart
 - helm
+- deployment
 
 ## Data Contract
 

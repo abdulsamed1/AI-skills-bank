@@ -100,19 +100,6 @@
         "match_score":  7
     },
     {
-        "id":  "azure-ai-textanalytics-py",
-        "triggers":  [
-                         "azure",
-                         "ai",
-                         "textanalytics",
-                         "py"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/python",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "azure-ai-transcription-py",
         "triggers":  [
                          "azure",
@@ -502,20 +489,9 @@
         "match_score":  13
     },
     {
-        "id":  "biopython",
+        "id":  "cirq",
         "triggers":  [
-                         "biopython"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/python",
-        "is_primary":  true,
-        "match_score":  12
-    },
-    {
-        "id":  "copilot-sdk",
-        "triggers":  [
-                         "copilot",
-                         "sdk"
+                         "cirq"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
@@ -671,6 +647,26 @@
         "match_score":  7
     },
     {
+        "id":  "plotly",
+        "triggers":  [
+                         "plotly"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "polars",
+        "triggers":  [
+                         "polars"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "pydantic-models-py",
         "triggers":  [
                          "pydantic",
@@ -765,6 +761,16 @@
         "match_score":  12
     },
     {
+        "id":  "qiskit",
+        "triggers":  [
+                         "qiskit"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "scanpy",
         "triggers":  [
                          "scanpy"
@@ -789,17 +795,6 @@
         "id":  "seaborn",
         "triggers":  [
                          "seaborn"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/python",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "snowflake-development",
-        "triggers":  [
-                         "snowflake",
-                         "development"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
@@ -874,20 +869,6 @@
         "match_score":  12
     },
     {
-        "id":  "using-tmux-for-interactive-commands",
-        "triggers":  [
-                         "using",
-                         "tmux",
-                         "for",
-                         "interactive",
-                         "commands"
-                     ],
-        "src":  "external:superpowers-lab",
-        "primary_hub":  "programming/python",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "whatsapp-cloud-api",
         "triggers":  [
                          "whatsapp",
@@ -905,18 +886,6 @@
                          "xlsx"
                      ],
         "src":  "external:skills",
-        "primary_hub":  "programming/python",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "xvary-stock-research",
-        "triggers":  [
-                         "xvary",
-                         "stock",
-                         "research"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7

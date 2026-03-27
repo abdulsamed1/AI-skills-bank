@@ -38,22 +38,22 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - social
 - x
 - content
-- writer
+- article
 - analysis
+- publisher
+- generator
 - linkedin
 - influencer
-- generator
-- publisher
-- viral
 - paid
 - orchestrator
-- discovery
-- article
-- magnet
 - ads
-- analytics
+- discovery
+- magnet
 - hook
+- analytics
+- viral
 - twitter
+- audience
 
 ## Data Contract
 

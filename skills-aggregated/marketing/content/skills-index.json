@@ -19,7 +19,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
-        "match_score":  11
+        "match_score":  15
     },
     {
         "id":  "aso-audit",
@@ -81,14 +81,12 @@
         "match_score":  100
     },
     {
-        "id":  "bmad-editorial-review-prose",
+        "id":  "citation-management",
         "triggers":  [
-                         "bmad",
-                         "editorial",
-                         "review",
-                         "prose"
+                         "citation",
+                         "management"
                      ],
-        "src":  "internal:BMad",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
         "match_score":  5
@@ -226,27 +224,16 @@
         "match_score":  5
     },
     {
-        "id":  "hig-components-content",
+        "id":  "latex-paper-conversion",
         "triggers":  [
-                         "hig",
-                         "components",
-                         "content"
+                         "latex",
+                         "paper",
+                         "conversion"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "lead-magnets",
-        "triggers":  [
-                         "lead",
-                         "magnets"
-                     ],
-        "src":  "external:marketingskills",
-        "primary_hub":  "marketing/content",
-        "is_primary":  true,
-        "match_score":  10
+        "match_score":  100
     },
     {
         "id":  "localization",
@@ -259,14 +246,12 @@
         "match_score":  5
     },
     {
-        "id":  "local-legal-seo-audit",
+        "id":  "page-cro",
         "triggers":  [
-                         "local",
-                         "legal",
-                         "seo",
-                         "audit"
+                         "page",
+                         "cro"
                      ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:marketingskills",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
         "match_score":  7
@@ -303,17 +288,6 @@
         "primary_hub":  "marketing/content",
         "is_primary":  true,
         "match_score":  100
-    },
-    {
-        "id":  "sales-enablement",
-        "triggers":  [
-                         "sales",
-                         "enablement"
-                     ],
-        "src":  "external:marketingskills",
-        "primary_hub":  "marketing/content",
-        "is_primary":  true,
-        "match_score":  4
     },
     {
         "id":  "schema-markup",
@@ -510,7 +484,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
-        "match_score":  11
+        "match_score":  13
     },
     {
         "id":  "seo-hreflang",

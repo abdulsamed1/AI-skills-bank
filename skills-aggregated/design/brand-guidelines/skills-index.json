@@ -1,0 +1,37 @@
+[
+    {
+        "id":  "brand-guidelines",
+        "triggers":  [
+                         "brand",
+                         "guidelines"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "design/brand-guidelines",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "brand-guidelines-anthropic",
+        "triggers":  [
+                         "brand",
+                         "guidelines",
+                         "anthropic"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "design/brand-guidelines",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "brand-guidelines-community",
+        "triggers":  [
+                         "brand",
+                         "guidelines",
+                         "community"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "design/brand-guidelines",
+        "is_primary":  true,
+        "match_score":  100
+    }
+]

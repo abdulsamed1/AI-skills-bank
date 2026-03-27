@@ -1,5 +1,162 @@
 [
     {
+        "id":  "angular",
+        "triggers":  [
+                         "angular"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "angular-best-practices",
+        "triggers":  [
+                         "angular",
+                         "best",
+                         "practices"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "angular-migration",
+        "triggers":  [
+                         "angular",
+                         "migration"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "angular-state-management",
+        "triggers":  [
+                         "angular",
+                         "state",
+                         "management"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-ai-voicelive-ts",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "voicelive",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "azure-cosmos-ts",
+        "triggers":  [
+                         "azure",
+                         "cosmos",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "azure-postgres-ts",
+        "triggers":  [
+                         "azure",
+                         "postgres",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "azure-storage-blob-ts",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "blob",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "azure-storage-file-share-ts",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "file",
+                         "share",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "azure-storage-queue-ts",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "queue",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "bullmq-specialist",
+        "triggers":  [
+                         "bullmq",
+                         "specialist"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "bun-development",
+        "triggers":  [
+                         "bun",
+                         "development"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "cc-skill-coding-standards",
+        "triggers":  [
+                         "cc",
+                         "skill",
+                         "coding",
+                         "standards"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
         "id":  "convex",
         "triggers":  [
                          "convex"
@@ -33,6 +190,17 @@
         "match_score":  9
     },
     {
+        "id":  "electron-development",
+        "triggers":  [
+                         "electron",
+                         "development"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "fp-data-transforms",
         "triggers":  [
                          "fp",
@@ -53,7 +221,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  9
     },
     {
         "id":  "fp-ts-errors",
@@ -65,7 +233,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  9
     },
     {
         "id":  "fp-ts-pragmatic",
@@ -77,7 +245,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  9
     },
     {
         "id":  "javascript-mastery",
@@ -112,7 +280,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  19
     },
     {
         "id":  "m365-agents-ts",
@@ -124,7 +292,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  11
     },
     {
         "id":  "modern-javascript-patterns",
@@ -160,7 +328,19 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  11
+    },
+    {
+        "id":  "sanity-best-practices",
+        "triggers":  [
+                         "sanity",
+                         "best",
+                         "practices"
+                     ],
+        "src":  "external:agent-toolkit",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  11
     },
     {
         "id":  "tinybird-typescript-sdk-guidelines",
@@ -196,7 +376,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  11
     },
     {
         "id":  "typescript-pro",
@@ -231,6 +411,6 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  11
     }
 ]

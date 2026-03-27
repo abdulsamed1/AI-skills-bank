@@ -1,5 +1,19 @@
 [
     {
+        "id":  "azure-ai-agents-persistent-dotnet",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "agents",
+                         "persistent",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "azure-ai-agents-persistent-java",
         "triggers":  [
                          "azure",
@@ -40,6 +54,20 @@
         "match_score":  12
     },
     {
+        "id":  "azure-ai-document-intelligence-dotnet",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "document",
+                         "intelligence",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "azure-ai-formrecognizer-java",
         "triggers":  [
                          "azure",
@@ -51,6 +79,32 @@
         "primary_hub":  "programming/java",
         "is_primary":  true,
         "match_score":  12
+    },
+    {
+        "id":  "azure-ai-openai-dotnet",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "openai",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-ai-projects-dotnet",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "projects",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "azure-ai-projects-java",
@@ -78,6 +132,19 @@
         "primary_hub":  "programming/java",
         "is_primary":  true,
         "match_score":  12
+    },
+    {
+        "id":  "azure-ai-voicelive-dotnet",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "voicelive",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "azure-ai-voicelive-java",
@@ -208,6 +275,18 @@
         "match_score":  12
     },
     {
+        "id":  "azure-eventgrid-dotnet",
+        "triggers":  [
+                         "azure",
+                         "eventgrid",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "azure-eventgrid-java",
         "triggers":  [
                          "azure",
@@ -218,6 +297,18 @@
         "primary_hub":  "programming/java",
         "is_primary":  true,
         "match_score":  12
+    },
+    {
+        "id":  "azure-eventhub-dotnet",
+        "triggers":  [
+                         "azure",
+                         "eventhub",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "azure-eventhub-java",
@@ -232,6 +323,18 @@
         "match_score":  12
     },
     {
+        "id":  "azure-identity-dotnet",
+        "triggers":  [
+                         "azure",
+                         "identity",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "azure-identity-java",
         "triggers":  [
                          "azure",
@@ -242,6 +345,19 @@
         "primary_hub":  "programming/java",
         "is_primary":  true,
         "match_score":  12
+    },
+    {
+        "id":  "azure-maps-search-dotnet",
+        "triggers":  [
+                         "azure",
+                         "maps",
+                         "search",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "azure-messaging-webpubsub-java",
@@ -255,6 +371,71 @@
         "primary_hub":  "programming/java",
         "is_primary":  true,
         "match_score":  12
+    },
+    {
+        "id":  "azure-mgmt-apicenter-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "apicenter",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-mgmt-apimanagement-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "apimanagement",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-mgmt-botservice-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "botservice",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-mgmt-fabric-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "fabric",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-mgmt-mongodbatlas-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "mongodbatlas",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "azure-monitor-ingestion-java",
@@ -297,6 +478,89 @@
         "match_score":  12
     },
     {
+        "id":  "azure-resource-manager-cosmosdb-dotnet",
+        "triggers":  [
+                         "azure",
+                         "resource",
+                         "manager",
+                         "cosmosdb",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-resource-manager-durabletask-dotnet",
+        "triggers":  [
+                         "azure",
+                         "resource",
+                         "manager",
+                         "durabletask",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-resource-manager-mysql-dotnet",
+        "triggers":  [
+                         "azure",
+                         "resource",
+                         "manager",
+                         "mysql",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-resource-manager-redis-dotnet",
+        "triggers":  [
+                         "azure",
+                         "resource",
+                         "manager",
+                         "redis",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-resource-manager-sql-dotnet",
+        "triggers":  [
+                         "azure",
+                         "resource",
+                         "manager",
+                         "sql",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-search-documents-dotnet",
+        "triggers":  [
+                         "azure",
+                         "search",
+                         "documents",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "azure-security-keyvault-keys-java",
         "triggers":  [
                          "azure",
@@ -325,6 +589,18 @@
         "match_score":  12
     },
     {
+        "id":  "azure-servicebus-dotnet",
+        "triggers":  [
+                         "azure",
+                         "servicebus",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "azure-storage-blob-java",
         "triggers":  [
                          "azure",
@@ -338,6 +614,17 @@
         "match_score":  12
     },
     {
+        "id":  "cpp-pro",
+        "triggers":  [
+                         "cpp",
+                         "pro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "csharp-pro",
         "triggers":  [
                          "csharp",
@@ -349,6 +636,85 @@
         "match_score":  100
     },
     {
+        "id":  "database-architect",
+        "triggers":  [
+                         "database",
+                         "architect"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "data-engineering-data-pipeline",
+        "triggers":  [
+                         "data",
+                         "engineering",
+                         "data",
+                         "pipeline"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "dotnet-architect",
+        "triggers":  [
+                         "dotnet",
+                         "architect"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "dotnet-backend",
+        "triggers":  [
+                         "dotnet",
+                         "backend"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "elixir-pro",
+        "triggers":  [
+                         "elixir",
+                         "pro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "graphql-architect",
+        "triggers":  [
+                         "graphql",
+                         "architect"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "haskell-pro",
+        "triggers":  [
+                         "haskell",
+                         "pro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "java-pro",
         "triggers":  [
                          "java",
@@ -358,5 +724,87 @@
         "primary_hub":  "programming/java",
         "is_primary":  true,
         "match_score":  16
+    },
+    {
+        "id":  "lightning-factory-explainer",
+        "triggers":  [
+                         "lightning",
+                         "factory",
+                         "explainer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "m365-agents-dotnet",
+        "triggers":  [
+                         "m365",
+                         "agents",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "microsoft-azure-webjobs-extensions-authentication-events-dotnet",
+        "triggers":  [
+                         "microsoft",
+                         "azure",
+                         "webjobs",
+                         "extensions",
+                         "authentication"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "monorepo-management",
+        "triggers":  [
+                         "monorepo",
+                         "management"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "php-pro",
+        "triggers":  [
+                         "php",
+                         "pro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "salesforce-development",
+        "triggers":  [
+                         "salesforce",
+                         "development"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "scala-pro",
+        "triggers":  [
+                         "scala",
+                         "pro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
     }
 ]

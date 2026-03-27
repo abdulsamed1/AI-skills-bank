@@ -35,25 +35,25 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 ## Quick Trigger Hints
 
 - automation
+- bmad
+- review
+- code
+- ai
 - workflow
+- context
 - tdd
 - workflows
-- development
-- n8n
-- git
-- pr
-- code
+- builder
 - patterns
-- orchestration
-- review
-- linear
+- development
+- git
+- design
+- pr
 - github
-- wordpress
-- go
-- claude
-- orchestrator
-- framework
-- stack
+- conductor
+- firecrawl
+- research
+- wiki
 
 ## Data Contract
 

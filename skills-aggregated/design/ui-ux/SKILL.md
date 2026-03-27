@@ -1,6 +1,6 @@
 ---
 name: skills-design-ui-ux
-description: 'Productivity and automation: workflow automation, agentic orchestration, project delivery, and tool-connected process automation'
+description: 'UI/UX design: interface design, wireframes, design systems, accessibility, and interaction patterns'
 ---
 
 Follow the instructions in ./workflow.md.

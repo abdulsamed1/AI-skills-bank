@@ -1,8 +1,8 @@
-# frontend / ui-ux
+# design / design-thinking
 
 ## Purpose
 
-UI/UX design: interface design, wireframes, design systems, accessibility, and interaction patterns
+Design Thinking: human-centered design methodology, strategic discovery, workshops, and innovation frameworks.
 
 This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub Copilot) with minimal context overhead.
 
@@ -28,31 +28,16 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 ## Recommended Use Cases
 
-- Designing intuitive user interfaces
-- Building and maintaining design systems
-- Improving usability and accessibility
+- Mapping user psychology to business goals
+- Facilitating multi-stakeholder workshops
+- Solving complex, ambiguous product problems
 
 ## Quick Trigger Hints
 
-- ui
+- bmad
 - design
-- ux
-- patterns
-- figma
-- frontend
-- components
-- system
-- wds
-- accessibility
-- shadcn
-- avalonia
-- designer
-- expo
-- zafiro
-- create
-- skills
-- stitch
-- magic
+- cis
+- thinking
 - agent
 
 ## Data Contract

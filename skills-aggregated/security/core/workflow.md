@@ -35,25 +35,25 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 ## Quick Trigger Hints
 
 - security
-- automation
 - audit
-- google
 - testing
 - scanning
-- azure
-- api
+- compliance
 - coder
-- authentication
+- analysis
+- auditor
+- web
+- tools
 - threat
 - patterns
+- api
 - laravel
-- tools
-- odoo
-- codebase
-- web
-- dotnet
 - practices
-- analysis
+- mobile
+- expert
+- analyst
+- red
+- creator
 
 ## Data Contract
 

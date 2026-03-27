@@ -37,23 +37,23 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - agent
 - bmad
 - ai
+- claude
+- face
+- hugging
 - agents
-- cis
-- azure
-- review
+- skill
+- builder
+- automation
+- fal
 - llm
 - memory
 - multi
-- ts
-- development
-- code
-- builder
-- storage
+- cis
 - engineer
-- dotnet
-- patterns
-- dev
-- evaluation
+- google
+- hig
+- development
+- context
 
 ## Data Contract
 

@@ -1,15 +1,5 @@
 [
     {
-        "id":  "007",
-        "triggers":  [
-                         "007"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "anti-reversing-techniques",
         "triggers":  [
                          "anti",
@@ -83,18 +73,6 @@
         "match_score":  7
     },
     {
-        "id":  "azure-identity-dotnet",
-        "triggers":  [
-                         "azure",
-                         "identity",
-                         "dotnet"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "azure-security-keyvault-keys-dotnet",
         "triggers":  [
                          "azure",
@@ -132,6 +110,18 @@
         "match_score":  7
     },
     {
+        "id":  "burpsuite-project-parser",
+        "triggers":  [
+                         "burpsuite",
+                         "project",
+                         "parser"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
         "id":  "cc-skill-security-review",
         "triggers":  [
                          "cc",
@@ -145,19 +135,6 @@
         "match_score":  15
     },
     {
-        "id":  "codebase-audit-pre-push",
-        "triggers":  [
-                         "codebase",
-                         "audit",
-                         "pre",
-                         "push"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "codebase-cleanup-deps-audit",
         "triggers":  [
                          "codebase",
@@ -168,7 +145,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "security/core",
         "is_primary":  true,
-        "match_score":  11
+        "match_score":  15
     },
     {
         "id":  "dependency-management-deps-audit",
@@ -181,7 +158,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "security/core",
         "is_primary":  true,
-        "match_score":  11
+        "match_score":  15
     },
     {
         "id":  "firmware-analyst",
@@ -221,70 +198,11 @@
         "match_score":  11
     },
     {
-        "id":  "gmail-automation",
+        "id":  "gdpr-data-handling",
         "triggers":  [
-                         "gmail",
-                         "automation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "google-calendar-automation",
-        "triggers":  [
-                         "google",
-                         "calendar",
-                         "automation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "google-docs-automation",
-        "triggers":  [
-                         "google",
-                         "docs",
-                         "automation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "google-drive-automation",
-        "triggers":  [
-                         "google",
-                         "drive",
-                         "automation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "google-sheets-automation",
-        "triggers":  [
-                         "google",
-                         "sheets",
-                         "automation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "google-slides-automation",
-        "triggers":  [
-                         "google",
-                         "slides",
-                         "automation"
+                         "gdpr",
+                         "data",
+                         "handling"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "security/core",
@@ -327,10 +245,10 @@
         "match_score":  7
     },
     {
-        "id":  "metasploit-framework",
+        "id":  "malware-analyst",
         "triggers":  [
-                         "metasploit",
-                         "framework"
+                         "malware",
+                         "analyst"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "security/core",
@@ -338,13 +256,21 @@
         "match_score":  7
     },
     {
-        "id":  "microsoft-azure-webjobs-extensions-authentication-events-dotnet",
+        "id":  "memory-forensics",
         "triggers":  [
-                         "microsoft",
-                         "azure",
-                         "webjobs",
-                         "extensions",
-                         "authentication"
+                         "memory",
+                         "forensics"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "metasploit-framework",
+        "triggers":  [
+                         "metasploit",
+                         "framework"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "security/core",
@@ -376,18 +302,6 @@
         "match_score":  7
     },
     {
-        "id":  "odoo-rpc-api",
-        "triggers":  [
-                         "odoo",
-                         "rpc",
-                         "api"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "odoo-security-rules",
         "triggers":  [
                          "odoo",
@@ -408,7 +322,30 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "security/core",
         "is_primary":  true,
-        "match_score":  11
+        "match_score":  15
+    },
+    {
+        "id":  "pentest-checklist",
+        "triggers":  [
+                         "pentest",
+                         "checklist"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "privacy-by-design",
+        "triggers":  [
+                         "privacy",
+                         "by",
+                         "design"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
     },
     {
         "id":  "protocol-reverse-engineering",
@@ -420,7 +357,19 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "security/core",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  9
+    },
+    {
+        "id":  "red-team-tactics",
+        "triggers":  [
+                         "red",
+                         "team",
+                         "tactics"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "red-team-tools",
@@ -432,7 +381,18 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "security/core",
         "is_primary":  true,
-        "match_score":  11
+        "match_score":  13
+    },
+    {
+        "id":  "reverse-engineer",
+        "triggers":  [
+                         "reverse",
+                         "engineer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "scanning-tools",
@@ -443,7 +403,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "security/core",
         "is_primary":  true,
-        "match_score":  11
+        "match_score":  15
     },
     {
         "id":  "security-audit",
@@ -465,7 +425,20 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "security/core",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  11
+    },
+    {
+        "id":  "security-compliance-compliance-check",
+        "triggers":  [
+                         "security",
+                         "compliance",
+                         "compliance",
+                         "check"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  10
     },
     {
         "id":  "security-scanning-security-dependencies",
@@ -491,7 +464,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "security/core",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  11
     },
     {
         "id":  "security-scanning-security-sast",
@@ -505,6 +478,31 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  11
+    },
+    {
+        "id":  "semgrep-rule-creator",
+        "triggers":  [
+                         "semgrep",
+                         "rule",
+                         "creator"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "semgrep-rule-variant-creator",
+        "triggers":  [
+                         "semgrep",
+                         "rule",
+                         "variant",
+                         "creator"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "smtp-penetration-testing",
@@ -613,6 +611,17 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  6
+    },
+    {
+        "id":  "variant-analysis",
+        "triggers":  [
+                         "variant",
+                         "analysis"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  8
     },
     {
         "id":  "vulnerability-scanner",

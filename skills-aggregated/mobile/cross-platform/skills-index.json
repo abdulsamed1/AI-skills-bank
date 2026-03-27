@@ -33,7 +33,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "mobile/cross-platform",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  9
     },
     {
         "id":  "development",
@@ -57,6 +57,41 @@
         "match_score":  11
     },
     {
+        "id":  "expo-api-routes",
+        "triggers":  [
+                         "expo",
+                         "api",
+                         "routes"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "expo-deployment",
+        "triggers":  [
+                         "expo",
+                         "deployment"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "expo-dev-client",
+        "triggers":  [
+                         "expo",
+                         "dev",
+                         "client"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "expo-tailwind-setup",
         "triggers":  [
                          "expo",
@@ -66,7 +101,20 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "mobile/cross-platform",
         "is_primary":  true,
-        "match_score":  5
+        "match_score":  9
+    },
+    {
+        "id":  "expo-ui-swift-ui",
+        "triggers":  [
+                         "expo",
+                         "ui",
+                         "swift",
+                         "ui"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  11
     },
     {
         "id":  "flutter-expert",
@@ -117,6 +165,32 @@
         "match_score":  100
     },
     {
+        "id":  "macos-menubar-tuist-app",
+        "triggers":  [
+                         "macos",
+                         "menubar",
+                         "tuist",
+                         "app"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "macos-spm-app-packaging",
+        "triggers":  [
+                         "macos",
+                         "spm",
+                         "app",
+                         "packaging"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
         "id":  "mobile-design",
         "triggers":  [
                          "mobile",
@@ -137,31 +211,6 @@
         "primary_hub":  "mobile/cross-platform",
         "is_primary":  true,
         "match_score":  11
-    },
-    {
-        "id":  "mobile-games",
-        "triggers":  [
-                         "mobile",
-                         "games"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "mobile/cross-platform",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "multi-platform-apps-multi-platform",
-        "triggers":  [
-                         "multi",
-                         "platform",
-                         "apps",
-                         "multi",
-                         "platform"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "mobile/cross-platform",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "native-data-fetching",
@@ -185,7 +234,19 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "mobile/cross-platform",
         "is_primary":  true,
-        "match_score":  5
+        "match_score":  9
+    },
+    {
+        "id":  "swift-concurrency-expert",
+        "triggers":  [
+                         "swift",
+                         "concurrency",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "swiftui-expert-skill",
@@ -198,5 +259,27 @@
         "primary_hub":  "mobile/cross-platform",
         "is_primary":  true,
         "match_score":  9
+    },
+    {
+        "id":  "upgrading-expo",
+        "triggers":  [
+                         "upgrading",
+                         "expo"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "web-scraper",
+        "triggers":  [
+                         "web",
+                         "scraper"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
     }
 ]

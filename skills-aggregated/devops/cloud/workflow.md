@@ -35,25 +35,25 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 ## Quick Trigger Hints
 
 - azure
-- dotnet
 - ts
+- error
 - cloud
 - aws
-- mgmt
-- ai
-- cost
-- search
-- document
-- resource
-- manager
 - terraform
-- documents
-- servicebus
-- keyvault
-- deploy
-- architect
-- secrets
-- eventhub
+- observability
+- optimization
+- windows
+- cost
+- patterns
+- dotnet
+- ai
+- bash
+- engineer
+- devops
+- mgmt
+- incident
+- performance
+- monitoring
 
 ## Data Contract
 

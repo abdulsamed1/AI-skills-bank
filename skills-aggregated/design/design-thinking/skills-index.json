@@ -1,0 +1,29 @@
+[
+    {
+        "id":  "bmad-cis-agent-design-thinking-coach",
+        "triggers":  [
+                         "bmad",
+                         "cis",
+                         "agent",
+                         "design",
+                         "thinking"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "design/design-thinking",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "bmad-cis-design-thinking",
+        "triggers":  [
+                         "bmad",
+                         "cis",
+                         "design",
+                         "thinking"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "design/design-thinking",
+        "is_primary":  true,
+        "match_score":  10
+    }
+]

@@ -94,17 +94,6 @@
         "match_score":  5
     },
     {
-        "id":  "linkedin-writer",
-        "triggers":  [
-                         "linkedin",
-                         "writer"
-                     ],
-        "src":  "external:founder-skills",
-        "primary_hub":  "marketing/social",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "paid-ads",
         "triggers":  [
                          "paid",
@@ -125,7 +114,7 @@
         "src":  "external:ai-marketing-skills",
         "primary_hub":  "marketing/social",
         "is_primary":  true,
-        "match_score":  18
+        "match_score":  22
     },
     {
         "id":  "social-content",
@@ -162,6 +151,18 @@
         "match_score":  5
     },
     {
+        "id":  "x-article-publisher",
+        "triggers":  [
+                         "x",
+                         "article",
+                         "publisher"
+                     ],
+        "src":  "external:x-article-publisher-skill",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "x-article-publisher-skill",
         "triggers":  [
                          "x",
@@ -172,7 +173,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/social",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  9
     },
     {
         "id":  "x-twitter-scraper",
@@ -184,17 +185,6 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/social",
         "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "x-writer",
-        "triggers":  [
-                         "x",
-                         "writer"
-                     ],
-        "src":  "external:founder-skills",
-        "primary_hub":  "marketing/social",
-        "is_primary":  true,
-        "match_score":  5
+        "match_score":  9
     }
 ]

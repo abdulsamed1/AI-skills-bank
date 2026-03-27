@@ -35,25 +35,25 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 ## Quick Trigger Hints
 
 - database
-- azure
-- dotnet
 - postgres
+- data
 - sql
-- manager
-- resource
-- migrations
-- expert
-- odoo
 - postgresql
-- best
-- optimization
-- performance
-- optimizer
-- migration
 - patterns
+- netlify
+- optimization
 - practices
+- best
+- optimizer
+- duckdb
+- performance
+- migration
+- migrations
 - neon
 - tinybird
+- odoo
+- manager
+- search
 
 ## Data Contract
 

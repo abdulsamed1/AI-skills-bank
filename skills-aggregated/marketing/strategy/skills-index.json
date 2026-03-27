@@ -12,6 +12,17 @@
         "match_score":  11
     },
     {
+        "id":  "competitive-battlecard",
+        "triggers":  [
+                         "competitive",
+                         "battlecard"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "marketing/strategy",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
         "id":  "competitive-landscape",
         "triggers":  [
                          "competitive",
@@ -23,6 +34,17 @@
         "match_score":  7
     },
     {
+        "id":  "competitor-analysis",
+        "triggers":  [
+                         "competitor",
+                         "analysis"
+                     ],
+        "src":  "external:aso-skills",
+        "primary_hub":  "marketing/strategy",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
         "id":  "competitor-intel",
         "triggers":  [
                          "competitor",
@@ -31,7 +53,7 @@
         "src":  "external:founder-skills",
         "primary_hub":  "marketing/strategy",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  11
     },
     {
         "id":  "gtm-motions",
@@ -65,6 +87,17 @@
         "primary_hub":  "marketing/strategy",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "monetization-strategy",
+        "triggers":  [
+                         "monetization",
+                         "strategy"
+                     ],
+        "src":  "external:aso-skills",
+        "primary_hub":  "marketing/strategy",
+        "is_primary":  true,
+        "match_score":  10
     },
     {
         "id":  "positioning-basics",
@@ -121,5 +154,39 @@
         "primary_hub":  "marketing/strategy",
         "is_primary":  true,
         "match_score":  15
+    },
+    {
+        "id":  "strategic-planning",
+        "triggers":  [
+                         "strategic",
+                         "planning"
+                     ],
+        "src":  "external:founder-skills",
+        "primary_hub":  "marketing/strategy",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "ua-campaign",
+        "triggers":  [
+                         "ua",
+                         "campaign"
+                     ],
+        "src":  "external:aso-skills",
+        "primary_hub":  "marketing/strategy",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "value-prop-statements",
+        "triggers":  [
+                         "value",
+                         "prop",
+                         "statements"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "marketing/strategy",
+        "is_primary":  true,
+        "match_score":  5
     }
 ]

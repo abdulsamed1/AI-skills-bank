@@ -36,16 +36,12 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 - golang
 - pro
-- grpc
 - dbos
-- temporal
 - patterns
-- elixir
-- factories
-- lightning
-- concurrency
-- channel
 - go
+- temporal
+- concurrency
+- grpc
 
 ## Data Contract
 

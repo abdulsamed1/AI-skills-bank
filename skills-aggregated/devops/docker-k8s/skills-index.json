@@ -101,16 +101,5 @@
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  100
-    },
-    {
-        "id":  "windows-vm",
-        "triggers":  [
-                         "windows",
-                         "vm"
-                     ],
-        "src":  "external:superpowers-lab",
-        "primary_hub":  "devops/docker-k8s",
-        "is_primary":  true,
-        "match_score":  4
     }
 ]
