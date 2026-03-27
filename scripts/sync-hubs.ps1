@@ -9,7 +9,6 @@ Syncs AI-skills-bank/skills-aggregated/ to:
 - ~/.claude/skills/
 - ~/.agents/skills/
 - ~/.cursor/skills/
-- ~/.gemini/skills/
 - ~/.copilot/skills/
 - ~/.config/opencode/skills/
 - ~/.codeium/windsurf/skills/

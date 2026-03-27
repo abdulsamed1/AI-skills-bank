@@ -118,18 +118,6 @@
         "match_score":  9
     },
     {
-        "id":  "ai-agent-development",
-        "triggers":  [
-                         "ai",
-                         "agent",
-                         "development"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  23
-    },
-    {
         "id":  "ai-analyzer",
         "triggers":  [
                          "ai",
@@ -243,17 +231,6 @@
         "match_score":  4
     },
     {
-        "id":  "api-documentation",
-        "triggers":  [
-                         "api",
-                         "documentation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
         "id":  "apify-lead-generation",
         "triggers":  [
                          "apify",
@@ -287,29 +264,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  7
-    },
-    {
-        "id":  "app-clips",
-        "triggers":  [
-                         "app",
-                         "clips"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "app-store-changelog",
-        "triggers":  [
-                         "app",
-                         "store",
-                         "changelog"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  11
     },
     {
         "id":  "arm-cortex-expert",
@@ -348,17 +302,6 @@
         "match_score":  4
     },
     {
-        "id":  "attach-db",
-        "triggers":  [
-                         "attach",
-                         "db"
-                     ],
-        "src":  "external:duckdb-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "audit-context-building",
         "triggers":  [
                          "audit",
@@ -369,18 +312,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  4
-    },
-    {
-        "id":  "autonomous-agent-patterns",
-        "triggers":  [
-                         "autonomous",
-                         "agent",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  9
     },
     {
         "id":  "autoplan",
@@ -459,17 +390,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  4
-    },
-    {
-        "id":  "billing-automation",
-        "triggers":  [
-                         "billing",
-                         "automation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  13
     },
     {
         "id":  "binary-analysis-patterns",
@@ -923,10 +843,10 @@
         "triggers":  [
                          "brainstorming"
                      ],
-        "src":  "external:superpowers",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
-        "match_score":  4
+        "match_score":  100
     },
     {
         "id":  "brevo-automation",
@@ -1071,17 +991,6 @@
         "match_score":  11
     },
     {
-        "id":  "canvas-design",
-        "triggers":  [
-                         "canvas",
-                         "design"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "careful",
         "triggers":  [
                          "careful"
@@ -1118,17 +1027,6 @@
         "match_score":  4
     },
     {
-        "id":  "changelog-automation",
-        "triggers":  [
-                         "changelog",
-                         "automation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  21
-    },
-    {
         "id":  "chat-widget",
         "triggers":  [
                          "chat",
@@ -1150,19 +1048,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  4
-    },
-    {
-        "id":  "cicd-automation-workflow-automate",
-        "triggers":  [
-                         "cicd",
-                         "automation",
-                         "workflow",
-                         "automate"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  23
     },
     {
         "id":  "clarity-gate",
@@ -1229,19 +1114,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  15
-    },
-    {
-        "id":  "codebase-audit-pre-push",
-        "triggers":  [
-                         "codebase",
-                         "audit",
-                         "pre",
-                         "push"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "codebase-cleanup-tech-debt",
@@ -1510,18 +1382,6 @@
         "match_score":  4
     },
     {
-        "id":  "context7-auto-research",
-        "triggers":  [
-                         "context7",
-                         "auto",
-                         "research"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
         "id":  "context-degradation",
         "triggers":  [
                          "context",
@@ -1615,17 +1475,6 @@
         "match_score":  4
     },
     {
-        "id":  "crash-analytics",
-        "triggers":  [
-                         "crash",
-                         "analytics"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "create-branch",
         "triggers":  [
                          "create",
@@ -1671,27 +1520,6 @@
         "match_score":  4
     },
     {
-        "id":  "cred-omega",
-        "triggers":  [
-                         "cred",
-                         "omega"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "crewai",
-        "triggers":  [
-                         "crewai"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
         "id":  "cso",
         "triggers":  [
                          "cso"
@@ -1733,17 +1561,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  5
-    },
-    {
-        "id":  "database-admin",
-        "triggers":  [
-                         "database",
-                         "admin"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "datadog-automation",
@@ -1802,17 +1619,6 @@
         "match_score":  100
     },
     {
-        "id":  "deployment-engineer",
-        "triggers":  [
-                         "deployment",
-                         "engineer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  13
-    },
-    {
         "id":  "design-consultation",
         "triggers":  [
                          "design",
@@ -1822,28 +1628,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  4
-    },
-    {
-        "id":  "design-md",
-        "triggers":  [
-                         "design",
-                         "md"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "design-orchestration",
-        "triggers":  [
-                         "design",
-                         "orchestration"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  11
     },
     {
         "id":  "design-review",
@@ -1865,17 +1649,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  7
-    },
-    {
-        "id":  "differential-review",
-        "triggers":  [
-                         "differential",
-                         "review"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  100
     },
     {
         "id":  "director-readiness-advisor",
@@ -2203,17 +1976,6 @@
         "match_score":  4
     },
     {
-        "id":  "find-bugs",
-        "triggers":  [
-                         "find",
-                         "bugs"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
         "id":  "finishing-a-development-branch",
         "triggers":  [
                          "finishing",
@@ -2479,18 +2241,6 @@
         "match_score":  7
     },
     {
-        "id":  "gha-security-review",
-        "triggers":  [
-                         "gha",
-                         "security",
-                         "review"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "gh-review-requests",
         "triggers":  [
                          "gh",
@@ -2537,18 +2287,6 @@
         "match_score":  7
     },
     {
-        "id":  "github-actions-templates",
-        "triggers":  [
-                         "github",
-                         "actions",
-                         "templates"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
         "id":  "github-automation",
         "triggers":  [
                          "github",
@@ -2593,29 +2331,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  17
-    },
-    {
-        "id":  "gitlab-ci-patterns",
-        "triggers":  [
-                         "gitlab",
-                         "ci",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "gitops-workflow",
-        "triggers":  [
-                         "gitops",
-                         "workflow"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  15
     },
     {
         "id":  "git-pr-workflows-git-workflow",
@@ -2846,17 +2561,6 @@
         "match_score":  11
     },
     {
-        "id":  "hubspot-integration",
-        "triggers":  [
-                         "hubspot",
-                         "integration"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
         "id":  "humanizer",
         "triggers":  [
                          "humanizer"
@@ -3002,17 +2706,6 @@
         "match_score":  7
     },
     {
-        "id":  "iterate-pr",
-        "triggers":  [
-                         "iterate",
-                         "pr"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
         "id":  "jira-automation",
         "triggers":  [
                          "jira",
@@ -3111,16 +2804,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  4
-    },
-    {
-        "id":  "langgraph",
-        "triggers":  [
-                         "langgraph"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  11
     },
     {
         "id":  "last30days",
@@ -3379,18 +3062,6 @@
         "match_score":  4
     },
     {
-        "id":  "n8n-code-javascript",
-        "triggers":  [
-                         "n8n",
-                         "code",
-                         "javascript"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
         "id":  "n8n-expression-syntax",
         "triggers":  [
                          "n8n",
@@ -3461,7 +3132,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
-        "match_score":  4
+        "match_score":  100
     },
     {
         "id":  "netlify-ai-gateway",
@@ -3718,17 +3389,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  11
-    },
-    {
-        "id":  "page-cro",
-        "triggers":  [
-                         "page",
-                         "cro"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  4
     },
     {
         "id":  "pagerduty-automation",
@@ -4003,27 +3663,6 @@
         "match_score":  4
     },
     {
-        "id":  "query",
-        "triggers":  [
-                         "query"
-                     ],
-        "src":  "external:duckdb-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "read-file",
-        "triggers":  [
-                         "read",
-                         "file"
-                     ],
-        "src":  "external:duckdb-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "readme",
         "triggers":  [
                          "readme"
@@ -4032,17 +3671,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  5
-    },
-    {
-        "id":  "read-memories",
-        "triggers":  [
-                         "read",
-                         "memories"
-                     ],
-        "src":  "external:duckdb-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  4
     },
     {
         "id":  "receiving-code-review",
@@ -4087,17 +3715,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  4
-    },
-    {
-        "id":  "render-automation",
-        "triggers":  [
-                         "render",
-                         "automation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  11
     },
     {
         "id":  "requesting-code-review",
@@ -4309,17 +3926,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  13
-    },
-    {
-        "id":  "seo-programmatic",
-        "triggers":  [
-                         "seo",
-                         "programmatic"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  4
     },
     {
         "id":  "setup-browser-cookies",
@@ -4595,91 +4201,6 @@
         "match_score":  4
     },
     {
-        "id":  "supabase-automation",
-        "triggers":  [
-                         "supabase",
-                         "automation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "tdd-orchestrator",
-        "triggers":  [
-                         "tdd",
-                         "orchestrator"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "tdd-workflow",
-        "triggers":  [
-                         "tdd",
-                         "workflow"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "tdd-workflows-tdd-cycle",
-        "triggers":  [
-                         "tdd",
-                         "workflows",
-                         "tdd",
-                         "cycle"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "tdd-workflows-tdd-green",
-        "triggers":  [
-                         "tdd",
-                         "workflows",
-                         "tdd",
-                         "green"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "tdd-workflows-tdd-red",
-        "triggers":  [
-                         "tdd",
-                         "workflows",
-                         "tdd",
-                         "red"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "tdd-workflows-tdd-refactor",
-        "triggers":  [
-                         "tdd",
-                         "workflows",
-                         "tdd",
-                         "refactor"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "team-collaboration-issue",
         "triggers":  [
                          "team",
@@ -4750,17 +4271,6 @@
         "match_score":  4
     },
     {
-        "id":  "theme-factory",
-        "triggers":  [
-                         "theme",
-                         "factory"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "tiktok-automation",
         "triggers":  [
                          "tiktok",
@@ -4815,17 +4325,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  13
-    },
-    {
-        "id":  "trigger-dev",
-        "triggers":  [
-                         "trigger",
-                         "dev"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "tutorial-engineer",
@@ -4939,41 +4438,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  7
-    },
-    {
-        "id":  "uv-package-manager",
-        "triggers":  [
-                         "uv",
-                         "package",
-                         "manager"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "varlock-claude-skill",
-        "triggers":  [
-                         "varlock",
-                         "claude",
-                         "skill"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "vercel-automation",
-        "triggers":  [
-                         "vercel",
-                         "automation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  11
     },
     {
         "id":  "vexor",

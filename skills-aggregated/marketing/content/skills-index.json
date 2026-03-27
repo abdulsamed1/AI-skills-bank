@@ -11,6 +11,18 @@
         "match_score":  100
     },
     {
+        "id":  "ai-discoverability-audit",
+        "triggers":  [
+                         "ai",
+                         "discoverability",
+                         "audit"
+                     ],
+        "src":  "external:ai-marketing-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "ai-seo",
         "triggers":  [
                          "ai",
@@ -213,6 +225,17 @@
         "match_score":  100
     },
     {
+        "id":  "geo-fundamentals",
+        "triggers":  [
+                         "geo",
+                         "fundamentals"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "grammar-check",
         "triggers":  [
                          "grammar",
@@ -246,15 +269,26 @@
         "match_score":  5
     },
     {
+        "id":  "onboarding-cro",
+        "triggers":  [
+                         "onboarding",
+                         "cro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "page-cro",
         "triggers":  [
                          "page",
                          "cro"
                      ],
-        "src":  "external:marketingskills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  100
     },
     {
         "id":  "podcast-generation",
@@ -583,10 +617,10 @@
                          "seo",
                          "programmatic"
                      ],
-        "src":  "external:claude-seo",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
-        "match_score":  7
+        "match_score":  100
     },
     {
         "id":  "seo-schema",

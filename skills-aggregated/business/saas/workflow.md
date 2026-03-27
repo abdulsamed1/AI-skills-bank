@@ -35,25 +35,25 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 ## Quick Trigger Hints
 
 - startup
-- saas
 - metrics
-- analyst
+- saas
 - market
+- odoo
 - business
+- integration
+- analyst
+- setup
 - financial
-- management
 - analysis
-- logistics
-- finance
+- management
 - sizing
+- finance
+- logistics
 - launcher
-- growth
-- manager
-- returns
-- opportunity
-- storyboard
-- relationship
-- projections
+- economics
+- pricing
+- hubspot
+- monetization
 
 ## Data Contract
 

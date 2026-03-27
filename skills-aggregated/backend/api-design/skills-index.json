@@ -22,6 +22,17 @@
         "match_score":  17
     },
     {
+        "id":  "api-documentation",
+        "triggers":  [
+                         "api",
+                         "documentation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "api-documentation-generator",
         "triggers":  [
                          "api",
@@ -125,16 +136,6 @@
         "match_score":  100
     },
     {
-        "id":  "astro",
-        "triggers":  [
-                         "astro"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "aws-secrets-rotation",
         "triggers":  [
                          "aws",
@@ -188,40 +189,6 @@
                          "bdistill",
                          "knowledge",
                          "extraction"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "brainstorming",
-        "triggers":  [
-                         "brainstorming"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "c4-architecture-c4-architecture",
-        "triggers":  [
-                         "c4",
-                         "architecture",
-                         "c4",
-                         "architecture"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "c4-component",
-        "triggers":  [
-                         "c4",
-                         "component"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
@@ -326,7 +293,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
-        "match_score":  10
+        "match_score":  100
     },
     {
         "id":  "content-modeling-best-practices",
@@ -351,6 +318,27 @@
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  6
+    },
+    {
+        "id":  "creem",
+        "triggers":  [
+                         "creem"
+                     ],
+        "src":  "external:creem",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "creem-heartbeat",
+        "triggers":  [
+                         "creem",
+                         "heartbeat"
+                     ],
+        "src":  "external:creem",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "ddd-context-mapping",
@@ -512,29 +500,6 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "lightning-architecture-review",
-        "triggers":  [
-                         "lightning",
-                         "architecture",
-                         "review"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "mermaid-expert",
-        "triggers":  [
-                         "mermaid",
-                         "expert"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
         "match_score":  100
     },
     {
@@ -610,6 +575,18 @@
         "match_score":  4
     },
     {
+        "id":  "nodejs-backend-patterns",
+        "triggers":  [
+                         "nodejs",
+                         "backend",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "nx-workspace-patterns",
         "triggers":  [
                          "nx",
@@ -622,36 +599,11 @@
         "match_score":  4
     },
     {
-        "id":  "odoo-accounting-setup",
-        "triggers":  [
-                         "odoo",
-                         "accounting",
-                         "setup"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  8
-    },
-    {
         "id":  "odoo-docker-deployment",
         "triggers":  [
                          "odoo",
                          "docker",
                          "deployment"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "odoo-hr-payroll-setup",
-        "triggers":  [
-                         "odoo",
-                         "hr",
-                         "payroll",
-                         "setup"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
@@ -740,20 +692,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
-        "match_score":  8
-    },
-    {
-        "id":  "odoo-sales-crm-expert",
-        "triggers":  [
-                         "odoo",
-                         "sales",
-                         "crm",
-                         "expert"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
+        "match_score":  100
     },
     {
         "id":  "odoo-shopify-integration",
@@ -814,30 +753,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
-        "match_score":  8
-    },
-    {
-        "id":  "pakistan-payments-stack",
-        "triggers":  [
-                         "pakistan",
-                         "payments",
-                         "stack"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  12
-    },
-    {
-        "id":  "payment-integration",
-        "triggers":  [
-                         "payment",
-                         "integration"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  10
+        "match_score":  100
     },
     {
         "id":  "projection-patterns",
@@ -895,7 +811,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
-        "match_score":  8
+        "match_score":  100
     },
     {
         "id":  "skill-rails-upgrade",
@@ -919,27 +835,6 @@
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  6
-    },
-    {
-        "id":  "stripe-integration",
-        "triggers":  [
-                         "stripe",
-                         "integration"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  10
-    },
-    {
-        "id":  "sveltekit",
-        "triggers":  [
-                         "sveltekit"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
     },
     {
         "id":  "tavily-web",
@@ -998,6 +893,6 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
-        "match_score":  12
+        "match_score":  100
     }
 ]

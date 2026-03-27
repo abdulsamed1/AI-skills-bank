@@ -133,6 +133,41 @@
         "match_score":  7
     },
     {
+        "id":  "c4-architecture-c4-architecture",
+        "triggers":  [
+                         "c4",
+                         "architecture",
+                         "c4",
+                         "architecture"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "design/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "c4-component",
+        "triggers":  [
+                         "c4",
+                         "component"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "design/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "canvas-design",
+        "triggers":  [
+                         "canvas",
+                         "design"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "design/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "cc-skill-frontend-patterns",
         "triggers":  [
                          "cc",
@@ -144,6 +179,18 @@
         "primary_hub":  "design/ui-ux",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "claude-d3js-skill",
+        "triggers":  [
+                         "claude",
+                         "d3js",
+                         "skill"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "design/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "core-components",
@@ -167,6 +214,28 @@
         "primary_hub":  "design/ui-ux",
         "is_primary":  true,
         "match_score":  5
+    },
+    {
+        "id":  "design-md",
+        "triggers":  [
+                         "design",
+                         "md"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "design/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "design-orchestration",
+        "triggers":  [
+                         "design",
+                         "orchestration"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "design/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "expo-ui-jetpack-compose",
@@ -523,6 +592,17 @@
         "match_score":  7
     },
     {
+        "id":  "mermaid-expert",
+        "triggers":  [
+                         "mermaid",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "design/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "nerdzao-elite",
         "triggers":  [
                          "nerdzao",
@@ -762,6 +842,17 @@
         "primary_hub":  "design/ui-ux",
         "is_primary":  true,
         "match_score":  13
+    },
+    {
+        "id":  "theme-factory",
+        "triggers":  [
+                         "theme",
+                         "factory"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "design/ui-ux",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "threejs-animation",

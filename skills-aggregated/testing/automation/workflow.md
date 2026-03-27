@@ -35,25 +35,25 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 ## Quick Trigger Hints
 
 - testing
+- tdd
 - qa
 - test
-- bmad
 - e2e
+- bmad
+- workflows
+- patterns
 - debugging
 - playwright
-- patterns
-- privilege
-- azure
-- api
-- escalation
-- tests
+- review
 - generate
-- scripting
-- ab
-- penetration
-- agent
 - automation
-- browser
+- api
+- azure
+- tests
+- ab
+- agent
+- scripting
+- ts
 
 ## Data Contract
 

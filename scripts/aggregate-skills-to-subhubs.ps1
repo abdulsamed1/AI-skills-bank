@@ -708,90 +708,156 @@ $CATEGORY_PATTERN_TO_MAIN_HUB = @{
 }
 
 $MANUAL_HUB_OVERRIDES = @{
-    # =========================================================================
-    # TARGET: business/saas
-    # =========================================================================
-    "micro-saas-launcher"          = @{ main = "business"; sub = "saas"; score = 100 }
-
-    # =========================================================================
-    # TARGET: business/product-strategy
-    # =========================================================================
-    "identify-assumptions-new"     = @{ main = "business"; sub = "product-strategy"; score = 100 }
-    "identify-assumptions-existing" = @{ main = "business"; sub = "product-strategy"; score = 100 }
-    "referral-program"             = @{ main = "business"; sub = "product-strategy"; score = 100 }
-    "onboarding-cro"               = @{ main = "business"; sub = "product-strategy"; score = 100 }
-    "paywall-upgrade-cro"          = @{ main = "business"; sub = "product-strategy"; score = 100 }
-    "opportunity-solution-tree"    = @{ main = "business"; sub = "product-strategy"; score = 100 }
-    "lean-canvas"                  = @{ main = "business"; sub = "product-strategy"; score = 100 }
-    "brainstorm-experiments-existing" = @{ main = "business"; sub = "product-strategy"; score = 100 }
-    "interview-script"             = @{ main = "business"; sub = "product-strategy"; score = 100 }
-    "user-story"                   = @{ main = "business"; sub = "product-strategy"; score = 100 }
-    "prioritize-assumptions"       = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "NanoBanana-PPT-Skills"        = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
     "acquisition-channel-advisor"  = @{ main = "business"; sub = "product-strategy"; score = 100 }
-    "app-analytics"                = @{ main = "business"; sub = "product-strategy"; score = 100 }
-    "app-icon-optimization"        = @{ main = "business"; sub = "product-strategy"; score = 100 }
-    "screenshot-optimization"      = @{ main = "business"; sub = "product-strategy"; score = 100 }
-    "dummy-dataset"                = @{ main = "business"; sub = "product-strategy"; score = 100 }
-    "test-scenarios"               = @{ main = "business"; sub = "product-strategy"; score = 100 }
-    "user-story-mapping"           = @{ main = "business"; sub = "product-strategy"; score = 100 }
-    "user-story-mapping-workshop"  = @{ main = "business"; sub = "product-strategy"; score = 100 }
-
-    # =========================================================================
-    # TARGET: design/ui-ux
-    # =========================================================================
-    "scroll-experience"            = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "figma-use"                    = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "figma-create-design-system-rules" = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "figma-generate-design"        = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "nerdzao-elite"                = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "react:components"             = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "active-directory-attacks"     = @{ main = "security"; sub = "core"; score = 100 }
+    "ad-creative"                  = @{ main = "marketing"; sub = "content"; score = 100 }
+    "agents-md"                    = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "ai-agent-development"         = @{ main = "ai"; sub = "llm-agents"; score = 100 }
+    "ai-discoverability-audit"     = @{ main = "marketing"; sub = "content"; score = 100 }
+    "airflow-dag-patterns"         = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "amazon-alexa"                 = @{ main = "ai"; sub = "llm-agents"; score = 100 }
     "animejs-animation"            = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "threejs-animation"            = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "threejs-fundamentals"         = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "threejs-geometry"             = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "threejs-interaction"          = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "threejs-lighting"             = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "threejs-loaders"              = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "threejs-materials"            = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "threejs-postprocessing"       = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "threejs-skills"               = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "threejs-textures"             = @{ main = "design"; sub = "ui-ux"; score = 100 }
-    "google-stitch"                = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "antigravity-skill-orchestrator"         = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "api-documentation"            = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "apify-ultimate-scraper"       = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "app-analytics"                = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "app-clips"                    = @{ main = "mobile"; sub = "cross-platform"; score = 100 }
+    "app-icon-optimization"        = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "app-store-changelog"          = @{ main = "mobile"; sub = "cross-platform"; score = 100 }
+    "architecture-patterns"        = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "astro"                        = @{ main = "frontend"; sub = "web-basics"; score = 100 }
+    "attach-db"                    = @{ main = "backend"; sub = "databases"; score = 100 }
+    "attack-tree-construction"     = @{ main = "security"; sub = "core"; score = 100 }
+    "audit-skills"                           = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "autonomous-agent-patterns"    = @{ main = "ai"; sub = "llm-agents"; score = 100 }
+    "aws-penetration-testing"      = @{ main = "security"; sub = "core"; score = 100 }
+    "azure-keyvault-keys-ts"       = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "azure-keyvault-secrets-ts"    = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "beautiful-prose"              = @{ main = "marketing"; sub = "content"; score = 100 }
+    "billing-automation"           = @{ main = "business"; sub = "saas"; score = 100 }
+    "blockchain-developer"         = @{ main = "programming"; sub = "typescript"; score = 100 }
+    "bmad-cis-storytelling"        = @{ main = "marketing"; sub = "content"; score = 100 }
+    "brainstorm-experiments-existing" = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "brainstorming"                = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "brand-guidelines"             = @{ main = "design"; sub = "brand-guidelines"; score = 100 }
     "brand-guidelines-anthropic"   = @{ main = "design"; sub = "brand-guidelines"; score = 100 }
     "brand-guidelines-community"   = @{ main = "design"; sub = "brand-guidelines"; score = 100 }
-    "brand-guidelines"             = @{ main = "design"; sub = "brand-guidelines"; score = 100 }
-    "beautiful-prose"              = @{ main = "marketing"; sub = "content"; score = 100 }
-    "vexor"                        = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "vexor-cli"                    = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "linear-claude-skill"          = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "scientific-writing"           = @{ main = "marketing"; sub = "content"; score = 100 }
-    "apify-ultimate-scraper"       = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    # =========================================================================
-    # TARGET: frontend/web-basics
-    # =========================================================================
-    "gsap-utils"                   = @{ main = "frontend"; sub = "web-basics"; score = 100 }
-    "gsap-frameworks"              = @{ main = "frontend"; sub = "web-basics"; score = 100 }
-    "gsap-react"                   = @{ main = "frontend"; sub = "web-basics"; score = 100 }
-    "netlify-edge-functions"       = @{ main = "frontend"; sub = "web-basics"; score = 100 }
-
-    # =========================================================================
-    # TARGET: frontend/react-nextjs
-    # =========================================================================
-    "web-artifacts-builder"        = @{ main = "frontend"; sub = "react-nextjs"; score = 100 }
-    "nextjs-supabase-auth"         = @{ main = "frontend"; sub = "react-nextjs"; score = 100 }
+    "bullmq-specialist"            = @{ main = "programming"; sub = "typescript"; score = 100 }
+    "c4-architecture-c4-architecture"= @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "c4-component"                 = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "canvas-design"                = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "carrier-relationship-management" = @{ main = "business"; sub = "saas"; score = 100 }
+    "changelog-automation"         = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "churn-prevention"             = @{ main = "marketing"; sub = "email"; score = 100 }
+    "cicd-automation-workflow-automate"= @{ main = "devops"; sub = "cloud"; score = 100 }
+    "claude-api"                   = @{ main = "ai"; sub = "llm-agents"; score = 100 }
+    "claude-code-expert"           = @{ main = "ai"; sub = "llm-agents"; score = 100 }
+    "claude-d3js-skill"            = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "claude-monitor"               = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
     "clerk-auth"                   = @{ main = "frontend"; sub = "react-nextjs"; score = 100 }
-
-    # =========================================================================
-    # TARGET: programming/typescript
-    # =========================================================================
+    "cloudflare" = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "cloudformation-best-practices"= @{ main = "devops"; sub = "cloud"; score = 100 }
+    "code-documentation-code-explain" = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "code-review-checklist"        = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "codebase-audit-pre-push"      = @{ main = "security"; sub = "core"; score = 100 }
+    "comfyui-gateway"              = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "competitor-alternatives"      = @{ main = "marketing"; sub = "content"; score = 100 }
+    "competitor-tracking"          = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "content-experimentation-best-practices" = @{ main = "testing"; sub = "automation"; score = 100 }
+    "content-strategy"             = @{ main = "marketing"; sub = "content"; score = 100 }
+    "context-compression"                 = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "context-engineering-advisor"         = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "context7-auto-research"       = @{ main = "ai"; sub = "llm-agents"; score = 100 }
+    "copywriting"                  = @{ main = "marketing"; sub = "content"; score = 100 }
+    "crash-analytics"              = @{ main = "mobile"; sub = "cross-platform"; score = 100 }
+    "creem"                        = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "creem-heartbeat"              = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "cred-omega"                   = @{ main = "security"; sub = "core"; score = 100 }
+    "crewai"                       = @{ main = "ai"; sub = "llm-agents"; score = 100 }
+    "cro-optimization"             = @{ main = "marketing"; sub = "content"; score = 100 }
+    "csharp-pro"                   = @{ main = "programming"; sub = "java"; score = 100 }
+    "data-engineering-data-driven-feature" = @{ main = "backend"; sub = "databases"; score = 100 }
+    "data-quality-frameworks"      = @{ main = "backend"; sub = "databases"; score = 100 }
+    "data-storytelling"            = @{ main = "marketing"; sub = "content"; score = 100 }
+    "database-admin"               = @{ main = "backend"; sub = "databases"; score = 100 }
+    "dbos-python"                  = @{ main = "programming"; sub = "python"; score = 100 }
+    "dbos-typescript"              = @{ main = "programming"; sub = "typescript"; score = 100 }
+    "dbt-transformation-patterns"  = @{ main = "backend"; sub = "databases"; score = 100 }
+    "debugging-strategies"         = @{ main = "testing"; sub = "automation"; score = 100 }
+    "defi-protocol-templates"      = @{ main = "security"; sub = "core"; score = 100 }
+    "dependency-upgrade"           = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "deploy" = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "deployment-engineer"          = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "derivatives-trading-coin-futures" = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "derivatives-trading-options"  = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "derivatives-trading-portfolio-margin" = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "derivatives-trading-usds-futures" = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "design-md"                    = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "design-orchestration"         = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "differential-review"          = @{ main = "testing"; sub = "automation"; score = 100 }
+    "doc-coauthoring"              = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "documentation-generation-doc-generate"  = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "dummy-dataset"                = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "email-marketing"              = @{ main = "marketing"; sub = "email"; score = 100 }
+    "email-sequence"               = @{ main = "marketing"; sub = "email"; score = 100 }
+    "enhance-prompt"                      = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "ethical-hacking-methodology"  = @{ main = "security"; sub = "core"; score = 100 }
+    "ffuf-web-fuzzing"             = @{ main = "security"; sub = "core"; score = 100 }
+    "figma-create-design-system-rules" = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "figma-generate-design"        = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "figma-use"                    = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "file-uploads"                 = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "find-bugs"                    = @{ main = "testing"; sub = "automation"; score = 100 }
+    "finishing-a-development-branch" = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "firebase"                     = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "fp-data-transforms"           = @{ main = "programming"; sub = "typescript"; score = 100 }
+    "framework-migration-deps-upgrade" = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "free-tool-strategy"           = @{ main = "marketing"; sub = "content"; score = 100 }
+    "gemini-api-integration"       = @{ main = "ai"; sub = "llm-agents"; score = 100 }
+    "geo-fundamentals"             = @{ main = "marketing"; sub = "content"; score = 100 }
+    "gha-security-review"          = @{ main = "security"; sub = "core"; score = 100 }
+    "github-actions-templates"     = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "gitlab-ci-patterns"           = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "gitops-workflow"              = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "go-mode"                      = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "google-stitch"                = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "graphql"                      = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "gsap-frameworks"              = @{ main = "frontend"; sub = "web-basics"; score = 100 }
+    "gsap-plugins"                 = @{ main = "frontend"; sub = "web-basics"; score = 100 }
+    "gsap-react"                   = @{ main = "frontend"; sub = "web-basics"; score = 100 }
+    "gsap-utils"                   = @{ main = "frontend"; sub = "web-basics"; score = 100 }
+    "gtm-motions"                  = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "gtm-strategy"                 = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "hierarchical-agent-memory"    = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "html-injection-testing"       = @{ main = "security"; sub = "core"; score = 100 }
+    "hubspot-integration"          = @{ main = "business"; sub = "saas"; score = 100 }
+    "identify-assumptions-existing" = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "identify-assumptions-new"     = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "idor-testing"                 = @{ main = "security"; sub = "core"; score = 100 }
+    "inngest"                      = @{ main = "programming"; sub = "typescript"; score = 100 }
+    "instagram"                    = @{ main = "marketing"; sub = "social"; score = 100 }
+    "interview-script"             = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "istio-traffic-management"     = @{ main = "devops"; sub = "docker-k8s"; score = 100 }
+    "iterate-pr"                   = @{ main = "testing"; sub = "automation"; score = 100 }
     "javascript-mastery"           = @{ main = "programming"; sub = "typescript"; score = 100 }
     "javascript-pro"               = @{ main = "programming"; sub = "typescript"; score = 100 }
-    "modern-javascript-patterns"   = @{ main = "programming"; sub = "typescript"; score = 100 }
-    "fp-data-transforms"           = @{ main = "programming"; sub = "typescript"; score = 100 }
-
-    # =========================================================================
-    # TARGET: programming/rust (makepad ecosystem)
-    # =========================================================================
+    "julia-pro"                    = @{ main = "programming"; sub = "python"; score = 100 }
+    "kotlin-coroutines-expert"     = @{ main = "mobile"; sub = "cross-platform"; score = 100 }
+    "langfuse"                     = @{ main = "ai"; sub = "llm-agents"; score = 100 }
+    "langgraph"                    = @{ main = "ai"; sub = "llm-agents"; score = 100 }
+    "latex-paper-conversion"       = @{ main = "marketing"; sub = "content"; score = 100 }
+    "lean-canvas"                  = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "leiloeiro-risco"              = @{ main = "business"; sub = "saas"; score = 100 }
+    "lightning-architecture-review"= @{ main = "security"; sub = "core"; score = 100 }
+    "linear-claude-skill"          = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "linkerd-patterns"             = @{ main = "devops"; sub = "docker-k8s"; score = 100 }
+    "lint-and-validate"                      = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "llm-application-dev-prompt-optimize" = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "llm-prompt-optimizer"                = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "llm-structured-output"               = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "logistics-exception-management" = @{ main = "business"; sub = "saas"; score = 100 }
+    "loki-mode"                    = @{ main = "ai"; sub = "llm-agents"; score = 100 }
     "makepad-animation"            = @{ main = "programming"; sub = "rust"; score = 100 }
     "makepad-basics"               = @{ main = "programming"; sub = "rust"; score = 100 }
     "makepad-deployment"           = @{ main = "programming"; sub = "rust"; score = 100 }
@@ -804,183 +870,138 @@ $MANUAL_HUB_OVERRIDES = @{
     "makepad-shaders"              = @{ main = "programming"; sub = "rust"; score = 100 }
     "makepad-splash"               = @{ main = "programming"; sub = "rust"; score = 100 }
     "makepad-widgets"              = @{ main = "programming"; sub = "rust"; score = 100 }
-
-    # =========================================================================
-    # TARGET: programming/java
-    # =========================================================================
-    "csharp-pro"                   = @{ main = "programming"; sub = "java"; score = 100 }
-
-    # =========================================================================
-    # TARGET: productivity/workflow-automation
-    # =========================================================================
-    "sred-work-summary"            = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "go-mode"                      = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "iterate-pr"                   = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "n8n-code-javascript"          = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "slack-messaging"              = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "doc-coauthoring"              = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "airflow-dag-patterns"         = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "context7-auto-research"       = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "wds-5-agentic-development"    = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "finishing-a-development-branch" = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "framework-migration-deps-upgrade" = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "dependency-upgrade"           = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "claude-monitor"               = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "code-documentation-code-explain" = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "hubspot-integration"          = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "find-bugs"                    = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "differential-review"          = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "code-review-checklist"        = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-
-    # =========================================================================
-    # TARGET: ai/prompting-builder
-    # =========================================================================
-    "llm-prompt-optimizer"                = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
-    "llm-application-dev-prompt-optimize" = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
-    "enhance-prompt"                      = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
-    "prompt-library"                      = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "market-movers"                = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "marketing-ideas"              = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "mcp-builder"                  = @{ main = "ai"; sub = "llm-agents"; score = 100 }
+    "mermaid-expert"               = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "micro-saas-launcher"          = @{ main = "business"; sub = "saas"; score = 100 }
+    "microservices-patterns"       = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "ml-engineer"                  = @{ main = "ai"; sub = "llm-agents"; score = 100 }
+    "modern-javascript-patterns"   = @{ main = "programming"; sub = "typescript"; score = 100 }
+    "n8n-code-javascript"          = @{ main = "programming"; sub = "typescript"; score = 100 }
+    "n8n-code-python"              = @{ main = "programming"; sub = "python"; score = 100 }
+    "native-data-fetching"         = @{ main = "mobile"; sub = "cross-platform"; score = 100 }
+    "nerdzao-elite"                = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "nestjs-expert"                = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "netlify-cli-and-deploy"       = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "netlify-deploy"               = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "netlify-edge-functions"       = @{ main = "frontend"; sub = "web-basics"; score = 100 }
+    "network-engineer"             = @{ main = "security"; sub = "core"; score = 100 }
+    "nextjs-supabase-auth"         = @{ main = "frontend"; sub = "react-nextjs"; score = 100 }
+    "nodejs-backend-patterns"      = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "nodejsbestpractices"          = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "notebooklm"                   = @{ main = "ai"; sub = "llm-agents"; score = 100 }
+    "odoo-accounting-setup"        = @{ main = "business"; sub = "saas"; score = 100 }
+    "odoo-backup-strategy"         = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "odoo-hr-payroll-setup"        = @{ main = "business"; sub = "saas"; score = 100 }
+    "odoo-rpc-api"                 = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "odoo-sales-crm-expert"        = @{ main = "business"; sub = "saas"; score = 100 }
+    "onboarding-cro"               = @{ main = "marketing"; sub = "content"; score = 100 }
+    "openapi-spec-generation"      = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "opportunity-solution-tree"    = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "page-cro"                     = @{ main = "marketing"; sub = "content"; score = 100 }
+    "paid-ads"                     = @{ main = "marketing"; sub = "social"; score = 100 }
+    "pakistan-payments-stack"      = @{ main = "business"; sub = "saas"; score = 100 }
+    "payment-integration"          = @{ main = "business"; sub = "saas"; score = 100 }
+    "paywall-upgrade-cro"          = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "pentest-commands"             = @{ main = "security"; sub = "core"; score = 100 }
+    "podcast-generation"           = @{ main = "marketing"; sub = "content"; score = 100 }
+    "polars"                       = @{ main = "programming"; sub = "python"; score = 100 }
+    "popup-cro"                    = @{ main = "marketing"; sub = "content"; score = 100 }
+    "positioning-basics"           = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "positioning-ideas"            = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "pricing-strategy"             = @{ main = "marketing"; sub = "strategy"; score = 100 }
+    "prioritize-assumptions"       = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "privilege-escalation-methods" = @{ main = "security"; sub = "core"; score = 100 }
+    "production-scheduling"        = @{ main = "business"; sub = "saas"; score = 100 }
+    "programmatic-seo"             = @{ main = "marketing"; sub = "content"; score = 100 }
+    "prompt-caching"                      = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "prompt-engineer"                     = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
     "prompt-engineering"                  = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
     "prompt-engineering-patterns"         = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
-    "prompt-engineer"                     = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
-    "prompt-caching"                      = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
-    "llm-structured-output"               = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
-    "context-compression"                 = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "prompt-library"                      = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
+    "query"                        = @{ main = "backend"; sub = "databases"; score = 100 }
     "rating-prompt-strategy"              = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
-    "context-engineering-advisor"         = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
-
-    # =========================================================================
-    # TARGET: ai/skills-factory
-    # =========================================================================
-    "skill-creator"                          = @{ main = "ai"; sub = "skills-factory"; score = 100 }
-    "skill-developer"                        = @{ main = "ai"; sub = "skills-factory"; score = 100 }
-    "writing-skills"                         = @{ main = "ai"; sub = "skills-factory"; score = 100 }
-    "documentation-generation-doc-generate"  = @{ main = "ai"; sub = "skills-factory"; score = 100 }
-    "lint-and-validate"                      = @{ main = "ai"; sub = "skills-factory"; score = 100 }
-    "verification-before-completion"         = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "react:components"             = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "read-file"                    = @{ main = "backend"; sub = "databases"; score = 100 }
+    "read-memories"                = @{ main = "backend"; sub = "databases"; score = 100 }
+    "referral-program"             = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "render-automation"            = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "returns-reverse-logistics"    = @{ main = "business"; sub = "saas"; score = 100 }
+    "revops"                       = @{ main = "business"; sub = "saas"; score = 100 }
+    "risk-metrics-calculation"     = @{ main = "business"; sub = "saas"; score = 100 }
+    "saas-mvp-launcher"            = @{ main = "business"; sub = "saas"; score = 100 }
+    "sankhya-dashboard-html-jsp-custom-best-pratices" = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "sast-configuration"           = @{ main = "security"; sub = "core"; score = 100 }
+    "schema-markup"                = @{ main = "marketing"; sub = "content"; score = 100 }
+    "scientific-writing"           = @{ main = "marketing"; sub = "content"; score = 100 }
+    "screenshot-optimization"      = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "scroll-experience"            = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "secrets-management"           = @{ main = "security"; sub = "core"; score = 100 }
+    "seo-image-gen"                = @{ main = "marketing"; sub = "content"; score = 100 }
+    "seo-programmatic"             = @{ main = "marketing"; sub = "content"; score = 100 }
+    "service-mesh-expert"          = @{ main = "devops"; sub = "docker-k8s"; score = 100 }
+    "shodan-reconnaissance"        = @{ main = "security"; sub = "core"; score = 100 }
+    "shopify-development"          = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "site-architecture"            = @{ main = "marketing"; sub = "content"; score = 100 }
     "skill-authoring-workflow"               = @{ main = "ai"; sub = "skills-factory"; score = 100 }
-    "skill-sentinel"                         = @{ main = "ai"; sub = "skills-factory"; score = 100 }
-    "skill-writer"                           = @{ main = "ai"; sub = "skills-factory"; score = 100 }
-    "skill-seekers"                          = @{ main = "ai"; sub = "skills-factory"; score = 100 }
-    "skill-scanner"                          = @{ main = "ai"; sub = "skills-factory"; score = 100 }
-    "skill-router"                           = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-check"                            = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-creator"                          = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-creator-ms"                       = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-developer"                        = @{ main = "ai"; sub = "skills-factory"; score = 100 }
     "skill-improver"                         = @{ main = "ai"; sub = "skills-factory"; score = 100 }
     "skill-installer"                        = @{ main = "ai"; sub = "skills-factory"; score = 100 }
-    "skill-creator-ms"                       = @{ main = "ai"; sub = "skills-factory"; score = 100 }
-    "skill-check"                            = @{ main = "ai"; sub = "skills-factory"; score = 100 }
-    "audit-skills"                           = @{ main = "ai"; sub = "skills-factory"; score = 100 }
-    "antigravity-skill-orchestrator"         = @{ main = "ai"; sub = "skills-factory"; score = 100 }
-
-    # =========================================================================
-    # TARGET: general/misc
-    # =========================================================================
-    "latex-paper-conversion"       = @{ main = "marketing"; sub = "content"; score = 100 }
-    "sankhya-dashboard-html-jsp-custom-best-pratices" = @{ main = "backend"; sub = "api-design"; score = 100 }
-    "ml-engineer"                  = @{ main = "ai"; sub = "llm-agents"; score = 100 }
-    "dbt-transformation-patterns"  = @{ main = "backend"; sub = "databases"; score = 100 }
-    "data-quality-frameworks"      = @{ main = "backend"; sub = "databases"; score = 100 }
-    "data-engineering-data-driven-feature" = @{ main = "backend"; sub = "databases"; score = 100 }
-    "leiloeiro-risco"              = @{ main = "business"; sub = "saas"; score = 100 }
-    "polars"                       = @{ main = "programming"; sub = "python"; score = 100 }
-    "carrier-relationship-management" = @{ main = "business"; sub = "saas"; score = 100 }
-    "logistics-exception-management" = @{ main = "business"; sub = "saas"; score = 100 }
-    "returns-reverse-logistics"    = @{ main = "business"; sub = "saas"; score = 100 }
-    "yes-md"                       = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
-    "notebooklm"                   = @{ main = "ai"; sub = "llm-agents"; score = 100 }
-   
-    # =========================================================================
-    # TARGET: devops/cloud
-    # =========================================================================
-    "azure-keyvault-keys-ts"       = @{ main = "devops"; sub = "cloud"; score = 100 }
-    "azure-keyvault-secrets-ts"    = @{ main = "devops"; sub = "cloud"; score = 100 }
-    "netlify-cli-and-deploy"       = @{ main = "devops"; sub = "cloud"; score = 100 }
-    "firebase"                     = @{ main = "devops"; sub = "cloud"; score = 100 }
-    "network-engineer"             = @{ main = "devops"; sub = "cloud"; score = 100 }
-    "cloudflare" = @{ main = "devops"; sub = "cloud"; score = 100 }
-    "deploy" = @{ main = "devops"; sub = "cloud"; score = 100 }
-    # =========================================================================
-    # TARGET: devops/docker-k8s
-    # =========================================================================
-    "linkerd-patterns"             = @{ main = "devops"; sub = "docker-k8s"; score = 100 }
-    "service-mesh-expert"          = @{ main = "devops"; sub = "docker-k8s"; score = 100 }
-
-    # =========================================================================
-    # TARGET: marketing/email (canonical hub for email skills)
-    # =========================================================================
-    "email-sequence"               = @{ main = "marketing"; sub = "email"; score = 100 }
-    "revops"                       = @{ main = "marketing"; sub = "email"; score = 100 }
-    "churn-prevention"             = @{ main = "marketing"; sub = "email"; score = 100 }
-    "email-marketing"              = @{ main = "marketing"; sub = "email"; score = 100 }
-    # =========================================================================
-    # TARGET: marketing/social
-    # =========================================================================
-    "paid-ads"                     = @{ main = "marketing"; sub = "social"; score = 100 }
-    "instagram"                    = @{ main = "marketing"; sub = "social"; score = 100 }
-
-    # =========================================================================
-    # TARGET: marketing/content
-    # =========================================================================
-    "competitor-alternatives"      = @{ main = "marketing"; sub = "content"; score = 100 }
-    "schema-markup"                = @{ main = "marketing"; sub = "content"; score = 100 }
-    "programmatic-seo"             = @{ main = "marketing"; sub = "content"; score = 100 }
-    "site-architecture"            = @{ main = "marketing"; sub = "content"; score = 100 }
-    "copywriting"                  = @{ main = "marketing"; sub = "content"; score = 100 }
-    "seo-image-gen"                = @{ main = "marketing"; sub = "content"; score = 100 }
-    "ad-creative"                  = @{ main = "marketing"; sub = "content"; score = 100 }
-    "testimonial-collector"        = @{ main = "marketing"; sub = "content"; score = 100 }
-    "free-tool-strategy"           = @{ main = "marketing"; sub = "content"; score = 100 }
-    "popup-cro"                    = @{ main = "marketing"; sub = "content"; score = 100 }
-    "cro-optimization"             = @{ main = "marketing"; sub = "content"; score = 100 }
-    "content-strategy"             = @{ main = "marketing"; sub = "content"; score = 100 }
-    "bmad-cis-storytelling"        = @{ main = "marketing"; sub = "content"; score = 100 }
-    "data-storytelling"            = @{ main = "marketing"; sub = "content"; score = 100 }
-    "podcast-generation"           = @{ main = "marketing"; sub = "content"; score = 100 }
-    # =========================================================================
-    # TARGET: marketing/strategy
-    # =========================================================================
-    "pricing-strategy"             = @{ main = "marketing"; sub = "strategy"; score = 100 }
-    "marketing-ideas"              = @{ main = "marketing"; sub = "strategy"; score = 100 }
-    "positioning-ideas"            = @{ main = "marketing"; sub = "strategy"; score = 100 }
-    "positioning-basics"           = @{ main = "marketing"; sub = "strategy"; score = 100 }
-    "gtm-strategy"                 = @{ main = "marketing"; sub = "strategy"; score = 100 }
-    "gtm-motions"                  = @{ main = "marketing"; sub = "strategy"; score = 100 }
-
-    # =========================================================================
-    # TARGET: backend/api-design
-    # =========================================================================
-    "lightning-architecture-review" = @{ main = "backend"; sub = "api-design"; score = 100 }
-    "mermaid-expert"               = @{ main = "backend"; sub = "api-design"; score = 100 }
-    "microservices-patterns"       = @{ main = "backend"; sub = "api-design"; score = 100 }
-    "nestjs-expert"                = @{ main = "backend"; sub = "api-design"; score = 100 }
-    "architecture-patterns"        = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "skill-router"                           = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-scanner"                          = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-seekers"                          = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-sentinel"                         = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-writer"                           = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "slack-messaging"              = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
     "spot"                         = @{ main = "backend"; sub = "api-design"; score = 100 }
-    "derivatives-trading-coin-futures" = @{ main = "backend"; sub = "api-design"; score = 100 }
-    "derivatives-trading-options"  = @{ main = "backend"; sub = "api-design"; score = 100 }
-    "derivatives-trading-portfolio-margin" = @{ main = "backend"; sub = "api-design"; score = 100 }
-    "derivatives-trading-usds-futures" = @{ main = "backend"; sub = "api-design"; score = 100 }
-    "nodejsbestpractices"          = @{ main = "backend"; sub = "api-design"; score = 100 }
-    "file-uploads"                 = @{ main = "backend"; sub = "api-design"; score = 100 }
-
-    # =========================================================================
-    # TARGET: backend/databases
-    # =========================================================================
+    "sred-work-summary"            = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "stripe-integration"           = @{ main = "business"; sub = "saas"; score = 100 }
+    "supabase-automation"          = @{ main = "backend"; sub = "databases"; score = 100 }
+    "sveltekit"                    = @{ main = "frontend"; sub = "react-nextjs"; score = 100 }
+    "tdd-orchestrator"             = @{ main = "testing"; sub = "automation"; score = 100 }
+    "tdd-workflow"                 = @{ main = "testing"; sub = "automation"; score = 100 }
+    "tdd-workflows-tdd-cycle"      = @{ main = "testing"; sub = "automation"; score = 100 }
+    "tdd-workflows-tdd-green"      = @{ main = "testing"; sub = "automation"; score = 100 }
+    "tdd-workflows-tdd-red"        = @{ main = "testing"; sub = "automation"; score = 100 }
+    "tdd-workflows-tdd-refactor"   = @{ main = "testing"; sub = "automation"; score = 100 }
+    "test-scenarios"               = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "testimonial-collector"        = @{ main = "marketing"; sub = "content"; score = 100 }
+    "theme-factory"                = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-animation"            = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-fundamentals"         = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-geometry"             = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-interaction"          = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-lighting"             = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-loaders"              = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-materials"            = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-postprocessing"       = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-skills"               = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-textures"             = @{ main = "design"; sub = "ui-ux"; score = 100 }
     "tinybird-cli-guidelines"      = @{ main = "backend"; sub = "databases"; score = 100 }
-
-    # =========================================================================
-    # TARGET: mobile/cross-platform
-    # =========================================================================
-    "kotlin-coroutines-expert"     = @{ main = "mobile"; sub = "cross-platform"; score = 100 }
-    "native-data-fetching"         = @{ main = "mobile"; sub = "cross-platform"; score = 100 }
-
-    # =========================================================================
-    # TARGET: security/core
-    # =========================================================================
-    "attack-tree-construction"     = @{ main = "security"; sub = "core"; score = 100 }
-
-    # =========================================================================
-    # TARGET: testing/automation
-    # =========================================================================
-    "debugging-strategies"         = @{ main = "testing"; sub = "automation"; score = 100 }
-    "content-experimentation-best-practices" = @{ main = "testing"; sub = "automation"; score = 100 }
+    "trigger-dev"                  = @{ main = "programming"; sub = "typescript"; score = 100 }
+    "user-story"                   = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "user-story-mapping"           = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "user-story-mapping-workshop"  = @{ main = "business"; sub = "product-strategy"; score = 100 }
+    "uv-package-manager"           = @{ main = "programming"; sub = "python"; score = 100 }
+    "varlock"                      = @{ main = "security"; sub = "core"; score = 100 }
+    "varlock-claude-skill"         = @{ main = "security"; sub = "core"; score = 100 }
+    "vercel-automation"            = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "vercel-deployment"            = @{ main = "devops"; sub = "cloud"; score = 100 }
+    "verification-before-completion"         = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "vexor"                        = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "vexor-cli"                    = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "wds-5-agentic-development"    = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "web-artifacts-builder"        = @{ main = "frontend"; sub = "react-nextjs"; score = 100 }
+    "windows-privilege-escalation" = @{ main = "security"; sub = "core"; score = 100 }
+    "windows-vm"                   = @{ main = "devops"; sub = "docker-k8s"; score = 100 }
+    "wordpress-penetration-testing"= @{ main = "security"; sub = "core"; score = 100 }
+    "wordpress-plugin-development" = @{ main = "backend"; sub = "api-design"; score = 100 }
+    "writing-skills"                         = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "yes-md"                       = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
 }
 
 $EXCLUDE_CATEGORY_PATTERNS = [ordered]@{

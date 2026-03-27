@@ -41,19 +41,19 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - face
 - hugging
 - agents
-- skill
-- builder
-- automation
 - fal
-- llm
-- memory
-- multi
-- cis
+- automation
+- builder
+- skill
 - engineer
-- google
-- hig
 - development
+- multi
+- llm
+- google
+- cis
 - context
+- cli
+- hig
 
 ## Data Contract
 

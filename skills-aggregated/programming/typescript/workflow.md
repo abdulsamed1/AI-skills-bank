@@ -37,23 +37,23 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - ts
 - typescript
 - azure
-- angular
-- fp
 - javascript
-- storage
+- fp
+- angular
 - expert
-- development
+- storage
 - practices
-- best
+- development
 - pro
-- migration
-- queue
-- scaffold
-- zustand
-- tinybird
-- postgres
+- best
+- n8n
+- file
+- react
+- data
 - specialist
-- ai
+- bullmq
+- management
+- netlify
 
 ## Data Contract
 

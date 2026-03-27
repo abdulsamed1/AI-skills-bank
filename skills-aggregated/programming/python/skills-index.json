@@ -507,7 +507,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
-        "match_score":  12
+        "match_score":  100
     },
     {
         "id":  "django-access-review",
@@ -580,6 +580,17 @@
         "match_score":  7
     },
     {
+        "id":  "julia-pro",
+        "triggers":  [
+                         "julia",
+                         "pro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "junta-leiloeiros",
         "triggers":  [
                          "junta",
@@ -622,7 +633,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
-        "match_score":  12
+        "match_score":  100
     },
     {
         "id":  "networkx",
@@ -867,6 +878,18 @@
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  12
+    },
+    {
+        "id":  "uv-package-manager",
+        "triggers":  [
+                         "uv",
+                         "package",
+                         "manager"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "whatsapp-cloud-api",

@@ -36,24 +36,24 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 - seo
 - content
-- cro
 - ai
+- cro
+- audit
 - schema
 - programmatic
-- competitor
-- audit
 - storytelling
-- page
-- strategy
+- competitor
 - writing
-- alternatives
-- response
-- copy
-- gen
-- local
-- scientific
-- creator
+- strategy
 - geo
+- page
+- fundamentals
+- alternatives
+- dataforseo
+- bmad
+- local
+- creator
+- scientific
 
 ## Data Contract
 

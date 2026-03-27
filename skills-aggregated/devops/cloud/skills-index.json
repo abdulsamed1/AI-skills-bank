@@ -10,17 +10,6 @@
         "match_score":  8
     },
     {
-        "id":  "amazon-alexa",
-        "triggers":  [
-                         "amazon",
-                         "alexa"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  8
-    },
-    {
         "id":  "apify-actorization",
         "triggers":  [
                          "apify",
@@ -412,6 +401,30 @@
         "match_score":  8
     },
     {
+        "id":  "changelog-automation",
+        "triggers":  [
+                         "changelog",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "cicd-automation-workflow-automate",
+        "triggers":  [
+                         "cicd",
+                         "automation",
+                         "workflow",
+                         "automate"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "closed-loop-delivery",
         "triggers":  [
                          "closed",
@@ -458,6 +471,18 @@
         "match_score":  9
     },
     {
+        "id":  "cloudformation-best-practices",
+        "triggers":  [
+                         "cloudformation",
+                         "best",
+                         "practices"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "cloud-penetration-testing",
         "triggers":  [
                          "cloud",
@@ -468,17 +493,6 @@
         "primary_hub":  "devops/cloud",
         "is_primary":  true,
         "match_score":  21
-    },
-    {
-        "id":  "competitor-tracking",
-        "triggers":  [
-                         "competitor",
-                         "tracking"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
     },
     {
         "id":  "cost-optimization",
@@ -517,6 +531,17 @@
         "primary_hub":  "devops/cloud",
         "is_primary":  true,
         "match_score":  12
+    },
+    {
+        "id":  "deployment-engineer",
+        "triggers":  [
+                         "deployment",
+                         "engineer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "deployment-pipeline-design",
@@ -662,6 +687,41 @@
         "match_score":  9
     },
     {
+        "id":  "github-actions-templates",
+        "triggers":  [
+                         "github",
+                         "actions",
+                         "templates"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "gitlab-ci-patterns",
+        "triggers":  [
+                         "gitlab",
+                         "ci",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "gitops-workflow",
+        "triggers":  [
+                         "gitops",
+                         "workflow"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "grafana-dashboards",
         "triggers":  [
                          "grafana",
@@ -719,26 +779,6 @@
         "match_score":  4
     },
     {
-        "id":  "inngest",
-        "triggers":  [
-                         "inngest"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  8
-    },
-    {
-        "id":  "langfuse",
-        "triggers":  [
-                         "langfuse"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  8
-    },
-    {
         "id":  "multi-cloud-architecture",
         "triggers":  [
                          "multi",
@@ -764,12 +804,12 @@
         "match_score":  100
     },
     {
-        "id":  "network-engineer",
+        "id":  "netlify-deploy",
         "triggers":  [
-                         "network",
-                         "engineer"
+                         "netlify",
+                         "deploy"
                      ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:context-and-tools",
         "primary_hub":  "devops/cloud",
         "is_primary":  true,
         "match_score":  100
@@ -810,6 +850,18 @@
         "primary_hub":  "devops/cloud",
         "is_primary":  true,
         "match_score":  14
+    },
+    {
+        "id":  "odoo-backup-strategy",
+        "triggers":  [
+                         "odoo",
+                         "backup",
+                         "strategy"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "on-call-handoff-patterns",
@@ -892,27 +944,15 @@
         "match_score":  4
     },
     {
-        "id":  "risk-metrics-calculation",
+        "id":  "render-automation",
         "triggers":  [
-                         "risk",
-                         "metrics",
-                         "calculation"
+                         "render",
+                         "automation"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "devops/cloud",
         "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "secrets-management",
-        "triggers":  [
-                         "secrets",
-                         "management"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  12
+        "match_score":  100
     },
     {
         "id":  "service-mesh-observability",
@@ -1029,6 +1069,28 @@
         "match_score":  4
     },
     {
+        "id":  "vercel-automation",
+        "triggers":  [
+                         "vercel",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "vercel-deployment",
+        "triggers":  [
+                         "vercel",
+                         "deployment"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "windows-shell-reliability",
         "triggers":  [
                          "windows",
@@ -1039,16 +1101,5 @@
         "primary_hub":  "devops/cloud",
         "is_primary":  true,
         "match_score":  8
-    },
-    {
-        "id":  "windows-vm",
-        "triggers":  [
-                         "windows",
-                         "vm"
-                     ],
-        "src":  "external:superpowers-lab",
-        "primary_hub":  "devops/cloud",
-        "is_primary":  true,
-        "match_score":  4
     }
 ]

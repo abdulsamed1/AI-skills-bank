@@ -39,21 +39,21 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - error
 - cloud
 - aws
-- terraform
-- observability
-- optimization
-- windows
-- cost
 - patterns
+- observability
+- deployment
+- terraform
+- optimization
+- cost
+- automation
 - dotnet
-- ai
-- bash
 - engineer
-- devops
 - mgmt
-- incident
-- performance
+- windows
+- devops
 - monitoring
+- deploy
+- ai
 
 ## Data Contract
 

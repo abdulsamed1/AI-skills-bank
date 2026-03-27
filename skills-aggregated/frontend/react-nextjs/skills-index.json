@@ -221,6 +221,16 @@
         "match_score":  4
     },
     {
+        "id":  "sveltekit",
+        "triggers":  [
+                         "sveltekit"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "tanstack-query-expert",
         "triggers":  [
                          "tanstack",

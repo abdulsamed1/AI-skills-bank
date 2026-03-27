@@ -39,21 +39,21 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - review
 - code
 - ai
-- workflow
 - context
-- tdd
-- workflows
 - builder
-- patterns
-- development
 - git
-- design
-- pr
-- github
-- conductor
+- workflow
+- development
 - firecrawl
-- research
+- patterns
+- conductor
+- pr
+- testarch
+- github
+- fp
 - wiki
+- plan
+- design
 
 ## Data Contract
 

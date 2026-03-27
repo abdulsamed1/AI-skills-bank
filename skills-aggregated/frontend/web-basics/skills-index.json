@@ -11,6 +11,16 @@
         "match_score":  4
     },
     {
+        "id":  "astro",
+        "triggers":  [
+                         "astro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/web-basics",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "favicon",
         "triggers":  [
                          "favicon"
@@ -70,6 +80,17 @@
         "triggers":  [
                          "gsap",
                          "frameworks"
+                     ],
+        "src":  "external:gsap-skills",
+        "primary_hub":  "frontend/web-basics",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "gsap-plugins",
+        "triggers":  [
+                         "gsap",
+                         "plugins"
                      ],
         "src":  "external:gsap-skills",
         "primary_hub":  "frontend/web-basics",
@@ -174,17 +195,6 @@
                          "patterns"
                      ],
         "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "frontend/web-basics",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "theme-factory",
-        "triggers":  [
-                         "theme",
-                         "factory"
-                     ],
-        "src":  "external:skills",
         "primary_hub":  "frontend/web-basics",
         "is_primary":  true,
         "match_score":  4

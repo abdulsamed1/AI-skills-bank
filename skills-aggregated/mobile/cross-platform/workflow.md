@@ -36,24 +36,24 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 - expo
 - expert
-- mobile
 - app
-- ui
-- developer
+- mobile
 - macos
+- developer
+- ui
 - swift
-- native
-- android
 - development
-- aso
-- flutter
+- android
+- native
+- store
+- analytics
+- upgrading
 - spm
 - scaffold
-- upgrading
+- flutter
+- component
 - jetpack
 - kotlin
-- earllm
-- coroutines
 
 ## Data Contract
 

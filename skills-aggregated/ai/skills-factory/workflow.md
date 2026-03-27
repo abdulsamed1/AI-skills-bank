@@ -35,24 +35,24 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 ## Quick Trigger Hints
 
 - skill
-- skills
 - creator
-- ms
-- workflow
+- skills
+- verification
+- orchestrator
+- router
+- installer
 - check
 - documentation
-- verification
+- ms
 - antigravity
-- authoring
-- scanner
 - validate
+- seekers
+- authoring
 - and
-- completion
+- workflow
 - generate
-- installer
-- writer
-- sentinel
-- before
+- completion
+- md
 - audit
 
 ## Data Contract

@@ -1,5 +1,17 @@
 [
     {
+        "id":  "active-directory-attacks",
+        "triggers":  [
+                         "active",
+                         "directory",
+                         "attacks"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "anti-reversing-techniques",
         "triggers":  [
                          "anti",
@@ -59,6 +71,18 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  10
+    },
+    {
+        "id":  "aws-penetration-testing",
+        "triggers":  [
+                         "aws",
+                         "penetration",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "aws-security-audit",
@@ -135,6 +159,19 @@
         "match_score":  15
     },
     {
+        "id":  "codebase-audit-pre-push",
+        "triggers":  [
+                         "codebase",
+                         "audit",
+                         "pre",
+                         "push"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "codebase-cleanup-deps-audit",
         "triggers":  [
                          "codebase",
@@ -148,6 +185,29 @@
         "match_score":  15
     },
     {
+        "id":  "cred-omega",
+        "triggers":  [
+                         "cred",
+                         "omega"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "defi-protocol-templates",
+        "triggers":  [
+                         "defi",
+                         "protocol",
+                         "templates"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "dependency-management-deps-audit",
         "triggers":  [
                          "dependency",
@@ -159,6 +219,30 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  15
+    },
+    {
+        "id":  "ethical-hacking-methodology",
+        "triggers":  [
+                         "ethical",
+                         "hacking",
+                         "methodology"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "ffuf-web-fuzzing",
+        "triggers":  [
+                         "ffuf",
+                         "web",
+                         "fuzzing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "firmware-analyst",
@@ -210,6 +294,41 @@
         "match_score":  6
     },
     {
+        "id":  "gha-security-review",
+        "triggers":  [
+                         "gha",
+                         "security",
+                         "review"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "html-injection-testing",
+        "triggers":  [
+                         "html",
+                         "injection",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "idor-testing",
+        "triggers":  [
+                         "idor",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "laravel-expert",
         "triggers":  [
                          "laravel",
@@ -231,6 +350,18 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  9
+    },
+    {
+        "id":  "lightning-architecture-review",
+        "triggers":  [
+                         "lightning",
+                         "architecture",
+                         "review"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "linux-privilege-escalation",
@@ -290,6 +421,17 @@
         "match_score":  11
     },
     {
+        "id":  "network-engineer",
+        "triggers":  [
+                         "network",
+                         "engineer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "nodejs-best-practices",
         "triggers":  [
                          "nodejs",
@@ -336,6 +478,17 @@
         "match_score":  7
     },
     {
+        "id":  "pentest-commands",
+        "triggers":  [
+                         "pentest",
+                         "commands"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "privacy-by-design",
         "triggers":  [
                          "privacy",
@@ -346,6 +499,18 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  6
+    },
+    {
+        "id":  "privilege-escalation-methods",
+        "triggers":  [
+                         "privilege",
+                         "escalation",
+                         "methods"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "protocol-reverse-engineering",
@@ -395,6 +560,17 @@
         "match_score":  5
     },
     {
+        "id":  "sast-configuration",
+        "triggers":  [
+                         "sast",
+                         "configuration"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "scanning-tools",
         "triggers":  [
                          "scanning",
@@ -404,6 +580,17 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  15
+    },
+    {
+        "id":  "secrets-management",
+        "triggers":  [
+                         "secrets",
+                         "management"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "security-audit",
@@ -503,6 +690,17 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "shodan-reconnaissance",
+        "triggers":  [
+                         "shodan",
+                         "reconnaissance"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "smtp-penetration-testing",
@@ -624,6 +822,28 @@
         "match_score":  8
     },
     {
+        "id":  "varlock",
+        "triggers":  [
+                         "varlock"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "varlock-claude-skill",
+        "triggers":  [
+                         "varlock",
+                         "claude",
+                         "skill"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "vulnerability-scanner",
         "triggers":  [
                          "vulnerability",
@@ -647,6 +867,18 @@
         "match_score":  11
     },
     {
+        "id":  "windows-privilege-escalation",
+        "triggers":  [
+                         "windows",
+                         "privilege",
+                         "escalation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "wireshark-analysis",
         "triggers":  [
                          "wireshark",
@@ -656,5 +888,17 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "wordpress-penetration-testing",
+        "triggers":  [
+                         "wordpress",
+                         "penetration",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  100
     }
 ]

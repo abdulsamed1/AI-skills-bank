@@ -122,6 +122,17 @@
         "match_score":  6
     },
     {
+        "id":  "blockchain-developer",
+        "triggers":  [
+                         "blockchain",
+                         "developer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "bullmq-specialist",
         "triggers":  [
                          "bullmq",
@@ -130,7 +141,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
-        "match_score":  6
+        "match_score":  100
     },
     {
         "id":  "bun-development",
@@ -175,7 +186,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
-        "match_score":  12
+        "match_score":  100
     },
     {
         "id":  "drizzle-orm-expert",
@@ -248,6 +259,16 @@
         "match_score":  9
     },
     {
+        "id":  "inngest",
+        "triggers":  [
+                         "inngest"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "javascript-mastery",
         "triggers":  [
                          "javascript",
@@ -307,6 +328,18 @@
         "match_score":  100
     },
     {
+        "id":  "n8n-code-javascript",
+        "triggers":  [
+                         "n8n",
+                         "code",
+                         "javascript"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "netlify-functions",
         "triggers":  [
                          "netlify",
@@ -354,6 +387,17 @@
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  14
+    },
+    {
+        "id":  "trigger-dev",
+        "triggers":  [
+                         "trigger",
+                         "dev"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "typescript-advanced-types",

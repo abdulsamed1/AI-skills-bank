@@ -56,6 +56,17 @@
         "match_score":  11
     },
     {
+        "id":  "competitor-tracking",
+        "triggers":  [
+                         "competitor",
+                         "tracking"
+                     ],
+        "src":  "external:aso-skills",
+        "primary_hub":  "marketing/strategy",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "gtm-motions",
         "triggers":  [
                          "gtm",
@@ -84,6 +95,17 @@
                          "ideas"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/strategy",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "market-movers",
+        "triggers":  [
+                         "market",
+                         "movers"
+                     ],
+        "src":  "external:aso-skills",
         "primary_hub":  "marketing/strategy",
         "is_primary":  true,
         "match_score":  100

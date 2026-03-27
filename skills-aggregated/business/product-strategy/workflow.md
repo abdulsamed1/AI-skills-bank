@@ -35,25 +35,25 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 ## Quick Trigger Hints
 
 - product
-- wds
 - bmad
+- wds
 - prd
-- strategy
-- brainstorm
 - advisor
+- brainstorm
+- strategy
 - user
-- app
+- mapping
 - workshop
 - optimization
-- mapping
-- readiness
+- app
 - assumptions
 - interview
-- new
 - market
 - existing
+- readiness
+- new
 - story
-- onboarding
+- canvas
 
 ## Data Contract
 

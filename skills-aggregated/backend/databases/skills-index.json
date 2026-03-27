@@ -1,5 +1,16 @@
 [
     {
+        "id":  "attach-db",
+        "triggers":  [
+                         "attach",
+                         "db"
+                     ],
+        "src":  "external:duckdb-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "azure-resource-manager-postgresql-dotnet",
         "triggers":  [
                          "azure",
@@ -56,6 +67,17 @@
         "primary_hub":  "backend/databases",
         "is_primary":  true,
         "match_score":  14
+    },
+    {
+        "id":  "database-admin",
+        "triggers":  [
+                         "database",
+                         "admin"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "database-design",
@@ -335,6 +357,38 @@
         "match_score":  14
     },
     {
+        "id":  "query",
+        "triggers":  [
+                         "query"
+                     ],
+        "src":  "external:duckdb-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "read-file",
+        "triggers":  [
+                         "read",
+                         "file"
+                     ],
+        "src":  "external:duckdb-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "read-memories",
+        "triggers":  [
+                         "read",
+                         "memories"
+                     ],
+        "src":  "external:duckdb-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "similarity-search-patterns",
         "triggers":  [
                          "similarity",
@@ -413,6 +467,17 @@
         "primary_hub":  "backend/databases",
         "is_primary":  true,
         "match_score":  10
+    },
+    {
+        "id":  "supabase-automation",
+        "triggers":  [
+                         "supabase",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "supabase-postgres-best-practices",

@@ -1,5 +1,5 @@
 {
-    "generated_at":  "2026-03-27T14:17:47+02:00",
+    "generated_at":  "2026-03-27T17:38:40+02:00",
     "src_repo_mode":  "all",
     "selected_src_repos":  [
                                "agent-skills",
@@ -14,6 +14,7 @@
                                "cli",
                                "context-and-tools",
                                "creative-director-skill",
+                               "creem",
                                "duckdb-skills",
                                "email-marketing-bible",
                                "founder-skills",
@@ -152,6 +153,13 @@
                                  "revision":  "1609cef55f65e9f643d112cca400ff90ef16b9a1",
                                  "dirty":  false,
                                  "fingerprint":  "git:6967ec40cfc2fecc74fde62fb73d7051e6d3a8981f14ad4ecf95baf9d66330c7"
+                             },
+                             {
+                                 "name":  "creem",
+                                 "vcs":  "filesystem",
+                                 "revision":  null,
+                                 "dirty":  false,
+                                 "fingerprint":  "files:2|ticks:639102216720147779"
                              },
                              {
                                  "name":  "duckdb-skills",

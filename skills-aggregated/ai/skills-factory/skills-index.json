@@ -1,5 +1,16 @@
 [
     {
+        "id":  "agents-md",
+        "triggers":  [
+                         "agents",
+                         "md"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/skills-factory",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "antigravity-skill-orchestrator",
         "triggers":  [
                          "antigravity",
@@ -44,6 +55,18 @@
         "primary_hub":  "ai/skills-factory",
         "is_primary":  true,
         "match_score":  5
+    },
+    {
+        "id":  "hierarchical-agent-memory",
+        "triggers":  [
+                         "hierarchical",
+                         "agent",
+                         "memory"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/skills-factory",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "lint-and-validate",

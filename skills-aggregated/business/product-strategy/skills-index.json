@@ -221,17 +221,6 @@
         "match_score":  15
     },
     {
-        "id":  "blockchain-developer",
-        "triggers":  [
-                         "blockchain",
-                         "developer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "blog-writing-guide",
         "triggers":  [
                          "blog",
@@ -424,18 +413,6 @@
         "match_score":  5
     },
     {
-        "id":  "cloudformation-best-practices",
-        "triggers":  [
-                         "cloudformation",
-                         "best",
-                         "practices"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "cold-outreach-sequence",
         "triggers":  [
                          "cold",
@@ -493,18 +470,6 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  13
-    },
-    {
-        "id":  "defi-protocol-templates",
-        "triggers":  [
-                         "defi",
-                         "protocol",
-                         "templates"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  5
     },
     {
         "id":  "deployment-procedures",
@@ -623,18 +588,6 @@
         "match_score":  7
     },
     {
-        "id":  "gemini-api-integration",
-        "triggers":  [
-                         "gemini",
-                         "api",
-                         "integration"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "go-to-market-plan",
         "triggers":  [
                          "go",
@@ -706,18 +659,6 @@
         "match_score":  100
     },
     {
-        "id":  "istio-traffic-management",
-        "triggers":  [
-                         "istio",
-                         "traffic",
-                         "management"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "jobs-to-be-done",
         "triggers":  [
                          "jobs",
@@ -729,17 +670,6 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  13
-    },
-    {
-        "id":  "julia-pro",
-        "triggers":  [
-                         "julia",
-                         "pro"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  5
     },
     {
         "id":  "launch-strategy",
@@ -762,17 +692,6 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  100
-    },
-    {
-        "id":  "loki-mode",
-        "triggers":  [
-                         "loki",
-                         "mode"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  9
     },
     {
         "id":  "market-segments",
@@ -806,64 +725,6 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  20
-    },
-    {
-        "id":  "NanoBanana-PPT-Skills",
-        "triggers":  [
-                         "NanoBanana",
-                         "PPT",
-                         "Skills"
-                     ],
-        "src":  "external:NanoBanana-PPT-Skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "netlify-deploy",
-        "triggers":  [
-                         "netlify",
-                         "deploy"
-                     ],
-        "src":  "external:context-and-tools",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "nodejs-backend-patterns",
-        "triggers":  [
-                         "nodejs",
-                         "backend",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "odoo-backup-strategy",
-        "triggers":  [
-                         "odoo",
-                         "backup",
-                         "strategy"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "onboarding-cro",
-        "triggers":  [
-                         "onboarding",
-                         "cro"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  100
     },
     {
         "id":  "onboarding-optimization",
@@ -1098,17 +959,6 @@
                          "production",
                          "code",
                          "audit"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "production-scheduling",
-        "triggers":  [
-                         "production",
-                         "scheduling"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "business/product-strategy",
@@ -1428,17 +1278,6 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  12
-    },
-    {
-        "id":  "vercel-deployment",
-        "triggers":  [
-                         "vercel",
-                         "deployment"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  5
     },
     {
         "id":  "vizcom",

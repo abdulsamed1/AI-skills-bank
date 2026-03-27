@@ -36,24 +36,24 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 - odoo
 - api
-- architecture
 - patterns
-- architect
+- architecture
 - code
-- expert
-- c4
-- review
-- integration
-- development
-- design
+- architect
 - builder
+- design
+- development
 - ddd
-- dev
 - refactoring
-- fp
-- gemini
-- clean
 - backend
+- dev
+- documentation
+- clean
+- upgrade
+- refactor
+- ai
+- review
+- expert
 
 ## Data Contract
 

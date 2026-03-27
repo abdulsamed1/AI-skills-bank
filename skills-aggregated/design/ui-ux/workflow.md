@@ -34,8 +34,8 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 ## Quick Trigger Hints
 
-- ui
 - design
+- ui
 - threejs
 - hig
 - components
@@ -43,17 +43,17 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - ux
 - patterns
 - system
+- audit
 - swiftui
 - frontend
-- audit
-- skills
-- accessibility
-- wds
-- create
-- project
-- bmad
-- zafiro
 - skill
+- accessibility
+- expert
+- skills
+- create
+- wds
+- c4
+- designer
 
 ## Data Contract
 

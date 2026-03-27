@@ -34,6 +34,18 @@
         "match_score":  8
     },
     {
+        "id":  "istio-traffic-management",
+        "triggers":  [
+                         "istio",
+                         "traffic",
+                         "management"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "k8s-manifest-generator",
         "triggers":  [
                          "k8s",
@@ -98,6 +110,17 @@
                          "expert"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "windows-vm",
+        "triggers":  [
+                         "windows",
+                         "vm"
+                     ],
+        "src":  "external:superpowers-lab",
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  100

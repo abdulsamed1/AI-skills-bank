@@ -24,6 +24,29 @@
         "match_score":  7
     },
     {
+        "id":  "app-clips",
+        "triggers":  [
+                         "app",
+                         "clips"
+                     ],
+        "src":  "external:aso-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "app-store-changelog",
+        "triggers":  [
+                         "app",
+                         "store",
+                         "changelog"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "app-store-optimization",
         "triggers":  [
                          "app",
@@ -34,6 +57,17 @@
         "primary_hub":  "mobile/cross-platform",
         "is_primary":  true,
         "match_score":  9
+    },
+    {
+        "id":  "crash-analytics",
+        "triggers":  [
+                         "crash",
+                         "analytics"
+                     ],
+        "src":  "external:aso-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "development",

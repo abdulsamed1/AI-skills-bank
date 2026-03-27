@@ -1,5 +1,16 @@
 [
     {
+        "id":  "billing-automation",
+        "triggers":  [
+                         "billing",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "business-health-diagnostic",
         "triggers":  [
                          "business",
@@ -70,6 +81,17 @@
         "match_score":  15
     },
     {
+        "id":  "hubspot-integration",
+        "triggers":  [
+                         "hubspot",
+                         "integration"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "logistics-exception-management",
         "triggers":  [
                          "logistics",
@@ -127,6 +149,78 @@
         "match_score":  19
     },
     {
+        "id":  "odoo-accounting-setup",
+        "triggers":  [
+                         "odoo",
+                         "accounting",
+                         "setup"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "odoo-hr-payroll-setup",
+        "triggers":  [
+                         "odoo",
+                         "hr",
+                         "payroll",
+                         "setup"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "odoo-sales-crm-expert",
+        "triggers":  [
+                         "odoo",
+                         "sales",
+                         "crm",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "pakistan-payments-stack",
+        "triggers":  [
+                         "pakistan",
+                         "payments",
+                         "stack"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "payment-integration",
+        "triggers":  [
+                         "payment",
+                         "integration"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "production-scheduling",
+        "triggers":  [
+                         "production",
+                         "scheduling"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "product-manager",
         "triggers":  [
                          "product",
@@ -143,6 +237,28 @@
                          "returns",
                          "reverse",
                          "logistics"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "revops",
+        "triggers":  [
+                         "revops"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "risk-metrics-calculation",
+        "triggers":  [
+                         "risk",
+                         "metrics",
+                         "calculation"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "business/saas",
@@ -172,7 +288,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "business/saas",
         "is_primary":  true,
-        "match_score":  16
+        "match_score":  100
     },
     {
         "id":  "saas-revenue-growth-metrics",
@@ -259,6 +375,17 @@
         "primary_hub":  "business/saas",
         "is_primary":  true,
         "match_score":  5
+    },
+    {
+        "id":  "stripe-integration",
+        "triggers":  [
+                         "stripe",
+                         "integration"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "subscription-lifecycle",

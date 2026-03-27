@@ -105,17 +105,6 @@
         "match_score":  7
     },
     {
-        "id":  "agents-md",
-        "triggers":  [
-                         "agents",
-                         "md"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
         "id":  "agent-tool-builder",
         "triggers":  [
                          "agent",
@@ -128,6 +117,18 @@
         "match_score":  9
     },
     {
+        "id":  "ai-agent-development",
+        "triggers":  [
+                         "ai",
+                         "agent",
+                         "development"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "ai-agents-architect",
         "triggers":  [
                          "ai",
@@ -138,18 +139,6 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
-    },
-    {
-        "id":  "ai-discoverability-audit",
-        "triggers":  [
-                         "ai",
-                         "discoverability",
-                         "audit"
-                     ],
-        "src":  "external:ai-marketing-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  13
     },
     {
         "id":  "ai-engineer",
@@ -220,6 +209,17 @@
         "match_score":  9
     },
     {
+        "id":  "amazon-alexa",
+        "triggers":  [
+                         "amazon",
+                         "alexa"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "andrej-karpathy",
         "triggers":  [
                          "andrej",
@@ -273,6 +273,18 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "autonomous-agent-patterns",
+        "triggers":  [
+                         "autonomous",
+                         "agent",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "autonomous-agents",
@@ -553,7 +565,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
-        "match_score":  15
+        "match_score":  100
     },
     {
         "id":  "claude-code-expert",
@@ -565,7 +577,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
-        "match_score":  11
+        "match_score":  100
     },
     {
         "id":  "claude-code-guide",
@@ -578,18 +590,6 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  9
-    },
-    {
-        "id":  "claude-d3js-skill",
-        "triggers":  [
-                         "claude",
-                         "d3js",
-                         "skill"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "claude-in-chrome-troubleshooting",
@@ -679,6 +679,18 @@
         "match_score":  7
     },
     {
+        "id":  "context7-auto-research",
+        "triggers":  [
+                         "context7",
+                         "auto",
+                         "research"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "context-agent",
         "triggers":  [
                          "context",
@@ -744,6 +756,16 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "crewai",
+        "triggers":  [
+                         "crewai"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "crypto-bd-agent",
@@ -999,6 +1021,18 @@
         "match_score":  5
     },
     {
+        "id":  "gemini-api-integration",
+        "triggers":  [
+                         "gemini",
+                         "api",
+                         "integration"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "gemini-interactions-api",
         "triggers":  [
                          "gemini",
@@ -1020,17 +1054,6 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  5
-    },
-    {
-        "id":  "geo-fundamentals",
-        "triggers":  [
-                         "geo",
-                         "fundamentals"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  9
     },
     {
         "id":  "gmail-automation",
@@ -1102,29 +1125,6 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
-    },
-    {
-        "id":  "gsap-plugins",
-        "triggers":  [
-                         "gsap",
-                         "plugins"
-                     ],
-        "src":  "external:gsap-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "hierarchical-agent-memory",
-        "triggers":  [
-                         "hierarchical",
-                         "agent",
-                         "memory"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  15
     },
     {
         "id":  "hig-components-controls",
@@ -1362,6 +1362,26 @@
         "match_score":  9
     },
     {
+        "id":  "langfuse",
+        "triggers":  [
+                         "langfuse"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "langgraph",
+        "triggers":  [
+                         "langgraph"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "linkedin-profile-optimizer",
         "triggers":  [
                          "linkedin",
@@ -1437,6 +1457,17 @@
         "match_score":  11
     },
     {
+        "id":  "loki-mode",
+        "triggers":  [
+                         "loki",
+                         "mode"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "manifest",
         "triggers":  [
                          "manifest"
@@ -1458,17 +1489,6 @@
         "match_score":  7
     },
     {
-        "id":  "market-movers",
-        "triggers":  [
-                         "market",
-                         "movers"
-                     ],
-        "src":  "external:aso-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
         "id":  "maxia",
         "triggers":  [
                          "maxia"
@@ -1487,7 +1507,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
-        "match_score":  17
+        "match_score":  100
     },
     {
         "id":  "mcp-builder-ms",
@@ -1821,16 +1841,6 @@
                          "reviewer"
                      ],
         "src":  "external:ai-marketing-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "varlock",
-        "triggers":  [
-                         "varlock"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7

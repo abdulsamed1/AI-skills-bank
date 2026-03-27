@@ -88,15 +88,5 @@
         "primary_hub":  "marketing/email",
         "is_primary":  true,
         "match_score":  7
-    },
-    {
-        "id":  "revops",
-        "triggers":  [
-                         "revops"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  100
     }
 ]

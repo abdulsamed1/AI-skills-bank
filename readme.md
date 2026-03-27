@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 # AI Skills Bank
 
@@ -122,10 +122,19 @@ Policy:
 | Claude Code | `.claude/skills/` | `~/.claude/skills/` | Claude Code Skills |
 | Codex | `.agents/skills/` | `~/.agents/skills/` | Codex Skills |
 | Cursor | `.cursor/skills/` | `~/.cursor/skills/` | Cursor Skills |
-| Gemini CLI | `.gemini/skills/` | `~/.gemini/skills/` | Gemini CLI Skills |
+| Gemini CLI | `.gemini/skills/` | ~/.agents/skills/ | Gemini CLI Skills |
 | GitHub Copilot | `.github/skills/` | `~/.copilot/skills/` | Copilot Skills |
 | OpenCode | `.opencode/skills/` | `~/.config/opencode/skills/` | OpenCode Skills |
 | Windsurf | `.windsurf/skills/` | `~/.codeium/windsurf/skills/` | Windsurf Cascade Skills |
+
+### Troubleshooting Skill Conflicts
+
+If you use multiple CLI tools or agents (e.g., Gemini CLI and Antigravity), you might encounter `Skill conflict detected` warnings. This typically happens when the bank syncs skills to multiple global directories (e.g., `~/.agents/skills/` and `~/.gemini/skills/`), causing one tool to read from multiple overlapping folders.
+
+**Fix:** Remove the conflicting global directory and rely on a single primary destination. For example:
+```powershell
+Remove-Item -Recurse -Force ~/.gemini/skills/
+```
 
 ---
 
