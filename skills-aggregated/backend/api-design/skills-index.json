@@ -216,19 +216,6 @@
         "match_score":  8
     },
     {
-        "id":  "documentation-generation-doc-generate",
-        "triggers":  [
-                         "documentation",
-                         "generation",
-                         "doc",
-                         "generate"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "backend/api-design",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "documentation-templates",
         "triggers":  [
                          "documentation",
@@ -523,6 +510,17 @@
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
+    },
+    {
+        "id":  "uniprot-database",
+        "triggers":  [
+                         "uniprot",
+                         "database"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  8
     },
     {
         "id":  "vertex-ai-api-dev",

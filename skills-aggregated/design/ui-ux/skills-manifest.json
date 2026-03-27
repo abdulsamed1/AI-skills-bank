@@ -1,0 +1,37 @@
+{
+    "name":  "skills-design-ui-ux",
+    "main_hub":  "design",
+    "sub_hub":  "ui-ux",
+    "description":  "Productivity and automation: workflow automation, agentic orchestration, project delivery, and tool-connected process automation",
+    "skill_count":  19,
+    "src_count":  3,
+    "top_triggers":  [
+                         "threejs",
+                         "figma",
+                         "animation",
+                         "guidelines",
+                         "design",
+                         "brand",
+                         "geometry",
+                         "lighting",
+                         "experience",
+                         "rules",
+                         "generate",
+                         "nerdzao",
+                         "fundamentals",
+                         "skills",
+                         "textures",
+                         "community",
+                         "react:components",
+                         "create",
+                         "system",
+                         "anthropic"
+                     ],
+    "generated_at":  "2026-03-27T12:54:06+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "workflow":  "workflow.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.ndjson"
+              }
+}

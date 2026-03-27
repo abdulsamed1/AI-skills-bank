@@ -5,10 +5,10 @@
                          "churn",
                          "prevention"
                      ],
-        "src":  "external:marketingskills",
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/email",
         "is_primary":  true,
-        "match_score":  5
+        "match_score":  100
     },
     {
         "id":  "cold-email",
@@ -20,6 +20,18 @@
         "primary_hub":  "marketing/email",
         "is_primary":  true,
         "match_score":  6
+    },
+    {
+        "id":  "cold-outreach-sequence",
+        "triggers":  [
+                         "cold",
+                         "outreach",
+                         "sequence"
+                     ],
+        "src":  "external:ai-marketing-skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  1
     },
     {
         "id":  "email-marketing-bible",
@@ -42,7 +54,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/email",
         "is_primary":  true,
-        "match_score":  10
+        "match_score":  100
     },
     {
         "id":  "email-systems",
@@ -65,17 +77,6 @@
         "primary_hub":  "marketing/email",
         "is_primary":  true,
         "match_score":  5
-    },
-    {
-        "id":  "klaviyo-automation",
-        "triggers":  [
-                         "klaviyo",
-                         "automation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  9
     },
     {
         "id":  "mailchimp-automation",
@@ -101,24 +102,58 @@
         "match_score":  7
     },
     {
-        "id":  "revops",
+        "id":  "odoo-qweb-templates",
         "triggers":  [
-                         "revops"
-                     ],
-        "src":  "external:marketingskills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "sendgrid-automation",
-        "triggers":  [
-                         "sendgrid",
-                         "automation"
+                         "odoo",
+                         "qweb",
+                         "templates"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/email",
         "is_primary":  true,
-        "match_score":  9
+        "match_score":  1
+    },
+    {
+        "id":  "outreach-specialist",
+        "triggers":  [
+                         "outreach",
+                         "specialist"
+                     ],
+        "src":  "external:founder-skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  1
+    },
+    {
+        "id":  "revops",
+        "triggers":  [
+                         "revops"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "ua-campaign",
+        "triggers":  [
+                         "ua",
+                         "campaign"
+                     ],
+        "src":  "external:aso-skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  1
+    },
+    {
+        "id":  "user-segmentation",
+        "triggers":  [
+                         "user",
+                         "segmentation"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  1
     }
 ]

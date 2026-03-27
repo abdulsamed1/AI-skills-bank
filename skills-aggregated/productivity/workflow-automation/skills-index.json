@@ -750,6 +750,28 @@
         "match_score":  7
     },
     {
+        "id":  "game-art",
+        "triggers":  [
+                         "game",
+                         "art"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "productivity/workflow-automation",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "game-development",
+        "triggers":  [
+                         "game",
+                         "development"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "productivity/workflow-automation",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "gha-security-review",
         "triggers":  [
                          "gha",
@@ -1104,6 +1126,18 @@
         "match_score":  11
     },
     {
+        "id":  "linear-claude-skill",
+        "triggers":  [
+                         "linear",
+                         "claude",
+                         "skill"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "productivity/workflow-automation",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "linkedin-automation",
         "triggers":  [
                          "linkedin",
@@ -1265,6 +1299,18 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  11
+    },
+    {
+        "id":  "north-star-metric",
+        "triggers":  [
+                         "north",
+                         "star",
+                         "metric"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "productivity/workflow-automation",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "notion-automation",
@@ -1536,17 +1582,6 @@
         "primary_hub":  "productivity/workflow-automation",
         "is_primary":  true,
         "match_score":  11
-    },
-    {
-        "id":  "skill-installer",
-        "triggers":  [
-                         "skill",
-                         "installer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "slack-automation",

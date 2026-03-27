@@ -230,18 +230,6 @@
         "match_score":  5
     },
     {
-        "id":  "antigravity-skill-orchestrator",
-        "triggers":  [
-                         "antigravity",
-                         "skill",
-                         "orchestrator"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "antigravity-workflows",
         "triggers":  [
                          "antigravity",
@@ -1355,60 +1343,16 @@
         "match_score":  5
     },
     {
-        "id":  "skill-check",
+        "id":  "shader-programming-glsl",
         "triggers":  [
-                         "skill",
-                         "check"
+                         "shader",
+                         "programming",
+                         "glsl"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  5
-    },
-    {
-        "id":  "skill-creator-ms",
-        "triggers":  [
-                         "skill",
-                         "creator",
-                         "ms"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "skill-improver",
-        "triggers":  [
-                         "skill",
-                         "improver"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "skill-scanner",
-        "triggers":  [
-                         "skill",
-                         "scanner"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "skill-writer",
-        "triggers":  [
-                         "skill",
-                         "writer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "steve-jobs",
@@ -1535,17 +1479,6 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  5
-    },
-    {
-        "id":  "writing-skills",
-        "triggers":  [
-                         "writing",
-                         "skills"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  7
     },
     {
         "id":  "yann-lecun",

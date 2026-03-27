@@ -1,8 +1,8 @@
-# backend / api-design
+# ai / skills-factory
 
 ## Purpose
 
-API design: REST, GraphQL, and best practices for scalable web services
+AI skill authoring: creating, refining, auditing, and validating new AI skills
 
 This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub Copilot) with minimal context overhead.
 
@@ -28,32 +28,32 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 ## Recommended Use Cases
 
-- Designing robust APIs
-- GraphQL schema design
-- API versioning and deprecation
+- Authoring and developing skills
+- Auditing and validating skills
+- Providing an interactive skills builder experience
 
 ## Quick Trigger Hints
 
-- api
+- skill
+- skills
+- creator
+- ms
+- workflow
+- check
 - documentation
-- patterns
-- dev
-- azure
-- development
-- builder
-- architecture
-- graphql
-- dotnet
-- ai
-- mgmt
-- expert
-- odoo
-- fp
-- architect
-- gemini
-- database
-- backend
-- bdistill
+- verification
+- antigravity
+- authoring
+- scanner
+- validate
+- and
+- completion
+- generate
+- installer
+- writer
+- sentinel
+- before
+- audit
 
 ## Data Contract
 

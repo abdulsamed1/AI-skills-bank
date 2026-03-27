@@ -37,23 +37,23 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - testing
 - bmad
 - test
-- qa
 - testarch
+- qa
 - patterns
 - e2e
 - playwright
+- automation
+- generate
+- api
+- escalation
+- azure
+- tests
+- ci
 - review
 - evaluation
-- generate
-- azure
-- privilege
-- ab
 - scripting
-- ci
-- tests
-- escalation
+- agent
 - penetration
-- pentest
 
 ## Data Contract
 

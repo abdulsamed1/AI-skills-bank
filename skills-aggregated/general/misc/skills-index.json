@@ -9,7 +9,20 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "10-andruia-skill-smith",
+        "triggers":  [
+                         "10",
+                         "andruia",
+                         "skill",
+                         "smith"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "20-andruia-niche-intelligence",
@@ -22,7 +35,29 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "2d-games",
+        "triggers":  [
+                         "2d",
+                         "games"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "3d-games",
+        "triggers":  [
+                         "3d",
+                         "games"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "3d-web-experience",
@@ -34,7 +69,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "address-github-comments",
@@ -46,7 +81,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "advogado-criminal",
@@ -57,7 +92,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "advogado-especialista",
@@ -68,7 +103,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "aegisops-ai",
@@ -79,7 +114,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "ai-analyzer",
@@ -90,7 +125,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "ai-studio-image",
@@ -102,7 +137,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "algorithmic-art",
@@ -113,7 +148,7 @@
         "src":  "external:skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "alpha-vantage",
@@ -124,7 +159,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "altitude-horizon-framework",
@@ -136,7 +171,7 @@
         "src":  "external:Product-Manager-Skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "analytics-tracking",
@@ -147,7 +182,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "analyze-project",
@@ -158,7 +193,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "angular",
@@ -168,7 +203,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "angular-best-practices",
@@ -180,7 +215,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "angular-migration",
@@ -191,7 +226,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "angular-state-management",
@@ -203,7 +238,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "apify-brand-reputation-monitoring",
@@ -216,7 +251,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "apify-lead-generation",
@@ -228,7 +263,19 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "apify-ultimate-scraper",
+        "triggers":  [
+                         "apify",
+                         "ultimate",
+                         "scraper"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "app-clips",
@@ -239,7 +286,7 @@
         "src":  "external:aso-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "application-performance-performance-optimization",
@@ -252,7 +299,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "app-store-changelog",
@@ -264,7 +311,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "architect-review",
@@ -275,7 +322,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "architecture",
@@ -285,7 +332,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "architecture-decision-records",
@@ -297,7 +344,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "arm-cortex-expert",
@@ -309,7 +356,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "ask-questions-if-underspecified",
@@ -322,7 +369,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "astro",
@@ -332,7 +379,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "attach-db",
@@ -343,7 +390,7 @@
         "src":  "external:duckdb-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "audit-context-building",
@@ -355,7 +402,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "autoplan",
@@ -365,7 +412,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "avalonia-viewmodels-zafiro",
@@ -377,7 +424,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bash-linux",
@@ -388,7 +435,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bazel-build-optimization",
@@ -400,18 +447,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "beautiful-prose",
-        "triggers":  [
-                         "beautiful",
-                         "prose"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "benchmark",
@@ -421,7 +457,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "binary-analysis-patterns",
@@ -433,7 +469,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "blockrun",
@@ -443,7 +479,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-brainstorming",
@@ -454,7 +490,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-builder-setup",
@@ -466,7 +502,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-cis-design-thinking",
@@ -479,7 +515,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-cis-problem-solving",
@@ -492,7 +528,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-code-review",
@@ -504,7 +540,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-correct-course",
@@ -516,7 +552,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-create-epics-and-stories",
@@ -530,7 +566,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-dev-story",
@@ -542,7 +578,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-document-project",
@@ -554,7 +590,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-domain-research",
@@ -566,7 +602,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-editorial-review-structure",
@@ -579,7 +615,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-generate-project-context",
@@ -592,7 +628,18 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "bmad-help",
+        "triggers":  [
+                         "bmad",
+                         "help"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "bmad-index-docs",
@@ -604,7 +651,18 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "bmad-init",
+        "triggers":  [
+                         "bmad",
+                         "init"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "bmad-market-research",
@@ -616,7 +674,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-quick-dev",
@@ -628,7 +686,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-retrospective",
@@ -639,7 +697,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-review-adversarial-general",
@@ -652,7 +710,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-review-edge-case-hunter",
@@ -666,7 +724,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-shard-doc",
@@ -678,7 +736,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-sprint-planning",
@@ -690,7 +748,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-sprint-status",
@@ -702,7 +760,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bmad-technical-research",
@@ -714,7 +772,7 @@
         "src":  "internal:BMad",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "brainstorming",
@@ -724,7 +782,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "brand-guidelines",
@@ -735,7 +793,7 @@
         "src":  "external:skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "browse",
@@ -745,7 +803,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "browser-extension-builder",
@@ -757,7 +815,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "bug-hunter",
@@ -768,7 +826,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "build",
@@ -778,7 +836,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "burpsuite-project-parser",
@@ -790,7 +848,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "business-analyst",
@@ -801,7 +859,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "business-model",
@@ -812,7 +870,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "busybox-on-windows",
@@ -824,7 +882,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "c4-architecture-c4-architecture",
@@ -837,7 +895,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "c4-code",
@@ -848,7 +906,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "c4-component",
@@ -859,7 +917,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "c4-context",
@@ -870,7 +928,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "canary",
@@ -880,7 +938,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "canvas-design",
@@ -891,7 +949,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "careful",
@@ -901,7 +959,19 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "carrier-relationship-management",
+        "triggers":  [
+                         "carrier",
+                         "relationship",
+                         "management"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "case-study-builder",
@@ -913,7 +983,47 @@
         "src":  "external:ai-marketing-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "cc-skill-continuous-learning",
+        "triggers":  [
+                         "cc",
+                         "skill",
+                         "continuous",
+                         "learning"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "cc-skill-project-guidelines-example",
+        "triggers":  [
+                         "cc",
+                         "skill",
+                         "project",
+                         "guidelines",
+                         "example"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "cc-skill-strategic-compact",
+        "triggers":  [
+                         "cc",
+                         "skill",
+                         "strategic",
+                         "compact"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "chat-widget",
@@ -924,7 +1034,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "chrome-extension-developer",
@@ -936,7 +1046,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "cirq",
@@ -946,7 +1056,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "citation-management",
@@ -957,7 +1067,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "clarity-gate",
@@ -968,7 +1078,31 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "claude-ally-health",
+        "triggers":  [
+                         "claude",
+                         "ally",
+                         "health"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "claude-d3js-skill",
+        "triggers":  [
+                         "claude",
+                         "d3js",
+                         "skill"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "claude-in-chrome-troubleshooting",
@@ -981,7 +1115,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "claude-scientific-skills",
@@ -993,7 +1127,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "claude-settings-audit",
@@ -1005,7 +1139,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "claude-speed-reader",
@@ -1017,7 +1151,32 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "claude-win11-speckit-update-skill",
+        "triggers":  [
+                         "claude",
+                         "win11",
+                         "speckit",
+                         "update",
+                         "skill"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "clean-code",
+        "triggers":  [
+                         "clean",
+                         "code"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "closed-loop-delivery",
@@ -1029,7 +1188,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "codebase-cleanup-refactor-clean",
@@ -1042,7 +1201,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "codebase-cleanup-tech-debt",
@@ -1055,7 +1214,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "code-refactoring-context-restore",
@@ -1068,7 +1227,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "code-refactoring-refactor-clean",
@@ -1081,7 +1240,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "code-refactoring-tech-debt",
@@ -1094,7 +1253,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "code-reviewer",
@@ -1105,7 +1264,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "code-review-excellence",
@@ -1117,7 +1276,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "code-simplifier",
@@ -1128,7 +1287,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "codex",
@@ -1138,7 +1297,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "codex-review",
@@ -1149,7 +1308,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "cohort-analysis",
@@ -1160,7 +1319,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "cold-outreach-sequence",
@@ -1172,7 +1331,17 @@
         "src":  "external:ai-marketing-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "commit",
+        "triggers":  [
+                         "commit"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "competitor-analysis",
@@ -1183,7 +1352,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "competitor-tracking",
@@ -1194,7 +1363,7 @@
         "src":  "external:aso-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "comprehensive-review-full-review",
@@ -1207,7 +1376,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "comprehensive-review-pr-enhance",
@@ -1220,7 +1389,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "computer-vision-expert",
@@ -1232,7 +1401,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "concise-planning",
@@ -1243,7 +1412,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "conductor-manage",
@@ -1254,7 +1423,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "conductor-new-track",
@@ -1266,7 +1435,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "conductor-revert",
@@ -1277,7 +1446,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "conductor-status",
@@ -1288,7 +1457,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "conductor-validator",
@@ -1299,7 +1468,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "connect-chrome",
@@ -1310,7 +1479,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "constant-time-analysis",
@@ -1322,7 +1491,20 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "content-modeling-best-practices",
+        "triggers":  [
+                         "content",
+                         "modeling",
+                         "best",
+                         "practices"
+                     ],
+        "src":  "external:agent-toolkit",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "context-degradation",
@@ -1333,7 +1515,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "context-driven-development",
@@ -1345,7 +1527,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "context-fundamentals",
@@ -1356,7 +1538,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "context-guardian",
@@ -1367,7 +1549,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "context-management-context-restore",
@@ -1380,7 +1562,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "context-management-context-save",
@@ -1393,7 +1575,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "context-manager",
@@ -1404,7 +1586,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "copy-editing",
@@ -1415,7 +1597,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "cpp-pro",
@@ -1426,7 +1608,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "c-pro",
@@ -1437,7 +1619,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "cqrs-implementation",
@@ -1448,7 +1630,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "crash-analytics",
@@ -1459,7 +1641,7 @@
         "src":  "external:aso-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "create-branch",
@@ -1470,7 +1652,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "create-issue-gate",
@@ -1482,7 +1664,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "creative-director",
@@ -1493,7 +1675,7 @@
         "src":  "external:creative-director-skill",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "cred-omega",
@@ -1504,7 +1686,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "cso",
@@ -1514,7 +1696,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "customer-journey-map",
@@ -1526,7 +1708,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "customer-journey-mapping-workshop",
@@ -1539,7 +1721,7 @@
         "src":  "external:Product-Manager-Skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "customer-support",
@@ -1550,7 +1732,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "customs-trade-compliance",
@@ -1562,7 +1744,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "daily",
@@ -1572,7 +1754,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "daily-briefing-builder",
@@ -1584,7 +1766,7 @@
         "src":  "external:ai-marketing-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "daily-news-report",
@@ -1596,7 +1778,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "data-engineer",
@@ -1607,7 +1789,21 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "data-engineering-data-driven-feature",
+        "triggers":  [
+                         "data",
+                         "engineering",
+                         "data",
+                         "driven",
+                         "feature"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "data-engineering-data-pipeline",
@@ -1620,7 +1816,19 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "data-quality-frameworks",
+        "triggers":  [
+                         "data",
+                         "quality",
+                         "frameworks"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "data-scientist",
@@ -1631,7 +1839,19 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "dbt-transformation-patterns",
+        "triggers":  [
+                         "dbt",
+                         "transformation",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "ddd-context-mapping",
@@ -1643,7 +1863,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "ddd-strategic-design",
@@ -1655,7 +1875,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "ddd-tactical-patterns",
@@ -1667,7 +1887,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "de-ai-ify",
@@ -1679,7 +1899,7 @@
         "src":  "external:ai-marketing-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "debugging-toolkit-smart-debug",
@@ -1692,7 +1912,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "deep-research",
@@ -1703,7 +1923,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "deployment-pipeline-design",
@@ -1715,7 +1935,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "design-consultation",
@@ -1726,7 +1946,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "design-md",
@@ -1737,7 +1957,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "design-review",
@@ -1748,7 +1968,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "design-spells",
@@ -1759,7 +1979,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "devcontainer-setup",
@@ -1770,7 +1990,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "devops-troubleshooter",
@@ -1781,7 +2001,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "diary",
@@ -1791,7 +2011,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "director-readiness-advisor",
@@ -1803,7 +2023,7 @@
         "src":  "external:Product-Manager-Skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "discovery-process",
@@ -1814,7 +2034,7 @@
         "src":  "external:Product-Manager-Skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "distributed-tracing",
@@ -1825,7 +2045,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "docs-architect",
@@ -1836,7 +2056,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "document-release",
@@ -1847,7 +2067,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "domain-driven-design",
@@ -1859,7 +2079,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "dotnet-architect",
@@ -1870,7 +2090,18 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "draft-nda",
+        "triggers":  [
+                         "draft",
+                         "nda"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "draw",
@@ -1880,7 +2111,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "duckdb-docs",
@@ -1891,7 +2122,7 @@
         "src":  "external:duckdb-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "dwarf-expert",
@@ -1902,7 +2133,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "electron-development",
@@ -1913,7 +2144,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "elixir-pro",
@@ -1924,7 +2155,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "emergency-card",
@@ -1935,7 +2166,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "employment-contract-templates",
@@ -1947,7 +2178,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "energy-procurement",
@@ -1958,7 +2189,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "environment-setup-guide",
@@ -1970,7 +2201,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "epic-breakdown-advisor",
@@ -1982,7 +2213,7 @@
         "src":  "external:Product-Manager-Skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "error-detective",
@@ -1993,7 +2224,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "error-diagnostics-error-trace",
@@ -2006,7 +2237,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "error-diagnostics-smart-debug",
@@ -2019,7 +2250,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "error-handling-patterns",
@@ -2031,7 +2262,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "event-store-design",
@@ -2043,7 +2274,17 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "evolution",
+        "triggers":  [
+                         "evolution"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "executing-plans",
@@ -2054,7 +2295,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "explain-like-socrates",
@@ -2066,7 +2307,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "fal-audio",
@@ -2077,7 +2318,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "fal-generate",
@@ -2088,7 +2329,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "fal-image-edit",
@@ -2100,7 +2341,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "fal-platform",
@@ -2111,7 +2352,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "fal-upscale",
@@ -2122,7 +2363,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "family-health-analyzer",
@@ -2134,7 +2375,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "favicon",
@@ -2144,7 +2385,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "fda-food-safety-auditor",
@@ -2157,7 +2398,32 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "fda-medtech-compliance-auditor",
+        "triggers":  [
+                         "fda",
+                         "medtech",
+                         "compliance",
+                         "auditor"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "ffuf-claude-skill",
+        "triggers":  [
+                         "ffuf",
+                         "claude",
+                         "skill"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "file-organizer",
@@ -2168,7 +2434,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "file-path-traversal",
@@ -2180,7 +2446,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "filesystem-context",
@@ -2191,7 +2457,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "firecrawl",
@@ -2201,7 +2467,7 @@
         "src":  "external:cli",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "firecrawl-browser",
@@ -2212,7 +2478,7 @@
         "src":  "external:cli",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "firecrawl-crawl",
@@ -2223,7 +2489,7 @@
         "src":  "external:cli",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "firecrawl-download",
@@ -2234,7 +2500,7 @@
         "src":  "external:cli",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "firecrawl-map",
@@ -2245,7 +2511,7 @@
         "src":  "external:cli",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "firecrawl-scrape",
@@ -2256,7 +2522,7 @@
         "src":  "external:cli",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "firecrawl-search",
@@ -2267,7 +2533,7 @@
         "src":  "external:cli",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "fitness-analyzer",
@@ -2278,7 +2544,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "fix-review",
@@ -2289,7 +2555,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "form-cro",
@@ -2300,7 +2566,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "fp-backend",
@@ -2311,7 +2577,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "fp-either-ref",
@@ -2323,7 +2589,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "fp-errors",
@@ -2334,7 +2600,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "fp-option-ref",
@@ -2346,7 +2612,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "fp-pipe-ref",
@@ -2358,7 +2624,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "fp-types-ref",
@@ -2370,7 +2636,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "framework-migration-code-migrate",
@@ -2383,7 +2649,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "freeze",
@@ -2393,7 +2659,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "frontend-dev-guidelines",
@@ -2405,7 +2671,29 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "game-audio",
+        "triggers":  [
+                         "game",
+                         "audio"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "game-design",
+        "triggers":  [
+                         "game",
+                         "design"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "gdpr-data-handling",
@@ -2417,7 +2705,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "gh-review-requests",
@@ -2429,7 +2717,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "github-issue-creator",
@@ -2441,7 +2729,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "git-pushing",
@@ -2452,7 +2740,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "goal-analyzer",
@@ -2463,7 +2751,31 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "godot-4-migration",
+        "triggers":  [
+                         "godot",
+                         "4",
+                         "migration"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "godot-gdscript-patterns",
+        "triggers":  [
+                         "godot",
+                         "gdscript",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "growth-engine",
@@ -2474,7 +2786,40 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "gsap-performance",
+        "triggers":  [
+                         "gsap",
+                         "performance"
+                     ],
+        "src":  "external:gsap-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "gsap-scrolltrigger",
+        "triggers":  [
+                         "gsap",
+                         "scrolltrigger"
+                     ],
+        "src":  "external:gsap-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "gsap-timeline",
+        "triggers":  [
+                         "gsap",
+                         "timeline"
+                     ],
+        "src":  "external:gsap-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "gstack",
@@ -2484,7 +2829,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "gstack-upgrade",
@@ -2495,7 +2840,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "guard",
@@ -2505,7 +2850,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "haskell-pro",
@@ -2516,7 +2861,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "hig-components-controls",
@@ -2528,7 +2873,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "hig-components-dialogs",
@@ -2540,7 +2885,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "hig-components-layout",
@@ -2552,7 +2897,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "hig-components-menus",
@@ -2564,7 +2909,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "hig-components-search",
@@ -2576,7 +2921,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "hig-components-system",
@@ -2588,7 +2933,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "hig-foundations",
@@ -2599,7 +2944,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "hig-inputs",
@@ -2610,7 +2955,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "hig-platforms",
@@ -2621,7 +2966,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "hig-project-context",
@@ -2633,7 +2978,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "hig-technologies",
@@ -2644,7 +2989,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "homepage-audit",
@@ -2655,7 +3000,7 @@
         "src":  "external:ai-marketing-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "hr-pro",
@@ -2666,7 +3011,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "hugging-face-cli",
@@ -2678,7 +3023,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "hugging-face-jobs",
@@ -2690,7 +3035,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "hugging-face-model-trainer",
@@ -2703,7 +3048,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "hugging-face-paper-publisher",
@@ -2716,7 +3061,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "humanizer",
@@ -2726,7 +3071,7 @@
         "src":  "external:humanizer",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "i18n-localization",
@@ -2737,7 +3082,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "ideal-customer-profile",
@@ -2749,7 +3094,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "image-studio",
@@ -2760,7 +3105,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "incident-responder",
@@ -2771,7 +3116,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "incident-response-incident-response",
@@ -2784,7 +3129,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "install-duckdb",
@@ -2795,7 +3140,7 @@
         "src":  "external:duckdb-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "interactive-portfolio",
@@ -2806,7 +3151,31 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "internal-comms-anthropic",
+        "triggers":  [
+                         "internal",
+                         "comms",
+                         "anthropic"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "internal-comms-community",
+        "triggers":  [
+                         "internal",
+                         "comms",
+                         "community"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "interview-coach",
@@ -2817,7 +3186,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "inventory-demand-planning",
@@ -2829,7 +3198,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "investigate",
@@ -2839,7 +3208,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "issues",
@@ -2849,7 +3218,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "job-stories",
@@ -2860,7 +3229,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "json-canvas",
@@ -2871,7 +3240,17 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "kaizen",
+        "triggers":  [
+                         "kaizen"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "keyword-extractor",
@@ -2882,7 +3261,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "keyword-research",
@@ -2893,7 +3272,7 @@
         "src":  "external:aso-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "kpi-dashboard-design",
@@ -2905,7 +3284,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "land-and-deploy",
@@ -2917,7 +3296,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "last30days",
@@ -2927,7 +3306,19 @@
         "src":  "external:ai-marketing-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "latex-paper-conversion",
+        "triggers":  [
+                         "latex",
+                         "paper",
+                         "conversion"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "lead-magnets",
@@ -2938,7 +3329,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "legacy-modernizer",
@@ -2949,7 +3340,18 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "legal-advisor",
+        "triggers":  [
+                         "legal",
+                         "advisor"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "leiloeiro-avaliacao",
@@ -2960,7 +3362,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "leiloeiro-edital",
@@ -2971,7 +3373,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "leiloeiro-ia",
@@ -2982,7 +3384,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "leiloeiro-juridico",
@@ -2993,7 +3395,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "leiloeiro-mercado",
@@ -3004,7 +3406,28 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "leiloeiro-risco",
+        "triggers":  [
+                         "leiloeiro",
+                         "risco"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "lex",
+        "triggers":  [
+                         "lex"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "lightning-channel-factories",
@@ -3016,7 +3439,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "lightning-factory-explainer",
@@ -3028,7 +3451,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "linkedin-cli",
@@ -3039,19 +3462,19 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
-        "id":  "lint-and-validate",
+        "id":  "logistics-exception-management",
         "triggers":  [
-                         "lint",
-                         "and",
-                         "validate"
+                         "logistics",
+                         "exception",
+                         "management"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  100
     },
     {
         "id":  "machine-learning-ops-ml-pipeline",
@@ -3065,7 +3488,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "macos-menubar-tuist-app",
@@ -3078,7 +3501,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "macos-spm-app-packaging",
@@ -3091,7 +3514,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "malware-analyst",
@@ -3102,7 +3525,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "marketing-principles",
@@ -3113,7 +3536,7 @@
         "src":  "external:ai-marketing-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "market-movers",
@@ -3124,7 +3547,7 @@
         "src":  "external:aso-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "market-pulse",
@@ -3135,7 +3558,7 @@
         "src":  "external:aso-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "matematico-tao",
@@ -3146,7 +3569,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "maxia",
@@ -3156,7 +3579,19 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "mcp-builder-ms",
+        "triggers":  [
+                         "mcp",
+                         "builder",
+                         "ms"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "mcp-cli",
@@ -3167,7 +3602,7 @@
         "src":  "external:superpowers-lab",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "meeting-prep-cc",
@@ -3179,7 +3614,7 @@
         "src":  "external:ai-marketing-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "memory-forensics",
@@ -3190,7 +3625,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "mental-health-analyzer",
@@ -3202,7 +3637,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "metadata-optimization",
@@ -3213,7 +3648,7 @@
         "src":  "external:aso-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "minecraft-bukkit-pro",
@@ -3225,7 +3660,18 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "ml-engineer",
+        "triggers":  [
+                         "ml",
+                         "engineer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "mlops-engineer",
@@ -3236,7 +3682,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "molykit",
@@ -3246,7 +3692,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "monorepo-architect",
@@ -3257,7 +3703,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "monorepo-management",
@@ -3268,7 +3714,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "moyu",
@@ -3278,7 +3724,17 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "multiplayer",
+        "triggers":  [
+                         "multiplayer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "nanobanana-ppt-skills",
@@ -3290,7 +3746,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "netlify-ai-gateway",
@@ -3302,7 +3758,7 @@
         "src":  "external:context-and-tools",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "netlify-caching",
@@ -3313,7 +3769,7 @@
         "src":  "external:context-and-tools",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "netlify-config",
@@ -3324,7 +3780,7 @@
         "src":  "external:context-and-tools",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "new-rails-project",
@@ -3336,7 +3792,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "nft-standards",
@@ -3347,7 +3803,17 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "notebooklm",
+        "triggers":  [
+                         "notebooklm"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "nutrient-document-processing",
@@ -3359,7 +3825,7 @@
         "src":  "external:nutrient-agent-skill",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "nutrition-analyzer",
@@ -3370,7 +3836,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "nx-workspace-patterns",
@@ -3382,7 +3848,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "observability-monitoring-monitor-setup",
@@ -3395,7 +3861,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "observability-monitoring-slo-implement",
@@ -3408,7 +3874,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "obsidian-cli",
@@ -3419,7 +3885,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "obsidian-clipper-template-creator",
@@ -3432,7 +3898,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "obsidian-markdown",
@@ -3443,7 +3909,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "occupational-health-analyzer",
@@ -3455,7 +3921,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "odoo-accounting-setup",
@@ -3467,7 +3933,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "odoo-edi-connector",
@@ -3479,7 +3945,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "odoo-hr-payroll-setup",
@@ -3492,7 +3958,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "odoo-inventory-optimizer",
@@ -3504,7 +3970,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "odoo-l10n-compliance",
@@ -3516,7 +3982,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "odoo-project-timesheet",
@@ -3528,7 +3994,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "odoo-qweb-templates",
@@ -3540,7 +4006,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "odoo-sales-crm-expert",
@@ -3553,7 +4019,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "odoo-upgrade-advisor",
@@ -3565,7 +4031,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "odoo-xml-views-builder",
@@ -3578,7 +4044,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "office-hours",
@@ -3589,7 +4055,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "on-call-handoff-patterns",
@@ -3602,7 +4068,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "oral-health-analyzer",
@@ -3614,7 +4080,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "oss-hunter",
@@ -3625,7 +4091,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "outreach-specialist",
@@ -3636,7 +4102,7 @@
         "src":  "external:founder-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "page-cro",
@@ -3647,7 +4113,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "payment-integration",
@@ -3658,7 +4124,28 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "pc-games",
+        "triggers":  [
+                         "pc",
+                         "games"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "pdf",
+        "triggers":  [
+                         "pdf"
+                     ],
+        "src":  "external:skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "performance-engineer",
@@ -3669,7 +4156,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "performance-profiling",
@@ -3680,7 +4167,18 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "pestle-analysis",
+        "triggers":  [
+                         "pestle",
+                         "analysis"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "php-pro",
@@ -3691,7 +4189,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "plaid-fintech",
@@ -3702,7 +4200,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "plan-ceo-review",
@@ -3714,7 +4212,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "plan-design-review",
@@ -3726,7 +4224,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "plan-eng-review",
@@ -3738,7 +4236,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "plan-my-day",
@@ -3750,7 +4248,7 @@
         "src":  "external:ai-marketing-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "planning-with-files",
@@ -3762,7 +4260,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "plan-writing",
@@ -3773,7 +4271,18 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "playwright-skill",
+        "triggers":  [
+                         "playwright",
+                         "skill"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "plotly",
@@ -3783,7 +4292,17 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "polars",
+        "triggers":  [
+                         "polars"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "pol-probe-advisor",
@@ -3795,7 +4314,7 @@
         "src":  "external:Product-Manager-Skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "posix-shell-pro",
@@ -3807,7 +4326,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "postmortem-writing",
@@ -3818,7 +4337,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "powershell-windows",
@@ -3829,7 +4348,17 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "pptx",
+        "triggers":  [
+                         "pptx"
+                     ],
+        "src":  "external:skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "prioritization-frameworks",
@@ -3840,7 +4369,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "privacy-by-design",
@@ -3852,7 +4381,18 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "privacy-policy",
+        "triggers":  [
+                         "privacy",
+                         "policy"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "problem-framing-canvas",
@@ -3864,7 +4404,7 @@
         "src":  "external:Product-Manager-Skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "professional-proofreader",
@@ -3875,7 +4415,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "progressive-web-app",
@@ -3887,7 +4427,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "projection-patterns",
@@ -3898,7 +4438,19 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "project-skill-audit",
+        "triggers":  [
+                         "project",
+                         "skill",
+                         "audit"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "prometheus-configuration",
@@ -3909,7 +4461,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "proto-persona",
@@ -3920,7 +4472,7 @@
         "src":  "external:Product-Manager-Skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "pr-writer",
@@ -3931,7 +4483,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "qiskit",
@@ -3941,7 +4493,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "quality-nonconformance",
@@ -3952,7 +4504,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "query",
@@ -3962,7 +4514,7 @@
         "src":  "external:duckdb-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "read-file",
@@ -3973,7 +4525,7 @@
         "src":  "external:duckdb-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "readme",
@@ -3983,7 +4535,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "read-memories",
@@ -3994,7 +4546,7 @@
         "src":  "external:duckdb-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "receiving-code-review",
@@ -4006,7 +4558,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "reddit-insights",
@@ -4017,7 +4569,7 @@
         "src":  "external:ai-marketing-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "red-team-tactics",
@@ -4029,7 +4581,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "rehabilitation-analyzer",
@@ -4040,7 +4592,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "remotion",
@@ -4050,7 +4602,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "requesting-code-review",
@@ -4062,7 +4614,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "retro",
@@ -4072,7 +4624,19 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "returns-reverse-logistics",
+        "triggers":  [
+                         "returns",
+                         "reverse",
+                         "logistics"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "reverse-engineer",
@@ -4083,7 +4647,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "review",
@@ -4093,7 +4657,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "review-management",
@@ -4104,7 +4668,7 @@
         "src":  "external:aso-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "review-resume",
@@ -4115,7 +4679,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "risk-manager",
@@ -4126,7 +4690,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "risk-metrics-calculation",
@@ -4138,7 +4702,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "robius-app-architecture",
@@ -4150,7 +4714,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "robius-event-action",
@@ -4162,7 +4726,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "robius-matrix-integration",
@@ -4174,7 +4738,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "robius-state-management",
@@ -4186,7 +4750,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "robius-widget-patterns",
@@ -4198,7 +4762,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "sales-automator",
@@ -4209,7 +4773,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "sales-enablement",
@@ -4220,7 +4784,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "salesforce-development",
@@ -4231,7 +4795,33 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "sanity-best-practices",
+        "triggers":  [
+                         "sanity",
+                         "best",
+                         "practices"
+                     ],
+        "src":  "external:agent-toolkit",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "sankhya-dashboard-html-jsp-custom-best-pratices",
+        "triggers":  [
+                         "sankhya",
+                         "dashboard",
+                         "html",
+                         "jsp",
+                         "custom"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "scala-pro",
@@ -4242,7 +4832,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "search-specialist",
@@ -4253,7 +4843,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "security-bluebook-builder",
@@ -4265,7 +4855,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "security-compliance-compliance-check",
@@ -4278,7 +4868,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "seek-and-analyze-video",
@@ -4291,7 +4881,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "segment-cdp",
@@ -4302,7 +4892,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "semgrep-rule-creator",
@@ -4314,7 +4904,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "senior-architect",
@@ -4325,7 +4915,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "senior-fullstack",
@@ -4336,7 +4926,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "seo-programmatic",
@@ -4347,7 +4937,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "service-mesh-observability",
@@ -4359,7 +4949,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "setup-browser-cookies",
@@ -4371,7 +4961,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "setup-deploy",
@@ -4382,7 +4972,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "sexual-health-analyzer",
@@ -4394,7 +4984,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "sharp-edges",
@@ -4405,7 +4995,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "shellcheck-configuration",
@@ -4416,7 +5006,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "ship",
@@ -4426,7 +5016,7 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "signup-flow-cro",
@@ -4438,7 +5028,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "simplify-code",
@@ -4449,7 +5039,31 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "skill-rails-upgrade",
+        "triggers":  [
+                         "skill",
+                         "rails",
+                         "upgrade"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "skin-health-analyzer",
+        "triggers":  [
+                         "skin",
+                         "health",
+                         "analyzer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "slack-bot-builder",
@@ -4461,7 +5075,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "slack-gif-creator",
@@ -4473,7 +5087,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "sleep-analyzer",
@@ -4484,7 +5098,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "slo-implementation",
@@ -4495,7 +5109,18 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "software-architecture",
+        "triggers":  [
+                         "software",
+                         "architecture"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "spark-optimization",
@@ -4506,7 +5131,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "speckit-updater",
@@ -4517,7 +5142,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "spec-to-code-compliance",
@@ -4530,7 +5155,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "speed",
@@ -4540,7 +5165,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "sprint-plan",
@@ -4551,7 +5176,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "sred-project-organizer",
@@ -4563,7 +5188,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "stability-ai",
@@ -4574,7 +5199,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "stakeholder-map",
@@ -4585,7 +5210,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "startup-analyst",
@@ -4596,7 +5221,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "startup-business-analyst-business-case",
@@ -4610,7 +5235,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "startup-metrics-framework",
@@ -4622,7 +5247,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "stripe-integration",
@@ -4633,7 +5258,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "summarize-interview",
@@ -4644,7 +5269,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "summarize-meeting",
@@ -4655,7 +5280,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "superpowers-lab",
@@ -4666,7 +5291,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "swift-concurrency-expert",
@@ -4678,7 +5303,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "swiftui-liquid-glass",
@@ -4690,7 +5315,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "swiftui-performance-audit",
@@ -4702,7 +5327,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "swiftui-view-refactor",
@@ -4714,7 +5339,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "tcm-constitution-analyzer",
@@ -4726,7 +5351,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "team-collaboration-standup-notes",
@@ -4739,7 +5364,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "team-composition-analysis",
@@ -4751,7 +5376,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "telegram-bot-builder",
@@ -4763,7 +5388,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "templates",
@@ -4773,7 +5398,40 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "template-skill",
+        "triggers":  [
+                         "template",
+                         "skill"
+                     ],
+        "src":  "external:skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "terraform-skill",
+        "triggers":  [
+                         "terraform",
+                         "skill"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "theme-factory",
+        "triggers":  [
+                         "theme",
+                         "factory"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "tool-use-guardian",
@@ -4785,7 +5443,18 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "track-management",
+        "triggers":  [
+                         "track",
+                         "management"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "travel-health-analyzer",
@@ -4797,7 +5466,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "turborepo-caching",
@@ -4808,7 +5477,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "tutorial-engineer",
@@ -4819,7 +5488,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "tweet-draft-reviewer",
@@ -4831,7 +5500,7 @@
         "src":  "external:ai-marketing-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "twilio-communications",
@@ -4842,7 +5511,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "ua-campaign",
@@ -4853,7 +5522,7 @@
         "src":  "external:aso-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "uncle-bob-craft",
@@ -4865,7 +5534,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "unfreeze",
@@ -4875,7 +5544,42 @@
         "src":  "external:gstack",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "unity-developer",
+        "triggers":  [
+                         "unity",
+                         "developer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "unreal-engine-cpp-pro",
+        "triggers":  [
+                         "unreal",
+                         "engine",
+                         "cpp",
+                         "pro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "unsplash-integration",
+        "triggers":  [
+                         "unsplash",
+                         "integration"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "upgrading-expo",
@@ -4886,7 +5590,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "user-segmentation",
@@ -4897,7 +5601,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "user-stories",
@@ -4908,7 +5612,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "user-story-splitting",
@@ -4920,7 +5624,7 @@
         "src":  "external:Product-Manager-Skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "using-git-worktrees",
@@ -4932,7 +5636,18 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "using-superpowers",
+        "triggers":  [
+                         "using",
+                         "superpowers"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "value-prop-statements",
@@ -4944,7 +5659,7 @@
         "src":  "external:pm-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "variant-analysis",
@@ -4955,7 +5670,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "varlock",
@@ -4965,7 +5680,19 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "varlock-claude-skill",
+        "triggers":  [
+                         "varlock",
+                         "claude",
+                         "skill"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "vault-cleanup-auditor",
@@ -4977,7 +5704,7 @@
         "src":  "external:ai-marketing-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "vector-index-tuning",
@@ -4989,19 +5716,17 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
-        "id":  "verification-before-completion",
+        "id":  "vexor",
         "triggers":  [
-                         "verification",
-                         "before",
-                         "completion"
+                         "vexor"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  100
     },
     {
         "id":  "vexor-cli",
@@ -5012,7 +5737,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  100
     },
     {
         "id":  "videodb",
@@ -5022,7 +5747,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "videodb-skills",
@@ -5033,7 +5758,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "viral-generator-builder",
@@ -5045,7 +5770,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "voice-ai-development",
@@ -5057,7 +5782,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "voice-extractor",
@@ -5068,7 +5793,18 @@
         "src":  "external:ai-marketing-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "vr-ar",
+        "triggers":  [
+                         "vr",
+                         "ar"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "wcag-audit-patterns",
@@ -5080,7 +5816,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "web-design-guidelines",
@@ -5092,7 +5828,18 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "web-games",
+        "triggers":  [
+                         "web",
+                         "games"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "web-performance-optimization",
@@ -5104,7 +5851,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "web-scraper",
@@ -5115,7 +5862,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "weightloss-analyzer",
@@ -5126,7 +5873,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "wellally-tech",
@@ -5137,7 +5884,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "wiki-architect",
@@ -5148,7 +5895,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "wiki-changelog",
@@ -5159,7 +5906,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "wiki-onboarding",
@@ -5170,7 +5917,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "wiki-page-writer",
@@ -5182,7 +5929,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "wiki-researcher",
@@ -5193,7 +5940,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "windows-shell-reliability",
@@ -5205,7 +5952,18 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "workshop-facilitation",
+        "triggers":  [
+                         "workshop",
+                         "facilitation"
+                     ],
+        "src":  "external:Product-Manager-Skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "writing-plans",
@@ -5216,18 +5974,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
-    },
-    {
-        "id":  "writing-skills",
-        "triggers":  [
-                         "writing",
-                         "skills"
-                     ],
-        "src":  "external:superpowers",
-        "primary_hub":  "general/misc",
-        "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "x-article-publisher",
@@ -5239,7 +5986,7 @@
         "src":  "external:x-article-publisher-skill",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "xlsx-official",
@@ -5250,7 +5997,42 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
+    },
+    {
+        "id":  "yann-lecun-filosofia",
+        "triggers":  [
+                         "yann",
+                         "lecun",
+                         "filosofia"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "yann-lecun-tecnico",
+        "triggers":  [
+                         "yann",
+                         "lecun",
+                         "tecnico"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "yes-md",
+        "triggers":  [
+                         "yes",
+                         "md"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "general/misc",
+        "is_primary":  true,
+        "match_score":  100
     },
     {
         "id":  "youtube-clipper",
@@ -5261,7 +6043,7 @@
         "src":  "external:Youtube-clipper-skill",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     },
     {
         "id":  "youtube-summarizer",
@@ -5272,6 +6054,6 @@
         "src":  "external:ai-marketing-skills",
         "primary_hub":  "general/misc",
         "is_primary":  true,
-        "match_score":  0
+        "match_score":  4
     }
 ]

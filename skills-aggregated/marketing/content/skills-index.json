@@ -58,6 +58,42 @@
         "match_score":  6
     },
     {
+        "id":  "beautiful-prose",
+        "triggers":  [
+                         "beautiful",
+                         "prose"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "bmad-cis-storytelling",
+        "triggers":  [
+                         "bmad",
+                         "cis",
+                         "storytelling"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "bmad-editorial-review-prose",
+        "triggers":  [
+                         "bmad",
+                         "editorial",
+                         "review",
+                         "prose"
+                     ],
+        "src":  "internal:BMad",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "competitor-alternatives",
         "triggers":  [
                          "competitor",
@@ -122,7 +158,7 @@
         "src":  "external:marketingskills",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
-        "match_score":  11
+        "match_score":  13
     },
     {
         "id":  "copywriting",
@@ -141,6 +177,17 @@
                          "optimization"
                      ],
         "src":  "external:founder-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "data-storytelling",
+        "triggers":  [
+                         "data",
+                         "storytelling"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
         "match_score":  100
@@ -212,6 +259,30 @@
         "match_score":  5
     },
     {
+        "id":  "local-legal-seo-audit",
+        "triggers":  [
+                         "local",
+                         "legal",
+                         "seo",
+                         "audit"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "podcast-generation",
+        "triggers":  [
+                         "podcast",
+                         "generation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
         "id":  "popup-cro",
         "triggers":  [
                          "popup",
@@ -249,6 +320,17 @@
         "triggers":  [
                          "schema",
                          "markup"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "scientific-writing",
+        "triggers":  [
+                         "scientific",
+                         "writing"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/content",

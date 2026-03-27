@@ -35,23 +35,25 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 ## Quick Trigger Hints
 
 - email
-- automation
-- systems
-- marketing
-- curation
-- prevention
-- internal
-- creation
-- bible
-- sequence
-- sendgrid
 - cold
-- klaviyo
-- comms
+- outreach
+- sequence
+- internal
+- marketing
+- templates
+- curation
+- creation
+- automation
+- bible
+- systems
+- prevention
 - revops
-- churn
-- newsletter
+- comms
 - mailchimp
+- specialist
+- churn
+- campaign
+- segmentation
 
 ## Data Contract
 

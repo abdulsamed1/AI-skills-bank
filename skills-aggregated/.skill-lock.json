@@ -1,5 +1,5 @@
 {
-    "generated_at":  "2026-03-27T11:34:43+02:00",
+    "generated_at":  "2026-03-27T12:54:06+02:00",
     "src_repo_mode":  "all",
     "selected_src_repos":  [
                                "agent-skills",
@@ -40,22 +40,12 @@
                                "Youtube-clipper-skill"
                            ],
     "exclude_categories":  [
-                               "games",
-                               "law-legal",
-                               "medicine-medical",
-                               "pharmacy",
-                               "biology",
-                               "chemistry",
-                               "llm-from-scratch"
+
                            ],
     "exclusion_stats":  {
-                            "total":  40,
+                            "total":  0,
                             "by_category":  {
-                                                "biology":  2,
-                                                "games":  26,
-                                                "law-legal":  7,
-                                                "medicine-medical":  4,
-                                                "pharmacy":  1
+
                                             }
                         },
     "min_skills_per_hub":  10,

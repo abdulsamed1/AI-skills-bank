@@ -615,6 +615,17 @@
         "match_score":  7
     },
     {
+        "id":  "ruby-pro",
+        "triggers":  [
+                         "ruby",
+                         "pro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "testing/automation",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
         "id":  "sast-configuration",
         "triggers":  [
                          "sast",

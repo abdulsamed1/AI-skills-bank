@@ -38,22 +38,22 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - azure
 - python
 - ai
-- mgmt
-- monitor
 - pro
 - storage
+- monitor
+- mgmt
 - fastapi
 - agents
-- patterns
 - development
-- django
-- temporal
-- translation
-- sdk
-- opentelemetry
-- testing
+- patterns
 - file
+- sdk
+- temporal
+- v2
 - cosmos
+- testing
+- opentelemetry
+- text
 
 ## Data Contract
 

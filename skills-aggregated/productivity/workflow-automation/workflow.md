@@ -40,20 +40,20 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - workflows
 - development
 - n8n
-- code
 - git
 - pr
+- code
 - patterns
-- review
 - orchestration
-- orchestrator
+- review
+- linear
 - github
-- go
 - wordpress
-- expert
+- go
+- claude
+- orchestrator
+- framework
 - stack
-- make
-- automate
 
 ## Data Contract
 

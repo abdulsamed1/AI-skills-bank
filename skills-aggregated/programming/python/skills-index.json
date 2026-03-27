@@ -100,6 +100,19 @@
         "match_score":  7
     },
     {
+        "id":  "azure-ai-textanalytics-py",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "textanalytics",
+                         "py"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "azure-ai-transcription-py",
         "triggers":  [
                          "azure",
@@ -487,6 +500,16 @@
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  13
+    },
+    {
+        "id":  "biopython",
+        "triggers":  [
+                         "biopython"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  12
     },
     {
         "id":  "copilot-sdk",

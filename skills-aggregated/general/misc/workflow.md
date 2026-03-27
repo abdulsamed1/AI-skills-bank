@@ -37,23 +37,23 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - bmad
 - review
 - context
-- analyzer
 - design
+- analyzer
 - code
+- skill
 - hig
-- odoo
 - pro
+- project
+- odoo
+- management
 - builder
 - patterns
-- setup
-- project
-- firecrawl
-- ai
-- management
-- plan
+- claude
 - health
-- app
-- components
+- data
+- setup
+- analysis
+- performance
 
 ## Data Contract
 

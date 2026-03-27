@@ -41,19 +41,19 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 - error
 - strategy
 - analysis
-- brainstorm
 - advisor
 - app
-- optimization
+- brainstorm
+- patterns
 - backend
+- optimization
 - user
 - existing
+- new
 - market
 - readiness
-- new
-- onboarding
 - story
-- test
+- assumptions
 
 ## Data Contract
 

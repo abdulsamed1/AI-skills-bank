@@ -59,17 +59,6 @@
         "match_score":  100
     },
     {
-        "id":  "audit-skills",
-        "triggers":  [
-                         "audit",
-                         "skills"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "security/core",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
         "id":  "auth-implementation-patterns",
         "triggers":  [
                          "auth",

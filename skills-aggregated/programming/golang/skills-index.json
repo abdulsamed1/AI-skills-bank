@@ -11,6 +11,17 @@
         "match_score":  20
     },
     {
+        "id":  "elixir-pro",
+        "triggers":  [
+                         "elixir",
+                         "pro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/golang",
+        "is_primary":  true,
+        "match_score":  1
+    },
+    {
         "id":  "go-concurrency-patterns",
         "triggers":  [
                          "go",
@@ -34,17 +45,6 @@
         "match_score":  20
     },
     {
-        "id":  "go-mode",
-        "triggers":  [
-                         "go",
-                         "mode"
-                     ],
-        "src":  "external:ai-marketing-skills",
-        "primary_hub":  "programming/golang",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "grpc-golang",
         "triggers":  [
                          "grpc",
@@ -56,51 +56,16 @@
         "match_score":  20
     },
     {
-        "id":  "identify-assumptions-new",
+        "id":  "lightning-channel-factories",
         "triggers":  [
-                         "identify",
-                         "assumptions",
-                         "new"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "programming/golang",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "micro-saas-launcher",
-        "triggers":  [
-                         "micro",
-                         "saas",
-                         "launcher"
+                         "lightning",
+                         "channel",
+                         "factories"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "programming/golang",
         "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "scroll-experience",
-        "triggers":  [
-                         "scroll",
-                         "experience"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/golang",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "sred-work-summary",
-        "triggers":  [
-                         "sred",
-                         "work",
-                         "summary"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/golang",
-        "is_primary":  true,
-        "match_score":  7
+        "match_score":  1
     },
     {
         "id":  "temporal-golang-pro",

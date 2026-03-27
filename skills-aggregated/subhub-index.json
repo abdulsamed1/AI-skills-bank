@@ -1,22 +1,155 @@
 [
     {
+        "key":  "marketing-strategy",
+        "main_hub":  "marketing",
+        "sub_hub":  "strategy",
+        "skill_count":  11,
+        "top_triggers":  [
+                             "marketing",
+                             "positioning",
+                             "gtm",
+                             "context",
+                             "strategy",
+                             "ideas",
+                             "motions",
+                             "product",
+                             "pricing",
+                             "statement"
+                         ],
+        "path":  "marketing/strategy"
+    },
+    {
+        "key":  "general-misc",
+        "main_hub":  "general",
+        "sub_hub":  "misc",
+        "skill_count":  528,
+        "top_triggers":  [
+                             "bmad",
+                             "review",
+                             "context",
+                             "design",
+                             "analyzer",
+                             "code",
+                             "skill",
+                             "hig",
+                             "pro",
+                             "project"
+                         ],
+        "path":  "general/misc"
+    },
+    {
+        "key":  "ai-skills-factory",
+        "main_hub":  "ai",
+        "sub_hub":  "skills-factory",
+        "skill_count":  19,
+        "top_triggers":  [
+                             "skill",
+                             "skills",
+                             "creator",
+                             "ms",
+                             "workflow",
+                             "check",
+                             "documentation",
+                             "verification",
+                             "antigravity",
+                             "authoring"
+                         ],
+        "path":  "ai/skills-factory"
+    },
+    {
         "key":  "ai-llm-agents",
         "main_hub":  "ai",
         "sub_hub":  "llm-agents",
-        "skill_count":  134,
+        "skill_count":  128,
         "top_triggers":  [
                              "agent",
                              "bmad",
                              "ai",
                              "agents",
-                             "skill",
                              "cis",
                              "azure",
                              "review",
-                             "multi",
-                             "llm"
+                             "llm",
+                             "memory",
+                             "multi"
                          ],
         "path":  "ai/llm-agents"
+    },
+    {
+        "key":  "ai-prompting-builder",
+        "main_hub":  "ai",
+        "sub_hub":  "prompting-builder",
+        "skill_count":  13,
+        "top_triggers":  [
+                             "prompt",
+                             "engineering",
+                             "llm",
+                             "context",
+                             "patterns",
+                             "optimize",
+                             "structured",
+                             "application",
+                             "engineer",
+                             "rating"
+                         ],
+        "path":  "ai/prompting-builder"
+    },
+    {
+        "key":  "business-product-strategy",
+        "main_hub":  "business",
+        "sub_hub":  "product-strategy",
+        "skill_count":  144,
+        "top_triggers":  [
+                             "product",
+                             "wds",
+                             "bmad",
+                             "prd",
+                             "error",
+                             "strategy",
+                             "analysis",
+                             "advisor",
+                             "app",
+                             "brainstorm"
+                         ],
+        "path":  "business/product-strategy"
+    },
+    {
+        "key":  "mobile-cross-platform",
+        "main_hub":  "mobile",
+        "sub_hub":  "cross-platform",
+        "skill_count":  17,
+        "top_triggers":  [
+                             "mobile",
+                             "expert",
+                             "multi",
+                             "platform",
+                             "developer",
+                             "development",
+                             "android",
+                             "native",
+                             "games",
+                             "flutter"
+                         ],
+        "path":  "mobile/cross-platform"
+    },
+    {
+        "key":  "programming-python",
+        "main_hub":  "programming",
+        "sub_hub":  "python",
+        "skill_count":  76,
+        "top_triggers":  [
+                             "py",
+                             "azure",
+                             "python",
+                             "ai",
+                             "pro",
+                             "storage",
+                             "monitor",
+                             "mgmt",
+                             "fastapi",
+                             "agents"
+                         ],
+        "path":  "programming/python"
     },
     {
         "key":  "programming-typescript",
@@ -57,23 +190,61 @@
         "path":  "marketing/social"
     },
     {
-        "key":  "programming-java",
-        "main_hub":  "programming",
-        "sub_hub":  "java",
-        "skill_count":  28,
+        "key":  "security-core",
+        "main_hub":  "security",
+        "sub_hub":  "core",
+        "skill_count":  54,
         "top_triggers":  [
-                             "java",
-                             "azure",
-                             "ai",
-                             "communication",
-                             "monitor",
-                             "pro",
-                             "keyvault",
                              "security",
-                             "storage",
-                             "voicelive"
+                             "automation",
+                             "audit",
+                             "google",
+                             "testing",
+                             "scanning",
+                             "azure",
+                             "api",
+                             "coder",
+                             "authentication"
                          ],
-        "path":  "programming/java"
+        "path":  "security/core"
+    },
+    {
+        "key":  "frontend-ui-ux",
+        "main_hub":  "frontend",
+        "sub_hub":  "ui-ux",
+        "skill_count":  49,
+        "top_triggers":  [
+                             "ui",
+                             "design",
+                             "ux",
+                             "patterns",
+                             "figma",
+                             "frontend",
+                             "components",
+                             "system",
+                             "wds",
+                             "accessibility"
+                         ],
+        "path":  "frontend/ui-ux"
+    },
+    {
+        "key":  "testing-automation",
+        "main_hub":  "testing",
+        "sub_hub":  "automation",
+        "skill_count":  70,
+        "top_triggers":  [
+                             "testing",
+                             "bmad",
+                             "test",
+                             "testarch",
+                             "qa",
+                             "patterns",
+                             "e2e",
+                             "playwright",
+                             "automation",
+                             "generate"
+                         ],
+        "path":  "testing/automation"
     },
     {
         "key":  "backend-api-design",
@@ -84,262 +255,15 @@
                              "api",
                              "documentation",
                              "patterns",
-                             "azure",
                              "dev",
+                             "azure",
+                             "development",
                              "builder",
-                             "development",
-                             "generation",
-                             "expert",
-                             "gemini"
-                         ],
-        "path":  "backend/api-design"
-    },
-    {
-        "key":  "ai-prompting-builder",
-        "main_hub":  "ai",
-        "sub_hub":  "prompting-builder",
-        "skill_count":  13,
-        "top_triggers":  [
-                             "prompt",
-                             "engineering",
-                             "llm",
-                             "context",
-                             "patterns",
-                             "optimize",
-                             "structured",
-                             "application",
-                             "engineer",
-                             "rating"
-                         ],
-        "path":  "ai/prompting-builder"
-    },
-    {
-        "key":  "mobile-cross-platform",
-        "main_hub":  "mobile",
-        "sub_hub":  "cross-platform",
-        "skill_count":  16,
-        "top_triggers":  [
-                             "expert",
-                             "mobile",
-                             "multi",
-                             "platform",
-                             "developer",
-                             "development",
-                             "android",
-                             "native",
-                             "component",
-                             "flutter"
-                         ],
-        "path":  "mobile/cross-platform"
-    },
-    {
-        "key":  "marketing-strategy",
-        "main_hub":  "marketing",
-        "sub_hub":  "strategy",
-        "skill_count":  11,
-        "top_triggers":  [
-                             "marketing",
-                             "positioning",
-                             "gtm",
-                             "context",
-                             "strategy",
-                             "ideas",
-                             "motions",
-                             "product",
-                             "pricing",
-                             "statement"
-                         ],
-        "path":  "marketing/strategy"
-    },
-    {
-        "key":  "programming-rust",
-        "main_hub":  "programming",
-        "sub_hub":  "rust",
-        "skill_count":  26,
-        "top_triggers":  [
-                             "makepad",
-                             "rust",
-                             "azure",
-                             "keyvault",
-                             "patterns",
-                             "async",
-                             "bevy",
-                             "platform",
-                             "animation",
-                             "programming"
-                         ],
-        "path":  "programming/rust"
-    },
-    {
-        "key":  "marketing-content",
-        "main_hub":  "marketing",
-        "sub_hub":  "content",
-        "skill_count":  54,
-        "top_triggers":  [
-                             "seo",
-                             "content",
-                             "ai",
-                             "competitor",
-                             "programmatic",
-                             "audit",
-                             "schema",
-                             "cro",
-                             "strategy",
-                             "alternatives"
-                         ],
-        "path":  "marketing/content"
-    },
-    {
-        "key":  "testing-automation",
-        "main_hub":  "testing",
-        "sub_hub":  "automation",
-        "skill_count":  69,
-        "top_triggers":  [
-                             "testing",
-                             "bmad",
-                             "test",
-                             "qa",
-                             "testarch",
-                             "patterns",
-                             "e2e",
-                             "playwright",
-                             "review",
-                             "evaluation"
-                         ],
-        "path":  "testing/automation"
-    },
-    {
-        "key":  "business-saas",
-        "main_hub":  "business",
-        "sub_hub":  "saas",
-        "skill_count":  17,
-        "top_triggers":  [
-                             "saas",
-                             "business",
-                             "market",
-                             "startup",
-                             "metrics",
-                             "financial",
-                             "sizing",
-                             "finance",
-                             "analyst",
-                             "launcher"
-                         ],
-        "path":  "business/saas"
-    },
-    {
-        "key":  "security-core",
-        "main_hub":  "security",
-        "sub_hub":  "core",
-        "skill_count":  55,
-        "top_triggers":  [
-                             "security",
-                             "audit",
-                             "automation",
-                             "testing",
-                             "google",
-                             "scanning",
-                             "coder",
-                             "api",
-                             "azure",
+                             "architecture",
+                             "graphql",
                              "dotnet"
                          ],
-        "path":  "security/core"
-    },
-    {
-        "key":  "business-product-strategy",
-        "main_hub":  "business",
-        "sub_hub":  "product-strategy",
-        "skill_count":  141,
-        "top_triggers":  [
-                             "product",
-                             "wds",
-                             "bmad",
-                             "prd",
-                             "error",
-                             "strategy",
-                             "analysis",
-                             "brainstorm",
-                             "advisor",
-                             "app"
-                         ],
-        "path":  "business/product-strategy"
-    },
-    {
-        "key":  "frontend-web-basics",
-        "main_hub":  "frontend",
-        "sub_hub":  "web-basics",
-        "skill_count":  18,
-        "top_triggers":  [
-                             "gsap",
-                             "netlify",
-                             "fixing",
-                             "edge",
-                             "slides",
-                             "algorithmic",
-                             "frontend",
-                             "development",
-                             "core",
-                             "health"
-                         ],
-        "path":  "frontend/web-basics"
-    },
-    {
-        "key":  "frontend-react-nextjs",
-        "main_hub":  "frontend",
-        "sub_hub":  "react-nextjs",
-        "skill_count":  25,
-        "top_triggers":  [
-                             "react",
-                             "nextjs",
-                             "practices",
-                             "best",
-                             "auth",
-                             "fp",
-                             "expert",
-                             "patterns",
-                             "fullstack",
-                             "integration"
-                         ],
-        "path":  "frontend/react-nextjs"
-    },
-    {
-        "key":  "frontend-ui-ux",
-        "main_hub":  "frontend",
-        "sub_hub":  "ui-ux",
-        "skill_count":  65,
-        "top_triggers":  [
-                             "ui",
-                             "design",
-                             "threejs",
-                             "figma",
-                             "ux",
-                             "patterns",
-                             "frontend",
-                             "system",
-                             "skills",
-                             "components"
-                         ],
-        "path":  "frontend/ui-ux"
-    },
-    {
-        "key":  "productivity-workflow-automation",
-        "main_hub":  "productivity",
-        "sub_hub":  "workflow-automation",
-        "skill_count":  178,
-        "top_triggers":  [
-                             "automation",
-                             "workflow",
-                             "tdd",
-                             "workflows",
-                             "development",
-                             "n8n",
-                             "code",
-                             "git",
-                             "pr",
-                             "patterns"
-                         ],
-        "path":  "productivity/workflow-automation"
+        "path":  "backend/api-design"
     },
     {
         "key":  "devops-cloud",
@@ -361,42 +285,99 @@
         "path":  "devops/cloud"
     },
     {
-        "key":  "general-misc",
-        "main_hub":  "general",
-        "sub_hub":  "misc",
-        "skill_count":  460,
+        "key":  "marketing-content",
+        "main_hub":  "marketing",
+        "sub_hub":  "content",
+        "skill_count":  61,
         "top_triggers":  [
+                             "seo",
+                             "content",
+                             "audit",
+                             "ai",
+                             "schema",
+                             "programmatic",
+                             "storytelling",
+                             "competitor",
                              "bmad",
-                             "review",
-                             "context",
-                             "analyzer",
-                             "design",
-                             "code",
-                             "hig",
-                             "odoo",
-                             "pro",
-                             "builder"
+                             "writing"
                          ],
-        "path":  "general/misc"
+        "path":  "marketing/content"
     },
     {
-        "key":  "programming-python",
+        "key":  "programming-java",
         "main_hub":  "programming",
-        "sub_hub":  "python",
-        "skill_count":  74,
+        "sub_hub":  "java",
+        "skill_count":  28,
         "top_triggers":  [
-                             "py",
+                             "java",
                              "azure",
-                             "python",
                              "ai",
-                             "mgmt",
+                             "communication",
                              "monitor",
                              "pro",
+                             "keyvault",
+                             "security",
                              "storage",
-                             "fastapi",
-                             "agents"
+                             "voicelive"
                          ],
-        "path":  "programming/python"
+        "path":  "programming/java"
+    },
+    {
+        "key":  "programming-rust",
+        "main_hub":  "programming",
+        "sub_hub":  "rust",
+        "skill_count":  26,
+        "top_triggers":  [
+                             "makepad",
+                             "rust",
+                             "azure",
+                             "keyvault",
+                             "patterns",
+                             "async",
+                             "bevy",
+                             "platform",
+                             "animation",
+                             "programming"
+                         ],
+        "path":  "programming/rust"
+    },
+    {
+        "key":  "productivity-workflow-automation",
+        "main_hub":  "productivity",
+        "sub_hub":  "workflow-automation",
+        "skill_count":  181,
+        "top_triggers":  [
+                             "automation",
+                             "workflow",
+                             "tdd",
+                             "workflows",
+                             "development",
+                             "n8n",
+                             "git",
+                             "pr",
+                             "code",
+                             "patterns"
+                         ],
+        "path":  "productivity/workflow-automation"
+    },
+    {
+        "key":  "design-ui-ux",
+        "main_hub":  "design",
+        "sub_hub":  "ui-ux",
+        "skill_count":  19,
+        "top_triggers":  [
+                             "threejs",
+                             "figma",
+                             "animation",
+                             "guidelines",
+                             "design",
+                             "brand",
+                             "geometry",
+                             "lighting",
+                             "experience",
+                             "rules"
+                         ],
+        "path":  "design/ui-ux"
     },
     {
         "key":  "backend-databases",
@@ -418,6 +399,25 @@
         "path":  "backend/databases"
     },
     {
+        "key":  "frontend-react-nextjs",
+        "main_hub":  "frontend",
+        "sub_hub":  "react-nextjs",
+        "skill_count":  25,
+        "top_triggers":  [
+                             "react",
+                             "nextjs",
+                             "practices",
+                             "best",
+                             "auth",
+                             "fp",
+                             "expert",
+                             "patterns",
+                             "fullstack",
+                             "integration"
+                         ],
+        "path":  "frontend/react-nextjs"
+    },
+    {
         "key":  "devops-docker-k8s",
         "main_hub":  "devops",
         "sub_hub":  "docker-k8s",
@@ -435,5 +435,43 @@
                              "mesh"
                          ],
         "path":  "devops/docker-k8s"
+    },
+    {
+        "key":  "frontend-web-basics",
+        "main_hub":  "frontend",
+        "sub_hub":  "web-basics",
+        "skill_count":  18,
+        "top_triggers":  [
+                             "gsap",
+                             "netlify",
+                             "fixing",
+                             "edge",
+                             "slides",
+                             "algorithmic",
+                             "frontend",
+                             "development",
+                             "core",
+                             "health"
+                         ],
+        "path":  "frontend/web-basics"
+    },
+    {
+        "key":  "business-saas",
+        "main_hub":  "business",
+        "sub_hub":  "saas",
+        "skill_count":  17,
+        "top_triggers":  [
+                             "saas",
+                             "business",
+                             "market",
+                             "startup",
+                             "metrics",
+                             "financial",
+                             "sizing",
+                             "finance",
+                             "analyst",
+                             "launcher"
+                         ],
+        "path":  "business/saas"
     }
 ]

@@ -36,24 +36,24 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 - ui
 - design
-- threejs
-- figma
 - ux
 - patterns
+- figma
 - frontend
-- system
-- skills
 - components
-- create
-- accessibility
+- system
 - wds
-- animation
-- zafiro
-- generate
-- expo
+- accessibility
+- shadcn
 - avalonia
+- designer
+- expo
+- zafiro
+- create
+- skills
+- stitch
 - magic
-- bmad
+- agent
 
 ## Data Contract
 

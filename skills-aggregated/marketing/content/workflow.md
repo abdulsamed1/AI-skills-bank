@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Content marketing & SEO: copywriting, blog strategy, search optimization, and editorial best practices
+Content marketing, SEO & Writing Styles: copywriting, blog strategy, search optimization, and high-quality prose standards
 
 This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub Copilot) with minimal context overhead.
 
@@ -29,31 +29,31 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 ## Recommended Use Cases
 
 - Creating SEO-optimized content
-- Building blog strategies
-- Improving search rankings
+- Establishing high-quality writing styles
+- Improving search and editorial quality
 
 ## Quick Trigger Hints
 
 - seo
 - content
-- ai
-- competitor
-- programmatic
 - audit
+- ai
 - schema
+- programmatic
+- storytelling
+- competitor
+- bmad
+- writing
+- local
+- prose
 - cro
 - strategy
-- alternatives
-- architect
-- local
-- ad
+- dataforseo
+- scientific
 - snippet
-- copy
-- marketer
-- geo
-- optimization
-- copywriting
-- magnets
+- alternatives
+- gen
+- page
 
 ## Data Contract
 

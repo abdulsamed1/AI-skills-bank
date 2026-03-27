@@ -742,6 +742,18 @@
         "match_score":  100
     },
     {
+        "id":  "in-app-events",
+        "triggers":  [
+                         "in",
+                         "app",
+                         "events"
+                     ],
+        "src":  "external:aso-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
         "id":  "incident-runbook-templates",
         "triggers":  [
                          "incident",
@@ -1028,6 +1040,17 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  11
+    },
+    {
+        "id":  "pestel-analysis",
+        "triggers":  [
+                         "pestel",
+                         "analysis"
+                     ],
+        "src":  "external:Product-Manager-Skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  19
     },
     {
         "id":  "pol-probe",
@@ -1432,6 +1455,18 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "unity-ecs-patterns",
+        "triggers":  [
+                         "unity",
+                         "ecs",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "user-personas",

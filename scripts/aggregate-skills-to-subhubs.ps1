@@ -539,14 +539,14 @@ $SUB_HUB_DEFINITIONS = @{
             )
         }
         "content" = @{
-            keywords = @("content", "copywriting", "seo", "blog", "article", "writing", "editorial", "keyword", "search-engine")
-            anchor_keywords = @("seo", "content-marketing", "copywriting")
+            keywords = @("content", "copywriting", "seo", "blog", "article", "writing", "editorial", "keyword", "search-engine", "writing-style", "muscular-prose", "copy-editing", "prose")
+            anchor_keywords = @("seo", "content-marketing", "copywriting", "writing-style")
             negative_keywords = @("email", "social", "video", "design", "html", "css")
-            description = "Content marketing & SEO: copywriting, blog strategy, search optimization, and editorial best practices"
+            description = "Content marketing, SEO & Writing Styles: copywriting, blog strategy, search optimization, and high-quality prose standards"
             best_for = @(
                 "Creating SEO-optimized content",
-                "Building blog strategies",
-                "Improving search rankings"
+                "Establishing high-quality writing styles",
+                "Improving search and editorial quality"
             )
         }
         "email" = @{
@@ -627,6 +627,17 @@ $SUB_HUB_DEFINITIONS = @{
 
             )
         }
+        "skills-factory" = @{
+            keywords = @("skill", "skill-creation", "skill-factory", "authoring", "generation", "lint", "validate")
+            anchor_keywords = @("skill-creation", "skill-factory", "authoring")
+            negative_keywords = @("ui", "css", "html", "saas")
+            description = "AI skill authoring: creating, refining, auditing, and validating new AI skills"
+            best_for = @(
+                "Authoring and developing skills",
+                "Auditing and validating skills",
+                "Providing an interactive skills builder experience"
+            )
+        }
     }
 
     "productivity" = @{
@@ -673,7 +684,7 @@ $CATEGORY_GAP_PATTERNS = @{
 $CATEGORY_PATTERN_TO_MAIN_HUB = @{
     "business" = "business"
     "product-strategy" = "business"
-    "ui-ux" = "frontend"
+    "ui-ux" = "design"
     "marketing" = "marketing"
     "security" = "security"
     "testing" = "testing"
@@ -712,27 +723,34 @@ $MANUAL_HUB_OVERRIDES = @{
     "user-story-mapping-workshop"  = @{ main = "business"; sub = "product-strategy"; score = 100 }
 
     # =========================================================================
-    # TARGET: frontend/ui-ux
+    # TARGET: design/ui-ux
     # =========================================================================
-    "scroll-experience"            = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "figma-use"                    = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "figma-create-design-system-rules" = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "figma-generate-design"        = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "nerdzao-elite"                = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "react:components"             = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "animejs-animation"            = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "threejs-animation"            = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "threejs-fundamentals"         = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "threejs-geometry"             = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "threejs-interaction"          = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "threejs-lighting"             = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "threejs-loaders"              = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "threejs-materials"            = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "threejs-postprocessing"       = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "threejs-skills"               = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "threejs-textures"             = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    "google-stitch"                = @{ main = "frontend"; sub = "ui-ux"; score = 100 }
-    
+    "scroll-experience"            = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "figma-use"                    = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "figma-create-design-system-rules" = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "figma-generate-design"        = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "nerdzao-elite"                = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "react:components"             = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "animejs-animation"            = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-animation"            = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-fundamentals"         = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-geometry"             = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-interaction"          = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-lighting"             = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-loaders"              = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-materials"            = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-postprocessing"       = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-skills"               = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "threejs-textures"             = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "google-stitch"                = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "brand-guidelines-anthropic"   = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "brand-guidelines-community"   = @{ main = "design"; sub = "ui-ux"; score = 100 }
+    "beautiful-prose"              = @{ main = "marketing"; sub = "content"; score = 100 }
+    "vexor"                        = @{ main = "general"; sub = "misc"; score = 100 }
+    "vexor-cli"                    = @{ main = "general"; sub = "misc"; score = 100 }
+    "linear-claude-skill"          = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
+    "scientific-writing"           = @{ main = "marketing"; sub = "content"; score = 100 }
+    "apify-ultimate-scraper"       = @{ main = "general"; sub = "misc"; score = 100 }
     # =========================================================================
     # TARGET: frontend/web-basics
     # =========================================================================
@@ -816,22 +834,41 @@ $MANUAL_HUB_OVERRIDES = @{
     "context-engineering-advisor"         = @{ main = "ai"; sub = "prompting-builder"; score = 100 }
 
     # =========================================================================
+    # TARGET: ai/skills-factory
+    # =========================================================================
+    "skill-creator"                          = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-developer"                        = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "writing-skills"                         = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "documentation-generation-doc-generate"  = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "lint-and-validate"                      = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "verification-before-completion"         = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-authoring-workflow"               = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-sentinel"                         = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-writer"                           = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-seekers"                          = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-scanner"                          = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-router"                           = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-improver"                         = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-installer"                        = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-creator-ms"                       = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "skill-check"                            = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "audit-skills"                           = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+    "antigravity-skill-orchestrator"         = @{ main = "ai"; sub = "skills-factory"; score = 100 }
+
+    # =========================================================================
     # TARGET: general/misc
     # =========================================================================
     "latex-paper-conversion"       = @{ main = "general"; sub = "misc"; score = 100 }
     "sankhya-dashboard-html-jsp-custom-best-pratices" = @{ main = "general"; sub = "misc"; score = 100 }
-    "skill-creator"                = @{ main = "general"; sub = "misc"; score = 100 }
     "ml-engineer"                  = @{ main = "general"; sub = "misc"; score = 100 }
     "dbt-transformation-patterns"  = @{ main = "general"; sub = "misc"; score = 100 }
     "data-quality-frameworks"      = @{ main = "general"; sub = "misc"; score = 100 }
     "data-engineering-data-driven-feature" = @{ main = "general"; sub = "misc"; score = 100 }
     "leiloeiro-risco"              = @{ main = "general"; sub = "misc"; score = 100 }
-    "skill-sentinel"               = @{ main = "general"; sub = "misc"; score = 100 }
     "polars"                       = @{ main = "general"; sub = "misc"; score = 100 }
     "carrier-relationship-management" = @{ main = "general"; sub = "misc"; score = 100 }
     "logistics-exception-management" = @{ main = "general"; sub = "misc"; score = 100 }
     "returns-reverse-logistics"    = @{ main = "general"; sub = "misc"; score = 100 }
-    "skill-authoring-workflow"     = @{ main = "general"; sub = "misc"; score = 100 }
     "yes-md"                       = @{ main = "general"; sub = "misc"; score = 100 }
     "notebooklm"                   = @{ main = "general"; sub = "misc"; score = 100 }
    
@@ -923,7 +960,6 @@ $MANUAL_HUB_OVERRIDES = @{
     # TARGET: security/core
     # =========================================================================
     "attack-tree-construction"     = @{ main = "security"; sub = "core"; score = 100 }
-    "audit-skills"                 = @{ main = "security"; sub = "core"; score = 100 }
 
     # =========================================================================
     # TARGET: testing/automation
@@ -1792,8 +1828,9 @@ foreach ($category in $CATEGORY_GAP_PATTERNS.Keys) {
 
 foreach ($skill in $allSkills) {
     $assignments = @()
-    if ($MANUAL_HUB_OVERRIDES.ContainsKey($skill.id)) {
-        $override = $MANUAL_HUB_OVERRIDES[$skill.id]
+    $skillIdLower = $skill.id.ToLower().Trim()
+    if ($MANUAL_HUB_OVERRIDES.ContainsKey($skillIdLower)) {
+        $override = $MANUAL_HUB_OVERRIDES[$skillIdLower]
         $assignments = @([PSCustomObject]@{
                 main = $override.main
                 sub = $override.sub
@@ -1859,8 +1896,13 @@ foreach ($skill in $allSkills) {
     }
 
     if ($assignments.Count -eq 0) {
-        $unmatchedSkills += $skill
-        continue
+        # SAFETY NET (Approved Policy 2A): Route unclassified non-empty skills to general/misc
+        $assignments = @([PSCustomObject]@{
+            main = "general"
+            sub = "misc"
+            key = "general-misc"
+            score = 4
+        })
     }
 
     if ($assignments.Count -gt 1) {

@@ -1,8 +1,8 @@
-# backend / api-design
+# design / ui-ux
 
 ## Purpose
 
-API design: REST, GraphQL, and best practices for scalable web services
+Productivity and automation: workflow automation, agentic orchestration, project delivery, and tool-connected process automation
 
 This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub Copilot) with minimal context overhead.
 
@@ -28,32 +28,32 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 
 ## Recommended Use Cases
 
-- Designing robust APIs
-- GraphQL schema design
-- API versioning and deprecation
+- Automating repetitive delivery tasks
+- Structuring team workflows and agentic pipelines
+- Improving execution velocity with orchestration tools
 
 ## Quick Trigger Hints
 
-- api
-- documentation
-- patterns
-- dev
-- azure
-- development
-- builder
-- architecture
-- graphql
-- dotnet
-- ai
-- mgmt
-- expert
-- odoo
-- fp
-- architect
-- gemini
-- database
-- backend
-- bdistill
+- threejs
+- figma
+- animation
+- guidelines
+- design
+- brand
+- geometry
+- lighting
+- experience
+- rules
+- generate
+- nerdzao
+- fundamentals
+- skills
+- textures
+- community
+- react:components
+- create
+- system
+- anthropic
 
 ## Data Contract
 

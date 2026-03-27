@@ -139,6 +139,17 @@
         "match_score":  11
     },
     {
+        "id":  "mobile-games",
+        "triggers":  [
+                         "mobile",
+                         "games"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "multi-platform-apps-multi-platform",
         "triggers":  [
                          "multi",

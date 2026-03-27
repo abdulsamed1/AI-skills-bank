@@ -35,25 +35,17 @@ This sub-hub is optimized for multi-tool usage (Gemini CLI, Antigravity, GitHub 
 ## Quick Trigger Hints
 
 - golang
-- go
 - pro
-- assumptions
-- scroll
-- micro
-- sred
-- patterns
-- dbos
 - grpc
-- mode
-- new
-- concurrency
-- saas
-- work
-- summary
+- dbos
 - temporal
-- experience
-- launcher
-- identify
+- patterns
+- elixir
+- factories
+- lightning
+- concurrency
+- channel
+- go
 
 ## Data Contract
 

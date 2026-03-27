@@ -1,6 +1,6 @@
 ---
 name: skills-marketing-content
-description: 'Content marketing & SEO: copywriting, blog strategy, search optimization, and editorial best practices'
+description: 'Content marketing, SEO & Writing Styles: copywriting, blog strategy, search optimization, and high-quality prose standards'
 ---
 
 Follow the instructions in ./workflow.md.
