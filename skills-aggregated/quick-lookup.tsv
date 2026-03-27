@@ -1,0 +1,41 @@
+hub	sub_hub	skill_id	top_triggers	description	match_score	source	usage_frequency	implementation_priority
+backend	api-design	api-documentation	api,documentation,openapi	API documentation workflow for OpenAPI & dev guides	100	internal	very-high	1-critical
+backend	api-design	api-design-principles	api,design,patterns	Master REST & GraphQL API design principles	17	external	high	1-critical
+backend	api-design	api-endpoint-builder	api,endpoint,builder	Builds production-ready REST API endpoints	8	external	high	2-high
+backend	databases	database-design	database,sql,schema	Design scalable database architectures	95	internal	very-high	1-critical
+backend	databases	query-optimization	sql,performance,query	Optimize database queries & indexing	85	internal	high	1-critical
+frontend	state	react-patterns	react,patterns,component	Master React patterns & best practices	88	internal	very-high	1-critical
+frontend	state	state-management	redux,zustand,state	State management frameworks & patterns	82	external	high	2-high
+frontend	styling	tailwind-guide	tailwind,css,styling	Tailwind CSS patterns & techniques	78	internal	high	2-high
+frontend	components	component-library	component,design-system,ui	Build & maintain component libraries	65	external	medium	3-medium
+ai	llm-agents	agent-builder	agent,builder,orchestration	AI agent framework & builder patterns	98	internal	very-high	1-critical
+ai	llm-agents	llm-orchestrator	llm,claude,model,orchestration	LLM orchestration & multi-agent systems	92	external	high	1-critical
+ai	skills-factory	skill-creator	skill,create,documentation	Create & document skills for AI systems	87	internal	high	2-high
+ai	skills-factory	skill-router	skill,routing,invocation	Route & invoke skills intelligently	84	external	high	2-high
+testing	automation	test-framework	test,automation,e2e	E2E test frameworks (Playwright, Cypress)	91	internal	very-high	1-critical
+testing	automation	unit-testing	test,unit,jest	Unit testing patterns & coverage	79	external	high	2-high
+testing	qa-strategy	test-planning	qa,planning,strategy	Test planning & coverage strategy	68	internal	medium	3-medium
+mobile	cross-platform	react-native-guide	react-native,mobile,expo	React Native & Expo development guide	86	internal	high	2-high
+mobile	cross-platform	flutter-patterns	flutter,dart,mobile	Flutter development patterns	62	external	medium	3-medium
+mobile	native	swift-guide	swift,ios,native	Swift & iOS native development	55	external	medium	3-medium
+security	auth	auth-patterns	auth,oauth,jwt,session	Authentication patterns (OAuth, JWT, SSO)	89	internal	very-high	1-critical
+security	encryption	encryption-guide	encryption,crypto,tls	Cryptography & encryption best practices	71	external	medium	2-high
+security	vulnerability	penetration-tester	penetration,vulnerability,security	Penetration testing & vulnerability scanning	58	external	medium	3-medium
+devops	ci-cd	ci-cd-pipeline	ci,cd,automation,github-actions	CI/CD pipeline setup & automation	93	internal	very-high	1-critical
+devops	containerization	docker-kubernetes	docker,kubernetes,container	Docker & Kubernetes orchestration	76	external	high	2-high
+devops	monitoring	observability-guide	monitoring,logging,metrics	Observability, logging, and metrics	61	external	medium	3-medium
+business	product-strategy	prd-creator	prd,product,requirements	Product Requirements Document creation	97	internal	very-high	1-critical
+business	product-strategy	product-strategist	product,strategy,roadmap	Product strategy & roadmap development	88	external	high	2-high
+business	analytics	metrics-analyzer	metrics,analytics,funnel	Marketing & product metrics analysis	72	external	medium	2-high
+design	ux-research	user-research	ux,research,personas	User research & persona development	79	internal	high	2-high
+design	ui-design	design-system	design-system,component,tokens	Design systems & component libraries	85	internal	high	1-critical
+design	ui-design	accessibility-guide	accessibility,a11y,wcag	Web accessibility best practices	63	external	medium	3-medium
+marketing	strategy	gtm-strategy	gtm,marketing,positioning	Go-to-market strategy & positioning	75	external	medium	2-high
+marketing	content	content-strategist	content,seo,copywriting	Content strategy & SEO optimization	68	external	medium	3-medium
+marketing	analytics	marketing-analytics	analytics,attribution,funnel	Marketing metrics & funnel analysis	59	external	medium	3-medium
+programming	python	python-guide	python,django,fastapi	Python web frameworks (Django, FastAPI)	81	external	high	2-high
+programming	python	data-science-python	python,pandas,numpy,ml	Python data science & ML tools	73	external	medium	2-high
+programming	javascript	node-guide	node,javascript,async,npm	Node.js & JavaScript backend patterns	87	internal	high	1-critical
+programming	javascript	typescript-advanced	typescript,types,patterns	TypeScript advanced patterns & types	69	external	medium	2-high
+programming	go	go-guide	go,golang,concurrency	Go concurrency & microservices	58	external	medium	3-medium
+programming	rust	rust-guide	rust,safety,performance	Rust memory safety & performance	47	external	low	4-low
