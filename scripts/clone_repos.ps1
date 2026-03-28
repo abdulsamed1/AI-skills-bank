@@ -1,4 +1,4 @@
-$sourcePath = "c:\Users\ASUS\production\AI-skills-bank\src\source.md"
+$sourcePath = "c:\Users\ASUS\production\skill manage\src\source.md"
 $content = Get-Content $sourcePath -Raw
 
 $matches = [regex]::Matches($content, 'https://github\.com/([^/]+)/([^/)\s\n''"]+)')
@@ -14,7 +14,7 @@ foreach ($match in $matches) {
 }
 
 $existingUrls = @{}
-$subdirs = Get-ChildItem "c:\Users\ASUS\production\AI-skills-bank\src" -Directory
+$subdirs = Get-ChildItem "c:\Users\ASUS\production\skill manage\src" -Directory
 foreach ($dir in $subdirs) {
     if (Test-Path "$($dir.FullName)\.git") {
         $remoteUrl = git -C $dir.FullName remote get-url origin 2>$null
@@ -33,10 +33,10 @@ foreach ($url in $urlsToClone.Keys) {
     if (-not $existingUrls.ContainsKey($url)) {
         $targetDir = $urlsToClone[$url]
         # Make sure folder doesn't exist
-        if (-not (Test-Path "c:\Users\ASUS\production\AI-skills-bank\src\$targetDir")) {
+        if (-not (Test-Path "c:\Users\ASUS\production\skill manage\src\$targetDir")) {
             Write-Host "Cloning $url into $targetDir"
             $gitUrl = "$url.git"
-            git clone $gitUrl "c:\Users\ASUS\production\AI-skills-bank\src\$targetDir"
+            git clone $gitUrl "c:\Users\ASUS\production\skill manage\src\$targetDir"
             $cloned++
         } else {
             Write-Host "Target directory $targetDir exists but no git remote found for $url. Skipping."

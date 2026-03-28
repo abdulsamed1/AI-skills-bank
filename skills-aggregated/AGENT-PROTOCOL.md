@@ -28,7 +28,7 @@ Result: skill_id + src_path.
 
 ### STEP 3: load skill content
 
-Read `{project-root}/AI-skills-bank/{src_path}` from the routing.tsv row.
+Read `{project-root}/skill manage/{src_path}` from the routing.tsv row.
 
 - If src_path is empty → HALT, report to user
 - NEVER guess a file path — use ONLY what routing.tsv provides
@@ -78,7 +78,7 @@ Step 1: keyword "api" → quick-index → {"hub":"backend","sub_hub":"api-design
 Step 2: read backend/api-design/routing.tsv → match "api" trigger
         → skill_id="api-documentation", score=100
         → src_path="src/antigravity-awesome-skills/skills/api-documentation/SKILL.md"
-Step 3: read {project-root}/AI-skills-bank/src/antigravity-awesome-skills/skills/api-documentation/SKILL.md
+Step 3: read {project-root}/skill manage/src/antigravity-awesome-skills/skills/api-documentation/SKILL.md
 ```
 
 ### Example 2: Ambiguous keyword

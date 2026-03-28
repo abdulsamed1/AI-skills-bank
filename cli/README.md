@@ -1,8 +1,8 @@
 # AI Skills Bank CLI
 
-[![npm version](https://img.shields.io/npm/v/ai-skills-bank-cli.svg)](https://www.npmjs.com/package/ai-skills-bank-cli)
-[![npm downloads](https://img.shields.io/npm/dm/ai-skills-bank-cli.svg)](https://www.npmjs.com/package/ai-skills-bank-cli)
-[![license](https://img.shields.io/npm/l/ai-skills-bank-cli.svg)](./package.json)
+[![npm version](https://img.shields.io/npm/v/skill manage-cli.svg)](https://www.npmjs.com/package/skill manage-cli)
+[![npm downloads](https://img.shields.io/npm/dm/skill manage-cli.svg)](https://www.npmjs.com/package/skill manage-cli)
+[![license](https://img.shields.io/npm/l/skill manage-cli.svg)](./package.json)
 
 Visual CLI for AI Skills Bank with guided flows, changed-only aggregation, and global-first sync.
 
@@ -15,7 +15,7 @@ Visual CLI for AI Skills Bank with guided flows, changed-only aggregation, and g
 ## Install (Local Dev)
 
 ```powershell
-cd AI-skills-bank/cli
+cd skill manage/cli
 npm install
 npm link
 ```
@@ -145,7 +145,7 @@ skills-bank security
 ## Publish To npm (Open src)
 
 ```powershell
-cd AI-skills-bank/cli
+cd skill manage/cli
 npm run release:check
 npm run pack:preview
 npm login
@@ -198,7 +198,7 @@ npm publish --access public
 - None / <describe clearly>
 
 ### Migration Notes
-1. Update package: `npm i -g ai-skills-bank-cli@latest` or use `npx ai-skills-bank-cli@latest`.
+1. Update package: `npm i -g skill manage-cli@latest` or use `npx skill manage-cli@latest`.
 2. Re-run init once: `skills-bank init --src-repo-mode changed-only`.
 
 ### Verification
@@ -212,7 +212,7 @@ npm publish --access public
 - Add real GitHub URLs in `package.json` (`homepage`, `repository`, `bugs`)
 - Add GIF screenshots in your root project README
 - Create GitHub release notes for each minor version
-- Share `npx ai-skills-bank-cli run` quick-start snippet
+- Share `npx skill manage-cli run` quick-start snippet
 
 ## Suggested Demo Assets
 
@@ -222,6 +222,6 @@ npm publish --access public
 
 ## Notes
 
-- This CLI wraps scripts from `AI-skills-bank/scripts`.
+- This CLI wraps scripts from `skill manage/scripts`.
 - Use `--project <path>` if you run outside project root.
 - Tool sync supports Antigravity, Claude Code, Codex, Cursor, Gemini CLI, Copilot, OpenCode, and Windsurf.

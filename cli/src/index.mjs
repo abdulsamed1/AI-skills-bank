@@ -194,8 +194,8 @@ function resolveProjectPaths(projectRootInput) {
 
   const candidateA = {
     repoRoot: projectRoot,
-    scriptsDir: join(projectRoot, "AI-skills-bank", "scripts"),
-    srcDir: join(projectRoot, "AI-skills-bank", "src")
+    scriptsDir: join(projectRoot, "skill manage", "scripts"),
+    srcDir: join(projectRoot, "skill manage", "src")
   };
 
   const candidateB = {
@@ -213,7 +213,7 @@ function resolveProjectPaths(projectRootInput) {
   }
 
   throw new Error(
-    "Could not locate AI-skills-bank scripts directory. Run inside project root or pass --project <path>."
+    "Could not locate skill manage scripts directory. Run inside project root or pass --project <path>."
   );
 }
 
@@ -424,7 +424,7 @@ function executeSecurityAudit(options) {
   const paths = resolveProjectPaths(options.project);
   const findings = [];
 
-  const cliPkgPath = join(paths.repoRoot, "AI-skills-bank", "cli", "package.json");
+  const cliPkgPath = join(paths.repoRoot, "skill manage", "cli", "package.json");
   if (existsSync(cliPkgPath)) {
     const pkgResult = runCmd("node", ["-e", `const fs=require('fs');const p='${cliPkgPath.replace(/\\/g, "\\\\")}';const x=JSON.parse(fs.readFileSync(p,'utf8'));const vals=[x.homepage,x?.repository?.url,x?.bugs?.url].filter(Boolean);const bad=vals.some(v=>String(v).includes('<your-username>'));process.stdout.write(bad?'bad':'ok');`], paths.repoRoot, 30000);
     if (pkgResult.stdout === "bad") {

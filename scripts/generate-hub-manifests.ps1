@@ -1,6 +1,6 @@
 param(
-    [string] $SkillsAggregatedDir = ".\AI-skills-bank\skills-aggregated",
-    [string] $OutputCsv = ".\AI-skills-bank\hub-manifests.csv",
+    [string] $SkillsAggregatedDir = ".\skill manage\skills-aggregated",
+    [string] $OutputCsv = ".\skill manage\hub-manifests.csv",
     [switch] $NoPrompt
 )
 
