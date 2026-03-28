@@ -1,17 +1,17 @@
 {
-    "name": "skills-backend-api-design",
-    "main_hub": "backend",
-    "sub_hub": "api-design",
-    "description": "API design: REST, GraphQL, and best practices for scalable web services",
-    "skill_count": 136,
-    "src_count": 22,
-    "top_triggers": [
-        null
-    ],
-    "generated_at": "2026-03-28T17:09:42+02:00",
-    "files": {
-        "skill": "SKILL.md",
-        "index": "skills-index.json",
-        "catalog": "skills-catalog.ndjson"
-    }
+    "name":  "skills-backend-api-design",
+    "main_hub":  "backend",
+    "sub_hub":  "api-design",
+    "description":  "API design: REST, GraphQL, and best practices for scalable web services",
+    "skill_count":  136,
+    "src_count":  22,
+    "top_triggers":  [
+                         null
+                     ],
+    "generated_at":  "2026-03-28T17:09:42+02:00",
+    "files":  {
+                  "skill":  "SKILL.md",
+                  "index":  "skills-index.json",
+                  "catalog":  "skills-catalog.csv"
+              }
 }

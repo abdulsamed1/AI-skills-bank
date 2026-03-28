@@ -296,7 +296,7 @@ name: {SKILL_NAME}
 description: '{SKILL_DESCRIPTION}'
 ---
 
-Read routing.tsv to find the exact skill file path needed for the user request.
+Read routing.csv to find the exact skill file path needed for the user request.
 '@
 
 
@@ -1634,7 +1634,7 @@ function Write-SubHubFiles {
         files = [ordered]@{
             skill = "SKILL.md"
             index = "skills-index.json"
-            catalog = "skills-catalog.ndjson"
+            catalog = "skills-catalog.csv"
         }
     }
 
@@ -1649,25 +1649,25 @@ function Write-SubHubFiles {
         }
     }
 
-    $catalogLines = foreach ($skill in $Skills | Sort-Object id) {
+    $catalogRows = foreach ($skill in $Skills | Sort-Object id) {
         [ordered]@{
             id = $skill.id
             description = $skill.description
             path = $skill.path
-            triggers = @($skill.triggers)
+            triggers = (@($skill.triggers) -join ';')
             src = $skill.src
             primary_hub = $skill.primary_hub
-            assigned_hubs = @($skill.assigned_hubs)
+            assigned_hubs = (@($skill.assigned_hubs) -join ';')
             match_score = [int] $skill.match_score
             is_primary = [bool] $skill.is_primary
-        } | ConvertTo-Json -Compress
+        }
     }
 
     # Run quality validation if enabled
     if ($ValidateQuality) {
         # Simply convert manifest hashtable to PSCustomObject (PowerShell handles nested objects)
         $manifestObj = [PSCustomObject]$manifest
-        $report = New-ValidationReport -SubHubKey "$MainHub/$SubHub" -Manifest $manifestObj -CatalogItems $catalogLines -WorkflowText "" -RepoRoot $RepoRoot
+        $report = New-ValidationReport -SubHubKey "$MainHub/$SubHub" -Manifest $manifestObj -CatalogItems $catalogRows -WorkflowText "" -RepoRoot $RepoRoot
         Write-ValidationReport -Report $report
         if (-not $report.passed) {
             Write-Host "[ERROR] Quality validation failed for $MainHub/$SubHub. Fix issues above before proceeding." -ForegroundColor Red
@@ -1680,7 +1680,7 @@ function Write-SubHubFiles {
         Write-FileUtf8NoBom -Path (Join-Path $OutPath "SKILL.md") -Content $skillMd
         Write-FileUtf8NoBom -Path (Join-Path $OutPath "skills-manifest.json") -Content (($manifest | ConvertTo-Json -Depth 8) + [Environment]::NewLine)
         Write-FileUtf8NoBom -Path (Join-Path $OutPath "skills-index.json") -Content (($indexItems | ConvertTo-Json -Depth 6) + [Environment]::NewLine)
-        Write-FileUtf8NoBom -Path (Join-Path $OutPath "skills-catalog.ndjson") -Content (($catalogLines -join [Environment]::NewLine) + [Environment]::NewLine)
+        Write-FileUtf8NoBom -Path (Join-Path $OutPath "skills-catalog.csv") -Content ((($catalogRows | ConvertTo-Csv -NoTypeInformation) -join [Environment]::NewLine) + [Environment]::NewLine)
     }
     
     return $true

@@ -344,7 +344,7 @@ skill-manage/skills-aggregated/
 │  ├─ api-design/
 │  │  ├─ SKILL.md (use this for API selection)
 │  │  ├─ skills-index.json (lightweight filter)
-│  │  └─ skills-catalog.ndjson (read specific lines only)
+│  │  └─ skills-catalog.csv (read specific rows only)
 │  └─ databases/
 │     └─ SKILL.md (use this for database selection)
 ├─ frontend/
@@ -363,7 +363,7 @@ skill-manage/skills-aggregated/
 | This file (SKILL.md) | Initial hub discovery | 3-5 min | 50-80 |
 | Hub SKILL.md | Sub-hub selection + Quick Intent | 2-3 min | 30-50 |
 | skills-index.json | Filter by triggers/scores | 1-2 min | 20-30 |
-| skills-catalog.ndjson | Read specific skill lines | 30 sec | 5-15 |
+| skills-catalog.csv | Read specific skill rows | 30 sec | 5-15 |
 
 **Optimal path: This file → Hub SKILL.md → Invoke**
 

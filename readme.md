@@ -32,7 +32,7 @@ skill-manage/
 │  ├─ aggregate-skills-to-subhubs.ps1
 │  ├─ sync-hubs.ps1
 │  ├─ generate-quick-index.ps1
-│  ├─ generate-routing-tsv.ps1
+│  ├─ generate-routing-csv.ps1
 │  └─ validate-skill-invocation.ps1
 ├─ cli/
 │  ├─ package.json
@@ -43,11 +43,11 @@ skill-manage/
 │  ├─ AGENT-PROTOCOL.md      <-- Mandatory agent usage rules
 │  ├─ subhub-index.json
 │  ├─ <hub>/<sub_hub>/
-│  │  ├─ routing.tsv         <-- Step 2: Skill lookup & src_path
+│  │  ├─ routing.csv         <-- Step 2: Skill lookup & src_path
 │  │  ├─ SKILL.md
 │  │  ├─ skills-manifest.json
 │  │  ├─ skills-index.json
-│  │  └─ skills-catalog.ndjson
+│  │  └─ skills-catalog.csv
 └─ src/                      <-- Step 3: Raw skill files
 ```
 
@@ -177,15 +177,15 @@ Requirements for imported srcs:
 
 To minimize token usage (typically <150 tokens) and eliminate hallucinations, AI agents **MUST** follow the 3-Step Flow:
 
-1. **Step 1 (Route):** Read `skills-aggregated/quick-index.json`
-   - Extract keywords from user intent and map to `{hub}/{sub_hub}`.
-2. **Step 2 (Lookup):** Read `skills-aggregated/{hub}/{sub_hub}/routing.tsv`
+1. **Step 1 (Route):**
+   - Understand the request and map to `{hub}/{sub_hub}`.
+2. **Step 2 (Lookup):** Read `skills-aggregated/{hub}/{sub_hub}/routing.csv`
    - Match user intent against the `triggers` column.
    - Extract `skill_id` and `src_path` from the row with the highest score.
 3. **Step 3 (Invoke):** Read `{hub_mount_path}/{src_path}`
    - Load the exact file referenced by the routing layer locally from the junction.
 
-> **Note:** Agents should NEVER read `hub-manifests.csv` (too large) or guess file paths. Always use `routing.tsv` for exact resolution. Reference `skills-aggregated/AGENT-PROTOCOL.md` for full implementation rules.
+> **Note:** Agents should NEVER read `hub-manifests.csv` (too large) or guess file paths. Always use `routing.csv` for exact resolution. Reference `skills-aggregated/AGENT-PROTOCOL.md` for full implementation rules.
 
 ---
 
@@ -197,7 +197,7 @@ ai_skills_routing:
   entrypoint: skill-manage/skills-aggregated/quick-index.json
   rules:
     - Step 1: Route via quick-index.json
-    - Step 2: Extract src_path from {hub}/{sub_hub}/routing.tsv
+    - Step 2: Extract src_path from {hub}/{sub_hub}/routing.csv
     - Step 3: Load exact contents of {src_path}
   anti_hallucination:
     - never invent skill_ids

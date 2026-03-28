@@ -1,13 +1,13 @@
 <#
 .SYNOPSIS
-    Validates consistency between quick-index.json, routing.tsv files,
+    Validates consistency between quick-index.json, routing.csv files,
     and sub-hub SKILL.md files.
 
 .DESCRIPTION
     Checks:
     1-10: Original consistency checks
-    11: Every sub-hub directory has a routing.tsv file
-    12: Every src_path in routing.tsv resolves to a real file
+    11: Every sub-hub directory has a routing.csv file
+    12: Every src_path in routing.csv resolves to a real file
 
 .EXAMPLE
     .\scripts\validate-skill-invocation.ps1
@@ -44,17 +44,25 @@ function Add-Result {
 Write-Host "── validate-skill-invocation.ps1 ──" -ForegroundColor Cyan
 Write-Host ""
 
-# ── V01: quick-index.json exists ─────────────────────────────────────────────
+# ── V01: quick-index.json exists (optional in CSV-only mode) ─────────────────
 $v01 = Test-Path $quickIndexPath
-Add-Result 'V01' 'quick-index.json exists' $v01 $quickIndexPath
+if ($v01) {
+    Add-Result 'V01' 'quick-index.json exists (optional)' $true $quickIndexPath
+} else {
+    Add-Result 'V01' 'quick-index.json exists (optional)' $true "not present (CSV-only mode)"
+}
 
 # ── V02: quick-index.json is valid JSON ──────────────────────────────────────
 $qiData = $null
-try {
-    $qiData = Get-Content $quickIndexPath -Raw | ConvertFrom-Json
-    Add-Result 'V02' 'quick-index.json is valid JSON' $true "parsed successfully"
-} catch {
-    Add-Result 'V02' 'quick-index.json is valid JSON' $false $_.Exception.Message
+if ($v01) {
+    try {
+        $qiData = Get-Content $quickIndexPath -Raw | ConvertFrom-Json
+        Add-Result 'V02' 'quick-index.json is valid JSON' $true "parsed successfully"
+    } catch {
+        Add-Result 'V02' 'quick-index.json is valid JSON' $false $_.Exception.Message
+    }
+} else {
+    Add-Result 'V02' 'quick-index.json is valid JSON' $true "skipped (file not configured)"
 }
 
 # ── V03: quick-index.json size < 15KB ────────────────────────────────────────
@@ -62,6 +70,8 @@ if ($v01) {
     $fileSize = (Get-Item $quickIndexPath).Length
     $sizeKB = [Math]::Round($fileSize / 1024, 1)
     Add-Result 'V03' 'quick-index.json size < 15KB' ($fileSize -lt 15360) "${sizeKB}KB"
+} else {
+    Add-Result 'V03' 'quick-index.json size < 15KB' $true "skipped (file not configured)"
 }
 
 # ── V04: hub-manifests.csv exists ────────────────────────────────────────────
@@ -106,6 +116,9 @@ if ($v04 -and $qiData) {
     $csvSubHubs = $csvPairs.Count
     $covered    = ($qiPairs | Where-Object { $_ -in $csvPairs }).Count
     Add-Result 'V07' 'Quick-index covers all CSV sub-hubs' ($covered -eq $csvSubHubs) "$covered / $csvSubHubs sub-hubs covered"
+} else {
+    Add-Result 'V06' 'All quick-index hubs exist in CSV' $true "skipped (quick-index not configured)"
+    Add-Result 'V07' 'Quick-index covers all CSV sub-hubs' $true "skipped (quick-index not configured)"
 }
 
 # ── V08: Sub-hub directories have SKILL.md ────────────────────────────────────
@@ -130,6 +143,8 @@ if ($qiData) {
         if ($hasMeta) { "keywords=$($qiData._meta.total_keywords)" }
         else { "missing _meta" }
     )
+} else {
+    Add-Result 'V09' 'quick-index has _meta section' $true "skipped (quick-index not configured)"
 }
 
 # ── V10: AGENT-PROTOCOL.md contains required sections ────────────────────────
@@ -146,49 +161,46 @@ if ($v05) {
     )
 }
 
-# ── V11: Sub-hub directories have routing.tsv (or are BMAD-only) ──────────────
-$missingTSV = @()
+# ── V11: Sub-hub directories have routing.csv (or are BMAD-only) ──────────────
+$missingCSV = @()
 $bmadOnlySkipped = 0
 foreach ($hub in $hubDirs) {
     $subDirs = Get-ChildItem $hub.FullName -Directory -ErrorAction SilentlyContinue
     foreach ($sub in $subDirs) {
-        $tsvPath = Join-Path $sub.FullName 'routing.tsv'
-        if (-not (Test-Path $tsvPath)) {
-            # Check if this sub-hub only has BMAD skills (no routing.tsv expected)
+        $csvPath = Join-Path $sub.FullName 'routing.csv'
+        if (-not (Test-Path $csvPath)) {
+            # Check if this sub-hub only has BMAD skills (no routing.csv expected)
             $skillMd = Join-Path $sub.FullName 'SKILL.md'
             if (Test-Path $skillMd) {
                 $bmadOnlySkipped++
             } else {
-                $missingTSV += "$($hub.Name)/$($sub.Name)"
+                $missingCSV += "$($hub.Name)/$($sub.Name)"
             }
         }
     }
 }
-Add-Result 'V11' 'Sub-hub directories have routing.tsv or are BMAD-only' ($missingTSV.Count -eq 0) $(
-    if ($missingTSV.Count -eq 0) { "all present ($bmadOnlySkipped BMAD-only sub-hubs OK)" }
-    else { "missing: $($missingTSV -join ', ')" }
+Add-Result 'V11' 'Sub-hub directories have routing.csv or are BMAD-only' ($missingCSV.Count -eq 0) $(
+    if ($missingCSV.Count -eq 0) { "all present ($bmadOnlySkipped BMAD-only sub-hubs OK)" }
+    else { "missing: $($missingCSV -join ', ')" }
 )
 
-# ── V12: All src_path in routing.tsv resolve to real files ────────────────────
+# ── V12: All src_path in routing.csv resolve to real files ────────────────────
 $brokenPaths = @()
 $totalPaths = 0
-$tsvFiles = Get-ChildItem $subhubDir -Recurse -Filter 'routing.tsv'
-foreach ($tsv in $tsvFiles) {
-    $lines = Get-Content $tsv.FullName
-    foreach ($line in $lines[1..($lines.Count - 1)]) {  # skip header
-        if ([string]::IsNullOrWhiteSpace($line)) { continue }
-        $cols = $line -split "`t"
-        if ($cols.Count -ge 4) {
-            $totalPaths++
-            $srcPath = $cols[3]
-            $fullPath = Join-Path $repoRoot $srcPath
-            if (-not (Test-Path $fullPath)) {
-                $brokenPaths += "$($cols[0]) -> $srcPath"
-            }
+$csvFiles = Get-ChildItem $subhubDir -Recurse -Filter 'routing.csv'
+foreach ($csv in $csvFiles) {
+    $rows = Import-Csv $csv.FullName
+    foreach ($row in $rows) {
+        if ([string]::IsNullOrWhiteSpace([string]$row.src_path)) { continue }
+        $totalPaths++
+        $srcPath = [string]$row.src_path
+        $fullPath = Join-Path $repoRoot $srcPath
+        if (-not (Test-Path $fullPath)) {
+            $brokenPaths += "$($row.skill_id) -> $srcPath"
         }
     }
 }
-Add-Result 'V12' 'All routing.tsv src_path resolve to files' ($brokenPaths.Count -eq 0) $(
+Add-Result 'V12' 'All routing.csv src_path resolve to files' ($brokenPaths.Count -eq 0) $(
     if ($brokenPaths.Count -eq 0) { "all $totalPaths paths valid" }
     else { "$($brokenPaths.Count) broken: $($brokenPaths[0..4] -join ', ')" }
 )

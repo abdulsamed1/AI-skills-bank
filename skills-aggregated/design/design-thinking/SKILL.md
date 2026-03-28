@@ -1,4 +1,4 @@
-﻿---
+---
 name: design-thinking
 description: |
   Auto-generated router for design/design-thinking.
@@ -13,7 +13,7 @@ metadata:
 
 ## Critical Instructions
 
-1. Read routing.tsv in this directory.
+1. Read routing.csv in this directory.
 2. Match Task against triggers column.
 3. Pick the highest score match.
 4. Use src_path to load the actual skill.
@@ -34,4 +34,4 @@ metadata:
 
 ## Full Catalog
 
-See routing.tsv for all 2 skills with src_path resolution.
+See routing.csv for all 2 skills with src_path resolution.

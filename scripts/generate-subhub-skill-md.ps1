@@ -114,7 +114,7 @@ metadata:
 
 ## Critical Instructions
 
-1. Read routing.tsv in this directory.
+1. Read routing.csv in this directory.
 2. Match Task against triggers column.
 3. Pick the highest score match.
 4. Use src_path to load the actual skill.
@@ -132,7 +132,7 @@ $($tableLines -join "`r`n")
 
 ## Full Catalog
 
-See routing.tsv for all $skillCount skills with src_path resolution.
+See routing.csv for all $skillCount skills with src_path resolution.
 "@
 
     return $content

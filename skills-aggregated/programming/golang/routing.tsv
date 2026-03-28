@@ -1,6 +1,0 @@
-skill_id	triggers	score	src_path
-dbos-golang	dbos;golang	20	skills/dbos-golang/SKILL.md
-golang-pro	golang;pro	20	skills/golang-pro/SKILL.md
-grpc-golang	grpc;golang	20	skills/grpc-golang/SKILL.md
-temporal-golang-pro	temporal;golang;pro	16	skills/temporal-golang-pro/SKILL.md
-go-concurrency-patterns	go;concurrency;patterns	15	skills/go-concurrency-patterns/SKILL.md

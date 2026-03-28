@@ -70,7 +70,7 @@ $subHubDirs = Get-ChildItem -Path $skillsRootPath -Directory | ForEach-Object {
 
 foreach ($subHub in $subHubDirs) {
     $indexPath = Join-Path $subHub.Path "skills-index.json"
-    $catalogPath = Join-Path $subHub.Path "skills-catalog.ndjson"
+    $catalogPath = Join-Path $subHub.Path "skills-catalog.csv"
 
     if (-not (Test-Path $indexPath) -or -not (Test-Path $catalogPath)) {
         Write-Warning "Skipping $($subHub.MainHub)/$($subHub.SubHub): missing index or catalog"
@@ -85,13 +85,8 @@ foreach ($subHub in $subHubDirs) {
         }
     }
 
-    $catalogLines = Get-Content -Path $catalogPath
-    foreach ($line in $catalogLines) {
-        if ([string]::IsNullOrWhiteSpace($line)) {
-            continue
-        }
-
-        $entry = $line | ConvertFrom-Json
+    $catalogItems = Import-Csv -Path $catalogPath
+    foreach ($entry in $catalogItems) {
         $skillId = [string]$entry.id
         if ([string]::IsNullOrWhiteSpace($skillId)) {
             continue
@@ -115,7 +110,7 @@ foreach ($subHub in $subHubDirs) {
             $triggers = @($indexItem.triggers)
         }
         elseif ($null -ne $entry.triggers) {
-            $triggers = @($entry.triggers)
+            $triggers = @(([string]$entry.triggers) -split ';' | Where-Object { -not [string]::IsNullOrWhiteSpace($_) })
         }
 
         $phase = Resolve-Phase -Score $score

@@ -1,7 +1,0 @@
-skill_id	triggers	score	src_path
-churn-prevention	churn;prevention	100	skills/churn-prevention/SKILL.md
-email-sequence	email;sequence	100	skills/email-sequence/SKILL.md
-mailchimp-automation	mailchimp;automation	13	skills/mailchimp-automation/SKILL.md
-cold-email	cold;email	6	skills/cold-email/SKILL.md
-email-systems	email;systems	6	skills/email-systems/SKILL.md
-internal-comms	internal;comms	5	skills/internal-comms/SKILL.md

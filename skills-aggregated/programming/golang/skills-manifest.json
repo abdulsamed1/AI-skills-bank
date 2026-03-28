@@ -12,6 +12,6 @@
     "files":  {
                   "skill":  "SKILL.md",
                   "index":  "skills-index.json",
-                  "catalog":  "skills-catalog.ndjson"
+                  "catalog":  "skills-catalog.csv"
               }
 }

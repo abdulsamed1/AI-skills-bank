@@ -1,10 +1,10 @@
 <#
 .SYNOPSIS
-    Generates per-sub-hub routing.tsv files — lean skill lookup for agents.
+    Generates per-sub-hub routing.csv files — lean skill lookup for agents.
 
 .DESCRIPTION
     Reads hub-manifests.csv and resolves each skill_id to its SKILL.md
-    path inside src/. Outputs one routing.tsv per sub-hub directory
+    path inside src/. Outputs one routing.csv per sub-hub directory
     containing ONLY what agents need: skill_id, triggers, score, src_path.
 
     Excludes internal/BMAD skills (module != external sources) since
@@ -34,7 +34,7 @@ $srcRoot     = Join-Path $repoRoot 'src'
 Write-Host "── generate-routing-tsv.ps1 ──" -ForegroundColor Cyan
 Write-Host "  manifest : $manifestPath"
 Write-Host "  src root : $srcRoot"
-Write-Host "  output   : $skillsAgg/{hub}/{sub_hub}/routing.tsv"
+Write-Host "  output   : $skillsAgg/{hub}/{sub_hub}/routing.csv"
 if ($DryRun) { Write-Host "  MODE     : DRY RUN" -ForegroundColor Yellow }
 
 # ── Load CSV ─────────────────────────────────────────────────────────────────
@@ -70,7 +70,7 @@ Write-Host "  Resolved src paths: $($srcPathMap.Count) skills"
 $groups = $allRows | Group-Object { "$($_.hub)|$($_.sub_hub)" }
 Write-Host "  Sub-hub groups: $($groups.Count)"
 
-# ── Generate routing.tsv per sub-hub ─────────────────────────────────────────
+# ── Generate routing.csv per sub-hub ─────────────────────────────────────────
 $filesWritten  = 0
 $totalSkills   = 0
 $unresolvedIds = [System.Collections.ArrayList]::new()
@@ -80,7 +80,7 @@ foreach ($group in $groups) {
     $hub     = $parts[0]
     $subHub  = $parts[1]
     $outDir  = Join-Path $skillsAgg "$hub\$subHub"
-    $outFile = Join-Path $outDir 'routing.tsv'
+    $outFile = Join-Path $outDir 'routing.csv'
 
     if (-not (Test-Path $outDir)) {
         Write-Warning "  Directory missing: $outDir — skipped"
@@ -90,52 +90,48 @@ foreach ($group in $groups) {
     # Sort by score descending (agents read top-down, stop early)
     $sorted = $group.Group | Sort-Object { -[int]$_.match_score }, skill_id
 
-    # Build TSV lines
-    $lines = [System.Collections.ArrayList]::new()
-    [void]$lines.Add("skill_id`ttriggers`tscore`tsrc_path")
+    # Build CSV rows
+    $rows = [System.Collections.ArrayList]::new()
 
     foreach ($row in $sorted) {
         $skillId  = $row.skill_id
         $triggers = $row.triggers
         $score    = $row.match_score
 
-        # Resolve src_path
+        # Resolve src_path from src/ directly (no copy into hub directories)
         $srcPath = ''
         if ($srcPathMap.ContainsKey($skillId)) {
             $sourceAbsolute = $srcPathMap[$skillId]
-            $sourceDir = Split-Path $sourceAbsolute -Parent
-            $targetDir = Join-Path $outDir "skills\$skillId"
-            
-            if (-not $DryRun) {
-                if (-not (Test-Path $targetDir)) { New-Item -ItemType Directory -Path $targetDir -Force | Out-Null }
-                Copy-Item -Path "$sourceDir\*" -Destination $targetDir -Recurse -Force
-            }
-
-            $srcPath = "skills/$skillId/SKILL.md"
+            $relative = $sourceAbsolute.Substring($repoRoot.Length).TrimStart('\\')
+            $srcPath = ($relative -replace '\\', '/')
         } else {
             # Skip internal/BMAD skills — they live in .agent/skills/
             [void]$unresolvedIds.Add("${hub}/${subHub} -- ${skillId}")
             continue
         }
 
-        [void]$lines.Add("$skillId`t$triggers`t$score`t$srcPath")
+        [void]$rows.Add([PSCustomObject]@{
+            skill_id = $skillId
+            triggers = $triggers
+            score = $score
+            src_path = $srcPath
+        })
         $totalSkills++
     }
 
-    # Only write if we have at least 1 skill row (beyond header)
-    if ($lines.Count -le 1) {
+    # Only write if we have at least 1 skill row
+    if ($rows.Count -eq 0) {
         Write-Host "  Skipped (no external skills): $hub/$subHub" -ForegroundColor DarkGray
         continue
     }
 
-    $content = $lines -join "`n"
-
     if ($DryRun) {
-        Write-Host "  [dry-run] Would write: $outFile ($($lines.Count - 1) skills)" -ForegroundColor Yellow
+        Write-Host "  [dry-run] Would write: $outFile ($($rows.Count) skills)" -ForegroundColor Yellow
     } else {
+        $content = ($rows | ConvertTo-Csv -NoTypeInformation) -join "`n"
         [System.IO.File]::WriteAllText($outFile, $content, [System.Text.UTF8Encoding]::new($false))
         $sizeKB = [Math]::Round((Get-Item $outFile).Length / 1024, 1)
-        Write-Host "  ✅ $hub/$subHub — $($lines.Count - 1) skills, ${sizeKB}KB" -ForegroundColor Green
+        Write-Host "  ✅ $hub/$subHub — $($rows.Count) skills, ${sizeKB}KB" -ForegroundColor Green
     }
     $filesWritten++
 }
