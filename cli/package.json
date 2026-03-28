@@ -1,16 +1,16 @@
 {
-  "name": "skill manage-cli",
+  "name": "skill-manage-cli",
   "version": "0.1.0",
-  "description": "Visual CLI for AI Skills Bank aggregation and sync workflows",
+  "description": "Visual CLI for skill-manage aggregation and sync workflows",
   "type": "module",
   "author": "ASUS",
-  "homepage": "https://github.com/<your-username>/skill manage-cli#readme",
+  "homepage": "https://github.com/<your-username>/skill-manage-cli#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<your-username>/skill manage-cli.git"
+    "url": "git+https://github.com/<your-username>/skill-manage-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/<your-username>/skill manage-cli/issues"
+    "url": "https://github.com/<your-username>/skill-manage-cli/issues"
   },
   "files": [
     "src",

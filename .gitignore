@@ -12,6 +12,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+.eslintcache
+.stylelintcache
+lerna-debug.log*
 
 # Build/cache artifacts
 dist/
@@ -19,6 +22,16 @@ build/
 .cache/
 coverage/
 .turbo/
+.next/
+.svelte-kit/
+.docz/
+.docusaurus/
+
+# Rust / Cargo
+target/
+debug/
+**/*.rs.bk
+**/*.pdb
 
 # Local CLI artifacts
 cli/*.tgz
@@ -32,12 +45,33 @@ cli/.npmrc
 *.swp
 *.swo
 *.pid
+*.seed
+*.pid.lock
 
-# OS/editor noise
+# OS Noise
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+$RECYCLE.BIN/
+*.exe
+
+# Editors and IDEs
 .idea/
-.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+.classpath
 
 # Patch/merge leftovers
 *.orig

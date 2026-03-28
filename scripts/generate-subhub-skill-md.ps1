@@ -1,8 +1,8 @@
 param(
     [string] $Hub,
     [string] $SubHub,
-    [string] $ManifestCsv = ".\skill manage\hub-manifests.csv",
-    [string] $SkillsRoot = ".\skill manage\skills-aggregated",
+    [string] $ManifestCsv = ".\skill-manage\hub-manifests.csv",
+    [string] $SkillsRoot = ".\skill-manage\skills-aggregated",
     [ValidateRange(3, 10)]
     [int] $TopN = 5,
     [switch] $All,

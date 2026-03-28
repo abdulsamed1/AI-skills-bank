@@ -1,7 +1,7 @@
 param(
-    [string] $ManifestCsv = ".\skill manage\hub-manifests.csv",
-    [string] $SkillsRoot = ".\skill manage\skills-aggregated",
-    [string] $ReportPath = ".\skill manage\skills-aggregated\VALIDATION-20-SCENARIOS.md",
+    [string] $ManifestCsv = ".\skill-manage\hub-manifests.csv",
+    [string] $SkillsRoot = ".\skill-manage\skills-aggregated",
+    [string] $ReportPath = ".\skill-manage\skills-aggregated\VALIDATION-20-SCENARIOS.md",
     [switch] $NoPrompt
 )
 
