@@ -1,5 +1,19 @@
 [
     {
+        "id":  "analyzing-golang-malware-with-ghidra",
+        "triggers":  [
+                         "analyzing",
+                         "golang",
+                         "malware",
+                         "with",
+                         "ghidra"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/golang",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
         "id":  "dbos-golang",
         "triggers":  [
                          "dbos",
@@ -9,6 +23,17 @@
         "primary_hub":  "programming/golang",
         "is_primary":  true,
         "match_score":  20
+    },
+    {
+        "id":  "gene-database",
+        "triggers":  [
+                         "gene",
+                         "database"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "programming/golang",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "go-concurrency-patterns",
@@ -55,5 +80,17 @@
         "primary_hub":  "programming/golang",
         "is_primary":  true,
         "match_score":  16
+    },
+    {
+        "id":  "what-if-oracle",
+        "triggers":  [
+                         "what",
+                         "if",
+                         "oracle"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "programming/golang",
+        "is_primary":  true,
+        "match_score":  7
     }
 ]

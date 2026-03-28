@@ -3,12 +3,12 @@
     "main_hub":  "business",
     "sub_hub":  "product-strategy",
     "description":  "Product and business strategy: discovery, roadmaps, prioritization, stakeholder alignment, and strategic planning",
-    "skill_count":  107,
-    "src_count":  7,
+    "skill_count":  131,
+    "src_count":  20,
     "top_triggers":  [
                          null
                      ],
-    "generated_at":  "2026-03-28T01:39:22+02:00",
+    "generated_at":  "2026-03-28T17:09:43+02:00",
     "files":  {
                   "skill":  "SKILL.md",
                   "index":  "skills-index.json",

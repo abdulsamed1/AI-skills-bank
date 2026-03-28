@@ -11,6 +11,32 @@
         "match_score":  4
     },
     {
+        "id":  "analyzing-malicious-url-with-urlscan",
+        "triggers":  [
+                         "analyzing",
+                         "malicious",
+                         "url",
+                         "with",
+                         "urlscan"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "frontend/web-basics",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "asc-subscription-localization",
+        "triggers":  [
+                         "asc",
+                         "subscription",
+                         "localization"
+                     ],
+        "src":  "external:rudrankriyam-app-store-connect-cli-skills",
+        "primary_hub":  "frontend/web-basics",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
         "id":  "astro",
         "triggers":  [
                          "astro"
@@ -19,6 +45,16 @@
         "primary_hub":  "frontend/web-basics",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "ckm:slides",
+        "triggers":  [
+                         "ckm:slides"
+                     ],
+        "src":  "external:nextlevelbuilder-ui-ux-pro-max-skill",
+        "primary_hub":  "frontend/web-basics",
+        "is_primary":  true,
+        "match_score":  8
     },
     {
         "id":  "favicon",
@@ -143,6 +179,18 @@
         "match_score":  8
     },
     {
+        "id":  "ipados-design-guidelines",
+        "triggers":  [
+                         "ipados",
+                         "design",
+                         "guidelines"
+                     ],
+        "src":  "external:ehmo-platform-design-skills",
+        "primary_hub":  "frontend/web-basics",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
         "id":  "netlify-edge-functions",
         "triggers":  [
                          "netlify",
@@ -177,6 +225,17 @@
         "match_score":  4
     },
     {
+        "id":  "pptx-posters",
+        "triggers":  [
+                         "pptx",
+                         "posters"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "frontend/web-basics",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
         "id":  "progressive-web-app",
         "triggers":  [
                          "progressive",
@@ -189,12 +248,34 @@
         "match_score":  6
     },
     {
+        "id":  "pwa-development",
+        "triggers":  [
+                         "pwa",
+                         "development"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "frontend/web-basics",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
         "id":  "tailwind-patterns",
         "triggers":  [
                          "tailwind",
                          "patterns"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/web-basics",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "translate-book",
+        "triggers":  [
+                         "translate",
+                         "book"
+                     ],
+        "src":  "external:deusyu-translate-book",
         "primary_hub":  "frontend/web-basics",
         "is_primary":  true,
         "match_score":  4

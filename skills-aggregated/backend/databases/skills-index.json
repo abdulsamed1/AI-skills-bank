@@ -1,5 +1,17 @@
 [
     {
+        "id":  "asc-metadata-sync",
+        "triggers":  [
+                         "asc",
+                         "metadata",
+                         "sync"
+                     ],
+        "src":  "external:rudrankriyam-app-store-connect-cli-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
         "id":  "attach-db",
         "triggers":  [
                          "attach",
@@ -9,6 +21,29 @@
         "primary_hub":  "backend/databases",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "azure-kusto",
+        "triggers":  [
+                         "azure",
+                         "kusto"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-postgres-ts",
+        "triggers":  [
+                         "azure",
+                         "postgres",
+                         "ts"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "azure-resource-manager-postgresql-dotnet",
@@ -25,6 +60,17 @@
         "match_score":  8
     },
     {
+        "id":  "azure-storage",
+        "triggers":  [
+                         "azure",
+                         "storage"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
         "id":  "base",
         "triggers":  [
                          "base"
@@ -33,6 +79,17 @@
         "primary_hub":  "backend/databases",
         "is_primary":  true,
         "match_score":  6
+    },
+    {
+        "id":  "biorxiv-database",
+        "triggers":  [
+                         "biorxiv",
+                         "database"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "cc-skill-clickhouse-io",
@@ -57,6 +114,40 @@
         "primary_hub":  "backend/databases",
         "is_primary":  true,
         "match_score":  8
+    },
+    {
+        "id":  "cloudflare-d1",
+        "triggers":  [
+                         "cloudflare",
+                         "d1"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "comm-lit-review",
+        "triggers":  [
+                         "comm",
+                         "lit",
+                         "review"
+                     ],
+        "src":  "external:wanshuiyin-Auto-claude-code-research-in-sleep",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "cosmic-database",
+        "triggers":  [
+                         "cosmic",
+                         "database"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "database",
@@ -126,6 +217,17 @@
         "match_score":  6
     },
     {
+        "id":  "database-schema",
+        "triggers":  [
+                         "database",
+                         "schema"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
         "id":  "data-engineer",
         "triggers":  [
                          "data",
@@ -186,6 +288,20 @@
         "match_score":  4
     },
     {
+        "id":  "detecting-sql-injection-via-waf-logs",
+        "triggers":  [
+                         "detecting",
+                         "sql",
+                         "injection",
+                         "via",
+                         "waf"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
         "id":  "django-perf-review",
         "triggers":  [
                          "django",
@@ -207,6 +323,46 @@
         "primary_hub":  "backend/databases",
         "is_primary":  true,
         "match_score":  4
+    },
+    {
+        "id":  "exploiting-nosql-injection-vulnerabilities",
+        "triggers":  [
+                         "exploiting",
+                         "nosql",
+                         "injection",
+                         "vulnerabilities"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "exploiting-sql-injection-vulnerabilities",
+        "triggers":  [
+                         "exploiting",
+                         "sql",
+                         "injection",
+                         "vulnerabilities"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "exploiting-sql-injection-with-sqlmap",
+        "triggers":  [
+                         "exploiting",
+                         "sql",
+                         "injection",
+                         "with",
+                         "sqlmap"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  8
     },
     {
         "id":  "food-database-query",
@@ -234,6 +390,53 @@
         "match_score":  6
     },
     {
+        "id":  "gnomad-database",
+        "triggers":  [
+                         "gnomad",
+                         "database"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "gtex-database",
+        "triggers":  [
+                         "gtex",
+                         "database"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "gwas-database",
+        "triggers":  [
+                         "gwas",
+                         "database"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-pam-for-database-access",
+        "triggers":  [
+                         "implementing",
+                         "pam",
+                         "for",
+                         "database",
+                         "access"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
         "id":  "install-duckdb",
         "triggers":  [
                          "install",
@@ -243,6 +446,48 @@
         "primary_hub":  "backend/databases",
         "is_primary":  true,
         "match_score":  4
+    },
+    {
+        "id":  "literature-review",
+        "triggers":  [
+                         "literature",
+                         "review"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "monarch-database",
+        "triggers":  [
+                         "monarch",
+                         "database"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "mssql",
+        "triggers":  [
+                         "mssql"
+                     ],
+        "src":  "external:sanjay3290-ai-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "mysql",
+        "triggers":  [
+                         "mysql"
+                     ],
+        "src":  "external:sanjay3290-ai-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  8
     },
     {
         "id":  "neon-postgres",
@@ -302,6 +547,28 @@
         "match_score":  6
     },
     {
+        "id":  "openalex-database",
+        "triggers":  [
+                         "openalex",
+                         "database"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "opentargets-database",
+        "triggers":  [
+                         "opentargets",
+                         "database"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
         "id":  "performance-optimizer",
         "triggers":  [
                          "performance",
@@ -311,6 +578,112 @@
         "primary_hub":  "backend/databases",
         "is_primary":  true,
         "match_score":  4
+    },
+    {
+        "id":  "performing-credential-access-with-lazagne",
+        "triggers":  [
+                         "performing",
+                         "credential",
+                         "access",
+                         "with",
+                         "lazagne"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "performing-post-quantum-cryptography-migration",
+        "triggers":  [
+                         "performing",
+                         "post",
+                         "quantum",
+                         "cryptography",
+                         "migration"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "performing-privileged-account-discovery",
+        "triggers":  [
+                         "performing",
+                         "privileged",
+                         "account",
+                         "discovery"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "performing-second-order-sql-injection",
+        "triggers":  [
+                         "performing",
+                         "second",
+                         "order",
+                         "sql",
+                         "injection"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "performing-service-account-credential-rotation",
+        "triggers":  [
+                         "performing",
+                         "service",
+                         "account",
+                         "credential",
+                         "rotation"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "performing-sqlite-database-forensics",
+        "triggers":  [
+                         "performing",
+                         "sqlite",
+                         "database",
+                         "forensics"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "performing-web-application-firewall-bypass",
+        "triggers":  [
+                         "performing",
+                         "web",
+                         "application",
+                         "firewall",
+                         "bypass"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "postgres",
+        "triggers":  [
+                         "postgres"
+                     ],
+        "src":  "external:sanjay3290-ai-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  12
     },
     {
         "id":  "postgres-best-practices",
@@ -323,6 +696,17 @@
         "primary_hub":  "backend/databases",
         "is_primary":  true,
         "match_score":  10
+    },
+    {
+        "id":  "postgres-nio",
+        "triggers":  [
+                         "postgres",
+                         "nio"
+                     ],
+        "src":  "external:Joannis-claude-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  12
     },
     {
         "id":  "postgresql",
@@ -480,6 +864,17 @@
         "match_score":  100
     },
     {
+        "id":  "supabase-node",
+        "triggers":  [
+                         "supabase",
+                         "node"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
         "id":  "supabase-postgres-best-practices",
         "triggers":  [
                          "supabase",
@@ -524,5 +919,16 @@
         "primary_hub":  "backend/databases",
         "is_primary":  true,
         "match_score":  8
+    },
+    {
+        "id":  "uspto-database",
+        "triggers":  [
+                         "uspto",
+                         "database"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "backend/databases",
+        "is_primary":  true,
+        "match_score":  4
     }
 ]

@@ -3,12 +3,12 @@
     "main_hub":  "productivity",
     "sub_hub":  "workflow-automation",
     "description":  "Productivity and automation: workflow automation, agentic orchestration, project delivery, and tool-connected process automation",
-    "skill_count":  393,
-    "src_count":  18,
+    "skill_count":  976,
+    "src_count":  54,
     "top_triggers":  [
                          null
                      ],
-    "generated_at":  "2026-03-28T01:39:22+02:00",
+    "generated_at":  "2026-03-28T17:09:44+02:00",
     "files":  {
                   "skill":  "SKILL.md",
                   "index":  "skills-index.json",

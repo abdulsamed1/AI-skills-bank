@@ -1,5 +1,27 @@
 [
     {
+        "id":  "ablation-planner",
+        "triggers":  [
+                         "ablation",
+                         "planner"
+                     ],
+        "src":  "external:wanshuiyin-Auto-claude-code-research-in-sleep",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "academic-plotting",
+        "triggers":  [
+                         "academic",
+                         "plotting"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "adhx",
         "triggers":  [
                          "adhx"
@@ -40,6 +62,17 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  5
+    },
+    {
+        "id":  "agentic-development",
+        "triggers":  [
+                         "agentic",
+                         "development"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
     },
     {
         "id":  "agent-manager-skill",
@@ -103,6 +136,17 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "agent-teams",
+        "triggers":  [
+                         "agent",
+                         "teams"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
     },
     {
         "id":  "agent-tool-builder",
@@ -186,6 +230,17 @@
         "match_score":  19
     },
     {
+        "id":  "ai-models",
+        "triggers":  [
+                         "ai",
+                         "models"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
         "id":  "ai-native-cli",
         "triggers":  [
                          "ai",
@@ -218,6 +273,20 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "analyzing-cloud-storage-access-patterns",
+        "triggers":  [
+                         "analyzing",
+                         "cloud",
+                         "storage",
+                         "access",
+                         "patterns"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "andrej-karpathy",
@@ -254,6 +323,18 @@
         "match_score":  13
     },
     {
+        "id":  "api-server-mcp",
+        "triggers":  [
+                         "api",
+                         "server",
+                         "mcp"
+                     ],
+        "src":  "external:kreuzberg-dev-kreuzberg",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "appdeploy",
         "triggers":  [
                          "appdeploy"
@@ -262,6 +343,67 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  5
+    },
+    {
+        "id":  "apple-bridges",
+        "triggers":  [
+                         "apple",
+                         "bridges"
+                     ],
+        "src":  "external:more-io-claude-apple-bridges",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "asc-app-create-ui",
+        "triggers":  [
+                         "asc",
+                         "app",
+                         "create",
+                         "ui"
+                     ],
+        "src":  "external:rudrankriyam-app-store-connect-cli-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "asc-aso-audit",
+        "triggers":  [
+                         "asc",
+                         "aso",
+                         "audit"
+                     ],
+        "src":  "external:rudrankriyam-app-store-connect-cli-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "asc-localize-metadata",
+        "triggers":  [
+                         "asc",
+                         "localize",
+                         "metadata"
+                     ],
+        "src":  "external:rudrankriyam-app-store-connect-cli-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "asc-revenuecat-catalog-sync",
+        "triggers":  [
+                         "asc",
+                         "revenuecat",
+                         "catalog",
+                         "sync"
+                     ],
+        "src":  "external:rudrankriyam-app-store-connect-cli-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "audio-transcriber",
@@ -298,6 +440,188 @@
         "match_score":  7
     },
     {
+        "id":  "auto-paper-improvement-loop",
+        "triggers":  [
+                         "auto",
+                         "paper",
+                         "improvement",
+                         "loop"
+                     ],
+        "src":  "external:wanshuiyin-Auto-claude-code-research-in-sleep",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "autoresearch",
+        "triggers":  [
+                         "autoresearch"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "auto-review-loop",
+        "triggers":  [
+                         "auto",
+                         "review",
+                         "loop"
+                     ],
+        "src":  "external:wanshuiyin-Auto-claude-code-research-in-sleep",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "auto-review-loop-llm",
+        "triggers":  [
+                         "auto",
+                         "review",
+                         "loop",
+                         "llm"
+                     ],
+        "src":  "external:wanshuiyin-Auto-claude-code-research-in-sleep",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "auto-review-loop-minimax",
+        "triggers":  [
+                         "auto",
+                         "review",
+                         "loop",
+                         "minimax"
+                     ],
+        "src":  "external:wanshuiyin-Auto-claude-code-research-in-sleep",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "awq-quantization",
+        "triggers":  [
+                         "awq",
+                         "quantization"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "aws-agentic-ai",
+        "triggers":  [
+                         "aws",
+                         "agentic",
+                         "ai"
+                     ],
+        "src":  "external:zxkane-aws-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "aws-mcp-setup",
+        "triggers":  [
+                         "aws",
+                         "mcp",
+                         "setup"
+                     ],
+        "src":  "external:zxkane-aws-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "axolotl",
+        "triggers":  [
+                         "axolotl"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "azure-aigateway",
+        "triggers":  [
+                         "azure",
+                         "aigateway"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "azure-resource-lookup",
+        "triggers":  [
+                         "azure",
+                         "resource",
+                         "lookup"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-search-documents-ts",
+        "triggers":  [
+                         "azure",
+                         "search",
+                         "documents",
+                         "ts"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "azure-storage-blob-ts",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "blob",
+                         "ts"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "azure-storage-file-share-ts",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "file",
+                         "share",
+                         "ts"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "azure-storage-queue-ts",
+        "triggers":  [
+                         "azure",
+                         "storage",
+                         "queue",
+                         "ts"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "bdi-mental-states",
         "triggers":  [
                          "bdi",
@@ -310,12 +634,37 @@
         "match_score":  11
     },
     {
+        "id":  "bgpt-paper-search",
+        "triggers":  [
+                         "bgpt",
+                         "paper",
+                         "search"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
         "id":  "bill-gates",
         "triggers":  [
                          "bill",
                          "gates"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "blip-2-vision-language",
+        "triggers":  [
+                         "blip",
+                         "2",
+                         "vision",
+                         "language"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  5
@@ -341,6 +690,30 @@
         "match_score":  11
     },
     {
+        "id":  "build",
+        "triggers":  [
+                         "build"
+                     ],
+        "src":  "external:helius-labs-core-ai",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "building-red-team-c2-infrastructure-with-havoc",
+        "triggers":  [
+                         "building",
+                         "red",
+                         "team",
+                         "c2",
+                         "infrastructure"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "cc-skill-continuous-learning",
         "triggers":  [
                          "cc",
@@ -362,6 +735,27 @@
                          "compact"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "chroma",
+        "triggers":  [
+                         "chroma"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "clarity-gate",
+        "triggers":  [
+                         "clarity",
+                         "gate"
+                     ],
+        "src":  "external:frmoretto-clarity-gate",
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
@@ -477,6 +871,65 @@
         "match_score":  7
     },
     {
+        "id":  "code-graph",
+        "triggers":  [
+                         "code",
+                         "graph"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "code-review",
+        "triggers":  [
+                         "code",
+                         "review"
+                     ],
+        "src":  "external:coderabbitai-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "code-review:review-local-changes",
+        "triggers":  [
+                         "code",
+                         "review:review",
+                         "local",
+                         "changes"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "code-review:review-pr",
+        "triggers":  [
+                         "code",
+                         "review:review",
+                         "pr"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "coding-agent-router",
+        "triggers":  [
+                         "coding",
+                         "agent",
+                         "router"
+                     ],
+        "src":  "external:ShunsukeHayashi-agent-skill-bus",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "computer-use-agents",
         "triggers":  [
                          "computer",
@@ -501,6 +954,17 @@
         "match_score":  7
     },
     {
+        "id":  "constitutional-ai",
+        "triggers":  [
+                         "constitutional",
+                         "ai"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "context7-auto-research",
         "triggers":  [
                          "context7",
@@ -519,6 +983,18 @@
                          "agent"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "context-and-impact",
+        "triggers":  [
+                         "context",
+                         "and",
+                         "impact"
+                     ],
+        "src":  "external:ShunsukeHayashi-agent-skill-bus",
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  11
@@ -558,12 +1034,35 @@
         "match_score":  11
     },
     {
+        "id":  "continual-learning",
+        "triggers":  [
+                         "continual",
+                         "learning"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "conversation-memory",
         "triggers":  [
                          "conversation",
                          "memory"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "copilot-full-automation",
+        "triggers":  [
+                         "copilot",
+                         "full",
+                         "automation"
+                     ],
+        "src":  "external:ShunsukeHayashi-agent-skill-bus",
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
@@ -578,6 +1077,30 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "creating-skills",
+        "triggers":  [
+                         "creating",
+                         "skills"
+                     ],
+        "src":  "external:fvadicamo-dev-agent-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "creative-thinking-for-research",
+        "triggers":  [
+                         "creative",
+                         "thinking",
+                         "for",
+                         "research"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "crewai",
@@ -600,6 +1123,165 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "cursor-agent",
+        "triggers":  [
+                         "cursor",
+                         "agent"
+                     ],
+        "src":  "external:ShunsukeHayashi-agent-skill-bus",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "customaize-agent:agent-evaluation",
+        "triggers":  [
+                         "customaize",
+                         "agent:agent",
+                         "evaluation"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  19
+    },
+    {
+        "id":  "customaize-agent:apply-anthropic-skill-best-practices",
+        "triggers":  [
+                         "customaize",
+                         "agent:apply",
+                         "anthropic",
+                         "skill",
+                         "best"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "customaize-agent:context-engineering",
+        "triggers":  [
+                         "customaize",
+                         "agent:context",
+                         "engineering"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "customaize-agent:create-agent",
+        "triggers":  [
+                         "customaize",
+                         "agent:create",
+                         "agent"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "customaize-agent:create-command",
+        "triggers":  [
+                         "customaize",
+                         "agent:create",
+                         "command"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "customaize-agent:create-rule",
+        "triggers":  [
+                         "customaize",
+                         "agent:create",
+                         "rule"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "customaize-agent:create-skill",
+        "triggers":  [
+                         "customaize",
+                         "agent:create",
+                         "skill"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "customaize-agent:create-workflow-command",
+        "triggers":  [
+                         "customaize",
+                         "agent:create",
+                         "workflow",
+                         "command"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "customaize-agent:prompt-engineering",
+        "triggers":  [
+                         "customaize",
+                         "agent:prompt",
+                         "engineering"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "customaize-agent:test-prompt",
+        "triggers":  [
+                         "customaize",
+                         "agent:test",
+                         "prompt"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "customaize-agent:test-skill",
+        "triggers":  [
+                         "customaize",
+                         "agent:test",
+                         "skill"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "customaize-agent:thought-based-reasoning",
+        "triggers":  [
+                         "customaize",
+                         "agent:thought",
+                         "based",
+                         "reasoning"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
     },
     {
         "id":  "daily-briefing-builder",
@@ -626,12 +1308,124 @@
         "match_score":  5
     },
     {
+        "id":  "ddd:setup-code-formating",
+        "triggers":  [
+                         "ddd:setup",
+                         "code",
+                         "formating"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "deep-research",
+        "triggers":  [
+                         "deep",
+                         "research"
+                     ],
+        "src":  "external:sanjay3290-ai-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "deploying-edr-agent-with-crowdstrike",
+        "triggers":  [
+                         "deploying",
+                         "edr",
+                         "agent",
+                         "with",
+                         "crowdstrike"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "deploy-model",
+        "triggers":  [
+                         "deploy",
+                         "model"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  19
+    },
+    {
+        "id":  "design-an-interface",
+        "triggers":  [
+                         "design",
+                         "an",
+                         "interface"
+                     ],
+        "src":  "external:mattpocock-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "detecting-ai-model-prompt-injection-attacks",
+        "triggers":  [
+                         "detecting",
+                         "ai",
+                         "model",
+                         "prompt",
+                         "injection"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "detecting-misconfigured-azure-storage",
+        "triggers":  [
+                         "detecting",
+                         "misconfigured",
+                         "azure",
+                         "storage"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "detecting-privilege-escalation-in-kubernetes-pods",
+        "triggers":  [
+                         "detecting",
+                         "privilege",
+                         "escalation",
+                         "in",
+                         "kubernetes"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "devcontainer-setup",
         "triggers":  [
                          "devcontainer",
                          "setup"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "devin-agent",
+        "triggers":  [
+                         "devin",
+                         "agent"
+                     ],
+        "src":  "external:ShunsukeHayashi-agent-skill-bus",
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
@@ -649,6 +1443,19 @@
         "match_score":  5
     },
     {
+        "id":  "distributed-llm-pretraining-torchtitan",
+        "triggers":  [
+                         "distributed",
+                         "llm",
+                         "pretraining",
+                         "torchtitan"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
         "id":  "dotnet-backend-patterns",
         "triggers":  [
                          "dotnet",
@@ -659,6 +1466,16 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "dspy",
+        "triggers":  [
+                         "dspy"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  15
     },
     {
         "id":  "elon-musk",
@@ -695,6 +1512,18 @@
         "match_score":  7
     },
     {
+        "id":  "entra-agent-id",
+        "triggers":  [
+                         "entra",
+                         "agent",
+                         "id"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "error-debugging-multi-agent-review",
         "triggers":  [
                          "error",
@@ -709,6 +1538,18 @@
         "match_score":  7
     },
     {
+        "id":  "evaluating-llms-harness",
+        "triggers":  [
+                         "evaluating",
+                         "llms",
+                         "harness"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
         "id":  "evaluation",
         "triggers":  [
                          "evaluation"
@@ -717,6 +1558,44 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  11
+    },
+    {
+        "id":  "experiment-plan",
+        "triggers":  [
+                         "experiment",
+                         "plan"
+                     ],
+        "src":  "external:wanshuiyin-Auto-claude-code-research-in-sleep",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "extracting-config-from-agent-tesla-rat",
+        "triggers":  [
+                         "extracting",
+                         "config",
+                         "from",
+                         "agent",
+                         "tesla"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "extractor-selection-and-fallback",
+        "triggers":  [
+                         "extractor",
+                         "selection",
+                         "and",
+                         "fallback"
+                     ],
+        "src":  "external:kreuzberg-dev-kreuzberg",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "fal-audio",
@@ -751,6 +1630,18 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "fallback-chain-implementation",
+        "triggers":  [
+                         "fallback",
+                         "chain",
+                         "implementation"
+                     ],
+        "src":  "external:kreuzberg-dev-kreuzberg",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "fal-platform",
@@ -810,12 +1701,37 @@
         "match_score":  7
     },
     {
+        "id":  "fine-tuning-with-trl",
+        "triggers":  [
+                         "fine",
+                         "tuning",
+                         "with",
+                         "trl"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
         "id":  "firecrawl-agent",
         "triggers":  [
                          "firecrawl",
                          "agent"
                      ],
         "src":  "external:cli",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "food-database-query",
+        "triggers":  [
+                         "food",
+                         "database",
+                         "query"
+                     ],
+        "src":  "external:huifer-Claude-Ally-Health",
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
@@ -830,6 +1746,18 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  5
+    },
+    {
+        "id":  "full-output-enforcement",
+        "triggers":  [
+                         "full",
+                         "output",
+                         "enforcement"
+                     ],
+        "src":  "external:Leonxlnx-taste-skill",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "gdb-cli",
@@ -876,6 +1804,29 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  5
+    },
+    {
+        "id":  "geomaster",
+        "triggers":  [
+                         "geomaster"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "git-guardrails-claude-code",
+        "triggers":  [
+                         "git",
+                         "guardrails",
+                         "claude",
+                         "code"
+                     ],
+        "src":  "external:mattpocock-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "gmail-automation",
@@ -949,6 +1900,46 @@
         "match_score":  7
     },
     {
+        "id":  "gptq",
+        "triggers":  [
+                         "gptq"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "guidance",
+        "triggers":  [
+                         "guidance"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "hedgefundmonitor",
+        "triggers":  [
+                         "hedgefundmonitor"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "helius",
+        "triggers":  [
+                         "helius"
+                     ],
+        "src":  "external:helius-labs-core-ai",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "hig-components-controls",
         "triggers":  [
                          "hig",
@@ -1001,6 +1992,28 @@
                          "agents"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "hqq-quantization",
+        "triggers":  [
+                         "hqq",
+                         "quantization"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "huggingface-accelerate",
+        "triggers":  [
+                         "huggingface",
+                         "accelerate"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  5
@@ -1093,6 +2106,17 @@
         "match_score":  9
     },
     {
+        "id":  "huggingface-tokenizers",
+        "triggers":  [
+                         "huggingface",
+                         "tokenizers"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "hugging-face-tool-builder",
         "triggers":  [
                          "hugging",
@@ -1104,6 +2128,20 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "hunting-for-data-exfiltration-indicators",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "data",
+                         "exfiltration",
+                         "indicators"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "hybrid-search-implementation",
@@ -1140,12 +2178,104 @@
         "match_score":  7
     },
     {
+        "id":  "implementing-dragos-platform-for-ot-monitoring",
+        "triggers":  [
+                         "implementing",
+                         "dragos",
+                         "platform",
+                         "for",
+                         "ot"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "implementing-llm-guardrails-for-security",
+        "triggers":  [
+                         "implementing",
+                         "llm",
+                         "guardrails",
+                         "for",
+                         "security"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-llms-litgpt",
+        "triggers":  [
+                         "implementing",
+                         "llms",
+                         "litgpt"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "implementing-mitre-attack-coverage-mapping",
+        "triggers":  [
+                         "implementing",
+                         "mitre",
+                         "attack",
+                         "coverage",
+                         "mapping"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "implementing-policy-as-code-with-open-policy-agent",
+        "triggers":  [
+                         "implementing",
+                         "policy",
+                         "as",
+                         "code",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-siem-use-case-tuning",
+        "triggers":  [
+                         "implementing",
+                         "siem",
+                         "use",
+                         "case",
+                         "tuning"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "infinite-gratitude",
         "triggers":  [
                          "infinite",
                          "gratitude"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "instructor",
+        "triggers":  [
+                         "instructor"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
@@ -1171,6 +2301,38 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  9
+    },
+    {
+        "id":  "knowledge-distillation",
+        "triggers":  [
+                         "knowledge",
+                         "distillation"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "knowledge-watcher",
+        "triggers":  [
+                         "knowledge",
+                         "watcher"
+                     ],
+        "src":  "external:ShunsukeHayashi-agent-skill-bus",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "langchain",
+        "triggers":  [
+                         "langchain"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  19
     },
     {
         "id":  "langchain-architecture",
@@ -1204,6 +2366,16 @@
         "match_score":  100
     },
     {
+        "id":  "last30days",
+        "triggers":  [
+                         "last30days"
+                     ],
+        "src":  "external:ShunsukeHayashi-agent-skill-bus",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "linkedin-profile-optimizer",
         "triggers":  [
                          "linkedin",
@@ -1214,6 +2386,48 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  9
+    },
+    {
+        "id":  "llama-cpp",
+        "triggers":  [
+                         "llama",
+                         "cpp"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "llama-factory",
+        "triggers":  [
+                         "llama",
+                         "factory"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "llamaguard",
+        "triggers":  [
+                         "llamaguard"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "llamaindex",
+        "triggers":  [
+                         "llamaindex"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  19
     },
     {
         "id":  "llm-application-dev-ai-assistant",
@@ -1267,6 +2481,17 @@
         "match_score":  23
     },
     {
+        "id":  "llm-patterns",
+        "triggers":  [
+                         "llm",
+                         "patterns"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
         "id":  "local-llm-expert",
         "triggers":  [
                          "local",
@@ -1288,6 +2513,40 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "long-context",
+        "triggers":  [
+                         "long",
+                         "context"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "m365-agents-ts",
+        "triggers":  [
+                         "m365",
+                         "agents",
+                         "ts"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "mamba-architecture",
+        "triggers":  [
+                         "mamba",
+                         "architecture"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
     },
     {
         "id":  "manifest",
@@ -1316,6 +2575,65 @@
                          "maxia"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "mcp:build-mcp",
+        "triggers":  [
+                         "mcp:build",
+                         "mcp"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "mcp:setup-arxiv-mcp",
+        "triggers":  [
+                         "mcp:setup",
+                         "arxiv",
+                         "mcp"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "mcp:setup-codemap-cli",
+        "triggers":  [
+                         "mcp:setup",
+                         "codemap",
+                         "cli"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "mcp:setup-context7-mcp",
+        "triggers":  [
+                         "mcp:setup",
+                         "context7",
+                         "mcp"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "mcp:setup-serena-mcp",
+        "triggers":  [
+                         "mcp:setup",
+                         "serena",
+                         "mcp"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
@@ -1378,6 +2696,17 @@
         "match_score":  5
     },
     {
+        "id":  "microsoft-foundry",
+        "triggers":  [
+                         "microsoft",
+                         "foundry"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
         "id":  "ml-engineer",
         "triggers":  [
                          "ml",
@@ -1387,6 +2716,16 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "mlflow",
+        "triggers":  [
+                         "mlflow"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "mlops-engineer",
@@ -1410,6 +2749,40 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  15
+    },
+    {
+        "id":  "model-pruning",
+        "triggers":  [
+                         "model",
+                         "pruning"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "moe-training",
+        "triggers":  [
+                         "moe",
+                         "training"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "ms-teams-apps",
+        "triggers":  [
+                         "ms",
+                         "teams",
+                         "apps"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
     },
     {
         "id":  "multi-advisor",
@@ -1447,6 +2820,38 @@
         "match_score":  11
     },
     {
+        "id":  "nanogpt",
+        "triggers":  [
+                         "nanogpt"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "nemo-curator",
+        "triggers":  [
+                         "nemo",
+                         "curator"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "nemo-guardrails",
+        "triggers":  [
+                         "nemo",
+                         "guardrails"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "notebooklm",
         "triggers":  [
                          "notebooklm"
@@ -1455,6 +2860,62 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "offer-k-dense-web",
+        "triggers":  [
+                         "offer",
+                         "k",
+                         "dense",
+                         "web"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "open-notebook",
+        "triggers":  [
+                         "open",
+                         "notebook"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "openrlhf-training",
+        "triggers":  [
+                         "openrlhf",
+                         "training"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "outlines",
+        "triggers":  [
+                         "outlines"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "paper-illustration",
+        "triggers":  [
+                         "paper",
+                         "illustration"
+                     ],
+        "src":  "external:wanshuiyin-Auto-claude-code-research-in-sleep",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "parallel-agents",
@@ -1468,6 +2929,132 @@
         "match_score":  7
     },
     {
+        "id":  "pathml",
+        "triggers":  [
+                         "pathml"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "peft-fine-tuning",
+        "triggers":  [
+                         "peft",
+                         "fine",
+                         "tuning"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "performing-agentless-vulnerability-scanning",
+        "triggers":  [
+                         "performing",
+                         "agentless",
+                         "vulnerability",
+                         "scanning"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "performing-cloud-storage-forensic-acquisition",
+        "triggers":  [
+                         "performing",
+                         "cloud",
+                         "storage",
+                         "forensic",
+                         "acquisition"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "performing-cve-prioritization-with-kev-catalog",
+        "triggers":  [
+                         "performing",
+                         "cve",
+                         "prioritization",
+                         "with",
+                         "kev"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "performing-false-positive-reduction-in-siem",
+        "triggers":  [
+                         "performing",
+                         "false",
+                         "positive",
+                         "reduction",
+                         "in"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "performing-threat-modeling-with-owasp-threat-dragon",
+        "triggers":  [
+                         "performing",
+                         "threat",
+                         "modeling",
+                         "with",
+                         "owasp"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "performing-web-application-vulnerability-triage",
+        "triggers":  [
+                         "performing",
+                         "web",
+                         "application",
+                         "vulnerability",
+                         "triage"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "perplexity-search",
+        "triggers":  [
+                         "perplexity",
+                         "search"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "pinecone",
+        "triggers":  [
+                         "pinecone"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
         "id":  "pipecat-friday-agent",
         "triggers":  [
                          "pipecat",
@@ -1475,6 +3062,17 @@
                          "agent"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "plagiarism-checker",
+        "triggers":  [
+                         "plagiarism",
+                         "checker"
+                     ],
+        "src":  "external:bitwize-music-studio-claude-ai-music-skills",
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
@@ -1502,6 +3100,40 @@
         "match_score":  11
     },
     {
+        "id":  "prompt-agent",
+        "triggers":  [
+                         "prompt",
+                         "agent"
+                     ],
+        "src":  "external:prompt-security-clawsec",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "prompt-guard",
+        "triggers":  [
+                         "prompt",
+                         "guard"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "prompt-request-bus",
+        "triggers":  [
+                         "prompt",
+                         "request",
+                         "bus"
+                     ],
+        "src":  "external:ShunsukeHayashi-agent-skill-bus",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
         "id":  "pydantic-ai",
         "triggers":  [
                          "pydantic",
@@ -1513,6 +3145,38 @@
         "match_score":  9
     },
     {
+        "id":  "pysam",
+        "triggers":  [
+                         "pysam"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "qa",
+        "triggers":  [
+                         "qa"
+                     ],
+        "src":  "external:mattpocock-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "qdrant-vector-search",
+        "triggers":  [
+                         "qdrant",
+                         "vector",
+                         "search"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
         "id":  "quant-analyst",
         "triggers":  [
                          "quant",
@@ -1522,6 +3186,18 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "quantizing-models-bitsandbytes",
+        "triggers":  [
+                         "quantizing",
+                         "models",
+                         "bitsandbytes"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
     },
     {
         "id":  "rag-engineer",
@@ -1546,6 +3222,17 @@
         "match_score":  15
     },
     {
+        "id":  "ray-train",
+        "triggers":  [
+                         "ray",
+                         "train"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "recallmax",
         "triggers":  [
                          "recallmax"
@@ -1554,6 +3241,191 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  11
+    },
+    {
+        "id":  "recovering-deleted-files-with-photorec",
+        "triggers":  [
+                         "recovering",
+                         "deleted",
+                         "files",
+                         "with",
+                         "photorec"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "reflexion:memorize",
+        "triggers":  [
+                         "reflexion:memorize"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "researchers-journalism",
+        "triggers":  [
+                         "researchers",
+                         "journalism"
+                     ],
+        "src":  "external:bitwize-music-studio-claude-ai-music-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "research-refine",
+        "triggers":  [
+                         "research",
+                         "refine"
+                     ],
+        "src":  "external:wanshuiyin-Auto-claude-code-research-in-sleep",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "research-review",
+        "triggers":  [
+                         "research",
+                         "review"
+                     ],
+        "src":  "external:wanshuiyin-Auto-claude-code-research-in-sleep",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "result-to-claim",
+        "triggers":  [
+                         "result",
+                         "to",
+                         "claim"
+                     ],
+        "src":  "external:wanshuiyin-Auto-claude-code-research-in-sleep",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "rwkv-architecture",
+        "triggers":  [
+                         "rwkv",
+                         "architecture"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "sadd:do-and-judge",
+        "triggers":  [
+                         "sadd:do",
+                         "and",
+                         "judge"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "sadd:do-competitively",
+        "triggers":  [
+                         "sadd:do",
+                         "competitively"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "sadd:do-in-parallel",
+        "triggers":  [
+                         "sadd:do",
+                         "in",
+                         "parallel"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "sadd:do-in-steps",
+        "triggers":  [
+                         "sadd:do",
+                         "in",
+                         "steps"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "sadd:judge",
+        "triggers":  [
+                         "sadd:judge"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "sadd:launch-sub-agent",
+        "triggers":  [
+                         "sadd:launch",
+                         "sub",
+                         "agent"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "sadd:multi-agent-patterns",
+        "triggers":  [
+                         "sadd:multi",
+                         "agent",
+                         "patterns"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "sadd:subagent-driven-development",
+        "triggers":  [
+                         "sadd:subagent",
+                         "driven",
+                         "development"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "sadd:tree-of-thoughts",
+        "triggers":  [
+                         "sadd:tree",
+                         "of",
+                         "thoughts"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "sam-altman",
@@ -1565,6 +3437,197 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  5
+    },
+    {
+        "id":  "scrapecreators",
+        "triggers":  [
+                         "scrapecreators"
+                     ],
+        "src":  "external:ShunsukeHayashi-agent-skill-bus",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "sdd:implement",
+        "triggers":  [
+                         "sdd:implement"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "self-improving-skills",
+        "triggers":  [
+                         "self",
+                         "improving",
+                         "skills"
+                     ],
+        "src":  "external:ShunsukeHayashi-agent-skill-bus",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "sentence-transformers",
+        "triggers":  [
+                         "sentence",
+                         "transformers"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "serving-llms-vllm",
+        "triggers":  [
+                         "serving",
+                         "llms",
+                         "vllm"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "setup",
+        "triggers":  [
+                         "setup"
+                     ],
+        "src":  "external:bitwize-music-studio-claude-ai-music-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "shap",
+        "triggers":  [
+                         "shap"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "simpo-training",
+        "triggers":  [
+                         "simpo",
+                         "training"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "skill-model-updater",
+        "triggers":  [
+                         "skill",
+                         "model",
+                         "updater"
+                     ],
+        "src":  "external:bitwize-music-studio-claude-ai-music-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "skill-optimizer",
+        "triggers":  [
+                         "skill",
+                         "optimizer"
+                     ],
+        "src":  "external:mcollina-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "skypilot-multi-cloud-orchestration",
+        "triggers":  [
+                         "skypilot",
+                         "multi",
+                         "cloud",
+                         "orchestration"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "slime-rl-training",
+        "triggers":  [
+                         "slime",
+                         "rl",
+                         "training"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "soul-guardian",
+        "triggers":  [
+                         "soul",
+                         "guardian"
+                     ],
+        "src":  "external:prompt-security-clawsec",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "speckit-updater",
+        "triggers":  [
+                         "speckit",
+                         "updater"
+                     ],
+        "src":  "external:NotMyself-claude-win11-speckit-update-skill",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "speculative-decoding",
+        "triggers":  [
+                         "speculative",
+                         "decoding"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "stable-baselines3",
+        "triggers":  [
+                         "stable",
+                         "baselines3"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "stable-diffusion-image-generation",
+        "triggers":  [
+                         "stable",
+                         "diffusion",
+                         "image",
+                         "generation"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
     },
     {
         "id":  "steve-jobs",
@@ -1623,6 +3686,17 @@
         "match_score":  5
     },
     {
+        "id":  "tdd:write-tests",
+        "triggers":  [
+                         "tdd:write",
+                         "tests"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "template-skill",
         "triggers":  [
                          "template",
@@ -1632,6 +3706,27 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "tensorboard",
+        "triggers":  [
+                         "tensorboard"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "tensorrt-llm",
+        "triggers":  [
+                         "tensorrt",
+                         "llm"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  9
     },
     {
         "id":  "threejs-shaders",
@@ -1645,6 +3740,17 @@
         "match_score":  5
     },
     {
+        "id":  "ticket-craft",
+        "triggers":  [
+                         "ticket",
+                         "craft"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "tool-design",
         "triggers":  [
                          "tool",
@@ -1654,6 +3760,40 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "training-llms-megatron",
+        "triggers":  [
+                         "training",
+                         "llms",
+                         "megatron"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "transformer-lens-interpretability",
+        "triggers":  [
+                         "transformer",
+                         "lens",
+                         "interpretability"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "transformers",
+        "triggers":  [
+                         "transformers"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "tweet-draft-reviewer",
@@ -1690,6 +3830,18 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  15
+    },
+    {
+        "id":  "verl-rl-training",
+        "triggers":  [
+                         "verl",
+                         "rl",
+                         "training"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "vibe-code-auditor",
@@ -1737,6 +3889,52 @@
         "primary_hub":  "ai/llm-agents",
         "is_primary":  true,
         "match_score":  5
+    },
+    {
+        "id":  "weights-and-biases",
+        "triggers":  [
+                         "weights",
+                         "and",
+                         "biases"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "wiki-agents-md",
+        "triggers":  [
+                         "wiki",
+                         "agents",
+                         "md"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "workspace",
+        "triggers":  [
+                         "workspace"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "write-a-skill",
+        "triggers":  [
+                         "write",
+                         "a",
+                         "skill"
+                     ],
+        "src":  "external:mattpocock-skills",
+        "primary_hub":  "ai/llm-agents",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "xvary-stock-research",

@@ -3,12 +3,12 @@
     "main_hub":  "programming",
     "sub_hub":  "python",
     "description":  "Python development: patterns, async, frameworks, and modern Python 3.10+ features",
-    "skill_count":  76,
-    "src_count":  3,
+    "skill_count":  102,
+    "src_count":  7,
     "top_triggers":  [
                          null
                      ],
-    "generated_at":  "2026-03-28T01:39:23+02:00",
+    "generated_at":  "2026-03-28T17:09:45+02:00",
     "files":  {
                   "skill":  "SKILL.md",
                   "index":  "skills-index.json",

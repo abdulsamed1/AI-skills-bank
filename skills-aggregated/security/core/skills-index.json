@@ -12,6 +12,215 @@
         "match_score":  100
     },
     {
+        "id":  "analyzing-browser-forensics-with-hindsight",
+        "triggers":  [
+                         "analyzing",
+                         "browser",
+                         "forensics",
+                         "with",
+                         "hindsight"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "analyzing-linux-elf-malware",
+        "triggers":  [
+                         "analyzing",
+                         "linux",
+                         "elf",
+                         "malware"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "analyzing-macro-malware-in-office-documents",
+        "triggers":  [
+                         "analyzing",
+                         "macro",
+                         "malware",
+                         "in",
+                         "office"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "analyzing-malware-behavior-with-cuckoo-sandbox",
+        "triggers":  [
+                         "analyzing",
+                         "malware",
+                         "behavior",
+                         "with",
+                         "cuckoo"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "analyzing-malware-family-relationships-with-malpedia",
+        "triggers":  [
+                         "analyzing",
+                         "malware",
+                         "family",
+                         "relationships",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "analyzing-malware-persistence-with-autoruns",
+        "triggers":  [
+                         "analyzing",
+                         "malware",
+                         "persistence",
+                         "with",
+                         "autoruns"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "analyzing-malware-sandbox-evasion-techniques",
+        "triggers":  [
+                         "analyzing",
+                         "malware",
+                         "sandbox",
+                         "evasion",
+                         "techniques"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "analyzing-memory-forensics-with-lime-and-volatility",
+        "triggers":  [
+                         "analyzing",
+                         "memory",
+                         "forensics",
+                         "with",
+                         "lime"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "analyzing-mft-for-deleted-file-recovery",
+        "triggers":  [
+                         "analyzing",
+                         "mft",
+                         "for",
+                         "deleted",
+                         "file"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "analyzing-network-covert-channels-in-malware",
+        "triggers":  [
+                         "analyzing",
+                         "network",
+                         "covert",
+                         "channels",
+                         "in"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "analyzing-network-traffic-of-malware",
+        "triggers":  [
+                         "analyzing",
+                         "network",
+                         "traffic",
+                         "of",
+                         "malware"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "analyzing-office365-audit-logs-for-compromise",
+        "triggers":  [
+                         "analyzing",
+                         "office365",
+                         "audit",
+                         "logs",
+                         "for"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "analyzing-packed-malware-with-upx-unpacker",
+        "triggers":  [
+                         "analyzing",
+                         "packed",
+                         "malware",
+                         "with",
+                         "upx"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "analyzing-pdf-malware-with-pdfid",
+        "triggers":  [
+                         "analyzing",
+                         "pdf",
+                         "malware",
+                         "with",
+                         "pdfid"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "analyzing-security-logs-with-splunk",
+        "triggers":  [
+                         "analyzing",
+                         "security",
+                         "logs",
+                         "with",
+                         "splunk"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "anti-reversing-techniques",
         "triggers":  [
                          "anti",
@@ -97,6 +306,63 @@
         "match_score":  7
     },
     {
+        "id":  "azure-compliance",
+        "triggers":  [
+                         "azure",
+                         "compliance"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-cost-optimization",
+        "triggers":  [
+                         "azure",
+                         "cost",
+                         "optimization"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-identity-ts",
+        "triggers":  [
+                         "azure",
+                         "identity",
+                         "ts"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-kubernetes",
+        "triggers":  [
+                         "azure",
+                         "kubernetes"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "azure-messaging",
+        "triggers":  [
+                         "azure",
+                         "messaging"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "azure-security-keyvault-keys-dotnet",
         "triggers":  [
                          "azure",
@@ -146,6 +412,20 @@
         "match_score":  6
     },
     {
+        "id":  "bypassing-authentication-with-forced-browsing",
+        "triggers":  [
+                         "bypassing",
+                         "authentication",
+                         "with",
+                         "forced",
+                         "browsing"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
         "id":  "cc-skill-security-review",
         "triggers":  [
                          "cc",
@@ -157,6 +437,27 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  15
+    },
+    {
+        "id":  "clawsec-nanoclaw",
+        "triggers":  [
+                         "clawsec",
+                         "nanoclaw"
+                     ],
+        "src":  "external:prompt-security-clawsec",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "clawtributor",
+        "triggers":  [
+                         "clawtributor"
+                     ],
+        "src":  "external:prompt-security-clawsec",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "codebase-audit-pre-push",
@@ -183,6 +484,196 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  15
+    },
+    {
+        "id":  "collecting-threat-intelligence-with-misp",
+        "triggers":  [
+                         "collecting",
+                         "threat",
+                         "intelligence",
+                         "with",
+                         "misp"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "conducting-full-scope-red-team-engagement",
+        "triggers":  [
+                         "conducting",
+                         "full",
+                         "scope",
+                         "red",
+                         "team"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "conducting-malware-incident-response",
+        "triggers":  [
+                         "conducting",
+                         "malware",
+                         "incident",
+                         "response"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "conducting-memory-forensics-with-volatility",
+        "triggers":  [
+                         "conducting",
+                         "memory",
+                         "forensics",
+                         "with",
+                         "volatility"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "conducting-social-engineering-penetration-test",
+        "triggers":  [
+                         "conducting",
+                         "social",
+                         "engineering",
+                         "penetration",
+                         "test"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "conducting-social-engineering-pretext-call",
+        "triggers":  [
+                         "conducting",
+                         "social",
+                         "engineering",
+                         "pretext",
+                         "call"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "configuring-active-directory-tiered-model",
+        "triggers":  [
+                         "configuring",
+                         "active",
+                         "directory",
+                         "tiered",
+                         "model"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "configuring-hsm-for-key-storage",
+        "triggers":  [
+                         "configuring",
+                         "hsm",
+                         "for",
+                         "key",
+                         "storage"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "configuring-ldap-security-hardening",
+        "triggers":  [
+                         "configuring",
+                         "ldap",
+                         "security",
+                         "hardening"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "configuring-multi-factor-authentication-with-duo",
+        "triggers":  [
+                         "configuring",
+                         "multi",
+                         "factor",
+                         "authentication",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "configuring-oauth2-authorization-flow",
+        "triggers":  [
+                         "configuring",
+                         "oauth2",
+                         "authorization",
+                         "flow"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "configuring-tls-1-3-for-secure-communications",
+        "triggers":  [
+                         "configuring",
+                         "tls",
+                         "1",
+                         "3",
+                         "for"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "correlating-security-events-in-qradar",
+        "triggers":  [
+                         "correlating",
+                         "security",
+                         "events",
+                         "in",
+                         "qradar"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "cpg-analysis",
+        "triggers":  [
+                         "cpg",
+                         "analysis"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "cred-omega",
@@ -221,6 +712,168 @@
         "match_score":  15
     },
     {
+        "id":  "detecting-anomalous-authentication-patterns",
+        "triggers":  [
+                         "detecting",
+                         "anomalous",
+                         "authentication",
+                         "patterns"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "detecting-container-escape-with-falco-rules",
+        "triggers":  [
+                         "detecting",
+                         "container",
+                         "escape",
+                         "with",
+                         "falco"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "detecting-credential-dumping-techniques",
+        "triggers":  [
+                         "detecting",
+                         "credential",
+                         "dumping",
+                         "techniques"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "detecting-fileless-malware-techniques",
+        "triggers":  [
+                         "detecting",
+                         "fileless",
+                         "malware",
+                         "techniques"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "detecting-lateral-movement-with-splunk",
+        "triggers":  [
+                         "detecting",
+                         "lateral",
+                         "movement",
+                         "with",
+                         "splunk"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "detecting-oauth-token-theft",
+        "triggers":  [
+                         "detecting",
+                         "oauth",
+                         "token",
+                         "theft"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "detecting-pass-the-hash-attacks",
+        "triggers":  [
+                         "detecting",
+                         "pass",
+                         "the",
+                         "hash",
+                         "attacks"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "detecting-rdp-brute-force-attacks",
+        "triggers":  [
+                         "detecting",
+                         "rdp",
+                         "brute",
+                         "force",
+                         "attacks"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "detecting-spearphishing-with-email-gateway",
+        "triggers":  [
+                         "detecting",
+                         "spearphishing",
+                         "with",
+                         "email",
+                         "gateway"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "detecting-suspicious-oauth-application-consent",
+        "triggers":  [
+                         "detecting",
+                         "suspicious",
+                         "oauth",
+                         "application",
+                         "consent"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "entra-app-registration",
+        "triggers":  [
+                         "entra",
+                         "app",
+                         "registration"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "eradicating-malware-from-infected-systems",
+        "triggers":  [
+                         "eradicating",
+                         "malware",
+                         "from",
+                         "infected",
+                         "systems"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "ethical-hacking-methodology",
         "triggers":  [
                          "ethical",
@@ -231,6 +884,85 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "executing-red-team-exercise",
+        "triggers":  [
+                         "executing",
+                         "red",
+                         "team",
+                         "exercise"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "exploiting-jwt-algorithm-confusion-attack",
+        "triggers":  [
+                         "exploiting",
+                         "jwt",
+                         "algorithm",
+                         "confusion",
+                         "attack"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "exploiting-oauth-misconfiguration",
+        "triggers":  [
+                         "exploiting",
+                         "oauth",
+                         "misconfiguration"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "exploiting-websocket-vulnerabilities",
+        "triggers":  [
+                         "exploiting",
+                         "websocket",
+                         "vulnerabilities"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "extracting-credentials-from-memory-dump",
+        "triggers":  [
+                         "extracting",
+                         "credentials",
+                         "from",
+                         "memory",
+                         "dump"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "extracting-iocs-from-malware-samples",
+        "triggers":  [
+                         "extracting",
+                         "iocs",
+                         "from",
+                         "malware",
+                         "samples"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "ffuf-web-fuzzing",
@@ -306,6 +1038,33 @@
         "match_score":  100
     },
     {
+        "id":  "hardening-docker-containers-for-production",
+        "triggers":  [
+                         "hardening",
+                         "docker",
+                         "containers",
+                         "for",
+                         "production"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "hardening-docker-daemon-configuration",
+        "triggers":  [
+                         "hardening",
+                         "docker",
+                         "daemon",
+                         "configuration"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
         "id":  "html-injection-testing",
         "triggers":  [
                          "html",
@@ -318,6 +1077,34 @@
         "match_score":  100
     },
     {
+        "id":  "hunting-for-ntlm-relay-attacks",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "ntlm",
+                         "relay",
+                         "attacks"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "hunting-for-t1098-account-manipulation",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "t1098",
+                         "account",
+                         "manipulation"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "idor-testing",
         "triggers":  [
                          "idor",
@@ -327,6 +1114,617 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "implementing-anti-phishing-training-program",
+        "triggers":  [
+                         "implementing",
+                         "anti",
+                         "phishing",
+                         "training",
+                         "program"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-api-gateway-security-controls",
+        "triggers":  [
+                         "implementing",
+                         "api",
+                         "gateway",
+                         "security",
+                         "controls"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-api-key-security-controls",
+        "triggers":  [
+                         "implementing",
+                         "api",
+                         "key",
+                         "security",
+                         "controls"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-api-security-posture-management",
+        "triggers":  [
+                         "implementing",
+                         "api",
+                         "security",
+                         "posture",
+                         "management"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-api-threat-protection-with-apigee",
+        "triggers":  [
+                         "implementing",
+                         "api",
+                         "threat",
+                         "protection",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "implementing-aws-iam-permission-boundaries",
+        "triggers":  [
+                         "implementing",
+                         "aws",
+                         "iam",
+                         "permission",
+                         "boundaries"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-aws-nitro-enclave-security",
+        "triggers":  [
+                         "implementing",
+                         "aws",
+                         "nitro",
+                         "enclave",
+                         "security"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-aws-security-hub",
+        "triggers":  [
+                         "implementing",
+                         "aws",
+                         "security",
+                         "hub"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-aws-security-hub-compliance",
+        "triggers":  [
+                         "implementing",
+                         "aws",
+                         "security",
+                         "hub",
+                         "compliance"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "implementing-bgp-security-with-rpki",
+        "triggers":  [
+                         "implementing",
+                         "bgp",
+                         "security",
+                         "with",
+                         "rpki"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "implementing-cloud-security-posture-management",
+        "triggers":  [
+                         "implementing",
+                         "cloud",
+                         "security",
+                         "posture",
+                         "management"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-conditional-access-policies-azure-ad",
+        "triggers":  [
+                         "implementing",
+                         "conditional",
+                         "access",
+                         "policies",
+                         "azure"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "implementing-continuous-security-validation-with-bas",
+        "triggers":  [
+                         "implementing",
+                         "continuous",
+                         "security",
+                         "validation",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-devsecops-security-scanning",
+        "triggers":  [
+                         "implementing",
+                         "devsecops",
+                         "security",
+                         "scanning"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-digital-signatures-with-ed25519",
+        "triggers":  [
+                         "implementing",
+                         "digital",
+                         "signatures",
+                         "with",
+                         "ed25519"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-dmarc-dkim-spf-email-security",
+        "triggers":  [
+                         "implementing",
+                         "dmarc",
+                         "dkim",
+                         "spf",
+                         "email"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "implementing-ebpf-security-monitoring",
+        "triggers":  [
+                         "implementing",
+                         "ebpf",
+                         "security",
+                         "monitoring"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-email-sandboxing-with-proofpoint",
+        "triggers":  [
+                         "implementing",
+                         "email",
+                         "sandboxing",
+                         "with",
+                         "proofpoint"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-epss-score-for-vulnerability-prioritization",
+        "triggers":  [
+                         "implementing",
+                         "epss",
+                         "score",
+                         "for",
+                         "vulnerability"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "implementing-gcp-binary-authorization",
+        "triggers":  [
+                         "implementing",
+                         "gcp",
+                         "binary",
+                         "authorization"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "implementing-gcp-organization-policy-constraints",
+        "triggers":  [
+                         "implementing",
+                         "gcp",
+                         "organization",
+                         "policy",
+                         "constraints"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "implementing-gdpr-data-subject-access-request",
+        "triggers":  [
+                         "implementing",
+                         "gdpr",
+                         "data",
+                         "subject",
+                         "access"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-google-workspace-admin-security",
+        "triggers":  [
+                         "implementing",
+                         "google",
+                         "workspace",
+                         "admin",
+                         "security"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-google-workspace-phishing-protection",
+        "triggers":  [
+                         "implementing",
+                         "google",
+                         "workspace",
+                         "phishing",
+                         "protection"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-google-workspace-sso-configuration",
+        "triggers":  [
+                         "implementing",
+                         "google",
+                         "workspace",
+                         "sso",
+                         "configuration"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-hardware-security-key-authentication",
+        "triggers":  [
+                         "implementing",
+                         "hardware",
+                         "security",
+                         "key",
+                         "authentication"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "implementing-iec-62443-security-zones",
+        "triggers":  [
+                         "implementing",
+                         "iec",
+                         "62443",
+                         "security",
+                         "zones"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-infrastructure-as-code-security-scanning",
+        "triggers":  [
+                         "implementing",
+                         "infrastructure",
+                         "as",
+                         "code",
+                         "security"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-iso-27001-information-security-management",
+        "triggers":  [
+                         "implementing",
+                         "iso",
+                         "27001",
+                         "information",
+                         "security"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-jwt-signing-and-verification",
+        "triggers":  [
+                         "implementing",
+                         "jwt",
+                         "signing",
+                         "and",
+                         "verification"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  19
+    },
+    {
+        "id":  "implementing-network-access-control-with-cisco-ise",
+        "triggers":  [
+                         "implementing",
+                         "network",
+                         "access",
+                         "control",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-network-segmentation-with-firewall-zones",
+        "triggers":  [
+                         "implementing",
+                         "network",
+                         "segmentation",
+                         "with",
+                         "firewall"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-next-generation-firewall-with-palo-alto",
+        "triggers":  [
+                         "implementing",
+                         "next",
+                         "generation",
+                         "firewall",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "implementing-passwordless-authentication-with-fido2",
+        "triggers":  [
+                         "implementing",
+                         "passwordless",
+                         "authentication",
+                         "with",
+                         "fido2"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "implementing-proofpoint-email-security-gateway",
+        "triggers":  [
+                         "implementing",
+                         "proofpoint",
+                         "email",
+                         "security",
+                         "gateway"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "implementing-rapid7-insightvm-for-scanning",
+        "triggers":  [
+                         "implementing",
+                         "rapid7",
+                         "insightvm",
+                         "for",
+                         "scanning"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "implementing-runtime-application-self-protection",
+        "triggers":  [
+                         "implementing",
+                         "runtime",
+                         "application",
+                         "self",
+                         "protection"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-runtime-security-with-tetragon",
+        "triggers":  [
+                         "implementing",
+                         "runtime",
+                         "security",
+                         "with",
+                         "tetragon"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-saml-sso-with-okta",
+        "triggers":  [
+                         "implementing",
+                         "saml",
+                         "sso",
+                         "with",
+                         "okta"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-security-chaos-engineering",
+        "triggers":  [
+                         "implementing",
+                         "security",
+                         "chaos",
+                         "engineering"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-security-information-sharing-with-stix2",
+        "triggers":  [
+                         "implementing",
+                         "security",
+                         "information",
+                         "sharing",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-security-monitoring-with-datadog",
+        "triggers":  [
+                         "implementing",
+                         "security",
+                         "monitoring",
+                         "with",
+                         "datadog"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-web-application-logging-with-modsecurity",
+        "triggers":  [
+                         "implementing",
+                         "web",
+                         "application",
+                         "logging",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "implementing-zero-knowledge-proof-for-authentication",
+        "triggers":  [
+                         "implementing",
+                         "zero",
+                         "knowledge",
+                         "proof",
+                         "for"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "laravel-expert",
@@ -444,6 +1842,16 @@
         "match_score":  7
     },
     {
+        "id":  "oauth",
+        "triggers":  [
+                         "oauth"
+                     ],
+        "src":  "external:mcollina-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  27
+    },
+    {
         "id":  "odoo-security-rules",
         "triggers":  [
                          "odoo",
@@ -487,6 +1895,766 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "performing-active-directory-compromise-investigation",
+        "triggers":  [
+                         "performing",
+                         "active",
+                         "directory",
+                         "compromise",
+                         "investigation"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-active-directory-vulnerability-assessment",
+        "triggers":  [
+                         "performing",
+                         "active",
+                         "directory",
+                         "vulnerability",
+                         "assessment"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "performing-alert-triage-with-elastic-siem",
+        "triggers":  [
+                         "performing",
+                         "alert",
+                         "triage",
+                         "with",
+                         "elastic"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-authenticated-vulnerability-scan",
+        "triggers":  [
+                         "performing",
+                         "authenticated",
+                         "vulnerability",
+                         "scan"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "performing-automated-malware-analysis-with-cape",
+        "triggers":  [
+                         "performing",
+                         "automated",
+                         "malware",
+                         "analysis",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-bluetooth-security-assessment",
+        "triggers":  [
+                         "performing",
+                         "bluetooth",
+                         "security",
+                         "assessment"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-cloud-log-forensics-with-athena",
+        "triggers":  [
+                         "performing",
+                         "cloud",
+                         "log",
+                         "forensics",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-cloud-native-forensics-with-falco",
+        "triggers":  [
+                         "performing",
+                         "cloud",
+                         "native",
+                         "forensics",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-container-security-scanning-with-trivy",
+        "triggers":  [
+                         "performing",
+                         "container",
+                         "security",
+                         "scanning",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "performing-content-security-policy-bypass",
+        "triggers":  [
+                         "performing",
+                         "content",
+                         "security",
+                         "policy",
+                         "bypass"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-disk-forensics-investigation",
+        "triggers":  [
+                         "performing",
+                         "disk",
+                         "forensics",
+                         "investigation"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-docker-bench-security-assessment",
+        "triggers":  [
+                         "performing",
+                         "docker",
+                         "bench",
+                         "security",
+                         "assessment"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-endpoint-forensics-investigation",
+        "triggers":  [
+                         "performing",
+                         "endpoint",
+                         "forensics",
+                         "investigation"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-firmware-malware-analysis",
+        "triggers":  [
+                         "performing",
+                         "firmware",
+                         "malware",
+                         "analysis"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-gcp-security-assessment-with-forseti",
+        "triggers":  [
+                         "performing",
+                         "gcp",
+                         "security",
+                         "assessment",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-graphql-security-assessment",
+        "triggers":  [
+                         "performing",
+                         "graphql",
+                         "security",
+                         "assessment"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "performing-hardware-security-module-integration",
+        "triggers":  [
+                         "performing",
+                         "hardware",
+                         "security",
+                         "module",
+                         "integration"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "performing-hash-cracking-with-hashcat",
+        "triggers":  [
+                         "performing",
+                         "hash",
+                         "cracking",
+                         "with",
+                         "hashcat"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-http-parameter-pollution-attack",
+        "triggers":  [
+                         "performing",
+                         "http",
+                         "parameter",
+                         "pollution",
+                         "attack"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-initial-access-with-evilginx3",
+        "triggers":  [
+                         "performing",
+                         "initial",
+                         "access",
+                         "with",
+                         "evilginx3"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-iot-security-assessment",
+        "triggers":  [
+                         "performing",
+                         "iot",
+                         "security",
+                         "assessment"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-jwt-none-algorithm-attack",
+        "triggers":  [
+                         "performing",
+                         "jwt",
+                         "none",
+                         "algorithm",
+                         "attack"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-kubernetes-cis-benchmark-with-kube-bench",
+        "triggers":  [
+                         "performing",
+                         "kubernetes",
+                         "cis",
+                         "benchmark",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-kubernetes-etcd-security-assessment",
+        "triggers":  [
+                         "performing",
+                         "kubernetes",
+                         "etcd",
+                         "security",
+                         "assessment"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "performing-linux-log-forensics-investigation",
+        "triggers":  [
+                         "performing",
+                         "linux",
+                         "log",
+                         "forensics",
+                         "investigation"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-log-analysis-for-forensic-investigation",
+        "triggers":  [
+                         "performing",
+                         "log",
+                         "analysis",
+                         "for",
+                         "forensic"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-log-source-onboarding-in-siem",
+        "triggers":  [
+                         "performing",
+                         "log",
+                         "source",
+                         "onboarding",
+                         "in"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-malware-ioc-extraction",
+        "triggers":  [
+                         "performing",
+                         "malware",
+                         "ioc",
+                         "extraction"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-malware-triage-with-yara",
+        "triggers":  [
+                         "performing",
+                         "malware",
+                         "triage",
+                         "with",
+                         "yara"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-memory-forensics-with-volatility3",
+        "triggers":  [
+                         "performing",
+                         "memory",
+                         "forensics",
+                         "with",
+                         "volatility3"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-memory-forensics-with-volatility3-plugins",
+        "triggers":  [
+                         "performing",
+                         "memory",
+                         "forensics",
+                         "with",
+                         "volatility3"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "performing-network-forensics-with-wireshark",
+        "triggers":  [
+                         "performing",
+                         "network",
+                         "forensics",
+                         "with",
+                         "wireshark"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-network-traffic-analysis-with-zeek",
+        "triggers":  [
+                         "performing",
+                         "network",
+                         "traffic",
+                         "analysis",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-oauth-scope-minimization-review",
+        "triggers":  [
+                         "performing",
+                         "oauth",
+                         "scope",
+                         "minimization",
+                         "review"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-oil-gas-cybersecurity-assessment",
+        "triggers":  [
+                         "performing",
+                         "oil",
+                         "gas",
+                         "cybersecurity",
+                         "assessment"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "performing-ot-network-security-assessment",
+        "triggers":  [
+                         "performing",
+                         "ot",
+                         "network",
+                         "security",
+                         "assessment"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-phishing-simulation-with-gophish",
+        "triggers":  [
+                         "performing",
+                         "phishing",
+                         "simulation",
+                         "with",
+                         "gophish"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-plc-firmware-security-analysis",
+        "triggers":  [
+                         "performing",
+                         "plc",
+                         "firmware",
+                         "security",
+                         "analysis"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-power-grid-cybersecurity-assessment",
+        "triggers":  [
+                         "performing",
+                         "power",
+                         "grid",
+                         "cybersecurity",
+                         "assessment"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "performing-privacy-impact-assessment",
+        "triggers":  [
+                         "performing",
+                         "privacy",
+                         "impact",
+                         "assessment"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-red-team-phishing-with-gophish",
+        "triggers":  [
+                         "performing",
+                         "red",
+                         "team",
+                         "phishing",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "performing-red-team-with-covenant",
+        "triggers":  [
+                         "performing",
+                         "red",
+                         "team",
+                         "with",
+                         "covenant"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "performing-s7comm-protocol-security-analysis",
+        "triggers":  [
+                         "performing",
+                         "s7comm",
+                         "protocol",
+                         "security",
+                         "analysis"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-scada-hmi-security-assessment",
+        "triggers":  [
+                         "performing",
+                         "scada",
+                         "hmi",
+                         "security",
+                         "assessment"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-security-headers-audit",
+        "triggers":  [
+                         "performing",
+                         "security",
+                         "headers",
+                         "audit"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-serverless-function-security-review",
+        "triggers":  [
+                         "performing",
+                         "serverless",
+                         "function",
+                         "security",
+                         "review"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-ssl-tls-inspection-configuration",
+        "triggers":  [
+                         "performing",
+                         "ssl",
+                         "tls",
+                         "inspection",
+                         "configuration"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  23
+    },
+    {
+        "id":  "performing-ssl-tls-security-assessment",
+        "triggers":  [
+                         "performing",
+                         "ssl",
+                         "tls",
+                         "security",
+                         "assessment"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "performing-static-malware-analysis-with-pe-studio",
+        "triggers":  [
+                         "performing",
+                         "static",
+                         "malware",
+                         "analysis",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-subdomain-enumeration-with-subfinder",
+        "triggers":  [
+                         "performing",
+                         "subdomain",
+                         "enumeration",
+                         "with",
+                         "subfinder"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-threat-emulation-with-atomic-red-team",
+        "triggers":  [
+                         "performing",
+                         "threat",
+                         "emulation",
+                         "with",
+                         "atomic"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "performing-web-cache-poisoning-attack",
+        "triggers":  [
+                         "performing",
+                         "web",
+                         "cache",
+                         "poisoning",
+                         "attack"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-wireless-security-assessment-with-kismet",
+        "triggers":  [
+                         "performing",
+                         "wireless",
+                         "security",
+                         "assessment",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "performing-yara-rule-development-for-detection",
+        "triggers":  [
+                         "performing",
+                         "yara",
+                         "rule",
+                         "development",
+                         "for"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "prioritizing-vulnerabilities-with-cvss-scoring",
+        "triggers":  [
+                         "prioritizing",
+                         "vulnerabilities",
+                         "with",
+                         "cvss",
+                         "scoring"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
     },
     {
         "id":  "privacy-by-design",
@@ -549,6 +2717,17 @@
         "match_score":  13
     },
     {
+        "id":  "researchers-security",
+        "triggers":  [
+                         "researchers",
+                         "security"
+                     ],
+        "src":  "external:bitwize-music-studio-claude-ai-music-skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
         "id":  "reverse-engineer",
         "triggers":  [
                          "reverse",
@@ -560,6 +2739,62 @@
         "match_score":  5
     },
     {
+        "id":  "reverse-engineering-android-malware-with-jadx",
+        "triggers":  [
+                         "reverse",
+                         "engineering",
+                         "android",
+                         "malware",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "reverse-engineering-dotnet-malware-with-dnspy",
+        "triggers":  [
+                         "reverse",
+                         "engineering",
+                         "dotnet",
+                         "malware",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "reverse-engineering-malware-with-ghidra",
+        "triggers":  [
+                         "reverse",
+                         "engineering",
+                         "malware",
+                         "with",
+                         "ghidra"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "reverse-engineering-ransomware-encryption-routine",
+        "triggers":  [
+                         "reverse",
+                         "engineering",
+                         "ransomware",
+                         "encryption",
+                         "routine"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
         "id":  "sast-configuration",
         "triggers":  [
                          "sast",
@@ -569,6 +2804,47 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "scanning-docker-images-with-trivy",
+        "triggers":  [
+                         "scanning",
+                         "docker",
+                         "images",
+                         "with",
+                         "trivy"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "scanning-infrastructure-with-nessus",
+        "triggers":  [
+                         "scanning",
+                         "infrastructure",
+                         "with",
+                         "nessus"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "scanning-kubernetes-manifests-with-kubesec",
+        "triggers":  [
+                         "scanning",
+                         "kubernetes",
+                         "manifests",
+                         "with",
+                         "kubesec"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "scanning-tools",
@@ -591,6 +2867,33 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "securing-container-registry-with-harbor",
+        "triggers":  [
+                         "securing",
+                         "container",
+                         "registry",
+                         "with",
+                         "harbor"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "securing-helm-chart-deployments",
+        "triggers":  [
+                         "securing",
+                         "helm",
+                         "chart",
+                         "deployments"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
     },
     {
         "id":  "security-audit",
@@ -626,6 +2929,19 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  10
+    },
+    {
+        "id":  "security-limits-dos-protection",
+        "triggers":  [
+                         "security",
+                         "limits",
+                         "dos",
+                         "protection"
+                     ],
+        "src":  "external:kreuzberg-dev-kreuzberg",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "security-scanning-security-dependencies",
@@ -775,6 +3091,47 @@
         "match_score":  7
     },
     {
+        "id":  "testing-for-json-web-token-vulnerabilities",
+        "triggers":  [
+                         "testing",
+                         "for",
+                         "json",
+                         "web",
+                         "token"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "testing-for-sensitive-data-exposure",
+        "triggers":  [
+                         "testing",
+                         "for",
+                         "sensitive",
+                         "data",
+                         "exposure"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "testing-jwt-token-security",
+        "triggers":  [
+                         "testing",
+                         "jwt",
+                         "token",
+                         "security"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
         "id":  "threat-mitigation-mapping",
         "triggers":  [
                          "threat",
@@ -811,6 +3168,46 @@
         "match_score":  6
     },
     {
+        "id":  "triaging-security-alerts-in-splunk",
+        "triggers":  [
+                         "triaging",
+                         "security",
+                         "alerts",
+                         "in",
+                         "splunk"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "triaging-security-incident",
+        "triggers":  [
+                         "triaging",
+                         "security",
+                         "incident"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "triaging-security-incident-with-ir-playbook",
+        "triggers":  [
+                         "triaging",
+                         "security",
+                         "incident",
+                         "with",
+                         "ir"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "variant-analysis",
         "triggers":  [
                          "variant",
@@ -842,6 +3239,17 @@
         "primary_hub":  "security/core",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "VibeSec-Skill",
+        "triggers":  [
+                         "VibeSec",
+                         "Skill"
+                     ],
+        "src":  "external:BehiSecc-VibeSec-Skill",
+        "primary_hub":  "security/core",
+        "is_primary":  true,
+        "match_score":  11
     },
     {
         "id":  "vulnerability-scanner",

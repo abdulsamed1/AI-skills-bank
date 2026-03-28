@@ -3,12 +3,12 @@
     "main_hub":  "business",
     "sub_hub":  "saas",
     "description":  "Business and SaaS strategy: pricing, growth metrics, unit economics, market sizing, and go-to-market planning",
-    "skill_count":  34,
-    "src_count":  5,
+    "skill_count":  42,
+    "src_count":  8,
     "top_triggers":  [
                          null
                      ],
-    "generated_at":  "2026-03-28T01:39:22+02:00",
+    "generated_at":  "2026-03-28T17:09:43+02:00",
     "files":  {
                   "skill":  "SKILL.md",
                   "index":  "skills-index.json",

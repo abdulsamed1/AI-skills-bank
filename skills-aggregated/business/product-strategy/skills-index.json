@@ -73,6 +73,20 @@
         "match_score":  5
     },
     {
+        "id":  "analyzing-typosquatting-domains-with-dnstwist",
+        "triggers":  [
+                         "analyzing",
+                         "typosquatting",
+                         "domains",
+                         "with",
+                         "dnstwist"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "ansoff-matrix",
         "triggers":  [
                          "ansoff",
@@ -185,6 +199,17 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  11
+    },
+    {
+        "id":  "azure-diagnostics",
+        "triggers":  [
+                         "azure",
+                         "diagnostics"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "backend-dev-guidelines",
@@ -314,6 +339,17 @@
         "match_score":  5
     },
     {
+        "id":  "characteristic-voice",
+        "triggers":  [
+                         "characteristic",
+                         "voice"
+                     ],
+        "src":  "external:NoizAI-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "cold-outreach-sequence",
         "triggers":  [
                          "cold",
@@ -335,6 +371,26 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  17
+    },
+    {
+        "id":  "conventions",
+        "triggers":  [
+                         "conventions"
+                     ],
+        "src":  "external:ethos-link-rails-conventions",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "Cover Letter Generator",
+        "triggers":  [
+                         "Cover Letter Generator"
+                     ],
+        "src":  "external:Paramchoudhary-ResumeSkills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "create-prd",
@@ -477,6 +533,19 @@
         "match_score":  7
     },
     {
+        "id":  "exploiting-constrained-delegation-abuse",
+        "triggers":  [
+                         "exploiting",
+                         "constrained",
+                         "delegation",
+                         "abuse"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "feature-investment-advisor",
         "triggers":  [
                          "feature",
@@ -513,6 +582,17 @@
         "match_score":  7
     },
     {
+        "id":  "helius-okx",
+        "triggers":  [
+                         "helius",
+                         "okx"
+                     ],
+        "src":  "external:helius-labs-core-ai",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "identify-assumptions-existing",
         "triggers":  [
                          "identify",
@@ -537,6 +617,47 @@
         "match_score":  100
     },
     {
+        "id":  "implementing-envelope-encryption-with-aws-kms",
+        "triggers":  [
+                         "implementing",
+                         "envelope",
+                         "encryption",
+                         "with",
+                         "aws"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-mimecast-targeted-attack-protection",
+        "triggers":  [
+                         "implementing",
+                         "mimecast",
+                         "targeted",
+                         "attack",
+                         "protection"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "implementing-ransomware-backup-strategy",
+        "triggers":  [
+                         "implementing",
+                         "ransomware",
+                         "backup",
+                         "strategy"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "incident-runbook-templates",
         "triggers":  [
                          "incident",
@@ -549,6 +670,17 @@
         "match_score":  5
     },
     {
+        "id":  "integrate-whatsapp",
+        "triggers":  [
+                         "integrate",
+                         "whatsapp"
+                     ],
+        "src":  "external:gokapso-agent-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "interview-script",
         "triggers":  [
                          "interview",
@@ -558,6 +690,16 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "Job Description Analyzer",
+        "triggers":  [
+                         "Job Description Analyzer"
+                     ],
+        "src":  "external:Paramchoudhary-ResumeSkills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "jobs-to-be-done",
@@ -595,6 +737,16 @@
         "match_score":  100
     },
     {
+        "id":  "manus",
+        "triggers":  [
+                         "manus"
+                     ],
+        "src":  "external:sanjay3290-ai-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
         "id":  "market-segments",
         "triggers":  [
                          "market",
@@ -617,6 +769,29 @@
         "match_score":  7
     },
     {
+        "id":  "miles-rl-training",
+        "triggers":  [
+                         "miles",
+                         "rl",
+                         "training"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "model-merging",
+        "triggers":  [
+                         "model",
+                         "merging"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "monetization-strategy",
         "triggers":  [
                          "monetization",
@@ -626,6 +801,28 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  20
+    },
+    {
+        "id":  "ocr-caching-strategy",
+        "triggers":  [
+                         "ocr",
+                         "caching",
+                         "strategy"
+                     ],
+        "src":  "external:kreuzberg-dev-kreuzberg",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "okx",
+        "triggers":  [
+                         "okx"
+                     ],
+        "src":  "external:helius-labs-core-ai",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "onboarding-optimization",
@@ -753,6 +950,30 @@
         "match_score":  11
     },
     {
+        "id":  "prd-to-issues",
+        "triggers":  [
+                         "prd",
+                         "to",
+                         "issues"
+                     ],
+        "src":  "external:mattpocock-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "prd-to-plan",
+        "triggers":  [
+                         "prd",
+                         "to",
+                         "plan"
+                     ],
+        "src":  "external:mattpocock-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "pre-mortem",
         "triggers":  [
                          "pre",
@@ -867,6 +1088,18 @@
         "match_score":  5
     },
     {
+        "id":  "product-manager-skills",
+        "triggers":  [
+                         "product",
+                         "manager",
+                         "skills"
+                     ],
+        "src":  "external:Digidai-product-manager-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
         "id":  "product-manager-toolkit",
         "triggers":  [
                          "product",
@@ -968,6 +1201,28 @@
         "match_score":  9
     },
     {
+        "id":  "researchers-biographical",
+        "triggers":  [
+                         "researchers",
+                         "biographical"
+                     ],
+        "src":  "external:bitwize-music-studio-claude-ai-music-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "researchers-verifier",
+        "triggers":  [
+                         "researchers",
+                         "verifier"
+                     ],
+        "src":  "external:bitwize-music-studio-claude-ai-music-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "retention-optimization",
         "triggers":  [
                          "retention",
@@ -988,6 +1243,16 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  27
+    },
+    {
+        "id":  "Salary Negotiation Prep",
+        "triggers":  [
+                         "Salary Negotiation Prep"
+                     ],
+        "src":  "external:Paramchoudhary-ResumeSkills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  11
     },
     {
         "id":  "sales-enablement",
@@ -1213,6 +1478,18 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "write-a-prd",
+        "triggers":  [
+                         "write",
+                         "a",
+                         "prd"
+                     ],
+        "src":  "external:mattpocock-skills",
+        "primary_hub":  "business/product-strategy",
+        "is_primary":  true,
+        "match_score":  15
     },
     {
         "id":  "wwas",

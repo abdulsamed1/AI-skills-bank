@@ -3,12 +3,12 @@
     "main_hub":  "marketing",
     "sub_hub":  "email",
     "description":  "Email marketing: campaigns, automation, segmentation, and subscriber engagement strategies",
-    "skill_count":  8,
-    "src_count":  3,
+    "skill_count":  16,
+    "src_count":  5,
     "top_triggers":  [
                          null
                      ],
-    "generated_at":  "2026-03-28T01:39:23+02:00",
+    "generated_at":  "2026-03-28T17:09:45+02:00",
     "files":  {
                   "skill":  "SKILL.md",
                   "index":  "skills-index.json",

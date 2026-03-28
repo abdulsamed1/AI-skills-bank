@@ -1,44 +1,118 @@
 {
-    "generated_at":  "2026-03-28T01:39:23+02:00",
+    "generated_at":  "2026-03-28T17:09:45+02:00",
     "src_repo_mode":  "all",
     "selected_src_repos":  [
                                "agent-skills",
                                "agent-toolkit",
                                "ai-marketing-skills",
+                               "alinaqi-claude-bootstrap",
                                "antigravity-awesome-skills",
+                               "antonbabenko-terraform-skill",
                                "aso-skills",
+                               "AvdLee-SwiftUI-Agent-Skill",
                                "awesome-claude-code-subagents",
                                "beautiful_prose",
+                               "BehiSecc-VibeSec-Skill",
+                               "bitwize-music-studio-claude-ai-music-skills",
                                "charlie-cfo-skill",
+                               "Charlie85270-Dorothy",
                                "claude-seo",
                                "cli",
+                               "CloudAI-X-threejs-skills",
+                               "coderabbitai-skills",
+                               "conorluddy-ios-simulator-skill",
                                "context-and-tools",
                                "creative-director-skill",
                                "creem",
+                               "deusyu-translate-book",
+                               "Digidai-product-manager-skills",
                                "duckdb-skills",
+                               "efremidze-swift-patterns-skill",
+                               "ehmo-platform-design-skills",
                                "email-marketing-bible",
+                               "ethos-link-rails-conventions",
                                "founder-skills",
+                               "frmoretto-clarity-gate",
                                "frontend-slides",
+                               "fvadicamo-dev-agent-skills",
                                "gemini-skills",
+                               "gokapso-agent-skills",
                                "gsap-skills",
                                "gstack",
+                               "hanfang-claude-memory-skill",
+                               "helius-labs-core-ai",
+                               "HeshamFS-materials-simulation-skills",
+                               "huifer-Claude-Ally-Health",
                                "humanizer",
+                               "ibelick-ui-skills",
+                               "Joannis-claude-skills",
+                               "jthack-ffuf_claude_skill",
+                               "K-Dense-AI-claude-scientific-skills",
+                               "Kevin7Qi-codex-collab",
+                               "komal-SkyNET-claude-skill-homeassistant",
+                               "kreuzberg-dev-kreuzberg",
+                               "lackeyjb-playwright-skill",
+                               "lawvable-awesome-legal-skills",
+                               "Leonxlnx-taste-skill",
                                "linear-claude-skill",
                                "marketingskills",
+                               "massimodeluisa-recursive-decomposition-skill",
+                               "mattpocock-skills",
+                               "mcollina-skills",
                                "mcp-server-guide",
+                               "meodai-skill.color-expert",
+                               "microsoft-skills",
+                               "more-io-claude-apple-bridges",
+                               "mukul975-Anthropic-Cybersecurity-Skills",
+                               "muthuishere-hand-drawn-diagrams",
                                "NanoBanana-PPT-Skills",
+                               "NeoLabHQ-context-engineering-kit",
+                               "nextlevelbuilder-ui-ux-pro-max-skill",
+                               "NoizAI-skills",
                                "notebooklm-skill",
+                               "NotMyself-claude-win11-speckit-update-skill",
                                "nutrient-agent-skill",
+                               "omkamal-pypict-claude-skill",
+                               "Orchestra-Research-AI-research-SKILLs",
+                               "Paramchoudhary-ResumeSkills",
                                "pm-skills",
                                "Product-Manager-Skills",
+                               "prompt-security-clawsec",
+                               "raintree-technology-apple-hig-skills",
+                               "rameerez-claude-code-startup-skills",
+                               "ramzesenok-iOS-Accessibility-Audit-Skill",
+                               "ReScienceLab-opc-skills",
+                               "robzolkos-skill-rails-upgrade",
+                               "Rootly-AI-Labs-Rootly-MCP-server",
+                               "RoundTable02-tutor-skills",
+                               "rudrankriyam-app-store-connect-cli-skills",
+                               "sanjay3290-ai-skills",
+                               "scarletkc-vexor",
+                               "SeanZoR-claude-speed-reader",
+                               "SHADOWPR0-security-bluebook-builder",
+                               "Shpigford-skills",
+                               "ShunsukeHayashi-agent-skill-bus",
                                "skills",
                                "stitch-skills",
                                "superpowers",
                                "superpowers-lab",
+                               "takechanman1228-claude-ecom",
+                               "testdino-hq-playwright-skill",
                                "tinybird-agent-skills",
+                               "truongduy2611-app-store-preflight-skills",
                                "tweetclaw",
+                               "uucz-moyu",
+                               "video-db-skills",
+                               "wanshuiyin-Auto-claude-code-research-in-sleep",
+                               "wrsmith108-varlock-claude-skill",
                                "x-article-publisher-skill",
-                               "Youtube-clipper-skill"
+                               "Youtube-clipper-skill",
+                               "yusufkaraaslan-Skill_Seekers",
+                               "zechenzhangAGI-AI-research-SKILLs",
+                               "ZhangHanDong-makepad-skills",
+                               "zscole-model-hierarchy-skill",
+                               "zw008-VMware-AIops",
+                               "zxkane-aws-skills"
                            ],
     "exclude_categories":  [
                                "games",
@@ -49,12 +123,14 @@
                                "chemistry"
                            ],
     "exclusion_stats":  {
-                            "total":  63,
+                            "total":  200,
                             "by_category":  {
-                                                "biology":  2,
-                                                "games":  26,
-                                                "law-legal":  16,
-                                                "medicine-medical":  19
+                                                "biology":  34,
+                                                "chemistry":  6,
+                                                "games":  29,
+                                                "law-legal":  62,
+                                                "medicine-medical":  60,
+                                                "pharmacy":  9
                                             }
                         },
     "min_skills_per_hub":  5,
@@ -92,6 +168,13 @@
                                  "fingerprint":  "git:9a843429881221c97d4f631e20ada39f957c54e7144fe5000505402a06f9dcb9"
                              },
                              {
+                                 "name":  "alinaqi-claude-bootstrap",
+                                 "vcs":  "git",
+                                 "revision":  "24cfe58fc34df03c7113c5b0bcefecd830f24ae5",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:f41fb3d51443ac6ffee8426400c5a87071376650dd45fab8de3e0a001b5c3c7f"
+                             },
+                             {
                                  "name":  "antigravity-awesome-skills",
                                  "vcs":  "git",
                                  "revision":  "dffac91d3b437d01b62444da25c5a4f1e00f9047",
@@ -99,11 +182,25 @@
                                  "fingerprint":  "git:e5b2cacabb2aa9ea3f5bd9791d1dde6496c5b926e981748c10f84dc711cabe72"
                              },
                              {
+                                 "name":  "antonbabenko-terraform-skill",
+                                 "vcs":  "git",
+                                 "revision":  "5a68694c647526d95859f972bea3a2ae4e9cdfa7",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:843fe5ac287dfcf9468929c9c6ddd4d98e697ee00b85ad76dbe7a551d8860e33"
+                             },
+                             {
                                  "name":  "aso-skills",
                                  "vcs":  "git",
                                  "revision":  "15d9e62c2701b460e5cfb2e0cab32a072a99baca",
                                  "dirty":  false,
                                  "fingerprint":  "git:c36fe8498cffcd8cada2f2ab2f2bafeccd4cc06616fa99a331894391b14a30f0"
+                             },
+                             {
+                                 "name":  "AvdLee-SwiftUI-Agent-Skill",
+                                 "vcs":  "git",
+                                 "revision":  "1363b6aecf26551a60d5dbdf71525385619346d3",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:7176040b7f8004988c498d0c12c26607c125ba0e04b1b8bd92579094c4d54355"
                              },
                              {
                                  "name":  "awesome-claude-code-subagents",
@@ -118,6 +215,27 @@
                                  "revision":  "bf44efb7f9706f8f563af3b6913a3784c7c52a12",
                                  "dirty":  false,
                                  "fingerprint":  "git:9f331771ed5ff2ea6c6f78b98bbaff8b82a6332de45eec02875ae286a0b447fd"
+                             },
+                             {
+                                 "name":  "BehiSecc-VibeSec-Skill",
+                                 "vcs":  "git",
+                                 "revision":  "0590993b35ad51961f65a4d01cf1196dfead05bb",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:61e2b3fee49d336011e7c0bd489c9e42bc36948c7de4523ba09e7452b0809433"
+                             },
+                             {
+                                 "name":  "bitwize-music-studio-claude-ai-music-skills",
+                                 "vcs":  "git",
+                                 "revision":  "0ad883a9f985832e213b2fa7e3b32433cf9b74dd",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:f3a041d1779d77d05f119092da75180b86cc684b99edf64c5b9961a9b2fa68bb"
+                             },
+                             {
+                                 "name":  "Charlie85270-Dorothy",
+                                 "vcs":  "git",
+                                 "revision":  "902b4ff0a593b5f32b641314d24a19ffbc331e59",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:b4c032043bad4c873a94d9718eb3f95c3e3a0eeccdd92a814fcd85d5311416aa"
                              },
                              {
                                  "name":  "charlie-cfo-skill",
@@ -141,6 +259,27 @@
                                  "fingerprint":  "git:a2b70b3043b84f2f40078b16d23c59158d7ed0f37a7e6bb9d3593d124257ba34"
                              },
                              {
+                                 "name":  "CloudAI-X-threejs-skills",
+                                 "vcs":  "git",
+                                 "revision":  "b1c623076c661fc9b03dac19292e825a5d106823",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:6342ebdbd700efb8c75d35407d6bb90cd35091cf45d83dd04a97faa55e3cde98"
+                             },
+                             {
+                                 "name":  "coderabbitai-skills",
+                                 "vcs":  "git",
+                                 "revision":  "e1d42d7a2e0a736824117802b6e03228eadd52f1",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:3d54b36d808d28c9e8d5f21d57f7ac65c2611cca532b587a1b99716f2571a894"
+                             },
+                             {
+                                 "name":  "conorluddy-ios-simulator-skill",
+                                 "vcs":  "git",
+                                 "revision":  "c9e021ed9dc2c5c1e302821f4b8034e38c42d178",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:89f0f631949bba29b1be39c62dca65ebf02f3940cb0a4a22f4053681d7db58b0"
+                             },
+                             {
                                  "name":  "context-and-tools",
                                  "vcs":  "git",
                                  "revision":  "d388e4bc413d3931c3182f80a3b8c414f3e74ef4",
@@ -162,11 +301,39 @@
                                  "fingerprint":  "files:2|ticks:639102216720147779"
                              },
                              {
+                                 "name":  "deusyu-translate-book",
+                                 "vcs":  "git",
+                                 "revision":  "22beeeb07c17596c32eabb854774d7cdfa39a62a",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:0e2a7bc5a01a2dc06422a73f0fc2c1a2698f5117774450d8eae4d873b586b4f4"
+                             },
+                             {
+                                 "name":  "Digidai-product-manager-skills",
+                                 "vcs":  "git",
+                                 "revision":  "f6bc7084df742640cd28b87775dd6daacfa5affd",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:38afba2018fce33d6483ee02792e525dc7988c1a768a19cbcf1323dc22fde21b"
+                             },
+                             {
                                  "name":  "duckdb-skills",
                                  "vcs":  "git",
                                  "revision":  "f6114c786311232360c30856432b4014ebd3604c",
                                  "dirty":  false,
                                  "fingerprint":  "git:080cde8eb6a1e48a0284c16d5f5eb0044f9eb48a2c590d68708f483acb7446d5"
+                             },
+                             {
+                                 "name":  "efremidze-swift-patterns-skill",
+                                 "vcs":  "git",
+                                 "revision":  "2e9b66b0470a324cf3a6898549279e622aa7df71",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:04033f1665043a8c96e758eb381bb007cd6c2034d7baa9bbb53d27bfd3a68745"
+                             },
+                             {
+                                 "name":  "ehmo-platform-design-skills",
+                                 "vcs":  "git",
+                                 "revision":  "dc2be825d8b439caea78e9eaa8fb3ac23b0ff3e9",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:9804ebf8e3b8af92841af51ce7a096a4cc57ce11860fdea2e0330c56a4c41738"
                              },
                              {
                                  "name":  "email-marketing-bible",
@@ -176,11 +343,25 @@
                                  "fingerprint":  "git:e0d93904e4f297c32254c6f8ac63aea4d632b48980e93e7c840906c6c343407c"
                              },
                              {
+                                 "name":  "ethos-link-rails-conventions",
+                                 "vcs":  "git",
+                                 "revision":  "393994a0e3e098445af057ecc126f0fb9815c3c3",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:1ed79e820adfcaab21cf622e9a5c3ccba0ee0ec0393b8c118bf4760b19b8a354"
+                             },
+                             {
                                  "name":  "founder-skills",
                                  "vcs":  "git",
                                  "revision":  "1d2907706697fa48e8487deec58275c520276f16",
                                  "dirty":  false,
                                  "fingerprint":  "git:f66ef19828629e56c3ddf2d497cb8e587953f62c468742d82a2cf01da805bdfb"
+                             },
+                             {
+                                 "name":  "frmoretto-clarity-gate",
+                                 "vcs":  "git",
+                                 "revision":  "88eaf21b0e38c95959429a1a5f9b4cec72f01a43",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:8bfe157fd245d13ce2863a4f210254834e60e73e3033baaf6cd8effe70962ff2"
                              },
                              {
                                  "name":  "frontend-slides",
@@ -190,11 +371,25 @@
                                  "fingerprint":  "git:34a4757c3dc86645c2da653ad093df50e4e3ba1af25207855d608c09475fb3fd"
                              },
                              {
+                                 "name":  "fvadicamo-dev-agent-skills",
+                                 "vcs":  "git",
+                                 "revision":  "a34d673d278397d005ed14aeed54839249c815ca",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:8200ca89fdc52b9a7723afa6442f148c57168628c71bb39e064ddcc731723245"
+                             },
+                             {
                                  "name":  "gemini-skills",
                                  "vcs":  "git",
                                  "revision":  "51f1bedafbd15776826dae6242482b2017f2e568",
                                  "dirty":  false,
                                  "fingerprint":  "git:b7ad2573169abcb37967399b593aae77a1d4b2eda812d3e95288dc737498a027"
+                             },
+                             {
+                                 "name":  "gokapso-agent-skills",
+                                 "vcs":  "git",
+                                 "revision":  "733933a6bb4165d3c38276bef72ffd9086d495e2",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:14030ab8a37ce75a6ab697ca32cee27f0edff94e504a8a988dcbf28e288b49b9"
                              },
                              {
                                  "name":  "gsap-skills",
@@ -211,11 +406,109 @@
                                  "fingerprint":  "git:6e3a43c20e106efc6d6d7c32fa070b7c6e2cbb66fd72b24369fa31b86fa8e57c"
                              },
                              {
+                                 "name":  "hanfang-claude-memory-skill",
+                                 "vcs":  "git",
+                                 "revision":  "c290e3eea033aede1617efdb5b7ad2f58ee0b415",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:6a3839d62160bbc6da05c1c3092d64eaff8a3fbdc7eb25f9eab4d4cb84640843"
+                             },
+                             {
+                                 "name":  "helius-labs-core-ai",
+                                 "vcs":  "git",
+                                 "revision":  "990d2fc4a20648168b3b4e000e3d2f7bd990d890",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:78a84abba3f98299237d82144b9842467b090f314ad736d6d9a28620adf68de9"
+                             },
+                             {
+                                 "name":  "HeshamFS-materials-simulation-skills",
+                                 "vcs":  "git",
+                                 "revision":  "f4a4e7d3aebc0f945e9a1eb7f1f0e88357f65fd5",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:acfc9244d1ec07e094453c49f9c4a14062dcf4e3caaeda28cdd8184a348c177a"
+                             },
+                             {
+                                 "name":  "huifer-Claude-Ally-Health",
+                                 "vcs":  "git",
+                                 "revision":  "27c2603b4973980ee46a435ff3f242966d9f205e",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:de13ea8e5e788eecad22062630decb785efc01d1af6f4ea6484d884e081b8ac2"
+                             },
+                             {
                                  "name":  "humanizer",
                                  "vcs":  "git",
                                  "revision":  "12881abf6671c4ab62eceeb56f911b752f9fd6d2",
                                  "dirty":  false,
                                  "fingerprint":  "git:3f0a4ff4f47dd6b99f19bd5f2e3fb5e898b9fc45f9407388c003a5d5ed6bfa17"
+                             },
+                             {
+                                 "name":  "ibelick-ui-skills",
+                                 "vcs":  "git",
+                                 "revision":  "95d0e08524b9f287c32696760725ae32c0f59791",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:7ad1bb52a0d2c38a5ca7debd9c75b55816a429b5c2a29ca70df25e35b7c7d406"
+                             },
+                             {
+                                 "name":  "Joannis-claude-skills",
+                                 "vcs":  "git",
+                                 "revision":  "3f6a277e8af7d74d91b448618a7ded045e6fee93",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:9d83d506f0f706506580148cf818ec4710da8626e30fa34017effbb82c82d214"
+                             },
+                             {
+                                 "name":  "jthack-ffuf_claude_skill",
+                                 "vcs":  "git",
+                                 "revision":  "50fd4af4d8bd60cfc48fd84eda1720fbd718857d",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:c84fcf48fc526a51d5edc0dad60cb6912a10674737652667933f8ed6a9596438"
+                             },
+                             {
+                                 "name":  "K-Dense-AI-claude-scientific-skills",
+                                 "vcs":  "git",
+                                 "revision":  "71add644263a56368f8680d68df504c6674dc1e5",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:ed61a98bc22712e72b76917d2e8dfbeb65eab8b26a2fef842dd992a001abebfb"
+                             },
+                             {
+                                 "name":  "Kevin7Qi-codex-collab",
+                                 "vcs":  "git",
+                                 "revision":  "0f83da8a87eacdd8aa9c3097da627cac477d05be",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:3c6b345546aef92068f648e31add62256b46bed11fe9343942ce614349714f75"
+                             },
+                             {
+                                 "name":  "komal-SkyNET-claude-skill-homeassistant",
+                                 "vcs":  "git",
+                                 "revision":  "12a116957d36d7602aff2bb709ea8416c05b07d8",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:0691caac088e0b7c656d6c24a5812fc4ed2b55193b61fcef5c137c8b6d690949"
+                             },
+                             {
+                                 "name":  "kreuzberg-dev-kreuzberg",
+                                 "vcs":  "git",
+                                 "revision":  "75ffe324def3af46bb28962e118cacc5740ec0e0",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:c212f30d2aa1dd397c5670422a85985e87293b1e563bca9597ce200058e6bbe0"
+                             },
+                             {
+                                 "name":  "lackeyjb-playwright-skill",
+                                 "vcs":  "git",
+                                 "revision":  "bb7e920d376022958214e349ef25498a2644e189",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:79bf14700ad318959db1e487cdae2048eaec73f3196e5fdc72c8e1089b3b1349"
+                             },
+                             {
+                                 "name":  "lawvable-awesome-legal-skills",
+                                 "vcs":  "git",
+                                 "revision":  "3faf7161ea4dbe55bb93e86ec4aa4e2703d4746b",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:8b4961263c74ccefc86d96e91d5e26328fbbc4b9fa267b3a63c674b4d6ea0dec"
+                             },
+                             {
+                                 "name":  "Leonxlnx-taste-skill",
+                                 "vcs":  "git",
+                                 "revision":  "90d6ec745ffbde8adb798541cf752f9ee57d0a9a",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:a8d8b62534e84109f6c061c36099774f07e03ef7d16799f375a89777bc4d731f"
                              },
                              {
                                  "name":  "linear-claude-skill",
@@ -232,11 +525,67 @@
                                  "fingerprint":  "git:b9f07ec8ce75f03e63d15cc6f61ad4df392c1943a37732b439fe90fcfd0d5452"
                              },
                              {
+                                 "name":  "massimodeluisa-recursive-decomposition-skill",
+                                 "vcs":  "git",
+                                 "revision":  "1780d46a73e485cbad4d0a48c019475d8be9193e",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:7fc96a499f913aa4a9830263cf0454f82f56804530d0b98cbb3e77afd391c33f"
+                             },
+                             {
+                                 "name":  "mattpocock-skills",
+                                 "vcs":  "git",
+                                 "revision":  "eebfb3c99aa955d4928192fab5de247d36633502",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:5c4bd32ba789f0ef8f5aa0038ef09611b6a3f32a600a960f18b575e3d8010aa4"
+                             },
+                             {
+                                 "name":  "mcollina-skills",
+                                 "vcs":  "git",
+                                 "revision":  "3667450b424b9334f96fe730edec21378f2cf269",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:42ddc219f089e5d01d4060b560e92e36de0171fa24cd072cdff3acfe6604861f"
+                             },
+                             {
                                  "name":  "mcp-server-guide",
                                  "vcs":  "git",
                                  "revision":  "512f1c770037f8bb4a86748df54e219716d64414",
                                  "dirty":  false,
                                  "fingerprint":  "git:9fe1fea32a95d8024fe0792091097ceaa27633c2098b9e1e0ecc7fa7262440bc"
+                             },
+                             {
+                                 "name":  "meodai-skill.color-expert",
+                                 "vcs":  "git",
+                                 "revision":  "b9aa298a7dafcedd651cb3338a444d28aa39e924",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:dd9eaaf1594425eae4c6e38e89772e0122175e3a222676015d9f24a4787e0812"
+                             },
+                             {
+                                 "name":  "microsoft-skills",
+                                 "vcs":  "git",
+                                 "revision":  "c6a6d1a7164ea9ed28648beb8d81d94efe50007f",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:78fb91479edcfda93beff1d314809b241c759d075132c7a0255331fe6952714e"
+                             },
+                             {
+                                 "name":  "more-io-claude-apple-bridges",
+                                 "vcs":  "git",
+                                 "revision":  "327713df3e3ed50064ba4337bc64554d6aea2d4d",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:c598e630c9b454e0540e527eb0c0fcef25cfc2372f79b1d3cc1fedae9ddbb18a"
+                             },
+                             {
+                                 "name":  "mukul975-Anthropic-Cybersecurity-Skills",
+                                 "vcs":  "git",
+                                 "revision":  "8dc2a4f9c705407c180d980159a38c8cae52ee04",
+                                 "dirty":  true,
+                                 "fingerprint":  "git:daaa664cb37130a81b05e6f9adfac25710ca410bc7fa846d978f9661206ff767"
+                             },
+                             {
+                                 "name":  "muthuishere-hand-drawn-diagrams",
+                                 "vcs":  "git",
+                                 "revision":  "4fbd70b175d579d26e5cecbb89e3159ea71a7105",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:9ee9fe47106bbd42bb7ab7dac04512cdf9d4c96fb9165f0fadbe277626ac51d7"
                              },
                              {
                                  "name":  "NanoBanana-PPT-Skills",
@@ -246,6 +595,27 @@
                                  "fingerprint":  "git:c9af19c46aab3aa14acabf69edcdfb175c0dda01bcb1870ff1f71e9d82c89ed8"
                              },
                              {
+                                 "name":  "NeoLabHQ-context-engineering-kit",
+                                 "vcs":  "git",
+                                 "revision":  "d2bb7a8f1d50557aeca48da8a4371cd69d697c80",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:2fba8659f13e53f625edcb05269bbb81fab8a4dfedfbbd2882e23fe48ffb5e96"
+                             },
+                             {
+                                 "name":  "nextlevelbuilder-ui-ux-pro-max-skill",
+                                 "vcs":  "git",
+                                 "revision":  "4255c218a6762c945a782701fd38dfb24fc10064",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:14fab1945b935f0324160cd3106137050f1e2bf8d8ba286eb635fab912e15c76"
+                             },
+                             {
+                                 "name":  "NoizAI-skills",
+                                 "vcs":  "git",
+                                 "revision":  "d1e77a10d03e622fd72f951f8923b81d8f21348a",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:8603ba7c094d62ef07fe90109fb68ee09ce3ef8ed78de5c6833ca8015fe7d45b"
+                             },
+                             {
                                  "name":  "notebooklm-skill",
                                  "vcs":  "git",
                                  "revision":  "eea5cb28ba79ab8b078a1eaa44ce9ec44f75dbf8",
@@ -253,11 +623,39 @@
                                  "fingerprint":  "git:e6f2a8c1d083e860e9b2f4943f4cd24f29a594e6dff3eda059ff7127275b7e09"
                              },
                              {
+                                 "name":  "NotMyself-claude-win11-speckit-update-skill",
+                                 "vcs":  "git",
+                                 "revision":  "264d00a719dd8ab88ad396cc27ebf55dbb6e1b72",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:69b83600dd623558c337d19981ef30ff49fd2a1f36dd90ed6f4b2569f5c855d2"
+                             },
+                             {
                                  "name":  "nutrient-agent-skill",
                                  "vcs":  "git",
                                  "revision":  "4d150575a5bb852306a9b72c78a97a62557651ed",
                                  "dirty":  false,
                                  "fingerprint":  "git:bb1f16ffbcf1dc6e28aeebabb6f442c6451e20ccb1f91d2220b20d222f4c46b1"
+                             },
+                             {
+                                 "name":  "omkamal-pypict-claude-skill",
+                                 "vcs":  "git",
+                                 "revision":  "fbda212bca79dfa7611be12527b102c89cc8faeb",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:7b5e29999ff8c02b8a2c48de98273ea9f896957450dffb754d2a90e02cd607e0"
+                             },
+                             {
+                                 "name":  "Orchestra-Research-AI-research-SKILLs",
+                                 "vcs":  "git",
+                                 "revision":  "a7289540d33f78df20dc9b27808fdf096cf1b3a4",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:afa77cb289698dc74be7358e8a832263b81f7392cbd155ced29aebe0239b9286"
+                             },
+                             {
+                                 "name":  "Paramchoudhary-ResumeSkills",
+                                 "vcs":  "git",
+                                 "revision":  "921c9be0b91f10f220f92e10b36355c3c43b74c2",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:64b582a476670af74f995b98bb4f1d5923e6f8ff0be2a8701a875ec218f5b396"
                              },
                              {
                                  "name":  "pm-skills",
@@ -272,6 +670,111 @@
                                  "revision":  "2a2f27c71c562dd6b6797c8f4d224825d6005c7f",
                                  "dirty":  false,
                                  "fingerprint":  "git:777b2857eec7796c64cd7df102f3fa67b6392448ddc9d559fcd20da422deeff7"
+                             },
+                             {
+                                 "name":  "prompt-security-clawsec",
+                                 "vcs":  "git",
+                                 "revision":  "bd1710389268056f7d8ad58cdd482863f40329ce",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:4f8dda3f04348631ca7da8324c80dea9d2cef5613df8e26dab86cd74d866e9ec"
+                             },
+                             {
+                                 "name":  "raintree-technology-apple-hig-skills",
+                                 "vcs":  "git",
+                                 "revision":  "f0b1a149e21aff221f1dfb5f8a89e5f2db56eda7",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:3e604dba88f493e418590e1e67cb0694a09b04e16f54fa49df117d5d35124aaa"
+                             },
+                             {
+                                 "name":  "rameerez-claude-code-startup-skills",
+                                 "vcs":  "git",
+                                 "revision":  "410f81f83e4ac309032eab3d3265353f97ea665f",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:b3a13c360c01d0c2bf0b345bfbbf50ffa4bb247e23f4f39000ce9fd720630d05"
+                             },
+                             {
+                                 "name":  "ramzesenok-iOS-Accessibility-Audit-Skill",
+                                 "vcs":  "git",
+                                 "revision":  "8214fbf61e3ab6ff71e880061bfb5ee581414fac",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:6195daab722d276bfca69bcf0545a647dd1dd99f17ce9dc2b0366afac943ff93"
+                             },
+                             {
+                                 "name":  "ReScienceLab-opc-skills",
+                                 "vcs":  "git",
+                                 "revision":  "87c96800c0affdcabf6174814951e40ac3954cac",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:aa6ee7305c7768338abb0e67bee996fd80a2a943d0c6494a6d861951dea0923e"
+                             },
+                             {
+                                 "name":  "robzolkos-skill-rails-upgrade",
+                                 "vcs":  "git",
+                                 "revision":  "d9a3432b19efa898692c4cff16e4c74b700dcf93",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:c20a831510ffd0ffe729ccce2d8d6a67641fe5fec72f6dcc8751b05f1eee23f9"
+                             },
+                             {
+                                 "name":  "Rootly-AI-Labs-Rootly-MCP-server",
+                                 "vcs":  "git",
+                                 "revision":  "64798572e05dbe176a428895e3e4d6826dcf3d78",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:1eea8f6f419b3036e503536f9e8b6d7d9bd930a5764b75628df8259b8111b4d2"
+                             },
+                             {
+                                 "name":  "RoundTable02-tutor-skills",
+                                 "vcs":  "git",
+                                 "revision":  "397110c9fefbc6bd5444277686600aec28063c05",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:e05770763f4ccbe6f7848ef2f474767cd38ccb7b59237e589c579f784e0bb25d"
+                             },
+                             {
+                                 "name":  "rudrankriyam-app-store-connect-cli-skills",
+                                 "vcs":  "git",
+                                 "revision":  "6b318827a7dc3b1b3194f2ae1e4f51cfb61d75fb",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:bf8794f8683f72743c9568ec826ba98058d4d7170cb0d3752927e0f0424d26cb"
+                             },
+                             {
+                                 "name":  "sanjay3290-ai-skills",
+                                 "vcs":  "git",
+                                 "revision":  "e4c0b94ad5c1e4489ce5c68a806b4512ae7e5d8b",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:58ed389b9b7902ffd3d77f03a7f49fccd4f45e5e3508c675c2fcdaa3ff64ef4b"
+                             },
+                             {
+                                 "name":  "scarletkc-vexor",
+                                 "vcs":  "git",
+                                 "revision":  "8e57d3397b39a457d183a95923ec723421a41319",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:17deaaf8f206eaafd24185c3bdf69e000cdd1807473d9e026150ed6e00a8bcbc"
+                             },
+                             {
+                                 "name":  "SeanZoR-claude-speed-reader",
+                                 "vcs":  "git",
+                                 "revision":  "9e8be8b7a480668d8b237be3a0428deddcab7302",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:b7eab31c65631101d5ce10c3e2a9dfbd6967d7430b4a98f7d550995ba910fdfd"
+                             },
+                             {
+                                 "name":  "SHADOWPR0-security-bluebook-builder",
+                                 "vcs":  "git",
+                                 "revision":  "bbf77219c997f3b9ab19ee434e81d36f7ebb1953",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:27ea4a0cb8de5f39690ee645cc2eec38b734ddf4d828d6a0cefd7f71d8ee86b9"
+                             },
+                             {
+                                 "name":  "Shpigford-skills",
+                                 "vcs":  "git",
+                                 "revision":  "fce75e7cdf44451cf18ce153ed55cf5ed634f6dc",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:71c9ef16f9b06d983c99b53aa6df01139dc1a7058bd8ff6bec388bdf66dbc3b7"
+                             },
+                             {
+                                 "name":  "ShunsukeHayashi-agent-skill-bus",
+                                 "vcs":  "git",
+                                 "revision":  "e4fefb5d97ffa3e0154a2982d162044e4f804a26",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:16ca8d0747170a9561d4d613543abceea22e01e75c6aec934167d37a56277451"
                              },
                              {
                                  "name":  "skills",
@@ -302,6 +805,20 @@
                                  "fingerprint":  "git:2316a15606570432b9b840891dbd42df8ba019ec1e0110b2c6555cb5a1670457"
                              },
                              {
+                                 "name":  "takechanman1228-claude-ecom",
+                                 "vcs":  "git",
+                                 "revision":  "a4b12b9153098a030ae772fdb7bc3ff96ef7cc90",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:813879f2e73ba9032c909198ae216da346bee854ebf9b0b5a654bb108de54b7b"
+                             },
+                             {
+                                 "name":  "testdino-hq-playwright-skill",
+                                 "vcs":  "git",
+                                 "revision":  "11003e2b63ab7960087bc53aed1f5d49bee2c18a",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:7c2d4f6bf35483f51eb92cca6d16290d7bbfaeb5ea90e95d41245b889f6ac053"
+                             },
+                             {
                                  "name":  "tinybird-agent-skills",
                                  "vcs":  "git",
                                  "revision":  "a33c7fbc1a4684f2732267c12a106ee8ad853d53",
@@ -309,11 +826,46 @@
                                  "fingerprint":  "git:d44a29af1fbf6cdc4b383620ae36be705af89161671b375aa2d51911ca7bd74b"
                              },
                              {
+                                 "name":  "truongduy2611-app-store-preflight-skills",
+                                 "vcs":  "git",
+                                 "revision":  "f41a155e9363c921f5c6e9493e8a0507f8c8d2e9",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:a42247c0f3f7c3939253de1c3a28abc7a716afbc9aeb375432591b9a994d1448"
+                             },
+                             {
                                  "name":  "tweetclaw",
                                  "vcs":  "git",
                                  "revision":  "51d67d6920d018ea2fd026c8a5c4cae5f243be49",
                                  "dirty":  false,
                                  "fingerprint":  "git:43dc8be083e659afb8b17847d28dda48de83379ae0b624483ca8aa22c69af317"
+                             },
+                             {
+                                 "name":  "uucz-moyu",
+                                 "vcs":  "git",
+                                 "revision":  "dd562a9aac0637272e41d209de0ed567c3464a84",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:a93430013b23e469ac16d3eebecef0b285a4b56fe367e0ae59a2d9ee1015ad6e"
+                             },
+                             {
+                                 "name":  "video-db-skills",
+                                 "vcs":  "git",
+                                 "revision":  "b84947462566b3ab2dfcc5bd38dff39b3960ad22",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:475a83ccdc76208d842c4e84ea647fe76f3a6145dd3058c41db09d74a6825efd"
+                             },
+                             {
+                                 "name":  "wanshuiyin-Auto-claude-code-research-in-sleep",
+                                 "vcs":  "git",
+                                 "revision":  "5f3df55dd14987e1e678965926ea8a64f4b0c137",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:afcc22b984cfc2ed10c188df6fb63d911125b97e2d99cf45a79a377888d2255a"
+                             },
+                             {
+                                 "name":  "wrsmith108-varlock-claude-skill",
+                                 "vcs":  "git",
+                                 "revision":  "348a435345b7ddafb4d1002d41d9e2ef3f5b6992",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:801ea98352fa2c007a31c05950784b694f462f4c6eb13af94ffc1e57f2de1506"
                              },
                              {
                                  "name":  "x-article-publisher-skill",
@@ -328,6 +880,48 @@
                                  "revision":  "f31f077ee0905c95a510a6f34bbd0c3c85b15129",
                                  "dirty":  false,
                                  "fingerprint":  "git:a3a0a8c5efc2785bccb98c01537910d3b5ff18b3f6f81fe19fda4cba7237e211"
+                             },
+                             {
+                                 "name":  "yusufkaraaslan-Skill_Seekers",
+                                 "vcs":  "git",
+                                 "revision":  "d381315340bbdb3c53fb174da799a2cc4e8d9d4b",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:eb9f321eae21170938c70436698440a26a3767a979ed78b5bf51ac3b3fdf7ff3"
+                             },
+                             {
+                                 "name":  "zechenzhangAGI-AI-research-SKILLs",
+                                 "vcs":  "git",
+                                 "revision":  "a7289540d33f78df20dc9b27808fdf096cf1b3a4",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:afa77cb289698dc74be7358e8a832263b81f7392cbd155ced29aebe0239b9286"
+                             },
+                             {
+                                 "name":  "ZhangHanDong-makepad-skills",
+                                 "vcs":  "git",
+                                 "revision":  "187342353fd983ac24dc789645739f0e8d0766c6",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:18f6ee1dd9c11a637eaec4b1ad2156791fe9b0c396f52fe814a25efee07dae4f"
+                             },
+                             {
+                                 "name":  "zscole-model-hierarchy-skill",
+                                 "vcs":  "git",
+                                 "revision":  "9095f8303847a60de9f564659e561f3f6fd0cdc4",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:bf8e8b3a2dd1dc6680174ad8726b96c17d942fcc69ee8b7b13af346f9540032f"
+                             },
+                             {
+                                 "name":  "zw008-VMware-AIops",
+                                 "vcs":  "git",
+                                 "revision":  "217972034f0e4313896eb2af0612d29e516108b0",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:836d92823e459b44aded5e9651a845cb97b1be73987f695d0169f69c5fb8927b"
+                             },
+                             {
+                                 "name":  "zxkane-aws-skills",
+                                 "vcs":  "git",
+                                 "revision":  "fea945516453eb9f1eaf977c244610f456b871e7",
+                                 "dirty":  false,
+                                 "fingerprint":  "git:e1438e0f51617f803b6e40571329c5e2e4ff31929dfe06ff018acf9fbdcb983c"
                              }
                          ]
 }

@@ -1,5 +1,33 @@
 [
     {
+        "id":  "analyzing-android-malware-with-apktool",
+        "triggers":  [
+                         "analyzing",
+                         "android",
+                         "malware",
+                         "with",
+                         "apktool"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "analyzing-ios-app-security-with-objection",
+        "triggers":  [
+                         "analyzing",
+                         "ios",
+                         "app",
+                         "security",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "android-aso",
         "triggers":  [
                          "android",
@@ -22,6 +50,17 @@
         "primary_hub":  "mobile/cross-platform",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "android-kotlin",
+        "triggers":  [
+                         "android",
+                         "kotlin"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  11
     },
     {
         "id":  "app-clips",
@@ -59,6 +98,80 @@
         "match_score":  9
     },
     {
+        "id":  "app-store-preflight-skills",
+        "triggers":  [
+                         "app",
+                         "store",
+                         "preflight",
+                         "skills"
+                     ],
+        "src":  "external:truongduy2611-app-store-preflight-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "asc-notarization",
+        "triggers":  [
+                         "asc",
+                         "notarization"
+                     ],
+        "src":  "external:rudrankriyam-app-store-connect-cli-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "asc-screenshot-resize",
+        "triggers":  [
+                         "asc",
+                         "screenshot",
+                         "resize"
+                     ],
+        "src":  "external:rudrankriyam-app-store-connect-cli-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "asc-wall-submit",
+        "triggers":  [
+                         "asc",
+                         "wall",
+                         "submit"
+                     ],
+        "src":  "external:rudrankriyam-app-store-connect-cli-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "asc-xcode-build",
+        "triggers":  [
+                         "asc",
+                         "xcode",
+                         "build"
+                     ],
+        "src":  "external:rudrankriyam-app-store-connect-cli-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "conducting-mobile-app-penetration-test",
+        "triggers":  [
+                         "conducting",
+                         "mobile",
+                         "app",
+                         "penetration",
+                         "test"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
         "id":  "crash-analytics",
         "triggers":  [
                          "crash",
@@ -68,6 +181,45 @@
         "primary_hub":  "mobile/cross-platform",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "database-driver-design",
+        "triggers":  [
+                         "database",
+                         "driver",
+                         "design"
+                     ],
+        "src":  "external:Joannis-claude-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "detecting-aws-credential-exposure-with-trufflehog",
+        "triggers":  [
+                         "detecting",
+                         "aws",
+                         "credential",
+                         "exposure",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "detecting-mobile-malware-behavior",
+        "triggers":  [
+                         "detecting",
+                         "mobile",
+                         "malware",
+                         "behavior"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "development",
@@ -89,6 +241,34 @@
         "primary_hub":  "mobile/cross-platform",
         "is_primary":  true,
         "match_score":  11
+    },
+    {
+        "id":  "exploiting-excessive-data-exposure-in-api",
+        "triggers":  [
+                         "exploiting",
+                         "excessive",
+                         "data",
+                         "exposure",
+                         "in"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "exploiting-insecure-data-storage-in-mobile",
+        "triggers":  [
+                         "exploiting",
+                         "insecure",
+                         "data",
+                         "storage",
+                         "in"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "expo-api-routes",
@@ -176,6 +356,57 @@
         "match_score":  7
     },
     {
+        "id":  "hummingbird",
+        "triggers":  [
+                         "hummingbird"
+                     ],
+        "src":  "external:Joannis-claude-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-attack-path-analysis-with-xm-cyber",
+        "triggers":  [
+                         "implementing",
+                         "attack",
+                         "path",
+                         "analysis",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "implementing-mobile-application-management",
+        "triggers":  [
+                         "implementing",
+                         "mobile",
+                         "application",
+                         "management"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "intercepting-mobile-traffic-with-burpsuite",
+        "triggers":  [
+                         "intercepting",
+                         "mobile",
+                         "traffic",
+                         "with",
+                         "burpsuite"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "ios-developer",
         "triggers":  [
                          "ios",
@@ -197,6 +428,17 @@
         "primary_hub":  "mobile/cross-platform",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "logo-creator",
+        "triggers":  [
+                         "logo",
+                         "creator"
+                     ],
+        "src":  "external:ReScienceLab-opc-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "macos-menubar-tuist-app",
@@ -259,6 +501,125 @@
         "match_score":  100
     },
     {
+        "id":  "neurokit2",
+        "triggers":  [
+                         "neurokit2"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "performing-android-app-static-analysis-with-mobsf",
+        "triggers":  [
+                         "performing",
+                         "android",
+                         "app",
+                         "static",
+                         "analysis"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-brand-monitoring-for-impersonation",
+        "triggers":  [
+                         "performing",
+                         "brand",
+                         "monitoring",
+                         "for",
+                         "impersonation"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-dynamic-analysis-of-android-app",
+        "triggers":  [
+                         "performing",
+                         "dynamic",
+                         "analysis",
+                         "of",
+                         "android"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-ios-app-security-assessment",
+        "triggers":  [
+                         "performing",
+                         "ios",
+                         "app",
+                         "security",
+                         "assessment"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-mobile-app-certificate-pinning-bypass",
+        "triggers":  [
+                         "performing",
+                         "mobile",
+                         "app",
+                         "certificate",
+                         "pinning"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "performing-mobile-device-forensics-with-cellebrite",
+        "triggers":  [
+                         "performing",
+                         "mobile",
+                         "device",
+                         "forensics",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "performing-threat-intelligence-sharing-with-misp",
+        "triggers":  [
+                         "performing",
+                         "threat",
+                         "intelligence",
+                         "sharing",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "react-native",
+        "triggers":  [
+                         "react",
+                         "native"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
         "id":  "react-native-architecture",
         "triggers":  [
                          "react",
@@ -271,6 +632,20 @@
         "match_score":  9
     },
     {
+        "id":  "reverse-engineering-ios-app-with-frida",
+        "triggers":  [
+                         "reverse",
+                         "engineering",
+                         "ios",
+                         "app",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "swift-concurrency-expert",
         "triggers":  [
                          "swift",
@@ -278,6 +653,17 @@
                          "expert"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "swift-nio",
+        "triggers":  [
+                         "swift",
+                         "nio"
+                     ],
+        "src":  "external:Joannis-claude-skills",
         "primary_hub":  "mobile/cross-platform",
         "is_primary":  true,
         "match_score":  7
@@ -295,6 +681,40 @@
         "match_score":  9
     },
     {
+        "id":  "swift-valkey",
+        "triggers":  [
+                         "swift",
+                         "valkey"
+                     ],
+        "src":  "external:Joannis-claude-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "ui-mobile",
+        "triggers":  [
+                         "ui",
+                         "mobile"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
+        "id":  "update-swiftui-apis",
+        "triggers":  [
+                         "update",
+                         "swiftui",
+                         "apis"
+                     ],
+        "src":  "external:AvdLee-SwiftUI-Agent-Skill",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
         "id":  "upgrading-expo",
         "triggers":  [
                          "upgrading",
@@ -306,6 +726,17 @@
         "match_score":  7
     },
     {
+        "id":  "voice-checker",
+        "triggers":  [
+                         "voice",
+                         "checker"
+                     ],
+        "src":  "external:bitwize-music-studio-claude-ai-music-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "web-scraper",
         "triggers":  [
                          "web",
@@ -315,5 +746,37 @@
         "primary_hub":  "mobile/cross-platform",
         "is_primary":  true,
         "match_score":  5
+    },
+    {
+        "id":  "wendy",
+        "triggers":  [
+                         "wendy"
+                     ],
+        "src":  "external:Joannis-claude-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "wendy-lite",
+        "triggers":  [
+                         "wendy",
+                         "lite"
+                     ],
+        "src":  "external:Joannis-claude-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "wendy-swift",
+        "triggers":  [
+                         "wendy",
+                         "swift"
+                     ],
+        "src":  "external:Joannis-claude-skills",
+        "primary_hub":  "mobile/cross-platform",
+        "is_primary":  true,
+        "match_score":  7
     }
 ]

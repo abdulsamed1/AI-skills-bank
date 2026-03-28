@@ -1,5 +1,19 @@
 [
     {
+        "id":  "analyzing-email-headers-for-phishing-investigation",
+        "triggers":  [
+                         "analyzing",
+                         "email",
+                         "headers",
+                         "for",
+                         "phishing"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
         "id":  "churn-prevention",
         "triggers":  [
                          "churn",
@@ -17,6 +31,74 @@
                          "email"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "detecting-business-email-compromise",
+        "triggers":  [
+                         "detecting",
+                         "business",
+                         "email",
+                         "compromise"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "detecting-business-email-compromise-with-ai",
+        "triggers":  [
+                         "detecting",
+                         "business",
+                         "email",
+                         "compromise",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "detecting-email-account-compromise",
+        "triggers":  [
+                         "detecting",
+                         "email",
+                         "account",
+                         "compromise"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "detecting-email-forwarding-rules-attack",
+        "triggers":  [
+                         "detecting",
+                         "email",
+                         "forwarding",
+                         "rules",
+                         "attack"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "detecting-qr-code-phishing-with-email-security",
+        "triggers":  [
+                         "detecting",
+                         "qr",
+                         "code",
+                         "phishing",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
         "primary_hub":  "marketing/email",
         "is_primary":  true,
         "match_score":  6
@@ -62,6 +144,29 @@
                          "comms"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "investigating-phishing-email-incident",
+        "triggers":  [
+                         "investigating",
+                         "phishing",
+                         "email",
+                         "incident"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "klaviyo",
+        "triggers":  [
+                         "klaviyo"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
         "primary_hub":  "marketing/email",
         "is_primary":  true,
         "match_score":  5

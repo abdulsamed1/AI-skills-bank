@@ -34,6 +34,17 @@
         "match_score":  100
     },
     {
+        "id":  "citation-management",
+        "triggers":  [
+                         "citation",
+                         "management"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "ai/skills-factory",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "documentation-generation-doc-generate",
         "triggers":  [
                          "documentation",
@@ -51,7 +62,7 @@
         "triggers":  [
                          "docx"
                      ],
-        "src":  "external:skills",
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
         "primary_hub":  "ai/skills-factory",
         "is_primary":  true,
         "match_score":  5
@@ -213,6 +224,17 @@
         "primary_hub":  "ai/skills-factory",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "template-skill",
+        "triggers":  [
+                         "template",
+                         "skill"
+                     ],
+        "src":  "external:NoizAI-skills",
+        "primary_hub":  "ai/skills-factory",
+        "is_primary":  true,
+        "match_score":  11
     },
     {
         "id":  "verification-before-completion",

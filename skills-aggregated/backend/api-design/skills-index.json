@@ -10,6 +10,55 @@
         "match_score":  6
     },
     {
+        "id":  "album-conceptualizer",
+        "triggers":  [
+                         "album",
+                         "conceptualizer"
+                     ],
+        "src":  "external:bitwize-music-studio-claude-ai-music-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "alpha-vantage",
+        "triggers":  [
+                         "alpha",
+                         "vantage"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "analyzing-api-gateway-access-logs",
+        "triggers":  [
+                         "analyzing",
+                         "api",
+                         "gateway",
+                         "access",
+                         "logs"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "analyzing-ransomware-payment-wallets",
+        "triggers":  [
+                         "analyzing",
+                         "ransomware",
+                         "payment",
+                         "wallets"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
         "id":  "api-design-principles",
         "triggers":  [
                          "api",
@@ -136,6 +185,18 @@
         "match_score":  100
     },
     {
+        "id":  "asc-cli-usage",
+        "triggers":  [
+                         "asc",
+                         "cli",
+                         "usage"
+                     ],
+        "src":  "external:rudrankriyam-app-store-connect-cli-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
         "id":  "aws-secrets-rotation",
         "triggers":  [
                          "aws",
@@ -143,6 +204,32 @@
                          "rotation"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-serverless-eda",
+        "triggers":  [
+                         "aws",
+                         "serverless",
+                         "eda"
+                     ],
+        "src":  "external:zxkane-aws-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "azure-ai-document-intelligence-ts",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "document",
+                         "intelligence",
+                         "ts"
+                     ],
+        "src":  "external:microsoft-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -274,6 +361,17 @@
         "match_score":  4
     },
     {
+        "id":  "codex-collab",
+        "triggers":  [
+                         "codex",
+                         "collab"
+                     ],
+        "src":  "external:Kevin7Qi-codex-collab",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
         "id":  "codex-review",
         "triggers":  [
                          "codex",
@@ -318,6 +416,16 @@
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  6
+    },
+    {
+        "id":  "credentials",
+        "triggers":  [
+                         "credentials"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "creem",
@@ -377,6 +485,32 @@
         "match_score":  4
     },
     {
+        "id":  "detecting-api-enumeration-attacks",
+        "triggers":  [
+                         "detecting",
+                         "api",
+                         "enumeration",
+                         "attacks"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "detecting-shadow-api-endpoints",
+        "triggers":  [
+                         "detecting",
+                         "shadow",
+                         "api",
+                         "endpoints"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
         "id":  "distributed-tracing",
         "triggers":  [
                          "distributed",
@@ -400,6 +534,17 @@
         "match_score":  6
     },
     {
+        "id":  "dse-loop",
+        "triggers":  [
+                         "dse",
+                         "loop"
+                     ],
+        "src":  "external:wanshuiyin-Auto-claude-code-research-in-sleep",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
         "id":  "event-sourcing-architect",
         "triggers":  [
                          "event",
@@ -418,6 +563,67 @@
                          "search"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "exploiting-api-injection-vulnerabilities",
+        "triggers":  [
+                         "exploiting",
+                         "api",
+                         "injection",
+                         "vulnerabilities"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "exploiting-idor-vulnerabilities",
+        "triggers":  [
+                         "exploiting",
+                         "idor",
+                         "vulnerabilities"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "exploiting-mass-assignment-in-rest-apis",
+        "triggers":  [
+                         "exploiting",
+                         "mass",
+                         "assignment",
+                         "in",
+                         "rest"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "fda-database",
+        "triggers":  [
+                         "fda",
+                         "database"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "feishu-notify",
+        "triggers":  [
+                         "feishu",
+                         "notify"
+                     ],
+        "src":  "external:wanshuiyin-Auto-claude-code-research-in-sleep",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -468,6 +674,18 @@
         "match_score":  4
     },
     {
+        "id":  "fred-economic-data",
+        "triggers":  [
+                         "fred",
+                         "economic",
+                         "data"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
         "id":  "gemini-api-dev",
         "triggers":  [
                          "gemini",
@@ -501,6 +719,203 @@
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "helius-phantom",
+        "triggers":  [
+                         "helius",
+                         "phantom"
+                     ],
+        "src":  "external:helius-labs-core-ai",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "hunting-for-dns-based-persistence",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "dns",
+                         "based",
+                         "persistence"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "implementing-aes-encryption-for-data-at-rest",
+        "triggers":  [
+                         "implementing",
+                         "aes",
+                         "encryption",
+                         "for",
+                         "data"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-api-abuse-detection-with-rate-limiting",
+        "triggers":  [
+                         "implementing",
+                         "api",
+                         "abuse",
+                         "detection",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-api-rate-limiting-and-throttling",
+        "triggers":  [
+                         "implementing",
+                         "api",
+                         "rate",
+                         "limiting",
+                         "and"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-api-schema-validation-security",
+        "triggers":  [
+                         "implementing",
+                         "api",
+                         "schema",
+                         "validation",
+                         "security"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "implementing-deception-based-detection-with-canarytoken",
+        "triggers":  [
+                         "implementing",
+                         "deception",
+                         "based",
+                         "detection",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-endpoint-detection-with-wazuh",
+        "triggers":  [
+                         "implementing",
+                         "endpoint",
+                         "detection",
+                         "with",
+                         "wazuh"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "implementing-just-in-time-access-provisioning",
+        "triggers":  [
+                         "implementing",
+                         "just",
+                         "in",
+                         "time",
+                         "access"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-privileged-access-management-with-cyberark",
+        "triggers":  [
+                         "implementing",
+                         "privileged",
+                         "access",
+                         "management",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-soar-playbook-for-phishing",
+        "triggers":  [
+                         "implementing",
+                         "soar",
+                         "playbook",
+                         "for",
+                         "phishing"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "improve-codebase-architecture",
+        "triggers":  [
+                         "improve",
+                         "codebase",
+                         "architecture"
+                     ],
+        "src":  "external:mattpocock-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "kegg-database",
+        "triggers":  [
+                         "kegg",
+                         "database"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "manus-agent",
+        "triggers":  [
+                         "manus",
+                         "agent"
+                     ],
+        "src":  "external:ShunsukeHayashi-agent-skill-bus",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "metabolomics-workbench-database",
+        "triggers":  [
+                         "metabolomics",
+                         "workbench",
+                         "database"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  8
     },
     {
         "id":  "microservices-patterns",
@@ -575,6 +990,18 @@
         "match_score":  4
     },
     {
+        "id":  "nnsight-remote-interpretability",
+        "triggers":  [
+                         "nnsight",
+                         "remote",
+                         "interpretability"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
         "id":  "nodejs-backend-patterns",
         "triggers":  [
                          "nodejs",
@@ -597,6 +1024,17 @@
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
+    },
+    {
+        "id":  "observe-whatsapp",
+        "triggers":  [
+                         "observe",
+                         "whatsapp"
+                     ],
+        "src":  "external:gokapso-agent-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  8
     },
     {
         "id":  "odoo-docker-deployment",
@@ -756,12 +1194,159 @@
         "match_score":  100
     },
     {
+        "id":  "paper-illustration",
+        "triggers":  [
+                         "paper",
+                         "illustration"
+                     ],
+        "src":  "external:wanshuiyin-Auto-claude-code-research-in-sleep",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "parallel-web",
+        "triggers":  [
+                         "parallel",
+                         "web"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "performing-api-fuzzing-with-restler",
+        "triggers":  [
+                         "performing",
+                         "api",
+                         "fuzzing",
+                         "with",
+                         "restler"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "performing-api-inventory-and-discovery",
+        "triggers":  [
+                         "performing",
+                         "api",
+                         "inventory",
+                         "and",
+                         "discovery"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "performing-api-rate-limiting-bypass",
+        "triggers":  [
+                         "performing",
+                         "api",
+                         "rate",
+                         "limiting",
+                         "bypass"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "performing-graphql-introspection-attack",
+        "triggers":  [
+                         "performing",
+                         "graphql",
+                         "introspection",
+                         "attack"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "performing-ip-reputation-analysis-with-shodan",
+        "triggers":  [
+                         "performing",
+                         "ip",
+                         "reputation",
+                         "analysis",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "performing-osint-with-spiderfoot",
+        "triggers":  [
+                         "performing",
+                         "osint",
+                         "with",
+                         "spiderfoot"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "phantom",
+        "triggers":  [
+                         "phantom"
+                     ],
+        "src":  "external:helius-labs-core-ai",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "plugin-architecture-patterns",
+        "triggers":  [
+                         "plugin",
+                         "architecture",
+                         "patterns"
+                     ],
+        "src":  "external:kreuzberg-dev-kreuzberg",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "producthunt",
+        "triggers":  [
+                         "producthunt"
+                     ],
+        "src":  "external:ReScienceLab-opc-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
         "id":  "projection-patterns",
         "triggers":  [
                          "projection",
                          "patterns"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "pubchem-database",
+        "triggers":  [
+                         "pubchem",
+                         "database"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  8
@@ -778,12 +1363,44 @@
         "match_score":  8
     },
     {
+        "id":  "rails-conventions",
+        "triggers":  [
+                         "rails",
+                         "conventions"
+                     ],
+        "src":  "external:ethos-link-rails-conventions",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  14
+    },
+    {
+        "id":  "reddit",
+        "triggers":  [
+                         "reddit"
+                     ],
+        "src":  "external:ReScienceLab-opc-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
         "id":  "reference-builder",
         "triggers":  [
                          "reference",
                          "builder"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "research-lookup",
+        "triggers":  [
+                         "research",
+                         "lookup"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -801,6 +1418,31 @@
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "securing-api-gateway-with-aws-waf",
+        "triggers":  [
+                         "securing",
+                         "api",
+                         "gateway",
+                         "with",
+                         "aws"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "shopify-apps",
+        "triggers":  [
+                         "shopify",
+                         "apps"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "shopify-development",
@@ -837,6 +1479,39 @@
         "match_score":  6
     },
     {
+        "id":  "svm",
+        "triggers":  [
+                         "svm"
+                     ],
+        "src":  "external:helius-labs-core-ai",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "swift-concurrency",
+        "triggers":  [
+                         "swift",
+                         "concurrency"
+                     ],
+        "src":  "external:Joannis-claude-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "swift-library-design",
+        "triggers":  [
+                         "swift",
+                         "library",
+                         "design"
+                     ],
+        "src":  "external:Joannis-claude-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
         "id":  "tavily-web",
         "triggers":  [
                          "tavily",
@@ -848,12 +1523,37 @@
         "match_score":  4
     },
     {
+        "id":  "testing-api-security-with-owasp-top-10",
+        "triggers":  [
+                         "testing",
+                         "api",
+                         "security",
+                         "with",
+                         "owasp"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
         "id":  "turborepo-caching",
         "triggers":  [
                          "turborepo",
                          "caching"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "ubiquitous-language",
+        "triggers":  [
+                         "ubiquitous",
+                         "language"
+                     ],
+        "src":  "external:mattpocock-skills",
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
@@ -871,6 +1571,16 @@
         "match_score":  10
     },
     {
+        "id":  "usfiscaldata",
+        "triggers":  [
+                         "usfiscaldata"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
         "id":  "vertex-ai-api-dev",
         "triggers":  [
                          "vertex",
@@ -882,6 +1592,27 @@
         "primary_hub":  "backend/api-design",
         "is_primary":  true,
         "match_score":  4
+    },
+    {
+        "id":  "web-payments",
+        "triggers":  [
+                         "web",
+                         "payments"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "woocommerce",
+        "triggers":  [
+                         "woocommerce"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "backend/api-design",
+        "is_primary":  true,
+        "match_score":  10
     },
     {
         "id":  "wordpress-plugin-development",

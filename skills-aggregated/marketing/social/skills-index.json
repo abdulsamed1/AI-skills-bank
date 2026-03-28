@@ -60,6 +60,27 @@
         "match_score":  9
     },
     {
+        "id":  "ckm:design",
+        "triggers":  [
+                         "ckm:design"
+                     ],
+        "src":  "external:nextlevelbuilder-ui-ux-pro-max-skill",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  21
+    },
+    {
+        "id":  "download-video",
+        "triggers":  [
+                         "download",
+                         "video"
+                     ],
+        "src":  "external:rameerez-claude-code-startup-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
         "id":  "instagram",
         "triggers":  [
                          "instagram"
@@ -80,6 +101,16 @@
         "primary_hub":  "marketing/social",
         "is_primary":  true,
         "match_score":  9
+    },
+    {
+        "id":  "LinkedIn Profile Optimizer",
+        "triggers":  [
+                         "LinkedIn Profile Optimizer"
+                     ],
+        "src":  "external:Paramchoudhary-ResumeSkills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "linkedin-authority-builder",

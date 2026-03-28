@@ -81,6 +81,28 @@
         "match_score":  15
     },
     {
+        "id":  "flowio",
+        "triggers":  [
+                         "flowio"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "get-available-resources",
+        "triggers":  [
+                         "get",
+                         "available",
+                         "resources"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "hubspot-integration",
         "triggers":  [
                          "hubspot",
@@ -90,6 +112,20 @@
         "primary_hub":  "business/saas",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "implementing-zero-trust-for-saas-applications",
+        "triggers":  [
+                         "implementing",
+                         "zero",
+                         "trust",
+                         "for",
+                         "saas"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  12
     },
     {
         "id":  "logistics-exception-management",
@@ -102,6 +138,18 @@
         "primary_hub":  "business/saas",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "market-research-reports",
+        "triggers":  [
+                         "market",
+                         "research",
+                         "reports"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  9
     },
     {
         "id":  "market-sizing",
@@ -230,6 +278,17 @@
         "primary_hub":  "business/saas",
         "is_primary":  true,
         "match_score":  11
+    },
+    {
+        "id":  "research-grants",
+        "triggers":  [
+                         "research",
+                         "grants"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "returns-reverse-logistics",
@@ -397,5 +456,36 @@
         "primary_hub":  "business/saas",
         "is_primary":  true,
         "match_score":  9
+    },
+    {
+        "id":  "timesfm-forecasting",
+        "triggers":  [
+                         "timesfm",
+                         "forecasting"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "tts",
+        "triggers":  [
+                         "tts"
+                     ],
+        "src":  "external:NoizAI-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "vaex",
+        "triggers":  [
+                         "vaex"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "business/saas",
+        "is_primary":  true,
+        "match_score":  5
     }
 ]

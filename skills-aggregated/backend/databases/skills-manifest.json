@@ -3,12 +3,12 @@
     "main_hub":  "backend",
     "sub_hub":  "databases",
     "description":  "Database expertise: SQL, NoSQL, schema design, and query optimization",
-    "skill_count":  46,
-    "src_count":  6,
+    "skill_count":  80,
+    "src_count":  14,
     "top_triggers":  [
                          null
                      ],
-    "generated_at":  "2026-03-28T01:39:23+02:00",
+    "generated_at":  "2026-03-28T17:09:45+02:00",
     "files":  {
                   "skill":  "SKILL.md",
                   "index":  "skills-index.json",

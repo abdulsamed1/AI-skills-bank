@@ -1,5 +1,44 @@
 [
     {
+        "id":  "analyzing-docker-container-forensics",
+        "triggers":  [
+                         "analyzing",
+                         "docker",
+                         "container",
+                         "forensics"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "analyzing-kubernetes-audit-logs",
+        "triggers":  [
+                         "analyzing",
+                         "kubernetes",
+                         "audit",
+                         "logs"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "auditing-kubernetes-cluster-rbac",
+        "triggers":  [
+                         "auditing",
+                         "kubernetes",
+                         "cluster",
+                         "rbac"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
         "id":  "c4-container",
         "triggers":  [
                          "c4",
@@ -32,6 +71,104 @@
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  8
+    },
+    {
+        "id":  "implementing-container-network-policies-with-calico",
+        "triggers":  [
+                         "implementing",
+                         "container",
+                         "network",
+                         "policies",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "implementing-image-provenance-verification-with-cosign",
+        "triggers":  [
+                         "implementing",
+                         "image",
+                         "provenance",
+                         "verification",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "implementing-kubernetes-pod-security-standards",
+        "triggers":  [
+                         "implementing",
+                         "kubernetes",
+                         "pod",
+                         "security",
+                         "standards"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-network-policies-for-kubernetes",
+        "triggers":  [
+                         "implementing",
+                         "network",
+                         "policies",
+                         "for",
+                         "kubernetes"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-opa-gatekeeper-for-policy-enforcement",
+        "triggers":  [
+                         "implementing",
+                         "opa",
+                         "gatekeeper",
+                         "for",
+                         "policy"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-pod-security-admission-controller",
+        "triggers":  [
+                         "implementing",
+                         "pod",
+                         "security",
+                         "admission",
+                         "controller"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-rbac-hardening-for-kubernetes",
+        "triggers":  [
+                         "implementing",
+                         "rbac",
+                         "hardening",
+                         "for",
+                         "kubernetes"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "istio-traffic-management",
@@ -101,6 +238,71 @@
         "primary_hub":  "devops/docker-k8s",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "nemo-evaluator-sdk",
+        "triggers":  [
+                         "nemo",
+                         "evaluator",
+                         "sdk"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "performing-container-escape-detection",
+        "triggers":  [
+                         "performing",
+                         "container",
+                         "escape",
+                         "detection"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "performing-container-image-hardening",
+        "triggers":  [
+                         "performing",
+                         "container",
+                         "image",
+                         "hardening"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "scanning-container-images-with-grype",
+        "triggers":  [
+                         "scanning",
+                         "container",
+                         "images",
+                         "with",
+                         "grype"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "securing-container-registry-images",
+        "triggers":  [
+                         "securing",
+                         "container",
+                         "registry",
+                         "images"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/docker-k8s",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "service-mesh-expert",

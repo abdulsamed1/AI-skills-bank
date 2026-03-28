@@ -26,6 +26,20 @@
         "match_score":  7
     },
     {
+        "id":  "analyzing-windows-prefetch-with-python",
+        "triggers":  [
+                         "analyzing",
+                         "windows",
+                         "prefetch",
+                         "with",
+                         "python"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
         "id":  "astropy",
         "triggers":  [
                          "astropy"
@@ -74,6 +88,20 @@
         "match_score":  11
     },
     {
+        "id":  "azure-ai-language-conversations-py",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "language",
+                         "conversations",
+                         "py"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
         "id":  "azure-ai-ml-py",
         "triggers":  [
                          "azure",
@@ -98,6 +126,19 @@
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "azure-ai-textanalytics-py",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "textanalytics",
+                         "py"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  12
     },
     {
         "id":  "azure-ai-transcription-py",
@@ -499,6 +540,16 @@
         "match_score":  7
     },
     {
+        "id":  "dask",
+        "triggers":  [
+                         "dask"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
         "id":  "dbos-python",
         "triggers":  [
                          "dbos",
@@ -508,6 +559,34 @@
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "detecting-azure-storage-account-misconfigurations",
+        "triggers":  [
+                         "detecting",
+                         "azure",
+                         "storage",
+                         "account",
+                         "misconfigurations"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "detecting-shadow-it-cloud-usage",
+        "triggers":  [
+                         "detecting",
+                         "shadow",
+                         "it",
+                         "cloud",
+                         "usage"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
     },
     {
         "id":  "django-access-review",
@@ -531,6 +610,16 @@
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  16
+    },
+    {
+        "id":  "edgartools",
+        "triggers":  [
+                         "edgartools"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "fastapi-pro",
@@ -567,6 +656,26 @@
         "match_score":  16
     },
     {
+        "id":  "fluidsim",
+        "triggers":  [
+                         "fluidsim"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "geopandas",
+        "triggers":  [
+                         "geopandas"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
         "id":  "hosted-agents-v2-py",
         "triggers":  [
                          "hosted",
@@ -575,6 +684,47 @@
                          "py"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "hunting-for-cobalt-strike-beacons",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "cobalt",
+                         "strike",
+                         "beacons"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "implementing-network-traffic-baselining",
+        "triggers":  [
+                         "implementing",
+                         "network",
+                         "traffic",
+                         "baselining"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "implementing-vulnerability-management-with-greenbone",
+        "triggers":  [
+                         "implementing",
+                         "vulnerability",
+                         "management",
+                         "with",
+                         "greenbone"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -612,6 +762,16 @@
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  11
+    },
+    {
+        "id":  "matlab",
+        "triggers":  [
+                         "matlab"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "matplotlib",
@@ -658,6 +818,41 @@
         "match_score":  7
     },
     {
+        "id":  "omero-integration",
+        "triggers":  [
+                         "omero",
+                         "integration"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "pennylane",
+        "triggers":  [
+                         "pennylane"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "performing-lateral-movement-with-wmiexec",
+        "triggers":  [
+                         "performing",
+                         "lateral",
+                         "movement",
+                         "with",
+                         "wmiexec"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "plotly",
         "triggers":  [
                          "plotly"
@@ -690,6 +885,26 @@
         "match_score":  7
     },
     {
+        "id":  "pydeseq2",
+        "triggers":  [
+                         "pydeseq2"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "python",
+        "triggers":  [
+                         "python"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
         "id":  "python-development-python-scaffold",
         "triggers":  [
                          "python",
@@ -713,6 +928,19 @@
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  20
+    },
+    {
+        "id":  "python-ocr-backend-integration",
+        "triggers":  [
+                         "python",
+                         "ocr",
+                         "backend",
+                         "integration"
+                     ],
+        "src":  "external:kreuzberg-dev-kreuzberg",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  12
     },
     {
         "id":  "python-packaging",
@@ -744,6 +972,18 @@
                          "optimization"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "python-plugin-wrapper",
+        "triggers":  [
+                         "python",
+                         "plugin",
+                         "wrapper"
+                     ],
+        "src":  "external:kreuzberg-dev-kreuzberg",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  12
@@ -782,11 +1022,43 @@
         "match_score":  7
     },
     {
+        "id":  "qutip",
+        "triggers":  [
+                         "qutip"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  11
+    },
+    {
+        "id":  "reddit-api",
+        "triggers":  [
+                         "reddit",
+                         "api"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "scanpy",
         "triggers":  [
                          "scanpy"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "scientific-visualization",
+        "triggers":  [
+                         "scientific",
+                         "visualization"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
@@ -813,6 +1085,16 @@
         "match_score":  7
     },
     {
+        "id":  "simpy",
+        "triggers":  [
+                         "simpy"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "statsmodels",
         "triggers":  [
                          "statsmodels"
@@ -821,6 +1103,17 @@
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "supabase-python",
+        "triggers":  [
+                         "supabase",
+                         "python"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  16
     },
     {
         "id":  "sympy",
@@ -908,9 +1201,20 @@
         "triggers":  [
                          "xlsx"
                      ],
-        "src":  "external:skills",
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
         "primary_hub":  "programming/python",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "zarr-python",
+        "triggers":  [
+                         "zarr",
+                         "python"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "programming/python",
+        "is_primary":  true,
+        "match_score":  16
     }
 ]

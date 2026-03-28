@@ -186,6 +186,17 @@
         "match_score":  4
     },
     {
+        "id":  "react-web",
+        "triggers":  [
+                         "react",
+                         "web"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
         "id":  "remotion-best-practices",
         "triggers":  [
                          "remotion",
@@ -216,6 +227,17 @@
                          "integration"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "supabase-nextjs",
+        "triggers":  [
+                         "supabase",
+                         "nextjs"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  4
@@ -265,6 +287,19 @@
         "primary_hub":  "frontend/react-nextjs",
         "is_primary":  true,
         "match_score":  8
+    },
+    {
+        "id":  "vercel-react-best-practices",
+        "triggers":  [
+                         "vercel",
+                         "react",
+                         "best",
+                         "practices"
+                     ],
+        "src":  "external:Charlie85270-Dorothy",
+        "primary_hub":  "frontend/react-nextjs",
+        "is_primary":  true,
+        "match_score":  4
     },
     {
         "id":  "web-artifacts-builder",

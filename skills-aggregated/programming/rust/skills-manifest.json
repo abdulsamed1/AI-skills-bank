@@ -3,12 +3,12 @@
     "main_hub":  "programming",
     "sub_hub":  "rust",
     "description":  "Rust: memory safety, performance, systems programming, and async patterns",
-    "skill_count":  31,
-    "src_count":  1,
+    "skill_count":  57,
+    "src_count":  4,
     "top_triggers":  [
                          null
                      ],
-    "generated_at":  "2026-03-28T01:39:22+02:00",
+    "generated_at":  "2026-03-28T17:09:43+02:00",
     "files":  {
                   "skill":  "SKILL.md",
                   "index":  "skills-index.json",

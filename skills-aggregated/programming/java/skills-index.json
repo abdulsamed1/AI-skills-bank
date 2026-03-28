@@ -1,5 +1,40 @@
 [
     {
+        "id":  "analyzing-malicious-pdf-with-peepdf",
+        "triggers":  [
+                         "analyzing",
+                         "malicious",
+                         "pdf",
+                         "with",
+                         "peepdf"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "android-java",
+        "triggers":  [
+                         "android",
+                         "java"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "arboreto",
+        "triggers":  [
+                         "arboreto"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "azure-ai-agents-persistent-dotnet",
         "triggers":  [
                          "azure",
@@ -170,6 +205,18 @@
         "primary_hub":  "programming/java",
         "is_primary":  true,
         "match_score":  12
+    },
+    {
+        "id":  "azure-appconfiguration-ts",
+        "triggers":  [
+                         "azure",
+                         "appconfiguration",
+                         "ts"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "azure-communication-callautomation-java",
@@ -399,6 +446,32 @@
         "match_score":  7
     },
     {
+        "id":  "azure-mgmt-applicationinsights-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "applicationinsights",
+                         "dotnet"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-mgmt-arizeaiobservabilityeval-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "arizeaiobservabilityeval",
+                         "dotnet"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "azure-mgmt-botservice-dotnet",
         "triggers":  [
                          "azure",
@@ -438,6 +511,19 @@
         "match_score":  7
     },
     {
+        "id":  "azure-mgmt-weightsandbiases-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "weightsandbiases",
+                         "dotnet"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "azure-monitor-ingestion-java",
         "triggers":  [
                          "azure",
@@ -463,6 +549,19 @@
         "primary_hub":  "programming/java",
         "is_primary":  true,
         "match_score":  12
+    },
+    {
+        "id":  "azure-monitor-opentelemetry-ts",
+        "triggers":  [
+                         "azure",
+                         "monitor",
+                         "opentelemetry",
+                         "ts"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "azure-monitor-query-java",
@@ -520,6 +619,34 @@
         "match_score":  7
     },
     {
+        "id":  "azure-resource-manager-playwright-dotnet",
+        "triggers":  [
+                         "azure",
+                         "resource",
+                         "manager",
+                         "playwright",
+                         "dotnet"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-resource-manager-postgresql-dotnet",
+        "triggers":  [
+                         "azure",
+                         "resource",
+                         "manager",
+                         "postgresql",
+                         "dotnet"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "azure-resource-manager-redis-dotnet",
         "triggers":  [
                          "azure",
@@ -556,6 +683,20 @@
                          "dotnet"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "azure-security-keyvault-keys-dotnet",
+        "triggers":  [
+                         "azure",
+                         "security",
+                         "keyvault",
+                         "keys",
+                         "dotnet"
+                     ],
+        "src":  "external:microsoft-skills",
         "primary_hub":  "programming/java",
         "is_primary":  true,
         "match_score":  7
@@ -601,6 +742,18 @@
         "match_score":  7
     },
     {
+        "id":  "azure-servicebus-ts",
+        "triggers":  [
+                         "azure",
+                         "servicebus",
+                         "ts"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "azure-storage-blob-java",
         "triggers":  [
                          "azure",
@@ -612,6 +765,60 @@
         "primary_hub":  "programming/java",
         "is_primary":  true,
         "match_score":  12
+    },
+    {
+        "id":  "azure-web-pubsub-ts",
+        "triggers":  [
+                         "azure",
+                         "web",
+                         "pubsub",
+                         "ts"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "building-malware-incident-communication-template",
+        "triggers":  [
+                         "building",
+                         "malware",
+                         "incident",
+                         "communication",
+                         "template"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "building-soc-escalation-matrix",
+        "triggers":  [
+                         "building",
+                         "soc",
+                         "escalation",
+                         "matrix"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "conducting-internal-reconnaissance-with-bloodhound-ce",
+        "triggers":  [
+                         "conducting",
+                         "internal",
+                         "reconnaissance",
+                         "with",
+                         "bloodhound"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "cpp-pro",
@@ -660,6 +867,72 @@
         "match_score":  5
     },
     {
+        "id":  "deobfuscating-javascript-malware",
+        "triggers":  [
+                         "deobfuscating",
+                         "javascript",
+                         "malware"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "detecting-aws-iam-privilege-escalation",
+        "triggers":  [
+                         "detecting",
+                         "aws",
+                         "iam",
+                         "privilege",
+                         "escalation"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "detecting-azure-lateral-movement",
+        "triggers":  [
+                         "detecting",
+                         "azure",
+                         "lateral",
+                         "movement"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "detecting-azure-service-principal-abuse",
+        "triggers":  [
+                         "detecting",
+                         "azure",
+                         "service",
+                         "principal",
+                         "abuse"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "detecting-service-account-abuse",
+        "triggers":  [
+                         "detecting",
+                         "service",
+                         "account",
+                         "abuse"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "dotnet-architect",
         "triggers":  [
                          "dotnet",
@@ -688,6 +961,84 @@
                          "pro"
                      ],
         "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "exploiting-insecure-deserialization",
+        "triggers":  [
+                         "exploiting",
+                         "insecure",
+                         "deserialization"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "exploiting-nopac-cve-2021-42278-42287",
+        "triggers":  [
+                         "exploiting",
+                         "nopac",
+                         "cve",
+                         "2021",
+                         "42278"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "exploiting-prototype-pollution-in-javascript",
+        "triggers":  [
+                         "exploiting",
+                         "prototype",
+                         "pollution",
+                         "in",
+                         "javascript"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "exploiting-type-juggling-vulnerabilities",
+        "triggers":  [
+                         "exploiting",
+                         "type",
+                         "juggling",
+                         "vulnerabilities"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
+        "id":  "extracting-windows-event-logs-artifacts",
+        "triggers":  [
+                         "extracting",
+                         "windows",
+                         "event",
+                         "logs",
+                         "artifacts"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "gguf-quantization",
+        "triggers":  [
+                         "gguf",
+                         "quantization"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
         "primary_hub":  "programming/java",
         "is_primary":  true,
         "match_score":  7
@@ -775,6 +1126,58 @@
         "match_score":  5
     },
     {
+        "id":  "nodejs-core",
+        "triggers":  [
+                         "nodejs",
+                         "core"
+                     ],
+        "src":  "external:mcollina-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "performing-aws-privilege-escalation-assessment",
+        "triggers":  [
+                         "performing",
+                         "aws",
+                         "privilege",
+                         "escalation",
+                         "assessment"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "performing-privilege-escalation-assessment",
+        "triggers":  [
+                         "performing",
+                         "privilege",
+                         "escalation",
+                         "assessment"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "performing-privilege-escalation-on-linux",
+        "triggers":  [
+                         "performing",
+                         "privilege",
+                         "escalation",
+                         "on",
+                         "linux"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "php-pro",
         "triggers":  [
                          "php",
@@ -784,6 +1187,28 @@
         "primary_hub":  "programming/java",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "pytorch-lightning",
+        "triggers":  [
+                         "pytorch",
+                         "lightning"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "ray-data",
+        "triggers":  [
+                         "ray",
+                         "data"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
     },
     {
         "id":  "salesforce-development",
@@ -806,5 +1231,16 @@
         "primary_hub":  "programming/java",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "semantic-scholar",
+        "triggers":  [
+                         "semantic",
+                         "scholar"
+                     ],
+        "src":  "external:wanshuiyin-Auto-claude-code-research-in-sleep",
+        "primary_hub":  "programming/java",
+        "is_primary":  true,
+        "match_score":  5
     }
 ]

@@ -212,6 +212,18 @@
         "match_score":  7
     },
     {
+        "id":  "fastify-best-practices",
+        "triggers":  [
+                         "fastify",
+                         "best",
+                         "practices"
+                     ],
+        "src":  "external:mcollina-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
         "id":  "fp-data-transforms",
         "triggers":  [
                          "fp",
@@ -304,6 +316,18 @@
         "match_score":  19
     },
     {
+        "id":  "linting-neostandard-eslint9",
+        "triggers":  [
+                         "linting",
+                         "neostandard",
+                         "eslint9"
+                     ],
+        "src":  "external:mcollina-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
         "id":  "m365-agents-ts",
         "triggers":  [
                          "m365",
@@ -314,6 +338,18 @@
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  11
+    },
+    {
+        "id":  "migrate-to-shoehorn",
+        "triggers":  [
+                         "migrate",
+                         "to",
+                         "shoehorn"
+                     ],
+        "src":  "external:mattpocock-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  7
     },
     {
         "id":  "modern-javascript-patterns",
@@ -351,6 +387,16 @@
         "match_score":  7
     },
     {
+        "id":  "node",
+        "triggers":  [
+                         "node"
+                     ],
+        "src":  "external:mcollina-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  15
+    },
+    {
         "id":  "react-flow-node-ts",
         "triggers":  [
                          "react",
@@ -374,6 +420,20 @@
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  11
+    },
+    {
+        "id":  "tech-stack:add-typescript-best-practices",
+        "triggers":  [
+                         "tech",
+                         "stack:add",
+                         "typescript",
+                         "best",
+                         "practices"
+                     ],
+        "src":  "external:NeoLabHQ-context-engineering-kit",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  12
     },
     {
         "id":  "tinybird-typescript-sdk-guidelines",
@@ -400,6 +460,16 @@
         "match_score":  100
     },
     {
+        "id":  "typescript",
+        "triggers":  [
+                         "typescript"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
         "id":  "typescript-advanced-types",
         "triggers":  [
                          "typescript",
@@ -421,6 +491,17 @@
         "primary_hub":  "programming/typescript",
         "is_primary":  true,
         "match_score":  11
+    },
+    {
+        "id":  "typescript-magician",
+        "triggers":  [
+                         "typescript",
+                         "magician"
+                     ],
+        "src":  "external:mcollina-skills",
+        "primary_hub":  "programming/typescript",
+        "is_primary":  true,
+        "match_score":  16
     },
     {
         "id":  "typescript-pro",

@@ -3,12 +3,12 @@
     "main_hub":  "programming",
     "sub_hub":  "golang",
     "description":  "Go programming: concurrency patterns, microservices, and system programming",
-    "skill_count":  5,
-    "src_count":  1,
+    "skill_count":  8,
+    "src_count":  3,
     "top_triggers":  [
                          null
                      ],
-    "generated_at":  "2026-03-28T01:39:22+02:00",
+    "generated_at":  "2026-03-28T17:09:43+02:00",
     "files":  {
                   "skill":  "SKILL.md",
                   "index":  "skills-index.json",

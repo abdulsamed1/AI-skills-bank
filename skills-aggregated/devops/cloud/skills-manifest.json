@@ -3,12 +3,12 @@
     "main_hub":  "devops",
     "sub_hub":  "cloud",
     "description":  "Cloud platforms: AWS, GCP, Azure, and serverless architecture",
-    "skill_count":  93,
-    "src_count":  2,
+    "skill_count":  248,
+    "src_count":  16,
     "top_triggers":  [
                          null
                      ],
-    "generated_at":  "2026-03-28T01:39:22+02:00",
+    "generated_at":  "2026-03-28T17:09:44+02:00",
     "files":  {
                   "skill":  "SKILL.md",
                   "index":  "skills-index.json",

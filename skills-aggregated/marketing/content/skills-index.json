@@ -103,6 +103,17 @@
         "match_score":  100
     },
     {
+        "id":  "compress-images",
+        "triggers":  [
+                         "compress",
+                         "images"
+                     ],
+        "src":  "external:rameerez-claude-code-startup-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  7
+    },
+    {
         "id":  "content-creator",
         "triggers":  [
                          "content",
@@ -201,6 +212,17 @@
         "match_score":  7
     },
     {
+        "id":  "edit-article",
+        "triggers":  [
+                         "edit",
+                         "article"
+                     ],
+        "src":  "external:mattpocock-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "free-tool-strategy",
         "triggers":  [
                          "free",
@@ -252,6 +274,18 @@
                          "localization"
                      ],
         "src":  "external:aso-skills",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "ml-paper-writing",
+        "triggers":  [
+                         "ml",
+                         "paper",
+                         "writing"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
         "match_score":  5
@@ -673,7 +707,7 @@
                          "site",
                          "architecture"
                      ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:alinaqi-claude-bootstrap",
         "primary_hub":  "marketing/content",
         "is_primary":  true,
         "match_score":  100
@@ -688,5 +722,16 @@
         "primary_hub":  "marketing/content",
         "is_primary":  true,
         "match_score":  100
+    },
+    {
+        "id":  "web-content",
+        "triggers":  [
+                         "web",
+                         "content"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "marketing/content",
+        "is_primary":  true,
+        "match_score":  16
     }
 ]
