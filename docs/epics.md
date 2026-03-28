@@ -7,11 +7,11 @@ inputDocuments:
   - architecture.md
 ---
 
-# skill manage - Epic Breakdown
+# skill-manage - Epic Breakdown
 
 ## Overview
 
-This document provides the complete epic and story breakdown for skill manage, decomposing the requirements from the PRD and Architecture requirements into implementable stories.
+This document provides the complete epic and story breakdown for skill-manage, decomposing the requirements from the PRD and Architecture requirements into implementable stories.
 
 ## Requirements Inventory
 

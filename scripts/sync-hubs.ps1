@@ -4,7 +4,7 @@
 Sync Hub System to all Tools
 
 .DESCRIPTION
-Syncs skill manage/skills-aggregated/ to:
+Syncs skill-manage/skills-aggregated/ to:
 - ~/.gemini/antigravity/skills/
 - ~/.claude/skills/
 - ~/.agents/skills/
@@ -23,7 +23,7 @@ Supports two strategies:
 #>
 
 param(
-    [string]$Hubsrc = ".\skill manage\skills-aggregated",
+    [string]$Hubsrc = ".\skill-manage\skills-aggregated",
     [array]$TargetTools,
     [switch]$IncludeWorkspaceTargets,
     [switch]$PruneWorkspaceTargets,
@@ -38,7 +38,7 @@ param(
 $PSScriptRootRef = $PSScriptRoot
 if (-not $PSScriptRootRef) { $PSScriptRootRef = "." }
 $candidateRoot = Get-Item (Join-Path $PSScriptRootRef "..")
-if ($candidateRoot.Name -ieq "skill manage") {
+if ($candidateRoot.Name -ieq "skill-manage") {
     $RepoRoot = (Get-Item (Join-Path $candidateRoot.FullName "..")).FullName
 }
 else {
@@ -46,8 +46,8 @@ else {
 }
 
 # Also resolve Hubsrc dynamically if it's the default
-if ($Hubsrc -eq ".\skill manage\skills-aggregated") {
-    $Hubsrc = Join-Path $RepoRoot "skill manage\skills-aggregated"
+if ($Hubsrc -eq ".\skill-manage\skills-aggregated") {
+    $Hubsrc = Join-Path $RepoRoot "skill-manage\skills-aggregated"
 }
 
 $WorkspaceTargets = @(

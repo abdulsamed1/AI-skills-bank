@@ -1,6 +1,6 @@
 <div align="center">
 
-# skill manage
+# skill-manage
 
 Unified, visual, multi-tool skill routing platform for AI workflows.
 
@@ -27,7 +27,7 @@ Unified, visual, multi-tool skill routing platform for AI workflows.
 ## Architecture
 
 ```text
-skill manage/
+skill-manage/
 ├─ scripts/
 │  ├─ aggregate-skills-to-subhubs.ps1
 │  ├─ sync-hubs.ps1
@@ -56,7 +56,7 @@ skill manage/
 ## CLI Quick Launch
 
 ```powershell
-cd skill manage/cli
+cd skill-manage/cli
 npm install
 node ./src/index.mjs init --project ..\\.. --src-repo-mode changed-only
 ```
@@ -71,7 +71,7 @@ Visual flow:
 
 ```text
 ╭───────────────────────────────────────────────╮
-│   skill manage CLI                          │
+│   skill-manage CLI                          │
 │   Aggregate, Sync, and Manage AI skill hubs   │
 ╰───────────────────────────────────────────────╯
 ? Choose what to do
@@ -87,29 +87,29 @@ Visual flow:
 ### Aggregate
 
 ```powershell
-pwsh -ExecutionPolicy Bypass -File "skill manage/scripts/aggregate-skills-to-subhubs.ps1"
+pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/aggregate-skills-to-subhubs.ps1"
 ```
 
 Modes:
 
 ```powershell
 # newest repo only (default)
-pwsh -ExecutionPolicy Bypass -File "skill manage/scripts/aggregate-skills-to-subhubs.ps1" -srcRepoMode latest
+pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/aggregate-skills-to-subhubs.ps1" -srcRepoMode latest
 
 # all repos under src
-pwsh -ExecutionPolicy Bypass -File "skill manage/scripts/aggregate-skills-to-subhubs.ps1" -srcRepoMode all
+pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/aggregate-skills-to-subhubs.ps1" -srcRepoMode all
 
 # explicit repos
-pwsh -ExecutionPolicy Bypass -File "skill manage/scripts/aggregate-skills-to-subhubs.ps1" -srcRepoMode selected -srcRepoNames antigravity-awesome-skills
+pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/aggregate-skills-to-subhubs.ps1" -srcRepoMode selected -srcRepoNames antigravity-awesome-skills
 
 # changed since last lock
-pwsh -ExecutionPolicy Bypass -File "skill manage/scripts/aggregate-skills-to-subhubs.ps1" -srcRepoMode changed-only
+pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/aggregate-skills-to-subhubs.ps1" -srcRepoMode changed-only
 ```
 
 ### Sync
 
 ```powershell
-pwsh -ExecutionPolicy Bypass -File "skill manage/scripts/sync-hubs.ps1" -SyncMode Auto -Force
+pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/sync-hubs.ps1" -SyncMode Auto -Force
 ```
 
 Policy:
@@ -150,7 +150,7 @@ If an agent can see a sub-hub folder but cannot read its contents, or if you ren
 **Diagnostic:** Run `fsutil reparsepoint query "path/to/sub-hub"` and verify if `Substitute Name` points to an existing path.
 **Fix:** Re-run the sync script with `-Force` to recreate the junctions with the correct target paths:
 ```powershell
-pwsh -ExecutionPolicy Bypass -File "skill manage/scripts/sync-hubs.ps1" -SyncMode Auto -Force
+pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/sync-hubs.ps1" -SyncMode Auto -Force
 ```
 
 ---
@@ -158,12 +158,12 @@ pwsh -ExecutionPolicy Bypass -File "skill manage/scripts/sync-hubs.ps1" -SyncMod
 ## src Onboarding
 
 ```powershell
-cd skill manage/src
+cd skill-manage/src
 git clone https://github.com/example/awesome-skills.git
 
 cd ../..
-pwsh -ExecutionPolicy Bypass -File "skill manage/scripts/aggregate-skills-to-subhubs.ps1" -srcRepoMode changed-only
-pwsh -ExecutionPolicy Bypass -File "skill manage/scripts/sync-hubs.ps1" -SyncMode Auto -Force
+pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/aggregate-skills-to-subhubs.ps1" -srcRepoMode changed-only
+pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/sync-hubs.ps1" -SyncMode Auto -Force
 ```
 
 Requirements for imported srcs:
@@ -182,7 +182,7 @@ To minimize token usage (typically <150 tokens) and eliminate hallucinations, AI
 2. **Step 2 (Lookup):** Read `skills-aggregated/{hub}/{sub_hub}/routing.tsv`
    - Match user intent against the `triggers` column.
    - Extract `skill_id` and `src_path` from the row with the highest score.
-3. **Step 3 (Invoke):** Read `{project-root}/skill manage/{src_path}`
+3. **Step 3 (Invoke):** Read `{project-root}/skill-manage/{src_path}`
    - Load the exact file referenced by the routing layer.
 
 > **Note:** Agents should NEVER read `hub-manifests.csv` (too large) or guess file paths. Always use `routing.tsv` for exact resolution. Reference `skills-aggregated/AGENT-PROTOCOL.md` for full implementation rules.
@@ -194,7 +194,7 @@ To minimize token usage (typically <150 tokens) and eliminate hallucinations, AI
 ```yaml
 ai_skills_routing:
   protocol: v2.0
-  entrypoint: skill manage/skills-aggregated/quick-index.json
+  entrypoint: skill-manage/skills-aggregated/quick-index.json
   rules:
     - Step 1: Route via quick-index.json
     - Step 2: Extract src_path from {hub}/{sub_hub}/routing.tsv
@@ -211,7 +211,7 @@ ai_skills_routing:
 
 ```powershell
 # count skills from manifests
-$m = Get-ChildItem -Recurse "skill manage/skills-aggregated" -Filter "skills-manifest.json"
+$m = Get-ChildItem -Recurse "skill-manage/skills-aggregated" -Filter "skills-manifest.json"
 $sum = 0
 foreach ($f in $m) {
   $j = Get-Content $f.FullName -Raw | ConvertFrom-Json
@@ -222,6 +222,6 @@ foreach ($f in $m) {
 
 ```powershell
 # ensure generated SKILL files are lightweight
-Get-ChildItem -Recurse "skill manage/skills-aggregated" -Filter "SKILL.md" |
+Get-ChildItem -Recurse "skill-manage/skills-aggregated" -Filter "SKILL.md" |
 ForEach-Object { "{0} | {1}" -f $_.FullName, $_.Length }
 ```

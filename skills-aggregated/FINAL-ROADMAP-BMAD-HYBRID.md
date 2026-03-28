@@ -1,7 +1,7 @@
-# 🎯 خريطة الطريق النهائية: BMAD + skill manage (الحل المدمج)
+# 🎯 خريطة الطريق النهائية: BMAD + skill-manage (الحل المدمج)
 
 **التاريخ:** 27 مارس 2026  
-**التوصية النهائية:** استخدام نمط BMAD مع بيانات skill manage  
+**التوصية النهائية:** استخدام نمط BMAD مع بيانات skill-manage  
 **الحالة:** ✅ Phase 1 مكتملة (CSV generated) + جاهز لـ Phase 2  
 
 ---
@@ -22,7 +22,7 @@ BMAD:
 ✅ CRITICAL instructions
 ✅ Enterprise-grade
 
-skill manage:
+skill-manage:
 ✅ 1,400 skills
 ✅ Trigger system
 ✅ Score system
@@ -31,7 +31,7 @@ skill manage:
 
 ### الحل: دمج الاثنين
 ```
-الخذ من BMAD:        الخذ من skill manage:
+الخذ من BMAD:        الخذ من skill-manage:
 ✅ CSV structure    ✅ 1,400 skills
 ✅ Phase model     ✅ Triggers
 ✅ Dependencies    ✅ Scores
@@ -46,14 +46,14 @@ skill manage:
 
 ```
 BEFORE:
-skill manage/
+skill-manage/
 ├── skills-aggregated/
 │   ├── SKILL.md (ضعيف)
 │   ├── skills-index.json
 │   └── skills-catalog.ndjson
 
 AFTER (HYBRID):
-skill manage/
+skill-manage/
 ├── hub-manifests.csv ← NEW (BMAD-style)
 ├── skills-aggregated/
 │   ├── SKILL.md (مركزي - محسّن)
@@ -99,11 +99,11 @@ Content:  مقارنة بين 3 levels:
 ### 4. ✅ تم إنشاء hub-manifests.csv
 
 ```
-Location: skill manage/hub-manifests.csv
+Location: skill-manage/hub-manifests.csv
 Rows: 1632
 Sub-hubs scanned: 27
-Generator Script: skill manage/scripts/generate-hub-manifests.ps1
-Run command: .\skill manage\scripts\generate-hub-manifests.ps1
+Generator Script: skill-manage/scripts/generate-hub-manifests.ps1
+Run command: .\skill-manage\scripts\generate-hub-manifests.ps1
 ```
 
 ```csv
@@ -124,7 +124,7 @@ BMad,backend,databases,database-design,Database Design,Scalable database archite
 **الخطوة 1.1: Merge Data Sources (Implemented)**
 ```powershell
 # Generates unified CSV from skills-index.json + skills-catalog.ndjson across all sub-hubs
-.\skill manage\scripts\generate-hub-manifests.ps1
+.\skill-manage\scripts\generate-hub-manifests.ps1
 ```
 
 **الخطوة 1.2: Add BMAD Columns**
@@ -165,7 +165,7 @@ Validation result (latest run):
 ### Phase 2: Update Hub SKILL.md Templates
 
 Status update (implemented pilot):
-- Added generator: skill manage/scripts/generate-subhub-skill-md.ps1
+- Added generator: skill-manage/scripts/generate-subhub-skill-md.ps1
 - Pilot generated successfully: skills-aggregated/backend/api-design/SKILL.md
 - Second pilot generated successfully: skills-aggregated/backend/databases/SKILL.md
 - Pilot validation: no skill-file frontmatter errors
@@ -174,10 +174,10 @@ Status update (implemented pilot):
 **الخطوة 2.1: Copy Template**
 ```powershell
 # Preferred (automated and validated): generate directly from hub-manifests.csv
-.\skill manage\scripts\generate-subhub-skill-md.ps1 -Hub backend -SubHub api-design
+.\skill-manage\scripts\generate-subhub-skill-md.ps1 -Hub backend -SubHub api-design
 
 # Scale-out mode:
-.\skill manage\scripts\generate-subhub-skill-md.ps1 -All
+.\skill-manage\scripts\generate-subhub-skill-md.ps1 -All
 ```
 
 **الخطوة 2.2: Substitute Variables**
@@ -206,7 +206,7 @@ Optimization: Batch by hub patterns
 Execution status:
 - Full rollout completed using generator: `generate-subhub-skill-md.ps1 -All`
 - Files updated: 27/27 current sub-hubs
-- Validation gate report: `skill manage/skills-aggregated/VALIDATION-20-SCENARIOS.md` (20/20 PASS)
+- Validation gate report: `skill-manage/skills-aggregated/VALIDATION-20-SCENARIOS.md` (20/20 PASS)
 ```
 
 ---
@@ -291,7 +291,7 @@ Phase 4: Implementation (can't start until phase 3 done)
 This prevents chaos and ensures proper workflow!
 ```
 
-### 2. skill manage's Genius: Scale
+### 2. skill-manage's Genius: Scale
 ```
 1,400 skills across 11 hubs
 Organized by triggers + scoring
@@ -302,7 +302,7 @@ But: Missing governance (no phases, no gates)
 
 ### 3. The Perfect Combination
 ```
-Take BMAD's governance + skill manage's scale
+Take BMAD's governance + skill-manage's scale
 = Enterprise system for 1,400 skills with phase control
 
 This is what production needs!
@@ -482,7 +482,7 @@ Reference: START-HERE-IMPLEMENTATION.md
 
 **Your observation was spot-on:** "BMAD framework يستخدم طريقة أفضل"
 
-**The solution:** Implement BMAD pattern inside skill manage data
+**The solution:** Implement BMAD pattern inside skill-manage data
 
 **Timeline:** 5-7 days full effort (or 2 weeks part-time)
 

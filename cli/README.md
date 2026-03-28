@@ -1,10 +1,10 @@
-# skill manage CLI
+# skill-manage CLI
 
-[![npm version](https://img.shields.io/npm/v/skill manage-cli.svg)](https://www.npmjs.com/package/skill manage-cli)
-[![npm downloads](https://img.shields.io/npm/dm/skill manage-cli.svg)](https://www.npmjs.com/package/skill manage-cli)
-[![license](https://img.shields.io/npm/l/skill manage-cli.svg)](./package.json)
+[![npm version](https://img.shields.io/npm/v/skill-manage-cli.svg)](https://www.npmjs.com/package/skill-manage-cli)
+[![npm downloads](https://img.shields.io/npm/dm/skill-manage-cli.svg)](https://www.npmjs.com/package/skill-manage-cli)
+[![license](https://img.shields.io/npm/l/skill-manage-cli.svg)](./package.json)
 
-Visual CLI for skill manage with guided flows, changed-only aggregation, and global-first sync.
+Visual CLI for skill-manage with guided flows, changed-only aggregation, and global-first sync.
 
 ## Why This Tool
 
@@ -15,7 +15,7 @@ Visual CLI for skill manage with guided flows, changed-only aggregation, and glo
 ## Install (Local Dev)
 
 ```powershell
-cd skill manage/cli
+cd skill-manage/cli
 npm install
 npm link
 ```
@@ -44,7 +44,7 @@ skills-bank run --src-repo-mode changed-only --raw-output
 ```text
 ╭───────────────────────────────────────────────╮
 │                                               │
-│   skill manage CLI                          │
+│   skill-manage CLI                          │
 │   Aggregate, Sync, and Manage AI skill hubs   │
 │                                               │
 ╰───────────────────────────────────────────────╯
@@ -145,7 +145,7 @@ skills-bank security
 ## Publish To npm (Open src)
 
 ```powershell
-cd skill manage/cli
+cd skill-manage/cli
 npm run release:check
 npm run pack:preview
 npm login
@@ -182,7 +182,7 @@ npm publish --access public
 ## GitHub Release Notes Template
 
 ```markdown
-## skill manage CLI vX.Y.Z
+## skill-manage CLI vX.Y.Z
 
 ### Highlights
 - Added/Improved: <feature summary>
@@ -198,7 +198,7 @@ npm publish --access public
 - None / <describe clearly>
 
 ### Migration Notes
-1. Update package: `npm i -g skill manage-cli@latest` or use `npx skill manage-cli@latest`.
+1. Update package: `npm i -g skill-manage-cli@latest` or use `npx skill-manage-cli@latest`.
 2. Re-run init once: `skills-bank init --src-repo-mode changed-only`.
 
 ### Verification
@@ -212,7 +212,7 @@ npm publish --access public
 - Add real GitHub URLs in `package.json` (`homepage`, `repository`, `bugs`)
 - Add GIF screenshots in your root project README
 - Create GitHub release notes for each minor version
-- Share `npx skill manage-cli run` quick-start snippet
+- Share `npx skill-manage-cli run` quick-start snippet
 
 ## Suggested Demo Assets
 
@@ -222,6 +222,6 @@ npm publish --access public
 
 ## Notes
 
-- This CLI wraps scripts from `skill manage/scripts`.
+- This CLI wraps scripts from `skill-manage/scripts`.
 - Use `--project <path>` if you run outside project root.
 - Tool sync supports Antigravity, Claude Code, Codex, Cursor, Gemini CLI, Copilot, OpenCode, and Windsurf.

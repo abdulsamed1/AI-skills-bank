@@ -44,18 +44,14 @@ so that I can provide native binaries for all major platforms with minimal manua
 ### Project Structure Notes
 
 - **Root:** `skill-manage/` is the Rust workspace.
-- **Output:** Binaries should be compatible with the NPM wrapper in `skill manage/bin/skill-manage.js`.
+- **Output:** Binaries should be compatible with the NPM wrapper in `skill-manage/bin/skill-manage.js`.
 
 ### References
 
-- [Source: skill manage/docs/architecture.md#Infrastructure & Deployment]
-- [Source: skill manage/docs/epics.md#Epic 1: Project Core & Infrastructure]
+- [Source: skill-manage/docs/architecture.md#Infrastructure & Deployment]
+- [Source: skill-manage/docs/epics.md#Epic 1: Project Core & Infrastructure]
 
 ## Dev Agent Record
-
-### Agent Model Used
-
-Gemini 2.0 Flash
 
 ### Debug Log References
 

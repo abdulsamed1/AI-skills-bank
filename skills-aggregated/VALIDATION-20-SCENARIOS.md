@@ -5,7 +5,7 @@ Summary: 20/20 passed
 
 | ID | Scenario | Result | Details |
 |---|---|---|---|
-| S01 | Manifest file exists | PASS | C:\Users\ASUS\production\.\skill manage\hub-manifests.csv |
+| S01 | Manifest file exists | PASS | C:\Users\ASUS\production\.\skill-manage\hub-manifests.csv |
 | S02 | Manifest has at least 1 row | PASS | rows=1632 |
 | S03 | Manifest has at least 1000 rows | PASS | rows=1632 |
 | S04 | Unique (hub,sub_hub,skill_id) triplets | PASS | total=1632, unique=1632 |

@@ -15,7 +15,7 @@ Initialize the Rust project manually due to build tool constraints. The project 
 
 ## Implementation Details
 - Use `cargo generate` (requires installation if not present).
-- Name the project `skill manage`.
+- Name the project `skill-manage`.
 - Ensure the template version is consistent with Ratatui's current best practices.
 
 ## Verification Plan

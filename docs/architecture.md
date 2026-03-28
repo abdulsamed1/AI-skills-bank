@@ -31,7 +31,7 @@ _This document builds collaboratively through step-by-step discovery. Sections a
 ### Requirements Overview
 
 **Functional Requirements:**
-The system must handle the full lifecycle of AI skill management: from fetching repositories (FR1-4) to synchronizing them into agent-accessible paths (FR5-8), and eventually aggregating 1,400+ skills into a performant routing manifest (FR9-12). The architecture must support both interactive TUI usage and strict non-interactive Agent execution (FR17-20).
+The system must handle the full lifecycle of AI skill-management: from fetching repositories (FR1-4) to synchronizing them into agent-accessible paths (FR5-8), and eventually aggregating 1,400+ skills into a performant routing manifest (FR9-12). The architecture must support both interactive TUI usage and strict non-interactive Agent execution (FR17-20).
 
 **Non-Functional Requirements:**
 Extremely aggressive performance targets (50ms startup, 2s aggregation) drive the choice of a multi-threaded Rust core. Security is managed through SHA-256 binary validation and strict file-system boundaries. Portability requires zero-dependency native binaries for Windows, macOS, and Linux.
@@ -72,7 +72,7 @@ The Component template offers the most modular architecture for our phased roadm
 
 ```bash
 # Required: cargo install cargo-generate
-cargo generate ratatui/templates --name skill manage --template component
+cargo generate ratatui/templates --name skill-manage --template component
 ```
 
 **Architectural Decisions Provided by Starter:**
@@ -137,7 +137,7 @@ We will utilize **Flat File state management** using standard Rust crates like `
   - `aarch64-apple-darwin`
   - `x86_64-unknown-linux-musl` (Statically linked for maximum Linux portability).
 - **Release Tooling:** **`cargo-dist`** v0.31.0 for automated artifact generation and GitHub Release creation.
-- **Registry:** Public NPM registry under the `skill manage` namespace.
+- **Registry:** Public NPM registry under the `skill-manage` namespace.
 
 ## Implementation Patterns & Consistency Rules
 
@@ -149,7 +149,7 @@ We will utilize **Flat File state management** using standard Rust crates like `
 ### Naming Patterns
 - **Rust Code:** Strictly follow `rustfmt` standard: `snake_case` for functions/variables, `PascalCase` for Types/Traits/Structs.
 - **File Naming:** `snake_case.rs`.
-- **CLI Arguments:** `kebab-case` for flags and subcommands (e.g., `skill manage sync --dry-run`).
+- **CLI Arguments:** `kebab-case` for flags and subcommands (e.g., `skill-manage sync --dry-run`).
 - **Data Exchange:** `camelCase` for JSON field keys to maintain compatibility with the NPM/NodeJS ecosystem.
 
 ### Structure Patterns
@@ -206,11 +206,11 @@ We will utilize **Flat File state management** using standard Rust crates like `
 ### Complete Project Directory Structure
 
 ```text
-skill manage/
+skill-manage/
 ├── Cargo.toml                  # Rust workspace configuration
 ├── package.json               # NPM Wrapper (entrypoint for npx)
 ├── bin/                       # NPM executable scripts
-│   └── skill manage.js      # JS shim for binary detection & execution
+│   └── skill-manage.js      # JS shim for binary detection & execution
 ├── .github/
 │   └── workflows/
 │       └── release.yml        # GitHub Actions (cargo-dist) release pipeline
@@ -312,4 +312,4 @@ The only external dependency is the GitHub API / Git protocol for repository fet
 - Follow all architectural decisions exactly as documented.
 - Use implementation patterns consistently across all components.
 - Respect project structure and architectural boundaries.
-- **First Implementation Priority:** Initialize the workspace using `cargo generate ratatui/templates --name skill manage --template component`.
+- **First Implementation Priority:** Initialize the workspace using `cargo generate ratatui/templates --name skill-manage --template component`.
