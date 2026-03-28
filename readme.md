@@ -182,8 +182,8 @@ To minimize token usage (typically <150 tokens) and eliminate hallucinations, AI
 2. **Step 2 (Lookup):** Read `skills-aggregated/{hub}/{sub_hub}/routing.tsv`
    - Match user intent against the `triggers` column.
    - Extract `skill_id` and `src_path` from the row with the highest score.
-3. **Step 3 (Invoke):** Read `{project-root}/skill-manage/{src_path}`
-   - Load the exact file referenced by the routing layer.
+3. **Step 3 (Invoke):** Read `{hub_mount_path}/{src_path}`
+   - Load the exact file referenced by the routing layer locally from the junction.
 
 > **Note:** Agents should NEVER read `hub-manifests.csv` (too large) or guess file paths. Always use `routing.tsv` for exact resolution. Reference `skills-aggregated/AGENT-PROTOCOL.md` for full implementation rules.
 

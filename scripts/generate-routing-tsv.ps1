@@ -56,10 +56,10 @@ foreach ($repo in $srcRepos) {
     foreach ($sd in $skillDirs) {
         $skillMd = Join-Path $sd.FullName 'SKILL.md'
         if (Test-Path $skillMd) {
-            $relPath = "src/$($repo.Name)/skills/$($sd.Name)/SKILL.md"
+            $absPath = $skillMd
             # First match wins (handles duplicates by repo order)
             if (-not $srcPathMap.ContainsKey($sd.Name)) {
-                $srcPathMap[$sd.Name] = $relPath
+                $srcPathMap[$sd.Name] = $absPath
             }
         }
     }
@@ -102,7 +102,16 @@ foreach ($group in $groups) {
         # Resolve src_path
         $srcPath = ''
         if ($srcPathMap.ContainsKey($skillId)) {
-            $srcPath = $srcPathMap[$skillId]
+            $sourceAbsolute = $srcPathMap[$skillId]
+            $sourceDir = Split-Path $sourceAbsolute -Parent
+            $targetDir = Join-Path $outDir "skills\$skillId"
+            
+            if (-not $DryRun) {
+                if (-not (Test-Path $targetDir)) { New-Item -ItemType Directory -Path $targetDir -Force | Out-Null }
+                Copy-Item -Path "$sourceDir\*" -Destination $targetDir -Recurse -Force
+            }
+
+            $srcPath = "skills/$skillId/SKILL.md"
         } else {
             # Skip internal/BMAD skills — they live in .agent/skills/
             [void]$unresolvedIds.Add("${hub}/${subHub} -- ${skillId}")

@@ -28,7 +28,7 @@ Result: skill_id + src_path.
 
 ### STEP 3: load skill content
 
-Read `{project-root}/skill-manage/{src_path}` from the routing.tsv row.
+Read `{hub_mount_path}/{src_path}` (where `{hub_mount_path}` is the directory containing `routing.tsv`).
 
 - If src_path is empty → HALT, report to user
 - NEVER guess a file path — use ONLY what routing.tsv provides
@@ -77,8 +77,8 @@ User: "I need an API for my backend"
 Step 1: keyword "api" → quick-index → {"hub":"backend","sub_hub":"api-design"}
 Step 2: read backend/api-design/routing.tsv → match "api" trigger
         → skill_id="api-documentation", score=100
-        → src_path="src/antigravity-awesome-skills/skills/api-documentation/SKILL.md"
-Step 3: read {project-root}/skill-manage/src/antigravity-awesome-skills/skills/api-documentation/SKILL.md
+        → src_path="skills/api-documentation/SKILL.md"
+Step 3: read backend/api-design/skills/api-documentation/SKILL.md
 ```
 
 ### Example 2: Ambiguous keyword
@@ -88,7 +88,7 @@ Step 1: keyword "agents" → quick-index → [ai/llm-agents, programming/python,
         Context says "agents" likely means AI → pick ai/llm-agents
 Step 2: read ai/llm-agents/routing.tsv → match "agent" trigger
         → skill_id="ai-agent-development", score=100
-        → src_path="src/antigravity-awesome-skills/skills/ai-agent-development/SKILL.md"
+        → src_path="skills/ai-agent-development/SKILL.md"
 Step 3: read the resolved src_path
 ```
 
