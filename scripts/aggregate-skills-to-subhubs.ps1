@@ -3,9 +3,9 @@
 # Generates lightweight SKILL.md router + external catalog data
 
 param(
-    [string] $srcHubsDir = ".\AI-skills-bank\hub-skills",
-    [string] $OutputDir = ".\AI-skills-bank\skills-aggregated",
-    [array] $FallbackSkillRoots = @(".\AI-skills-bank\src"),
+    [string] $srcHubsDir = ".\skill manage\hub-skills",
+    [string] $OutputDir = ".\skill manage\skills-aggregated",
+    [array] $FallbackSkillRoots = @(".\skill manage\src"),
     [ValidateSet("latest", "all", "selected", "changed-only")]
     [string] $srcRepoMode = "latest",
     [string[]] $srcRepoNames = @(),
@@ -31,7 +31,7 @@ param(
     [ValidateRange(1, 30)]
     [int] $AutoAcceptMinScore = 8,
     [Switch] $EnableSemanticScoring = $false,
-    [string] $SemanticClassificationsFile = ".\AI-skills-bank\skills-aggregated\semantic-classifications.json",
+    [string] $SemanticClassificationsFile = ".\skill manage\skills-aggregated\semantic-classifications.json",
     [ValidateRange(0.0, 1.0)]
     [double] $SemanticWeightFactor = 0.6,
     [Switch] $NoPrompt = $false
@@ -76,10 +76,10 @@ if (Test-Path $validationScriptPath) {
 
 # Use $PSScriptRoot to resolve paths relative to the script location
 if ($PSScriptRoot) {
-    # Normalize script root and derive repository root even when script lives under AI-skills-bank/scripts.
+    # Normalize script root and derive repository root even when script lives under skill manage/scripts.
     $normalizedScriptRoot = (Get-Item $PSScriptRoot).FullName
     $candidateRootObj = Get-Item (Join-Path $normalizedScriptRoot "..")
-    if ($candidateRootObj.Name -ieq "AI-skills-bank") {
+    if ($candidateRootObj.Name -ieq "skill manage") {
         $RepoRootObj = Get-Item (Join-Path $candidateRootObj.FullName "..")
     }
     else {
@@ -87,8 +87,8 @@ if ($PSScriptRoot) {
     }
     $RepoRoot = $RepoRootObj.FullName
     
-    $legacyHubsDir = Join-Path $RepoRoot "AI-skills-bank/hub-skills"
-    $srcReposDir = Join-Path $RepoRoot "AI-skills-bank/src"
+    $legacyHubsDir = Join-Path $RepoRoot "skill manage/hub-skills"
+    $srcReposDir = Join-Path $RepoRoot "skill manage/src"
     if (Test-Path $legacyHubsDir) {
         $srcHubsDir = $legacyHubsDir
     }
@@ -96,10 +96,10 @@ if ($PSScriptRoot) {
         # New layout keeps skills under src repos; hub-manifest is optional.
         $srcHubsDir = $srcReposDir
     }
-    $OutputDir = Join-Path $RepoRoot "AI-skills-bank/skills-aggregated"
+    $OutputDir = Join-Path $RepoRoot "skill manage/skills-aggregated"
 }
 
-$srcRootPath = Join-Path $RepoRoot "AI-skills-bank/src"
+$srcRootPath = Join-Path $RepoRoot "skill manage/src"
 $SkillLockPath = Join-Path $OutputDir ".skill-lock.json"
 $RestrictsrcRepos = ($srcRepoMode -ne "all")
 $ChangedOnlyFallbackToLatest = $false
@@ -1174,7 +1174,7 @@ function Get-ExcludedCategory {
 function Get-Skillsrc {
     param([string] $Path)
     
-    if ($Path -match 'AI-skills-bank[\\/]src[\\/]([^\\/]+)') {
+    if ($Path -match 'skill manage[\\/]src[\\/]([^\\/]+)') {
         return "external:$($matches[1])"
     }
     else {

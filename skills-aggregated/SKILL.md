@@ -335,7 +335,7 @@ Optimized approach:
 ## File Structure Overview
 
 ```
-AI-skills-bank/skills-aggregated/
+skill manage/skills-aggregated/
 ├─ SKILL.md (this file) ← START HERE for hub discovery
 ├─ ROUTER-SKILL.md (central router template)
 ├─ quick-lookup.tsv (coming soon)
