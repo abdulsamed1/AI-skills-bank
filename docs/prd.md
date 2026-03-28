@@ -33,7 +33,7 @@ classification:
 
 ## Executive Summary
 
-AI Skills Bank is an ultra-lightweight, zero-latency local routing layer for AI agent workflows. It enables developers and autonomous agents to instantly locate and invoke capabilities from a curated library of over 1,400 skills. By migrating from a Node.js/PowerShell architecture to a natively compiled Rust binary distributed via NPX, the tool provides immediate, friction-free tool access while completely eliminating host system dependencies, PowerShell execution policies, and Node runtime overhead.
+skill manage is an ultra-lightweight, zero-latency local routing layer for AI agent workflows. It enables developers and autonomous agents to instantly locate and invoke capabilities from a curated library of over 1,400 skills. By migrating from a Node.js/PowerShell architecture to a natively compiled Rust binary distributed via NPX, the tool provides immediate, friction-free tool access while completely eliminating host system dependencies, PowerShell execution policies, and Node runtime overhead.
 
 ### What Makes This Special
 

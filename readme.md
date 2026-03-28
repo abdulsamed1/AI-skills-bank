@@ -1,6 +1,6 @@
 <div align="center">
 
-# AI Skills Bank
+# skill manage
 
 Unified, visual, multi-tool skill routing platform for AI workflows.
 
@@ -71,7 +71,7 @@ Visual flow:
 
 ```text
 ╭───────────────────────────────────────────────╮
-│   AI Skills Bank CLI                          │
+│   skill manage CLI                          │
 │   Aggregate, Sync, and Manage AI skill hubs   │
 ╰───────────────────────────────────────────────╯
 ? Choose what to do

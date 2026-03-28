@@ -1,10 +1,10 @@
-# AI Skills Bank CLI
+# skill manage CLI
 
 [![npm version](https://img.shields.io/npm/v/skill manage-cli.svg)](https://www.npmjs.com/package/skill manage-cli)
 [![npm downloads](https://img.shields.io/npm/dm/skill manage-cli.svg)](https://www.npmjs.com/package/skill manage-cli)
 [![license](https://img.shields.io/npm/l/skill manage-cli.svg)](./package.json)
 
-Visual CLI for AI Skills Bank with guided flows, changed-only aggregation, and global-first sync.
+Visual CLI for skill manage with guided flows, changed-only aggregation, and global-first sync.
 
 ## Why This Tool
 
@@ -44,7 +44,7 @@ skills-bank run --src-repo-mode changed-only --raw-output
 ```text
 ╭───────────────────────────────────────────────╮
 │                                               │
-│   AI Skills Bank CLI                          │
+│   skill manage CLI                          │
 │   Aggregate, Sync, and Manage AI skill hubs   │
 │                                               │
 ╰───────────────────────────────────────────────╯
@@ -182,7 +182,7 @@ npm publish --access public
 ## GitHub Release Notes Template
 
 ```markdown
-## AI Skills Bank CLI vX.Y.Z
+## skill manage CLI vX.Y.Z
 
 ### Highlights
 - Added/Improved: <feature summary>
