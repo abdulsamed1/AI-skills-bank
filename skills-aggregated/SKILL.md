@@ -322,9 +322,9 @@ Current approach: Search → Guess → Try
 ❌ 200+ tokens consumed per search
 
 Optimized approach: 
-1. Use "Quick Intent Matrix" (5 sec scan)
-2. Navigate to hub SKILL.md (15 sec read)
-3. Use hub's Quick Intent Matcher (2 sec lookup)
+1. Use "Quick Intent Matrix"
+2. Navigate to hub SKILL.md
+3. Use hub's Quick Intent Matcher
 4. Invoke exact skill with 100% confidence
 ✅ 0% hallucination risk
 ✅ 50-70 tokens saved per invocation
