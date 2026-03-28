@@ -45,7 +45,7 @@ function isSafeFolderName(folderName) {
 }
 
 function printBanner() {
-  const title = chalk.bold.hex("#00d4ff")("AI Skills Bank CLI");
+  const title = chalk.bold.hex("#00d4ff")("skill manage CLI");
   const subtitle = chalk.hex("#7dd3fc")("Secure skill routing with visual workflows");
   const rails = chalk.hex("#22d3ee")(">>>>>");
   const content = `${rails} ${title} ${rails}\n${subtitle}`;
@@ -680,7 +680,7 @@ printBanner();
 
 program
   .name("skills-bank")
-  .description("Visual CLI for AI Skills Bank")
+  .description("Visual CLI for skill manage")
   .version("0.1.0")
   .option("-p, --project <path>", "Project root path", process.cwd())
   .option("-v, --verbose", "Show verbose command output")
