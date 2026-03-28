@@ -1,0 +1,33 @@
+{
+  "name": "skill-manage",
+  "version": "0.1.0",
+  "description": "Ultra-lightweight, zero-latency local routing layer for AI agent workflows",
+  "type": "module",
+  "main": "bin/skill-manage.js",
+  "bin": {
+    "skill-manage": "bin/skill-manage.js",
+    "sm": "bin/skill-manage.js"
+  },
+  "files": [
+    "bin",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "ai",
+    "skills",
+    "cli",
+    "bmad",
+    "rust"
+  ],
+  "author": "ABDULSAMED",
+  "license": "MIT",
+  "optionalDependencies": {
+    "skill-manage-win32-x64": "0.1.0",
+    "skill-manage-darwin-x64": "0.1.0",
+    "skill-manage-darwin-arm64": "0.1.0",
+    "skill-manage-linux-x64": "0.1.0"
+  }
+}

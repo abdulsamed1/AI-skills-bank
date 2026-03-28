@@ -478,10 +478,21 @@ function Sync-Hub-To-Tool {
     $targetHubPath = Join-Path $TargetPath $HubRelativePath
     
     if (Test-Path $targetHubPath) {
+        $isBroken = $false
+        try {
+            $null = Get-ChildItem -Path $targetHubPath -ErrorAction Stop
+        } catch {
+            $isBroken = $true
+        }
+
         if ($Force) {
             Remove-Item -Path $targetHubPath -Recurse -Force | Out-Null
         } else {
-            Write-Log "Hub already exists: $HubRelativePath (use -Force to overwrite)" "WARN"
+            if ($isBroken) {
+                Write-Log "BROKEN JUNCTION DETECTED: $HubRelativePath. Please re-run with -Force to repair it!" "ERROR"
+            } else {
+                Write-Log "Hub already exists: $HubRelativePath (use -Force to overwrite)" "WARN"
+            }
             return [PSCustomObject]@{ Success = $false; Mode = "Skipped" }
         }
     }

@@ -1,0 +1,109 @@
+# last_updated: 2026-03-28 07:41:00
+# project: skill-manage
+# project_key: NOKEY
+# tracking_system: file-system
+# story_location: skill-manage/docs/stories
+
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Epic Status Transitions:
+#   - backlog → in-progress: Automatically when first story is created (via create-story)
+#   - in-progress → done: Manually when all stories reach 'done' status
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review (via Dev's code-review workflow)
+#   - done: Story completed
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+#
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when first story is created
+# - Stories can be worked in parallel if team capacity allows
+# - SM typically creates next story after previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+
+generated: 2026-03-28
+last_updated: 2026-03-28 08:30:00
+project: skill-manage
+project_key: NOKEY
+tracking_system: file-system
+story_location: skill-manage/docs/stories
+
+development_status:
+  - Epic: "Epic 1: Project Core & Infrastructure"
+    status: "done"
+    stories:
+      - id: "story-01-rust-init"
+        status: "done"
+        file: "docs/stories/story-01-rust-init.md"
+      - id: "story-01-npm-wrapper"
+        status: "done"
+        file: "docs/stories/story-01-npm-wrapper.md"
+      - id: "story-01-cargo-dist"
+        status: "done"
+        file: "docs/stories/story-01-cargo-dist.md"
+  - Epic: "Epic 2: Repository Management (Fetch)"
+    status: "backlog"
+    stories:
+      - id: "story-02-manifest-parsing"
+        status: "backlog"
+      - id: "story-02-fetch-implementation"
+        status: "backlog"
+      - id: "story-02-fetch-progress"
+        status: "backlog"
+  - Epic: "Epic 3: Skill Synchronization (Sync)"
+    status: "backlog"
+    stories:
+      - id: "story-03-sync-implementation"
+        status: "backlog"
+      - id: "story-03-atomic-file-ops"
+        status: "backlog"
+      - id: "story-03-junction-logic"
+        status: "backlog"
+  - Epic: "Epic 4: Hub Aggregation (Aggregate)"
+    status: "backlog"
+    stories:
+      - id: "story-04-aggregate-implementation"
+        status: "backlog"
+      - id: "story-04-csv-generation"
+        status: "backlog"
+      - id: "story-04-aggregate-rules"
+        status: "backlog"
+  - Epic: "Epic 5: Diagnostics & Validation (Doctor)"
+    status: "backlog"
+    stories:
+      - id: "story-05-doctor-implementation"
+        status: "backlog"
+      - id: "story-05-schema-validation"
+        status: "backlog"
+      - id: "story-05-error-reporting"
+        status: "backlog"
+  - Epic: "Epic 6: CLI Surface & Polishing"
+    status: "backlog"
+    stories:
+      - id: "story-06-clap-integration"
+        status: "backlog"
+      - id: "story-06-terminal-styling"
+        status: "backlog"
+      - id: "story-06-stream-separation"
+        status: "backlog"
+
+# PRODUCTION READINESS SUMMARY
+# ============================
+overall_completion:
+  phases_complete: "Requirement Analysis, Architecture Design, Epic Breakdown"
+  stories_implemented: "3/18"
+  completion_percentage: "16.7%"
+  
+production_readiness_status: "Early Development - Infrastructure Phase"

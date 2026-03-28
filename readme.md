@@ -142,6 +142,17 @@ If you use multiple CLI tools or agents (e.g., Gemini CLI and Antigravity), you 
 Remove-Item -Recurse -Force ~/.gemini/skills/
 ```
 
+### Troubleshooting Broken Sub-hubs
+
+If an agent can see a sub-hub folder but cannot read its contents, or if you renamed the project folder, the Windows junctions might be broken.
+
+**Symptom:** AI cannot load skills from specific sub-hubs, or sub-hub folders appear empty.
+**Diagnostic:** Run `fsutil reparsepoint query "path/to/sub-hub"` and verify if `Substitute Name` points to an existing path.
+**Fix:** Re-run the sync script with `-Force` to recreate the junctions with the correct target paths:
+```powershell
+pwsh -ExecutionPolicy Bypass -File "skill manage/scripts/sync-hubs.ps1" -SyncMode Auto -Force
+```
+
 ---
 
 ## src Onboarding
