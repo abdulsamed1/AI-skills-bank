@@ -39,7 +39,6 @@ skill-manage/
 │  └─ src/index.mjs
 ├─ hub-manifests.csv         <-- Build source (do not read via agents)
 ├─ skills-aggregated/
-│  ├─ quick-index.json       <-- Step 1: Keyword routing
 │  ├─ AGENT-PROTOCOL.md      <-- Mandatory agent usage rules
 │  ├─ subhub-index.json
 │  ├─ <hub>/<sub_hub>/
@@ -121,7 +120,7 @@ Policy:
 ### Routing Generation (Single Entrypoint)
 
 ```powershell
-# Default profile (HubLocal) for Gemini/Copilot/Cursor-style loaders
+# Default profile (Auto => SourceDirect) for portable routing without local mount folders
 powershell -ExecutionPolicy Bypass -File "skill-manage/scripts/generate-routing-csv.ps1"
 
 # SourceDirect profile (dynamic repo-relative src_path: src/...)
@@ -133,7 +132,8 @@ powershell -ExecutionPolicy Bypass -File "skill-manage/scripts/generate-routing-
 
 Profiles:
 
-- `Auto`/`HubLocal`: emits `skills/<skill-id>/SKILL.md` and ensures junctions in each sub-hub.
+- `Auto`: emits dynamic repo-relative `src/.../SKILL.md` paths with no hub-local mount dependency.
+- `HubLocal`: emits `skills/<skill-id>/SKILL.md` and ensures junctions in each sub-hub.
 - `SourceDirect`: emits dynamic repo-relative `src/.../SKILL.md` paths with no hub-local mount dependency.
 - `SourceDirectStatic`: emits absolute source paths (machine-specific).
 

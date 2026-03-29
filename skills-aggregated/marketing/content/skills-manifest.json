@@ -1,17 +1,17 @@
 {
-    "name":  "skills-marketing-content",
-    "main_hub":  "marketing",
-    "sub_hub":  "content",
-    "description":  "Content marketing, SEO \u0026 Writing Styles: copywriting, blog strategy, search optimization, and high-quality prose standards",
-    "skill_count":  65,
-    "src_count":  12,
-    "top_triggers":  [
-                         null
-                     ],
-    "generated_at":  "2026-03-28T17:09:45+02:00",
-    "files":  {
-                  "skill":  "SKILL.md",
-                  "index":  "skills-index.json",
-                  "catalog":  "skills-catalog.csv"
-              }
+    "name": "skills-marketing-content",
+    "main_hub": "marketing",
+    "sub_hub": "content",
+    "description": "Content marketing, SEO \u0026 Writing Styles: copywriting, blog strategy, search optimization, and high-quality prose standards",
+    "skill_count": 70,
+    "src_count": 12,
+    "top_triggers": [
+        null
+    ],
+    "generated_at": "2026-03-29T23:17:46+02:00",
+    "files": {
+        "skill": "SKILL.md",
+        "index": "skills-index.json",
+        "catalog": "skills-catalog.csv"
+    }
 }

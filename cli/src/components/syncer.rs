@@ -1,11 +1,11 @@
+use crate::components::CommandResult;
+use crate::error::SkillManageError;
+use crate::utils::atomicity::{create_link_atomic, is_link, sync_dir_atomic};
+use crate::utils::paths::{expand_home, get_default_destination};
+use crate::utils::progress::ProgressManager;
 use std::path::{Path, PathBuf};
 use std::sync::Arc;
 use walkdir::WalkDir;
-use crate::error::SkillManageError;
-use crate::components::CommandResult;
-use crate::utils::progress::ProgressManager;
-use crate::utils::paths::{expand_home, get_default_destination};
-use crate::utils::atomicity::{sync_dir_atomic, create_link_atomic, is_link};
 
 #[derive(Debug, Clone)]
 pub struct Skill {
@@ -42,10 +42,7 @@ impl Syncer {
     /// Recursively find skills in the source directory.
     fn find_skills(&self, src_path: &Path) -> Vec<Skill> {
         let mut skills = Vec::new();
-        for entry in WalkDir::new(src_path)
-            .into_iter()
-            .filter_map(|e| e.ok())
-        {
+        for entry in WalkDir::new(src_path).into_iter().filter_map(|e| e.ok()) {
             if let Some(skill) = Skill::from_path(entry.path()) {
                 skills.push(skill);
             }
@@ -54,7 +51,12 @@ impl Syncer {
     }
 
     /// Synchronize skills to the target destination.
-    pub async fn sync(&self, destination: Option<String>, link: bool, dry_run: bool) -> Result<CommandResult, SkillManageError> {
+    pub async fn sync(
+        &self,
+        destination: Option<String>,
+        link: bool,
+        dry_run: bool,
+    ) -> Result<CommandResult, SkillManageError> {
         let target_base = match destination {
             Some(d) => expand_home(&d),
             None => get_default_destination(),
@@ -66,18 +68,24 @@ impl Syncer {
 
         let src_path = Path::new("src");
         if !src_path.exists() {
-            return Err(SkillManageError::ConfigError("Source directory 'src' not found. Run 'fetch' first.".to_string()));
+            return Err(SkillManageError::ConfigError(
+                "Source directory 'src' not found. Run 'fetch' first.".to_string(),
+            ));
         }
 
         let skills = self.find_skills(src_path);
         let total_skills = skills.len() as u64;
-        let main_pb = self.progress.create_main_bar(total_skills, "Synchronizing skills");
+        let main_pb = self
+            .progress
+            .create_main_bar(total_skills, "Synchronizing skills");
 
         let mut synced = Vec::new();
 
         for skill in skills {
             let target_path = target_base.join(&skill.name);
-            let spinner = self.progress.create_spinner(&format!("Syncing: {}", skill.name));
+            let spinner = self
+                .progress
+                .create_spinner(&format!("Syncing: {}", skill.name));
 
             if !dry_run {
                 // Conflict detection
@@ -110,7 +118,7 @@ impl Syncer {
         }
 
         main_pb.finish_with_message("Synchronization complete.");
-        
+
         Ok(CommandResult::Sync {
             synced,
             target: target_base.to_string_lossy().into_owned(),

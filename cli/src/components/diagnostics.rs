@@ -1,12 +1,12 @@
-use std::path::Path;
-use crossterm::style::{Color, Stylize};
-use crate::error::SkillManageError;
+use crate::components::aggregator::rules::{CSV_COLUMNS, VALID_HUBS};
 use crate::components::manifest::RepoManifest;
-use crate::components::aggregator::rules::{VALID_HUBS, CSV_COLUMNS};
 use crate::components::CommandResult;
+use crate::error::SkillManageError;
+use crossterm::style::{Color, Stylize};
+use minijinja::{context, Environment};
 use rayon::prelude::*;
 use serde::Serialize;
-use minijinja::{Environment, context};
+use std::path::Path;
 
 #[derive(Debug, Clone, Serialize)]
 pub struct DiagnosticIssue {
@@ -21,8 +21,14 @@ pub struct DiagnosticIssue {
 #[serde(tag = "type", rename_all = "SCREAMING_SNAKE_CASE")]
 pub enum DiagnosticStatus {
     Pass,
-    Warn { issues: Vec<DiagnosticIssue>, fix: String },
-    Fail { issues: Vec<DiagnosticIssue>, fix: String },
+    Warn {
+        issues: Vec<DiagnosticIssue>,
+        fix: String,
+    },
+    Fail {
+        issues: Vec<DiagnosticIssue>,
+        fix: String,
+    },
 }
 
 pub trait Check: Sync + Send {
@@ -33,7 +39,9 @@ pub trait Check: Sync + Send {
 // 1. Manifest Exists Check
 struct ManifestExistsCheck;
 impl Check for ManifestExistsCheck {
-    fn name(&self) -> &str { "Manifest File (repos.json)" }
+    fn name(&self) -> &str {
+        "Manifest File (repos.json)"
+    }
     fn run(&self) -> DiagnosticStatus {
         let path = Path::new("repos.json");
         if path.exists() {
@@ -45,10 +53,11 @@ impl Check for ManifestExistsCheck {
                         location: Some("repos.json".to_string()),
                         current: None,
                         should_be: None,
-                        why: "Manifest must be valid JSON following the RepoManifest schema".to_string(),
+                        why: "Manifest must be valid JSON following the RepoManifest schema"
+                            .to_string(),
                     }],
                     fix: "Check for JSON syntax errors or unknown fields in repos.json".to_string(),
-                }
+                },
             }
         } else {
             DiagnosticStatus::Fail {
@@ -68,7 +77,9 @@ impl Check for ManifestExistsCheck {
 // 2. Source Directory Check
 struct SourceDirCheck;
 impl Check for SourceDirCheck {
-    fn name(&self) -> &str { "Repository Cache (src/)" }
+    fn name(&self) -> &str {
+        "Repository Cache (src/)"
+    }
     fn run(&self) -> DiagnosticStatus {
         if Path::new("src").is_dir() {
             DiagnosticStatus::Pass
@@ -90,7 +101,9 @@ impl Check for SourceDirCheck {
 // 3. CSV Schema Check
 struct CsvSchemaCheck;
 impl Check for CsvSchemaCheck {
-    fn name(&self) -> &str { "Aggregated Manifest (hub-manifests.csv) Schema" }
+    fn name(&self) -> &str {
+        "Aggregated Manifest (hub-manifests.csv) Schema"
+    }
     fn run(&self) -> DiagnosticStatus {
         let path = Path::new("hub-manifests.csv");
         if !path.exists() {
@@ -108,16 +121,18 @@ impl Check for CsvSchemaCheck {
 
         let mut rdr = match csv::Reader::from_path(path) {
             Ok(r) => r,
-            Err(e) => return DiagnosticStatus::Fail {
-                issues: vec![DiagnosticIssue {
-                    description: format!("Failed to open CSV: {}", e),
-                    location: Some("hub-manifests.csv".to_string()),
-                    current: None,
-                    should_be: None,
-                    why: "CSV must be readable to validate its schema".to_string(),
-                }],
-                fix: "Check file permissions or if the file is corrupted".to_string(),
-            },
+            Err(e) => {
+                return DiagnosticStatus::Fail {
+                    issues: vec![DiagnosticIssue {
+                        description: format!("Failed to open CSV: {}", e),
+                        location: Some("hub-manifests.csv".to_string()),
+                        current: None,
+                        should_be: None,
+                        why: "CSV must be readable to validate its schema".to_string(),
+                    }],
+                    fix: "Check file permissions or if the file is corrupted".to_string(),
+                }
+            }
         };
 
         let mut issues = Vec::new();
@@ -159,7 +174,7 @@ impl Check for CsvSchemaCheck {
         for result in rdr.records() {
             row_count += 1;
             let record = result.unwrap();
-            
+
             let hub = record.get(0).unwrap_or_default();
             if !VALID_HUBS.contains(&hub) {
                 issues.push(DiagnosticIssue {
@@ -181,7 +196,8 @@ impl Check for CsvSchemaCheck {
         } else {
             DiagnosticStatus::Fail {
                 issues,
-                fix: "Check the SKILL.md frontmatter for valid hub names and run aggregate".to_string(),
+                fix: "Check the SKILL.md frontmatter for valid hub names and run aggregate"
+                    .to_string(),
             }
         }
     }
@@ -190,24 +206,29 @@ impl Check for CsvSchemaCheck {
 // 4. Repo Integrity Check (Parallel)
 struct RepoIntegrityCheck;
 impl Check for RepoIntegrityCheck {
-    fn name(&self) -> &str { "Repository Integrity" }
+    fn name(&self) -> &str {
+        "Repository Integrity"
+    }
     fn run(&self) -> DiagnosticStatus {
         let path = Path::new("repos.json");
         let manifest = match RepoManifest::load(path) {
             Ok(m) => m,
-            Err(_) => return DiagnosticStatus::Fail {
-                issues: vec![DiagnosticIssue {
-                    description: "Skipped due to manifest error".to_string(),
-                    location: None,
-                    current: None,
-                    should_be: None,
-                    why: "Integrity check requires a valid repos.json".to_string(),
-                }],
-                fix: "Fix repos.json first".to_string(),
-            },
+            Err(_) => {
+                return DiagnosticStatus::Fail {
+                    issues: vec![DiagnosticIssue {
+                        description: "Skipped due to manifest error".to_string(),
+                        location: None,
+                        current: None,
+                        should_be: None,
+                        why: "Integrity check requires a valid repos.json".to_string(),
+                    }],
+                    fix: "Fix repos.json first".to_string(),
+                }
+            }
         };
 
-        let missing: Vec<String> = manifest.repositories
+        let missing: Vec<String> = manifest
+            .repositories
             .par_iter()
             .filter(|repo| !Path::new("src").join(&repo.name).exists())
             .map(|repo| repo.name.clone())
@@ -222,7 +243,8 @@ impl Check for RepoIntegrityCheck {
                     location: Some("src/ directory".to_string()),
                     current: Some(format!("Missing: {}", missing.join(", "))),
                     should_be: Some("All repos from manifest present in src/".to_string()),
-                    why: "Skills must be locally cached before they can be synchronized or routed".to_string(),
+                    why: "Skills must be locally cached before they can be synchronized or routed"
+                        .to_string(),
                 }],
                 fix: "Run 'fetch' to download missing repos".to_string(),
             }
@@ -233,7 +255,9 @@ impl Check for RepoIntegrityCheck {
 // 5. Master Router Check
 struct MasterRouterCheck;
 impl Check for MasterRouterCheck {
-    fn name(&self) -> &str { "Skills Bank Master Router (SKILL.md)" }
+    fn name(&self) -> &str {
+        "Skills Bank Master Router (SKILL.md)"
+    }
     fn run(&self) -> DiagnosticStatus {
         let path = Path::new("skill-manage/skills-aggregated/SKILL.md");
         if !path.exists() {
@@ -260,9 +284,11 @@ impl Check for MasterRouterCheck {
                             location: Some("skill-manage/skills-aggregated/SKILL.md".to_string()),
                             current: None,
                             should_be: Some("Contains '11 HUBS ONLY' section".to_string()),
-                            why: "Guard rules prevent hallucination by explicitly limiting hubs".to_string(),
+                            why: "Guard rules prevent hallucination by explicitly limiting hubs"
+                                .to_string(),
                         }],
-                        fix: "Check skills-bank-router template for '11 HUBS ONLY' section".to_string(),
+                        fix: "Check skills-bank-router template for '11 HUBS ONLY' section"
+                            .to_string(),
                     }
                 }
             }
@@ -275,7 +301,7 @@ impl Check for MasterRouterCheck {
                     why: "Master router must be readable to verify contents".to_string(),
                 }],
                 fix: "Check file permissions".to_string(),
-            }
+            },
         }
     }
 }
@@ -314,7 +340,12 @@ impl Diagnostics {
         let passed_checks = total_checks - critical_count - warning_count;
         let health_score = (passed_checks as f32 / total_checks as f32 * 100.0) as u32;
 
-        self.print_report(&results, critical_count as u32, warning_count as u32, health_score)?;
+        self.print_report(
+            &results,
+            critical_count as u32,
+            warning_count as u32,
+            health_score,
+        )?;
 
         Ok(CommandResult::Doctor {
             checks: results,
@@ -322,9 +353,15 @@ impl Diagnostics {
         })
     }
 
-    fn print_report(&self, results: &[(String, DiagnosticStatus)], critical_count: u32, warning_count: u32, health_score: u32) -> Result<(), SkillManageError> {
+    fn print_report(
+        &self,
+        results: &[(String, DiagnosticStatus)],
+        critical_count: u32,
+        warning_count: u32,
+        health_score: u32,
+    ) -> Result<(), SkillManageError> {
         let mut env = Environment::new();
-        
+
         let template = r#"
 🔍 {{ name }} Audit
 
@@ -358,7 +395,8 @@ impl Diagnostics {
 {{ summary.message }}
 "#;
 
-        env.add_template("report", template).map_err(|e| SkillManageError::ConfigError(e.to_string()))?;
+        env.add_template("report", template)
+            .map_err(|e| SkillManageError::ConfigError(e.to_string()))?;
 
         let overall_status = if critical_count > 0 {
             "❌ CRITICAL ISSUES"
@@ -388,22 +426,27 @@ impl Diagnostics {
             )
         );
 
-        let rendered = env.get_template("report").unwrap().render(ctx).map_err(|e| SkillManageError::ConfigError(e.to_string()))?;
+        let rendered = env
+            .get_template("report")
+            .unwrap()
+            .render(ctx)
+            .map_err(|e| SkillManageError::ConfigError(e.to_string()))?;
 
-        // Print with colors
+        // Print with colors to stderr
+        use std::io::Write;
         for line in rendered.lines() {
             if line.contains("✅ PASS") {
-                println!("{}", line.with(Color::Green));
+                let _ = writeln!(std::io::stderr(), "{}", line.with(Color::Green));
             } else if line.contains("⚠️ WARNING") {
-                println!("{}", line.with(Color::Yellow));
+                let _ = writeln!(std::io::stderr(), "{}", line.with(Color::Yellow));
             } else if line.contains("❌ CRITICAL") {
-                println!("{}", line.with(Color::Red));
+                let _ = writeln!(std::io::stderr(), "{}", line.with(Color::Red));
             } else if line.starts_with("### ") || line.starts_with("## ") {
-                println!("{}", line.bold().underlined());
+                let _ = writeln!(std::io::stderr(), "{}", line.bold().underlined());
             } else if line.starts_with("🔍 ") {
-                println!("{}", line.bold().cyan());
+                let _ = writeln!(std::io::stderr(), "{}", line.bold().cyan());
             } else {
-                println!("{}", line);
+                let _ = writeln!(std::io::stderr(), "{}", line);
             }
         }
 

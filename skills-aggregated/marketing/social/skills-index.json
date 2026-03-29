@@ -1,5 +1,16 @@
 [
     {
+        "id":  "ad-creative",
+        "triggers":  [
+                         "ad",
+                         "creative"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
         "id":  "apify-audience-analysis",
         "triggers":  [
                          "apify",
@@ -125,15 +136,26 @@
         "match_score":  5
     },
     {
+        "id":  "marketing-psychology",
+        "triggers":  [
+                         "marketing",
+                         "psychology"
+                     ],
+        "src":  "external:marketingskills",
+        "primary_hub":  "marketing/social",
+        "is_primary":  true,
+        "match_score":  1
+    },
+    {
         "id":  "paid-ads",
         "triggers":  [
                          "paid",
                          "ads"
                      ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:marketingskills",
         "primary_hub":  "marketing/social",
         "is_primary":  true,
-        "match_score":  100
+        "match_score":  9
     },
     {
         "id":  "social-card-gen",

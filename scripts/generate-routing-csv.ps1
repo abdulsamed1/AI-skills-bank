@@ -14,8 +14,11 @@ param(
 )
 
 $scriptPath = Join-Path $PSScriptRoot "generate-routing-tsv.ps1"
-$pathMode = 'HubLocal'
-if ($ToolProfile -eq 'SourceDirect') {
+$pathMode = 'SourceDirectRelative'
+if ($ToolProfile -eq 'HubLocal') {
+    $pathMode = 'HubLocal'
+}
+elseif ($ToolProfile -eq 'SourceDirect') {
     $pathMode = 'SourceDirectRelative'
 }
 elseif ($ToolProfile -eq 'SourceDirectStatic') {

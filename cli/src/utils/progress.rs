@@ -1,19 +1,27 @@
-use indicatif::{MultiProgress, ProgressBar, ProgressStyle};
-use std::time::Duration;
-use std::sync::Arc;
 use crate::utils::theme::Theme;
+use indicatif::{MultiProgress, ProgressBar, ProgressDrawTarget, ProgressStyle};
+use std::sync::Arc;
+use std::time::Duration;
 
 pub struct ProgressManager {
     multi: Option<MultiProgress>,
     theme: Arc<Theme>,
+    pub silent: bool,
 }
 
 impl ProgressManager {
-    /// Create a new ProgressManager. If enabled is false, all methods will return dummy bars.
-    pub fn new(enabled: bool, theme: Arc<Theme>) -> Self {
+    /// Create a new ProgressManager. If enabled is false or silent is true, all methods will return dummy bars.
+    pub fn new(enabled: bool, silent: bool, theme: Arc<Theme>) -> Self {
+        let multi = if enabled && !silent {
+            Some(MultiProgress::with_draw_target(ProgressDrawTarget::stderr()))
+        } else {
+            None
+        };
+
         Self {
-            multi: if enabled { Some(MultiProgress::new()) } else { None },
+            multi,
             theme,
+            silent,
         }
     }
 
@@ -42,7 +50,7 @@ impl ProgressManager {
             Some(multi) => {
                 let pb = multi.add(ProgressBar::new_spinner());
                 pb.enable_steady_tick(Duration::from_millis(120));
-                
+
                 let template = if self.theme.use_emoji {
                     "{spinner} {msg}"
                 } else {

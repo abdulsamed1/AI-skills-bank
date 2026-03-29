@@ -34,6 +34,7 @@ param(
     [string] $SemanticClassificationsFile = ".\skill-manage\skills-aggregated\semantic-classifications.json",
     [ValidateRange(0.0, 1.0)]
     [double] $SemanticWeightFactor = 0.6,
+    [bool] $MarketingFirst = $true,
     [Switch] $NoPrompt = $false
 )
 
@@ -1639,7 +1640,7 @@ function Write-SubHubFiles {
     }
 
     $indexItems = foreach ($skill in $Skills | Sort-Object id) {
-        [ordered]@{
+        [PSCustomObject][ordered]@{
             id = $skill.id
             triggers = @($skill.triggers | Select-Object -First 5)
             src = $skill.src
@@ -1650,7 +1651,7 @@ function Write-SubHubFiles {
     }
 
     $catalogRows = foreach ($skill in $Skills | Sort-Object id) {
-        [ordered]@{
+        [PSCustomObject][ordered]@{
             id = $skill.id
             description = $skill.description
             path = $skill.path
@@ -1761,6 +1762,18 @@ else {
 }
 
 Write-Host "[✓] Loaded $($allSkills.Count) skills from $(($allSkills.src | Select-Object -Unique).Count) srcs"
+
+$MarketingSkillIdSet = @{}
+if ($MarketingFirst) {
+    $marketingSkillRoot = Join-Path $srcRootPath "marketingskills/skills"
+    if (Test-Path $marketingSkillRoot) {
+        $marketingSkillDirs = Get-ChildItem -Path $marketingSkillRoot -Directory -ErrorAction SilentlyContinue
+        foreach ($dir in $marketingSkillDirs) {
+            $MarketingSkillIdSet[$dir.Name.ToLowerInvariant()] = $true
+        }
+        Write-Host "[INFO] Marketing-first id set loaded: $($MarketingSkillIdSet.Count) skills" -ForegroundColor DarkCyan
+    }
+}
 if ($script:ExcludedSkillStats.Count -gt 0) {
     $excludedTotal = ($script:ExcludedSkillStats.Values | Measure-Object -Sum).Sum
     Write-Host "[INFO] Excluded skills by policy: $excludedTotal" -ForegroundColor Yellow
@@ -1868,6 +1881,39 @@ foreach ($skill in $allSkills) {
         }
         else {
             $assignments = @(Get-SkillAssignments -Skill $skill -SubHubDefs $SUB_HUB_DEFINITIONS -EnableMultiHub:$AllowMultiHub -PrimaryThreshold $PrimaryMinScore -SecondaryThreshold $SecondaryMinScore -MaxAssignments $MaxHubsPerSkill)
+        }
+    }
+
+    # Marketing-first: prioritize skills coming from external:marketingskills under marketing/*.
+    if ($MarketingFirst) {
+        $srcLower = ([string]$skill.src).ToLowerInvariant()
+        $pathLower = ([string]$skill.path).ToLowerInvariant() -replace '\\', '/'
+        $skillIdLower = ([string]$skill.id).ToLowerInvariant()
+        $isMarketingSkill = ($srcLower -eq "external:marketingskills") -or ($pathLower -like "*/src/marketingskills/*") -or $MarketingSkillIdSet.ContainsKey($skillIdLower)
+
+        if ($isMarketingSkill) {
+            $marketingDefs = @{}
+            if ($SUB_HUB_DEFINITIONS.ContainsKey("marketing")) {
+                $marketingDefs["marketing"] = $SUB_HUB_DEFINITIONS["marketing"]
+            }
+
+            if ($marketingDefs.Count -gt 0) {
+                $marketingAssignments = @(Get-SkillAssignments -Skill $skill -SubHubDefs $marketingDefs -EnableMultiHub:$false -PrimaryThreshold 1 -SecondaryThreshold 1 -MaxAssignments 1)
+
+                if ($marketingAssignments.Count -gt 0) {
+                    # Ensure marketing assignment is primary for marketingskills source.
+                    $assignments = @($marketingAssignments)
+                }
+                elseif ($assignments.Count -gt 0) {
+                    # Fallback if no match in marketing defs but we still want marketing-first behavior.
+                    $assignments = @([PSCustomObject]@{
+                        main = "marketing"
+                        sub = "content"
+                        key = "marketing-content"
+                        score = [int]$assignments[0].score
+                    })
+                }
+            }
         }
     }
 

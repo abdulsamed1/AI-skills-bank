@@ -19,10 +19,10 @@
                          "churn",
                          "prevention"
                      ],
-        "src":  "external:antigravity-awesome-skills",
+        "src":  "external:marketingskills",
         "primary_hub":  "marketing/email",
         "is_primary":  true,
-        "match_score":  100
+        "match_score":  5
     },
     {
         "id":  "cold-email",
@@ -124,7 +124,7 @@
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "marketing/email",
         "is_primary":  true,
-        "match_score":  100
+        "match_score":  10
     },
     {
         "id":  "email-systems",
@@ -183,6 +183,17 @@
         "match_score":  13
     },
     {
+        "id":  "marketing-ideas",
+        "triggers":  [
+                         "marketing",
+                         "ideas"
+                     ],
+        "src":  "external:pm-skills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  1
+    },
+    {
         "id":  "newsletter-creation-curation",
         "triggers":  [
                          "newsletter",
@@ -193,5 +204,37 @@
         "primary_hub":  "marketing/email",
         "is_primary":  true,
         "match_score":  7
+    },
+    {
+        "id":  "onboarding-cro",
+        "triggers":  [
+                         "onboarding",
+                         "cro"
+                     ],
+        "src":  "external:marketingskills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  1
+    },
+    {
+        "id":  "popup-cro",
+        "triggers":  [
+                         "popup",
+                         "cro"
+                     ],
+        "src":  "external:marketingskills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  1
+    },
+    {
+        "id":  "revops",
+        "triggers":  [
+                         "revops"
+                     ],
+        "src":  "external:marketingskills",
+        "primary_hub":  "marketing/email",
+        "is_primary":  true,
+        "match_score":  9
     }
 ]

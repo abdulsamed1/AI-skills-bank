@@ -2591,17 +2591,6 @@
         "match_score":  13
     },
     {
-        "id":  "copy-editing",
-        "triggers":  [
-                         "copy",
-                         "editing"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
         "id":  "correlating-threat-campaigns",
         "triggers":  [
                          "correlating",
@@ -9847,17 +9836,6 @@
         "triggers":  [
                          "sales",
                          "automator"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "productivity/workflow-automation",
-        "is_primary":  true,
-        "match_score":  4
-    },
-    {
-        "id":  "sales-enablement",
-        "triggers":  [
-                         "sales",
-                         "enablement"
                      ],
         "src":  "external:antigravity-awesome-skills",
         "primary_hub":  "productivity/workflow-automation",

@@ -1,6 +1,6 @@
+use skill_manage::components::manifest::RepoManifest;
 use std::io::Write;
 use tempfile::NamedTempFile;
-use skill_manage::components::manifest::RepoManifest;
 
 #[test]
 fn test_full_manifest_flow() -> Result<(), Box<dyn std::error::Error>> {
@@ -19,7 +19,10 @@ fn test_full_manifest_flow() -> Result<(), Box<dyn std::error::Error>> {
     let manifest = RepoManifest::load(file.path())?;
     assert_eq!(manifest.repositories.len(), 1);
     assert_eq!(manifest.repositories[0].name, "skill-manage");
-    assert_eq!(manifest.repositories[0].url, "https://github.com/abdulsamed1/AI-skills-bank");
+    assert_eq!(
+        manifest.repositories[0].url,
+        "https://github.com/abdulsamed1/AI-skills-bank"
+    );
     assert_eq!(manifest.repositories[0].branch, Some("main".to_string()));
 
     Ok(())
@@ -32,7 +35,7 @@ fn test_invalid_json_integration() -> Result<(), Box<dyn std::error::Error>> {
 
     let result = RepoManifest::load(file.path());
     assert!(result.is_err());
-    
+
     Ok(())
 }
 
@@ -49,6 +52,6 @@ fn test_duplicate_validation_integration() -> Result<(), Box<dyn std::error::Err
 
     let result = RepoManifest::load(file.path());
     assert!(result.is_err());
-    
+
     Ok(())
 }

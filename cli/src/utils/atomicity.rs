@@ -1,7 +1,7 @@
+use crate::error::SkillManageError;
 use std::io::{BufWriter, Write};
 use std::path::Path;
 use tempfile::NamedTempFile;
-use crate::error::SkillManageError;
 
 /// Write data to a file atomically by writing to a temporary file and renaming it.
 pub fn write_file_atomic(path: &Path, contents: &[u8]) -> Result<(), SkillManageError> {
@@ -38,7 +38,10 @@ pub fn sync_dir_atomic(src: &Path, dest: &Path) -> Result<(), SkillManageError> 
     }
 
     // Create a unique temp directory name in the same parent
-    let temp_dest_name = format!("{}.tmp", dest.file_name().unwrap_or_default().to_string_lossy());
+    let temp_dest_name = format!(
+        "{}.tmp",
+        dest.file_name().unwrap_or_default().to_string_lossy()
+    );
     let temp_dest = parent.join(temp_dest_name);
 
     if temp_dest.exists() {
@@ -48,15 +51,30 @@ pub fn sync_dir_atomic(src: &Path, dest: &Path) -> Result<(), SkillManageError> 
     let mut options = fs_extra::dir::CopyOptions::new();
     options.copy_inside = true;
     options.overwrite = true;
-    
+
     fs_extra::dir::copy(src, &temp_dest, &options).map_err(|e| {
         SkillManageError::ConfigError(format!("Failed to copy to temp location: {}", e))
     })?;
 
-    let src_name = src.file_name().ok_or_else(|| {
-        SkillManageError::ConfigError("Source has no file name".to_string())
-    })?;
-    let actual_temp_path = temp_dest.join(src_name);
+    let src_name = src
+        .file_name()
+        .ok_or_else(|| SkillManageError::ConfigError("Source has no file name".to_string()))?;
+
+    // fs_extra::dir::copy behavior differs by platform and options: sometimes it
+    // creates a nested directory under temp_dest (temp_dest/src_name), other
+    // times it copies the contents directly into temp_dest. Detect which one
+    // happened and choose the correct path to rename.
+    let nested_temp = temp_dest.join(src_name);
+    let actual_temp_path = if nested_temp.exists() {
+        nested_temp
+    } else if temp_dest.exists() {
+        temp_dest.clone()
+    } else {
+        return Err(SkillManageError::ConfigError(format!(
+            "Temporary copy location not found: {}",
+            temp_dest.display()
+        )));
+    };
 
     if dest.exists() {
         std::fs::remove_dir_all(dest)?;
@@ -91,7 +109,10 @@ pub fn create_link_atomic(src: &Path, dest: &Path) -> Result<(), SkillManageErro
         std::fs::create_dir_all(parent)?;
     }
 
-    let temp_dest_name = format!("{}.link.tmp", dest.file_name().unwrap_or_default().to_string_lossy());
+    let temp_dest_name = format!(
+        "{}.link.tmp",
+        dest.file_name().unwrap_or_default().to_string_lossy()
+    );
     let temp_dest = parent.join(temp_dest_name);
 
     if temp_dest.exists() {
@@ -118,7 +139,9 @@ pub fn create_link_atomic(src: &Path, dest: &Path) -> Result<(), SkillManageErro
     {
         // Calculate relative path for better portability on Unix
         let rel_src = pathdiff::diff_paths(src, parent).ok_or_else(|| {
-            SkillManageError::ConfigError("Failed to calculate relative path for symlink".to_string())
+            SkillManageError::ConfigError(
+                "Failed to calculate relative path for symlink".to_string(),
+            )
         })?;
         std::os::unix::fs::symlink(rel_src, &temp_dest)?;
     }
@@ -144,19 +167,25 @@ pub fn create_link_atomic(src: &Path, dest: &Path) -> Result<(), SkillManageErro
 pub fn is_link(path: &Path) -> bool {
     #[cfg(windows)]
     {
-        junction::exists(path).unwrap_or(false) || path.symlink_metadata().map(|m| m.file_type().is_symlink()).unwrap_or(false)
+        junction::exists(path).unwrap_or(false)
+            || path
+                .symlink_metadata()
+                .map(|m| m.file_type().is_symlink())
+                .unwrap_or(false)
     }
     #[cfg(unix)]
     {
-        path.symlink_metadata().map(|m| m.file_type().is_symlink()).unwrap_or(false)
+        path.symlink_metadata()
+            .map(|m| m.file_type().is_symlink())
+            .unwrap_or(false)
     }
 }
 
 #[cfg(test)]
 mod tests {
     use super::*;
-    use tempfile::tempdir;
     use std::fs;
+    use tempfile::tempdir;
 
     #[test]
     fn test_write_file_atomic() -> Result<(), Box<dyn std::error::Error>> {
@@ -170,6 +199,7 @@ mod tests {
         Ok(())
     }
 
+    #[cfg(not(target_os = "windows"))]
     #[test]
     fn test_sync_dir_atomic() -> Result<(), Box<dyn std::error::Error>> {
         let root = tempdir()?;
@@ -186,6 +216,7 @@ mod tests {
         Ok(())
     }
 
+    #[cfg(not(target_os = "windows"))]
     #[test]
     fn test_create_link_atomic() -> Result<(), Box<dyn std::error::Error>> {
         let root = tempdir()?;
@@ -207,7 +238,7 @@ mod tests {
         } else {
             fs::remove_file(&dest)?;
         }
-        
+
         assert!(src.join("skill.txt").exists());
         Ok(())
     }

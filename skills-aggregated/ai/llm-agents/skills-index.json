@@ -2559,17 +2559,6 @@
         "match_score":  5
     },
     {
-        "id":  "marketing-psychology",
-        "triggers":  [
-                         "marketing",
-                         "psychology"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "ai/llm-agents",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "maxia",
         "triggers":  [
                          "maxia"

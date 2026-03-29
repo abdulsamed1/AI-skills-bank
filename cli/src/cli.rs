@@ -18,6 +18,10 @@ pub struct Cli {
     /// Output machine-readable JSON to stdout
     #[arg(long, global = true)]
     pub json: bool,
+
+    /// Suppress all progress and informational output to stderr
+    #[arg(short, long, global = true)]
+    pub silent: bool,
 }
 
 #[derive(Subcommand, Debug)]
@@ -33,7 +37,7 @@ pub enum Commands {
         /// Target destination path
         #[arg(short, long)]
         destination: Option<String>,
-        
+
         /// Use junctions (Windows) or symlinks (Unix) instead of copying
         #[arg(short, long)]
         link: bool,

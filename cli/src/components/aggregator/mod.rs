@@ -1,15 +1,15 @@
 pub mod rules;
 
+use crate::components::CommandResult;
+use crate::error::SkillManageError;
+use crate::utils::atomicity::write_file_atomic;
+use crate::utils::progress::ProgressManager;
+use rayon::prelude::*;
+use serde::{Deserialize, Serialize};
+use std::collections::HashSet;
 use std::path::{Path, PathBuf};
 use std::sync::Arc;
-use std::collections::HashSet;
-use serde::{Deserialize, Serialize};
 use walkdir::WalkDir;
-use rayon::prelude::*;
-use crate::error::SkillManageError;
-use crate::components::CommandResult;
-use crate::utils::progress::ProgressManager;
-use crate::utils::atomicity::write_file_atomic;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct SkillMetadata {
@@ -74,7 +74,7 @@ impl From<SkillMetadata> for CsvRow {
         let hub = meta.hub;
         let sub_hub = meta.sub_hub;
         let skill_id = meta.name.clone();
-        
+
         Self {
             hub: hub.clone(),
             sub_hub: sub_hub.clone(),
@@ -105,11 +105,14 @@ impl Aggregator {
 
     pub fn parse_skill_md(path: &Path) -> Result<SkillMetadata, SkillManageError> {
         let content = std::fs::read_to_string(path)?;
-        
+
         let mut parts = content.split("---");
-        let _ = parts.next(); 
+        let _ = parts.next();
         let yaml_part = parts.next().ok_or_else(|| {
-            SkillManageError::ManifestValidationError(format!("Missing frontmatter in {}", path.display()))
+            SkillManageError::ManifestValidationError(format!(
+                "Missing frontmatter in {}",
+                path.display()
+            ))
         })?;
 
         let frontmatter: SkillFrontmatter = serde_yaml::from_str(yaml_part).map_err(|e| {
@@ -121,7 +124,9 @@ impl Aggregator {
             description: frontmatter.description,
             path: path.to_path_buf(),
             hub: frontmatter.hub.unwrap_or_else(|| "ai".to_string()),
-            sub_hub: frontmatter.sub_hub.unwrap_or_else(|| "llm-agents".to_string()),
+            sub_hub: frontmatter
+                .sub_hub
+                .unwrap_or_else(|| "llm-agents".to_string()),
             triggers: frontmatter.triggers,
             match_score: frontmatter.match_score,
             phase: frontmatter.phase,
@@ -133,11 +138,13 @@ impl Aggregator {
     pub async fn aggregate(&self, _force: bool) -> Result<CommandResult, SkillManageError> {
         let src_path = Path::new("src");
         if !src_path.exists() {
-            return Err(SkillManageError::ConfigError("Source directory 'src' not found. Run 'fetch' first.".to_string()));
+            return Err(SkillManageError::ConfigError(
+                "Source directory 'src' not found. Run 'fetch' first.".to_string(),
+            ));
         }
 
         let spinner = self.progress.create_spinner("Scanning skills...");
-        
+
         let paths: Vec<PathBuf> = WalkDir::new(src_path)
             .into_iter()
             .filter_map(|e| e.ok())
@@ -145,7 +152,10 @@ impl Aggregator {
             .map(|e| e.path().to_path_buf())
             .collect();
 
-        spinner.set_message(format!("Found {} SKILL.md files. Applying rules...", paths.len()));
+        spinner.set_message(format!(
+            "Found {} SKILL.md files. Applying rules...",
+            paths.len()
+        ));
 
         let results: Vec<SkillMetadata> = paths
             .par_iter()
@@ -159,7 +169,7 @@ impl Aggregator {
                             // Excluded by policy
                             None
                         }
-                    },
+                    }
                     Err(e) => {
                         eprintln!("Error parsing {}: {}", path.display(), e);
                         None
@@ -178,26 +188,37 @@ impl Aggregator {
             unique_results.push(meta);
         }
 
-        spinner.finish_with_message(format!("Aggregation complete. Processed {} unique skills.", unique_results.len()));
-        
-        Ok(CommandResult::Aggregate { skills: unique_results })
+        spinner.finish_with_message(format!(
+            "Aggregation complete. Processed {} unique skills.",
+            unique_results.len()
+        ));
+
+        Ok(CommandResult::Aggregate {
+            skills: unique_results,
+        })
     }
 
     pub async fn generate_csv(&self, skills: Vec<SkillMetadata>) -> Result<(), SkillManageError> {
         let spinner = self.progress.create_spinner("Generating CSV...");
-        
+
         tokio::task::spawn_blocking(move || {
             let mut wtr = csv::Writer::from_writer(Vec::new());
             for meta in skills {
                 let row = CsvRow::from(meta);
-                wtr.serialize(row).map_err(|e| SkillManageError::ConfigError(e.to_string()))?;
+                wtr.serialize(row)
+                    .map_err(|e| SkillManageError::ConfigError(e.to_string()))?;
             }
-            wtr.flush().map_err(|e| SkillManageError::ConfigError(e.to_string()))?;
-            let data = wtr.into_inner().map_err(|e| SkillManageError::ConfigError(e.to_string()))?;
-            
+            wtr.flush()
+                .map_err(|e| SkillManageError::ConfigError(e.to_string()))?;
+            let data = wtr
+                .into_inner()
+                .map_err(|e| SkillManageError::ConfigError(e.to_string()))?;
+
             write_file_atomic(Path::new("hub-manifests.csv"), &data)?;
             Ok::<(), SkillManageError>(())
-        }).await.map_err(|e| SkillManageError::ConfigError(e.to_string()))??;
+        })
+        .await
+        .map_err(|e| SkillManageError::ConfigError(e.to_string()))??;
 
         spinner.finish_with_message("Successfully generated hub-manifests.csv");
         Ok(())

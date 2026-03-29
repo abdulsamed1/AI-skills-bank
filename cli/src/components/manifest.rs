@@ -1,7 +1,7 @@
+use crate::error::SkillManageError;
+use serde::{Deserialize, Serialize};
 use std::collections::HashSet;
 use std::path::Path;
-use serde::{Deserialize, Serialize};
-use crate::error::SkillManageError;
 
 #[derive(Debug, Serialize, Deserialize, Clone, PartialEq)]
 #[serde(rename_all = "camelCase", deny_unknown_fields)]
@@ -23,7 +23,7 @@ impl RepoManifest {
         let content = std::fs::read_to_string(path)?;
         let manifest: Self = serde_json::from_str(&content)
             .map_err(|e| SkillManageError::ManifestParseError(e.to_string()))?;
-        
+
         manifest.validate()?;
         Ok(manifest)
     }
@@ -36,24 +36,27 @@ impl RepoManifest {
         for repo in &self.repositories {
             if repo.name.trim().is_empty() {
                 return Err(SkillManageError::ManifestValidationError(
-                    "Repository name cannot be empty".to_string()
+                    "Repository name cannot be empty".to_string(),
                 ));
             }
             if repo.url.trim().is_empty() {
-                return Err(SkillManageError::ManifestValidationError(
-                    format!("Repository '{}' has an empty URL", repo.name)
-                ));
+                return Err(SkillManageError::ManifestValidationError(format!(
+                    "Repository '{}' has an empty URL",
+                    repo.name
+                )));
             }
 
             if !names.insert(&repo.name) {
-                return Err(SkillManageError::ManifestValidationError(
-                    format!("Duplicate repository name found: '{}'", repo.name)
-                ));
+                return Err(SkillManageError::ManifestValidationError(format!(
+                    "Duplicate repository name found: '{}'",
+                    repo.name
+                )));
             }
             if !urls.insert(&repo.url) {
-                return Err(SkillManageError::ManifestValidationError(
-                    format!("Duplicate repository URL found: '{}'", repo.url)
-                ));
+                return Err(SkillManageError::ManifestValidationError(format!(
+                    "Duplicate repository URL found: '{}'",
+                    repo.url
+                )));
             }
         }
 
@@ -149,12 +152,15 @@ mod tests {
     #[test]
     fn test_load_from_file() -> Result<(), Box<dyn std::error::Error>> {
         let mut file = NamedTempFile::new()?;
-        writeln!(file, r#"{{"repositories": [{{"name": "test", "url": "https://github.com/test"}} ]}}"#)?;
-        
+        writeln!(
+            file,
+            r#"{{"repositories": [{{"name": "test", "url": "https://github.com/test"}} ]}}"#
+        )?;
+
         let manifest = RepoManifest::load(file.path())?;
         assert_eq!(manifest.repositories.len(), 1);
         assert_eq!(manifest.repositories[0].name, "test");
-        
+
         Ok(())
     }
 }

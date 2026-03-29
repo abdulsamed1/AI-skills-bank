@@ -715,17 +715,6 @@
         "match_score":  13
     },
     {
-        "id":  "launch-strategy",
-        "triggers":  [
-                         "launch",
-                         "strategy"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
         "id":  "lean-canvas",
         "triggers":  [
                          "lean",
@@ -868,18 +857,6 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  5
-    },
-    {
-        "id":  "paywall-upgrade-cro",
-        "triggers":  [
-                         "paywall",
-                         "upgrade",
-                         "cro"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  100
     },
     {
         "id":  "personal-tool-builder",
@@ -1179,17 +1156,6 @@
         "match_score":  11
     },
     {
-        "id":  "referral-program",
-        "triggers":  [
-                         "referral",
-                         "program"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
         "id":  "release-notes",
         "triggers":  [
                          "release",
@@ -1253,17 +1219,6 @@
         "primary_hub":  "business/product-strategy",
         "is_primary":  true,
         "match_score":  11
-    },
-    {
-        "id":  "sales-enablement",
-        "triggers":  [
-                         "sales",
-                         "enablement"
-                     ],
-        "src":  "external:marketingskills",
-        "primary_hub":  "business/product-strategy",
-        "is_primary":  true,
-        "match_score":  9
     },
     {
         "id":  "screenshot-optimization",

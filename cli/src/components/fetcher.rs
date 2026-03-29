@@ -1,10 +1,10 @@
-use std::path::Path;
-use std::sync::{Arc, Mutex};
-use tokio::sync::Semaphore;
 use crate::components::manifest::RepoManifest;
 use crate::components::CommandResult;
 use crate::error::SkillManageError;
 use crate::utils::progress::ProgressManager;
+use std::path::Path;
+use std::sync::{Arc, Mutex};
+use tokio::sync::Semaphore;
 
 pub struct Fetcher {
     pub manifest: Option<RepoManifest>,
@@ -57,7 +57,9 @@ impl Fetcher {
         }
 
         let total_repos = manifest.repositories.len() as u64;
-        let main_pb = self.progress.create_main_bar(total_repos, "Fetching repositories");
+        let main_pb = self
+            .progress
+            .create_main_bar(total_repos, "Fetching repositories");
 
         let semaphore = Arc::new(Semaphore::new(4));
         let cloned = Arc::new(Mutex::new(Vec::new()));
@@ -72,11 +74,14 @@ impl Fetcher {
             let main_pb_clone = main_pb.clone();
             let cloned_ref = Arc::clone(&cloned);
             let updated_ref = Arc::clone(&updated);
-            
+
             let handle = tokio::spawn(async move {
-                let _permit = sem.acquire().await.map_err(|e| SkillManageError::GitError(e.to_string()))?;
+                let _permit = sem
+                    .acquire()
+                    .await
+                    .map_err(|e| SkillManageError::GitError(e.to_string()))?;
                 let repo_path = Path::new("src").join(&repo_name);
-                
+
                 let spinner = progress.create_spinner(&format!("Pending: {}", repo_name));
 
                 if repo_path.exists() {
@@ -93,7 +98,7 @@ impl Fetcher {
                         cloned_ref.lock().unwrap().push(repo_name.clone());
                     }
                 }
-                
+
                 spinner.finish_with_message(format!("Done: {}", repo_name));
                 main_pb_clone.inc(1);
                 Ok::<(), SkillManageError>(())
@@ -109,10 +114,14 @@ impl Fetcher {
         }
 
         main_pb.finish_with_message("All repositories fetched successfully.");
-        
+
+        // Extract data and drop locks before constructing result
+        let cloned_data = cloned.lock().unwrap().clone();
+        let updated_data = updated.lock().unwrap().clone();
+
         Ok(CommandResult::Fetch {
-            cloned: cloned.lock().unwrap().clone(),
-            updated: updated.lock().unwrap().clone(),
+            cloned: cloned_data,
+            updated: updated_data,
         })
     }
 }

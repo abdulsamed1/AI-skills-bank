@@ -1,3128 +1,3128 @@
 [
     {
-        "id": "007",
-        "triggers": [
-            "007"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "analyzing-azure-activity-logs-for-threats",
-        "triggers": [
-            "analyzing",
-            "azure",
-            "activity",
-            "logs",
-            "for"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "analyzing-cobalt-strike-beacon-configuration",
-        "triggers": [
-            "analyzing",
-            "cobalt",
-            "strike",
-            "beacon",
-            "configuration"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "analyzing-ethereum-smart-contract-vulnerabilities",
-        "triggers": [
-            "analyzing",
-            "ethereum",
-            "smart",
-            "contract",
-            "vulnerabilities"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "analyzing-linux-audit-logs-for-intrusion",
-        "triggers": [
-            "analyzing",
-            "linux",
-            "audit",
-            "logs",
-            "for"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "analyzing-linux-kernel-rootkits",
-        "triggers": [
-            "analyzing",
-            "linux",
-            "kernel",
-            "rootkits"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "analyzing-linux-system-artifacts",
-        "triggers": [
-            "analyzing",
-            "linux",
-            "system",
-            "artifacts"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "analyzing-lnk-file-and-jump-list-artifacts",
-        "triggers": [
-            "analyzing",
-            "lnk",
-            "file",
-            "and",
-            "jump"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "analyzing-persistence-mechanisms-in-linux",
-        "triggers": [
-            "analyzing",
-            "persistence",
-            "mechanisms",
-            "in",
-            "linux"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 10
-    },
-    {
-        "id": "analyzing-powershell-empire-artifacts",
-        "triggers": [
-            "analyzing",
-            "powershell",
-            "empire",
-            "artifacts"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 10
-    },
-    {
-        "id": "analyzing-powershell-script-block-logging",
-        "triggers": [
-            "analyzing",
-            "powershell",
-            "script",
-            "block",
-            "logging"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "analyzing-prefetch-files-for-execution-history",
-        "triggers": [
-            "analyzing",
-            "prefetch",
-            "files",
-            "for",
-            "execution"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "analyzing-usb-device-connection-history",
-        "triggers": [
-            "analyzing",
-            "usb",
-            "device",
-            "connection",
-            "history"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "analyzing-windows-amcache-artifacts",
-        "triggers": [
-            "analyzing",
-            "windows",
-            "amcache",
-            "artifacts"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "analyzing-windows-event-logs-in-splunk",
-        "triggers": [
-            "analyzing",
-            "windows",
-            "event",
-            "logs",
-            "in"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "analyzing-windows-lnk-files-for-artifacts",
-        "triggers": [
-            "analyzing",
-            "windows",
-            "lnk",
-            "files",
-            "for"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "analyzing-windows-registry-for-artifacts",
-        "triggers": [
-            "analyzing",
-            "windows",
-            "registry",
-            "for",
-            "artifacts"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "analyzing-windows-shellbag-artifacts",
-        "triggers": [
-            "analyzing",
-            "windows",
-            "shellbag",
-            "artifacts"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "apify-actorization",
-        "triggers": [
-            "apify",
-            "actorization"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "apify-brand-reputation-monitoring",
-        "triggers": [
-            "apify",
-            "brand",
-            "reputation",
-            "monitoring"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "appinsights-instrumentation",
-        "triggers": [
-            "appinsights",
-            "instrumentation"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "application-performance-performance-optimization",
-        "triggers": [
-            "application",
-            "performance",
-            "performance",
-            "optimization"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "archive",
-        "triggers": [
-            "archive"
-        ],
-        "src": "external:ReScienceLab-opc-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "auditing-aws-s3-bucket-permissions",
-        "triggers": [
-            "auditing",
-            "aws",
-            "s3",
-            "bucket",
-            "permissions"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "auditing-azure-active-directory-configuration",
-        "triggers": [
-            "auditing",
-            "azure",
-            "active",
-            "directory",
-            "configuration"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "auditing-cloud-with-cis-benchmarks",
-        "triggers": [
-            "auditing",
-            "cloud",
-            "with",
-            "cis",
-            "benchmarks"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 5
-    },
-    {
-        "id": "auditing-gcp-iam-permissions",
-        "triggers": [
-            "auditing",
-            "gcp",
-            "iam",
-            "permissions"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "auditing-terraform-infrastructure-for-security",
-        "triggers": [
-            "auditing",
-            "terraform",
-            "infrastructure",
-            "for",
-            "security"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "aws-aurora",
-        "triggers": [
-            "aws",
-            "aurora"
-        ],
-        "src": "external:alinaqi-claude-bootstrap",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "aws-cdk-development",
-        "triggers": [
-            "aws",
-            "cdk",
-            "development"
-        ],
-        "src": "external:zxkane-aws-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "aws-compliance-checker",
-        "triggers": [
-            "aws",
-            "compliance",
-            "checker"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "aws-cost-cleanup",
-        "triggers": [
-            "aws",
-            "cost",
-            "cleanup"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "aws-cost-operations",
-        "triggers": [
-            "aws",
-            "cost",
-            "operations"
-        ],
-        "src": "external:zxkane-aws-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 16
-    },
-    {
-        "id": "aws-cost-optimizer",
-        "triggers": [
-            "aws",
-            "cost",
-            "optimizer"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "aws-dynamodb",
-        "triggers": [
-            "aws",
-            "dynamodb"
-        ],
-        "src": "external:alinaqi-claude-bootstrap",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "aws-iam-best-practices",
-        "triggers": [
-            "aws",
-            "iam",
-            "best",
-            "practices"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "aws-serverless",
-        "triggers": [
-            "aws",
-            "serverless"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 17
-    },
-    {
-        "id": "aws-skills",
-        "triggers": [
-            "aws",
-            "skills"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "azd-deployment",
-        "triggers": [
-            "azd",
-            "deployment"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 17
-    },
-    {
-        "id": "azure-ai",
-        "triggers": [
-            "azure",
-            "ai"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "azure-ai-document-intelligence-ts",
-        "triggers": [
-            "azure",
-            "ai",
-            "document",
-            "intelligence",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "azure-ai-openai-dotnet",
-        "triggers": [
-            "azure",
-            "ai",
-            "openai",
-            "dotnet"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "azure-ai-projects-ts",
-        "triggers": [
-            "azure",
-            "ai",
-            "projects",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "azure-ai-translation-ts",
-        "triggers": [
-            "azure",
-            "ai",
-            "translation",
-            "ts"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "azure-ai-voicelive-ts",
-        "triggers": [
-            "azure",
-            "ai",
-            "voicelive",
-            "ts"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "azure-appconfiguration-ts",
-        "triggers": [
-            "azure",
-            "appconfiguration",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "azure-cloud-migrate",
-        "triggers": [
-            "azure",
-            "cloud",
-            "migrate"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 25
-    },
-    {
-        "id": "azure-compute",
-        "triggers": [
-            "azure",
-            "compute"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "azure-cosmosdb",
-        "triggers": [
-            "azure",
-            "cosmosdb"
-        ],
-        "src": "external:alinaqi-claude-bootstrap",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "azure-cosmos-ts",
-        "triggers": [
-            "azure",
-            "cosmos",
-            "ts"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "azure-deploy",
-        "triggers": [
-            "azure",
-            "deploy"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 16
-    },
-    {
-        "id": "azure-devops",
-        "triggers": [
-            "azure",
-            "devops"
-        ],
-        "src": "external:sanjay3290-ai-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "azure-enterprise-infra-planner",
-        "triggers": [
-            "azure",
-            "enterprise",
-            "infra",
-            "planner"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 16
-    },
-    {
-        "id": "azure-functions",
-        "triggers": [
-            "azure",
-            "functions"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "azure-identity-ts",
-        "triggers": [
-            "azure",
-            "identity",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "azure-keyvault-keys-ts",
-        "triggers": [
-            "azure",
-            "keyvault",
-            "keys",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "azure-keyvault-secrets-ts",
-        "triggers": [
-            "azure",
-            "keyvault",
-            "secrets",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "azure-mgmt-applicationinsights-dotnet",
-        "triggers": [
-            "azure",
-            "mgmt",
-            "applicationinsights",
-            "dotnet"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "azure-mgmt-arizeaiobservabilityeval-dotnet",
-        "triggers": [
-            "azure",
-            "mgmt",
-            "arizeaiobservabilityeval",
-            "dotnet"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "azure-mgmt-weightsandbiases-dotnet",
-        "triggers": [
-            "azure",
-            "mgmt",
-            "weightsandbiases",
-            "dotnet"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "azure-monitor-opentelemetry-ts",
-        "triggers": [
-            "azure",
-            "monitor",
-            "opentelemetry",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "azure-prepare",
-        "triggers": [
-            "azure",
-            "prepare"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 16
-    },
-    {
-        "id": "azure-quotas",
-        "triggers": [
-            "azure",
-            "quotas"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "azure-rbac",
-        "triggers": [
-            "azure",
-            "rbac"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "azure-resource-visualizer",
-        "triggers": [
-            "azure",
-            "resource",
-            "visualizer"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "azure-search-documents-ts",
-        "triggers": [
-            "azure",
-            "search",
-            "documents",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "azure-servicebus-ts",
-        "triggers": [
-            "azure",
-            "servicebus",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "azure-validate",
-        "triggers": [
-            "azure",
-            "validate"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 20
-    },
-    {
-        "id": "azure-web-pubsub-ts",
-        "triggers": [
-            "azure",
-            "web",
-            "pubsub",
-            "ts"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "bash-defensive-patterns",
-        "triggers": [
-            "bash",
-            "defensive",
-            "patterns"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 16
-    },
-    {
-        "id": "bash-linux",
-        "triggers": [
-            "bash",
-            "linux"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 13
-    },
-    {
-        "id": "bash-pro",
-        "triggers": [
-            "bash",
-            "pro"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "bats-testing-patterns",
-        "triggers": [
-            "bats",
-            "testing",
-            "patterns"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 16
-    },
-    {
-        "id": "bazel-build-optimization",
-        "triggers": [
-            "bazel",
-            "build",
-            "optimization"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "building-adversary-infrastructure-tracking-system",
-        "triggers": [
-            "building",
-            "adversary",
-            "infrastructure",
-            "tracking",
-            "system"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "building-c2-infrastructure-with-sliver-framework",
-        "triggers": [
-            "building",
-            "c2",
-            "infrastructure",
-            "with",
-            "sliver"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "building-cloud-siem-with-sentinel",
-        "triggers": [
-            "building",
-            "cloud",
-            "siem",
-            "with",
-            "sentinel"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 5
-    },
-    {
-        "id": "building-identity-federation-with-saml-azure-ad",
-        "triggers": [
-            "building",
-            "identity",
-            "federation",
-            "with",
-            "saml"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "building-incident-response-dashboard",
-        "triggers": [
-            "building",
-            "incident",
-            "response",
-            "dashboard"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "building-incident-response-playbook",
-        "triggers": [
-            "building",
-            "incident",
-            "response",
-            "playbook"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "building-incident-timeline-with-timesketch",
-        "triggers": [
-            "building",
-            "incident",
-            "timeline",
-            "with",
-            "timesketch"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "building-threat-actor-profile-from-osint",
-        "triggers": [
-            "building",
-            "threat",
-            "actor",
-            "profile",
-            "from"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "busybox-on-windows",
-        "triggers": [
-            "busybox",
-            "on",
-            "windows"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "capacity",
-        "triggers": [
-            "capacity"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "cdk-patterns",
-        "triggers": [
-            "cdk",
-            "patterns"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "changelog-automation",
-        "triggers": [
-            "changelog",
-            "automation"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "cicd-automation-workflow-automate",
-        "triggers": [
-            "cicd",
-            "automation",
-            "workflow",
-            "automate"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "clawsec-suite",
-        "triggers": [
-            "clawsec",
-            "suite"
-        ],
-        "src": "external:prompt-security-clawsec",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "closed-loop-delivery",
-        "triggers": [
-            "closed",
-            "loop",
-            "delivery"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "cloud-architect",
-        "triggers": [
-            "cloud",
-            "architect"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 25
-    },
-    {
-        "id": "cloud-devops",
-        "triggers": [
-            "cloud",
-            "devops"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 41
-    },
-    {
-        "id": "cloudflare-workers-expert",
-        "triggers": [
-            "cloudflare",
-            "workers",
-            "expert"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "cloudformation-best-practices",
-        "triggers": [
-            "cloudformation",
-            "best",
-            "practices"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "cloud-penetration-testing",
-        "triggers": [
-            "cloud",
-            "penetration",
-            "testing"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 21
-    },
-    {
-        "id": "cloud-solution-architect",
-        "triggers": [
-            "cloud",
-            "solution",
-            "architect"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 5
-    },
-    {
-        "id": "cloud-uploader",
-        "triggers": [
-            "cloud",
-            "uploader"
-        ],
-        "src": "external:bitwize-music-studio-claude-ai-music-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 13
-    },
-    {
-        "id": "codex-review",
-        "triggers": [
-            "codex",
-            "review"
-        ],
-        "src": "external:alinaqi-claude-bootstrap",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "conducting-cloud-incident-response",
-        "triggers": [
-            "conducting",
-            "cloud",
-            "incident",
-            "response"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "conducting-phishing-incident-response",
-        "triggers": [
-            "conducting",
-            "phishing",
-            "incident",
-            "response"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "conducting-post-incident-lessons-learned",
-        "triggers": [
-            "conducting",
-            "post",
-            "incident",
-            "lessons",
-            "learned"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "configuring-suricata-for-network-monitoring",
-        "triggers": [
-            "configuring",
-            "suricata",
-            "for",
-            "network",
-            "monitoring"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "configuring-windows-defender-advanced-settings",
-        "triggers": [
-            "configuring",
-            "windows",
-            "defender",
-            "advanced",
-            "settings"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "configuring-windows-event-logging-for-detection",
-        "triggers": [
-            "configuring",
-            "windows",
-            "event",
-            "logging",
-            "for"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "cost-optimization",
-        "triggers": [
-            "cost",
-            "optimization"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "customize",
-        "triggers": [
-            "customize"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "database-cloud-optimization-cost-optimize",
-        "triggers": [
-            "database",
-            "cloud",
-            "optimization",
-            "cost",
-            "optimize"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 21
-    },
-    {
-        "id": "database-migrations-migration-observability",
-        "triggers": [
-            "database",
-            "migrations",
-            "migration",
-            "observability"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "deobfuscating-powershell-obfuscated-malware",
-        "triggers": [
-            "deobfuscating",
-            "powershell",
-            "obfuscated",
-            "malware"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 10
-    },
-    {
-        "id": "deploying-osquery-for-endpoint-monitoring",
-        "triggers": [
-            "deploying",
-            "osquery",
-            "for",
-            "endpoint",
-            "monitoring"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "deployment-engineer",
-        "triggers": [
-            "deployment",
-            "engineer"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "deployment-pipeline-design",
-        "triggers": [
-            "deployment",
-            "pipeline",
-            "design"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "deployment-procedures",
-        "triggers": [
-            "deployment",
-            "procedures"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "detecting-arp-poisoning-in-network-traffic",
-        "triggers": [
-            "detecting",
-            "arp",
-            "poisoning",
-            "in",
-            "network"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "detecting-aws-cloudtrail-anomalies",
-        "triggers": [
-            "detecting",
-            "aws",
-            "cloudtrail",
-            "anomalies"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "detecting-cloud-threats-with-guardduty",
-        "triggers": [
-            "detecting",
-            "cloud",
-            "threats",
-            "with",
-            "guardduty"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 5
-    },
-    {
-        "id": "detecting-compromised-cloud-credentials",
-        "triggers": [
-            "detecting",
-            "compromised",
-            "cloud",
-            "credentials"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 5
-    },
-    {
-        "id": "detecting-container-drift-at-runtime",
-        "triggers": [
-            "detecting",
-            "container",
-            "drift",
-            "at",
-            "runtime"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "detecting-container-escape-attempts",
-        "triggers": [
-            "detecting",
-            "container",
-            "escape",
-            "attempts"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "detecting-cryptomining-in-cloud",
-        "triggers": [
-            "detecting",
-            "cryptomining",
-            "in",
-            "cloud"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 5
-    },
-    {
-        "id": "detecting-dcsync-attack-in-active-directory",
-        "triggers": [
-            "detecting",
-            "dcsync",
-            "attack",
-            "in",
-            "active"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "detecting-dns-exfiltration-with-dns-query-analysis",
-        "triggers": [
-            "detecting",
-            "dns",
-            "exfiltration",
-            "with",
-            "dns"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "detecting-golden-ticket-forgery",
-        "triggers": [
-            "detecting",
-            "golden",
-            "ticket",
-            "forgery"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "detecting-kerberoasting-attacks",
-        "triggers": [
-            "detecting",
-            "kerberoasting",
-            "attacks"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "detecting-pass-the-ticket-attacks",
-        "triggers": [
-            "detecting",
-            "pass",
-            "the",
-            "ticket",
-            "attacks"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "detecting-privilege-escalation-attempts",
-        "triggers": [
-            "detecting",
-            "privilege",
-            "escalation",
-            "attempts"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "detecting-serverless-function-injection",
-        "triggers": [
-            "detecting",
-            "serverless",
-            "function",
-            "injection"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "detecting-supply-chain-attacks-in-ci-cd",
-        "triggers": [
-            "detecting",
-            "supply",
-            "chain",
-            "attacks",
-            "in"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "detecting-suspicious-powershell-execution",
-        "triggers": [
-            "detecting",
-            "suspicious",
-            "powershell",
-            "execution"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "detecting-t1003-credential-dumping-with-edr",
-        "triggers": [
-            "detecting",
-            "t1003",
-            "credential",
-            "dumping",
-            "with"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "detecting-t1548-abuse-elevation-control-mechanism",
-        "triggers": [
-            "detecting",
-            "t1548",
-            "abuse",
-            "elevation",
-            "control"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "devops-deploy",
-        "triggers": [
-            "devops",
-            "deploy"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 24
-    },
-    {
-        "id": "devops-troubleshooter",
-        "triggers": [
-            "devops",
-            "troubleshooter"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "dflow",
-        "triggers": [
-            "dflow"
-        ],
-        "src": "external:helius-labs-core-ai",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "environment-setup-guide",
-        "triggers": [
-            "environment",
-            "setup",
-            "guide"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 5
-    },
-    {
-        "id": "error-debugging-error-analysis",
-        "triggers": [
-            "error",
-            "debugging",
-            "error",
-            "analysis"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "error-debugging-error-trace",
-        "triggers": [
-            "error",
-            "debugging",
-            "error",
-            "trace"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "error-diagnostics-error-analysis",
-        "triggers": [
-            "error",
-            "diagnostics",
-            "error",
-            "analysis"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "error-diagnostics-error-trace",
-        "triggers": [
-            "error",
-            "diagnostics",
-            "error",
-            "trace"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "event-store-design",
-        "triggers": [
-            "event",
-            "store",
-            "design"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "firebase",
-        "triggers": [
-            "firebase"
-        ],
-        "src": "external:alinaqi-claude-bootstrap",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "gcp-cloud-run",
-        "triggers": [
-            "gcp",
-            "cloud",
-            "run"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "gemini-review",
-        "triggers": [
-            "gemini",
-            "review"
-        ],
-        "src": "external:alinaqi-claude-bootstrap",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "github-actions-templates",
-        "triggers": [
-            "github",
-            "actions",
-            "templates"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "gitlab-ci-patterns",
-        "triggers": [
-            "gitlab",
-            "ci",
-            "patterns"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "gitops-workflow",
-        "triggers": [
-            "gitops",
-            "workflow"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "grafana-dashboards",
-        "triggers": [
-            "grafana",
-            "dashboards"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "hardening-linux-endpoint-with-cis-benchmark",
-        "triggers": [
-            "hardening",
-            "linux",
-            "endpoint",
-            "with",
-            "cis"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "hardening-windows-endpoint-with-cis-benchmark",
-        "triggers": [
-            "hardening",
-            "windows",
-            "endpoint",
-            "with",
-            "cis"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "helius-dflow",
-        "triggers": [
-            "helius",
-            "dflow"
-        ],
-        "src": "external:helius-labs-core-ai",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "hono",
-        "triggers": [
-            "hono"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "hunting-for-anomalous-powershell-execution",
-        "triggers": [
-            "hunting",
-            "for",
-            "anomalous",
-            "powershell",
-            "execution"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "hunting-for-command-and-control-beaconing",
-        "triggers": [
-            "hunting",
-            "for",
-            "command",
-            "and",
-            "control"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "hunting-for-data-staging-before-exfiltration",
-        "triggers": [
-            "hunting",
-            "for",
-            "data",
-            "staging",
-            "before"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "hunting-for-dcsync-attacks",
-        "triggers": [
-            "hunting",
-            "for",
-            "dcsync",
-            "attacks"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "hunting-for-lateral-movement-via-wmi",
-        "triggers": [
-            "hunting",
-            "for",
-            "lateral",
-            "movement",
-            "via"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "hunting-for-living-off-the-cloud-techniques",
-        "triggers": [
-            "hunting",
-            "for",
-            "living",
-            "off",
-            "the"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 17
-    },
-    {
-        "id": "hunting-for-persistence-mechanisms-in-windows",
-        "triggers": [
-            "hunting",
-            "for",
-            "persistence",
-            "mechanisms",
-            "in"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "hunting-for-persistence-via-wmi-subscriptions",
-        "triggers": [
-            "hunting",
-            "for",
-            "persistence",
-            "via",
-            "wmi"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "hunting-for-registry-persistence-mechanisms",
-        "triggers": [
-            "hunting",
-            "for",
-            "registry",
-            "persistence",
-            "mechanisms"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "hunting-for-scheduled-task-persistence",
-        "triggers": [
-            "hunting",
-            "for",
-            "scheduled",
-            "task",
-            "persistence"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "hunting-for-shadow-copy-deletion",
-        "triggers": [
-            "hunting",
-            "for",
-            "shadow",
-            "copy",
-            "deletion"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 10
-    },
-    {
-        "id": "hunting-for-startup-folder-persistence",
-        "triggers": [
-            "hunting",
-            "for",
-            "startup",
-            "folder",
-            "persistence"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "hunting-for-suspicious-scheduled-tasks",
-        "triggers": [
-            "hunting",
-            "for",
-            "suspicious",
-            "scheduled",
-            "tasks"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "hunting-for-unusual-service-installations",
-        "triggers": [
-            "hunting",
-            "for",
-            "unusual",
-            "service",
-            "installations"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "hunting-for-webshell-activity",
-        "triggers": [
-            "hunting",
-            "for",
-            "webshell",
-            "activity"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "hybrid-cloud-architect",
-        "triggers": [
-            "hybrid",
-            "cloud",
-            "architect"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 17
-    },
-    {
-        "id": "implementing-aqua-security-for-container-scanning",
-        "triggers": [
-            "implementing",
-            "aqua",
-            "security",
-            "for",
-            "container"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "implementing-aws-config-rules-for-compliance",
-        "triggers": [
-            "implementing",
-            "aws",
-            "config",
-            "rules",
-            "for"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "implementing-aws-macie-for-data-classification",
-        "triggers": [
-            "implementing",
-            "aws",
-            "macie",
-            "for",
-            "data"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "implementing-azure-defender-for-cloud",
-        "triggers": [
-            "implementing",
-            "azure",
-            "defender",
-            "for",
-            "cloud"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "implementing-cloud-dlp-for-data-protection",
-        "triggers": [
-            "implementing",
-            "cloud",
-            "dlp",
-            "for",
-            "data"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 5
-    },
-    {
-        "id": "implementing-cloud-trail-log-analysis",
-        "triggers": [
-            "implementing",
-            "cloud",
-            "trail",
-            "log",
-            "analysis"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 5
-    },
-    {
-        "id": "implementing-cloud-vulnerability-posture-management",
-        "triggers": [
-            "implementing",
-            "cloud",
-            "vulnerability",
-            "posture",
-            "management"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 13
-    },
-    {
-        "id": "implementing-cloud-waf-rules",
-        "triggers": [
-            "implementing",
-            "cloud",
-            "waf",
-            "rules"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 5
-    },
-    {
-        "id": "implementing-cloud-workload-protection",
-        "triggers": [
-            "implementing",
-            "cloud",
-            "workload",
-            "protection"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 5
-    },
-    {
-        "id": "implementing-container-image-minimal-base-with-distroless",
-        "triggers": [
-            "implementing",
-            "container",
-            "image",
-            "minimal",
-            "base"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "implementing-ddos-mitigation-with-cloudflare",
-        "triggers": [
-            "implementing",
-            "ddos",
-            "mitigation",
-            "with",
-            "cloudflare"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "implementing-file-integrity-monitoring-with-aide",
-        "triggers": [
-            "implementing",
-            "file",
-            "integrity",
-            "monitoring",
-            "with"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "implementing-gcp-vpc-firewall-rules",
-        "triggers": [
-            "implementing",
-            "gcp",
-            "vpc",
-            "firewall",
-            "rules"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "implementing-log-forwarding-with-fluentd",
-        "triggers": [
-            "implementing",
-            "log",
-            "forwarding",
-            "with",
-            "fluentd"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "implementing-ot-incident-response-playbook",
-        "triggers": [
-            "implementing",
-            "ot",
-            "incident",
-            "response",
-            "playbook"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "implementing-privileged-session-monitoring",
-        "triggers": [
-            "implementing",
-            "privileged",
-            "session",
-            "monitoring"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "implementing-secrets-scanning-in-ci-cd",
-        "triggers": [
-            "implementing",
-            "secrets",
-            "scanning",
-            "in",
-            "ci"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "implementing-semgrep-for-custom-sast-rules",
-        "triggers": [
-            "implementing",
-            "semgrep",
-            "for",
-            "custom",
-            "sast"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "implementing-supply-chain-security-with-in-toto",
-        "triggers": [
-            "implementing",
-            "supply",
-            "chain",
-            "security",
-            "with"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "implementing-velociraptor-for-ir-collection",
-        "triggers": [
-            "implementing",
-            "velociraptor",
-            "for",
-            "ir",
-            "collection"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "incident-responder",
-        "triggers": [
-            "incident",
-            "responder"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "incident-response-incident-response",
-        "triggers": [
-            "incident",
-            "response",
-            "incident",
-            "response"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "lambda-labs-gpu-cloud",
-        "triggers": [
-            "lambda",
-            "labs",
-            "gpu",
-            "cloud"
-        ],
-        "src": "external:Orchestra-Research-AI-research-SKILLs",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "managing-cloud-identity-with-okta",
-        "triggers": [
-            "managing",
-            "cloud",
-            "identity",
-            "with",
-            "okta"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 5
-    },
-    {
-        "id": "modal",
-        "triggers": [
-            "modal"
-        ],
-        "src": "external:K-Dense-AI-claude-scientific-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "modal-serverless-gpu",
-        "triggers": [
-            "modal",
-            "serverless",
-            "gpu"
-        ],
-        "src": "external:Orchestra-Research-AI-research-SKILLs",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "monitoring-darkweb-sources",
-        "triggers": [
-            "monitoring",
-            "darkweb",
-            "sources"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "monitoring-scada-modbus-traffic-anomalies",
-        "triggers": [
-            "monitoring",
-            "scada",
-            "modbus",
-            "traffic",
-            "anomalies"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "multi-cloud-architecture",
-        "triggers": [
-            "multi",
-            "cloud",
-            "architecture"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 17
-    },
-    {
-        "id": "netlify-cli-and-deploy",
-        "triggers": [
-            "netlify",
-            "cli",
-            "and",
-            "deploy"
-        ],
-        "src": "external:context-and-tools",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "netlify-deploy",
-        "triggers": [
-            "netlify",
-            "deploy"
-        ],
-        "src": "external:context-and-tools",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "observability-engineer",
-        "triggers": [
-            "observability",
-            "engineer"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 20
-    },
-    {
-        "id": "observability-monitoring-monitor-setup",
-        "triggers": [
-            "observability",
-            "monitoring",
-            "monitor",
-            "setup"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "observability-monitoring-slo-implement",
-        "triggers": [
-            "observability",
-            "monitoring",
-            "slo",
-            "implement"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 14
-    },
-    {
-        "id": "odoo-backup-strategy",
-        "triggers": [
-            "odoo",
-            "backup",
-            "strategy"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "on-call-handoff-patterns",
-        "triggers": [
-            "on",
-            "call",
-            "handoff",
-            "patterns"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "os-scripting",
-        "triggers": [
-            "os",
-            "scripting"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 16
-    },
-    {
-        "id": "performance-engineer",
-        "triggers": [
-            "performance",
-            "engineer"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "performing-aws-account-enumeration-with-scout-suite",
-        "triggers": [
-            "performing",
-            "aws",
-            "account",
-            "enumeration",
-            "with"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "performing-cloud-asset-inventory-with-cartography",
-        "triggers": [
-            "performing",
-            "cloud",
-            "asset",
-            "inventory",
-            "with"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 21
-    },
-    {
-        "id": "performing-cloud-forensics-investigation",
-        "triggers": [
-            "performing",
-            "cloud",
-            "forensics",
-            "investigation"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 17
-    },
-    {
-        "id": "performing-cloud-forensics-with-aws-cloudtrail",
-        "triggers": [
-            "performing",
-            "cloud",
-            "forensics",
-            "with",
-            "aws"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 9
-    },
-    {
-        "id": "performing-cloud-incident-containment-procedures",
-        "triggers": [
-            "performing",
-            "cloud",
-            "incident",
-            "containment",
-            "procedures"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 21
-    },
-    {
-        "id": "performing-dark-web-monitoring-for-threats",
-        "triggers": [
-            "performing",
-            "dark",
-            "web",
-            "monitoring",
-            "for"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "performing-deception-technology-deployment",
-        "triggers": [
-            "performing",
-            "deception",
-            "technology",
-            "deployment"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "performing-indicator-lifecycle-management",
-        "triggers": [
-            "performing",
-            "indicator",
-            "lifecycle",
-            "management"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "performing-malware-persistence-investigation",
-        "triggers": [
-            "performing",
-            "malware",
-            "persistence",
-            "investigation"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "performing-privileged-account-access-review",
-        "triggers": [
-            "performing",
-            "privileged",
-            "account",
-            "access",
-            "review"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "performing-service-account-audit",
-        "triggers": [
-            "performing",
-            "service",
-            "account",
-            "audit"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "performing-ssl-certificate-lifecycle-management",
-        "triggers": [
-            "performing",
-            "ssl",
-            "certificate",
-            "lifecycle",
-            "management"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "performing-windows-artifact-analysis-with-eric-zimmerman-tools",
-        "triggers": [
-            "performing",
-            "windows",
-            "artifact",
-            "analysis",
-            "with"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "phoenix-observability",
-        "triggers": [
-            "phoenix",
-            "observability"
-        ],
-        "src": "external:Orchestra-Research-AI-research-SKILLs",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "playwright-ci",
-        "triggers": [
-            "playwright",
-            "ci"
-        ],
-        "src": "external:testdino-hq-playwright-skill",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 16
-    },
-    {
-        "id": "posix-shell-pro",
-        "triggers": [
-            "posix",
-            "shell",
-            "pro"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "postmortem-writing",
-        "triggers": [
-            "postmortem",
-            "writing"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "powershell-windows",
-        "triggers": [
-            "powershell",
-            "windows"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 10
-    },
-    {
-        "id": "preset",
-        "triggers": [
-            "preset"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "project-tooling",
-        "triggers": [
-            "project",
-            "tooling"
-        ],
-        "src": "external:alinaqi-claude-bootstrap",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "prometheus-configuration",
-        "triggers": [
-            "prometheus",
-            "configuration"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "render-automation",
-        "triggers": [
-            "render",
-            "automation"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "securing-aws-iam-permissions",
-        "triggers": [
-            "securing",
-            "aws",
-            "iam",
-            "permissions"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "securing-aws-lambda-execution-roles",
-        "triggers": [
-            "securing",
-            "aws",
-            "lambda",
-            "execution",
-            "roles"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "securing-azure-with-microsoft-defender",
-        "triggers": [
-            "securing",
-            "azure",
-            "with",
-            "microsoft",
-            "defender"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "securing-kubernetes-on-cloud",
-        "triggers": [
-            "securing",
-            "kubernetes",
-            "on",
-            "cloud"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 5
-    },
-    {
-        "id": "securing-serverless-functions",
-        "triggers": [
-            "securing",
-            "serverless",
-            "functions"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "security-bluebook-builder",
-        "triggers": [
-            "security",
-            "bluebook",
-            "builder"
-        ],
-        "src": "external:SHADOWPR0-security-bluebook-builder",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "service-mesh-observability",
-        "triggers": [
-            "service",
-            "mesh",
-            "observability"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "shellcheck-configuration",
-        "triggers": [
-            "shellcheck",
-            "configuration"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "slo-implementation",
-        "triggers": [
-            "slo",
-            "implementation"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 6
-    },
-    {
-        "id": "terraform-aws-modules",
-        "triggers": [
-            "terraform",
-            "aws",
-            "modules"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 12
-    },
-    {
-        "id": "terraform-infrastructure",
-        "triggers": [
-            "terraform",
-            "infrastructure"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "terraform-module-library",
-        "triggers": [
-            "terraform",
-            "module",
-            "library"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 20
-    },
-    {
-        "id": "terraform-skill",
-        "triggers": [
-            "terraform",
-            "skill"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "terraform-specialist",
-        "triggers": [
-            "terraform",
-            "specialist"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 13
-    },
-    {
-        "id": "tracking-threat-actor-infrastructure",
-        "triggers": [
-            "tracking",
-            "threat",
-            "actor",
-            "infrastructure"
-        ],
-        "src": "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "transcribe-video",
-        "triggers": [
-            "transcribe",
-            "video"
-        ],
-        "src": "external:rameerez-claude-code-startup-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "upstash-qstash",
-        "triggers": [
-            "upstash",
-            "qstash"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "vector-index-tuning",
-        "triggers": [
-            "vector",
-            "index",
-            "tuning"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 4
-    },
-    {
-        "id": "vercel-automation",
-        "triggers": [
-            "vercel",
-            "automation"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "vercel-deployment",
-        "triggers": [
-            "vercel",
-            "deployment"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 100
-    },
-    {
-        "id": "wiki-ado-convert",
-        "triggers": [
-            "wiki",
-            "ado",
-            "convert"
-        ],
-        "src": "external:microsoft-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
-    },
-    {
-        "id": "windows-shell-reliability",
-        "triggers": [
-            "windows",
-            "shell",
-            "reliability"
-        ],
-        "src": "external:antigravity-awesome-skills",
-        "primary_hub": "devops/cloud",
-        "is_primary": true,
-        "match_score": 8
+        "id":  "007",
+        "triggers":  [
+                         "007"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "analyzing-azure-activity-logs-for-threats",
+        "triggers":  [
+                         "analyzing",
+                         "azure",
+                         "activity",
+                         "logs",
+                         "for"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "analyzing-cobalt-strike-beacon-configuration",
+        "triggers":  [
+                         "analyzing",
+                         "cobalt",
+                         "strike",
+                         "beacon",
+                         "configuration"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "analyzing-ethereum-smart-contract-vulnerabilities",
+        "triggers":  [
+                         "analyzing",
+                         "ethereum",
+                         "smart",
+                         "contract",
+                         "vulnerabilities"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "analyzing-linux-audit-logs-for-intrusion",
+        "triggers":  [
+                         "analyzing",
+                         "linux",
+                         "audit",
+                         "logs",
+                         "for"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "analyzing-linux-kernel-rootkits",
+        "triggers":  [
+                         "analyzing",
+                         "linux",
+                         "kernel",
+                         "rootkits"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "analyzing-linux-system-artifacts",
+        "triggers":  [
+                         "analyzing",
+                         "linux",
+                         "system",
+                         "artifacts"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "analyzing-lnk-file-and-jump-list-artifacts",
+        "triggers":  [
+                         "analyzing",
+                         "lnk",
+                         "file",
+                         "and",
+                         "jump"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "analyzing-persistence-mechanisms-in-linux",
+        "triggers":  [
+                         "analyzing",
+                         "persistence",
+                         "mechanisms",
+                         "in",
+                         "linux"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "analyzing-powershell-empire-artifacts",
+        "triggers":  [
+                         "analyzing",
+                         "powershell",
+                         "empire",
+                         "artifacts"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "analyzing-powershell-script-block-logging",
+        "triggers":  [
+                         "analyzing",
+                         "powershell",
+                         "script",
+                         "block",
+                         "logging"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "analyzing-prefetch-files-for-execution-history",
+        "triggers":  [
+                         "analyzing",
+                         "prefetch",
+                         "files",
+                         "for",
+                         "execution"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "analyzing-usb-device-connection-history",
+        "triggers":  [
+                         "analyzing",
+                         "usb",
+                         "device",
+                         "connection",
+                         "history"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "analyzing-windows-amcache-artifacts",
+        "triggers":  [
+                         "analyzing",
+                         "windows",
+                         "amcache",
+                         "artifacts"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "analyzing-windows-event-logs-in-splunk",
+        "triggers":  [
+                         "analyzing",
+                         "windows",
+                         "event",
+                         "logs",
+                         "in"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "analyzing-windows-lnk-files-for-artifacts",
+        "triggers":  [
+                         "analyzing",
+                         "windows",
+                         "lnk",
+                         "files",
+                         "for"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "analyzing-windows-registry-for-artifacts",
+        "triggers":  [
+                         "analyzing",
+                         "windows",
+                         "registry",
+                         "for",
+                         "artifacts"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "analyzing-windows-shellbag-artifacts",
+        "triggers":  [
+                         "analyzing",
+                         "windows",
+                         "shellbag",
+                         "artifacts"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "apify-actorization",
+        "triggers":  [
+                         "apify",
+                         "actorization"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "apify-brand-reputation-monitoring",
+        "triggers":  [
+                         "apify",
+                         "brand",
+                         "reputation",
+                         "monitoring"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "appinsights-instrumentation",
+        "triggers":  [
+                         "appinsights",
+                         "instrumentation"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "application-performance-performance-optimization",
+        "triggers":  [
+                         "application",
+                         "performance",
+                         "performance",
+                         "optimization"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "archive",
+        "triggers":  [
+                         "archive"
+                     ],
+        "src":  "external:ReScienceLab-opc-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "auditing-aws-s3-bucket-permissions",
+        "triggers":  [
+                         "auditing",
+                         "aws",
+                         "s3",
+                         "bucket",
+                         "permissions"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "auditing-azure-active-directory-configuration",
+        "triggers":  [
+                         "auditing",
+                         "azure",
+                         "active",
+                         "directory",
+                         "configuration"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "auditing-cloud-with-cis-benchmarks",
+        "triggers":  [
+                         "auditing",
+                         "cloud",
+                         "with",
+                         "cis",
+                         "benchmarks"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "auditing-gcp-iam-permissions",
+        "triggers":  [
+                         "auditing",
+                         "gcp",
+                         "iam",
+                         "permissions"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "auditing-terraform-infrastructure-for-security",
+        "triggers":  [
+                         "auditing",
+                         "terraform",
+                         "infrastructure",
+                         "for",
+                         "security"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "aws-aurora",
+        "triggers":  [
+                         "aws",
+                         "aurora"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "aws-cdk-development",
+        "triggers":  [
+                         "aws",
+                         "cdk",
+                         "development"
+                     ],
+        "src":  "external:zxkane-aws-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "aws-compliance-checker",
+        "triggers":  [
+                         "aws",
+                         "compliance",
+                         "checker"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-cost-cleanup",
+        "triggers":  [
+                         "aws",
+                         "cost",
+                         "cleanup"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-cost-operations",
+        "triggers":  [
+                         "aws",
+                         "cost",
+                         "operations"
+                     ],
+        "src":  "external:zxkane-aws-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "aws-cost-optimizer",
+        "triggers":  [
+                         "aws",
+                         "cost",
+                         "optimizer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-dynamodb",
+        "triggers":  [
+                         "aws",
+                         "dynamodb"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-iam-best-practices",
+        "triggers":  [
+                         "aws",
+                         "iam",
+                         "best",
+                         "practices"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "aws-serverless",
+        "triggers":  [
+                         "aws",
+                         "serverless"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "aws-skills",
+        "triggers":  [
+                         "aws",
+                         "skills"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "azd-deployment",
+        "triggers":  [
+                         "azd",
+                         "deployment"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "azure-ai",
+        "triggers":  [
+                         "azure",
+                         "ai"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-ai-document-intelligence-ts",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "document",
+                         "intelligence",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-ai-openai-dotnet",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "openai",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "azure-ai-projects-ts",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "projects",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "azure-ai-translation-ts",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "translation",
+                         "ts"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "azure-ai-voicelive-ts",
+        "triggers":  [
+                         "azure",
+                         "ai",
+                         "voicelive",
+                         "ts"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-appconfiguration-ts",
+        "triggers":  [
+                         "azure",
+                         "appconfiguration",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-cloud-migrate",
+        "triggers":  [
+                         "azure",
+                         "cloud",
+                         "migrate"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  25
+    },
+    {
+        "id":  "azure-compute",
+        "triggers":  [
+                         "azure",
+                         "compute"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "azure-cosmosdb",
+        "triggers":  [
+                         "azure",
+                         "cosmosdb"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-cosmos-ts",
+        "triggers":  [
+                         "azure",
+                         "cosmos",
+                         "ts"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-deploy",
+        "triggers":  [
+                         "azure",
+                         "deploy"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "azure-devops",
+        "triggers":  [
+                         "azure",
+                         "devops"
+                     ],
+        "src":  "external:sanjay3290-ai-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "azure-enterprise-infra-planner",
+        "triggers":  [
+                         "azure",
+                         "enterprise",
+                         "infra",
+                         "planner"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "azure-functions",
+        "triggers":  [
+                         "azure",
+                         "functions"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "azure-identity-ts",
+        "triggers":  [
+                         "azure",
+                         "identity",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-keyvault-keys-ts",
+        "triggers":  [
+                         "azure",
+                         "keyvault",
+                         "keys",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "azure-keyvault-secrets-ts",
+        "triggers":  [
+                         "azure",
+                         "keyvault",
+                         "secrets",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "azure-mgmt-applicationinsights-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "applicationinsights",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "azure-mgmt-arizeaiobservabilityeval-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "arizeaiobservabilityeval",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "azure-mgmt-weightsandbiases-dotnet",
+        "triggers":  [
+                         "azure",
+                         "mgmt",
+                         "weightsandbiases",
+                         "dotnet"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "azure-monitor-opentelemetry-ts",
+        "triggers":  [
+                         "azure",
+                         "monitor",
+                         "opentelemetry",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "azure-prepare",
+        "triggers":  [
+                         "azure",
+                         "prepare"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "azure-quotas",
+        "triggers":  [
+                         "azure",
+                         "quotas"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "azure-rbac",
+        "triggers":  [
+                         "azure",
+                         "rbac"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-resource-visualizer",
+        "triggers":  [
+                         "azure",
+                         "resource",
+                         "visualizer"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "azure-search-documents-ts",
+        "triggers":  [
+                         "azure",
+                         "search",
+                         "documents",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-servicebus-ts",
+        "triggers":  [
+                         "azure",
+                         "servicebus",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "azure-validate",
+        "triggers":  [
+                         "azure",
+                         "validate"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  20
+    },
+    {
+        "id":  "azure-web-pubsub-ts",
+        "triggers":  [
+                         "azure",
+                         "web",
+                         "pubsub",
+                         "ts"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "bash-defensive-patterns",
+        "triggers":  [
+                         "bash",
+                         "defensive",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "bash-linux",
+        "triggers":  [
+                         "bash",
+                         "linux"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "bash-pro",
+        "triggers":  [
+                         "bash",
+                         "pro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "bats-testing-patterns",
+        "triggers":  [
+                         "bats",
+                         "testing",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "bazel-build-optimization",
+        "triggers":  [
+                         "bazel",
+                         "build",
+                         "optimization"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "building-adversary-infrastructure-tracking-system",
+        "triggers":  [
+                         "building",
+                         "adversary",
+                         "infrastructure",
+                         "tracking",
+                         "system"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "building-c2-infrastructure-with-sliver-framework",
+        "triggers":  [
+                         "building",
+                         "c2",
+                         "infrastructure",
+                         "with",
+                         "sliver"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "building-cloud-siem-with-sentinel",
+        "triggers":  [
+                         "building",
+                         "cloud",
+                         "siem",
+                         "with",
+                         "sentinel"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "building-identity-federation-with-saml-azure-ad",
+        "triggers":  [
+                         "building",
+                         "identity",
+                         "federation",
+                         "with",
+                         "saml"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "building-incident-response-dashboard",
+        "triggers":  [
+                         "building",
+                         "incident",
+                         "response",
+                         "dashboard"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "building-incident-response-playbook",
+        "triggers":  [
+                         "building",
+                         "incident",
+                         "response",
+                         "playbook"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "building-incident-timeline-with-timesketch",
+        "triggers":  [
+                         "building",
+                         "incident",
+                         "timeline",
+                         "with",
+                         "timesketch"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "building-threat-actor-profile-from-osint",
+        "triggers":  [
+                         "building",
+                         "threat",
+                         "actor",
+                         "profile",
+                         "from"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "busybox-on-windows",
+        "triggers":  [
+                         "busybox",
+                         "on",
+                         "windows"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "capacity",
+        "triggers":  [
+                         "capacity"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "cdk-patterns",
+        "triggers":  [
+                         "cdk",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "changelog-automation",
+        "triggers":  [
+                         "changelog",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "cicd-automation-workflow-automate",
+        "triggers":  [
+                         "cicd",
+                         "automation",
+                         "workflow",
+                         "automate"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "clawsec-suite",
+        "triggers":  [
+                         "clawsec",
+                         "suite"
+                     ],
+        "src":  "external:prompt-security-clawsec",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "closed-loop-delivery",
+        "triggers":  [
+                         "closed",
+                         "loop",
+                         "delivery"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "cloud-architect",
+        "triggers":  [
+                         "cloud",
+                         "architect"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  25
+    },
+    {
+        "id":  "cloud-devops",
+        "triggers":  [
+                         "cloud",
+                         "devops"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  41
+    },
+    {
+        "id":  "cloudflare-workers-expert",
+        "triggers":  [
+                         "cloudflare",
+                         "workers",
+                         "expert"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "cloudformation-best-practices",
+        "triggers":  [
+                         "cloudformation",
+                         "best",
+                         "practices"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "cloud-penetration-testing",
+        "triggers":  [
+                         "cloud",
+                         "penetration",
+                         "testing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  21
+    },
+    {
+        "id":  "cloud-solution-architect",
+        "triggers":  [
+                         "cloud",
+                         "solution",
+                         "architect"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "cloud-uploader",
+        "triggers":  [
+                         "cloud",
+                         "uploader"
+                     ],
+        "src":  "external:bitwize-music-studio-claude-ai-music-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "codex-review",
+        "triggers":  [
+                         "codex",
+                         "review"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "conducting-cloud-incident-response",
+        "triggers":  [
+                         "conducting",
+                         "cloud",
+                         "incident",
+                         "response"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "conducting-phishing-incident-response",
+        "triggers":  [
+                         "conducting",
+                         "phishing",
+                         "incident",
+                         "response"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "conducting-post-incident-lessons-learned",
+        "triggers":  [
+                         "conducting",
+                         "post",
+                         "incident",
+                         "lessons",
+                         "learned"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "configuring-suricata-for-network-monitoring",
+        "triggers":  [
+                         "configuring",
+                         "suricata",
+                         "for",
+                         "network",
+                         "monitoring"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "configuring-windows-defender-advanced-settings",
+        "triggers":  [
+                         "configuring",
+                         "windows",
+                         "defender",
+                         "advanced",
+                         "settings"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "configuring-windows-event-logging-for-detection",
+        "triggers":  [
+                         "configuring",
+                         "windows",
+                         "event",
+                         "logging",
+                         "for"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "cost-optimization",
+        "triggers":  [
+                         "cost",
+                         "optimization"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "customize",
+        "triggers":  [
+                         "customize"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "database-cloud-optimization-cost-optimize",
+        "triggers":  [
+                         "database",
+                         "cloud",
+                         "optimization",
+                         "cost",
+                         "optimize"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  21
+    },
+    {
+        "id":  "database-migrations-migration-observability",
+        "triggers":  [
+                         "database",
+                         "migrations",
+                         "migration",
+                         "observability"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "deobfuscating-powershell-obfuscated-malware",
+        "triggers":  [
+                         "deobfuscating",
+                         "powershell",
+                         "obfuscated",
+                         "malware"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "deploying-osquery-for-endpoint-monitoring",
+        "triggers":  [
+                         "deploying",
+                         "osquery",
+                         "for",
+                         "endpoint",
+                         "monitoring"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "deployment-engineer",
+        "triggers":  [
+                         "deployment",
+                         "engineer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "deployment-pipeline-design",
+        "triggers":  [
+                         "deployment",
+                         "pipeline",
+                         "design"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "deployment-procedures",
+        "triggers":  [
+                         "deployment",
+                         "procedures"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "detecting-arp-poisoning-in-network-traffic",
+        "triggers":  [
+                         "detecting",
+                         "arp",
+                         "poisoning",
+                         "in",
+                         "network"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "detecting-aws-cloudtrail-anomalies",
+        "triggers":  [
+                         "detecting",
+                         "aws",
+                         "cloudtrail",
+                         "anomalies"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "detecting-cloud-threats-with-guardduty",
+        "triggers":  [
+                         "detecting",
+                         "cloud",
+                         "threats",
+                         "with",
+                         "guardduty"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "detecting-compromised-cloud-credentials",
+        "triggers":  [
+                         "detecting",
+                         "compromised",
+                         "cloud",
+                         "credentials"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "detecting-container-drift-at-runtime",
+        "triggers":  [
+                         "detecting",
+                         "container",
+                         "drift",
+                         "at",
+                         "runtime"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "detecting-container-escape-attempts",
+        "triggers":  [
+                         "detecting",
+                         "container",
+                         "escape",
+                         "attempts"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "detecting-cryptomining-in-cloud",
+        "triggers":  [
+                         "detecting",
+                         "cryptomining",
+                         "in",
+                         "cloud"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "detecting-dcsync-attack-in-active-directory",
+        "triggers":  [
+                         "detecting",
+                         "dcsync",
+                         "attack",
+                         "in",
+                         "active"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "detecting-dns-exfiltration-with-dns-query-analysis",
+        "triggers":  [
+                         "detecting",
+                         "dns",
+                         "exfiltration",
+                         "with",
+                         "dns"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "detecting-golden-ticket-forgery",
+        "triggers":  [
+                         "detecting",
+                         "golden",
+                         "ticket",
+                         "forgery"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "detecting-kerberoasting-attacks",
+        "triggers":  [
+                         "detecting",
+                         "kerberoasting",
+                         "attacks"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "detecting-pass-the-ticket-attacks",
+        "triggers":  [
+                         "detecting",
+                         "pass",
+                         "the",
+                         "ticket",
+                         "attacks"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "detecting-privilege-escalation-attempts",
+        "triggers":  [
+                         "detecting",
+                         "privilege",
+                         "escalation",
+                         "attempts"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "detecting-serverless-function-injection",
+        "triggers":  [
+                         "detecting",
+                         "serverless",
+                         "function",
+                         "injection"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "detecting-supply-chain-attacks-in-ci-cd",
+        "triggers":  [
+                         "detecting",
+                         "supply",
+                         "chain",
+                         "attacks",
+                         "in"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "detecting-suspicious-powershell-execution",
+        "triggers":  [
+                         "detecting",
+                         "suspicious",
+                         "powershell",
+                         "execution"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "detecting-t1003-credential-dumping-with-edr",
+        "triggers":  [
+                         "detecting",
+                         "t1003",
+                         "credential",
+                         "dumping",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "detecting-t1548-abuse-elevation-control-mechanism",
+        "triggers":  [
+                         "detecting",
+                         "t1548",
+                         "abuse",
+                         "elevation",
+                         "control"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "devops-deploy",
+        "triggers":  [
+                         "devops",
+                         "deploy"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  24
+    },
+    {
+        "id":  "devops-troubleshooter",
+        "triggers":  [
+                         "devops",
+                         "troubleshooter"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "dflow",
+        "triggers":  [
+                         "dflow"
+                     ],
+        "src":  "external:helius-labs-core-ai",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "environment-setup-guide",
+        "triggers":  [
+                         "environment",
+                         "setup",
+                         "guide"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "error-debugging-error-analysis",
+        "triggers":  [
+                         "error",
+                         "debugging",
+                         "error",
+                         "analysis"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "error-debugging-error-trace",
+        "triggers":  [
+                         "error",
+                         "debugging",
+                         "error",
+                         "trace"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "error-diagnostics-error-analysis",
+        "triggers":  [
+                         "error",
+                         "diagnostics",
+                         "error",
+                         "analysis"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "error-diagnostics-error-trace",
+        "triggers":  [
+                         "error",
+                         "diagnostics",
+                         "error",
+                         "trace"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "event-store-design",
+        "triggers":  [
+                         "event",
+                         "store",
+                         "design"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "firebase",
+        "triggers":  [
+                         "firebase"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "gcp-cloud-run",
+        "triggers":  [
+                         "gcp",
+                         "cloud",
+                         "run"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "gemini-review",
+        "triggers":  [
+                         "gemini",
+                         "review"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "github-actions-templates",
+        "triggers":  [
+                         "github",
+                         "actions",
+                         "templates"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "gitlab-ci-patterns",
+        "triggers":  [
+                         "gitlab",
+                         "ci",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "gitops-workflow",
+        "triggers":  [
+                         "gitops",
+                         "workflow"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "grafana-dashboards",
+        "triggers":  [
+                         "grafana",
+                         "dashboards"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "hardening-linux-endpoint-with-cis-benchmark",
+        "triggers":  [
+                         "hardening",
+                         "linux",
+                         "endpoint",
+                         "with",
+                         "cis"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "hardening-windows-endpoint-with-cis-benchmark",
+        "triggers":  [
+                         "hardening",
+                         "windows",
+                         "endpoint",
+                         "with",
+                         "cis"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "helius-dflow",
+        "triggers":  [
+                         "helius",
+                         "dflow"
+                     ],
+        "src":  "external:helius-labs-core-ai",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "hono",
+        "triggers":  [
+                         "hono"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "hunting-for-anomalous-powershell-execution",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "anomalous",
+                         "powershell",
+                         "execution"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "hunting-for-command-and-control-beaconing",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "command",
+                         "and",
+                         "control"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "hunting-for-data-staging-before-exfiltration",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "data",
+                         "staging",
+                         "before"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "hunting-for-dcsync-attacks",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "dcsync",
+                         "attacks"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "hunting-for-lateral-movement-via-wmi",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "lateral",
+                         "movement",
+                         "via"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "hunting-for-living-off-the-cloud-techniques",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "living",
+                         "off",
+                         "the"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "hunting-for-persistence-mechanisms-in-windows",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "persistence",
+                         "mechanisms",
+                         "in"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "hunting-for-persistence-via-wmi-subscriptions",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "persistence",
+                         "via",
+                         "wmi"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "hunting-for-registry-persistence-mechanisms",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "registry",
+                         "persistence",
+                         "mechanisms"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "hunting-for-scheduled-task-persistence",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "scheduled",
+                         "task",
+                         "persistence"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "hunting-for-shadow-copy-deletion",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "shadow",
+                         "copy",
+                         "deletion"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "hunting-for-startup-folder-persistence",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "startup",
+                         "folder",
+                         "persistence"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "hunting-for-suspicious-scheduled-tasks",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "suspicious",
+                         "scheduled",
+                         "tasks"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "hunting-for-unusual-service-installations",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "unusual",
+                         "service",
+                         "installations"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "hunting-for-webshell-activity",
+        "triggers":  [
+                         "hunting",
+                         "for",
+                         "webshell",
+                         "activity"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "hybrid-cloud-architect",
+        "triggers":  [
+                         "hybrid",
+                         "cloud",
+                         "architect"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "implementing-aqua-security-for-container-scanning",
+        "triggers":  [
+                         "implementing",
+                         "aqua",
+                         "security",
+                         "for",
+                         "container"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "implementing-aws-config-rules-for-compliance",
+        "triggers":  [
+                         "implementing",
+                         "aws",
+                         "config",
+                         "rules",
+                         "for"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-aws-macie-for-data-classification",
+        "triggers":  [
+                         "implementing",
+                         "aws",
+                         "macie",
+                         "for",
+                         "data"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-azure-defender-for-cloud",
+        "triggers":  [
+                         "implementing",
+                         "azure",
+                         "defender",
+                         "for",
+                         "cloud"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "implementing-cloud-dlp-for-data-protection",
+        "triggers":  [
+                         "implementing",
+                         "cloud",
+                         "dlp",
+                         "for",
+                         "data"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "implementing-cloud-trail-log-analysis",
+        "triggers":  [
+                         "implementing",
+                         "cloud",
+                         "trail",
+                         "log",
+                         "analysis"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "implementing-cloud-vulnerability-posture-management",
+        "triggers":  [
+                         "implementing",
+                         "cloud",
+                         "vulnerability",
+                         "posture",
+                         "management"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "implementing-cloud-waf-rules",
+        "triggers":  [
+                         "implementing",
+                         "cloud",
+                         "waf",
+                         "rules"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "implementing-cloud-workload-protection",
+        "triggers":  [
+                         "implementing",
+                         "cloud",
+                         "workload",
+                         "protection"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "implementing-container-image-minimal-base-with-distroless",
+        "triggers":  [
+                         "implementing",
+                         "container",
+                         "image",
+                         "minimal",
+                         "base"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-ddos-mitigation-with-cloudflare",
+        "triggers":  [
+                         "implementing",
+                         "ddos",
+                         "mitigation",
+                         "with",
+                         "cloudflare"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "implementing-file-integrity-monitoring-with-aide",
+        "triggers":  [
+                         "implementing",
+                         "file",
+                         "integrity",
+                         "monitoring",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-gcp-vpc-firewall-rules",
+        "triggers":  [
+                         "implementing",
+                         "gcp",
+                         "vpc",
+                         "firewall",
+                         "rules"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-log-forwarding-with-fluentd",
+        "triggers":  [
+                         "implementing",
+                         "log",
+                         "forwarding",
+                         "with",
+                         "fluentd"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-ot-incident-response-playbook",
+        "triggers":  [
+                         "implementing",
+                         "ot",
+                         "incident",
+                         "response",
+                         "playbook"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-privileged-session-monitoring",
+        "triggers":  [
+                         "implementing",
+                         "privileged",
+                         "session",
+                         "monitoring"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "implementing-secrets-scanning-in-ci-cd",
+        "triggers":  [
+                         "implementing",
+                         "secrets",
+                         "scanning",
+                         "in",
+                         "ci"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "implementing-semgrep-for-custom-sast-rules",
+        "triggers":  [
+                         "implementing",
+                         "semgrep",
+                         "for",
+                         "custom",
+                         "sast"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "implementing-supply-chain-security-with-in-toto",
+        "triggers":  [
+                         "implementing",
+                         "supply",
+                         "chain",
+                         "security",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "implementing-velociraptor-for-ir-collection",
+        "triggers":  [
+                         "implementing",
+                         "velociraptor",
+                         "for",
+                         "ir",
+                         "collection"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "incident-responder",
+        "triggers":  [
+                         "incident",
+                         "responder"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "incident-response-incident-response",
+        "triggers":  [
+                         "incident",
+                         "response",
+                         "incident",
+                         "response"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "lambda-labs-gpu-cloud",
+        "triggers":  [
+                         "lambda",
+                         "labs",
+                         "gpu",
+                         "cloud"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "managing-cloud-identity-with-okta",
+        "triggers":  [
+                         "managing",
+                         "cloud",
+                         "identity",
+                         "with",
+                         "okta"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "modal",
+        "triggers":  [
+                         "modal"
+                     ],
+        "src":  "external:K-Dense-AI-claude-scientific-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "modal-serverless-gpu",
+        "triggers":  [
+                         "modal",
+                         "serverless",
+                         "gpu"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "monitoring-darkweb-sources",
+        "triggers":  [
+                         "monitoring",
+                         "darkweb",
+                         "sources"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "monitoring-scada-modbus-traffic-anomalies",
+        "triggers":  [
+                         "monitoring",
+                         "scada",
+                         "modbus",
+                         "traffic",
+                         "anomalies"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "multi-cloud-architecture",
+        "triggers":  [
+                         "multi",
+                         "cloud",
+                         "architecture"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "netlify-cli-and-deploy",
+        "triggers":  [
+                         "netlify",
+                         "cli",
+                         "and",
+                         "deploy"
+                     ],
+        "src":  "external:context-and-tools",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "netlify-deploy",
+        "triggers":  [
+                         "netlify",
+                         "deploy"
+                     ],
+        "src":  "external:context-and-tools",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "observability-engineer",
+        "triggers":  [
+                         "observability",
+                         "engineer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  20
+    },
+    {
+        "id":  "observability-monitoring-monitor-setup",
+        "triggers":  [
+                         "observability",
+                         "monitoring",
+                         "monitor",
+                         "setup"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "observability-monitoring-slo-implement",
+        "triggers":  [
+                         "observability",
+                         "monitoring",
+                         "slo",
+                         "implement"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  14
+    },
+    {
+        "id":  "odoo-backup-strategy",
+        "triggers":  [
+                         "odoo",
+                         "backup",
+                         "strategy"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "on-call-handoff-patterns",
+        "triggers":  [
+                         "on",
+                         "call",
+                         "handoff",
+                         "patterns"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "os-scripting",
+        "triggers":  [
+                         "os",
+                         "scripting"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "performance-engineer",
+        "triggers":  [
+                         "performance",
+                         "engineer"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "performing-aws-account-enumeration-with-scout-suite",
+        "triggers":  [
+                         "performing",
+                         "aws",
+                         "account",
+                         "enumeration",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "performing-cloud-asset-inventory-with-cartography",
+        "triggers":  [
+                         "performing",
+                         "cloud",
+                         "asset",
+                         "inventory",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  21
+    },
+    {
+        "id":  "performing-cloud-forensics-investigation",
+        "triggers":  [
+                         "performing",
+                         "cloud",
+                         "forensics",
+                         "investigation"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  17
+    },
+    {
+        "id":  "performing-cloud-forensics-with-aws-cloudtrail",
+        "triggers":  [
+                         "performing",
+                         "cloud",
+                         "forensics",
+                         "with",
+                         "aws"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  9
+    },
+    {
+        "id":  "performing-cloud-incident-containment-procedures",
+        "triggers":  [
+                         "performing",
+                         "cloud",
+                         "incident",
+                         "containment",
+                         "procedures"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  21
+    },
+    {
+        "id":  "performing-dark-web-monitoring-for-threats",
+        "triggers":  [
+                         "performing",
+                         "dark",
+                         "web",
+                         "monitoring",
+                         "for"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "performing-deception-technology-deployment",
+        "triggers":  [
+                         "performing",
+                         "deception",
+                         "technology",
+                         "deployment"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "performing-indicator-lifecycle-management",
+        "triggers":  [
+                         "performing",
+                         "indicator",
+                         "lifecycle",
+                         "management"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "performing-malware-persistence-investigation",
+        "triggers":  [
+                         "performing",
+                         "malware",
+                         "persistence",
+                         "investigation"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "performing-privileged-account-access-review",
+        "triggers":  [
+                         "performing",
+                         "privileged",
+                         "account",
+                         "access",
+                         "review"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "performing-service-account-audit",
+        "triggers":  [
+                         "performing",
+                         "service",
+                         "account",
+                         "audit"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "performing-ssl-certificate-lifecycle-management",
+        "triggers":  [
+                         "performing",
+                         "ssl",
+                         "certificate",
+                         "lifecycle",
+                         "management"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "performing-windows-artifact-analysis-with-eric-zimmerman-tools",
+        "triggers":  [
+                         "performing",
+                         "windows",
+                         "artifact",
+                         "analysis",
+                         "with"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "phoenix-observability",
+        "triggers":  [
+                         "phoenix",
+                         "observability"
+                     ],
+        "src":  "external:Orchestra-Research-AI-research-SKILLs",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "playwright-ci",
+        "triggers":  [
+                         "playwright",
+                         "ci"
+                     ],
+        "src":  "external:testdino-hq-playwright-skill",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  16
+    },
+    {
+        "id":  "posix-shell-pro",
+        "triggers":  [
+                         "posix",
+                         "shell",
+                         "pro"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "postmortem-writing",
+        "triggers":  [
+                         "postmortem",
+                         "writing"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "powershell-windows",
+        "triggers":  [
+                         "powershell",
+                         "windows"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  10
+    },
+    {
+        "id":  "preset",
+        "triggers":  [
+                         "preset"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "project-tooling",
+        "triggers":  [
+                         "project",
+                         "tooling"
+                     ],
+        "src":  "external:alinaqi-claude-bootstrap",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "prometheus-configuration",
+        "triggers":  [
+                         "prometheus",
+                         "configuration"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "render-automation",
+        "triggers":  [
+                         "render",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "securing-aws-iam-permissions",
+        "triggers":  [
+                         "securing",
+                         "aws",
+                         "iam",
+                         "permissions"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "securing-aws-lambda-execution-roles",
+        "triggers":  [
+                         "securing",
+                         "aws",
+                         "lambda",
+                         "execution",
+                         "roles"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "securing-azure-with-microsoft-defender",
+        "triggers":  [
+                         "securing",
+                         "azure",
+                         "with",
+                         "microsoft",
+                         "defender"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "securing-kubernetes-on-cloud",
+        "triggers":  [
+                         "securing",
+                         "kubernetes",
+                         "on",
+                         "cloud"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  5
+    },
+    {
+        "id":  "securing-serverless-functions",
+        "triggers":  [
+                         "securing",
+                         "serverless",
+                         "functions"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "security-bluebook-builder",
+        "triggers":  [
+                         "security",
+                         "bluebook",
+                         "builder"
+                     ],
+        "src":  "external:SHADOWPR0-security-bluebook-builder",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "service-mesh-observability",
+        "triggers":  [
+                         "service",
+                         "mesh",
+                         "observability"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "shellcheck-configuration",
+        "triggers":  [
+                         "shellcheck",
+                         "configuration"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "slo-implementation",
+        "triggers":  [
+                         "slo",
+                         "implementation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  6
+    },
+    {
+        "id":  "terraform-aws-modules",
+        "triggers":  [
+                         "terraform",
+                         "aws",
+                         "modules"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  12
+    },
+    {
+        "id":  "terraform-infrastructure",
+        "triggers":  [
+                         "terraform",
+                         "infrastructure"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "terraform-module-library",
+        "triggers":  [
+                         "terraform",
+                         "module",
+                         "library"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  20
+    },
+    {
+        "id":  "terraform-skill",
+        "triggers":  [
+                         "terraform",
+                         "skill"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "terraform-specialist",
+        "triggers":  [
+                         "terraform",
+                         "specialist"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  13
+    },
+    {
+        "id":  "tracking-threat-actor-infrastructure",
+        "triggers":  [
+                         "tracking",
+                         "threat",
+                         "actor",
+                         "infrastructure"
+                     ],
+        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "transcribe-video",
+        "triggers":  [
+                         "transcribe",
+                         "video"
+                     ],
+        "src":  "external:rameerez-claude-code-startup-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "upstash-qstash",
+        "triggers":  [
+                         "upstash",
+                         "qstash"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "vector-index-tuning",
+        "triggers":  [
+                         "vector",
+                         "index",
+                         "tuning"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  4
+    },
+    {
+        "id":  "vercel-automation",
+        "triggers":  [
+                         "vercel",
+                         "automation"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "vercel-deployment",
+        "triggers":  [
+                         "vercel",
+                         "deployment"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  100
+    },
+    {
+        "id":  "wiki-ado-convert",
+        "triggers":  [
+                         "wiki",
+                         "ado",
+                         "convert"
+                     ],
+        "src":  "external:microsoft-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
+    },
+    {
+        "id":  "windows-shell-reliability",
+        "triggers":  [
+                         "windows",
+                         "shell",
+                         "reliability"
+                     ],
+        "src":  "external:antigravity-awesome-skills",
+        "primary_hub":  "devops/cloud",
+        "is_primary":  true,
+        "match_score":  8
     }
 ]

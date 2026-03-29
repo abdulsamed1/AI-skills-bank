@@ -153,11 +153,15 @@ function Test-SkillManifestSchema {
 function Test-SkillCatalogItemSchema {
     param([PSCustomObject] $Item)
 
+    if ($Item -is [System.Collections.IDictionary]) {
+        $Item = [PSCustomObject]$Item
+    }
+
     $issues = @()
     $requiredFields = @('id', 'description', 'path', 'triggers', 'src', 'primary_hub', 'assigned_hubs', 'match_score', 'is_primary')
 
     foreach ($field in $requiredFields) {
-        if ($null -eq $Item.PSObject.Properties[$field]) {
+        if (-not ($Item.PSObject.Properties.Name -contains $field)) {
             $issues += @{ rule = "missing-field"; field = $field; severity = "error" }
         }
     }
@@ -167,14 +171,14 @@ function Test-SkillCatalogItemSchema {
         $issues += @{ rule = "invalid-path-structure"; value = $Item.path; severity = "warning"; message = "Path should contain directory separators" }
     }
 
-    # Validate triggers is array
+    # CSV mode stores lists as semicolon-separated strings.
     if ($Item.triggers -is [string]) {
-        $issues += @{ rule = "triggers-not-array"; field = "triggers"; severity = "error" }
+        $issues += @{ rule = "triggers-not-array"; field = "triggers"; severity = "warning"; message = "CSV list format accepted" }
     }
 
-    # Validate assigned_hubs is array
+    # CSV mode stores lists as semicolon-separated strings.
     if ($Item.assigned_hubs -is [string]) {
-        $issues += @{ rule = "assigned_hubs-not-array"; field = "assigned_hubs"; severity = "error" }
+        $issues += @{ rule = "assigned_hubs-not-array"; field = "assigned_hubs"; severity = "warning"; message = "CSV list format accepted" }
     }
 
     return $issues
@@ -244,7 +248,14 @@ function New-ValidationReport {
     }
 
     # 2. Catalog items schema + paths
-    $catalogs = $CatalogItems | ForEach-Object { $_ | ConvertFrom-Json }
+    $catalogs = @($CatalogItems | ForEach-Object {
+        if ($_ -is [string]) {
+            $_ | ConvertFrom-Json
+        }
+        else {
+            $_
+        }
+    })
     foreach ($item in $catalogs) {
         $itemIssues = Test-SkillCatalogItemSchema -Item $item
         foreach ($issue in $itemIssues) {

@@ -1,7 +1,7 @@
-use std::collections::{HashSet, HashMap};
+use crate::components::aggregator::SkillMetadata;
 use once_cell::sync::Lazy;
 use regex::Regex;
-use crate::components::aggregator::SkillMetadata;
+use std::collections::{HashMap, HashSet};
 
 pub struct SubHubRule {
     pub keywords: Vec<&'static str>,
@@ -17,11 +17,34 @@ pub struct HubDefinition {
 static TOKEN_REGEX: Lazy<Regex> = Lazy::new(|| Regex::new(r"[a-z0-9]+").unwrap());
 
 pub static VALID_HUBS: &[&str] = &[
-    "backend", "frontend", "ai", "testing", "mobile", "security", "devops", "business", "design", "marketing", "programming"
+    "backend",
+    "frontend",
+    "ai",
+    "testing",
+    "mobile",
+    "security",
+    "devops",
+    "business",
+    "design",
+    "marketing",
+    "programming",
 ];
 
 pub static CSV_COLUMNS: &[&str] = &[
-    "hub", "sub_hub", "skill_id", "display_name", "description", "triggers", "match_score", "phase", "after", "before", "required", "action", "output_location", "outputs"
+    "hub",
+    "sub_hub",
+    "skill_id",
+    "display_name",
+    "description",
+    "triggers",
+    "match_score",
+    "phase",
+    "after",
+    "before",
+    "required",
+    "action",
+    "output_location",
+    "outputs",
 ];
 
 pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Lazy::new(|| {
@@ -29,144 +52,270 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
 
     // 1. Programming Hub
     let mut prog_sub = HashMap::new();
-    prog_sub.insert("typescript", SubHubRule {
-        keywords: vec!["typescript", "tsconfig", "tsx", "type-system", "javascript"],
-        anchor_keywords: vec!["typescript", "tsconfig"],
-        negative_keywords: vec!["python", "rust", "golang"],
-    });
-    prog_sub.insert("python", SubHubRule {
-        keywords: vec!["python", "py", "django", "fastapi", "pandas", "numpy"],
-        anchor_keywords: vec!["python", "fastapi"],
-        negative_keywords: vec!["typescript", "rust"],
-    });
-    prog_sub.insert("rust", SubHubRule {
-        keywords: vec!["rust", "cargo", "ownership", "lifetimes"],
-        anchor_keywords: vec!["rust", "cargo"],
-        negative_keywords: vec!["python", "typescript"],
-    });
-    hubs.insert("programming", HubDefinition { name: "programming", sub_hubs: prog_sub });
+    prog_sub.insert(
+        "typescript",
+        SubHubRule {
+            keywords: vec!["typescript", "tsconfig", "tsx", "type-system", "javascript"],
+            anchor_keywords: vec!["typescript", "tsconfig"],
+            negative_keywords: vec!["python", "rust", "golang"],
+        },
+    );
+    prog_sub.insert(
+        "python",
+        SubHubRule {
+            keywords: vec!["python", "py", "django", "fastapi", "pandas", "numpy"],
+            anchor_keywords: vec!["python", "fastapi"],
+            negative_keywords: vec!["typescript", "rust"],
+        },
+    );
+    prog_sub.insert(
+        "rust",
+        SubHubRule {
+            keywords: vec!["rust", "cargo", "ownership", "lifetimes"],
+            anchor_keywords: vec!["rust", "cargo"],
+            negative_keywords: vec!["python", "typescript"],
+        },
+    );
+    hubs.insert(
+        "programming",
+        HubDefinition {
+            name: "programming",
+            sub_hubs: prog_sub,
+        },
+    );
 
     // 2. AI Hub
     let mut ai_sub = HashMap::new();
-    ai_sub.insert("llm-agents", SubHubRule {
-        keywords: vec!["llm", "gpt", "prompt", "rag", "agent", "claude"],
-        anchor_keywords: vec!["llm", "agent", "rag"],
-        negative_keywords: vec!["seo", "marketing"],
-    });
-    ai_sub.insert("prompting-builder", SubHubRule {
-        keywords: vec!["prompt", "prompt-engineering", "context-compression"],
-        anchor_keywords: vec!["prompt-engineering"],
-        negative_keywords: vec!["ui", "css"],
-    });
-    hubs.insert("ai", HubDefinition { name: "ai", sub_hubs: ai_sub });
+    ai_sub.insert(
+        "llm-agents",
+        SubHubRule {
+            keywords: vec!["llm", "gpt", "prompt", "rag", "agent", "claude"],
+            anchor_keywords: vec!["llm", "agent", "rag"],
+            negative_keywords: vec!["seo", "marketing"],
+        },
+    );
+    ai_sub.insert(
+        "prompting-builder",
+        SubHubRule {
+            keywords: vec!["prompt", "prompt-engineering", "context-compression"],
+            anchor_keywords: vec!["prompt-engineering"],
+            negative_keywords: vec!["ui", "css"],
+        },
+    );
+    hubs.insert(
+        "ai",
+        HubDefinition {
+            name: "ai",
+            sub_hubs: ai_sub,
+        },
+    );
 
     // 3. Frontend Hub
     let mut fe_sub = HashMap::new();
-    fe_sub.insert("react-nextjs", SubHubRule {
-        keywords: vec!["react", "nextjs", "jsx", "hooks", "tailwind"],
-        anchor_keywords: vec!["react", "nextjs"],
-        negative_keywords: vec!["sql", "postgres"],
-    });
-    hubs.insert("frontend", HubDefinition { name: "frontend", sub_hubs: fe_sub });
+    fe_sub.insert(
+        "react-nextjs",
+        SubHubRule {
+            keywords: vec!["react", "nextjs", "jsx", "hooks", "tailwind"],
+            anchor_keywords: vec!["react", "nextjs"],
+            negative_keywords: vec!["sql", "postgres"],
+        },
+    );
+    hubs.insert(
+        "frontend",
+        HubDefinition {
+            name: "frontend",
+            sub_hubs: fe_sub,
+        },
+    );
 
     // 4. Security Hub
     let mut sec_sub = HashMap::new();
-    sec_sub.insert("core", SubHubRule {
-        keywords: vec!["security", "auth", "oauth", "jwt", "encryption", "pentest"],
-        anchor_keywords: vec!["security", "pentest", "vulnerability"],
-        negative_keywords: vec!["marketing", "seo"],
-    });
-    hubs.insert("security", HubDefinition { name: "security", sub_hubs: sec_sub });
+    sec_sub.insert(
+        "core",
+        SubHubRule {
+            keywords: vec!["security", "auth", "oauth", "jwt", "encryption", "pentest"],
+            anchor_keywords: vec!["security", "pentest", "vulnerability"],
+            negative_keywords: vec!["marketing", "seo"],
+        },
+    );
+    hubs.insert(
+        "security",
+        HubDefinition {
+            name: "security",
+            sub_hubs: sec_sub,
+        },
+    );
 
     // 5. Backend Hub
     let mut be_sub = HashMap::new();
-    be_sub.insert("api-design", SubHubRule {
-        keywords: vec!["api", "rest", "graphql", "openapi", "swagger"],
-        anchor_keywords: vec!["api", "rest", "graphql"],
-        negative_keywords: vec!["react", "nextjs"],
-    });
-    be_sub.insert("databases", SubHubRule {
-        keywords: vec!["sql", "postgres", "mongodb", "redis", "nosql", "orm"],
-        anchor_keywords: vec!["sql", "postgres", "database"],
-        negative_keywords: vec!["frontend", "ui"],
-    });
-    hubs.insert("backend", HubDefinition { name: "backend", sub_hubs: be_sub });
+    be_sub.insert(
+        "api-design",
+        SubHubRule {
+            keywords: vec!["api", "rest", "graphql", "openapi", "swagger"],
+            anchor_keywords: vec!["api", "rest", "graphql"],
+            negative_keywords: vec!["react", "nextjs"],
+        },
+    );
+    be_sub.insert(
+        "databases",
+        SubHubRule {
+            keywords: vec!["sql", "postgres", "mongodb", "redis", "nosql", "orm"],
+            anchor_keywords: vec!["sql", "postgres", "database"],
+            negative_keywords: vec!["frontend", "ui"],
+        },
+    );
+    hubs.insert(
+        "backend",
+        HubDefinition {
+            name: "backend",
+            sub_hubs: be_sub,
+        },
+    );
 
     // 6. Testing Hub
     let mut test_sub = HashMap::new();
-    test_sub.insert("automation", SubHubRule {
-        keywords: vec!["testing", "test", "unit-test", "integration-test", "cypress", "playwright"],
-        anchor_keywords: vec!["testing", "test", "qa"],
-        negative_keywords: vec!["marketing"],
-    });
-    hubs.insert("testing", HubDefinition { name: "testing", sub_hubs: test_sub });
+    test_sub.insert(
+        "automation",
+        SubHubRule {
+            keywords: vec![
+                "testing",
+                "test",
+                "unit-test",
+                "integration-test",
+                "cypress",
+                "playwright",
+            ],
+            anchor_keywords: vec!["testing", "test", "qa"],
+            negative_keywords: vec!["marketing"],
+        },
+    );
+    hubs.insert(
+        "testing",
+        HubDefinition {
+            name: "testing",
+            sub_hubs: test_sub,
+        },
+    );
 
     // 7. DevOps Hub
     let mut devops_sub = HashMap::new();
-    devops_sub.insert("ci-cd", SubHubRule {
-        keywords: vec!["ci", "cd", "github-actions", "jenkins", "pipeline"],
-        anchor_keywords: vec!["ci", "cd", "pipeline"],
-        negative_keywords: vec!["ui"],
-    });
-    devops_sub.insert("containerization", SubHubRule {
-        keywords: vec!["docker", "kubernetes", "k8s", "container"],
-        anchor_keywords: vec!["docker", "kubernetes"],
-        negative_keywords: vec!["marketing"],
-    });
-    hubs.insert("devops", HubDefinition { name: "devops", sub_hubs: devops_sub });
+    devops_sub.insert(
+        "ci-cd",
+        SubHubRule {
+            keywords: vec!["ci", "cd", "github-actions", "jenkins", "pipeline"],
+            anchor_keywords: vec!["ci", "cd", "pipeline"],
+            negative_keywords: vec!["ui"],
+        },
+    );
+    devops_sub.insert(
+        "containerization",
+        SubHubRule {
+            keywords: vec!["docker", "kubernetes", "k8s", "container"],
+            anchor_keywords: vec!["docker", "kubernetes"],
+            negative_keywords: vec!["marketing"],
+        },
+    );
+    hubs.insert(
+        "devops",
+        HubDefinition {
+            name: "devops",
+            sub_hubs: devops_sub,
+        },
+    );
 
     // 8. Business Hub
     let mut bus_sub = HashMap::new();
-    bus_sub.insert("product-strategy", SubHubRule {
-        keywords: vec!["product", "strategy", "roadmap", "prd", "stakeholder"],
-        anchor_keywords: vec!["product", "strategy", "prd"],
-        negative_keywords: vec!["react", "nextjs"],
-    });
-    hubs.insert("business", HubDefinition { name: "business", sub_hubs: bus_sub });
+    bus_sub.insert(
+        "product-strategy",
+        SubHubRule {
+            keywords: vec!["product", "strategy", "roadmap", "prd", "stakeholder"],
+            anchor_keywords: vec!["product", "strategy", "prd"],
+            negative_keywords: vec!["react", "nextjs"],
+        },
+    );
+    hubs.insert(
+        "business",
+        HubDefinition {
+            name: "business",
+            sub_hubs: bus_sub,
+        },
+    );
 
     // 9. Design Hub
     let mut des_sub = HashMap::new();
-    des_sub.insert("ui-ux", SubHubRule {
-        keywords: vec!["ui", "ux", "design", "figma", "wireframe"],
-        anchor_keywords: vec!["ui", "ux", "design"],
-        negative_keywords: vec!["backend", "sql"],
-    });
-    hubs.insert("design", HubDefinition { name: "design", sub_hubs: des_sub });
+    des_sub.insert(
+        "ui-ux",
+        SubHubRule {
+            keywords: vec!["ui", "ux", "design", "figma", "wireframe"],
+            anchor_keywords: vec!["ui", "ux", "design"],
+            negative_keywords: vec!["backend", "sql"],
+        },
+    );
+    hubs.insert(
+        "design",
+        HubDefinition {
+            name: "design",
+            sub_hubs: des_sub,
+        },
+    );
 
     // 10. Marketing Hub
     let mut mark_sub = HashMap::new();
-    mark_sub.insert("strategy", SubHubRule {
-        keywords: vec!["marketing", "brand", "positioning", "audience"],
-        anchor_keywords: vec!["marketing", "strategy"],
-        negative_keywords: vec!["python", "rust"],
-    });
-    hubs.insert("marketing", HubDefinition { name: "marketing", sub_hubs: mark_sub });
+    mark_sub.insert(
+        "strategy",
+        SubHubRule {
+            keywords: vec!["marketing", "brand", "positioning", "audience"],
+            anchor_keywords: vec!["marketing", "strategy"],
+            negative_keywords: vec!["python", "rust"],
+        },
+    );
+    hubs.insert(
+        "marketing",
+        HubDefinition {
+            name: "marketing",
+            sub_hubs: mark_sub,
+        },
+    );
 
     // 11. Mobile Hub
     let mut mob_sub = HashMap::new();
-    mob_sub.insert("cross-platform", SubHubRule {
-        keywords: vec!["react-native", "flutter", "expo", "mobile"],
-        anchor_keywords: vec!["mobile", "react-native", "flutter"],
-        negative_keywords: vec!["kubernetes"],
-    });
-    hubs.insert("mobile", HubDefinition { name: "mobile", sub_hubs: mob_sub });
+    mob_sub.insert(
+        "cross-platform",
+        SubHubRule {
+            keywords: vec!["react-native", "flutter", "expo", "mobile"],
+            anchor_keywords: vec!["mobile", "react-native", "flutter"],
+            negative_keywords: vec!["kubernetes"],
+        },
+    );
+    hubs.insert(
+        "mobile",
+        HubDefinition {
+            name: "mobile",
+            sub_hubs: mob_sub,
+        },
+    );
 
     hubs
 });
 
 pub static EXCLUSION_PATTERNS: &[&str] = &[
-    "game", "law", "legal", "medicine", "medical", "hospital", "patient", "clinical"
+    "game", "law", "legal", "medicine", "medical", "hospital", "patient", "clinical",
 ];
 
 pub fn normalize_text(text: &str) -> (String, HashSet<String>) {
     let lower = text.to_lowercase();
-    let tokens = TOKEN_REGEX.find_iter(&lower)
+    let tokens = TOKEN_REGEX
+        .find_iter(&lower)
         .map(|m| m.as_str().to_string())
         .collect();
     (lower, tokens)
 }
 
-pub fn get_score_for_subhub(normalized_text: &str, tokens: &HashSet<String>, rule: &SubHubRule) -> i32 {
+pub fn get_score_for_subhub(
+    normalized_text: &str,
+    tokens: &HashSet<String>,
+    rule: &SubHubRule,
+) -> i32 {
     let mut score = 0;
 
     for kw in &rule.keywords {
@@ -211,7 +360,8 @@ pub fn is_excluded(normalized_text: &str, tokens: &HashSet<String>) -> bool {
 }
 
 pub fn generate_triggers(skill_id: &str) -> String {
-    let tokens: Vec<String> = TOKEN_REGEX.find_iter(&skill_id.to_lowercase())
+    let tokens: Vec<String> = TOKEN_REGEX
+        .find_iter(&skill_id.to_lowercase())
         .map(|m| m.as_str().to_string())
         .take(5)
         .collect();
@@ -248,7 +398,7 @@ pub fn apply_rules(meta: &mut SkillMetadata) -> bool {
     } else {
         meta.hub = "productivity".to_string();
         meta.sub_hub = "workflow-automation".to_string();
-        meta.match_score = Some(100); 
+        meta.match_score = Some(100);
     }
 
     if meta.triggers.is_none() || meta.triggers.as_ref().unwrap().is_empty() {

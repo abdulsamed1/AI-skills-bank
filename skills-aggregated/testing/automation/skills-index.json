@@ -12,18 +12,6 @@
         "match_score":  7
     },
     {
-        "id":  "ab-test-setup",
-        "triggers":  [
-                         "ab",
-                         "test",
-                         "setup"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
         "id":  "analyzing-network-packets-with-scapy",
         "triggers":  [
                          "analyzing",

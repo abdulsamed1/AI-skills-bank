@@ -2,7 +2,7 @@
 
 ## MANDATORY 3-STEP FLOW — NEVER SKIP
 
-### STEP 1: keyword → hub (cost: ~50 tokens)
+### STEP 1: keyword → hub (cost: ~100 tokens)
 
 
 Map to hub/sub_hub.
@@ -20,9 +20,9 @@ Match user intent against `triggers` column.
 Pick highest `score` match.
 
 - If multiple triggers match → pick highest score
-- If ambiguous → present top 3 candidates and ask user to choose
+- If ambiguous → present top candidates and ask user to choose
 - If no match → try next candidate from Step 1 (if array)
-- If request is story/epic or multi-part → select top 2-3 skills that cover distinct sub-problems
+- If request is story/epic or multi-part → select top 5 OR MORE skills that cover distinct sub-problems
 
 Result: one or more (skill_id + src_path).
 

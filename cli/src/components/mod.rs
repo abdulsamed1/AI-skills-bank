@@ -1,12 +1,12 @@
-pub mod fetcher;
-pub mod syncer;
 pub mod aggregator;
 pub mod diagnostics;
+pub mod fetcher;
 pub mod manifest;
+pub mod syncer;
 
-use serde::Serialize;
 use crate::components::aggregator::SkillMetadata;
 use crate::components::diagnostics::DiagnosticStatus;
+use serde::Serialize;
 
 pub trait Component {
     // Shared trait for UI/logic components
