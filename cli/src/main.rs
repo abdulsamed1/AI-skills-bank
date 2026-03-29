@@ -1,3 +1,4 @@
+use dialoguer::{Confirm, Input, Select};
 use std::collections::HashMap;
 use std::env;
 use std::fs;
@@ -8,7 +9,8 @@ fn main() {
     let args: Vec<String> = env::args().collect();
 
     if args.len() < 2 {
-        print_help();
+        // Launch interactive menu when no arguments are provided
+        run_interactive();
         return;
     }
 
@@ -60,6 +62,77 @@ fn print_help() {
     println!("    -d, --destination <D> Target destination");
     println!("    -i, --input <I>       Input file");
     println!("    --dry-run             Preview without modifying");
+}
+
+fn run_interactive() {
+    let mut running = true;
+    while running {
+        let options = vec!["Aggregate", "Sync", "Routing", "Doctor", "Help", "Exit"];
+
+        let selection = Select::new()
+            .with_prompt("Choose an action")
+            .items(&options)
+            .default(0)
+            .interact()
+            .unwrap_or(0);
+
+        match options[selection] {
+            "Aggregate" => {
+                let force = Confirm::new()
+                    .with_prompt("Force re-aggregation?")
+                    .default(false)
+                    .interact()
+                    .unwrap_or(false);
+                match aggregate_skills(force) {
+                    Ok(_) => println!("[✓] Aggregation finished."),
+                    Err(e) => eprintln!("[ERROR] {}", e),
+                }
+            }
+            "Sync" => {
+                let dest: String = Input::new()
+                    .with_prompt("Destination path")
+                    .default(".agents/skills".into())
+                    .interact_text()
+                    .unwrap_or_else(|_| ".agents/skills".into());
+                let dry_run = Confirm::new()
+                    .with_prompt("Dry run (no changes)?")
+                    .default(true)
+                    .interact()
+                    .unwrap_or(true);
+                match sync_to_destination(Some(dest), dry_run) {
+                    Ok(_) => println!("[✓] Sync operation completed."),
+                    Err(e) => eprintln!("[ERROR] {}", e),
+                }
+            }
+            "Routing" => {
+                let input: String = Input::new()
+                    .with_prompt("Input file (leave empty for default)")
+                    .default("".into())
+                    .interact_text()
+                    .unwrap_or_default();
+                let input_opt = if input.trim().is_empty() {
+                    None
+                } else {
+                    Some(input)
+                };
+                match generate_routing(input_opt) {
+                    Ok(_) => println!("[✓] Routing generated."),
+                    Err(e) => eprintln!("[ERROR] {}", e),
+                }
+            }
+            "Doctor" => {
+                if let Err(e) = run_diagnostics() {
+                    eprintln!("[ERROR] {}", e);
+                }
+            }
+            "Help" => print_help(),
+            "Exit" => {
+                println!("Exiting interactive mode.");
+                running = false;
+            }
+            _ => {}
+        }
+    }
 }
 
 fn get_arg_value(args: &[String], flag: &str) -> Option<String> {

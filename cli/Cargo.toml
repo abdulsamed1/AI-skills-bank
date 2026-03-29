@@ -35,6 +35,7 @@ uuid = { version = "1", features = ["v4", "serde"] }
 anyhow = "1"
 url = "2"
 tempfile = "3.27.0"
+dialoguer = "0.10"
 
 [profile.release]
 opt-level = 3
