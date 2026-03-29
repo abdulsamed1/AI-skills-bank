@@ -22,8 +22,9 @@ Pick highest `score` match.
 - If multiple triggers match → pick highest score
 - If ambiguous → present top 3 candidates and ask user to choose
 - If no match → try next candidate from Step 1 (if array)
+- If request is story/epic or multi-part → select top 2-3 skills that cover distinct sub-problems
 
-Result: skill_id + src_path.
+Result: one or more (skill_id + src_path).
 
 ### STEP 3: load skill content
 
@@ -38,9 +39,19 @@ Read `{hub_mount_path}/{src_path}` (where `{hub_mount_path}` is the directory co
 - **Gate 1:** skill_id must exist in routing.csv before invocation
 - **Gate 2:** hub must exist in subhub-index.json
 - **Gate 3:** match_score must be >= 10
-- **Gate 4:** Never combine skills from different hubs in one request
+- **Gate 4:** For story/epic requests, combining skills across sub-hubs is allowed when each skill maps to a distinct sub-problem
 - **Gate 5:** Never invent skill_id values — use ONLY what routing.csv contains
 - **Gate 6:** Never guess src_path — use ONLY what routing.csv contains
+
+## MULTI-SKILL MODE (Story/Epic)
+
+When the user asks to implement a story/epic or clearly multi-part task:
+
+1. Decompose into sub-problems (API, DB, security, frontend, etc.)
+2. Route each sub-problem separately using STEP 1 + STEP 2
+3. Select 1 skill per sub-problem (max 3 skills total unless user asks for more)
+4. Avoid overlapping skills that solve the same thing
+5. Load selected skills sequentially and merge into one execution plan
 
 ## FALLBACK (when subhub-index has no match)
 

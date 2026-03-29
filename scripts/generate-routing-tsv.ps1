@@ -19,7 +19,9 @@
 
 [CmdletBinding()]
 param(
-    [switch]$DryRun
+    [switch]$DryRun,
+    [ValidateSet('HubLocal', 'SourceDirectRelative', 'SourceDirectAbsolute')]
+    [string]$PathMode = 'HubLocal'
 )
 
 $ErrorActionPreference = 'Stop'
@@ -35,6 +37,7 @@ Write-Host "── generate-routing-tsv.ps1 ──" -ForegroundColor Cyan
 Write-Host "  manifest : $manifestPath"
 Write-Host "  src root : $srcRoot"
 Write-Host "  output   : $skillsAgg/{hub}/{sub_hub}/routing.csv"
+Write-Host "  path mode: $PathMode"
 if ($DryRun) { Write-Host "  MODE     : DRY RUN" -ForegroundColor Yellow }
 
 # ── Load CSV ─────────────────────────────────────────────────────────────────
@@ -93,8 +96,16 @@ foreach ($group in $groups) {
     # Build CSV rows
     $rows = [System.Collections.ArrayList]::new()
     $skillsMountDir = Join-Path $outDir 'skills'
-    if (-not $DryRun -and -not (Test-Path $skillsMountDir)) {
-        New-Item -ItemType Directory -Path $skillsMountDir -Force | Out-Null
+    if ($PathMode -eq 'HubLocal') {
+        if (-not $DryRun -and -not (Test-Path $skillsMountDir)) {
+            New-Item -ItemType Directory -Path $skillsMountDir -Force | Out-Null
+        }
+    }
+    else {
+        # SourceDirect should not keep hub-local skill mounts.
+        if (-not $DryRun -and (Test-Path $skillsMountDir)) {
+            Remove-Item -Path $skillsMountDir -Recurse -Force
+        }
     }
 
     foreach ($row in $sorted) {
@@ -102,28 +113,38 @@ foreach ($group in $groups) {
         $triggers = $row.triggers
         $score    = $row.match_score
 
-        # Resolve src_path via stable hub-local junctions (no file copy)
+        # Resolve src_path by selected mode.
         $srcPath = ''
         if ($srcPathMap.ContainsKey($skillId)) {
             $sourceAbsolute = $srcPathMap[$skillId]
-            $sourceDir = Split-Path $sourceAbsolute -Parent
-            $targetDir = Join-Path $skillsMountDir $skillId
+            if ($PathMode -eq 'HubLocal') {
+                $sourceDir = Split-Path $sourceAbsolute -Parent
+                $targetDir = Join-Path $skillsMountDir $skillId
 
-            if (-not $DryRun) {
-                if (Test-Path $targetDir) {
-                    $existing = Get-Item $targetDir -Force
-                    $isReparsePoint = ($existing.Attributes -band [IO.FileAttributes]::ReparsePoint) -ne 0
-                    if (-not $isReparsePoint) {
-                        Remove-Item -Path $targetDir -Recurse -Force
+                if (-not $DryRun) {
+                    if (Test-Path $targetDir) {
+                        $existing = Get-Item $targetDir -Force
+                        $isReparsePoint = ($existing.Attributes -band [IO.FileAttributes]::ReparsePoint) -ne 0
+                        if (-not $isReparsePoint) {
+                            Remove-Item -Path $targetDir -Recurse -Force
+                        }
+                    }
+
+                    if (-not (Test-Path $targetDir)) {
+                        New-Item -ItemType Junction -Path $targetDir -Target $sourceDir | Out-Null
                     }
                 }
 
-                if (-not (Test-Path $targetDir)) {
-                    New-Item -ItemType Junction -Path $targetDir -Target $sourceDir | Out-Null
-                }
+                $srcPath = "skills/$skillId/SKILL.md"
             }
-
-            $srcPath = "skills/$skillId/SKILL.md"
+            elseif ($PathMode -eq 'SourceDirectAbsolute') {
+                $srcPath = ($sourceAbsolute -replace '\\', '/')
+            }
+            else {
+                # SourceDirectRelative: repo-relative, portable across machines.
+                $relative = $sourceAbsolute.Substring($repoRoot.Length).TrimStart('\\')
+                $srcPath = ($relative -replace '\\', '/')
+            }
         } else {
             # Skip internal/BMAD skills — they live in .agent/skills/
             [void]$unresolvedIds.Add("${hub}/${subHub} -- ${skillId}")

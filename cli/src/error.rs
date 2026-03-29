@@ -1,4 +1,5 @@
 use thiserror::Error;
+use serde_json::json;
 
 #[derive(Error, Debug)]
 pub enum SkillManageError {
@@ -19,4 +20,25 @@ pub enum SkillManageError {
     
     #[error("Unknown error")]
     Unknown,
+}
+
+impl SkillManageError {
+    pub fn to_json(&self) -> serde_json::Value {
+        let (code, message) = match self {
+            Self::ConfigError(m) => ("CONFIG_ERROR", m.clone()),
+            Self::IoError(e) => ("IO_ERROR", e.to_string()),
+            Self::ManifestParseError(m) => ("MANIFEST_PARSE_ERROR", m.clone()),
+            Self::ManifestValidationError(m) => ("MANIFEST_VALIDATION_ERROR", m.clone()),
+            Self::GitError(m) => ("GIT_ERROR", m.clone()),
+            Self::Unknown => ("UNKNOWN_ERROR", "An unknown error occurred".to_string()),
+        };
+
+        json!({
+            "status": "error",
+            "error": {
+                "code": code,
+                "message": message
+            }
+        })
+    }
 }

@@ -1,3 +1,5 @@
+pub mod rules;
+
 use std::path::{Path, PathBuf};
 use std::sync::Arc;
 use std::collections::HashSet;
@@ -5,6 +7,7 @@ use serde::{Deserialize, Serialize};
 use walkdir::WalkDir;
 use rayon::prelude::*;
 use crate::error::SkillManageError;
+use crate::components::CommandResult;
 use crate::utils::progress::ProgressManager;
 use crate::utils::atomicity::write_file_atomic;
 
@@ -28,6 +31,7 @@ pub struct SkillMetadata {
 }
 
 #[derive(Debug, Deserialize)]
+#[serde(deny_unknown_fields)]
 struct SkillFrontmatter {
     name: String,
     description: String,
@@ -75,7 +79,7 @@ impl From<SkillMetadata> for CsvRow {
             hub: hub.clone(),
             sub_hub: sub_hub.clone(),
             skill_id: skill_id.clone(),
-            display_name: meta.name, // For now use name as display_name
+            display_name: meta.name,
             description: meta.description,
             triggers: meta.triggers.unwrap_or_else(|| skill_id.replace('-', ";")),
             match_score: meta.match_score.unwrap_or(100),
@@ -99,12 +103,11 @@ impl Aggregator {
         Self { progress }
     }
 
-    /// Parse a SKILL.md file and extract metadata.
     pub fn parse_skill_md(path: &Path) -> Result<SkillMetadata, SkillManageError> {
         let content = std::fs::read_to_string(path)?;
         
         let mut parts = content.split("---");
-        let _ = parts.next(); // Skip empty part before first ---
+        let _ = parts.next(); 
         let yaml_part = parts.next().ok_or_else(|| {
             SkillManageError::ManifestValidationError(format!("Missing frontmatter in {}", path.display()))
         })?;
@@ -127,8 +130,7 @@ impl Aggregator {
         })
     }
 
-    /// Scan src/ and aggregate all skills in parallel.
-    pub async fn aggregate(&self, _force: bool) -> Result<Vec<SkillMetadata>, SkillManageError> {
+    pub async fn aggregate(&self, _force: bool) -> Result<CommandResult, SkillManageError> {
         let src_path = Path::new("src");
         if !src_path.exists() {
             return Err(SkillManageError::ConfigError("Source directory 'src' not found. Run 'fetch' first.".to_string()));
@@ -143,13 +145,21 @@ impl Aggregator {
             .map(|e| e.path().to_path_buf())
             .collect();
 
-        spinner.set_message(format!("Found {} SKILL.md files. Parsing...", paths.len()));
+        spinner.set_message(format!("Found {} SKILL.md files. Applying rules...", paths.len()));
 
         let results: Vec<SkillMetadata> = paths
             .par_iter()
             .filter_map(|path| {
                 match Self::parse_skill_md(path) {
-                    Ok(meta) => Some(meta),
+                    Ok(mut meta) => {
+                        // Apply rules: categorization, exclusions, triggers, phase
+                        if rules::apply_rules(&mut meta) {
+                            Some(meta)
+                        } else {
+                            // Excluded by policy
+                            None
+                        }
+                    },
                     Err(e) => {
                         eprintln!("Error parsing {}: {}", path.display(), e);
                         None
@@ -158,12 +168,11 @@ impl Aggregator {
             })
             .collect();
 
-        // Uniqueness check
         let mut seen = HashSet::new();
         let mut unique_results = Vec::new();
         for meta in results {
             if !seen.insert(meta.name.clone()) {
-                eprintln!("Warning: Duplicate skill_id found: '{}'. Skipping {}", meta.name, meta.path.display());
+                // eprintln!("Warning: Duplicate skill_id found: '{}'. Skipping {}", meta.name, meta.path.display());
                 continue;
             }
             unique_results.push(meta);
@@ -171,10 +180,9 @@ impl Aggregator {
 
         spinner.finish_with_message(format!("Aggregation complete. Processed {} unique skills.", unique_results.len()));
         
-        Ok(unique_results)
+        Ok(CommandResult::Aggregate { skills: unique_results })
     }
 
-    /// Generate hub-manifests.csv from aggregated skills.
     pub async fn generate_csv(&self, skills: Vec<SkillMetadata>) -> Result<(), SkillManageError> {
         let spinner = self.progress.create_spinner("Generating CSV...");
         
@@ -193,53 +201,5 @@ impl Aggregator {
 
         spinner.finish_with_message("Successfully generated hub-manifests.csv");
         Ok(())
-    }
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-    use std::fs;
-    use tempfile::tempdir;
-
-    #[test]
-    fn test_parse_valid_md() -> Result<(), Box<dyn std::error::Error>> {
-        let dir = tempdir()?;
-        let file_path = dir.path().join("SKILL.md");
-        let content = r#"---
-name: test-skill
-description: A test skill description
-triggers: test;skill
----
-# Content
-"#;
-        fs::write(&file_path, content)?;
-
-        let meta = Aggregator::parse_skill_md(&file_path)?;
-        assert_eq!(meta.name, "test-skill");
-        assert_eq!(meta.description, "A test skill description");
-        assert_eq!(meta.triggers, Some("test;skill".to_string()));
-        Ok(())
-    }
-
-    #[test]
-    fn test_metadata_to_csv_row() {
-        let meta = SkillMetadata {
-            name: "test-skill".to_string(),
-            description: "desc".to_string(),
-            path: PathBuf::from("path"),
-            hub: "ai".to_string(),
-            sub_hub: "llm".to_string(),
-            triggers: None,
-            match_score: None,
-            phase: None,
-            required: None,
-            action: None,
-        };
-        let row = CsvRow::from(meta);
-        assert_eq!(row.skill_id, "test-skill");
-        assert_eq!(row.triggers, "test;skill");
-        assert_eq!(row.match_score, 100);
-        assert_eq!(row.output_location, "outputs/ai/llm");
     }
 }

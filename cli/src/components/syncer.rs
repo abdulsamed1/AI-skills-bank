@@ -2,6 +2,7 @@ use std::path::{Path, PathBuf};
 use std::sync::Arc;
 use walkdir::WalkDir;
 use crate::error::SkillManageError;
+use crate::components::CommandResult;
 use crate::utils::progress::ProgressManager;
 use crate::utils::paths::{expand_home, get_default_destination};
 use crate::utils::atomicity::{sync_dir_atomic, create_link_atomic, is_link};
@@ -53,7 +54,7 @@ impl Syncer {
     }
 
     /// Synchronize skills to the target destination.
-    pub async fn sync(&self, destination: Option<String>, link: bool, dry_run: bool) -> Result<(), SkillManageError> {
+    pub async fn sync(&self, destination: Option<String>, link: bool, dry_run: bool) -> Result<CommandResult, SkillManageError> {
         let target_base = match destination {
             Some(d) => expand_home(&d),
             None => get_default_destination(),
@@ -72,26 +73,25 @@ impl Syncer {
         let total_skills = skills.len() as u64;
         let main_pb = self.progress.create_main_bar(total_skills, "Synchronizing skills");
 
+        let mut synced = Vec::new();
+
         for skill in skills {
             let target_path = target_base.join(&skill.name);
             let spinner = self.progress.create_spinner(&format!("Syncing: {}", skill.name));
 
-            if dry_run {
-                let mode = if link { "link" } else { "sync" };
-                println!("[Dry Run] Would {} {} to {}", mode, skill.path.display(), target_path.display());
-            } else {
+            if !dry_run {
                 // Conflict detection
                 if target_path.exists() {
                     let existing_is_link = is_link(&target_path);
                     if link && !existing_is_link {
                         return Err(SkillManageError::ConfigError(format!(
-                            "Conflict: Target '{}' exists and is a directory, but --link was requested. Remove it manually or run without --link.",
+                            "Conflict: Target '{}' exists and is a directory, but --link was requested.",
                             target_path.display()
                         )));
                     }
                     if !link && existing_is_link {
                         return Err(SkillManageError::ConfigError(format!(
-                            "Conflict: Target '{}' exists and is a link, but full sync was requested. Remove it manually or run with --link.",
+                            "Conflict: Target '{}' exists and is a link, but full sync was requested.",
                             target_path.display()
                         )));
                     }
@@ -102,6 +102,7 @@ impl Syncer {
                 } else {
                     sync_dir_atomic(&skill.path, &target_path)?;
                 }
+                synced.push(skill.name.clone());
             }
 
             spinner.finish_with_message(format!("Synced: {}", skill.name));
@@ -109,6 +110,10 @@ impl Syncer {
         }
 
         main_pb.finish_with_message("Synchronization complete.");
-        Ok(())
+        
+        Ok(CommandResult::Sync {
+            synced,
+            target: target_base.to_string_lossy().into_owned(),
+        })
     }
 }

@@ -30,6 +30,7 @@ param(
     [switch]$IncludeGlobal,
     [ValidateSet("Auto", "Copy", "Junction", "SymbolicLink")]
     [string]$SyncMode = "Auto",
+    [switch]$DisableGlobalAbsoluteRouting,
     [switch]$NoPrompt,
     [switch]$Force
 )
@@ -155,6 +156,45 @@ function Write-FileUtf8NoBom {
 
     $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
     [System.IO.File]::WriteAllText($Path, $Content, $utf8NoBom)
+}
+
+function Convert-RoutingCsvToAbsolute {
+    param(
+        [string]$TargetRoot,
+        [string]$SkillManageRoot
+    )
+
+    $routingFiles = Get-ChildItem -Path $TargetRoot -Recurse -Filter "routing.csv" -File -ErrorAction SilentlyContinue
+    $updatedFiles = 0
+
+    foreach ($routingFile in $routingFiles) {
+        $rows = Import-Csv -Path $routingFile.FullName
+        if (-not $rows -or $rows.Count -eq 0) { continue }
+
+        $changed = $false
+        foreach ($row in $rows) {
+            $srcPath = [string]$row.src_path
+            if ([string]::IsNullOrWhiteSpace($srcPath)) { continue }
+            if ($srcPath -match '^[A-Za-z]:/') { continue }
+            if ($srcPath -notmatch '^src/') { continue }
+
+            $absolute = Join-Path $SkillManageRoot ($srcPath -replace '/', '\\')
+            $normalized = ($absolute -replace '\\', '/') -replace '/+', '/'
+            if ($normalized -match '^[A-Za-z]:/') {
+                $normalized = $normalized.Substring(0, 3) + ($normalized.Substring(3) -replace '/+', '/')
+            }
+            $row.src_path = $normalized
+            $changed = $true
+        }
+
+        if ($changed) {
+            $content = ($rows | ConvertTo-Csv -NoTypeInformation) -join "`n"
+            Write-FileUtf8NoBom -Path $routingFile.FullName -Content ($content + "`n")
+            $updatedFiles++
+        }
+    }
+
+    return $updatedFiles
 }
 
 function Read-ConsoleSingleSelect {
@@ -457,12 +497,14 @@ function Ensure-MainHubRouters {
         $skillContent = @"
 ---
 name: $mainHub
-description: Main router for the $mainHub hub. Choose a concrete sub-hub under this folder.
+    description: Main router for the $mainHub hub. For story/epic requests, route to multiple sub-hubs when needed.
 ---
 
 1. List available sub-folders in this hub.
-2. Choose the most relevant sub-hub for the user request.
-3. Open that sub-hub's SKILL.md and follow its instructions to find the exact skill.
+    2. For simple requests: choose the single best sub-hub.
+    3. For story/epic or multi-part requests: choose all relevant sub-hubs and process them sequentially.
+    4. In each chosen sub-hub: open SKILL.md, read routing.csv, select 1-2 skills per sub-problem.
+    5. Merge selected skills into one implementation plan and avoid duplicate/overlapping skills.
 "@
         Write-FileUtf8NoBom -Path $skillPath -Content $skillContent
     }
@@ -472,7 +514,8 @@ function Sync-Hub-To-Tool {
     param(
         [string]$HubRelativePath,
         [string]$HubPath,
-        [string]$TargetPath
+        [string]$TargetPath,
+        [string]$ModeForTarget
     )
     
     $targetHubPath = Join-Path $TargetPath $HubRelativePath
@@ -497,8 +540,8 @@ function Sync-Hub-To-Tool {
         }
     }
 
-    $linkOrCopyMode = $SyncMode
-    if ($SyncMode -eq "Auto") {
+    $linkOrCopyMode = $ModeForTarget
+    if ($ModeForTarget -eq "Auto") {
         $linkOrCopyMode = "Junction"
     }
 
@@ -591,11 +634,18 @@ foreach ($toolPath in $TargetTools) {
     $toolName = Split-Path $toolPath -Parent | Split-Path -Leaf
     Write-Log ""
     Write-Log "Syncing to: $toolName ($toolPath)"
+
+    $isGlobalTarget = $GlobalTargets -contains $toolPath
+    $rewriteAbsoluteForThisTarget = $isGlobalTarget -and (-not $DisableGlobalAbsoluteRouting)
+    $modeForTarget = if ($rewriteAbsoluteForThisTarget) { "Copy" } else { $SyncMode }
+    if ($rewriteAbsoluteForThisTarget) {
+        Write-Log "  Using Copy mode for global absolute routing rewrite"
+    }
     
     $syncedCount = 0
     $modeCounts = @{}
     foreach ($hub in $hubs) {
-        $syncResult = Sync-Hub-To-Tool -HubRelativePath $hub.RelativePath -HubPath $hub.FullPath -TargetPath $toolPath
+        $syncResult = Sync-Hub-To-Tool -HubRelativePath $hub.RelativePath -HubPath $hub.FullPath -TargetPath $toolPath -ModeForTarget $modeForTarget
         if ($syncResult.Success) {
             if (-not $modeCounts.ContainsKey($syncResult.Mode)) {
                 $modeCounts[$syncResult.Mode] = 0
@@ -613,6 +663,12 @@ foreach ($toolPath in $TargetTools) {
     }
 
     Ensure-MainHubRouters -TargetPath $toolPath -HubRelativePaths ($hubs | ForEach-Object { $_.RelativePath })
+
+    if ($rewriteAbsoluteForThisTarget) {
+        $updated = Convert-RoutingCsvToAbsolute -TargetRoot $toolPath -SkillManageRoot (Join-Path $RepoRoot "skill-manage")
+        Write-Log "  routing.csv absolute rewrite: $updated file(s) updated"
+    }
+
     Write-Log "  Main-hub routers ensured"
 }
 

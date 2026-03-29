@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 use crate::error::SkillManageError;
 
 #[derive(Debug, Serialize, Deserialize, Clone, PartialEq)]
-#[serde(rename_all = "camelCase")]
+#[serde(rename_all = "camelCase", deny_unknown_fields)]
 pub struct Repository {
     pub name: String,
     pub url: String,
@@ -12,7 +12,7 @@ pub struct Repository {
 }
 
 #[derive(Debug, Serialize, Deserialize, Clone, Default)]
-#[serde(rename_all = "camelCase")]
+#[serde(rename_all = "camelCase", deny_unknown_fields)]
 pub struct RepoManifest {
     pub repositories: Vec<Repository>,
 }

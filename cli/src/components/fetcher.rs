@@ -1,7 +1,8 @@
 use std::path::Path;
-use std::sync::Arc;
+use std::sync::{Arc, Mutex};
 use tokio::sync::Semaphore;
 use crate::components::manifest::RepoManifest;
+use crate::components::CommandResult;
 use crate::error::SkillManageError;
 use crate::utils::progress::ProgressManager;
 
@@ -42,7 +43,7 @@ impl Fetcher {
     }
 
     /// Fetch all repositories in the manifest
-    pub async fn fetch(&self, dry_run: bool) -> Result<(), SkillManageError> {
+    pub async fn fetch(&self, dry_run: bool) -> Result<CommandResult, SkillManageError> {
         let manifest = self.manifest.as_ref().ok_or_else(|| {
             SkillManageError::ConfigError("No manifest loaded for fetcher".to_string())
         })?;
@@ -50,9 +51,7 @@ impl Fetcher {
         // Ensure src directory exists
         let src_dir = Path::new("src");
         if !src_dir.exists() {
-            if dry_run {
-                println!("[Dry Run] Would create directory: src/");
-            } else {
+            if !dry_run {
                 std::fs::create_dir_all(src_dir)?;
             }
         }
@@ -60,7 +59,9 @@ impl Fetcher {
         let total_repos = manifest.repositories.len() as u64;
         let main_pb = self.progress.create_main_bar(total_repos, "Fetching repositories");
 
-        let semaphore = Arc::new(Semaphore::new(4)); // Limit to 4 parallel git operations
+        let semaphore = Arc::new(Semaphore::new(4));
+        let cloned = Arc::new(Mutex::new(Vec::new()));
+        let updated = Arc::new(Mutex::new(Vec::new()));
         let mut handles = Vec::new();
 
         for repo in manifest.repositories.clone() {
@@ -69,6 +70,8 @@ impl Fetcher {
             let repo_url = repo.url.clone();
             let progress = Arc::clone(&self.progress);
             let main_pb_clone = main_pb.clone();
+            let cloned_ref = Arc::clone(&cloned);
+            let updated_ref = Arc::clone(&updated);
             
             let handle = tokio::spawn(async move {
                 let _permit = sem.acquire().await.map_err(|e| SkillManageError::GitError(e.to_string()))?;
@@ -80,12 +83,14 @@ impl Fetcher {
                     spinner.set_message(format!("Updating {}...", repo_name));
                     if !dry_run {
                         Self::run_git_command(&["pull"], &repo_path).await?;
+                        updated_ref.lock().unwrap().push(repo_name.clone());
                     }
                 } else {
                     spinner.set_message(format!("Cloning {}...", repo_name));
                     if !dry_run {
                         let args = ["clone", "--depth", "1", &repo_url, &repo_name];
                         Self::run_git_command(&args, Path::new("src")).await?;
+                        cloned_ref.lock().unwrap().push(repo_name.clone());
                     }
                 }
                 
@@ -104,6 +109,10 @@ impl Fetcher {
         }
 
         main_pb.finish_with_message("All repositories fetched successfully.");
-        Ok(())
+        
+        Ok(CommandResult::Fetch {
+            cloned: cloned.lock().unwrap().clone(),
+            updated: updated.lock().unwrap().clone(),
+        })
     }
 }

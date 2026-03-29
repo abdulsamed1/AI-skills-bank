@@ -8,8 +8,18 @@
 
 [CmdletBinding()]
 param(
-    [switch]$DryRun
+    [switch]$DryRun,
+    [ValidateSet('Auto', 'HubLocal', 'SourceDirect', 'SourceDirectStatic')]
+    [string]$ToolProfile = 'Auto'
 )
 
 $scriptPath = Join-Path $PSScriptRoot "generate-routing-tsv.ps1"
-& $scriptPath @PSBoundParameters
+$pathMode = 'HubLocal'
+if ($ToolProfile -eq 'SourceDirect') {
+    $pathMode = 'SourceDirectRelative'
+}
+elseif ($ToolProfile -eq 'SourceDirectStatic') {
+    $pathMode = 'SourceDirectAbsolute'
+}
+
+& $scriptPath -DryRun:$DryRun -PathMode $pathMode

@@ -118,6 +118,25 @@ Policy:
 - Workspace targets are optional
 - Workspace pruning is explicit only (`-PruneWorkspaceTargets`)
 
+### Routing Generation (Single Entrypoint)
+
+```powershell
+# Default profile (HubLocal) for Gemini/Copilot/Cursor-style loaders
+powershell -ExecutionPolicy Bypass -File "skill-manage/scripts/generate-routing-csv.ps1"
+
+# SourceDirect profile (dynamic repo-relative src_path: src/...)
+powershell -ExecutionPolicy Bypass -File "skill-manage/scripts/generate-routing-csv.ps1" -ToolProfile SourceDirect
+
+# Optional static absolute source paths (legacy compatibility)
+powershell -ExecutionPolicy Bypass -File "skill-manage/scripts/generate-routing-csv.ps1" -ToolProfile SourceDirectStatic
+```
+
+Profiles:
+
+- `Auto`/`HubLocal`: emits `skills/<skill-id>/SKILL.md` and ensures junctions in each sub-hub.
+- `SourceDirect`: emits dynamic repo-relative `src/.../SKILL.md` paths with no hub-local mount dependency.
+- `SourceDirectStatic`: emits absolute source paths (machine-specific).
+
 ---
 
 ## Tool Targets
