@@ -34,6 +34,10 @@ pub enum Commands {
         #[arg(short, long)]
         destination: Option<String>,
         
+        /// Use junctions (Windows) or symlinks (Unix) instead of copying
+        #[arg(short, long)]
+        link: bool,
+
         /// Perform a dry run without modifying files
         #[arg(long)]
         dry_run: bool,

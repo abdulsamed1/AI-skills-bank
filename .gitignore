@@ -88,5 +88,5 @@ src/*
 !src/src.md
 !src/README.md
 !src/.gitkeep
-
+*skills/
 docs/stories/

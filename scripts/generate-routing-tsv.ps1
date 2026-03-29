@@ -92,18 +92,38 @@ foreach ($group in $groups) {
 
     # Build CSV rows
     $rows = [System.Collections.ArrayList]::new()
+    $skillsMountDir = Join-Path $outDir 'skills'
+    if (-not $DryRun -and -not (Test-Path $skillsMountDir)) {
+        New-Item -ItemType Directory -Path $skillsMountDir -Force | Out-Null
+    }
 
     foreach ($row in $sorted) {
         $skillId  = $row.skill_id
         $triggers = $row.triggers
         $score    = $row.match_score
 
-        # Resolve src_path from src/ directly (no copy into hub directories)
+        # Resolve src_path via stable hub-local junctions (no file copy)
         $srcPath = ''
         if ($srcPathMap.ContainsKey($skillId)) {
             $sourceAbsolute = $srcPathMap[$skillId]
-            $relative = $sourceAbsolute.Substring($repoRoot.Length).TrimStart('\\')
-            $srcPath = ($relative -replace '\\', '/')
+            $sourceDir = Split-Path $sourceAbsolute -Parent
+            $targetDir = Join-Path $skillsMountDir $skillId
+
+            if (-not $DryRun) {
+                if (Test-Path $targetDir) {
+                    $existing = Get-Item $targetDir -Force
+                    $isReparsePoint = ($existing.Attributes -band [IO.FileAttributes]::ReparsePoint) -ne 0
+                    if (-not $isReparsePoint) {
+                        Remove-Item -Path $targetDir -Recurse -Force
+                    }
+                }
+
+                if (-not (Test-Path $targetDir)) {
+                    New-Item -ItemType Junction -Path $targetDir -Target $sourceDir | Out-Null
+                }
+            }
+
+            $srcPath = "skills/$skillId/SKILL.md"
         } else {
             # Skip internal/BMAD skills — they live in .agent/skills/
             [void]$unresolvedIds.Add("${hub}/${subHub} -- ${skillId}")

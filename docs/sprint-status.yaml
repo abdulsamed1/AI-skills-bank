@@ -34,7 +34,7 @@
 # - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
 
 generated: 2026-03-28
-last_updated: 2026-03-28 08:30:00
+last_updated: 2026-03-29 17:00:00
 project: skill-manage
 project_key: NOKEY
 tracking_system: file-system
@@ -54,30 +54,38 @@ development_status:
         status: "done"
         file: "docs/stories/story-01-cargo-dist.md"
   - Epic: "Epic 2: Repository Management (Fetch)"
-    status: "backlog"
+    status: "done"
     stories:
       - id: "story-02-manifest-parsing"
-        status: "backlog"
+        status: "done"
+        file: "docs/stories/story-02-manifest-parsing.md"
       - id: "story-02-fetch-implementation"
-        status: "backlog"
+        status: "done"
+        file: "docs/stories/story-02-fetch-implementation.md"
       - id: "story-02-fetch-progress"
-        status: "backlog"
+        status: "done"
+        file: "docs/stories/story-02-fetch-progress.md"
   - Epic: "Epic 3: Skill Synchronization (Sync)"
-    status: "backlog"
+    status: "done"
     stories:
       - id: "story-03-sync-implementation"
-        status: "backlog"
+        status: "done"
+        file: "docs/stories/story-03-sync-implementation.md"
       - id: "story-03-atomic-file-ops"
-        status: "backlog"
+        status: "done"
+        file: "docs/stories/story-03-atomic-file-ops.md"
       - id: "story-03-junction-logic"
-        status: "backlog"
+        status: "done"
+        file: "docs/stories/story-03-junction-logic.md"
   - Epic: "Epic 4: Hub Aggregation (Aggregate)"
-    status: "backlog"
+    status: "in-progress"
     stories:
       - id: "story-04-aggregate-implementation"
-        status: "backlog"
+        status: "done"
+        file: "docs/stories/story-04-aggregate-implementation.md"
       - id: "story-04-csv-generation"
-        status: "backlog"
+        status: "done"
+        file: "docs/stories/story-04-csv-generation.md"
       - id: "story-04-aggregate-rules"
         status: "backlog"
   - Epic: "Epic 5: Diagnostics & Validation (Doctor)"
