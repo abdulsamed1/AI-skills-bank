@@ -1,17 +1,56 @@
 {
-    "name":  "skills-mobile-cross-platform",
-    "main_hub":  "mobile",
-    "sub_hub":  "cross-platform",
-    "description":  "Mobile development: iOS, Android, and cross-platform application engineering",
-    "skill_count":  64,
-    "src_count":  11,
-    "top_triggers":  [
-                         null
-                     ],
-    "generated_at":  "2026-03-29T23:17:40+02:00",
-    "files":  {
-                  "skill":  "SKILL.md",
-                  "index":  "skills-index.json",
-                  "catalog":  "skills-catalog.csv"
-              }
+  "generated_at_unix": 1774888953,
+  "hub": "mobile",
+  "skills": [
+    {
+      "description": "Develop React Native, Flutter, or native mobile apps with modern architecture patterns. Masters cross-platform development, native integrations, offline sync, and app store optimization.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "mobile-developer",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-mobile-developer/skills/mobile-developer/SKILL.md",
+      "triggers": "mobile;developer"
+    },
+    {
+      "description": "React Native mobile patterns, platform-specific code",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "react-native",
+      "src_path": "src/alinaqi-claude-bootstrap/skills/react-native/SKILL.md",
+      "triggers": "react;native"
+    },
+    {
+      "description": "Detects and analyzes malicious behavior in mobile applications through behavioral analysis, permission abuse detection, network traffic monitoring, and dynamic instrumentation. Use when analyzing suspicious mobile applications for data exfiltration, command-and-control communication, credential stealing, SMS interception, or other malware indicators. Activates for requests involving mobile malware analysis, app behavior monitoring, trojan detection, or suspicious app investigation.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "detecting-mobile-malware-behavior",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-mobile-malware-behavior/SKILL.md",
+      "triggers": "detecting;mobile;malware;behavior"
+    },
+    {
+      "description": "Comprehensive web, mobile, and backend development workflow bundling frontend, backend, full-stack, and mobile development skills for end-to-end application delivery.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "development",
+      "src_path": "src/antigravity-awesome-skills/skills/development/SKILL.md",
+      "triggers": "development"
+    },
+    {
+      "description": "Master Flutter development with Dart 3, advanced widgets, and multi-platform deployment.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "flutter-expert",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-mobile-developer/skills/flutter-expert/SKILL.md",
+      "triggers": "flutter;expert"
+    },
+    {
+      "description": "Acquire and analyze mobile device data using Cellebrite UFED and open-source tools to extract communications, location data, and application artifacts.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "performing-mobile-device-forensics-with-cellebrite",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-mobile-device-forensics-with-cellebrite/SKILL.md",
+      "triggers": "performing;mobile;device;forensics;with"
+    }
+  ],
+  "sub_hub": "cross-platform",
+  "version": 1
 }

@@ -70,7 +70,7 @@ $subHubDirs = Get-ChildItem -Path $skillsRootPath -Directory | ForEach-Object {
 
 foreach ($subHub in $subHubDirs) {
     $indexPath = Join-Path $subHub.Path "skills-index.json"
-    $catalogPath = Join-Path $subHub.Path "skills-catalog.csv"
+    $catalogPath = Join-Path $subHub.Path "routing.csv"
 
     if (-not (Test-Path $indexPath) -or -not (Test-Path $catalogPath)) {
         Write-Warning "Skipping $($subHub.MainHub)/$($subHub.SubHub): missing index or catalog"

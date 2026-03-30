@@ -1,0 +1,328 @@
+{
+  "generated_at_unix": 1774888953,
+  "hub": "marketing",
+  "skills": [
+    {
+      "description": "Optimize content for AI search and LLM citations across AI Overviews, ChatGPT, Perplexity, Claude, Gemini, and similar systems. Use when improving AI visibility, answer engine optimization, or citation readiness.",
+      "phase": 1,
+      "score": 15,
+      "skill_id": "ai-seo",
+      "src_path": "src/antigravity-awesome-skills/skills/ai-seo/SKILL.md",
+      "triggers": "ai;seo"
+    },
+    {
+      "description": "When the user wants to discover, evaluate, or prioritize App Store keywords. Also use when the user mentions \"keyword research\", \"find keywords\", \"search volume\", \"keyword difficulty\", \"keyword ideas\", or \"what keywords should I target\". For implementing keywords into metadata, see metadata-optimization. For auditing current keyword performance, see aso-audit.",
+      "phase": 1,
+      "score": 15,
+      "skill_id": "keyword-research",
+      "src_path": "src/aso-skills/skills/keyword-research/SKILL.md",
+      "triggers": "keyword;research"
+    },
+    {
+      "description": "Analyzes keyword usage in provided content, calculates density, suggests semantic variations and LSI keywords based on the topic. Prevents over-optimization. Use PROACTIVELY for content optimization.",
+      "phase": 1,
+      "score": 15,
+      "skill_id": "seo-keyword-strategist",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-keyword-strategist/SKILL.md",
+      "triggers": "seo;keyword;strategist"
+    },
+    {
+      "description": "When the user wants to optimize their App Store listing for seasonal events, holidays, or trending moments — including keyword opportunities, metadata updates, screenshot theming, and timing strategy. Use when the user mentions \"seasonal\", \"holiday\", \"Christmas\", \"New Year\", \"Valentine's Day\", \"summer\", \"back to school\", \"seasonal keywords\", \"trending now\", \"limited time\", or wants to capitalize on a calendar event. For general keyword research, see keyword-research. For full metadata rewrites, see metadata-optimization.",
+      "phase": 1,
+      "score": 13,
+      "skill_id": "seasonal-aso",
+      "src_path": "src/aso-skills/skills/seasonal-aso/SKILL.md",
+      "triggers": "seasonal;aso"
+    },
+    {
+      "description": "When the user wants to optimize their Google Play Store listing — title, short description, full description, keywords, ratings, or Play Store-specific features. Use when the user mentions \"Google Play\", \"Android\", \"Play Store\", \"Play Console\", \"short description\", \"full description indexed\", \"Google Play ASO\", or wants Google Play-specific keyword, creative, or ratings strategy. For iOS App Store optimization, see aso-audit and metadata-optimization.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "android-aso",
+      "src_path": "src/aso-skills/skills/android-aso/SKILL.md",
+      "triggers": "android;aso"
+    },
+    {
+      "description": "Search and retrieve preprints from arXiv via the Atom API. Use this skill when searching for papers in physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering, or economics by keywords, authors, arXiv IDs, date ranges, or categories.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "arxiv-database",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/arxiv-database/SKILL.md",
+      "triggers": "arxiv;database"
+    },
+    {
+      "description": "Efficient database search tool for bioRxiv preprint server. Use this skill when searching for life sciences preprints by keywords, authors, date ranges, or categories, retrieving paper metadata, downloading PDFs, or conducting literature reviews.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "biorxiv-database",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/biorxiv-database/SKILL.md",
+      "triggers": "biorxiv;database"
+    },
+    {
+      "description": "Professional-grade brand voice analysis, SEO optimization, and platform-specific content frameworks.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "content-creator",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-creative-director/skills/content-creator/SKILL.md",
+      "triggers": "content;creator"
+    },
+    {
+      "description": "Elite content marketing strategist specializing in AI-powered content creation, omnichannel distribution, SEO optimization, and data-driven performance marketing.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "content-marketer",
+      "src_path": "src/antigravity-awesome-skills/skills/content-marketer/SKILL.md",
+      "triggers": "content;marketer"
+    },
+    {
+      "description": "Extracts up to 50 highly relevant SEO keywords from text. Use when user wants to generate or extract keywords for given text.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "keyword-extractor",
+      "src_path": "src/antigravity-awesome-skills/skills/keyword-extractor/SKILL.md",
+      "triggers": "keyword;extractor"
+    },
+    {
+      "description": "Run a broad SEO audit across technical SEO, on-page SEO, schema, sitemaps, content quality, AI search readiness, and GEO. Use as the umbrella skill when the user asks for a full SEO analysis or strategy.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo",
+      "src_path": "src/antigravity-awesome-skills/skills/seo/SKILL.md",
+      "triggers": "seo"
+    },
+    {
+      "description": "SEO and AEO best practices for metadata, Open Graph, sitemaps, robots.txt, hreflang, JSON-LD structured data, EEAT, and content optimized for search engines and AI answer surfaces. Use this skill when implementing page SEO, technical SEO, schema markup, international SEO, AI-overview readiness, or improving content for Google, ChatGPT, Perplexity, and similar assistants.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-aeo-best-practices",
+      "src_path": "src/agent-toolkit/skills/seo-aeo-best-practices/SKILL.md",
+      "triggers": "seo;aeo;best;practices"
+    },
+    {
+      "description": "Diagnose and audit SEO issues affecting crawlability, indexation, rankings, and organic performance.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-audit",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-marketing-growth/skills/seo-audit/SKILL.md",
+      "triggers": "seo;audit"
+    },
+    {
+      "description": "Generate SEO-optimized competitor comparison and alternatives pages. Covers \"X vs Y\" layouts, \"alternatives to X\" pages, feature matrices, schema markup, and conversion optimization. Use when user says \"comparison page\", \"vs page\", \"alternatives page\", \"competitor comparison\", or \"X vs Y\".",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-competitor-pages",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-competitor-pages/SKILL.md",
+      "triggers": "seo;competitor;pages"
+    },
+    {
+      "description": "Writes SEO-optimized content based on provided keywords and topic briefs. Creates engaging, comprehensive content following best practices. Use PROACTIVELY for content creation tasks.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-content-writer",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-seo-specialist/skills/seo-content-writer/SKILL.md",
+      "triggers": "seo;content;writer"
+    },
+    {
+      "description": "Investigate sudden drops in organic traffic or rankings and run a structured forensic SEO incident response with triage, root-cause analysis and recovery plan.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-forensic-incident-response",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-forensic-incident-response/SKILL.md",
+      "triggers": "seo;forensic;incident;response"
+    },
+    {
+      "description": "Core principles of SEO including E-E-A-T, Core Web Vitals, technical foundations, content quality, and how modern search engines evaluate pages.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-fundamentals",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-seo-specialist/skills/seo-fundamentals/SKILL.md",
+      "triggers": "seo;fundamentals"
+    },
+    {
+      "description": "Optimize content for AI Overviews, ChatGPT, Perplexity, and other AI search systems. Use when improving GEO, AI citations, llms.txt readiness, crawler accessibility, and passage-level citability.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-geo",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-geo/SKILL.md",
+      "triggers": "seo;geo"
+    },
+    {
+      "description": "Image optimization analysis for SEO and performance. Checks alt text, file sizes, formats, responsive images, lazy loading, and CLS prevention. Use when user says \"image optimization\", \"alt text\", \"image SEO\", \"image size\", or \"image audit\".",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-images",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-images/SKILL.md",
+      "triggers": "seo;images"
+    },
+    {
+      "description": "Formats content to be eligible for featured snippets and SERP features. Creates snippet-optimized content blocks based on best practices. Use PROACTIVELY for question-based content.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-snippet-hunter",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-snippet-hunter/SKILL.md",
+      "triggers": "seo;snippet;hunter"
+    },
+    {
+      "description": "Analyzes and optimizes content structure including header hierarchy, suggests schema markup, and internal linking opportunities. Creates search-friendly content organization.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-structure-architect",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-seo-specialist/skills/seo-structure-architect/SKILL.md",
+      "triggers": "seo;structure;architect"
+    },
+    {
+      "description": "SEO and AI discovery (GEO) - schema, ChatGPT/Perplexity optimization",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "web-content",
+      "src_path": "src/alinaqi-claude-bootstrap/skills/web-content/SKILL.md",
+      "triggers": "web;content"
+    },
+    {
+      "description": "When the user wants a comprehensive App Store market overview, daily/weekly market briefing, or combined view of chart movements, trending keywords, featured apps, and new releases. Also use when the user mentions \"market overview\", \"what's happening on the App Store\", \"market briefing\", \"weekly report\", \"market trends\", or \"state of the market\". For chart-specific rank changes only, see market-movers. For keyword trends only, see keyword-research.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "market-pulse",
+      "src_path": "src/aso-skills/skills/market-pulse/SKILL.md",
+      "triggers": "market;pulse"
+    },
+    {
+      "description": "Use DataForSEO for live SERPs, keyword metrics, backlinks, competitor analysis, on-page checks, and AI visibility data. Trigger when the user needs real SEO data rather than static guidance.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "seo-dataforseo",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-dataforseo/SKILL.md",
+      "triggers": "seo;dataforseo"
+    },
+    {
+      "description": "Automatically translate and sync App Store metadata (description, keywords, what's new, subtitle) to multiple languages using LLM translation and asc CLI. Use when asked to localize an app's App Store listing, translate app descriptions, or add new languages to App Store Connect.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "asc-localize-metadata",
+      "src_path": "src/rudrankriyam-app-store-connect-cli-skills/skills/asc-localize-metadata/SKILL.md",
+      "triggers": "asc;localize;metadata"
+    },
+    {
+      "description": "Compress images for web/SEO performance using cwebp. Use when optimizing images for faster page loads, reducing file sizes, or converting JPG/PNG to WebP format.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "compress-images",
+      "src_path": "src/rameerez-claude-code-startup-skills/skills/compress-images/SKILL.md",
+      "triggers": "compress;images"
+    },
+    {
+      "description": "Motor de crescimento para produtos digitais -- growth hacking, SEO, ASO, viral loops, email marketing, CRM, referral programs e aquisicao organica.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "growth-engine",
+      "src_path": "src/antigravity-awesome-skills/skills/growth-engine/SKILL.md",
+      "triggers": "growth;engine"
+    },
+    {
+      "description": "Hunt for malicious PowerShell activity by analyzing Script Block Logging (Event 4104), Module Logging (Event 4103), and process creation events. The analyst parses Windows Event Log EVTX files to detect obfuscated commands, AMSI bypass attempts, encoded payloads, credential dumping keywords, and suspicious download cradles. Activates for requests involving PowerShell threat hunting, script block analysis, encoded command detection, or AMSI bypass identification.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "hunting-for-anomalous-powershell-execution",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-anomalous-powershell-execution/SKILL.md",
+      "triggers": "hunting;for;anomalous;powershell;execution"
+    },
+    {
+      "description": "Design and evaluate programmatic SEO strategies for creating SEO-driven pages at scale using templates and structured data.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "programmatic-seo",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-marketing-growth/skills/programmatic-seo/SKILL.md",
+      "triggers": "programmatic;seo"
+    },
+    {
+      "description": "Design, validate, and optimize schema.org structured data for eligibility, correctness, and measurable SEO impact.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "schema-markup",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-seo-specialist/skills/schema-markup/SKILL.md",
+      "triggers": "schema;markup"
+    },
+    {
+      "description": "Hreflang and international SEO audit, validation, and generation. Detects common mistakes, validates language/region codes, and generates correct hreflang implementations. Use when user says \"hreflang\", \"i18n SEO\", \"international SEO\", \"multi-language\", \"multi-region\", or \"language tags\".",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "seo-hreflang",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-hreflang/SKILL.md",
+      "triggers": "seo;hreflang"
+    },
+    {
+      "description": "Plan and audit programmatic SEO pages generated at scale from structured data. Use when designing templates, URL systems, internal linking, quality gates, and index-bloat safeguards for pages at scale.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "seo-programmatic",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-programmatic/SKILL.md",
+      "triggers": "seo;programmatic"
+    },
+    {
+      "description": "Detect, validate, and generate Schema.org structured data. JSON-LD format preferred. Use when user says \"schema\", \"structured data\", \"rich results\", \"JSON-LD\", or \"markup\".",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "seo-schema",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-schema/SKILL.md",
+      "triggers": "seo;schema"
+    },
+    {
+      "description": "Analyze existing XML sitemaps or generate new ones with industry templates. Validates format, URLs, and structure. Use when user says \"sitemap\", \"generate sitemap\", \"sitemap issues\", or \"XML sitemap\".",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "seo-sitemap",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-sitemap/SKILL.md",
+      "triggers": "seo;sitemap"
+    },
+    {
+      "description": "Audit technical SEO across crawlability, indexability, security, URLs, mobile, Core Web Vitals, structured data, JavaScript rendering, and related platform signals like robots.txt and AI crawler access.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "seo-technical",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-technical/SKILL.md",
+      "triggers": "seo;technical"
+    },
+    {
+      "description": "Technical SEO - robots.txt, sitemap, meta tags, Core Web Vitals",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "site-architecture",
+      "src_path": "src/alinaqi-claude-bootstrap/skills/site-architecture/SKILL.md",
+      "triggers": "site;architecture"
+    },
+    {
+      "description": "Clear description of what this skill does and when to use it. Include trigger keywords and contexts inline, e.g. \"Use when user wants to X, Y, or Z.\"",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "skill-name",
+      "src_path": "src/ReScienceLab-opc-skills/template/SKILL.md",
+      "triggers": "skill;name"
+    },
+    {
+      "description": "Query BindingDB for measured drug-target binding affinities (Ki, Kd, IC50, EC50). Search by target (UniProt ID), compound (SMILES/name), or pathogen. Essential for drug discovery, lead optimization, polypharmacology analysis, and structure-activity relationship (SAR) studies.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "bindingdb-database",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/bindingdb-database/SKILL.md",
+      "triggers": "bindingdb;database"
+    },
+    {
+      "description": "Generative Engine Optimization for AI search engines (ChatGPT, Claude, Perplexity).",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "geo-fundamentals",
+      "src_path": "src/antigravity-awesome-skills/skills/geo-fundamentals/SKILL.md",
+      "triggers": "geo;fundamentals"
+    },
+    {
+      "description": "Select and configure nonlinear solvers for root-finding f(x)=0, optimization min F(x), and least-squares problems — choose among Newton, Newton-Krylov, quasi-Newton (BFGS, L-BFGS), Broyden, Anderson acceleration, and Levenberg-Marquardt methods, configure line search or trust-region globalization, diagnose convergence rate (quadratic, linear, stagnated), and assess Jacobian quality and conditioning. Use when a Newton solver converges slowly or diverges, choosing between line search and trust region, debugging nonlinear iteration failures in FEM or phase-field codes, or selecting a solver for large-scale unconstrained optimization, even if the user only says \"my Newton iterations aren't converging.\"",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "nonlinear-solvers",
+      "src_path": "src/HeshamFS-materials-simulation-skills/skills/core-numerical/nonlinear-solvers/SKILL.md",
+      "triggers": "nonlinear;solvers"
+    }
+  ],
+  "sub_hub": "seo",
+  "version": 1
+}

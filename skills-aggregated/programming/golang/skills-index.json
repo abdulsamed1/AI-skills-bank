@@ -1,96 +1,94 @@
-[
-    {
-        "id":  "analyzing-golang-malware-with-ghidra",
-        "triggers":  [
-                         "analyzing",
-                         "golang",
-                         "malware",
-                         "with",
-                         "ghidra"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "programming/golang",
-        "is_primary":  true,
-        "match_score":  16
-    },
-    {
-        "id":  "dbos-golang",
-        "triggers":  [
-                         "dbos",
-                         "golang"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/golang",
-        "is_primary":  true,
-        "match_score":  20
-    },
-    {
-        "id":  "gene-database",
-        "triggers":  [
-                         "gene",
-                         "database"
-                     ],
-        "src":  "external:K-Dense-AI-claude-scientific-skills",
-        "primary_hub":  "programming/golang",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "go-concurrency-patterns",
-        "triggers":  [
-                         "go",
-                         "concurrency",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/golang",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "golang-pro",
-        "triggers":  [
-                         "golang",
-                         "pro"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/golang",
-        "is_primary":  true,
-        "match_score":  20
-    },
-    {
-        "id":  "grpc-golang",
-        "triggers":  [
-                         "grpc",
-                         "golang"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/golang",
-        "is_primary":  true,
-        "match_score":  20
-    },
-    {
-        "id":  "temporal-golang-pro",
-        "triggers":  [
-                         "temporal",
-                         "golang",
-                         "pro"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "programming/golang",
-        "is_primary":  true,
-        "match_score":  16
-    },
-    {
-        "id":  "what-if-oracle",
-        "triggers":  [
-                         "what",
-                         "if",
-                         "oracle"
-                     ],
-        "src":  "external:K-Dense-AI-claude-scientific-skills",
-        "primary_hub":  "programming/golang",
-        "is_primary":  true,
-        "match_score":  7
-    }
-]
+{
+  "count": 87,
+  "hub": "programming",
+  "skills": [
+    "go-concurrency-patterns",
+    "analyzing-golang-malware-with-ghidra",
+    "dbos-golang",
+    "golang-pro",
+    "grpc-golang",
+    "temporal-golang-pro",
+    "django-pro",
+    "azure-deploy",
+    "gene-database",
+    "go-mode",
+    "go-playwright",
+    "go-rod-master",
+    "idea-discovery",
+    "idea-discovery-robot",
+    "interpro-database",
+    "micro-saas-launcher",
+    "paper-writing",
+    "scroll-experience",
+    "sred-work-summary",
+    "string-database",
+    "what-if-oracle",
+    "add-new-opc-skill",
+    "aeon",
+    "ai-studio-image",
+    "algorithmic-art",
+    "analyzing-ransomware-encryption-mechanisms",
+    "architecture-patterns",
+    "auditing-gcp-iam-permissions",
+    "azure-mgmt-mongodbatlas-dotnet",
+    "blockrun",
+    "characteristic-voice",
+    "competitor-tracking",
+    "conducting-domain-persistence-with-dcsync",
+    "configuring-identity-aware-proxy-with-google-iap",
+    "context-optimization",
+    "contract-review-anthropic",
+    "detecting-command-and-control-over-dns",
+    "detecting-golden-ticket-attacks-in-kerberos-logs",
+    "detecting-golden-ticket-forgery",
+    "detecting-pass-the-hash-attacks",
+    "detecting-service-account-abuse",
+    "django-access-review",
+    "document-hunter",
+    "fp-pragmatic",
+    "fpf:decay",
+    "geoffrey-hinton",
+    "ginkgo-cloud-lab",
+    "github-workflow-automation",
+    "goal-analyzer",
+    "godot-4-migration",
+    "google-tts",
+    "hunting-for-ntlm-relay-attacks",
+    "hunting-for-registry-persistence-mechanisms",
+    "implementing-container-image-minimal-base-with-distroless",
+    "implementing-google-workspace-phishing-protection",
+    "implementing-google-workspace-sso-configuration",
+    "implementing-identity-governance-with-sailpoint",
+    "implementing-rsa-key-pair-management",
+    "kaizen:cause-and-effect",
+    "leiloeiro-edital",
+    "leiloeiro-juridico",
+    "makepad-reference",
+    "matematico-tao",
+    "minecraft-bukkit-pro",
+    "monetization",
+    "nanobanana",
+    "netlify-ai-gateway",
+    "nil-contract-analysis-samir-patel",
+    "notebooklm",
+    "onboarding-cro",
+    "paywall-upgrade-cro",
+    "performing-cryptographic-audit-of-application",
+    "performing-entitlement-review-with-sailpoint-iiq",
+    "performing-nist-csf-maturity-assessment",
+    "performing-privacy-impact-assessment",
+    "performing-ransomware-response",
+    "pol-probe-advisor",
+    "qutip",
+    "readme",
+    "sentencepiece",
+    "signup-flow-cro",
+    "skill-router",
+    "skill-sentinel",
+    "tech-contract-negotiation-patrick-munro",
+    "transformer-lens-interpretability",
+    "yann-lecun-tecnico",
+    "yes-md"
+  ],
+  "sub_hub": "golang"
+}

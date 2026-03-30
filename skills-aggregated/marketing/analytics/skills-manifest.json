@@ -1,0 +1,456 @@
+{
+  "generated_at_unix": 1774888953,
+  "hub": "marketing",
+  "skills": [
+    {
+      "description": "When the user wants to set up, interpret, or improve their app analytics and tracking. Also use when the user mentions \"analytics\", \"tracking\", \"metrics\", \"KPIs\", \"App Store Connect analytics\", \"install tracking\", \"funnel\", \"attribution\", or \"how is my app performing\". For A/B testing, see ab-test-store-listing. For retention metrics, see retention-optimization.",
+      "phase": 1,
+      "score": 15,
+      "skill_id": "app-analytics",
+      "src_path": "src/aso-skills/skills/app-analytics/SKILL.md",
+      "triggers": "app;analytics"
+    },
+    {
+      "description": "Design, audit, and improve analytics tracking systems that produce reliable, decision-ready data.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "analytics-tracking",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-data-analytics/skills/analytics-tracking/SKILL.md",
+      "triggers": "analytics;tracking"
+    },
+    {
+      "description": "Track engagement metrics, measure campaign ROI, and analyze content performance across Instagram, Facebook, YouTube, and TikTok.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "apify-content-analytics",
+      "src_path": "src/antigravity-awesome-skills/skills/apify-content-analytics/SKILL.md",
+      "triggers": "apify;content;analytics"
+    },
+    {
+      "description": "When the user wants to analyze their own app's actual performance data from App Store Connect — real downloads, revenue, IAP, subscriptions, trials, or country breakdowns synced via Appeeky Connect. Use when the user asks about \"my downloads\", \"my revenue\", \"how is my app performing\", \"ASC data\", \"sales and trends\", \"my subscription numbers\", \"App Store Connect metrics\", or wants to compare periods or top markets. For third-party app estimates, see app-analytics. For subscription analytics depth, see monetization-strategy.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "asc-metrics",
+      "src_path": "src/aso-skills/skills/asc-metrics/SKILL.md",
+      "triggers": "asc;metrics"
+    },
+    {
+      "description": "Azure Monitor Query SDK for Java. Execute Kusto queries against Log Analytics workspaces and query metrics from Azure resources.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-monitor-query-java",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-monitor-query-java/SKILL.md",
+      "triggers": "azure;monitor;query;java"
+    },
+    {
+      "description": "Azure Monitor Query SDK for Python. Use for querying Log Analytics workspaces and Azure Monitor metrics.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-monitor-query-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-monitor-query-py/SKILL.md",
+      "triggers": "azure;monitor;query;py"
+    },
+    {
+      "description": "Builds SOC performance metrics and KPI tracking dashboards measuring Mean Time to Detect (MTTD), Mean Time to Respond (MTTR), alert quality ratios, analyst productivity, and detection coverage using SIEM data. Use when SOC leadership needs operational visibility, continuous improvement tracking, or executive-level reporting on security operations effectiveness.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "building-soc-metrics-and-kpi-tracking",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/building-soc-metrics-and-kpi-tracking/SKILL.md",
+      "triggers": "building;soc;metrics;and;kpi"
+    },
+    {
+      "description": "Deploy DefectDojo as a centralized vulnerability management dashboard with scanner integrations, deduplication, metrics tracking, and Jira ticketing workflows.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "building-vulnerability-dashboard-with-defectdojo",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/building-vulnerability-dashboard-with-defectdojo/SKILL.md",
+      "triggers": "building;vulnerability;dashboard;with;defectdojo"
+    },
+    {
+      "description": "Define and design a product metrics dashboard with key metrics, data sources, visualization types, and alert thresholds. Use when creating a metrics dashboard, defining KPIs, setting up product analytics, or building a data monitoring plan.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "metrics-dashboard",
+      "src_path": "src/pm-skills/pm-product-discovery/skills/metrics-dashboard/SKILL.md",
+      "triggers": "metrics;dashboard"
+    },
+    {
+      "description": "PostHog analytics, event tracking, feature flags, dashboards",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "posthog-analytics",
+      "src_path": "src/alinaqi-claude-bootstrap/skills/posthog-analytics/SKILL.md",
+      "triggers": "posthog;analytics"
+    },
+    {
+      "description": "Weekly engineering retrospective. Analyzes commit history, work patterns, and code quality metrics with persistent history and trend tracking. Team-aware: breaks down per-person contributions with praise and growth areas. Use when asked to \"weekly retro\", \"what did we ship\", or \"engineering retrospective\". Proactively suggest at the end of a work week or sprint.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "retro",
+      "src_path": "src/gstack/retro/SKILL.md",
+      "triggers": "retro"
+    },
+    {
+      "description": "Client-side tracking with Analytics.js. Include track, identify, page, and group calls. Anonymous ID persists until identify merges with user.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "segment-cdp",
+      "src_path": "src/antigravity-awesome-skills/skills/segment-cdp/SKILL.md",
+      "triggers": "segment;cdp"
+    },
+    {
+      "description": "Comprehensive guide to tracking, calculating, and optimizing key performance metrics for different startup business models from seed through Series A.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "startup-metrics-framework",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-business-analyst/skills/startup-metrics-framework/SKILL.md",
+      "triggers": "startup;metrics;framework"
+    },
+    {
+      "description": "When the user wants to optimize their subscription business end-to-end — from trial start through renewal, cancellation, and win-back. Use when the user mentions \"subscription lifecycle\", \"trial conversion\", \"churn\", \"cancellation\", \"win-back\", \"lapsed subscribers\", \"dunning\", \"billing retry\", \"grace period\", \"renewal rate\", \"subscriber LTV\", or \"resubscribe\". For paywall design and pricing strategy, see monetization-strategy. For subscription analytics dashboards, see app-analytics.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "subscription-lifecycle",
+      "src_path": "src/aso-skills/skills/subscription-lifecycle/SKILL.md",
+      "triggers": "subscription;lifecycle"
+    },
+    {
+      "description": "Automate Google Analytics tasks via Rube MCP (Composio): run reports, list accounts/properties, funnels, pivots, key events. Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "google-analytics-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/google-analytics-automation/SKILL.md",
+      "triggers": "google;analytics;automation"
+    },
+    {
+      "description": "Transform weak resume bullets into achievement-focused statements with metrics and impact",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "Resume Bullet Writer",
+      "src_path": "src/Paramchoudhary-ResumeSkills/skills/resume-bullet-writer/SKILL.md",
+      "triggers": "resume;bullet;writer"
+    },
+    {
+      "description": "Find opportunities to add metrics and estimate numbers when exact data unavailable",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "Resume Quantifier",
+      "src_path": "src/Paramchoudhary-ResumeSkills/skills/resume-quantifier/SKILL.md",
+      "triggers": "resume;quantifier"
+    },
+    {
+      "description": "Structured guide for setting up A/B tests with mandatory gates for hypothesis, metrics, and execution readiness.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "ab-test-setup",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-data-analytics/skills/ab-test-setup/SKILL.md",
+      "triggers": "ab;test;setup"
+    },
+    {
+      "description": "Access AlphaFold 200M+ AI-predicted protein structures. Retrieve structures by UniProt ID, download PDB/mmCIF files, analyze confidence metrics (pLDDT, PAE), for drug discovery and structural biology.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "alphafold-database",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/alphafold-database/SKILL.md",
+      "triggers": "alphafold;database"
+    },
+    {
+      "description": "Detect abnormal access patterns in AWS S3, GCS, and Azure Blob Storage by analyzing CloudTrail Data Events, GCS audit logs, and Azure Storage Analytics. Identifies after-hours bulk downloads, access from new IP addresses, unusual API calls (GetObject spikes), and potential data exfiltration using statistical baselines and time-series anomaly detection.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "analyzing-cloud-storage-access-patterns",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-cloud-storage-access-patterns/SKILL.md",
+      "triggers": "analyzing;cloud;storage;access;patterns"
+    },
+    {
+      "description": "Azure AI Text Analytics SDK for sentiment analysis, entity recognition, key phrases, language detection, PII, and healthcare NLP. Use for natural language processing on text.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "azure-ai-textanalytics-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-ai-textanalytics-py/SKILL.md",
+      "triggers": "azure;ai;textanalytics;py"
+    },
+    {
+      "description": "Query and analyze data in Azure Data Explorer (Kusto/ADX) using KQL for log analytics, telemetry, and time series analysis. WHEN: KQL queries, Kusto database queries, Azure Data Explorer, ADX clusters, log analytics, time series data, IoT telemetry, anomaly detection.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "azure-kusto",
+      "src_path": "src/microsoft-skills/.github/plugins/azure-skills/skills/azure-kusto/SKILL.md",
+      "triggers": "azure;kusto"
+    },
+    {
+      "description": "Azure Monitor OpenTelemetry Exporter for Java. Export OpenTelemetry traces, metrics, and logs to Azure Monitor/Application Insights.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "azure-monitor-opentelemetry-exporter-java",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-monitor-opentelemetry-exporter-java/SKILL.md",
+      "triggers": "azure;monitor;opentelemetry;exporter;java"
+    },
+    {
+      "description": "Auto-instrument Node.js applications with distributed tracing, metrics, and logs.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "azure-monitor-opentelemetry-ts",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-azure-ai-cloud/skills/azure-monitor-opentelemetry-ts/SKILL.md",
+      "triggers": "azure;monitor;opentelemetry;ts"
+    },
+    {
+      "description": "Master modern business analysis with AI-powered analytics, real-time dashboards, and data-driven insights. Build comprehensive KPI frameworks, predictive models, and strategic recommendations.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "business-analyst",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-business-analyst/skills/business-analyst/SKILL.md",
+      "triggers": "business;analyst"
+    },
+    {
+      "description": "ClickHouse database patterns, query optimization, analytics, and data engineering best practices for high-performance analytical workloads.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "cc-skill-clickhouse-io",
+      "src_path": "src/antigravity-awesome-skills/skills/cc-skill-clickhouse-io/SKILL.md",
+      "triggers": "cc;skill;clickhouse;io"
+    },
+    {
+      "description": "Your AI CFO for bootstrapped startups, named after Charlie Munger who embodied the principle that capital discipline is a competitive advantage. Provides financial frameworks for cash management, runway calculations, unit economics (LTV:CAC), capital allocation, hiring ROI, burn rate analysis, working capital optimization, and forecasting. Use for questions like \"should we make this hire?\", \"how much runway do we need?\", \"what metrics should I track?\", \"how do I forecast revenue?\", or any strategic financial decision at a self-funded company.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "charlie",
+      "src_path": "src/charlie-cfo-skill/SKILL.md",
+      "triggers": "charlie"
+    },
+    {
+      "description": "Analyzes competitors using web research to provide verified business metrics, actionable leverage strategies, and predicted next moves. Use when user needs competitive intelligence, competitor analysis, market positioning insights, or strategic leverage opportunities.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "competitor-intel",
+      "src_path": "src/founder-skills/skills/competitor-intel/SKILL.md",
+      "triggers": "competitor;intel"
+    },
+    {
+      "description": "When the user wants to monitor, triage, or reduce their app's crash rate — including setting up Crashlytics, prioritizing which crashes to fix first, interpreting crash data, and understanding how crashes affect App Store ranking. Use when the user mentions \"crash\", \"crashlytics\", \"crash rate\", \"ANR\", \"app not responding\", \"crash-free sessions\", \"crash-free users\", \"symbolication\", \"stability\", \"firebase crashes\", \"app crashing\", or \"crash report\". For overall analytics setup, see app-analytics.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "crash-analytics",
+      "src_path": "src/aso-skills/skills/crash-analytics/SKILL.md",
+      "triggers": "crash;analytics"
+    },
+    {
+      "description": "Distributed computing for larger-than-RAM pandas/NumPy workflows. Use when you need to scale existing pandas/NumPy code beyond memory or across clusters. Best for parallel file processing, distributed ML, integration with existing pandas code. For out-of-core analytics on single machine use vaex; for in-memory speed use polars.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "dask",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/dask/SKILL.md",
+      "triggers": "dask"
+    },
+    {
+      "description": "Expert data scientist for advanced analytics, machine learning, and statistical modeling. Handles complex data analysis, predictive modeling, and business intelligence.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "data-scientist",
+      "src_path": "src/antigravity-awesome-skills/skills/data-scientist/SKILL.md",
+      "triggers": "data;scientist"
+    },
+    {
+      "description": "Automate Datadog tasks via Rube MCP (Composio): query metrics, search logs, manage monitors/dashboards, create events and downtimes. Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "datadog-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/datadog-automation/SKILL.md",
+      "triggers": "datadog;automation"
+    },
+    {
+      "description": "Detects insider data exfiltration by analyzing DLP policy violations, file access patterns, upload volume anomalies, and off-hours activity in endpoint and cloud logs. Uses pandas for behavioral analytics and statistical baselines. Use when investigating insider threats or building user behavior analytics for data loss prevention.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "detecting-insider-data-exfiltration-via-dlp",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-insider-data-exfiltration-via-dlp/SKILL.md",
+      "triggers": "detecting;insider;data;exfiltration;via"
+    },
+    {
+      "description": "Implement User and Entity Behavior Analytics using Elasticsearch/OpenSearch to build behavioral baselines, calculate anomaly scores, perform peer group analysis, and detect insider threat indicators such as data exfiltration, privilege abuse, and unauthorized access patterns.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "detecting-insider-threat-with-ueba",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-insider-threat-with-ueba/SKILL.md",
+      "triggers": "detecting;insider;threat;with;ueba"
+    },
+    {
+      "description": "Detects typosquatting attacks in npm and PyPI package registries by analyzing package name similarity using Levenshtein distance and other string metrics, examining publish date heuristics to identify recently created packages mimicking established ones, and flagging download count anomalies where suspicious packages have disproportionately low usage compared to their legitimate targets. The analyst queries the PyPI JSON API and npm registry API to gather package metadata for automated comparison. Activates for requests involving package typosquatting detection, dependency confusion analysis, malicious package identification, or software supply chain threat hunting in package registries.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "detecting-typosquatting-packages-in-npm-pypi",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-typosquatting-packages-in-npm-pypi/SKILL.md",
+      "triggers": "detecting;typosquatting;packages;in;npm"
+    },
+    {
+      "description": "Perform comprehensive exploratory data analysis on scientific data files across 200+ file formats. This skill should be used when analyzing any scientific data file to understand its structure, content, quality, and characteristics. Automatically detects file type and generates detailed markdown reports with format-specific analysis, quality metrics, and downstream analysis recommendations. Covers chemistry, bioinformatics, microscopy, spectroscopy, proteomics, metabolomics, and general scientific data formats.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "exploratory-data-analysis",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/exploratory-data-analysis/SKILL.md",
+      "triggers": "exploratory;data;analysis"
+    },
+    {
+      "description": "Look up SaaS finance metrics, formulas, and benchmarks fast. Use when you need a quick metric definition, formula, or benchmark during analysis.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "finance-metrics-quickref",
+      "src_path": "src/Product-Manager-Skills/skills/finance-metrics-quickref/SKILL.md",
+      "triggers": "finance;metrics;quickref"
+    },
+    {
+      "description": "Implements strategies to reduce SOC alert fatigue by tuning detection rules, consolidating duplicate alerts, implementing risk-based alerting, and measuring alert quality metrics to maintain analyst effectiveness and prevent critical alert dismissal. Use when SOC teams face overwhelming alert volumes, high false positive rates, or declining analyst performance.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "implementing-alert-fatigue-reduction",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-alert-fatigue-reduction/SKILL.md",
+      "triggers": "implementing;alert;fatigue;reduction"
+    },
+    {
+      "description": "Deploy and configure the Dragos Platform for OT network monitoring, leveraging its 600+ industrial protocol parsers, intelligence-driven threat detection analytics, and asset visibility capabilities to protect ICS environments against threat groups like VOLTZITE, GRAPHITE, and BAUXITE.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "implementing-dragos-platform-for-ot-monitoring",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-dragos-platform-for-ot-monitoring/SKILL.md",
+      "triggers": "implementing;dragos;platform;for;ot"
+    },
+    {
+      "description": "Tune SIEM detection rules to reduce false positives by analyzing alert volumes, creating whitelists, adjusting thresholds, and measuring detection efficacy metrics in Splunk and Elastic",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "implementing-siem-use-case-tuning",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-siem-use-case-tuning/SKILL.md",
+      "triggers": "implementing;siem;use;case;tuning"
+    },
+    {
+      "description": "Implements SIEM detection use cases by designing correlation rules, threshold alerts, and behavioral analytics mapped to MITRE ATT&CK techniques across Splunk, Elastic, and Sentinel. Use when SOC teams need to expand detection coverage, formalize use case lifecycle management, or build a detection library aligned to organizational threat profile.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "implementing-siem-use-cases-for-detection",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-siem-use-cases-for-detection/SKILL.md",
+      "triggers": "implementing;siem;use;cases;for"
+    },
+    {
+      "description": "Integracao completa com Instagram via Graph API. Publicacao, analytics, comentarios, DMs, hashtags, agendamento, templates e gestao de contas Business/Creator.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "instagram",
+      "src_path": "src/antigravity-awesome-skills/skills/instagram/SKILL.md",
+      "triggers": "instagram"
+    },
+    {
+      "description": "Investigates insider threat indicators including data exfiltration attempts, unauthorized access patterns, policy violations, and pre-departure behaviors using SIEM analytics, DLP alerts, and HR data correlation. Use when SOC teams receive insider threat referrals from HR, detect anomalous data movement by employees, or need to build investigation timelines for potential insider threats.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "investigating-insider-threat-indicators",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/investigating-insider-threat-indicators/SKILL.md",
+      "triggers": "investigating;insider;threat;indicators"
+    },
+    {
+      "description": "You are an expert in LLM observability and evaluation. You think in terms of traces, spans, and metrics. You know that LLM applications need monitoring just like traditional software - but with different dimensions (cost, quality, latency).",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "langfuse",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-llm-application-developer/skills/langfuse/SKILL.md",
+      "triggers": "langfuse"
+    },
+    {
+      "description": "Medicinal chemistry filters. Apply drug-likeness rules (Lipinski, Veber), PAINS filters, structural alerts, complexity metrics, for compound prioritization and library filtering.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "medchem",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/medchem/SKILL.md",
+      "triggers": "medchem"
+    },
+    {
+      "description": "Neuropixels neural recording analysis. Load SpikeGLX/OpenEphys data, preprocess, motion correction, Kilosort4 spike sorting, quality metrics, Allen/IBL curation, AI-assisted visual analysis, for Neuropixels 1.0/2.0 extracellular electrophysiology. Use when working with neural recordings, spike sorting, extracellular electrophysiology, or when the user mentions Neuropixels, SpikeGLX, Open Ephys, Kilosort, quality metrics, or unit curation.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "neuropixels-analysis",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/neuropixels-analysis/SKILL.md",
+      "triggers": "neuropixels;analysis"
+    },
+    {
+      "description": "You are a monitoring and observability expert specializing in implementing comprehensive monitoring solutions. Set up metrics collection, distributed tracing, log aggregation, and create insightful da",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "observability-monitoring-monitor-setup",
+      "src_path": "src/antigravity-awesome-skills/skills/observability-monitoring-monitor-setup/SKILL.md",
+      "triggers": "observability;monitoring;monitor;setup"
+    },
+    {
+      "description": "Performs User and Entity Behavior Analytics (UEBA) to detect anomalous user activities including impossible travel, unusual access patterns, privilege abuse, and insider threats using SIEM-based behavioral baselines and statistical analysis. Use when SOC teams need to identify compromised accounts or insider threats through deviation from established behavioral norms.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "performing-user-behavior-analytics",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-user-behavior-analytics/SKILL.md",
+      "triggers": "performing;user;behavior;analytics"
+    },
+    {
+      "description": "Build financial models, backtest trading strategies, and analyze market data. Implements risk metrics, portfolio optimization, and statistical arbitrage.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "quant-analyst",
+      "src_path": "src/antigravity-awesome-skills/skills/quant-analyst/SKILL.md",
+      "triggers": "quant;analyst"
+    },
+    {
+      "description": "Calculate portfolio risk metrics including VaR, CVaR, Sharpe, Sortino, and drawdown analysis. Use when measuring portfolio risk, implementing risk limits, or building risk monitoring systems.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "risk-metrics-calculation",
+      "src_path": "src/antigravity-awesome-skills/skills/risk-metrics-calculation/SKILL.md",
+      "triggers": "risk;metrics;calculation"
+    },
+    {
+      "description": "Evaluate SaaS unit economics and capital efficiency. Use when deciding whether the business can scale efficiently or needs correction.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "saas-economics-efficiency-metrics",
+      "src_path": "src/Product-Manager-Skills/skills/saas-economics-efficiency-metrics/SKILL.md",
+      "triggers": "saas;economics;efficiency;metrics"
+    },
+    {
+      "description": "Biological data toolkit. Sequence analysis, alignments, phylogenetic trees, diversity metrics (alpha/beta, UniFrac), ordination (PCoA), PERMANOVA, FASTA/Newick I/O, for microbiome analysis.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "scikit-bio",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/scikit-bio/SKILL.md",
+      "triggers": "scikit;bio"
+    },
+    {
+      "description": "Periodically check WandB metrics during training to catch problems early (NaN, loss divergence, idle GPUs). Avoids wasting GPU hours on broken runs. Use when training is running and you want automated health checks.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "training-check",
+      "src_path": "src/wanshuiyin-Auto-claude-code-research-in-sleep/skills/skills-codex/training-check/SKILL.md",
+      "triggers": "training;check"
+    },
+    {
+      "description": "X (Twitter) data platform skill — tweet search, user lookup, follower extraction, engagement metrics, giveaway draws, monitoring, webhooks, 19 extraction tools, MCP server.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "x-twitter-scraper",
+      "src_path": "src/antigravity-awesome-skills/skills/x-twitter-scraper/SKILL.md",
+      "triggers": "x;twitter;scraper"
+    },
+    {
+      "description": "Automate YouTube tasks via Rube MCP (Composio): upload videos, manage playlists, search content, get analytics, and handle comments. Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "youtube-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/youtube-automation/SKILL.md",
+      "triggers": "youtube;automation"
+    },
+    {
+      "description": "GDPR Data Protection Impact Assessment (DPIA) guidance under Article 35 GDPR, EDPB Guidelines WP 248 rev.01, EDPB Opinion 28/2024 (AI), and national SA blacklists/whitelists. Triggers: \"DPIA\", \"DSFA\", \"Datenschutz-Folgenabschätzung\", \"impact assessment\", \"Art. 35\", \"do I need a DPIA\", descriptions of new high-risk processing (profiling, AI, biometrics, large-scale monitoring, special category data), Art. 36 prior consultation questions, national blacklist/whitelist queries.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "dpia-sentinel-oliver-schmidt-prietz",
+      "src_path": "src/lawvable-awesome-legal-skills/skills/dpia-sentinel-oliver-schmidt-prietz/SKILL.md",
+      "triggers": "dpia;sentinel;oliver;schmidt;prietz"
+    }
+  ],
+  "sub_hub": "analytics",
+  "version": 1
+}

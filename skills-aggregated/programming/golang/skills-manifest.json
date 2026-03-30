@@ -1,17 +1,704 @@
 {
-    "name":  "skills-programming-golang",
-    "main_hub":  "programming",
-    "sub_hub":  "golang",
-    "description":  "Go programming: concurrency patterns, microservices, and system programming",
-    "skill_count":  8,
-    "src_count":  3,
-    "top_triggers":  [
-                         null
-                     ],
-    "generated_at":  "2026-03-29T23:17:42+02:00",
-    "files":  {
-                  "skill":  "SKILL.md",
-                  "index":  "skills-index.json",
-                  "catalog":  "skills-catalog.csv"
-              }
+  "generated_at_unix": 1774888953,
+  "hub": "programming",
+  "skills": [
+    {
+      "description": "Master Go concurrency with goroutines, channels, sync primitives, and context. Use when building concurrent Go applications, implementing worker pools, or debugging race conditions.",
+      "phase": 1,
+      "score": 13,
+      "skill_id": "go-concurrency-patterns",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-systems-programming/skills/go-concurrency-patterns/SKILL.md",
+      "triggers": "go;concurrency;patterns"
+    },
+    {
+      "description": "Reverse engineer Go-compiled malware using Ghidra with specialized scripts for function recovery, string extraction, and type reconstruction in stripped Go binaries.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "analyzing-golang-malware-with-ghidra",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-golang-malware-with-ghidra/SKILL.md",
+      "triggers": "analyzing;golang;malware;with;ghidra"
+    },
+    {
+      "description": "Guide for building reliable, fault-tolerant Go applications with DBOS durable workflows. Use when adding DBOS to existing Go code, creating workflows and steps, or using queues for concurrency control.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "dbos-golang",
+      "src_path": "src/antigravity-awesome-skills/skills/dbos-golang/SKILL.md",
+      "triggers": "dbos;golang"
+    },
+    {
+      "description": "Master Go 1.21+ with modern patterns, advanced concurrency, performance optimization, and production-ready microservices.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "golang-pro",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-systems-programming/skills/golang-pro/SKILL.md",
+      "triggers": "golang;pro"
+    },
+    {
+      "description": "Build production-ready gRPC services in Go with mTLS, streaming, and observability. Use when designing Protobuf contracts with Buf or implementing secure service-to-service transport.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "grpc-golang",
+      "src_path": "src/antigravity-awesome-skills/skills/grpc-golang/SKILL.md",
+      "triggers": "grpc;golang"
+    },
+    {
+      "description": "Use when building durable distributed systems with Temporal Go SDK. Covers deterministic workflow rules, mTLS worker configs, and advanced patterns.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "temporal-golang-pro",
+      "src_path": "src/antigravity-awesome-skills/skills/temporal-golang-pro/SKILL.md",
+      "triggers": "temporal;golang;pro"
+    },
+    {
+      "description": "Master Django 5.x with async views, DRF, Celery, and Django Channels. Build scalable web applications with proper architecture, testing, and deployment.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "django-pro",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-python-pro/skills/django-pro/SKILL.md",
+      "triggers": "django;pro"
+    },
+    {
+      "description": "Execute Azure deployments for ALREADY-PREPARED applications that have existing .azure/plan.md and infrastructure files. DO NOT use this skill when the user asks to CREATE a new application — use azure-prepare instead. This skill runs azd up, azd deploy, terraform apply, and az deployment commands with built-in error recovery. Requires .azure/plan.md from azure-prepare and validated status from azure-validate. WHEN: \"run azd up\", \"run azd deploy\", \"execute deployment\", \"push to production\", \"push to cloud\", \"go live\", \"ship it\", \"bicep deploy\", \"terraform apply\", \"publish to Azure\", \"launch on Azure\". DO NOT USE WHEN: \"create and deploy\", \"build and deploy\", \"create a new app\", \"set up infrastructure\", \"create and deploy to Azure using Terraform\" — use azure-prepare for these.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "azure-deploy",
+      "src_path": "src/microsoft-skills/.github/plugins/azure-skills/skills/azure-deploy/SKILL.md",
+      "triggers": "azure;deploy"
+    },
+    {
+      "description": "Query NCBI Gene via E-utilities/Datasets API. Search by symbol/ID, retrieve gene info (RefSeqs, GO, locations, phenotypes), batch lookups, for gene annotation and functional analysis.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "gene-database",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/gene-database/SKILL.md",
+      "triggers": "gene;database"
+    },
+    {
+      "description": "Autonomous goal execution — give a goal, get a plan, confirm, execute, report. You steer, Claude drives.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "go-mode",
+      "src_path": "src/ai-marketing-skills/go-mode/SKILL.md",
+      "triggers": "go;mode"
+    },
+    {
+      "description": "Expert capability for robust, stealthy, and efficient browser automation using Playwright Go.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "go-playwright",
+      "src_path": "src/antigravity-awesome-skills/skills/go-playwright/SKILL.md",
+      "triggers": "go;playwright"
+    },
+    {
+      "description": "Comprehensive guide for browser automation and web scraping with go-rod (Chrome DevTools Protocol) including stealth anti-bot-detection patterns.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "go-rod-master",
+      "src_path": "src/antigravity-awesome-skills/skills/go-rod-master/SKILL.md",
+      "triggers": "go;rod;master"
+    },
+    {
+      "description": "Workflow 1: Full idea discovery pipeline. Orchestrates research-lit → idea-creator → novelty-check → research-review to go from a broad research direction to validated, pilot-tested ideas. Use when user says \"找idea全流程\", \"idea discovery pipeline\", \"从零开始找方向\", or wants the complete idea exploration workflow.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "idea-discovery",
+      "src_path": "src/wanshuiyin-Auto-claude-code-research-in-sleep/skills/idea-discovery/SKILL.md",
+      "triggers": "idea;discovery"
+    },
+    {
+      "description": "Workflow 1 adaptation for robotics and embodied AI. Orchestrates robotics-aware literature survey, idea generation, novelty check, and critical review to go from a broad robotics direction to benchmark-grounded, simulation-first ideas. Use when user says \"robotics idea discovery\", \"机器人找idea\", \"embodied AI idea\", \"机器人方向探索\", \"sim2real 选题\", or wants ideas for manipulation, locomotion, navigation, drones, humanoids, or general robot learning.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "idea-discovery-robot",
+      "src_path": "src/wanshuiyin-Auto-claude-code-research-in-sleep/skills/idea-discovery-robot/SKILL.md",
+      "triggers": "idea;discovery;robot"
+    },
+    {
+      "description": "Query InterPro for protein family, domain, and functional site annotations. Integrates Pfam, PANTHER, PRINTS, SMART, SUPERFAMILY, and 11 other member databases. Use for protein function prediction, domain architecture analysis, evolutionary classification, and GO term mapping.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "interpro-database",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/interpro-database/SKILL.md",
+      "triggers": "interpro;database"
+    },
+    {
+      "description": "You ship fast and iterate. You know the difference between a side project and a business. You've seen what works in the indie hacker community. You help people go from idea to paying customers in weeks, not years. You focus on sustainable, profitable businesses - not unicorn hunting.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "micro-saas-launcher",
+      "src_path": "src/antigravity-awesome-skills/skills/micro-saas-launcher/SKILL.md",
+      "triggers": "micro;saas;launcher"
+    },
+    {
+      "description": "Workflow 3: Full paper writing pipeline. Orchestrates paper-plan → paper-figure → paper-write → paper-compile → auto-paper-improvement-loop to go from a narrative report to a polished, submission-ready PDF. Use when user says \"写论文全流程\", \"write paper pipeline\", \"从报告到PDF\", \"paper writing\", or wants the complete paper generation workflow.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "paper-writing",
+      "src_path": "src/wanshuiyin-Auto-claude-code-research-in-sleep/skills/paper-writing/SKILL.md",
+      "triggers": "paper;writing"
+    },
+    {
+      "description": "You see scrolling as a narrative device, not just navigation. You create moments of delight as users scroll. You know when to use subtle animations and when to go cinematic. You balance performance with visual impact. You make websites feel like movies you control with your thumb.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "scroll-experience",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-web-designer/skills/scroll-experience/SKILL.md",
+      "triggers": "scroll;experience"
+    },
+    {
+      "description": "Go back through the previous year of work and create a Notion doc that groups relevant links into projects that can then be documented as SRED projects.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "sred-work-summary",
+      "src_path": "src/antigravity-awesome-skills/skills/sred-work-summary/SKILL.md",
+      "triggers": "sred;work;summary"
+    },
+    {
+      "description": "Query STRING API for protein-protein interactions (59M proteins, 20B interactions). Network analysis, GO/KEGG enrichment, interaction discovery, 5000+ species, for systems biology.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "string-database",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/string-database/SKILL.md",
+      "triggers": "string;database"
+    },
+    {
+      "description": "Run structured What-If scenario analysis with multi-branch possibility exploration. Use this skill when the user asks speculative questions like \"what if...\", \"what would happen if...\", \"what are the possibilities\", \"explore scenarios\", \"scenario analysis\", \"possibility space\", \"what could go wrong\", \"best case / worst case\", \"risk analysis\", \"contingency planning\", \"strategic options\", or any question about uncertain futures. Also trigger when the user faces a fork-in-the-road decision, wants to stress-test an idea, or needs to think through consequences before committing.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "what-if-oracle",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/what-if-oracle/SKILL.md",
+      "triggers": "what;if;oracle"
+    },
+    {
+      "description": "Checklist and automation guide for adding a new skill to the OPC Skills project. Ensures all required files, metadata, logos, and listings are created before release. Use when adding a new skill, publishing a skill, or preparing a skill for release.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "add-new-opc-skill",
+      "src_path": "src/ReScienceLab-opc-skills/.factory/skills/add-new-opc-skill/SKILL.md",
+      "triggers": "add;new;opc;skill"
+    },
+    {
+      "description": "This skill should be used for time series machine learning tasks including classification, regression, clustering, forecasting, anomaly detection, segmentation, and similarity search. Use when working with temporal data, sequential patterns, or time-indexed observations requiring specialized algorithms beyond standard ML approaches. Particularly suited for univariate and multivariate time series analysis with scikit-learn compatible APIs.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "aeon",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/aeon/SKILL.md",
+      "triggers": "aeon"
+    },
+    {
+      "description": "Geracao de imagens humanizadas via Google AI Studio (Gemini). Fotos realistas estilo influencer ou educacional com iluminacao natural e imperfeicoes sutis.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "ai-studio-image",
+      "src_path": "src/antigravity-awesome-skills/skills/ai-studio-image/SKILL.md",
+      "triggers": "ai;studio;image"
+    },
+    {
+      "description": "Algorithmic philosophies are computational aesthetic movements that are then expressed through code. Output .md files (philosophy), .html files (interactive viewer), and .js files (generative algorithms).",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "algorithmic-art",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-creative-director/skills/algorithmic-art/SKILL.md",
+      "triggers": "algorithmic;art"
+    },
+    {
+      "description": "Analyzes encryption algorithms, key management, and file encryption routines used by ransomware families to assess decryption feasibility, identify implementation weaknesses, and support recovery efforts. Covers AES, RSA, ChaCha20, and hybrid encryption schemes. Activates for requests involving ransomware cryptanalysis, encryption analysis, key recovery assessment, or ransomware decryption feasibility.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "analyzing-ransomware-encryption-mechanisms",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-ransomware-encryption-mechanisms/SKILL.md",
+      "triggers": "analyzing;ransomware;encryption;mechanisms"
+    },
+    {
+      "description": "Master proven backend architecture patterns including Clean Architecture, Hexagonal Architecture, and Domain-Driven Design to build maintainable, testable, and scalable systems.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "architecture-patterns",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-architecture-design/skills/architecture-patterns/SKILL.md",
+      "triggers": "architecture;patterns"
+    },
+    {
+      "description": "Auditing Google Cloud Platform IAM permissions to identify overly permissive bindings, primitive role usage, service account key proliferation, and cross-project access risks using gcloud CLI, Policy Analyzer, and IAM Recommender.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "auditing-gcp-iam-permissions",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/auditing-gcp-iam-permissions/SKILL.md",
+      "triggers": "auditing;gcp;iam;permissions"
+    },
+    {
+      "description": "Manage MongoDB Atlas Organizations as Azure ARM resources with unified billing through Azure Marketplace.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "azure-mgmt-mongodbatlas-dotnet",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-mgmt-mongodbatlas-dotnet/SKILL.md",
+      "triggers": "azure;mgmt;mongodbatlas;dotnet"
+    },
+    {
+      "description": "BlockRun works with Claude Code and Google Antigravity.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "blockrun",
+      "src_path": "src/antigravity-awesome-skills/skills/blockrun/SKILL.md",
+      "triggers": "blockrun"
+    },
+    {
+      "description": "Use this skill whenever the user wants speech to sound more human, companion-like, or emotionally expressive. Triggers include: any mention of 'say like', 'talk like', 'speak like', 'companion voice', 'comfort me', 'cheer me up', 'sound more human', 'good night voice', 'good morning voice', or requests to add fillers, emotion, or personality to generated speech. Also use when the user wants to mimic a specific character's voice, apply speaking style presets (goodnight, morning, comfort, celebration, chatting), tune emotional parameters like warmth or tenderness, or make TTS output feel like a real person talking. If the user asks for a 'voice message', 'companion audio', 'character voice', or wants speech that sighs, laughs, hesitates, or sounds genuinely warm, use this skill. Do NOT use for plain text-to-speech without personality, music generation, sound effects, or general coding tasks unrelated to expressive speech.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "characteristic-voice",
+      "src_path": "src/NoizAI-skills/skills/characteristic-voice/SKILL.md",
+      "triggers": "characteristic;voice"
+    },
+    {
+      "description": "When the user wants to monitor competitor apps on an ongoing basis — tracking metadata changes, keyword shifts, screenshot updates, rating trends, or new features. Use when the user mentions \"competitor monitoring\", \"track competitors\", \"competitor alert\", \"competitor changed their title\", \"watch a competitor app\", \"competitor weekly report\", \"competitive intelligence\", or \"what changed in competitor's listing\". For a one-time deep competitive analysis, see competitor-analysis. For market-wide chart movements, see market-movers.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "competitor-tracking",
+      "src_path": "src/aso-skills/skills/competitor-tracking/SKILL.md",
+      "triggers": "competitor;tracking"
+    },
+    {
+      "description": "Perform DCSync attacks to replicate Active Directory credentials and establish domain persistence by extracting KRBTGT, Domain Admin, and service account hashes for Golden Ticket creation.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "conducting-domain-persistence-with-dcsync",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/conducting-domain-persistence-with-dcsync/SKILL.md",
+      "triggers": "conducting;domain;persistence;with;dcsync"
+    },
+    {
+      "description": "Configuring Google Cloud Identity-Aware Proxy (IAP) to enforce per-request identity verification for Compute Engine, App Engine, Cloud Run, and GKE services using access levels, context-aware policies, and programmatic access with service accounts.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "configuring-identity-aware-proxy-with-google-iap",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/configuring-identity-aware-proxy-with-google-iap/SKILL.md",
+      "triggers": "configuring;identity;aware;proxy;with"
+    },
+    {
+      "description": "Context optimization extends the effective capacity of limited context windows through strategic compression, masking, caching, and partitioning. The goal is not to magically increase context windows but to make better use of available capacity.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "context-optimization",
+      "src_path": "src/antigravity-awesome-skills/skills/context-optimization/SKILL.md",
+      "triggers": "context;optimization"
+    },
+    {
+      "description": "Review contracts against your organization's negotiation playbook, flagging deviations and generating redline suggestions. Use when reviewing vendor contracts, customer agreements, or any commercial agreement where you need clause-by-clause analysis against standard positions.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "contract-review-anthropic",
+      "src_path": "src/lawvable-awesome-legal-skills/skills/contract-review-anthropic/SKILL.md",
+      "triggers": "contract;review;anthropic"
+    },
+    {
+      "description": "Detects command-and-control (C2) communications tunneled through DNS protocol including DNS tunneling tools (Iodine, dnscat2, dns2tcp, Cobalt Strike DNS beacon), domain generation algorithms (DGA), encoded payload delivery via TXT/CNAME records, and DNS beaconing patterns. Covers Shannon entropy analysis of query subdomains, statistical anomaly detection, ML-based DGA classification, passive DNS correlation, and Zeek/Suricata signature development. Activates for requests involving DNS-based C2 detection, DNS tunnel identification, suspicious DNS traffic investigation, or DGA domain classification.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "detecting-command-and-control-over-dns",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-command-and-control-over-dns/SKILL.md",
+      "triggers": "detecting;command;and;control;over"
+    },
+    {
+      "description": "Detect Golden Ticket attacks in Active Directory by analyzing Kerberos TGT anomalies including mismatched encryption types, impossible ticket lifetimes, non-existent accounts, and forged PAC signatures in domain controller event logs.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "detecting-golden-ticket-attacks-in-kerberos-logs",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-golden-ticket-attacks-in-kerberos-logs/SKILL.md",
+      "triggers": "detecting;golden;ticket;attacks;in"
+    },
+    {
+      "description": "Detect Kerberos Golden Ticket forgery by analyzing Windows Event ID 4769 for RC4 encryption downgrades (0x17), abnormal ticket lifetimes, and krbtgt account anomalies in Splunk and Elastic SIEM",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "detecting-golden-ticket-forgery",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-golden-ticket-forgery/SKILL.md",
+      "triggers": "detecting;golden;ticket;forgery"
+    },
+    {
+      "description": "Detect Pass-the-Hash attacks by analyzing NTLM authentication patterns, identifying Type 3 logons with NTLM where Kerberos is expected, and correlating with credential dumping.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "detecting-pass-the-hash-attacks",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-pass-the-hash-attacks/SKILL.md",
+      "triggers": "detecting;pass;the;hash;attacks"
+    },
+    {
+      "description": "Detect abuse of service accounts through anomalous interactive logons, privilege escalation, lateral movement, and unauthorized access patterns.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "detecting-service-account-abuse",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-service-account-abuse/SKILL.md",
+      "triggers": "detecting;service;account;abuse"
+    },
+    {
+      "description": "django-access-review",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "django-access-review",
+      "src_path": "src/antigravity-awesome-skills/skills/django-access-review/SKILL.md",
+      "triggers": "django;access;review"
+    },
+    {
+      "description": "Searches and retrieves documents from free public sources using automated browser navigation. Use when research needs primary source documents like court filings, government reports, or public records.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "document-hunter",
+      "src_path": "src/bitwize-music-studio-claude-ai-music-skills/skills/document-hunter/SKILL.md",
+      "triggers": "document;hunter"
+    },
+    {
+      "description": "A practical, jargon-free guide to functional programming - the 80/20 approach that gets results without the academic overhead",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "fp-pragmatic",
+      "src_path": "src/antigravity-awesome-skills/skills/fp-pragmatic/SKILL.md",
+      "triggers": "fp;pragmatic"
+    },
+    {
+      "description": "Manage evidence freshness by identifying stale decisions and providing governance actions",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "fpf:decay",
+      "src_path": "src/NeoLabHQ-context-engineering-kit/plugins/fpf/skills/decay/SKILL.md",
+      "triggers": "fpf;decay"
+    },
+    {
+      "description": "Agente que simula Geoffrey Hinton — Godfather of Deep Learning, Prêmio Turing 2018, criador do backpropagation e das Deep Belief Networks.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "geoffrey-hinton",
+      "src_path": "src/antigravity-awesome-skills/skills/geoffrey-hinton/SKILL.md",
+      "triggers": "geoffrey;hinton"
+    },
+    {
+      "description": "Submit and manage protocols on Ginkgo Bioworks Cloud Lab (cloud.ginkgo.bio), a web-based interface for autonomous lab execution on Reconfigurable Automation Carts (RACs). Use when the user wants to run cell-free protein expression (validation or optimization), generate fluorescent pixel art, or interact with Ginkgo Cloud Lab services. Covers protocol selection, input preparation, pricing, and ordering workflows.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "ginkgo-cloud-lab",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/ginkgo-cloud-lab/SKILL.md",
+      "triggers": "ginkgo;cloud;lab"
+    },
+    {
+      "description": "Patterns for automating GitHub workflows with AI assistance, inspired by [Gemini CLI](https://github.com/google-gemini/gemini-cli) and modern DevOps practices.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "github-workflow-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/github-workflow-automation/SKILL.md",
+      "triggers": "github;workflow;automation"
+    },
+    {
+      "description": "分析健康目标数据、识别目标模式、评估目标进度,并提供个性化目标管理建议。支持与营养、运动、睡眠等健康数据的关联分析。",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "goal-analyzer",
+      "src_path": "src/antigravity-awesome-skills/skills/goal-analyzer/SKILL.md",
+      "triggers": "goal;analyzer"
+    },
+    {
+      "description": "Specialized guide for migrating Godot 3.x projects to Godot 4 (GDScript 2.0), covering syntax changes, Tweens, and exports.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "godot-4-migration",
+      "src_path": "src/antigravity-awesome-skills/skills/godot-4-migration/SKILL.md",
+      "triggers": "godot;4;migration"
+    },
+    {
+      "description": "Convert documents and text to audio using Google Cloud Text-to-Speech. Use this skill when the user wants to: narrate a document, read aloud text, generate audio from a file, convert text to speech, create a recording of documentation or analysis, create a podcast from a document, or use Google TTS/text-to-speech. Trigger phrases: \"read this aloud\", \"narrate this\", \"create a recording\", \"text to speech\", \"TTS\", \"convert to audio\", \"audio from document\", \"listen to this\", \"generate audio\", \"google tts\", \"create a podcast\".",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "google-tts",
+      "src_path": "src/sanjay3290-ai-skills/skills/google-tts/SKILL.md",
+      "triggers": "google;tts"
+    },
+    {
+      "description": "Detect NTLM relay attacks by analyzing Windows Event 4624 logon type 3 with NTLMSSP authentication, identifying IP-to-hostname mismatches, Responder traffic signatures, SMB signing status, and suspicious authentication patterns across the domain.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "hunting-for-ntlm-relay-attacks",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-ntlm-relay-attacks/SKILL.md",
+      "triggers": "hunting;for;ntlm;relay;attacks"
+    },
+    {
+      "description": "Hunt for registry-based persistence mechanisms including Run keys, Winlogon modifications, IFEO injection, and COM hijacking in Windows environments.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "hunting-for-registry-persistence-mechanisms",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-registry-persistence-mechanisms/SKILL.md",
+      "triggers": "hunting;for;registry;persistence;mechanisms"
+    },
+    {
+      "description": "Reduce container attack surface by building application images on Google distroless base images that contain only the application runtime with no shell, package manager, or unnecessary OS utilities.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "implementing-container-image-minimal-base-with-distroless",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-container-image-minimal-base-with-distroless/SKILL.md",
+      "triggers": "implementing;container;image;minimal;base"
+    },
+    {
+      "description": "Configure Google Workspace advanced phishing and malware protection settings including pre-delivery scanning, attachment protection, spoofing detection, and Enhanced Safe Browsing.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "implementing-google-workspace-phishing-protection",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-google-workspace-phishing-protection/SKILL.md",
+      "triggers": "implementing;google;workspace;phishing;protection"
+    },
+    {
+      "description": "Configure SAML 2.0 single sign-on for Google Workspace with a third-party identity provider, enabling centralized authentication and enforcing organization-wide access policies.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "implementing-google-workspace-sso-configuration",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-google-workspace-sso-configuration/SKILL.md",
+      "triggers": "implementing;google;workspace;sso;configuration"
+    },
+    {
+      "description": "Deploy SailPoint IdentityNow or IdentityIQ for identity governance and administration. Covers identity lifecycle management, access request workflows, certification campaigns, role mining, SOD policy",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "implementing-identity-governance-with-sailpoint",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-identity-governance-with-sailpoint/SKILL.md",
+      "triggers": "implementing;identity;governance;with;sailpoint"
+    },
+    {
+      "description": "RSA (Rivest-Shamir-Adleman) is the most widely deployed asymmetric cryptographic algorithm, used for digital signatures, key exchange, and encryption. This skill covers generating, storing, rotating,",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "implementing-rsa-key-pair-management",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-rsa-key-pair-management/SKILL.md",
+      "triggers": "implementing;rsa;key;pair;management"
+    },
+    {
+      "description": "Systematic Fishbone analysis exploring problem causes across six categories",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "kaizen:cause-and-effect",
+      "src_path": "src/NeoLabHQ-context-engineering-kit/plugins/kaizen/skills/cause-and-effect/SKILL.md",
+      "triggers": "kaizen;cause;and;effect"
+    },
+    {
+      "description": "Analise e auditoria de editais de leilao judicial e extrajudicial. Riscos ocultos, clausulas perigosas, debitos, ocupante e classificacao da oportunidade.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "leiloeiro-edital",
+      "src_path": "src/antigravity-awesome-skills/skills/leiloeiro-edital/SKILL.md",
+      "triggers": "leiloeiro;edital"
+    },
+    {
+      "description": "Analise juridica de leiloes: nulidades, bem de familia, alienacao fiduciaria, CPC arts 829-903, Lei 9514/97, onus reais, embargos e jurisprudencia.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "leiloeiro-juridico",
+      "src_path": "src/antigravity-awesome-skills/skills/leiloeiro-juridico/SKILL.md",
+      "triggers": "leiloeiro;juridico"
+    },
+    {
+      "description": "This category provides reference materials for debugging, code quality, and advanced layout patterns.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "makepad-reference",
+      "src_path": "src/antigravity-awesome-skills/skills/makepad-reference/SKILL.md",
+      "triggers": "makepad;reference"
+    },
+    {
+      "description": "Matemático ultra-avançado inspirado em Terence Tao. Análise rigorosa de código e arquitetura com teoria matemática profunda: teoria da informação, teoria dos grafos, complexidade computacional, álgebra linear, análise estocástica, teoria das categorias, probabilidade bayesiana e lógica formal.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "matematico-tao",
+      "src_path": "src/antigravity-awesome-skills/skills/matematico-tao/SKILL.md",
+      "triggers": "matematico;tao"
+    },
+    {
+      "description": "Master Minecraft server plugin development with Bukkit, Spigot, and Paper APIs.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "minecraft-bukkit-pro",
+      "src_path": "src/antigravity-awesome-skills/skills/minecraft-bukkit-pro/SKILL.md",
+      "triggers": "minecraft;bukkit;pro"
+    },
+    {
+      "description": "Estrategia e implementacao de monetizacao para produtos digitais - Stripe, subscriptions, pricing experiments, freemium, upgrade flows, churn prevention, revenue optimization e modelos de negocio SaaS.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "monetization",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-commerce-payments/skills/monetization/SKILL.md",
+      "triggers": "monetization"
+    },
+    {
+      "description": "Generate and edit images using Google Gemini 3 Pro Image (Nano Banana Pro). Supports text-to-image, image editing, various aspect ratios, and high-resolution output (2K/4K). Use when user wants to generate images, create images, use Gemini image generation, or do AI image generation.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "nanobanana",
+      "src_path": "src/ReScienceLab-opc-skills/skills/nanobanana/SKILL.md",
+      "triggers": "nanobanana"
+    },
+    {
+      "description": "Guide for using Netlify AI Gateway to access AI models. Use when adding AI capabilities or selecting/changing AI models. Must be read before choosing a model. Covers supported providers (OpenAI, Anthropic, Google), SDK setup, environment variables, and the list of available models.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "netlify-ai-gateway",
+      "src_path": "src/context-and-tools/codex/skills/netlify-ai-gateway/SKILL.md",
+      "triggers": "netlify;ai;gateway"
+    },
+    {
+      "description": "NIL (Name, Image, and Likeness) contract analysis for NCAA student-athletes from the athlete's perspective. Use when user says 'review this NIL contract', 'analyze this NIL deal', 'check this athlete agreement', 'review my NIL agreement', or uploads a PDF NIL contract for review. Identifies red flags, missing protections, and compliance issues. Produces a structured review memorandum with negotiation positions. Do NOT use for general contract review, employment agreements, non-NIL endorsements, or brand-side deal analysis.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "nil-contract-analysis-samir-patel",
+      "src_path": "src/lawvable-awesome-legal-skills/skills/nil-contract-analysis-samir-patel/SKILL.md",
+      "triggers": "nil;contract;analysis;samir;patel"
+    },
+    {
+      "description": "Interact with Google NotebookLM to query documentation with Gemini's source-grounded answers. Each question opens a fresh browser session, retrieves the answer exclusively from your uploaded documents, and closes.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "notebooklm",
+      "src_path": "src/antigravity-awesome-skills/skills/notebooklm/SKILL.md",
+      "triggers": "notebooklm"
+    },
+    {
+      "description": "You are an expert in user onboarding and activation. Your goal is to help users reach their \"aha moment\" as quickly as possible and establish habits that lead to long-term retention.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "onboarding-cro",
+      "src_path": "src/antigravity-awesome-skills/skills/onboarding-cro/SKILL.md",
+      "triggers": "onboarding;cro"
+    },
+    {
+      "description": "You are an expert in in-app paywalls and upgrade flows. Your goal is to convert free users to paid, or upgrade users to higher tiers, at moments when they've experienced enough value to justify the commitment.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "paywall-upgrade-cro",
+      "src_path": "src/antigravity-awesome-skills/skills/paywall-upgrade-cro/SKILL.md",
+      "triggers": "paywall;upgrade;cro"
+    },
+    {
+      "description": "A cryptographic audit systematically reviews an application's use of cryptographic primitives, protocols, and key management to identify vulnerabilities such as weak algorithms, insecure modes, hardco",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "performing-cryptographic-audit-of-application",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-cryptographic-audit-of-application/SKILL.md",
+      "triggers": "performing;cryptographic;audit;of;application"
+    },
+    {
+      "description": "Performs entitlement review and access certification campaigns using SailPoint IdentityIQ including manager certifications, targeted entitlement reviews, role-based access validation, SOD violation remediation, and automated revocation workflows. Activates for requests involving access reviews, entitlement certifications, SailPoint IIQ governance, or periodic user access recertification.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "performing-entitlement-review-with-sailpoint-iiq",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-entitlement-review-with-sailpoint-iiq/SKILL.md",
+      "triggers": "performing;entitlement;review;with;sailpoint"
+    },
+    {
+      "description": "The NIST Cybersecurity Framework (CSF) 2.0, released in February 2024, provides a comprehensive taxonomy for managing cybersecurity risk through six core Functions - Govern, Identify, Protect, Detect, Respond, and Recover. This skill covers conducting a maturity assessment against the CSF using Implementation Tiers to measure organizational cybersecurity posture and create improvement roadmaps.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "performing-nist-csf-maturity-assessment",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-nist-csf-maturity-assessment/SKILL.md",
+      "triggers": "performing;nist;csf;maturity;assessment"
+    },
+    {
+      "description": "Automates the Privacy Impact Assessment (PIA) workflow including data flow mapping, privacy risk scoring matrices, GDPR Article 35 DPIA and CCPA/CPRA alignment checks, data inventory cataloging, and remediation tracking. Implements the NIST Privacy Framework PRAM methodology and ICO DPIA guidance for systematic identification and mitigation of privacy risks across processing activities. Use when conducting privacy assessments for new systems, evaluating regulatory compliance posture, or building automated privacy governance programs.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "performing-privacy-impact-assessment",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-privacy-impact-assessment/SKILL.md",
+      "triggers": "performing;privacy;impact;assessment"
+    },
+    {
+      "description": "Executes a structured ransomware incident response from initial detection through containment, forensic analysis, decryption assessment, recovery, and post-incident hardening. Addresses ransom negotiation considerations, backup integrity verification, and regulatory notification requirements. Activates for requests involving ransomware response, ransomware recovery, crypto-ransomware, data encryption attack, ransom payment decision, or ransomware containment.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "performing-ransomware-response",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-ransomware-response/SKILL.md",
+      "triggers": "performing;ransomware;response"
+    },
+    {
+      "description": "Select the right Proof of Life (PoL) probe based on hypothesis, risk, and resources. Use this to match the validation method to the real learning goal, not tooling comfort.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "pol-probe-advisor",
+      "src_path": "src/Product-Manager-Skills/skills/pol-probe-advisor/SKILL.md",
+      "triggers": "pol;probe;advisor"
+    },
+    {
+      "description": "Quantum physics simulation library for open quantum systems. Use when studying master equations, Lindblad dynamics, decoherence, quantum optics, or cavity QED. Best for physics research, open system dynamics, and educational simulations. NOT for circuit-based quantum computing—use qiskit, cirq, or pennylane for quantum algorithms and hardware execution.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "qutip",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/qutip/SKILL.md",
+      "triggers": "qutip"
+    },
+    {
+      "description": "You are an expert technical writer creating comprehensive project documentation. Your goal is to write a README.md that is absurdly thorough—the kind of documentation you wish every project had.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "readme",
+      "src_path": "src/antigravity-awesome-skills/skills/readme/SKILL.md",
+      "triggers": "readme"
+    },
+    {
+      "description": "Language-independent tokenizer treating text as raw Unicode. Supports BPE and Unigram algorithms. Fast (50k sentences/sec), lightweight (6MB memory), deterministic vocabulary. Used by T5, ALBERT, XLNet, mBART. Train on raw text without pre-tokenization. Use when you need multilingual support, CJK languages, or reproducible tokenization.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "sentencepiece",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/02-tokenization/sentencepiece/SKILL.md",
+      "triggers": "sentencepiece"
+    },
+    {
+      "description": "You are an expert in optimizing signup and registration flows. Your goal is to reduce friction, increase completion rates, and set users up for successful activation.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "signup-flow-cro",
+      "src_path": "src/antigravity-awesome-skills/skills/signup-flow-cro/SKILL.md",
+      "triggers": "signup;flow;cro"
+    },
+    {
+      "description": "Use when the user is unsure which skill to use or where to start. Interviews the user with targeted questions and recommends the best skill(s) from the installed library for their goal.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "skill-router",
+      "src_path": "src/antigravity-awesome-skills/skills/skill-router/SKILL.md",
+      "triggers": "skill;router"
+    },
+    {
+      "description": "Auditoria e evolucao do ecossistema de skills. Qualidade de codigo, seguranca, custos, gaps, duplicacoes, dependencias e relatorios de saude.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "skill-sentinel",
+      "src_path": "src/antigravity-awesome-skills/skills/skill-sentinel/SKILL.md",
+      "triggers": "skill;sentinel"
+    },
+    {
+      "description": "Guide to negotiating technology services agreements, professional services contracts, and commercial B2B transactions. Provides three-position frameworks (provider-favorable, balanced, client-favorable), deal-size tactics, objection handling templates, and concession roadmaps. Use when: (1) Developing negotiation strategies for SaaS, cloud, or managed services agreements, (2) Preparing position papers and fallback positions, (3) Responding to counterparty objections and demands, (4) Creating concession roadmaps that protect critical interests, (5) Assessing tactics based on deal value and leverage, or (6) Structuring balanced outcomes for liability, IP, payment, SLA, or warranty provisions.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "tech-contract-negotiation-patrick-munro",
+      "src_path": "src/lawvable-awesome-legal-skills/skills/tech-contract-negotiation-patrick-munro/SKILL.md",
+      "triggers": "tech;contract;negotiation;patrick;munro"
+    },
+    {
+      "description": "Provides guidance for mechanistic interpretability research using TransformerLens to inspect and manipulate transformer internals via HookPoints and activation caching. Use when reverse-engineering model algorithms, studying attention patterns, or performing activation patching experiments.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "transformer-lens-interpretability",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/04-mechanistic-interpretability/transformer-lens/SKILL.md",
+      "triggers": "transformer;lens;interpretability"
+    },
+    {
+      "description": "Sub-skill técnica de Yann LeCun. Cobre CNNs, LeNet, backpropagation, JEPA (I-JEPA, V-JEPA, MC-JEPA), AMI (Advanced Machinery of Intelligence), Self-Supervised Learning (SimCLR, MAE, BYOL), Energy-Based Models (EBMs) e código PyTorch completo.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "yann-lecun-tecnico",
+      "src_path": "src/antigravity-awesome-skills/skills/yann-lecun-tecnico/SKILL.md",
+      "triggers": "yann;lecun;tecnico"
+    },
+    {
+      "description": "6-layer AI governance: safety gates, evidence-based debugging, anti-slack detection, and machine-enforced hooks. Makes AI safe, thorough, and honest.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "yes-md",
+      "src_path": "src/antigravity-awesome-skills/skills/yes-md/SKILL.md",
+      "triggers": "yes;md"
+    }
+  ],
+  "sub_hub": "golang",
+  "version": 1
 }

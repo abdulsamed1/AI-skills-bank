@@ -31,7 +31,6 @@ pub struct SkillMetadata {
 }
 
 #[derive(Debug, Deserialize)]
-#[serde(deny_unknown_fields)]
 struct SkillFrontmatter {
     name: String,
     description: String,
@@ -74,12 +73,13 @@ impl From<SkillMetadata> for CsvRow {
         let hub = meta.hub;
         let sub_hub = meta.sub_hub;
         let skill_id = meta.name.clone();
+        let display_name = skill_id.replace('-', " ").replace('_', " ");
 
         Self {
             hub: hub.clone(),
             sub_hub: sub_hub.clone(),
             skill_id: skill_id.clone(),
-            display_name: meta.name,
+            display_name,
             description: meta.description,
             triggers: meta.triggers.unwrap_or_else(|| skill_id.replace('-', ";")),
             match_score: meta.match_score.unwrap_or(100),
@@ -105,8 +105,16 @@ impl Aggregator {
 
     pub fn parse_skill_md(path: &Path) -> Result<SkillMetadata, SkillManageError> {
         let content = std::fs::read_to_string(path)?;
+        // Extract YAML frontmatter robustly and coerce fields to expected types.
+        let trimmed = content.trim_start();
+        if !trimmed.starts_with("---") {
+            return Err(SkillManageError::ManifestValidationError(format!(
+                "Missing frontmatter in {}",
+                path.display()
+            )));
+        }
 
-        let mut parts = content.split("---");
+        let mut parts = trimmed.splitn(3, "---");
         let _ = parts.next();
         let yaml_part = parts.next().ok_or_else(|| {
             SkillManageError::ManifestValidationError(format!(
@@ -115,23 +123,59 @@ impl Aggregator {
             ))
         })?;
 
-        let frontmatter: SkillFrontmatter = serde_yaml::from_str(yaml_part).map_err(|e| {
+        let doc: serde_yaml::Value = serde_yaml::from_str(yaml_part).map_err(|e| {
             SkillManageError::ManifestParseError(format!("YAML error in {}: {}", path.display(), e))
         })?;
 
+        let get_string = |key: &str| -> Option<String> {
+            doc.get(key).map(|v| match v {
+                serde_yaml::Value::String(s) => s.clone(),
+                serde_yaml::Value::Sequence(seq) => seq
+                    .iter()
+                    .map(|el| match el {
+                        serde_yaml::Value::String(s) => s.clone(),
+                        other => serde_yaml::to_string(other).unwrap_or_default(),
+                    })
+                    .collect::<Vec<_>>()
+                    .join(";"),
+                serde_yaml::Value::Number(n) => n.to_string(),
+                serde_yaml::Value::Bool(b) => b.to_string(),
+                other => serde_yaml::to_string(other).unwrap_or_default(),
+            })
+        };
+
+        let get_u32 = |key: &str| -> Option<u32> {
+            doc.get(key).and_then(|v| match v {
+                serde_yaml::Value::Number(n) => n.as_u64().map(|x| x as u32),
+                serde_yaml::Value::String(s) => s.parse::<u32>().ok(),
+                _ => None,
+            })
+        };
+
+        let name = get_string("name").ok_or_else(|| {
+            SkillManageError::ManifestParseError(format!("Missing required field `name` in {}", path.display()))
+        })?;
+
+        let description = get_string("description").unwrap_or_default();
+        let hub = get_string("hub").unwrap_or_else(|| "ai".to_string());
+        let sub_hub = get_string("sub_hub").unwrap_or_else(|| "llm-agents".to_string());
+        let triggers = get_string("triggers");
+        let match_score = get_u32("match_score");
+        let phase = get_u32("phase");
+        let required = get_string("required").or_else(|| Some("true".to_string()));
+        let action = get_string("action").or_else(|| Some("invoke".to_string()));
+
         Ok(SkillMetadata {
-            name: frontmatter.name,
-            description: frontmatter.description,
+            name,
+            description,
             path: path.to_path_buf(),
-            hub: frontmatter.hub.unwrap_or_else(|| "ai".to_string()),
-            sub_hub: frontmatter
-                .sub_hub
-                .unwrap_or_else(|| "llm-agents".to_string()),
-            triggers: frontmatter.triggers,
-            match_score: frontmatter.match_score,
-            phase: frontmatter.phase,
-            required: frontmatter.required,
-            action: frontmatter.action,
+            hub,
+            sub_hub,
+            triggers,
+            match_score,
+            phase,
+            required,
+            action,
         })
     }
 
@@ -203,11 +247,37 @@ impl Aggregator {
 
         tokio::task::spawn_blocking(move || {
             let mut wtr = csv::Writer::from_writer(Vec::new());
+
+            // Write only the minimal critical columns requested by users.
+            wtr.write_record(rules::CSV_COLUMNS)
+                .map_err(|e| SkillManageError::ConfigError(e.to_string()))?;
+
             for meta in skills {
-                let row = CsvRow::from(meta);
-                wtr.serialize(row)
+                // Compose the minimal record in the exact order defined by CSV_COLUMNS
+                let skill_id = meta.name.clone();
+                let outputs = format!("{}-*", skill_id);
+
+                // Sanitize description to avoid newlines and collapse whitespace
+                let description = meta
+                    .description
+                    .replace('\r', " ")
+                    .replace('\n', " ")
+                    .split_whitespace()
+                    .collect::<Vec<_>>()
+                    .join(" ");
+
+                let record = vec![
+                    meta.hub,
+                    meta.sub_hub,
+                    skill_id,
+                    description,
+                    outputs,
+                ];
+
+                wtr.write_record(&record)
                     .map_err(|e| SkillManageError::ConfigError(e.to_string()))?;
             }
+
             wtr.flush()
                 .map_err(|e| SkillManageError::ConfigError(e.to_string()))?;
             let data = wtr

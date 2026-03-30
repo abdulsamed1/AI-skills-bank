@@ -1,0 +1,80 @@
+{
+  "generated_at_unix": 1774888953,
+  "hub": "backend",
+  "skills": [
+    {
+      "description": "Execute web cache deception attacks by exploiting path normalization discrepancies between CDN caching layers and origin servers to cache and retrieve sensitive authenticated content.",
+      "phase": 2,
+      "score": 11,
+      "skill_id": "performing-web-cache-deception-attack",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-web-cache-deception-attack/SKILL.md",
+      "triggers": "performing;web;cache;deception;attack"
+    },
+    {
+      "description": "You're a caching specialist who has reduced LLM costs by 90% through strategic caching. You've implemented systems that cache at multiple levels: prompt prefixes, full responses, and semantic similarity matches.",
+      "phase": 2,
+      "score": 11,
+      "skill_id": "prompt-caching",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-llm-application-developer/skills/prompt-caching/SKILL.md",
+      "triggers": "prompt;caching"
+    },
+    {
+      "description": "Parses and analyzes the Windows Amcache.hve registry hive to extract evidence of program execution, application installation, and driver loading for digital forensics investigations. Uses Eric Zimmerman's AmcacheParser and Timeline Explorer for artifact extraction, SHA-1 hash correlation with threat intel, and timeline reconstruction. Activates for requests involving Amcache forensics, program execution evidence, Windows artifact analysis, or application compatibility cache investigation.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "analyzing-windows-amcache-artifacts",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-windows-amcache-artifacts/SKILL.md",
+      "triggers": "analyzing;windows;amcache;artifacts"
+    },
+    {
+      "description": "Azure Resource Manager SDK for Redis in .NET.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "azure-resource-manager-redis-dotnet",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-resource-manager-redis-dotnet/SKILL.md",
+      "triggers": "azure;resource;manager;redis;dotnet"
+    },
+    {
+      "description": "cache integration",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "cache-integration",
+      "src_path": "src/kreuzberg-dev-kreuzberg/.ai-rulez/domains/document-extraction/skills/cache-integration/SKILL.md",
+      "triggers": "cache;integration"
+    },
+    {
+      "description": "All pods run in namespace crs. Use when pods in the crs namespace are in CrashLoopBackOff, OOMKilled, or restarting, multiple services restart simultaneously (cascade failure), or redis is unresponsive or showing AOF warnings.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "debug-buttercup",
+      "src_path": "src/antigravity-awesome-skills/skills/debug-buttercup/SKILL.md",
+      "triggers": "debug;buttercup"
+    },
+    {
+      "description": "Extract and analyze browser history, cookies, cache, downloads, and bookmarks from Chrome, Firefox, and Edge for forensic evidence of user web activity.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "extracting-browser-history-artifacts",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/extracting-browser-history-artifacts/SKILL.md",
+      "triggers": "extracting;browser;history;artifacts"
+    },
+    {
+      "description": "The hf CLI provides direct terminal access to the Hugging Face Hub for downloading, uploading, and managing repositories, cache, and compute resources.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "hugging-face-cli",
+      "src_path": "src/antigravity-awesome-skills/skills/hugging-face-cli/SKILL.md",
+      "triggers": "hugging;face;cli"
+    },
+    {
+      "description": "Guide for controlling caching on Netlify's CDN. Use when configuring cache headers, setting up stale-while-revalidate, implementing on-demand cache purge, or understanding Netlify's CDN caching behavior. Covers Cache-Control, Netlify-CDN-Cache-Control, cache tags, durable cache, and framework-specific caching patterns.",
+      "phase": 2,
+      "score": 6,
+      "skill_id": "netlify-caching",
+      "src_path": "src/context-and-tools/codex/skills/netlify-caching/SKILL.md",
+      "triggers": "netlify;caching"
+    }
+  ],
+  "sub_hub": "caching",
+  "version": 1
+}

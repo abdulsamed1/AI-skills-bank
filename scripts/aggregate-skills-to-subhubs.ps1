@@ -1635,7 +1635,7 @@ function Write-SubHubFiles {
         files = [ordered]@{
             skill = "SKILL.md"
             index = "skills-index.json"
-            catalog = "skills-catalog.csv"
+            catalog = "routing.csv"
         }
     }
 
@@ -1681,7 +1681,7 @@ function Write-SubHubFiles {
         Write-FileUtf8NoBom -Path (Join-Path $OutPath "SKILL.md") -Content $skillMd
         Write-FileUtf8NoBom -Path (Join-Path $OutPath "skills-manifest.json") -Content (($manifest | ConvertTo-Json -Depth 8) + [Environment]::NewLine)
         Write-FileUtf8NoBom -Path (Join-Path $OutPath "skills-index.json") -Content (($indexItems | ConvertTo-Json -Depth 6) + [Environment]::NewLine)
-        Write-FileUtf8NoBom -Path (Join-Path $OutPath "skills-catalog.csv") -Content ((($catalogRows | ConvertTo-Csv -NoTypeInformation) -join [Environment]::NewLine) + [Environment]::NewLine)
+        Write-FileUtf8NoBom -Path (Join-Path $OutPath "routing.csv") -Content ((($catalogRows | ConvertTo-Csv -NoTypeInformation) -join [Environment]::NewLine) + [Environment]::NewLine)
     }
     
     return $true

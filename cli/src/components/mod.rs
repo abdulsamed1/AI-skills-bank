@@ -2,6 +2,7 @@ pub mod aggregator;
 pub mod diagnostics;
 pub mod fetcher;
 pub mod manifest;
+pub mod native_pipeline;
 pub mod syncer;
 
 use crate::components::aggregator::SkillMetadata;

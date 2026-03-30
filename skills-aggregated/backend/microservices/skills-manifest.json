@@ -1,0 +1,256 @@
+{
+  "generated_at_unix": 1774888953,
+  "hub": "backend",
+  "skills": [
+    {
+      "description": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems.",
+      "phase": 2,
+      "score": 9,
+      "skill_id": "backend-architect",
+      "src_path": "src/antigravity-awesome-skills/skills/backend-architect/SKILL.md",
+      "triggers": "backend;architect"
+    },
+    {
+      "description": "Technical reference on Lightning Network channel factories, multi-party channels, LSP architectures, and Bitcoin Layer 2 scaling without soft forks. Covers Decker-Wattenhofer, timeout trees, MuSig2 key aggregation, HTLC/PTLC forwarding, and watchtower breach detection.",
+      "phase": 2,
+      "score": 9,
+      "skill_id": "lightning-channel-factories",
+      "src_path": "src/antigravity-awesome-skills/skills/lightning-channel-factories/SKILL.md",
+      "triggers": "lightning;channel;factories"
+    },
+    {
+      "description": "Generates publication-quality figures for ML papers from research context. Given a paper section or description, extracts system components and relationships to generate architecture diagrams via Gemini. Given experiment results or data, auto-selects chart type and generates data-driven figures via matplotlib/seaborn. Use when creating any figure for a conference paper.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "academic-plotting",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/20-ml-paper-writing/academic-plotting/SKILL.md",
+      "triggers": "academic;plotting"
+    },
+    {
+      "description": "A hybrid memory system that provides persistent, searchable knowledge management for AI agents (Architecture, Patterns, Decisions).",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "agent-memory-mcp",
+      "src_path": "src/antigravity-awesome-skills/skills/agent-memory-mcp/SKILL.md",
+      "triggers": "agent;memory;mcp"
+    },
+    {
+      "description": "Designs album concepts, tracklist architecture, and thematic planning through 7 structured phases. Use when planning a new album or reworking an existing album concept.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "album-conceptualizer",
+      "src_path": "src/bitwize-music-studio-claude-ai-music-skills/skills/album-conceptualizer/SKILL.md",
+      "triggers": "album;conceptualizer"
+    },
+    {
+      "description": "Master software architect specializing in modern architecture",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "architect-review",
+      "src_path": "src/antigravity-awesome-skills/skills/architect-review/SKILL.md",
+      "triggers": "architect;review"
+    },
+    {
+      "description": "Comprehensive patterns for creating, maintaining, and managing Architecture Decision Records (ADRs) that capture the context and rationale behind significant technical decisions.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "architecture-decision-records",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-architecture-design/skills/architecture-decision-records/SKILL.md",
+      "triggers": "architecture;decision;records"
+    },
+    {
+      "description": "Use before creative or constructive work (features, architecture, behavior). Transforms vague ideas into validated designs through disciplined reasoning and collaboration.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "brainstorming",
+      "src_path": "src/antigravity-awesome-skills/skills/brainstorming/SKILL.md",
+      "triggers": "brainstorming"
+    },
+    {
+      "description": "Generate comprehensive C4 architecture documentation for an existing repository/codebase using a bottom-up analysis approach.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "c4-architecture-c4-architecture",
+      "src_path": "src/antigravity-awesome-skills/skills/c4-architecture-c4-architecture/SKILL.md",
+      "triggers": "c4;architecture;c4;architecture"
+    },
+    {
+      "description": "Expert C4 Component-level documentation specialist. Synthesizes C4 Code-level documentation into Component-level architecture, defining component boundaries, interfaces, and relationships.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "c4-component",
+      "src_path": "src/antigravity-awesome-skills/skills/c4-component/SKILL.md",
+      "triggers": "c4;component"
+    },
+    {
+      "description": "Transform the agent into a Cloud Solution Architect following Azure Architecture Center best practices. Use when designing cloud architectures, reviewing system designs, selecting architecture styles, applying cloud design patterns, making technology choices, or conducting Well-Architected Framework reviews.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "cloud-solution-architect",
+      "src_path": "src/microsoft-skills/.github/skills/cloud-solution-architect/SKILL.md",
+      "triggers": "cloud;solution;architect"
+    },
+    {
+      "description": "Delegate tasks to Codex — run prompts, code review, research, pair programming, or any collaboration mode. Use when the user asks to use Codex, send work to Codex, have Codex review/investigate/implement something, or collaborate with Codex. Also use proactively when you want external feedback, a second opinion, or a fresh pair of eyes on code, architecture, or decisions.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "codex-collab",
+      "src_path": "src/Kevin7Qi-codex-collab/SKILL.md",
+      "triggers": "codex;collab"
+    },
+    {
+      "description": "The fundamental architecture of computer use agents: observe screen, reason about next action, execute action, repeat. This loop integrates vision models with action execution through an iterative pipeline.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "computer-use-agents",
+      "src_path": "src/antigravity-awesome-skills/skills/computer-use-agents/SKILL.md",
+      "triggers": "computer;use;agents"
+    },
+    {
+      "description": "Creates comprehensive technical documentation from existing codebases. Analyzes architecture, design patterns, and implementation details to produce long-form technical manuals and ebooks.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "docs-architect",
+      "src_path": "src/antigravity-awesome-skills/skills/docs-architect/SKILL.md",
+      "triggers": "docs;architect"
+    },
+    {
+      "description": "Post-ship documentation update. Reads all project docs, cross-references the diff, updates README/ARCHITECTURE/CONTRIBUTING/CLAUDE.md to match what shipped, polishes CHANGELOG voice, cleans up TODOS, and optionally bumps VERSION. Use when asked to \"update the docs\", \"sync documentation\", or \"post-ship docs\". Proactively suggest after a PR is merged or code is shipped.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "document-release",
+      "src_path": "src/gstack/document-release/SKILL.md",
+      "triggers": "document;release"
+    },
+    {
+      "description": "Plan and route Domain-Driven Design work from strategic modeling to tactical implementation and evented architecture patterns.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "domain-driven-design",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-ddd-evented-architecture/skills/domain-driven-design/SKILL.md",
+      "triggers": "domain;driven;design"
+    },
+    {
+      "description": "Autonomous design space exploration loop for computer architecture and EDA. Runs a program, analyzes results, tunes parameters, and iterates until objective is met or timeout. Use when user says \"DSE\", \"design space exploration\", \"sweep parameters\", \"optimize\", \"find best config\", or wants iterative parameter tuning.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "dse-loop",
+      "src_path": "src/wanshuiyin-Auto-claude-code-research-in-sleep/skills/dse-loop/SKILL.md",
+      "triggers": "dse;loop"
+    },
+    {
+      "description": "Implement Just-In-Time (JIT) access provisioning to eliminate standing privileges by granting temporary, time-bound access only when needed. This skill covers JIT architecture design, approval workflo",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "implementing-just-in-time-access-provisioning",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-just-in-time-access-provisioning/SKILL.md",
+      "triggers": "implementing;just;in;time;access"
+    },
+    {
+      "description": "Explore a codebase to find opportunities for architectural improvement, focusing on making the codebase more testable by deepening shallow modules. Use when user wants to improve architecture, find refactoring opportunities, consolidate tightly-coupled modules, or make a codebase more AI-navigable.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "improve-codebase-architecture",
+      "src_path": "src/mattpocock-skills/improve-codebase-architecture/SKILL.md",
+      "triggers": "improve;codebase;architecture"
+    },
+    {
+      "description": "This skill should be used when the user asks to \"design multi-agent system\", \"implement supervisor pattern\", \"create swarm architecture\", \"coordinate multiple agents\", or mentions multi-agent patterns, context isolation, agent handoffs, sub-agents, or parallel agent execution.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "multi-agent-patterns",
+      "src_path": "src/antigravity-awesome-skills/skills/multi-agent-patterns/SKILL.md",
+      "triggers": "multi;agent;patterns"
+    },
+    {
+      "description": "Decision framework and patterns for architecting applications across AWS, Azure, and GCP.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "multi-cloud-architecture",
+      "src_path": "src/antigravity-awesome-skills/skills/multi-cloud-architecture/SKILL.md",
+      "triggers": "multi;cloud;architecture"
+    },
+    {
+      "description": "Educational GPT implementation in ~300 lines. Reproduces GPT-2 (124M) on OpenWebText. Clean, hackable code for learning transformers. By Andrej Karpathy. Perfect for understanding GPT architecture from scratch. Train on Shakespeare (CPU) or OpenWebText (multi-GPU).",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "nanogpt",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/01-model-architecture/nanogpt/SKILL.md",
+      "triggers": "nanogpt"
+    },
+    {
+      "description": "Generate publication-quality AI illustrations for academic papers using Gemini image generation. Creates architecture diagrams, method illustrations with Claude-supervised iterative refinement loop. Use when user says \"生成图表\", \"画架构图\", \"AI绘图\", \"paper illustration\", \"generate diagram\", or needs visual figures for papers.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "paper-illustration",
+      "src_path": "src/wanshuiyin-Auto-claude-code-research-in-sleep/skills/paper-illustration/SKILL.md",
+      "triggers": "paper;illustration"
+    },
+    {
+      "description": "Autonomously deep-scan entire codebase line-by-line, understand architecture and patterns, then systematically transform it to production-grade, corporate-level professional quality with optimizations",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "production-code-audit",
+      "src_path": "src/antigravity-awesome-skills/skills/production-code-audit/SKILL.md",
+      "triggers": "production;code;audit"
+    },
+    {
+      "description": "RNN+Transformer hybrid with O(n) inference. Linear time, infinite context, no KV cache. Train like GPT (parallel), infer like RNN (sequential). Linux Foundation AI project. Production at Windows, Office, NeMo. RWKV-7 (March 2025). Models up to 14B parameters.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "rwkv-architecture",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/01-model-architecture/rwkv/SKILL.md",
+      "triggers": "rwkv;architecture"
+    },
+    {
+      "description": "Use when performing code review, writing or refactoring code, or discussing architecture; complements clean-code and does not replace project linter/formatter.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "uncle-bob-craft",
+      "src_path": "src/antigravity-awesome-skills/skills/uncle-bob-craft/SKILL.md",
+      "triggers": "uncle;bob;craft"
+    },
+    {
+      "description": "WordPress theme development workflow covering theme architecture, template hierarchy, custom post types, block editor support, responsive design, and WordPress 7.0 features: DataViews, Pattern Editing, Navigation Overlays, and admin refresh.",
+      "phase": 2,
+      "score": 7,
+      "skill_id": "wordpress-theme-development",
+      "src_path": "src/antigravity-awesome-skills/skills/wordpress-theme-development/SKILL.md",
+      "triggers": "wordpress;theme;development"
+    },
+    {
+      "description": "Azure Event Grid SDK for .NET. Client library for publishing and consuming events with Azure Event Grid. Use for event-driven architectures, pub/sub messaging, CloudEvents, and EventGridEvents.",
+      "phase": 2,
+      "score": 5,
+      "skill_id": "azure-eventgrid-dotnet",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-eventgrid-dotnet/SKILL.md",
+      "triggers": "azure;eventgrid;dotnet"
+    },
+    {
+      "description": "Implement distributed tracing with Jaeger and Tempo for request flow visibility across microservices.",
+      "phase": 2,
+      "score": 5,
+      "skill_id": "distributed-tracing",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-observability-monitoring/skills/distributed-tracing/SKILL.md",
+      "triggers": "distributed;tracing"
+    },
+    {
+      "description": "Create Mermaid diagrams for flowcharts, sequences, ERDs, and architectures. Masters syntax for all diagram types and styling.",
+      "phase": 2,
+      "score": 5,
+      "skill_id": "mermaid-expert",
+      "src_path": "src/antigravity-awesome-skills/skills/mermaid-expert/SKILL.md",
+      "triggers": "mermaid;expert"
+    },
+    {
+      "description": "Create publication-quality scientific diagrams using Nano Banana 2 AI with smart iterative refinement. Uses Gemini 3.1 Pro Preview for quality review. Only regenerates if quality is below threshold for your document type. Specialized in neural network architectures, system diagrams, flowcharts, biological pathways, and complex scientific visualizations.",
+      "phase": 2,
+      "score": 5,
+      "skill_id": "scientific-schematics",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/scientific-schematics/SKILL.md",
+      "triggers": "scientific;schematics"
+    }
+  ],
+  "sub_hub": "microservices",
+  "version": 1
+}

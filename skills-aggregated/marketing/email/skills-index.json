@@ -1,240 +1,42 @@
-[
-    {
-        "id":  "analyzing-email-headers-for-phishing-investigation",
-        "triggers":  [
-                         "analyzing",
-                         "email",
-                         "headers",
-                         "for",
-                         "phishing"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "churn-prevention",
-        "triggers":  [
-                         "churn",
-                         "prevention"
-                     ],
-        "src":  "external:marketingskills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "cold-email",
-        "triggers":  [
-                         "cold",
-                         "email"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "detecting-business-email-compromise",
-        "triggers":  [
-                         "detecting",
-                         "business",
-                         "email",
-                         "compromise"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "detecting-business-email-compromise-with-ai",
-        "triggers":  [
-                         "detecting",
-                         "business",
-                         "email",
-                         "compromise",
-                         "with"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "detecting-email-account-compromise",
-        "triggers":  [
-                         "detecting",
-                         "email",
-                         "account",
-                         "compromise"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "detecting-email-forwarding-rules-attack",
-        "triggers":  [
-                         "detecting",
-                         "email",
-                         "forwarding",
-                         "rules",
-                         "attack"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "detecting-qr-code-phishing-with-email-security",
-        "triggers":  [
-                         "detecting",
-                         "qr",
-                         "code",
-                         "phishing",
-                         "with"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "email-marketing-bible",
-        "triggers":  [
-                         "email",
-                         "marketing",
-                         "bible"
-                     ],
-        "src":  "external:email-marketing-bible",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  14
-    },
-    {
-        "id":  "email-sequence",
-        "triggers":  [
-                         "email",
-                         "sequence"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  10
-    },
-    {
-        "id":  "email-systems",
-        "triggers":  [
-                         "email",
-                         "systems"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "internal-comms",
-        "triggers":  [
-                         "internal",
-                         "comms"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "investigating-phishing-email-incident",
-        "triggers":  [
-                         "investigating",
-                         "phishing",
-                         "email",
-                         "incident"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  6
-    },
-    {
-        "id":  "klaviyo",
-        "triggers":  [
-                         "klaviyo"
-                     ],
-        "src":  "external:alinaqi-claude-bootstrap",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "mailchimp-automation",
-        "triggers":  [
-                         "mailchimp",
-                         "automation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  13
-    },
-    {
-        "id":  "marketing-ideas",
-        "triggers":  [
-                         "marketing",
-                         "ideas"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  1
-    },
-    {
-        "id":  "newsletter-creation-curation",
-        "triggers":  [
-                         "newsletter",
-                         "creation",
-                         "curation"
-                     ],
-        "src":  "external:ai-marketing-skills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "onboarding-cro",
-        "triggers":  [
-                         "onboarding",
-                         "cro"
-                     ],
-        "src":  "external:marketingskills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  1
-    },
-    {
-        "id":  "popup-cro",
-        "triggers":  [
-                         "popup",
-                         "cro"
-                     ],
-        "src":  "external:marketingskills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  1
-    },
-    {
-        "id":  "revops",
-        "triggers":  [
-                         "revops"
-                     ],
-        "src":  "external:marketingskills",
-        "primary_hub":  "marketing/email",
-        "is_primary":  true,
-        "match_score":  9
-    }
-]
+{
+  "count": 35,
+  "hub": "marketing",
+  "skills": [
+    "mailchimp-automation",
+    "sendgrid-automation",
+    "klaviyo-automation",
+    "analyzing-indicators-of-compromise",
+    "brevo-automation",
+    "email-sequence",
+    "hunting-for-spearphishing-indicators",
+    "performing-phishing-simulation-with-gophish",
+    "postmark-automation",
+    "freshservice-automation",
+    "outlook-automation",
+    "performing-red-team-phishing-with-gophish",
+    "agentmail",
+    "analyzing-email-headers-for-phishing-investigation",
+    "building-automated-malware-submission-pipeline",
+    "building-phishing-reporting-button-workflow",
+    "cold-email",
+    "cold-outreach-sequence",
+    "detecting-business-email-compromise",
+    "detecting-business-email-compromise-with-ai",
+    "detecting-email-account-compromise",
+    "detecting-email-forwarding-rules-attack",
+    "detecting-qr-code-phishing-with-email-security",
+    "email-systems",
+    "implementing-email-sandboxing-with-proofpoint",
+    "implementing-mimecast-targeted-attack-protection",
+    "implementing-proofpoint-email-security-gateway",
+    "investigating-phishing-email-incident",
+    "kreuzberg",
+    "newsletter-creation-curation",
+    "odoo-qweb-templates",
+    "outreach-specialist",
+    "performing-dmarc-policy-enforcement-rollout",
+    "building-ioc-defanging-and-sharing-pipeline",
+    "internal-comms"
+  ],
+  "sub_hub": "email"
+}

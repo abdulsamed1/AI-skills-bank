@@ -1,0 +1,12 @@
+{
+  "count": 5,
+  "hub": "testing",
+  "skills": [
+    "playwright-migration",
+    "browser-automation",
+    "implementing-end-to-end-encryption-for-messaging",
+    "playwright-pom",
+    "playwright-skill"
+  ],
+  "sub_hub": "e2e-testing"
+}

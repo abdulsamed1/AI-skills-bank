@@ -13,77 +13,58 @@ Unified, visual, multi-tool skill routing platform for AI workflows.
 
 ---
 
-## Dashboard
+## 📖 Overview
 
-| Area | Status | Notes |
-|---|---:|---|
-| Aggregation Engine | Active | Sub-hub classification + metadata enrichment |
-| Sync Engine | Active | Global-first distribution to AI tool targets |
-| CLI | Active | `init`, `interactive`, `run`, `aggregate`, `sync` |
-| src Filtering | Active | `latest`, `all`, `selected`, `changed-only` |
+**skill-manage** aggregates skills (workflows, tasks, specialized agents) from distributed repositories and provides a unified routing system for AI agents to discover, load, and invoke them efficiently.
 
----
+### Core Design Principles
 
-## Architecture
-
-```text
-skill-manage/
-├─ scripts/
-│  ├─ aggregate-skills-to-subhubs.ps1
-│  ├─ sync-hubs.ps1
-│  ├─ generate-quick-index.ps1
-│  ├─ generate-routing-csv.ps1
-│  └─ validate-skill-invocation.ps1
-├─ cli/
-│  ├─ package.json
-│  └─ src/index.mjs
-├─ hub-manifests.csv         <-- Build source (do not read via agents)
-├─ skills-aggregated/
-│  ├─ AGENT-PROTOCOL.md      <-- Mandatory agent usage rules
-│  ├─ subhub-index.json
-│  ├─ <hub>/<sub_hub>/
-│  │  ├─ routing.csv         <-- Step 2: Skill lookup & src_path
-│  │  ├─ SKILL.md
-│  │  ├─ skills-manifest.json
-│  │  ├─ skills-index.json
-│  │  └─ skills-catalog.csv
-└─ src/                      <-- Step 3: Raw skill files
-```
+- **Source-of-Truth Loading**: Agents load canonical `SKILL.md` files directly from source repositories, not from catalogs. This eliminates hallucination risks and optimizes token usage.
+- **Smart Routing**: Lightweight routing CSVs enable fast skill discovery by trigger/keyword matching with relevance scoring.
+- **Multi-Tool Support**: Skills sync to all major AI tools: GitHub Copilot, Claude Code, Cursor, Gemini CLI, and more.
+- **Token Efficiency**: Load minimal metadata first, then source files on-demand—not batch-loading entire catalogs.
 
 ---
 
-## CLI Quick Launch
+## 🚀 Quick Start
 
-```powershell
+### 1. Install Dependencies
+```bash
 cd skill-manage/cli
-npm install
-node ./src/index.mjs init --project ..\\.. --src-repo-mode changed-only
+cargo build --release
 ```
 
-Interactive mode:
-
+### 2. Aggregate Skills (Default: Latest Repo)
 ```powershell
-node ./src/index.mjs interactive --project ..\\..
+pwsh -ExecutionPolicy Bypass -File "scripts/aggregate-skills-to-subhubs.ps1"
 ```
 
-Visual flow:
+### 3. Sync to Tool Directories
+```powershell
+pwsh -ExecutionPolicy Bypass -File "scripts/sync-hubs.ps1" -SyncMode Auto -Force
+```
 
-```text
-╭───────────────────────────────────────────────╮
-│   skill-manage CLI                          │
-│   Aggregate, Sync, and Manage AI skill hubs   │
-╰───────────────────────────────────────────────╯
-? Choose what to do
-❯ Initialize project (doctor + aggregate + sync)
-  Run full pipeline (aggregate + sync)
-  Aggregate only
+### 4. Validate Installation
+```powershell
+cd cli
+cargo run -- doctor
+cargo run -- release-gate
 ```
 
 ---
 
-## Script Deck
+## 📚 Documentation
 
-### Aggregate
+- **[Agent Skill Loading Guide](./AGENTS.md)** — How agents discover and load skills (routing, token budget, anti-hallucination gates)
+- **[Agent Architecture](./docs/agent-skill-loading-architecture.md)** — Full technical specification (routing strategy, file roles, examples)
+- **[Project Context](./docs/project-context.md)** — Project structure and conventions
+- **[Epics & Roadmap](./docs/epics.md)** — Backlog and planned work
+
+---
+
+## 🔧 Script Reference
+
+### Aggregate (Collect Skills from Source Repos)
 
 ```powershell
 pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/aggregate-skills-to-subhubs.ps1"
@@ -92,95 +73,188 @@ pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/aggregate-skills-to-sub
 Modes:
 
 ```powershell
-# newest repo only (default)
+# Latest repo only (default)
 pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/aggregate-skills-to-subhubs.ps1" -srcRepoMode latest
 
-# all repos under src
+# All repos under src/
 pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/aggregate-skills-to-subhubs.ps1" -srcRepoMode all
 
-# explicit repos
+# Specific repos
 pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/aggregate-skills-to-subhubs.ps1" -srcRepoMode selected -srcRepoNames antigravity-awesome-skills
 
-# changed since last lock
+# Changed since last lock
 pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/aggregate-skills-to-subhubs.ps1" -srcRepoMode changed-only
 ```
 
-### Sync
+### Sync (Distribute to Tool Directories)
 
 ```powershell
 pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/sync-hubs.ps1" -SyncMode Auto -Force
 ```
 
-Policy:
-
-- Global-first sync by default
+**Policy:**
+- Global-first sync by default (e.g., `~/.copilot/skills/`)
 - Workspace targets are optional
 - Workspace pruning is explicit only (`-PruneWorkspaceTargets`)
 
-### Routing Generation (Single Entrypoint)
+### Generate Routing (Single Entrypoint)
 
 ```powershell
-# Default profile (Auto => SourceDirect) for portable routing without local mount folders
+# Default: SourceDirect (dynamic repo-relative paths)
 powershell -ExecutionPolicy Bypass -File "skill-manage/scripts/generate-routing-csv.ps1"
 
-# SourceDirect profile (dynamic repo-relative src_path: src/...)
+# SourceDirect: dynamic repo-relative paths (recommended)
 powershell -ExecutionPolicy Bypass -File "skill-manage/scripts/generate-routing-csv.ps1" -ToolProfile SourceDirect
 
-# Optional static absolute source paths (legacy compatibility)
-powershell -ExecutionPolicy Bypass -File "skill-manage/scripts/generate-routing-csv.ps1" -ToolProfile SourceDirectStatic
+# HubLocal: local junctions in each sub-hub
+powershell -ExecutionPolicy Bypass -File "skill-manage/scripts/generate-routing-csv.ps1" -ToolProfile HubLocal
 ```
 
-Profiles:
-
-- `Auto`: emits dynamic repo-relative `src/.../SKILL.md` paths with no hub-local mount dependency.
-- `HubLocal`: emits `skills/<skill-id>/SKILL.md` and ensures junctions in each sub-hub.
-- `SourceDirect`: emits dynamic repo-relative `src/.../SKILL.md` paths with no hub-local mount dependency.
-- `SourceDirectStatic`: emits absolute source paths (machine-specific).
+**Profiles:**
+- `Auto`: Dynamic repo-relative `src/.../SKILL.md` paths
+- `SourceDirect`: Same as Auto; portable, no hub-local mount dependency
+- `HubLocal`: Local `skills/<skill-id>/SKILL.md` (requires junctions)
+- `SourceDirectStatic`: Absolute paths (machine-specific; legacy)
 
 ---
 
-## Tool Targets
+## 🎯 Tool Integration Targets
 
-| Tool | Project Path | Global Path | Official Docs |
+Sync skills to any of these destinations:
+
+| Tool | Project | Global | Docs |
 |---|---|---|---|
-| Antigravity | `.agent/skills/` | `~/.gemini/antigravity/skills/` | Antigravity Skills |
-| Claude Code | `.claude/skills/` | `~/.claude/skills/` | Claude Code Skills |
-| Codex | `.agents/skills/` | `~/.agents/skills/` | Codex Skills |
-| Cursor | `.cursor/skills/` | `~/.cursor/skills/` | Cursor Skills |
-| Gemini CLI | `.gemini/skills/` | ~/.agents/skills/ | Gemini CLI Skills |
-| GitHub Copilot | `.github/skills/` | `~/.copilot/skills/` | Copilot Skills |
-| OpenCode | `.opencode/skills/` | `~/.config/opencode/skills/` | OpenCode Skills |
-| Windsurf | `.windsurf/skills/` | `~/.codeium/windsurf/skills/` | Windsurf Cascade Skills |
+| **GitHub Copilot** | `.github/skills/` | `~/.copilot/skills/` | [Copilot Skills](https://github.com/features/copilot) |
+| **Cursor** | `.cursor/skills/` | `~/.cursor/skills/` | [Cursor Skills](https://docs.cursor.sh/) |
+| **Claude Code** (Windsurf) | `.windsurf/skills/` | `~/.codeium/windsurf/skills/` | [Cascade Skills](https://docs.codeium.com/windsurf) |
+| **VS Code Gemini** | `.gemini/skills/` | `~/.gemini/skills/` | [Gemini CLI Skills](https://ai.google.dev) |
+| **Antigravity** | `.agent/skills/` | `~/.gemini/antigravity/skills/` | [Antigravity Skills](https://google.ai/antigravity) |
+| **OpenCode** | `.opencode/skills/` | `~/.config/opencode/skills/` | OpenCode Skills |
+| **Codex** | `.agents/skills/` | `~/.agents/skills/` | Codex Skills |
 
-### Troubleshooting Skill Conflicts
+---
 
-If you use multiple CLI tools or agents (e.g., Gemini CLI and Antigravity), you might encounter `Skill conflict detected` warnings. This typically happens when the bank syncs skills to multiple global directories (e.g., `~/.agents/skills/` and `~/.gemini/skills/`), causing one tool to read from multiple overlapping folders.
+## 🛠️ Troubleshooting
 
-**Fix:** Remove the conflicting global directory and rely on a single primary destination. For example:
+### Skill Conflicts
+If using multiple tools and you see `Skill conflict detected`, remove the conflicting global directory:
 ```powershell
 Remove-Item -Recurse -Force ~/.gemini/skills/
 ```
 
-### Troubleshooting Broken Sub-hubs
+### Broken Sub-hubs (Windows Junctions)
+If agents can't read skills from specific sub-hubs, junctions may be stale:
+1. **Check**: `fsutil reparsepoint query "path/to/sub-hub"`
+2. **Fix**: Re-run sync with `-Force`:
+   ```powershell
+   pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/sync-hubs.ps1" -SyncMode Auto -Force
+   ```
 
-If an agent can see a sub-hub folder but cannot read its contents, or if you renamed the project folder, the Windows junctions might be broken.
+---
 
-**Symptom:** AI cannot load skills from specific sub-hubs, or sub-hub folders appear empty.
-**Diagnostic:** Run `fsutil reparsepoint query "path/to/sub-hub"` and verify if `Substitute Name` points to an existing path.
-**Fix:** Re-run the sync script with `-Force` to recreate the junctions with the correct target paths:
-```powershell
-pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/sync-hubs.ps1" -SyncMode Auto -Force
+## 📦 Project Structure
+
+```
+skill-manage/
+├── cli/                          # Rust CLI for aggregation
+│   ├── Cargo.toml
+│   └── src/
+│       ├── components/           # Core pipeline logic
+│       │   ├── native_pipeline.rs     # CSV generation
+│       │   ├── aggregator.rs          # SKILL.md parsing
+│       │   └── commands/              # CLI commands
+│       └── main.rs
+├── scripts/                      # PowerShell utilities
+│   ├── aggregate-skills-to-subhubs.ps1
+│   ├── sync-hubs.ps1
+│   ├── generate-routing-csv.ps1
+│   └── ...
+├── src/                          # Source repositories (via git clone)
+│   └── [repo-name]/
+│       └── ...skills/            # Distributed skill definitions
+├── skills-aggregated/            # Generated output (artifacts)
+│   ├── {hub}/
+│   │   └── {sub_hub}/
+│   │       ├── routing.csv       # Agent routing layer
+│   │       ├── routing.csv # Metadata snapshot
+│   │       └── skills-manifest.json
+│   └── .md                 # Agent loading guide
+├── docs/
+│   ├── agent-skill-loading-architecture.md
+│   ├── project-context.md
+│   ├── epics.md
+│   └── ...
+└── readme.md                      # This file
 ```
 
 ---
 
-## src Onboarding
+## 🧬 CSV File Formats
 
-```powershell
-cd skill-manage/src
-git clone https://github.com/example/awesome-skills.git
+### `routing.csv` (Agent Routing Layer)
+Lightweight file loaded by agents to discover skills.
 
-cd ../..
+```csv
+skill_id,description,src_path
+agent-builder,Builds AI agent skills through conversational discovery,src/bmad/agent-builder/SKILL.md
+quick-dev,Rapid implementation of stories and feature changes,src/bmad/quick-dev/SKILL.md
+```
+
+### `skills-catalog.csv` (Optional Metadata)
+Read-only reference; not used by agents for routing. Contains optional scoring and phase metadata for UI previews or downstream ranking.
+
+```csv
+skill_id,description,score,phase
+agent-builder,Builds AI agent skills through conversational discovery.,100,stable
+quick-dev,Rapid implementation of stories and feature changes.,95,stable
+```
+
+### `skills-manifest.json` (Full Export)
+Complete schema for global imports/exports.
+
+```json
+[
+  {
+    "skill_id": "agent-builder",
+    "triggers": "agent;creation;skill",
+    "score": 100,
+    "src_path": "src/bmad/agent-builder/SKILL.md",
+    "description": "Builds AI agent skills...",
+    "phase": "stable"
+  }
+]
+```
+
+---
+
+## 🔨 Development
+
+### Build
+```bash
+cd cli
+cargo build --release
+```
+
+### Run Tests
+```bash
+cargo test
+```
+
+### Run Doctor (Validation)
+```bash
+cargo run -- doctor
+```
+
+### Run Release Gate (Production Check)
+```bash
+cargo run -- release-gate
+```
+
+---
+
+## 📝 License
+
+MIT — See [cli/package.json](./cli/package.json)
 pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/aggregate-skills-to-subhubs.ps1" -srcRepoMode changed-only
 pwsh -ExecutionPolicy Bypass -File "skill-manage/scripts/sync-hubs.ps1" -SyncMode Auto -Force
 ```
@@ -204,7 +278,7 @@ To minimize token usage (typically <150 tokens) and eliminate hallucinations, AI
 3. **Step 3 (Invoke):** Read `{hub_mount_path}/{src_path}`
    - Load the exact file referenced by the routing layer locally from the junction.
 
-> **Note:** Agents should NEVER read `hub-manifests.csv` (too large) or guess file paths. Always use `routing.csv` for exact resolution. Reference `skills-aggregated/AGENT-PROTOCOL.md` for full implementation rules.
+> **Note:** Agents should NEVER read `hub-manifests.csv` (too large) or guess file paths. Always use `routing.csv` for exact resolution. Reference `./AGENTS.md` for full implementation rules.
 
 ---
 

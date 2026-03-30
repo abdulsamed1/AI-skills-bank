@@ -1,17 +1,688 @@
 {
-    "name": "skills-marketing-content",
-    "main_hub": "marketing",
-    "sub_hub": "content",
-    "description": "Content marketing, SEO \u0026 Writing Styles: copywriting, blog strategy, search optimization, and high-quality prose standards",
-    "skill_count": 70,
-    "src_count": 12,
-    "top_triggers": [
-        null
-    ],
-    "generated_at": "2026-03-29T23:17:46+02:00",
-    "files": {
-        "skill": "SKILL.md",
-        "index": "skills-index.json",
-        "catalog": "skills-catalog.csv"
+  "generated_at_unix": 1774888953,
+  "hub": "marketing",
+  "skills": [
+    {
+      "description": "Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the user provides a URL to read or analyze, for online documentation, articles, blog posts, or any standard web page.",
+      "phase": 1,
+      "score": 17,
+      "skill_id": "defuddle",
+      "src_path": "src/antigravity-awesome-skills/skills/defuddle/SKILL.md",
+      "triggers": "defuddle"
+    },
+    {
+      "description": "Web scraping, search, crawling, and page interaction via the Firecrawl CLI. Use this skill whenever the user wants to search the web, find articles, research a topic, look something up online, scrape a webpage, grab content from a URL, extract data from a website, crawl documentation, download a site, or interact with pages that need clicks or logins. Also use when they say \"fetch this page\", \"pull the content from\", \"get the page at https://\", or reference scraping external websites. This provides real-time web search with full page content extraction and interact capabilities — beyond what Claude can do natively with built-in tools. Do NOT trigger for local file operations, git commands, deployments, or code editing tasks.",
+      "phase": 1,
+      "score": 13,
+      "skill_id": "firecrawl",
+      "src_path": "src/cli/skills/firecrawl-cli/SKILL.md",
+      "triggers": "firecrawl"
+    },
+    {
+      "description": "Search, read, and manage Outline wiki documents. Use when: (1) searching wiki for documentation, (2) reading wiki pages or articles, (3) listing wiki collections or documents, (4) creating or updating wiki content, (5) exporting documents as markdown. Works with any Outline wiki instance (self-hosted or cloud).",
+      "phase": 1,
+      "score": 13,
+      "skill_id": "outline",
+      "src_path": "src/sanjay3290-ai-skills/skills/outline/SKILL.md",
+      "triggers": "outline"
+    },
+    {
+      "description": "Fetch any X/Twitter post as clean LLM-friendly JSON. Converts x.com, twitter.com, or adhx.com links into structured data with full article content, author info, and engagement metrics. No scraping or browser required.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "adhx",
+      "src_path": "src/antigravity-awesome-skills/skills/adhx/SKILL.md",
+      "triggers": "adhx"
+    },
+    {
+      "description": "Write copy following Sentry brand guidelines. Use when writing UI text, error messages, empty states, onboarding flows, 404 pages, documentation, marketing copy, or any user-facing content. Covers both Plain Speech (default) and Sentry Voice tones.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "brand-guidelines",
+      "src_path": "src/antigravity-awesome-skills/skills/brand-guidelines/SKILL.md",
+      "triggers": "brand;guidelines"
+    },
+    {
+      "description": "Generate content ideas rooted in positioning. Use when someone needs \"content ideas,\" \"what should I post,\" \"blog topics,\" \"LinkedIn ideas,\" or is stuck on what to create.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "content-idea-generator",
+      "src_path": "src/ai-marketing-skills/content-idea-generator/SKILL.md",
+      "triggers": "content;idea;generator"
+    },
+    {
+      "description": "Search DuckDB and DuckLake documentation and blog posts. Returns relevant doc chunks for a question or keyword using full-text search against a locally cached index.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "duckdb-docs",
+      "src_path": "src/duckdb-skills/skills/duckdb-docs/SKILL.md",
+      "triggers": "duckdb;docs"
+    },
+    {
+      "description": "AI image generation skill powered by Google Gemini, enabling seamless visual content creation for UI placeholders, documentation, and design assets.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "imagen",
+      "src_path": "src/antigravity-awesome-skills/skills/imagen/SKILL.md",
+      "triggers": "imagen"
+    },
+    {
+      "description": "Analyzes content for E-E-A-T signals and suggests improvements to build authority and trust. Identifies missing credibility elements. Use PROACTIVELY for YMYL topics.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-authority-builder",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-authority-builder/SKILL.md",
+      "triggers": "seo;authority;builder"
+    },
+    {
+      "description": "Analyzes multiple provided pages to identify keyword overlap and potential cannibalization issues. Suggests differentiation strategies. Use PROACTIVELY when reviewing similar content.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-cannibalization-detector",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-seo-specialist/skills/seo-cannibalization-detector/SKILL.md",
+      "triggers": "seo;cannibalization;detector"
+    },
+    {
+      "description": "Content quality and E-E-A-T analysis with AI citation readiness assessment. Use when user says \"content quality\", \"E-E-A-T\", \"content analysis\", \"readability check\", \"thin content\", or \"content audit\".",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-content",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-content/SKILL.md",
+      "triggers": "seo;content"
+    },
+    {
+      "description": "Analyzes provided content for quality, E-E-A-T signals, and SEO best practices. Scores content and provides improvement recommendations based on established guidelines.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-content-auditor",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-seo-specialist/skills/seo-content-auditor/SKILL.md",
+      "triggers": "seo;content;auditor"
+    },
+    {
+      "description": "Creates comprehensive content outlines and topic clusters for SEO. Plans content calendars and identifies topic gaps. Use PROACTIVELY for content strategy and planning.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-content-planner",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-seo-specialist/skills/seo-content-planner/SKILL.md",
+      "triggers": "seo;content;planner"
+    },
+    {
+      "description": "Identifies outdated elements in provided content and suggests updates to maintain freshness. Finds statistics, dates, and examples that need updating. Use PROACTIVELY for older content.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-content-refresher",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-content-refresher/SKILL.md",
+      "triggers": "seo;content;refresher"
+    },
+    {
+      "description": "Generate SEO-focused images such as OG cards, hero images, schema assets, product visuals, and infographics. Use when image generation is part of an SEO workflow or content publishing task.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-image-gen",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-image-gen/SKILL.md",
+      "triggers": "seo;image;gen"
+    },
+    {
+      "description": "Creates optimized meta titles, descriptions, and URL suggestions based on character limits and best practices. Generates compelling, keyword-rich metadata. Use PROACTIVELY for new content.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-meta-optimizer",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-meta-optimizer/SKILL.md",
+      "triggers": "seo;meta;optimizer"
+    },
+    {
+      "description": "Deep single-page SEO analysis covering on-page elements, content quality, technical meta tags, schema, images, and performance. Use when user says \"analyze this page\", \"check page SEO\", or provides a single URL for review.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "seo-page",
+      "src_path": "src/antigravity-awesome-skills/skills/seo-page/SKILL.md",
+      "triggers": "seo;page"
+    },
+    {
+      "description": "Web search with full page content extraction. Use this skill whenever the user asks to search the web, find articles, research a topic, look something up, find recent news, discover sources, or says \"search for\", \"find me\", \"look up\", \"what are people saying about\", or \"find articles about\". Returns real search results with optional full-page markdown — not just snippets. Provides capabilities beyond Claude's built-in WebSearch.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "firecrawl-search",
+      "src_path": "src/cli/skills/firecrawl-search/SKILL.md",
+      "triggers": "firecrawl;search"
+    },
+    {
+      "description": "Use this skill whenever the user wants to convert text into speech, generate audio from text, or produce voiceovers. Triggers include: any mention of 'TTS', 'text to speech', 'speak', 'say', 'voice', 'read aloud', 'audio narration', 'voiceover', 'dubbing', or requests to turn written content into spoken audio. Also use when converting EPUB/PDF/SRT/articles to audio, cloning voices from reference audio, controlling emotion or speed in speech, aligning speech to subtitle timelines, or producing per-segment voice-mapped audio.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "tts",
+      "src_path": "src/NoizAI-skills/skills/tts/SKILL.md",
+      "triggers": "tts"
+    },
+    {
+      "description": "AI Engine Optimization - semantic triples, page templates, content clusters for AI citations",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "aeo-optimization",
+      "src_path": "src/alinaqi-claude-bootstrap/skills/aeo-optimization/SKILL.md",
+      "triggers": "aeo;optimization"
+    },
+    {
+      "description": "Analyze Chromium-based browser artifacts using Hindsight to extract browsing history, downloads, cookies, cached content, autofill data, saved passwords, and browser extensions from Chrome, Edge, Brave, and Opera for forensic investigation.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "analyzing-browser-forensics-with-hindsight",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-browser-forensics-with-hindsight/SKILL.md",
+      "triggers": "analyzing;browser;forensics;with;hindsight"
+    },
+    {
+      "description": "URLScan.io is a free service for scanning and analyzing suspicious URLs. It captures screenshots, DOM content, HTTP transactions, JavaScript behavior, and network connections of web pages in an isolat",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "analyzing-malicious-url-with-urlscan",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-malicious-url-with-urlscan/SKILL.md",
+      "triggers": "analyzing;malicious;url;with;urlscan"
+    },
+    {
+      "description": "Analyze the NTFS Master File Table ($MFT) to recover metadata and content of deleted files by examining MFT record entries, $LogFile, $UsnJrnl, and MFT slack space using MFTECmd, analyzeMFT, and X-Ways Forensics.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "analyzing-mft-for-deleted-file-recovery",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-mft-for-deleted-file-recovery/SKILL.md",
+      "triggers": "analyzing;mft;for;deleted;file"
+    },
+    {
+      "description": "Use this skill whenever the user asks about Apple apps — Reminders, Calendar, Contacts, Notes, Mail, or tmux sessions. This includes creating/completing reminders, checking/adding calendar events, looking up contacts, reading/writing notes, sending/reading email, and capturing tmux session content. Also use this skill when the user mentions tasks, todos, scheduling, birthdays, free time slots, or end-of-day summaries. The bridges are CLI tools installed at ~/.claude/ that give Claude Code native access to these Apple apps on macOS.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "apple-bridges",
+      "src_path": "src/more-io-claude-apple-bridges/skills/apple-bridges/SKILL.md",
+      "triggers": "apple;bridges"
+    },
+    {
+      "description": "Build content-focused websites with Astro — zero JS by default, islands architecture, multi-framework components, and Markdown/MDX support.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "astro",
+      "src_path": "src/antigravity-awesome-skills/skills/astro/SKILL.md",
+      "triggers": "astro"
+    },
+    {
+      "description": "Audit and rewrite content to remove 21 categories of AI writing patterns with a 43-entry replacement table",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "avoid-ai-writing",
+      "src_path": "src/antigravity-awesome-skills/skills/avoid-ai-writing/SKILL.md",
+      "triggers": "avoid;ai;writing"
+    },
+    {
+      "description": "Build content moderation applications using the Azure AI Content Safety SDK for Java.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "azure-ai-contentsafety-java",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-ai-contentsafety-java/SKILL.md",
+      "triggers": "azure;ai;contentsafety;java"
+    },
+    {
+      "description": "Analyze text and images for harmful content with customizable blocklists.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "azure-ai-contentsafety-ts",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-ai-contentsafety-ts/SKILL.md",
+      "triggers": "azure;ai;contentsafety;ts"
+    },
+    {
+      "description": "Azure AI Text Translation SDK for real-time text translation, transliteration, language detection, and dictionary lookup. Use for translating text content in applications.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "azure-ai-translation-text-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-ai-translation-text-py/SKILL.md",
+      "triggers": "azure;ai;translation;text;py"
+    },
+    {
+      "description": "Expert in building Chrome Extensions using Manifest V3. Covers background scripts, service workers, content scripts, and cross-context communication.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "chrome-extension-developer",
+      "src_path": "src/antigravity-awesome-skills/skills/chrome-extension-developer/SKILL.md",
+      "triggers": "chrome;extension;developer"
+    },
+    {
+      "description": "OpenAI's model connecting vision and language. Enables zero-shot image classification, image-text matching, and cross-modal retrieval. Trained on 400M image-text pairs. Use for image search, content moderation, or vision-language tasks without fine-tuning. Best for general-purpose image understanding.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "clip",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/18-multimodal/clip/SKILL.md",
+      "triggers": "clip"
+    },
+    {
+      "description": "Copies track content (lyrics, style prompts, streaming lyrics) to the system clipboard. Use when the user needs to paste lyrics or style prompts into Suno or other external tools.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "clipboard",
+      "src_path": "src/bitwize-music-studio-claude-ai-music-skills/skills/clipboard/SKILL.md",
+      "triggers": "clipboard"
+    },
+    {
+      "description": "Uploads promo videos and content to Cloudflare R2 or AWS S3. Use when the user wants to host promo content for social media or distribution.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "cloud-uploader",
+      "src_path": "src/bitwize-music-studio-claude-ai-music-skills/skills/cloud-uploader/SKILL.md",
+      "triggers": "cloud;uploader"
+    },
+    {
+      "description": "Automate Confluence page creation, content search, space management, labels, and hierarchy navigation via Rube MCP (Composio). Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "confluence-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/confluence-automation/SKILL.md",
+      "triggers": "confluence;automation"
+    },
+    {
+      "description": "Interactive guided deployment flow for Azure OpenAI models with full customization control. Step-by-step selection of model version, SKU (GlobalStandard/Standard/ProvisionedManaged), capacity, RAI policy (content filter), and advanced options (dynamic quota, priority processing, spillover). USE FOR: custom deployment, customize model deployment, choose version, select SKU, set capacity, configure content filter, RAI policy, deployment options, detailed deployment, advanced deployment, PTU deployment, provisioned throughput. DO NOT USE FOR: quick deployment to optimal region (use preset).",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "customize",
+      "src_path": "src/microsoft-skills/.github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/customize/SKILL.md",
+      "triggers": "customize"
+    },
+    {
+      "description": "Generate a clean morning brief in Claude Code — pulls today's priorities, unposted content, and weather from your vault.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "daily-briefing-builder",
+      "src_path": "src/ai-marketing-skills/daily-briefing-builder/SKILL.md",
+      "triggers": "daily;briefing;builder"
+    },
+    {
+      "description": "Scrapes content based on a preset URL list, filters high-quality technical information, and generates daily Markdown reports.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "daily-news-report",
+      "src_path": "src/antigravity-awesome-skills/skills/daily-news-report/SKILL.md",
+      "triggers": "daily;news;report"
+    },
+    {
+      "description": "Remove AI-generated jargon and restore human voice to text. Built from analyzing 1,000+ AI vs human content pieces.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "de-ai-ify",
+      "src_path": "src/ai-marketing-skills/de-ai-ify/SKILL.md",
+      "triggers": "de;ai;ify"
+    },
+    {
+      "description": "Spearphishing targets specific individuals using personalized, researched content that bypasses generic spam filters. Email security gateways (SEGs) like Microsoft Defender for Office 365, Proofpoint,",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "detecting-spearphishing-with-email-gateway",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-spearphishing-with-email-gateway/SKILL.md",
+      "triggers": "detecting;spearphishing;with;email;gateway"
+    },
+    {
+      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "docx",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/docx/SKILL.md",
+      "triggers": "docx"
+    },
+    {
+      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "docx-processing-anthropic",
+      "src_path": "src/lawvable-awesome-legal-skills/skills/docx-processing-anthropic/SKILL.md",
+      "triggers": "docx;processing;anthropic"
+    },
+    {
+      "description": "Toolkit for comprehensive document reading, editing, and creation with visual quality control. Use to work with Word documents (.docx files) for: (1) Reading or extracting content from existing DOCX files, (2) Creating new Word documents with professional formatting, (3) Editing documents requiring precise typography and layout, or any other DOCX reading or generation tasks.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "docx-processing-openai",
+      "src_path": "src/lawvable-awesome-legal-skills/skills/docx-processing-openai/SKILL.md",
+      "triggers": "docx;processing;openai"
+    },
+    {
+      "description": "Semantic search, similar content discovery, and structured research using Exa API. Use when you need semantic/embeddings-based search, finding similar content, or searching by category (company, people, research papers, etc.).",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "exa-search",
+      "src_path": "src/antigravity-awesome-skills/skills/exa-search/SKILL.md",
+      "triggers": "exa;search"
+    },
+    {
+      "description": "Scans lyrics for explicit content and verifies that explicit flags match actual content. Use before Suno generation or release to ensure accurate content ratings.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "explicit-checker",
+      "src_path": "src/bitwize-music-studio-claude-ai-music-skills/skills/explicit-checker/SKILL.md",
+      "triggers": "explicit;checker"
+    },
+    {
+      "description": "Detecting and exploiting HTTP request smuggling vulnerabilities caused by Content-Length and Transfer-Encoding parsing discrepancies between front-end and back-end servers.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "exploiting-http-request-smuggling",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/exploiting-http-request-smuggling/SKILL.md",
+      "triggers": "exploiting;http;request;smuggling"
+    },
+    {
+      "description": "Extracts indicators of compromise (IOCs) from malware samples including file hashes, network indicators (IPs, domains, URLs), host artifacts (file paths, registry keys, mutexes), and behavioral patterns for threat intelligence sharing and detection rule creation. Activates for requests involving IOC extraction, threat indicator harvesting, malware indicator collection, or building detection content from samples.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "extracting-iocs-from-malware-samples",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/extracting-iocs-from-malware-samples/SKILL.md",
+      "triggers": "extracting;iocs;from;malware;samples"
+    },
+    {
+      "description": "DEPRECATED — use scrape + interact instead. Interact lets you scrape a page and then click, fill forms, and navigate without managing sessions manually. Use this skill when the user needs to interact with a webpage, log into a site, click buttons, fill forms, navigate multi-step flows, handle pagination, or when regular scraping fails because content requires JavaScript interaction. Triggers on \"click\", \"fill out the form\", \"log in to\", \"paginated\", \"infinite scroll\", \"interact with the page\", or \"scrape failed\".",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "firecrawl-browser",
+      "src_path": "src/cli/skills/firecrawl-browser/SKILL.md",
+      "triggers": "firecrawl;browser"
+    },
+    {
+      "description": "Bulk extract content from an entire website or site section. Use this skill when the user wants to crawl a site, extract all pages from a docs section, bulk-scrape multiple pages following links, or says \"crawl\", \"get all the pages\", \"extract everything under /docs\", \"bulk extract\", or needs content from many pages on the same site. Handles depth limits, path filtering, and concurrent extraction.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "firecrawl-crawl",
+      "src_path": "src/cli/skills/firecrawl-crawl/SKILL.md",
+      "triggers": "firecrawl;crawl"
+    },
+    {
+      "description": "Extract clean markdown from any URL, including JavaScript-rendered SPAs. Use this skill whenever the user provides a URL and wants its content, says \"scrape\", \"grab\", \"fetch\", \"pull\", \"get the page\", \"extract from this URL\", or \"read this webpage\". Handles JS-rendered pages, multiple concurrent URLs, and returns LLM-optimized markdown. Use this instead of WebFetch for any webpage content extraction.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "firecrawl-scrape",
+      "src_path": "src/cli/skills/firecrawl-scrape/SKILL.md",
+      "triggers": "firecrawl;scrape"
+    },
+    {
+      "description": "Deep web scraping, screenshots, PDF parsing, and website crawling using Firecrawl API. Use when you need deep content extraction from web pages, page interaction is required (clicking, scrolling, etc.), or you want screenshots or PDF parsing.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "firecrawl-scraper",
+      "src_path": "src/antigravity-awesome-skills/skills/firecrawl-scraper/SKILL.md",
+      "triggers": "firecrawl;scraper"
+    },
+    {
+      "description": "Identify grammar, logical, and flow errors in text and suggest targeted fixes without rewriting the entire text. Use when proofreading content, checking writing quality, or reviewing a draft.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "grammar-check",
+      "src_path": "src/pm-skills/pm-toolkit/skills/grammar-check/SKILL.md",
+      "triggers": "grammar;check"
+    },
+    {
+      "description": "Apple Human Interface Guidelines for content display components.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "hig-components-content",
+      "src_path": "src/antigravity-awesome-skills/skills/hig-components-content/SKILL.md",
+      "triggers": "hig;components;content"
+    },
+    {
+      "description": "Add and manage evaluation results in Hugging Face model cards. Supports extracting eval tables from README content, importing scores from Artificial Analysis API, and running custom model evaluations with vLLM/lighteval. Works with the model-index metadata format.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "hugging-face-evaluation",
+      "src_path": "src/antigravity-awesome-skills/skills/hugging-face-evaluation/SKILL.md",
+      "triggers": "hugging;face;evaluation"
+    },
+    {
+      "description": "Implements endpoint Data Loss Prevention (DLP) controls to detect and prevent sensitive data exfiltration through email, USB, cloud storage, and printing. Use when deploying DLP agents, creating content inspection policies, or preventing unauthorized data movement from endpoints. Activates for requests involving DLP, data exfiltration prevention, content inspection, or sensitive data protection on endpoints.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "implementing-endpoint-dlp-controls",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-endpoint-dlp-controls/SKILL.md",
+      "triggers": "implementing;endpoint;dlp;controls"
+    },
+    {
+      "description": "Places album art files in the correct audio and content directory locations. Use when the user has generated or downloaded album artwork that needs to be saved.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "import-art",
+      "src_path": "src/bitwize-music-studio-claude-ai-music-skills/skills/import-art/SKILL.md",
+      "triggers": "import;art"
+    },
+    {
+      "description": "Plan and optimize lead magnets for email capture and lead generation. Use when designing gated content, checklists, templates, downloadable resources, or other offers that convert visitors into subscribers.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "lead-magnets",
+      "src_path": "src/antigravity-awesome-skills/skills/lead-magnets/SKILL.md",
+      "triggers": "lead;magnets"
+    },
+    {
+      "description": "Build a LinkedIn content system for thought leadership. Use when someone needs to establish authority, attract inbound leads, or build a consistent content presence. Covers positioning, content pillars, formats, and posting rhythm.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "linkedin-authority-builder",
+      "src_path": "src/ai-marketing-skills/linkedin-authority-builder/SKILL.md",
+      "triggers": "linkedin;authority;builder"
+    },
+    {
+      "description": "Meta's 7-8B specialized moderation model for LLM input/output filtering. 6 safety categories - violence/hate, sexual content, weapons, substances, self-harm, criminal planning. 94-95% accuracy. Deploy with vLLM, HuggingFace, Sagemaker. Integrates with NeMo Guardrails.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "llamaguard",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/07-safety-alignment/llamaguard/SKILL.md",
+      "triggers": "llamaguard"
+    },
+    {
+      "description": "Use the Obsidian CLI to read, create, search, and manage vault content, or to develop and debug Obsidian plugins and themes from the command line.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "obsidian-cli",
+      "src_path": "src/antigravity-awesome-skills/skills/obsidian-cli/SKILL.md",
+      "triggers": "obsidian;cli"
+    },
+    {
+      "description": "Guide for creating templates for the Obsidian Web Clipper. Use when you want to create a new clipping template, understand available variables, or format clipped content.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "obsidian-clipper-template-creator",
+      "src_path": "src/antigravity-awesome-skills/skills/obsidian-clipper-template-creator/SKILL.md",
+      "triggers": "obsidian;clipper;template;creator"
+    },
+    {
+      "description": "Self-hosted, open-source alternative to Google NotebookLM for AI-powered research and document analysis. Use when organizing research materials into notebooks, ingesting diverse content sources (PDFs, videos, audio, web pages, Office documents), generating AI-powered notes and summaries, creating multi-speaker podcasts from research, chatting with documents using context-aware AI, searching across materials with full-text and vector search, or running custom content transformations. Supports 16+ AI providers including OpenAI, Anthropic, Google, Ollama, Groq, and Mistral with complete data privacy through self-hosting.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "open-notebook",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/open-notebook/SKILL.md",
+      "triggers": "open;notebook"
+    },
+    {
+      "description": "Draft LaTeX paper section by section from an outline. Use when user says \"写论文\", \"write paper\", \"draft LaTeX\", \"开始写\", or wants to generate LaTeX content from a paper plan.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "paper-write",
+      "src_path": "src/wanshuiyin-Auto-claude-code-research-in-sleep/skills/paper-write/SKILL.md",
+      "triggers": "paper;write"
+    },
+    {
+      "description": "Search the web, extract URL content, and run deep research using the Parallel Chat API and Extract API. Use for ALL web searches, research queries, and general information gathering. Provides synthesized summaries with citations.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "parallel-web",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/parallel-web/SKILL.md",
+      "triggers": "parallel;web"
+    },
+    {
+      "description": "Analyze and bypass Content Security Policy implementations to achieve cross-site scripting by exploiting misconfigurations, JSONP endpoints, unsafe directives, and policy injection techniques.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "performing-content-security-policy-bypass",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-content-security-policy-bypass/SKILL.md",
+      "triggers": "performing;content;security;policy;bypass"
+    },
+    {
+      "description": "Generate real audio narratives from text content using Azure OpenAI's Realtime API.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "podcast-generation",
+      "src_path": "src/antigravity-awesome-skills/skills/podcast-generation/SKILL.md",
+      "triggers": "podcast;generation"
+    },
+    {
+      "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \"deck,\" \"slides,\" \"presentation,\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "pptx",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/pptx/SKILL.md",
+      "triggers": "pptx"
+    },
+    {
+      "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \"deck,\" \"slides,\" \"presentation,\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "pptx-processing-anthropic",
+      "src_path": "src/lawvable-awesome-legal-skills/skills/pptx-processing-anthropic/SKILL.md",
+      "triggers": "pptx;processing;anthropic"
+    },
+    {
+      "description": "Generates 15-second vertical promo videos for social media from mastered audio. Use after mastering is complete and before release, when the user wants social media content.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "promo-director",
+      "src_path": "src/bitwize-music-studio-claude-ai-music-skills/skills/promo-director/SKILL.md",
+      "triggers": "promo;director"
+    },
+    {
+      "description": "Search and retrieve content from Reddit. Get posts, comments, subreddit info, and user profiles via the public JSON API. Use when user mentions Reddit, a subreddit, or r/ links.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "reddit",
+      "src_path": "src/ReScienceLab-opc-skills/skills/reddit/SKILL.md",
+      "triggers": "reddit"
+    },
+    {
+      "description": "Automate Reddit tasks via Rube MCP (Composio): search subreddits, create posts, manage comments, and browse top content. Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "reddit-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/reddit-automation/SKILL.md",
+      "triggers": "reddit;automation"
+    },
+    {
+      "description": "Seek and analyze video content using Memories.ai Large Visual Memory Model for persistent video intelligence",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "seek-and-analyze-video",
+      "src_path": "src/antigravity-awesome-skills/skills/seek-and-analyze-video/SKILL.md",
+      "triggers": "seek;and;analyze;video"
+    },
+    {
+      "description": "Turn raw PM content into a compliant, publish-ready skill. Use when creating or updating a repo skill without breaking standards.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "skill-authoring-workflow",
+      "src_path": "src/Product-Manager-Skills/skills/skill-authoring-workflow/SKILL.md",
+      "triggers": "skill;authoring;workflow"
+    },
+    {
+      "description": "You are an expert social media strategist with direct access to a scheduling platform that publishes to all major social networks. Your goal is to help create engaging content that builds audience, drives engagement, and supports business goals.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "social-content",
+      "src_path": "src/antigravity-awesome-skills/skills/social-content/SKILL.md",
+      "triggers": "social;content"
+    },
+    {
+      "description": "Explore Solana's architecture and protocol internals. Covers the SVM execution engine, account model, consensus, transactions, validator economics, data layer, development tooling, and token extensions using the Helius blog, SIMDs, and Agave/Firedancer source code.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "svm",
+      "src_path": "src/helius-labs-core-ai/helius-cursor/skills/svm/SKILL.md",
+      "triggers": "svm"
+    },
+    {
+      "description": "Web search, content extraction, crawling, and research capabilities using Tavily API. Use when you need to search the web for current information, extracting content from URLs, or crawling websites.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "tavily-web",
+      "src_path": "src/antigravity-awesome-skills/skills/tavily-web/SKILL.md",
+      "triggers": "tavily;web"
+    },
+    {
+      "description": "Automate TikTok tasks via Rube MCP (Composio): upload/publish videos, post photos, manage content, and view user profiles/stats. Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "tiktok-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/tiktok-automation/SKILL.md",
+      "triggers": "tiktok;automation"
+    },
+    {
+      "description": "Generate subtitles (SRT/VTT) and plain text transcripts from video or audio files using AWS Transcribe. Use when creating captions, extracting spoken content, generating transcripts for notes, or making video content searchable.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "transcribe-video",
+      "src_path": "src/rameerez-claude-code-startup-skills/skills/transcribe-video/SKILL.md",
+      "triggers": "transcribe;video"
+    },
+    {
+      "description": "Creates step-by-step tutorials and educational content from code. Transforms complex concepts into progressive learning experiences with hands-on examples.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "tutorial-engineer",
+      "src_path": "src/antigravity-awesome-skills/skills/tutorial-engineer/SKILL.md",
+      "triggers": "tutorial;engineer"
+    },
+    {
+      "description": "Search and retrieve content from Twitter/X. Get user info, tweets, replies, followers, communities, spaces, and trends via twitterapi.io. Use when user mentions Twitter, X, or tweets.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "twitter",
+      "src_path": "src/ReScienceLab-opc-skills/skills/twitter/SKILL.md",
+      "triggers": "twitter"
+    },
+    {
+      "description": "Validates album directory structure, file locations, and content integrity. Use before release or whenever the user wants to check an album's structural health.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "validate-album",
+      "src_path": "src/bitwize-music-studio-claude-ai-music-skills/skills/validate-album/SKILL.md",
+      "triggers": "validate;album"
+    },
+    {
+      "description": "Creates viral social media hooks using proven psychological patterns and trigger words. Use when user needs attention-grabbing openings for posts, threads, videos, or content.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "viral-hook-creator",
+      "src_path": "src/founder-skills/skills/viral-hook-creator/SKILL.md",
+      "triggers": "viral;hook;creator"
+    },
+    {
+      "description": "Comprehensive guide to auditing web content against WCAG 2.2 guidelines with actionable remediation strategies.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "wcag-audit-patterns",
+      "src_path": "src/antigravity-awesome-skills/skills/wcag-audit-patterns/SKILL.md",
+      "triggers": "wcag;audit;patterns"
+    },
+    {
+      "description": "A user may ask you to create, edit, or analyze the contents of a .docx file. A .docx file is essentially a ZIP archive containing XML files and other resources that you can read or edit. You have different tools and workflows available for different tasks.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "docx-official",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-documents-presentations/skills/docx-official/SKILL.md",
+      "triggers": "docx;official"
+    },
+    {
+      "description": "A user may ask you to create, edit, or analyze the contents of a .pptx file. A .pptx file is essentially a ZIP archive containing XML files and other resources that you can read or edit. You have different tools and workflows available for different tasks.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "pptx-official",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-documents-presentations/skills/pptx-official/SKILL.md",
+      "triggers": "pptx;official"
+    },
+    {
+      "description": "Researches the subject's own words from tweets, blogs, forums, and chat logs. Use when research needs direct quotes or first-person accounts.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "researchers-primary-source",
+      "src_path": "src/bitwize-music-studio-claude-ai-music-skills/skills/researchers-primary-source/SKILL.md",
+      "triggers": "researchers;primary;source"
     }
+  ],
+  "sub_hub": "content",
+  "version": 1
 }

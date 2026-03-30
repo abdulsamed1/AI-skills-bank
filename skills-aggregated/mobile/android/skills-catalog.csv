@@ -1,0 +1,6 @@
+skill_id,description,score,phase
+reverse-engineering-android-malware-with-jadx,"Reverse engineers malicious Android APK files using JADX decompiler to analyze Java/Kotlin source code, identify malicious functionality including data theft, C2 communication, privilege escalation, and overlay attacks. Examines manifest permissions, receivers, services, and native libraries. Activates for requests involving Android malware analysis, APK reverse engineering, mobile malware investigation, or Android threat analysis.",15,1
+analyzing-android-malware-with-apktool,"Perform static analysis of Android APK malware samples using apktool for decompilation, jadx for Java source recovery, and androguard for permission analysis, manifest inspection, and suspicious API call detection.",11,1
+android-java,"Android Java development with MVVM, ViewBinding, and Espresso testing",11,1
+android-kotlin,"Android Kotlin development with Coroutines, Jetpack Compose, Hilt, and MockK testing",11,1
+earllm-build,"Build, maintain, and extend the EarLLM One Android project — a Kotlin/Compose app that connects Bluetooth earbuds to an LLM via voice pipeline.",11,1

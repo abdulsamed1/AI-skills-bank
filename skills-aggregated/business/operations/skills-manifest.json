@@ -1,0 +1,440 @@
+{
+  "generated_at_unix": 1774888953,
+  "hub": "business",
+  "skills": [
+    {
+      "description": "AWS cost optimization, monitoring, and operational excellence expert. Use when analyzing AWS bills, estimating costs, setting up CloudWatch alarms, querying logs, auditing CloudTrail activity, or assessing security posture. Essential when user mentions AWS costs, spending, billing, budget, pricing, CloudWatch, observability, monitoring, alerting, CloudTrail, audit, or wants to optimize AWS infrastructure costs and operational efficiency.",
+      "phase": 1,
+      "score": 15,
+      "skill_id": "aws-cost-operations",
+      "src_path": "src/zxkane-aws-skills/plugins/aws-cost-ops/skills/aws-cost-operations/SKILL.md",
+      "triggers": "aws;cost;operations"
+    },
+    {
+      "description": "Cost-optimize AI agent operations by routing tasks to appropriate models based on complexity. Use this skill when: (1) deciding which model to use for a task, (2) spawning sub-agents, (3) considering cost efficiency, (4) the current model feels like overkill for the task. Triggers: \"model routing\", \"cost optimization\", \"which model\", \"too expensive\", \"spawn agent\".",
+      "phase": 1,
+      "score": 15,
+      "skill_id": "model-hierarchy",
+      "src_path": "src/zscole-model-hierarchy-skill/SKILL.md",
+      "triggers": "model;hierarchy"
+    },
+    {
+      "description": "MATLAB and GNU Octave numerical computing for matrix operations, data analysis, visualization, and scientific computing. Use when writing MATLAB/Octave scripts for linear algebra, signal processing, image processing, differential equations, optimization, statistics, or creating scientific visualizations. Also use when the user needs help with MATLAB syntax, functions, or wants to convert between MATLAB and Python code. Scripts can be executed with MATLAB or the open-source GNU Octave interpreter.",
+      "phase": 1,
+      "score": 13,
+      "skill_id": "matlab",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/matlab/SKILL.md",
+      "triggers": "matlab"
+    },
+    {
+      "description": "Database development and operations workflow covering SQL, NoSQL, database design, migrations, optimization, and data engineering.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "database",
+      "src_path": "src/antigravity-awesome-skills/skills/database/SKILL.md",
+      "triggers": "database"
+    },
+    {
+      "description": "Detect process injection techniques (T1055) including classic DLL injection, process hollowing, and APC injection by analyzing Sysmon events for cross-process memory operations, remote thread creation, and anomalous DLL loading patterns.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "detecting-t1055-process-injection-with-sysmon",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-t1055-process-injection-with-sysmon/SKILL.md",
+      "triggers": "detecting;t1055;process;injection;with"
+    },
+    {
+      "description": "This skill covers conducting cybersecurity assessments specific to oil and gas facilities including upstream (exploration/production), midstream (pipeline/transport), and downstream (refining/distribution) operations. It addresses SCADA systems controlling pipeline operations, DCS for refinery process control, safety instrumented systems for hazardous processes, remote terminal units at unmanned wellhead sites, and compliance with API 1164, TSA Pipeline Security Directives, IEC 62443, and NIST Cybersecurity Framework for critical infrastructure.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "performing-oil-gas-cybersecurity-assessment",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-oil-gas-cybersecurity-assessment/SKILL.md",
+      "triggers": "performing;oil;gas;cybersecurity;assessment"
+    },
+    {
+      "description": "You are an expert in Prisma ORM with deep knowledge of schema design, migrations, query optimization, relations modeling, and database operations across PostgreSQL, MySQL, and SQLite.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "prisma-expert",
+      "src_path": "src/antigravity-awesome-skills/skills/prisma-expert/SKILL.md",
+      "triggers": "prisma;expert"
+    },
+    {
+      "description": "Design and improve revenue operations, lead lifecycle rules, scoring, routing, handoffs, and CRM process automation. Use when marketing, sales, and customer success workflows need clearer operational structure.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "revops",
+      "src_path": "src/antigravity-awesome-skills/skills/revops/SKILL.md",
+      "triggers": "revops"
+    },
+    {
+      "description": "Process-based discrete-event simulation framework in Python. Use this skill when building simulations of systems with processes, queues, resources, and time-based events such as manufacturing systems, service operations, network traffic, logistics, or any system where entities interact with shared resources over time.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "simpy",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/simpy/SKILL.md",
+      "triggers": "simpy"
+    },
+    {
+      "description": "Transform slow database queries into lightning-fast operations through systematic optimization, proper indexing, and query plan analysis.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "sql-optimization-patterns",
+      "src_path": "src/antigravity-awesome-skills/skills/sql-optimization-patterns/SKILL.md",
+      "triggers": "sql;optimization;patterns"
+    },
+    {
+      "description": "Comprehensive geospatial science skill covering remote sensing, GIS, spatial analysis, machine learning for earth observation, and 30+ scientific domains. Supports satellite imagery processing (Sentinel, Landsat, MODIS, SAR, hyperspectral), vector and raster data operations, spatial statistics, point cloud processing, network analysis, cloud-native workflows (STAC, COG, Planetary Computer), and 8 programming languages (Python, R, Julia, JavaScript, C++, Java, Go, Rust) with 500+ code examples. Use for remote sensing workflows, GIS analysis, spatial ML, Earth observation data processing, terrain analysis, hydrological modeling, marine spatial analysis, atmospheric science, and any geospatial computation task.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "geomaster",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/geomaster/SKILL.md",
+      "triggers": "geomaster"
+    },
+    {
+      "description": "This guide covers essential PDF processing operations using Python libraries and command-line tools. For advanced features, JavaScript libraries, and detailed examples, see reference.md. If you need to fill out a PDF form, read forms.md and follow its instructions.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "pdf-official",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-documents-presentations/skills/pdf-official/SKILL.md",
+      "triggers": "pdf;official"
+    },
+    {
+      "description": "Use this skill for processing and analyzing large tabular datasets (billions of rows) that exceed available RAM. Vaex excels at out-of-core DataFrame operations, lazy evaluation, fast aggregations, efficient visualization of big data, and machine learning on large datasets. Apply when users need to work with large CSV/HDF5/Arrow/Parquet files, perform fast statistics on massive datasets, create visualizations of big data, or build ML pipelines that do not fit in memory.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "vaex",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/vaex/SKILL.md",
+      "triggers": "vaex"
+    },
+    {
+      "description": "Queries Azure Monitor activity logs and sign-in logs via azure-monitor-query to detect suspicious administrative operations, impossible travel, privilege escalation, and resource modifications. Builds KQL queries for threat hunting in Azure environments. Use when investigating suspicious Azure tenant activity or building cloud SIEM detections.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "analyzing-azure-activity-logs-for-threats",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-azure-activity-logs-for-threats/SKILL.md",
+      "triggers": "analyzing;azure;activity;logs;for"
+    },
+    {
+      "description": "Azure Resource Manager SDK for Bot Service in .NET. Management plane operations for creating and managing Azure Bot resources, channels (Teams, DirectLine, Slack), and connection settings.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "azure-mgmt-botservice-dotnet",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-mgmt-botservice-dotnet/SKILL.md",
+      "triggers": "azure;mgmt;botservice;dotnet"
+    },
+    {
+      "description": "Azure Key Vault Keys Java SDK for cryptographic key management. Use when creating, managing, or using RSA/EC keys, performing encrypt/decrypt/sign/verify operations, or working with HSM-backed keys.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "azure-security-keyvault-keys-java",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-security-keyvault-keys-java/SKILL.md",
+      "triggers": "azure;security;keyvault;keys;java"
+    },
+    {
+      "description": "Automate Box operations including file upload/download, content search, folder management, collaboration, metadata queries, and sign requests through Composio's Box toolkit.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "box-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/box-automation/SKILL.md",
+      "triggers": "box;automation"
+    },
+    {
+      "description": "This skill covers deploying Microsoft Sentinel as a cloud-native SIEM and SOAR platform for centralized security operations. It details configuring data connectors for multi-cloud log ingestion, writing KQL detection queries, building automated response playbooks with Logic Apps, and leveraging the Sentinel data lake for petabyte-scale threat hunting across AWS, Azure, and GCP security telemetry.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "building-cloud-siem-with-sentinel",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/building-cloud-siem-with-sentinel/SKILL.md",
+      "triggers": "building;cloud;siem;with;sentinel"
+    },
+    {
+      "description": "Safety guardrails for destructive commands. Warns before rm -rf, DROP TABLE, force-push, git reset --hard, kubectl delete, and similar destructive operations. User can override each warning. Use when touching prod, debugging live systems, or working in a shared environment. Use when asked to \"be careful\", \"safety mode\", \"prod mode\", or \"careful mode\".",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "careful",
+      "src_path": "src/gstack/careful/SKILL.md",
+      "triggers": "careful"
+    },
+    {
+      "description": "Automate ClickUp project management including tasks, spaces, folders, lists, comments, and team operations via Rube MCP (Composio). Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "clickup-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/clickup-automation/SKILL.md",
+      "triggers": "clickup;automation"
+    },
+    {
+      "description": "Responds to phishing incidents by analyzing reported emails, extracting indicators, assessing credential compromise, quarantining malicious messages across the organization, and remediating affected accounts. Covers email header analysis, URL/attachment sandboxing, and mailbox-wide purge operations. Activates for requests involving phishing response, email incident, credential phishing, spear phishing investigation, or phishing remediation.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "conducting-phishing-incident-response",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/conducting-phishing-incident-response/SKILL.md",
+      "triggers": "conducting;phishing;incident;response"
+    },
+    {
+      "description": "Hardware Security Modules (HSMs) are tamper-resistant physical devices that safeguard cryptographic keys and perform cryptographic operations in a hardened environment. Keys stored in an HSM never lea",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "configuring-hsm-for-key-storage",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/configuring-hsm-for-key-storage/SKILL.md",
+      "triggers": "configuring;hsm;for;key;storage"
+    },
+    {
+      "description": "Analyze cryptographic code to detect operations that leak secret data through execution timing variations.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "constant-time-analysis",
+      "src_path": "src/antigravity-awesome-skills/skills/constant-time-analysis/SKILL.md",
+      "triggers": "constant;time;analysis"
+    },
+    {
+      "description": "Detect command injection attacks against Modbus TCP/RTU protocol in ICS environments by monitoring for unauthorized write operations, anomalous function codes, malformed frames, and deviations from established communication baselines using ICS-aware IDS and protocol deep packet inspection.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "detecting-modbus-command-injection-attacks",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-modbus-command-injection-attacks/SKILL.md",
+      "triggers": "detecting;modbus;command;injection;attacks"
+    },
+    {
+      "description": "Automate Dropbox file management, sharing, search, uploads, downloads, and folder operations via Rube MCP (Composio). Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "dropbox-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/dropbox-automation/SKILL.md",
+      "triggers": "dropbox;automation"
+    },
+    {
+      "description": "Quick reference for Either type. Use when user needs error handling, validation, or operations that can fail with typed errors.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "fp-either-ref",
+      "src_path": "src/antigravity-awesome-skills/skills/fp-either-ref/SKILL.md",
+      "triggers": "fp;either;ref"
+    },
+    {
+      "description": "Quick reference for pipe and flow. Use when user needs to chain functions, compose operations, or build data pipelines in fp-ts.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "fp-pipe-ref",
+      "src_path": "src/antigravity-awesome-skills/skills/fp-pipe-ref/SKILL.md",
+      "triggers": "fp;pipe;ref"
+    },
+    {
+      "description": "Quick reference for TaskEither. Use when user needs async error handling, API calls, or Promise-based operations that can fail.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "fp-taskeither-ref",
+      "src_path": "src/antigravity-awesome-skills/skills/fp-taskeither-ref/SKILL.md",
+      "triggers": "fp;taskeither;ref"
+    },
+    {
+      "description": "Orchestrate a comprehensive legacy system modernization using the strangler fig pattern, enabling gradual replacement of outdated components while maintaining continuous business operations through ex",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "framework-migration-legacy-modernize",
+      "src_path": "src/antigravity-awesome-skills/skills/framework-migration-legacy-modernize/SKILL.md",
+      "triggers": "framework;migration;legacy;modernize"
+    },
+    {
+      "description": "Automate Freshdesk helpdesk operations including tickets, contacts, companies, notes, and replies via Rube MCP (Composio). Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "freshdesk-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/freshdesk-automation/SKILL.md",
+      "triggers": "freshdesk;automation"
+    },
+    {
+      "description": "Generates structured cyber threat intelligence reports at strategic, operational, and tactical levels tailored to specific audiences including executives, security operations teams, and technical analysts. Use when producing finished intelligence products from raw collection data, creating sector threat briefings, or delivering post-incident intelligence assessments. Activates for requests involving CTI report writing, threat briefings, intelligence products, finished intelligence, or executive security reporting.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "generating-threat-intelligence-reports",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/generating-threat-intelligence-reports/SKILL.md",
+      "triggers": "generating;threat;intelligence;reports"
+    },
+    {
+      "description": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "git-guardrails-claude-code",
+      "src_path": "src/mattpocock-skills/git-guardrails-claude-code/SKILL.md",
+      "triggers": "git;guardrails;claude;code"
+    },
+    {
+      "description": "Automate GitLab project management, issues, merge requests, pipelines, branches, and user operations via Rube MCP (Composio). Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "gitlab-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/gitlab-automation/SKILL.md",
+      "triggers": "gitlab;automation"
+    },
+    {
+      "description": "Automate Google Sheets operations (read, write, format, filter, manage spreadsheets) via Rube MCP (Composio). Read/write data, manage tabs, apply formatting, and search rows programmatically.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "googlesheets-automation",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-automation-builder/skills/googlesheets-automation/SKILL.md",
+      "triggers": "googlesheets;automation"
+    },
+    {
+      "description": "Automate HubSpot CRM operations (contacts, companies, deals, tickets, properties) via Rube MCP using Composio integration.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "hubspot-automation",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-revops-crm-automation/skills/hubspot-automation/SKILL.md",
+      "triggers": "hubspot;automation"
+    },
+    {
+      "description": "Develop and implement OT-specific incident response playbooks aligned with SANS PICERL framework, IEC 62443, and NIST SP 800-82 that address unique ICS challenges including safety-critical systems, limited downtime tolerance, and coordination between IT SOC, OT engineering, and plant operations teams.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "implementing-ot-incident-response-playbook",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-ot-incident-response-playbook/SKILL.md",
+      "triggers": "implementing;ot;incident;response;playbook"
+    },
+    {
+      "description": "Design and implement Privileged Access Workstations (PAWs) with device hardening, just-in-time access, and integration with CyberArk or BeyondTrust for secure administrative operations.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "implementing-privileged-access-workstation",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-privileged-access-workstation/SKILL.md",
+      "triggers": "implementing;privileged;access;workstation"
+    },
+    {
+      "description": "Automate Make (Integromat) tasks via Rube MCP (Composio): operations, enums, language and timezone lookups. Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "make-automation",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-automation-builder/skills/make-automation/SKILL.md",
+      "triggers": "make;automation"
+    },
+    {
+      "description": "Execute read-only SQL queries against multiple Microsoft SQL Server databases. Use when: (1) querying MSSQL/SQL Server databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "mssql",
+      "src_path": "src/sanjay3290-ai-skills/skills/mssql/SKILL.md",
+      "triggers": "mssql"
+    },
+    {
+      "description": "Execute read-only SQL queries against multiple MySQL databases. Use when: (1) querying MySQL databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "mysql",
+      "src_path": "src/sanjay3290-ai-skills/skills/mysql/SKILL.md",
+      "triggers": "mysql"
+    },
+    {
+      "description": "Guide for using Netlify Blobs object storage. Use when storing files, images, documents, or simple key-value data without a full database. Covers getStore(), CRUD operations, metadata, listing, deploy-scoped vs site-scoped stores, and local development.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "netlify-blobs",
+      "src_path": "src/context-and-tools/codex/skills/netlify-blobs/SKILL.md",
+      "triggers": "netlify;blobs"
+    },
+    {
+      "description": "Handles git and GitHub operations using the gh CLI. Use when the user asks about pull requests (PRs), GitHub issues, repo management, branching, merging, rebasing, cherry-picking, merge conflict resolution, commit history cleanup, pre-commit hook debugging, GitHub Actions workflows, or releases. Covers creating and reviewing PRs, watching CI checks, interactive rebasing, branch cleanup, submodule management, and repository archaeology with git log/blame/bisect.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "octocat",
+      "src_path": "src/mcollina-skills/skills/octocat/SKILL.md",
+      "triggers": "octocat"
+    },
+    {
+      "description": "Automate OneDrive file management, search, uploads, downloads, sharing, permissions, and folder operations via Rube MCP (Composio). Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "one-drive-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/one-drive-automation/SKILL.md",
+      "triggers": "one;drive;automation"
+    },
+    {
+      "description": "Perform systematic alert triage in Elastic Security SIEM to rapidly classify, prioritize, and investigate security alerts for SOC operations.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "performing-alert-triage-with-elastic-siem",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-alert-triage-with-elastic-siem/SKILL.md",
+      "triggers": "performing;alert;triage;with;elastic"
+    },
+    {
+      "description": "Extract stored credentials from compromised endpoints using the LaZagne post-exploitation tool to recover passwords from browsers, databases, system vaults, and applications during authorized red team operations.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "performing-credential-access-with-lazagne",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-credential-access-with-lazagne/SKILL.md",
+      "triggers": "performing;credential;access;with;lazagne"
+    },
+    {
+      "description": "Conduct red team operations using the Covenant C2 framework for authorized adversary simulation, including listener setup, grunt deployment, task execution, and lateral movement tracking.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "performing-red-team-with-covenant",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-red-team-with-covenant/SKILL.md",
+      "triggers": "performing;red;team;with;covenant"
+    },
+    {
+      "description": "Automate Pipedrive CRM operations including deals, contacts, organizations, activities, notes, and pipeline management via Rube MCP (Composio). Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "pipedrive-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/pipedrive-automation/SKILL.md",
+      "triggers": "pipedrive;automation"
+    },
+    {
+      "description": "High-performance genomic interval operations and bioinformatics file I/O on Polars DataFrames. Overlap, nearest, merge, coverage, complement, subtract for BED/VCF/BAM/GFF intervals. Streaming, cloud-native, faster bioframe alternative.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "polars-bio",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/polars-bio/SKILL.md",
+      "triggers": "polars;bio"
+    },
+    {
+      "description": "Automate Segment tasks via Rube MCP (Composio): track events, identify users, manage groups, page views, aliases, batch operations. Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "segment-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/segment-automation/SKILL.md",
+      "triggers": "segment;automation"
+    },
+    {
+      "description": "Automate Slack workspace operations including messaging, search, channel management, and reaction workflows through Composio's Slack toolkit.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "slack-automation",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-automation-builder/skills/slack-automation/SKILL.md",
+      "triggers": "slack;automation"
+    },
+    {
+      "description": "Tinybird CLI commands, workflows, and operations. Use when running tb commands, managing local development, deploying, or working with data operations.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "tinybird-cli-guidelines",
+      "src_path": "src/tinybird-agent-skills/skills/tinybird-cli-guidelines/SKILL.md",
+      "triggers": "tinybird;cli;guidelines"
+    },
+    {
+      "description": "Automate Todoist task management, projects, sections, filtering, and bulk operations via Rube MCP (Composio). Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "todoist-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/todoist-automation/SKILL.md",
+      "triggers": "todoist;automation"
+    },
+    {
+      "description": "Use this skill when creating, managing, or working with Conductor tracks - the logical work units for features, bugs, and refactors. Applies to spec.md, plan.md, and track lifecycle operations.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "track-management",
+      "src_path": "src/antigravity-awesome-skills/skills/track-management/SKILL.md",
+      "triggers": "track;management"
+    },
+    {
+      "description": "VMware family entry point and AI-powered VM lifecycle operations. Start here for any VMware/vSphere/ESXi task — routes to the right skill. Directly handles: power on/off, snapshot, clone, migrate, deploy OVA/template, guest operations, cluster management, plan/apply workflows, and vCenter alarm management (list, acknowledge, reset triggered alarms). Use when user asks to \"power on/off a VM\", \"deploy from OVA\", \"clone a VM\", \"create a cluster\", \"run a command inside a VM\", \"batch deploy VMs\", \"migrate a VM\", \"acknowledge alarm\", \"reset alarm\", or any VMware/vSphere/ESXi operation. Run \"vmware-aiops hub status\" to see all installed family members.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "vmware-aiops",
+      "src_path": "src/zw008-VMware-AIops/skills/vmware-aiops/SKILL.md",
+      "triggers": "vmware;aiops"
+    }
+  ],
+  "sub_hub": "operations",
+  "version": 1
+}

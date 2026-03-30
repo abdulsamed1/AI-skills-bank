@@ -1,0 +1,48 @@
+{
+  "generated_at_unix": 1774888953,
+  "hub": "testing",
+  "skills": [
+    {
+      "description": "Step-by-step migration guides for moving to Playwright from Cypress or Selenium/WebDriver — command mappings, architecture changes, and incremental adoption strategies.",
+      "phase": 5,
+      "score": 15,
+      "skill_id": "playwright-migration",
+      "src_path": "src/testdino-hq-playwright-skill/migration/SKILL.md",
+      "triggers": "playwright;migration"
+    },
+    {
+      "description": "You are a browser automation expert who has debugged thousands of flaky tests and built scrapers that run for years without breaking. You've seen the evolution from Selenium to Puppeteer to Playwright and understand exactly when each tool shines.",
+      "phase": 5,
+      "score": 11,
+      "skill_id": "browser-automation",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-qa-testing/skills/browser-automation/SKILL.md",
+      "triggers": "browser;automation"
+    },
+    {
+      "description": "End-to-end encryption (E2EE) ensures that only the communicating parties can read messages, with no intermediary (including the server) able to decrypt them. This skill implements a simplified version",
+      "phase": 5,
+      "score": 7,
+      "skill_id": "implementing-end-to-end-encryption-for-messaging",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-end-to-end-encryption-for-messaging/SKILL.md",
+      "triggers": "implementing;end;to;end;encryption"
+    },
+    {
+      "description": "Page Object Model patterns for Playwright — when to use POM, how to structure page objects, and when fixtures or helpers are a better fit.",
+      "phase": 5,
+      "score": 7,
+      "skill_id": "playwright-pom",
+      "src_path": "src/testdino-hq-playwright-skill/pom/SKILL.md",
+      "triggers": "playwright;pom"
+    },
+    {
+      "description": "IMPORTANT - Path Resolution: This skill can be installed in different locations (plugin system, manual installation, global, or project-specific). Before executing any commands, determine the skill directory based on where you loaded this SKILL.md file, and use that path in all commands below.",
+      "phase": 5,
+      "score": 7,
+      "skill_id": "playwright-skill",
+      "src_path": "src/antigravity-awesome-skills/skills/playwright-skill/SKILL.md",
+      "triggers": "playwright;skill"
+    }
+  ],
+  "sub_hub": "e2e-testing",
+  "version": 1
+}

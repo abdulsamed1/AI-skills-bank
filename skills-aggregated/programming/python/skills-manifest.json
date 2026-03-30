@@ -1,17 +1,856 @@
 {
-    "name":  "skills-programming-python",
-    "main_hub":  "programming",
-    "sub_hub":  "python",
-    "description":  "Python development: patterns, async, frameworks, and modern Python 3.10+ features",
-    "skill_count":  102,
-    "src_count":  7,
-    "top_triggers":  [
-                         null
-                     ],
-    "generated_at":  "2026-03-29T23:17:46+02:00",
-    "files":  {
-                  "skill":  "SKILL.md",
-                  "index":  "skills-index.json",
-                  "catalog":  "skills-catalog.csv"
-              }
+  "generated_at_unix": 1774888953,
+  "hub": "programming",
+  "skills": [
+    {
+      "description": "You are a Python project architecture expert specializing in scaffolding production-ready Python applications. Generate complete project structures with modern tooling (uv, FastAPI, Django), type hint",
+      "phase": 1,
+      "score": 17,
+      "skill_id": "python-development-python-scaffold",
+      "src_path": "src/antigravity-awesome-skills/skills/python-development-python-scaffold/SKILL.md",
+      "triggers": "python;development;python;scaffold"
+    },
+    {
+      "description": "Detect unauthorized SaaS and cloud service usage (shadow IT) by analyzing proxy logs, DNS query logs, and netflow data using Python pandas for traffic pattern analysis and domain classification.",
+      "phase": 1,
+      "score": 13,
+      "skill_id": "detecting-shadow-it-cloud-usage",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-shadow-it-cloud-usage/SKILL.md",
+      "triggers": "detecting;shadow;it;cloud;usage"
+    },
+    {
+      "description": "Build high-performance async APIs with FastAPI, SQLAlchemy 2.0, and Pydantic V2. Master microservices, WebSockets, and modern Python async patterns.",
+      "phase": 1,
+      "score": 13,
+      "skill_id": "fastapi-pro",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-python-pro/skills/fastapi-pro/SKILL.md",
+      "triggers": "fastapi;pro"
+    },
+    {
+      "description": "Build network traffic baselines from NetFlow/IPFIX data using Python pandas for statistical analysis, z-score anomaly detection, and hourly/daily traffic pattern profiling",
+      "phase": 1,
+      "score": 13,
+      "skill_id": "implementing-network-traffic-baselining",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-network-traffic-baselining/SKILL.md",
+      "triggers": "implementing;network;traffic;baselining"
+    },
+    {
+      "description": "Python FastAPI backend development with async patterns, SQLAlchemy, Pydantic, authentication, and production API patterns.",
+      "phase": 1,
+      "score": 13,
+      "skill_id": "python-fastapi-development",
+      "src_path": "src/antigravity-awesome-skills/skills/python-fastapi-development/SKILL.md",
+      "triggers": "python;fastapi;development"
+    },
+    {
+      "description": "Master Python 3.12+ with modern features, async programming, performance optimization, and production-ready practices. Expert in the latest Python ecosystem including uv, ruff, pydantic, and FastAPI.",
+      "phase": 1,
+      "score": 13,
+      "skill_id": "python-pro",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-python-pro/skills/python-pro/SKILL.md",
+      "triggers": "python;pro"
+    },
+    {
+      "description": "FastAPI with Supabase and SQLAlchemy/SQLModel",
+      "phase": 1,
+      "score": 13,
+      "skill_id": "supabase-python",
+      "src_path": "src/alinaqi-claude-bootstrap/skills/supabase-python/SKILL.md",
+      "triggers": "supabase;python"
+    },
+    {
+      "description": "Chunked N-D arrays for cloud storage. Compressed arrays, parallel I/O, S3/GCS integration, NumPy/Dask/Xarray compatible, for large-scale scientific computing pipelines.",
+      "phase": 1,
+      "score": 13,
+      "skill_id": "zarr-python",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/zarr-python/SKILL.md",
+      "triggers": "zarr;python"
+    },
+    {
+      "description": "Build persistent agents on Azure AI Foundry using the Microsoft Agent Framework Python SDK.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "agent-framework-azure-ai-py",
+      "src_path": "src/antigravity-awesome-skills/skills/agent-framework-azure-ai-py/SKILL.md",
+      "triggers": "agent;framework;azure;ai;py"
+    },
+    {
+      "description": "Azure AI Content Safety SDK for Python. Use for detecting harmful content in text and images with multi-severity classification.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-ai-contentsafety-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-ai-contentsafety-py/SKILL.md",
+      "triggers": "azure;ai;contentsafety;py"
+    },
+    {
+      "description": "Azure AI Content Understanding SDK for Python. Use for multimodal content extraction from documents, images, audio, and video.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-ai-contentunderstanding-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-ai-contentunderstanding-py/SKILL.md",
+      "triggers": "azure;ai;contentunderstanding;py"
+    },
+    {
+      "description": "Implement Conversational Language Understanding (CLU) using the azure-ai-language-conversations Python SDK. Use when working with ConversationAnalysisClient to analyze conversation intent and entities, building NLP features, or integrating language understanding into applications.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-ai-language-conversations-py",
+      "src_path": "src/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-language-conversations-py/SKILL.md",
+      "triggers": "azure;ai;language;conversations;py"
+    },
+    {
+      "description": "Azure Machine Learning SDK v2 for Python. Use for ML workspaces, jobs, models, datasets, compute, and pipelines.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-ai-ml-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-ai-ml-py/SKILL.md",
+      "triggers": "azure;ai;ml;py"
+    },
+    {
+      "description": "Azure AI Transcription SDK for Python. Use for real-time and batch speech-to-text transcription with timestamps and diarization.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-ai-transcription-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-ai-transcription-py/SKILL.md",
+      "triggers": "azure;ai;transcription;py"
+    },
+    {
+      "description": "Azure App Configuration SDK for Python. Use for centralized configuration management, feature flags, and dynamic settings.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-appconfiguration-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-appconfiguration-py/SKILL.md",
+      "triggers": "azure;appconfiguration;py"
+    },
+    {
+      "description": "Azure Container Registry SDK for Python. Use for managing container images, artifacts, and repositories.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-containerregistry-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-containerregistry-py/SKILL.md",
+      "triggers": "azure;containerregistry;py"
+    },
+    {
+      "description": "Azure Cosmos DB SDK for Python (NoSQL API). Use for document CRUD, queries, containers, and globally distributed data.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-cosmos-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-cosmos-py/SKILL.md",
+      "triggers": "azure;cosmos;py"
+    },
+    {
+      "description": "Azure Tables SDK for Python (Storage and Cosmos DB). Use for NoSQL key-value storage, entity CRUD, and batch operations.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-data-tables-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-data-tables-py/SKILL.md",
+      "triggers": "azure;data;tables;py"
+    },
+    {
+      "description": "Azure Event Grid SDK for Python. Use for publishing events, handling CloudEvents, and event-driven architectures.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-eventgrid-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-eventgrid-py/SKILL.md",
+      "triggers": "azure;eventgrid;py"
+    },
+    {
+      "description": "Azure Event Hubs SDK for Python streaming. Use for high-throughput event ingestion, producers, consumers, and checkpointing.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-eventhub-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-eventhub-py/SKILL.md",
+      "triggers": "azure;eventhub;py"
+    },
+    {
+      "description": "Azure Identity SDK for Python authentication. Use for DefaultAzureCredential, managed identity, service principals, and token caching.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-identity-py",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-azure-ai-cloud/skills/azure-identity-py/SKILL.md",
+      "triggers": "azure;identity;py"
+    },
+    {
+      "description": "Azure Key Vault SDK for Python. Use for secrets, keys, and certificates management with secure storage.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-keyvault-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-keyvault-py/SKILL.md",
+      "triggers": "azure;keyvault;py"
+    },
+    {
+      "description": "Azure Web PubSub Service SDK for Python. Use for real-time messaging, WebSocket connections, and pub/sub patterns.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-messaging-webpubsubservice-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-messaging-webpubsubservice-py/SKILL.md",
+      "triggers": "azure;messaging;webpubsubservice;py"
+    },
+    {
+      "description": "Azure API Center Management SDK for Python. Use for managing API inventory, metadata, and governance across your organization.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-mgmt-apicenter-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-mgmt-apicenter-py/SKILL.md",
+      "triggers": "azure;mgmt;apicenter;py"
+    },
+    {
+      "description": "Azure API Management SDK for Python. Use for managing APIM services, APIs, products, subscriptions, and policies.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-mgmt-apimanagement-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-mgmt-apimanagement-py/SKILL.md",
+      "triggers": "azure;mgmt;apimanagement;py"
+    },
+    {
+      "description": "Azure Bot Service Management SDK for Python. Use for creating, managing, and configuring Azure Bot Service resources.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-mgmt-botservice-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-mgmt-botservice-py/SKILL.md",
+      "triggers": "azure;mgmt;botservice;py"
+    },
+    {
+      "description": "Azure Fabric Management SDK for Python. Use for managing Microsoft Fabric capacities and resources.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-mgmt-fabric-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-mgmt-fabric-py/SKILL.md",
+      "triggers": "azure;mgmt;fabric;py"
+    },
+    {
+      "description": "Azure Monitor Ingestion SDK for Python. Use for sending custom logs to Log Analytics workspace via Logs Ingestion API.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-monitor-ingestion-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-monitor-ingestion-py/SKILL.md",
+      "triggers": "azure;monitor;ingestion;py"
+    },
+    {
+      "description": "Azure Monitor OpenTelemetry Exporter for Python. Use for low-level OpenTelemetry export to Application Insights.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-monitor-opentelemetry-exporter-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-monitor-opentelemetry-exporter-py/SKILL.md",
+      "triggers": "azure;monitor;opentelemetry;exporter;py"
+    },
+    {
+      "description": "Azure Monitor OpenTelemetry Distro for Python. Use for one-line Application Insights setup with auto-instrumentation.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-monitor-opentelemetry-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-monitor-opentelemetry-py/SKILL.md",
+      "triggers": "azure;monitor;opentelemetry;py"
+    },
+    {
+      "description": "Azure AI Search SDK for Python. Use for vector search, hybrid search, semantic ranking, indexing, and skillsets.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-search-documents-py",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-azure-ai-cloud/skills/azure-search-documents-py/SKILL.md",
+      "triggers": "azure;search;documents;py"
+    },
+    {
+      "description": "Azure Service Bus SDK for Python messaging. Use for queues, topics, subscriptions, and enterprise messaging patterns.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-servicebus-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-servicebus-py/SKILL.md",
+      "triggers": "azure;servicebus;py"
+    },
+    {
+      "description": "Azure Speech to Text REST API for short audio (Python). Use for simple speech recognition of audio files up to 60 seconds without the Speech SDK.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-speech-to-text-rest-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-speech-to-text-rest-py/SKILL.md",
+      "triggers": "azure;speech;to;text;rest"
+    },
+    {
+      "description": "Azure Blob Storage SDK for Python. Use for uploading, downloading, listing blobs, managing containers, and blob lifecycle.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-storage-blob-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-storage-blob-py/SKILL.md",
+      "triggers": "azure;storage;blob;py"
+    },
+    {
+      "description": "Azure Data Lake Storage Gen2 SDK for Python. Use for hierarchical file systems, big data analytics, and file/directory operations.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-storage-file-datalake-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-storage-file-datalake-py/SKILL.md",
+      "triggers": "azure;storage;file;datalake;py"
+    },
+    {
+      "description": "Azure Storage File Share SDK for Python. Use for SMB file shares, directories, and file operations in the cloud.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-storage-file-share-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-storage-file-share-py/SKILL.md",
+      "triggers": "azure;storage;file;share;py"
+    },
+    {
+      "description": "Azure Queue Storage SDK for Python. Use for reliable message queuing, task distribution, and asynchronous processing.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "azure-storage-queue-py",
+      "src_path": "src/antigravity-awesome-skills/skills/azure-storage-queue-py/SKILL.md",
+      "triggers": "azure;storage;queue;py"
+    },
+    {
+      "description": "Create FastAPI routers following established patterns with proper authentication, response models, and HTTP status codes.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "fastapi-router-py",
+      "src_path": "src/antigravity-awesome-skills/skills/fastapi-router-py/SKILL.md",
+      "triggers": "fastapi;router;py"
+    },
+    {
+      "description": "Python library for working with geospatial vector data including shapefiles, GeoJSON, and GeoPackage files. Use when working with geographic data for spatial analysis, geometric operations, coordinate transformations, spatial joins, overlay operations, choropleth mapping, or any task involving reading/writing/analyzing vector geographic data. Supports PostGIS databases, interactive maps, and integration with matplotlib/folium/cartopy. Use for tasks like buffer analysis, spatial joins between datasets, dissolving boundaries, clipping data, calculating areas/distances, reprojecting coordinate systems, creating maps, or converting between spatial file formats.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "geopandas",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/geopandas/SKILL.md",
+      "triggers": "geopandas"
+    },
+    {
+      "description": "Microsoft 365 Agents SDK for Python. Build multichannel agents for Teams/M365/Copilot Studio with aiohttp hosting, AgentApplication routing, streaming responses, and MSAL-based auth.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "m365-agents-py",
+      "src_path": "src/antigravity-awesome-skills/skills/m365-agents-py/SKILL.md",
+      "triggers": "m365;agents;py"
+    },
+    {
+      "description": "Build AI agents with Pydantic AI (Python) and Claude SDK (Node.js)",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "agentic-development",
+      "src_path": "src/alinaqi-claude-bootstrap/skills/agentic-development/SKILL.md",
+      "triggers": "agentic;development"
+    },
+    {
+      "description": "Parse NetFlow v9 and IPFIX records to detect volumetric anomalies, port scanning, data exfiltration, and C2 beaconing patterns. Uses the Python netflow library to decode flow records, builds traffic baselines, and applies statistical analysis to identify flows with abnormal byte counts, connection durations, and periodic timing patterns.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "analyzing-network-flow-data-with-netflow",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-network-flow-data-with-netflow/SKILL.md",
+      "triggers": "analyzing;network;flow;data;with"
+    },
+    {
+      "description": "Parse Windows PowerShell Script Block Logs (Event ID 4104) from EVTX files to detect obfuscated commands, encoded payloads, and living-off-the-land techniques. Uses python-evtx to extract and reconstruct multi-block scripts, applies entropy analysis and pattern matching for Base64-encoded commands, Invoke-Expression abuse, download cradles, and AMSI bypass attempts.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "analyzing-powershell-script-block-logging",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-powershell-script-block-logging/SKILL.md",
+      "triggers": "analyzing;powershell;script;block;logging"
+    },
+    {
+      "description": "Map advanced persistent threat (APT) group tactics, techniques, and procedures (TTPs) to the MITRE ATT&CK framework using the ATT&CK Navigator and attackcti Python library. The analyst queries STIX/TAXII data for group-technique associations, generates Navigator layer files for visualization, and compares defensive coverage against adversary profiles. Activates for requests involving APT TTP mapping, ATT&CK Navigator layers, threat actor profiling, or MITRE technique coverage analysis.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "analyzing-threat-actor-ttps-with-mitre-navigator",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-threat-actor-ttps-with-mitre-navigator/SKILL.md",
+      "triggers": "analyzing;threat;actor;ttps;with"
+    },
+    {
+      "description": "Parse Windows Prefetch files using the windowsprefetch Python library to reconstruct application execution history, detect renamed or masquerading binaries, and identify suspicious program execution patterns.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "analyzing-windows-prefetch-with-python",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-windows-prefetch-with-python/SKILL.md",
+      "triggers": "analyzing;windows;prefetch;with;python"
+    },
+    {
+      "description": "Astropy is the core Python package for astronomy, providing essential functionality for astronomical research and data analysis.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "astropy",
+      "src_path": "src/antigravity-awesome-skills/skills/astropy/SKILL.md",
+      "triggers": "astropy"
+    },
+    {
+      "description": "Comprehensive guidance for implementing asynchronous Python applications using asyncio, concurrent programming patterns, and async/await for building high-performance, non-blocking systems.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "async-python-patterns",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-python-pro/skills/async-python-patterns/SKILL.md",
+      "triggers": "async;python;patterns"
+    },
+    {
+      "description": "Automates the enrichment of raw indicators of compromise with multi-source threat intelligence context using SOAR platforms, Python pipelines, or TIP playbooks to reduce analyst triage time and standardize enrichment outputs. Use when building automated enrichment workflows integrated with SIEM alerts, email submission pipelines, or bulk IOC processing from threat feeds. Activates for requests involving SOAR enrichment, Cortex XSOAR, Splunk SOAR, TheHive, Python enrichment pipelines, or automated IOC processing.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "automating-ioc-enrichment",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/automating-ioc-enrichment/SKILL.md",
+      "triggers": "automating;ioc;enrichment"
+    },
+    {
+      "description": "Troubleshoot and resolve issues with Azure Messaging SDKs for Event Hubs and Service Bus. Covers connection failures, authentication errors, message processing issues, and SDK configuration problems. WHEN: event hub SDK error, service bus SDK issue, messaging connection failure, AMQP error, event processor host issue, message lock lost, send timeout, receiver disconnected, SDK troubleshooting, azure messaging SDK, event hub consumer, service bus queue issue, topic subscription error, enable logging event hub, service bus logging, eventhub python, servicebus java, eventhub javascript, servicebus dotnet, event hub checkpoint, event hub not receiving messages, service bus dead letter.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "azure-messaging",
+      "src_path": "src/microsoft-skills/.github/plugins/azure-skills/skills/azure-messaging/SKILL.md",
+      "triggers": "azure;messaging"
+    },
+    {
+      "description": "Biopython is a comprehensive set of freely available Python tools for biological computation. It provides functionality for sequence manipulation, file I/O, database access, structural bioinformatics, phylogenetics, and many other bioinformatics tasks.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "biopython",
+      "src_path": "src/antigravity-awesome-skills/skills/biopython/SKILL.md",
+      "triggers": "biopython"
+    },
+    {
+      "description": "Unified Python interface to 40+ bioinformatics services. Use when querying multiple databases (UniProt, KEGG, ChEMBL, Reactome) in a single workflow with consistent API. Best for cross-database analysis, ID mapping across services. For quick single-database lookups use gget; for sequence/file manipulation use biopython.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "bioservices",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/bioservices/SKILL.md",
+      "triggers": "bioservices"
+    },
+    {
+      "description": "Build applications that programmatically interact with GitHub Copilot. The SDK wraps the Copilot CLI via JSON-RPC, providing session management, custom tools, hooks, MCP server integration, and streaming across Node.js, Python, Go, and .NET.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "copilot-sdk",
+      "src_path": "src/antigravity-awesome-skills/skills/copilot-sdk/SKILL.md",
+      "triggers": "copilot;sdk"
+    },
+    {
+      "description": "Guide for building reliable, fault-tolerant Python applications with DBOS durable workflows. Use when adding DBOS to existing Python code, creating workflows and steps, or using queues for concurrency control.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "dbos-python",
+      "src_path": "src/antigravity-awesome-skills/skills/dbos-python/SKILL.md",
+      "triggers": "dbos;python"
+    },
+    {
+      "description": "Deploys and monitors ransomware canary files across critical directories using Python's watchdog library for real-time filesystem event detection. Places strategically named decoy files that mimic high-value targets (financial records, credentials, database exports) in locations ransomware typically enumerates first. Monitors for any read, modify, rename, or delete operations on canary files and triggers immediate alerts via email, Slack webhook, or syslog when interaction is detected, providing early warning before full encryption begins.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "deploying-ransomware-canary-files",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/deploying-ransomware-canary-files/SKILL.md",
+      "triggers": "deploying;ransomware;canary;files"
+    },
+    {
+      "description": "Audit Azure Blob and ADLS storage accounts for public access exposure, weak or long-lived SAS tokens, missing encryption at rest, disabled HTTPS-only traffic, and outdated TLS versions using the azure-mgmt-storage Python SDK.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "detecting-azure-storage-account-misconfigurations",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-azure-storage-account-misconfigurations/SKILL.md",
+      "triggers": "detecting;azure;storage;account;misconfigurations"
+    },
+    {
+      "description": "This skill covers detecting anomalies in Modbus/TCP and Modbus RTU communications in industrial control systems. It addresses function code monitoring, register range validation, timing analysis, unauthorized client detection, and deep packet inspection for malformed Modbus frames. The skill leverages Zeek with Modbus protocol analyzers, Suricata IDS with OT rules, and custom Python-based detection using Markov chain models for normal Modbus transaction sequences.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "detecting-modbus-protocol-anomalies",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-modbus-protocol-anomalies/SKILL.md",
+      "triggers": "detecting;modbus;protocol;anomalies"
+    },
+    {
+      "description": "Specialized skill for building production-ready Discord bots. Covers Discord.js (JavaScript) and Pycord (Python), gateway intents, slash commands, interactive components, rate limiting, and sharding.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "discord-bot-architect",
+      "src_path": "src/antigravity-awesome-skills/skills/discord-bot-architect/SKILL.md",
+      "triggers": "discord;bot;architect"
+    },
+    {
+      "description": "DNAnexus cloud genomics platform. Build apps/applets, manage data (upload/download), dxpy Python SDK, run workflows, FASTQ/BAM/VCF, for genomics pipeline development and execution.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "dnanexus-integration",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/dnanexus-integration/SKILL.md",
+      "triggers": "dnanexus;integration"
+    },
+    {
+      "description": "Python library for accessing, analyzing, and extracting data from SEC EDGAR filings. Use when working with SEC filings, financial statements (income statement, balance sheet, cash flow), XBRL financial data, insider trading (Form 4), institutional holdings (13F), company financials, annual/quarterly reports (10-K, 10-Q), proxy statements (DEF 14A), 8-K current events, company screening by ticker/CIK/industry, multi-period financial analysis, or any SEC regulatory filings.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "edgartools",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/edgartools/SKILL.md",
+      "triggers": "edgartools"
+    },
+    {
+      "description": "Identifying and exploiting insecure deserialization vulnerabilities in Java, PHP, Python, and .NET applications to achieve remote code execution during authorized penetration tests.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "exploiting-insecure-deserialization",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/exploiting-insecure-deserialization/SKILL.md",
+      "triggers": "exploiting;insecure;deserialization"
+    },
+    {
+      "description": "Framework for computational fluid dynamics simulations using Python. Use when running fluid dynamics simulations including Navier-Stokes equations (2D/3D), shallow water equations, stratified flows, or when analyzing turbulence, vortex dynamics, or geophysical flows. Provides pseudospectral methods with FFT, HPC support, and comprehensive output analysis.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "fluidsim",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/fluidsim/SKILL.md",
+      "triggers": "fluidsim"
+    },
+    {
+      "description": "Fast CLI/Python queries to 20+ bioinformatics databases. Use for quick lookups: gene info, BLAST searches, AlphaFold structures, enrichment analysis. Best for interactive exploration, simple queries. For batch processing or advanced BLAST use biopython; for multi-database Python workflows use bioservices.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "gget",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/gget/SKILL.md",
+      "triggers": "gget"
+    },
+    {
+      "description": "Detect Cobalt Strike beacon network activity using default TLS certificate signatures (serial 8BB00EE), JA3/JA3S/JARM fingerprints, HTTP C2 profile pattern matching, beacon jitter analysis, and named pipe detection via Zeek, Suricata, and Python PCAP analysis.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "hunting-for-cobalt-strike-beacons",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-cobalt-strike-beacons/SKILL.md",
+      "triggers": "hunting;for;cobalt;strike;beacons"
+    },
+    {
+      "description": "Detect NTFS timestamp manipulation (MITRE T1070.006) by comparing $STANDARD_INFORMATION vs $FILE_NAME timestamps in the MFT. Uses analyzeMFT and Python to identify files with anomalous temporal patterns indicating anti-forensic timestomping activity.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "hunting-for-defense-evasion-via-timestomping",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-defense-evasion-via-timestomping/SKILL.md",
+      "triggers": "hunting;for;defense;evasion;via"
+    },
+    {
+      "description": "Detect T1547.001 startup folder persistence by monitoring Windows startup directories for suspicious file creation, analyzing autoruns entries, and using Python watchdog for real-time filesystem monitoring.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "hunting-for-startup-folder-persistence",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-startup-folder-persistence/SKILL.md",
+      "triggers": "hunting;for;startup;folder;persistence"
+    },
+    {
+      "description": "Deploy Runtime Application Self-Protection (RASP) agents to detect and block attacks from within application runtime, covering OpenRASP integration, attack pattern detection, and security policy configuration for Java and Python web applications.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "implementing-runtime-application-self-protection",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-runtime-application-self-protection/SKILL.md",
+      "triggers": "implementing;runtime;application;self;protection"
+    },
+    {
+      "description": "Create, validate, and share STIX 2.1 threat intelligence objects using the stix2 Python library. Covers indicators, malware, campaigns, relationships, bundles, and TAXII 2.1 publishing.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "implementing-security-information-sharing-with-stix2",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-security-information-sharing-with-stix2/SKILL.md",
+      "triggers": "implementing;security;information;sharing;with"
+    },
+    {
+      "description": "Deploy and operate Greenbone/OpenVAS vulnerability management using the python-gvm library to create scan targets, execute vulnerability scans, and parse scan reports via GMP protocol.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "implementing-vulnerability-management-with-greenbone",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-vulnerability-management-with-greenbone/SKILL.md",
+      "triggers": "implementing;vulnerability;management;with;greenbone"
+    },
+    {
+      "description": "Matplotlib is Python's foundational visualization library for creating static, animated, and interactive plots.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "matplotlib",
+      "src_path": "src/antigravity-awesome-skills/skills/matplotlib/SKILL.md",
+      "triggers": "matplotlib"
+    },
+    {
+      "description": "Cloud computing platform for running Python on GPUs and serverless infrastructure. Use when deploying AI/ML models, running GPU-accelerated workloads, serving web endpoints, scheduling batch jobs, or scaling Python code to the cloud. Use this skill whenever the user mentions Modal, serverless GPU compute, deploying ML models to the cloud, serving inference endpoints, running batch processing in the cloud, or needs to scale Python workloads beyond their local machine. Also use when the user wants to run code on H100s, A100s, or other cloud GPUs, or needs to create a web API for a model.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "modal",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/modal/SKILL.md",
+      "triggers": "modal"
+    },
+    {
+      "description": "Write Python code in n8n Code nodes. Use when writing Python in n8n, using _input/_json/_node syntax, working with standard library, or need to understand Python limitations in n8n Code nodes.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "n8n-code-python",
+      "src_path": "src/antigravity-awesome-skills/skills/n8n-code-python/SKILL.md",
+      "triggers": "n8n;code;python"
+    },
+    {
+      "description": "NetworkX is a Python package for creating, manipulating, and analyzing complex networks and graphs.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "networkx",
+      "src_path": "src/antigravity-awesome-skills/skills/networkx/SKILL.md",
+      "triggers": "networkx"
+    },
+    {
+      "description": "Expert on Odoo's external JSON-RPC and XML-RPC APIs. Covers authentication, model calls, record CRUD, and real-world integration examples in Python, JavaScript, and curl.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "odoo-rpc-api",
+      "src_path": "src/antigravity-awesome-skills/skills/odoo-rpc-api/SKILL.md",
+      "triggers": "odoo;rpc;api"
+    },
+    {
+      "description": "Microscopy data management platform. Access images via Python, retrieve datasets, analyze pixels, manage ROIs/annotations, batch processing, for high-content screening and microscopy workflows.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "omero-integration",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/omero-integration/SKILL.md",
+      "triggers": "omero;integration"
+    },
+    {
+      "description": "Analyze binary exploitation techniques including buffer overflows and ROP chains using pwntools Python library. Covers checksec analysis, gadget discovery with ROPgadget, and exploit development for CTF and authorized security assessments.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "performing-binary-exploitation-analysis",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-binary-exploitation-analysis/SKILL.md",
+      "triggers": "performing;binary;exploitation;analysis"
+    },
+    {
+      "description": "Integrate Hardware Security Modules (HSMs) using PKCS#11 interface for cryptographic key management, signing operations, and secure key storage with python-pkcs11, AWS CloudHSM, and YubiHSM2.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "performing-hardware-security-module-integration",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-hardware-security-module-integration/SKILL.md",
+      "triggers": "performing;hardware;security;module;integration"
+    },
+    {
+      "description": "Assess SSL/TLS server configurations using the sslyze Python library to evaluate cipher suites, certificate chains, protocol versions, HSTS headers, and known vulnerabilities like Heartbleed and ROBOT.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "performing-ssl-tls-security-assessment",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-ssl-tls-security-assessment/SKILL.md",
+      "triggers": "performing;ssl;tls;security;assessment"
+    },
+    {
+      "description": "Use YARA pattern-matching rules to hunt for malware, suspicious files, and indicators of compromise across filesystems and memory dumps. Covers rule authoring, yara-python scanning, and integration with threat intel feeds.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "performing-threat-hunting-with-yara-rules",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-threat-hunting-with-yara-rules/SKILL.md",
+      "triggers": "performing;threat;hunting;with;yara"
+    },
+    {
+      "description": "Differential gene expression analysis (Python DESeq2). Identify DE genes from bulk RNA-seq counts, Wald tests, FDR correction, volcano/MA plots, for RNA-seq analysis.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "pydeseq2",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/pydeseq2/SKILL.md",
+      "triggers": "pydeseq2"
+    },
+    {
+      "description": "Python development with ruff, mypy, pytest - TDD and type safety",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "python",
+      "src_path": "src/alinaqi-claude-bootstrap/skills/python/SKILL.md",
+      "triggers": "python"
+    },
+    {
+      "description": "python ocr uackend integration",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "python-ocr-backend-integration",
+      "src_path": "src/kreuzberg-dev-kreuzberg/.ai-rulez/domains/ocr-integration/skills/python-ocr-backend-integration/SKILL.md",
+      "triggers": "python;ocr;backend;integration"
+    },
+    {
+      "description": "Comprehensive guide to creating, structuring, and distributing Python packages using modern packaging tools, pyproject.toml, and publishing to PyPI.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "python-packaging",
+      "src_path": "src/antigravity-awesome-skills/skills/python-packaging/SKILL.md",
+      "triggers": "python;packaging"
+    },
+    {
+      "description": "Python development principles and decision-making. Framework selection, async patterns, type hints, project structure. Teaches thinking, not copying.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "python-patterns",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-python-pro/skills/python-patterns/SKILL.md",
+      "triggers": "python;patterns"
+    },
+    {
+      "description": "Profile and optimize Python code using cProfile, memory profilers, and performance best practices. Use when debugging slow Python code, optimizing bottlenecks, or improving application performance.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "python-performance-optimization",
+      "src_path": "src/antigravity-awesome-skills/skills/python-performance-optimization/SKILL.md",
+      "triggers": "python;performance;optimization"
+    },
+    {
+      "description": "python plugin wrapper",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "python-plugin-wrapper",
+      "src_path": "src/kreuzberg-dev-kreuzberg/.ai-rulez/domains/plugin-system/skills/python-plugin-wrapper/SKILL.md",
+      "triggers": "python;plugin;wrapper"
+    },
+    {
+      "description": "Interact with Zotero reference management libraries using the pyzotero Python client. Retrieve, create, update, and delete items, collections, tags, and attachments via the Zotero Web API v3. Use this skill when working with Zotero libraries programmatically, managing bibliographic references, exporting citations, searching library contents, uploading PDF attachments, or building research automation workflows that integrate with Zotero.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "pyzotero",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/pyzotero/SKILL.md",
+      "triggers": "pyzotero"
+    },
+    {
+      "description": "Reddit API with PRAW (Python) and Snoowrap (Node.js)",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "reddit-api",
+      "src_path": "src/alinaqi-claude-bootstrap/skills/reddit-api/SKILL.md",
+      "triggers": "reddit;api"
+    },
+    {
+      "description": "Cloud-based quantum chemistry platform with Python API. Preferred for computational chemistry workflows including pKa prediction, geometry optimization, conformer searching, molecular property calculations, protein-ligand docking (AutoDock Vina), and AI protein cofolding (Chai-1, Boltz-1/2). Use when tasks involve quantum chemistry calculations, molecular property prediction, DFT or semiempirical methods, neural network potentials (AIMNet2), protein-ligand binding predictions, or automated computational chemistry pipelines. Provides cloud compute resources with no local setup required.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "rowan",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/rowan/SKILL.md",
+      "triggers": "rowan"
+    },
+    {
+      "description": "Scanpy is a scalable Python toolkit for analyzing single-cell RNA-seq data, built on AnnData. Apply this skill for complete single-cell workflows including quality control, normalization, dimensionality reduction, clustering, marker gene identification, visualization, and trajectory analysis.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "scanpy",
+      "src_path": "src/antigravity-awesome-skills/skills/scanpy/SKILL.md",
+      "triggers": "scanpy"
+    },
+    {
+      "description": "Machine learning in Python with scikit-learn. Use for classification, regression, clustering, model evaluation, and ML pipelines.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "scikit-learn",
+      "src_path": "src/antigravity-awesome-skills/skills/scikit-learn/SKILL.md",
+      "triggers": "scikit;learn"
+    },
+    {
+      "description": "Comprehensive toolkit for survival analysis and time-to-event modeling in Python using scikit-survival. Use this skill when working with censored survival data, performing time-to-event analysis, fitting Cox models, Random Survival Forests, Gradient Boosting models, or Survival SVMs, evaluating survival predictions with concordance index or Brier score, handling competing risks, or implementing any survival analysis workflow with the scikit-survival library.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "scikit-survival",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/scikit-survival/SKILL.md",
+      "triggers": "scikit;survival"
+    },
+    {
+      "description": "Seaborn is a Python visualization library for creating publication-quality statistical graphics. Use this skill for dataset-oriented plotting, multivariate analysis, automatic statistical estimation, and complex multi-panel figures with minimal code.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "seaborn",
+      "src_path": "src/antigravity-awesome-skills/skills/seaborn/SKILL.md",
+      "triggers": "seaborn"
+    },
+    {
+      "description": "Detects your Python environment and guides you through installing plugin dependencies. Use on first-time setup or when MCP server fails to start.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "setup",
+      "src_path": "src/bitwize-music-studio-claude-ai-music-skills/skills/setup/SKILL.md",
+      "triggers": "setup"
+    },
+    {
+      "description": "Statsmodels is Python's premier library for statistical modeling, providing tools for estimation, inference, and diagnostics across a wide range of statistical methods.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "statsmodels",
+      "src_path": "src/antigravity-awesome-skills/skills/statsmodels/SKILL.md",
+      "triggers": "statsmodels"
+    },
+    {
+      "description": "SymPy is a Python library for symbolic mathematics that enables exact computation using mathematical symbols rather than numerical approximations.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "sympy",
+      "src_path": "src/antigravity-awesome-skills/skills/sympy/SKILL.md",
+      "triggers": "sympy"
+    },
+    {
+      "description": "Integracao completa com Telegram Bot API. Setup com BotFather, mensagens, webhooks, inline keyboards, grupos, canais. Boilerplates Node.js e Python.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "telegram",
+      "src_path": "src/antigravity-awesome-skills/skills/telegram/SKILL.md",
+      "triggers": "telegram"
+    },
+    {
+      "description": "Master Temporal workflow orchestration with Python SDK. Implements durable workflows, saga patterns, and distributed transactions. Covers async/await, testing strategies, and production deployment.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "temporal-python-pro",
+      "src_path": "src/antigravity-awesome-skills/skills/temporal-python-pro/SKILL.md",
+      "triggers": "temporal;python;pro"
+    },
+    {
+      "description": "Comprehensive testing approaches for Temporal workflows using pytest, progressive disclosure resources for specific testing scenarios.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "temporal-python-testing",
+      "src_path": "src/antigravity-awesome-skills/skills/temporal-python-testing/SKILL.md",
+      "triggers": "temporal;python;testing"
+    },
+    {
+      "description": "Tinybird Python SDK for defining datasources, pipes, and queries in Python. Use when working with tinybird-sdk, Python Tinybird projects, or data ingestion and queries in Python.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "tinybird-python-sdk-guidelines",
+      "src_path": "src/tinybird-agent-skills/skills/tinybird-python-sdk-guidelines/SKILL.md",
+      "triggers": "tinybird;python;sdk;guidelines"
+    },
+    {
+      "description": "Use when you need to run interactive CLI tools (vim, git rebase -i, Python REPL, etc.) that require real-time input/output - provides tmux-based approach for controlling interactive sessions through detached sessions and send-keys",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "using-tmux-for-interactive-commands",
+      "src_path": "src/superpowers-lab/skills/using-tmux-for-interactive-commands/SKILL.md",
+      "triggers": "using;tmux;for;interactive;commands"
+    },
+    {
+      "description": "Guides the usage of Gemini API on Google Cloud Vertex AI with the Gen AI SDK. Use when the user asks about using Gemini in an enterprise environment or explicitly mentions Vertex AI. Covers SDK usage (Python, JS/TS, Go, Java, C#), capabilities like Live API, tools, multimedia generation, caching, and batch prediction.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "vertex-ai-api-dev",
+      "src_path": "src/gemini-skills/skills/vertex-ai-api-dev/SKILL.md",
+      "triggers": "vertex;ai;api;dev"
+    },
+    {
+      "description": "Integracao com WhatsApp Business Cloud API (Meta). Mensagens, templates, webhooks HMAC-SHA256, automacao de atendimento. Boilerplates Node.js e Python.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "whatsapp-cloud-api",
+      "src_path": "src/antigravity-awesome-skills/skills/whatsapp-cloud-api/SKILL.md",
+      "triggers": "whatsapp;cloud;api"
+    },
+    {
+      "description": "Thesis-driven equity analysis from public SEC EDGAR and market data; /analyze, /score, /compare workflows with bundled Python tools (Claude Code, Cursor, Codex).",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "xvary-stock-research",
+      "src_path": "src/antigravity-awesome-skills/skills/xvary-stock-research/SKILL.md",
+      "triggers": "xvary;stock;research"
+    },
+    {
+      "description": "Pythonic wrapper around RDKit with simplified interface and sensible defaults. Preferred for standard drug discovery including SMILES parsing, standardization, descriptors, fingerprints, clustering, 3D conformers, parallel processing. Returns native rdkit.Chem.Mol objects. For advanced control or custom parameters, use rdkit directly.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "datamol",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/datamol/SKILL.md",
+      "triggers": "datamol"
+    },
+    {
+      "description": "Create production-ready FastAPI projects with async patterns, dependency injection, and comprehensive error handling. Use when building new FastAPI applications or setting up backend API projects.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "fastapi-templates",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-python-pro/skills/fastapi-templates/SKILL.md",
+      "triggers": "fastapi;templates"
+    },
+    {
+      "description": "Coleta e consulta dados de leiloeiros oficiais de todas as 27 Juntas Comerciais do Brasil. Scraper multi-UF, banco SQLite, API FastAPI e exportacao CSV/JSON.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "junta-leiloeiros",
+      "src_path": "src/antigravity-awesome-skills/skills/junta-leiloeiros/SKILL.md",
+      "triggers": "junta;leiloeiros"
+    }
+  ],
+  "sub_hub": "python",
+  "version": 1
 }

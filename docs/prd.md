@@ -16,8 +16,6 @@ stepsCompleted:
   - step-12-complete
 inputDocuments:
   - readme.md
-  - skills-aggregated/AGENT-PROTOCOL.md
-  - skills-aggregated/FINAL-ROADMAP-BMAD-HYBRID.md
 workflowType: 'prd'
 classification:
   projectType: CLI Tool

@@ -1,1722 +1,200 @@
-[
-    {
-        "id":  "ab-test-analysis",
-        "triggers":  [
-                         "ab",
-                         "test",
-                         "analysis"
-                     ],
-        "src":  "external:pm-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "analyzing-network-packets-with-scapy",
-        "triggers":  [
-                         "analyzing",
-                         "network",
-                         "packets",
-                         "with",
-                         "scapy"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "android_ui_verification",
-        "triggers":  [
-                         "android_ui_verification"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "api-testing-observability-api-mock",
-        "triggers":  [
-                         "api",
-                         "testing",
-                         "observability",
-                         "api",
-                         "mock"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "asc-build-lifecycle",
-        "triggers":  [
-                         "asc",
-                         "build",
-                         "lifecycle"
-                     ],
-        "src":  "external:rudrankriyam-app-store-connect-cli-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "asc-crash-triage",
-        "triggers":  [
-                         "asc",
-                         "crash",
-                         "triage"
-                     ],
-        "src":  "external:rudrankriyam-app-store-connect-cli-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "asc-id-resolver",
-        "triggers":  [
-                         "asc",
-                         "id",
-                         "resolver"
-                     ],
-        "src":  "external:rudrankriyam-app-store-connect-cli-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "awt-e2e-testing",
-        "triggers":  [
-                         "awt",
-                         "e2e",
-                         "testing"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  17
-    },
-    {
-        "id":  "azure-microsoft-playwright-testing-ts",
-        "triggers":  [
-                         "azure",
-                         "microsoft",
-                         "playwright",
-                         "testing",
-                         "ts"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  13
-    },
-    {
-        "id":  "azure-resource-manager-playwright-dotnet",
-        "triggers":  [
-                         "azure",
-                         "resource",
-                         "manager",
-                         "playwright",
-                         "dotnet"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  13
-    },
-    {
-        "id":  "bash-scripting",
-        "triggers":  [
-                         "bash",
-                         "scripting"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "browser-automation",
-        "triggers":  [
-                         "browser",
-                         "automation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  20
-    },
-    {
-        "id":  "bug-hunter",
-        "triggers":  [
-                         "bug",
-                         "hunter"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "building-patch-tuesday-response-process",
-        "triggers":  [
-                         "building",
-                         "patch",
-                         "tuesday",
-                         "response",
-                         "process"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "building-threat-hunt-hypothesis-framework",
-        "triggers":  [
-                         "building",
-                         "threat",
-                         "hunt",
-                         "hypothesis",
-                         "framework"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "circleci-automation",
-        "triggers":  [
-                         "circleci",
-                         "automation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  16
-    },
-    {
-        "id":  "component-refactoring",
-        "triggers":  [
-                         "component",
-                         "refactoring"
-                     ],
-        "src":  "external:Charlie85270-Dorothy",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "conducting-api-security-testing",
-        "triggers":  [
-                         "conducting",
-                         "api",
-                         "security",
-                         "testing"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "conducting-cloud-penetration-testing",
-        "triggers":  [
-                         "conducting",
-                         "cloud",
-                         "penetration",
-                         "testing"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "conducting-internal-network-penetration-test",
-        "triggers":  [
-                         "conducting",
-                         "internal",
-                         "network",
-                         "penetration",
-                         "test"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "conducting-network-penetration-test",
-        "triggers":  [
-                         "conducting",
-                         "network",
-                         "penetration",
-                         "test"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "conducting-wireless-network-penetration-test",
-        "triggers":  [
-                         "conducting",
-                         "wireless",
-                         "network",
-                         "penetration",
-                         "test"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "content-experimentation-best-practices",
-        "triggers":  [
-                         "content",
-                         "experimentation",
-                         "best",
-                         "practices"
-                     ],
-        "src":  "external:agent-toolkit",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "daily-news-caster",
-        "triggers":  [
-                         "daily",
-                         "news",
-                         "caster"
-                     ],
-        "src":  "external:NoizAI-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "debugger",
-        "triggers":  [
-                         "debugger"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  13
-    },
-    {
-        "id":  "debugging-strategies",
-        "triggers":  [
-                         "debugging",
-                         "strategies"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "debugging-toolkit-smart-debug",
-        "triggers":  [
-                         "debugging",
-                         "toolkit",
-                         "smart",
-                         "debug"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "deployment-validation-config-validate",
-        "triggers":  [
-                         "deployment",
-                         "validation",
-                         "config",
-                         "validate"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "detecting-broken-object-property-level-authorization",
-        "triggers":  [
-                         "detecting",
-                         "broken",
-                         "object",
-                         "property",
-                         "level"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "differential-review",
-        "triggers":  [
-                         "differential",
-                         "review"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "e2e-testing",
-        "triggers":  [
-                         "e2e",
-                         "testing"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  21
-    },
-    {
-        "id":  "e2e-testing-patterns",
-        "triggers":  [
-                         "e2e",
-                         "testing",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "evaluating-code-models",
-        "triggers":  [
-                         "evaluating",
-                         "code",
-                         "models"
-                     ],
-        "src":  "external:Orchestra-Research-AI-research-SKILLs",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "executing-red-team-engagement-planning",
-        "triggers":  [
-                         "executing",
-                         "red",
-                         "team",
-                         "engagement",
-                         "planning"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "exploiting-server-side-request-forgery",
-        "triggers":  [
-                         "exploiting",
-                         "server",
-                         "side",
-                         "request",
-                         "forgery"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "exploiting-vulnerabilities-with-metasploit-framework",
-        "triggers":  [
-                         "exploiting",
-                         "vulnerabilities",
-                         "with",
-                         "metasploit",
-                         "framework"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "extraction-quality-testing",
-        "triggers":  [
-                         "extraction",
-                         "quality",
-                         "testing"
-                     ],
-        "src":  "external:kreuzberg-dev-kreuzberg",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "find-bugs",
-        "triggers":  [
-                         "find",
-                         "bugs"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "flutter",
-        "triggers":  [
-                         "flutter"
-                     ],
-        "src":  "external:alinaqi-claude-bootstrap",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "grill-me",
-        "triggers":  [
-                         "grill",
-                         "me"
-                     ],
-        "src":  "external:mattpocock-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "hypogenic",
-        "triggers":  [
-                         "hypogenic"
-                     ],
-        "src":  "external:K-Dense-AI-claude-scientific-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "hypothesis-generation",
-        "triggers":  [
-                         "hypothesis",
-                         "generation"
-                     ],
-        "src":  "external:K-Dense-AI-claude-scientific-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "implementing-api-security-testing-with-42crunch",
-        "triggers":  [
-                         "implementing",
-                         "api",
-                         "security",
-                         "testing",
-                         "with"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "implementing-end-to-end-encryption-for-messaging",
-        "triggers":  [
-                         "implementing",
-                         "end",
-                         "to",
-                         "end",
-                         "encryption"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "implementing-fuzz-testing-in-cicd-with-aflplusplus",
-        "triggers":  [
-                         "implementing",
-                         "fuzz",
-                         "testing",
-                         "in",
-                         "cicd"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "implementing-patch-management-workflow",
-        "triggers":  [
-                         "implementing",
-                         "patch",
-                         "management",
-                         "workflow"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "ios-simulator-skill",
-        "triggers":  [
-                         "ios",
-                         "simulator",
-                         "skill"
-                     ],
-        "src":  "external:conorluddy-ios-simulator-skill",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  13
-    },
-    {
-        "id":  "iterate-pr",
-        "triggers":  [
-                         "iterate",
-                         "pr"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "iterative-development",
-        "triggers":  [
-                         "iterative",
-                         "development"
-                     ],
-        "src":  "external:alinaqi-claude-bootstrap",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "javascript-testing-patterns",
-        "triggers":  [
-                         "javascript",
-                         "testing",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "k6-load-testing",
-        "triggers":  [
-                         "k6",
-                         "load",
-                         "testing"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "langsmith-observability",
-        "triggers":  [
-                         "langsmith",
-                         "observability"
-                     ],
-        "src":  "external:Orchestra-Research-AI-research-SKILLs",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "linux-shell-scripting",
-        "triggers":  [
-                         "linux",
-                         "shell",
-                         "scripting"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  13
-    },
-    {
-        "id":  "llm-evaluation",
-        "triggers":  [
-                         "llm",
-                         "evaluation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "network-101",
-        "triggers":  [
-                         "network",
-                         "101"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "odoo-automated-tests",
-        "triggers":  [
-                         "odoo",
-                         "automated",
-                         "tests"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "performance-testing-review-multi-agent-review",
-        "triggers":  [
-                         "performance",
-                         "testing",
-                         "review",
-                         "multi",
-                         "agent"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "performing-active-directory-penetration-test",
-        "triggers":  [
-                         "performing",
-                         "active",
-                         "directory",
-                         "penetration",
-                         "test"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "performing-api-security-testing-with-postman",
-        "triggers":  [
-                         "performing",
-                         "api",
-                         "security",
-                         "testing",
-                         "with"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "performing-clickjacking-attack-test",
-        "triggers":  [
-                         "performing",
-                         "clickjacking",
-                         "attack",
-                         "test"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "performing-cloud-penetration-testing-with-pacu",
-        "triggers":  [
-                         "performing",
-                         "cloud",
-                         "penetration",
-                         "testing",
-                         "with"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "performing-csrf-attack-simulation",
-        "triggers":  [
-                         "performing",
-                         "csrf",
-                         "attack",
-                         "simulation"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "performing-directory-traversal-testing",
-        "triggers":  [
-                         "performing",
-                         "directory",
-                         "traversal",
-                         "testing"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "performing-external-network-penetration-test",
-        "triggers":  [
-                         "performing",
-                         "external",
-                         "network",
-                         "penetration",
-                         "test"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "performing-gcp-penetration-testing-with-gcpbucketbrute",
-        "triggers":  [
-                         "performing",
-                         "gcp",
-                         "penetration",
-                         "testing",
-                         "with"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "performing-graphql-depth-limit-attack",
-        "triggers":  [
-                         "performing",
-                         "graphql",
-                         "depth",
-                         "limit",
-                         "attack"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "performing-kubernetes-penetration-testing",
-        "triggers":  [
-                         "performing",
-                         "kubernetes",
-                         "penetration",
-                         "testing"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "performing-physical-intrusion-assessment",
-        "triggers":  [
-                         "performing",
-                         "physical",
-                         "intrusion",
-                         "assessment"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "performing-purple-team-atomic-testing",
-        "triggers":  [
-                         "performing",
-                         "purple",
-                         "team",
-                         "atomic",
-                         "testing"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "performing-soap-web-service-security-testing",
-        "triggers":  [
-                         "performing",
-                         "soap",
-                         "web",
-                         "service",
-                         "security"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "performing-supply-chain-attack-simulation",
-        "triggers":  [
-                         "performing",
-                         "supply",
-                         "chain",
-                         "attack",
-                         "simulation"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "performing-thick-client-application-penetration-test",
-        "triggers":  [
-                         "performing",
-                         "thick",
-                         "client",
-                         "application",
-                         "penetration"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "performing-web-application-penetration-test",
-        "triggers":  [
-                         "performing",
-                         "web",
-                         "application",
-                         "penetration",
-                         "test"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "performing-web-application-scanning-with-nikto",
-        "triggers":  [
-                         "performing",
-                         "web",
-                         "application",
-                         "scanning",
-                         "with"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "performing-wireless-network-penetration-test",
-        "triggers":  [
-                         "performing",
-                         "wireless",
-                         "network",
-                         "penetration",
-                         "test"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "pict-test-designer",
-        "triggers":  [
-                         "pict",
-                         "test",
-                         "designer"
-                     ],
-        "src":  "external:omkamal-pypict-claude-skill",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "playwright-cli",
-        "triggers":  [
-                         "playwright",
-                         "cli"
-                     ],
-        "src":  "external:testdino-hq-playwright-skill",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "playwright-core",
-        "triggers":  [
-                         "playwright",
-                         "core"
-                     ],
-        "src":  "external:testdino-hq-playwright-skill",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  23
-    },
-    {
-        "id":  "playwright-java",
-        "triggers":  [
-                         "playwright",
-                         "java"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  17
-    },
-    {
-        "id":  "playwright-migration",
-        "triggers":  [
-                         "playwright",
-                         "migration"
-                     ],
-        "src":  "external:testdino-hq-playwright-skill",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "playwright-skill",
-        "triggers":  [
-                         "playwright",
-                         "skill"
-                     ],
-        "src":  "external:lackeyjb-playwright-skill",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  19
-    },
-    {
-        "id":  "playwright-testing",
-        "triggers":  [
-                         "playwright",
-                         "testing"
-                     ],
-        "src":  "external:alinaqi-claude-bootstrap",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  17
-    },
-    {
-        "id":  "plugin-testing-framework",
-        "triggers":  [
-                         "plugin",
-                         "testing",
-                         "framework"
-                     ],
-        "src":  "external:kreuzberg-dev-kreuzberg",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "pypict-skill",
-        "triggers":  [
-                         "pypict",
-                         "skill"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "pyvene-interventions",
-        "triggers":  [
-                         "pyvene",
-                         "interventions"
-                     ],
-        "src":  "external:Orchestra-Research-AI-research-SKILLs",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "qa",
-        "triggers":  [
-                         "qa"
-                     ],
-        "src":  "external:gstack",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "qa-only",
-        "triggers":  [
-                         "qa",
-                         "only"
-                     ],
-        "src":  "external:gstack",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "rails-upgrade",
-        "triggers":  [
-                         "rails",
-                         "upgrade"
-                     ],
-        "src":  "external:robzolkos-skill-rails-upgrade",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "release-director",
-        "triggers":  [
-                         "release",
-                         "director"
-                     ],
-        "src":  "external:bitwize-music-studio-claude-ai-music-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "ruby-pro",
-        "triggers":  [
-                         "ruby",
-                         "pro"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "scientific-brainstorming",
-        "triggers":  [
-                         "scientific",
-                         "brainstorming"
-                     ],
-        "src":  "external:K-Dense-AI-claude-scientific-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "screen-reader-testing",
-        "triggers":  [
-                         "screen",
-                         "reader",
-                         "testing"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "security",
-        "triggers":  [
-                         "security"
-                     ],
-        "src":  "external:alinaqi-claude-bootstrap",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "security-requirement-extraction",
-        "triggers":  [
-                         "security",
-                         "requirement",
-                         "extraction"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "setup-pre-commit",
-        "triggers":  [
-                         "setup",
-                         "pre",
-                         "commit"
-                     ],
-        "src":  "external:mattpocock-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "statistical-analysis",
-        "triggers":  [
-                         "statistical",
-                         "analysis"
-                     ],
-        "src":  "external:K-Dense-AI-claude-scientific-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "swift",
-        "triggers":  [
-                         "swift"
-                     ],
-        "src":  "external:Joannis-claude-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "swift-patterns",
-        "triggers":  [
-                         "swift",
-                         "patterns"
-                     ],
-        "src":  "external:efremidze-swift-patterns-skill",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "systematic-debugging",
-        "triggers":  [
-                         "systematic",
-                         "debugging"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  13
-    },
-    {
-        "id":  "tdd",
-        "triggers":  [
-                         "tdd"
-                     ],
-        "src":  "external:mattpocock-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "tdd:fix-tests",
-        "triggers":  [
-                         "tdd:fix",
-                         "tests"
-                     ],
-        "src":  "external:NeoLabHQ-context-engineering-kit",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "tdd:test-driven-development",
-        "triggers":  [
-                         "tdd:test",
-                         "driven",
-                         "development"
-                     ],
-        "src":  "external:NeoLabHQ-context-engineering-kit",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "tdd-orchestrator",
-        "triggers":  [
-                         "tdd",
-                         "orchestrator"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "tdd-workflow",
-        "triggers":  [
-                         "tdd",
-                         "workflow"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "tdd-workflows-tdd-cycle",
-        "triggers":  [
-                         "tdd",
-                         "workflows",
-                         "tdd",
-                         "cycle"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "tdd-workflows-tdd-green",
-        "triggers":  [
-                         "tdd",
-                         "workflows",
-                         "tdd",
-                         "green"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "tdd-workflows-tdd-red",
-        "triggers":  [
-                         "tdd",
-                         "workflows",
-                         "tdd",
-                         "red"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "tdd-workflows-tdd-refactor",
-        "triggers":  [
-                         "tdd",
-                         "workflows",
-                         "tdd",
-                         "refactor"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "terraform-skill",
-        "triggers":  [
-                         "terraform",
-                         "skill"
-                     ],
-        "src":  "external:antonbabenko-terraform-skill",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  17
-    },
-    {
-        "id":  "test",
-        "triggers":  [
-                         "test"
-                     ],
-        "src":  "external:bitwize-music-studio-claude-ai-music-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "test-automator",
-        "triggers":  [
-                         "test",
-                         "automator"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "test-driven-development",
-        "triggers":  [
-                         "test",
-                         "driven",
-                         "development"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "test-execution-patterns",
-        "triggers":  [
-                         "test",
-                         "execution",
-                         "patterns"
-                     ],
-        "src":  "external:kreuzberg-dev-kreuzberg",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "test-fixing",
-        "triggers":  [
-                         "test",
-                         "fixing"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "testing-android-intents-for-vulnerabilities",
-        "triggers":  [
-                         "testing",
-                         "android",
-                         "intents",
-                         "for",
-                         "vulnerabilities"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "testing-api-authentication-weaknesses",
-        "triggers":  [
-                         "testing",
-                         "api",
-                         "authentication",
-                         "weaknesses"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "testing-api-for-broken-object-level-authorization",
-        "triggers":  [
-                         "testing",
-                         "api",
-                         "for",
-                         "broken",
-                         "object"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "testing-api-for-mass-assignment-vulnerability",
-        "triggers":  [
-                         "testing",
-                         "api",
-                         "for",
-                         "mass",
-                         "assignment"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "testing-cors-misconfiguration",
-        "triggers":  [
-                         "testing",
-                         "cors",
-                         "misconfiguration"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "testing-for-broken-access-control",
-        "triggers":  [
-                         "testing",
-                         "for",
-                         "broken",
-                         "access",
-                         "control"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "testing-for-business-logic-vulnerabilities",
-        "triggers":  [
-                         "testing",
-                         "for",
-                         "business",
-                         "logic",
-                         "vulnerabilities"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "testing-for-email-header-injection",
-        "triggers":  [
-                         "testing",
-                         "for",
-                         "email",
-                         "header",
-                         "injection"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "testing-for-host-header-injection",
-        "triggers":  [
-                         "testing",
-                         "for",
-                         "host",
-                         "header",
-                         "injection"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "testing-for-open-redirect-vulnerabilities",
-        "triggers":  [
-                         "testing",
-                         "for",
-                         "open",
-                         "redirect",
-                         "vulnerabilities"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "testing-for-xml-injection-vulnerabilities",
-        "triggers":  [
-                         "testing",
-                         "for",
-                         "xml",
-                         "injection",
-                         "vulnerabilities"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "testing-for-xss-vulnerabilities",
-        "triggers":  [
-                         "testing",
-                         "for",
-                         "xss",
-                         "vulnerabilities"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "testing-for-xss-vulnerabilities-with-burpsuite",
-        "triggers":  [
-                         "testing",
-                         "for",
-                         "xss",
-                         "vulnerabilities",
-                         "with"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "testing-for-xxe-injection-vulnerabilities",
-        "triggers":  [
-                         "testing",
-                         "for",
-                         "xxe",
-                         "injection",
-                         "vulnerabilities"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "testing-mobile-api-authentication",
-        "triggers":  [
-                         "testing",
-                         "mobile",
-                         "api",
-                         "authentication"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "testing-oauth2-implementation-flaws",
-        "triggers":  [
-                         "testing",
-                         "oauth2",
-                         "implementation",
-                         "flaws"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "testing-patterns",
-        "triggers":  [
-                         "testing",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "testing-qa",
-        "triggers":  [
-                         "testing",
-                         "qa"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  21
-    },
-    {
-        "id":  "testing-ransomware-recovery-procedures",
-        "triggers":  [
-                         "testing",
-                         "ransomware",
-                         "recovery",
-                         "procedures"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "testing-websocket-api-security",
-        "triggers":  [
-                         "testing",
-                         "websocket",
-                         "api",
-                         "security"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "ui-testing",
-        "triggers":  [
-                         "ui",
-                         "testing"
-                     ],
-        "src":  "external:alinaqi-claude-bootstrap",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "unit-testing-test-generate",
-        "triggers":  [
-                         "unit",
-                         "testing",
-                         "test",
-                         "generate"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  13
-    },
-    {
-        "id":  "web3-testing",
-        "triggers":  [
-                         "web3",
-                         "testing"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "webapp-testing",
-        "triggers":  [
-                         "webapp",
-                         "testing"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "wendy-contributing",
-        "triggers":  [
-                         "wendy",
-                         "contributing"
-                     ],
-        "src":  "external:Joannis-claude-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  13
-    },
-    {
-        "id":  "wiki-qa",
-        "triggers":  [
-                         "wiki",
-                         "qa"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "testing/automation",
-        "is_primary":  true,
-        "match_score":  7
-    }
-]
+{
+  "count": 193,
+  "hub": "testing",
+  "skills": [
+    "playwright-cli",
+    "webapp-testing",
+    "awt-e2e-testing",
+    "azure-microsoft-playwright-testing-ts",
+    "azure-resource-manager-playwright-dotnet",
+    "e2e-testing",
+    "playwright-testing",
+    "unit-testing-test-generate",
+    "bats-testing-patterns",
+    "brainstorm-experiments-existing",
+    "browse",
+    "customaize-agent:test-prompt",
+    "dummy-dataset",
+    "e2e-testing-patterns",
+    "gstack",
+    "hypothesis-generation",
+    "implementing-patch-management-for-ot-systems",
+    "network-101",
+    "performing-clickjacking-attack-test",
+    "performing-cloud-penetration-testing-with-pacu",
+    "performing-purple-team-atomic-testing",
+    "performing-soc-tabletop-exercise",
+    "performing-threat-emulation-with-atomic-red-team",
+    "performing-wireless-network-penetration-test",
+    "pict-test-designer",
+    "python-testing-patterns",
+    "qa",
+    "qa-only",
+    "screenshot-optimization",
+    "swift",
+    "test-automator",
+    "testing-for-email-header-injection",
+    "testing-for-host-header-injection",
+    "testing-for-json-web-token-vulnerabilities",
+    "testing-for-open-redirect-vulnerabilities",
+    "testing-for-xml-injection-vulnerabilities",
+    "testing-patterns",
+    "testing-ransomware-recovery-procedures",
+    "active-directory-attacks",
+    "ad-creative",
+    "adaptyv",
+    "airflow-dag-patterns",
+    "analyzing-ios-app-security-with-objection",
+    "android_ui_verification",
+    "api-testing-observability-api-mock",
+    "aws-penetration-testing",
+    "bash-scripting",
+    "brainstorm-experiments-new",
+    "component-refactoring",
+    "conducting-cloud-penetration-testing",
+    "content-experimentation-best-practices",
+    "csharp-pro",
+    "customaize-agent:create-hook",
+    "data-engineering-data-driven-feature",
+    "dbt-transformation-patterns",
+    "dependency-upgrade",
+    "deployment-validation-config-validate",
+    "doc-coauthoring",
+    "ethical-hacking-methodology",
+    "evaluating-code-models",
+    "evaluation",
+    "executing-active-directory-attack-simulation",
+    "executing-red-team-engagement-planning",
+    "exploiting-deeplink-vulnerabilities",
+    "exploiting-excessive-data-exposure-in-api",
+    "exploiting-insecure-data-storage-in-mobile",
+    "exploiting-vulnerabilities-with-metasploit-framework",
+    "exploiting-websocket-vulnerabilities",
+    "extraction-quality-testing",
+    "ffuf-web-fuzzing",
+    "framework-migration-deps-upgrade",
+    "frontend-design-review",
+    "git-pr-workflows-git-workflow",
+    "git:worktrees",
+    "github-actions-templates",
+    "html-injection-testing",
+    "hypogenic",
+    "identify-assumptions-existing",
+    "idor-testing",
+    "implementing-fuzz-testing-in-cicd-with-aflplusplus",
+    "implementing-iec-62443-security-zones",
+    "implementing-immutable-backup-with-restic",
+    "implementing-patch-management-workflow",
+    "implementing-ransomware-backup-strategy",
+    "kotlin-coroutines-expert",
+    "langsmith-observability",
+    "lean-canvas",
+    "llm-evaluation",
+    "ml-engineer",
+    "nestjs-expert",
+    "netlify-edge-functions",
+    "performance-testing-review-ai-review",
+    "performance-testing-review-multi-agent-review",
+    "performing-directory-traversal-testing",
+    "performing-fuzzing-with-aflplusplus",
+    "performing-physical-intrusion-assessment",
+    "performing-privilege-escalation-assessment",
+    "performing-purple-team-exercise",
+    "performing-soap-web-service-security-testing",
+    "performing-soc2-type2-audit-preparation",
+    "playwright-java",
+    "plugin-testing-framework",
+    "privilege-escalation-methods",
+    "ruby-pro",
+    "screen-reader-testing",
+    "security",
+    "setup-pre-commit",
+    "shodan-reconnaissance",
+    "smtp-penetration-testing",
+    "testing-android-intents-for-vulnerabilities",
+    "testing-api-for-mass-assignment-vulnerability",
+    "testing-cors-misconfiguration",
+    "testing-for-broken-access-control",
+    "testing-for-sensitive-data-exposure",
+    "testing-for-xss-vulnerabilities-with-burpsuite",
+    "testing-for-xxe-injection-vulnerabilities",
+    "testing-qa",
+    "testing-websocket-api-security",
+    "ui-testing",
+    "validating-backup-integrity-for-recovery",
+    "web3-testing",
+    "wendy-contributing",
+    "wiki-agents-md",
+    "windows-privilege-escalation",
+    "wordpress-penetration-testing",
+    "ab-test-analysis",
+    "acquisition-channel-advisor",
+    "app-icon-optimization",
+    "asc-testflight-orchestration",
+    "azure-compute",
+    "azure-validate",
+    "building-patch-tuesday-response-process",
+    "circleci-automation",
+    "comprehensive-review-pr-enhance",
+    "conducting-internal-network-penetration-test",
+    "customaize-agent:test-skill",
+    "debugger",
+    "detecting-broken-object-property-level-authorization",
+    "git:notes",
+    "grill-me",
+    "interview-script",
+    "leiloeiro-risco",
+    "odoo-automated-tests",
+    "performing-active-directory-penetration-test",
+    "performing-jwt-none-algorithm-attack",
+    "performing-ransomware-tabletop-exercise",
+    "performing-ssl-stripping-attack",
+    "performing-thick-client-application-penetration-test",
+    "plan-eng-review",
+    "prioritize-assumptions",
+    "pypict-skill",
+    "security-requirement-extraction",
+    "semgrep-rule-variant-creator",
+    "slack-messaging",
+    "sqlmap-database-pentesting",
+    "statistical-analysis",
+    "systematic-debugging",
+    "tdd",
+    "tdd-orchestrator",
+    "tdd-workflow",
+    "tdd:test-driven-development",
+    "tdd:write-tests",
+    "test",
+    "test-driven-development",
+    "test-execution-patterns",
+    "test-fixing",
+    "test-scenarios",
+    "tutor",
+    "ai-md",
+    "ai-models",
+    "asc-build-lifecycle",
+    "asc-id-resolver",
+    "assignation-refere-recouvrement-creance-selim-brihi",
+    "building-threat-hunt-hypothesis-framework",
+    "conducting-external-reconnaissance-with-osint",
+    "daily-news-caster",
+    "data-quality-frameworks",
+    "epic-hypothesis",
+    "expo-dev-client",
+    "finishing-a-development-branch",
+    "gstack-upgrade",
+    "iterative-development",
+    "moyu-en",
+    "moyu-fr",
+    "moyu-strict",
+    "performing-web-application-scanning-with-nikto",
+    "prompt-library",
+    "rails-upgrade",
+    "requete-cph-licenciement-faute-grave-selim-brihi",
+    "tdd-workflows-tdd-green",
+    "tdd-workflows-tdd-red",
+    "tdd:fix-tests",
+    "user-story"
+  ],
+  "sub_hub": "automation"
+}

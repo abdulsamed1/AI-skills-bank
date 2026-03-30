@@ -1,0 +1,20 @@
+{
+  "count": 13,
+  "hub": "mobile",
+  "skills": [
+    "update-swiftui-apis",
+    "app-store-preflight-skills",
+    "ios-developer",
+    "asc-shots-pipeline",
+    "ios-debugger-agent",
+    "macos-spm-app-packaging",
+    "swiftui-wcag-accessibility-auditor",
+    "postgres-nio",
+    "swift-concurrency-expert",
+    "swift-nio",
+    "swift-valkey",
+    "wendy",
+    "wendy-swift"
+  ],
+  "sub_hub": "ios"
+}

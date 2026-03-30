@@ -1,17 +1,288 @@
 {
-    "name":  "skills-marketing-email",
-    "main_hub":  "marketing",
-    "sub_hub":  "email",
-    "description":  "Email marketing: campaigns, automation, segmentation, and subscriber engagement strategies",
-    "skill_count":  20,
-    "src_count":  7,
-    "top_triggers":  [
-                         null
-                     ],
-    "generated_at":  "2026-03-29T23:17:46+02:00",
-    "files":  {
-                  "skill":  "SKILL.md",
-                  "index":  "skills-index.json",
-                  "catalog":  "skills-catalog.csv"
-              }
+  "generated_at_unix": 1774888953,
+  "hub": "marketing",
+  "skills": [
+    {
+      "description": "Automate Mailchimp email marketing including campaigns, audiences, subscribers, segments, and analytics via Rube MCP (Composio). Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 17,
+      "skill_id": "mailchimp-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/mailchimp-automation/SKILL.md",
+      "triggers": "mailchimp;automation"
+    },
+    {
+      "description": "Automate SendGrid email delivery workflows including marketing campaigns (Single Sends), contact and list management, sender identity setup, and email analytics through Composio's SendGrid toolkit.",
+      "phase": 1,
+      "score": 17,
+      "skill_id": "sendgrid-automation",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-revops-crm-automation/skills/sendgrid-automation/SKILL.md",
+      "triggers": "sendgrid;automation"
+    },
+    {
+      "description": "Automate Klaviyo tasks via Rube MCP (Composio): manage email/SMS campaigns, inspect campaign messages, track tags, and monitor send jobs. Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 15,
+      "skill_id": "klaviyo-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/klaviyo-automation/SKILL.md",
+      "triggers": "klaviyo;automation"
+    },
+    {
+      "description": "Analyzes indicators of compromise (IOCs) including IP addresses, domains, file hashes, URLs, and email artifacts to determine maliciousness confidence, campaign attribution, and blocking priority. Use when triaging IOCs from phishing emails, security alerts, or external threat feeds; enriching raw IOCs with multi-source intelligence; or making block/monitor/whitelist decisions. Activates for requests involving VirusTotal, AbuseIPDB, MalwareBazaar, MISP, or IOC enrichment pipelines.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "analyzing-indicators-of-compromise",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-indicators-of-compromise/SKILL.md",
+      "triggers": "analyzing;indicators;of;compromise"
+    },
+    {
+      "description": "Automate Brevo (formerly Sendinblue) email marketing operations through Composio's Brevo toolkit via Rube MCP.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "brevo-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/brevo-automation/SKILL.md",
+      "triggers": "brevo;automation"
+    },
+    {
+      "description": "You are an expert in email marketing and automation. Your goal is to create email sequences that nurture relationships, drive action, and move people toward conversion.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "email-sequence",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-marketing-growth/skills/email-sequence/SKILL.md",
+      "triggers": "email;sequence"
+    },
+    {
+      "description": "Hunt for spearphishing campaign indicators across email logs, endpoint telemetry, and network data to detect targeted email attacks.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "hunting-for-spearphishing-indicators",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-spearphishing-indicators/SKILL.md",
+      "triggers": "hunting;for;spearphishing;indicators"
+    },
+    {
+      "description": "GoPhish is an open-source phishing simulation framework used by security teams to conduct authorized phishing awareness campaigns. It provides campaign management, email template creation, landing pag",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "performing-phishing-simulation-with-gophish",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-phishing-simulation-with-gophish/SKILL.md",
+      "triggers": "performing;phishing;simulation;with;gophish"
+    },
+    {
+      "description": "Automate Postmark email delivery tasks via Rube MCP (Composio): send templated emails, manage templates, monitor delivery stats and bounces. Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "postmark-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/postmark-automation/SKILL.md",
+      "triggers": "postmark;automation"
+    },
+    {
+      "description": "Automate Freshservice ITSM tasks via Rube MCP (Composio): create/update tickets, bulk operations, service requests, and outbound emails. Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "freshservice-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/freshservice-automation/SKILL.md",
+      "triggers": "freshservice;automation"
+    },
+    {
+      "description": "Automate Outlook tasks via Rube MCP (Composio): emails, calendar, contacts, folders, attachments. Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "outlook-automation",
+      "src_path": "src/antigravity-awesome-skills/skills/outlook-automation/SKILL.md",
+      "triggers": "outlook;automation"
+    },
+    {
+      "description": "Automate GoPhish phishing simulation campaigns using the Python gophish library. Creates email templates with tracking pixels, configures SMTP sending profiles, builds target groups from CSV, launches campaigns, and analyzes results including open rates, click rates, and credential submission statistics for security awareness assessment.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "performing-red-team-phishing-with-gophish",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-red-team-phishing-with-gophish/SKILL.md",
+      "triggers": "performing;red;team;phishing;with"
+    },
+    {
+      "description": "Email infrastructure for AI agents. Create accounts, send/receive emails, manage webhooks, and check karma balance via the AgentMail API.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "agentmail",
+      "src_path": "src/antigravity-awesome-skills/skills/agentmail/SKILL.md",
+      "triggers": "agentmail"
+    },
+    {
+      "description": "Parse and analyze email headers to trace the origin of phishing emails, verify sender authenticity, and identify spoofing through SPF, DKIM, and DMARC validation.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "analyzing-email-headers-for-phishing-investigation",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-email-headers-for-phishing-investigation/SKILL.md",
+      "triggers": "analyzing;email;headers;for;phishing"
+    },
+    {
+      "description": "Builds an automated malware submission and analysis pipeline that collects suspicious files from endpoints and email gateways, submits them to sandbox environments and multi-engine scanners, and generates verdicts with IOCs for SIEM integration. Use when SOC teams need to scale malware analysis beyond manual sandbox submissions for high-volume alert triage.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "building-automated-malware-submission-pipeline",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/building-automated-malware-submission-pipeline/SKILL.md",
+      "triggers": "building;automated;malware;submission;pipeline"
+    },
+    {
+      "description": "Implement a phishing report button in email clients with automated triage workflow that analyzes user-reported suspicious emails and provides feedback to reporters.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "building-phishing-reporting-button-workflow",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/building-phishing-reporting-button-workflow/SKILL.md",
+      "triggers": "building;phishing;reporting;button;workflow"
+    },
+    {
+      "description": "Write B2B cold emails and follow-up sequences that earn replies. Use when creating outbound prospecting emails, SDR outreach, personalized opening lines, subject lines, CTAs, and multi-touch follow-up sequences.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "cold-email",
+      "src_path": "src/antigravity-awesome-skills/skills/cold-email/SKILL.md",
+      "triggers": "cold;email"
+    },
+    {
+      "description": "Build personalized cold outreach sequences for LinkedIn and email. Use when someone needs to reach prospects, warm up cold leads, or build a systematic outreach engine. Covers research, connection requests, follow-ups, and conversion.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "cold-outreach-sequence",
+      "src_path": "src/ai-marketing-skills/cold-outreach-sequence/SKILL.md",
+      "triggers": "cold;outreach;sequence"
+    },
+    {
+      "description": "Business Email Compromise (BEC) is a sophisticated fraud scheme where attackers impersonate executives, vendors, or trusted partners to trick employees into transferring funds, sharing sensitive data,",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "detecting-business-email-compromise",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-business-email-compromise/SKILL.md",
+      "triggers": "detecting;business;email;compromise"
+    },
+    {
+      "description": "Deploy AI and NLP-powered detection systems to identify business email compromise attacks by analyzing writing style, behavioral patterns, and contextual anomalies that evade traditional rule-based filters.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "detecting-business-email-compromise-with-ai",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-business-email-compromise-with-ai/SKILL.md",
+      "triggers": "detecting;business;email;compromise;with"
+    },
+    {
+      "description": "Detect compromised O365 and Google Workspace email accounts by analyzing inbox rule creation, suspicious sign-in locations, mail forwarding rules, and unusual API access patterns via Microsoft Graph and audit logs.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "detecting-email-account-compromise",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-email-account-compromise/SKILL.md",
+      "triggers": "detecting;email;account;compromise"
+    },
+    {
+      "description": "Detect malicious email forwarding rules created by adversaries to maintain persistent access to email communications for intelligence collection and BEC attacks.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "detecting-email-forwarding-rules-attack",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-email-forwarding-rules-attack/SKILL.md",
+      "triggers": "detecting;email;forwarding;rules;attack"
+    },
+    {
+      "description": "Detect and prevent QR code phishing (quishing) attacks that bypass traditional email security by embedding malicious URLs in QR code images within emails.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "detecting-qr-code-phishing-with-email-security",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-qr-code-phishing-with-email-security/SKILL.md",
+      "triggers": "detecting;qr;code;phishing;with"
+    },
+    {
+      "description": "You are an email systems engineer who has maintained 99.9% deliverability across millions of emails. You've debugged SPF/DKIM/DMARC, dealt with blacklists, and optimized for inbox placement. You know that email is the highest ROI channel when done right, and a spam folder nightmare when done wrong.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "email-systems",
+      "src_path": "src/antigravity-awesome-skills/skills/email-systems/SKILL.md",
+      "triggers": "email;systems"
+    },
+    {
+      "description": "Email sandboxing detonates suspicious attachments and URLs in isolated environments to detect zero-day malware and evasive phishing payloads. Proofpoint Targeted Attack Protection (TAP) is an industry",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "implementing-email-sandboxing-with-proofpoint",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-email-sandboxing-with-proofpoint/SKILL.md",
+      "triggers": "implementing;email;sandboxing;with;proofpoint"
+    },
+    {
+      "description": "Deploy Mimecast Targeted Threat Protection including URL Protect, Attachment Protect, Impersonation Protect, and Internal Email Protect to defend against advanced phishing and spearphishing attacks.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "implementing-mimecast-targeted-attack-protection",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-mimecast-targeted-attack-protection/SKILL.md",
+      "triggers": "implementing;mimecast;targeted;attack;protection"
+    },
+    {
+      "description": "Deploy and configure Proofpoint Email Protection as a secure email gateway to detect and block phishing, malware, BEC, and spam before messages reach user inboxes.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "implementing-proofpoint-email-security-gateway",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-proofpoint-email-security-gateway/SKILL.md",
+      "triggers": "implementing;proofpoint;email;security;gateway"
+    },
+    {
+      "description": "Investigates phishing email incidents from initial user report through header analysis, URL/attachment detonation, impacted user identification, and containment actions using SOC tools like Splunk, Microsoft Defender, and sandbox analysis platforms. Use when a reported phishing email requires full incident investigation to determine scope and impact.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "investigating-phishing-email-incident",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/investigating-phishing-email-incident/SKILL.md",
+      "triggers": "investigating;phishing;email;incident"
+    },
+    {
+      "description": "Extract text, tables, metadata, and images from 91+ document formats (PDF, Office, images, HTML, email, archives, academic) using Kreuzberg. Use when writing code that calls Kreuzberg APIs in Python, Node.js/TypeScript, Rust, or CLI. Covers installation, extraction (sync/async), configuration (OCR, chunking, output format), batch processing, error handling, and plugins.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "kreuzberg",
+      "src_path": "src/kreuzberg-dev-kreuzberg/skills/kreuzberg/SKILL.md",
+      "triggers": "kreuzberg"
+    },
+    {
+      "description": "Industry-adaptive B2B newsletter creation with stage, role, and geography-aware workflows",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "newsletter-creation-curation",
+      "src_path": "src/ai-marketing-skills/newsletter-creation-curation/SKILL.md",
+      "triggers": "newsletter;creation;curation"
+    },
+    {
+      "description": "Expert in Odoo QWeb templating for PDF reports, email templates, and website pages. Covers t-if, t-foreach, t-field, and report actions.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "odoo-qweb-templates",
+      "src_path": "src/antigravity-awesome-skills/skills/odoo-qweb-templates/SKILL.md",
+      "triggers": "odoo;qweb;templates"
+    },
+    {
+      "description": "Crafts high-converting outreach messages and email sequences for cold outreach, LinkedIn DMs, and follow-ups. Use when user needs personalized outreach messages that book calls and get replies.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "outreach-specialist",
+      "src_path": "src/founder-skills/skills/outreach-specialist/SKILL.md",
+      "triggers": "outreach;specialist"
+    },
+    {
+      "description": "Execute a phased DMARC rollout from p=none monitoring through p=quarantine to p=reject enforcement, ensuring all legitimate email sources are authenticated before blocking unauthorized senders.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "performing-dmarc-policy-enforcement-rollout",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-dmarc-policy-enforcement-rollout/SKILL.md",
+      "triggers": "performing;dmarc;policy;enforcement;rollout"
+    },
+    {
+      "description": "Build an automated pipeline to defang indicators of compromise (URLs, IPs, domains, emails) for safe sharing and distribute them in STIX format through TAXII feeds and threat intelligence platforms.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "building-ioc-defanging-and-sharing-pipeline",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/building-ioc-defanging-and-sharing-pipeline/SKILL.md",
+      "triggers": "building;ioc;defanging;and;sharing"
+    },
+    {
+      "description": "Write internal communications such as status reports, leadership updates, 3P updates, newsletters, FAQs, incident reports, and project updates using repeatable internal formats.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "internal-comms",
+      "src_path": "src/antigravity-awesome-skills/skills/internal-comms/SKILL.md",
+      "triggers": "internal;comms"
+    }
+  ],
+  "sub_hub": "email",
+  "version": 1
 }

@@ -259,19 +259,40 @@ impl Check for MasterRouterCheck {
         "Skills Bank Master Router (SKILL.md)"
     }
     fn run(&self) -> DiagnosticStatus {
-        let path = Path::new("skill-manage/skills-aggregated/SKILL.md");
-        if !path.exists() {
+        // Prefer the dynamic AGENTS.md as the canonical entrypoint.
+        let agents_candidates = [
+            Path::new("skills-aggregated/AGENTS.md"),
+            Path::new("skill-manage/skills-aggregated/AGENTS.md"),
+            Path::new("AGENTS.md"),
+            Path::new("../AGENTS.md"),
+            Path::new("skill-manage/AGENTS.md"),
+        ];
+
+        if agents_candidates.iter().any(|p| p.exists()) {
+            return DiagnosticStatus::Pass;
+        }
+
+        // Fallback: still accept legacy SKILL.md if present (backward compatibility)
+        let candidates = [
+            Path::new("skills-aggregated/SKILL.md"),
+            Path::new("skill-manage/skills-aggregated/SKILL.md"),
+        ];
+
+        let path = candidates.iter().find(|p| p.exists());
+        if path.is_none() {
             return DiagnosticStatus::Warn {
                 issues: vec![DiagnosticIssue {
-                    description: "Master router SKILL.md not found".to_string(),
-                    location: Some("skill-manage/skills-aggregated/".to_string()),
+                    description: "Master router not found (AGENTS.md or SKILL.md)".to_string(),
+                    location: Some("skills-aggregated/".to_string()),
                     current: None,
-                    should_be: Some("SKILL.md file present".to_string()),
+                    should_be: Some("AGENTS.md or SKILL.md file present".to_string()),
                     why: "The master router is the entry point for all skill discovery".to_string(),
                 }],
                 fix: "Ensure skills-aggregated directory is synchronized".to_string(),
             };
         }
+
+        let path = path.unwrap();
 
         match std::fs::read_to_string(path) {
             Ok(content) => {
@@ -281,7 +302,7 @@ impl Check for MasterRouterCheck {
                     DiagnosticStatus::Warn {
                         issues: vec![DiagnosticIssue {
                             description: "Guard rules missing".to_string(),
-                            location: Some("skill-manage/skills-aggregated/SKILL.md".to_string()),
+                            location: Some(path.to_string_lossy().to_string()),
                             current: None,
                             should_be: Some("Contains '11 HUBS ONLY' section".to_string()),
                             why: "Guard rules prevent hallucination by explicitly limiting hubs"

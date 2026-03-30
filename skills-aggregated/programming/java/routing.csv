@@ -1,95 +1,35 @@
-"skill_id","triggers","score","src_path"
-"csharp-pro","csharp;pro","100","src/antigravity-awesome-skills/skills/csharp-pro/SKILL.md"
-"java-pro","java;pro","16","src/antigravity-awesome-skills/skills/java-pro/SKILL.md"
-"android-java","android;java","12","src/alinaqi-claude-bootstrap/skills/android-java/SKILL.md"
-"azure-ai-agents-persistent-java","azure;ai;agents;persistent;java","12","src/antigravity-awesome-skills/skills/azure-ai-agents-persistent-java/SKILL.md"
-"azure-ai-anomalydetector-java","azure;ai;anomalydetector;java","12","src/antigravity-awesome-skills/skills/azure-ai-anomalydetector-java/SKILL.md"
-"azure-ai-contentsafety-java","azure;ai;contentsafety;java","12","src/antigravity-awesome-skills/skills/azure-ai-contentsafety-java/SKILL.md"
-"azure-ai-formrecognizer-java","azure;ai;formrecognizer;java","12","src/antigravity-awesome-skills/skills/azure-ai-formrecognizer-java/SKILL.md"
-"azure-ai-projects-java","azure;ai;projects;java","12","src/antigravity-awesome-skills/skills/azure-ai-projects-java/SKILL.md"
-"azure-ai-vision-imageanalysis-java","azure;ai;vision;imageanalysis;java","12","src/antigravity-awesome-skills/skills/azure-ai-vision-imageanalysis-java/SKILL.md"
-"azure-ai-voicelive-java","azure;ai;voicelive;java","12","src/antigravity-awesome-skills/skills/azure-ai-voicelive-java/SKILL.md"
-"azure-appconfiguration-java","azure;appconfiguration;java","12","src/antigravity-awesome-skills/skills/azure-appconfiguration-java/SKILL.md"
-"azure-communication-callautomation-java","azure;communication;callautomation;java","12","src/antigravity-awesome-skills/skills/azure-communication-callautomation-java/SKILL.md"
-"azure-communication-callingserver-java","azure;communication;callingserver;java","12","src/antigravity-awesome-skills/skills/azure-communication-callingserver-java/SKILL.md"
-"azure-communication-chat-java","azure;communication;chat;java","12","src/antigravity-awesome-skills/skills/azure-communication-chat-java/SKILL.md"
-"azure-communication-common-java","azure;communication;common;java","12","src/antigravity-awesome-skills/skills/azure-communication-common-java/SKILL.md"
-"azure-communication-sms-java","azure;communication;sms;java","12","src/antigravity-awesome-skills/skills/azure-communication-sms-java/SKILL.md"
-"azure-compute-batch-java","azure;compute;batch;java","12","src/antigravity-awesome-skills/skills/azure-compute-batch-java/SKILL.md"
-"azure-cosmos-java","azure;cosmos;java","12","src/antigravity-awesome-skills/skills/azure-cosmos-java/SKILL.md"
-"azure-data-tables-java","azure;data;tables;java","12","src/antigravity-awesome-skills/skills/azure-data-tables-java/SKILL.md"
-"azure-eventgrid-java","azure;eventgrid;java","12","src/antigravity-awesome-skills/skills/azure-eventgrid-java/SKILL.md"
-"azure-eventhub-java","azure;eventhub;java","12","src/antigravity-awesome-skills/skills/azure-eventhub-java/SKILL.md"
-"azure-identity-java","azure;identity;java","12","src/antigravity-awesome-skills/skills/azure-identity-java/SKILL.md"
-"azure-messaging-webpubsub-java","azure;messaging;webpubsub;java","12","src/antigravity-awesome-skills/skills/azure-messaging-webpubsub-java/SKILL.md"
-"azure-monitor-ingestion-java","azure;monitor;ingestion;java","12","src/antigravity-awesome-skills/skills/azure-monitor-ingestion-java/SKILL.md"
-"azure-monitor-opentelemetry-exporter-java","azure;monitor;opentelemetry;exporter;java","12","src/antigravity-awesome-skills/skills/azure-monitor-opentelemetry-exporter-java/SKILL.md"
-"azure-monitor-query-java","azure;monitor;query;java","12","src/antigravity-awesome-skills/skills/azure-monitor-query-java/SKILL.md"
-"azure-security-keyvault-keys-java","azure;security;keyvault;keys;java","12","src/antigravity-awesome-skills/skills/azure-security-keyvault-keys-java/SKILL.md"
-"azure-security-keyvault-secrets-java","azure;security;keyvault;secrets;java","12","src/antigravity-awesome-skills/skills/azure-security-keyvault-secrets-java/SKILL.md"
-"azure-storage-blob-java","azure;storage;blob;java","12","src/antigravity-awesome-skills/skills/azure-storage-blob-java/SKILL.md"
-"deobfuscating-javascript-malware","deobfuscating;javascript;malware","10","src/mukul975-Anthropic-Cybersecurity-Skills/skills/deobfuscating-javascript-malware/SKILL.md"
-"exploiting-prototype-pollution-in-javascript","exploiting;prototype;pollution;in;javascript","10","src/mukul975-Anthropic-Cybersecurity-Skills/skills/exploiting-prototype-pollution-in-javascript/SKILL.md"
-"azure-ai-agents-persistent-dotnet","azure;ai;agents;persistent;dotnet","7","src/antigravity-awesome-skills/skills/azure-ai-agents-persistent-dotnet/SKILL.md"
-"azure-ai-document-intelligence-dotnet","azure;ai;document;intelligence;dotnet","7","src/antigravity-awesome-skills/skills/azure-ai-document-intelligence-dotnet/SKILL.md"
-"azure-ai-openai-dotnet","azure;ai;openai;dotnet","7","src/antigravity-awesome-skills/skills/azure-ai-openai-dotnet/SKILL.md"
-"azure-ai-projects-dotnet","azure;ai;projects;dotnet","7","src/antigravity-awesome-skills/skills/azure-ai-projects-dotnet/SKILL.md"
-"azure-ai-voicelive-dotnet","azure;ai;voicelive;dotnet","7","src/antigravity-awesome-skills/skills/azure-ai-voicelive-dotnet/SKILL.md"
-"azure-eventgrid-dotnet","azure;eventgrid;dotnet","7","src/antigravity-awesome-skills/skills/azure-eventgrid-dotnet/SKILL.md"
-"azure-eventhub-dotnet","azure;eventhub;dotnet","7","src/antigravity-awesome-skills/skills/azure-eventhub-dotnet/SKILL.md"
-"azure-identity-dotnet","azure;identity;dotnet","7","src/antigravity-awesome-skills/skills/azure-identity-dotnet/SKILL.md"
-"azure-maps-search-dotnet","azure;maps;search;dotnet","7","src/antigravity-awesome-skills/skills/azure-maps-search-dotnet/SKILL.md"
-"azure-mgmt-apicenter-dotnet","azure;mgmt;apicenter;dotnet","7","src/antigravity-awesome-skills/skills/azure-mgmt-apicenter-dotnet/SKILL.md"
-"azure-mgmt-apimanagement-dotnet","azure;mgmt;apimanagement;dotnet","7","src/antigravity-awesome-skills/skills/azure-mgmt-apimanagement-dotnet/SKILL.md"
-"azure-mgmt-applicationinsights-dotnet","azure;mgmt;applicationinsights;dotnet","7","src/antigravity-awesome-skills/skills/azure-mgmt-applicationinsights-dotnet/SKILL.md"
-"azure-mgmt-arizeaiobservabilityeval-dotnet","azure;mgmt;arizeaiobservabilityeval;dotnet","7","src/antigravity-awesome-skills/skills/azure-mgmt-arizeaiobservabilityeval-dotnet/SKILL.md"
-"azure-mgmt-botservice-dotnet","azure;mgmt;botservice;dotnet","7","src/antigravity-awesome-skills/skills/azure-mgmt-botservice-dotnet/SKILL.md"
-"azure-mgmt-fabric-dotnet","azure;mgmt;fabric;dotnet","7","src/antigravity-awesome-skills/skills/azure-mgmt-fabric-dotnet/SKILL.md"
-"azure-mgmt-mongodbatlas-dotnet","azure;mgmt;mongodbatlas;dotnet","7","src/antigravity-awesome-skills/skills/azure-mgmt-mongodbatlas-dotnet/SKILL.md"
-"azure-mgmt-weightsandbiases-dotnet","azure;mgmt;weightsandbiases;dotnet","7","src/antigravity-awesome-skills/skills/azure-mgmt-weightsandbiases-dotnet/SKILL.md"
-"azure-resource-manager-cosmosdb-dotnet","azure;resource;manager;cosmosdb;dotnet","7","src/antigravity-awesome-skills/skills/azure-resource-manager-cosmosdb-dotnet/SKILL.md"
-"azure-resource-manager-durabletask-dotnet","azure;resource;manager;durabletask;dotnet","7","src/antigravity-awesome-skills/skills/azure-resource-manager-durabletask-dotnet/SKILL.md"
-"azure-resource-manager-mysql-dotnet","azure;resource;manager;mysql;dotnet","7","src/antigravity-awesome-skills/skills/azure-resource-manager-mysql-dotnet/SKILL.md"
-"azure-resource-manager-playwright-dotnet","azure;resource;manager;playwright;dotnet","7","src/antigravity-awesome-skills/skills/azure-resource-manager-playwright-dotnet/SKILL.md"
-"azure-resource-manager-postgresql-dotnet","azure;resource;manager;postgresql;dotnet","7","src/antigravity-awesome-skills/skills/azure-resource-manager-postgresql-dotnet/SKILL.md"
-"azure-resource-manager-redis-dotnet","azure;resource;manager;redis;dotnet","7","src/antigravity-awesome-skills/skills/azure-resource-manager-redis-dotnet/SKILL.md"
-"azure-resource-manager-sql-dotnet","azure;resource;manager;sql;dotnet","7","src/antigravity-awesome-skills/skills/azure-resource-manager-sql-dotnet/SKILL.md"
-"azure-search-documents-dotnet","azure;search;documents;dotnet","7","src/antigravity-awesome-skills/skills/azure-search-documents-dotnet/SKILL.md"
-"azure-security-keyvault-keys-dotnet","azure;security;keyvault;keys;dotnet","7","src/antigravity-awesome-skills/skills/azure-security-keyvault-keys-dotnet/SKILL.md"
-"azure-servicebus-dotnet","azure;servicebus;dotnet","7","src/antigravity-awesome-skills/skills/azure-servicebus-dotnet/SKILL.md"
-"cpp-pro","cpp;pro","7","src/antigravity-awesome-skills/skills/cpp-pro/SKILL.md"
-"dotnet-architect","dotnet;architect","7","src/antigravity-awesome-skills/skills/dotnet-architect/SKILL.md"
-"dotnet-backend","dotnet;backend","7","src/antigravity-awesome-skills/skills/dotnet-backend/SKILL.md"
-"elixir-pro","elixir;pro","7","src/antigravity-awesome-skills/skills/elixir-pro/SKILL.md"
-"exploiting-type-juggling-vulnerabilities","exploiting;type;juggling;vulnerabilities","7","src/mukul975-Anthropic-Cybersecurity-Skills/skills/exploiting-type-juggling-vulnerabilities/SKILL.md"
-"haskell-pro","haskell;pro","7","src/antigravity-awesome-skills/skills/haskell-pro/SKILL.md"
-"m365-agents-dotnet","m365;agents;dotnet","7","src/antigravity-awesome-skills/skills/m365-agents-dotnet/SKILL.md"
-"microsoft-azure-webjobs-extensions-authentication-events-dotnet","microsoft;azure;webjobs;extensions;authentication","7","src/antigravity-awesome-skills/skills/microsoft-azure-webjobs-extensions-authentication-events-dotnet/SKILL.md"
-"php-pro","php;pro","7","src/antigravity-awesome-skills/skills/php-pro/SKILL.md"
-"salesforce-development","salesforce;development","7","src/antigravity-awesome-skills/skills/salesforce-development/SKILL.md"
-"scala-pro","scala;pro","7","src/antigravity-awesome-skills/skills/scala-pro/SKILL.md"
-"exploiting-insecure-deserialization","exploiting;insecure;deserialization","6","src/mukul975-Anthropic-Cybersecurity-Skills/skills/exploiting-insecure-deserialization/SKILL.md"
-"analyzing-malicious-pdf-with-peepdf","analyzing;malicious;pdf;with;peepdf","5","src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-malicious-pdf-with-peepdf/SKILL.md"
-"azure-appconfiguration-ts","azure;appconfiguration;ts","5","src/antigravity-awesome-skills/skills/azure-appconfiguration-ts/SKILL.md"
-"azure-monitor-opentelemetry-ts","azure;monitor;opentelemetry;ts","5","src/antigravity-awesome-skills/skills/azure-monitor-opentelemetry-ts/SKILL.md"
-"azure-servicebus-ts","azure;servicebus;ts","5","src/antigravity-awesome-skills/skills/azure-servicebus-ts/SKILL.md"
-"azure-web-pubsub-ts","azure;web;pubsub;ts","5","src/antigravity-awesome-skills/skills/azure-web-pubsub-ts/SKILL.md"
-"building-malware-incident-communication-template","building;malware;incident;communication;template","5","src/mukul975-Anthropic-Cybersecurity-Skills/skills/building-malware-incident-communication-template/SKILL.md"
-"building-soc-escalation-matrix","building;soc;escalation;matrix","5","src/mukul975-Anthropic-Cybersecurity-Skills/skills/building-soc-escalation-matrix/SKILL.md"
-"conducting-internal-reconnaissance-with-bloodhound-ce","conducting;internal;reconnaissance;with;bloodhound","5","src/mukul975-Anthropic-Cybersecurity-Skills/skills/conducting-internal-reconnaissance-with-bloodhound-ce/SKILL.md"
-"database-architect","database;architect","5","src/antigravity-awesome-skills/skills/database-architect/SKILL.md"
-"data-engineering-data-pipeline","data;engineering;data;pipeline","5","src/antigravity-awesome-skills/skills/data-engineering-data-pipeline/SKILL.md"
-"detecting-aws-iam-privilege-escalation","detecting;aws;iam;privilege;escalation","5","src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-aws-iam-privilege-escalation/SKILL.md"
-"detecting-azure-lateral-movement","detecting;azure;lateral;movement","5","src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-azure-lateral-movement/SKILL.md"
-"detecting-azure-service-principal-abuse","detecting;azure;service;principal;abuse","5","src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-azure-service-principal-abuse/SKILL.md"
-"detecting-service-account-abuse","detecting;service;account;abuse","5","src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-service-account-abuse/SKILL.md"
-"exploiting-nopac-cve-2021-42278-42287","exploiting;nopac;cve;2021;42278","5","src/mukul975-Anthropic-Cybersecurity-Skills/skills/exploiting-nopac-cve-2021-42278-42287/SKILL.md"
-"extracting-windows-event-logs-artifacts","extracting;windows;event;logs;artifacts","5","src/mukul975-Anthropic-Cybersecurity-Skills/skills/extracting-windows-event-logs-artifacts/SKILL.md"
-"graphql-architect","graphql;architect","5","src/antigravity-awesome-skills/skills/graphql-architect/SKILL.md"
-"lightning-factory-explainer","lightning;factory;explainer","5","src/antigravity-awesome-skills/skills/lightning-factory-explainer/SKILL.md"
-"monorepo-management","monorepo;management","5","src/antigravity-awesome-skills/skills/monorepo-management/SKILL.md"
-"nodejs-core","nodejs;core","5","src/mcollina-skills/skills/nodejs-core/SKILL.md"
-"performing-aws-privilege-escalation-assessment","performing;aws;privilege;escalation;assessment","5","src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-aws-privilege-escalation-assessment/SKILL.md"
-"performing-privilege-escalation-assessment","performing;privilege;escalation;assessment","5","src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-privilege-escalation-assessment/SKILL.md"
-"performing-privilege-escalation-on-linux","performing;privilege;escalation;on;linux","5","src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-privilege-escalation-on-linux/SKILL.md"
-"semantic-scholar","semantic;scholar","5","src/wanshuiyin-Auto-claude-code-research-in-sleep/skills/semantic-scholar/SKILL.md"
+skill_id,description,src_path
+java-pro,"Master Java 21+ with modern features like virtual threads, pattern matching, and Spring Boot 3.x. Expert in the latest Java ecosystem including GraalVM, Project Loom, and cloud-native patterns.",src/antigravity-awesome-skills/skills/java-pro/SKILL.md
+azure-ai-agents-persistent-java,"Azure AI Agents Persistent SDK for Java. Low-level SDK for creating and managing AI agents with threads, messages, runs, and tools.",src/antigravity-awesome-skills/skills/azure-ai-agents-persistent-java/SKILL.md
+azure-ai-anomalydetector-java,"Build anomaly detection applications with Azure AI Anomaly Detector SDK for Java. Use when implementing univariate/multivariate anomaly detection, time-series analysis, or AI-powered monitoring.",src/antigravity-awesome-skills/skills/azure-ai-anomalydetector-java/SKILL.md
+azure-ai-formrecognizer-java,Build document analysis applications using the Azure AI Document Intelligence SDK for Java.,src/antigravity-awesome-skills/skills/azure-ai-formrecognizer-java/SKILL.md
+azure-ai-projects-java,"Azure AI Projects SDK for Java. High-level SDK for Azure AI Foundry project management including connections, datasets, indexes, and evaluations.",src/antigravity-awesome-skills/skills/azure-ai-projects-java/SKILL.md
+azure-ai-vision-imageanalysis-java,"Build image analysis applications with Azure AI Vision SDK for Java. Use when implementing image captioning, OCR text extraction, object detection, tagging, or smart cropping.",src/antigravity-awesome-skills/skills/azure-ai-vision-imageanalysis-java/SKILL.md
+azure-ai-voicelive-java,Azure AI VoiceLive SDK for Java. Real-time bidirectional voice conversations with AI assistants using WebSocket.,src/antigravity-awesome-skills/skills/azure-ai-voicelive-java/SKILL.md
+azure-appconfiguration-java,"Azure App Configuration SDK for Java. Centralized application configuration management with key-value settings, feature flags, and snapshots.",src/antigravity-awesome-skills/skills/azure-appconfiguration-java/SKILL.md
+azure-communication-callautomation-java,"Build server-side call automation workflows including IVR systems, call routing, recording, and AI-powered interactions.",src/antigravity-awesome-skills/skills/azure-communication-callautomation-java/SKILL.md
+azure-communication-callingserver-java,"⚠️ DEPRECATED: This SDK has been renamed to Call Automation. For new projects, use azure-communication-callautomation instead. This skill is for maintaining legacy code only.",src/antigravity-awesome-skills/skills/azure-communication-callingserver-java/SKILL.md
+azure-communication-chat-java,"Build real-time chat applications with thread management, messaging, participants, and read receipts.",src/antigravity-awesome-skills/skills/azure-communication-chat-java/SKILL.md
+azure-communication-common-java,"Azure Communication Services common utilities for Java. Use when working with CommunicationTokenCredential, user identifiers, token refresh, or shared authentication across ACS services.",src/antigravity-awesome-skills/skills/azure-communication-common-java/SKILL.md
+azure-communication-sms-java,"Send SMS messages with Azure Communication Services SMS Java SDK. Use when implementing SMS notifications, alerts, OTP delivery, bulk messaging, or delivery reports.",src/antigravity-awesome-skills/skills/azure-communication-sms-java/SKILL.md
+azure-compute-batch-java,"Azure Batch SDK for Java. Run large-scale parallel and HPC batch jobs with pools, jobs, tasks, and compute nodes.",src/antigravity-awesome-skills/skills/azure-compute-batch-java/SKILL.md
+azure-data-tables-java,Build table storage applications using the Azure Tables SDK for Java. Works with both Azure Table Storage and Cosmos DB Table API.,src/antigravity-awesome-skills/skills/azure-data-tables-java/SKILL.md
+azure-eventgrid-java,"Build event-driven applications with Azure Event Grid SDK for Java. Use when publishing events, implementing pub/sub patterns, or integrating with Azure services via events.",src/antigravity-awesome-skills/skills/azure-eventgrid-java/SKILL.md
+azure-eventhub-java,"Build real-time streaming applications with Azure Event Hubs SDK for Java. Use when implementing event streaming, high-throughput data ingestion, or building event-driven architectures.",src/antigravity-awesome-skills/skills/azure-eventhub-java/SKILL.md
+azure-identity-java,Authenticate Java applications with Azure services using Microsoft Entra ID (Azure AD).,src/antigravity-awesome-skills/skills/azure-identity-java/SKILL.md
+azure-messaging-webpubsub-java,"Build real-time web applications with Azure Web PubSub SDK for Java. Use when implementing WebSocket-based messaging, live updates, chat applications, or server-to-client push notifications.",src/antigravity-awesome-skills/skills/azure-messaging-webpubsub-java/SKILL.md
+azure-monitor-ingestion-java,Azure Monitor Ingestion SDK for Java. Send custom logs to Azure Monitor via Data Collection Rules (DCR) and Data Collection Endpoints (DCE).,src/antigravity-awesome-skills/skills/azure-monitor-ingestion-java/SKILL.md
+azure-storage-blob-java,Build blob storage applications using the Azure Storage Blob SDK for Java.,src/antigravity-awesome-skills/skills/azure-storage-blob-java/SKILL.md
+sankhya-dashboard-html-jsp-custom-best-pratices,"This skill should be used when the user asks for patterns, best practices, creation, or fixing of Sankhya dashboards using HTML, JSP, Java, and SQL.",src/antigravity-awesome-skills/skills/sankhya-dashboard-html-jsp-custom-best-pratices/SKILL.md
+analyzing-malicious-pdf-with-peepdf,"Perform static analysis of malicious PDF documents using peepdf, pdfid, and pdf-parser to extract embedded JavaScript, shellcode, and suspicious objects.",src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-malicious-pdf-with-peepdf/SKILL.md
+analyzing-pdf-malware-with-pdfid,"Analyzes malicious PDF files using PDFiD, pdf-parser, and peepdf to identify embedded JavaScript, shellcode, exploits, and suspicious objects without opening the document. Determines the attack vector and extracts embedded payloads for further analysis. Activates for requests involving PDF malware analysis, malicious document analysis, PDF exploit investigation, or suspicious attachment triage.",src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-pdf-malware-with-pdfid/SKILL.md
+azure-keyvault-keys-ts,"Manage cryptographic keys using Azure Key Vault Keys SDK for JavaScript (@azure/keyvault-keys). Use when creating, encrypting/decrypting, signing, or rotating keys.",src/antigravity-awesome-skills/skills/azure-keyvault-keys-ts/SKILL.md
+azure-keyvault-secrets-ts,Manage secrets using Azure Key Vault Secrets SDK for JavaScript (@azure/keyvault-secrets). Use when storing and retrieving application secrets or configuration values.,src/antigravity-awesome-skills/skills/azure-keyvault-secrets-ts/SKILL.md
+deobfuscating-javascript-malware,"Deobfuscates malicious JavaScript code used in web-based attacks, phishing pages, and dropper scripts by reversing encoding layers, eval chains, string manipulation, and control flow obfuscation to reveal the original malicious logic. Activates for requests involving JavaScript malware analysis, script deobfuscation, web skimmer analysis, or obfuscated dropper investigation.",src/mukul975-Anthropic-Cybersecurity-Skills/skills/deobfuscating-javascript-malware/SKILL.md
+exploiting-prototype-pollution-in-javascript,"Detect and exploit JavaScript prototype pollution vulnerabilities on both client-side and server-side applications to achieve XSS, RCE, and authentication bypass through property injection.",src/mukul975-Anthropic-Cybersecurity-Skills/skills/exploiting-prototype-pollution-in-javascript/SKILL.md
+figma-use,"**MANDATORY prerequisite** — you MUST invoke this skill BEFORE every `use_figma` tool call. NEVER call `use_figma` directly without loading this skill first. Skipping it causes common, hard-to-debug failures. Trigger whenever the user wants to perform a write action or a unique read action that requires JavaScript execution in the Figma file context — e.g. create/edit/delete nodes, set up variables or tokens, build components and variants, modify auto-layout or fills, bind variables to properties, or inspect file structure programmatically.",src/mcp-server-guide/skills/figma-use/SKILL.md
+javascript-mastery,"33+ essential JavaScript concepts every developer should know, inspired by [33-js-concepts](https://github.com/leonardomso/33-js-concepts).",src/antigravity-awesome-skills/skills/javascript-mastery/SKILL.md
+javascript-pro,"Master modern JavaScript with ES6+, async patterns, and Node.js APIs. Handles promises, event loops, and browser/Node compatibility.",src/antigravity-awesome-skills/plugins/antigravity-bundle-typescript-javascript/skills/javascript-pro/SKILL.md
+latex-paper-conversion,"This skill should be used when the user asks to convert an academic paper in LaTeX from one format (e.g., Springer, IPOL) to another format (e.g., MDPI, IEEE, Nature). It automates extraction, injection, fixing formatting, and compiling.",src/antigravity-awesome-skills/skills/latex-paper-conversion/SKILL.md
+modern-javascript-patterns,"Comprehensive guide for mastering modern JavaScript (ES6+) features, functional programming patterns, and best practices for writing clean, maintainable, and performant code.",src/antigravity-awesome-skills/skills/modern-javascript-patterns/SKILL.md
+n8n-code-javascript,"Write JavaScript code in n8n Code nodes. Use when writing JavaScript in n8n, using $input/$json/$node syntax, making HTTP requests with $helpers, working with dates using DateTime, troubleshooting Code node errors, or choosing between Code node modes.",src/antigravity-awesome-skills/skills/n8n-code-javascript/SKILL.md

@@ -1,0 +1,744 @@
+{
+  "generated_at_unix": 1774888953,
+  "hub": "business",
+  "skills": [
+    {
+      "description": "Manages the end-to-end cyber threat intelligence lifecycle from planning and direction through collection, processing, analysis, dissemination, and feedback to ensure intelligence products meet stakeholder requirements and continuously improve. Use when establishing or maturing a CTI program, defining intelligence requirements with business stakeholders, or building feedback loops between intelligence consumers and producers. Activates for requests involving CTI program maturity, intelligence requirements, PIRs, or intelligence lifecycle management.",
+      "phase": 1,
+      "score": 13,
+      "skill_id": "managing-intelligence-lifecycle",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/managing-intelligence-lifecycle/SKILL.md",
+      "triggers": "managing;intelligence;lifecycle"
+    },
+    {
+      "description": "You are an AI product engineer who has shipped LLM features to millions of users. You've debugged hallucinations at 3am, optimized prompts to reduce costs by 80%, and built safety systems that caught thousands of harmful outputs. You know that demos are easy and production is hard.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "ai-product",
+      "src_path": "src/antigravity-awesome-skills/skills/ai-product/SKILL.md",
+      "triggers": "ai;product"
+    },
+    {
+      "description": "Brainstorm feature ideas for a new product in initial discovery from PM, Designer, and Engineer perspectives. Use when starting product discovery for a new product, exploring features for a startup idea, or doing initial ideation.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "brainstorm-ideas-new",
+      "src_path": "src/pm-skills/pm-product-discovery/skills/brainstorm-ideas-new/SKILL.md",
+      "triggers": "brainstorm;ideas;new"
+    },
+    {
+      "description": "Create a Product Requirements Document using a comprehensive 8-section template covering problem, objectives, segments, value propositions, solution, and release planning. Use when writing a PRD, documenting product requirements, preparing a feature spec, or reviewing an existing PRD.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "create-prd",
+      "src_path": "src/pm-skills/pm-execution/skills/create-prd/SKILL.md",
+      "triggers": "create;prd"
+    },
+    {
+      "description": "Generates professional PRD (Product Requirements Document) files optimized for AI coding tools. Takes a rough product idea, asks clarifying questions, and outputs a structured PDF ready to feed into AI coding assistants.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "prd-generator",
+      "src_path": "src/founder-skills/skills/prd-generator/SKILL.md",
+      "triggers": "prd;generator"
+    },
+    {
+      "description": "Prioritize a backlog of feature ideas based on impact, effort, risk, and strategic alignment with top 5 recommendations. Use when prioritizing a feature backlog, making scope decisions, or ranking product ideas.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "prioritize-features",
+      "src_path": "src/pm-skills/pm-product-discovery/skills/prioritize-features/SKILL.md",
+      "triggers": "prioritize;features"
+    },
+    {
+      "description": "Essential tools and frameworks for modern product management, from discovery to delivery.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "product-manager-toolkit",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-startup-founder/skills/product-manager-toolkit/SKILL.md",
+      "triggers": "product;manager;toolkit"
+    },
+    {
+      "description": "Generate user-facing release notes from tickets, PRDs, or changelogs. Creates clear, engaging summaries organized by category (new features, improvements, fixes). Use when writing release notes, creating changelogs, announcing product updates, or summarizing what shipped.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "release-notes",
+      "src_path": "src/pm-skills/pm-execution/skills/release-notes/SKILL.md",
+      "triggers": "release;notes"
+    },
+    {
+      "description": "Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue. Use when user wants to write a PRD, create a product requirements document, or plan a new feature.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "write-a-prd",
+      "src_path": "src/mattpocock-skills/write-a-prd/SKILL.md",
+      "triggers": "write;a;prd"
+    },
+    {
+      "description": "Create product backlog items in Why-What-Acceptance format — independent, valuable, testable items with strategic context. Use when writing structured backlog items, breaking features into work items, or using the WWA format.",
+      "phase": 1,
+      "score": 11,
+      "skill_id": "wwas",
+      "src_path": "src/pm-skills/pm-execution/skills/wwas/SKILL.md",
+      "triggers": "wwas"
+    },
+    {
+      "description": "Evaluates and selects Threat Intelligence Platform (TIP) products based on organizational requirements including feed integration capability, STIX/TAXII support, workflow automation, analyst interface, and total cost of ownership. Use when conducting a TIP procurement, migrating between TIP solutions, or assessing whether the current TIP meets program maturity requirements. Activates for requests involving ThreatConnect, MISP, OpenCTI, Anomali, EclecticIQ, or TIP procurement decisions.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "evaluating-threat-intelligence-platforms",
+      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/evaluating-threat-intelligence-platforms/SKILL.md",
+      "triggers": "evaluating;threat;intelligence;platforms"
+    },
+    {
+      "description": "21 production-ready scripts for iOS app testing, building, and automation. Provides semantic UI navigation, build automation, accessibility testing, and simulator lifecycle management. Optimized for AI agents with minimal token output.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "ios-simulator-skill",
+      "src_path": "src/conorluddy-ios-simulator-skill/ios-simulator-skill/SKILL.md",
+      "triggers": "ios;simulator;skill"
+    },
+    {
+      "description": "Comprehensive guide to Istio traffic management for production service mesh deployments.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "istio-traffic-management",
+      "src_path": "src/antigravity-awesome-skills/skills/istio-traffic-management/SKILL.md",
+      "triggers": "istio;traffic;management"
+    },
+    {
+      "description": "Master Julia 1.10+ with modern features, performance optimization, multiple dispatch, and production-ready practices.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "julia-pro",
+      "src_path": "src/antigravity-awesome-skills/skills/julia-pro/SKILL.md",
+      "triggers": "julia;pro"
+    },
+    {
+      "description": "Provide production-ready shell script templates for common Linux system administration tasks including backups, monitoring, user management, log analysis, and automation. These scripts serve as building blocks for security operations and penetration testing environments.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "linux-shell-scripting",
+      "src_path": "src/antigravity-awesome-skills/skills/linux-shell-scripting/SKILL.md",
+      "triggers": "linux;shell;scripting"
+    },
+    {
+      "description": "NVIDIA's runtime safety framework for LLM applications. Features jailbreak detection, input/output validation, fact-checking, hallucination detection, PII filtering, toxicity detection. Uses Colang 2.0 DSL for programmable rails. Production-ready, runs on T4 GPU.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "nemo-guardrails",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/07-safety-alignment/nemo-guardrails/SKILL.md",
+      "triggers": "nemo;guardrails"
+    },
+    {
+      "description": "Build production-ready monitoring, logging, and tracing systems. Implements comprehensive observability strategies, SLI/SLO management, and incident response workflows.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "observability-engineer",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-observability-monitoring/skills/observability-engineer/SKILL.md",
+      "triggers": "observability;engineer"
+    },
+    {
+      "description": "Official Opentrons Protocol API for OT-2 and Flex robots. Use when writing protocols specifically for Opentrons hardware with full access to Protocol API v2 features. Best for production Opentrons protocols, official API compatibility. For multi-vendor automation or broader equipment control use pylabrobot.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "opentrons-integration",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/opentrons-integration/SKILL.md",
+      "triggers": "opentrons;integration"
+    },
+    {
+      "description": "PostgreSQL database optimization workflow for query tuning, indexing strategies, performance analysis, and production database management.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "postgresql-optimization",
+      "src_path": "src/antigravity-awesome-skills/skills/postgresql-optimization/SKILL.md",
+      "triggers": "postgresql;optimization"
+    },
+    {
+      "description": "Rails 8.x application architecture, implementation, and review guidance for production codebases. Use when building or reviewing Ruby on Rails 8 features across models, controllers, routes, Hotwire, jobs, APIs, performance, security, and testing. Trigger for requests mentioning Rails 8, Active Record, Active Job, GoodJob, Solid Queue, Turbo/Stimulus, REST resources, migrations, code quality, naming, and production readiness.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "rails-conventions",
+      "src_path": "src/ethos-link-rails-conventions/SKILL.md",
+      "triggers": "rails;conventions"
+    },
+    {
+      "description": "Master Rust 1.75+ with modern async patterns, advanced type system features, and production-ready systems programming.",
+      "phase": 1,
+      "score": 9,
+      "skill_id": "rust-pro",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-systems-programming/skills/rust-pro/SKILL.md",
+      "triggers": "rust;pro"
+    },
+    {
+      "description": "When the user wants to A/B test App Store product page elements to improve conversion rate. Also use when the user mentions \"A/B test\", \"product page optimization\", \"test my screenshots\", \"test my icon\", \"conversion rate optimization\", \"CPP\", or \"custom product pages\". For screenshot design, see screenshot-optimization. For metadata optimization, see metadata-optimization.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "ab-test-store-listing",
+      "src_path": "src/aso-skills/skills/ab-test-store-listing/SKILL.md",
+      "triggers": "ab;test;store;listing"
+    },
+    {
+      "description": "Assess whether your product work is AI-first or AI-shaped. Use when evaluating AI maturity and choosing the next team capability to build.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "ai-shaped-readiness-advisor",
+      "src_path": "src/Product-Manager-Skills/skills/ai-shaped-readiness-advisor/SKILL.md",
+      "triggers": "ai;shaped;readiness;advisor"
+    },
+    {
+      "description": "You know AI wrappers get a bad rap, but the good ones solve real problems. You build products where AI is the engine, not the gimmick. You understand prompt engineering is product development. You balance costs with user experience. You create AI products people actually pay for and use daily.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "ai-wrapper-product",
+      "src_path": "src/antigravity-awesome-skills/skills/ai-wrapper-product/SKILL.md",
+      "triggers": "ai;wrapper;product"
+    },
+    {
+      "description": "Analytics de produto — PostHog, Mixpanel, eventos, funnels, cohorts, retencao, north star metric, OKRs e dashboards de produto.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "analytics-product",
+      "src_path": "src/antigravity-awesome-skills/skills/analytics-product/SKILL.md",
+      "triggers": "analytics;product"
+    },
+    {
+      "description": "Generate an Ansoff Matrix analysis mapping growth strategies across market penetration, market development, product development, and diversification. Use when considering growth options, planning market expansion, or evaluating strategic growth paths.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "ansoff-matrix",
+      "src_path": "src/pm-skills/pm-product-strategy/skills/ansoff-matrix/SKILL.md",
+      "triggers": "ansoff;matrix"
+    },
+    {
+      "description": "Extract product data, prices, reviews, and seller information from any e-commerce platform using Apify's E-commerce Scraping Tool.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "apify-ecommerce",
+      "src_path": "src/antigravity-awesome-skills/skills/apify-ecommerce/SKILL.md",
+      "triggers": "apify;ecommerce"
+    },
+    {
+      "description": "Analyze market conditions, geographic opportunities, pricing, consumer behavior, and product validation across Google Maps, Facebook, Instagram, Booking.com, and TripAdvisor.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "apify-market-research",
+      "src_path": "src/antigravity-awesome-skills/skills/apify-market-research/SKILL.md",
+      "triggers": "apify;market;research"
+    },
+    {
+      "description": "When the user wants to set up, optimize, or scale Apple Search Ads (ASA) campaigns — including keyword bidding, match types, campaign structure, Creative Product Sets, CPP routing, and ROAS optimization. Use when the user mentions \"Apple Search Ads\", \"ASA\", \"Search Ads\", \"Search tab ads\", \"Today tab ads\", \"CPT\", \"TTR\", \"Search Match\", \"exact match\", \"broad match\", \"CPP in ads\", \"ASA bidding\", or \"Search Ads budget\". For Meta/Google UAC/TikTok paid UA, see ua-campaign.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "apple-search-ads",
+      "src_path": "src/aso-skills/skills/apple-search-ads/SKILL.md",
+      "triggers": "apple;search;ads"
+    },
+    {
+      "description": "This skill enforces Sentry's blog writing standards across every post — whether you're helping an engineer write their first blog post or a marketer draft a product announcement.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "blog-writing-guide",
+      "src_path": "src/antigravity-awesome-skills/skills/blog-writing-guide/SKILL.md",
+      "triggers": "blog;writing;guide"
+    },
+    {
+      "description": "Brainstorm product ideas for an existing product using multi-perspective ideation from PM, Designer, and Engineer viewpoints. Use when generating new feature ideas, brainstorming solutions for an identified opportunity, or ideating with a product trio.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "brainstorm-ideas-existing",
+      "src_path": "src/pm-skills/pm-product-discovery/skills/brainstorm-ideas-existing/SKILL.md",
+      "triggers": "brainstorm;ideas;existing"
+    },
+    {
+      "description": "You are an expert in creating competitor comparison and alternative pages. Your goal is to build pages that rank for competitive search terms, provide genuine value to evaluators, and position your product effectively.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "competitor-alternatives",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-startup-founder/skills/competitor-alternatives/SKILL.md",
+      "triggers": "competitor;alternatives"
+    },
+    {
+      "description": "Plan customer discovery interviews with the right goal, segment, constraints, and method. Use when preparing interviews for problem validation, churn research, or new product ideas.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "discovery-interview-prep",
+      "src_path": "src/Product-Manager-Skills/skills/discovery-interview-prep/SKILL.md",
+      "triggers": "discovery;interview;prep"
+    },
+    {
+      "description": "Claude-powered ecommerce business review toolkit for D2C stores. Single command: review. Analyzes order transaction data across multiple time periods (30d/90d/365d), produces KPI trees with health signals, structured findings, and concrete action plans. Triggers on: \"ecommerce review\", \"store review\", \"store health\", \"revenue analysis\", \"customer analysis\", \"product analysis\", \"business review\".",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "ecom",
+      "src_path": "src/takechanman1228-claude-ecom/skills/ecom/SKILL.md",
+      "triggers": "ecom"
+    },
+    {
+      "description": "Write a clear, empathetic EOL announcement with rationale, customer impact, and next steps. Use when retiring a product, feature, or plan without creating avoidable confusion.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "eol-message",
+      "src_path": "src/Product-Manager-Skills/skills/eol-message/SKILL.md",
+      "triggers": "eol;message"
+    },
+    {
+      "description": "Plan a VP or CPO 30-60-90 day diagnostic onboarding path. Use when entering a new executive product role and avoiding premature change.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "executive-onboarding-playbook",
+      "src_path": "src/Product-Manager-Skills/skills/executive-onboarding-playbook/SKILL.md",
+      "triggers": "executive;onboarding;playbook"
+    },
+    {
+      "description": "AI-powered autonomous data extraction that navigates complex sites and returns structured JSON. Use this skill when the user wants structured data from websites, needs to extract pricing tiers, product listings, directory entries, or any data as JSON with a schema. Triggers on \"extract structured data\", \"get all the products\", \"pull pricing info\", \"extract as JSON\", or when the user provides a JSON schema for website data. More powerful than simple scraping for multi-page structured extraction.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "firecrawl-agent",
+      "src_path": "src/cli/skills/firecrawl-agent/SKILL.md",
+      "triggers": "firecrawl;agent"
+    },
+    {
+      "description": "Identify growth loops (flywheels) for sustainable traction. Evaluates 5 loop types: Viral, Usage, Collaboration, User-Generated, and Referral. Use when designing growth mechanisms, building product-led traction, or understanding how growth loops work.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "growth-loops",
+      "src_path": "src/pm-skills/pm-go-to-market/skills/growth-loops/SKILL.md",
+      "triggers": "growth;loops"
+    },
+    {
+      "description": "Connect WhatsApp to your product with Kapso: onboard customers with setup links, detect connections, receive events via webhooks, and send messages/templates/media. Also manage WhatsApp Flows (create/update/publish, data endpoints, encryption). Use when integrating WhatsApp end-to-end.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "integrate-whatsapp",
+      "src_path": "src/gokapso-agent-skills/skills/integrate-whatsapp/SKILL.md",
+      "triggers": "integrate;whatsapp"
+    },
+    {
+      "description": "Uncover customer jobs, pains, and gains in a structured JTBD format. Use when clarifying unmet needs, repositioning a product, or improving discovery and messaging.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "jobs-to-be-done",
+      "src_path": "src/Product-Manager-Skills/skills/jobs-to-be-done/SKILL.md",
+      "triggers": "jobs;to;be;done"
+    },
+    {
+      "description": "Delegate complex, long-running tasks to Manus AI agent for autonomous execution. Use when user says 'use manus', 'delegate to manus', 'send to manus', 'have manus do', 'ask manus', 'check manus sessions', or when tasks require deep web research, market analysis, product comparisons, stock analysis, competitive research, document generation, data analysis, or multi-step workflows that benefit from autonomous agent execution with parallel processing.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "manus",
+      "src_path": "src/sanjay3290-ai-skills/skills/manus/SKILL.md",
+      "triggers": "manus"
+    },
+    {
+      "description": "Identify 3-5 potential customer segments with demographics, JTBD, and product fit analysis. Use when exploring market segments, identifying target audiences, evaluating new markets, or learning how to segment a market.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "market-segments",
+      "src_path": "src/pm-skills/pm-market-research/skills/market-segments/SKILL.md",
+      "triggers": "market;segments"
+    },
+    {
+      "description": "Expert guide for Odoo eCommerce and Website: product catalog, payment providers, shipping methods, SEO, and order-to-fulfillment workflow.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "odoo-ecommerce-configurator",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-odoo-erp/skills/odoo-ecommerce-configurator/SKILL.md",
+      "triggers": "odoo;ecommerce;configurator"
+    },
+    {
+      "description": "Build an Opportunity Solution Tree (OST) to structure product discovery — map a desired outcome to opportunities, solutions, and experiments. Based on Teresa Torres' Continuous Discovery Habits. Use when structuring discovery work, mapping opportunities to solutions, or deciding what to build next.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "opportunity-solution-tree",
+      "src_path": "src/pm-skills/pm-product-discovery/skills/opportunity-solution-tree/SKILL.md",
+      "triggers": "opportunity;solution;tree"
+    },
+    {
+      "description": "You believe the best tools come from real problems. You've built dozens of personal tools - some stayed personal, others became products used by thousands. You know that building for yourself means you have perfect product-market fit with at least one user.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "personal-tool-builder",
+      "src_path": "src/antigravity-awesome-skills/skills/personal-tool-builder/SKILL.md",
+      "triggers": "personal;tool;builder"
+    },
+    {
+      "description": "Define a Proof of Life probe to test a risky hypothesis cheaply. Use when you need harsh truth before building real product.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "pol-probe",
+      "src_path": "src/Product-Manager-Skills/skills/pol-probe/SKILL.md",
+      "triggers": "pol;probe"
+    },
+    {
+      "description": "Help founders and marketers nail their positioning. Use when someone mentions \"positioning,\" \"value proposition,\" \"who is this for,\" \"how do I describe my product,\" \"messaging,\" \"ICP,\" \"ideal customer,\" or is struggling to articulate what makes their product different.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "positioning-basics",
+      "src_path": "src/ai-marketing-skills/positioning-basics/SKILL.md",
+      "triggers": "positioning;basics"
+    },
+    {
+      "description": "Run a positioning workshop that surfaces target customer, unmet need, category, benefits, and differentiation. Use when your product messaging feels fuzzy, generic, or misaligned.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "positioning-workshop",
+      "src_path": "src/Product-Manager-Skills/skills/positioning-workshop/SKILL.md",
+      "triggers": "positioning;workshop"
+    },
+    {
+      "description": "Creates a comprehensive, personalized Product Hunt launch plan to rank",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "product-hunt-launch-plan",
+      "src_path": "src/founder-skills/skills/product-hunt-launch-plan/SKILL.md",
+      "triggers": "product;hunt;launch;plan"
+    },
+    {
+      "description": "Senior PM agent with 6 knowledge domains, 30+ frameworks, 12 templates, and 32 SaaS metrics with formulas. Pure Markdown, zero scripts.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "product-manager",
+      "src_path": "src/antigravity-awesome-skills/skills/product-manager/SKILL.md",
+      "triggers": "product;manager"
+    },
+    {
+      "description": "Brainstorm 5 unique, memorable product names with rationale aligned to brand values and target audience. Use when naming a new product, rebranding, or exploring product name ideas.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "product-name",
+      "src_path": "src/pm-skills/pm-marketing-growth/skills/product-name/SKILL.md",
+      "triggers": "product;name"
+    },
+    {
+      "description": "Evaluate an AI product idea across outcomes, hypotheses, risks, and positioning. Use when deciding whether an AI solution deserves investment or recommendation.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "recommendation-canvas",
+      "src_path": "src/Product-Manager-Skills/skills/recommendation-canvas/SKILL.md",
+      "triggers": "recommendation;canvas"
+    },
+    {
+      "description": "Search and analyze Reddit content using semantic AI search via reddit-insights.com MCP server. Use when you need to: (1) Find user pain points and frustrations for product ideas, (2) Discover niche markets or underserved needs, (3) Research what people really think about products/topics, (4) Find content inspiration from real discussions, (5) Analyze sentiment and trends on Reddit, (6) Validate business ideas with real user feedback. Triggers: reddit search, find pain points, market research, user feedback, what do people think about, reddit trends, niche discovery, product validation.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "reddit-insights",
+      "src_path": "src/ai-marketing-skills/reddit-insights/SKILL.md",
+      "triggers": "reddit;insights"
+    },
+    {
+      "description": "Calculate SaaS revenue, retention, and growth metrics. Use when diagnosing momentum, churn, expansion, or product-market-fit signals.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "saas-revenue-growth-metrics",
+      "src_path": "src/Product-Manager-Skills/skills/saas-revenue-growth-metrics/SKILL.md",
+      "triggers": "saas;revenue;growth;metrics"
+    },
+    {
+      "description": "Generate marketing screenshots of your app using Playwright. Use when the user wants to create screenshots for Product Hunt, social media, landing pages, or documentation.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "screenshots",
+      "src_path": "src/antigravity-awesome-skills/skills/screenshots/SKILL.md",
+      "triggers": "screenshots"
+    },
+    {
+      "description": "Analyze user feedback data to identify segments with sentiment scores, JTBD, and product satisfaction insights. Use when analyzing user feedback at scale, running sentiment analysis on reviews or surveys, or identifying satisfaction patterns.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "sentiment-analysis",
+      "src_path": "src/pm-skills/pm-market-research/skills/sentiment-analysis/SKILL.md",
+      "triggers": "sentiment;analysis"
+    },
+    {
+      "description": "Perform a detailed SWOT analysis — strengths, weaknesses, opportunities, and threats with actionable recommendations. Use when doing strategic assessment, competitive analysis, or evaluating a product or business position.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "swot-analysis",
+      "src_path": "src/pm-skills/pm-product-strategy/skills/swot-analysis/SKILL.md",
+      "triggers": "swot;analysis"
+    },
+    {
+      "description": "Calculate TAM, SAM, and SOM with explicit assumptions, methods, and caveats. Use when sizing a market for a product idea, business case, or executive review.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "tam-sam-som-calculator",
+      "src_path": "src/Product-Manager-Skills/skills/tam-sam-som-calculator/SKILL.md",
+      "triggers": "tam;sam;som;calculator"
+    },
+    {
+      "description": "Create refined user personas from research data — 3 personas with JTBD, pains, gains, and unexpected insights. Use when building personas from survey data, creating user profiles from research, or segmenting users for product decisions.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "user-personas",
+      "src_path": "src/pm-skills/pm-market-research/skills/user-personas/SKILL.md",
+      "triggers": "user;personas"
+    },
+    {
+      "description": "Design a detailed value proposition using a 6-part JTBD template — Who, Why, What before, How, What after, Alternatives. Use when creating a value proposition, analyzing customer value delivery, or articulating why customers should choose your product.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "value-proposition",
+      "src_path": "src/pm-skills/pm-product-strategy/skills/value-proposition/SKILL.md",
+      "triggers": "value;proposition"
+    },
+    {
+      "description": "AI-powered product design tool for transforming sketches into full-fidelity 3D renders.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "vizcom",
+      "src_path": "src/antigravity-awesome-skills/skills/vizcom/SKILL.md",
+      "triggers": "vizcom"
+    },
+    {
+      "description": "Guide the transition to VP or CPO across preparing, interviewing, landing, and recalibrating. Use when executive product scope is changing fast.",
+      "phase": 1,
+      "score": 7,
+      "skill_id": "vp-cpo-readiness-advisor",
+      "src_path": "src/Product-Manager-Skills/skills/vp-cpo-readiness-advisor/SKILL.md",
+      "triggers": "vp;cpo;readiness;advisor"
+    },
+    {
+      "description": "Reconcile App Store Connect subscriptions and in-app purchases with RevenueCat products, entitlements, offerings, and packages using asc and RevenueCat MCP. Use when setting up or syncing subscription catalogs across ASC and RevenueCat.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "asc-revenuecat-catalog-sync",
+      "src_path": "src/rudrankriyam-app-store-connect-cli-skills/skills/asc-revenuecat-catalog-sync/SKILL.md",
+      "triggers": "asc;revenuecat;catalog;sync"
+    },
+    {
+      "description": "Debug Azure production issues on Azure using AppLens, Azure Monitor, resource health, and safe triage. WHEN: debug production issues, troubleshoot container apps, troubleshoot functions, troubleshoot AKS, kubectl cannot connect, kube-system/CoreDNS failures, pod pending, crashloop, node not ready, upgrade failures, analyze logs, KQL, insights, image pull failures, cold start issues, health probe failures, resource health, root cause of errors.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "azure-diagnostics",
+      "src_path": "src/microsoft-skills/.github/plugins/azure-skills/skills/azure-diagnostics/SKILL.md",
+      "triggers": "azure;diagnostics"
+    },
+    {
+      "description": "Build production-ready Web3 applications, smart contracts, and decentralized systems. Implements DeFi protocols, NFT platforms, DAOs, and enterprise blockchain integrations.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "blockchain-developer",
+      "src_path": "src/antigravity-awesome-skills/skills/blockchain-developer/SKILL.md",
+      "triggers": "blockchain;developer"
+    },
+    {
+      "description": "CloudFormation template optimization, nested stacks, drift detection, and production-ready patterns. Use when writing or reviewing CF templates.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "cloudformation-best-practices",
+      "src_path": "src/antigravity-awesome-skills/skills/cloudformation-best-practices/SKILL.md",
+      "triggers": "cloudformation;best;practices"
+    },
+    {
+      "description": "Implement DeFi protocols with production-ready templates for staking, AMMs, governance, and lending systems. Use when building decentralized finance applications or smart contract protocols.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "defi-protocol-templates",
+      "src_path": "src/antigravity-awesome-skills/skills/defi-protocol-templates/SKILL.md",
+      "triggers": "defi;protocol;templates"
+    },
+    {
+      "description": "Production deployment principles and decision-making. Safe deployment workflows, rollback strategies, and verification. Teaches thinking, not scripts.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "deployment-procedures",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-devops-cloud/skills/deployment-procedures/SKILL.md",
+      "triggers": "deployment;procedures"
+    },
+    {
+      "description": "You are a debugging expert specializing in setting up comprehensive debugging environments, distributed tracing, and diagnostic tools. Configure debugging workflows, implement tracing solutions, and establish troubleshooting practices for development and production environments.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "distributed-debugging-debug-trace",
+      "src_path": "src/antigravity-awesome-skills/skills/distributed-debugging-debug-trace/SKILL.md",
+      "triggers": "distributed;debugging;debug;trace"
+    },
+    {
+      "description": "You are an expert error analysis specialist with deep expertise in debugging distributed systems, analyzing production incidents, and implementing comprehensive observability solutions.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "error-debugging-error-analysis",
+      "src_path": "src/antigravity-awesome-skills/skills/error-debugging-error-analysis/SKILL.md",
+      "triggers": "error;debugging;error;analysis"
+    },
+    {
+      "description": "You are an error tracking and observability expert specializing in implementing comprehensive error monitoring solutions. Set up error tracking systems, configure alerts, implement structured logging, and ensure teams can quickly identify and resolve production issues.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "error-debugging-error-trace",
+      "src_path": "src/antigravity-awesome-skills/skills/error-debugging-error-trace/SKILL.md",
+      "triggers": "error;debugging;error;trace"
+    },
+    {
+      "description": "You are an expert error analysis specialist with deep expertise in debugging distributed systems, analyzing production incidents, and implementing comprehensive observability solutions.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "error-diagnostics-error-analysis",
+      "src_path": "src/antigravity-awesome-skills/skills/error-diagnostics-error-analysis/SKILL.md",
+      "triggers": "error;diagnostics;error;analysis"
+    },
+    {
+      "description": "Deploy Expo apps to production",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "expo-deployment",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-expo-react-native/skills/expo-deployment/SKILL.md",
+      "triggers": "expo;deployment"
+    },
+    {
+      "description": "Create and manage production-ready Grafana dashboards for comprehensive system observability.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "grafana-dashboards",
+      "src_path": "src/antigravity-awesome-skills/skills/grafana-dashboards/SKILL.md",
+      "triggers": "grafana;dashboards"
+    },
+    {
+      "description": "Production-ready templates for incident response runbooks covering detection, triage, mitigation, resolution, and communication.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "incident-runbook-templates",
+      "src_path": "src/antigravity-awesome-skills/skills/incident-runbook-templates/SKILL.md",
+      "triggers": "incident;runbook;templates"
+    },
+    {
+      "description": "Provides guidance for enterprise-grade RL training using miles, a production-ready fork of slime. Use when training large MoE models with FP8/INT4, needing train-inference alignment, or requiring speculative RL for maximum throughput.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "miles-rl-training",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/06-post-training/miles/SKILL.md",
+      "triggers": "miles;rl;training"
+    },
+    {
+      "description": "Track ML experiments, manage model registry with versioning, deploy models to production, and reproduce experiments with MLflow - framework-agnostic ML lifecycle platform",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "mlflow",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/13-mlops/mlflow/SKILL.md",
+      "triggers": "mlflow"
+    },
+    {
+      "description": "Run and analyze molecular dynamics simulations with OpenMM and MDAnalysis. Set up protein/small molecule systems, define force fields, run energy minimization and production MD, analyze trajectories (RMSD, RMSF, contact maps, free energy surfaces). For structural biology, drug binding, and biophysics.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "molecular-dynamics",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/molecular-dynamics/SKILL.md",
+      "triggers": "molecular;dynamics"
+    },
+    {
+      "description": "Deploy web projects to Netlify using the Netlify CLI (`npx netlify`). Use when the user asks to deploy, host, publish, or link a site/repo on Netlify, including preview and production deploys.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "netlify-deploy",
+      "src_path": "src/context-and-tools/codex/skills/netlify-deploy/SKILL.md",
+      "triggers": "netlify;deploy"
+    },
+    {
+      "description": "You know templates are real businesses that can generate serious income. You've seen creators make six figures selling Notion templates. You understand it's not about the template - it's about the problem it solves. You build systems that turn templates into scalable digital products.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "notion-template-business",
+      "src_path": "src/antigravity-awesome-skills/skills/notion-template-business/SKILL.md",
+      "triggers": "notion;template;business"
+    },
+    {
+      "description": "Expert guide for Odoo Manufacturing: Bills of Materials (BoM), Work Centers, routings, MRP planning, and production order workflows.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "odoo-manufacturing-advisor",
+      "src_path": "src/antigravity-awesome-skills/skills/odoo-manufacturing-advisor/SKILL.md",
+      "triggers": "odoo;manufacturing;advisor"
+    },
+    {
+      "description": "Office productivity workflow covering document creation, spreadsheet automation, presentation generation, and integration with LibreOffice and Microsoft Office formats.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "office-productivity",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-documents-presentations/skills/office-productivity/SKILL.md",
+      "triggers": "office;productivity"
+    },
+    {
+      "description": "Codified expertise for production scheduling, job sequencing, line balancing, changeover optimisation, and bottleneck resolution in discrete and batch manufacturing.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "production-scheduling",
+      "src_path": "src/antigravity-awesome-skills/skills/production-scheduling/SKILL.md",
+      "triggers": "production;scheduling"
+    },
+    {
+      "description": "Build production-ready AI agents with PydanticAI — type-safe tool use, structured outputs, dependency injection, and multi-model support.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "pydantic-ai",
+      "src_path": "src/antigravity-awesome-skills/skills/pydantic-ai/SKILL.md",
+      "triggers": "pydantic;ai"
+    },
+    {
+      "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "requesting-code-review",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-oss-maintainer/skills/requesting-code-review/SKILL.md",
+      "triggers": "requesting;code;review"
+    },
+    {
+      "description": "Performs quality control, citation validation, and fact-checking before human review. Use after research is complete to verify all sources and claims before production.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "researchers-verifier",
+      "src_path": "src/bitwize-music-studio-claude-ai-music-skills/skills/researchers-verifier/SKILL.md",
+      "triggers": "researchers;verifier"
+    },
+    {
+      "description": "Configure deployment settings for /land-and-deploy. Detects your deploy platform (Fly.io, Render, Vercel, Netlify, Heroku, GitHub Actions, custom), production URL, health check endpoints, and deploy status commands. Writes the configuration to CLAUDE.md so all future deploys are automatic. Use when: \"setup deploy\", \"configure deployment\", \"set up land-and-deploy\", \"how do I deploy with gstack\", \"add deploy config\".",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "setup-deploy",
+      "src_path": "src/gstack/setup-deploy/SKILL.md",
+      "triggers": "setup;deploy"
+    },
+    {
+      "description": "Automate Shopify tasks via Rube MCP (Composio): products, orders, customers, inventory, collections. Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "shopify-automation",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-revops-crm-automation/skills/shopify-automation/SKILL.md",
+      "triggers": "shopify;automation"
+    },
+    {
+      "description": "Automate Stripe tasks via Rube MCP (Composio): customers, charges, subscriptions, invoices, products, refunds. Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "stripe-automation",
+      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-revops-crm-automation/skills/stripe-automation/SKILL.md",
+      "triggers": "stripe;automation"
+    },
+    {
+      "description": "Trains large language models (2B-462B parameters) using NVIDIA Megatron-Core with advanced parallelism strategies. Use when training models >1B parameters, need maximum GPU efficiency (47% MFU on H100), or require tensor/pipeline/sequence/context/expert parallelism. Production-ready framework used for Nemotron, LLaMA, DeepSeek.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "training-llms-megatron",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/08-distributed-training/megatron-core/SKILL.md",
+      "triggers": "training;llms;megatron"
+    },
+    {
+      "description": "Expert knowledge for deploying to Vercel with Next.js Use when: vercel, deploy, deployment, hosting, production.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "vercel-deployment",
+      "src_path": "src/antigravity-awesome-skills/skills/vercel-deployment/SKILL.md",
+      "triggers": "vercel;deployment"
+    },
+    {
+      "description": "You are a voice AI architect who has shipped production voice agents handling millions of calls. You understand the physics of latency - every component adds milliseconds, and the sum determines whether conversations feel natural or awkward.",
+      "phase": 1,
+      "score": 5,
+      "skill_id": "voice-agents",
+      "src_path": "src/antigravity-awesome-skills/skills/voice-agents/SKILL.md",
+      "triggers": "voice;agents"
+    }
+  ],
+  "sub_hub": "product",
+  "version": 1
+}

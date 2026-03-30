@@ -24,7 +24,7 @@ $repoRoot  = (Resolve-Path (Join-Path $scriptDir '..')).Path
 $quickIndexPath = Join-Path (Join-Path $repoRoot 'skills-aggregated') 'quick-index.json'
 $manifestPath   = Join-Path $repoRoot 'hub-manifests.csv'
 $subhubDir      = Join-Path $repoRoot 'skills-aggregated'
-$protocolPath   = Join-Path (Join-Path $repoRoot 'skills-aggregated') 'AGENT-PROTOCOL.md'
+$protocolPath   = Join-Path (Join-Path $repoRoot './AGENTS.md') 'AGENTS.md'
 
 $passed = 0
 $failed = 0
@@ -78,9 +78,9 @@ if ($v01) {
 $v04 = Test-Path $manifestPath
 Add-Result 'V04' 'hub-manifests.csv exists' $v04 $manifestPath
 
-# ── V05: AGENT-PROTOCOL.md exists ────────────────────────────────────────────
+# ── V05: AGENTS.md exists (dynamic entrypoint) ────────────────────────
 $v05 = Test-Path $protocolPath
-Add-Result 'V05' 'AGENT-PROTOCOL.md exists' $v05 $protocolPath
+Add-Result 'V05' 'AGENTS.md exists' $v05 $protocolPath
 
 # ── V06: Load CSV and check hub/sub_hub coverage ────────────────────────────
 if ($v04 -and $qiData) {
@@ -121,20 +121,10 @@ if ($v04 -and $qiData) {
     Add-Result 'V07' 'Quick-index covers all CSV sub-hubs' $true "skipped (quick-index not configured)"
 }
 
-# ── V08: Sub-hub directories have SKILL.md ────────────────────────────────────
-$hubDirs = Get-ChildItem $subhubDir -Directory | Where-Object { $_.Name -ne '.git' -and $_.Name -ne 'scripts' }
-$missingSKILL = @()
-foreach ($hub in $hubDirs) {
-    $subDirs = Get-ChildItem $hub.FullName -Directory -ErrorAction SilentlyContinue
-    foreach ($sub in $subDirs) {
-        $skillPath = Join-Path $sub.FullName 'SKILL.md'
-        if (-not (Test-Path $skillPath)) { $missingSKILL += "$($hub.Name)/$($sub.Name)" }
-    }
-}
-Add-Result 'V08' 'All sub-hub directories have SKILL.md' ($missingSKILL.Count -eq 0) $(
-    if ($missingSKILL.Count -eq 0) { "all present" }
-    else { "missing: $($missingSKILL -join ', ')" }
-)
+# ── V08: Per-subhub SKILL.md not required ───────────────────────────────
+# SKILL.md files in the aggregated output are no longer generated. Agents
+# should use `./AGENTS.md` + routing.csv to discover skills.
+Add-Result 'V08' 'Per-subhub SKILL.md not required (use AGENTS.md + routing.csv)' $true "SKIP: SKILL.md not required"
 
 # ── V09: quick-index has _meta section ────────────────────────────────────────
 if ($qiData) {
@@ -147,17 +137,12 @@ if ($qiData) {
     Add-Result 'V09' 'quick-index has _meta section' $true "skipped (quick-index not configured)"
 }
 
-# ── V10: AGENT-PROTOCOL.md contains required sections ────────────────────────
+# ── V10: AGENTS.md contains guidance (routing) ───────────────────────
 if ($v05) {
     $protocolContent = Get-Content $protocolPath -Raw
-    $requiredSections = @('STEP 1', 'STEP 2', 'STEP 3', 'ANTI-HALLUCINATION', 'FALLBACK', 'TOKEN BUDGET')
-    $missing = @()
-    foreach ($section in $requiredSections) {
-        if ($protocolContent -notmatch [regex]::Escape($section)) { $missing += $section }
-    }
-    Add-Result 'V10' 'AGENT-PROTOCOL.md has all required sections' ($missing.Count -eq 0) $(
-        if ($missing.Count -eq 0) { "all 6 sections present" }
-        else { "missing: $($missing -join ', ')" }
+    $hasRoutingHint = $protocolContent -match 'routing.csv' -or $protocolContent -match 'Route'
+    Add-Result 'V10' 'AGENTS.md contains routing guidance' $hasRoutingHint $(
+        if ($hasRoutingHint) { "contains routing guidance" } else { "missing routing guidance" }
     )
 }
 

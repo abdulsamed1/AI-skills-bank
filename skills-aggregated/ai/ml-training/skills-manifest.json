@@ -1,0 +1,248 @@
+{
+  "generated_at_unix": 1774888953,
+  "hub": "ai",
+  "skills": [
+    {
+      "description": "This skill should be used at the start of any computationally intensive scientific task to detect and report available system resources (CPU cores, GPUs, memory, disk space). It creates a JSON file with resource information and strategic recommendations that inform computational approach decisions such as whether to use parallel processing (joblib, multiprocessing), out-of-core computing (Dask, Zarr), GPU acceleration (PyTorch, JAX), or memory-efficient strategies. Use this skill before running analyses, training models, processing large datasets, or any task where resource constraints matter.",
+      "phase": 6,
+      "score": 13,
+      "skill_id": "get-available-resources",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/get-available-resources/SKILL.md",
+      "triggers": "get;available;resources"
+    },
+    {
+      "description": "Adds PyTorch FSDP2 (fully_shard) to training scripts with correct init, sharding, mixed precision/offload config, and distributed checkpointing. Use when models exceed single-GPU memory or when you need DTensor-based sharding with DeviceMesh.",
+      "phase": 6,
+      "score": 13,
+      "skill_id": "pytorch-fsdp2",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/08-distributed-training/pytorch-fsdp2/SKILL.md",
+      "triggers": "pytorch;fsdp2"
+    },
+    {
+      "description": "Hardware-agnostic quantum ML framework with automatic differentiation. Use when training quantum circuits via gradients, building hybrid quantum-classical models, or needing device portability across IBM/Google/Rigetti/IonQ. Best for variational algorithms (VQE, QAOA), quantum neural networks, and integration with PyTorch/JAX/TensorFlow. For hardware-specific optimizations use qiskit (IBM) or cirq (Google); for open quantum systems use qutip.",
+      "phase": 6,
+      "score": 12,
+      "skill_id": "pennylane",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/pennylane/SKILL.md",
+      "triggers": "pennylane"
+    },
+    {
+      "description": "Distributed training orchestration across clusters. Scales PyTorch/TensorFlow/HuggingFace from laptop to 1000s of nodes. Built-in hyperparameter tuning with Ray Tune, fault tolerance, elastic scaling. Use when training massive models across multiple machines or running distributed hyperparameter sweeps.",
+      "phase": 6,
+      "score": 12,
+      "skill_id": "ray-train",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/08-distributed-training/ray-train/SKILL.md",
+      "triggers": "ray;train"
+    },
+    {
+      "description": "Provides PyTorch-native distributed LLM pretraining using torchtitan with 4D parallelism (FSDP2, TP, PP, CP). Use when pretraining Llama 3.1, DeepSeek V3, or custom models at scale from 8 to 512+ GPUs with Float8, torch.compile, and distributed checkpointing.",
+      "phase": 6,
+      "score": 11,
+      "skill_id": "distributed-llm-pretraining-torchtitan",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/01-model-architecture/torchtitan/SKILL.md",
+      "triggers": "distributed;llm;pretraining;torchtitan"
+    },
+    {
+      "description": "Evaluates LLMs across 60+ academic benchmarks (MMLU, HumanEval, GSM8K, TruthfulQA, HellaSwag). Use when benchmarking model quality, comparing models, reporting academic results, or tracking training progress. Industry standard used by EleutherAI, HuggingFace, and major labs. Supports HuggingFace, vLLM, APIs.",
+      "phase": 6,
+      "score": 11,
+      "skill_id": "evaluating-llms-harness",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/11-evaluation/lm-evaluation-harness/SKILL.md",
+      "triggers": "evaluating;llms;harness"
+    },
+    {
+      "description": "Fine-tune LLMs using reinforcement learning with TRL - SFT for instruction tuning, DPO for preference alignment, PPO/GRPO for reward optimization, and reward model training. Use when need RLHF, align model with preferences, or train from human feedback. Works with HuggingFace Transformers.",
+      "phase": 6,
+      "score": 11,
+      "skill_id": "fine-tuning-with-trl",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/06-post-training/trl-fine-tuning/SKILL.md",
+      "triggers": "fine;tuning;with;trl"
+    },
+    {
+      "description": "Simplest distributed training API. 4 lines to add distributed support to any PyTorch script. Unified API for DeepSpeed/FSDP/Megatron/DDP. Automatic device placement, mixed precision (FP16/BF16/FP8). Interactive config, single launch command. HuggingFace ecosystem standard.",
+      "phase": 6,
+      "score": 11,
+      "skill_id": "huggingface-accelerate",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/08-distributed-training/accelerate/SKILL.md",
+      "triggers": "huggingface;accelerate"
+    },
+    {
+      "description": "Train Mixture of Experts (MoE) models using DeepSpeed or HuggingFace. Use when training large-scale models with limited compute (5× cost reduction vs dense models), implementing sparse architectures like Mixtral 8x7B or DeepSeek-V3, or scaling model capacity without proportional compute increase. Covers MoE architectures, routing mechanisms, load balancing, expert parallelism, and inference optimization.",
+      "phase": 6,
+      "score": 11,
+      "skill_id": "moe-training",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/19-emerging-techniques/moe-training/SKILL.md",
+      "triggers": "moe;training"
+    },
+    {
+      "description": "Optimizes transformer attention with Flash Attention for 2-4x speedup and 10-20x memory reduction. Use when training/running transformers with long sequences (>512 tokens), encountering GPU memory issues with attention, or need faster inference. Supports PyTorch native SDPA, flash-attn library, H100 FP8, and sliding window attention.",
+      "phase": 6,
+      "score": 11,
+      "skill_id": "optimizing-attention-flash",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/10-optimization/flash-attention/SKILL.md",
+      "triggers": "optimizing;attention;flash"
+    },
+    {
+      "description": "Full-featured computational pathology toolkit. Use for advanced WSI analysis including multiplexed immunofluorescence (CODEX, Vectra), nucleus segmentation, tissue graph construction, and ML model training on pathology data. Supports 160+ slide formats. For simple tile extraction from H&E slides, histolab may be simpler.",
+      "phase": 6,
+      "score": 11,
+      "skill_id": "pathml",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/pathml/SKILL.md",
+      "triggers": "pathml"
+    },
+    {
+      "description": "Deep learning framework (PyTorch Lightning). Organize PyTorch code into LightningModules, configure Trainers for multi-GPU/TPU, implement data pipelines, callbacks, logging (W&B, TensorBoard), distributed training (DDP, FSDP, DeepSpeed), for scalable neural network training.",
+      "phase": 6,
+      "score": 11,
+      "skill_id": "pytorch-lightning",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/pytorch-lightning/SKILL.md",
+      "triggers": "pytorch;lightning"
+    },
+    {
+      "description": "Simple Preference Optimization for LLM alignment. Reference-free alternative to DPO with better performance (+6.4 points on AlpacaEval 2.0). No reference model needed, more efficient than DPO. Use for preference alignment when want simpler, faster training than DPO/PPO.",
+      "phase": 6,
+      "score": 11,
+      "skill_id": "simpo-training",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/06-post-training/simpo/SKILL.md",
+      "triggers": "simpo;training"
+    },
+    {
+      "description": "Visualize training metrics, debug models with histograms, compare experiments, visualize model graphs, and profile performance with TensorBoard - Google's ML visualization toolkit",
+      "phase": 6,
+      "score": 11,
+      "skill_id": "tensorboard",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/13-mlops/tensorboard/SKILL.md",
+      "triggers": "tensorboard"
+    },
+    {
+      "description": "Zero-shot time series forecasting with Google's TimesFM foundation model. Use for any univariate time series (sales, sensors, energy, vitals, weather) without training a custom model. Supports CSV/DataFrame/array inputs with point forecasts and prediction intervals. Includes a preflight system checker script to verify RAM/GPU before first use.",
+      "phase": 6,
+      "score": 11,
+      "skill_id": "timesfm-forecasting",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/timesfm-forecasting/SKILL.md",
+      "triggers": "timesfm;forecasting"
+    },
+    {
+      "description": "Track ML experiments with automatic logging, visualize training in real-time, optimize hyperparameters with sweeps, and manage model registry with W&B - collaborative MLOps platform",
+      "phase": 6,
+      "score": 11,
+      "skill_id": "weights-and-biases",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/13-mlops/weights-and-biases/SKILL.md",
+      "triggers": "weights;and;biases"
+    },
+    {
+      "description": "Provides guidance for performing causal interventions on PyTorch models using pyvene's declarative intervention framework. Use when conducting causal tracing, activation patching, interchange intervention training, or testing causal hypotheses about model behavior.",
+      "phase": 6,
+      "score": 10,
+      "skill_id": "pyvene-interventions",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/04-mechanistic-interpretability/pyvene/SKILL.md",
+      "triggers": "pyvene;interventions"
+    },
+    {
+      "description": "Post-training 4-bit quantization for LLMs with minimal accuracy loss. Use for deploying large models (70B, 405B) on consumer GPUs, when you need 4× memory reduction with <2% perplexity degradation, or for faster inference (3-4× speedup) vs FP16. Integrates with transformers and PEFT for QLoRA fine-tuning.",
+      "phase": 6,
+      "score": 9,
+      "skill_id": "gptq",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/10-optimization/gptq/SKILL.md",
+      "triggers": "gptq"
+    },
+    {
+      "description": "Compress large language models using knowledge distillation from teacher to student models. Use when deploying smaller models with retained performance, transferring GPT-4 capabilities to open-source models, or reducing inference costs. Covers temperature scaling, soft targets, reverse KLD, logit distillation, and MiniLLM training strategies.",
+      "phase": 6,
+      "score": 9,
+      "skill_id": "knowledge-distillation",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/19-emerging-techniques/knowledge-distillation/SKILL.md",
+      "triggers": "knowledge;distillation"
+    },
+    {
+      "description": "Merge multiple fine-tuned models using mergekit to combine capabilities without retraining. Use when creating specialized models by blending domain-specific expertise (math + coding + chat), improving performance beyond single models, or experimenting rapidly with model variants. Covers SLERP, TIES-Merging, DARE, Task Arithmetic, linear merging, and production deployment strategies.",
+      "phase": 6,
+      "score": 9,
+      "skill_id": "model-merging",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/19-emerging-techniques/model-merging/SKILL.md",
+      "triggers": "model;merging"
+    },
+    {
+      "description": "Reduce LLM size and accelerate inference using pruning techniques like Wanda and SparseGPT. Use when compressing models without retraining, achieving 50% sparsity with minimal accuracy loss, or enabling faster inference on hardware accelerators. Covers unstructured pruning, structured pruning, N:M sparsity, magnitude pruning, and one-shot methods.",
+      "phase": 6,
+      "score": 9,
+      "skill_id": "model-pruning",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/19-emerging-techniques/model-pruning/SKILL.md",
+      "triggers": "model;pruning"
+    },
+    {
+      "description": "Quantizes LLMs to 8-bit or 4-bit for 50-75% memory reduction with minimal accuracy loss. Use when GPU memory is limited, need to fit larger models, or want faster inference. Supports INT8, NF4, FP4 formats, QLoRA training, and 8-bit optimizers. Works with HuggingFace Transformers.",
+      "phase": 6,
+      "score": 9,
+      "skill_id": "quantizing-models-bitsandbytes",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/10-optimization/bitsandbytes/SKILL.md",
+      "triggers": "quantizing;models;bitsandbytes"
+    },
+    {
+      "description": "Model interpretability and explainability using SHAP (SHapley Additive exPlanations). Use this skill when explaining machine learning model predictions, computing feature importance, generating SHAP plots (waterfall, beeswarm, bar, scatter, force, heatmap), debugging models, analyzing model bias or fairness, comparing models, or implementing explainable AI. Works with tree-based models (XGBoost, LightGBM, Random Forest), deep learning (TensorFlow, PyTorch), linear models, and any black-box model.",
+      "phase": 6,
+      "score": 9,
+      "skill_id": "shap",
+      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/shap/SKILL.md",
+      "triggers": "shap"
+    },
+    {
+      "description": "Anthropic's method for training harmless AI through self-improvement. Two-phase approach - supervised learning with self-critique/revision, then RLAIF (RL from AI Feedback). Use for safety alignment, reducing harmful outputs without human labels. Powers Claude's safety system.",
+      "phase": 6,
+      "score": 7,
+      "skill_id": "constitutional-ai",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/07-safety-alignment/constitutional-ai/SKILL.md",
+      "triggers": "constitutional;ai"
+    },
+    {
+      "description": "Fine-tunes and evaluates OpenVLA-OFT and OpenVLA-OFT+ policies for robot action generation with continuous action heads, LoRA adaptation, and FiLM conditioning on LIBERO simulation and ALOHA real-world setups. Use when reproducing OpenVLA-OFT paper results, training custom VLA action heads (L1 or diffusion), deploying server-client inference for ALOHA, or debugging normalization, LoRA merge, and cross-GPU issues.",
+      "phase": 6,
+      "score": 7,
+      "skill_id": "fine-tuning-openvla-oft",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/18-multimodal/openvla-oft/SKILL.md",
+      "triggers": "fine;tuning;openvla;oft"
+    },
+    {
+      "description": "GPU-accelerated data curation for LLM training. Supports text/image/video/audio. Features fuzzy deduplication (16× faster), quality filtering (30+ heuristics), semantic deduplication, PII redaction, NSFW detection. Scales across GPUs with RAPIDS. Use for preparing high-quality training datasets, cleaning web data, or deduplicating large corpora.",
+      "phase": 6,
+      "score": 7,
+      "skill_id": "nemo-curator",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/05-data-processing/nemo-curator/SKILL.md",
+      "triggers": "nemo;curator"
+    },
+    {
+      "description": "Deploy and run ML experiments on local or remote GPU servers. Use when user says \"run experiment\", \"deploy to server\", \"跑实验\", or needs to launch training jobs.",
+      "phase": 6,
+      "score": 7,
+      "skill_id": "run-experiment",
+      "src_path": "src/wanshuiyin-Auto-claude-code-research-in-sleep/skills/run-experiment/SKILL.md",
+      "triggers": "run;experiment"
+    },
+    {
+      "description": "Multi-cloud orchestration for ML workloads with automatic cost optimization. Use when you need to run training or batch jobs across multiple clouds, leverage spot instances with auto-recovery, or optimize GPU costs across providers.",
+      "phase": 6,
+      "score": 7,
+      "skill_id": "skypilot-multi-cloud-orchestration",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/09-infrastructure/skypilot/SKILL.md",
+      "triggers": "skypilot;multi;cloud;orchestration"
+    },
+    {
+      "description": "Expert guidance for GRPO/RL fine-tuning with TRL for reasoning and task-specific model training",
+      "phase": 6,
+      "score": 6,
+      "skill_id": "grpo-rl-training",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/06-post-training/grpo-rl-training/SKILL.md",
+      "triggers": "grpo;rl;training"
+    },
+    {
+      "description": "Provides guidance for PyTorch-native agentic RL using torchforge, Meta's library separating infra from algorithms. Use when you want clean RL abstractions, easy algorithm experimentation, or scalable training with Monarch and TorchTitan.",
+      "phase": 6,
+      "score": 6,
+      "skill_id": "torchforge-rl-training",
+      "src_path": "src/Orchestra-Research-AI-research-SKILLs/06-post-training/torchforge/SKILL.md",
+      "triggers": "torchforge;rl;training"
+    }
+  ],
+  "sub_hub": "ml-training",
+  "version": 1
+}

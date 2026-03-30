@@ -3,6 +3,9 @@ use dialoguer::theme::ColorfulTheme;
 use dialoguer::{Input, MultiSelect, Select};
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
+use skill_manage::components::native_pipeline::{
+    aggregate_to_output, sync_output_to_targets, NativeSyncMode,
+};
 use skill_manage::components::diagnostics::Diagnostics;
 use skill_manage::components::fetcher::Fetcher;
 use skill_manage::components::manifest::{RepoManifest, Repository};
@@ -160,6 +163,36 @@ async fn run() -> Result<()> {
             let config = ensure_config(&repo_root, &config_path)?;
             run_full_pipeline(&config).await?;
         }
+        "fetch" => {
+            let config = ensure_config(&repo_root, &config_path)?;
+            if let Some(manifest) = prepare_manifest(&repo_root, &config.repositories)? {
+                run_fetch(&repo_root, manifest).await?;
+            } else {
+                bail!("No repositories configured. Run setup or provide repos.json.");
+            }
+        }
+        "aggregate" => {
+            let output_dir = repo_root.join("skills-aggregated");
+            if let Err(native_err) = run_aggregate_native(&repo_root, &output_dir, None, true).await {
+                eprintln!(
+                    "[WARN] Native aggregation failed, falling back to script: {}",
+                    native_err
+                );
+                run_aggregate_script(&repo_root)?;
+            }
+        }
+        "sync" => {
+            let config = ensure_config(&repo_root, &config_path)?;
+            let targets = resolve_sync_targets(&config)?;
+            let output_dir = repo_root.join("skills-aggregated");
+            if let Err(native_err) = run_sync_native(&output_dir, &targets) {
+                eprintln!(
+                    "[WARN] Native sync failed, falling back to script: {}",
+                    native_err
+                );
+                run_sync_script(&repo_root, &targets, Some(&output_dir))?;
+            }
+        }
         "add-repo" => {
             let mut config = ensure_config(&repo_root, &config_path)?;
             let repo_url = if let Some(url) = args.get(2) {
@@ -170,12 +203,14 @@ async fn run() -> Result<()> {
                     .interact_text()
                     .context("Failed to read repository URL")?
             };
-            add_repo(&mut config, &repo_url)?;
-            save_config(&config_path, &config)?;
-            run_full_pipeline(&config).await?;
+
+            run_add_repo_pipeline(&repo_root, &config_path, &mut config, &repo_url).await?;
         }
         "doctor" => {
-            run_doctor(&repo_root)?;
+            let _ = run_doctor(&repo_root)?;
+        }
+        "release-gate" | "gate" => {
+            run_release_gate(&repo_root)?;
         }
         _ => {
             print_help();
@@ -194,8 +229,12 @@ fn print_help() {
     println!("    skill-manage                    # guided UI (first run asks setup)");
     println!("    skill-manage setup              # rerun first-time setup");
     println!("    skill-manage run                # run full pipeline from saved config");
-    println!("    skill-manage add-repo <URL>     # add repo then run full pipeline");
+    println!("    skill-manage fetch              # fetch configured repositories only");
+    println!("    skill-manage aggregate          # aggregate only");
+    println!("    skill-manage sync               # sync only");
+    println!("    skill-manage add-repo <URL>     # add repo then run targeted pipeline");
     println!("    skill-manage doctor             # run diagnostics");
+    println!("    skill-manage release-gate       # enforce production readiness checks");
     println!("    skill-manage --help");
     println!("    skill-manage --version");
 }
@@ -204,20 +243,32 @@ async fn run_interactive(repo_root: &Path, config_path: &Path) -> Result<()> {
     let mut config = match load_config(config_path)? {
         Some(cfg) => cfg,
         None => {
-            println!("No setup found. Starting first-time setup...");
-            let cfg = run_setup_wizard(repo_root)?;
-            save_config(config_path, &cfg)?;
-            run_full_pipeline(&cfg).await?;
-            cfg
+            // If repos.json exists, auto-create a default setup and run the pipeline
+            if let Some(cfg) = auto_config_from_manifest(repo_root)? {
+                println!("No setup found, but repos.json detected. Creating default setup and running automation...");
+                save_config(config_path, &cfg)?;
+                run_full_pipeline(&cfg).await?;
+                cfg
+            } else {
+                println!("No setup found. Starting first-time setup...");
+                let cfg = run_setup_wizard(repo_root)?;
+                save_config(config_path, &cfg)?;
+                run_full_pipeline(&cfg).await?;
+                cfg
+            }
         }
     };
 
     let theme = ColorfulTheme::default();
     let options = vec![
         "Run full pipeline now",
+        "Fetch repositories only",
+        "Aggregate only",
+        "Sync only",
         "Add new repository URL and run",
         "Show current setup",
         "Reconfigure setup",
+        "Run release gate",
         "Exit",
     ];
 
@@ -234,24 +285,53 @@ async fn run_interactive(repo_root: &Path, config_path: &Path) -> Result<()> {
                 run_full_pipeline(&config).await?;
             }
             1 => {
+                if let Some(manifest) = prepare_manifest(repo_root, &config.repositories)? {
+                    run_fetch(repo_root, manifest).await?;
+                } else {
+                    eprintln!("[WARN] No repositories configured.");
+                }
+            }
+            2 => {
+                let output_dir = repo_root.join("skills-aggregated");
+                if let Err(native_err) = run_aggregate_native(repo_root, &output_dir, None, true).await {
+                    eprintln!(
+                        "[WARN] Native aggregation failed, falling back to script: {}",
+                        native_err
+                    );
+                    run_aggregate_script(repo_root)?;
+                }
+            }
+            3 => {
+                let output_dir = repo_root.join("skills-aggregated");
+                let targets = resolve_sync_targets(&config)?;
+                if let Err(native_err) = run_sync_native(&output_dir, &targets) {
+                    eprintln!(
+                        "[WARN] Native sync failed, falling back to script: {}",
+                        native_err
+                    );
+                    run_sync_script(repo_root, &targets, Some(&output_dir))?;
+                }
+            }
+            4 => {
                 let repo_url: String = Input::with_theme(&theme)
                     .with_prompt("Repository URL")
                     .interact_text()
                     .context("Failed to read repository URL")?;
-                add_repo(&mut config, &repo_url)?;
-                save_config(config_path, &config)?;
-                run_full_pipeline(&config).await?;
+                run_add_repo_pipeline(repo_root, config_path, &mut config, &repo_url).await?;
             }
-            2 => {
+            5 => {
                 print_config_summary(&config);
             }
-            3 => {
+            6 => {
                 let new_cfg = run_setup_wizard(repo_root)?;
                 save_config(config_path, &new_cfg)?;
                 config = new_cfg;
                 run_full_pipeline(&config).await?;
             }
-            4 => break,
+            7 => {
+                run_release_gate(repo_root)?;
+            }
+            8 => break,
             _ => {}
         }
     }
@@ -397,13 +477,101 @@ async fn run_full_pipeline(config: &SetupConfig) -> Result<()> {
     }
 
     println!("[2/3] Aggregate skills...");
-    run_aggregate_script(&repo_root)?;
+    let full_output = repo_root.join("skills-aggregated");
+    if let Err(native_err) = run_aggregate_native(&repo_root, &full_output, None, true).await {
+        eprintln!(
+            "[WARN] Native aggregation failed, falling back to script: {}",
+            native_err
+        );
+        run_aggregate_script(&repo_root)?;
+    }
 
     println!("[3/3] Sync to selected tools...");
     let targets = resolve_sync_targets(config)?;
-    run_sync_script(&repo_root, &targets)?;
+    if let Err(native_err) = run_sync_native(&full_output, &targets) {
+        eprintln!(
+            "[WARN] Native sync failed, falling back to script: {}",
+            native_err
+        );
+        run_sync_script(&repo_root, &targets, Some(&full_output))?;
+    }
 
     println!("\n[OK] Automation complete.");
+    Ok(())
+}
+
+async fn run_add_repo_pipeline(
+    repo_root: &Path,
+    config_path: &Path,
+    config: &mut SetupConfig,
+    repo_url: &str,
+) -> Result<()> {
+    add_repo(config, repo_url)?;
+    save_config(config_path, config)?;
+
+    // Clone only the newly added repository.
+    let single_manifest = build_manifest_from_urls(&[repo_url.to_string()]);
+    println!("[1/3] Cloning new repository (shallow)...");
+    run_fetch(repo_root, single_manifest).await?;
+
+    let repo_name = repo_name_from_url(repo_url);
+    let temp_output = repo_root.join("skills-aggregated-temp").join(&repo_name);
+
+    println!("[2/3] Aggregating new repository only: {}...", repo_name);
+    let selected = HashSet::from([repo_name.clone()]);
+    if let Err(native_err) = run_aggregate_native(
+        repo_root,
+        &temp_output,
+        Some(&selected),
+        false,
+    )
+    .await
+    {
+        eprintln!(
+            "[WARN] Native targeted aggregation failed, falling back to script: {}",
+            native_err
+        );
+        run_aggregate_selected(repo_root, &[repo_name.clone()], &temp_output)?;
+    }
+
+    println!("[3/3] Syncing newly aggregated output for {}...", repo_name);
+    let targets = resolve_sync_targets(config)?;
+    if let Err(native_err) = run_sync_native(&temp_output, &targets) {
+        eprintln!(
+            "[WARN] Native targeted sync failed, falling back to script: {}",
+            native_err
+        );
+        run_sync_script(repo_root, &targets, Some(&temp_output))?;
+    }
+
+    println!("[OK] Added and synced repository: {}", repo_url);
+    Ok(())
+}
+
+async fn run_aggregate_native(
+    repo_root: &Path,
+    output_dir: &Path,
+    selected_repos: Option<&HashSet<String>>,
+    write_global_csv: bool,
+) -> Result<()> {
+    let skills = aggregate_to_output(
+        repo_root,
+        output_dir,
+        selected_repos,
+        write_global_csv,
+        true,
+    )
+    .await
+    .context("Native aggregation failed")?;
+
+    println!("  native aggregation output: {} skills", skills.len());
+    Ok(())
+}
+
+fn run_sync_native(source_root: &Path, targets: &[PathBuf]) -> Result<()> {
+    sync_output_to_targets(source_root, targets, NativeSyncMode::Auto)
+        .context("Native sync failed")?;
+    println!("  native sync targets: {}", targets.len());
     Ok(())
 }
 
@@ -453,7 +621,38 @@ fn run_aggregate_script(repo_root: &Path) -> Result<()> {
     run_powershell_command(repo_root, &command).context("Failed while running aggregate script")
 }
 
-fn run_sync_script(repo_root: &Path, targets: &[PathBuf]) -> Result<()> {
+fn run_aggregate_selected(repo_root: &Path, repo_names: &[String], output_dir: &Path) -> Result<()> {
+    let script = repo_root
+        .join("scripts")
+        .join("aggregate-skills-to-subhubs.ps1");
+    if !script.exists() {
+        bail!("Aggregate script not found: {}", script.display());
+    }
+
+    // Ensure output parent exists
+    if let Some(parent) = output_dir.parent() {
+        if !parent.exists() {
+            fs::create_dir_all(parent).with_context(|| format!("Failed to create parent dir: {}", parent.display()))?;
+        }
+    }
+
+    let names = repo_names
+        .iter()
+        .map(|n| format!("'{}'", escape_ps_single(n)))
+        .collect::<Vec<_>>()
+        .join(", ");
+
+    let command = format!(
+        "& '{}' -NoPrompt -srcRepoMode selected -srcRepoNames @({}) -OutputDir '{}'",
+        escape_ps_single(&script.to_string_lossy()),
+        names,
+        escape_ps_single(&output_dir.to_string_lossy())
+    );
+
+    run_powershell_command(repo_root, &command).context("Failed while running aggregate script for selected repos")
+}
+
+fn run_sync_script(repo_root: &Path, targets: &[PathBuf], hubsrc_override: Option<&Path>) -> Result<()> {
     if targets.is_empty() {
         bail!("No sync targets were resolved from setup");
     }
@@ -469,19 +668,75 @@ fn run_sync_script(repo_root: &Path, targets: &[PathBuf]) -> Result<()> {
         .collect::<Vec<_>>()
         .join(", ");
 
+    // Allow overriding the Hubsrc (skills-aggregated) directory to sync only a subset
+    let hubsrc_arg = if let Some(override_path) = hubsrc_override {
+        format!("-Hubsrc '{}'", escape_ps_single(&override_path.to_string_lossy()))
+    } else {
+        String::new()
+    };
+
     let command = format!(
-        "& '{}' -NoPrompt -Force -SyncMode Auto -TargetTools @({})",
+        "& '{}' -NoPrompt -Force -SyncMode Auto {} -TargetTools @({})",
         escape_ps_single(&script.to_string_lossy()),
+        hubsrc_arg,
         target_list
     );
 
     run_powershell_command(repo_root, &command).context("Failed while running sync script")
 }
 
-fn run_doctor(repo_root: &Path) -> Result<()> {
+fn run_doctor(repo_root: &Path) -> Result<CommandResult> {
     let _guard = pushd(repo_root)?;
     let diagnostics = Diagnostics::new();
-    let _ = diagnostics.run_all().context("Diagnostics failed")?;
+    let result = diagnostics.run_all().context("Diagnostics failed")?;
+    Ok(result)
+}
+
+fn run_release_gate(repo_root: &Path) -> Result<()> {
+    println!("\n=== skill-manage release gate ===");
+
+    let doctor = run_doctor(repo_root)?;
+    let health_score = match doctor {
+        CommandResult::Doctor { health_score, .. } => health_score,
+        _ => 0,
+    };
+
+    if health_score < 100 {
+        bail!(
+            "Release gate failed: doctor health score is {}% (must be 100%)",
+            health_score
+        );
+    }
+
+    let checklist_path = repo_root.join("docs").join("cli-parity-checklist.md");
+    if !checklist_path.exists() {
+        bail!(
+            "Release gate failed: missing parity checklist at {}",
+            checklist_path.display()
+        );
+    }
+
+    let checklist = fs::read_to_string(&checklist_path)
+        .with_context(|| format!("Failed to read {}", checklist_path.display()))?;
+    if checklist.contains("- [ ]") {
+        bail!(
+            "Release gate failed: parity checklist has unchecked items ({})",
+            checklist_path.display()
+        );
+    }
+
+    let cli_dir = repo_root.join("cli");
+    let status = Command::new("cargo")
+        .current_dir(&cli_dir)
+        .arg("test")
+        .status()
+        .context("Failed to execute cargo test for release gate")?;
+
+    if !status.success() {
+        bail!("Release gate failed: cargo test returned non-zero status");
+    }
+
+    println!("[OK] Release gate passed. CLI is ready for production rollout.");
     Ok(())
 }
 
@@ -772,11 +1027,15 @@ fn discover_repo_root() -> Result<PathBuf> {
 }
 
 fn is_skill_manage_root(path: &Path) -> bool {
-    path.join("scripts").join("sync-hubs.ps1").exists()
+    let has_cli_core = path.join("cli").join("Cargo.toml").exists() && path.join("src").is_dir();
+
+    let has_legacy_scripts = path.join("scripts").join("sync-hubs.ps1").exists()
         && path
             .join("scripts")
             .join("aggregate-skills-to-subhubs.ps1")
-            .exists()
+            .exists();
+
+    has_cli_core || has_legacy_scripts
 }
 
 fn workspace_root_from_repo_root(repo_root: &Path) -> PathBuf {
@@ -810,12 +1069,53 @@ fn ensure_config(repo_root: &Path, config_path: &Path) -> Result<SetupConfig> {
     match load_config(config_path)? {
         Some(cfg) => Ok(cfg),
         None => {
+            // If a repos.json manifest exists, auto-generate a sensible default config
+            if let Some(cfg) = auto_config_from_manifest(repo_root)? {
+                println!("No setup file found, but repos.json detected. Creating default setup and saving it...");
+                save_config(config_path, &cfg)?;
+                return Ok(cfg);
+            }
+
             println!("No setup file found. Running setup now...");
             let cfg = run_setup_wizard(repo_root)?;
             save_config(config_path, &cfg)?;
             Ok(cfg)
         }
     }
+}
+
+fn auto_config_from_manifest(repo_root: &Path) -> Result<Option<SetupConfig>> {
+    let manifest_path = repo_root.join("repos.json");
+    if !manifest_path.exists() {
+        return Ok(None);
+    }
+
+    let manifest = RepoManifest::load(&manifest_path)
+        .with_context(|| format!("Failed to load {}", manifest_path.display()))?;
+
+    if manifest.repositories.is_empty() {
+        return Ok(None);
+    }
+
+    let repositories = manifest
+        .repositories
+        .iter()
+        .map(|r| r.url.clone())
+        .collect::<Vec<_>>();
+
+    let workspace_root = workspace_root_from_repo_root(repo_root);
+    let tools = TOOL_DEFS.iter().map(|t| t.key.to_string()).collect::<Vec<_>>();
+
+    let cfg = SetupConfig {
+        version: 1,
+        repo_root: repo_root.to_string_lossy().to_string(),
+        workspace_root: workspace_root.to_string_lossy().to_string(),
+        sync_scope: SyncScope::Both,
+        tools,
+        repositories,
+    };
+
+    Ok(Some(cfg))
 }
 
 fn save_config(path: &Path, config: &SetupConfig) -> Result<()> {

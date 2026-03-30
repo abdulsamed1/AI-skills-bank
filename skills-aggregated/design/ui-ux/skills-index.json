@@ -1,1464 +1,339 @@
-[
-    {
-        "id":  "accessibility-compliance-accessibility-audit",
-        "triggers":  [
-                         "accessibility",
-                         "compliance",
-                         "accessibility",
-                         "audit"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "android-design-guidelines",
-        "triggers":  [
-                         "android",
-                         "design",
-                         "guidelines"
-                     ],
-        "src":  "external:ehmo-platform-design-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "angular-ui-patterns",
-        "triggers":  [
-                         "angular",
-                         "ui",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "animejs-animation",
-        "triggers":  [
-                         "animejs",
-                         "animation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "antigravity-design-expert",
-        "triggers":  [
-                         "antigravity",
-                         "design",
-                         "expert"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  17
-    },
-    {
-        "id":  "avalonia-layout-zafiro",
-        "triggers":  [
-                         "avalonia",
-                         "layout",
-                         "zafiro"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "avalonia-zafiro-development",
-        "triggers":  [
-                         "avalonia",
-                         "zafiro",
-                         "development"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "azure-eventhub-ts",
-        "triggers":  [
-                         "azure",
-                         "eventhub",
-                         "ts"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "baseline-ui",
-        "triggers":  [
-                         "baseline",
-                         "ui"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "brainstorming-research-ideas",
-        "triggers":  [
-                         "brainstorming",
-                         "research",
-                         "ideas"
-                     ],
-        "src":  "external:Orchestra-Research-AI-research-SKILLs",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "building-native-ui",
-        "triggers":  [
-                         "building",
-                         "native",
-                         "ui"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "c4-architecture-c4-architecture",
-        "triggers":  [
-                         "c4",
-                         "architecture",
-                         "c4",
-                         "architecture"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "c4-component",
-        "triggers":  [
-                         "c4",
-                         "component"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "canvas-design",
-        "triggers":  [
-                         "canvas",
-                         "design"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "cc-skill-frontend-patterns",
-        "triggers":  [
-                         "cc",
-                         "skill",
-                         "frontend",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "ckm:banner-design",
-        "triggers":  [
-                         "ckm:banner",
-                         "design"
-                     ],
-        "src":  "external:nextlevelbuilder-ui-ux-pro-max-skill",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  20
-    },
-    {
-        "id":  "ckm:design-system",
-        "triggers":  [
-                         "ckm:design",
-                         "system"
-                     ],
-        "src":  "external:nextlevelbuilder-ui-ux-pro-max-skill",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  14
-    },
-    {
-        "id":  "ckm:ui-styling",
-        "triggers":  [
-                         "ckm:ui",
-                         "styling"
-                     ],
-        "src":  "external:nextlevelbuilder-ui-ux-pro-max-skill",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  16
-    },
-    {
-        "id":  "claude-d3js-skill",
-        "triggers":  [
-                         "claude",
-                         "d3js",
-                         "skill"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "color-expert",
-        "triggers":  [
-                         "color",
-                         "expert"
-                     ],
-        "src":  "external:meodai-skill.color-expert",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "core-components",
-        "triggers":  [
-                         "core",
-                         "components"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "customer-empathy",
-        "triggers":  [
-                         "customer",
-                         "empathy"
-                     ],
-        "src":  "external:rameerez-claude-code-startup-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "daily-news-report",
-        "triggers":  [
-                         "daily",
-                         "news",
-                         "report"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "design-md",
-        "triggers":  [
-                         "design",
-                         "md"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "design-orchestration",
-        "triggers":  [
-                         "design",
-                         "orchestration"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "design-taste-frontend",
-        "triggers":  [
-                         "design",
-                         "taste",
-                         "frontend"
-                     ],
-        "src":  "external:Leonxlnx-taste-skill",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "detecting-exfiltration-over-dns-with-zeek",
-        "triggers":  [
-                         "detecting",
-                         "exfiltration",
-                         "over",
-                         "dns",
-                         "with"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "exploiting-active-directory-certificate-services-esc1",
-        "triggers":  [
-                         "exploiting",
-                         "active",
-                         "directory",
-                         "certificate",
-                         "services"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "expo-ui-jetpack-compose",
-        "triggers":  [
-                         "expo",
-                         "ui",
-                         "jetpack",
-                         "compose"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "faiss",
-        "triggers":  [
-                         "faiss"
-                     ],
-        "src":  "external:Orchestra-Research-AI-research-SKILLs",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "feature-image",
-        "triggers":  [
-                         "feature",
-                         "image"
-                     ],
-        "src":  "external:Shpigford-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "figma-code-connect-components",
-        "triggers":  [
-                         "figma",
-                         "code",
-                         "connect",
-                         "components"
-                     ],
-        "src":  "external:mcp-server-guide",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "figma-create-design-system-rules",
-        "triggers":  [
-                         "figma",
-                         "create",
-                         "design",
-                         "system",
-                         "rules"
-                     ],
-        "src":  "external:mcp-server-guide",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "figma-create-new-file",
-        "triggers":  [
-                         "figma",
-                         "create",
-                         "new",
-                         "file"
-                     ],
-        "src":  "external:mcp-server-guide",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "figma-generate-design",
-        "triggers":  [
-                         "figma",
-                         "generate",
-                         "design"
-                     ],
-        "src":  "external:mcp-server-guide",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "figma-generate-library",
-        "triggers":  [
-                         "figma",
-                         "generate",
-                         "library"
-                     ],
-        "src":  "external:mcp-server-guide",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "figma-implement-design",
-        "triggers":  [
-                         "figma",
-                         "implement",
-                         "design"
-                     ],
-        "src":  "external:mcp-server-guide",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "figma-use",
-        "triggers":  [
-                         "figma",
-                         "use"
-                     ],
-        "src":  "external:mcp-server-guide",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "fixing-accessibility",
-        "triggers":  [
-                         "fixing",
-                         "accessibility"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "frontend-design",
-        "triggers":  [
-                         "frontend",
-                         "design"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "frontend-ui-dark-ts",
-        "triggers":  [
-                         "frontend",
-                         "ui",
-                         "dark",
-                         "ts"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "geniml",
-        "triggers":  [
-                         "geniml"
-                     ],
-        "src":  "external:K-Dense-AI-claude-scientific-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "hand-drawn-diagrams",
-        "triggers":  [
-                         "hand",
-                         "drawn",
-                         "diagrams"
-                     ],
-        "src":  "external:muthuishere-hand-drawn-diagrams",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "hig-components-content",
-        "triggers":  [
-                         "hig",
-                         "components",
-                         "content"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "hig-components-controls",
-        "triggers":  [
-                         "hig",
-                         "components",
-                         "controls"
-                     ],
-        "src":  "external:raintree-technology-apple-hig-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "hig-components-dialogs",
-        "triggers":  [
-                         "hig",
-                         "components",
-                         "dialogs"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "hig-components-layout",
-        "triggers":  [
-                         "hig",
-                         "components",
-                         "layout"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "hig-components-menus",
-        "triggers":  [
-                         "hig",
-                         "components",
-                         "menus"
-                     ],
-        "src":  "external:raintree-technology-apple-hig-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "hig-components-search",
-        "triggers":  [
-                         "hig",
-                         "components",
-                         "search"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "hig-components-status",
-        "triggers":  [
-                         "hig",
-                         "components",
-                         "status"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "hig-components-system",
-        "triggers":  [
-                         "hig",
-                         "components",
-                         "system"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "hig-foundations",
-        "triggers":  [
-                         "hig",
-                         "foundations"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "high-end-visual-design",
-        "triggers":  [
-                         "high",
-                         "end",
-                         "visual",
-                         "design"
-                     ],
-        "src":  "external:Leonxlnx-taste-skill",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "hig-inputs",
-        "triggers":  [
-                         "hig",
-                         "inputs"
-                     ],
-        "src":  "external:raintree-technology-apple-hig-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "hig-patterns",
-        "triggers":  [
-                         "hig",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "hig-platforms",
-        "triggers":  [
-                         "hig",
-                         "platforms"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "hig-project-context",
-        "triggers":  [
-                         "hig",
-                         "project",
-                         "context"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "hig-technologies",
-        "triggers":  [
-                         "hig",
-                         "technologies"
-                     ],
-        "src":  "external:raintree-technology-apple-hig-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "hunting-for-dns-tunneling-with-zeek",
-        "triggers":  [
-                         "hunting",
-                         "for",
-                         "dns",
-                         "tunneling",
-                         "with"
-                     ],
-        "src":  "external:mukul975-Anthropic-Cybersecurity-Skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "hybrid-cloud-networking",
-        "triggers":  [
-                         "hybrid",
-                         "cloud",
-                         "networking"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "iconsax-library",
-        "triggers":  [
-                         "iconsax",
-                         "library"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "imagen",
-        "triggers":  [
-                         "imagen"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "industrial-brutalist-ui",
-        "triggers":  [
-                         "industrial",
-                         "brutalist",
-                         "ui"
-                     ],
-        "src":  "external:Leonxlnx-taste-skill",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "ios-design-guidelines",
-        "triggers":  [
-                         "ios",
-                         "design",
-                         "guidelines"
-                     ],
-        "src":  "external:ehmo-platform-design-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  23
-    },
-    {
-        "id":  "landing-page-generator",
-        "triggers":  [
-                         "landing",
-                         "page",
-                         "generator"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "lean-ux-canvas",
-        "triggers":  [
-                         "lean",
-                         "ux",
-                         "canvas"
-                     ],
-        "src":  "external:Product-Manager-Skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "linkedin-writer",
-        "triggers":  [
-                         "linkedin",
-                         "writer"
-                     ],
-        "src":  "external:founder-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "macos-design-guidelines",
-        "triggers":  [
-                         "macos",
-                         "design",
-                         "guidelines"
-                     ],
-        "src":  "external:ehmo-platform-design-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "magic-animator",
-        "triggers":  [
-                         "magic",
-                         "animator"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "magic-ui-generator",
-        "triggers":  [
-                         "magic",
-                         "ui",
-                         "generator"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "makepad-skills",
-        "triggers":  [
-                         "makepad",
-                         "skills"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "medusa",
-        "triggers":  [
-                         "medusa"
-                     ],
-        "src":  "external:alinaqi-claude-bootstrap",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "mermaid-expert",
-        "triggers":  [
-                         "mermaid",
-                         "expert"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "minimalist-ui",
-        "triggers":  [
-                         "minimalist",
-                         "ui"
-                     ],
-        "src":  "external:Leonxlnx-taste-skill",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "nanobanana",
-        "triggers":  [
-                         "nanobanana"
-                     ],
-        "src":  "external:ReScienceLab-opc-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "nerdzao-elite",
-        "triggers":  [
-                         "nerdzao",
-                         "elite"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "nerdzao-elite-gemini-high",
-        "triggers":  [
-                         "nerdzao",
-                         "elite",
-                         "gemini",
-                         "high"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "nosql-expert",
-        "triggers":  [
-                         "nosql",
-                         "expert"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "oss-hunter",
-        "triggers":  [
-                         "oss",
-                         "hunter"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "product-design",
-        "triggers":  [
-                         "product",
-                         "design"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "product-inventor",
-        "triggers":  [
-                         "product",
-                         "inventor"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "project-skill-audit",
-        "triggers":  [
-                         "project",
-                         "skill",
-                         "audit"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "pytorch-lightning",
-        "triggers":  [
-                         "pytorch",
-                         "lightning"
-                     ],
-        "src":  "external:Orchestra-Research-AI-research-SKILLs",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "radix-ui-design-system",
-        "triggers":  [
-                         "radix",
-                         "ui",
-                         "design",
-                         "system"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  13
-    },
-    {
-        "id":  "react:components",
-        "triggers":  [
-                         "react:components"
-                     ],
-        "src":  "external:stitch-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "react-ui-patterns",
-        "triggers":  [
-                         "react",
-                         "ui",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "redesign-existing-projects",
-        "triggers":  [
-                         "redesign",
-                         "existing",
-                         "projects"
-                     ],
-        "src":  "external:Leonxlnx-taste-skill",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  9
-    },
-    {
-        "id":  "scroll-experience",
-        "triggers":  [
-                         "scroll",
-                         "experience"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "senior-frontend",
-        "triggers":  [
-                         "senior",
-                         "frontend"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "shadcn",
-        "triggers":  [
-                         "shadcn"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "shadcn-ui",
-        "triggers":  [
-                         "shadcn",
-                         "ui"
-                     ],
-        "src":  "external:stitch-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "snipgrapher",
-        "triggers":  [
-                         "snipgrapher"
-                     ],
-        "src":  "external:mcollina-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "stitch-design",
-        "triggers":  [
-                         "stitch",
-                         "design"
-                     ],
-        "src":  "external:stitch-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  17
-    },
-    {
-        "id":  "stitch-design-taste",
-        "triggers":  [
-                         "stitch",
-                         "design",
-                         "taste"
-                     ],
-        "src":  "external:Leonxlnx-taste-skill",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "stitch-ui-design",
-        "triggers":  [
-                         "stitch",
-                         "ui",
-                         "design"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  13
-    },
-    {
-        "id":  "swiftui-liquid-glass",
-        "triggers":  [
-                         "swiftui",
-                         "liquid",
-                         "glass"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "swiftui-performance-audit",
-        "triggers":  [
-                         "swiftui",
-                         "performance",
-                         "audit"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "swiftui-ui-patterns",
-        "triggers":  [
-                         "swiftui",
-                         "ui",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "swiftui-view-refactor",
-        "triggers":  [
-                         "swiftui",
-                         "view",
-                         "refactor"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "swiftui-wcag-accessibility-auditor",
-        "triggers":  [
-                         "swiftui",
-                         "wcag",
-                         "accessibility",
-                         "auditor"
-                     ],
-        "src":  "external:ramzesenok-iOS-Accessibility-Audit-Skill",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "tailwind-design-system",
-        "triggers":  [
-                         "tailwind",
-                         "design",
-                         "system"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  13
-    },
-    {
-        "id":  "theme-factory",
-        "triggers":  [
-                         "theme",
-                         "factory"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "threejs-animation",
-        "triggers":  [
-                         "threejs",
-                         "animation"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "threejs-fundamentals",
-        "triggers":  [
-                         "threejs",
-                         "fundamentals"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "threejs-geometry",
-        "triggers":  [
-                         "threejs",
-                         "geometry"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "threejs-interaction",
-        "triggers":  [
-                         "threejs",
-                         "interaction"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "threejs-lighting",
-        "triggers":  [
-                         "threejs",
-                         "lighting"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "threejs-loaders",
-        "triggers":  [
-                         "threejs",
-                         "loaders"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "threejs-materials",
-        "triggers":  [
-                         "threejs",
-                         "materials"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "threejs-postprocessing",
-        "triggers":  [
-                         "threejs",
-                         "postprocessing"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "threejs-skills",
-        "triggers":  [
-                         "threejs",
-                         "skills"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "threejs-textures",
-        "triggers":  [
-                         "threejs",
-                         "textures"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  100
-    },
-    {
-        "id":  "tvos-design-guidelines",
-        "triggers":  [
-                         "tvos",
-                         "design",
-                         "guidelines"
-                     ],
-        "src":  "external:ehmo-platform-design-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "ui-skills",
-        "triggers":  [
-                         "ui",
-                         "skills"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "ui-ux-designer",
-        "triggers":  [
-                         "ui",
-                         "ux",
-                         "designer"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  30
-    },
-    {
-        "id":  "ui-ux-pro-max",
-        "triggers":  [
-                         "ui",
-                         "ux",
-                         "pro",
-                         "max"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  20
-    },
-    {
-        "id":  "ui-visual-validator",
-        "triggers":  [
-                         "ui",
-                         "visual",
-                         "validator"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  15
-    },
-    {
-        "id":  "ui-web",
-        "triggers":  [
-                         "ui",
-                         "web"
-                     ],
-        "src":  "external:alinaqi-claude-bootstrap",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "umap-learn",
-        "triggers":  [
-                         "umap",
-                         "learn"
-                     ],
-        "src":  "external:K-Dense-AI-claude-scientific-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "unsplash-integration",
-        "triggers":  [
-                         "unsplash",
-                         "integration"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    },
-    {
-        "id":  "user-journeys",
-        "triggers":  [
-                         "user",
-                         "journeys"
-                     ],
-        "src":  "external:alinaqi-claude-bootstrap",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "visionos-design-guidelines",
-        "triggers":  [
-                         "visionos",
-                         "design",
-                         "guidelines"
-                     ],
-        "src":  "external:ehmo-platform-design-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  11
-    },
-    {
-        "id":  "watchos-design-guidelines",
-        "triggers":  [
-                         "watchos",
-                         "design",
-                         "guidelines"
-                     ],
-        "src":  "external:ehmo-platform-design-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  13
-    },
-    {
-        "id":  "wcag-audit-patterns",
-        "triggers":  [
-                         "wcag",
-                         "audit",
-                         "patterns"
-                     ],
-        "src":  "external:antigravity-awesome-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  7
-    },
-    {
-        "id":  "web-design-guidelines",
-        "triggers":  [
-                         "web",
-                         "design",
-                         "guidelines"
-                     ],
-        "src":  "external:Charlie85270-Dorothy",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  19
-    },
-    {
-        "id":  "x-writer",
-        "triggers":  [
-                         "x",
-                         "writer"
-                     ],
-        "src":  "external:founder-skills",
-        "primary_hub":  "design/ui-ux",
-        "is_primary":  true,
-        "match_score":  5
-    }
-]
+{
+  "count": 332,
+  "hub": "design",
+  "skills": [
+    "enhance-prompt",
+    "stitch-design",
+    "ui-ux-designer",
+    "antigravity-design-expert",
+    "design-taste-frontend",
+    "iconsax-library",
+    "plan-design-review",
+    "stitch-design-taste",
+    "stitch-ui-design",
+    "ui-ux-pro-max",
+    "android-design-guidelines",
+    "core-components",
+    "design-consultation",
+    "design-md",
+    "feature-image",
+    "figma-implement-design",
+    "ios-design-guidelines",
+    "macos-design-guidelines",
+    "makepad-dsl",
+    "product-design",
+    "product-inventor",
+    "radix-ui-design-system",
+    "shadcn",
+    "tvos-design-guidelines",
+    "ui-visual-validator",
+    "visionos-design-guidelines",
+    "watchos-design-guidelines",
+    "accessibility-compliance-accessibility-audit",
+    "agent-tool-builder",
+    "ai-agents-architect",
+    "ai-native-cli",
+    "architecture",
+    "asc-cli-usage",
+    "autonomous-agent-patterns",
+    "building-identity-governance-lifecycle-process",
+    "building-incident-response-playbook",
+    "content-modeling-best-practices",
+    "customer-empathy",
+    "database-driver-design",
+    "ddd-strategic-design",
+    "drizzle-orm-expert",
+    "event-sourcing-architect",
+    "event-store-design",
+    "figma-create-design-system-rules",
+    "figma-generate-design",
+    "figma-generate-library",
+    "graphql-architect",
+    "hig-foundations",
+    "hig-patterns",
+    "hig-platforms",
+    "hig-project-context",
+    "implementing-conditional-access-policies-azure-ad",
+    "ipados-design-guidelines",
+    "langgraph",
+    "lean-ux-canvas",
+    "makepad-router",
+    "memory-systems",
+    "nerdzao-elite",
+    "office-hours",
+    "pdf-processing-openai",
+    "privacy-by-design",
+    "react:components",
+    "scientific-slides",
+    "software-architecture",
+    "stitch-loop",
+    "swift-library-design",
+    "team-composition-analysis",
+    "telegram-bot-builder",
+    "threat-modeling-expert",
+    "tool-design",
+    "web-design-guidelines",
+    "workflow-orchestration-patterns",
+    "Creative Portfolio Resume",
+    "analyzing-memory-forensics-with-lime-and-volatility",
+    "angular-ui-patterns",
+    "avalonia-layout-zafiro",
+    "avalonia-zafiro-development",
+    "aws-dynamodb",
+    "building-native-ui",
+    "canvas-design",
+    "cirq",
+    "ckm:slides",
+    "creative-director",
+    "crewai",
+    "database-architect",
+    "design-orchestration",
+    "design-review",
+    "design-spells",
+    "diffdock",
+    "expo-ui-jetpack-compose",
+    "expo-ui-swift-ui",
+    "figma-automation",
+    "figma-code-connect-components",
+    "figma-create-new-file",
+    "frontend-design",
+    "generate-image",
+    "glycoengineering",
+    "hig-components-controls",
+    "hig-components-menus",
+    "hig-components-status",
+    "hig-inputs",
+    "hig-technologies",
+    "high-end-visual-design",
+    "implementing-velociraptor-for-ir-collection",
+    "industrial-brutalist-ui",
+    "latex-posters",
+    "lightning-architecture-review",
+    "llm-application-dev-ai-assistant",
+    "logo-creator",
+    "magic-ui-generator",
+    "makepad-basics",
+    "mcp-builder",
+    "mcp:build-mcp",
+    "minimalist-ui",
+    "mobile-design",
+    "nerdzao-elite-gemini-high",
+    "observability-monitoring-slo-implement",
+    "pakistan-payments-stack",
+    "performing-access-review-and-certification",
+    "performing-threat-modeling-with-owasp-threat-dragon",
+    "pymoo",
+    "redesign-existing-projects",
+    "robius-widget-patterns",
+    "sadd:multi-agent-patterns",
+    "shadcn-ui",
+    "ui-skills",
+    "ui-web",
+    "user-journeys",
+    "user-stories",
+    "00-andruia-consultant",
+    "10-andruia-skill-smith",
+    "20-andruia-niche-intelligence",
+    "Academic CV Builder",
+    "Executive Resume Writer",
+    "LinkedIn Profile Optimizer",
+    "Reference List Builder",
+    "Resume Section Builder",
+    "ablation-planner",
+    "acquiring-disk-image-with-dd-and-dcfldd",
+    "aegisops-ai",
+    "agents-v2-py",
+    "album-dashboard",
+    "alpha-vantage",
+    "analyzing-disk-image-with-autopsy",
+    "analyzing-linux-kernel-rootkits",
+    "analyzing-supply-chain-malware-artifacts",
+    "app-builder",
+    "appinsights-instrumentation",
+    "asc-notarization",
+    "asc-submission-health",
+    "asc-xcode-build",
+    "ask-questions-if-underspecified",
+    "axolotl",
+    "azure-ai-document-intelligence-dotnet",
+    "azure-ai-document-intelligence-ts",
+    "azure-ai-projects-py",
+    "azure-ai-voicelive-dotnet",
+    "azure-ai-voicelive-py",
+    "azure-rbac",
+    "azure-search-documents-dotnet",
+    "azure-search-documents-ts",
+    "bash-linux",
+    "bill-gates",
+    "brainstorming-research-ideas",
+    "brand-guidelines-anthropic",
+    "build",
+    "building-attack-pattern-library-from-cti-reports",
+    "building-incident-response-dashboard",
+    "building-incident-timeline-with-timesketch",
+    "building-malware-incident-communication-template",
+    "building-role-mining-for-rbac-optimization",
+    "building-soc-playbook-for-ransomware",
+    "building-threat-feed-aggregation-with-misp",
+    "building-threat-intelligence-platform",
+    "business-model",
+    "busybox-on-windows",
+    "canva-automation",
+    "capacity",
+    "cc-skill-project-guidelines-example",
+    "chat-widget",
+    "claimable-postgres",
+    "claude-d3js-skill",
+    "claude-settings-audit",
+    "cobrapy",
+    "codex",
+    "compliance-anthropic",
+    "conducting-memory-forensics-with-volatility",
+    "configuring-network-segmentation-with-vlans",
+    "context-degradation",
+    "context-driven-development",
+    "cookie-policy-malik-taiar",
+    "creative-thinking-for-research",
+    "data-engineer",
+    "ddd:setup-code-formating",
+    "deepchem",
+    "deepspeed",
+    "detecting-anomalies-in-industrial-control-systems",
+    "detecting-fileless-attacks-on-endpoints",
+    "detecting-privilege-escalation-attempts",
+    "detecting-stuxnet-style-attacks",
+    "detecting-t1548-abuse-elevation-control-mechanism",
+    "differentiation-schemes",
+    "director-readiness-advisor",
+    "drugbank-database",
+    "electron-development",
+    "embedding-strategies",
+    "environment-setup-guide",
+    "error-handling-patterns",
+    "experiment-tracking-swanlab",
+    "formula-derivation",
+    "fp-option-ref",
+    "fp-types-ref",
+    "gdpr-data-handling",
+    "geniml",
+    "gguf-quantization",
+    "gsap-scrolltrigger",
+    "help",
+    "hig-components-dialogs",
+    "hig-components-layout",
+    "hig-components-search",
+    "hig-components-system",
+    "hosted-agents",
+    "hosted-agents-v2-py",
+    "humanizer",
+    "implementing-gdpr-data-subject-access-request",
+    "implementing-log-integrity-with-blockchain",
+    "implementing-pci-dss-compliance-controls",
+    "jobgpt",
+    "kaizen",
+    "kaizen:kaizen",
+    "lamindb",
+    "latchbio-integration",
+    "leiloeiro-avaliacao",
+    "leiloeiro-mercado",
+    "lightning-factory-explainer",
+    "llama-factory",
+    "macos-menubar-tuist-app",
+    "makepad-platform",
+    "markdown-mermaid-writing",
+    "mastering-engineer",
+    "mcp:setup-codemap-cli",
+    "mcp:setup-context7-mcp",
+    "mcp:setup-serena-mcp",
+    "meeting-prep-cc",
+    "memory-forensics",
+    "mermaid-diagram",
+    "microservices-patterns",
+    "mix-engineer",
+    "ml-paper-writing",
+    "mlops-engineer",
+    "monorepo-architect",
+    "monorepo-management",
+    "n8n-mcp-tools-expert",
+    "n8n-node-configuration",
+    "n8n-validation-expert",
+    "n8n-workflow-patterns",
+    "nda-review-jamie-tso",
+    "netlify-cli-and-deploy",
+    "netlify-config",
+    "netlify-image-cdn",
+    "nnsight-remote-interpretability",
+    "notification-licenciement-selim-brihi",
+    "nx-workspace-patterns",
+    "odoo-accounting-setup",
+    "odoo-edi-connector",
+    "odoo-hr-payroll-setup",
+    "odoo-inventory-optimizer",
+    "odoo-module-developer",
+    "odoo-project-timesheet",
+    "odoo-purchase-workflow",
+    "odoo-xml-views-builder",
+    "on-call-handoff-patterns",
+    "os-scripting",
+    "paper-compile",
+    "performing-disk-forensics-investigation",
+    "performing-dns-tunneling-detection",
+    "performing-malware-persistence-investigation",
+    "performing-memory-forensics-with-volatility3-plugins",
+    "performing-privilege-escalation-on-linux",
+    "performing-ssl-certificate-lifecycle-management",
+    "performing-timeline-reconstruction-with-plaso",
+    "performing-windows-artifact-analysis-with-eric-zimmerman-tools",
+    "phylogenetics",
+    "postmortem-writing",
+    "preset",
+    "privacy-policy-malik-taiar",
+    "processing-stix-taxii-feeds",
+    "progressive-web-app",
+    "prometheus-configuration",
+    "pymc",
+    "qiskit",
+    "reflexion:critique",
+    "research-refine",
+    "research-refine-pipeline",
+    "robius-app-architecture",
+    "sam-altman",
+    "scientific-visualization",
+    "sdd:brainstorm",
+    "securing-aws-iam-permissions",
+    "securing-github-actions-workflows",
+    "service-mesh-observability",
+    "skill-builder",
+    "skill-creator-anthropic",
+    "skill-creator-ms",
+    "skill-creator-openai",
+    "skill-developer",
+    "sop-creator",
+    "sparse-autoencoder-training",
+    "startup-financial-modeling",
+    "steve-jobs",
+    "swiftui-view-refactor",
+    "threejs-geometry",
+    "threejs-shaders",
+    "torchdrug",
+    "turborepo-caching",
+    "tutorial",
+    "ubiquitous-language",
+    "unsloth",
+    "user-segmentation",
+    "using-superpowers",
+    "uv-package-manager",
+    "venue-templates",
+    "videodb",
+    "viral-generator-builder",
+    "voice-ai-development",
+    "web-artifacts-builder",
+    "wiki-ado-convert",
+    "wiki-architect",
+    "wiki-onboarding",
+    "wiki-vitepress",
+    "writing-plans",
+    "xlsx-processing-openai"
+  ],
+  "sub_hub": "ui-ux"
+}

@@ -1,0 +1,24 @@
+{
+  "count": 17,
+  "hub": "testing",
+  "skills": [
+    "conductor-revert",
+    "ontology-validator",
+    "brand-guidelines-community",
+    "building-detection-rules-with-sigma",
+    "competitive-landscape",
+    "conducting-internal-reconnaissance-with-bloodhound-ce",
+    "customer-journey-map",
+    "customer-journey-mapping-workshop",
+    "install-duckdb",
+    "internal-comms-community",
+    "last30days",
+    "market-sizing",
+    "market-sizing-analysis",
+    "odoo-upgrade-advisor",
+    "oss-hunter",
+    "prioritization-frameworks",
+    "startup-business-analyst-market-opportunity"
+  ],
+  "sub_hub": "unit-testing"
+}
