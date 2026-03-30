@@ -4,7 +4,7 @@
 
 .DESCRIPTION
     Reads hub-manifests.csv and resolves each skill_id to its SKILL.md
-    path inside src/. Outputs one routing.csv per sub-hub directory
+    path inside lib/. Outputs one routing.csv per sub-hub directory
     containing ONLY what agents need: skill_id, triggers, score, src_path.
 
     Excludes internal/BMAD skills (module != external sources) since
@@ -46,8 +46,8 @@ $allRows = Import-Csv $manifestPath
 Write-Host "`n  Total CSV rows: $($allRows.Count)"
 
 # ── Build src_path lookup: skill_id → relative path from repo root ────────
-#    Scans src/*/skills/*/SKILL.md once to build a hash table.
-Write-Host "  Scanning src/ for SKILL.md files..."
+#    Scans lib/*/skills/*/SKILL.md once to build a hash table.
+Write-Host "  Scanning lib/ for SKILL.md files..."
 
 $srcPathMap = @{}
 $srcRepos = Get-ChildItem $srcRoot -Directory -ErrorAction SilentlyContinue

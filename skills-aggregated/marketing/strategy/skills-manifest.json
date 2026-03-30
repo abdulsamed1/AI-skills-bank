@@ -1,150 +1,150 @@
 {
-  "generated_at_unix": 1774888953,
+  "generated_at_unix": 1774892583,
   "hub": "marketing",
   "skills": [
     {
-      "description": "You are an expert in engineering-as-marketing strategy. Your goal is to help plan and evaluate free tools that generate leads, attract organic traffic, and build brand awareness.",
-      "phase": 1,
-      "score": 15,
-      "skill_id": "free-tool-strategy",
-      "src_path": "src/antigravity-awesome-skills/skills/free-tool-strategy/SKILL.md",
-      "triggers": "free;tool;strategy"
-    },
-    {
-      "description": "Brainstorm product positioning ideas differentiated from competitors. Identifies top competitors and generates positioning statements with rationale. Use when developing product positioning, differentiating from competitors, or crafting brand positioning strategy.",
-      "phase": 1,
-      "score": 15,
-      "skill_id": "positioning-ideas",
-      "src_path": "src/pm-skills/pm-marketing-growth/skills/positioning-ideas/SKILL.md",
-      "triggers": "positioning;ideas"
-    },
-    {
-      "description": "Create or update a reusable product marketing context document with positioning, audience, ICP, use cases, and messaging. Use at the start of a project to avoid repeating core marketing context across tasks.",
-      "phase": 1,
-      "score": 15,
-      "skill_id": "product-marketing-context",
-      "src_path": "src/antigravity-awesome-skills/skills/product-marketing-context/SKILL.md",
-      "triggers": "product;marketing;context"
+      "description": "When the user wants to implement, optimize, or use App Clips for app discovery and conversion. Use when the user mentions \"App Clip\", \"app clip code\", \"mini app\", \"instant app\", \"App Clip card\", \"App Clip link\", \"no download required\", \"instant experience\", or wants to understand how App Clips appear in App Store search. For general App Store discoverability, see aso-audit. For marketing campaigns, see ua-campaign.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "app-clips",
+      "src_path": "lib/aso-skills/skills/app-clips/SKILL.md",
+      "triggers": "app;clips"
     },
     {
       "description": "When the user wants to create or update their app marketing context document. Also use when the user mentions \"app context\", \"marketing brief\", \"app positioning\", or when starting any ASO or app marketing project. This is the foundation skill — all other skills check for this context first.",
-      "phase": 1,
-      "score": 11,
+      "phase": 4,
+      "score": 100,
       "skill_id": "app-marketing-context",
-      "src_path": "src/aso-skills/skills/app-marketing-context/SKILL.md",
+      "src_path": "lib/aso-skills/skills/app-marketing-context/SKILL.md",
       "triggers": "app;marketing;context"
     },
     {
       "description": "Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand compliance, style guides.",
-      "phase": 1,
-      "score": 11,
+      "phase": 5,
+      "score": 100,
       "skill_id": "ckm:brand",
-      "src_path": "src/nextlevelbuilder-ui-ux-pro-max-skill/.claude/skills/brand/SKILL.md",
+      "src_path": "lib/nextlevelbuilder-ui-ux-pro-max-skill/.claude/skills/brand/SKILL.md",
       "triggers": "ckm;brand"
     },
     {
       "description": "When the user wants to analyze competitors' App Store strategy, find keyword gaps, or understand competitive positioning. Also use when the user mentions \"competitor analysis\", \"competitive research\", \"keyword gap\", \"what are my competitors doing\", or \"compare my app to\". For keyword-specific research, see keyword-research. For metadata writing, see metadata-optimization.",
-      "phase": 1,
-      "score": 11,
+      "phase": 4,
+      "score": 100,
       "skill_id": "competitor-analysis",
-      "src_path": "src/aso-skills/skills/competitor-analysis/SKILL.md",
+      "src_path": "lib/aso-skills/skills/competitor-analysis/SKILL.md",
       "triggers": "competitor;analysis"
     },
     {
-      "description": "Comprehensive, data-backed email marketing knowledge base. 908 sources, 4,798 insights. Use when reviewing email setups, building automation flows, diagnosing deliverability, writing email copy, selecting platforms, or pulling benchmarks. Covers strategy, flows, deliverability, copywriting, segmentation, compliance, cold email, and 19 industry playbooks.",
-      "phase": 1,
-      "score": 11,
-      "skill_id": "email-marketing-bible",
-      "src_path": "src/email-marketing-bible/SKILL.md",
-      "triggers": "email;marketing;bible"
-    },
-    {
-      "description": "Identify the best GTM motions and tools across 7 motion types: Inbound, Outbound, Paid Digital, Community, Partners, ABM, and PLG. Use when selecting marketing channels, choosing between inbound and outbound strategy, or planning cross-channel campaigns.",
-      "phase": 1,
-      "score": 11,
-      "skill_id": "gtm-motions",
-      "src_path": "src/pm-skills/pm-go-to-market/skills/gtm-motions/SKILL.md",
-      "triggers": "gtm;motions"
-    },
-    {
-      "description": "Analyzes the founder's business context to deliver the 3 highest-impact next moves for growth (marketing or sales). Asks up to 10 diagnostic questions when needed to uncover bottlenecks, struggles, and opportunities. Use when user needs strategic guidance, next steps, growth planning, or actionable business strategy.",
-      "phase": 1,
-      "score": 11,
-      "skill_id": "strategic-planning",
-      "src_path": "src/founder-skills/skills/strategic-planning/SKILL.md",
-      "triggers": "strategic;planning"
-    },
-    {
-      "description": "When the user wants to implement, optimize, or use App Clips for app discovery and conversion. Use when the user mentions \"App Clip\", \"app clip code\", \"mini app\", \"instant app\", \"App Clip card\", \"App Clip link\", \"no download required\", \"instant experience\", or wants to understand how App Clips appear in App Store search. For general App Store discoverability, see aso-audit. For marketing campaigns, see ua-campaign.",
-      "phase": 1,
-      "score": 7,
-      "skill_id": "app-clips",
-      "src_path": "src/aso-skills/skills/app-clips/SKILL.md",
-      "triggers": "app;clips"
-    },
-    {
       "description": "You are an expert copy editor specializing in marketing and conversion copy. Your goal is to systematically improve existing copy through focused editing passes while preserving the core message.",
-      "phase": 1,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "copy-editing",
-      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-creative-director/skills/copy-editing/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-creative-director/skills/copy-editing/SKILL.md",
       "triggers": "copy;editing"
     },
     {
       "description": "Write rigorous, conversion-focused marketing copy for landing pages and emails. Enforces brief confirmation and strict no-fabrication rules.",
-      "phase": 1,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "copywriting",
-      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-startup-founder/skills/copywriting/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-startup-founder/skills/copywriting/SKILL.md",
       "triggers": "copywriting"
     },
     {
+      "description": "Comprehensive, data-backed email marketing knowledge base. 908 sources, 4,798 insights. Use when reviewing email setups, building automation flows, diagnosing deliverability, writing email copy, selecting platforms, or pulling benchmarks. Covers strategy, flows, deliverability, copywriting, segmentation, compliance, cold email, and 19 industry playbooks.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "email-marketing-bible",
+      "src_path": "lib/email-marketing-bible/SKILL.md",
+      "triggers": "email;marketing;bible"
+    },
+    {
+      "description": "You are an expert in engineering-as-marketing strategy. Your goal is to help plan and evaluate free tools that generate leads, attract organic traffic, and build brand awareness.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "free-tool-strategy",
+      "src_path": "lib/antigravity-awesome-skills/skills/free-tool-strategy/SKILL.md",
+      "triggers": "free;tool;strategy"
+    },
+    {
+      "description": "Identify the best GTM motions and tools across 7 motion types: Inbound, Outbound, Paid Digital, Community, Partners, ABM, and PLG. Use when selecting marketing channels, choosing between inbound and outbound strategy, or planning cross-channel campaigns.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "gtm-motions",
+      "src_path": "lib/pm-skills/pm-go-to-market/skills/gtm-motions/SKILL.md",
+      "triggers": "gtm;motions"
+    },
+    {
       "description": "Full conversion audit for any homepage or landing page. Use when someone asks to \"review my homepage,\" \"audit my landing page,\" \"why isn't my page converting,\" \"check my website,\" or wants feedback on their marketing page. Requires URL or screenshot before proceeding.",
-      "phase": 1,
-      "score": 7,
+      "phase": 5,
+      "score": 100,
       "skill_id": "homepage-audit",
-      "src_path": "src/ai-marketing-skills/homepage-audit/SKILL.md",
+      "src_path": "lib/ai-marketing-skills/homepage-audit/SKILL.md",
       "triggers": "homepage;audit"
     },
     {
       "description": "Klaviyo email/SMS marketing - profiles, events, flows, segmentation",
-      "phase": 1,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "klaviyo",
-      "src_path": "src/alinaqi-claude-bootstrap/skills/klaviyo/SKILL.md",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/klaviyo/SKILL.md",
       "triggers": "klaviyo"
     },
     {
       "description": "Provide proven marketing strategies and growth ideas for SaaS and software products, prioritized using a marketing feasibility scoring system.",
-      "phase": 1,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "marketing-ideas",
-      "src_path": "src/antigravity-awesome-skills/skills/marketing-ideas/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/marketing-ideas/SKILL.md",
       "triggers": "marketing;ideas"
     },
     {
       "description": "Apply timeless marketing and business principles to any problem. Use when someone needs strategic thinking, wants to evaluate a marketing decision, needs a framework for a tough choice, or mentions \"first principles,\" \"should I do X,\" \"what would work here,\" or wants to think through a marketing problem systematically.",
-      "phase": 1,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "marketing-principles",
-      "src_path": "src/ai-marketing-skills/marketing-principles/SKILL.md",
+      "src_path": "lib/ai-marketing-skills/marketing-principles/SKILL.md",
       "triggers": "marketing;principles"
     },
     {
       "description": "Apply behavioral science and mental models to marketing decisions, prioritized using a psychological leverage and feasibility scoring system.",
-      "phase": 1,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "marketing-psychology",
-      "src_path": "src/antigravity-awesome-skills/skills/marketing-psychology/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/marketing-psychology/SKILL.md",
       "triggers": "marketing;psychology"
     },
     {
+      "description": "Brainstorm product positioning ideas differentiated from competitors. Identifies top competitors and generates positioning statements with rationale. Use when developing product positioning, differentiating from competitors, or crafting brand positioning strategy.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "positioning-ideas",
+      "src_path": "lib/pm-skills/pm-marketing-growth/skills/positioning-ideas/SKILL.md",
+      "triggers": "positioning;ideas"
+    },
+    {
+      "description": "Create or update a reusable product marketing context document with positioning, audience, ICP, use cases, and messaging. Use at the start of a project to avoid repeating core marketing context across tasks.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "product-marketing-context",
+      "src_path": "lib/antigravity-awesome-skills/skills/product-marketing-context/SKILL.md",
+      "triggers": "product;marketing;context"
+    },
+    {
       "description": "You are an expert in viral growth and referral marketing with access to referral program data and third-party tools. Your goal is to help design and optimize programs that turn customers into growth engines.",
-      "phase": 1,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "referral-program",
-      "src_path": "src/antigravity-awesome-skills/skills/referral-program/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/referral-program/SKILL.md",
       "triggers": "referral;program"
+    },
+    {
+      "description": "Analyzes the founder's business context to deliver the 3 highest-impact next moves for growth (marketing or sales). Asks up to 10 diagnostic questions when needed to uncover bottlenecks, struggles, and opportunities. Use when user needs strategic guidance, next steps, growth planning, or actionable business strategy.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "strategic-planning",
+      "src_path": "lib/founder-skills/skills/strategic-planning/SKILL.md",
+      "triggers": "strategic;planning"
     }
   ],
   "sub_hub": "strategy",

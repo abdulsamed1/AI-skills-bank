@@ -1,238 +1,238 @@
 {
-  "generated_at_unix": 1774888953,
+  "generated_at_unix": 1774892584,
   "hub": "programming",
   "skills": [
     {
       "description": "Azure AI Voice Live SDK for JavaScript/TypeScript. Build real-time voice AI applications with bidirectional WebSocket communication.",
-      "phase": 1,
-      "score": 11,
+      "phase": 5,
+      "score": 100,
       "skill_id": "azure-ai-voicelive-ts",
-      "src_path": "src/antigravity-awesome-skills/skills/azure-ai-voicelive-ts/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/azure-ai-voicelive-ts/SKILL.md",
       "triggers": "azure;ai;voicelive;ts"
     },
     {
       "description": "Azure Cosmos DB JavaScript/TypeScript SDK (@azure/cosmos) for data plane operations. Use for CRUD operations on documents, queries, bulk operations, and container management.",
-      "phase": 1,
-      "score": 11,
+      "phase": 4,
+      "score": 100,
       "skill_id": "azure-cosmos-ts",
-      "src_path": "src/antigravity-awesome-skills/skills/azure-cosmos-ts/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/azure-cosmos-ts/SKILL.md",
       "triggers": "azure;cosmos;ts"
     },
     {
       "description": "Azure Blob Storage JavaScript/TypeScript SDK (@azure/storage-blob) for blob operations. Use for uploading, downloading, listing, and managing blobs and containers.",
-      "phase": 1,
-      "score": 11,
+      "phase": 4,
+      "score": 100,
       "skill_id": "azure-storage-blob-ts",
-      "src_path": "src/antigravity-awesome-skills/skills/azure-storage-blob-ts/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/azure-storage-blob-ts/SKILL.md",
       "triggers": "azure;storage;blob;ts"
     },
     {
       "description": "Azure File Share JavaScript/TypeScript SDK (@azure/storage-file-share) for SMB file share operations.",
-      "phase": 1,
-      "score": 11,
+      "phase": 4,
+      "score": 100,
       "skill_id": "azure-storage-file-share-ts",
-      "src_path": "src/antigravity-awesome-skills/skills/azure-storage-file-share-ts/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/azure-storage-file-share-ts/SKILL.md",
       "triggers": "azure;storage;file;share;ts"
     },
     {
       "description": "Azure Queue Storage JavaScript/TypeScript SDK (@azure/storage-queue) for message queue operations. Use for sending, receiving, peeking, and deleting messages in queues.",
-      "phase": 1,
-      "score": 11,
+      "phase": 4,
+      "score": 100,
       "skill_id": "azure-storage-queue-ts",
-      "src_path": "src/antigravity-awesome-skills/skills/azure-storage-queue-ts/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/azure-storage-queue-ts/SKILL.md",
       "triggers": "azure;storage;queue;ts"
     },
     {
+      "description": "BullMQ expert for Redis-backed job queues, background processing, and reliable async execution in Node.js/TypeScript applications. Use when: bullmq, bull queue, redis queue, background job, job queue.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "bullmq-specialist",
+      "src_path": "lib/antigravity-awesome-skills/skills/bullmq-specialist/SKILL.md",
+      "triggers": "bullmq;specialist"
+    },
+    {
       "description": "Fast, modern JavaScript/TypeScript development with the Bun runtime, inspired by [oven-sh/bun](https://github.com/oven-sh/bun).",
-      "phase": 1,
-      "score": 11,
+      "phase": 4,
+      "score": 100,
       "skill_id": "bun-development",
-      "src_path": "src/antigravity-awesome-skills/skills/bun-development/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/bun-development/SKILL.md",
       "triggers": "bun;development"
     },
     {
       "description": "Universal coding standards, best practices, and patterns for TypeScript, JavaScript, React, and Node.js development.",
-      "phase": 1,
-      "score": 11,
+      "phase": 4,
+      "score": 100,
       "skill_id": "cc-skill-coding-standards",
-      "src_path": "src/antigravity-awesome-skills/skills/cc-skill-coding-standards/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/cc-skill-coding-standards/SKILL.md",
       "triggers": "cc;skill;coding;standards"
     },
     {
-      "description": "Guides development of Fastify Node.js backend servers and REST APIs using TypeScript or JavaScript. Use when building, configuring, or debugging a Fastify application — including defining routes, implementing plugins, setting up JSON Schema validation, handling errors, optimising performance, managing authentication, configuring CORS and security headers, integrating databases, working with WebSockets, and deploying to production. Covers the full Fastify request lifecycle (hooks, serialization, logging with Pino) and TypeScript integration via strip types. Trigger terms: Fastify, Node.js server, REST API, API routes, backend framework, fastify.config, server.ts, app.ts.",
-      "phase": 1,
-      "score": 11,
-      "skill_id": "fastify-best-practices",
-      "src_path": "src/mcollina-skills/skills/fastify/SKILL.md",
-      "triggers": "fastify;best;practices"
-    },
-    {
-      "description": "Comprehensive guide for implementing robust testing strategies in JavaScript/TypeScript applications using modern testing frameworks and best practices.",
-      "phase": 1,
-      "score": 11,
-      "skill_id": "javascript-testing-patterns",
-      "src_path": "src/antigravity-awesome-skills/skills/javascript-testing-patterns/SKILL.md",
-      "triggers": "javascript;testing;patterns"
-    },
-    {
-      "description": "You are a TypeScript project architecture expert specializing in scaffolding production-ready Node.js and frontend applications. Generate complete project structures with modern tooling (pnpm, Vite, N",
-      "phase": 1,
-      "score": 11,
-      "skill_id": "javascript-typescript-typescript-scaffold",
-      "src_path": "src/antigravity-awesome-skills/skills/javascript-typescript-typescript-scaffold/SKILL.md",
-      "triggers": "javascript;typescript;typescript;scaffold"
-    },
-    {
-      "description": "Configures ESLint v9 flat config and neostandard for JavaScript and TypeScript projects, including migrating from legacy `.eslintrc*` files or the `standard` package. Use when you need to set up or fix linting with `eslint.config.js` or `eslint.config.mjs`, troubleshoot lint errors, configure neostandard rules, migrate from `.eslintrc` to flat config, or integrate linting into CI pipelines and pre-commit hooks.",
-      "phase": 1,
-      "score": 11,
-      "skill_id": "linting-neostandard-eslint9",
-      "src_path": "src/mcollina-skills/skills/linting-neostandard-eslint9/SKILL.md",
-      "triggers": "linting;neostandard;eslint9"
-    },
-    {
-      "description": "Provides domain-specific best practices for Node.js development with TypeScript, covering type stripping, async patterns, error handling, streams, modules, testing, performance, caching, logging, and more. Use when setting up Node.js projects with native TypeScript support, configuring type stripping (--experimental-strip-types), writing Node 22+ TypeScript without a build step, or when the user mentions 'native TypeScript in Node', 'strip types', 'Node 22 TypeScript', '.ts files without compilation', 'ts-node alternative', or needs guidance on error handling, graceful shutdown, flaky tests, profiling, or environment configuration in Node.js. Helps configure tsconfig.json for type stripping, set up package.json scripts, handle module resolution and import extensions, and apply robust patterns across the full Node.js stack.",
-      "phase": 1,
-      "score": 11,
-      "skill_id": "node",
-      "src_path": "src/mcollina-skills/skills/node/SKILL.md",
-      "triggers": "node"
-    },
-    {
-      "description": "TypeScript and JavaScript expert with deep knowledge of type-level programming, performance optimization, monorepo management, migration strategies, and modern tooling.",
-      "phase": 1,
-      "score": 11,
-      "skill_id": "typescript-expert",
-      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-typescript-javascript/skills/typescript-expert/SKILL.md",
-      "triggers": "typescript;expert"
-    },
-    {
-      "description": "BullMQ expert for Redis-backed job queues, background processing, and reliable async execution in Node.js/TypeScript applications. Use when: bullmq, bull queue, redis queue, background job, job queue.",
-      "phase": 1,
-      "score": 7,
-      "skill_id": "bullmq-specialist",
-      "src_path": "src/antigravity-awesome-skills/skills/bullmq-specialist/SKILL.md",
-      "triggers": "bullmq;specialist"
-    },
-    {
       "description": "Convex reactive backend expert: schema design, TypeScript functions, real-time subscriptions, auth, file storage, scheduling, and deployment.",
-      "phase": 1,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "convex",
-      "src_path": "src/antigravity-awesome-skills/skills/convex/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/convex/SKILL.md",
       "triggers": "convex"
     },
     {
       "description": "Guide for building reliable, fault-tolerant TypeScript applications with DBOS durable workflows. Use when adding DBOS to existing TypeScript code, creating workflows and steps, or using queues for concurrency control.",
-      "phase": 1,
-      "score": 7,
+      "phase": 5,
+      "score": 100,
       "skill_id": "dbos-typescript",
-      "src_path": "src/antigravity-awesome-skills/skills/dbos-typescript/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/dbos-typescript/SKILL.md",
       "triggers": "dbos;typescript"
     },
     {
+      "description": "Guides development of Fastify Node.js backend servers and REST APIs using TypeScript or JavaScript. Use when building, configuring, or debugging a Fastify application — including defining routes, implementing plugins, setting up JSON Schema validation, handling errors, optimising performance, managing authentication, configuring CORS and security headers, integrating databases, working with WebSockets, and deploying to production. Covers the full Fastify request lifecycle (hooks, serialization, logging with Pino) and TypeScript integration via strip types. Trigger terms: Fastify, Node.js server, REST API, API routes, backend framework, fastify.config, server.ts, app.ts.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "fastify-best-practices",
+      "src_path": "lib/mcollina-skills/skills/fastify/SKILL.md",
+      "triggers": "fastify;best;practices"
+    },
+    {
       "description": "Comprehensive guide for refactoring imperative TypeScript code to fp-ts functional patterns",
-      "phase": 1,
-      "score": 7,
+      "phase": 5,
+      "score": 100,
       "skill_id": "fp-refactor",
-      "src_path": "src/antigravity-awesome-skills/skills/fp-refactor/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/fp-refactor/SKILL.md",
       "triggers": "fp;refactor"
     },
     {
       "description": "Handle errors as values using fp-ts Either and TaskEither for cleaner, more predictable TypeScript code. Use when implementing error handling patterns with fp-ts.",
-      "phase": 1,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "fp-ts-errors",
-      "src_path": "src/antigravity-awesome-skills/skills/fp-ts-errors/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/fp-ts-errors/SKILL.md",
       "triggers": "fp;ts;errors"
     },
     {
       "description": "A practical, jargon-free guide to fp-ts functional programming - the 80/20 approach that gets results without the academic overhead. Use when writing TypeScript with fp-ts library.",
-      "phase": 1,
-      "score": 7,
+      "phase": 5,
+      "score": 100,
       "skill_id": "fp-ts-pragmatic",
-      "src_path": "src/antigravity-awesome-skills/skills/fp-ts-pragmatic/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/fp-ts-pragmatic/SKILL.md",
       "triggers": "fp;ts;pragmatic"
     },
     {
+      "description": "Comprehensive guide for implementing robust testing strategies in JavaScript/TypeScript applications using modern testing frameworks and best practices.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "javascript-testing-patterns",
+      "src_path": "lib/antigravity-awesome-skills/skills/javascript-testing-patterns/SKILL.md",
+      "triggers": "javascript;testing;patterns"
+    },
+    {
+      "description": "You are a TypeScript project architecture expert specializing in scaffolding production-ready Node.js and frontend applications. Generate complete project structures with modern tooling (pnpm, Vite, N",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "javascript-typescript-typescript-scaffold",
+      "src_path": "lib/antigravity-awesome-skills/skills/javascript-typescript-typescript-scaffold/SKILL.md",
+      "triggers": "javascript;typescript;typescript;scaffold"
+    },
+    {
+      "description": "Configures ESLint v9 flat config and neostandard for JavaScript and TypeScript projects, including migrating from legacy `.eslintrc*` files or the `standard` package. Use when you need to set up or fix linting with `eslint.config.js` or `eslint.config.mjs`, troubleshoot lint errors, configure neostandard rules, migrate from `.eslintrc` to flat config, or integrate linting into CI pipelines and pre-commit hooks.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "linting-neostandard-eslint9",
+      "src_path": "lib/mcollina-skills/skills/linting-neostandard-eslint9/SKILL.md",
+      "triggers": "linting;neostandard;eslint9"
+    },
+    {
       "description": "Microsoft 365 Agents SDK for TypeScript/Node.js.",
-      "phase": 1,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "m365-agents-ts",
-      "src_path": "src/antigravity-awesome-skills/skills/m365-agents-ts/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/m365-agents-ts/SKILL.md",
       "triggers": "m365;agents;ts"
     },
     {
       "description": "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.",
-      "phase": 1,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "migrate-to-shoehorn",
-      "src_path": "src/mattpocock-skills/migrate-to-shoehorn/SKILL.md",
+      "src_path": "lib/mattpocock-skills/migrate-to-shoehorn/SKILL.md",
       "triggers": "migrate;to;shoehorn"
     },
     {
+      "description": "Provides domain-specific best practices for Node.js development with TypeScript, covering type stripping, async patterns, error handling, streams, modules, testing, performance, caching, logging, and more. Use when setting up Node.js projects with native TypeScript support, configuring type stripping (--experimental-strip-types), writing Node 22+ TypeScript without a build step, or when the user mentions 'native TypeScript in Node', 'strip types', 'Node 22 TypeScript', '.ts files without compilation', 'ts-node alternative', or needs guidance on error handling, graceful shutdown, flaky tests, profiling, or environment configuration in Node.js. Helps configure tsconfig.json for type stripping, set up package.json scripts, handle module resolution and import extensions, and apply robust patterns across the full Node.js stack.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "node",
+      "src_path": "lib/mcollina-skills/skills/node/SKILL.md",
+      "triggers": "node"
+    },
+    {
       "description": "Setup TypeScript best practices and code style rules in CLAUDE.md",
-      "phase": 1,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "tech-stack:add-typescript-best-practices",
-      "src_path": "src/NeoLabHQ-context-engineering-kit/plugins/tech-stack/skills/add-typescript-best-practices/SKILL.md",
+      "src_path": "lib/NeoLabHQ-context-engineering-kit/plugins/tech-stack/skills/add-typescript-best-practices/SKILL.md",
       "triggers": "tech;stack;add;typescript;best"
     },
     {
       "description": "Tinybird TypeScript SDK for defining datasources, pipes, and queries with full type inference. Use when working with @tinybirdco/sdk, TypeScript Tinybird projects, or type-safe data ingestion and queries.",
-      "phase": 1,
-      "score": 7,
+      "phase": 5,
+      "score": 100,
       "skill_id": "tinybird-typescript-sdk-guidelines",
-      "src_path": "src/tinybird-agent-skills/skills/tinybird-typescript-sdk-guidelines/SKILL.md",
+      "src_path": "lib/tinybird-agent-skills/skills/tinybird-typescript-sdk-guidelines/SKILL.md",
       "triggers": "tinybird;typescript;sdk;guidelines"
     },
     {
       "description": "You are a Trigger.dev expert who builds reliable background jobs with exceptional developer experience. You understand that Trigger.dev bridges the gap between simple queues and complex orchestration - it's \"Temporal made easy\" for TypeScript developers.",
-      "phase": 1,
-      "score": 7,
+      "phase": 5,
+      "score": 100,
       "skill_id": "trigger-dev",
-      "src_path": "src/antigravity-awesome-skills/skills/trigger-dev/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/trigger-dev/SKILL.md",
       "triggers": "trigger;dev"
     },
     {
-      "description": "TypeScript strict mode with eslint and jest",
-      "phase": 1,
-      "score": 7,
-      "skill_id": "typescript",
-      "src_path": "src/alinaqi-claude-bootstrap/skills/typescript/SKILL.md",
-      "triggers": "typescript"
-    },
-    {
       "description": "Comprehensive guidance for mastering TypeScript's advanced type system including generics, conditional types, mapped types, template literal types, and utility types for building robust, type-safe applications.",
-      "phase": 1,
-      "score": 7,
+      "phase": 5,
+      "score": 100,
       "skill_id": "typescript-advanced-types",
-      "src_path": "src/antigravity-awesome-skills/skills/typescript-advanced-types/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/typescript-advanced-types/SKILL.md",
       "triggers": "typescript;advanced;types"
     },
     {
+      "description": "TypeScript and JavaScript expert with deep knowledge of type-level programming, performance optimization, monorepo management, migration strategies, and modern tooling.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "typescript-expert",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-typescript-javascript/skills/typescript-expert/SKILL.md",
+      "triggers": "typescript;expert"
+    },
+    {
       "description": "Designs complex generic types, refactors `any` types to strict alternatives, creates type guards and utility types, and resolves TypeScript compiler errors. Use when the user asks about TypeScript (TS) types, generics, type inference, type guards, removing `any` types, strict typing, type errors, `infer`, `extends`, conditional types, mapped types, template literal types, branded/opaque types, or utility types like `Partial`, `Record`, `ReturnType`, and `Awaited`.",
-      "phase": 1,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "typescript-magician",
-      "src_path": "src/mcollina-skills/skills/typescript-magician/SKILL.md",
+      "src_path": "lib/mcollina-skills/skills/typescript-magician/SKILL.md",
       "triggers": "typescript;magician"
     },
     {
       "description": "Master TypeScript with advanced types, generics, and strict type safety. Handles complex type systems, decorators, and enterprise-grade patterns.",
-      "phase": 1,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "typescript-pro",
-      "src_path": "src/antigravity-awesome-skills/skills/typescript-pro/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/typescript-pro/SKILL.md",
       "triggers": "typescript;pro"
     },
     {
       "description": "Create Zustand stores following established patterns with proper TypeScript types and middleware.",
-      "phase": 1,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "zustand-store-ts",
-      "src_path": "src/antigravity-awesome-skills/skills/zustand-store-ts/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/zustand-store-ts/SKILL.md",
       "triggers": "zustand;store;ts"
+    },
+    {
+      "description": "TypeScript strict mode with eslint and jest",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "typescript",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/typescript/SKILL.md",
+      "triggers": "typescript"
     }
   ],
   "sub_hub": "typescript",

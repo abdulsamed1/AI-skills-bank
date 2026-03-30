@@ -157,8 +157,10 @@ impl Aggregator {
         })?;
 
         let description = get_string("description").unwrap_or_default();
-        let hub = get_string("hub").unwrap_or_else(|| "ai".to_string());
-        let sub_hub = get_string("sub_hub").unwrap_or_else(|| "llm-agents".to_string());
+        // Preserve explicit frontmatter values when provided; classification
+        // fallback logic decides final hub/sub_hub when they are absent.
+        let hub = get_string("hub").unwrap_or_default();
+        let sub_hub = get_string("sub_hub").unwrap_or_default();
         let triggers = get_string("triggers");
         let match_score = get_u32("match_score");
         let phase = get_u32("phase");
@@ -189,12 +191,14 @@ impl Aggregator {
 
         let spinner = self.progress.create_spinner("Scanning skills...");
 
-        let paths: Vec<PathBuf> = WalkDir::new(src_path)
+        let mut paths: Vec<PathBuf> = WalkDir::new(src_path)
             .into_iter()
             .filter_map(|e| e.ok())
             .filter(|e| e.file_name() == "SKILL.md")
             .map(|e| e.path().to_path_buf())
             .collect();
+        // Ensure deterministic traversal order across OS/filesystems.
+        paths.sort_by(|a, b| a.to_string_lossy().cmp(&b.to_string_lossy()));
 
         spinner.set_message(format!(
             "Found {} SKILL.md files. Applying rules...",
@@ -225,7 +229,8 @@ impl Aggregator {
         let mut seen = HashSet::new();
         let mut unique_results = Vec::new();
         for meta in results {
-            if !seen.insert(meta.name.clone()) {
+            let key = meta.name.to_lowercase();
+            if !seen.insert(key) {
                 // eprintln!("Warning: Duplicate skill_id found: '{}'. Skipping {}", meta.name, meta.path.display());
                 continue;
             }

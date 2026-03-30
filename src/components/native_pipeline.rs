@@ -4,12 +4,13 @@ use crate::error::SkillManageError;
 use crate::utils::atomicity::{create_link_atomic, sync_dir_atomic, write_file_atomic};
 use crate::utils::progress::ProgressManager;
 use crate::utils::theme::Theme;
-use serde::Serialize;
+use serde::{Deserialize, Serialize};
 use serde_json::json;
-use std::collections::{BTreeMap, BTreeSet, HashSet};
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet};
 use std::path::{Path, PathBuf};
 use std::sync::Arc;
 use std::time::{SystemTime, UNIX_EPOCH};
+use walkdir::WalkDir;
 
 #[derive(Debug, Clone, Copy)]
 pub enum NativeSyncMode {
@@ -60,6 +61,19 @@ struct SubHubIndexEntry {
     path: String,
 }
 
+#[derive(Debug, Default)]
+struct ExistingAssignments {
+    by_skill: HashMap<String, (String, String)>,
+    by_src: HashMap<String, (String, String)>,
+}
+
+#[derive(Debug, Deserialize)]
+struct ExistingRoutingRow {
+    skill_id: String,
+    #[serde(default)]
+    src_path: String,
+}
+
 pub async fn aggregate_to_output(
     repo_root: &Path,
     output_dir: &Path,
@@ -68,6 +82,7 @@ pub async fn aggregate_to_output(
     show_progress: bool,
 ) -> Result<Vec<SkillMetadata>, SkillManageError> {
     let _guard = CwdGuard::set(repo_root)?;
+    let existing_assignments = load_existing_assignments(output_dir)?;
 
     let theme = Arc::new(Theme::new());
     let progress = Arc::new(ProgressManager::new(show_progress, false, Arc::clone(&theme)));
@@ -96,6 +111,8 @@ pub async fn aggregate_to_output(
         });
     }
 
+    apply_existing_assignments(repo_root, &existing_assignments, &mut skills);
+
     skills.sort_by(|a, b| {
         b.match_score
             .unwrap_or(100)
@@ -109,6 +126,112 @@ pub async fn aggregate_to_output(
 
     write_native_artifacts(repo_root, output_dir, &skills)?;
     Ok(skills)
+}
+
+fn normalize_path_key(input: &str) -> String {
+    input.trim().replace('\\', "/").to_lowercase()
+}
+
+fn load_existing_assignments(output_dir: &Path) -> Result<ExistingAssignments, SkillManageError> {
+    let mut out = ExistingAssignments::default();
+    if !output_dir.exists() {
+        return Ok(out);
+    }
+
+    let mut routing_files = WalkDir::new(output_dir)
+        .into_iter()
+        .filter_map(|e| e.ok())
+        .filter(|e| e.file_type().is_file() && e.file_name() == "routing.csv")
+        .map(|e| e.path().to_path_buf())
+        .collect::<Vec<_>>();
+
+    routing_files.sort_by(|a, b| a.to_string_lossy().cmp(&b.to_string_lossy()));
+
+    for routing_file in routing_files {
+        let subhub_dir = match routing_file.parent() {
+            Some(dir) => dir,
+            None => continue,
+        };
+
+        let rel = match subhub_dir.strip_prefix(output_dir) {
+            Ok(r) => r,
+            Err(_) => continue,
+        };
+
+        let mut parts = rel
+            .components()
+            .map(|c| c.as_os_str().to_string_lossy().to_string())
+            .collect::<Vec<_>>();
+        if parts.len() < 2 {
+            continue;
+        }
+
+        let hub = parts.remove(0).to_lowercase();
+        let sub_hub = parts.remove(0).to_lowercase();
+
+        let mut rdr = csv::Reader::from_path(&routing_file).map_err(|e| {
+            SkillManageError::ConfigError(format!(
+                "Failed reading existing routing file {}: {}",
+                routing_file.display(),
+                e
+            ))
+        })?;
+
+        for row in rdr.deserialize::<ExistingRoutingRow>() {
+            let row = row.map_err(|e| {
+                SkillManageError::ConfigError(format!(
+                    "Failed parsing existing routing row in {}: {}",
+                    routing_file.display(),
+                    e
+                ))
+            })?;
+
+            let skill_key = row.skill_id.trim().to_lowercase();
+            if !skill_key.is_empty() {
+                out.by_skill
+                    .entry(skill_key)
+                    .or_insert_with(|| (hub.clone(), sub_hub.clone()));
+            }
+
+            let src_key = normalize_path_key(&row.src_path);
+            if !src_key.is_empty() {
+                out.by_src
+                    .entry(src_key)
+                    .or_insert_with(|| (hub.clone(), sub_hub.clone()));
+            }
+        }
+    }
+
+    Ok(out)
+}
+
+fn apply_existing_assignments(
+    repo_root: &Path,
+    existing: &ExistingAssignments,
+    skills: &mut [SkillMetadata],
+) {
+    for skill in skills {
+        // Keep high-confidence deterministic assignments (explicit/path-based)
+        // and only use persisted routing for weaker fallback classifications.
+        if skill.match_score.unwrap_or(0) >= 90 {
+            continue;
+        }
+
+        let src_key = normalize_path_key(&normalize_src_path(repo_root, &skill.path));
+        if let Some((hub, sub_hub)) = existing.by_src.get(&src_key) {
+            skill.hub = hub.clone();
+            skill.sub_hub = sub_hub.clone();
+            skill.match_score = Some(100);
+            continue;
+        }
+
+        let skill_key = skill.name.to_lowercase();
+        if let Some((hub, sub_hub)) = existing.by_skill.get(&skill_key) {
+            skill.hub = hub.clone();
+            skill.sub_hub = sub_hub.clone();
+            skill.match_score = Some(100);
+        }
+    }
 }
 
 pub fn sync_output_to_targets(

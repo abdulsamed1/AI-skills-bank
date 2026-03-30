@@ -1889,7 +1889,7 @@ foreach ($skill in $allSkills) {
         $srcLower = ([string]$skill.src).ToLowerInvariant()
         $pathLower = ([string]$skill.path).ToLowerInvariant() -replace '\\', '/'
         $skillIdLower = ([string]$skill.id).ToLowerInvariant()
-        $isMarketingSkill = ($srcLower -eq "external:marketingskills") -or ($pathLower -like "*/src/marketingskills/*") -or $MarketingSkillIdSet.ContainsKey($skillIdLower)
+        $isMarketingSkill = ($srcLower -eq "external:marketingskills") -or ($pathLower -like "*/lib/marketingskills/*") -or $MarketingSkillIdSet.ContainsKey($skillIdLower)
 
         if ($isMarketingSkill) {
             $marketingDefs = @{}

@@ -1,10 +1,7 @@
 {
-  "count": 54,
+  "count": 53,
   "hub": "testing",
   "skills": [
-    "benchmark",
-    "system-profile",
-    "performance-benchmarking",
     "3d-web-experience",
     "agent-orchestration-multi-agent-optimize",
     "angular-best-practices",
@@ -14,6 +11,7 @@
     "asc-crash-triage",
     "azure-mgmt-applicationinsights-dotnet",
     "bazel-build-optimization",
+    "benchmark",
     "canary",
     "carrier-relationship-management",
     "claude-monitor",
@@ -39,6 +37,7 @@
     "openrlhf-training",
     "page-cro",
     "paid-ads",
+    "performance-benchmarking",
     "performance-engineer",
     "performance-optimizer",
     "performance-profiling",
@@ -51,10 +50,10 @@
     "stable-baselines3",
     "swift-concurrency",
     "swiftui-performance-audit",
+    "system-profile",
     "threejs-lighting",
     "threejs-materials",
     "unreal-engine-cpp-pro",
-    "vr-ar",
     "web-performance-optimization"
   ],
   "sub_hub": "performance-testing"

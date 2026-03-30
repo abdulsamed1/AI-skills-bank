@@ -2,24 +2,24 @@
   "count": 18,
   "hub": "marketing",
   "skills": [
-    "free-tool-strategy",
-    "positioning-ideas",
-    "product-marketing-context",
+    "app-clips",
     "app-marketing-context",
     "ckm:brand",
     "competitor-analysis",
-    "email-marketing-bible",
-    "gtm-motions",
-    "strategic-planning",
-    "app-clips",
     "copy-editing",
     "copywriting",
+    "email-marketing-bible",
+    "free-tool-strategy",
+    "gtm-motions",
     "homepage-audit",
     "klaviyo",
     "marketing-ideas",
     "marketing-principles",
     "marketing-psychology",
-    "referral-program"
+    "positioning-ideas",
+    "product-marketing-context",
+    "referral-program",
+    "strategic-planning"
   ],
   "sub_hub": "strategy"
 }

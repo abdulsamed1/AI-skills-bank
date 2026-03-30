@@ -84,9 +84,7 @@ $RECYCLE.BIN/
 skills-aggregated/.skill-lock.json
 
 # External src repositories (local clones)
-src/*
-!src/src.md
-!src/README.md
-!src/.gitkeep
+lib/*
+*lib/
 *skills/
-docs/stories/
+*docs/stories/

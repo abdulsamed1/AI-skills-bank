@@ -1,13 +1,13 @@
 {
-  "generated_at_unix": 1774888953,
+  "generated_at_unix": 1774892583,
   "hub": "design",
   "skills": [
     {
       "description": "Token architecture, component specifications, and slide generation. Three-layer tokens (primitive→semantic→component), CSS variables, spacing/typography scales, component specs, strategic slide creation. Use for design tokens, systematic design, brand-compliant presentations.",
-      "phase": 1,
-      "score": 9,
+      "phase": 5,
+      "score": 100,
       "skill_id": "ckm:design-system",
-      "src_path": "src/nextlevelbuilder-ui-ux-pro-max-skill/.claude/skills/design-system/SKILL.md",
+      "src_path": "lib/nextlevelbuilder-ui-ux-pro-max-skill/.claude/skills/design-system/SKILL.md",
       "triggers": "ckm;design;system"
     }
   ],

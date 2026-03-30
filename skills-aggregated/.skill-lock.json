@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774888953,
+  "generated_at_unix": 1774892584,
   "source": "native-cli",
   "src_repositories": [
     {
@@ -10,6 +10,9 @@
     },
     {
       "name": "Charlie85270-Dorothy"
+    },
+    {
+      "name": "CloudAI-X-threejs-skills"
     },
     {
       "name": "Digidai-product-manager-skills"
@@ -49,6 +52,12 @@
     },
     {
       "name": "RoundTable02-tutor-skills"
+    },
+    {
+      "name": "SHADOWPR0-security-bluebook-builder"
+    },
+    {
+      "name": "SeanZoR-claude-speed-reader"
     },
     {
       "name": "Shpigford-skills"
@@ -150,12 +159,6 @@
       "name": "kreuzberg-dev-kreuzberg"
     },
     {
-      "name": "lawvable-awesome-legal-skills"
-    },
-    {
-      "name": "linear-claude-skill"
-    },
-    {
       "name": "massimodeluisa-recursive-decomposition-skill"
     },
     {
@@ -193,9 +196,6 @@
     },
     {
       "name": "pm-skills"
-    },
-    {
-      "name": "prompt-security-clawsec"
     },
     {
       "name": "rameerez-claude-code-startup-skills"

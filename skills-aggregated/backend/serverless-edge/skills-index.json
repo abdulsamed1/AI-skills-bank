@@ -2,12 +2,12 @@
   "count": 6,
   "hub": "backend",
   "skills": [
-    "aws-serverless",
-    "cloudflare-workers-expert",
-    "performing-serverless-function-security-review",
     "apify-actorization",
     "aws-aurora",
-    "azure-cloud-migrate"
+    "aws-serverless",
+    "azure-cloud-migrate",
+    "cloudflare-workers-expert",
+    "performing-serverless-function-security-review"
   ],
   "sub_hub": "serverless-edge"
 }

@@ -2,14 +2,14 @@
   "count": 8,
   "hub": "design",
   "skills": [
-    "ckm:ui-styling",
     "baseline-ui",
+    "ckm:ui-styling",
+    "color-expert",
+    "cro-optimization",
     "expo-tailwind-setup",
     "pptx-posters",
     "tailwind-design-system",
-    "cro-optimization",
-    "tailwind-patterns",
-    "color-expert"
+    "tailwind-patterns"
   ],
   "sub_hub": "css-styling"
 }

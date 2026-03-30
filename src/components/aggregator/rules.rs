@@ -46,7 +46,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     prog_sub.insert(
         "typescript",
         SubHubRule {
-            keywords: vec!["typescript", "tsconfig", "tsx", "type-system", "javascript"],
+            keywords: vec!["typescript", "tsconfig", "tsx", "type-system", "javascript", "ts"],
             anchor_keywords: vec!["typescript", "tsconfig"],
             negative_keywords: vec!["python", "rust", "golang"],
         },
@@ -120,7 +120,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     // 3. Frontend Hub
     let mut fe_sub = HashMap::new();
     fe_sub.insert(
-        "frameworks",
+        "web-frameworks",
         SubHubRule {
             keywords: vec!["vue", "vuex", "nuxt", "vue3","react", "nextjs", "jsx", "hooks", "tailwind", "angular", "svelte", "ember"],
             anchor_keywords: vec!["react", "nextjs", "vue", "nuxt"],
@@ -148,6 +148,14 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     // 4. Backend Hub
     let mut be_sub = HashMap::new();
     be_sub.insert(
+        "server-side-frameworks",
+        SubHubRule {
+            keywords: vec!["node", "hono", "express", "koa", "hapi", "spring", "django", "flask", "fastapi"],
+            anchor_keywords: vec!["express", "spring", "django", "fastapi"],
+            negative_keywords: vec!["react", "nextjs"],
+        },
+    );
+    be_sub.insert(
         "ci-cd",
         SubHubRule {
             keywords: vec!["ci", "cd", "github-actions", "jenkins", "pipeline"],
@@ -166,7 +174,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     be_sub.insert(
         "api-design",
         SubHubRule {
-            keywords: vec!["api", "rest", "graphql", "openapi", "swagger", "endpoint", "api-design", "api-development", "api-best-practices"],
+            keywords: vec!["api", "rest", "graphql", "openapi", "swagger", "endpoint", "api-design", "api-development", "api-best-practices", "api-gateway", "api-security", "api-performance", "api-testing", "api-documentation", "api-versioning", "api-error-handling", "api-authentication", "api-authorization", "api-rate-limiting", "api-caching", "api-monitoring", "api-logging", "api-tracing", "api-observability", "api-security", "api-performance", "api-testing", "api-documentation", "api-versioning", "api-error-handling", "api-authentication", "api-authorization", "api-rate-limiting", "api-caching", "api-monitoring", "api-logging", "api-tracing", "api-observability", "web hook", "websocket"],
             anchor_keywords: vec!["api", "rest", "graphql"],
             negative_keywords: vec!["react", "nextjs"],
         },
@@ -175,7 +183,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     be_sub.insert(
         "databases",
         SubHubRule {
-            keywords: vec!["sql", "postgres", "mongodb", "redis", "nosql", "orm"],
+            keywords: vec!["sql", "postgres", "mongodb", "redis", "nosql", "orm", "supabase", "mysql", "mariadb", "sqlite", "dynamodb", "firestore", "firebase", "prisma", "drizzle", "typeorm", "sequelize", "knex", "sqlx", "diesel", "sqlc"],
             anchor_keywords: vec!["sql", "postgres", "database"],
             negative_keywords: vec!["frontend", "ui"],
         },
@@ -191,7 +199,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     be_sub.insert(
         "serverless-edge",
         SubHubRule {
-            keywords: vec!["serverless", "cloudflare workers", "edge computing", "lambda", "faas", "serverless architecture", "serverless best practices", "cloudflare", "hoku", "vercel edge"],
+            keywords: vec!["cloudflare", "serverless", "cloudflare workers", "edge computing", "lambda", "faas", "serverless architecture", "serverless best practices", "cf", "hoku", "vercel edge"],
             anchor_keywords: vec!["serverless", "cloudflare workers"],
             negative_keywords: vec!["ui", "frontend"],
         },
@@ -461,6 +469,149 @@ pub static EXCLUSION_PATTERNS: &[&str] = &[
     "game", "law", "legal", "medicine", "medical", "hospital", "patient", "clinical",
 ];
 
+static CANONICAL_SUBHUB_ALIASES: &[(&str, &str, &str)] = &[
+    ("llm-agents", "ai", "llm-agents"),
+    ("prompting-factory", "ai", "llm-agents"),
+    ("prompting-builder", "ai", "llm-agents"),
+    ("skills-factory", "ai", "llm-agents"),
+    ("data-processing", "ai", "data-processing"),
+    ("ml-training", "ai", "ml-training"),
+    ("api-design", "backend", "api-design"),
+    ("server-side-frameworks", "backend", "api-design"),
+    ("databases", "backend", "databases"),
+    ("microservices", "backend", "microservices"),
+    ("message-queues", "backend", "microservices"),
+    ("ci-cd", "backend", "ci-cd"),
+    ("containerization", "backend", "containerization"),
+    ("serverless-edge", "backend", "serverless-edge"),
+    ("caching", "backend", "caching"),
+    ("product-strategy", "business", "product-strategy"),
+    ("product", "business", "product"),
+    ("sales", "business", "sales"),
+    ("operations", "business", "operations"),
+    ("ui-ux", "design", "ui-ux"),
+    ("ux", "design", "ui-ux"),
+    ("css-styling", "design", "css-styling"),
+    ("design-systems", "design", "design-systems"),
+    ("frameworks", "frontend", "frameworks"),
+    ("react-nextjs", "frontend", "frameworks"),
+    ("web-basics", "frontend", "frameworks"),
+    ("state-management", "frontend", "state-management"),
+    ("strategy", "marketing", "strategy"),
+    ("content", "marketing", "content"),
+    ("email", "marketing", "email"),
+    ("seo", "marketing", "seo"),
+    ("social", "marketing", "social-media"),
+    ("social-media", "marketing", "social-media"),
+    ("analytics", "marketing", "analytics"),
+    ("cross-platform", "mobile", "cross-platform"),
+    ("ios", "mobile", "ios"),
+    ("android", "mobile", "android"),
+    ("typescript", "programming", "typescript"),
+    ("python", "programming", "python"),
+    ("rust", "programming", "rust"),
+    ("golang", "programming", "golang"),
+    ("java", "programming", "java"),
+    ("automation", "testing", "automation"),
+    ("unit-testing", "testing", "unit-testing"),
+    ("e2e-testing", "testing", "e2e-testing"),
+    ("performance-testing", "testing", "performance-testing"),
+    ("security", "testing", "security"),
+    ("core", "testing", "security"),
+];
+
+fn normalize_slug(input: &str) -> String {
+    let mut out = String::with_capacity(input.len());
+    let mut prev_dash = false;
+    for ch in input.chars() {
+        let c = ch.to_ascii_lowercase();
+        if c.is_ascii_alphanumeric() {
+            out.push(c);
+            prev_dash = false;
+        } else if !prev_dash {
+            out.push('-');
+            prev_dash = true;
+        }
+    }
+    out.trim_matches('-').to_string()
+}
+
+fn default_subhub_for_hub(hub: &str) -> Option<&'static str> {
+    match hub {
+        "ai" => Some("llm-agents"),
+        "backend" => Some("api-design"),
+        "business" => Some("product-strategy"),
+        "design" => Some("ui-ux"),
+        "frontend" => Some("frameworks"),
+        "marketing" => Some("strategy"),
+        "mobile" => Some("cross-platform"),
+        "programming" => Some("typescript"),
+        "testing" => Some("automation"),
+        _ => None,
+    }
+}
+
+fn canonicalize_assignment(hub: &str, sub_hub: &str) -> Option<(String, String)> {
+    let hub_norm = normalize_slug(hub);
+    let sub_norm = normalize_slug(sub_hub);
+
+    if hub_norm == "security" {
+        return Some(("testing".to_string(), "security".to_string()));
+    }
+
+    if !sub_norm.is_empty() {
+        for (alias, canon_hub, canon_sub) in CANONICAL_SUBHUB_ALIASES {
+            if sub_norm == *alias {
+                return Some(((*canon_hub).to_string(), (*canon_sub).to_string()));
+            }
+        }
+    }
+
+    if !hub_norm.is_empty() {
+        if let Some(hub_def) = SUB_HUB_DEFINITIONS.get(hub_norm.as_str()) {
+            if sub_norm.is_empty() {
+                if let Some(default_sub) = default_subhub_for_hub(hub_norm.as_str()) {
+                    return Some((hub_norm, default_sub.to_string()));
+                }
+            }
+            if hub_def.sub_hubs.contains_key(sub_norm.as_str()) {
+                return Some((hub_norm, sub_norm));
+            }
+        }
+    }
+
+    None
+}
+
+fn path_components(meta: &SkillMetadata) -> Vec<String> {
+    meta.path
+        .components()
+        .map(|c| normalize_slug(&c.as_os_str().to_string_lossy()))
+        .filter(|s| !s.is_empty())
+        .collect()
+}
+
+fn infer_from_path(meta: &SkillMetadata) -> Option<(String, String)> {
+    let components = path_components(meta);
+    if components.is_empty() {
+        return None;
+    }
+
+    for (alias, hub, sub_hub) in CANONICAL_SUBHUB_ALIASES {
+        if components.iter().any(|c| c == alias) {
+            return Some(((*hub).to_string(), (*sub_hub).to_string()));
+        }
+    }
+
+    for component in components {
+        if let Some(default_sub) = default_subhub_for_hub(component.as_str()) {
+            return Some((component, default_sub.to_string()));
+        }
+    }
+
+    None
+}
+
 pub fn normalize_text(text: &str) -> (String, HashSet<String>) {
     let lower = text.to_lowercase();
     let tokens = TOKEN_REGEX
@@ -468,6 +619,61 @@ pub fn normalize_text(text: &str) -> (String, HashSet<String>) {
         .map(|m| m.as_str().to_string())
         .collect();
     (lower, tokens)
+}
+
+fn rule_matches(normalized_text: &str, tokens: &HashSet<String>, rule: &SubHubRule) -> bool {
+    if rule
+        .negative_keywords
+        .iter()
+        .any(|neg| tokens.contains(*neg) || normalized_text.contains(neg))
+    {
+        return false;
+    }
+
+    let keyword_hit = rule
+        .keywords
+        .iter()
+        .any(|kw| tokens.contains(*kw) || normalized_text.contains(kw));
+
+    if !keyword_hit {
+        return false;
+    }
+
+    if rule.anchor_keywords.is_empty() {
+        return true;
+    }
+
+    rule.anchor_keywords
+        .iter()
+        .any(|anchor| tokens.contains(*anchor) || normalized_text.contains(anchor))
+}
+
+fn infer_from_rules_deterministic(
+    normalized_text: &str,
+    tokens: &HashSet<String>,
+) -> Option<(String, String)> {
+    let mut hubs = SUB_HUB_DEFINITIONS.keys().cloned().collect::<Vec<_>>();
+    hubs.sort_unstable();
+
+    for hub in hubs {
+        if let Some(hub_def) = SUB_HUB_DEFINITIONS.get(hub) {
+            let mut subs = hub_def.sub_hubs.keys().cloned().collect::<Vec<_>>();
+            subs.sort_unstable();
+
+            for sub in subs {
+                if let Some(rule) = hub_def.sub_hubs.get(sub) {
+                    if rule_matches(normalized_text, tokens, rule) {
+                        if let Some((canon_hub, canon_sub)) = canonicalize_assignment(hub, sub) {
+                            return Some((canon_hub, canon_sub));
+                        }
+                        return Some((hub.to_string(), sub.to_string()));
+                    }
+                }
+            }
+        }
+    }
+
+    None
 }
 
 pub fn get_score_for_subhub(
@@ -528,36 +734,29 @@ pub fn generate_triggers(skill_id: &str) -> String {
 }
 
 pub fn apply_rules(meta: &mut SkillMetadata) -> bool {
-    let full_text = format!("{} {}", meta.name, meta.description);
+    let full_text = format!("{} {} {}", meta.name, meta.description, meta.path.to_string_lossy());
     let (normalized, tokens) = normalize_text(&full_text);
 
     if is_excluded(&normalized, &tokens) {
         return false;
     }
 
-    let mut best_hub = "business";
-    let mut best_sub = "product-strategy";
-    let mut best_score = 0;
-
-    for (hub_name, hub_def) in SUB_HUB_DEFINITIONS.iter() {
-        for (sub_name, rule) in hub_def.sub_hubs.iter() {
-            let score = get_score_for_subhub(&normalized, &tokens, rule);
-            if score > best_score {
-                best_score = score;
-                best_hub = hub_name;
-                best_sub = sub_name;
-            }
-        }
-    }
-
-    if best_score >= 4 {
-        meta.hub = best_hub.to_string();
-        meta.sub_hub = best_sub.to_string();
-        meta.match_score = Some(best_score as u32);
+    if let Some((hub, sub_hub)) = canonicalize_assignment(&meta.hub, &meta.sub_hub) {
+        meta.hub = hub;
+        meta.sub_hub = sub_hub;
+        meta.match_score = Some(100);
+    } else if let Some((hub, sub_hub)) = infer_from_path(meta) {
+        meta.hub = hub;
+        meta.sub_hub = sub_hub;
+        meta.match_score = Some(95);
+    } else if let Some((hub, sub_hub)) = infer_from_rules_deterministic(&normalized, &tokens) {
+        meta.hub = hub;
+        meta.sub_hub = sub_hub;
+        meta.match_score = Some(80);
     } else {
         meta.hub = "business".to_string();
         meta.sub_hub = "product-strategy".to_string();
-        meta.match_score = Some(100);
+        meta.match_score = Some(1);
     }
 
     if meta.triggers.is_none() || meta.triggers.as_ref().unwrap().is_empty() {
@@ -568,11 +767,13 @@ pub fn apply_rules(meta: &mut SkillMetadata) -> bool {
         "programming" => 1,
         "frontend" => 1,
         "backend" => 2,
-        "devops" => 3,
-        "security" => 4,
-        "testing" => 5,
-        "ai" => 6,
-        _ => 1,
+        "testing" => 3,
+        "ai" => 4,
+        "business" => 5,
+        "marketing" => 5,
+        "design" => 5,
+        "mobile" => 5,
+        _ => 6,
     });
 
     true

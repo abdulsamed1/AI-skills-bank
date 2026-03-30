@@ -1,12 +1,13 @@
 {
-  "count": 5,
+  "count": 6,
   "hub": "mobile",
   "skills": [
-    "reverse-engineering-android-malware-with-jadx",
     "analyzing-android-malware-with-apktool",
     "android-java",
     "android-kotlin",
-    "earllm-build"
+    "earllm-build",
+    "reverse-engineering-android-malware-with-jadx",
+    "android-design-guidelines"
   ],
   "sub_hub": "android"
 }

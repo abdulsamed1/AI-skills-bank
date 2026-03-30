@@ -1,1661 +1,1645 @@
 {
-  "generated_at_unix": 1774888953,
+  "generated_at_unix": 1774892583,
   "hub": "backend",
   "skills": [
     {
-      "description": "This skill covers integrating Static Application Security Testing (SAST) tools—CodeQL and Semgrep—into GitHub Actions CI/CD pipelines. It addresses configuring automated code scanning on pull requests and pushes, tuning rules to reduce false positives, uploading SARIF results to GitHub Advanced Security, and establishing quality gates that block merges when high-severity vulnerabilities are detected.",
-      "phase": 2,
-      "score": 17,
-      "skill_id": "integrating-sast-into-github-actions-pipeline",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/integrating-sast-into-github-actions-pipeline/SKILL.md",
-      "triggers": "integrating;sast;into;github;actions"
-    },
-    {
-      "description": "This skill covers implementing Software Composition Analysis (SCA) using Snyk to detect vulnerable open-source dependencies in CI/CD pipelines. It addresses scanning package manifests and lockfiles, automated fix pull request generation, license compliance checking, continuous monitoring of deployed applications, and integration with GitHub, GitLab, and Jenkins pipelines.",
-      "phase": 2,
-      "score": 17,
-      "skill_id": "performing-sca-dependency-scanning-with-snyk",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-sca-dependency-scanning-with-snyk/SKILL.md",
-      "triggers": "performing;sca;dependency;scanning;with"
-    },
-    {
-      "description": "Architecture patterns for multi-stage CI/CD pipelines with approval gates and deployment strategies.",
-      "phase": 2,
-      "score": 15,
-      "skill_id": "deployment-pipeline-design",
-      "src_path": "src/antigravity-awesome-skills/skills/deployment-pipeline-design/SKILL.md",
-      "triggers": "deployment;pipeline;design"
-    },
-    {
-      "description": "Integrates Static Application Security Testing (SAST), Dynamic Application Security Testing (DAST), and Software Composition Analysis (SCA) into CI/CD pipelines using open-source tools. Covers Semgrep for SAST, Trivy for SCA and container scanning, OWASP ZAP for DAST, and Gitleaks for secrets detection. Activates for requests involving DevSecOps pipeline setup, automated security scanning in CI/CD, SAST/DAST/SCA integration, or shift-left security implementation.",
-      "phase": 2,
-      "score": 15,
-      "skill_id": "implementing-devsecops-security-scanning",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-devsecops-security-scanning/SKILL.md",
-      "triggers": "implementing;devsecops;security;scanning"
-    },
-    {
-      "description": "This skill covers implementing Gitleaks for detecting and preventing hardcoded secrets in git repositories. It addresses configuring pre-commit hooks, CI/CD pipeline integration, custom rule authoring for organization-specific secrets, baseline management for existing repositories, and remediation workflows for exposed credentials.",
-      "phase": 2,
-      "score": 15,
-      "skill_id": "implementing-secret-scanning-with-gitleaks",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-secret-scanning-with-gitleaks/SKILL.md",
-      "triggers": "implementing;secret;scanning;with;gitleaks"
-    },
-    {
-      "description": "This skill covers integrating OWASP ZAP (Zed Attack Proxy) for Dynamic Application Security Testing in CI/CD pipelines. It addresses configuring baseline, full, and API scans against running applications, interpreting ZAP findings, tuning scan policies, and establishing DAST quality gates in GitHub Actions and GitLab CI.",
-      "phase": 2,
-      "score": 15,
-      "skill_id": "integrating-dast-with-owasp-zap-in-pipeline",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/integrating-dast-with-owasp-zap-in-pipeline/SKILL.md",
-      "triggers": "integrating;dast;with;owasp;zap"
-    },
-    {
-      "description": "Production-ready CI/CD configurations for Playwright — GitHub Actions, GitLab CI, CircleCI, Azure DevOps, Jenkins, Docker, parallel sharding, reporting, code coverage, and global setup/teardown.",
-      "phase": 2,
-      "score": 15,
-      "skill_id": "playwright-ci",
-      "src_path": "src/testdino-hq-playwright-skill/ci/SKILL.md",
-      "triggers": "playwright;ci"
-    },
-    {
-      "description": "Audits GitHub Actions workflows for security vulnerabilities in AI agent integrations including Claude Code Action, Gemini CLI, OpenAI Codex, and GitHub AI Inference. Detects attack vectors where attacker-controlled input reaches. AI agents running in CI/CD pipelines.",
-      "phase": 2,
-      "score": 13,
-      "skill_id": "agentic-actions-auditor",
-      "src_path": "src/antigravity-awesome-skills/skills/agentic-actions-auditor/SKILL.md",
-      "triggers": "agentic;actions;auditor"
-    },
-    {
-      "description": "Master of defensive Bash scripting for production automation, CI/CD pipelines, and system utilities. Expert in safe, portable, and testable shell scripts.",
-      "phase": 2,
-      "score": 13,
-      "skill_id": "bash-pro",
-      "src_path": "src/antigravity-awesome-skills/skills/bash-pro/SKILL.md",
-      "triggers": "bash;pro"
-    },
-    {
-      "description": "You are a workflow automation expert specializing in creating efficient CI/CD pipelines, GitHub Actions workflows, and automated development processes. Design and implement automation that reduces manual work, improves consistency, and accelerates delivery while maintaining quality and security.",
-      "phase": 2,
-      "score": 13,
-      "skill_id": "cicd-automation-workflow-automate",
-      "src_path": "src/antigravity-awesome-skills/skills/cicd-automation-workflow-automate/SKILL.md",
-      "triggers": "cicd;automation;workflow;automate"
-    },
-    {
-      "description": "Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation.",
-      "phase": 2,
-      "score": 13,
-      "skill_id": "deployment-engineer",
-      "src_path": "src/antigravity-awesome-skills/skills/deployment-engineer/SKILL.md",
-      "triggers": "deployment;engineer"
-    },
-    {
-      "description": "Detecting exposed AWS credentials in source code repositories, CI/CD pipelines, and configuration files using TruffleHog, git-secrets, and AWS-native detection mechanisms to prevent credential theft and unauthorized account access.",
-      "phase": 2,
-      "score": 13,
-      "skill_id": "detecting-aws-credential-exposure-with-trufflehog",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-aws-credential-exposure-with-trufflehog/SKILL.md",
-      "triggers": "detecting;aws;credential;exposure;with"
-    },
-    {
-      "description": "Deploy Aqua Security's Trivy scanner to detect vulnerabilities, misconfigurations, secrets, and license issues in container images across CI/CD pipelines and registries.",
-      "phase": 2,
-      "score": 13,
-      "skill_id": "implementing-aqua-security-for-container-scanning",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-aqua-security-for-container-scanning/SKILL.md",
-      "triggers": "implementing;aqua;security;for;container"
-    },
-    {
-      "description": "This skill covers implementing Open Policy Agent (OPA) and Gatekeeper for policy-as-code enforcement in Kubernetes and CI/CD pipelines. It addresses writing Rego policies, deploying OPA Gatekeeper as a Kubernetes admission controller, testing policies in development, and integrating policy evaluation into deployment pipelines.",
-      "phase": 2,
-      "score": 13,
-      "skill_id": "implementing-policy-as-code-with-open-policy-agent",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-policy-as-code-with-open-policy-agent/SKILL.md",
-      "triggers": "implementing;policy;as;code;with"
-    },
-    {
-      "description": "This skill covers deploying HashiCorp Vault for centralized secrets management across cloud environments, including dynamic secret generation for databases and cloud providers, transit encryption, PKI certificate management, and Kubernetes integration. It addresses eliminating hardcoded credentials from application code and CI/CD pipelines by implementing short-lived, automatically rotated secrets.",
-      "phase": 2,
-      "score": 13,
-      "skill_id": "implementing-secrets-management-with-vault",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-secrets-management-with-vault/SKILL.md",
-      "triggers": "implementing;secrets;management;with;vault"
-    },
-    {
-      "description": "Integrate gitleaks and trufflehog into CI/CD pipelines to detect leaked secrets before deployment",
-      "phase": 2,
-      "score": 13,
-      "skill_id": "implementing-secrets-scanning-in-ci-cd",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-secrets-scanning-in-ci-cd/SKILL.md",
-      "triggers": "implementing;secrets;scanning;in;ci"
-    },
-    {
-      "description": "Write custom Semgrep SAST rules in YAML to detect application-specific vulnerabilities, enforce coding standards, and integrate into CI/CD pipelines.",
-      "phase": 2,
-      "score": 13,
-      "skill_id": "implementing-semgrep-for-custom-sast-rules",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-semgrep-for-custom-sast-rules/SKILL.md",
-      "triggers": "implementing;semgrep;for;custom;sast"
-    },
-    {
-      "description": "Implements Sigstore-based software signing and verification using Cosign keyless signing, Rekor transparency log verification, and Fulcio certificate authority integration to establish cryptographic provenance for container images, binaries, and software artifacts. The practitioner configures OIDC-based identity binding, verifies signing events against the Rekor transparency log, and integrates signing workflows into CI/CD pipelines. Activates for requests involving software supply chain signing, keyless container signing, Sigstore deployment, or artifact provenance verification.",
-      "phase": 2,
-      "score": 13,
-      "skill_id": "implementing-sigstore-for-software-signing",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-sigstore-for-software-signing/SKILL.md",
-      "triggers": "implementing;sigstore;for;software;signing"
-    },
-    {
-      "description": "Secure secrets management practices for CI/CD pipelines using Vault, AWS Secrets Manager, and other tools.",
-      "phase": 2,
-      "score": 13,
-      "skill_id": "secrets-management",
-      "src_path": "src/antigravity-awesome-skills/skills/secrets-management/SKILL.md",
-      "triggers": "secrets;management"
-    },
-    {
-      "description": "Cloud infrastructure and DevOps workflow covering AWS, Azure, GCP, Kubernetes, Terraform, CI/CD, monitoring, and cloud-native development.",
-      "phase": 2,
-      "score": 11,
-      "skill_id": "cloud-devops",
-      "src_path": "src/antigravity-awesome-skills/skills/cloud-devops/SKILL.md",
-      "triggers": "cloud;devops"
-    },
-    {
-      "description": "OpenAI Codex CLI code review with GPT-5.2-Codex, CI/CD integration",
-      "phase": 2,
-      "score": 11,
-      "skill_id": "codex-review",
-      "src_path": "src/alinaqi-claude-bootstrap/skills/codex-review/SKILL.md",
-      "triggers": "codex;review"
-    },
-    {
-      "description": "DevOps e deploy de aplicacoes — Docker, CI/CD com GitHub Actions, AWS Lambda, SAM, Terraform, infraestrutura como codigo e monitoramento.",
-      "phase": 2,
-      "score": 11,
-      "skill_id": "devops-deploy",
-      "src_path": "src/antigravity-awesome-skills/skills/devops-deploy/SKILL.md",
-      "triggers": "devops;deploy"
-    },
-    {
-      "description": "Google Gemini CLI code review with Gemini 2.5 Pro, 1M token context, CI/CD integration",
-      "phase": 2,
-      "score": 11,
-      "skill_id": "gemini-review",
-      "src_path": "src/alinaqi-claude-bootstrap/skills/gemini-review/SKILL.md",
-      "triggers": "gemini;review"
-    },
-    {
-      "description": "Automate GitHub repositories, issues, pull requests, branches, CI/CD, and permissions via Rube MCP (Composio). Manage code workflows, review PRs, search code, and handle deployments programmatically.",
-      "phase": 2,
-      "score": 11,
-      "skill_id": "github-automation",
-      "src_path": "src/antigravity-awesome-skills/skills/github-automation/SKILL.md",
-      "triggers": "github;automation"
-    },
-    {
-      "description": "Comprehensive k6 load testing skill for API, browser, and scalability testing. Write realistic load scenarios, analyze results, and integrate with CI/CD.",
-      "phase": 2,
-      "score": 11,
-      "skill_id": "k6-load-testing",
-      "src_path": "src/antigravity-awesome-skills/skills/k6-load-testing/SKILL.md",
-      "triggers": "k6;load;testing"
-    },
-    {
-      "description": "Automates the full code release pipeline — branch, commit, push, PR, wait for CI, merge, version bump, release, cleanup. Use when the user wants to release code changes, says \"ship it\", or asks to create a release.",
-      "phase": 2,
-      "score": 11,
-      "skill_id": "ship",
-      "src_path": "src/bitwize-music-studio-claude-ai-music-skills/skills/ship/SKILL.md",
-      "triggers": "ship"
-    },
-    {
-      "description": "Design and implement a comprehensive DevSecOps pipeline in GitLab CI/CD integrating SAST, DAST, container scanning, dependency scanning, and secret detection.",
-      "phase": 2,
-      "score": 10,
-      "skill_id": "building-devsecops-pipeline-with-gitlab-ci",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/building-devsecops-pipeline-with-gitlab-ci/SKILL.md",
-      "triggers": "building;devsecops;pipeline;with;gitlab"
-    },
-    {
-      "description": "Scans GitHub Actions workflows and CI/CD pipeline configurations for supply chain attack vectors including unpinned actions, script injection via expressions, dependency confusion, and secrets exposure. Uses PyGithub and YAML parsing for automated audit. Use when hardening CI/CD pipelines or investigating compromised build systems.",
-      "phase": 2,
-      "score": 10,
-      "skill_id": "detecting-supply-chain-attacks-in-ci-cd",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-supply-chain-attacks-in-ci-cd/SKILL.md",
-      "triggers": "detecting;supply;chain;attacks;in"
-    },
-    {
-      "description": "Comprehensive GitLab CI/CD pipeline patterns for automated testing, building, and deployment.",
-      "phase": 2,
-      "score": 10,
-      "skill_id": "gitlab-ci-patterns",
-      "src_path": "src/antigravity-awesome-skills/skills/gitlab-ci-patterns/SKILL.md",
-      "triggers": "gitlab;ci;patterns"
-    },
-    {
-      "description": "Implement software supply chain integrity verification for container builds using the in-toto framework to create cryptographically signed attestations across CI/CD pipeline steps.",
-      "phase": 2,
-      "score": 10,
-      "skill_id": "implementing-supply-chain-security-with-in-toto",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-supply-chain-security-with-in-toto/SKILL.md",
-      "triggers": "implementing;supply;chain;security;with"
-    },
-    {
-      "description": "Define, validate, and run repo-local multi-step automations with `asc workflow` and `.asc/workflow.json`. Use when migrating from lane tools, wiring CI pipelines, or orchestrating repeatable `asc` + shell release flows with hooks, conditionals, and sub-workflows.",
-      "phase": 2,
-      "score": 9,
-      "skill_id": "asc-workflow",
-      "src_path": "src/rudrankriyam-app-store-connect-cli-skills/skills/asc-workflow/SKILL.md",
-      "triggers": "asc;workflow"
-    },
-    {
-      "description": "Auto-review pipeline — reads the full CEO, design, and eng review skills from disk and runs them sequentially with auto-decisions using 6 decision principles. Surfaces taste decisions (close approaches, borderline scope, codex disagreements) at a final approval gate. One command, fully reviewed plan out. Use when asked to \"auto review\", \"autoplan\", \"run all reviews\", \"review this plan automatically\", or \"make the decisions for me\". Proactively suggest when the user has a plan file and wants to run the full review gauntlet without answering 15-30 intermediate questions.",
-      "phase": 2,
-      "score": 9,
-      "skill_id": "autoplan",
-      "src_path": "src/gstack/autoplan/SKILL.md",
-      "triggers": "autoplan"
-    },
-    {
-      "description": "[Extended thinking: This workflow implements a sophisticated debugging and resolution pipeline that leverages AI-assisted debugging tools and observability platforms to systematically diagnose and res",
-      "phase": 2,
-      "score": 9,
-      "skill_id": "incident-response-smart-fix",
-      "src_path": "src/antigravity-awesome-skills/skills/incident-response-smart-fix/SKILL.md",
-      "triggers": "incident;response;smart;fix"
-    },
-    {
-      "description": "Master defensive Bash programming techniques for production-grade scripts. Use when writing robust shell scripts, CI/CD pipelines, or system utilities requiring fault tolerance and safety.",
-      "phase": 2,
-      "score": 8,
-      "skill_id": "bash-defensive-patterns",
-      "src_path": "src/antigravity-awesome-skills/skills/bash-defensive-patterns/SKILL.md",
-      "triggers": "bash;defensive;patterns"
-    },
-    {
-      "description": "Helps understand and write EAS workflow YAML files for Expo projects. Use this skill when the user asks about CI/CD or workflows in an Expo or EAS context, mentions .eas/workflows/, or wants help with EAS build pipelines or deployment automation.",
-      "phase": 2,
-      "score": 8,
-      "skill_id": "expo-cicd-workflows",
-      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-expo-react-native/skills/expo-cicd-workflows/SKILL.md",
-      "triggers": "expo;cicd;workflows"
-    },
-    {
-      "description": "extraction pipeline patterns",
-      "phase": 2,
-      "score": 7,
-      "skill_id": "extraction-pipeline-patterns",
-      "src_path": "src/kreuzberg-dev-kreuzberg/.ai-rulez/skills/extraction-pipeline-patterns/SKILL.md",
-      "triggers": "extraction;pipeline;patterns"
-    },
-    {
-      "description": "Master Git hooks setup with Husky, lint-staged, pre-commit framework, and commitlint. Automate code quality gates, formatting, linting, and commit message enforcement before code reaches CI.",
-      "phase": 2,
-      "score": 7,
-      "skill_id": "git-hooks-automation",
-      "src_path": "src/antigravity-awesome-skills/skills/git-hooks-automation/SKILL.md",
-      "triggers": "git;hooks;automation"
-    },
-    {
-      "description": "Merges GitHub Pull Requests after validating pre-merge checklist. Use when user wants to merge PR, close PR, finalize PR, complete merge, approve and merge, or execute merge. Runs pre-merge validation (tests, lint, CI, comments), confirms with user, merges with proper format, handles post-merge cleanup.",
-      "phase": 2,
-      "score": 7,
-      "skill_id": "github-pr-merge",
-      "src_path": "src/fvadicamo-dev-agent-skills/skills/github-pr-merge/SKILL.md",
-      "triggers": "github;pr;merge"
-    },
-    {
-      "description": "Iterate on a PR until CI passes. Use when you need to fix CI failures, address review feedback, or continuously push fixes until all checks are green. Automates the feedback-fix-push-wait cycle.",
-      "phase": 2,
-      "score": 7,
-      "skill_id": "iterate-pr",
-      "src_path": "src/antigravity-awesome-skills/skills/iterate-pr/SKILL.md",
-      "triggers": "iterate;pr"
-    },
-    {
-      "description": "Land and deploy workflow. Merges the PR, waits for CI and deploy, verifies production health via canary checks. Takes over after /ship creates the PR. Use when: \"merge\", \"land\", \"deploy\", \"merge and verify\", \"land it\", \"ship it to production\".",
-      "phase": 2,
-      "score": 7,
-      "skill_id": "land-and-deploy",
-      "src_path": "src/gstack/land-and-deploy/SKILL.md",
-      "triggers": "land;and;deploy"
-    },
-    {
-      "description": "Design and implement a complete ML pipeline for: $ARGUMENTS",
-      "phase": 2,
-      "score": 7,
-      "skill_id": "machine-learning-ops-ml-pipeline",
-      "src_path": "src/antigravity-awesome-skills/skills/machine-learning-ops-ml-pipeline/SKILL.md",
-      "triggers": "machine;learning;ops;ml;pipeline"
-    },
-    {
-      "description": "Parse, navigate, and query materials science ontology structures — browse class hierarchies, inspect individual classes and their properties, look up object and data property definitions with domain/range, search for ontology terms by keyword, and parse or summarize raw OWL/XML files. Supports the OCDO ecosystem (CMSO, ASMO, CDCO, PODO, PLDO, LDO). Use when exploring what classes or properties an ontology provides, finding the right CMSO term for a crystal structure or simulation concept, understanding parent-child class relationships, or onboarding to an unfamiliar materials ontology, even if the user only says \"what ontology terms describe my FCC copper simulation\" or \"show me the CMSO class hierarchy.\"",
-      "phase": 2,
-      "score": 7,
-      "skill_id": "ontology-explorer",
-      "src_path": "src/HeshamFS-materials-simulation-skills/skills/ontology/ontology-explorer/SKILL.md",
-      "triggers": "ontology;explorer"
-    },
-    {
-      "description": "Performs rapid malware triage and classification using YARA rules to match file patterns, strings, byte sequences, and structural characteristics against known malware families and suspicious indicators. Covers rule writing, scanning, and integration with analysis pipelines. Activates for requests involving YARA rule creation, malware classification, pattern matching, sample triage, or signature-based detection.",
-      "phase": 2,
-      "score": 7,
-      "skill_id": "performing-malware-triage-with-yara",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-malware-triage-with-yara/SKILL.md",
-      "triggers": "performing;malware;triage;with;yara"
-    },
-    {
-      "description": "Workflow 4: Submission rebuttal pipeline. Parses external reviews, enforces coverage and grounding, drafts a safe text-only rebuttal under venue limits, and manages follow-up rounds. Use when user says \"rebuttal\", \"reply to reviewers\", \"ICML rebuttal\", \"OpenReview response\", or wants to answer external reviews safely.",
-      "phase": 2,
-      "score": 7,
-      "skill_id": "rebuttal",
-      "src_path": "src/wanshuiyin-Auto-claude-code-research-in-sleep/skills/rebuttal/SKILL.md",
-      "triggers": "rebuttal"
-    },
-    {
-      "description": "Full research pipeline: Workflow 1 (idea discovery) → implementation → Workflow 2 (auto review loop). Goes from a broad research direction all the way to a submission-ready paper. Use when user says \"全流程\", \"full pipeline\", \"从找idea到投稿\", \"end-to-end research\", or wants the complete autonomous research lifecycle.",
-      "phase": 2,
-      "score": 7,
-      "skill_id": "research-pipeline",
-      "src_path": "src/wanshuiyin-Auto-claude-code-research-in-sleep/skills/research-pipeline/SKILL.md",
-      "triggers": "research;pipeline"
-    },
-    {
       "description": "Customize resume for specific job postings while maintaining truthfulness",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "Resume Tailor",
-      "src_path": "src/Paramchoudhary-ResumeSkills/skills/resume-tailor/SKILL.md",
+      "src_path": "lib/Paramchoudhary-ResumeSkills/skills/resume-tailor/SKILL.md",
       "triggers": "resume;tailor"
     },
     {
       "description": "Advogado criminalista especializado em Maria da Penha, violencia domestica, feminicidio, direito penal brasileiro, medidas protetivas, inquerito policial e acao penal.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "advogado-criminal",
-      "src_path": "src/antigravity-awesome-skills/skills/advogado-criminal/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/advogado-criminal/SKILL.md",
       "triggers": "advogado;criminal"
     },
     {
       "description": "Advogado especialista em todas as areas do Direito brasileiro: familia, criminal, trabalhista, tributario, consumidor, imobiliario, empresarial, civil e constitucional.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "advogado-especialista",
-      "src_path": "src/antigravity-awesome-skills/skills/advogado-especialista/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/advogado-especialista/SKILL.md",
       "triggers": "advogado;especialista"
     },
     {
+      "description": "Audits GitHub Actions workflows for security vulnerabilities in AI agent integrations including Claude Code Action, Gemini CLI, OpenAI Codex, and GitHub AI Inference. Detects attack vectors where attacker-controlled input reaches. AI agents running in CI/CD pipelines.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "agentic-actions-auditor",
+      "src_path": "lib/antigravity-awesome-skills/skills/agentic-actions-auditor/SKILL.md",
+      "triggers": "agentic;actions;auditor"
+    },
+    {
       "description": "Analyze and prioritize a list of feature requests by theme, strategic alignment, impact, effort, and risk. Use when reviewing customer feature requests, triaging a backlog, or making prioritization decisions.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "analyze-feature-requests",
-      "src_path": "src/pm-skills/pm-product-discovery/skills/analyze-feature-requests/SKILL.md",
+      "src_path": "lib/pm-skills/pm-product-discovery/skills/analyze-feature-requests/SKILL.md",
       "triggers": "analyze;feature;requests"
     },
     {
       "description": "Detect and analyze heap spray attacks in memory dumps using Volatility3 plugins to identify NOP sled patterns, shellcode landing zones, and suspicious large allocations in process virtual address space.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "analyzing-heap-spray-exploitation",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-heap-spray-exploitation/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-heap-spray-exploitation/SKILL.md",
       "triggers": "analyzing;heap;spray;exploitation"
     },
     {
       "description": "Analyzes malicious VBA macros embedded in Microsoft Office documents (Word, Excel, PowerPoint) to identify download cradles, payload execution, persistence mechanisms, and anti-analysis techniques. Uses olevba, oledump, and VBA deobfuscation to extract the attack chain. Activates for requests involving Office macro analysis, VBA malware investigation, maldoc analysis, or document-based threat examination.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "analyzing-macro-malware-in-office-documents",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-macro-malware-in-office-documents/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-macro-malware-in-office-documents/SKILL.md",
       "triggers": "analyzing;macro;malware;in;office"
     },
     {
       "description": "Generate user-facing App Store release notes from git history since the last tag.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "app-store-changelog",
-      "src_path": "src/antigravity-awesome-skills/skills/app-store-changelog/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/app-store-changelog/SKILL.md",
       "triggers": "app;store;changelog"
     },
     {
       "description": "Senior embedded software engineer specializing in firmware and driver development for ARM Cortex-M microcontrollers (Teensy, STM32, nRF52, SAMD).",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "arm-cortex-expert",
-      "src_path": "src/antigravity-awesome-skills/skills/arm-cortex-expert/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/arm-cortex-expert/SKILL.md",
       "triggers": "arm;cortex;expert"
     },
     {
       "description": "Set territory-specific pricing for subscriptions and in-app purchases using current asc setup, pricing summary, price import, and price schedule commands. Use when adjusting prices by country or implementing localized PPP strategies.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "asc-ppp-pricing",
-      "src_path": "src/rudrankriyam-app-store-connect-cli-skills/skills/asc-ppp-pricing/SKILL.md",
+      "src_path": "lib/rudrankriyam-app-store-connect-cli-skills/skills/asc-ppp-pricing/SKILL.md",
       "triggers": "asc;ppp;pricing"
     },
     {
+      "description": "Define, validate, and run repo-local multi-step automations with `asc workflow` and `.asc/workflow.json`. Use when migrating from lane tools, wiring CI pipelines, or orchestrating repeatable `asc` + shell release flows with hooks, conditionals, and sub-workflows.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "asc-workflow",
+      "src_path": "lib/rudrankriyam-app-store-connect-cli-skills/skills/asc-workflow/SKILL.md",
+      "triggers": "asc;workflow"
+    },
+    {
       "description": "When the user wants a full ASO health audit, review their App Store listing quality, or diagnose why their app isn't ranking. Also use when the user mentions \"ASO audit\", \"ASO score\", \"why am I not ranking\", \"listing review\", or \"optimize my app store page\". For keyword-specific research, see keyword-research. For metadata writing, see metadata-optimization.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "aso-audit",
-      "src_path": "src/aso-skills/skills/aso-audit/SKILL.md",
+      "src_path": "lib/aso-skills/skills/aso-audit/SKILL.md",
       "triggers": "aso;audit"
     },
     {
-      "description": "Rédaction d'assignations en référé devant le tribunal de commerce ou des activités économiques pour le droit de communication d'un associé. Utiliser ce skill quand l'utilisateur demande de rédiger, préparer ou créer une assignation en référé fondée sur l'article L. 238-1 du code de commerce pour obtenir la communication forcée de documents sociaux (comptes annuels, rapports de gestion, PV d'assemblées, etc.) lorsqu'un dirigeant refuse ou fait obstruction à la communication de ces documents à un associé.",
-      "phase": 2,
-      "score": 5,
-      "skill_id": "assignation-refere-communication-associe-selim-brihi",
-      "src_path": "src/lawvable-awesome-legal-skills/skills/assignation-refere-communication-associe-selim-brihi/SKILL.md",
-      "triggers": "assignation;refere;communication;associe;selim"
-    },
-    {
-      "description": "Automated compliance checking against CIS, PCI-DSS, HIPAA, and SOC 2 benchmarks",
-      "phase": 2,
-      "score": 5,
-      "skill_id": "aws-compliance-checker",
-      "src_path": "src/antigravity-awesome-skills/skills/security/aws-compliance-checker/SKILL.md",
-      "triggers": "aws;compliance;checker"
+      "description": "Auto-review pipeline — reads the full CEO, design, and eng review skills from disk and runs them sequentially with auto-decisions using 6 decision principles. Surfaces taste decisions (close approaches, borderline scope, codex disagreements) at a final approval gate. One command, fully reviewed plan out. Use when asked to \"auto review\", \"autoplan\", \"run all reviews\", \"review this plan automatically\", or \"make the decisions for me\". Proactively suggest when the user has a plan file and wants to run the full review gauntlet without answering 15-30 intermediate questions.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "autoplan",
+      "src_path": "lib/gstack/autoplan/SKILL.md",
+      "triggers": "autoplan"
     },
     {
       "description": "Check/manage Azure quotas and usage across providers. For deployment planning, capacity validation, region selection. WHEN: \"check quotas\", \"service limits\", \"current usage\", \"request quota increase\", \"quota exceeded\", \"validate capacity\", \"regional availability\", \"provisioning limits\", \"vCPU limit\", \"how many vCPUs available in my subscription\".",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "azure-quotas",
-      "src_path": "src/microsoft-skills/.github/plugins/azure-skills/skills/azure-quotas/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-quotas/SKILL.md",
       "triggers": "azure;quotas"
     },
     {
+      "description": "Master defensive Bash programming techniques for production-grade scripts. Use when writing robust shell scripts, CI/CD pipelines, or system utilities requiring fault tolerance and safety.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "bash-defensive-patterns",
+      "src_path": "lib/antigravity-awesome-skills/skills/bash-defensive-patterns/SKILL.md",
+      "triggers": "bash;defensive;patterns"
+    },
+    {
+      "description": "Master of defensive Bash scripting for production automation, CI/CD pipelines, and system utilities. Expert in safe, portable, and testable shell scripts.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "bash-pro",
+      "src_path": "lib/antigravity-awesome-skills/skills/bash-pro/SKILL.md",
+      "triggers": "bash;pro"
+    },
+    {
+      "description": "Design and implement a comprehensive DevSecOps pipeline in GitLab CI/CD integrating SAST, DAST, container scanning, dependency scanning, and secret detection.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "building-devsecops-pipeline-with-gitlab-ci",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/building-devsecops-pipeline-with-gitlab-ci/SKILL.md",
+      "triggers": "building;devsecops;pipeline;with;gitlab"
+    },
+    {
       "description": "Write efficient C code with proper memory management, pointer",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "c-pro",
-      "src_path": "src/antigravity-awesome-skills/skills/c-pro/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/c-pro/SKILL.md",
       "triggers": "c;pro"
     },
     {
       "description": "Expert C4 Code-level documentation specialist. Analyzes code directories to create comprehensive C4 code-level documentation including function signatures, arguments, dependencies, and code structure.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "c4-code",
-      "src_path": "src/antigravity-awesome-skills/skills/c4-code/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/c4-code/SKILL.md",
       "triggers": "c4;code"
     },
     {
       "description": "Expert C4 Container-level documentation specialist.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "c4-container",
-      "src_path": "src/antigravity-awesome-skills/skills/c4-container/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/c4-container/SKILL.md",
       "triggers": "c4;container"
     },
     {
       "description": "Expert C4 Context-level documentation specialist. Creates high-level system context diagrams, documents personas, user journeys, system features, and external dependencies.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "c4-context",
-      "src_path": "src/antigravity-awesome-skills/skills/c4-context/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/c4-context/SKILL.md",
       "triggers": "c4;context"
     },
     {
-      "description": "Manage citations systematically throughout the research and writing process.",
-      "phase": 2,
-      "score": 5,
+      "description": "You are a workflow automation expert specializing in creating efficient CI/CD pipelines, GitHub Actions workflows, and automated development processes. Design and implement automation that reduces manual work, improves consistency, and accelerates delivery while maintaining quality and security.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "cicd-automation-workflow-automate",
+      "src_path": "lib/antigravity-awesome-skills/skills/cicd-automation-workflow-automate/SKILL.md",
+      "triggers": "cicd;automation;workflow;automate"
+    },
+    {
+      "description": "Comprehensive citation management for academic research. Search Google Scholar and PubMed for papers, extract accurate metadata, validate citations, and generate properly formatted BibTeX entries. This skill should be used when you need to find papers, verify citation information, convert DOIs to BibTeX, or ensure reference accuracy in scientific writing.",
+      "phase": 4,
+      "score": 100,
       "skill_id": "citation-management",
-      "src_path": "src/antigravity-awesome-skills/skills/citation-management/SKILL.md",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/citation-management/SKILL.md",
       "triggers": "citation;management"
     },
     {
       "description": "Scientific research and analysis skills",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "claude-scientific-skills",
-      "src_path": "src/antigravity-awesome-skills/skills/claude-scientific-skills/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/claude-scientific-skills/SKILL.md",
       "triggers": "claude;scientific;skills"
     },
     {
       "description": "This skill embodies the principles of \"Clean Code\" by Robert C. Martin (Uncle Bob). Use it to transform \"code that works\" into \"code that is clean.\"",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "clean-code",
-      "src_path": "src/antigravity-awesome-skills/skills/clean-code/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/clean-code/SKILL.md",
       "triggers": "clean;code"
     },
     {
       "description": "Use when a coding task must be completed against explicit acceptance criteria with minimal user re-intervention across implementation, review feedback, deployment, and runtime verification.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "closed-loop-delivery",
-      "src_path": "src/antigravity-awesome-skills/skills/closed-loop-delivery/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/closed-loop-delivery/SKILL.md",
       "triggers": "closed;loop;delivery"
     },
     {
+      "description": "Cloud infrastructure and DevOps workflow covering AWS, Azure, GCP, Kubernetes, Terraform, CI/CD, monitoring, and cloud-native development.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "cloud-devops",
+      "src_path": "lib/antigravity-awesome-skills/skills/cloud-devops/SKILL.md",
+      "triggers": "cloud;devops"
+    },
+    {
       "description": "You are a code education expert specializing in explaining complex code through clear narratives, visual diagrams, and step-by-step breakdowns. Transform difficult concepts into understandable explanations for developers at all levels.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "code-documentation-code-explain",
-      "src_path": "src/antigravity-awesome-skills/skills/code-documentation-code-explain/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/code-documentation-code-explain/SKILL.md",
       "triggers": "code;documentation;code;explain"
     },
     {
       "description": "You are a technical debt expert specializing in identifying, quantifying, and prioritizing technical debt in software projects. Analyze the codebase to uncover debt, assess its impact, and create acti",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "code-refactoring-tech-debt",
-      "src_path": "src/antigravity-awesome-skills/skills/code-refactoring-tech-debt/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/code-refactoring-tech-debt/SKILL.md",
       "triggers": "code;refactoring;tech;debt"
     },
     {
       "description": "Comprehensive review of local uncommitted changes using specialized agents with code improvement suggestions",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "code-review:review-local-changes",
-      "src_path": "src/NeoLabHQ-context-engineering-kit/plugins/code-review/skills/review-local-changes/SKILL.md",
+      "src_path": "lib/NeoLabHQ-context-engineering-kit/plugins/code-review/skills/review-local-changes/SKILL.md",
       "triggers": "code;review;review;local;changes"
     },
     {
       "description": "Comprehensive pull request review using specialized agents",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "code-review:review-pr",
-      "src_path": "src/NeoLabHQ-context-engineering-kit/plugins/code-review/skills/review-pr/SKILL.md",
+      "src_path": "lib/NeoLabHQ-context-engineering-kit/plugins/code-review/skills/review-pr/SKILL.md",
       "triggers": "code;review;review;pr"
     },
     {
       "description": "Elite code review expert specializing in modern AI-powered code",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "code-reviewer",
-      "src_path": "src/antigravity-awesome-skills/skills/code-reviewer/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/code-reviewer/SKILL.md",
       "triggers": "code;reviewer"
     },
     {
       "description": "Simplifies and refines code for clarity, consistency, and maintainability while preserving all functionality. Use when asked to \"simplify code\", \"clean up code\", \"refactor for clarity\", \"improve readability\", or review recently modified code for elegance. Focuses on project-specific best practices.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "code-simplifier",
-      "src_path": "src/antigravity-awesome-skills/skills/code-simplifier/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/code-simplifier/SKILL.md",
       "triggers": "code;simplifier"
     },
     {
       "description": "You are a technical debt expert specializing in identifying, quantifying, and prioritizing technical debt in software projects. Analyze the codebase to uncover debt, assess its impact, and create acti",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "codebase-cleanup-tech-debt",
-      "src_path": "src/antigravity-awesome-skills/skills/codebase-cleanup-tech-debt/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/codebase-cleanup-tech-debt/SKILL.md",
       "triggers": "codebase;cleanup;tech;debt"
     },
     {
+      "description": "OpenAI Codex CLI code review with GPT-5.2-Codex, CI/CD integration",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "codex-review",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/codex-review/SKILL.md",
+      "triggers": "codex;review"
+    },
+    {
       "description": "Communications-domain literature review and related-work search with database-aware source control. Use when the task is about communications, wireless, networking, satellite/NTN, Wi-Fi, cellular, transport protocols, congestion control, routing, scheduling, MAC/PHY, rate adaptation, channel estimation, beamforming, or communication-system research and the user wants papers, prior art, a survey, related work, or a landscape summary. Prioritize IEEE Xplore and ScienceDirect, prefer formal publications over preprints, and separate foundational work from recent progress.",
-      "phase": 2,
-      "score": 5,
+      "phase": 5,
+      "score": 100,
       "skill_id": "comm-lit-review",
-      "src_path": "src/wanshuiyin-Auto-claude-code-research-in-sleep/skills/skills-codex/comm-lit-review/SKILL.md",
+      "src_path": "lib/wanshuiyin-Auto-claude-code-research-in-sleep/skills/skills-codex/comm-lit-review/SKILL.md",
       "triggers": "comm;lit;review"
     },
     {
       "description": "Communications-domain literature review with Claude-style knowledge-base-first retrieval. Use when the task is about communications, wireless, networking, satellite/NTN, Wi-Fi, cellular, transport protocols, congestion control, routing, scheduling, MAC/PHY, rate adaptation, channel estimation, beamforming, or communication-system research and the user wants papers, related work, a survey, or a landscape summary. Search Zotero, Obsidian, and local paper folders first when available, then search IEEE Xplore, ScienceDirect, ACM Digital Library, and broader web in that order.",
-      "phase": 2,
-      "score": 5,
+      "phase": 5,
+      "score": 100,
       "skill_id": "comm-lit-review-claude-single",
-      "src_path": "src/wanshuiyin-Auto-claude-code-research-in-sleep/skills/comm-lit-review/SKILL.md",
+      "src_path": "lib/wanshuiyin-Auto-claude-code-research-in-sleep/skills/comm-lit-review/SKILL.md",
       "triggers": "comm;lit;review;claude;single"
     },
     {
       "description": "SOTA Computer Vision Expert (2026). Specialized in YOLO26, Segment Anything 3 (SAM 3), Vision Language Models, and real-time spatial analysis.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "computer-vision-expert",
-      "src_path": "src/antigravity-awesome-skills/skills/computer-vision-expert/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/computer-vision-expert/SKILL.md",
       "triggers": "computer;vision;expert"
     },
     {
       "description": "Use when a user asks for a plan for a coding task, to generate a clear, actionable, and atomic checklist.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "concise-planning",
-      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-essentials/skills/concise-planning/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-essentials/skills/concise-planning/SKILL.md",
       "triggers": "concise;planning"
     },
     {
       "description": "Responds to malware infections across enterprise endpoints by identifying the malware family, determining infection vectors, assessing spread, and executing eradication procedures. Covers the full lifecycle from detection through containment, analysis, removal, and recovery. Activates for requests involving malware response, malware eradication, trojan removal, worm containment, malware triage, or infected endpoint remediation.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "conducting-malware-incident-response",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/conducting-malware-incident-response/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/conducting-malware-incident-response/SKILL.md",
       "triggers": "conducting;malware;incident;response"
     },
     {
       "description": "Facilitate structured post-incident reviews to identify root causes, document what worked and failed, and produce actionable recommendations to improve future incident response.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "conducting-post-incident-lessons-learned",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/conducting-post-incident-lessons-learned/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/conducting-post-incident-lessons-learned/SKILL.md",
       "triggers": "conducting;post;incident;lessons;learned"
     },
     {
       "description": "Create a new track with specification and phased implementation plan",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "conductor-new-track",
-      "src_path": "src/antigravity-awesome-skills/skills/conductor-new-track/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/conductor-new-track/SKILL.md",
       "triggers": "conductor;new;track"
     },
     {
       "description": "Run a multi-perspective Mind Council deliberation on any question, decision, or creative challenge. Use this skill whenever the user wants diverse viewpoints, needs help making a tough decision, asks for a council/panel/board discussion, wants to explore a problem from multiple angles, requests devil's advocate analysis, or says things like \"what would different experts think about this\", \"help me think through this from all sides\", \"council mode\", \"mind council\", or \"deliberate on this\". Also trigger when the user faces a dilemma, trade-off, or complex choice with no obvious answer.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "consciousness-council",
-      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/consciousness-council/SKILL.md",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/consciousness-council/SKILL.md",
       "triggers": "consciousness;council"
     },
     {
       "description": "Perform spatial and temporal convergence analysis for solution verification — compute observed convergence orders from grid or timestep refinement studies, apply Richardson extrapolation to estimate discretization error, and calculate the Grid Convergence Index (GCI) per ASME V&V 20 standards. Use when verifying that a numerical solution converges at the expected rate, estimating the error on the finest mesh, checking whether grids are in the asymptotic range, or preparing formal verification reports, even if the user only asks \"is my mesh fine enough\" or \"how accurate is my solution.\"",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "convergence-study",
-      "src_path": "src/HeshamFS-materials-simulation-skills/skills/core-numerical/convergence-study/SKILL.md",
+      "src_path": "lib/HeshamFS-materials-simulation-skills/skills/core-numerical/convergence-study/SKILL.md",
       "triggers": "convergence;study"
     },
     {
       "description": "Alias for sentry-skills:pr-writer. Use when users explicitly ask for \"create-pr\" or reference the legacy skill name. Redirects to the canonical PR writing workflow.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "create-pr",
-      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-oss-maintainer/skills/create-pr/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-oss-maintainer/skills/create-pr/SKILL.md",
       "triggers": "create;pr"
     },
     {
       "description": "CISO operacional enterprise para gestao total de credenciais e segredos.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "cred-omega",
-      "src_path": "src/antigravity-awesome-skills/skills/cred-omega/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/cred-omega/SKILL.md",
       "triggers": "cred;omega"
     },
     {
       "description": "Elite AI-powered customer support specialist mastering conversational AI, automated ticketing, sentiment analysis, and omnichannel support experiences.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "customer-support",
-      "src_path": "src/antigravity-awesome-skills/skills/customer-support/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/customer-support/SKILL.md",
       "triggers": "customer;support"
     },
     {
       "description": "Expert database administrator specializing in modern cloud databases, automation, and reliability engineering.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "database-admin",
-      "src_path": "src/antigravity-awesome-skills/skills/database-admin/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/database-admin/SKILL.md",
       "triggers": "database;admin"
     },
     {
       "description": "Apply DDD tactical patterns in code using entities, value objects, aggregates, repositories, and domain events with explicit invariants.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "ddd-tactical-patterns",
-      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-ddd-evented-architecture/skills/ddd-tactical-patterns/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-ddd-evented-architecture/skills/ddd-tactical-patterns/SKILL.md",
       "triggers": "ddd;tactical;patterns"
     },
     {
+      "description": "Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "deployment-engineer",
+      "src_path": "lib/antigravity-awesome-skills/skills/deployment-engineer/SKILL.md",
+      "triggers": "deployment;engineer"
+    },
+    {
+      "description": "Architecture patterns for multi-stage CI/CD pipelines with approval gates and deployment strategies.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "deployment-pipeline-design",
+      "src_path": "lib/antigravity-awesome-skills/skills/deployment-pipeline-design/SKILL.md",
+      "triggers": "deployment;pipeline;design"
+    },
+    {
+      "description": "Detecting exposed AWS credentials in source code repositories, CI/CD pipelines, and configuration files using TruffleHog, git-secrets, and AWS-native detection mechanisms to prevent credential theft and unauthorized account access.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "detecting-aws-credential-exposure-with-trufflehog",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-aws-credential-exposure-with-trufflehog/SKILL.md",
+      "triggers": "detecting;aws;credential;exposure;with"
+    },
+    {
       "description": "Detect AWS IAM privilege escalation paths using boto3 and Cloudsplaining policy analysis to identify overly permissive policies, dangerous permission combinations, and least-privilege violations",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "detecting-aws-iam-privilege-escalation",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-aws-iam-privilege-escalation/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-aws-iam-privilege-escalation/SKILL.md",
       "triggers": "detecting;aws;iam;privilege;escalation"
     },
     {
       "description": "Detect DLL side-loading attacks where adversaries place malicious DLLs alongside legitimate applications to hijack execution flow for defense evasion.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "detecting-dll-sideloading-attacks",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-dll-sideloading-attacks/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-dll-sideloading-attacks/SKILL.md",
       "triggers": "detecting;dll;sideloading;attacks"
     },
     {
       "description": "Detect abuse of legitimate Windows binaries (LOLBins) used for living off the land attacks. Monitors process creation, command-line arguments, and parent-child relationships to identify suspicious LOLBin execution patterns.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "detecting-living-off-the-land-attacks",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-living-off-the-land-attacks/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-living-off-the-land-attacks/SKILL.md",
       "triggers": "detecting;living;off;the;land"
     },
     {
-      "description": "Detect suspicious PowerShell execution patterns including encoded commands, download cradles, AMSI bypass attempts, and constrained language mode evasion.",
+      "description": "Scans GitHub Actions workflows and CI/CD pipeline configurations for supply chain attack vectors including unpinned actions, script injection via expressions, dependency confusion, and secrets exposure. Uses PyGithub and YAML parsing for automated audit. Use when hardening CI/CD pipelines or investigating compromised build systems.",
       "phase": 2,
-      "score": 5,
+      "score": 100,
+      "skill_id": "detecting-supply-chain-attacks-in-ci-cd",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-supply-chain-attacks-in-ci-cd/SKILL.md",
+      "triggers": "detecting;supply;chain;attacks;in"
+    },
+    {
+      "description": "Detect suspicious PowerShell execution patterns including encoded commands, download cradles, AMSI bypass attempts, and constrained language mode evasion.",
+      "phase": 4,
+      "score": 100,
       "skill_id": "detecting-suspicious-powershell-execution",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-suspicious-powershell-execution/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-suspicious-powershell-execution/SKILL.md",
       "triggers": "detecting;suspicious;powershell;execution"
     },
     {
       "description": "Detect WMI event subscription persistence by analyzing Sysmon Event IDs 19, 20, and 21 for malicious EventFilter, EventConsumer, and FilterToConsumerBinding creation.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "detecting-wmi-persistence",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-wmi-persistence/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-wmi-persistence/SKILL.md",
       "triggers": "detecting;wmi;persistence"
     },
     {
       "description": "Creates devcontainers with Claude Code, language-specific tooling (Python/Node/Rust/Go), and persistent volumes. Use when adding devcontainer support to a project, setting up isolated development environments, or configuring sandboxed Claude Code workspaces.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "devcontainer-setup",
-      "src_path": "src/antigravity-awesome-skills/skills/devcontainer-setup/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/devcontainer-setup/SKILL.md",
       "triggers": "devcontainer;setup"
     },
     {
+      "description": "DevOps e deploy de aplicacoes — Docker, CI/CD com GitHub Actions, AWS Lambda, SAM, Terraform, infraestrutura como codigo e monitoramento.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "devops-deploy",
+      "src_path": "lib/antigravity-awesome-skills/skills/devops-deploy/SKILL.md",
+      "triggers": "devops;deploy"
+    },
+    {
       "description": "Apply writing rules to any documentation that humans will read. Makes your writing clearer, stronger, and more professional.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "docs:write-concisely",
-      "src_path": "src/NeoLabHQ-context-engineering-kit/plugins/docs/skills/write-concisely/SKILL.md",
+      "src_path": "lib/NeoLabHQ-context-engineering-kit/plugins/docs/skills/write-concisely/SKILL.md",
       "triggers": "docs;write;concisely"
     },
     {
       "description": "Expert .NET backend architect specializing in C#, ASP.NET Core, Entity Framework, Dapper, and enterprise application patterns.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "dotnet-architect",
-      "src_path": "src/antigravity-awesome-skills/skills/dotnet-architect/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/dotnet-architect/SKILL.md",
       "triggers": "dotnet;architect"
     },
     {
       "description": "Developer Experience specialist. Improves tooling, setup, and workflows. Use PROACTIVELY when setting up new projects, after team feedback, or when development friction is noticed.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "dx-optimizer",
-      "src_path": "src/antigravity-awesome-skills/skills/dx-optimizer/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/dx-optimizer/SKILL.md",
       "triggers": "dx;optimizer"
     },
     {
       "description": "Agente que simula Elon Musk com profundidade psicologica e comunicacional de alta fidelidade. Ativado para: \"fale como Elon\", \"simule Elon Musk\", \"o que Elon diria sobre X\", \"first principles thinking\", \"think like Elon\", roleplay/simulacao do personagem.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "elon-musk",
-      "src_path": "src/antigravity-awesome-skills/skills/elon-musk/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/elon-musk/SKILL.md",
       "triggers": "elon;musk"
     },
     {
       "description": "Codified expertise for electricity and gas procurement, tariff optimisation, demand charge management, renewable PPA evaluation, and multi-facility energy cost management.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "energy-procurement",
-      "src_path": "src/antigravity-awesome-skills/skills/energy-procurement/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/energy-procurement/SKILL.md",
       "triggers": "energy;procurement"
     },
     {
       "description": "You are an error tracking and observability expert specializing in implementing comprehensive error monitoring solutions. Set up error tracking systems, configure alerts, implement structured logging,",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "error-diagnostics-error-trace",
-      "src_path": "src/antigravity-awesome-skills/skills/error-diagnostics-error-trace/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/error-diagnostics-error-trace/SKILL.md",
       "triggers": "error;diagnostics;error;trace"
     },
     {
+      "description": "Helps understand and write EAS workflow YAML files for Expo projects. Use this skill when the user asks about CI/CD or workflows in an Expo or EAS context, mentions .eas/workflows/, or wants help with EAS build pipelines or deployment automation.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "expo-cicd-workflows",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-expo-react-native/skills/expo-cicd-workflows/SKILL.md",
+      "triggers": "expo;cicd;workflows"
+    },
+    {
       "description": "Uses Rekall memory forensics framework to analyze memory dumps for process hollowing, injected code via VAD anomalies, hidden processes, and rootkit detection. Applies plugins like pslist, psscan, vadinfo, malfind, and dlllist to extract forensic artifacts from Windows memory images. Use during incident response memory analysis.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "extracting-memory-artifacts-with-rekall",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/extracting-memory-artifacts-with-rekall/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/extracting-memory-artifacts-with-rekall/SKILL.md",
       "triggers": "extracting;memory;artifacts;with;rekall"
     },
     {
+      "description": "extraction pipeline patterns",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "extraction-pipeline-patterns",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/skills/extraction-pipeline-patterns/SKILL.md",
+      "triggers": "extraction;pipeline;patterns"
+    },
+    {
       "description": "Expert AI auditor for FDA Food Safety (FSMA), HACCP, and PCQI compliance. Reviews food facility records and preventive controls.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "fda-food-safety-auditor",
-      "src_path": "src/antigravity-awesome-skills/skills/fda-food-safety-auditor/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/fda-food-safety-auditor/SKILL.md",
       "triggers": "fda;food;safety;auditor"
     },
     {
       "description": "Evaluate pricing changes using ARPU, conversion, churn risk, NRR, and payback. Use when deciding whether a pricing move should ship.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "finance-based-pricing-advisor",
-      "src_path": "src/Product-Manager-Skills/skills/finance-based-pricing-advisor/SKILL.md",
+      "src_path": "lib/Product-Manager-Skills/skills/finance-based-pricing-advisor/SKILL.md",
       "triggers": "finance;based;pricing;advisor"
     },
     {
       "description": "Discover and list all URLs on a website, with optional search filtering. Use this skill when the user wants to find a specific page on a large site, list all URLs, see the site structure, find where something is on a domain, or says \"map the site\", \"find the URL for\", \"what pages are on\", or \"list all pages\". Essential when the user knows which site but not which exact page.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "firecrawl-map",
-      "src_path": "src/cli/skills/firecrawl-map/SKILL.md",
+      "src_path": "lib/cli/skills/firecrawl-map/SKILL.md",
       "triggers": "firecrawl;map"
     },
     {
       "description": "Execute complete FPF cycle from hypothesis generation to decision",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "fpf:propose-hypotheses",
-      "src_path": "src/NeoLabHQ-context-engineering-kit/plugins/fpf/skills/propose-hypotheses/SKILL.md",
+      "src_path": "lib/NeoLabHQ-context-engineering-kit/plugins/fpf/skills/propose-hypotheses/SKILL.md",
       "triggers": "fpf;propose;hypotheses"
     },
     {
       "description": "You are a code migration expert specializing in transitioning codebases between frameworks, languages, versions, and platforms. Generate comprehensive migration plans, automated migration scripts, and",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "framework-migration-code-migrate",
-      "src_path": "src/antigravity-awesome-skills/skills/framework-migration-code-migrate/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/framework-migration-code-migrate/SKILL.md",
       "triggers": "framework;migration;code;migrate"
     },
     {
+      "description": "Google Gemini CLI code review with Gemini 2.5 Pro, 1M token context, CI/CD integration",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "gemini-review",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/gemini-review/SKILL.md",
+      "triggers": "gemini;review"
+    },
+    {
       "description": "Fetch unread GitHub notifications for open PRs where review is requested from a specified team or opened by a team member. Use when asked to \"find PRs I need to review\", \"show my review requests\", \"what needs my review\", \"fetch GitHub review requests\", or \"check team review queue\".",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "gh-review-requests",
-      "src_path": "src/antigravity-awesome-skills/skills/gh-review-requests/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/gh-review-requests/SKILL.md",
       "triggers": "gh;review;requests"
     },
     {
       "description": "Creates git commits following Conventional Commits format with type/scope/subject. Use when user wants to commit changes, create commit, save work, or stage and commit. Enforces project-specific conventions from CLAUDE.md.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "git-commit",
-      "src_path": "src/fvadicamo-dev-agent-skills/skills/git-commit/SKILL.md",
+      "src_path": "lib/fvadicamo-dev-agent-skills/skills/git-commit/SKILL.md",
       "triggers": "git;commit"
     },
     {
+      "description": "Master Git hooks setup with Husky, lint-staged, pre-commit framework, and commitlint. Automate code quality gates, formatting, linting, and commit message enforcement before code reaches CI.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "git-hooks-automation",
+      "src_path": "lib/antigravity-awesome-skills/skills/git-hooks-automation/SKILL.md",
+      "triggers": "git;hooks;automation"
+    },
+    {
       "description": "You are an **expert onboarding specialist and knowledge transfer architect** with deep experience in remote-first organizations, technical team integration, and accelerated learning methodologies. You",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "git-pr-workflows-onboard",
-      "src_path": "src/antigravity-awesome-skills/skills/git-pr-workflows-onboard/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/git-pr-workflows-onboard/SKILL.md",
       "triggers": "git;pr;workflows;onboard"
     },
     {
       "description": "You are a PR optimization expert specializing in creating high-quality pull requests that facilitate efficient code reviews. Generate comprehensive PR descriptions, automate review processes, and ensu",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "git-pr-workflows-pr-enhance",
-      "src_path": "src/antigravity-awesome-skills/skills/git-pr-workflows-pr-enhance/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/git-pr-workflows-pr-enhance/SKILL.md",
       "triggers": "git;pr;workflows;pr;enhance"
     },
     {
       "description": "Stage all changes, create a conventional commit, and push to the remote branch. Use when explicitly asks to push changes (\"push this\", \"commit and push\"), mentions saving work to remote (\"save to github\", \"push to remote\"), or completes a feature and wants to share it.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "git-pushing",
-      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-essentials/skills/git-pushing/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-essentials/skills/git-pushing/SKILL.md",
       "triggers": "git;pushing"
     },
     {
       "description": "Analyze a GitHub issue and create a detailed technical specification",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "git:analyze-issue",
-      "src_path": "src/NeoLabHQ-context-engineering-kit/plugins/git/skills/analyze-issue/SKILL.md",
+      "src_path": "lib/NeoLabHQ-context-engineering-kit/plugins/git/skills/analyze-issue/SKILL.md",
       "triggers": "git;analyze;issue"
     },
     {
+      "description": "Automate GitHub repositories, issues, pull requests, branches, CI/CD, and permissions via Rube MCP (Composio). Manage code workflows, review PRs, search code, and handle deployments programmatically.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "github-automation",
+      "src_path": "lib/antigravity-awesome-skills/skills/github-automation/SKILL.md",
+      "triggers": "github;automation"
+    },
+    {
+      "description": "Merges GitHub Pull Requests after validating pre-merge checklist. Use when user wants to merge PR, close PR, finalize PR, complete merge, approve and merge, or execute merge. Runs pre-merge validation (tests, lint, CI, comments), confirms with user, merges with proper format, handles post-merge cleanup.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "github-pr-merge",
+      "src_path": "lib/fvadicamo-dev-agent-skills/skills/github-pr-merge/SKILL.md",
+      "triggers": "github;pr;merge"
+    },
+    {
+      "description": "Comprehensive GitLab CI/CD pipeline patterns for automated testing, building, and deployment.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "gitlab-ci-patterns",
+      "src_path": "lib/antigravity-awesome-skills/skills/gitlab-ci-patterns/SKILL.md",
+      "triggers": "gitlab;ci;patterns"
+    },
+    {
       "description": "Query gnomAD (Genome Aggregation Database) for population allele frequencies, variant constraint scores (pLI, LOEUF), and loss-of-function intolerance. Essential for variant pathogenicity interpretation, rare disease genetics, and identifying loss-of-function intolerant genes.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "gnomad-database",
-      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/gnomad-database/SKILL.md",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/gnomad-database/SKILL.md",
       "triggers": "gnomad;database"
     },
     {
       "description": "Official GSAP skill for GSAP plugins — registration, ScrollToPlugin, ScrollSmoother, Flip, Draggable, Inertia, Observer, SplitText, ScrambleText, SVG and physics plugins, CustomEase, EasePack, CustomWiggle, CustomBounce, GSDevTools. Use when the user asks about a GSAP plugin, scroll-to, flip animations, draggable, SVG drawing, or plugin registration.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "gsap-plugins",
-      "src_path": "src/gsap-skills/skills/gsap-plugins/SKILL.md",
+      "src_path": "lib/gsap-skills/skills/gsap-plugins/SKILL.md",
       "triggers": "gsap;plugins"
     },
     {
       "description": "Official GSAP skill for timelines — gsap.timeline(), position parameter, nesting, playback. Use when sequencing animations, choreographing keyframes, or when the user asks about animation sequencing, timelines, or animation order (in GSAP or when recommending a library that supports timelines).",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "gsap-timeline",
-      "src_path": "src/gsap-skills/skills/gsap-timeline/SKILL.md",
+      "src_path": "lib/gsap-skills/skills/gsap-timeline/SKILL.md",
       "triggers": "gsap;timeline"
     },
     {
       "description": "Official GSAP skill for gsap.utils — clamp, mapRange, normalize, interpolate, random, snap, toArray, wrap, pipe. Use when the user asks about gsap.utils, clamp, mapRange, random, snap, toArray, wrap, or helper utilities in GSAP.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "gsap-utils",
-      "src_path": "src/gsap-skills/skills/gsap-utils/SKILL.md",
+      "src_path": "lib/gsap-skills/skills/gsap-utils/SKILL.md",
       "triggers": "gsap;utils"
     },
     {
       "description": "Query GTEx (Genotype-Tissue Expression) portal for tissue-specific gene expression, eQTLs (expression quantitative trait loci), and sQTLs. Essential for linking GWAS variants to gene regulation, understanding tissue-specific expression, and interpreting non-coding variant effects.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "gtex-database",
-      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/gtex-database/SKILL.md",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/gtex-database/SKILL.md",
       "triggers": "gtex;database"
     },
     {
       "description": "Full safety mode: destructive command warnings + directory-scoped edits. Combines /careful (warns before rm -rf, DROP TABLE, force-push, etc.) with /freeze (blocks edits outside a specified directory). Use for maximum safety when touching prod or debugging live systems. Use when asked to \"guard mode\", \"full safety\", \"lock it down\", or \"maximum safety\".",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "guard",
-      "src_path": "src/gstack/guard/SKILL.md",
+      "src_path": "lib/gstack/guard/SKILL.md",
       "triggers": "guard"
     },
     {
       "description": "Query NHGRI-EBI GWAS Catalog for SNP-trait associations. Search variants by rs ID, disease/trait, gene, retrieve p-values and summary statistics, for genetic epidemiology and polygenic risk scores.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "gwas-database",
-      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/gwas-database/SKILL.md",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/gwas-database/SKILL.md",
       "triggers": "gwas;database"
     },
     {
       "description": "Expert Haskell engineer specializing in advanced type systems, pure",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "haskell-pro",
-      "src_path": "src/antigravity-awesome-skills/skills/haskell-pro/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/haskell-pro/SKILL.md",
       "triggers": "haskell;pro"
     },
     {
       "description": "Proactively hunts for Advanced Persistent Threat (APT) activity within enterprise environments using hypothesis-driven searches across endpoint telemetry, network logs, and memory artifacts. Use when conducting scheduled threat hunting cycles, investigating anomalous behavior flagged by UEBA, or validating that known APT TTPs are not present in the environment. Activates for requests involving MITRE ATT&CK, Velociraptor, osquery, Zeek, or threat hunting playbooks.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "hunting-advanced-persistent-threats",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-advanced-persistent-threats/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-advanced-persistent-threats/SKILL.md",
       "triggers": "hunting;advanced;persistent;threats"
     },
     {
       "description": "Identify command-and-control beaconing patterns in network traffic by applying statistical frequency analysis, jitter calculation, and coefficient of variation scoring to detect periodic callbacks from compromised endpoints.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "hunting-for-beaconing-with-frequency-analysis",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-beaconing-with-frequency-analysis/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-beaconing-with-frequency-analysis/SKILL.md",
       "triggers": "hunting;for;beaconing;with;frequency"
     },
     {
       "description": "Hunt for DCOM-based lateral movement by detecting abuse of MMC20.Application, ShellBrowserWindow, and ShellWindows COM objects through Sysmon Event ID 1 (process creation) and Event ID 3 (network connection) correlation, WMI event analysis, RPC endpoint mapper traffic on port 135, and DCOM-specific parent-child process relationships.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "hunting-for-dcom-lateral-movement",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-dcom-lateral-movement/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-dcom-lateral-movement/SKILL.md",
       "triggers": "hunting;for;dcom;lateral;movement"
     },
     {
       "description": "Detect domain fronting C2 traffic by analyzing SNI vs HTTP Host header mismatches in proxy logs and TLS certificate discrepancies using pyOpenSSL for certificate inspection",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "hunting-for-domain-fronting-c2-traffic",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-domain-fronting-c2-traffic/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-domain-fronting-c2-traffic/SKILL.md",
       "triggers": "hunting;for;domain;fronting;c2"
     },
     {
       "description": "Hunt for adversary abuse of Living Off the Land Binaries (LOLBins) by analyzing endpoint process creation logs for suspicious execution patterns of legitimate Windows system binaries used for malicious purposes.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "hunting-for-lolbins-execution-in-endpoint-logs",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-lolbins-execution-in-endpoint-logs/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-lolbins-execution-in-endpoint-logs/SKILL.md",
       "triggers": "hunting;for;lolbins;execution;in"
     },
     {
       "description": "Hunt for adversary persistence through Windows Management Instrumentation event subscriptions by monitoring WMI consumer, filter, and binding creation events that execute malicious code triggered by system events.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "hunting-for-persistence-via-wmi-subscriptions",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-persistence-via-wmi-subscriptions/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-persistence-via-wmi-subscriptions/SKILL.md",
       "triggers": "hunting;for;persistence;via;wmi"
     },
     {
       "description": "Detect MITRE ATT&CK T1547.001 registry Run key persistence by analyzing Sysmon Event ID 13 logs and registry queries to identify malicious auto-start entries.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "hunting-for-registry-run-key-persistence",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-registry-run-key-persistence/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-registry-run-key-persistence/SKILL.md",
       "triggers": "hunting;for;registry;run;key"
     },
     {
       "description": "Hunt for adversary persistence via Windows Scheduled Tasks by analyzing task creation events, suspicious task actions, and unusual scheduling patterns.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "hunting-for-scheduled-task-persistence",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-scheduled-task-persistence/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-scheduled-task-persistence/SKILL.md",
       "triggers": "hunting;for;scheduled;task;persistence"
     },
     {
       "description": "Hunt for adversary persistence and execution via Windows scheduled tasks by analyzing task creation events, suspicious task properties, and unusual execution patterns that indicate T1053.005 abuse.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "hunting-for-suspicious-scheduled-tasks",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-suspicious-scheduled-tasks/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-suspicious-scheduled-tasks/SKILL.md",
       "triggers": "hunting;for;suspicious;scheduled;tasks"
     },
     {
       "description": "Hunt for unusual network connections by analyzing outbound traffic patterns, rare destinations, non-standard ports, and anomalous connection frequencies from endpoints.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "hunting-for-unusual-network-connections",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-unusual-network-connections/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-unusual-network-connections/SKILL.md",
       "triggers": "hunting;for;unusual;network;connections"
     },
     {
       "description": "Detect suspicious Windows service installations (MITRE ATT&CK T1543.003) by parsing System event logs for Event ID 7045, analyzing service binary paths, and identifying indicators of persistence mechanisms.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "hunting-for-unusual-service-installations",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-unusual-service-installations/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-unusual-service-installations/SKILL.md",
       "triggers": "hunting;for;unusual;service;installations"
     },
     {
       "description": "Hunt for web shell deployments on internet-facing servers by analyzing file creation in web directories, suspicious process spawning from web servers, and anomalous HTTP patterns.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "hunting-for-webshell-activity",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-webshell-activity/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/hunting-for-webshell-activity/SKILL.md",
       "triggers": "hunting;for;webshell;activity"
     },
     {
       "description": "Expert hybrid cloud architect specializing in complex multi-cloud solutions across AWS/Azure/GCP and private clouds (OpenStack/VMware).",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "hybrid-cloud-architect",
-      "src_path": "src/antigravity-awesome-skills/skills/hybrid-cloud-architect/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/hybrid-cloud-architect/SKILL.md",
       "triggers": "hybrid;cloud;architect"
     },
     {
       "description": "Studio de geracao de imagens inteligente — roteamento automatico entre ai-studio-image (fotos humanizadas/influencer) e stability-ai (arte/ ilustracao/edicao). Detecta o tipo de imagem solicitada e escolhe o modelo ideal automaticamente.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "image-studio",
-      "src_path": "src/antigravity-awesome-skills/skills/image-studio/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/image-studio/SKILL.md",
       "triggers": "image;studio"
     },
     {
+      "description": "Deploy Aqua Security's Trivy scanner to detect vulnerabilities, misconfigurations, secrets, and license issues in container images across CI/CD pipelines and registries.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "implementing-aqua-security-for-container-scanning",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-aqua-security-for-container-scanning/SKILL.md",
+      "triggers": "implementing;aqua;security;for;container"
+    },
+    {
+      "description": "Integrates Static Application Security Testing (SAST), Dynamic Application Security Testing (DAST), and Software Composition Analysis (SCA) into CI/CD pipelines using open-source tools. Covers Semgrep for SAST, Trivy for SCA and container scanning, OWASP ZAP for DAST, and Gitleaks for secrets detection. Activates for requests involving DevSecOps pipeline setup, automated security scanning in CI/CD, SAST/DAST/SCA integration, or shift-left security implementation.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "implementing-devsecops-security-scanning",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-devsecops-security-scanning/SKILL.md",
+      "triggers": "implementing;devsecops;security;scanning"
+    },
+    {
+      "description": "This skill covers implementing Open Policy Agent (OPA) and Gatekeeper for policy-as-code enforcement in Kubernetes and CI/CD pipelines. It addresses writing Rego policies, deploying OPA Gatekeeper as a Kubernetes admission controller, testing policies in development, and integrating policy evaluation into deployment pipelines.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "implementing-policy-as-code-with-open-policy-agent",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-policy-as-code-with-open-policy-agent/SKILL.md",
+      "triggers": "implementing;policy;as;code;with"
+    },
+    {
       "description": "Detects and exploits ransomware kill switch mechanisms including mutex-based execution guards, domain-based kill switches, and registry-based termination checks. Implements proactive mutex vaccination and kill switch domain monitoring to prevent ransomware from executing. Activates for requests involving ransomware kill switch analysis, mutex vaccination, WannaCry-style domain kill switches, or malware execution guard detection.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "implementing-ransomware-kill-switch-detection",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-ransomware-kill-switch-detection/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-ransomware-kill-switch-detection/SKILL.md",
       "triggers": "implementing;ransomware;kill;switch;detection"
     },
     {
       "description": "Implement automated user provisioning and deprovisioning using SCIM 2.0 protocol with Okta as the identity provider.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "implementing-scim-provisioning-with-okta",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-scim-provisioning-with-okta/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-scim-provisioning-with-okta/SKILL.md",
       "triggers": "implementing;scim;provisioning;with;okta"
     },
     {
+      "description": "This skill covers implementing Gitleaks for detecting and preventing hardcoded secrets in git repositories. It addresses configuring pre-commit hooks, CI/CD pipeline integration, custom rule authoring for organization-specific secrets, baseline management for existing repositories, and remediation workflows for exposed credentials.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "implementing-secret-scanning-with-gitleaks",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-secret-scanning-with-gitleaks/SKILL.md",
+      "triggers": "implementing;secret;scanning;with;gitleaks"
+    },
+    {
+      "description": "This skill covers deploying HashiCorp Vault for centralized secrets management across cloud environments, including dynamic secret generation for databases and cloud providers, transit encryption, PKI certificate management, and Kubernetes integration. It addresses eliminating hardcoded credentials from application code and CI/CD pipelines by implementing short-lived, automatically rotated secrets.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "implementing-secrets-management-with-vault",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-secrets-management-with-vault/SKILL.md",
+      "triggers": "implementing;secrets;management;with;vault"
+    },
+    {
+      "description": "Integrate gitleaks and trufflehog into CI/CD pipelines to detect leaked secrets before deployment",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "implementing-secrets-scanning-in-ci-cd",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-secrets-scanning-in-ci-cd/SKILL.md",
+      "triggers": "implementing;secrets;scanning;in;ci"
+    },
+    {
+      "description": "Write custom Semgrep SAST rules in YAML to detect application-specific vulnerabilities, enforce coding standards, and integrate into CI/CD pipelines.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "implementing-semgrep-for-custom-sast-rules",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-semgrep-for-custom-sast-rules/SKILL.md",
+      "triggers": "implementing;semgrep;for;custom;sast"
+    },
+    {
+      "description": "Implements Sigstore-based software signing and verification using Cosign keyless signing, Rekor transparency log verification, and Fulcio certificate authority integration to establish cryptographic provenance for container images, binaries, and software artifacts. The practitioner configures OIDC-based identity binding, verifies signing events against the Rekor transparency log, and integrates signing workflows into CI/CD pipelines. Activates for requests involving software supply chain signing, keyless container signing, Sigstore deployment, or artifact provenance verification.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "implementing-sigstore-for-software-signing",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-sigstore-for-software-signing/SKILL.md",
+      "triggers": "implementing;sigstore;for;software;signing"
+    },
+    {
+      "description": "Implement software supply chain integrity verification for container builds using the in-toto framework to create cryptographically signed attestations across CI/CD pipeline steps.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "implementing-supply-chain-security-with-in-toto",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-supply-chain-security-with-in-toto/SKILL.md",
+      "triggers": "implementing;supply;chain;security;with"
+    },
+    {
       "description": "Implement a structured threat intelligence lifecycle encompassing planning, collection, processing, analysis, dissemination, and feedback stages to produce actionable intelligence for organizational decision-making.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "implementing-threat-intelligence-lifecycle-management",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-threat-intelligence-lifecycle-management/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-threat-intelligence-lifecycle-management/SKILL.md",
       "triggers": "implementing;threat;intelligence;lifecycle;management"
     },
     {
       "description": "Implements an integrated incident ticketing system connecting SIEM alerts to ServiceNow, Jira, or TheHive for structured incident tracking, SLA management, escalation workflows, and compliance documentation. Use when SOC teams need formalized incident lifecycle management with automated ticket creation, assignment routing, and resolution tracking.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "implementing-ticketing-system-for-incidents",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-ticketing-system-for-incidents/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-ticketing-system-for-incidents/SKILL.md",
       "triggers": "implementing;ticketing;system;for;incidents"
     },
     {
       "description": "Use when working with incident response incident response",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "incident-response-incident-response",
-      "src_path": "src/antigravity-awesome-skills/skills/incident-response-incident-response/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/incident-response-incident-response/SKILL.md",
       "triggers": "incident;response;incident;response"
     },
     {
+      "description": "[Extended thinking: This workflow implements a sophisticated debugging and resolution pipeline that leverages AI-assisted debugging tools and observability platforms to systematically diagnose and res",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "incident-response-smart-fix",
+      "src_path": "lib/antigravity-awesome-skills/skills/incident-response-smart-fix/SKILL.md",
+      "triggers": "incident;response;smart;fix"
+    },
+    {
+      "description": "This skill covers integrating OWASP ZAP (Zed Attack Proxy) for Dynamic Application Security Testing in CI/CD pipelines. It addresses configuring baseline, full, and API scans against running applications, interpreting ZAP findings, tuning scan policies, and establishing DAST quality gates in GitHub Actions and GitLab CI.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "integrating-dast-with-owasp-zap-in-pipeline",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/integrating-dast-with-owasp-zap-in-pipeline/SKILL.md",
+      "triggers": "integrating;dast;with;owasp;zap"
+    },
+    {
+      "description": "This skill covers integrating Static Application Security Testing (SAST) tools—CodeQL and Semgrep—into GitHub Actions CI/CD pipelines. It addresses configuring automated code scanning on pull requests and pushes, tuning rules to reduce false positives, uploading SARIF results to GitHub Advanced Security, and establishing quality gates that block merges when high-severity vulnerabilities are detected.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "integrating-sast-into-github-actions-pipeline",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/integrating-sast-into-github-actions-pipeline/SKILL.md",
+      "triggers": "integrating;sast;into;github;actions"
+    },
+    {
+      "description": "Iterate on a PR until CI passes. Use when you need to fix CI failures, address review feedback, or continuously push fixes until all checks are green. Automates the feedback-fix-push-wait cycle.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "iterate-pr",
+      "src_path": "lib/antigravity-awesome-skills/skills/iterate-pr/SKILL.md",
+      "triggers": "iterate;pr"
+    },
+    {
       "description": "Query JASPAR for transcription factor binding site (TFBS) profiles (PWMs/PFMs). Search by TF name, species, or class; scan DNA sequences for TF binding sites; compare matrices; essential for regulatory genomics, motif analysis, and GWAS regulatory variant interpretation.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "jaspar-database",
-      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/jaspar-database/SKILL.md",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/jaspar-database/SKILL.md",
       "triggers": "jaspar;database"
     },
     {
+      "description": "Comprehensive k6 load testing skill for API, browser, and scalability testing. Write realistic load scenarios, analyze results, and integrate with CI/CD.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "k6-load-testing",
+      "src_path": "lib/antigravity-awesome-skills/skills/k6-load-testing/SKILL.md",
+      "triggers": "k6;load;testing"
+    },
+    {
+      "description": "Land and deploy workflow. Merges the PR, waits for CI and deploy, verifies production health via canary checks. Takes over after /ship creates the PR. Use when: \"merge\", \"land\", \"deploy\", \"merge and verify\", \"land it\", \"ship it to production\".",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "land-and-deploy",
+      "src_path": "lib/gstack/land-and-deploy/SKILL.md",
+      "triggers": "land;and;deploy"
+    },
+    {
       "description": "Especialista em leiloes judiciais e extrajudiciais de imoveis. Analise juridica, pericial e de mercado integrada. Orquestra os 5 modulos especializados.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "leiloeiro-ia",
-      "src_path": "src/antigravity-awesome-skills/skills/leiloeiro-ia/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/leiloeiro-ia/SKILL.md",
       "triggers": "leiloeiro;ia"
     },
     {
       "description": "When the user wants to localize their App Store listing for international markets. Also use when the user mentions \"localization\", \"translate my app\", \"international markets\", \"expand to new countries\", \"localize metadata\", or \"which countries should I target\". For keyword research in specific markets, see keyword-research. For metadata writing, see metadata-optimization.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "localization",
-      "src_path": "src/aso-skills/skills/localization/SKILL.md",
+      "src_path": "lib/aso-skills/skills/localization/SKILL.md",
       "triggers": "localization"
     },
     {
       "description": "Extend context windows of transformer models using RoPE, YaRN, ALiBi, and position interpolation techniques. Use when processing long documents (32k-128k+ tokens), extending pre-trained models beyond original context limits, or implementing efficient positional encodings. Covers rotary embeddings, attention biases, interpolation methods, and extrapolation strategies for LLMs.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "long-context",
-      "src_path": "src/Orchestra-Research-AI-research-SKILLs/19-emerging-techniques/long-context/SKILL.md",
+      "src_path": "lib/Orchestra-Research-AI-research-SKILLs/19-emerging-techniques/long-context/SKILL.md",
       "triggers": "long;context"
     },
     {
       "description": "Reviews lyrics against a quality checklist before Suno generation. Use before generating tracks to catch rhyme, prosody, pronunciation, and structural issues.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "lyric-reviewer",
-      "src_path": "src/bitwize-music-studio-claude-ai-music-skills/skills/lyric-reviewer/SKILL.md",
+      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/lyric-reviewer/SKILL.md",
       "triggers": "lyric;reviewer"
     },
     {
+      "description": "Design and implement a complete ML pipeline for: $ARGUMENTS",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "machine-learning-ops-ml-pipeline",
+      "src_path": "lib/antigravity-awesome-skills/skills/machine-learning-ops-ml-pipeline/SKILL.md",
+      "triggers": "machine;learning;ops;ml;pipeline"
+    },
+    {
       "description": "Expert malware analyst specializing in defensive malware research, threat intelligence, and incident response. Masters sandbox analysis, behavioral analysis, and malware family identification.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "malware-analyst",
-      "src_path": "src/antigravity-awesome-skills/skills/malware-analyst/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/malware-analyst/SKILL.md",
       "triggers": "malware;analyst"
     },
     {
       "description": "This skill covers implementing Okta as a centralized identity provider for cloud environments, configuring SSO integration with AWS, Azure, and GCP, deploying phishing- resistant MFA with Okta FastPass, managing lifecycle automation for user provisioning and deprovisioning, and enforcing adaptive access policies based on device posture and risk signals.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "managing-cloud-identity-with-okta",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/managing-cloud-identity-with-okta/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/managing-cloud-identity-with-okta/SKILL.md",
       "triggers": "managing;cloud;identity;with;okta"
     },
     {
       "description": "Spectral similarity and compound identification for metabolomics. Use for comparing mass spectra, computing similarity scores (cosine, modified cosine), and identifying unknown compounds from spectral libraries. Best for metabolite identification, spectral matching, library searching. For full LC-MS/MS proteomics pipelines use pyopenms.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "matchms",
-      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/matchms/SKILL.md",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/matchms/SKILL.md",
       "triggers": "matchms"
     },
     {
       "description": "Plan and evaluate mesh generation for numerical simulations — estimate grid resolution from physics scales (interface width, boundary layers, wavelengths), check aspect ratios and skewness against quality thresholds, choose between structured, unstructured, and adaptive mesh refinement strategies, and compute grid sizing for 1D/2D/3D domains. Use when setting up a new mesh, diagnosing poor solver convergence caused by mesh quality, deciding how many points to place across a phase-field interface or boundary layer, or preparing a mesh convergence study, even if the user only asks \"what resolution do I need\" or \"why is my solver failing.\"",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "mesh-generation",
-      "src_path": "src/HeshamFS-materials-simulation-skills/skills/core-numerical/mesh-generation/SKILL.md",
+      "src_path": "lib/HeshamFS-materials-simulation-skills/skills/core-numerical/mesh-generation/SKILL.md",
       "triggers": "mesh;generation"
     },
     {
       "description": "Query the Monarch Initiative knowledge graph for disease-gene-phenotype associations across species. Integrates OMIM, ORPHANET, HPO, ClinVar, and model organism databases. Use for rare disease gene discovery, phenotype-to-gene mapping, cross-species disease modeling, and HPO term lookup.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "monarch-database",
-      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/monarch-database/SKILL.md",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/monarch-database/SKILL.md",
       "triggers": "monarch;database"
     },
     {
       "description": "Lightweight anti-over-engineering guard. Activates when: (1) Modifying code or files the user did not explicitly ask to change (2) Creating new abstraction layers without being asked (3) Rewriting entire files instead of making minimal edits (4) Diff scope significantly exceeding the user's request (5) User signals like \"too much\", \"only change X\", \"keep it simple\" 轻量级反过度工程守卫。当检测到以下模式时激活： (1) 修改用户未明确要求改动的代码或文件 (2) 创建用户未要求的新抽象层 (3) 重写整个文件而非做最小编辑 (4) diff 范围明显超出用户请求 (5) 用户说\"太多了\"、\"只改 X\"、\"简单点\"",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "moyu-lite",
-      "src_path": "src/uucz-moyu/skills/moyu-lite/SKILL.md",
+      "src_path": "lib/uucz-moyu/skills/moyu-lite/SKILL.md",
       "triggers": "moyu;lite"
     },
     {
       "description": "Conselho de especialistas — consulta multiplos agentes do ecossistema em paralelo para analise multi-perspectiva de qualquer topico. Ativa personas, especialistas e agentes tecnicos simultaneamente, cada um pela sua otica unica, e consolida em sintese decisoria final.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "multi-advisor",
-      "src_path": "src/antigravity-awesome-skills/skills/multi-advisor/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/multi-advisor/SKILL.md",
       "triggers": "multi;advisor"
     },
     {
       "description": "Create and edit Obsidian Flavored Markdown with wikilinks, embeds, callouts, properties, and other Obsidian-specific syntax. Use when working with .md files in Obsidian, or when the user mentions wikilinks, callouts, frontmatter, tags, embeds, or Obsidian notes.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "obsidian-markdown",
-      "src_path": "src/antigravity-awesome-skills/skills/obsidian-markdown/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/obsidian-markdown/SKILL.md",
       "triggers": "obsidian;markdown"
     },
     {
       "description": "Country-specific Odoo localization: tax configuration, e-invoicing (CFDI, FatturaPA, SAF-T), fiscal reporting, and country chart of accounts setup.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "odoo-l10n-compliance",
-      "src_path": "src/antigravity-awesome-skills/skills/odoo-l10n-compliance/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/odoo-l10n-compliance/SKILL.md",
       "triggers": "odoo;l10n;compliance"
     },
     {
+      "description": "Parse, navigate, and query materials science ontology structures — browse class hierarchies, inspect individual classes and their properties, look up object and data property definitions with domain/range, search for ontology terms by keyword, and parse or summarize raw OWL/XML files. Supports the OCDO ecosystem (CMSO, ASMO, CDCO, PODO, PLDO, LDO). Use when exploring what classes or properties an ontology provides, finding the right CMSO term for a crystal structure or simulation concept, understanding parent-child class relationships, or onboarding to an unfamiliar materials ontology, even if the user only says \"what ontology terms describe my FCC copper simulation\" or \"show me the CMSO class hierarchy.\"",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "ontology-explorer",
+      "src_path": "lib/HeshamFS-materials-simulation-skills/skills/ontology/ontology-explorer/SKILL.md",
+      "triggers": "ontology;explorer"
+    },
+    {
       "description": "Map materials science terms, crystal structures, and sample descriptions to standardized ontology classes and properties — resolve natural-language concepts to ontology entries with confidence scores, translate Bravais lattice types, space groups, and lattice constants into ontology-compliant annotations, and produce full sample metadata from structured descriptions. Supports any ontology in ontology_registry.json (CMSO, ASMO, etc.). Use when annotating simulation inputs with FAIR metadata, translating \"BCC iron\" or \"FCC copper\" into formal ontology terms, preparing machine- readable sample descriptions, or bridging between lab vocabulary and ontology vocabulary, even if the user only says \"what CMSO terms describe my material\" or \"annotate this sample for me.\"",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "ontology-mapper",
-      "src_path": "src/HeshamFS-materials-simulation-skills/skills/ontology/ontology-mapper/SKILL.md",
+      "src_path": "lib/HeshamFS-materials-simulation-skills/skills/ontology/ontology-mapper/SKILL.md",
       "triggers": "ontology;mapper"
     },
     {
       "description": "Automate PagerDuty tasks via Rube MCP (Composio): manage incidents, services, schedules, escalation policies, and on-call rotations. Always search tools first for current schemas.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "pagerduty-automation",
-      "src_path": "src/antigravity-awesome-skills/skills/pagerduty-automation/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/pagerduty-automation/SKILL.md",
       "triggers": "pagerduty;automation"
     },
     {
       "description": "This skill should be used when converting academic papers into promotional and presentation formats including interactive websites (Paper2Web), presentation videos (Paper2Video), and conference posters (Paper2Poster). Use this skill for tasks involving paper dissemination, conference preparation, creating explorable academic homepages, generating video abstracts, or producing print-ready posters from LaTeX or PDF sources.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "paper-2-web",
-      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/paper-2-web/SKILL.md",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/paper-2-web/SKILL.md",
       "triggers": "paper;2;web"
     },
     {
       "description": "Integrate Stripe, PayPal, and payment processors. Handles checkout flows, subscriptions, webhooks, and PCI compliance. Use PROACTIVELY when implementing payments, billing, or subscription features.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "payment-integration",
-      "src_path": "src/antigravity-awesome-skills/skills/payment-integration/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/payment-integration/SKILL.md",
       "triggers": "payment;integration"
     },
     {
       "description": "Access RCSB PDB for 3D protein/nucleic acid structures. Search by text/sequence/structure, download coordinates (PDB/mmCIF), retrieve metadata, for structural biology and drug discovery.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "pdb-database",
-      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/pdb-database/SKILL.md",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/pdb-database/SKILL.md",
       "triggers": "pdb;database"
     },
     {
       "description": "Structured manuscript/grant review with checklist-based evaluation. Use when writing formal peer reviews with specific criteria methodology assessment, statistical validity, reporting standards compliance (CONSORT/STROBE), and constructive feedback. Best for actual review writing, manuscript revision. For evaluating claims/evidence quality use scientific-critical-thinking; for quantitative scoring frameworks use scholar-evaluation.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "peer-review",
-      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/peer-review/SKILL.md",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/peer-review/SKILL.md",
       "triggers": "peer;review"
     },
     {
       "description": "Parameter-efficient fine-tuning for LLMs using LoRA, QLoRA, and 25+ methods. Use when fine-tuning large models (7B-70B) with limited GPU memory, when you need to train <1% of parameters with minimal accuracy loss, or for multi-adapter serving. HuggingFace's official library integrated with transformers ecosystem.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "peft-fine-tuning",
-      "src_path": "src/Orchestra-Research-AI-research-SKILLs/03-fine-tuning/peft/SKILL.md",
+      "src_path": "lib/Orchestra-Research-AI-research-SKILLs/03-fine-tuning/peft/SKILL.md",
       "triggers": "peft;fine;tuning"
     },
     {
       "description": "Leverage the CISA Known Exploited Vulnerabilities catalog alongside EPSS and CVSS to prioritize CVE remediation based on real-world exploitation evidence.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "performing-cve-prioritization-with-kev-catalog",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-cve-prioritization-with-kev-catalog/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-cve-prioritization-with-kev-catalog/SKILL.md",
       "triggers": "performing;cve;prioritization;with;kev"
     },
     {
       "description": "Deploys deception technology including honeypots, honeytokens, and decoy systems to detect attackers who have bypassed perimeter defenses, providing high-fidelity alerts with near-zero false positive rates. Use when SOC teams need early warning of lateral movement, credential abuse, or internal reconnaissance by deploying convincing traps across the network.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "performing-deception-technology-deployment",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-deception-technology-deployment/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-deception-technology-deployment/SKILL.md",
       "triggers": "performing;deception;technology;deployment"
     },
     {
       "description": "Kerberoasting is a post-exploitation technique that targets service accounts in Active Directory by requesting Kerberos TGS (Ticket Granting Service) tickets for accounts with Service Principal Names",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "performing-kerberoasting-attack",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-kerberoasting-attack/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-kerberoasting-attack/SKILL.md",
       "triggers": "performing;kerberoasting;attack"
     },
     {
       "description": "Malware IOC extraction is the process of analyzing malicious software to identify actionable indicators of compromise including file hashes, network indicators (C2 domains, IP addresses, URLs), regist",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "performing-malware-ioc-extraction",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-malware-ioc-extraction/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-malware-ioc-extraction/SKILL.md",
       "triggers": "performing;malware;ioc;extraction"
     },
     {
+      "description": "Performs rapid malware triage and classification using YARA rules to match file patterns, strings, byte sequences, and structural characteristics against known malware families and suspicious indicators. Covers rule writing, scanning, and integration with analysis pipelines. Activates for requests involving YARA rule creation, malware classification, pattern matching, sample triage, or signature-based detection.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "performing-malware-triage-with-yara",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-malware-triage-with-yara/SKILL.md",
+      "triggers": "performing;malware;triage;with;yara"
+    },
+    {
       "description": "Analyze volatile memory dumps using Volatility 3 to extract running processes, network connections, loaded modules, and evidence of malicious activity.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "performing-memory-forensics-with-volatility3",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-memory-forensics-with-volatility3/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-memory-forensics-with-volatility3/SKILL.md",
       "triggers": "performing;memory;forensics;with;volatility3"
     },
     {
       "description": "Capture and analyze network traffic using Wireshark and tshark to reconstruct network events, extract artifacts, and identify malicious communications.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "performing-network-forensics-with-wireshark",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-network-forensics-with-wireshark/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-network-forensics-with-wireshark/SKILL.md",
       "triggers": "performing;network;forensics;with;wireshark"
     },
     {
       "description": "Automate network traffic analysis using tshark and pyshark for protocol statistics, suspicious flow detection, DNS anomaly identification, and IOC extraction from PCAP files",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "performing-network-traffic-analysis-with-tshark",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-network-traffic-analysis-with-tshark/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-network-traffic-analysis-with-tshark/SKILL.md",
       "triggers": "performing;network;traffic;analysis;with"
     },
     {
+      "description": "This skill covers implementing Software Composition Analysis (SCA) using Snyk to detect vulnerable open-source dependencies in CI/CD pipelines. It addresses scanning package manifests and lockfiles, automated fix pull request generation, license compliance checking, continuous monitoring of deployed applications, and integration with GitHub, GitLab, and Jenkins pipelines.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "performing-sca-dependency-scanning-with-snyk",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-sca-dependency-scanning-with-snyk/SKILL.md",
+      "triggers": "performing;sca;dependency;scanning;with"
+    },
+    {
       "description": "Performs static analysis of Windows PE (Portable Executable) malware samples using PEStudio to examine file headers, imports, strings, resources, and indicators without executing the binary. Identifies suspicious characteristics including packing, anti-analysis techniques, and malicious imports. Activates for requests involving static malware analysis, PE file inspection, Windows executable analysis, or pre-execution malware triage.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "performing-static-malware-analysis-with-pe-studio",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-static-malware-analysis-with-pe-studio/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-static-malware-analysis-with-pe-studio/SKILL.md",
       "triggers": "performing;static;malware;analysis;with"
     },
     {
       "description": "Conduct a sector-specific threat landscape assessment by analyzing threat actor targeting patterns, common attack vectors, and industry-specific vulnerabilities to inform organizational risk management.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "performing-threat-landscape-assessment-for-sector",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-threat-landscape-assessment-for-sector/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-threat-landscape-assessment-for-sector/SKILL.md",
       "triggers": "performing;threat;landscape;assessment;for"
     },
     {
       "description": "Develop precise YARA rules for malware detection by identifying unique byte patterns, strings, and behavioral indicators in executable files while minimizing false positives.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "performing-yara-rule-development-for-detection",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-yara-rule-development-for-detection/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-yara-rule-development-for-detection/SKILL.md",
       "triggers": "performing;yara;rule;development;for"
     },
     {
       "description": "Generate an energy-optimized, time-blocked daily plan based on circadian rhythm research and GTD principles",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "plan-my-day",
-      "src_path": "src/ai-marketing-skills/plan-my-day/SKILL.md",
+      "src_path": "lib/ai-marketing-skills/plan-my-day/SKILL.md",
       "triggers": "plan;my;day"
     },
     {
       "description": "Structured task planning with clear breakdowns, dependencies, and verification criteria. Use when implementing features, refactoring, or any multi-step work.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "plan-writing",
-      "src_path": "src/antigravity-awesome-skills/skills/plan-writing/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/plan-writing/SKILL.md",
       "triggers": "plan;writing"
     },
     {
+      "description": "Production-ready CI/CD configurations for Playwright — GitHub Actions, GitLab CI, CircleCI, Azure DevOps, Jenkins, Docker, parallel sharding, reporting, code coverage, and global setup/teardown.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "playwright-ci",
+      "src_path": "lib/testdino-hq-playwright-skill/ci/SKILL.md",
+      "triggers": "playwright;ci"
+    },
+    {
       "description": "Interactive visualization library. Use when you need hover info, zoom, pan, or web-embeddable charts. Best for dashboards, exploratory analysis, and presentations. For static publication figures use matplotlib or scientific-visualization.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "plotly",
-      "src_path": "src/antigravity-awesome-skills/skills/plotly/SKILL.md",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/plotly/SKILL.md",
       "triggers": "plotly"
     },
     {
       "description": "Expert in strict POSIX sh scripting for maximum portability across Unix-like systems. Specializes in shell scripts that run on any POSIX-compliant shell (dash, ash, sh, bash --posix).",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "posix-shell-pro",
-      "src_path": "src/antigravity-awesome-skills/skills/posix-shell-pro/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/posix-shell-pro/SKILL.md",
       "triggers": "posix;shell;pro"
     },
     {
       "description": "Validates all pre-generation gates before sending tracks to Suno. Checks sources verified, lyrics reviewed, pronunciation resolved, explicit flag set, style prompt complete, and artist names cleared. Use before generating tracks on Suno or when the user says \"pre-gen check\" or \"ready to generate\".",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "pre-generation-check",
-      "src_path": "src/bitwize-music-studio-claude-ai-music-skills/skills/pre-generation-check/SKILL.md",
+      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/pre-generation-check/SKILL.md",
       "triggers": "pre;generation;check"
     },
     {
       "description": "Choose a prioritization framework based on stage, team context, and stakeholder needs. Use when deciding between RICE, ICE, value/effort, or another scoring approach.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "prioritization-advisor",
-      "src_path": "src/Product-Manager-Skills/skills/prioritization-advisor/SKILL.md",
+      "src_path": "lib/Product-Manager-Skills/skills/prioritization-advisor/SKILL.md",
       "triggers": "prioritization;advisor"
     },
     {
       "description": "Scans lyrics for pronunciation risks and prevents Suno mispronunciations. Use when writing lyrics with proper nouns, technical terms, homographs, or non-English words.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "pronunciation-specialist",
-      "src_path": "src/bitwize-music-studio-claude-ai-music-skills/skills/pronunciation-specialist/SKILL.md",
+      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/pronunciation-specialist/SKILL.md",
       "triggers": "pronunciation;specialist"
     },
     {
       "description": "Materials science toolkit. Crystal structures (CIF, POSCAR), phase diagrams, band structure, DOS, Materials Project integration, format conversion, for computational materials science.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "pymatgen",
-      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/pymatgen/SKILL.md",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/pymatgen/SKILL.md",
       "triggers": "pymatgen"
     },
     {
       "description": "Search past Claude Code session logs to recover your own context. Invoke this proactively when you need to recall past decisions, patterns, or unresolved work — either across all projects or scoped to the current one.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "read-memories",
-      "src_path": "src/duckdb-skills/skills/read-memories/SKILL.md",
+      "src_path": "lib/duckdb-skills/skills/read-memories/SKILL.md",
       "triggers": "read;memories"
     },
     {
+      "description": "Workflow 4: Submission rebuttal pipeline. Parses external reviews, enforces coverage and grounding, drafts a safe text-only rebuttal under venue limits, and manages follow-up rounds. Use when user says \"rebuttal\", \"reply to reviewers\", \"ICML rebuttal\", \"OpenReview response\", or wants to answer external reviews safely.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "rebuttal",
+      "src_path": "lib/wanshuiyin-Auto-claude-code-research-in-sleep/skills/rebuttal/SKILL.md",
+      "triggers": "rebuttal"
+    },
+    {
+      "description": "Full research pipeline: Workflow 1 (idea discovery) → implementation → Workflow 2 (auto review loop). Goes from a broad research direction all the way to a submission-ready paper. Use when user says \"全流程\", \"full pipeline\", \"从找idea到投稿\", \"end-to-end research\", or wants the complete autonomous research lifecycle.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "research-pipeline",
+      "src_path": "lib/wanshuiyin-Auto-claude-code-research-in-sleep/skills/research-pipeline/SKILL.md",
+      "triggers": "research;pipeline"
+    },
+    {
       "description": "Researches investigative articles, interviews, and news coverage. Use when research needs journalistic sources for cross-referencing or additional context.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "researchers-journalism",
-      "src_path": "src/bitwize-music-studio-claude-ai-music-skills/skills/researchers-journalism/SKILL.md",
+      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/researchers-journalism/SKILL.md",
       "triggers": "researchers;journalism"
     },
     {
       "description": "Expert reverse engineer specializing in binary analysis, disassembly, decompilation, and software analysis. Masters IDA Pro, Ghidra, radare2, x64dbg, and modern RE toolchains.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "reverse-engineer",
-      "src_path": "src/antigravity-awesome-skills/skills/reverse-engineer/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/reverse-engineer/SKILL.md",
       "triggers": "reverse;engineer"
     },
     {
       "description": "Reverse engineers .NET malware using dnSpy decompiler and debugger to analyze C#/VB.NET source code, identify obfuscation techniques, extract configurations, and understand malicious functionality including stealers, RATs, and loaders. Activates for requests involving .NET malware analysis, C# malware decompilation, managed code reverse engineering, or .NET obfuscation analysis.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "reverse-engineering-dotnet-malware-with-dnspy",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/reverse-engineering-dotnet-malware-with-dnspy/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/reverse-engineering-dotnet-malware-with-dnspy/SKILL.md",
       "triggers": "reverse;engineering;dotnet;malware;with"
     },
     {
       "description": "Comprehensive PM resume review and tailoring against 10 best practices including XYZ+S formula, keyword optimization, job-specific tailoring, and structure. Use when reviewing a PM resume, preparing for job applications, or improving resume impact.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "review-resume",
-      "src_path": "src/pm-skills/pm-toolkit/skills/review-resume/SKILL.md",
+      "src_path": "lib/pm-skills/pm-toolkit/skills/review-resume/SKILL.md",
       "triggers": "review;resume"
     },
     {
       "description": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "scaffold-exercises",
-      "src_path": "src/mattpocock-skills/scaffold-exercises/SKILL.md",
+      "src_path": "lib/mattpocock-skills/scaffold-exercises/SKILL.md",
       "triggers": "scaffold;exercises"
     },
     {
-      "description": "This is the core skill for the deep research and writing tool—combining AI-driven deep research with well-formatted written outputs. Every document produced is backed by comprehensive literature search and verified citations through the research-lookup skill.",
-      "phase": 2,
-      "score": 5,
+      "description": "Core skill for the deep research and writing tool. Write scientific manuscripts in full paragraphs (never bullet points). Use two-stage process with (1) section outlines with key points using research-lookup then (2) convert to flowing prose. IMRAD structure, citations (APA/AMA/Vancouver), figures/tables, reporting guidelines (CONSORT/STROBE/PRISMA), for research papers and journal submissions.",
+      "phase": 5,
+      "score": 100,
       "skill_id": "scientific-writing",
-      "src_path": "src/antigravity-awesome-skills/skills/scientific-writing/SKILL.md",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/scientific-writing/SKILL.md",
       "triggers": "scientific;writing"
     },
     {
       "description": "Refine, parallelize, and verify a draft task specification into a fully planned implementation-ready task",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "sdd:plan",
-      "src_path": "src/NeoLabHQ-context-engineering-kit/plugins/sdd/skills/plan/SKILL.md",
+      "src_path": "lib/NeoLabHQ-context-engineering-kit/plugins/sdd/skills/plan/SKILL.md",
       "triggers": "sdd;plan"
     },
     {
       "description": "Expert web researcher using advanced search techniques and",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "search-specialist",
-      "src_path": "src/antigravity-awesome-skills/skills/search-specialist/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/search-specialist/SKILL.md",
       "triggers": "search;specialist"
     },
     {
+      "description": "Secure secrets management practices for CI/CD pipelines using Vault, AWS Secrets Manager, and other tools.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "secrets-management",
+      "src_path": "lib/antigravity-awesome-skills/skills/secrets-management/SKILL.md",
+      "triggers": "secrets;management"
+    },
+    {
+      "description": "Automates the full code release pipeline — branch, commit, push, PR, wait for CI, merge, version bump, release, cleanup. Use when the user wants to release code changes, says \"ship it\", or asks to create a release.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "ship",
+      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/ship/SKILL.md",
+      "triggers": "ship"
+    },
+    {
       "description": "To create new CLI skills following Anthropic's official best practices with zero manual configuration. This skill automates brainstorming, template application, validation, and installation processes while maintaining progressive disclosure patterns and writing style standards.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "skill-creator",
-      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-skill-author/skills/skill-creator/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-skill-author/skills/skill-creator/SKILL.md",
       "triggers": "skill;creator"
     },
     {
       "description": "Optimizes AI skills for activation, clarity, and cross-model reliability. Use when creating or editing skill packs, diagnosing weak skill uptake, reducing regressions, tuning instruction salience, improving examples, shrinking context cost, or setting benchmark/release gates for skills. Trigger terms: skill optimization, activation gap, benchmark skill, with/without skill delta, regression, context budget, prompt salience.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "skill-optimizer",
-      "src_path": "src/mcollina-skills/skills/skill-optimizer/SKILL.md",
+      "src_path": "lib/mcollina-skills/skills/skill-optimizer/SKILL.md",
       "triggers": "skill;optimizer"
     },
     {
       "description": "Generate correct, copy-pasteable SLURM sbatch job scripts and sanity-check HPC resource requests — configure nodes, MPI tasks, OpenMP threads, memory (per-node or per-cpu), GPUs, walltime, partitions, modules, and environment variables, with automatic detection of conflicting directives and oversubscription. Use when preparing a SLURM submission script, deciding between pure MPI and hybrid MPI+OpenMP layouts, standardizing #SBATCH directives across a team, debugging why a job won't launch or gets killed, or setting up GPU-accelerated simulation jobs, even if the user only says \"I need to run this on the cluster\" or \"my job keeps getting killed.\"",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "slurm-job-script-generator",
-      "src_path": "src/HeshamFS-materials-simulation-skills/skills/hpc-deployment/slurm-job-script-generator/SKILL.md",
+      "src_path": "lib/HeshamFS-materials-simulation-skills/skills/hpc-deployment/slurm-job-script-generator/SKILL.md",
       "triggers": "slurm;job;script;generator"
     },
     {
       "description": "Verifies code implements exactly what documentation specifies for blockchain audits. Use when comparing code against whitepapers, finding gaps between specs and implementation, or performing compliance checks for protocol implementations.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "spec-to-code-compliance",
-      "src_path": "src/antigravity-awesome-skills/skills/spec-to-code-compliance/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/spec-to-code-compliance/SKILL.md",
       "triggers": "spec;to;code;compliance"
     },
     {
       "description": "Plan a sprint with capacity estimation, story selection, dependency mapping, and risk identification. Use when preparing for sprint planning, estimating team capacity, selecting stories, or balancing sprint scope against velocity.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "sprint-plan",
-      "src_path": "src/pm-skills/pm-execution/skills/sprint-plan/SKILL.md",
+      "src_path": "lib/pm-skills/pm-execution/skills/sprint-plan/SKILL.md",
       "triggers": "sprint;plan"
     },
     {
       "description": "Expert startup business analyst specializing in market sizing, financial modeling, competitive analysis, and strategic planning for early-stage companies.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "startup-analyst",
-      "src_path": "src/antigravity-awesome-skills/skills/startup-analyst/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/startup-analyst/SKILL.md",
       "triggers": "startup;analyst"
     },
     {
       "description": "Create detailed 3-5 year financial model with revenue, costs, cash flow, and scenarios",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "startup-business-analyst-financial-projections",
-      "src_path": "src/antigravity-awesome-skills/skills/startup-business-analyst-financial-projections/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/startup-business-analyst-financial-projections/SKILL.md",
       "triggers": "startup;business;analyst;financial;projections"
     },
     {
       "description": "Master Stripe payment processing integration for robust, PCI-compliant payment flows including checkout, subscriptions, webhooks, and refunds.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "stripe-integration",
-      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-commerce-payments/skills/stripe-integration/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-commerce-payments/skills/stripe-integration/SKILL.md",
       "triggers": "stripe;integration"
     },
     {
       "description": "Summarize a meeting transcript into structured notes with date, participants, topic, key decisions, summary points, and action items. Use when processing meeting recordings, creating meeting notes, writing meeting minutes, or recapping discussions.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "summarize-meeting",
-      "src_path": "src/pm-skills/pm-execution/skills/summarize-meeting/SKILL.md",
+      "src_path": "lib/pm-skills/pm-execution/skills/summarize-meeting/SKILL.md",
       "triggers": "summarize;meeting"
     },
     {
       "description": "Protocolo de Inteligência Pré-Tarefa — ativa TODOS os agentes relevantes do ecossistema ANTES de executar qualquer tarefa solicitada pelo usuário.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "task-intelligence",
-      "src_path": "src/antigravity-awesome-skills/skills/task-intelligence/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/task-intelligence/SKILL.md",
       "triggers": "task;intelligence"
     },
     {
       "description": "You are a GitHub issue resolution expert specializing in systematic bug investigation, feature implementation, and collaborative development workflows. Your expertise spans issue triage, root cause an",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "team-collaboration-issue",
-      "src_path": "src/antigravity-awesome-skills/skills/team-collaboration-issue/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/team-collaboration-issue/SKILL.md",
       "triggers": "team;collaboration;issue"
     },
     {
       "description": "You are an expert team communication specialist focused on async-first standup practices, AI-assisted note generation from commit history, and effective remote team coordination patterns.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "team-collaboration-standup-notes",
-      "src_path": "src/antigravity-awesome-skills/skills/team-collaboration-standup-notes/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/team-collaboration-standup-notes/SKILL.md",
       "triggers": "team;collaboration;standup;notes"
     },
     {
       "description": "分析旅行健康数据、评估目的地健康风险、提供疫苗接种建议、生成多语言紧急医疗信息卡片。支持WHO/CDC数据集成的专业级旅行健康风险评估。",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "travel-health-analyzer",
-      "src_path": "src/antigravity-awesome-skills/skills/travel-health-analyzer/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/travel-health-analyzer/SKILL.md",
       "triggers": "travel;health;analyzer"
     },
     {
       "description": "Break a large story or epic into smaller deliverable stories using proven split patterns. Use when backlog items are too big for estimation, sequencing, or independent release.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "user-story-splitting",
-      "src_path": "src/Product-Manager-Skills/skills/user-story-splitting/SKILL.md",
+      "src_path": "lib/Product-Manager-Skills/skills/user-story-splitting/SKILL.md",
       "triggers": "user;story;splitting"
     },
     {
       "description": "Translate and dub videos from one language to another, replacing the original audio with TTS while keeping the video intact.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "video-translation",
-      "src_path": "src/NoizAI-skills/skills/video-translation/SKILL.md",
+      "src_path": "lib/NoizAI-skills/skills/video-translation/SKILL.md",
       "triggers": "video;translation"
     },
     {
       "description": "Agente que simula Warren Buffett — o maior investidor do seculo XX e XXI, CEO da Berkshire Hathaway, discipulo de Benjamin Graham e socio intelectual de Charlie Munger.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "warren-buffett",
-      "src_path": "src/antigravity-awesome-skills/skills/warren-buffett/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/warren-buffett/SKILL.md",
       "triggers": "warren;buffett"
     },
     {
       "description": "Answer repository questions grounded entirely in source code evidence. Use when user asks a question about the codebase, user wants to understand a specific file, function, or component, or user asks \"how does X work\" or \"where is Y defined\".",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "wiki-qa",
-      "src_path": "src/antigravity-awesome-skills/skills/wiki-qa/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/wiki-qa/SKILL.md",
       "triggers": "wiki;qa"
     },
     {
       "description": "Facilitate workshop sessions in a one-step, multi-turn flow. Use when an interactive skill needs consistent pacing, options, and progress tracking.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "workshop-facilitation",
-      "src_path": "src/Product-Manager-Skills/skills/workshop-facilitation/SKILL.md",
+      "src_path": "lib/Product-Manager-Skills/skills/workshop-facilitation/SKILL.md",
       "triggers": "workshop;facilitation"
     },
     {
       "description": "Agente que simula Yann LeCun — inventor das Convolutional Neural Networks, Chief AI Scientist da Meta, Prêmio Turing 2018.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "yann-lecun",
-      "src_path": "src/antigravity-awesome-skills/skills/yann-lecun/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/yann-lecun/SKILL.md",
       "triggers": "yann;lecun"
     },
     {
       "description": "Sub-skill de debates e posições de Yann LeCun. Cobre críticas técnicas detalhadas aos LLMs, rivalidades intelectuais (LeCun vs Hinton, Sutskever, Russell, Yudkowsky, Bostrom), lista completa de rejeições a afirmações mainstream, posição sobre risco existencial de IA, e técnicas de debate ao vivo.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "yann-lecun-debate",
-      "src_path": "src/antigravity-awesome-skills/skills/yann-lecun-debate/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/yann-lecun-debate/SKILL.md",
       "triggers": "yann;lecun;debate"
     },
     {
       "description": "Automate Zoom meeting creation, management, recordings, webinars, and participant tracking via Rube MCP (Composio). Always search tools first for current schemas.",
-      "phase": 2,
-      "score": 5,
+      "phase": 4,
+      "score": 100,
       "skill_id": "zoom-automation",
-      "src_path": "src/antigravity-awesome-skills/skills/zoom-automation/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/zoom-automation/SKILL.md",
       "triggers": "zoom;automation"
     }
   ],

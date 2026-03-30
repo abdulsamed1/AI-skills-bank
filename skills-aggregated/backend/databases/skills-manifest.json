@@ -1,278 +1,278 @@
 {
-  "generated_at_unix": 1774888953,
+  "generated_at_unix": 1774892583,
   "hub": "backend",
   "skills": [
     {
-      "description": "Detect and exploit NoSQL injection vulnerabilities in MongoDB, CouchDB, and other NoSQL databases to demonstrate authentication bypass, data extraction, and unauthorized access risks.",
-      "phase": 2,
-      "score": 13,
-      "skill_id": "exploiting-nosql-injection-vulnerabilities",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/exploiting-nosql-injection-vulnerabilities/SKILL.md",
-      "triggers": "exploiting;nosql;injection;vulnerabilities"
-    },
-    {
-      "description": "Azure Storage Services including Blob Storage, File Shares, Queue Storage, Table Storage, and Data Lake. Provides object storage, SMB file shares, async messaging, NoSQL key-value, and big data analytics capabilities. Includes access tiers (hot, cool, archive) and lifecycle management. USE FOR: blob storage, file shares, queue storage, table storage, data lake, upload files, download blobs, storage accounts, access tiers, lifecycle management. DO NOT USE FOR: SQL databases, Cosmos DB (use azure-prepare), messaging with Event Hubs or Service Bus (use azure-messaging).",
-      "phase": 2,
-      "score": 11,
-      "skill_id": "azure-storage",
-      "src_path": "src/microsoft-skills/.github/plugins/azure-skills/skills/azure-storage/SKILL.md",
-      "triggers": "azure;storage"
-    },
-    {
-      "description": "Tests APIs for injection vulnerabilities including SQL injection, NoSQL injection, OS command injection, LDAP injection, and Server-Side Request Forgery (SSRF) through API parameters, headers, and request bodies. The tester crafts malicious payloads targeting different backend technologies and injection contexts to extract data, execute commands, or access internal services. Maps to OWASP API8:2023 Security Misconfiguration and API7:2023 SSRF. Activates for requests involving API injection testing, SQLi in APIs, NoSQL injection, SSRF testing, or API input validation assessment.",
-      "phase": 2,
-      "score": 11,
-      "skill_id": "exploiting-api-injection-vulnerabilities",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/exploiting-api-injection-vulnerabilities/SKILL.md",
-      "triggers": "exploiting;api;injection;vulnerabilities"
-    },
-    {
-      "description": "Execute read-only SQL queries against multiple PostgreSQL databases. Use when: (1) querying PostgreSQL databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety.",
-      "phase": 2,
-      "score": 11,
-      "skill_id": "postgres",
-      "src_path": "src/sanjay3290-ai-skills/skills/postgres/SKILL.md",
-      "triggers": "postgres"
-    },
-    {
-      "description": "Neon is a serverless Postgres platform that separates compute and storage to offer autoscaling, branching, instant restore, and scale-to-zero. It's fully compatible with Postgres and works with any language, framework, or ORM that supports Postgres.",
-      "phase": 2,
-      "score": 11,
-      "skill_id": "using-neon",
-      "src_path": "src/antigravity-awesome-skills/skills/using-neon/SKILL.md",
-      "triggers": "using;neon"
-    },
-    {
-      "description": "Guide for using Netlify DB (managed Neon Postgres). Use when the project needs a relational database, structured data storage, SQL queries, or data that will grow over time. Covers provisioning, raw SQL via @netlify/neon, Drizzle ORM integration, migrations, and deploy preview branching. Also covers when to use Netlify Blobs instead.",
-      "phase": 2,
-      "score": 10,
-      "skill_id": "netlify-db",
-      "src_path": "src/context-and-tools/codex/skills/netlify-db/SKILL.md",
-      "triggers": "netlify;db"
+      "description": "Parse Apache and Nginx access logs to detect SQL injection attempts, local file inclusion, directory traversal, web scanner fingerprints, and brute-force patterns. Uses regex-based pattern matching against OWASP attack signatures, GeoIP enrichment for source attribution, and statistical anomaly detection for request frequency and response size outliers.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "analyzing-web-server-logs-for-intrusion",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-web-server-logs-for-intrusion/SKILL.md",
+      "triggers": "analyzing;web;server;logs;for"
     },
     {
       "description": "Azure Cosmos DB SDK for Java. NoSQL database operations with global distribution, multi-model support, and reactive patterns.",
-      "phase": 2,
-      "score": 9,
+      "phase": 4,
+      "score": 100,
       "skill_id": "azure-cosmos-java",
-      "src_path": "src/antigravity-awesome-skills/skills/azure-cosmos-java/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/azure-cosmos-java/SKILL.md",
       "triggers": "azure;cosmos;java"
     },
     {
       "description": "Azure Cosmos DB SDK for Rust (NoSQL API). Use for document CRUD, queries, containers, and globally distributed data.",
-      "phase": 2,
-      "score": 9,
+      "phase": 4,
+      "score": 100,
       "skill_id": "azure-cosmos-rust",
-      "src_path": "src/antigravity-awesome-skills/skills/azure-cosmos-rust/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/azure-cosmos-rust/SKILL.md",
       "triggers": "azure;cosmos;rust"
     },
     {
       "description": "Connect to Azure Database for PostgreSQL Flexible Server from Node.js/TypeScript using the pg (node-postgres) package.",
-      "phase": 2,
-      "score": 9,
+      "phase": 4,
+      "score": 100,
       "skill_id": "azure-postgres-ts",
-      "src_path": "src/antigravity-awesome-skills/skills/azure-postgres-ts/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/azure-postgres-ts/SKILL.md",
       "triggers": "azure;postgres;ts"
     },
     {
-      "description": "Cloudflare D1 SQLite database with Workers, Drizzle ORM, migrations",
-      "phase": 2,
-      "score": 9,
-      "skill_id": "cloudflare-d1",
-      "src_path": "src/alinaqi-claude-bootstrap/skills/cloudflare-d1/SKILL.md",
-      "triggers": "cloudflare;d1"
-    },
-    {
-      "description": "SQL database migrations with zero-downtime strategies for PostgreSQL, MySQL, and SQL Server. Focus on data integrity and rollback plans.",
-      "phase": 2,
-      "score": 9,
-      "skill_id": "database-migrations-sql-migrations",
-      "src_path": "src/antigravity-awesome-skills/skills/database-migrations-sql-migrations/SKILL.md",
-      "triggers": "database;migrations;sql;migrations"
-    },
-    {
-      "description": "Create and manage datasets on Hugging Face Hub. Supports initializing repos, defining configs/system prompts, streaming row updates, and SQL-based dataset querying/transformation. Designed to work alongside HF MCP server for comprehensive dataset workflows.",
-      "phase": 2,
-      "score": 9,
-      "skill_id": "hugging-face-datasets",
-      "src_path": "src/antigravity-awesome-skills/skills/hugging-face-datasets/SKILL.md",
-      "triggers": "hugging;face;datasets"
-    },
-    {
-      "description": "Deploy privileged access management for database systems including Oracle, SQL Server, PostgreSQL, and MySQL. Covers session proxy configuration, credential vaulting, query auditing, dynamic credentia",
-      "phase": 2,
-      "score": 9,
-      "skill_id": "implementing-pam-for-database-access",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-pam-for-database-access/SKILL.md",
-      "triggers": "implementing;pam;for;database;access"
-    },
-    {
-      "description": "Detect and exploit second-order SQL injection vulnerabilities where malicious input is stored in a database and later executed in an unsafe SQL query during a different application operation.",
-      "phase": 2,
-      "score": 9,
-      "skill_id": "performing-second-order-sql-injection",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-second-order-sql-injection/SKILL.md",
-      "triggers": "performing;second;order;sql;injection"
-    },
-    {
-      "description": "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.",
-      "phase": 2,
-      "score": 9,
-      "skill_id": "postgres-best-practices",
-      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-data-analytics/skills/postgres-best-practices/SKILL.md",
-      "triggers": "postgres;best;practices"
-    },
-    {
-      "description": "Design a PostgreSQL-specific schema. Covers best-practices, data types, indexing, constraints, performance patterns, and advanced features",
-      "phase": 2,
-      "score": 9,
-      "skill_id": "postgresql",
-      "src_path": "src/antigravity-awesome-skills/skills/postgresql/SKILL.md",
-      "triggers": "postgresql"
-    },
-    {
-      "description": "Master modern SQL with cloud-native databases, OLTP/OLAP optimization, and advanced query techniques. Expert in performance tuning, data modeling, and hybrid analytical systems.",
-      "phase": 2,
-      "score": 9,
-      "skill_id": "sql-pro",
-      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-data-analytics/skills/sql-pro/SKILL.md",
-      "triggers": "sql;pro"
-    },
-    {
-      "description": "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.",
-      "phase": 2,
-      "score": 9,
-      "skill_id": "supabase-postgres-best-practices",
-      "src_path": "src/agent-skills/skills/supabase-postgres-best-practices/SKILL.md",
-      "triggers": "supabase;postgres;best;practices"
-    },
-    {
-      "description": "Tinybird file formats, SQL rules, optimization patterns, and best practices for datasources, pipes, endpoints, and materialized views.",
-      "phase": 2,
-      "score": 9,
-      "skill_id": "tinybird",
-      "src_path": "src/tinybird-agent-skills/skills/tinybird-best-practices/SKILL.md",
-      "triggers": "tinybird"
-    },
-    {
-      "description": "Parse Apache and Nginx access logs to detect SQL injection attempts, local file inclusion, directory traversal, web scanner fingerprints, and brute-force patterns. Uses regex-based pattern matching against OWASP attack signatures, GeoIP enrichment for source attribution, and statistical anomaly detection for request frequency and response size outliers.",
-      "phase": 2,
-      "score": 7,
-      "skill_id": "analyzing-web-server-logs-for-intrusion",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-web-server-logs-for-intrusion/SKILL.md",
-      "triggers": "analyzing;web;server;logs;for"
+      "description": "Azure MySQL Flexible Server SDK for .NET. Database management for MySQL Flexible Server deployments.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "azure-resource-manager-mysql-dotnet",
+      "src_path": "lib/antigravity-awesome-skills/skills/azure-resource-manager-mysql-dotnet/SKILL.md",
+      "triggers": "azure;resource;manager;mysql;dotnet"
     },
     {
       "description": "Azure PostgreSQL Flexible Server SDK for .NET. Database management for PostgreSQL Flexible Server deployments.",
-      "phase": 2,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "azure-resource-manager-postgresql-dotnet",
-      "src_path": "src/antigravity-awesome-skills/skills/azure-resource-manager-postgresql-dotnet/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/azure-resource-manager-postgresql-dotnet/SKILL.md",
       "triggers": "azure;resource;manager;postgresql;dotnet"
     },
     {
       "description": "Azure Resource Manager SDK for Azure SQL in .NET.",
-      "phase": 2,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "azure-resource-manager-sql-dotnet",
-      "src_path": "src/antigravity-awesome-skills/skills/azure-resource-manager-sql-dotnet/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/azure-resource-manager-sql-dotnet/SKILL.md",
       "triggers": "azure;resource;manager;sql;dotnet"
     },
     {
+      "description": "Azure Storage Services including Blob Storage, File Shares, Queue Storage, Table Storage, and Data Lake. Provides object storage, SMB file shares, async messaging, NoSQL key-value, and big data analytics capabilities. Includes access tiers (hot, cool, archive) and lifecycle management. USE FOR: blob storage, file shares, queue storage, table storage, data lake, upload files, download blobs, storage accounts, access tiers, lifecycle management. DO NOT USE FOR: SQL databases, Cosmos DB (use azure-prepare), messaging with Event Hubs or Service Bus (use azure-messaging).",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "azure-storage",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-storage/SKILL.md",
+      "triggers": "azure;storage"
+    },
+    {
+      "description": "Cloudflare D1 SQLite database with Workers, Drizzle ORM, migrations",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "cloudflare-d1",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/cloudflare-d1/SKILL.md",
+      "triggers": "cloudflare;d1"
+    },
+    {
+      "description": "SQL database migrations with zero-downtime strategies for PostgreSQL, MySQL, and SQL Server. Focus on data integrity and rollback plans.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "database-migrations-sql-migrations",
+      "src_path": "lib/antigravity-awesome-skills/skills/database-migrations-sql-migrations/SKILL.md",
+      "triggers": "database;migrations;sql;migrations"
+    },
+    {
+      "description": "Tests APIs for injection vulnerabilities including SQL injection, NoSQL injection, OS command injection, LDAP injection, and Server-Side Request Forgery (SSRF) through API parameters, headers, and request bodies. The tester crafts malicious payloads targeting different backend technologies and injection contexts to extract data, execute commands, or access internal services. Maps to OWASP API8:2023 Security Misconfiguration and API7:2023 SSRF. Activates for requests involving API injection testing, SQLi in APIs, NoSQL injection, SSRF testing, or API input validation assessment.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "exploiting-api-injection-vulnerabilities",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/exploiting-api-injection-vulnerabilities/SKILL.md",
+      "triggers": "exploiting;api;injection;vulnerabilities"
+    },
+    {
+      "description": "Detect and exploit NoSQL injection vulnerabilities in MongoDB, CouchDB, and other NoSQL databases to demonstrate authentication bypass, data extraction, and unauthorized access risks.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "exploiting-nosql-injection-vulnerabilities",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/exploiting-nosql-injection-vulnerabilities/SKILL.md",
+      "triggers": "exploiting;nosql;injection;vulnerabilities"
+    },
+    {
       "description": "Detecting and exploiting SQL injection vulnerabilities using sqlmap to extract database contents during authorized penetration tests.",
-      "phase": 2,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "exploiting-sql-injection-with-sqlmap",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/exploiting-sql-injection-with-sqlmap/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/exploiting-sql-injection-with-sqlmap/SKILL.md",
       "triggers": "exploiting;sql;injection;with;sqlmap"
     },
     {
+      "description": "Create and manage datasets on Hugging Face Hub. Supports initializing repos, defining configs/system prompts, streaming row updates, and SQL-based dataset querying/transformation. Designed to work alongside HF MCP server for comprehensive dataset workflows.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "hugging-face-datasets",
+      "src_path": "lib/antigravity-awesome-skills/skills/hugging-face-datasets/SKILL.md",
+      "triggers": "hugging;face;datasets"
+    },
+    {
+      "description": "Deploy privileged access management for database systems including Oracle, SQL Server, PostgreSQL, and MySQL. Covers session proxy configuration, credential vaulting, query auditing, dynamic credentia",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "implementing-pam-for-database-access",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-pam-for-database-access/SKILL.md",
+      "triggers": "implementing;pam;for;database;access"
+    },
+    {
       "description": "Configure Prisma for Neon with connection pooling.",
-      "phase": 2,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "neon-postgres",
-      "src_path": "src/antigravity-awesome-skills/skills/neon-postgres/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/neon-postgres/SKILL.md",
       "triggers": "neon;postgres"
     },
     {
+      "description": "Guide for using Netlify DB (managed Neon Postgres). Use when the project needs a relational database, structured data storage, SQL queries, or data that will grow over time. Covers provisioning, raw SQL via @netlify/neon, Drizzle ORM integration, migrations, and deploy preview branching. Also covers when to use Netlify Blobs instead.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "netlify-db",
+      "src_path": "lib/context-and-tools/codex/skills/netlify-db/SKILL.md",
+      "triggers": "netlify;db"
+    },
+    {
+      "description": "Expert guidance for distributed NoSQL databases (Cassandra, DynamoDB). Focuses on mental models, query-first modeling, single-table design, and avoiding hot partitions in high-scale systems.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "nosql-expert",
+      "src_path": "lib/antigravity-awesome-skills/skills/nosql-expert/SKILL.md",
+      "triggers": "nosql;expert"
+    },
+    {
+      "description": "Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries. Use when working with .base files, creating database-like views of notes, or when the user mentions Bases, table views, card views, filters, or formulas in Obsidian.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "obsidian-bases",
+      "src_path": "lib/antigravity-awesome-skills/skills/obsidian-bases/SKILL.md",
+      "triggers": "obsidian;bases"
+    },
+    {
+      "description": "Detect and exploit second-order SQL injection vulnerabilities where malicious input is stored in a database and later executed in an unsafe SQL query during a different application operation.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "performing-second-order-sql-injection",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-second-order-sql-injection/SKILL.md",
+      "triggers": "performing;second;order;sql;injection"
+    },
+    {
+      "description": "Automate credential rotation for service accounts across Active Directory, cloud platforms, and application databases to eliminate stale secrets and reduce compromise risk.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "performing-service-account-credential-rotation",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-service-account-credential-rotation/SKILL.md",
+      "triggers": "performing;service;account;credential;rotation"
+    },
+    {
       "description": "Perform forensic analysis of SQLite databases to recover deleted records from freelists and WAL files, decode encoded timestamps, and extract evidence from browser history, messaging apps, and mobile device databases.",
-      "phase": 2,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "performing-sqlite-database-forensics",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-sqlite-database-forensics/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-sqlite-database-forensics/SKILL.md",
       "triggers": "performing;sqlite;database;forensics"
     },
     {
+      "description": "Execute read-only SQL queries against multiple PostgreSQL databases. Use when: (1) querying PostgreSQL databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "postgres",
+      "src_path": "lib/sanjay3290-ai-skills/skills/postgres/SKILL.md",
+      "triggers": "postgres"
+    },
+    {
+      "description": "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "postgres-best-practices",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-data-analytics/skills/postgres-best-practices/SKILL.md",
+      "triggers": "postgres;best;practices"
+    },
+    {
+      "description": "Design a PostgreSQL-specific schema. Covers best-practices, data types, indexing, constraints, performance patterns, and advanced features",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "postgresql",
+      "src_path": "lib/antigravity-awesome-skills/skills/postgresql/SKILL.md",
+      "triggers": "postgresql"
+    },
+    {
       "description": "Run SQL queries against the attached DuckDB database or ad-hoc against files. Accepts raw SQL or natural language questions. Uses DuckDB Friendly SQL idioms.",
-      "phase": 2,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "query",
-      "src_path": "src/duckdb-skills/skills/query/SKILL.md",
+      "src_path": "lib/duckdb-skills/skills/query/SKILL.md",
       "triggers": "query"
     },
     {
       "description": "Pre-landing PR review. Analyzes diff against the base branch for SQL safety, LLM trust boundary violations, conditional side effects, and other structural issues. Use when asked to \"review this PR\", \"code review\", \"pre-landing review\", or \"check my diff\". Proactively suggest when the user is about to merge or land code changes.",
-      "phase": 2,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "review",
-      "src_path": "src/gstack/review/SKILL.md",
+      "src_path": "lib/gstack/review/SKILL.md",
       "triggers": "review"
     },
     {
       "description": "This skill covers hardening and securing process historian servers (OSIsoft PI, Honeywell PHD, GE Proficy, AVEVA Historian) in OT environments. It addresses network placement across Purdue levels, access control for historian interfaces, data replication through DMZ using data diodes or PI-to-PI connectors, SQL injection prevention in historian queries, and integrity protection of process data used for safety analysis, regulatory reporting, and process optimization.",
-      "phase": 2,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "securing-historian-server-in-ot-environment",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/securing-historian-server-in-ot-environment/SKILL.md",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/securing-historian-server-in-ot-environment/SKILL.md",
       "triggers": "securing;historian;server;in;ot"
     },
     {
-      "description": "Automate Supabase database queries, table management, project administration, storage, edge functions, and SQL execution via Rube MCP (Composio). Always search tools first for current schemas.",
-      "phase": 2,
-      "score": 7,
-      "skill_id": "supabase-automation",
-      "src_path": "src/antigravity-awesome-skills/skills/supabase-automation/SKILL.md",
-      "triggers": "supabase;automation"
-    },
-    {
-      "description": "Azure MySQL Flexible Server SDK for .NET. Database management for MySQL Flexible Server deployments.",
-      "phase": 2,
-      "score": 5,
-      "skill_id": "azure-resource-manager-mysql-dotnet",
-      "src_path": "src/antigravity-awesome-skills/skills/azure-resource-manager-mysql-dotnet/SKILL.md",
-      "triggers": "azure;resource;manager;mysql;dotnet"
-    },
-    {
-      "description": "Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries. Use when working with .base files, creating database-like views of notes, or when the user mentions Bases, table views, card views, filters, or formulas in Obsidian.",
-      "phase": 2,
-      "score": 5,
-      "skill_id": "obsidian-bases",
-      "src_path": "src/antigravity-awesome-skills/skills/obsidian-bases/SKILL.md",
-      "triggers": "obsidian;bases"
-    },
-    {
-      "description": "Automate credential rotation for service accounts across Active Directory, cloud platforms, and application databases to eliminate stale secrets and reduce compromise risk.",
-      "phase": 2,
-      "score": 5,
-      "skill_id": "performing-service-account-credential-rotation",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-service-account-credential-rotation/SKILL.md",
-      "triggers": "performing;service;account;credential;rotation"
-    },
-    {
-      "description": "Expert guidance for distributed NoSQL databases (Cassandra, DynamoDB). Focuses on mental models, query-first modeling, single-table design, and avoiding hot partitions in high-scale systems.",
-      "phase": 2,
-      "score": 4,
-      "skill_id": "nosql-expert",
-      "src_path": "src/antigravity-awesome-skills/skills/nosql-expert/SKILL.md",
-      "triggers": "nosql;expert"
+      "description": "Master modern SQL with cloud-native databases, OLTP/OLAP optimization, and advanced query techniques. Expert in performance tuning, data modeling, and hybrid analytical systems.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "sql-pro",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-data-analytics/skills/sql-pro/SKILL.md",
+      "triggers": "sql;pro"
     },
     {
       "description": "Generate SQL queries from natural language descriptions. Supports BigQuery, PostgreSQL, MySQL, and other dialects. Reads database schemas from uploaded diagrams or documentation. Use when writing SQL, building data reports, exploring databases, or translating business questions into queries.",
-      "phase": 2,
-      "score": 4,
+      "phase": 5,
+      "score": 100,
       "skill_id": "sql-queries",
-      "src_path": "src/pm-skills/pm-data-analytics/skills/sql-queries/SKILL.md",
+      "src_path": "lib/pm-skills/pm-data-analytics/skills/sql-queries/SKILL.md",
       "triggers": "sql;queries"
+    },
+    {
+      "description": "Automate Supabase database queries, table management, project administration, storage, edge functions, and SQL execution via Rube MCP (Composio). Always search tools first for current schemas.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "supabase-automation",
+      "src_path": "lib/antigravity-awesome-skills/skills/supabase-automation/SKILL.md",
+      "triggers": "supabase;automation"
+    },
+    {
+      "description": "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "supabase-postgres-best-practices",
+      "src_path": "lib/agent-skills/skills/supabase-postgres-best-practices/SKILL.md",
+      "triggers": "supabase;postgres;best;practices"
+    },
+    {
+      "description": "Tinybird file formats, SQL rules, optimization patterns, and best practices for datasources, pipes, endpoints, and materialized views.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "tinybird",
+      "src_path": "lib/tinybird-agent-skills/skills/tinybird-best-practices/SKILL.md",
+      "triggers": "tinybird"
+    },
+    {
+      "description": "Neon is a serverless Postgres platform that separates compute and storage to offer autoscaling, branching, instant restore, and scale-to-zero. It's fully compatible with Postgres and works with any language, framework, or ORM that supports Postgres.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "using-neon",
+      "src_path": "lib/antigravity-awesome-skills/skills/using-neon/SKILL.md",
+      "triggers": "using;neon"
     }
   ],
   "sub_hub": "databases",

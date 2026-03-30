@@ -1,7 +1,7 @@
 skill_id,description,score,phase
-mobile-developer,"Develop React Native, Flutter, or native mobile apps with modern architecture patterns. Masters cross-platform development, native integrations, offline sync, and app store optimization.",11,1
-react-native,"React Native mobile patterns, platform-specific code",9,1
-detecting-mobile-malware-behavior,"Detects and analyzes malicious behavior in mobile applications through behavioral analysis, permission abuse detection, network traffic monitoring, and dynamic instrumentation. Use when analyzing suspicious mobile applications for data exfiltration, command-and-control communication, credential stealing, SMS interception, or other malware indicators. Activates for requests involving mobile malware analysis, app behavior monitoring, trojan detection, or suspicious app investigation.",7,1
-development,"Comprehensive web, mobile, and backend development workflow bundling frontend, backend, full-stack, and mobile development skills for end-to-end application delivery.",7,1
-flutter-expert,"Master Flutter development with Dart 3, advanced widgets, and multi-platform deployment.",7,1
-performing-mobile-device-forensics-with-cellebrite,"Acquire and analyze mobile device data using Cellebrite UFED and open-source tools to extract communications, location data, and application artifacts.",7,1
+detecting-mobile-malware-behavior,"Detects and analyzes malicious behavior in mobile applications through behavioral analysis, permission abuse detection, network traffic monitoring, and dynamic instrumentation. Use when analyzing suspicious mobile applications for data exfiltration, command-and-control communication, credential stealing, SMS interception, or other malware indicators. Activates for requests involving mobile malware analysis, app behavior monitoring, trojan detection, or suspicious app investigation.",100,4
+development,"Comprehensive web, mobile, and backend development workflow bundling frontend, backend, full-stack, and mobile development skills for end-to-end application delivery.",100,4
+flutter-expert,"Master Flutter development with Dart 3, advanced widgets, and multi-platform deployment.",100,4
+mobile-developer,"Develop React Native, Flutter, or native mobile apps with modern architecture patterns. Masters cross-platform development, native integrations, offline sync, and app store optimization.",100,4
+performing-mobile-device-forensics-with-cellebrite,"Acquire and analyze mobile device data using Cellebrite UFED and open-source tools to extract communications, location data, and application artifacts.",100,5
+react-native,"React Native mobile patterns, platform-specific code",100,4

@@ -2,12 +2,12 @@
   "count": 6,
   "hub": "mobile",
   "skills": [
-    "mobile-developer",
-    "react-native",
     "detecting-mobile-malware-behavior",
     "development",
     "flutter-expert",
-    "performing-mobile-device-forensics-with-cellebrite"
+    "mobile-developer",
+    "performing-mobile-device-forensics-with-cellebrite",
+    "react-native"
   ],
   "sub_hub": "cross-platform"
 }

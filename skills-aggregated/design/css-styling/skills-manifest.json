@@ -1,70 +1,70 @@
 {
-  "generated_at_unix": 1774888953,
+  "generated_at_unix": 1774892583,
   "hub": "design",
   "skills": [
     {
-      "description": "Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canvas-based visual designs. Use when building user interfaces, implementing design systems, creating responsive layouts, adding accessible components (dialogs, dropdowns, forms, tables), customizing themes and colors, implementing dark mode, generating visual designs and posters, or establishing consistent styling patterns across applications.",
-      "phase": 1,
-      "score": 19,
-      "skill_id": "ckm:ui-styling",
-      "src_path": "src/nextlevelbuilder-ui-ux-pro-max-skill/.claude/skills/ui-styling/SKILL.md",
-      "triggers": "ckm;ui;styling"
-    },
-    {
       "description": "Validates animation durations, enforces typography scale, checks component accessibility, and prevents layout anti-patterns in Tailwind CSS projects. Use when building UI components, reviewing CSS utilities, styling React views, or enforcing design consistency.",
-      "phase": 1,
-      "score": 15,
+      "phase": 5,
+      "score": 100,
       "skill_id": "baseline-ui",
-      "src_path": "src/antigravity-awesome-skills/skills/baseline-ui/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/baseline-ui/SKILL.md",
       "triggers": "baseline;ui"
     },
     {
+      "description": "Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canvas-based visual designs. Use when building user interfaces, implementing design systems, creating responsive layouts, adding accessible components (dialogs, dropdowns, forms, tables), customizing themes and colors, implementing dark mode, generating visual designs and posters, or establishing consistent styling patterns across applications.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "ckm:ui-styling",
+      "src_path": "lib/nextlevelbuilder-ui-ux-pro-max-skill/.claude/skills/ui-styling/SKILL.md",
+      "triggers": "ckm;ui;styling"
+    },
+    {
+      "description": "Use when working with color naming, color theory, color spaces, color definitions, or any task involving color knowledge - palettes, ramps, gradients, conversions, accessibility, perceptual matching, pigment mixing, print-vs-screen color, CSS color syntax, or historical color terminology. Use this skill whenever the user is choosing, comparing, generating, naming, converting, or explaining colors, even if they do not explicitly ask for \"color theory.\"",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "color-expert",
+      "src_path": "lib/meodai-skill.color-expert/SKILL.md",
+      "triggers": "color;expert"
+    },
+    {
+      "description": "Analyzes landing pages and provides detailed CRO (Conversion Rate Optimization) recommendations. Use when user provides a landing page URL or HTML/CSS code and needs optimization advice to maximize conversions, signups, or sales. Extracts page elements, audits against proven CRO principles, and delivers actionable recommendations in report format.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "cro-optimization",
+      "src_path": "lib/founder-skills/skills/cro-optimization/SKILL.md",
+      "triggers": "cro;optimization"
+    },
+    {
       "description": "Set up Tailwind CSS v4 in Expo with react-native-css and NativeWind v5 for universal styling",
-      "phase": 1,
-      "score": 15,
+      "phase": 4,
+      "score": 100,
       "skill_id": "expo-tailwind-setup",
-      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-expo-react-native/skills/expo-tailwind-setup/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-expo-react-native/skills/expo-tailwind-setup/SKILL.md",
       "triggers": "expo;tailwind;setup"
     },
     {
       "description": "Create research posters using HTML/CSS that can be exported to PDF or PPTX. Use this skill ONLY when the user explicitly requests PowerPoint/PPTX poster format. For standard research posters, use latex-posters instead. This skill provides modern web-based poster design with responsive layouts and easy visual integration.",
-      "phase": 1,
-      "score": 15,
+      "phase": 4,
+      "score": 100,
       "skill_id": "pptx-posters",
-      "src_path": "src/K-Dense-AI-claude-scientific-skills/scientific-skills/pptx-posters/SKILL.md",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/pptx-posters/SKILL.md",
       "triggers": "pptx;posters"
     },
     {
       "description": "Build production-ready design systems with Tailwind CSS, including design tokens, component variants, responsive patterns, and accessibility.",
-      "phase": 1,
-      "score": 15,
+      "phase": 5,
+      "score": 100,
       "skill_id": "tailwind-design-system",
-      "src_path": "src/antigravity-awesome-skills/skills/tailwind-design-system/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/tailwind-design-system/SKILL.md",
       "triggers": "tailwind;design;system"
     },
     {
-      "description": "Analyzes landing pages and provides detailed CRO (Conversion Rate Optimization) recommendations. Use when user provides a landing page URL or HTML/CSS code and needs optimization advice to maximize conversions, signups, or sales. Extracts page elements, audits against proven CRO principles, and delivers actionable recommendations in report format.",
-      "phase": 1,
-      "score": 11,
-      "skill_id": "cro-optimization",
-      "src_path": "src/founder-skills/skills/cro-optimization/SKILL.md",
-      "triggers": "cro;optimization"
-    },
-    {
       "description": "Tailwind CSS v4 principles. CSS-first configuration, container queries, modern patterns, design token architecture.",
-      "phase": 1,
-      "score": 11,
+      "phase": 4,
+      "score": 100,
       "skill_id": "tailwind-patterns",
-      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-web-wizard/skills/tailwind-patterns/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-web-wizard/skills/tailwind-patterns/SKILL.md",
       "triggers": "tailwind;patterns"
-    },
-    {
-      "description": "Use when working with color naming, color theory, color spaces, color definitions, or any task involving color knowledge - palettes, ramps, gradients, conversions, accessibility, perceptual matching, pigment mixing, print-vs-screen color, CSS color syntax, or historical color terminology. Use this skill whenever the user is choosing, comparing, generating, naming, converting, or explaining colors, even if they do not explicitly ask for \"color theory.\"",
-      "phase": 1,
-      "score": 7,
-      "skill_id": "color-expert",
-      "src_path": "src/meodai-skill.color-expert/SKILL.md",
-      "triggers": "color;expert"
     }
   ],
   "sub_hub": "css-styling",

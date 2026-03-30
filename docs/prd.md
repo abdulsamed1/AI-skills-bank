@@ -107,7 +107,7 @@ The core differentiator is the intersection of massive skill scale, BMAD-pattern
 * **Multi-threaded Aggregation:** The Rust file scanner must utilize parallel processing frameworks (like `rayon`) to achieve the 2-second aggregation target.
 
 ### Supported Feature Set
-* Rust binary implementing `fetch` (reading `repos.json` and cloning missing skill repositories into `src/`).
+* Rust binary implementing `fetch` (reading `repos.json` and cloning missing skill repositories into `lib/`).
 * Rust binary implementing `sync` (safe file copying/junctioning to global tool directories).
 * Rust binary implementing the heavy `aggregate` engine (keyword scoring, semantic matching, sub-hub routing).
 * The `doctor` diagnostic command for schema validation.
@@ -128,24 +128,24 @@ The core differentiator is the intersection of massive skill scale, BMAD-pattern
 
 ### Configuration & File System Integrity
 * **Atomic Operations:** Because the tool's primary purpose is fetching and synchronizing thousands of files, it must use atomic file operations. If a `sync` or `fetch` is interrupted (e.g., user hits `Ctrl+C`), it must not leave the target directory in a corrupted or half-written state.
-* **Local State:** Rely on `repos.json` and the `src/` directory relative to the current working directory for local project execution.
+* **Local State:** Rely on `repos.json` and the `lib/` directory relative to the current working directory for local project execution.
 * **Global Configuration:** Support resolving a global config directory (e.g., `~/.config/skill-manage/`) for user-wide settings, authentication tokens, or cached skill data.
 
 ### Security Constraints
 * **Binary Integrity:** Since the NPX (JavaScript) wrapper will download or execute a native binary, it must perform checksum validation to ensure the binary hasn't been tampered with to prevent supply-chain attacks.
-* **Permissions:** The tool must strictly request and utilize only local file system permissions required for the `src/` and target config directories. It must never inadvertently expose local environment variables or private keys.
+* **Permissions:** The tool must strictly request and utilize only local file system permissions required for the `lib/` and target config directories. It must never inadvertently expose local environment variables or private keys.
 * **Gatekeeper/Defender Readiness:** macOS binaries may require Apple Notarization, and Windows binaries may require signing to prevent OS-level security warnings from blocking execution.
 
 ## Functional Requirements
 
 ### Repository Management
 * **FR1:** The system can read a local manifest file (e.g., `repos.json`) containing a list of remote repository URLs.
-* **FR2:** The CLI can download (clone) remote repositories from the manifest into a local `src/` directory.
+* **FR2:** The CLI can download (clone) remote repositories from the manifest into a local `lib/` directory.
 * **FR3:** The CLI can detect if a repository has already been downloaded to prevent redundant fetching operations.
 * **FR4:** The CLI can pull the latest updates for previously downloaded repositories.
 
 ### Skill Synchronization
-* **FR5:** The CLI can locate and identify valid skill directories within the local `src/` folder.
+* **FR5:** The CLI can locate and identify valid skill directories within the local `lib/` folder.
 * **FR6:** The CLI can synchronize (copy or link) discovered skills into a targeted destination directory (e.g., `~/.agent/skills/`).
 * **FR7:** The CLI can safely overwrite or update existing skills in the target directory using atomic file operations to prevent data corruption.
 * **FR8:** The user can specify a custom absolute or relative destination path for the synchronization process via command parameters.
@@ -177,7 +177,7 @@ The core differentiator is the intersection of massive skill scale, BMAD-pattern
 
 ### Security
 * **Supply Chain Validation:** Any native binaries downloaded dynamically by the NPM/JS wrapper must undergo a **SHA-256 checksum verification** against a static manifest before execution, ensuring users aren't exposed to MITM injection hacks.
-* **File System Boundaries:** The executable must implicitly restrict file I/O modification operations purely to the explicitly targeted directories (`.agent/skills`, `src/`) and never attempt to modify system directories.
+* **File System Boundaries:** The executable must implicitly restrict file I/O modification operations purely to the explicitly targeted directories (`.agent/skills`, `lib/`) and never attempt to modify system directories.
 * **Execution Privileges:** The process must never demand or require elevated permissions (`sudo` or Windows Run as Administrator) to function correctly.
 
 ### Portability & Reliability

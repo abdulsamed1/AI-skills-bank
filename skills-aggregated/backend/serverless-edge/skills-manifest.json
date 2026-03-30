@@ -1,54 +1,54 @@
 {
-  "generated_at_unix": 1774888953,
+  "generated_at_unix": 1774892583,
   "hub": "backend",
   "skills": [
     {
-      "description": "Proper Lambda function structure with error handling",
-      "phase": 2,
-      "score": 11,
-      "skill_id": "aws-serverless",
-      "src_path": "src/antigravity-awesome-skills/plugins/antigravity-bundle-devops-cloud/skills/aws-serverless/SKILL.md",
-      "triggers": "aws;serverless"
-    },
-    {
-      "description": "Expert in Cloudflare Workers and the Edge Computing ecosystem. Covers Wrangler, KV, D1, Durable Objects, and R2 storage.",
-      "phase": 2,
-      "score": 11,
-      "skill_id": "cloudflare-workers-expert",
-      "src_path": "src/antigravity-awesome-skills/skills/cloudflare-workers-expert/SKILL.md",
-      "triggers": "cloudflare;workers;expert"
-    },
-    {
-      "description": "Performing security reviews of serverless functions across AWS Lambda, Azure Functions, and GCP Cloud Functions to identify overly permissive execution roles, insecure environment variables, injection vulnerabilities, and missing runtime protections.",
-      "phase": 2,
-      "score": 11,
-      "skill_id": "performing-serverless-function-security-review",
-      "src_path": "src/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-serverless-function-security-review/SKILL.md",
-      "triggers": "performing;serverless;function;security;review"
-    },
-    {
       "description": "Actorization converts existing software into reusable serverless applications compatible with the Apify platform. Actors are programs packaged as Docker images that accept well-defined JSON input, perform an action, and optionally produce structured JSON output.",
-      "phase": 2,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "apify-actorization",
-      "src_path": "src/antigravity-awesome-skills/skills/apify-actorization/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/skills/apify-actorization/SKILL.md",
       "triggers": "apify;actorization"
     },
     {
       "description": "AWS Aurora Serverless v2, RDS Proxy, Data API, connection pooling",
-      "phase": 2,
-      "score": 7,
+      "phase": 4,
+      "score": 100,
       "skill_id": "aws-aurora",
-      "src_path": "src/alinaqi-claude-bootstrap/skills/aws-aurora/SKILL.md",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/aws-aurora/SKILL.md",
       "triggers": "aws;aurora"
     },
     {
+      "description": "Proper Lambda function structure with error handling",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "aws-serverless",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-devops-cloud/skills/aws-serverless/SKILL.md",
+      "triggers": "aws;serverless"
+    },
+    {
       "description": "Assess and migrate cross-cloud workloads to Azure with migration reports and code conversion guidance. Supports AWS, GCP, and other providers. WHEN: migrate Lambda to Azure Functions, migrate AWS to Azure, Lambda migration assessment, convert AWS serverless to Azure, migration readiness report, migrate from AWS, migrate from GCP, cross-cloud migration.",
-      "phase": 2,
-      "score": 6,
+      "phase": 5,
+      "score": 100,
       "skill_id": "azure-cloud-migrate",
-      "src_path": "src/microsoft-skills/.github/plugins/azure-skills/skills/azure-cloud-migrate/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-cloud-migrate/SKILL.md",
       "triggers": "azure;cloud;migrate"
+    },
+    {
+      "description": "Expert in Cloudflare Workers and the Edge Computing ecosystem. Covers Wrangler, KV, D1, Durable Objects, and R2 storage.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "cloudflare-workers-expert",
+      "src_path": "lib/antigravity-awesome-skills/skills/cloudflare-workers-expert/SKILL.md",
+      "triggers": "cloudflare;workers;expert"
+    },
+    {
+      "description": "Performing security reviews of serverless functions across AWS Lambda, Azure Functions, and GCP Cloud Functions to identify overly permissive execution roles, insecure environment variables, injection vulnerabilities, and missing runtime protections.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "performing-serverless-function-security-review",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-serverless-function-security-review/SKILL.md",
+      "triggers": "performing;serverless;function;security;review"
     }
   ],
   "sub_hub": "serverless-edge",

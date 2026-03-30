@@ -176,7 +176,7 @@ function Convert-RoutingCsvToAbsolute {
             $srcPath = [string]$row.src_path
             if ([string]::IsNullOrWhiteSpace($srcPath)) { continue }
             if ($srcPath -match '^[A-Za-z]:/') { continue }
-            if ($srcPath -notmatch '^src/') { continue }
+            if ($srcPath -notmatch '^lib/') { continue }
 
             $absolute = Join-Path $SkillManageRoot ($srcPath -replace '/', '\\')
             $normalized = ($absolute -replace '\\', '/') -replace '/+', '/'

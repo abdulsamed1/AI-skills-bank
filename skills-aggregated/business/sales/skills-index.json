@@ -1,15 +1,14 @@
 {
-  "count": 8,
+  "count": 7,
   "hub": "business",
   "skills": [
-    "sales-enablement",
     "case-study-builder",
     "linkedin-cli",
-    "nda-triage-anthropic",
     "odoo-sales-crm-expert",
     "sales-automator",
-    "value-prop-statements",
-    "salesforce-automation"
+    "sales-enablement",
+    "salesforce-automation",
+    "value-prop-statements"
   ],
   "sub_hub": "sales"
 }

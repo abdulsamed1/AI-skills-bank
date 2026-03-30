@@ -24,7 +24,7 @@ async fn test_sync_logic() -> Result<(), Box<dyn std::error::Error>> {
     let progress = Arc::new(ProgressManager::new(false, false, Arc::new(Theme::new())));
     let syncer = Syncer::new(progress);
 
-    // Change current directory to include src/ (we'd need to mock the path in Syncer)
+    // Change current directory to include lib/ (we'd need to mock the path in Syncer)
     // Actually, let's modify Syncer to accept src_path if needed, or just rely on manual verification for now.
     // Wait, Syncer uses Path::new("src"). Let's try to create a "src" folder in the current dir for the test.
 
