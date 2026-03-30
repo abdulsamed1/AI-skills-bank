@@ -79,18 +79,18 @@ impl Check for ManifestExistsCheck {
 struct SourceDirCheck;
 impl Check for SourceDirCheck {
     fn name(&self) -> &str {
-        "Repository Cache (src/)"
+        "Repository Cache (lib/)"
     }
     fn run(&self) -> DiagnosticStatus {
-        if Path::new("src").is_dir() {
+        if Path::new("lib").is_dir() || Path::new("src").is_dir() {
             DiagnosticStatus::Pass
         } else {
             DiagnosticStatus::Fail {
                 issues: vec![DiagnosticIssue {
-                    description: "src/ directory not found".to_string(),
+                    description: "lib/ directory not found".to_string(),
                     location: None,
                     current: None,
-                    should_be: Some("src/ directory containing git clones".to_string()),
+                    should_be: Some("lib/ directory containing git clones".to_string()),
                     why: "The source directory acts as a local cache for all skills".to_string(),
                 }],
                 fix: "Run 'fetch' to download skills".to_string(),
@@ -231,7 +231,10 @@ impl Check for RepoIntegrityCheck {
         let missing: Vec<String> = manifest
             .repositories
             .par_iter()
-            .filter(|repo| !Path::new("src").join(&repo.name).exists())
+            .filter(|repo| {
+                !Path::new("lib").join(&repo.name).exists()
+                    && !Path::new("src").join(&repo.name).exists()
+            })
             .map(|repo| repo.name.clone())
             .collect();
 
@@ -241,9 +244,9 @@ impl Check for RepoIntegrityCheck {
             DiagnosticStatus::Fail {
                 issues: vec![DiagnosticIssue {
                     description: format!("{} missing repositories", missing.len()),
-                    location: Some("src/ directory".to_string()),
+                    location: Some("lib/ directory".to_string()),
                     current: Some(format!("Missing: {}", missing.join(", "))),
-                    should_be: Some("All repos from manifest present in src/".to_string()),
+                    should_be: Some("All repos from manifest present in lib/ (legacy src/ accepted)".to_string()),
                     why: "Skills must be locally cached before they can be synchronized or routed"
                         .to_string(),
                 }],

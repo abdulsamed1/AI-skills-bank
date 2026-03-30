@@ -844,7 +844,7 @@ fn write_native_artifacts(
 
     let mut repo_objs = Vec::new();
     for name in repo_names.into_iter() {
-        let repo_dir = repo_root.join("src").join(&name);
+        let repo_dir = resolve_repo_dir(repo_root, &name);
         if let Some(git) = compute_git_info(&repo_dir) {
             repo_objs.push(json!({"name": name, "git": git}));
         } else {
@@ -909,6 +909,20 @@ fn write_csv_atomic<T: Serialize>(path: &Path, rows: &[T]) -> Result<(), SkillMa
     write_file_atomic(path, &data)
 }
 
+fn resolve_repo_dir(repo_root: &Path, repo_name: &str) -> PathBuf {
+    let lib_dir = repo_root.join("lib").join(repo_name);
+    if lib_dir.exists() {
+        return lib_dir;
+    }
+
+    let src_dir = repo_root.join("src").join(repo_name);
+    if src_dir.exists() {
+        return src_dir;
+    }
+
+    lib_dir
+}
+
 fn skill_repo_name(skill_path: &Path) -> Option<String> {
     let components = skill_path
         .components()
@@ -916,7 +930,10 @@ fn skill_repo_name(skill_path: &Path) -> Option<String> {
         .collect::<Vec<_>>();
 
     for idx in 0..components.len() {
-        if components[idx].eq_ignore_ascii_case("src") && idx + 1 < components.len() {
+        if (components[idx].eq_ignore_ascii_case("src")
+            || components[idx].eq_ignore_ascii_case("lib"))
+            && idx + 1 < components.len()
+        {
             return Some(components[idx + 1].clone());
         }
     }
