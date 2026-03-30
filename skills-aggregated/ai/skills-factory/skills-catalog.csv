@@ -1,0 +1,14 @@
+skill_id,description,score,phase
+skill-check,"Validate Claude Code skills against the agentskills specification. Catches structural, semantic, and naming issues before users do.",95,4
+skill-creator,"To create new CLI skills following Anthropic's official best practices with zero manual configuration. This skill automates brainstorming, template application, validation, and installation processes while maintaining progressive disclosure patterns and writing style standards.",95,4
+skill-creator-ms,Guide for creating effective skills for AI coding agents working with Azure SDKs and Microsoft Foundry services. Use when creating new skills or updating existing skills.,95,4
+skill-developer,"Comprehensive guide for creating and managing skills in Claude Code with auto-activation system, following Anthropic's official best practices including the 500-line rule and progressive disclosure pattern.",95,4
+skill-improver,"Iteratively improve a Claude Code skill using the skill-reviewer agent until it meets quality standards. Use when improving a skill with multiple quality issues, iterating on a new skill until it meets standards, or automated fix-review cycles instead of manual editing.",95,4
+skill-installer,"Instala, valida, registra e verifica novas skills no ecossistema. 10 checks de seguranca, copia, registro no orchestrator e verificacao pos-instalacao.",95,4
+skill-rails-upgrade,Analyze Rails apps and provide upgrade assessments,95,4
+skill-router,Use when the user is unsure which skill to use or where to start. Interviews the user with targeted questions and recommends the best skill(s) from the installed library for their goal.,95,4
+skill-scanner,"Scan agent skills for security issues before adoption. Detects prompt injection, malicious code, excessive permissions, secret exposure, and supply chain risks.",95,4
+skill-seekers,"-Automatically convert documentation websites, GitHub repositories, and PDFs into Claude AI skills in minutes.",95,4
+skill-sentinel,"Auditoria e evolucao do ecossistema de skills. Qualidade de codigo, seguranca, custos, gaps, duplicacoes, dependencias e relatorios de saude.",95,4
+skill-writer,"Create and improve agent skills following the Agent Skills specification. Use when asked to create, write, or update skills.",95,4
+writing-skills,"Use when creating, updating, or improving agent skills.",95,4

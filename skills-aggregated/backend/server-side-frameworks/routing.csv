@@ -1,0 +1,6 @@
+skill_id,description,src_path
+cc-skill-backend-patterns,"Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes.",lib/antigravity-awesome-skills/skills/cc-skill-backend-patterns/SKILL.md
+django-access-review,django-access-review,lib/antigravity-awesome-skills/skills/django-access-review/SKILL.md
+nodejs-backend,"Node.js backend patterns with Express/Fastify, repositories",lib/alinaqi-claude-bootstrap/skills/nodejs-backend/SKILL.md
+paypal-integration,"Master PayPal payment integration including Express Checkout, IPN handling, recurring billing, and refund workflows.",lib/antigravity-awesome-skills/plugins/antigravity-bundle-commerce-payments/skills/paypal-integration/SKILL.md
+supabase-node,Express/Hono with Supabase and Drizzle ORM,lib/alinaqi-claude-bootstrap/skills/supabase-node/SKILL.md

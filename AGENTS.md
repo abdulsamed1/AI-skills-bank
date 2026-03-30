@@ -35,15 +35,6 @@ Each routing CSV has this schema:
 skill_id,description,src_path
 ```
 
-**Columns:**
-
-| Column | Purpose | Example |
-|--------|---------|---------|
-| `skill_id` | Unique skill identifier | `bmad-quick-dev` |
-| `description` | Short description (preview) | `Implements any user intent, requirement, story...` |
-| `src_path` | Authoritative source path | `c:\Users\ASUS\production\.copilot\skills\programming\SKILL.md` |
-
-**Important:** The `description` in routing.csv is a **preview only**. For full documentation, agents MUST load the complete SKILL.md from `src_path`.
 
 ---
 
@@ -160,11 +151,11 @@ Agents may cache skill metadata locally to reduce file I/O:
 
 ```json
 {
-  "skill_id": "bmad-quick-dev",
+  "skill_id": "quick-dev",
   "cached_at": "2026-03-30T12:00:00Z",
   "ttl_seconds": 3600,
   "frontmatter": {
-    "name": "bmad-quick-dev",
+    "name": "-quick-dev",
     "description": "Implements any user intent...",
     "allowed-tools": ["read", "write", "search"]
   }
@@ -187,7 +178,7 @@ For faster discovery, agents may load `skills-index.json` to get a pre-indexed v
   "total_skills": 42,
   "skills": [
     {
-      "skill_id": "bmad-distillator",
+      "skill_id": "-distillator",
       "description": "Lossless LLM-optimized compression...",
       "src_path": "..."
     }
@@ -291,26 +282,6 @@ If a skill_id in routing.csv no longer exists in lib/:
 2. Reload and validate
 3. If still missing, remove from local cache
 4. Mark skill as stale
-
----
-
-## Hub/Sub-Hub Organization
-
-### Current Structure (as of aggregation)
-
-**Hubs:** 9 total
-
-| Hub | Sub-Hubs | Purpose |
-|-----|----------|---------|
-| **ai** | llm-agents, prompting-builder, ml-training, data-processing | LLM & ML workflows |
-| **backend** | api-design, databases, microservices, caching, message-queues, ci-cd, containerization, serverless-edge | Backend infrastructure & services |
-| **business** | product-strategy, product, sales, operations | Product & business ops |
-| **design** | ui-ux, css-styling, ux, design-systems | Design & UX |
-| **frontend** | frameworks, state-management | Frontend development |
-| **marketing** | strategy, content, email, seo, social-media, analytics | Marketing & growth |
-| **mobile** | cross-platform, ios, android | Mobile development |
-| **programming** | typescript, python, rust, golang, java | Programming languages & paradigms |
-| **testing** | automation, unit-testing, e2e-testing, performance-testing, security | Testing & QA |
 
 ---
 

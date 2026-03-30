@@ -2,16 +2,11 @@
   "version": 1,
   "repo_root": "C:\\Users\\ASUS\\production\\skill-manage",
   "workspace_root": "C:\\Users\\ASUS\\production",
-  "sync_scope": "both",
+  "sync_scope": "global",
   "tools": [
-    "claude",
-    "code",
     "copilot",
-    "cursor",
     "gemini",
-    "antigravity",
-    "opencode",
-    "windsurf"
+    "antigravity"
   ],
   "repositories": [
     "https://github.com/supabase/agent-skills.git",
@@ -124,5 +119,11 @@
     "https://github.com/zscole/model-hierarchy-skill.git",
     "https://github.com/zw008/VMware-AIops.git",
     "https://github.com/zxkane/aws-skills.git"
+  ],
+  "category_exclusions": [
+    "games",
+    "medicine",
+    "law",
+    "game"
   ]
 }

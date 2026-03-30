@@ -1,0 +1,12 @@
+{
+  "count": 5,
+  "hub": "backend",
+  "skills": [
+    "cc-skill-backend-patterns",
+    "django-access-review",
+    "nodejs-backend",
+    "paypal-integration",
+    "supabase-node"
+  ],
+  "sub_hub": "server-side-frameworks"
+}

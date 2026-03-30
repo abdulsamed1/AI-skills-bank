@@ -1,30 +1,38 @@
 {
-  "generated_at_unix": 1774892583,
+  "generated_at_unix": 1774912689,
   "hub": "backend",
   "skills": [
     {
-      "description": "Parses API Gateway access logs (AWS API Gateway, Kong, Nginx) to detect BOLA/IDOR attacks, rate limit bypass, credential scanning, and injection attempts. Uses pandas for statistical analysis of request patterns and anomaly detection. Use when investigating API abuse or building API-specific threat detection rules.",
+      "description": "Expert patterns for Algolia search implementation, indexing strategies, React InstantSearch, and relevance tuning Use when: adding search to, algolia, instantsearch, search api, search functionality.",
       "phase": 2,
       "score": 100,
-      "skill_id": "analyzing-api-gateway-access-logs",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-api-gateway-access-logs/SKILL.md",
-      "triggers": "analyzing;api;gateway;access;logs"
+      "skill_id": "algolia-search",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-commerce-payments/skills/algolia-search/SKILL.md",
+      "triggers": "algolia;search"
+    },
+    {
+      "description": "Access real-time and historical stock market data, forex rates, cryptocurrency prices, commodities, economic indicators, and 50+ technical indicators via the Alpha Vantage API. Use when fetching stock prices (OHLCV), company fundamentals (income statement, balance sheet, cash flow), earnings, options data, market news/sentiment, insider transactions, GDP, CPI, treasury yields, gold/silver/oil prices, Bitcoin/crypto prices, forex exchange rates, or calculating technical indicators (SMA, EMA, MACD, RSI, Bollinger Bands). Requires a free API key from alphavantage.co.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "alpha-vantage",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/alpha-vantage/SKILL.md",
+      "triggers": "alpha;vantage"
+    },
+    {
+      "description": "Detect abnormal access patterns in AWS S3, GCS, and Azure Blob Storage by analyzing CloudTrail Data Events, GCS audit logs, and Azure Storage Analytics. Identifies after-hours bulk downloads, access from new IP addresses, unusual API calls (GetObject spikes), and potential data exfiltration using statistical baselines and time-series anomaly detection.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "analyzing-cloud-storage-access-patterns",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-cloud-storage-access-patterns/SKILL.md",
+      "triggers": "analyzing;cloud;storage;access"
     },
     {
       "description": "Executes malware samples in Cuckoo Sandbox to observe runtime behavior including process creation, file system modifications, registry changes, network communications, and API calls. Generates comprehensive behavioral reports for malware classification and IOC extraction. Activates for requests involving dynamic malware analysis, sandbox detonation, behavioral analysis, or automated malware execution.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "analyzing-malware-behavior-with-cuckoo-sandbox",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-malware-behavior-with-cuckoo-sandbox/SKILL.md",
-      "triggers": "analyzing;malware;behavior;with;cuckoo"
-    },
-    {
-      "description": "Use the Malpedia platform and API to research malware family relationships, track variant evolution, link families to threat actors, and integrate YARA rules for detection across malware lineages.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "analyzing-malware-family-relationships-with-malpedia",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-malware-family-relationships-with-malpedia/SKILL.md",
-      "triggers": "analyzing;malware;family;relationships;with"
+      "triggers": "malware;dynamic-analysis;sandbox;Cuckoo;behavioral-analysis"
     },
     {
       "description": "Master REST and GraphQL API design principles to build intuitive, scalable, and maintainable APIs that delight developers and stand the test of time.",
@@ -44,7 +52,7 @@
     },
     {
       "description": "Generate comprehensive, developer-friendly API documentation from code, including endpoints, parameters, examples, and best practices",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "api-documentation-generator",
       "src_path": "lib/antigravity-awesome-skills/skills/api-documentation-generator/SKILL.md",
@@ -68,7 +76,7 @@
     },
     {
       "description": "Provide comprehensive techniques for testing REST, SOAP, and GraphQL APIs during bug bounty hunting and penetration testing engagements. Covers vulnerability discovery, authentication bypass, IDOR exploitation, and API-specific attack vectors.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "api-fuzzing-bug-bounty",
       "src_path": "lib/antigravity-awesome-skills/skills/api-fuzzing-bug-bounty/SKILL.md",
@@ -76,15 +84,23 @@
     },
     {
       "description": "API design principles and decision-making. REST vs GraphQL vs tRPC selection, response formats, versioning, pagination.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "api-patterns",
       "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-full-stack-developer/skills/api-patterns/SKILL.md",
       "triggers": "api;patterns"
     },
     {
+      "description": "Implement secure API design patterns including authentication, authorization, input validation, rate limiting, and protection against common API vulnerabilities",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "api-security-best-practices",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-security-developer/skills/api-security-best-practices/SKILL.md",
+      "triggers": "api;security;best;practices"
+    },
+    {
       "description": "API security testing workflow for REST and GraphQL APIs covering authentication, authorization, rate limiting, input validation, and security best practices.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "api-security-testing",
       "src_path": "lib/antigravity-awesome-skills/skills/api-security-testing/SKILL.md",
@@ -92,35 +108,35 @@
     },
     {
       "description": "api server mcp",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "api-server-mcp",
       "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/skills/api-server-mcp/SKILL.md",
       "triggers": "api;server;mcp"
     },
     {
-      "description": "Scrape reviews, ratings, and brand mentions from multiple platforms using Apify Actors.",
-      "phase": 4,
+      "description": "You are an API mocking expert specializing in realistic mock services for development, testing, and demos. Design mocks that simulate real API behavior and enable parallel development.",
+      "phase": 2,
       "score": 100,
-      "skill_id": "apify-brand-reputation-monitoring",
-      "src_path": "lib/antigravity-awesome-skills/skills/apify-brand-reputation-monitoring/SKILL.md",
-      "triggers": "apify;brand;reputation;monitoring"
-    },
-    {
-      "description": "Scrape leads from multiple platforms using Apify Actors.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "apify-lead-generation",
-      "src_path": "lib/antigravity-awesome-skills/skills/apify-lead-generation/SKILL.md",
-      "triggers": "apify;lead;generation"
+      "skill_id": "api-testing-observability-api-mock",
+      "src_path": "lib/antigravity-awesome-skills/skills/api-testing-observability-api-mock/SKILL.md",
+      "triggers": "api;testing;observability;api;mock"
     },
     {
       "description": "Deploy web apps with backend APIs, database, and file storage. Use when the user asks to deploy or publish a website or web app and wants a public URL. Uses HTTP API via curl.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "appdeploy",
       "src_path": "lib/antigravity-awesome-skills/skills/appdeploy/SKILL.md",
       "triggers": "appdeploy"
+    },
+    {
+      "description": "Search and retrieve preprints from arXiv via the Atom API. Use this skill when searching for papers in physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering, or economics by keywords, authors, arXiv IDs, date ranges, or categories.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "arxiv-database",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/arxiv-database/SKILL.md",
+      "triggers": "arxiv;database"
     },
     {
       "description": "Create a new App Store Connect app record via browser automation. Use when there is no public API for app creation and you need an agent to drive the New App form.",
@@ -129,6 +145,14 @@
       "skill_id": "asc-app-create-ui",
       "src_path": "lib/rudrankriyam-app-store-connect-cli-skills/skills/asc-app-create-ui/SKILL.md",
       "triggers": "asc;app;create;ui"
+    },
+    {
+      "description": "Monitors Certificate Transparency (CT) logs to detect unauthorized certificate issuance, discover subdomains via CT data, and alert on suspicious certificate activity for owned domains. Uses the crt.sh API and direct CT log querying based on RFC 6962 to build continuous monitoring pipelines that catch rogue certificates, track CA behavior, and map the external attack surface. Activates for requests involving certificate transparency monitoring, CT log auditing, subdomain discovery via certificates, or certificate issuance alerting.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "auditing-tls-certificate-transparency-logs",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/auditing-tls-certificate-transparency-logs/SKILL.md",
+      "triggers": "certificate-transparency;CT-logs;crt-sh;subdomain-discovery;TLS-monitoring;RFC-6962"
     },
     {
       "description": "Autonomous research review loop using any OpenAI-compatible LLM API. Configure via llm-chat MCP server or environment variables. Trigger with \"auto review loop llm\" or \"llm review\".",
@@ -147,6 +171,14 @@
       "triggers": "auto;review;loop;minimax"
     },
     {
+      "description": "AWS Aurora Serverless v2, RDS Proxy, Data API, connection pooling",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "aws-aurora",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/aws-aurora/SKILL.md",
+      "triggers": "aws;aurora"
+    },
+    {
       "description": "AWS serverless and event-driven architecture expert based on Well-Architected Framework. Use when building serverless APIs, Lambda functions, REST APIs, microservices, or async workflows. Covers Lambda with TypeScript/Python, API Gateway (REST/HTTP), DynamoDB, Step Functions, EventBridge, SQS, SNS, and serverless patterns. Essential when user mentions serverless, Lambda, API Gateway, event-driven, async processing, queues, pub/sub, or wants to build scalable serverless applications with AWS best practices.",
       "phase": 2,
       "score": 100,
@@ -156,7 +188,7 @@
     },
     {
       "description": "Text and document translation with REST-style clients.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "azure-ai-translation-ts",
       "src_path": "lib/antigravity-awesome-skills/skills/azure-ai-translation-ts/SKILL.md",
@@ -164,15 +196,31 @@
     },
     {
       "description": "Configure Azure API Management as an AI Gateway for AI models, MCP tools, and agents. WHEN: semantic caching, token limit, content safety, load balancing, AI model governance, MCP rate limiting, jailbreak detection, add Azure OpenAI backend, add AI Foundry model, test AI gateway, LLM policies, configure AI backend, token metrics, AI cost control, convert API to MCP, import OpenAPI to gateway.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "azure-aigateway",
       "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-aigateway/SKILL.md",
       "triggers": "azure;aigateway"
     },
     {
+      "description": "Azure Cosmos DB SDK for Rust (NoSQL API). Use for document CRUD, queries, containers, and globally distributed data.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "azure-cosmos-rust",
+      "src_path": "lib/antigravity-awesome-skills/skills/azure-cosmos-rust/SKILL.md",
+      "triggers": "azure;cosmos;rust"
+    },
+    {
+      "description": "Build table storage applications using the Azure Tables SDK for Java. Works with both Azure Table Storage and Cosmos DB Table API.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "azure-data-tables-java",
+      "src_path": "lib/antigravity-awesome-skills/skills/azure-data-tables-java/SKILL.md",
+      "triggers": "azure;data;tables;java"
+    },
+    {
       "description": "Manage Azure DevOps projects, work items, repos, PRs, pipelines, wikis, test plans, security alerts, variable groups, environments/approvals, branch policies, and attachments. Use when user asks to: manage sprints, create/update work items, list repos, create PRs, run pipelines, search code, manage wiki pages, check security alerts, manage variable groups, approve deployments, or configure branch policies. Covers 13 domains with 99 tools via REST API.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "azure-devops",
       "src_path": "lib/sanjay3290-ai-skills/skills/azure-devops/SKILL.md",
@@ -187,8 +235,16 @@
       "triggers": "azure;hosted;copilot;sdk"
     },
     {
+      "description": "Azure Key Vault Secrets SDK for Rust. Use for storing and retrieving secrets, passwords, and API keys. Triggers: \"keyvault secrets rust\", \"SecretClient rust\", \"get secret rust\", \"set secret rust\".",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "azure-keyvault-secrets-rust",
+      "src_path": "lib/antigravity-awesome-skills/skills/azure-keyvault-secrets-rust/SKILL.md",
+      "triggers": "azure;keyvault;secrets;rust"
+    },
+    {
       "description": "Azure API Center SDK for .NET. Centralized API inventory management with governance, versioning, and discovery.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "azure-mgmt-apicenter-dotnet",
       "src_path": "lib/antigravity-awesome-skills/skills/azure-mgmt-apicenter-dotnet/SKILL.md",
@@ -196,27 +252,35 @@
     },
     {
       "description": "Azure Resource Manager SDK for API Management in .NET.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "azure-mgmt-apimanagement-dotnet",
       "src_path": "lib/antigravity-awesome-skills/skills/azure-mgmt-apimanagement-dotnet/SKILL.md",
       "triggers": "azure;mgmt;apimanagement;dotnet"
     },
     {
-      "description": "X-ray any AI model's behavioral patterns — refusal boundaries, hallucination tendencies, reasoning style, formatting defaults. No API key needed.",
-      "phase": 4,
+      "description": "Azure Speech to Text REST API for short audio (Python). Use for simple speech recognition of audio files up to 60 seconds without the Speech SDK.",
+      "phase": 2,
       "score": 100,
-      "skill_id": "bdistill-behavioral-xray",
-      "src_path": "lib/antigravity-awesome-skills/skills/bdistill-behavioral-xray/SKILL.md",
-      "triggers": "bdistill;behavioral;xray"
+      "skill_id": "azure-speech-to-text-rest-py",
+      "src_path": "lib/antigravity-awesome-skills/skills/azure-speech-to-text-rest-py/SKILL.md",
+      "triggers": "azure;speech;to;text;rest"
+    },
+    {
+      "description": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "backend-architect",
+      "src_path": "lib/antigravity-awesome-skills/skills/backend-architect/SKILL.md",
+      "triggers": "backend;architect"
     },
     {
       "description": "Extract structured domain knowledge from AI models in-session or from local open-source models via Ollama. No API key needed.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "bdistill-knowledge-extraction",
       "src_path": "lib/antigravity-awesome-skills/skills/bdistill-knowledge-extraction/SKILL.md",
-      "triggers": "bdistill;knowledge;extraction"
+      "triggers": "ai;knowledge-extraction;domain-specific;data-moat;mcp;reference-data"
     },
     {
       "description": "Benchling R&D platform integration. Access registry (DNA, proteins), inventory, ELN entries, workflows via API, build Benchling Apps, query Data Warehouse, for lab data management automation.",
@@ -227,36 +291,52 @@
       "triggers": "benchling;integration"
     },
     {
-      "description": "Diagnose SaaS business health across growth, retention, efficiency, and capital. Use when preparing a business review or prioritizing urgent fixes.",
-      "phase": 4,
+      "description": "Unified Python interface to 40+ bioinformatics services. Use when querying multiple databases (UniProt, KEGG, ChEMBL, Reactome) in a single workflow with consistent API. Best for cross-database analysis, ID mapping across services. For quick single-database lookups use gget; for sequence/file manipulation use biopython.",
+      "phase": 2,
       "score": 100,
-      "skill_id": "business-health-diagnostic",
-      "src_path": "lib/Product-Manager-Skills/skills/business-health-diagnostic/SKILL.md",
-      "triggers": "business;health;diagnostic"
+      "skill_id": "bioservices",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/bioservices/SKILL.md",
+      "triggers": "bioservices"
     },
     {
-      "description": "Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes.",
-      "phase": 4,
+      "description": "Access BRENDA enzyme database via SOAP API. Retrieve kinetic parameters (Km, kcat), reaction equations, organism data, and substrate-specific enzyme information for biochemical research and metabolic pathway analysis.",
+      "phase": 2,
       "score": 100,
-      "skill_id": "cc-skill-backend-patterns",
-      "src_path": "lib/antigravity-awesome-skills/skills/cc-skill-backend-patterns/SKILL.md",
-      "triggers": "cc;skill;backend;patterns"
+      "skill_id": "brenda-database",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/brenda-database/SKILL.md",
+      "triggers": "brenda;database"
     },
     {
       "description": "Open-source embedding database for AI applications. Store embeddings and metadata, perform vector and full-text search, filter by metadata. Simple 4-function API. Scales from notebooks to production clusters. Use for semantic search, RAG applications, or document retrieval. Best for local development and open-source projects.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "chroma",
       "src_path": "lib/Orchestra-Research-AI-research-SKILLs/15-rag/chroma/SKILL.md",
-      "triggers": "chroma"
+      "triggers": "RAG;Chroma;Vector Database;Embeddings;Semantic Search;Open Source;Self-Hosted;Document Retrieval;Metadata Filtering"
     },
     {
       "description": "Score any MCP server, API, or CLI for agent-readiness using Clarvia AEO (Agent Experience Optimization). Search 15,400+ indexed tools before adding them to your workflow.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "clarvia-aeo-check",
       "src_path": "lib/antigravity-awesome-skills/skills/clarvia-aeo-check/SKILL.md",
-      "triggers": "clarvia;aeo;check"
+      "triggers": "mcp;aeo;tool-quality;agent-readiness;api-scoring;clarvia"
+    },
+    {
+      "description": "Build apps with the Claude API or Anthropic SDK. TRIGGER when: code imports `anthropic`/`@anthropic-ai/sdk`/`claude_agent_sdk`, or user asks to use Claude API, Anthropic SDKs, or Agent SDK. DO NOT TRIGGER when: code imports `openai`/other AI SDK, general programming, or ML/data-science tasks.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "claude-api",
+      "src_path": "lib/antigravity-awesome-skills/skills/claude-api/SKILL.md",
+      "triggers": "claude;api"
+    },
+    {
+      "description": "Query ClinicalTrials.gov via API v2. Search trials by condition, drug, location, status, or phase. Retrieve trial details by NCT ID, export data, for clinical research and patient matching.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "clinicaltrials-database",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/clinicaltrials-database/SKILL.md",
+      "triggers": "clinicaltrials;database"
     },
     {
       "description": "You are a documentation expert specializing in creating comprehensive, maintainable documentation from code. Generate API docs, architecture diagrams, user guides, and technical references using AI-powered analysis and industry best practices.",
@@ -267,20 +347,12 @@
       "triggers": "code;documentation;doc;generate"
     },
     {
-      "description": "Use when working with code refactoring context restore",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "code-refactoring-context-restore",
-      "src_path": "lib/antigravity-awesome-skills/skills/code-refactoring-context-restore/SKILL.md",
-      "triggers": "code;refactoring;context;restore"
-    },
-    {
       "description": "REST API gateway for ComfyUI servers. Workflow management, job queuing, webhooks, caching, auth, rate limiting, and image delivery (URL + base64).",
       "phase": 2,
       "score": 100,
       "skill_id": "comfyui-gateway",
       "src_path": "lib/antigravity-awesome-skills/skills/comfyui-gateway/SKILL.md",
-      "triggers": "comfyui;gateway"
+      "triggers": "comfyui;api-gateway;image-generation;typescript"
     },
     {
       "description": "Conducts security testing of REST, GraphQL, and gRPC APIs to identify vulnerabilities in authentication, authorization, rate limiting, input validation, and business logic. The tester uses the OWASP API Security Top 10 as the testing framework, combining Burp Suite interception with Postman collections and custom scripts to test endpoint security at every privilege level. Activates for requests involving API security testing, REST API pentest, GraphQL security assessment, or API vulnerability testing.",
@@ -288,35 +360,19 @@
       "score": 100,
       "skill_id": "conducting-api-security-testing",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/conducting-api-security-testing/SKILL.md",
-      "triggers": "conducting;api;security;testing"
+      "triggers": "API-security;OWASP-API-Top10;REST;GraphQL;authorization-testing"
     },
     {
-      "description": "Manage track lifecycle: archive, restore, delete, rename, and cleanup",
-      "phase": 4,
+      "description": "Automatically fetch latest library/framework documentation for Claude Code via Context7 API. Use when you need up-to-date documentation for libraries and frameworks or asking about React, Next.js, Prisma, or any other popular library.",
+      "phase": 2,
       "score": 100,
-      "skill_id": "conductor-manage",
-      "src_path": "lib/antigravity-awesome-skills/skills/conductor-manage/SKILL.md",
-      "triggers": "conductor;manage"
-    },
-    {
-      "description": "Centralized API key management from Access.txt",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "credentials",
-      "src_path": "lib/alinaqi-claude-bootstrap/skills/credentials/SKILL.md",
-      "triggers": "credentials"
-    },
-    {
-      "description": "Codified expertise for customs documentation, tariff classification, duty optimisation, restricted party screening, and regulatory compliance across multiple jurisdictions.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "customs-trade-compliance",
-      "src_path": "lib/antigravity-awesome-skills/skills/customs-trade-compliance/SKILL.md",
-      "triggers": "customs;trade;compliance"
+      "skill_id": "context7-auto-research",
+      "src_path": "lib/antigravity-awesome-skills/skills/context7-auto-research/SKILL.md",
+      "triggers": "context7;auto;research"
     },
     {
       "description": "Generate multiple radically different interface designs for a module using parallel sub-agents. Use when user wants to design an API, explore interface options, compare module shapes, or mentions \"design it twice\".",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "design-an-interface",
       "src_path": "lib/mattpocock-skills/design-an-interface/SKILL.md",
@@ -324,63 +380,39 @@
     },
     {
       "description": "Detect and prevent API enumeration attacks including BOLA and IDOR exploitation by monitoring sequential identifier access patterns and authorization failures.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "detecting-api-enumeration-attacks",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-api-enumeration-attacks/SKILL.md",
-      "triggers": "detecting;api;enumeration;attacks"
+      "triggers": "api-security;enumeration;bola;idor;broken-object-level-authorization;owasp-api-top-10;access-control;rate-limiting"
     },
     {
-      "description": "Detect unusual API call patterns in AWS CloudTrail logs using boto3, statistical baselining, and behavioral analysis to identify credential compromise, privilege escalation, and unauthorized resource access.",
-      "phase": 4,
+      "description": "Detect and test for OWASP API3:2023 Broken Object Property Level Authorization vulnerabilities including excessive data exposure and mass assignment attacks.",
+      "phase": 2,
       "score": 100,
-      "skill_id": "detecting-aws-cloudtrail-anomalies",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-aws-cloudtrail-anomalies/SKILL.md",
-      "triggers": "detecting;aws;cloudtrail;anomalies"
+      "skill_id": "detecting-broken-object-property-level-authorization",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-broken-object-property-level-authorization/SKILL.md",
+      "triggers": "api-security;bopla;owasp-api3;mass-assignment;excessive-data-exposure;property-level-authorization;api-testing;penetration-testing"
     },
     {
-      "description": "Detect lateral movement in Azure AD/Entra ID environments using Microsoft Graph API audit logs, Azure Sentinel KQL hunting queries, and sign-in anomaly correlation to identify privilege escalation, token theft, and cross-tenant pivoting.",
-      "phase": 4,
+      "description": "Detect compromised O365 and Google Workspace email accounts by analyzing inbox rule creation, suspicious sign-in locations, mail forwarding rules, and unusual API access patterns via Microsoft Graph and audit logs.",
+      "phase": 2,
       "score": 100,
-      "skill_id": "detecting-azure-lateral-movement",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-azure-lateral-movement/SKILL.md",
-      "triggers": "detecting;azure;lateral;movement"
+      "skill_id": "detecting-email-account-compromise",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-email-account-compromise/SKILL.md",
+      "triggers": "email-compromise;office365;microsoft-graph;bec;inbox-rules;sign-in-analysis;account-takeover"
     },
     {
-      "description": "Detecting compromised cloud credentials across AWS, Azure, and GCP by analyzing anomalous API activity, impossible travel patterns, unauthorized resource provisioning, and credential abuse indicators using GuardDuty, Defender for Identity, and SCC Event Threat Detection.",
-      "phase": 4,
+      "description": "Devin AI自律コーディングエージェント。V3 API + 公式CLI対応。Playbook/Snapshot/structured_output活用。Team以上プランで本領発揮。Triggers: devin, Devin, 自律コーディング, coding agent",
+      "phase": 2,
       "score": 100,
-      "skill_id": "detecting-compromised-cloud-credentials",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-compromised-cloud-credentials/SKILL.md",
-      "triggers": "detecting;compromised;cloud;credentials"
-    },
-    {
-      "description": "Detects and analyzes process injection techniques used by malware including classic DLL injection, process hollowing, APC injection, thread hijacking, and reflective loading. Uses memory forensics, API monitoring, and behavioral analysis to identify injection artifacts. Activates for requests involving process injection detection, code injection analysis, hollowed process investigation, or in-memory threat detection.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "detecting-process-injection-techniques",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-process-injection-techniques/SKILL.md",
-      "triggers": "detecting;process;injection;techniques"
-    },
-    {
-      "description": "Discover and inventory shadow API endpoints that operate outside documented specifications using traffic analysis, code scanning, and API discovery platforms.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "detecting-shadow-api-endpoints",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-shadow-api-endpoints/SKILL.md",
-      "triggers": "detecting;shadow;api;endpoints"
-    },
-    {
-      "description": "Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "devops-troubleshooter",
-      "src_path": "lib/antigravity-awesome-skills/skills/devops-troubleshooter/SKILL.md",
-      "triggers": "devops;troubleshooter"
+      "skill_id": "devin-agent",
+      "src_path": "lib/ShunsukeHayashi-agent-skill-bus/skills/devin-agent/SKILL.md",
+      "triggers": "devin;Devin;自律コーディングエージェント;coding agent委任"
     },
     {
       "description": "Update and maintain project documentation for local code changes using multi-agent workflow with tech-writer agents. Covers docs/, READMEs, JSDoc, and API documentation.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "docs:update-docs",
       "src_path": "lib/NeoLabHQ-context-engineering-kit/plugins/docs/skills/update-docs/SKILL.md",
@@ -388,7 +420,7 @@
     },
     {
       "description": "Documentation generation workflow covering API docs, architecture docs, README files, code comments, and technical writing.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "documentation",
       "src_path": "lib/antigravity-awesome-skills/skills/documentation/SKILL.md",
@@ -411,16 +443,8 @@
       "triggers": "documentation;templates"
     },
     {
-      "description": "Edit and improve articles by restructuring sections, improving clarity, and tightening prose. Use when user wants to edit, revise, or improve an article draft.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "edit-article",
-      "src_path": "lib/mattpocock-skills/edit-article/SKILL.md",
-      "triggers": "edit;article"
-    },
-    {
       "description": "Crypto wallet management across 7 blockchains via EmblemAI Agent Hustle API. Balance checks, token swaps, portfolio analysis, and transaction execution for Solana, Ethereum, Base, BSC, Polygon, Hedera, and Bitcoin.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "emblemai-crypto-wallet",
       "src_path": "lib/antigravity-awesome-skills/skills/emblemai-crypto-wallet/SKILL.md",
@@ -428,7 +452,7 @@
     },
     {
       "description": "Access European Nucleotide Archive via API/FTP. Retrieve DNA/RNA sequences, raw reads (FASTQ), genome assemblies by accession, for genomics and bioinformatics pipelines. Supports multiple formats.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "ena-database",
       "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/ena-database/SKILL.md",
@@ -436,7 +460,7 @@
     },
     {
       "description": "Query Ensembl genome database REST API for 250+ species. Gene lookups, sequence retrieval, variant analysis, comparative genomics, orthologs, VEP predictions, for genomic research.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "ensembl-database",
       "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/ensembl-database/SKILL.md",
@@ -444,75 +468,59 @@
     },
     {
       "description": "Comprehensive toolkit for protein language models including ESM3 (generative multimodal protein design across sequence, structure, and function) and ESM C (efficient protein embeddings and representations). Use this skill when working with protein sequences, structures, or function prediction; designing novel proteins; generating protein embeddings; performing inverse folding; or conducting protein engineering tasks. Supports both local model usage and cloud-based Forge API for scalable inference.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "esm",
       "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/esm/SKILL.md",
       "triggers": "esm"
     },
     {
+      "description": "Semantic search, similar content discovery, and structured research using Exa API. Use when you need semantic/embeddings-based search, finding similar content, or searching by category (company, people, research papers, etc.).",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "exa-search",
+      "src_path": "lib/antigravity-awesome-skills/skills/exa-search/SKILL.md",
+      "triggers": "exa;search"
+    },
+    {
       "description": "Tests APIs for Broken Function Level Authorization (BFLA) vulnerabilities where regular users can invoke administrative functions or access privileged API endpoints by directly calling them. The tester identifies admin and privileged endpoints, then attempts to access them with regular user credentials by manipulating HTTP methods, URL paths, and request parameters. Maps to OWASP API5:2023 Broken Function Level Authorization. Activates for requests involving BFLA testing, admin endpoint bypass, function-level access control testing, or API privilege escalation.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "exploiting-broken-function-level-authorization",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/exploiting-broken-function-level-authorization/SKILL.md",
-      "triggers": "exploiting;broken;function;level;authorization"
+      "triggers": "api-security;owasp;authorization;bfla;privilege-escalation;access-control"
     },
     {
-      "description": "Identifying and exploiting Insecure Direct Object Reference vulnerabilities to access unauthorized resources by manipulating object identifiers in API requests and URLs.",
-      "phase": 4,
+      "description": "Tests APIs for excessive data exposure where endpoints return more data than the client application needs, relying on the frontend to filter sensitive fields. The tester intercepts API responses and analyzes them for leaked PII, internal identifiers, debug information, or sensitive business data that the UI does not display but the API transmits. This maps to OWASP API3:2023 Broken Object Property Level Authorization. Activates for requests involving API data leakage testing, excessive data exposure, response filtering bypass, or API over-fetching.",
+      "phase": 2,
       "score": 100,
-      "skill_id": "exploiting-idor-vulnerabilities",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/exploiting-idor-vulnerabilities/SKILL.md",
-      "triggers": "exploiting;idor;vulnerabilities"
-    },
-    {
-      "description": "Discover and exploit mass assignment vulnerabilities in REST APIs to escalate privileges, modify restricted fields, and bypass authorization controls by injecting unexpected parameters in API requests.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "exploiting-mass-assignment-in-rest-apis",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/exploiting-mass-assignment-in-rest-apis/SKILL.md",
-      "triggers": "exploiting;mass;assignment;in;rest"
-    },
-    {
-      "description": "Guidelines for creating API routes in Expo Router with EAS Hosting",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "expo-api-routes",
-      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-expo-react-native/skills/expo-api-routes/SKILL.md",
-      "triggers": "expo;api;routes"
-    },
-    {
-      "description": "Platform APIs for model management, pricing, and usage tracking",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "fal-platform",
-      "src_path": "lib/antigravity-awesome-skills/skills/fal-platform/SKILL.md",
-      "triggers": "fal;platform"
+      "skill_id": "exploiting-excessive-data-exposure-in-api",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/exploiting-excessive-data-exposure-in-api/SKILL.md",
+      "triggers": "api-security;owasp;data-exposure;rest-security;pii-leakage"
     },
     {
       "description": "Query openFDA API for drugs, devices, adverse events, recalls, regulatory submissions (510k, PMA), substance identification (UNII), for FDA regulatory data analysis and safety research.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "fda-database",
       "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/fda-database/SKILL.md",
       "triggers": "fda;database"
     },
     {
-      "description": "Download an entire website as local files — markdown, screenshots, or multiple formats per page. Use this skill when the user wants to save a site locally, download documentation for offline use, bulk-save pages as files, or says \"download the site\", \"save as local files\", \"offline copy\", \"download all the docs\", or \"save for reference\". Combines site mapping and scraping into organized local directories.",
-      "phase": 4,
+      "description": "Deep web scraping, screenshots, PDF parsing, and website crawling using Firecrawl API. Use when you need deep content extraction from web pages, page interaction is required (clicking, scrolling, etc.), or you want screenshots or PDF parsing.",
+      "phase": 2,
       "score": 100,
-      "skill_id": "firecrawl-download",
-      "src_path": "lib/cli/skills/firecrawl-download/SKILL.md",
-      "triggers": "firecrawl;download"
+      "skill_id": "firecrawl-scraper",
+      "src_path": "lib/antigravity-awesome-skills/skills/firecrawl-scraper/SKILL.md",
+      "triggers": "firecrawl;scraper"
     },
     {
-      "description": "Practical async patterns using TaskEither - clean pipelines instead of try/catch hell, with real API examples",
-      "phase": 4,
+      "description": "Quick reference for TaskEither. Use when user needs async error handling, API calls, or Promise-based operations that can fail.",
+      "phase": 2,
       "score": 100,
-      "skill_id": "fp-async",
-      "src_path": "lib/antigravity-awesome-skills/skills/fp-async/SKILL.md",
-      "triggers": "fp;async"
+      "skill_id": "fp-taskeither-ref",
+      "src_path": "lib/antigravity-awesome-skills/skills/fp-taskeither-ref/SKILL.md",
+      "triggers": "fp-ts;taskeither;async;promise;error-handling;quick-reference"
     },
     {
       "description": "Query FRED (Federal Reserve Economic Data) API for 800,000+ economic time series from 100+ sources. Access GDP, unemployment, inflation, interest rates, exchange rates, housing, and regional data. Use for macroeconomic analysis, financial research, policy studies, economic forecasting, and academic research requiring U.S. and international economic indicators.",
@@ -523,24 +531,8 @@
       "triggers": "fred;economic;data"
     },
     {
-      "description": "Restrict file edits to a specific directory for the session. Blocks Edit and Write outside the allowed path. Use when debugging to prevent accidentally \"fixing\" unrelated code, or when you want to scope changes to one module. Use when asked to \"freeze\", \"restrict edits\", \"only edit this folder\", or \"lock down edits\".",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "freeze",
-      "src_path": "lib/gstack/freeze/SKILL.md",
-      "triggers": "freeze"
-    },
-    {
-      "description": "When to use: ['Web applications and APIs', 'Need any runtime or library', 'Complex services with multiple endpoints', 'Stateless containerized workloads']",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "gcp-cloud-run",
-      "src_path": "lib/antigravity-awesome-skills/skills/gcp-cloud-run/SKILL.md",
-      "triggers": "gcp;cloud;run"
-    },
-    {
       "description": "The Gemini API provides access to Google's most advanced AI models. Key capabilities include:",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "gemini-api-dev",
       "src_path": "lib/antigravity-awesome-skills/skills/gemini-api-dev/SKILL.md",
@@ -548,7 +540,7 @@
     },
     {
       "description": "Use when integrating Google Gemini API into projects. Covers model selection, multimodal inputs, streaming, function calling, and production best practices.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "gemini-api-integration",
       "src_path": "lib/antigravity-awesome-skills/skills/gemini-api-integration/SKILL.md",
@@ -556,15 +548,23 @@
     },
     {
       "description": "Use this skill when writing code that calls the Gemini API for text generation, multi-turn chat, multimodal understanding, image generation, streaming responses, background research tasks, function calling, structured output, or migrating from the old generateContent API. This skill covers the Interactions API, the recommended way to use Gemini models and agents in Python and TypeScript.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "gemini-interactions-api",
       "src_path": "lib/gemini-skills/skills/gemini-interactions-api/SKILL.md",
       "triggers": "gemini;interactions;api"
     },
     {
+      "description": "Query NCBI Gene via E-utilities/Datasets API. Search by symbol/ID, retrieve gene info (RefSeqs, GO, locations, phenotypes), batch lookups, for gene annotation and functional analysis.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "gene-database",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/gene-database/SKILL.md",
+      "triggers": "gene;database"
+    },
+    {
       "description": "Add line-specific review comments to pull requests using GitHub CLI API",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "git:attach-review-to-pr",
       "src_path": "lib/NeoLabHQ-context-engineering-kit/plugins/git/skills/attach-review-to-pr/SKILL.md",
@@ -572,7 +572,7 @@
     },
     {
       "description": "Use the `gh` CLI for issues, pull requests, Actions runs, and GitHub API queries.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "github",
       "src_path": "lib/antigravity-awesome-skills/skills/github/SKILL.md",
@@ -587,14 +587,6 @@
       "triggers": "graphql"
     },
     {
-      "description": "Create hand-drawn Excalidraw diagrams, flows, explainers, wireframes, and page mockups. Default to monochrome sketch output; allow restrained color only for page mockups when the user explicitly wants webpage-like fidelity.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "hand-drawn-diagrams",
-      "src_path": "lib/muthuishere-hand-drawn-diagrams/SKILL.md",
-      "triggers": "hand;drawn;diagrams"
-    },
-    {
       "description": "Query the OFR (Office of Financial Research) Hedge Fund Monitor API for hedge fund data including SEC Form PF aggregated statistics, CFTC Traders in Financial Futures, FICC Sponsored Repo volumes, and FRB SCOOS dealer financing terms. Access time series data on hedge fund size, leverage, counterparties, liquidity, complexity, and risk management. No API key or registration required. Use when working with hedge fund data, systemic risk monitoring, financial stability research, hedge fund leverage or leverage ratios, counterparty concentration, Form PF statistics, repo market data, or OFR financial research data.",
       "phase": 2,
       "score": 100,
@@ -603,28 +595,20 @@
       "triggers": "hedgefundmonitor"
     },
     {
-      "description": "Expert-level Home Assistant configuration management with efficient deployment workflows (git and rapid scp iteration), remote CLI access via SSH and hass-cli, automation verification protocols, log analysis, reload vs restart optimization, and comprehensive Lovelace dashboard management for tablet-optimized UIs. Includes template patterns, card types, debugging strategies, and real-world examples.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "home-assistant-manager",
-      "src_path": "lib/komal-SkyNET-claude-skill-homeassistant/SKILL.md",
-      "triggers": "home;assistant;manager"
-    },
-    {
-      "description": "Build ultra-fast web APIs and full-stack apps with Hono — runs on Cloudflare Workers, Deno, Bun, Node.js, and any WinterCG-compatible runtime.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "hono",
-      "src_path": "lib/antigravity-awesome-skills/skills/hono/SKILL.md",
-      "triggers": "hono"
-    },
-    {
       "description": "Use this skill for Hugging Face Dataset Viewer API workflows that fetch subset/split metadata, paginate rows, search text, apply filters, download parquet URLs, and read size or statistics.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "hugging-face-dataset-viewer",
       "src_path": "lib/antigravity-awesome-skills/skills/hugging-face-dataset-viewer/SKILL.md",
       "triggers": "hugging;face;dataset;viewer"
+    },
+    {
+      "description": "Add and manage evaluation results in Hugging Face model cards. Supports extracting eval tables from README content, importing scores from Artificial Analysis API, and running custom model evaluations with vLLM/lighteval. Works with the model-index metadata format.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "hugging-face-evaluation",
+      "src_path": "lib/antigravity-awesome-skills/skills/hugging-face-evaluation/SKILL.md",
+      "triggers": "hugging;face;evaluation"
     },
     {
       "description": "Your purpose is now is to create reusable command line scripts and utilities for using the Hugging Face API, allowing chaining, piping and intermediate processing where helpful. You can access the API directly, as well as use the hf command line tool.",
@@ -635,6 +619,14 @@
       "triggers": "hugging;face;tool;builder"
     },
     {
+      "description": "Simplest distributed training API. 4 lines to add distributed support to any PyTorch script. Unified API for DeepSpeed/FSDP/Megatron/DDP. Automatic device placement, mixed precision (FP16/BF16/FP8). Interactive config, single launch command. HuggingFace ecosystem standard.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "huggingface-accelerate",
+      "src_path": "lib/Orchestra-Research-AI-research-SKILLs/08-distributed-training/accelerate/SKILL.md",
+      "triggers": "Distributed Training;HuggingFace;Accelerate;DeepSpeed;FSDP;Mixed Precision;PyTorch;DDP;Unified API;Simple"
+    },
+    {
       "description": "Expert guidance on Hummingbird 2 web framework. Use when developers mention: (1) Hummingbird, HB, or Hummingbird 2, (2) Swift web server or HTTP server, (3) server-side Swift routing or middleware, (4) building REST APIs in Swift, (5) RequestContext or ChildRequestContext, (6) HummingbirdAuth or authentication middleware, (7) HummingbirdWebSocket, (8) HummingbirdFluent or database integration, (9) ResponseGenerator or EditedResponse.",
       "phase": 2,
       "score": 100,
@@ -643,52 +635,60 @@
       "triggers": "hummingbird"
     },
     {
-      "description": "AES (Advanced Encryption Standard) is a symmetric block cipher standardized by NIST (FIPS 197) used to protect classified and sensitive data. This skill covers implementing AES-256 encryption in GCM m",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "implementing-aes-encryption-for-data-at-rest",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-aes-encryption-for-data-at-rest/SKILL.md",
-      "triggers": "implementing;aes;encryption;for;data"
-    },
-    {
-      "description": "Configures Windows Group Policy Objects (GPO) to prevent ransomware execution and limit its spread. Implements AppLocker rules, Software Restriction Policies, Controlled Folder Access, attack surface reduction rules, and network protection settings. Activates for requests involving Windows GPO hardening against ransomware, AppLocker configuration, Controlled Folder Access setup, or endpoint protection via Group Policy.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "implementing-anti-ransomware-group-policy",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-anti-ransomware-group-policy/SKILL.md",
-      "triggers": "implementing;anti;ransomware;group;policy"
-    },
-    {
       "description": "Implement API abuse detection using token bucket, sliding window, and adaptive rate limiting algorithms to prevent DDoS, brute force, and credential stuffing attacks.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "implementing-api-abuse-detection-with-rate-limiting",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-api-abuse-detection-with-rate-limiting/SKILL.md",
-      "triggers": "implementing;api;abuse;detection;with"
+      "triggers": "api-security;rate-limiting;token-bucket;sliding-window;ddos-protection;brute-force-prevention;api-abuse;api-gateway"
+    },
+    {
+      "description": "Implements security controls at the API gateway layer including authentication enforcement, rate limiting, request validation, IP allowlisting, TLS termination, and threat protection. The engineer configures API gateways (Kong, AWS API Gateway, Azure APIM, Apigee) to act as a centralized security enforcement point that validates, throttles, and monitors all API traffic before it reaches backend services. Activates for requests involving API gateway security, API management security, gateway authentication, or centralized API protection.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-api-gateway-security-controls",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-api-gateway-security-controls/SKILL.md",
+      "triggers": "api-security;api-gateway;kong;aws-api-gateway;rate-limiting;waf"
+    },
+    {
+      "description": "Implements secure API key generation, storage, rotation, and revocation controls to protect API authentication credentials from leakage, brute force, and abuse. The engineer designs API key formats with sufficient entropy, implements secure hashing for storage, enforces per-key scoping and rate limiting, monitors for leaked keys in public repositories, and builds key rotation workflows. Activates for requests involving API key management, API key security, key rotation policy, or API credential protection.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-api-key-security-controls",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-api-key-security-controls/SKILL.md",
+      "triggers": "api-security;api-keys;credential-management;key-rotation;secret-management"
     },
     {
       "description": "Implements API rate limiting and throttling controls using token bucket, sliding window, and fixed window algorithms to protect against brute force attacks, credential stuffing, resource exhaustion, and API abuse. The engineer configures per-user, per-IP, and per-endpoint rate limits using Redis-backed counters, API gateway plugins, or application middleware, and implements proper HTTP 429 responses with Retry-After headers. Activates for requests involving rate limiting implementation, API throttling setup, request quota management, or API abuse prevention.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "implementing-api-rate-limiting-and-throttling",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-api-rate-limiting-and-throttling/SKILL.md",
-      "triggers": "implementing;api;rate;limiting;and"
+      "triggers": "api-security;rate-limiting;throttling;redis;token-bucket;abuse-prevention"
     },
     {
       "description": "Implement API schema validation using OpenAPI specifications and JSON Schema to enforce input/output contracts and prevent injection, data exposure, and mass assignment attacks.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "implementing-api-schema-validation-security",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-api-schema-validation-security/SKILL.md",
-      "triggers": "implementing;api;schema;validation;security"
+      "triggers": "api-security;schema-validation;openapi;json-schema;input-validation;data-leakage-prevention;mass-assignment;api-gateway"
     },
     {
-      "description": "Implements application whitelisting using Windows AppLocker to restrict unauthorized software execution on endpoints, reducing attack surface from malware, unauthorized tools, and shadow IT. Use when enforcing application control policies, meeting compliance requirements for software restriction, or preventing execution of unsigned or untrusted binaries. Activates for requests involving AppLocker, application whitelisting, software restriction, or executable control.",
+      "description": "Implement API Security Posture Management to continuously discover, classify, and score APIs based on risk while enforcing security policies across the API lifecycle.",
       "phase": 2,
       "score": 100,
-      "skill_id": "implementing-application-whitelisting-with-applocker",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-application-whitelisting-with-applocker/SKILL.md",
-      "triggers": "implementing;application;whitelisting;with;applocker"
+      "skill_id": "implementing-api-security-posture-management",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-api-security-posture-management/SKILL.md",
+      "triggers": "api-security;aspm;api-posture-management;api-discovery;risk-scoring;api-governance;continuous-monitoring;api-inventory"
+    },
+    {
+      "description": "Implement comprehensive API security testing using the 42Crunch platform to perform static audit and dynamic conformance scanning of OpenAPI specifications.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-api-security-testing-with-42crunch",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-api-security-testing-with-42crunch/SKILL.md",
+      "triggers": "api-security;42crunch;openapi;api-audit;api-scan;conformance-testing;shift-left;ci-cd-security;owasp-api-top-10"
     },
     {
       "description": "Implements data loss prevention policies using Microsoft Purview to protect sensitive information across Exchange Online, SharePoint, OneDrive, Teams, endpoint devices, and Power BI. The analyst configures sensitivity labels with encryption and content marking, creates DLP policies using built-in and custom sensitive information types with regex patterns, deploys endpoint DLP rules to control file operations on Windows and macOS devices, and monitors policy effectiveness through Activity Explorer and DLP alert management. Uses PowerShell cmdlets and the Microsoft Graph API for programmatic policy management. Activates for requests involving DLP policy creation, sensitivity label configuration, data classification, endpoint data protection, or Microsoft Purview compliance administration.",
@@ -696,23 +696,23 @@
       "score": 100,
       "skill_id": "implementing-data-loss-prevention-with-microsoft-purview",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-data-loss-prevention-with-microsoft-purview/SKILL.md",
-      "triggers": "implementing;data;loss;prevention;with"
+      "triggers": "DLP;Microsoft-Purview;sensitivity-labels;endpoint-DLP;data-classification;compliance"
     },
     {
       "description": "Deploy and monitor Canary Tokens via the Thinkst Canary API for deception-based breach detection using web bug tokens, DNS tokens, document tokens, and AWS key tokens.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "implementing-deception-based-detection-with-canarytoken",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-deception-based-detection-with-canarytoken/SKILL.md",
-      "triggers": "implementing;deception;based;detection;with"
+      "triggers": "canarytoken;deception;honeytokens;breach-detection;Thinkst-Canary;tripwire;early-warning"
     },
     {
       "description": "Deploy and configure Wazuh SIEM/XDR for endpoint detection including agent management, custom decoder and rule XML creation, alert querying via the Wazuh REST API, and automated response actions.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "implementing-endpoint-detection-with-wazuh",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-endpoint-detection-with-wazuh/SKILL.md",
-      "triggers": "implementing;endpoint;detection;with;wazuh"
+      "triggers": "siem;xdr;wazuh;endpoint-detection;custom-rules;incident-response"
     },
     {
       "description": "Deploys canary tokens and honeytokens (fake AWS credentials, DNS canaries, document beacons, database records) that trigger alerts when accessed by attackers. Uses the Canarytokens API and custom webhook integrations for breach detection. Use when building deception-based early warning systems for intrusion detection.",
@@ -720,43 +720,35 @@
       "score": 100,
       "skill_id": "implementing-honeytokens-for-breach-detection",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-honeytokens-for-breach-detection/SKILL.md",
-      "triggers": "implementing;honeytokens;for;breach;detection"
+      "triggers": "implementing;honeytokens;for;breach"
     },
     {
       "description": "Deploy and query Arkime (formerly Moloch) for full packet capture network traffic analysis. Uses the Arkime API v3 to search sessions, download PCAPs, analyze connection patterns, detect beaconing behavior, and identify suspicious network flows. Monitors DNS queries, HTTP traffic, and TLS certificate anomalies across captured traffic.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "implementing-network-traffic-analysis-with-arkime",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-network-traffic-analysis-with-arkime/SKILL.md",
-      "triggers": "implementing;network;traffic;analysis;with"
+      "triggers": "implementing;network;traffic;analysis"
     },
     {
       "description": "Automate phishing incident response using Splunk SOAR REST API to create containers, add artifacts, and trigger playbooks",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "implementing-soar-playbook-for-phishing",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-soar-playbook-for-phishing/SKILL.md",
-      "triggers": "implementing;soar;playbook;for;phishing"
+      "triggers": "soar;splunk-phantom;phishing;incident-response"
     },
     {
-      "description": "Implements USB device control policies to restrict unauthorized removable media access on endpoints, preventing data exfiltration and malware introduction via USB devices. Use when deploying device control via Group Policy, Intune, or EDR platforms to enforce USB restrictions. Activates for requests involving USB control, removable media policy, device control, or data loss prevention via USB.",
-      "phase": 4,
+      "description": "Coleta e consulta dados de leiloeiros oficiais de todas as 27 Juntas Comerciais do Brasil. Scraper multi-UF, banco SQLite, API FastAPI e exportacao CSV/JSON.",
+      "phase": 2,
       "score": 100,
-      "skill_id": "implementing-usb-device-control-policy",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-usb-device-control-policy/SKILL.md",
-      "triggers": "implementing;usb;device;control;policy"
-    },
-    {
-      "description": "Expert SRE incident responder specializing in rapid problem resolution, modern observability, and comprehensive incident management.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "incident-responder",
-      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-observability-monitoring/skills/incident-responder/SKILL.md",
-      "triggers": "incident;responder"
+      "skill_id": "junta-leiloeiros",
+      "src_path": "lib/antigravity-awesome-skills/skills/junta-leiloeiros/SKILL.md",
+      "triggers": "scraping;brazilian-data;auctioneers;api"
     },
     {
       "description": "Direct REST API access to KEGG (academic use only). Pathway analysis, gene-pathway mapping, metabolic pathways, drug interactions, ID conversion. For Python workflows with multiple databases, prefer bioservices. Use this for direct HTTP/REST work or KEGG-specific control.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "kegg-database",
       "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/kegg-database/SKILL.md",
@@ -764,35 +756,27 @@
     },
     {
       "description": "Electronic lab notebook API integration. Access notebooks, manage entries/attachments, backup notebooks, integrate with Protocols.io/Jupyter/REDCap, for programmatic ELN workflows.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "labarchive-integration",
       "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/labarchive-integration/SKILL.md",
       "triggers": "labarchive;integration"
     },
     {
-      "description": "CRITICAL: Use for Makepad font and text rendering. Triggers on: makepad font, makepad text, makepad glyph, makepad typography, font atlas, text layout, font family, font size, text shaping, makepad 字体, makepad 文字, makepad 排版, makepad 字形",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "makepad-font",
-      "src_path": "lib/ZhangHanDong-makepad-skills/skills/makepad-font/SKILL.md",
-      "triggers": "makepad;font"
-    },
-    {
       "description": "Install and configure the Manifest observability plugin for your agents. Use when setting up telemetry, configuring API keys, or troubleshooting the plugin.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "manifest",
       "src_path": "lib/antigravity-awesome-skills/skills/manifest/SKILL.md",
       "triggers": "manifest"
     },
     {
-      "description": "Use this skill when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+      "description": "Manus AI汎用エージェント。リサーチ・ドキュメント生成・ブラウザ操作の完全自動実行。REST API+Python SDK対応。100並列エージェントで大規模リサーチが得意。Triggers: manus, マヌス, リサーチエージェント, 調査自動化",
       "phase": 2,
       "score": 100,
-      "skill_id": "mcp-builder-ms",
-      "src_path": "lib/antigravity-awesome-skills/skills/mcp-builder-ms/SKILL.md",
-      "triggers": "mcp;builder;ms"
+      "skill_id": "manus-agent",
+      "src_path": "lib/ShunsukeHayashi-agent-skill-bus/skills/manus-agent/SKILL.md",
+      "triggers": "manus;マヌス;manus agent;リサーチエージェント;調査自動化"
     },
     {
       "description": "Medusa headless commerce - modules, workflows, API routes, admin UI",
@@ -804,7 +788,7 @@
     },
     {
       "description": "Access NIH Metabolomics Workbench via REST API (4,200+ studies). Query metabolites, RefMet nomenclature, MS/NMR data, m/z searches, study metadata, for metabolomics and biomarker discovery.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "metabolomics-workbench-database",
       "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/metabolomics-workbench-database/SKILL.md",
@@ -819,6 +803,14 @@
       "triggers": "moodle;external;api;development"
     },
     {
+      "description": "Microsoft Teams bots and AI agents - Claude/OpenAI, Adaptive Cards, Graph API",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "ms-teams-apps",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/ms-teams-apps/SKILL.md",
+      "triggers": "ms;teams;apps"
+    },
+    {
       "description": "Build and deploy the same feature consistently across web, mobile, and desktop platforms using API-first architecture and parallel implementation strategies.",
       "phase": 2,
       "score": 100,
@@ -827,12 +819,12 @@
       "triggers": "multi;platform;apps;multi;platform"
     },
     {
-      "description": "Guide for using Netlify Forms for HTML form handling. Use when adding contact forms, feedback forms, file upload forms, or any form that should be collected by Netlify. Covers the data-netlify attribute, spam filtering, AJAX submissions, file uploads, notifications, and the submissions API.",
+      "description": "Use when implementing or debugging ANY network request, API call, or data fetching. Covers fetch API, React Query, SWR, error handling, caching, offline support, and Expo Router data loaders (useLoaderData).",
       "phase": 2,
       "score": 100,
-      "skill_id": "netlify-forms",
-      "src_path": "lib/context-and-tools/codex/skills/netlify-forms/SKILL.md",
-      "triggers": "netlify;forms"
+      "skill_id": "native-data-fetching",
+      "src_path": "lib/antigravity-awesome-skills/skills/native-data-fetching/SKILL.md",
+      "triggers": "native;data;fetching"
     },
     {
       "description": "Guide for writing Netlify serverless functions. Use when creating API endpoints, background processing, scheduled tasks, or any server-side logic using Netlify Functions. Covers modern syntax (default export + Config), TypeScript, path routing, background functions, scheduled functions, streaming, and method routing.",
@@ -844,7 +836,7 @@
     },
     {
       "description": "Observe and troubleshoot WhatsApp in Kapso: debug message delivery, inspect webhook deliveries/retries, triage API errors, and run health checks. Use when investigating production issues, message failures, or webhook delivery problems.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "observe-whatsapp",
       "src_path": "lib/gokapso-agent-skills/skills/observe-whatsapp/SKILL.md",
@@ -859,8 +851,16 @@
       "triggers": "odoo;migration;helper"
     },
     {
+      "description": "Expert on Odoo's external JSON-RPC and XML-RPC APIs. Covers authentication, model calls, record CRUD, and real-world integration examples in Python, JavaScript, and curl.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "odoo-rpc-api",
+      "src_path": "lib/antigravity-awesome-skills/skills/odoo-rpc-api/SKILL.md",
+      "triggers": "odoo;rpc;api"
+    },
+    {
       "description": "Connect Odoo with Shopify: sync products, inventory, orders, and customers using the Shopify API and Odoo's external API or connector modules.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "odoo-shopify-integration",
       "src_path": "lib/antigravity-awesome-skills/skills/odoo-shopify-integration/SKILL.md",
@@ -868,7 +868,7 @@
     },
     {
       "description": "Sync Odoo with WooCommerce: products, inventory, orders, and customers via WooCommerce REST API and Odoo external API.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "odoo-woocommerce-bridge",
       "src_path": "lib/antigravity-awesome-skills/skills/odoo-woocommerce-bridge/SKILL.md",
@@ -876,43 +876,43 @@
     },
     {
       "description": "Generate and maintain OpenAPI 3.1 specifications from code, design-first specs, and validation patterns. Use when creating API documentation, generating SDKs, or ensuring API contract compliance.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "openapi-spec-generation",
       "src_path": "lib/antigravity-awesome-skills/skills/openapi-spec-generation/SKILL.md",
       "triggers": "openapi;spec;generation"
     },
     {
+      "description": "Official Opentrons Protocol API for OT-2 and Flex robots. Use when writing protocols specifically for Opentrons hardware with full access to Protocol API v2 features. Best for production Opentrons protocols, official API compatibility. For multi-vendor automation or broader equipment control use pylabrobot.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "opentrons-integration",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/opentrons-integration/SKILL.md",
+      "triggers": "opentrons;integration"
+    },
+    {
+      "description": "Search the web, extract URL content, and run deep research using the Parallel Chat API and Extract API. Use for ALL web searches, research queries, and general information gathering. Provides synthesized summaries with citations.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "parallel-web",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/parallel-web/SKILL.md",
+      "triggers": "parallel;web"
+    },
+    {
       "description": "Uses Microsoft RESTler to perform stateful REST API fuzzing by automatically generating and executing test sequences that exercise API endpoints, discover producer-consumer dependencies between requests, and find security and reliability bugs. The tester compiles an OpenAPI specification into a RESTler fuzzing grammar, configures authentication, runs test/fuzz-lean/fuzz modes, and analyzes results for 500 errors, authentication bypasses, resource leaks, and payload injection vulnerabilities. Activates for requests involving API fuzzing, RESTler testing, stateful API testing, or automated API security scanning.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "performing-api-fuzzing-with-restler",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-api-fuzzing-with-restler/SKILL.md",
-      "triggers": "performing;api;fuzzing;with;restler"
-    },
-    {
-      "description": "Performs API inventory and discovery to identify all API endpoints in an organization's environment including documented, undocumented, shadow, zombie, and deprecated APIs. The tester uses passive traffic analysis, active scanning, DNS enumeration, JavaScript analysis, and cloud resource inventory to build a comprehensive API catalog. Maps to OWASP API9:2023 Improper Inventory Management. Activates for requests involving API discovery, shadow API detection, API inventory audit, or attack surface mapping.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "performing-api-inventory-and-discovery",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-api-inventory-and-discovery/SKILL.md",
-      "triggers": "performing;api;inventory;and;discovery"
+      "triggers": "api-security;fuzzing;restler;automated-testing;openapi;stateful-testing"
     },
     {
       "description": "Tests API rate limiting implementations for bypass vulnerabilities by manipulating request headers, IP addresses, HTTP methods, API versions, and encoding schemes to circumvent request throttling controls. The tester identifies rate limit headers, determines enforcement mechanisms, and attempts bypasses including X-Forwarded-For spoofing, parameter pollution, case variation, and endpoint path manipulation. Maps to OWASP API4:2023 Unrestricted Resource Consumption. Activates for requests involving rate limit bypass, API throttling evasion, brute force protection testing, or API abuse prevention assessment.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "performing-api-rate-limiting-bypass",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-api-rate-limiting-bypass/SKILL.md",
-      "triggers": "performing;api;rate;limiting;bypass"
-    },
-    {
-      "description": "Perform forensic investigation of AWS environments using CloudTrail logs to reconstruct attacker activity, identify compromised credentials, and analyze API call patterns.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "performing-cloud-forensics-with-aws-cloudtrail",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-cloud-forensics-with-aws-cloudtrail/SKILL.md",
-      "triggers": "performing;cloud;forensics;with;aws"
+      "triggers": "api-security;owasp;rate-limiting;throttling;brute-force;dos-prevention"
     },
     {
       "description": "Perform forensic acquisition and analysis of cloud storage services including Google Drive, OneDrive, Dropbox, and Box by collecting both API-based remote data and local sync client artifacts from endpoint devices.",
@@ -920,67 +920,51 @@
       "score": 100,
       "skill_id": "performing-cloud-storage-forensic-acquisition",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-cloud-storage-forensic-acquisition/SKILL.md",
-      "triggers": "performing;cloud;storage;forensic;acquisition"
+      "triggers": "cloud-forensics;google-drive;onedrive;dropbox;box;cloud-acquisition;api-forensics;sync-client;endpoint-artifacts;magnet-axiom"
     },
     {
       "description": "Execute and test GraphQL depth limit attacks using deeply nested recursive queries to identify denial-of-service vulnerabilities in GraphQL APIs.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "performing-graphql-depth-limit-attack",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-graphql-depth-limit-attack/SKILL.md",
-      "triggers": "performing;graphql;depth;limit;attack"
+      "triggers": "graphql;depth-limit;denial-of-service;nested-queries;api-security;query-complexity;resource-exhaustion;penetration-testing"
     },
     {
       "description": "Performs GraphQL introspection attacks to extract the full API schema including types, queries, mutations, subscriptions, and field definitions from GraphQL endpoints. The tester uses introspection queries to map the attack surface, identifies sensitive fields and mutations, tests for query depth and complexity limits, and exploits GraphQL-specific vulnerabilities including batching attacks, alias-based brute force, and nested query DoS. Activates for requests involving GraphQL security testing, introspection attack, GraphQL enumeration, or GraphQL API penetration testing.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "performing-graphql-introspection-attack",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-graphql-introspection-attack/SKILL.md",
-      "triggers": "performing;graphql;introspection;attack"
+      "triggers": "api-security;graphql;introspection;schema-extraction;query-abuse"
     },
     {
-      "description": "Analyze IP address reputation using the Shodan API to identify open ports, running services, known vulnerabilities, and hosting context for threat intelligence enrichment and incident triage.",
-      "phase": 4,
+      "description": "Performs OAuth 2.0 scope minimization review to identify over-permissioned third-party application integrations, excessive API scopes, unused token grants, and risky OAuth consent patterns across identity providers and SaaS platforms. Activates for requests involving OAuth scope audit, API permission review, third-party app risk assessment, or consent grant minimization.",
+      "phase": 2,
       "score": 100,
-      "skill_id": "performing-ip-reputation-analysis-with-shodan",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-ip-reputation-analysis-with-shodan/SKILL.md",
-      "triggers": "performing;ip;reputation;analysis;with"
-    },
-    {
-      "description": "Enrich malware file hashes using the VirusTotal API to retrieve detection rates, behavioral analysis, YARA matches, and contextual threat intelligence for incident triage and IOC validation.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "performing-malware-hash-enrichment-with-virustotal",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-malware-hash-enrichment-with-virustotal/SKILL.md",
-      "triggers": "performing;malware;hash;enrichment;with"
-    },
-    {
-      "description": "Automate OSINT collection using SpiderFoot REST API and CLI for target profiling, module-based reconnaissance, and structured result analysis across 200+ data sources",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "performing-osint-with-spiderfoot",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-osint-with-spiderfoot/SKILL.md",
-      "triggers": "performing;osint;with;spiderfoot"
-    },
-    {
-      "description": "Monitor paste sites like Pastebin and GitHub Gists for leaked credentials, API keys, and sensitive data dumps using automated scraping and keyword matching to detect breaches early.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "performing-paste-site-monitoring-for-credentials",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-paste-site-monitoring-for-credentials/SKILL.md",
-      "triggers": "performing;paste;site;monitoring;for"
+      "skill_id": "performing-oauth-scope-minimization-review",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-oauth-scope-minimization-review/SKILL.md",
+      "triggers": "OAuth;scope-minimization;API-security;consent-review;third-party-risk;token-audit"
     },
     {
       "description": "Perform AI-powered web searches with real-time information using Perplexity models via LiteLLM and OpenRouter. This skill should be used when conducting web searches for current information, finding recent scientific literature, getting grounded answers with source citations, or accessing information beyond the model knowledge cutoff. Provides access to multiple Perplexity models including Sonar Pro, Sonar Pro Search (advanced agentic search), and Sonar Reasoning Pro through a single OpenRouter API key.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "perplexity-search",
       "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/perplexity-search/SKILL.md",
       "triggers": "perplexity;search"
     },
     {
+      "description": "Generate real audio narratives from text content using Azure OpenAI's Realtime API.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "podcast-generation",
+      "src_path": "lib/antigravity-awesome-skills/skills/podcast-generation/SKILL.md",
+      "triggers": "podcast;generation"
+    },
+    {
       "description": "Search and retrieve content from Product Hunt. Get posts, topics, users, and collections via the GraphQL API. Use when user mentions Product Hunt, PH, or product launches.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "producthunt",
       "src_path": "lib/ReScienceLab-opc-skills/skills/producthunt/SKILL.md",
@@ -988,7 +972,7 @@
     },
     {
       "description": "Integration with protocols.io API for managing scientific protocols. This skill should be used when working with protocols.io to search, create, update, or publish protocols; manage protocol steps and materials; handle discussions and comments; organize workspaces; upload and manage files; or integrate protocols.io functionality into workflows. Applicable for protocol discovery, collaborative protocol development, experiment tracking, lab protocol management, and scientific documentation.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "protocolsio-integration",
       "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/protocolsio-integration/SKILL.md",
@@ -996,7 +980,7 @@
     },
     {
       "description": "Query PubChem via PUG-REST API/PubChemPy (110M+ compounds). Search by name/CID/SMILES, retrieve properties, similarity/substructure searches, bioactivity, for cheminformatics.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "pubchem-database",
       "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/pubchem-database/SKILL.md",
@@ -1004,7 +988,7 @@
     },
     {
       "description": "Direct REST API access to PubMed. Advanced Boolean/MeSH queries, E-utilities API, batch processing, citation management. For Python workflows, prefer biopython (Bio.Entrez). Use this for direct HTTP/REST work or custom API implementations.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "pubmed-database",
       "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/pubmed-database/SKILL.md",
@@ -1012,7 +996,7 @@
     },
     {
       "description": "Create Pydantic models following the multi-model pattern for clean API contracts.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "pydantic-models-py",
       "src_path": "lib/antigravity-awesome-skills/skills/pydantic-models-py/SKILL.md",
@@ -1027,16 +1011,48 @@
       "triggers": "pylabrobot"
     },
     {
+      "description": "Python FastAPI backend development with async patterns, SQLAlchemy, Pydantic, authentication, and production API patterns.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "python-fastapi-development",
+      "src_path": "lib/antigravity-awesome-skills/skills/python-fastapi-development/SKILL.md",
+      "triggers": "python;fastapi;development"
+    },
+    {
+      "description": "Interact with Zotero reference management libraries using the pyzotero Python client. Retrieve, create, update, and delete items, collections, tags, and attachments via the Zotero Web API v3. Use this skill when working with Zotero libraries programmatically, managing bibliographic references, exporting citations, searching library contents, uploading PDF attachments, or building research automation workflows that integrate with Zotero.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "pyzotero",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/pyzotero/SKILL.md",
+      "triggers": "pyzotero"
+    },
+    {
+      "description": "When the user wants to improve their app's star rating, increase ratings volume, optimize when and how they prompt users for a review, or recover from a bad rating period. Use when the user mentions \"app rating\", \"star rating\", \"review prompt\", \"SKStoreReviewRequest\", \"In-App Review API\", \"ask for review\", \"low rating\", \"rating drop\", \"get more reviews\", or \"recover from 1-star\". For responding to reviews, see review-management. For overall ASO health, see aso-audit.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "rating-prompt-strategy",
+      "src_path": "lib/aso-skills/skills/rating-prompt-strategy/SKILL.md",
+      "triggers": "rating;prompt;strategy"
+    },
+    {
       "description": "Query Reactome REST API for pathway analysis, enrichment, gene-pathway mapping, disease pathways, molecular interactions, expression analysis, for systems biology studies.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "reactome-database",
       "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/reactome-database/SKILL.md",
       "triggers": "reactome;database"
     },
     {
+      "description": "Search and retrieve content from Reddit. Get posts, comments, subreddit info, and user profiles via the public JSON API. Use when user mentions Reddit, a subreddit, or r/ links.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "reddit",
+      "src_path": "lib/ReScienceLab-opc-skills/skills/reddit/SKILL.md",
+      "triggers": "reddit"
+    },
+    {
       "description": "Reddit Ads API - campaigns, targeting, conversions, agentic optimization",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "reddit-ads",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/reddit-ads/SKILL.md",
@@ -1052,19 +1068,19 @@
     },
     {
       "description": "Look up current research information using the Parallel Chat API (primary) or Perplexity sonar-pro-search (academic paper searches). Automatically routes queries to the best backend. Use for finding papers, gathering research data, and verifying scientific information.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "research-lookup",
       "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/research-lookup/SKILL.md",
       "triggers": "research;lookup"
     },
     {
-      "description": "Securing AWS Lambda execution roles by implementing least-privilege IAM policies, applying permission boundaries, restricting resource-based policies, using IAM Access Analyzer to validate permissions, and enforcing role scoping through SCPs.",
-      "phase": 4,
+      "description": "Cloud-based quantum chemistry platform with Python API. Preferred for computational chemistry workflows including pKa prediction, geometry optimization, conformer searching, molecular property calculations, protein-ligand docking (AutoDock Vina), and AI protein cofolding (Chai-1, Boltz-1/2). Use when tasks involve quantum chemistry calculations, molecular property prediction, DFT or semiempirical methods, neural network potentials (AIMNet2), protein-ligand binding predictions, or automated computational chemistry pipelines. Provides cloud compute resources with no local setup required.",
+      "phase": 2,
       "score": 100,
-      "skill_id": "securing-aws-lambda-execution-roles",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/securing-aws-lambda-execution-roles/SKILL.md",
-      "triggers": "securing;aws;lambda;execution;roles"
+      "skill_id": "rowan",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/rowan/SKILL.md",
+      "triggers": "rowan"
     },
     {
       "description": "Search published venue papers (IEEE, ACM, Springer, etc.) via Semantic Scholar API. Complements /arxiv (preprints) with citation counts, venue metadata, and TLDR. Use when user says \"search semantic scholar\", \"find IEEE papers\", \"find journal papers\", \"venue papers\", \"citation search\", or wants published literature beyond arXiv preprints.",
@@ -1075,8 +1091,16 @@
       "triggers": "semantic;scholar"
     },
     {
+      "description": "Serves LLMs with high throughput using vLLM's PagedAttention and continuous batching. Use when deploying production LLM APIs, optimizing inference latency/throughput, or serving models with limited GPU memory. Supports OpenAI-compatible endpoints, quantization (GPTQ/AWQ/FP8), and tensor parallelism.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "serving-llms-vllm",
+      "src_path": "lib/Orchestra-Research-AI-research-SKILLs/12-inference-serving/vllm/SKILL.md",
+      "triggers": "vLLM;Inference Serving;PagedAttention;Continuous Batching;High Throughput;Production;OpenAI API;Quantization;Tensor Parallelism"
+    },
+    {
       "description": "Shopify app development - Remix, Admin API, checkout extensions",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "shopify-apps",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/shopify-apps/SKILL.md",
@@ -1091,12 +1115,28 @@
       "triggers": "shopify;development"
     },
     {
-      "description": "Build a stakeholder map using a power/interest grid, identify communication strategies per quadrant, and generate a communication plan. Use when managing stakeholders, preparing for a launch, aligning cross-functional teams, or planning stakeholder engagement.",
+      "description": "Use when adding interactive 3D scenes from Spline.design to web projects, including React embedding and runtime control API.",
       "phase": 2,
       "score": 100,
-      "skill_id": "stakeholder-map",
-      "src_path": "lib/pm-skills/pm-execution/skills/stakeholder-map/SKILL.md",
-      "triggers": "stakeholder;map"
+      "skill_id": "spline-3d-integration",
+      "src_path": "lib/antigravity-awesome-skills/skills/spline-3d-integration/SKILL.md",
+      "triggers": "spline;3d;integration"
+    },
+    {
+      "description": "Geracao de imagens via Stability AI (SD3.5, Ultra, Core). Text-to-image, img2img, inpainting, upscale, remove-bg, search-replace. 15 estilos artisticos.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "stability-ai",
+      "src_path": "lib/antigravity-awesome-skills/skills/stability-ai/SKILL.md",
+      "triggers": "image-generation;stable-diffusion;ai-art;api"
+    },
+    {
+      "description": "Query STRING API for protein-protein interactions (59M proteins, 20B interactions). Network analysis, GO/KEGG enrichment, interaction discovery, 5000+ species, for systems biology.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "string-database",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/string-database/SKILL.md",
+      "triggers": "string;database"
     },
     {
       "description": "Build full-stack web applications with SvelteKit — file-based routing, SSR, SSG, API routes, and form actions in one framework.",
@@ -1104,15 +1144,15 @@
       "score": 100,
       "skill_id": "sveltekit",
       "src_path": "lib/antigravity-awesome-skills/skills/sveltekit/SKILL.md",
-      "triggers": "sveltekit"
+      "triggers": "svelte;sveltekit;fullstack;ssr;ssg;typescript"
     },
     {
-      "description": "Implement or review SwiftUI Liquid Glass APIs with correct fallbacks and modifier order.",
+      "description": "Web search, content extraction, crawling, and research capabilities using Tavily API. Use when you need to search the web for current information, extracting content from URLs, or crawling websites.",
       "phase": 2,
       "score": 100,
-      "skill_id": "swiftui-liquid-glass",
-      "src_path": "lib/antigravity-awesome-skills/skills/swiftui-liquid-glass/SKILL.md",
-      "triggers": "swiftui;liquid;glass"
+      "skill_id": "tavily-web",
+      "src_path": "lib/antigravity-awesome-skills/skills/tavily-web/SKILL.md",
+      "triggers": "tavily;web"
     },
     {
       "description": "Tests REST and GraphQL APIs for Broken Object Level Authorization (BOLA/IDOR) vulnerabilities where an authenticated user can access or modify resources belonging to other users by manipulating object identifiers in API requests. The tester intercepts API calls, identifies object ID parameters (numeric IDs, UUIDs, slugs), and systematically replaces them with IDs belonging to other users to determine if the server enforces per-object authorization. This is OWASP API Security Top 10 2023 risk API1. Activates for requests involving BOLA testing, IDOR in APIs, object-level authorization testing, or API access control bypass.",
@@ -1120,27 +1160,19 @@
       "score": 100,
       "skill_id": "testing-api-for-broken-object-level-authorization",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/testing-api-for-broken-object-level-authorization/SKILL.md",
-      "triggers": "testing;api;for;broken;object"
+      "triggers": "api-security;owasp;bola;idor;authorization;rest-security"
     },
     {
       "description": "Systematically assessing REST and GraphQL API endpoints against the OWASP API Security Top 10 risks using automated and manual testing techniques.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "testing-api-security-with-owasp-top-10",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/testing-api-security-with-owasp-top-10/SKILL.md",
-      "triggers": "testing;api;security;with;owasp"
-    },
-    {
-      "description": "Plan and control time-step policies for transient simulations — couple CFL and physics-based stability limits with adaptive stepping, ramp initial transients through sharp gradients or phase changes, schedule output intervals and checkpoint cadence, and plan restart strategies for long-running jobs. Use when choosing dt for a new simulation, diagnosing adaptive time-step oscillations, deciding checkpoint frequency to minimize lost work, or setting up output schedules aligned with physical time scales, even if the user only says \"my run is too slow\" or \"how often should I save.\"",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "time-stepping",
-      "src_path": "lib/HeshamFS-materials-simulation-skills/skills/core-numerical/time-stepping/SKILL.md",
-      "triggers": "time;stepping"
+      "triggers": "penetration-testing;api-security;owasp;rest-api;graphql;burpsuite;postman"
     },
     {
       "description": "Direct REST API access to UniProt. Protein searches, FASTA retrieval, ID mapping, Swiss-Prot/TrEMBL. For Python workflows with multiple databases, prefer bioservices (unified interface to 40+ services). Use this for direct HTTP/REST work or UniProt-specific control.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "uniprot-database",
       "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/uniprot-database/SKILL.md",
@@ -1155,24 +1187,16 @@
       "triggers": "usfiscaldata"
     },
     {
-      "description": "Access USPTO APIs for patent/trademark searches, examination history (PEDS), assignments, citations, office actions, TSDR, for IP analysis and prior art searches.",
-      "phase": 4,
+      "description": "Guides the usage of Gemini API on Google Cloud Vertex AI with the Gen AI SDK. Use when the user asks about using Gemini in an enterprise environment or explicitly mentions Vertex AI. Covers SDK usage (Python, JS/TS, Go, Java, C#), capabilities like Live API, tools, multimedia generation, caching, and batch prediction.",
+      "phase": 2,
       "score": 100,
-      "skill_id": "uspto-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/uspto-database/SKILL.md",
-      "triggers": "uspto;database"
-    },
-    {
-      "description": "Web scraping inteligente multi-estrategia. Extrai dados estruturados de paginas web (tabelas, listas, precos). Paginacao, monitoramento e export CSV/JSON.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "web-scraper",
-      "src_path": "lib/antigravity-awesome-skills/skills/web-scraper/SKILL.md",
-      "triggers": "web;scraper"
+      "skill_id": "vertex-ai-api-dev",
+      "src_path": "lib/gemini-skills/skills/vertex-ai-api-dev/SKILL.md",
+      "triggers": "vertex;ai;api;dev"
     },
     {
       "description": "WooCommerce REST API - products, orders, customers, webhooks",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "woocommerce",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/woocommerce/SKILL.md",
@@ -1180,7 +1204,7 @@
     },
     {
       "description": "WordPress plugin development workflow covering plugin architecture, hooks, admin interfaces, REST API, security best practices, and WordPress 7.0 features: Real-Time Collaboration, AI Connectors, Abilities API, DataViews, and PHP-only blocks.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "wordpress-plugin-development",
       "src_path": "lib/antigravity-awesome-skills/skills/wordpress-plugin-development/SKILL.md",
@@ -1188,19 +1212,11 @@
     },
     {
       "description": "Dynamic multi-repo and monorepo awareness for Claude Code. Analyze workspace topology, track API contracts, and maintain cross-repo context.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "workspace",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/workspace/SKILL.md",
       "triggers": "workspace"
-    },
-    {
-      "description": "You are a no-code automation architect who has built thousands of Zaps and Scenarios for businesses of all sizes. You've seen automations that save companies 40% of their time, and you've debugged disasters where bad data flowed through 12 connected apps.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "zapier-make-patterns",
-      "src_path": "lib/antigravity-awesome-skills/skills/zapier-make-patterns/SKILL.md",
-      "triggers": "zapier;make;patterns"
     }
   ],
   "sub_hub": "api-design",

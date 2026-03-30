@@ -1,0 +1,88 @@
+{
+  "generated_at_unix": 1774912689,
+  "hub": "ai",
+  "skills": [
+    {
+      "description": "6 production-ready AI engineering workflows: prompt evaluation (8-dimension scoring), context budget planning, RAG pipeline design, agent security audit (65-point checklist), eval harness building, and product sense coaching.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "ai-engineering-toolkit",
+      "src_path": "lib/antigravity-awesome-skills/skills/ai-engineering-toolkit/SKILL.md",
+      "triggers": "prompt-engineering;rag;security;evaluation;ai-engineering;llm"
+    },
+    {
+      "description": "Use this skill when you writing commands, hooks, skills for Agent, or prompts for sub agents or any other LLM interaction, including optimizing prompts, improving LLM outputs, or designing production prompt templates.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "customaize-agent:prompt-engineering",
+      "src_path": "lib/NeoLabHQ-context-engineering-kit/plugins/customaize-agent/skills/prompt-engineering/SKILL.md",
+      "triggers": "customaize;agent;prompt;engineering"
+    },
+    {
+      "description": "Build complex AI systems with declarative programming, optimize prompts automatically, create modular RAG systems and agents with DSPy - Stanford NLP's framework for systematic LM programming",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "dspy",
+      "src_path": "lib/Orchestra-Research-AI-research-SKILLs/16-prompt-engineering/dspy/SKILL.md",
+      "triggers": "Prompt Engineering;DSPy;Declarative Programming;RAG;Agents;Prompt Optimization;LM Programming;Stanford NLP;Automatic Optimization;Modular AI"
+    },
+    {
+      "description": "Control LLM output with regex and grammars, guarantee valid JSON/XML/code generation, enforce structured formats, and build multi-step workflows with Guidance - Microsoft Research's constrained generation framework",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "guidance",
+      "src_path": "lib/Orchestra-Research-AI-research-SKILLs/16-prompt-engineering/guidance/SKILL.md",
+      "triggers": "Prompt Engineering;Guidance;Constrained Generation;Structured Output;JSON Validation;Grammar;Microsoft Research;Format Enforcement;Multi-Step Workflows"
+    },
+    {
+      "description": "Extract structured data from LLM responses with Pydantic validation, retry failed extractions automatically, parse complex JSON with type safety, and stream partial results with Instructor - battle-tested structured output library",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "instructor",
+      "src_path": "lib/Orchestra-Research-AI-research-SKILLs/16-prompt-engineering/instructor/SKILL.md",
+      "triggers": "Prompt Engineering;Instructor;Structured Output;Pydantic;Data Extraction;JSON Parsing;Type Safety;Validation;Streaming;OpenAI;Anthropic"
+    },
+    {
+      "description": "Guarantee valid JSON/XML/code structure during generation, use Pydantic models for type-safe outputs, support local models (Transformers, vLLM), and maximize inference speed with Outlines - dottxt.ai's structured generation library",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "outlines",
+      "src_path": "lib/Orchestra-Research-AI-research-SKILLs/16-prompt-engineering/outlines/SKILL.md",
+      "triggers": "Prompt Engineering;Outlines;Structured Generation;JSON Schema;Pydantic;Local Models;Grammar-Based Generation;vLLM;Transformers;Type Safety"
+    },
+    {
+      "description": "Transforms user prompts into optimized prompts using frameworks (RTF, RISEN, Chain of Thought, RODES, Chain of Density, RACE, RISE, STAR, SOAP, CLEAR, GROW)",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "prompt-engineer",
+      "src_path": "lib/antigravity-awesome-skills/skills/prompt-engineer/SKILL.md",
+      "triggers": "[prompt-engineering, optimization, frameworks, ai-enhancement]"
+    },
+    {
+      "description": "Expert guide on prompt engineering patterns, best practices, and optimization techniques. Use when user wants to improve prompts, learn prompting strategies, or debug agent behavior.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "prompt-engineering",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-agent-architect/skills/prompt-engineering/SKILL.md",
+      "triggers": "prompt;engineering"
+    },
+    {
+      "description": "Master advanced prompt engineering techniques to maximize LLM performance, reliability, and controllability.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "prompt-engineering-patterns",
+      "src_path": "lib/antigravity-awesome-skills/skills/prompt-engineering-patterns/SKILL.md",
+      "triggers": "prompt;engineering;patterns"
+    },
+    {
+      "description": "Optimizes AI skills for activation, clarity, and cross-model reliability. Use when creating or editing skill packs, diagnosing weak skill uptake, reducing regressions, tuning instruction salience, improving examples, shrinking context cost, or setting benchmark/release gates for skills. Trigger terms: skill optimization, activation gap, benchmark skill, with/without skill delta, regression, context budget, prompt salience.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "skill-optimizer",
+      "src_path": "lib/mcollina-skills/skills/skill-optimizer/SKILL.md",
+      "triggers": "skills, optimization, benchmarking, activation, regressions, prompt-engineering"
+    }
+  ],
+  "sub_hub": "prompting-factory",
+  "version": 1
+}

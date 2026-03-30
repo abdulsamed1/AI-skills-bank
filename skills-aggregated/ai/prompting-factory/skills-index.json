@@ -1,0 +1,17 @@
+{
+  "count": 10,
+  "hub": "ai",
+  "skills": [
+    "ai-engineering-toolkit",
+    "customaize-agent:prompt-engineering",
+    "dspy",
+    "guidance",
+    "instructor",
+    "outlines",
+    "prompt-engineer",
+    "prompt-engineering",
+    "prompt-engineering-patterns",
+    "skill-optimizer"
+  ],
+  "sub_hub": "prompting-factory"
+}

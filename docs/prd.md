@@ -35,7 +35,7 @@ skill-manage is an ultra-lightweight, zero-latency local routing layer for AI ag
 
 ### What Makes This Special
 
-The core differentiator is the intersection of massive skill scale, BMAD-pattern governance, and instantaneous execution. Compiling the routing logic into a single native Rust binary eliminates interpretation delays and environment mismatches. Distributing this blazing-fast executable via NPM/NPX leverages the most ubiquitous package manager for a true "zero-install" user experience. Agents and developers can execute complex skill aggregation and invocation seamlessly, focusing on their tasks rather than fighting environment setups.
+The core differentiator is the intersection of massive skill scale, -pattern governance, and instantaneous execution. Compiling the routing logic into a single native Rust binary eliminates interpretation delays and environment mismatches. Distributing this blazing-fast executable via NPM/NPX leverages the most ubiquitous package manager for a true "zero-install" user experience. Agents and developers can execute complex skill aggregation and invocation seamlessly, focusing on their tasks rather than fighting environment setups.
 
 ## Project Classification
 
@@ -70,7 +70,7 @@ The core differentiator is the intersection of massive skill scale, BMAD-pattern
 
 ### 1. The Autonomous Agent Developer (Primary Success Path)
 **Persona:** Sarah, building a complex multi-agent system that requires dynamic tool loading.
-* **Opening Scene:** Sarah is configuring her agents and realizes they need access to the `bmad-create-prd` skill, but she doesn't want to manually copy-paste hundreds of markdown files from GitHub into her project.
+* **Opening Scene:** Sarah is configuring her agents and realizes they need access to the `-create-prd` skill, but she doesn't want to manually copy-paste hundreds of markdown files from GitHub into her project.
 * **Rising Action:** She opens her terminal and simply runs `npx skill-manage fetch`. 
 * **Climax:** Because the CLI is now a native Rust binary wrapped in NPM, there is *zero* installation delay or Node environment setup. The tool instantly reads her local manifest and downloads exactly the skills she requested.
 * **Resolution:** Within 2 seconds, her `.agent/skills` folder is populated. She's thrilled by the pure, frictionless speed and can immediately get back to coding her agent logic.
@@ -86,7 +86,7 @@ The core differentiator is the intersection of massive skill scale, BMAD-pattern
 **Persona:** Omar, the repository owner who curates the 1,400+ skills library.
 * **Opening Scene:** Omar has just added 50 new repository URLs to the `repos.json` manifest. Now he needs to regenerate the massive `hub-manifests.csv` and all sub-hub index files.
 * **Rising Action:** Previously, this PowerShell script took nearly 45 seconds to scan thousands of files, slowing down his daily workflow. He runs the new `skill-manage aggregate` native command.
-* **Climax:** The Rust engine's blazing-fast multi-threaded I/O rips through the 1,400 files, applying the BMAD phase/dependency rules and generating the CSV.
+* **Climax:** The Rust engine's blazing-fast multi-threaded I/O rips through the 1,400 files, applying the  phase/dependency rules and generating the CSV.
 * **Resolution:** The entire aggregation finishes in under 2 seconds. Omar smiles, realizing that maintaining the project at scale is no longer a chore.
 
 ### 4. The Troubled Integrator (Support/Investigation)

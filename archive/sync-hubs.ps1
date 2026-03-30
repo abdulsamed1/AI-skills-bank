@@ -599,12 +599,20 @@ if (-not (Test-Path $Hubsrc)) {
     exit 1
 }
 
-# Find all hub directories that actually contain a SKILL.md file (supports nested sub-hubs)
-$skillFiles = Get-ChildItem -Path $Hubsrc -Filter "SKILL.md" -Recurse -File
+# Find all hub directories. Support multiple hub markers so aggregation
+# outputs that don't include a SKILL.md still get discovered.
+$skillFiles = @()
+$skillFiles += Get-ChildItem -Path $Hubsrc -Filter "SKILL.md" -Recurse -File -ErrorAction SilentlyContinue
+$skillFiles += Get-ChildItem -Path $Hubsrc -Filter "skills-catalog.csv" -Recurse -File -ErrorAction SilentlyContinue
+$skillFiles += Get-ChildItem -Path $Hubsrc -Filter "skills-manifest.json" -Recurse -File -ErrorAction SilentlyContinue
+$skillFiles += Get-ChildItem -Path $Hubsrc -Filter "skills-index.json" -Recurse -File -ErrorAction SilentlyContinue
+$skillFiles = @($skillFiles | Select-Object -Unique)
+
 $hubs = @()
 $resolvedHubsrc = (Resolve-Path -LiteralPath $Hubsrc).Path
 foreach ($skillFile in $skillFiles) {
     $hubDir = Split-Path -Path $skillFile.FullName -Parent
+    if (-not $hubDir) { continue }
     $resolvedHubDir = (Resolve-Path -LiteralPath $hubDir).Path
     if (-not $resolvedHubDir.StartsWith($resolvedHubsrc, [System.StringComparison]::OrdinalIgnoreCase)) {
         Write-Log "Skipping unsafe hub path outside src root: $resolvedHubDir" "WARN"

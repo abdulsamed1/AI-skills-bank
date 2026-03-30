@@ -1,0 +1,6 @@
+skill_id,description,score,phase
+cc-skill-backend-patterns,"Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes.",100,2
+django-access-review,django-access-review,100,2
+nodejs-backend,"Node.js backend patterns with Express/Fastify, repositories",100,2
+paypal-integration,"Master PayPal payment integration including Express Checkout, IPN handling, recurring billing, and refund workflows.",100,2
+supabase-node,Express/Hono with Supabase and Drizzle ORM,100,2

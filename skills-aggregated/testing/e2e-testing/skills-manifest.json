@@ -1,26 +1,34 @@
 {
-  "generated_at_unix": 1774892584,
+  "generated_at_unix": 1774912689,
   "hub": "testing",
   "skills": [
     {
-      "description": "You are a browser automation expert who has debugged thousands of flaky tests and built scrapers that run for years without breaking. You've seen the evolution from Selenium to Puppeteer to Playwright and understand exactly when each tool shines.",
-      "phase": 5,
+      "description": "Expert capability for robust, stealthy, and efficient browser automation using Playwright Go.",
+      "phase": 3,
       "score": 100,
-      "skill_id": "browser-automation",
-      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-qa-testing/skills/browser-automation/SKILL.md",
-      "triggers": "browser;automation"
+      "skill_id": "go-playwright",
+      "src_path": "lib/antigravity-awesome-skills/skills/go-playwright/SKILL.md",
+      "triggers": "go;playwright"
     },
     {
       "description": "End-to-end encryption (E2EE) ensures that only the communicating parties can read messages, with no intermediary (including the server) able to decrypt them. This skill implements a simplified version",
-      "phase": 4,
+      "phase": 3,
       "score": 100,
       "skill_id": "implementing-end-to-end-encryption-for-messaging",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-end-to-end-encryption-for-messaging/SKILL.md",
-      "triggers": "implementing;end;to;end;encryption"
+      "triggers": "cryptography;encryption;e2e;messaging;signal-protocol"
+    },
+    {
+      "description": "Scaffold, write, debug, and enhance enterprise-grade Playwright E2E tests in Java using Page Object Model, JUnit 5, Allure reporting, and parallel execution.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "playwright-java",
+      "src_path": "lib/antigravity-awesome-skills/skills/playwright-java/SKILL.md",
+      "triggers": "playwright;java;e2e-testing;junit5;page-object-model;allure;selenium-alternative"
     },
     {
       "description": "Step-by-step migration guides for moving to Playwright from Cypress or Selenium/WebDriver — command mappings, architecture changes, and incremental adoption strategies.",
-      "phase": 5,
+      "phase": 3,
       "score": 100,
       "skill_id": "playwright-migration",
       "src_path": "lib/testdino-hq-playwright-skill/migration/SKILL.md",
@@ -28,7 +36,7 @@
     },
     {
       "description": "Page Object Model patterns for Playwright — when to use POM, how to structure page objects, and when fixtures or helpers are a better fit.",
-      "phase": 4,
+      "phase": 3,
       "score": 100,
       "skill_id": "playwright-pom",
       "src_path": "lib/testdino-hq-playwright-skill/pom/SKILL.md",
@@ -36,11 +44,19 @@
     },
     {
       "description": "IMPORTANT - Path Resolution: This skill can be installed in different locations (plugin system, manual installation, global, or project-specific). Before executing any commands, determine the skill directory based on where you loaded this SKILL.md file, and use that path in all commands below.",
-      "phase": 4,
+      "phase": 3,
       "score": 100,
       "skill_id": "playwright-skill",
       "src_path": "lib/antigravity-awesome-skills/skills/playwright-skill/SKILL.md",
       "triggers": "playwright;skill"
+    },
+    {
+      "description": "Generate marketing screenshots of your app using Playwright. Use when the user wants to create screenshots for Product Hunt, social media, landing pages, or documentation.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "screenshots",
+      "src_path": "lib/Shpigford-skills/screenshots/SKILL.md",
+      "triggers": "screenshots"
     },
     {
       "description": "End-to-end testing workflow with Playwright for browser automation, visual regression, cross-browser testing, and CI/CD integration.",

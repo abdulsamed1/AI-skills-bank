@@ -1,26 +1,10 @@
 {
-  "generated_at_unix": 1774892583,
+  "generated_at_unix": 1774912689,
   "hub": "backend",
   "skills": [
     {
-      "description": "Actorization converts existing software into reusable serverless applications compatible with the Apify platform. Actors are programs packaged as Docker images that accept well-defined JSON input, perform an action, and optionally produce structured JSON output.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "apify-actorization",
-      "src_path": "lib/antigravity-awesome-skills/skills/apify-actorization/SKILL.md",
-      "triggers": "apify;actorization"
-    },
-    {
-      "description": "AWS Aurora Serverless v2, RDS Proxy, Data API, connection pooling",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "aws-aurora",
-      "src_path": "lib/alinaqi-claude-bootstrap/skills/aws-aurora/SKILL.md",
-      "triggers": "aws;aurora"
-    },
-    {
       "description": "Proper Lambda function structure with error handling",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "aws-serverless",
       "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-devops-cloud/skills/aws-serverless/SKILL.md",
@@ -28,27 +12,43 @@
     },
     {
       "description": "Assess and migrate cross-cloud workloads to Azure with migration reports and code conversion guidance. Supports AWS, GCP, and other providers. WHEN: migrate Lambda to Azure Functions, migrate AWS to Azure, Lambda migration assessment, convert AWS serverless to Azure, migration readiness report, migrate from AWS, migrate from GCP, cross-cloud migration.",
-      "phase": 5,
+      "phase": 2,
       "score": 100,
       "skill_id": "azure-cloud-migrate",
       "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-cloud-migrate/SKILL.md",
       "triggers": "azure;cloud;migrate"
     },
     {
+      "description": "Cloudflare D1 SQLite database with Workers, Drizzle ORM, migrations",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "cloudflare-d1",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/cloudflare-d1/SKILL.md",
+      "triggers": "cloudflare;d1"
+    },
+    {
       "description": "Expert in Cloudflare Workers and the Edge Computing ecosystem. Covers Wrangler, KV, D1, Durable Objects, and R2 storage.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "cloudflare-workers-expert",
       "src_path": "lib/antigravity-awesome-skills/skills/cloudflare-workers-expert/SKILL.md",
       "triggers": "cloudflare;workers;expert"
     },
     {
-      "description": "Performing security reviews of serverless functions across AWS Lambda, Azure Functions, and GCP Cloud Functions to identify overly permissive execution roles, insecure environment variables, injection vulnerabilities, and missing runtime protections.",
-      "phase": 4,
+      "description": "Build ultra-fast web APIs and full-stack apps with Hono — runs on Cloudflare Workers, Deno, Bun, Node.js, and any WinterCG-compatible runtime.",
+      "phase": 2,
       "score": 100,
-      "skill_id": "performing-serverless-function-security-review",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-serverless-function-security-review/SKILL.md",
-      "triggers": "performing;serverless;function;security;review"
+      "skill_id": "hono",
+      "src_path": "lib/antigravity-awesome-skills/skills/hono/SKILL.md",
+      "triggers": "hono;edge;cloudflare-workers;bun;deno;api;typescript;web-standards"
+    },
+    {
+      "description": "Latch platform for bioinformatics workflows. Build pipelines with Latch SDK, @workflow/@task decorators, deploy serverless workflows, LatchFile/LatchDir, Nextflow/Snakemake integration.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "latchbio-integration",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/latchbio-integration/SKILL.md",
+      "triggers": "latchbio;integration"
     }
   ],
   "sub_hub": "serverless-edge",

@@ -1,18 +1,18 @@
 {
-  "generated_at_unix": 1774892583,
+  "generated_at_unix": 1774912689,
   "hub": "backend",
   "skills": [
     {
-      "description": "Parses and analyzes the Windows Amcache.hve registry hive to extract evidence of program execution, application installation, and driver loading for digital forensics investigations. Uses Eric Zimmerman's AmcacheParser and Timeline Explorer for artifact extraction, SHA-1 hash correlation with threat intel, and timeline reconstruction. Activates for requests involving Amcache forensics, program execution evidence, Windows artifact analysis, or application compatibility cache investigation.",
-      "phase": 4,
+      "description": "Analyze Chromium-based browser artifacts using Hindsight to extract browsing history, downloads, cookies, cached content, autofill data, saved passwords, and browser extensions from Chrome, Edge, Brave, and Opera for forensic investigation.",
+      "phase": 2,
       "score": 100,
-      "skill_id": "analyzing-windows-amcache-artifacts",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-windows-amcache-artifacts/SKILL.md",
-      "triggers": "analyzing;windows;amcache;artifacts"
+      "skill_id": "analyzing-browser-forensics-with-hindsight",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-browser-forensics-with-hindsight/SKILL.md",
+      "triggers": "browser-forensics;hindsight;chrome-forensics;chromium;edge;browsing-history;cookies;downloads;cache;web-artifacts"
     },
     {
       "description": "Azure Resource Manager SDK for Redis in .NET.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "azure-resource-manager-redis-dotnet",
       "src_path": "lib/antigravity-awesome-skills/skills/azure-resource-manager-redis-dotnet/SKILL.md",
@@ -20,7 +20,7 @@
     },
     {
       "description": "cache integration",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "cache-integration",
       "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/domains/document-extraction/skills/cache-integration/SKILL.md",
@@ -28,7 +28,7 @@
     },
     {
       "description": "All pods run in namespace crs. Use when pods in the crs namespace are in CrashLoopBackOff, OOMKilled, or restarting, multiple services restart simultaneously (cascade failure), or redis is unresponsive or showing AOF warnings.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "debug-buttercup",
       "src_path": "lib/antigravity-awesome-skills/skills/debug-buttercup/SKILL.md",
@@ -36,15 +36,15 @@
     },
     {
       "description": "Extract and analyze browser history, cookies, cache, downloads, and bookmarks from Chrome, Firefox, and Edge for forensic evidence of user web activity.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "extracting-browser-history-artifacts",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/extracting-browser-history-artifacts/SKILL.md",
-      "triggers": "extracting;browser;history;artifacts"
+      "triggers": "forensics;browser-forensics;chrome;firefox;edge;web-history;artifact-extraction"
     },
     {
       "description": "The hf CLI provides direct terminal access to the Hugging Face Hub for downloading, uploading, and managing repositories, cache, and compute resources.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "hugging-face-cli",
       "src_path": "lib/antigravity-awesome-skills/skills/hugging-face-cli/SKILL.md",
@@ -52,7 +52,7 @@
     },
     {
       "description": "Guide for controlling caching on Netlify's CDN. Use when configuring cache headers, setting up stale-while-revalidate, implementing on-demand cache purge, or understanding Netlify's CDN caching behavior. Covers Cache-Control, Netlify-CDN-Cache-Control, cache tags, durable cache, and framework-specific caching patterns.",
-      "phase": 5,
+      "phase": 2,
       "score": 100,
       "skill_id": "netlify-caching",
       "src_path": "lib/context-and-tools/codex/skills/netlify-caching/SKILL.md",
@@ -60,19 +60,35 @@
     },
     {
       "description": "Execute web cache deception attacks by exploiting path normalization discrepancies between CDN caching layers and origin servers to cache and retrieve sensitive authenticated content.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "performing-web-cache-deception-attack",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-web-cache-deception-attack/SKILL.md",
-      "triggers": "performing;web;cache;deception;attack"
+      "triggers": "web-cache-deception;cdn-attack;cache-poisoning;path-normalization;cloudflare;cache-key;static-resource"
     },
     {
       "description": "You're a caching specialist who has reduced LLM costs by 90% through strategic caching. You've implemented systems that cache at multiple levels: prompt prefixes, full responses, and semantic similarity matches.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "prompt-caching",
       "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-llm-application-developer/skills/prompt-caching/SKILL.md",
       "triggers": "prompt;caching"
+    },
+    {
+      "description": "RNN+Transformer hybrid with O(n) inference. Linear time, infinite context, no KV cache. Train like GPT (parallel), infer like RNN (sequential). Linux Foundation AI project. Production at Windows, Office, NeMo. RWKV-7 (March 2025). Models up to 14B parameters.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "rwkv-architecture",
+      "src_path": "lib/Orchestra-Research-AI-research-SKILLs/01-model-architecture/rwkv/SKILL.md",
+      "triggers": "RWKV;Model Architecture;RNN;Transformer Hybrid;Linear Complexity;Infinite Context;Efficient Inference;Linux Foundation;Alternative Architecture"
+    },
+    {
+      "description": "Expert guidance on using Valkey and Redis with Swift. Use when developers mention: (1) Valkey or Redis in Swift, (2) valkey-swift library, (3) RESP protocol or RESP3, (4) Redis cluster routing or hash slots, (5) pub/sub or subscriptions, (6) Redis transactions or MULTI/EXEC, (7) caching with Redis.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "swift-valkey",
+      "src_path": "lib/Joannis-claude-skills/swift-valkey/SKILL.md",
+      "triggers": "swift;valkey"
     }
   ],
   "sub_hub": "caching",

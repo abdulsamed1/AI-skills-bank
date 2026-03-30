@@ -117,7 +117,7 @@ foreach ($subHub in $subHubDirs) {
         $required = Resolve-Required -Score $score
 
         $allRows.Add([PSCustomObject]@{
-            module = "BMad"
+            module = ""
             hub = $subHub.MainHub
             sub_hub = $subHub.SubHub
             skill_id = $skillId

@@ -1,14 +1,14 @@
 {
-  "generated_at_unix": 1774892583,
+  "generated_at_unix": 1774912689,
   "hub": "backend",
   "skills": [
     {
       "description": "Investigate compromised Docker containers by analyzing images, layers, volumes, logs, and runtime artifacts to identify malicious activity and evidence.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "analyzing-docker-container-forensics",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-docker-container-forensics/SKILL.md",
-      "triggers": "analyzing;docker;container;forensics"
+      "triggers": "forensics;docker;container-forensics;container-security;image-analysis;runtime-investigation"
     },
     {
       "description": "Parses Kubernetes API server audit logs (JSON lines) to detect exec-into-pod, secret access, RBAC modifications, privileged pod creation, and anonymous API access. Builds threat detection rules from audit event patterns. Use when investigating Kubernetes cluster compromise or building k8s-specific SIEM detection rules.",
@@ -19,28 +19,36 @@
       "triggers": "analyzing;kubernetes;audit;logs"
     },
     {
-      "description": "Auditing Kubernetes cluster RBAC configurations to identify overly permissive roles, wildcard permissions, dangerous ClusterRoleBindings, service account abuse, and privilege escalation paths using kubectl, rbac-tool, KubiScan, and Kubeaudit.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "auditing-kubernetes-cluster-rbac",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/auditing-kubernetes-cluster-rbac/SKILL.md",
-      "triggers": "auditing;kubernetes;cluster;rbac"
-    },
-    {
-      "description": "Prepare Azure apps for deployment (infra Bicep/Terraform, azure.yaml, Dockerfiles). Use for create/modernize or create+deploy; not cross-cloud migration (use azure-cloud-migrate). WHEN: \"create app\", \"build web app\", \"create API\", \"create serverless HTTP API\", \"create frontend\", \"create back end\", \"build a service\", \"modernize application\", \"update application\", \"add authentication\", \"add caching\", \"host on Azure\", \"create and deploy\", \"deploy to Azure\", \"deploy to Azure using Terraform\", \"deploy to Azure App Service\", \"deploy to Azure App Service using Terraform\", \"deploy to Azure Container Apps\", \"deploy to Azure Container Apps using Terraform\", \"generate Terraform\", \"generate Bicep\", \"function app\", \"timer trigger\", \"service bus trigger\", \"event-driven function\", \"containerized Node.js app\", \"social media app\", \"static portfolio website\", \"todo list with frontend and API\", \"prepare my Azure application to use Key Vault\", \"managed identity\".",
+      "description": "Actorization converts existing software into reusable serverless applications compatible with the Apify platform. Actors are programs packaged as Docker images that accept well-defined JSON input, perform an action, and optionally produce structured JSON output.",
       "phase": 2,
       "score": 100,
-      "skill_id": "azure-prepare",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-prepare/SKILL.md",
-      "triggers": "azure;prepare"
+      "skill_id": "apify-actorization",
+      "src_path": "lib/antigravity-awesome-skills/skills/apify-actorization/SKILL.md",
+      "triggers": "apify;actorization"
     },
     {
-      "description": "You are an advanced Docker containerization expert with comprehensive, practical knowledge of container optimization, security hardening, multi-stage builds, orchestration patterns, and production deployment strategies based on current industry best practices.",
+      "description": "Detect unauthorized modifications to running containers by monitoring for binary execution drift, file system changes, and configuration deviations from the original container image.",
       "phase": 2,
       "score": 100,
-      "skill_id": "docker-expert",
-      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-devops-cloud/skills/docker-expert/SKILL.md",
-      "triggers": "docker;expert"
+      "skill_id": "detecting-container-drift-at-runtime",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-container-drift-at-runtime/SKILL.md",
+      "triggers": "container-drift;runtime-security;immutable-containers;falco;kubernetes;container-security;drift-detection;microsoft-defender"
+    },
+    {
+      "description": "Container escape is a critical attack technique where an adversary breaks out of container isolation to access the host system or other containers. Detection involves monitoring for escape indicators",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "detecting-container-escape-attempts",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-container-escape-attempts/SKILL.md",
+      "triggers": "containers;kubernetes;docker;security;runtime-security;escape-detection"
+    },
+    {
+      "description": "Detect container escape attempts in real-time using Falco runtime security rules that monitor syscalls, file access, and privilege escalation.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "detecting-container-escape-with-falco-rules",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-container-escape-with-falco-rules/SKILL.md",
+      "triggers": "falco;container-escape;runtime-security;syscall-monitoring;kubernetes;detection"
     },
     {
       "description": "Microsoft Entra Agent ID (preview) for creating OAuth2-capable AI agent identities via Microsoft Graph beta API. Covers Agent Identity Blueprints, BlueprintPrincipals, Agent Identities, required permissions, sponsors, and Workload Identity Federation. Includes Microsoft Entra SDK for AgentID (containerized sidecar) for polyglot agent authentication (Docker/Kubernetes), 3P agent integration, autonomous and interactive agent patterns. Triggers: \"agent identity\", \"agent id\", \"Agent Identity Blueprint\", \"BlueprintPrincipal\", \"entra agent\", \"agent identity provisioning\", \"Graph agent identity\", \"entra sidecar\", \"agent id sidecar\", \"auth sidecar\", \"3P agent\", \"third-party agent identity\", \"polyglot agent auth\".",
@@ -48,7 +56,7 @@
       "score": 100,
       "skill_id": "entra-agent-id",
       "src_path": "lib/microsoft-skills/.github/skills/entra-agent-id/SKILL.md",
-      "triggers": "entra;agent;id"
+      "triggers": "\"agent identity\", \"agent id\", \"Agent Identity Blueprint\", \"BlueprintPrincipal\", \"entra agent\", \"agent identity provisioning\", \"Graph agent identity\", \"entra sidecar\", \"agent id sidecar\", \"auth sidecar\", \"3P agent\", \"third-party agent identity\", \"polyglot agent auth\"."
     },
     {
       "description": "Complete guide to implementing GitOps workflows with ArgoCD and Flux for automated Kubernetes deployments.",
@@ -59,22 +67,6 @@
       "triggers": "gitops;workflow"
     },
     {
-      "description": "Hardening Docker containers for production involves applying security best practices aligned with CIS Docker Benchmark v1.8.0 to minimize attack surface, prevent privilege escalation, and enforce leas",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "hardening-docker-containers-for-production",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/hardening-docker-containers-for-production/SKILL.md",
-      "triggers": "hardening;docker;containers;for;production"
-    },
-    {
-      "description": "Harden the Docker daemon by configuring daemon.json with user namespace remapping, TLS authentication, rootless mode, and CIS benchmark controls.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "hardening-docker-daemon-configuration",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/hardening-docker-daemon-configuration/SKILL.md",
-      "triggers": "hardening;docker;daemon;configuration"
-    },
-    {
       "description": "Comprehensive guidance for creating, organizing, and managing Helm charts for packaging and deploying Kubernetes applications.",
       "phase": 2,
       "score": 100,
@@ -83,60 +75,36 @@
       "triggers": "helm;chart;scaffolding"
     },
     {
-      "description": "Enforce Kubernetes network segmentation using Calico CNI network policies and global network policies to control pod-to-pod traffic, restrict egress, and implement zero-trust microsegmentation.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "implementing-container-network-policies-with-calico",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-container-network-policies-with-calico/SKILL.md",
-      "triggers": "implementing;container;network;policies;with"
-    },
-    {
       "description": "Implement GCP Binary Authorization to enforce deploy-time security controls that ensure only trusted, attested container images are deployed to Google Kubernetes Engine and Cloud Run.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "implementing-gcp-binary-authorization",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-gcp-binary-authorization/SKILL.md",
-      "triggers": "implementing;gcp;binary;authorization"
+      "triggers": "gcp;binary-authorization;container-security;supply-chain;gke;cloud-run;attestation;software-integrity"
     },
     {
       "description": "Sign and verify container image provenance using Sigstore Cosign with keyless OIDC-based signing, attestations, and Kubernetes admission enforcement.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "implementing-image-provenance-verification-with-cosign",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-image-provenance-verification-with-cosign/SKILL.md",
-      "triggers": "implementing;image;provenance;verification;with"
+      "triggers": "cosign;sigstore;image-signing;supply-chain;provenance;keyless;slsa"
     },
     {
       "description": "Implement Kubernetes network segmentation using Calico NetworkPolicy and GlobalNetworkPolicy for zero-trust pod-to-pod communication.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "implementing-kubernetes-network-policy-with-calico",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-kubernetes-network-policy-with-calico/SKILL.md",
-      "triggers": "implementing;kubernetes;network;policy;with"
-    },
-    {
-      "description": "Kubernetes NetworkPolicies provide pod-level network segmentation by defining ingress and egress rules that control traffic flow between pods, namespaces, and external endpoints. Combined with CNI plu",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "implementing-network-policies-for-kubernetes",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-network-policies-for-kubernetes/SKILL.md",
-      "triggers": "implementing;network;policies;for;kubernetes"
+      "triggers": "calico;kubernetes;network-policy;network-segmentation;zero-trust;cni"
     },
     {
       "description": "Enforce Kubernetes admission policies using OPA Gatekeeper with ConstraintTemplates, Rego rules, and the Gatekeeper policy library.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "implementing-opa-gatekeeper-for-policy-enforcement",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-opa-gatekeeper-for-policy-enforcement/SKILL.md",
-      "triggers": "implementing;opa;gatekeeper;for;policy"
-    },
-    {
-      "description": "Harden Kubernetes Role-Based Access Control by implementing least-privilege policies, auditing role bindings, eliminating cluster-admin sprawl, and integrating external identity providers.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "implementing-rbac-hardening-for-kubernetes",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-rbac-hardening-for-kubernetes/SKILL.md",
-      "triggers": "implementing;rbac;hardening;for;kubernetes"
+      "triggers": "opa;gatekeeper;kubernetes;admission-control;policy-as-code;rego"
     },
     {
       "description": "Step-by-step guidance for creating production-ready Kubernetes manifests including Deployments, Services, ConfigMaps, Secrets, and PersistentVolumeClaims.",
@@ -156,7 +124,7 @@
     },
     {
       "description": "Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise container orchestration.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "kubernetes-architect",
       "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-devops-cloud/skills/kubernetes-architect/SKILL.md",
@@ -164,7 +132,7 @@
     },
     {
       "description": "Kubernetes deployment workflow for container orchestration, Helm charts, service mesh, and production-ready K8s configurations.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "kubernetes-deployment",
       "src_path": "lib/antigravity-awesome-skills/skills/kubernetes-deployment/SKILL.md",
@@ -188,27 +156,19 @@
     },
     {
       "description": "Evaluates LLMs across 100+ benchmarks from 18+ harnesses (MMLU, HumanEval, GSM8K, safety, VLM) with multi-backend execution. Use when needing scalable evaluation on local Docker, Slurm HPC, or cloud platforms. NVIDIA's enterprise-grade platform with container-first architecture for reproducible benchmarking.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "nemo-evaluator-sdk",
       "src_path": "lib/Orchestra-Research-AI-research-SKILLs/11-evaluation/nemo-evaluator/SKILL.md",
-      "triggers": "nemo;evaluator;sdk"
+      "triggers": "Evaluation;NeMo;NVIDIA;Benchmarking;MMLU;HumanEval;Multi-Backend;Slurm;Docker;Reproducible;Enterprise"
     },
     {
       "description": "Production-ready Docker and docker-compose setup for Odoo with PostgreSQL, persistent volumes, environment-based configuration, and Nginx reverse proxy.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "odoo-docker-deployment",
       "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-odoo-erp/skills/odoo-docker-deployment/SKILL.md",
       "triggers": "odoo;docker;deployment"
-    },
-    {
-      "description": "Uses Falco YAML rules for runtime threat detection in containers and Kubernetes, monitoring syscalls for shell spawns, file tampering, network anomalies, and privilege escalation. Manages Falco rules via the Falco gRPC API and parses Falco alert output. Use when building container runtime security or investigating k8s cluster compromises.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "performing-cloud-native-forensics-with-falco",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-cloud-native-forensics-with-falco/SKILL.md",
-      "triggers": "performing;cloud;native;forensics;with"
     },
     {
       "description": "This skill covers hardening container images by minimizing attack surface, removing unnecessary packages, implementing multi-stage builds, configuring non-root users, and applying CIS Docker Benchmark recommendations to produce secure production-ready images.",
@@ -216,19 +176,11 @@
       "score": 100,
       "skill_id": "performing-container-image-hardening",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-container-image-hardening/SKILL.md",
-      "triggers": "performing;container;image;hardening"
-    },
-    {
-      "description": "Docker Bench for Security is an open-source script that checks dozens of common best practices around deploying Docker containers in production. Based on the CIS Docker Benchmark, it audits host confi",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "performing-docker-bench-security-assessment",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-docker-bench-security-assessment/SKILL.md",
-      "triggers": "performing;docker;bench;security;assessment"
+      "triggers": "devsecops;cicd;container-hardening;docker;cis-benchmark;secure-sdlc"
     },
     {
       "description": "Create, manage, or connect to a headless Windows 11 VM running in Docker with SSH access. Use when the user wants to spin up, stop, restart, or SSH into a Windows VM.",
-      "phase": 4,
+      "phase": 2,
       "score": 100,
       "skill_id": "windows-vm",
       "src_path": "lib/superpowers-lab/skills/windows-vm/SKILL.md",

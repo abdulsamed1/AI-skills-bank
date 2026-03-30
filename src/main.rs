@@ -107,6 +107,8 @@ struct SetupConfig {
     sync_scope: SyncScope,
     tools: Vec<String>,
     repositories: Vec<String>,
+    #[serde(default = "default_category_exclusions")]
+    category_exclusions: Vec<String>,
 }
 
 impl SetupConfig {
@@ -117,6 +119,66 @@ impl SetupConfig {
     fn workspace_root_path(&self) -> PathBuf {
         PathBuf::from(&self.workspace_root)
     }
+}
+
+fn default_category_exclusions() -> Vec<String> {
+    vec!["games".to_string(), "medicine".to_string(), "law".to_string()]
+}
+
+fn normalize_exclusion_category(raw: &str) -> String {
+    let mut out = String::new();
+    let mut prev_dash = false;
+
+    for ch in raw.trim().to_lowercase().chars() {
+        if ch.is_ascii_alphanumeric() {
+            out.push(ch);
+            prev_dash = false;
+        } else if !prev_dash {
+            out.push('-');
+            prev_dash = true;
+        }
+    }
+
+    out.trim_matches('-').to_string()
+}
+
+fn parse_exclusion_categories(raw: &str) -> Vec<String> {
+    let mut out = Vec::new();
+    let mut seen = HashSet::new();
+
+    for part in raw.split(|c| c == ',' || c == ';' || c == '\n') {
+        let normalized = normalize_exclusion_category(part);
+        if normalized.is_empty() {
+            continue;
+        }
+
+        if seen.insert(normalized.clone()) {
+            out.push(normalized);
+        }
+    }
+
+    out
+}
+
+fn apply_exclusion_env(config: Option<&SetupConfig>) {
+    let categories = config
+        .map(|cfg| {
+            if cfg.category_exclusions.is_empty() {
+                default_category_exclusions()
+            } else {
+                cfg.category_exclusions.clone()
+            }
+        })
+        .unwrap_or_else(default_category_exclusions);
+
+    let payload = categories
+        .iter()
+        .map(|c| normalize_exclusion_category(c))
+        .filter(|c| !c.is_empty())
+        .collect::<Vec<_>>()
+        .join(";");
+
+    std::env::set_var("SKILL_MANAGE_EXCLUSIONS", payload);
 }
 
 struct DirGuard {
@@ -157,10 +219,12 @@ async fn run() -> Result<()> {
         "setup" | "init" => {
             let config = run_setup_wizard(&repo_root)?;
             save_config(&config_path, &config)?;
+            apply_exclusion_env(Some(&config));
             run_full_pipeline(&config).await?;
         }
         "run" => {
             let config = ensure_config(&repo_root, &config_path)?;
+            apply_exclusion_env(Some(&config));
             run_full_pipeline(&config).await?;
         }
         "fetch" => {
@@ -168,17 +232,16 @@ async fn run() -> Result<()> {
             if let Some(manifest) = prepare_manifest(&repo_root, &config.repositories)? {
                 run_fetch(&repo_root, manifest).await?;
             } else {
-                bail!("No repositories configured. Run setup or provide repos.json.");
+                bail!("No repositories configured. Run setup or provide.skill-manage-cli-config.json.");
             }
         }
         "aggregate" => {
+            let loaded = load_config(&config_path)?;
+            apply_exclusion_env(loaded.as_ref());
             let output_dir = repo_root.join("skills-aggregated");
             if let Err(native_err) = run_aggregate_native(&repo_root, &output_dir, None, true).await {
-                eprintln!(
-                    "[WARN] Native aggregation failed, falling back to script: {}",
-                    native_err
-                );
-                run_aggregate_script(&repo_root)?;
+                eprintln!("[ERROR] Native aggregation failed (no archive fallback): {}", native_err);
+                return Err(native_err);
             }
         }
         "sync" => {
@@ -186,15 +249,13 @@ async fn run() -> Result<()> {
             let targets = resolve_sync_targets(&config)?;
             let output_dir = repo_root.join("skills-aggregated");
             if let Err(native_err) = run_sync_native(&output_dir, &targets) {
-                eprintln!(
-                    "[WARN] Native sync failed, falling back to script: {}",
-                    native_err
-                );
-                run_sync_script(&repo_root, &targets, Some(&output_dir))?;
+                eprintln!("[ERROR] Native sync failed (no archive fallback): {}", native_err);
+                return Err(native_err);
             }
         }
         "add-repo" => {
             let mut config = ensure_config(&repo_root, &config_path)?;
+            apply_exclusion_env(Some(&config));
             let repo_url = if let Some(url) = args.get(2) {
                 url.clone()
             } else {
@@ -243,21 +304,25 @@ async fn run_interactive(repo_root: &Path, config_path: &Path) -> Result<()> {
     let mut config = match load_config(config_path)? {
         Some(cfg) => cfg,
         None => {
-            // If repos.json exists, auto-create a default setup and run the pipeline
+            // If.skill-manage-cli-config.json exists, auto-create a default setup and run the pipeline
             if let Some(cfg) = auto_config_from_manifest(repo_root)? {
-                println!("No setup found, but repos.json detected. Creating default setup and running automation...");
+                println!("No setup found, but.skill-manage-cli-config.json detected. Creating default setup and running automation...");
                 save_config(config_path, &cfg)?;
+                apply_exclusion_env(Some(&cfg));
                 run_full_pipeline(&cfg).await?;
                 cfg
             } else {
                 println!("No setup found. Starting first-time setup...");
                 let cfg = run_setup_wizard(repo_root)?;
                 save_config(config_path, &cfg)?;
+                apply_exclusion_env(Some(&cfg));
                 run_full_pipeline(&cfg).await?;
                 cfg
             }
         }
     };
+
+    apply_exclusion_env(Some(&config));
 
     let theme = ColorfulTheme::default();
     let options = vec![
@@ -292,24 +357,19 @@ async fn run_interactive(repo_root: &Path, config_path: &Path) -> Result<()> {
                 }
             }
             2 => {
+                apply_exclusion_env(Some(&config));
                 let output_dir = repo_root.join("skills-aggregated");
-                if let Err(native_err) = run_aggregate_native(repo_root, &output_dir, None, true).await {
-                    eprintln!(
-                        "[WARN] Native aggregation failed, falling back to script: {}",
-                        native_err
-                    );
-                    run_aggregate_script(repo_root)?;
+                if let Err(native_err) = run_aggregate_native(&repo_root, &output_dir, None, true).await {
+                    eprintln!("[ERROR] Native aggregation failed (no archive fallback): {}", native_err);
+                    return Err(native_err);
                 }
             }
             3 => {
                 let output_dir = repo_root.join("skills-aggregated");
                 let targets = resolve_sync_targets(&config)?;
                 if let Err(native_err) = run_sync_native(&output_dir, &targets) {
-                    eprintln!(
-                        "[WARN] Native sync failed, falling back to script: {}",
-                        native_err
-                    );
-                    run_sync_script(repo_root, &targets, Some(&output_dir))?;
+                    eprintln!("[ERROR] Native sync failed (no archive fallback): {}", native_err);
+                    return Err(native_err);
                 }
             }
             4 => {
@@ -326,6 +386,7 @@ async fn run_interactive(repo_root: &Path, config_path: &Path) -> Result<()> {
                 let new_cfg = run_setup_wizard(repo_root)?;
                 save_config(config_path, &new_cfg)?;
                 config = new_cfg;
+                apply_exclusion_env(Some(&config));
                 run_full_pipeline(&config).await?;
             }
             7 => {
@@ -355,6 +416,7 @@ fn print_config_summary(config: &SetupConfig) {
     for repo in &config.repositories {
         println!("    - {}", repo);
     }
+    println!("  Excluded categories: {}", config.category_exclusions.join(", "));
     println!();
 }
 
@@ -423,6 +485,17 @@ fn run_setup_wizard(repo_root: &Path) -> Result<SetupConfig> {
     };
 
     let repositories = dedupe_urls(repositories);
+    let default_exclusions = default_category_exclusions().join(", ");
+    let exclusion_input: String = Input::with_theme(&theme)
+        .with_prompt("Excluded categories (comma-separated, editable any time)")
+        .with_initial_text(default_exclusions)
+        .interact_text()
+        .context("Failed to read excluded categories")?;
+
+    let mut category_exclusions = parse_exclusion_categories(&exclusion_input);
+    if category_exclusions.is_empty() {
+        category_exclusions = default_category_exclusions();
+    }
 
     let workspace_root = workspace_root_from_repo_root(repo_root);
     let config = SetupConfig {
@@ -432,6 +505,7 @@ fn run_setup_wizard(repo_root: &Path) -> Result<SetupConfig> {
         sync_scope,
         tools,
         repositories,
+        category_exclusions,
     };
 
     println!("\nSetup saved. Running automation now...");
@@ -466,6 +540,7 @@ fn collect_repo_urls(theme: &ColorfulTheme) -> Result<Vec<String>> {
 }
 
 async fn run_full_pipeline(config: &SetupConfig) -> Result<()> {
+    apply_exclusion_env(Some(config));
     let repo_root = config.repo_root_path();
     println!("\n=== skill-manage full automation ===");
 
@@ -478,22 +553,16 @@ async fn run_full_pipeline(config: &SetupConfig) -> Result<()> {
 
     println!("[2/3] Aggregate skills...");
     let full_output = repo_root.join("skills-aggregated");
-    if let Err(native_err) = run_aggregate_native(&repo_root, &full_output, None, true).await {
-        eprintln!(
-            "[WARN] Native aggregation failed, falling back to script: {}",
-            native_err
-        );
-        run_aggregate_script(&repo_root)?;
-    }
+            if let Err(native_err) = run_aggregate_native(&repo_root, &full_output, None, true).await {
+                eprintln!("[ERROR] Native aggregation failed (no archive fallback): {}", native_err);
+                return Err(native_err);
+            }
 
     println!("[3/3] Sync to selected tools...");
     let targets = resolve_sync_targets(config)?;
     if let Err(native_err) = run_sync_native(&full_output, &targets) {
-        eprintln!(
-            "[WARN] Native sync failed, falling back to script: {}",
-            native_err
-        );
-        run_sync_script(&repo_root, &targets, Some(&full_output))?;
+        eprintln!("[ERROR] Native sync failed (no archive fallback): {}", native_err);
+        return Err(native_err);
     }
 
     println!("\n[OK] Automation complete.");
@@ -520,28 +589,22 @@ async fn run_add_repo_pipeline(
     println!("[2/3] Aggregating new repository only: {}...", repo_name);
     let selected = HashSet::from([repo_name.clone()]);
     if let Err(native_err) = run_aggregate_native(
-        repo_root,
+        &repo_root,
         &temp_output,
         Some(&selected),
         false,
     )
     .await
     {
-        eprintln!(
-            "[WARN] Native targeted aggregation failed, falling back to script: {}",
-            native_err
-        );
-        run_aggregate_selected(repo_root, &[repo_name.clone()], &temp_output)?;
+        eprintln!("[ERROR] Native targeted aggregation failed (no archive fallback): {}", native_err);
+        return Err(native_err);
     }
 
     println!("[3/3] Syncing newly aggregated output for {}...", repo_name);
     let targets = resolve_sync_targets(config)?;
     if let Err(native_err) = run_sync_native(&temp_output, &targets) {
-        eprintln!(
-            "[WARN] Native targeted sync failed, falling back to script: {}",
-            native_err
-        );
-        run_sync_script(repo_root, &targets, Some(&temp_output))?;
+        eprintln!("[ERROR] Native targeted sync failed (no archive fallback): {}", native_err);
+        return Err(native_err);
     }
 
     println!("[OK] Added and synced repository: {}", repo_url);
@@ -569,8 +632,12 @@ async fn run_aggregate_native(
 }
 
 fn run_sync_native(source_root: &Path, targets: &[PathBuf]) -> Result<()> {
-    sync_output_to_targets(source_root, targets, NativeSyncMode::Auto)
-        .context("Native sync failed")?;
+    // Sync targets one-by-one so we can surface which target fails
+    for target in targets {
+        println!("  syncing target: {}", target.display());
+        sync_output_to_targets(source_root, std::slice::from_ref(target), NativeSyncMode::Auto)
+            .with_context(|| format!("Native sync failed for target: {}", target.display()))?;
+    }
     println!("  native sync targets: {}", targets.len());
     Ok(())
 }
@@ -596,7 +663,7 @@ async fn run_fetch(repo_root: &Path, manifest: RepoManifest) -> Result<()> {
 
 fn run_aggregate_script(repo_root: &Path) -> Result<()> {
     let script = repo_root
-        .join("scripts")
+        .join("archive")
         .join("aggregate-skills-to-subhubs.ps1");
     if !script.exists() {
         bail!("Aggregate script not found: {}", script.display());
@@ -623,7 +690,7 @@ fn run_aggregate_script(repo_root: &Path) -> Result<()> {
 
 fn run_aggregate_selected(repo_root: &Path, repo_names: &[String], output_dir: &Path) -> Result<()> {
     let script = repo_root
-        .join("scripts")
+        .join("archive")
         .join("aggregate-skills-to-subhubs.ps1");
     if !script.exists() {
         bail!("Aggregate script not found: {}", script.display());
@@ -657,7 +724,7 @@ fn run_sync_script(repo_root: &Path, targets: &[PathBuf], hubsrc_override: Optio
         bail!("No sync targets were resolved from setup");
     }
 
-    let script = repo_root.join("scripts").join("sync-hubs.ps1");
+    let script = repo_root.join("archive").join("sync-hubs.ps1");
     if !script.exists() {
         bail!("Sync script not found: {}", script.display());
     }
@@ -725,7 +792,19 @@ fn run_release_gate(repo_root: &Path) -> Result<()> {
         );
     }
 
-    let cli_dir = repo_root.join("cli");
+    let cli_dir = if repo_root.join("Cargo.toml").exists() {
+        repo_root.to_path_buf()
+    } else {
+        repo_root.join("cli")
+    };
+
+    if !cli_dir.join("Cargo.toml").exists() {
+        bail!(
+            "Release gate failed: could not find Cargo.toml in {}",
+            cli_dir.display()
+        );
+    }
+
     let status = Command::new("cargo")
         .current_dir(&cli_dir)
         .arg("test")
@@ -774,11 +853,11 @@ fn resolve_sync_targets(config: &SetupConfig) -> Result<Vec<PathBuf>> {
     for key in &config.tools {
         if let Some(tool) = tool_by_key(key) {
             match config.sync_scope {
-                SyncScope::Global => targets.push(home_dir.join(tool.global_rel)),
-                SyncScope::Local => targets.push(workspace_root.join(tool.local_rel)),
+                SyncScope::Global => targets.push(home_dir.join(std::path::Path::new(tool.global_rel))),
+                SyncScope::Local => targets.push(workspace_root.join(std::path::Path::new(tool.local_rel))),
                 SyncScope::Both => {
-                    targets.push(home_dir.join(tool.global_rel));
-                    targets.push(workspace_root.join(tool.local_rel));
+                    targets.push(home_dir.join(std::path::Path::new(tool.global_rel)));
+                    targets.push(workspace_root.join(std::path::Path::new(tool.local_rel)));
                 }
             }
         }
@@ -789,6 +868,8 @@ fn resolve_sync_targets(config: &SetupConfig) -> Result<Vec<PathBuf>> {
         .into_iter()
         .filter(|p| seen.insert(p.to_string_lossy().to_lowercase()))
         .collect::<Vec<_>>();
+
+    
 
     if deduped.is_empty() {
         bail!("No targets were selected. Please rerun setup.");
@@ -922,6 +1003,26 @@ fn sanitize_segment(input: &str) -> String {
 }
 
 fn load_repo_urls_from_json(path: &Path) -> Result<Vec<String>> {
+    // If file doesn't exist, create a stub and guide the user
+    if !path.exists() {
+        let parent = path.parent().unwrap_or_else(|| Path::new("."));
+        let _ = fs::create_dir_all(parent);
+        
+        let stub = r#"{
+  "repositories": [
+    "https://github.com/owner/repo-name.git"
+  ]
+}
+"#;
+        let _ = fs::write(path, stub);
+        
+        println!("\n[INFO] repos.json created at: {}", path.display());
+        println!("Please edit the file and add your repository URLs, then re-run the setup.");
+        println!("Format: Add GitHub URLs to the 'repositories' array.\n");
+        
+        bail!("repos.json was created. Please add your repositories and re-run setup.");
+    }
+    
     let content = fs::read_to_string(path)
         .with_context(|| format!("Failed to read repository JSON: {}", path.display()))?;
     let value: Value = serde_json::from_str(&content)
@@ -959,7 +1060,7 @@ fn collect_repo_urls_from_value(value: &Value, out: &mut Vec<String>) {
                 }
             }
 
-            for key in ["repositories", "repos", "links", "items"] {
+            for key in ["repositories", "repos"] {
                 if let Some(nested) = map.get(key) {
                     collect_repo_urls_from_value(nested, out);
                 }
@@ -1004,18 +1105,21 @@ fn discover_repo_root() -> Result<PathBuf> {
     let cwd = env::current_dir().context("Failed to get current directory")?;
 
     let mut candidates = Vec::new();
-    candidates.push(cwd.clone());
-    candidates.push(cwd.join("skill-manage"));
-    if let Some(parent) = cwd.parent() {
-        candidates.push(parent.to_path_buf());
-        candidates.push(parent.join("skill-manage"));
-        if let Some(grandparent) = parent.parent() {
-            candidates.push(grandparent.to_path_buf());
-            candidates.push(grandparent.join("skill-manage"));
-        }
+    let mut cursor = Some(cwd.as_path());
+    while let Some(path) = cursor {
+        candidates.push(path.to_path_buf());
+        candidates.push(path.join("skill-manage"));
+        cursor = path.parent();
     }
 
+    let mut seen = HashSet::new();
+
     for candidate in candidates {
+        let key = candidate.to_string_lossy().to_lowercase();
+        if !seen.insert(key) {
+            continue;
+        }
+
         if is_skill_manage_root(&candidate) {
             return Ok(candidate);
         }
@@ -1027,15 +1131,27 @@ fn discover_repo_root() -> Result<PathBuf> {
 }
 
 fn is_skill_manage_root(path: &Path) -> bool {
+    let has_native_core = path.join("src").is_dir() && cargo_toml_declares_skill_manage(path);
+
     let has_cli_core = path.join("cli").join("Cargo.toml").exists() && path.join("src").is_dir();
 
-    let has_legacy_scripts = path.join("scripts").join("sync-hubs.ps1").exists()
-        && path
-            .join("scripts")
-            .join("aggregate-skills-to-subhubs.ps1")
-            .exists();
+    // Do not rely on the legacy `archive/` scripts to identify the repo root.
+    // The CLI should work purely from the Rust code; archived scripts are optional.
+    has_native_core || has_cli_core
+}
 
-    has_cli_core || has_legacy_scripts
+fn cargo_toml_declares_skill_manage(path: &Path) -> bool {
+    let cargo_toml = path.join("Cargo.toml");
+    if !cargo_toml.exists() {
+        return false;
+    }
+
+    fs::read_to_string(cargo_toml)
+        .map(|content| {
+            content.contains("name = \"skill-manage\"")
+                || content.contains("name=\"skill-manage\"")
+        })
+        .unwrap_or(false)
 }
 
 fn workspace_root_from_repo_root(repo_root: &Path) -> PathBuf {
@@ -1069,9 +1185,9 @@ fn ensure_config(repo_root: &Path, config_path: &Path) -> Result<SetupConfig> {
     match load_config(config_path)? {
         Some(cfg) => Ok(cfg),
         None => {
-            // If a repos.json manifest exists, auto-generate a sensible default config
+            // If a.skill-manage-cli-config.json manifest exists, auto-generate a sensible default config
             if let Some(cfg) = auto_config_from_manifest(repo_root)? {
-                println!("No setup file found, but repos.json detected. Creating default setup and saving it...");
+                println!("No setup file found, but.skill-manage-cli-config.json detected. Creating default setup and saving it...");
                 save_config(config_path, &cfg)?;
                 return Ok(cfg);
             }
@@ -1113,6 +1229,7 @@ fn auto_config_from_manifest(repo_root: &Path) -> Result<Option<SetupConfig>> {
         sync_scope: SyncScope::Both,
         tools,
         repositories,
+        category_exclusions: default_category_exclusions(),
     };
 
     Ok(Some(cfg))
@@ -1136,7 +1253,31 @@ fn tool_by_key(key: &str) -> Option<&'static ToolDef> {
 }
 
 fn resolve_input_path(repo_root: &Path, input: &str) -> PathBuf {
-    let path = PathBuf::from(input.trim());
+    let trimmed = input.trim();
+    
+    // Auto-detect repos.json if input is empty or looks like a short name
+    if trimmed.is_empty() || trimmed.eq_ignore_ascii_case("repos.json") || trimmed.eq_ignore_ascii_case("repos") {
+        let candidates = [repo_root.join("repos.json")];
+        
+        for candidate in &candidates {
+            if candidate.exists() {
+                return candidate.clone();
+            }
+        }
+        
+        // Also check in current directory
+        if let Ok(cwd) = env::current_dir() {
+            let cwd_candidate = cwd.join("repos.json");
+            if cwd_candidate.exists() {
+                return cwd_candidate;
+            }
+        }
+        
+        // Default to repo_root/repos.json if none exist
+        return repo_root.join("repos.json");
+    }
+    
+    let path = PathBuf::from(trimmed);
     if path.is_absolute() {
         return path;
     }

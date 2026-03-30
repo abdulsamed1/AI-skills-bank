@@ -1,11 +1,10 @@
 {
-  "count": 34,
+  "count": 23,
   "hub": "programming",
   "skills": [
-    "analyzing-malicious-pdf-with-peepdf",
-    "analyzing-pdf-malware-with-pdfid",
     "azure-ai-agents-persistent-java",
     "azure-ai-anomalydetector-java",
+    "azure-ai-contentsafety-java",
     "azure-ai-formrecognizer-java",
     "azure-ai-projects-java",
     "azure-ai-vision-imageanalysis-java",
@@ -17,25 +16,15 @@
     "azure-communication-common-java",
     "azure-communication-sms-java",
     "azure-compute-batch-java",
-    "azure-data-tables-java",
     "azure-eventgrid-java",
     "azure-eventhub-java",
     "azure-identity-java",
-    "azure-keyvault-keys-ts",
-    "azure-keyvault-secrets-ts",
     "azure-messaging-webpubsub-java",
     "azure-monitor-ingestion-java",
+    "azure-monitor-opentelemetry-exporter-java",
+    "azure-monitor-query-java",
     "azure-storage-blob-java",
-    "deobfuscating-javascript-malware",
-    "exploiting-prototype-pollution-in-javascript",
-    "figma-use",
-    "java-pro",
-    "javascript-mastery",
-    "javascript-pro",
-    "latex-paper-conversion",
-    "modern-javascript-patterns",
-    "n8n-code-javascript",
-    "sankhya-dashboard-html-jsp-custom-best-pratices"
+    "java-pro"
   ],
   "sub_hub": "java"
 }

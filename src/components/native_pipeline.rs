@@ -1,7 +1,9 @@
 use crate::components::aggregator::{Aggregator, SkillMetadata};
+use crate::components::aggregator::rules;
 use crate::components::CommandResult;
 use crate::error::SkillManageError;
 use crate::utils::atomicity::{create_link_atomic, sync_dir_atomic, write_file_atomic};
+use home::home_dir;
 use crate::utils::progress::ProgressManager;
 use crate::utils::theme::Theme;
 use serde::{Deserialize, Serialize};
@@ -10,6 +12,7 @@ use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet};
 use std::path::{Path, PathBuf};
 use std::sync::Arc;
 use std::time::{SystemTime, UNIX_EPOCH};
+use std::process::Command;
 use walkdir::WalkDir;
 
 #[derive(Debug, Clone, Copy)]
@@ -38,7 +41,7 @@ impl Drop for CwdGuard {
     }
 }
 
-#[derive(Debug, Serialize)]
+#[derive(Debug, Serialize, Deserialize)]
 struct RoutingRow {
     skill_id: String,
     description: String,
@@ -60,6 +63,19 @@ struct SubHubIndexEntry {
     skills_count: usize,
     path: String,
 }
+
+#[derive(Debug, Serialize)]
+struct ReviewCandidate {
+    skill_id: String,
+    hub: String,
+    sub_hub: String,
+    score: u32,
+    src_path: String,
+}
+
+const REVIEW_BAND_MIN_SCORE: u32 = 40;
+const REVIEW_BAND_MAX_SCORE: u32 = 80;
+const DEFAULT_MIN_SKILLS_PER_SUBHUB: usize = 1;
 
 #[derive(Debug, Default)]
 struct ExistingAssignments {
@@ -83,6 +99,7 @@ pub async fn aggregate_to_output(
 ) -> Result<Vec<SkillMetadata>, SkillManageError> {
     let _guard = CwdGuard::set(repo_root)?;
     let existing_assignments = load_existing_assignments(output_dir)?;
+    let manual_overrides = load_manual_overrides(repo_root)?;
 
     let theme = Arc::new(Theme::new());
     let progress = Arc::new(ProgressManager::new(show_progress, false, Arc::clone(&theme)));
@@ -111,6 +128,10 @@ pub async fn aggregate_to_output(
         });
     }
 
+    // Apply any explicit manual overrides first (highest precedence)
+    apply_manual_overrides(repo_root, &manual_overrides, &mut skills);
+
+    // Then apply persisted routing only for low-confidence items.
     apply_existing_assignments(repo_root, &existing_assignments, &mut skills);
 
     skills.sort_by(|a, b| {
@@ -130,6 +151,21 @@ pub async fn aggregate_to_output(
 
 fn normalize_path_key(input: &str) -> String {
     input.trim().replace('\\', "/").to_lowercase()
+}
+
+fn phase_for_hub(hub: &str) -> u32 {
+    match hub {
+        "programming" => 1,
+        "frontend" => 1,
+        "backend" => 2,
+        "testing" => 3,
+        "ai" => 4,
+        "business" => 5,
+        "marketing" => 5,
+        "design" => 5,
+        "mobile" => 5,
+        _ => 6,
+    }
 }
 
 fn load_existing_assignments(output_dir: &Path) -> Result<ExistingAssignments, SkillManageError> {
@@ -222,6 +258,7 @@ fn apply_existing_assignments(
             skill.hub = hub.clone();
             skill.sub_hub = sub_hub.clone();
             skill.match_score = Some(100);
+            skill.phase = Some(phase_for_hub(hub));
             continue;
         }
 
@@ -230,8 +267,220 @@ fn apply_existing_assignments(
             skill.hub = hub.clone();
             skill.sub_hub = sub_hub.clone();
             skill.match_score = Some(100);
+            skill.phase = Some(phase_for_hub(hub));
         }
     }
+}
+
+#[derive(Debug, Deserialize)]
+struct ManualOverrideRow {
+    skill_id: String,
+    hub: String,
+    sub_hub: String,
+    #[serde(default)]
+    score: Option<u32>,
+}
+
+fn load_manual_overrides(
+    repo_root: &Path,
+) -> Result<HashMap<String, (String, String, Option<u32>)>, SkillManageError> {
+    let mut out: HashMap<String, (String, String, Option<u32>)> = HashMap::new();
+
+    let candidates = vec![
+        repo_root.join("config").join("manual_overrides.csv"),
+        repo_root.join("manual_overrides.csv"),
+    ];
+
+    for p in candidates {
+        if p.exists() {
+            let mut rdr = csv::Reader::from_path(&p).map_err(|e| {
+                SkillManageError::ConfigError(format!(
+                    "Failed reading manual overrides {}: {}",
+                    p.display(),
+                    e
+                ))
+            })?;
+
+            for row in rdr.deserialize::<ManualOverrideRow>() {
+                let row = row.map_err(|e| {
+                    SkillManageError::ConfigError(format!(
+                        "Failed parsing override row in {}: {}",
+                        p.display(),
+                        e
+                    ))
+                })?;
+
+                out.insert(
+                    row.skill_id.trim().to_lowercase(),
+                    (row.hub.trim().to_lowercase(), row.sub_hub.trim().to_lowercase(), row.score),
+                );
+            }
+
+            // Respect first-found overrides file
+            break;
+        }
+    }
+
+    Ok(out)
+}
+
+fn apply_manual_overrides(
+    repo_root: &Path,
+    overrides: &HashMap<String, (String, String, Option<u32>)>,
+    skills: &mut [SkillMetadata],
+) {
+    if overrides.is_empty() {
+        return;
+    }
+
+    for skill in skills.iter_mut() {
+        let key = skill.name.to_lowercase();
+        if let Some((hub, sub, score)) = overrides.get(&key) {
+            skill.hub = hub.clone();
+            skill.sub_hub = sub.clone();
+            skill.match_score = Some(score.unwrap_or(100));
+            skill.phase = Some(phase_for_hub(hub));
+            continue;
+        }
+
+        // fallback: match by normalized src path
+        let src_key = normalize_path_key(&normalize_src_path(repo_root, &skill.path));
+        if let Some((hub, sub, score)) = overrides.get(&src_key) {
+            skill.hub = hub.clone();
+            skill.sub_hub = sub.clone();
+            skill.match_score = Some(score.unwrap_or(100));
+            skill.phase = Some(phase_for_hub(hub));
+        }
+    }
+}
+
+fn compute_git_info(repo_dir: &Path) -> Option<serde_json::Value> {
+    // Only attempt git commands if a .git directory exists
+    if !repo_dir.join(".git").exists() {
+        return None;
+    }
+
+    let head = Command::new("git")
+        .arg("-C")
+        .arg(repo_dir)
+        .arg("rev-parse")
+        .arg("HEAD")
+        .output()
+        .ok()
+        .and_then(|o| String::from_utf8(o.stdout).ok())
+        .map(|s| s.trim().to_string());
+
+    let status = Command::new("git")
+        .arg("-C")
+        .arg(repo_dir)
+        .arg("status")
+        .arg("--porcelain")
+        .output()
+        .ok()
+        .and_then(|o| String::from_utf8(o.stdout).ok())
+        .map(|s| s.trim().to_string());
+
+    match (head, status) {
+        (Some(h), Some(s)) => Some(json!({"head": h, "porcelain": s})),
+        (Some(h), None) => Some(json!({"head": h})),
+        _ => None,
+    }
+}
+
+fn is_global_target(path: &Path) -> bool {
+    if let Some(home) = home_dir() {
+        return path.starts_with(home);
+    }
+    false
+}
+
+fn is_absolute_src_path(path: &str) -> bool {
+    let p = Path::new(path);
+    if p.is_absolute() {
+        return true;
+    }
+
+    // Handle Windows-style absolute paths in normalized slash form (e.g. C:/...)
+    let bytes = path.as_bytes();
+    bytes.len() >= 3 && bytes[1] == b':' && (bytes[2] == b'/' || bytes[2] == b'\\')
+}
+
+fn infer_repo_root_from_output(source_root: &Path) -> PathBuf {
+    if source_root
+        .file_name()
+        .and_then(|s| s.to_str())
+        .map(|s| s.eq_ignore_ascii_case("skills-aggregated"))
+        .unwrap_or(false)
+    {
+        if let Some(parent) = source_root.parent() {
+            return parent.to_path_buf();
+        }
+    }
+
+    source_root.to_path_buf()
+}
+
+fn rewrite_routing_csv_to_absolute(
+    source_root: &Path,
+    target_root: &Path,
+) -> Result<usize, SkillManageError> {
+    let repo_root = infer_repo_root_from_output(source_root);
+    let mut updated_files = 0usize;
+
+    let mut routing_files = WalkDir::new(target_root)
+        .into_iter()
+        .filter_map(|e| e.ok())
+        .filter(|e| e.file_type().is_file() && e.file_name() == "routing.csv")
+        .map(|e| e.path().to_path_buf())
+        .collect::<Vec<_>>();
+    routing_files.sort_by(|a, b| a.to_string_lossy().cmp(&b.to_string_lossy()));
+
+    for routing_file in routing_files {
+        let mut rdr = csv::Reader::from_path(&routing_file).map_err(|e| {
+            SkillManageError::ConfigError(format!(
+                "Failed reading routing for absolute rewrite {}: {}",
+                routing_file.display(),
+                e
+            ))
+        })?;
+
+        let mut rows = Vec::new();
+        let mut changed = false;
+        for row in rdr.deserialize::<RoutingRow>() {
+            let mut row = row.map_err(|e| {
+                SkillManageError::ConfigError(format!(
+                    "Failed parsing routing row in {}: {}",
+                    routing_file.display(),
+                    e
+                ))
+            })?;
+
+            let src = row.src_path.trim().to_string();
+            if src.is_empty() || is_absolute_src_path(&src) {
+                rows.push(row);
+                continue;
+            }
+
+            // Rewrite only known relative roots that point to local repository files.
+            if !(src.starts_with("lib/") || src.starts_with("src/")) {
+                rows.push(row);
+                continue;
+            }
+
+            let absolute = repo_root.join(src.replace('/', "\\"));
+            let normalized = absolute.to_string_lossy().replace('\\', "/");
+            row.src_path = normalized;
+            changed = true;
+            rows.push(row);
+        }
+
+        if changed {
+            write_csv_atomic(&routing_file, &rows)?;
+            updated_files += 1;
+        }
+    }
+
+    Ok(updated_files)
 }
 
 pub fn sync_output_to_targets(
@@ -239,6 +488,8 @@ pub fn sync_output_to_targets(
     targets: &[PathBuf],
     mode: NativeSyncMode,
 ) -> Result<(), SkillManageError> {
+    // use the CLI logger for user-visible messages
+    let _logger = crate::utils::log::Logger::new(false, false, Arc::new(Theme::new()));
     if !source_root.exists() {
         return Err(SkillManageError::ConfigError(format!(
             "Aggregation output not found: {}",
@@ -247,8 +498,55 @@ pub fn sync_output_to_targets(
     }
 
     for target in targets {
+        let rewrite_absolute = is_global_target(target);
+        let mut used_copy = false;
+        // internal debug left intentionally minimal
+        // If the destination already exists and is a reparse point (junction/symlink),
+        // skip syncing to avoid copying into an existing junction that may point
+        // back to the source (which causes recursive copy errors) or to external paths.
+        // Prefer reading symlink metadata first (doesn't follow links). This is
+        // important because `Path::exists()` follows symlinks and can return false
+        // if the link target is inaccessible — but the link itself still exists.
+        #[cfg(windows)]
+        {
+            use std::os::windows::fs::MetadataExt;
+            match std::fs::symlink_metadata(target) {
+                Ok(md) => {
+                    const FILE_ATTRIBUTE_REPARSE_POINT: u32 = 0x0400;
+                    if (md.file_attributes() & FILE_ATTRIBUTE_REPARSE_POINT) != 0 {
+                        _logger.warn(&format!("Skipping sync for {}: destination is a junction/reparse-point", target.display()));
+                        continue;
+                    }
+                }
+                Err(_) => {
+                    // If we cannot read metadata, fall back to `exists()` below.
+                }
+            }
+        }
+        #[cfg(not(windows))]
+        {
+            match std::fs::symlink_metadata(target) {
+                    Ok(md) if md.file_type().is_symlink() => {
+                        _logger.warn(&format!("Skipping sync for {}: destination is a symlink", target.display()));
+                        continue;
+                    }
+                Ok(_) => {}
+                Err(_e) => {
+                    _logger.warn(&format!("Skipping sync for {}: unable to inspect target metadata", target.display()));
+                    continue;
+                }
+            }
+        }
+
+        if target.exists() {
+            // If the destination exists as a regular file/dir, proceed normally.
+        }
+
         match mode {
-            NativeSyncMode::Copy => sync_dir_atomic(source_root, target)?,
+            NativeSyncMode::Copy => {
+                sync_dir_atomic(source_root, target)?;
+                used_copy = true;
+            }
             NativeSyncMode::Junction => {
                 #[cfg(windows)]
                 {
@@ -265,21 +563,97 @@ pub fn sync_output_to_targets(
                 create_link_atomic(source_root, target)?;
             }
             NativeSyncMode::Auto => {
-                if let Err(link_err) = create_link_atomic(source_root, target) {
-                    sync_dir_atomic(source_root, target).map_err(|copy_err| {
-                        SkillManageError::ConfigError(format!(
-                            "Auto sync failed for {}. link error: {}; copy error: {}",
-                            target.display(),
-                            link_err,
-                            copy_err
-                        ))
-                    })?;
-                }
+                // To make the CLI safe to run for non-admin users across platforms
+                // (especially Windows where creating junctions/symlinks may require
+                // elevated privileges or developer mode), default `Auto` to copy-only
+                // behavior. This avoids attempts to create junctions/symlinks that can
+                // fail under restricted permissions. Users who want link-based
+                // deployment can explicitly use `NativeSyncMode::Junction` or
+                // `NativeSyncMode::SymbolicLink` via future CLI flags.
+                sync_dir_atomic(source_root, target)?;
+                used_copy = true;
             }
+        }
+
+        if rewrite_absolute && used_copy {
+            rewrite_routing_csv_to_absolute(source_root, target)?;
         }
     }
 
     Ok(())
+}
+
+fn min_skills_per_subhub() -> usize {
+    std::env::var("SKILL_MANAGE_MIN_SKILLS_PER_SUBHUB")
+        .ok()
+        .and_then(|s| s.parse::<usize>().ok())
+        .filter(|v| *v > 0)
+        .unwrap_or(DEFAULT_MIN_SKILLS_PER_SUBHUB)
+}
+
+fn regroup_small_subhubs(
+    grouped: BTreeMap<(String, String), Vec<SkillMetadata>>,
+) -> BTreeMap<(String, String), Vec<SkillMetadata>> {
+    let min_required = min_skills_per_subhub();
+    if min_required <= 1 {
+        return grouped;
+    }
+
+    let mut out: BTreeMap<(String, String), Vec<SkillMetadata>> = BTreeMap::new();
+    let mut fallback_by_hub: BTreeMap<String, Vec<SkillMetadata>> = BTreeMap::new();
+
+    for ((hub, sub_hub), mut skill_list) in grouped.into_iter() {
+        if skill_list.len() < min_required {
+            fallback_by_hub
+                .entry(hub)
+                .or_default()
+                .append(&mut skill_list);
+        } else {
+            out.entry((hub, sub_hub)).or_default().append(&mut skill_list);
+        }
+    }
+
+    for (hub, mut skill_list) in fallback_by_hub.into_iter() {
+        out.entry((hub, "general".to_string()))
+            .or_default()
+            .append(&mut skill_list);
+    }
+
+    out
+}
+
+fn write_review_band(
+    repo_root: &Path,
+    output_dir: &Path,
+    skills: &[SkillMetadata],
+) -> Result<(), SkillManageError> {
+    let candidates = skills
+        .iter()
+        .filter_map(|s| {
+            let score = s.match_score.unwrap_or(0);
+            if score < REVIEW_BAND_MIN_SCORE || score > REVIEW_BAND_MAX_SCORE {
+                return None;
+            }
+
+            Some(ReviewCandidate {
+                skill_id: s.name.clone(),
+                hub: s.hub.clone(),
+                sub_hub: s.sub_hub.clone(),
+                score,
+                src_path: normalize_src_path(repo_root, &s.path),
+            })
+        })
+        .collect::<Vec<_>>();
+
+    let payload = json!({
+        "version": 1,
+        "generated_at_unix": unix_now(),
+        "min_score": REVIEW_BAND_MIN_SCORE,
+        "max_score": REVIEW_BAND_MAX_SCORE,
+        "candidates": candidates,
+    });
+
+    write_json_atomic(&output_dir.join("review-band.json"), &payload)
 }
 
 fn write_native_artifacts(
@@ -298,6 +672,50 @@ fn write_native_artifacts(
             .entry((skill.hub.clone(), skill.sub_hub.clone()))
             .or_default()
             .push(skill.clone());
+    }
+    grouped = regroup_small_subhubs(grouped);
+
+    // Ensure marketing hub contains all defined sub-hubs (even if empty).
+    // This makes it easier to navigate and consume many repos under `lib/`
+    // by presenting a stable directory structure for marketing sub-hubs.
+    if let Some(marking_def) = rules::SUB_HUB_DEFINITIONS.get("marketing") {
+        for (sub_name, _rule) in marking_def.sub_hubs.iter() {
+            let key = ("marketing".to_string(), sub_name.to_string());
+            if !grouped.contains_key(&key) {
+                // create directory and write empty artifacts
+                let subhub_dir = output_dir.join("marketing").join(sub_name);
+                std::fs::create_dir_all(&subhub_dir)?;
+
+                // empty routing
+                let empty_routing: Vec<RoutingRow> = Vec::new();
+                write_csv_atomic(&subhub_dir.join("routing.csv"), empty_routing.as_slice())?;
+
+                // empty catalog
+                let empty_catalog: Vec<CatalogRow> = Vec::new();
+                write_csv_atomic(&subhub_dir.join("skills-catalog.csv"), empty_catalog.as_slice())?;
+
+                // index and manifest
+                let index_json = json!({
+                    "hub": "marketing",
+                    "sub_hub": sub_name,
+                    "count": 0,
+                    "skills": []
+                });
+                write_json_atomic(&subhub_dir.join("skills-index.json"), &index_json)?;
+
+                let manifest_json = json!({
+                    "version": 1,
+                    "hub": "marketing",
+                    "sub_hub": sub_name,
+                    "generated_at_unix": unix_now(),
+                    "skills": []
+                });
+                write_json_atomic(&subhub_dir.join("skills-manifest.json"), &manifest_json)?;
+
+                // (Placeholder index entries are added later once `subhub_index`
+                // is available in scope to avoid borrow/move issues.)
+            }
+        }
     }
 
     let mut hub_to_subhubs: BTreeMap<String, BTreeSet<String>> = BTreeMap::new();
@@ -391,7 +809,24 @@ fn write_native_artifacts(
         });
     }
 
-    let hubs_list = hub_to_subhubs.keys().cloned().collect::<Vec<_>>();
+    // Ensure marketing hub contains placeholder entries in the subhub index
+    // for any defined sub-hubs that ended up empty so they are discoverable.
+    if let Some(marking_def) = rules::SUB_HUB_DEFINITIONS.get("marketing") {
+        for (sub_name, _rule) in marking_def.sub_hubs.iter() {
+            let exists = subhub_index
+                .iter()
+                .any(|e| e.hub == "marketing" && e.sub_hub == *sub_name);
+            if !exists {
+                subhub_index.push(SubHubIndexEntry {
+                    hub: "marketing".to_string(),
+                    sub_hub: sub_name.to_string(),
+                    skills_count: 0,
+                    path: format!("marketing/{}", sub_name),
+                });
+            }
+        }
+    }
+
     // Master SKILL.md is no longer emitted; the repository-level
     // `skills-aggregated/AGENTS.md` is the canonical, dynamic entrypoint.
 
@@ -406,12 +841,50 @@ fn write_native_artifacts(
         .iter()
         .filter_map(|s| skill_repo_name(&s.path))
         .collect::<BTreeSet<_>>();
+
+    let mut repo_objs = Vec::new();
+    for name in repo_names.into_iter() {
+        let repo_dir = repo_root.join("src").join(&name);
+        if let Some(git) = compute_git_info(&repo_dir) {
+            repo_objs.push(json!({"name": name, "git": git}));
+        } else {
+            repo_objs.push(json!({"name": name}));
+        }
+    }
+
+    let review_candidates = skills
+        .iter()
+        .filter(|s| {
+            let score = s.match_score.unwrap_or(0);
+            score >= REVIEW_BAND_MIN_SCORE && score <= REVIEW_BAND_MAX_SCORE
+        })
+        .count();
+
+    let exclude_categories = std::env::var("SKILL_MANAGE_EXCLUSIONS")
+        .ok()
+        .map(|v| {
+            v.split(';')
+                .map(|s| s.trim().to_lowercase())
+                .filter(|s| !s.is_empty())
+                .collect::<Vec<_>>()
+        })
+        .unwrap_or_default();
+
     let lock_json = json!({
         "generated_at_unix": unix_now(),
         "source": "native-cli",
-        "src_repositories": repo_names.into_iter().map(|name| json!({"name": name})).collect::<Vec<_>>()
+        "src_repositories": repo_objs,
+        "exclude_categories": exclude_categories,
+        "min_skills_per_subhub": min_skills_per_subhub(),
+        "review_band": {
+            "min_score": REVIEW_BAND_MIN_SCORE,
+            "max_score": REVIEW_BAND_MAX_SCORE,
+            "candidates": review_candidates
+        }
     });
     write_json_atomic(&output_dir.join(".skill-lock.json"), &lock_json)?;
+
+    write_review_band(repo_root, output_dir, skills)?;
 
     Ok(())
 }

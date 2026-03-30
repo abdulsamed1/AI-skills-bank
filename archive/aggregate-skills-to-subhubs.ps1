@@ -1,4 +1,4 @@
-# Skill Aggregation System - BMAD Style Builder
+# Skill Aggregation System -  Style Builder
 # Transforms flat hub-manifest structure to sub-hub architecture
 # Generates lightweight SKILL.md router + external catalog data
 
@@ -77,7 +77,7 @@ if (Test-Path $validationScriptPath) {
 
 # Use $PSScriptRoot to resolve paths relative to the script location
 if ($PSScriptRoot) {
-    # Normalize script root and derive repository root even when script lives under skill-manage/scripts.
+    # Normalize script root and derive repository root even when script lives under skill-manage/archive.
     $normalizedScriptRoot = (Get-Item $PSScriptRoot).FullName
     $candidateRootObj = Get-Item (Join-Path $normalizedScriptRoot "..")
     if ($candidateRootObj.Name -ieq "skill-manage") {
@@ -89,7 +89,7 @@ if ($PSScriptRoot) {
     $RepoRoot = $RepoRootObj.FullName
     
     $legacyHubsDir = Join-Path $RepoRoot "skill-manage/hub-skills"
-    $srcReposDir = Join-Path $RepoRoot "skill-manage/src"
+    $srcReposDir = Join-Path $RepoRoot "skill-manage/lib"
     if (Test-Path $legacyHubsDir) {
         $srcHubsDir = $legacyHubsDir
     }
@@ -100,7 +100,7 @@ if ($PSScriptRoot) {
     $OutputDir = Join-Path $RepoRoot "skill-manage/skills-aggregated"
 }
 
-$srcRootPath = Join-Path $RepoRoot "skill-manage/src"
+$srcRootPath = Join-Path $RepoRoot "skill-manage/lib"
 $SkillLockPath = Join-Path $OutputDir ".skill-lock.json"
 $RestrictsrcRepos = ($srcRepoMode -ne "all")
 $ChangedOnlyFallbackToLatest = $false
@@ -288,7 +288,7 @@ if ($AllowMultiHub -and $SecondaryMinScore -lt $PrimaryMinScore) {
 }
 
 # ============================================================================
-# BMAD STYLE TEMPLATES (TOOL-NEUTRAL)
+#  STYLE TEMPLATES (TOOL-NEUTRAL)
 # ============================================================================
 
 $SKILL_ROUTER_TEMPLATE = @'
@@ -612,8 +612,8 @@ $SUB_HUB_DEFINITIONS = @{
 
     "productivity" = @{
         "workflow-automation" = @{
-            keywords = @("productivity", "workflow", "automation", "automate", "automated", "automates", "task-management", "project-management", "agile", "scrum", "kanban", "notion", "planning", "orchestration", "orchestrate", "orchestrator", "agentic", "autonomous", "n8n", "zapier", "make", "langgraph", "crewai", "autogen", "tool-calling", "pipeline", "bmad", "commit", "git", "pr", "wiki", "ship", "issue", "diary", "daily", "conductor", "plan", "sprint", "standup", "documentation", "docs", "readme", "changelog", "onboarding", "tutorial", "obsidian", "json-canvas", "pdf", "pptx", "xlsx", "draw", "file-organizer", "kaizen", "closed-loop", "slack-bot", "telegram-bot", "chat-widget", "twilio")
-            anchor_keywords = @("workflow", "automation", "productivity", "orchestration", "orchestrate", "orchestrator", "agentic", "n8n", "zapier", "langgraph", "crewai", "bmad", "git", "conductor", "obsidian", "wiki")
+            keywords = @("productivity", "workflow", "automation", "automate", "automated", "automates", "task-management", "project-management", "agile", "scrum", "kanban", "notion", "planning", "orchestration", "orchestrate", "orchestrator", "agentic", "autonomous", "n8n", "zapier", "make", "langgraph", "crewai", "autogen", "tool-calling", "pipeline", "", "commit", "git", "pr", "wiki", "ship", "issue", "diary", "daily", "conductor", "plan", "sprint", "standup", "documentation", "docs", "readme", "changelog", "onboarding", "tutorial", "obsidian", "json-canvas", "pdf", "pptx", "xlsx", "draw", "file-organizer", "kaizen", "closed-loop", "slack-bot", "telegram-bot", "chat-widget", "twilio")
+            anchor_keywords = @("workflow", "automation", "productivity", "orchestration", "orchestrate", "orchestrator", "agentic", "n8n", "zapier", "langgraph", "crewai", "", "git", "conductor", "obsidian", "wiki")
             negative_keywords = @("encryption", "oauth", "jwt", "unit-test", "integration-test", "e2e", "qa")
             description = "Productivity and automation: workflow automation, agentic orchestration, project delivery, and tool-connected process automation"
             best_for = @(
@@ -693,7 +693,7 @@ $MANUAL_HUB_OVERRIDES = @{
     "beautiful-prose"              = @{ main = "marketing"; sub = "content"; score = 100 }
     "billing-automation"           = @{ main = "business"; sub = "saas"; score = 100 }
     "blockchain-developer"         = @{ main = "programming"; sub = "typescript"; score = 100 }
-    "bmad-cis-storytelling"        = @{ main = "marketing"; sub = "content"; score = 100 }
+    "-cis-storytelling"        = @{ main = "marketing"; sub = "content"; score = 100 }
     "brainstorm-experiments-existing" = @{ main = "business"; sub = "product-strategy"; score = 100 }
     "brainstorming"                = @{ main = "productivity"; sub = "workflow-automation"; score = 100 }
     "brand-guidelines"             = @{ main = "design"; sub = "brand-guidelines"; score = 100 }
@@ -1985,8 +1985,8 @@ if ($categoryGapSignals.Count -gt 0) {
 }
 Write-Host ""
 
-# Generate BMAD-style files for each sub-hub
-Write-Host "[INFO] Step 3: Generating BMAD-style sub-hubs (SKILL router + workflow + catalog)..."
+# Generate -style files for each sub-hub
+Write-Host "[INFO] Step 3: Generating -style sub-hubs (SKILL router + workflow + catalog)..."
 
 $MIN_SKILLS_PER_HUB = $MinSkillsPerHub
 $routingIndex = @()

@@ -1,8 +1,8 @@
 {
-  "count": 9,
+  "count": 11,
   "hub": "backend",
   "skills": [
-    "analyzing-windows-amcache-artifacts",
+    "analyzing-browser-forensics-with-hindsight",
     "azure-resource-manager-redis-dotnet",
     "cache-integration",
     "debug-buttercup",
@@ -10,7 +10,9 @@
     "hugging-face-cli",
     "netlify-caching",
     "performing-web-cache-deception-attack",
-    "prompt-caching"
+    "prompt-caching",
+    "rwkv-architecture",
+    "swift-valkey"
   ],
   "sub_hub": "caching"
 }

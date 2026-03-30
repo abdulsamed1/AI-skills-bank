@@ -6,6 +6,7 @@ use crossterm::style::{Color, Stylize};
 use minijinja::{context, Environment};
 use rayon::prelude::*;
 use serde::Serialize;
+use std::fs;
 use std::path::Path;
 
 #[derive(Debug, Clone, Serialize)]
@@ -56,7 +57,7 @@ impl Check for ManifestExistsCheck {
                         why: "Manifest must be valid JSON following the RepoManifest schema"
                             .to_string(),
                     }],
-                    fix: "Check for JSON syntax errors or unknown fields in repos.json".to_string(),
+                    fix: "Check for JSON syntax errors or unknown fields in.skill-manage-cli-config.json".to_string(),
                 },
             }
         } else {
@@ -68,7 +69,7 @@ impl Check for ManifestExistsCheck {
                     should_be: Some("repos.json in root".to_string()),
                     why: "The manifest file defines which skill repositories to manage".to_string(),
                 }],
-                fix: "Create a repos.json manifest in the root".to_string(),
+                fix: "Create a.skill-manage-cli-config.json manifest in the root".to_string(),
             }
         }
     }
@@ -220,9 +221,9 @@ impl Check for RepoIntegrityCheck {
                         location: None,
                         current: None,
                         should_be: None,
-                        why: "Integrity check requires a valid repos.json".to_string(),
+                        why: "Integrity check requires a valid.skill-manage-cli-config.json".to_string(),
                     }],
-                    fix: "Fix repos.json first".to_string(),
+                    fix: "Fix.skill-manage-cli-config.json first".to_string(),
                 }
             }
         };
@@ -327,6 +328,213 @@ impl Check for MasterRouterCheck {
     }
 }
 
+// 6. V11 Sub-hub routing.csv presence check
+struct V11SubHubRoutingCheck;
+impl Check for V11SubHubRoutingCheck {
+    fn name(&self) -> &str {
+        "V11 Sub-hub Routing Coverage"
+    }
+
+    fn run(&self) -> DiagnosticStatus {
+        let root_candidates = [
+            Path::new("skills-aggregated"),
+            Path::new("skill-manage/skills-aggregated"),
+        ];
+
+        let root = match root_candidates.iter().find(|p| p.exists()) {
+            Some(p) => *p,
+            None => {
+                return DiagnosticStatus::Warn {
+                    issues: vec![DiagnosticIssue {
+                        description: "skills-aggregated not found".to_string(),
+                        location: None,
+                        current: None,
+                        should_be: Some("skills-aggregated/ with hub/sub_hub folders".to_string()),
+                        why: "V11 requires scanning generated sub-hub routing tables".to_string(),
+                    }],
+                    fix: "Run 'aggregate' before doctor V11 validation".to_string(),
+                }
+            }
+        };
+
+        let mut missing = Vec::new();
+        let mut _only = 0usize;
+
+        let hub_dirs = match fs::read_dir(root) {
+            Ok(d) => d,
+            Err(e) => {
+                return DiagnosticStatus::Fail {
+                    issues: vec![DiagnosticIssue {
+                        description: format!("Failed to read {}: {}", root.display(), e),
+                        location: Some(root.display().to_string()),
+                        current: None,
+                        should_be: None,
+                        why: "Cannot validate routing coverage without scanning sub-hub folders"
+                            .to_string(),
+                    }],
+                    fix: "Check directory permissions and rerun aggregate".to_string(),
+                }
+            }
+        };
+
+        for hub_entry in hub_dirs.flatten() {
+            let hub_path = hub_entry.path();
+            if !hub_path.is_dir() {
+                continue;
+            }
+
+            let sub_dirs = match fs::read_dir(&hub_path) {
+                Ok(s) => s,
+                Err(_) => continue,
+            };
+
+            for sub_entry in sub_dirs.flatten() {
+                let sub_path = sub_entry.path();
+                if !sub_path.is_dir() {
+                    continue;
+                }
+
+                let has_routing = sub_path.join("routing.csv").exists();
+                if has_routing {
+                    continue;
+                }
+
+                if sub_path.join("SKILL.md").exists() {
+                    _only += 1;
+                    continue;
+                }
+
+                let rel = sub_path
+                    .strip_prefix(root)
+                    .unwrap_or(&sub_path)
+                    .to_string_lossy()
+                    .replace('\\', "/");
+                missing.push(rel);
+            }
+        }
+
+        if missing.is_empty() {
+            DiagnosticStatus::Pass
+        } else {
+            let preview = missing.iter().take(8).cloned().collect::<Vec<_>>().join(", ");
+            DiagnosticStatus::Fail {
+                issues: vec![DiagnosticIssue {
+                    description: format!(
+                        "{} sub-hub folders missing routing.csv ({} -only ignored)",
+                        missing.len(),
+                        _only
+                    ),
+                    location: Some(root.display().to_string()),
+                    current: Some(preview),
+                    should_be: Some("Each sub-hub should include routing.csv".to_string()),
+                    why: "Agents route skills through routing.csv per sub-hub".to_string(),
+                }],
+                fix: "Regenerate aggregated outputs and ensure routing.csv is emitted".to_string(),
+            }
+        }
+    }
+}
+
+// 7. V12 src_path resolution check
+struct V12RoutingSrcPathCheck;
+impl Check for V12RoutingSrcPathCheck {
+    fn name(&self) -> &str {
+        "V12 routing.csv src_path Resolution"
+    }
+
+    fn run(&self) -> DiagnosticStatus {
+        let root_candidates = [
+            Path::new("skills-aggregated"),
+            Path::new("skill-manage/skills-aggregated"),
+        ];
+
+        let root = match root_candidates.iter().find(|p| p.exists()) {
+            Some(p) => *p,
+            None => {
+                return DiagnosticStatus::Warn {
+                    issues: vec![DiagnosticIssue {
+                        description: "skills-aggregated not found".to_string(),
+                        location: None,
+                        current: None,
+                        should_be: Some("skills-aggregated/ with routing.csv files".to_string()),
+                        why: "V12 validates src_path links produced by aggregation".to_string(),
+                    }],
+                    fix: "Run 'aggregate' before doctor V12 validation".to_string(),
+                }
+            }
+        };
+
+        #[derive(serde::Deserialize)]
+        struct RoutingPathRow {
+            skill_id: String,
+            #[serde(default)]
+            src_path: String,
+        }
+
+        let mut broken = Vec::new();
+        let mut total_paths = 0usize;
+
+        let routing_files = walkdir::WalkDir::new(root)
+            .into_iter()
+            .filter_map(|e| e.ok())
+            .filter(|e| e.file_type().is_file() && e.file_name() == "routing.csv")
+            .map(|e| e.path().to_path_buf())
+            .collect::<Vec<_>>();
+
+        for file in routing_files {
+            let mut rdr = match csv::Reader::from_path(&file) {
+                Ok(r) => r,
+                Err(e) => {
+                    broken.push(format!("{}: unreadable csv ({})", file.display(), e));
+                    continue;
+                }
+            };
+
+            for row in rdr.deserialize::<RoutingPathRow>() {
+                let row = match row {
+                    Ok(v) => v,
+                    Err(e) => {
+                        broken.push(format!("{}: parse error ({})", file.display(), e));
+                        continue;
+                    }
+                };
+
+                if row.src_path.trim().is_empty() {
+                    continue;
+                }
+
+                total_paths += 1;
+                let path = Path::new(row.src_path.trim());
+                let resolved = if path.is_absolute() {
+                    path.to_path_buf()
+                } else {
+                    Path::new(".").join(path)
+                };
+
+                if !resolved.exists() {
+                    broken.push(format!("{} -> {}", row.skill_id, row.src_path));
+                }
+            }
+        }
+
+        if broken.is_empty() {
+            DiagnosticStatus::Pass
+        } else {
+            let preview = broken.iter().take(8).cloned().collect::<Vec<_>>().join(", ");
+            DiagnosticStatus::Fail {
+                issues: vec![DiagnosticIssue {
+                    description: format!("{} broken src_path entries", broken.len()),
+                    location: Some(root.display().to_string()),
+                    current: Some(preview),
+                    should_be: Some(format!("All {} src_path entries resolve to files", total_paths)),
+                    why: "Broken src_path entries cause silent agent routing failures".to_string(),
+                }],
+                fix: "Rebuild routing.csv and verify src_path rewrite rules".to_string(),
+            }
+        }
+    }
+}
+
 pub struct Diagnostics;
 
 impl Diagnostics {
@@ -340,6 +548,8 @@ impl Diagnostics {
             Box::new(SourceDirCheck),
             Box::new(CsvSchemaCheck),
             Box::new(MasterRouterCheck),
+            Box::new(V11SubHubRoutingCheck),
+            Box::new(V12RoutingSrcPathCheck),
             Box::new(RepoIntegrityCheck),
         ];
 

@@ -7,14 +7,14 @@
     path inside lib/. Outputs one routing.csv per sub-hub directory
     containing ONLY what agents need: skill_id, triggers, score, src_path.
 
-    Excludes internal/BMAD skills (module != external sources) since
+    Excludes internal/ skills (module != external sources) since
     they are accessible via the IDE skill system directly.
 
     Agents read these files instead of hub-manifests.csv (572KB → ~2-13KB each).
 
 .EXAMPLE
-    .\scripts\generate-routing-tsv.ps1
-    .\scripts\generate-routing-tsv.ps1 -DryRun
+    .\archive\generate-routing-tsv.ps1
+    .\archive\generate-routing-tsv.ps1 -DryRun
 #>
 
 [CmdletBinding()]
@@ -146,7 +146,7 @@ foreach ($group in $groups) {
                 $srcPath = ($relative -replace '\\', '/')
             }
         } else {
-            # Skip internal/BMAD skills — they live in .agent/skills/
+            # Skip internal/ skills — they live in .agent/skills/
             [void]$unresolvedIds.Add("${hub}/${subHub} -- ${skillId}")
             continue
         }
@@ -181,7 +181,7 @@ foreach ($group in $groups) {
 Write-Host "`n── Summary ──" -ForegroundColor Cyan
 Write-Host "  Files generated : $filesWritten"
 Write-Host "  Skills routed   : $totalSkills"
-Write-Host "  Unresolved (internal/BMAD, excluded): $($unresolvedIds.Count)"
+Write-Host "  Unresolved (internal/, excluded): $($unresolvedIds.Count)"
 
 if ($unresolvedIds.Count -gt 0 -and $unresolvedIds.Count -le 20) {
     Write-Host "  Unresolved IDs:" -ForegroundColor DarkGray

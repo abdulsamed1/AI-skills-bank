@@ -13,7 +13,7 @@
     Target: < 5KB output for ~50 token reads by agents.
 
 .EXAMPLE
-    .\scripts\generate-quick-index.ps1
+    .\archive\generate-quick-index.ps1
 #>
 
 [CmdletBinding()]
@@ -48,7 +48,7 @@ $stopwords = @(
     'automation', 'context', 'agent', 'code', 'system',
     'ai', 'design', 'testing', 'service', 'deployment',
     'optimization', 'security', 'development', 'workflow',
-    'bmad', 'wds', 'azure', 'ts', 'error', 'fixing'
+    '', 'wds', 'azure', 'ts', 'error', 'fixing'
 )
 
 # ── Build keyword map ────────────────────────────────────────────────────────

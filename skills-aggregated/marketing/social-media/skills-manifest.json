@@ -1,54 +1,30 @@
 {
-  "generated_at_unix": 1774892583,
+  "generated_at_unix": 1774912689,
   "hub": "marketing",
   "skills": [
     {
-      "description": "Understand audience demographics, preferences, behavior patterns, and engagement quality across Facebook, Instagram, YouTube, and TikTok.",
-      "phase": 4,
+      "description": "Fetch any X/Twitter post as clean LLM-friendly JSON. Converts x.com, twitter.com, or adhx.com links into structured data with full article content, author info, and engagement metrics. No scraping or browser required.",
+      "phase": 5,
       "score": 100,
-      "skill_id": "apify-audience-analysis",
-      "src_path": "lib/antigravity-awesome-skills/skills/apify-audience-analysis/SKILL.md",
-      "triggers": "apify;audience;analysis"
-    },
-    {
-      "description": "Analyze competitor strategies, content, pricing, ads, and market positioning across Google Maps, Booking.com, Facebook, Instagram, YouTube, and TikTok.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "apify-competitor-intelligence",
-      "src_path": "lib/antigravity-awesome-skills/skills/apify-competitor-intelligence/SKILL.md",
-      "triggers": "apify;competitor;intelligence"
-    },
-    {
-      "description": "Find and evaluate influencers for brand partnerships, verify authenticity, and track collaboration performance across Instagram, Facebook, YouTube, and TikTok.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "apify-influencer-discovery",
-      "src_path": "lib/antigravity-awesome-skills/skills/apify-influencer-discovery/SKILL.md",
-      "triggers": "apify;influencer;discovery"
-    },
-    {
-      "description": "Discover and track emerging trends across Google Trends, Instagram, Facebook, YouTube, and TikTok to inform content strategy.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "apify-trend-analysis",
-      "src_path": "lib/antigravity-awesome-skills/skills/apify-trend-analysis/SKILL.md",
-      "triggers": "apify;trend;analysis"
+      "skill_id": "adhx",
+      "src_path": "lib/antigravity-awesome-skills/skills/adhx/SKILL.md",
+      "triggers": "adhx"
     },
     {
       "description": "Create banners using AI image generation. Discuss format/style, generate variations, iterate with user feedback, crop to target ratio. Use when user wants to create a banner, header, hero image, cover image, GitHub banner, Twitter header, or readme banner.",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "banner-creator",
       "src_path": "lib/ReScienceLab-opc-skills/skills/banner-creator/SKILL.md",
       "triggers": "banner;creator"
     },
     {
-      "description": "Writes marketing copy using proven copywriting frameworks. Use when user needs copy for ads (Facebook, Instagram, TikTok, YouTube), landing pages, sales pages, email sequences, LinkedIn posts, product descriptions, or any marketing content.",
-      "phase": 4,
+      "description": "Turn client wins into formatted case studies for proposals, social proof, and sales conversations. Use when someone needs to document results, build credibility, or create reusable proof assets.",
+      "phase": 5,
       "score": 100,
-      "skill_id": "brand-copywriter",
-      "src_path": "lib/founder-skills/skills/brand-copywriter/SKILL.md",
-      "triggers": "brand;copywriter"
+      "skill_id": "case-study-builder",
+      "src_path": "lib/ai-marketing-skills/case-study-builder/SKILL.md",
+      "triggers": "case;study;builder"
     },
     {
       "description": "Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with AI-generated visuals. Actions: design, create, generate banner. Platforms: Facebook, Twitter/X, LinkedIn, YouTube, Instagram, Google Display, website hero, print. Styles: minimalist, gradient, bold typography, photo-based, illustrated, geometric, retro, glassmorphism, 3D, neon, duotone, editorial, collage. Uses ui-ux-pro-max, frontend-design, ai-artist, ai-multimodal skills.",
@@ -59,24 +35,24 @@
       "triggers": "ckm;banner;design"
     },
     {
-      "description": "Design and execute a social engineering penetration test including phishing, vishing, smishing, and physical pretexting campaigns to measure human security resilience and identify training gaps.",
-      "phase": 4,
+      "description": "Uploads promo videos and content to Cloudflare R2 or AWS S3. Use when the user wants to host promo content for social media or distribution.",
+      "phase": 5,
       "score": 100,
-      "skill_id": "conducting-social-engineering-penetration-test",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/conducting-social-engineering-penetration-test/SKILL.md",
-      "triggers": "conducting;social;engineering;penetration;test"
+      "skill_id": "cloud-uploader",
+      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/cloud-uploader/SKILL.md",
+      "triggers": "cloud;uploader"
     },
     {
-      "description": "Spearphishing simulation is a targeted social engineering attack vector used by red teams to gain initial access. Unlike broad phishing campaigns, spearphishing uses OSINT-derived intelligence to craf",
-      "phase": 4,
+      "description": "Conducts external reconnaissance using Open Source Intelligence (OSINT) techniques to map an organization's external attack surface without directly interacting with target systems. The tester gathers information from public sources including DNS records, certificate transparency logs, search engines, social media, code repositories, and data breach databases to build a comprehensive target profile. Activates for requests involving OSINT reconnaissance, external footprinting, attack surface mapping, or passive information gathering.",
+      "phase": 5,
       "score": 100,
-      "skill_id": "conducting-spearphishing-simulation-campaign",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/conducting-spearphishing-simulation-campaign/SKILL.md",
-      "triggers": "conducting;spearphishing;simulation;campaign"
+      "skill_id": "conducting-external-reconnaissance-with-osint",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/conducting-external-reconnaissance-with-osint/SKILL.md",
+      "triggers": "OSINT;reconnaissance;attack-surface;footprinting;passive-recon"
     },
     {
       "description": "Download videos from social media URLs (X/Twitter, YouTube, Instagram, TikTok, etc.) using yt-dlp. Use when saving a video locally, extracting content for transcription, or archiving video references.",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "download-video",
       "src_path": "lib/rameerez-claude-code-startup-skills/skills/download-video/SKILL.md",
@@ -84,11 +60,19 @@
     },
     {
       "description": "Audit and fix HTML metadata including page titles, meta descriptions, canonical URLs, Open Graph tags, Twitter cards, favicons, JSON-LD structured data, and robots directives. Use when adding or reviewing SEO and social metadata.",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "fixing-metadata",
       "src_path": "lib/antigravity-awesome-skills/skills/fixing-metadata/SKILL.md",
       "triggers": "fixing;metadata"
+    },
+    {
+      "description": "Integracao completa com Instagram via Graph API. Publicacao, analytics, comentarios, DMs, hashtags, agendamento, templates e gestao de contas Business/Creator.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "instagram",
+      "src_path": "lib/antigravity-awesome-skills/skills/instagram/SKILL.md",
+      "triggers": "social-media;instagram;graph-api;content"
     },
     {
       "description": "Creates viral lead magnet posts that drive comments and DMs. Produces 2 versions - a quick punchy format and a detailed format with bullet points. Use when user needs social media posts to give away a lead magnet in exchange for engagement.",
@@ -99,24 +83,24 @@
       "triggers": "lead;magnet;generator"
     },
     {
-      "description": "AI-powered animation tool for creating motion in logos, UI, icons, and social media assets.",
+      "description": "Perform a PESTLE analysis covering Political, Economic, Social, Technological, Legal, and Environmental factors. Use when assessing the macro environment, doing strategic planning, or evaluating external factors affecting your business.",
       "phase": 5,
       "score": 100,
-      "skill_id": "magic-animator",
-      "src_path": "lib/antigravity-awesome-skills/skills/magic-animator/SKILL.md",
-      "triggers": "magic;animator"
+      "skill_id": "pestle-analysis",
+      "src_path": "lib/pm-skills/pm-product-strategy/skills/pestle-analysis/SKILL.md",
+      "triggers": "pestle;analysis"
     },
     {
-      "description": "Monitor for brand impersonation attacks across domains, social media, mobile apps, and dark web channels to detect phishing campaigns, fake sites, and unauthorized brand usage targeting your organization.",
-      "phase": 4,
+      "description": "Generates 15-second vertical promo videos for social media from mastered audio. Use after mastering is complete and before release, when the user wants social media content.",
+      "phase": 5,
       "score": 100,
-      "skill_id": "performing-brand-monitoring-for-impersonation",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-brand-monitoring-for-impersonation/SKILL.md",
-      "triggers": "performing;brand;monitoring;for;impersonation"
+      "skill_id": "promo-director",
+      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/promo-director/SKILL.md",
+      "triggers": "promo;director"
     },
     {
       "description": "Reviews and iterates on social media copy in album promo/ files. Use after populating promo templates and before release to polish platform-specific posts.",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "promo-reviewer",
       "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/promo-reviewer/SKILL.md",
@@ -124,63 +108,87 @@
     },
     {
       "description": "Generates platform-specific social media copy from album themes, track concepts, and lyrics. Use when promo/ templates need to be populated before release.",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "promo-writer",
       "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/promo-writer/SKILL.md",
       "triggers": "promo;writer"
     },
     {
+      "description": "Seek and analyze video content using Memories.ai Large Visual Memory Model for persistent video intelligence",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "seek-and-analyze-video",
+      "src_path": "lib/antigravity-awesome-skills/skills/seek-and-analyze-video/SKILL.md",
+      "triggers": "video;ai;memories;social-media;youtube;tiktok;analysis"
+    },
+    {
       "description": "Configures and uses snipgrapher to generate polished code snippet images, including syntax-highlighted PNGs, SVGs, and WebP exports with custom themes, profiles, and styling options. Use when the user wants to create code screenshots, turn code into shareable images, generate pretty code snippets for docs or social posts, produce syntax-highlighted images from source files, or explicitly mentions snipgrapher. Supports single-file renders, batch jobs, watch mode, and reusable named profiles via the snipgrapher CLI or npx.",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "snipgrapher",
       "src_path": "lib/mcollina-skills/skills/snipgrapher/SKILL.md",
-      "triggers": "snipgrapher"
+      "triggers": "snipgrapher, snippets, images, svg, png, webp, cli"
     },
     {
       "description": "Generate platform-specific social post variants (Twitter/X, LinkedIn, Reddit) from one source input. Works with or without Node.js script. Includes platform reasoning, quality review, and guardrails against cross-posting spam.",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "social-card-gen",
       "src_path": "lib/ai-marketing-skills/social-card-gen/SKILL.md",
       "triggers": "social;card;gen"
     },
     {
+      "description": "You are an expert social media strategist with direct access to a scheduling platform that publishes to all major social networks. Your goal is to help create engaging content that builds audience, drives engagement, and supports business goals.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "social-content",
+      "src_path": "lib/antigravity-awesome-skills/skills/social-content/SKILL.md",
+      "triggers": "social;content"
+    },
+    {
       "description": "Orquestrador unificado de canais sociais — coordena Instagram, Telegram e WhatsApp em um unico fluxo de trabalho. Publicacao cross-channel, metricas unificadas, reutilizacao de conteudo por formato, agendamento sincronizado e gestao centralizada de campanhas em todos os canais simultaneamente.",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "social-orchestrator",
       "src_path": "lib/antigravity-awesome-skills/skills/social-orchestrator/SKILL.md",
-      "triggers": "social;orchestrator"
+      "triggers": "social-media;cross-channel;scheduling;campaigns"
     },
     {
       "description": "Systematically gather, score, and format client testimonials. Use when someone needs social proof, wants to collect feedback, needs to turn happy clients into public advocates, or asks for help requesting or drafting a testimonial.",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "testimonial-collector",
       "src_path": "lib/ai-marketing-skills/testimonial-collector/SKILL.md",
       "triggers": "testimonial;collector"
     },
     {
+      "description": "Search and retrieve content from Twitter/X. Get user info, tweets, replies, followers, communities, spaces, and trends via twitterapi.io. Use when user mentions Twitter, X, or tweets.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "twitter",
+      "src_path": "lib/ReScienceLab-opc-skills/skills/twitter/SKILL.md",
+      "triggers": "twitter"
+    },
+    {
       "description": "Automate Twitter/X tasks via Rube MCP (Composio): posts, search, users, bookmarks, lists, media. Always search tools first for current schemas.",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "twitter-automation",
       "src_path": "lib/antigravity-awesome-skills/skills/twitter-automation/SKILL.md",
       "triggers": "twitter;automation"
     },
     {
-      "description": "When the user wants to plan or optimize paid user acquisition campaigns. Also use when the user mentions \"Apple Search Ads\", \"user acquisition\", \"paid ads\", \"UA\", \"ad campaign\", \"install campaign\", \"Facebook ads for apps\", \"TikTok ads\", or \"cost per install\". For organic growth, see aso-audit. For launch-specific UA, see app-launch.",
+      "description": "Creates viral social media hooks using proven psychological patterns and trigger words. Use when user needs attention-grabbing openings for posts, threads, videos, or content.",
       "phase": 5,
       "score": 100,
-      "skill_id": "ua-campaign",
-      "src_path": "lib/aso-skills/skills/ua-campaign/SKILL.md",
-      "triggers": "ua;campaign"
+      "skill_id": "viral-hook-creator",
+      "src_path": "lib/founder-skills/skills/viral-hook-creator/SKILL.md",
+      "triggers": "viral;hook;creator"
     },
     {
       "description": "Publish Markdown articles to X (Twitter) Articles editor with proper formatting. Use when user wants to publish a Markdown file/URL to X Articles, or mentions \"publish to X\", \"post article to Twitter\", \"X article\", or wants help with X Premium article publishing. Handles cover image upload and converts Markdown to rich text automatically.",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "x-article-publisher",
       "src_path": "lib/x-article-publisher-skill/skills/x-article-publisher/SKILL.md",
@@ -188,7 +196,7 @@
     },
     {
       "description": "Publish articles to X/Twitter",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "x-article-publisher-skill",
       "src_path": "lib/antigravity-awesome-skills/skills/x-article-publisher-skill/SKILL.md",
@@ -196,15 +204,23 @@
     },
     {
       "description": "Post to X (Twitter) from the command line. Text, images, and video.",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "x-post",
       "src_path": "lib/rameerez-claude-code-startup-skills/skills/x-post/SKILL.md",
       "triggers": "x;post"
     },
     {
+      "description": "X (Twitter) data platform skill — tweet search, user lookup, follower extraction, engagement metrics, giveaway draws, monitoring, webhooks, 19 extraction tools, MCP server.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "x-twitter-scraper",
+      "src_path": "lib/antigravity-awesome-skills/skills/x-twitter-scraper/SKILL.md",
+      "triggers": "[twitter, x-api, scraping, mcp, social-media, data-extraction, giveaway, monitoring, webhooks]"
+    },
+    {
       "description": "Creates viral X (Twitter) posts using proven formats, post templates, and creator voice matching. Use when user needs engaging, high-performing posts for X/Twitter.",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "x-writer",
       "src_path": "lib/founder-skills/skills/x-writer/SKILL.md",

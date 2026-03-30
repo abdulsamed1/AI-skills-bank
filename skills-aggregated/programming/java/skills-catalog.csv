@@ -1,35 +1,24 @@
 skill_id,description,score,phase
-analyzing-malicious-pdf-with-peepdf,"Perform static analysis of malicious PDF documents using peepdf, pdfid, and pdf-parser to extract embedded JavaScript, shellcode, and suspicious objects.",100,4
-analyzing-pdf-malware-with-pdfid,"Analyzes malicious PDF files using PDFiD, pdf-parser, and peepdf to identify embedded JavaScript, shellcode, exploits, and suspicious objects without opening the document. Determines the attack vector and extracts embedded payloads for further analysis. Activates for requests involving PDF malware analysis, malicious document analysis, PDF exploit investigation, or suspicious attachment triage.",100,4
-azure-ai-agents-persistent-java,"Azure AI Agents Persistent SDK for Java. Low-level SDK for creating and managing AI agents with threads, messages, runs, and tools.",100,4
-azure-ai-anomalydetector-java,"Build anomaly detection applications with Azure AI Anomaly Detector SDK for Java. Use when implementing univariate/multivariate anomaly detection, time-series analysis, or AI-powered monitoring.",100,5
-azure-ai-formrecognizer-java,Build document analysis applications using the Azure AI Document Intelligence SDK for Java.,100,5
-azure-ai-projects-java,"Azure AI Projects SDK for Java. High-level SDK for Azure AI Foundry project management including connections, datasets, indexes, and evaluations.",100,4
-azure-ai-vision-imageanalysis-java,"Build image analysis applications with Azure AI Vision SDK for Java. Use when implementing image captioning, OCR text extraction, object detection, tagging, or smart cropping.",100,5
-azure-ai-voicelive-java,Azure AI VoiceLive SDK for Java. Real-time bidirectional voice conversations with AI assistants using WebSocket.,100,4
-azure-appconfiguration-java,"Azure App Configuration SDK for Java. Centralized application configuration management with key-value settings, feature flags, and snapshots.",100,4
-azure-communication-callautomation-java,"Build server-side call automation workflows including IVR systems, call routing, recording, and AI-powered interactions.",100,5
-azure-communication-callingserver-java,"⚠️ DEPRECATED: This SDK has been renamed to Call Automation. For new projects, use azure-communication-callautomation instead. This skill is for maintaining legacy code only.",100,4
-azure-communication-chat-java,"Build real-time chat applications with thread management, messaging, participants, and read receipts.",100,5
-azure-communication-common-java,"Azure Communication Services common utilities for Java. Use when working with CommunicationTokenCredential, user identifiers, token refresh, or shared authentication across ACS services.",100,4
-azure-communication-sms-java,"Send SMS messages with Azure Communication Services SMS Java SDK. Use when implementing SMS notifications, alerts, OTP delivery, bulk messaging, or delivery reports.",100,4
-azure-compute-batch-java,"Azure Batch SDK for Java. Run large-scale parallel and HPC batch jobs with pools, jobs, tasks, and compute nodes.",100,4
-azure-data-tables-java,Build table storage applications using the Azure Tables SDK for Java. Works with both Azure Table Storage and Cosmos DB Table API.,100,2
-azure-eventgrid-java,"Build event-driven applications with Azure Event Grid SDK for Java. Use when publishing events, implementing pub/sub patterns, or integrating with Azure services via events.",100,5
-azure-eventhub-java,"Build real-time streaming applications with Azure Event Hubs SDK for Java. Use when implementing event streaming, high-throughput data ingestion, or building event-driven architectures.",100,5
-azure-identity-java,Authenticate Java applications with Azure services using Microsoft Entra ID (Azure AD).,100,4
-azure-keyvault-keys-ts,"Manage cryptographic keys using Azure Key Vault Keys SDK for JavaScript (@azure/keyvault-keys). Use when creating, encrypting/decrypting, signing, or rotating keys.",100,4
-azure-keyvault-secrets-ts,Manage secrets using Azure Key Vault Secrets SDK for JavaScript (@azure/keyvault-secrets). Use when storing and retrieving application secrets or configuration values.,100,4
-azure-messaging-webpubsub-java,"Build real-time web applications with Azure Web PubSub SDK for Java. Use when implementing WebSocket-based messaging, live updates, chat applications, or server-to-client push notifications.",100,5
-azure-monitor-ingestion-java,Azure Monitor Ingestion SDK for Java. Send custom logs to Azure Monitor via Data Collection Rules (DCR) and Data Collection Endpoints (DCE).,100,4
-azure-storage-blob-java,Build blob storage applications using the Azure Storage Blob SDK for Java.,100,5
-deobfuscating-javascript-malware,"Deobfuscates malicious JavaScript code used in web-based attacks, phishing pages, and dropper scripts by reversing encoding layers, eval chains, string manipulation, and control flow obfuscation to reveal the original malicious logic. Activates for requests involving JavaScript malware analysis, script deobfuscation, web skimmer analysis, or obfuscated dropper investigation.",100,4
-exploiting-prototype-pollution-in-javascript,"Detect and exploit JavaScript prototype pollution vulnerabilities on both client-side and server-side applications to achieve XSS, RCE, and authentication bypass through property injection.",100,4
-figma-use,"**MANDATORY prerequisite** — you MUST invoke this skill BEFORE every `use_figma` tool call. NEVER call `use_figma` directly without loading this skill first. Skipping it causes common, hard-to-debug failures. Trigger whenever the user wants to perform a write action or a unique read action that requires JavaScript execution in the Figma file context — e.g. create/edit/delete nodes, set up variables or tokens, build components and variants, modify auto-layout or fills, bind variables to properties, or inspect file structure programmatically.",100,5
-java-pro,"Master Java 21+ with modern features like virtual threads, pattern matching, and Spring Boot 3.x. Expert in the latest Java ecosystem including GraalVM, Project Loom, and cloud-native patterns.",100,4
-javascript-mastery,"33+ essential JavaScript concepts every developer should know, inspired by [33-js-concepts](https://github.com/leonardomso/33-js-concepts).",100,4
-javascript-pro,"Master modern JavaScript with ES6+, async patterns, and Node.js APIs. Handles promises, event loops, and browser/Node compatibility.",100,4
-latex-paper-conversion,"This skill should be used when the user asks to convert an academic paper in LaTeX from one format (e.g., Springer, IPOL) to another format (e.g., MDPI, IEEE, Nature). It automates extraction, injection, fixing formatting, and compiling.",100,4
-modern-javascript-patterns,"Comprehensive guide for mastering modern JavaScript (ES6+) features, functional programming patterns, and best practices for writing clean, maintainable, and performant code.",100,5
-n8n-code-javascript,"Write JavaScript code in n8n Code nodes. Use when writing JavaScript in n8n, using $input/$json/$node syntax, making HTTP requests with $helpers, working with dates using DateTime, troubleshooting Code node errors, or choosing between Code node modes.",100,4
-sankhya-dashboard-html-jsp-custom-best-pratices,"This skill should be used when the user asks for patterns, best practices, creation, or fixing of Sankhya dashboards using HTML, JSP, Java, and SQL.",100,4
+azure-ai-agents-persistent-java,"Azure AI Agents Persistent SDK for Java. Low-level SDK for creating and managing AI agents with threads, messages, runs, and tools.",100,1
+azure-ai-anomalydetector-java,"Build anomaly detection applications with Azure AI Anomaly Detector SDK for Java. Use when implementing univariate/multivariate anomaly detection, time-series analysis, or AI-powered monitoring.",100,1
+azure-ai-contentsafety-java,Build content moderation applications using the Azure AI Content Safety SDK for Java.,100,1
+azure-ai-formrecognizer-java,Build document analysis applications using the Azure AI Document Intelligence SDK for Java.,100,1
+azure-ai-projects-java,"Azure AI Projects SDK for Java. High-level SDK for Azure AI Foundry project management including connections, datasets, indexes, and evaluations.",100,1
+azure-ai-vision-imageanalysis-java,"Build image analysis applications with Azure AI Vision SDK for Java. Use when implementing image captioning, OCR text extraction, object detection, tagging, or smart cropping.",100,1
+azure-ai-voicelive-java,Azure AI VoiceLive SDK for Java. Real-time bidirectional voice conversations with AI assistants using WebSocket.,100,1
+azure-appconfiguration-java,"Azure App Configuration SDK for Java. Centralized application configuration management with key-value settings, feature flags, and snapshots.",100,1
+azure-communication-callautomation-java,"Build server-side call automation workflows including IVR systems, call routing, recording, and AI-powered interactions.",100,1
+azure-communication-callingserver-java,"⚠️ DEPRECATED: This SDK has been renamed to Call Automation. For new projects, use azure-communication-callautomation instead. This skill is for maintaining legacy code only.",100,1
+azure-communication-chat-java,"Build real-time chat applications with thread management, messaging, participants, and read receipts.",100,1
+azure-communication-common-java,"Azure Communication Services common utilities for Java. Use when working with CommunicationTokenCredential, user identifiers, token refresh, or shared authentication across ACS services.",100,1
+azure-communication-sms-java,"Send SMS messages with Azure Communication Services SMS Java SDK. Use when implementing SMS notifications, alerts, OTP delivery, bulk messaging, or delivery reports.",100,1
+azure-compute-batch-java,"Azure Batch SDK for Java. Run large-scale parallel and HPC batch jobs with pools, jobs, tasks, and compute nodes.",100,1
+azure-eventgrid-java,"Build event-driven applications with Azure Event Grid SDK for Java. Use when publishing events, implementing pub/sub patterns, or integrating with Azure services via events.",100,1
+azure-eventhub-java,"Build real-time streaming applications with Azure Event Hubs SDK for Java. Use when implementing event streaming, high-throughput data ingestion, or building event-driven architectures.",100,1
+azure-identity-java,Authenticate Java applications with Azure services using Microsoft Entra ID (Azure AD).,100,1
+azure-messaging-webpubsub-java,"Build real-time web applications with Azure Web PubSub SDK for Java. Use when implementing WebSocket-based messaging, live updates, chat applications, or server-to-client push notifications.",100,1
+azure-monitor-ingestion-java,Azure Monitor Ingestion SDK for Java. Send custom logs to Azure Monitor via Data Collection Rules (DCR) and Data Collection Endpoints (DCE).,100,1
+azure-monitor-opentelemetry-exporter-java,"Azure Monitor OpenTelemetry Exporter for Java. Export OpenTelemetry traces, metrics, and logs to Azure Monitor/Application Insights.",100,1
+azure-monitor-query-java,Azure Monitor Query SDK for Java. Execute Kusto queries against Log Analytics workspaces and query metrics from Azure resources.,100,1
+azure-storage-blob-java,Build blob storage applications using the Azure Storage Blob SDK for Java.,100,1
+java-pro,"Master Java 21+ with modern features like virtual threads, pattern matching, and Spring Boot 3.x. Expert in the latest Java ecosystem including GraalVM, Project Loom, and cloud-native patterns.",100,1

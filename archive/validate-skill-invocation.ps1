@@ -10,7 +10,7 @@
     12: Every src_path in routing.csv resolves to a real file
 
 .EXAMPLE
-    .\scripts\validate-skill-invocation.ps1
+    .\archive\validate-skill-invocation.ps1
 #>
 
 [CmdletBinding()]
@@ -146,26 +146,26 @@ if ($v05) {
     )
 }
 
-# ── V11: Sub-hub directories have routing.csv (or are BMAD-only) ──────────────
+# ── V11: Sub-hub directories have routing.csv (or are -only) ──────────────
 $missingCSV = @()
-$bmadOnlySkipped = 0
+$OnlySkipped = 0
 foreach ($hub in $hubDirs) {
     $subDirs = Get-ChildItem $hub.FullName -Directory -ErrorAction SilentlyContinue
     foreach ($sub in $subDirs) {
         $csvPath = Join-Path $sub.FullName 'routing.csv'
         if (-not (Test-Path $csvPath)) {
-            # Check if this sub-hub only has BMAD skills (no routing.csv expected)
+            # Check if this sub-hub only has  skills (no routing.csv expected)
             $skillMd = Join-Path $sub.FullName 'SKILL.md'
             if (Test-Path $skillMd) {
-                $bmadOnlySkipped++
+                $OnlySkipped++
             } else {
                 $missingCSV += "$($hub.Name)/$($sub.Name)"
             }
         }
     }
 }
-Add-Result 'V11' 'Sub-hub directories have routing.csv or are BMAD-only' ($missingCSV.Count -eq 0) $(
-    if ($missingCSV.Count -eq 0) { "all present ($bmadOnlySkipped BMAD-only sub-hubs OK)" }
+Add-Result 'V11' 'Sub-hub directories have routing.csv or are -only' ($missingCSV.Count -eq 0) $(
+    if ($missingCSV.Count -eq 0) { "all present ($OnlySkipped -only sub-hubs OK)" }
     else { "missing: $($missingCSV -join ', ')" }
 )
 

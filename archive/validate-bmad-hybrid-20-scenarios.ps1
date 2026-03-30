@@ -183,7 +183,7 @@ if (-not (Test-Path $reportDir)) {
 Confirm-OrExit -Message "Proceed with writing validation report to '$reportFilePath'?"
 
 $reportLines = New-Object System.Collections.Generic.List[string]
-$reportLines.Add("# BMAD Hybrid Validation Report (20 Scenarios)") | Out-Null
+$reportLines.Add("#  Hybrid Validation Report (20 Scenarios)") | Out-Null
 $reportLines.Add("") | Out-Null
 $reportLines.Add(("Generated: {0}" -f (Get-Date).ToString("yyyy-MM-dd HH:mm:ssK"))) | Out-Null
 $reportLines.Add(("Summary: {0}/{1} passed" -f $passedCount, $totalCount)) | Out-Null

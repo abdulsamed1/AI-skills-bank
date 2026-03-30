@@ -1,24 +1,13 @@
 {
-  "count": 17,
+  "count": 6,
   "hub": "testing",
   "skills": [
-    "brand-guidelines-community",
-    "building-detection-rules-with-sigma",
-    "competitive-landscape",
-    "conducting-internal-reconnaissance-with-bloodhound-ce",
+    "astropy",
+    "charlie",
     "conductor-revert",
-    "customer-journey-map",
-    "customer-journey-mapping-workshop",
-    "install-duckdb",
-    "internal-comms-community",
-    "last30days",
-    "market-sizing",
-    "market-sizing-analysis",
-    "odoo-upgrade-advisor",
+    "neuropixels-analysis",
     "ontology-validator",
-    "oss-hunter",
-    "prioritization-frameworks",
-    "startup-business-analyst-market-opportunity"
+    "saas-economics-efficiency-metrics"
   ],
   "sub_hub": "unit-testing"
 }

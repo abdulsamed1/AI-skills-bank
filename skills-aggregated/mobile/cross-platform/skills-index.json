@@ -1,9 +1,12 @@
 {
-  "count": 6,
+  "count": 9,
   "hub": "mobile",
   "skills": [
-    "detecting-mobile-malware-behavior",
+    "app-store-optimization",
     "development",
+    "expo-api-routes",
+    "expo-deployment",
+    "expo-dev-client",
     "flutter-expert",
     "mobile-developer",
     "performing-mobile-device-forensics-with-cellebrite",

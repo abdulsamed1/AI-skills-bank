@@ -13,18 +13,34 @@ pub fn write_file_atomic(path: &Path, contents: &[u8]) -> Result<(), SkillManage
         std::fs::create_dir_all(parent)?;
     }
 
-    let mut temp_file = NamedTempFile::new_in(parent)?;
-    {
-        let mut writer = BufWriter::new(&mut temp_file);
-        writer.write_all(contents)?;
-        writer.flush()?;
+    // Try atomic write using a temp file in the destination directory. If that
+    // is not permitted (e.g., due to restrictive permissions on dotfiles in
+    // user home), fall back to a direct write to the target path.
+    match NamedTempFile::new_in(parent) {
+        Ok(mut temp_file) => {
+            {
+                let mut writer = BufWriter::new(&mut temp_file);
+                writer.write_all(contents)?;
+                writer.flush()?;
+            }
+
+            match temp_file.persist(path) {
+                Ok(_) => Ok(()),
+                Err(_e) => {
+                    // Persist failed (could be cross-device or permission); fallback
+                    // to a best-effort direct write.
+                    std::fs::write(path, contents)?;
+                    Ok(())
+                }
+            }
+        }
+        Err(_e) => {
+            // Could not create a temp file in the parent dir (permissions); try
+            // writing directly to the destination as a fallback.
+            std::fs::write(path, contents)?;
+            Ok(())
+        }
     }
-
-    temp_file.persist(path).map_err(|e| {
-        SkillManageError::ConfigError(format!("Failed to persist atomic write: {}", e))
-    })?;
-
-    Ok(())
 }
 
 /// Synchronize a directory atomically by copying to a temp location and renaming.
@@ -77,6 +93,12 @@ pub fn sync_dir_atomic(src: &Path, dest: &Path) -> Result<(), SkillManageError> 
     };
 
     if dest.exists() {
+        // If destination is a link/junction, avoid removing it and
+        // skip syncing to prevent recursive or permission-error cases.
+        let link_flag = is_link(dest);
+        if link_flag {
+            return Ok(());
+        }
         std::fs::remove_dir_all(dest)?;
     }
 

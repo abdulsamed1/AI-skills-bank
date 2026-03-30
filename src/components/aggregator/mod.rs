@@ -30,26 +30,6 @@ pub struct SkillMetadata {
     pub action: Option<String>,
 }
 
-#[derive(Debug, Deserialize)]
-struct SkillFrontmatter {
-    name: String,
-    description: String,
-    #[serde(default)]
-    hub: Option<String>,
-    #[serde(default)]
-    sub_hub: Option<String>,
-    #[serde(default)]
-    triggers: Option<String>,
-    #[serde(default)]
-    match_score: Option<u32>,
-    #[serde(default)]
-    phase: Option<u32>,
-    #[serde(default)]
-    required: Option<String>,
-    #[serde(default)]
-    action: Option<String>,
-}
-
 #[derive(Debug, Serialize)]
 pub struct CsvRow {
     pub hub: String,
@@ -94,6 +74,155 @@ impl From<SkillMetadata> for CsvRow {
     }
 }
 
+fn normalize_identifier(input: &str) -> String {
+    let mut out = String::with_capacity(input.len());
+    let mut prev_dash = false;
+
+    for ch in input.chars() {
+        let c = ch.to_ascii_lowercase();
+        if c.is_ascii_alphanumeric() {
+            out.push(c);
+            prev_dash = false;
+        } else if !prev_dash {
+            out.push('-');
+            prev_dash = true;
+        }
+    }
+
+    out.trim_matches('-').to_string()
+}
+
+fn fallback_name_from_path(path: &Path) -> String {
+    let raw = path
+        .parent()
+        .and_then(|p| p.file_name())
+        .map(|s| s.to_string_lossy().to_string())
+        .unwrap_or_else(|| "skill".to_string());
+
+    let normalized = normalize_identifier(&raw);
+    if normalized.is_empty() {
+        "skill".to_string()
+    } else {
+        normalized
+    }
+}
+
+fn fallback_description_from_content(content: &str) -> String {
+    for raw_line in content.lines() {
+        let line = raw_line.trim();
+        if line.is_empty() || line == "---" || line.starts_with("```") {
+            continue;
+        }
+
+        if line.starts_with('#') {
+            let header = line.trim_start_matches('#').trim();
+            if !header.is_empty() {
+                return header.to_string();
+            }
+            continue;
+        }
+
+        return line.to_string();
+    }
+
+    String::new()
+}
+
+fn clean_yaml_like_value(raw: &str) -> String {
+    let mut value = raw.trim().to_string();
+
+    if let Some(comment_pos) = value.find(" #") {
+        value = value[..comment_pos].trim().to_string();
+    }
+
+    if (value.starts_with('"') && value.ends_with('"'))
+        || (value.starts_with('\'') && value.ends_with('\''))
+    {
+        if value.len() >= 2 {
+            return value[1..value.len() - 1].trim().to_string();
+        }
+    }
+
+    if value.starts_with('[') && value.ends_with(']') && value.len() >= 2 {
+        let inner = value[1..value.len() - 1].trim();
+        if inner.is_empty() {
+            return String::new();
+        }
+
+        let parts = inner
+            .split(',')
+            .map(|part| part.trim().trim_matches('"').trim_matches('\''))
+            .filter(|part| !part.is_empty())
+            .collect::<Vec<_>>();
+
+        if !parts.is_empty() {
+            return parts.join(";");
+        }
+
+        return inner.to_string();
+    }
+
+    value
+}
+
+fn extract_yaml_like_value(yaml_part: &str, key: &str) -> Option<String> {
+    let key_lc = key.to_ascii_lowercase();
+    let mut lines = yaml_part.lines().peekable();
+
+    while let Some(raw_line) = lines.next() {
+        let line = raw_line.trim();
+        if line.is_empty() || line.starts_with('#') {
+            continue;
+        }
+
+        let mut split = line.splitn(2, ':');
+        let current_key = split.next()?.trim().to_ascii_lowercase();
+        if current_key != key_lc {
+            continue;
+        }
+
+        let rest = split.next().unwrap_or("").trim();
+        if !rest.is_empty() {
+            return Some(clean_yaml_like_value(rest));
+        }
+
+        let mut seq_values = Vec::new();
+        while let Some(peek_line) = lines.peek() {
+            let next = peek_line.trim();
+            if next.starts_with("- ") {
+                let v = next.trim_start_matches("- ").trim();
+                if !v.is_empty() {
+                    seq_values.push(clean_yaml_like_value(v));
+                }
+                lines.next();
+            } else {
+                break;
+            }
+        }
+
+        if !seq_values.is_empty() {
+            return Some(seq_values.join(";"));
+        }
+
+        return None;
+    }
+
+    None
+}
+
+fn extract_frontmatter_and_body(content: &str) -> (Option<&str>, &str) {
+    let trimmed = content.trim_start();
+    if !trimmed.starts_with("---") {
+        return (None, trimmed);
+    }
+
+    let mut parts = trimmed.splitn(3, "---");
+    let _ = parts.next();
+    let yaml_part = parts.next();
+    let body = parts.next().unwrap_or_default();
+    (yaml_part, body)
+}
+
 pub struct Aggregator {
     pub progress: Arc<ProgressManager>,
 }
@@ -105,63 +234,74 @@ impl Aggregator {
 
     pub fn parse_skill_md(path: &Path) -> Result<SkillMetadata, SkillManageError> {
         let content = std::fs::read_to_string(path)?;
-        // Extract YAML frontmatter robustly and coerce fields to expected types.
-        let trimmed = content.trim_start();
-        if !trimmed.starts_with("---") {
-            return Err(SkillManageError::ManifestValidationError(format!(
-                "Missing frontmatter in {}",
-                path.display()
-            )));
-        }
+        // Parse YAML when possible, but tolerate malformed or missing frontmatter
+        // by extracting key/value lines and falling back to path/body heuristics.
+        let (yaml_part, body_part) = extract_frontmatter_and_body(&content);
 
-        let mut parts = trimmed.splitn(3, "---");
-        let _ = parts.next();
-        let yaml_part = parts.next().ok_or_else(|| {
-            SkillManageError::ManifestValidationError(format!(
-                "Missing frontmatter in {}",
-                path.display()
-            ))
-        })?;
-
-        let doc: serde_yaml::Value = serde_yaml::from_str(yaml_part).map_err(|e| {
-            SkillManageError::ManifestParseError(format!("YAML error in {}: {}", path.display(), e))
-        })?;
+        let parsed_doc = if let Some(yaml) = yaml_part {
+            serde_yaml::from_str::<serde_yaml::Value>(yaml).ok()
+        } else {
+            None
+        };
 
         let get_string = |key: &str| -> Option<String> {
-            doc.get(key).map(|v| match v {
-                serde_yaml::Value::String(s) => s.clone(),
-                serde_yaml::Value::Sequence(seq) => seq
-                    .iter()
-                    .map(|el| match el {
+            if let Some(doc) = parsed_doc.as_ref() {
+                if let Some(v) = doc.get(key) {
+                    let converted = match v {
                         serde_yaml::Value::String(s) => s.clone(),
+                        serde_yaml::Value::Sequence(seq) => seq
+                            .iter()
+                            .map(|el| match el {
+                                serde_yaml::Value::String(s) => s.clone(),
+                                other => serde_yaml::to_string(other).unwrap_or_default(),
+                            })
+                            .collect::<Vec<_>>()
+                            .join(";"),
+                        serde_yaml::Value::Number(n) => n.to_string(),
+                        serde_yaml::Value::Bool(b) => b.to_string(),
                         other => serde_yaml::to_string(other).unwrap_or_default(),
-                    })
-                    .collect::<Vec<_>>()
-                    .join(";"),
-                serde_yaml::Value::Number(n) => n.to_string(),
-                serde_yaml::Value::Bool(b) => b.to_string(),
-                other => serde_yaml::to_string(other).unwrap_or_default(),
-            })
+                    };
+
+                    if !converted.trim().is_empty() {
+                        return Some(converted.trim().to_string());
+                    }
+                }
+            }
+
+            yaml_part.and_then(|yaml| extract_yaml_like_value(yaml, key))
         };
 
         let get_u32 = |key: &str| -> Option<u32> {
-            doc.get(key).and_then(|v| match v {
-                serde_yaml::Value::Number(n) => n.as_u64().map(|x| x as u32),
-                serde_yaml::Value::String(s) => s.parse::<u32>().ok(),
-                _ => None,
-            })
+            if let Some(doc) = parsed_doc.as_ref() {
+                if let Some(v) = doc.get(key) {
+                    return match v {
+                        serde_yaml::Value::Number(n) => n.as_u64().map(|x| x as u32),
+                        serde_yaml::Value::String(s) => s.parse::<u32>().ok(),
+                        _ => None,
+                    };
+                }
+            }
+
+            yaml_part
+                .and_then(|yaml| extract_yaml_like_value(yaml, key))
+                .and_then(|v| v.parse::<u32>().ok())
         };
 
-        let name = get_string("name").ok_or_else(|| {
-            SkillManageError::ManifestParseError(format!("Missing required field `name` in {}", path.display()))
-        })?;
+        let name = get_string("name")
+            .filter(|v| !v.trim().is_empty())
+            .unwrap_or_else(|| fallback_name_from_path(path));
 
-        let description = get_string("description").unwrap_or_default();
+        let description = get_string("description")
+            .filter(|v| !v.trim().is_empty())
+            .unwrap_or_else(|| fallback_description_from_content(body_part));
         // Preserve explicit frontmatter values when provided; classification
         // fallback logic decides final hub/sub_hub when they are absent.
         let hub = get_string("hub").unwrap_or_default();
         let sub_hub = get_string("sub_hub").unwrap_or_default();
-        let triggers = get_string("triggers");
+        // Prefer an explicit `triggers` field, but fall back to `tags` when present
+        // (many SKILL.md use `tags:` in YAML frontmatter). This ensures tag
+        // tokens like `cloudflare` are surfaced to the categorization rules.
+        let triggers = get_string("triggers").or_else(|| get_string("tags"));
         let match_score = get_u32("match_score");
         let phase = get_u32("phase");
         let required = get_string("required").or_else(|| Some("true".to_string()));
@@ -182,21 +322,37 @@ impl Aggregator {
     }
 
     pub async fn aggregate(&self, _force: bool) -> Result<CommandResult, SkillManageError> {
-        let src_path = Path::new("src");
-        if !src_path.exists() {
+        let source_roots = [Path::new("src"), Path::new("lib")]
+            .into_iter()
+            .filter(|p| p.exists() && p.is_dir())
+            .collect::<Vec<_>>();
+
+        if source_roots.is_empty() {
             return Err(SkillManageError::ConfigError(
-                "Source directory 'src' not found. Run 'fetch' first.".to_string(),
+                "No source directories found (expected 'src' or 'lib').".to_string(),
             ));
         }
 
         let spinner = self.progress.create_spinner("Scanning skills...");
 
-        let mut paths: Vec<PathBuf> = WalkDir::new(src_path)
-            .into_iter()
-            .filter_map(|e| e.ok())
-            .filter(|e| e.file_name() == "SKILL.md")
-            .map(|e| e.path().to_path_buf())
+        let mut paths: Vec<PathBuf> = source_roots
+            .iter()
+            .flat_map(|root| {
+                WalkDir::new(root)
+                    .into_iter()
+                    .filter_map(|e| e.ok())
+                    .filter(|e| e.file_name() == "SKILL.md")
+                    .map(|e| e.path().to_path_buf())
+                    .collect::<Vec<_>>()
+            })
             .collect();
+
+        if paths.is_empty() {
+            return Err(SkillManageError::ConfigError(
+                "No SKILL.md files found under source directories (src/lib).".to_string(),
+            ));
+        }
+
         // Ensure deterministic traversal order across OS/filesystems.
         paths.sort_by(|a, b| a.to_string_lossy().cmp(&b.to_string_lossy()));
 
@@ -296,6 +452,67 @@ impl Aggregator {
         .map_err(|e| SkillManageError::ConfigError(e.to_string()))??;
 
         spinner.finish_with_message("Successfully generated hub-manifests.csv");
+        Ok(())
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use std::fs;
+    use tempfile::tempdir;
+
+    #[test]
+    fn parse_without_frontmatter_uses_fallbacks() -> Result<(), Box<dyn std::error::Error>> {
+        let root = tempdir()?;
+        let skill_dir = root.path().join("skills").join("coding-agent-router");
+        fs::create_dir_all(&skill_dir)?;
+        let skill_path = skill_dir.join("SKILL.md");
+
+        fs::write(
+            &skill_path,
+            "# Coding Agent Router\n\nRoutes tasks to the best coding agent.\n",
+        )?;
+
+        let meta = Aggregator::parse_skill_md(&skill_path)?;
+        assert_eq!(meta.name, "coding-agent-router");
+        assert_eq!(meta.description, "Coding Agent Router");
+        Ok(())
+    }
+
+    #[test]
+    fn parse_invalid_yaml_falls_back_to_line_extraction() -> Result<(), Box<dyn std::error::Error>> {
+        let root = tempdir()?;
+        let skill_dir = root.path().join("skills").join("build");
+        fs::create_dir_all(&skill_dir)?;
+        let skill_path = skill_dir.join("SKILL.md");
+
+        fs::write(
+            &skill_path,
+            "---\nname: build\ndescription: Feature development pipeline\nargument-hint: [subcommand] [name]\n---\n\nbody\n",
+        )?;
+
+        let meta = Aggregator::parse_skill_md(&skill_path)?;
+        assert_eq!(meta.name, "build");
+        assert_eq!(meta.description, "Feature development pipeline");
+        Ok(())
+    }
+
+    #[test]
+    fn parse_missing_name_uses_path_slug() -> Result<(), Box<dyn std::error::Error>> {
+        let root = tempdir()?;
+        let skill_dir = root.path().join("skills").join("oral-health-analyzer");
+        fs::create_dir_all(&skill_dir)?;
+        let skill_path = skill_dir.join("SKILL.md");
+
+        fs::write(
+            &skill_path,
+            "---\ndescription: Analyze oral health trends\n---\n\n# Oral Health\n",
+        )?;
+
+        let meta = Aggregator::parse_skill_md(&skill_path)?;
+        assert_eq!(meta.name, "oral-health-analyzer");
+        assert_eq!(meta.description, "Analyze oral health trends");
         Ok(())
     }
 }

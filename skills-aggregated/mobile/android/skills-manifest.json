@@ -1,18 +1,18 @@
 {
-  "generated_at_unix": 1774892583,
+  "generated_at_unix": 1774912689,
   "hub": "mobile",
   "skills": [
     {
       "description": "Perform static analysis of Android APK malware samples using apktool for decompilation, jadx for Java source recovery, and androguard for permission analysis, manifest inspection, and suspicious API call detection.",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "analyzing-android-malware-with-apktool",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-android-malware-with-apktool/SKILL.md",
-      "triggers": "analyzing;android;malware;with;apktool"
+      "triggers": "Android;APK;apktool;jadx;androguard;mobile-malware;static-analysis;reverse-engineering"
     },
     {
       "description": "Android Java development with MVVM, ViewBinding, and Espresso testing",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "android-java",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/android-java/SKILL.md",
@@ -20,7 +20,7 @@
     },
     {
       "description": "Android Kotlin development with Coroutines, Jetpack Compose, Hilt, and MockK testing",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "android-kotlin",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/android-kotlin/SKILL.md",
@@ -32,15 +32,15 @@
       "score": 100,
       "skill_id": "earllm-build",
       "src_path": "lib/antigravity-awesome-skills/skills/earllm-build/SKILL.md",
-      "triggers": "earllm;build"
+      "triggers": "android;kotlin;bluetooth;llm;voice"
     },
     {
       "description": "Reverse engineers malicious Android APK files using JADX decompiler to analyze Java/Kotlin source code, identify malicious functionality including data theft, C2 communication, privilege escalation, and overlay attacks. Examines manifest permissions, receivers, services, and native libraries. Activates for requests involving Android malware analysis, APK reverse engineering, mobile malware investigation, or Android threat analysis.",
-      "phase": 4,
+      "phase": 5,
       "score": 100,
       "skill_id": "reverse-engineering-android-malware-with-jadx",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/reverse-engineering-android-malware-with-jadx/SKILL.md",
-      "triggers": "reverse;engineering;android;malware;with"
+      "triggers": "malware;Android;reverse-engineering;JADX;mobile-malware"
     },
     {
       "description": "Material Design 3 and Android platform guidelines. Use when building Android apps with Jetpack Compose or XML layouts, implementing Material You, navigation, or accessibility. Triggers on tasks involving Android UI, Compose components, dynamic color, or Material Design compliance.",
