@@ -82,7 +82,7 @@ impl Check for SourceDirCheck {
         "Repository Cache (lib/)"
     }
     fn run(&self) -> DiagnosticStatus {
-        if Path::new("lib").is_dir() || Path::new("src").is_dir() {
+        if Path::new("lib").is_dir() {
             DiagnosticStatus::Pass
         } else {
             DiagnosticStatus::Fail {
@@ -231,10 +231,7 @@ impl Check for RepoIntegrityCheck {
         let missing: Vec<String> = manifest
             .repositories
             .par_iter()
-            .filter(|repo| {
-                !Path::new("lib").join(&repo.name).exists()
-                    && !Path::new("src").join(&repo.name).exists()
-            })
+            .filter(|repo| !Path::new("lib").join(&repo.name).exists())
             .map(|repo| repo.name.clone())
             .collect();
 
@@ -246,7 +243,7 @@ impl Check for RepoIntegrityCheck {
                     description: format!("{} missing repositories", missing.len()),
                     location: Some("lib/ directory".to_string()),
                     current: Some(format!("Missing: {}", missing.join(", "))),
-                    should_be: Some("All repos from manifest present in lib/ (legacy src/ accepted)".to_string()),
+                    should_be: Some("All repos from manifest present in lib/".to_string()),
                     why: "Skills must be locally cached before they can be synchronized or routed"
                         .to_string(),
                 }],

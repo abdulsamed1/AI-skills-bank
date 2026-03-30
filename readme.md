@@ -54,6 +54,10 @@ cargo run --release -- sync
 # Validate installation
 cargo run --release -- doctor
 cargo run --release -- release-gate
+
+# Cleanup legacy duplicate repos (legacy locations: src/, repos/)
+# Removes legacy directories only when a verified `lib/` counterpart exists.
+cargo run --release -- cleanup-legacy-duplicates
 ```
 
 ---
@@ -114,7 +118,20 @@ cargo run --release -- doctor
 cargo run --release -- release-gate
 ```
 
+**Cleanup legacy duplicate repos**
+```bash
+# Cleanup old duplicate repos (legacy locations: src/, repos/)
+cargo run --release -- cleanup-legacy-duplicates
+```
+```
+
 ---
+
+## 📁 Repository Cache & Fetching
+
+- Repositories are cloned into the canonical cache directory `lib/` at the repository root (not `src/`). The fetcher uses shallow clones (`git clone --depth 1 --single-branch --no-tags`) for speed and disk savings.
+- Existing repositories inside `lib/` are updated with `git pull` rather than being re-cloned; the fetch pipeline deduplicates manifest entries by normalized remote URL and repository name before operating.
+- If you need to remove legacy repository folders left in older locations (`src/`, `repos/`), use the CLI command `cleanup-legacy-duplicates`. This command is destructive: it only deletes a legacy folder when a matching `lib/` repository exists and the Git remote origin identity matches. We recommend running `cargo run --release -- doctor` to inspect repository state before running cleanup.
 
 ## ⚙️ Configuration Files
 

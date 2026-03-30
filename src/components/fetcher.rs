@@ -8,7 +8,6 @@ use std::sync::{Arc, Mutex};
 use tokio::sync::Semaphore;
 
 const PRIMARY_REPO_CACHE_DIR: &str = "lib";
-const LEGACY_REPO_CACHE_DIR: &str = "repos";
 
 pub struct Fetcher {
     pub manifest: Option<RepoManifest>,
@@ -73,13 +72,6 @@ impl Fetcher {
         }
 
         out
-    }
-
-    fn repo_paths(repo_name: &str) -> (std::path::PathBuf, std::path::PathBuf) {
-        (
-            Path::new(PRIMARY_REPO_CACHE_DIR).join(repo_name),
-            Path::new(LEGACY_REPO_CACHE_DIR).join(repo_name),
-        )
     }
 
     async fn pull_repository(repo_path: &Path, branch: Option<&str>) -> Result<(), SkillManageError> {
@@ -161,7 +153,7 @@ impl Fetcher {
                     .acquire()
                     .await
                     .map_err(|e| SkillManageError::GitError(e.to_string()))?;
-                let (repo_path, legacy_repo_path) = Self::repo_paths(&repo_name);
+                let repo_path = Path::new(PRIMARY_REPO_CACHE_DIR).join(&repo_name);
                 let branch = repo_branch.as_deref();
 
                 let spinner = progress.create_spinner(&format!("Pending: {}", repo_name));
@@ -169,19 +161,6 @@ impl Fetcher {
                 if repo_path.exists() {
                     spinner.set_message(format!("Updating {}...", repo_name));
                     if !dry_run {
-                        Self::pull_repository(&repo_path, branch).await?;
-                        updated_ref.lock().unwrap().push(repo_name.clone());
-                    }
-                } else if legacy_repo_path.exists() {
-                    spinner.set_message(format!(
-                        "Migrating {} from repos/ to lib/ and updating...",
-                        repo_name
-                    ));
-                    if !dry_run {
-                        if let Some(parent) = repo_path.parent() {
-                            std::fs::create_dir_all(parent)?;
-                        }
-                        std::fs::rename(&legacy_repo_path, &repo_path)?;
                         Self::pull_repository(&repo_path, branch).await?;
                         updated_ref.lock().unwrap().push(repo_name.clone());
                     }

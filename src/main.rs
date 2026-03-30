@@ -253,6 +253,9 @@ async fn run() -> Result<()> {
                 return Err(native_err);
             }
         }
+        "cleanup-legacy-duplicates" | "cleanup-legacy" | "cleanup-src-duplicates" | "cleanup-src" => {
+            run_cleanup_legacy_duplicates(&repo_root)?;
+        }
         "add-repo" => {
             let mut config = ensure_config(&repo_root, &config_path)?;
             apply_exclusion_env(Some(&config));
@@ -293,6 +296,7 @@ fn print_help() {
     println!("    skill-manage fetch              # fetch configured repositories only");
     println!("    skill-manage aggregate          # aggregate only");
     println!("    skill-manage sync               # sync only");
+    println!("    skill-manage cleanup-legacy     # one-time cleanup of legacy repo caches into lib/");
     println!("    skill-manage add-repo <URL>     # add repo then run targeted pipeline");
     println!("    skill-manage doctor             # run diagnostics");
     println!("    skill-manage release-gate       # enforce production readiness checks");
@@ -330,6 +334,7 @@ async fn run_interactive(repo_root: &Path, config_path: &Path) -> Result<()> {
         "Fetch repositories only",
         "Aggregate only",
         "Sync only",
+        "Cleanup legacy duplicate repos",
         "Add new repository URL and run",
         "Show current setup",
         "Reconfigure setup",
@@ -373,26 +378,29 @@ async fn run_interactive(repo_root: &Path, config_path: &Path) -> Result<()> {
                 }
             }
             4 => {
+                run_cleanup_legacy_duplicates(repo_root)?;
+            }
+            5 => {
                 let repo_url: String = Input::with_theme(&theme)
                     .with_prompt("Repository URL")
                     .interact_text()
                     .context("Failed to read repository URL")?;
                 run_add_repo_pipeline(repo_root, config_path, &mut config, &repo_url).await?;
             }
-            5 => {
+            6 => {
                 print_config_summary(&config);
             }
-            6 => {
+            7 => {
                 let new_cfg = run_setup_wizard(repo_root)?;
                 save_config(config_path, &new_cfg)?;
                 config = new_cfg;
                 apply_exclusion_env(Some(&config));
                 run_full_pipeline(&config).await?;
             }
-            7 => {
+            8 => {
                 run_release_gate(repo_root)?;
             }
-            8 => break,
+            9 => break,
             _ => {}
         }
     }
@@ -659,6 +667,153 @@ async fn run_fetch(repo_root: &Path, manifest: RepoManifest) -> Result<()> {
     }
 
     Ok(())
+}
+
+fn run_cleanup_legacy_duplicates(repo_root: &Path) -> Result<()> {
+    let lib_root = repo_root.join("lib");
+    if !lib_root.is_dir() {
+        println!("  cleanup: lib/ directory not found; nothing to clean.");
+        return Ok(());
+    }
+
+    let legacy_roots = [repo_root.join("src"), repo_root.join("repos")];
+    let has_legacy_root = legacy_roots.iter().any(|root| root.is_dir());
+    if !has_legacy_root {
+        println!("  cleanup: no legacy repo cache directories found (src/ or repos/).");
+        return Ok(());
+    }
+
+    let mut removed = Vec::new();
+    let mut skipped_no_lib = Vec::new();
+    let mut skipped_remote_mismatch = Vec::new();
+    let mut errors = Vec::new();
+
+    for legacy_root in legacy_roots {
+        if !legacy_root.is_dir() {
+            continue;
+        }
+
+        let legacy_label = legacy_root
+            .file_name()
+            .and_then(|s| s.to_str())
+            .unwrap_or("legacy")
+            .to_string();
+
+        let entries = fs::read_dir(&legacy_root)
+            .with_context(|| format!("Failed to read {}", legacy_root.display()))?;
+
+        for entry_result in entries {
+            let entry = match entry_result {
+                Ok(v) => v,
+                Err(err) => {
+                    errors.push(format!("{}: {}", legacy_label, err));
+                    continue;
+                }
+            };
+
+            let legacy_repo_dir = entry.path();
+            if !legacy_repo_dir.is_dir() {
+                continue;
+            }
+
+            let repo_name = entry.file_name().to_string_lossy().to_string();
+            let repo_ref = format!("{}/{}", legacy_label, repo_name);
+            let lib_repo_dir = lib_root.join(&repo_name);
+
+            if !lib_repo_dir.is_dir() {
+                skipped_no_lib.push(repo_ref);
+                continue;
+            }
+
+            let legacy_origin = git_origin_url(&legacy_repo_dir);
+            let lib_origin = git_origin_url(&lib_repo_dir);
+
+            if let (Some(legacy_url), Some(lib_url)) = (legacy_origin.as_ref(), lib_origin.as_ref()) {
+                let legacy_id = normalize_git_remote_identity(legacy_url);
+                let lib_id = normalize_git_remote_identity(lib_url);
+                if legacy_id != lib_id {
+                    skipped_remote_mismatch.push(repo_ref);
+                    continue;
+                }
+            }
+
+            match fs::remove_dir_all(&legacy_repo_dir) {
+                Ok(_) => removed.push(repo_ref),
+                Err(err) => errors.push(format!("{}: {}", repo_ref, err)),
+            }
+        }
+    }
+
+    removed.sort_unstable();
+    skipped_no_lib.sort_unstable();
+    skipped_remote_mismatch.sort_unstable();
+
+    println!("\n=== cleanup legacy duplicates ===");
+    println!("  removed: {}", removed.len());
+    println!("  skipped (no lib match): {}", skipped_no_lib.len());
+    println!("  skipped (remote mismatch): {}", skipped_remote_mismatch.len());
+    println!("  errors: {}", errors.len());
+
+    if !removed.is_empty() {
+        println!("  removed repos: {}", removed.join(", "));
+    }
+
+    if !skipped_remote_mismatch.is_empty() {
+        eprintln!(
+            "[WARN] Skipped due to remote mismatch (same folder name, different origin): {}",
+            skipped_remote_mismatch.join(", ")
+        );
+    }
+
+    if !errors.is_empty() {
+        eprintln!("[WARN] Cleanup encountered {} filesystem errors:", errors.len());
+        for err in errors {
+            eprintln!("  - {}", err);
+        }
+    }
+
+    Ok(())
+}
+
+fn git_origin_url(repo_dir: &Path) -> Option<String> {
+    let output = Command::new("git")
+        .arg("-C")
+        .arg(repo_dir)
+        .arg("remote")
+        .arg("get-url")
+        .arg("origin")
+        .output()
+        .ok()?;
+
+    if !output.status.success() {
+        return None;
+    }
+
+    let out = String::from_utf8_lossy(&output.stdout).trim().to_string();
+    if out.is_empty() {
+        None
+    } else {
+        Some(out)
+    }
+}
+
+fn normalize_git_remote_identity(url: &str) -> String {
+    let mut normalized = url.trim().to_ascii_lowercase();
+
+    if let Some(rest) = normalized.strip_prefix("git@") {
+        normalized = rest.to_string();
+    } else {
+        for prefix in ["ssh://", "https://", "http://", "git://"] {
+            if let Some(rest) = normalized.strip_prefix(prefix) {
+                normalized = rest.to_string();
+                break;
+            }
+        }
+    }
+
+    normalized = normalized.replace(':', "/");
+    normalized = normalized.trim_end_matches('/').trim_end_matches(".git").to_string();
+    normalized
 }
 
 fn run_aggregate_script(repo_root: &Path) -> Result<()> {
