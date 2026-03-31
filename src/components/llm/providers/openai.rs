@@ -1,7 +1,7 @@
 use crate::components::llm::config::LlmClientConfig;
 use crate::components::llm::error::LlmError;
-use crate::components::llm::provider::LlmProvider;
-use crate::components::llm::types::LlmClassificationResponse;
+use crate::components::llm::provider::{extract_json_substring, LlmProvider};
+use crate::components::llm::types::{LlmClassificationResponse, LlmClassificationContext};
 use crate::components::llm::tls;
 use async_trait::async_trait;
 use serde_json::Value;
@@ -15,7 +15,6 @@ pub struct OpenAiProvider {
 impl OpenAiProvider {
     pub fn new(config: LlmClientConfig) -> Result<Self, LlmError> {
         let mut builder = tls::build_client_builder()?;
-        // sensible default timeout
         builder = builder.timeout(Duration::from_secs(30));
         let client = builder.build().map_err(|e| LlmError::NetworkError(e.to_string()))?;
         Ok(Self { config, client })
@@ -24,9 +23,29 @@ impl OpenAiProvider {
     fn get_model(&self) -> String {
         std::env::var("LLM_MODEL").unwrap_or_else(|_| "gpt-4o-mini".to_string())
     }
-}
 
-use crate::components::llm::provider::extract_json_substring;
+    fn build_system_prompt(&self, context: &LlmClassificationContext, is_batch: bool) -> String {
+        let mut prompt = "You are a classification assistant.\n".to_string();
+        prompt.push_str("Valid Hubs: ");
+        prompt.push_str(&context.valid_hubs.join(", "));
+        prompt.push_str("\nValid Sub-Hubs: ");
+        prompt.push_str(&context.valid_sub_hubs.join(", "));
+        prompt.push_str("\nExcluded Categories: ");
+        prompt.push_str(&context.excluded_categories.join(", "));
+        prompt.push_str("\n\nInstructions:\n");
+        prompt.push_str("1. Classify the skill metadata provided.\n");
+        prompt.push_str("2. If a skill matches an Excluded Category, return 'excluded' for both hub and sub_hub.\n");
+        prompt.push_str("3. Use the provided Valid Hubs and Sub-Hubs otherwise.\n");
+        if is_batch {
+            prompt.push_str("4. Return a JSON array of objects (one per skill).\n");
+        } else {
+            prompt.push_str("4. Return a JSON object with 'ranked_suggestions' array.\n");
+        }
+        prompt.push_str("Each object: {\"hub\":..., \"sub_hub\":..., \"confidence\":0-100, \"reasoning\":...}.\n");
+        prompt.push_str("Return ONLY valid JSON.");
+        prompt
+    }
+}
 
 #[async_trait]
 impl LlmProvider for OpenAiProvider {
@@ -35,6 +54,7 @@ impl LlmProvider for OpenAiProvider {
         skill_id: &str,
         description: &str,
         abstract_text: Option<&str>,
+        context: &LlmClassificationContext,
     ) -> Result<LlmClassificationResponse, LlmError> {
         let api_url = self
             .config
@@ -42,7 +62,7 @@ impl LlmProvider for OpenAiProvider {
             .as_deref()
             .unwrap_or("https://api.openai.com/v1/chat/completions");
 
-        let system_prompt = "You are a classification assistant.\nGiven skill metadata, return a JSON object with a top-level key `ranked_suggestions` containing an array of up to 3 objects {\"hub\":..., \"sub_hub\":..., \"confidence\":0-100, \"reasoning\":...}. Return only valid JSON (no additional commentary).";
+        let system_prompt = self.build_system_prompt(context, false);
 
         let user_payload = serde_json::json!({
             "skill_id": skill_id,
@@ -97,7 +117,6 @@ impl LlmProvider for OpenAiProvider {
             )));
         }
 
-        // Try parse JSON from the standard completion structure
         if let Ok(v) = serde_json::from_str::<Value>(&text) {
             if let Some(content) = v
                 .get("choices")
@@ -112,25 +131,6 @@ impl LlmProvider for OpenAiProvider {
                     }
                 }
             }
-
-            // Fallback: sometimes OpenAI includes `choices[0].text`
-            if let Some(content) = v
-                .get("choices")
-                .and_then(|c| c.get(0))
-                .and_then(|c0| c0.get("text"))
-                .and_then(|t| t.as_str())
-            {
-                if let Some(json_text) = extract_json_substring(content) {
-                    if let Ok(parsed) = serde_json::from_str::<LlmClassificationResponse>(&json_text) {
-                        return Ok(parsed);
-                    }
-                }
-            }
-        }
-
-        // Last resort: try to parse the entire response as JSON
-        if let Ok(parsed) = serde_json::from_str::<LlmClassificationResponse>(&text) {
-            return Ok(parsed);
         }
 
         Err(LlmError::InvalidResponse(
@@ -145,6 +145,7 @@ impl LlmProvider for OpenAiProvider {
     async fn classify_batch(
         &self,
         items: &[(String, String, Option<String>)],
+        context: &LlmClassificationContext,
     ) -> Result<Vec<LlmClassificationResponse>, LlmError> {
         if items.is_empty() {
             return Ok(vec![]);
@@ -156,7 +157,7 @@ impl LlmProvider for OpenAiProvider {
             .as_deref()
             .unwrap_or("https://api.openai.com/v1/chat/completions");
 
-        let system_prompt = "You are a classification assistant.\nGiven an array of skill metadata, return a JSON array (same order) where each element is an object with key `ranked_suggestions` containing an array of up to 3 objects {\"hub\":..., \"sub_hub\":..., \"confidence\":0-100, \"reasoning\":...}. Return only valid JSON (no additional commentary).";
+        let system_prompt = self.build_system_prompt(context, true);
 
         let payload_items: Vec<serde_json::Value> = items
             .iter()
@@ -204,9 +205,6 @@ impl LlmProvider for OpenAiProvider {
         let text = resp.text().await.map_err(|e| LlmError::InvalidResponse(e.to_string()))?;
 
         if !status.is_success() {
-            if status.as_u16() == 401 || status.as_u16() == 403 {
-                return Err(LlmError::AuthenticationFailed(text));
-            }
             if status.as_u16() == 429 {
                 let retry_after = headers
                     .get("retry-after")
@@ -220,7 +218,6 @@ impl LlmProvider for OpenAiProvider {
             )));
         }
 
-        // Try parse JSON from choices
         if let Ok(v) = serde_json::from_str::<serde_json::Value>(&text) {
             if let Some(content) = v
                 .get("choices")
@@ -230,49 +227,11 @@ impl LlmProvider for OpenAiProvider {
                 .and_then(|c| c.as_str())
             {
                 if let Some(json_text) = extract_json_substring(content) {
-                    // Try parse as array of LlmClassificationResponse
                     if let Ok(parsed) = serde_json::from_str::<Vec<LlmClassificationResponse>>(&json_text) {
                         return Ok(parsed);
                     }
-
-                    // Try parse as object { results: [...] }
-                    if let Ok(parsed_obj) = serde_json::from_str::<serde_json::Value>(&json_text) {
-                        if let Some(arr) = parsed_obj.get("results").and_then(|r| r.as_array()) {
-                            let mut out = Vec::new();
-                            for item in arr {
-                                if let Ok(parsed_item) = serde_json::from_value::<LlmClassificationResponse>(item.clone()) {
-                                    out.push(parsed_item);
-                                } else {
-                                    return Err(LlmError::InvalidResponse("Invalid item in results array".into()));
-                                }
-                            }
-                            return Ok(out);
-                        }
-
-                        // Try parse as mapping skill_id -> suggestion
-                        if parsed_obj.is_object() {
-                            let mut out = Vec::new();
-                            for it in payload_items.iter() {
-                                if let Some(skill_id) = it.get("skill_id").and_then(|s| s.as_str()) {
-                                    if let Some(val) = parsed_obj.get(skill_id) {
-                                        if let Ok(parsed_item) = serde_json::from_value::<LlmClassificationResponse>(val.clone()) {
-                                            out.push(parsed_item);
-                                            continue;
-                                        }
-                                    }
-                                }
-                                return Err(LlmError::InvalidResponse("Missing mapping for skill_id".into()));
-                            }
-                            return Ok(out);
-                        }
-                    }
                 }
             }
-        }
-
-        // Last resort: try to parse entire text as array
-        if let Ok(parsed) = serde_json::from_str::<Vec<LlmClassificationResponse>>(&text) {
-            return Ok(parsed);
         }
 
         Err(LlmError::InvalidResponse(

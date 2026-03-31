@@ -1,7 +1,7 @@
 use crate::components::llm::config::LlmClientConfig;
 use crate::components::llm::error::LlmError;
 use crate::components::llm::provider::LlmProvider;
-use crate::components::llm::types::LlmClassificationResponse;
+use crate::components::llm::types::{LlmClassificationResponse, LlmClassificationContext};
 use crate::components::llm::tls;
 use async_trait::async_trait;
 
@@ -25,6 +25,7 @@ impl LlmProvider for CustomProvider {
         _skill_id: &str,
         _description: &str,
         _abstract_text: Option<&str>,
+        _context: &LlmClassificationContext,
     ) -> Result<LlmClassificationResponse, LlmError> {
         Err(LlmError::ProviderUnavailable(
             "Custom provider not implemented yet".into(),

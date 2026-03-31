@@ -13,3 +13,10 @@ pub struct SubHubSuggestion {
 pub struct LlmClassificationResponse {
     pub ranked_suggestions: Vec<SubHubSuggestion>,
 }
+
+#[derive(Debug, Clone, Serialize, Deserialize, Default)]
+pub struct LlmClassificationContext {
+    pub valid_hubs: Vec<String>,
+    pub valid_sub_hubs: Vec<String>,
+    pub excluded_categories: Vec<String>,
+}

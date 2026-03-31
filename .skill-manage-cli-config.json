@@ -1,130 +1,559 @@
 {
-  "version": 1,
-  "repo_root": "C:\\Users\\ASUS\\production\\skill-manage",
-  "workspace_root": "C:\\Users\\ASUS\\production",
-  "sync_scope": "global",
-  "tools": [
-    "copilot",
-    "gemini",
-    "antigravity"
-  ],
   "repositories": [
-    "https://github.com/affaan-m/everything-claude-code.git",
-    "https://github.com/cloudflare/skills.git",
-    "https://github.com/supabase/agent-skills.git",
-    "https://github.com/sanity-io/agent-toolkit.git",
-    "https://github.com/BrianRWagner/ai-marketing-skills.git",
-    "https://github.com/alinaqi/claude-bootstrap.git",
-    "https://github.com/sickn33/antigravity-awesome-skills.git",
-    "https://github.com/antonbabenko/terraform-skill.git",
-    "https://github.com/Eronred/aso-skills.git",
-    "https://github.com/AvdLee/SwiftUI-Agent-Skill.git",
-    "https://github.com/VoltAgent/awesome-claude-code-subagents.git",
-    "https://github.com/SHADOWPR0/beautiful_prose.git",
-    "https://github.com/BehiSecc/VibeSec-Skill.git",
-    "https://github.com/bitwize-music-studio/claude-ai-music-skills.git",
-    "https://github.com/EveryInc/charlie-cfo-skill.git",
-    "https://github.com/Charlie85270/Dorothy.git",
-    "https://github.com/AgriciDaniel/claude-seo.git",
-    "https://github.com/firecrawl/cli.git",
-    "https://github.com/CloudAI-X/threejs-skills.git",
-    "https://github.com/coderabbitai/skills.git",
-    "https://github.com/conorluddy/ios-simulator-skill.git",
-    "https://github.com/netlify/context-and-tools.git",
-    "https://github.com/smixs/creative-director-skill.git",
-    "https://github.com/deusyu/translate-book.git",
-    "https://github.com/Digidai/product-manager-skills.git",
-    "https://github.com/duckdb/duckdb-skills.git",
-    "https://github.com/efremidze/swift-patterns-skill.git",
-    "https://github.com/ehmo/platform-design-skills.git",
-    "https://github.com/CosmoBlk/email-marketing-bible.git",
-    "https://github.com/ethos-link/rails-conventions.git",
-    "https://github.com/ognjengt/founder-skills.git",
-    "https://github.com/frmoretto/clarity-gate.git",
-    "https://github.com/zarazhangrui/frontend-slides.git",
-    "https://github.com/fvadicamo/dev-agent-skills.git",
-    "https://github.com/google-gemini/gemini-skills.git",
-    "https://github.com/gokapso/agent-skills.git",
-    "https://github.com/greensock/gsap-skills.git",
-    "https://github.com/garrytan/gstack.git",
-    "https://github.com/hanfang/claude-memory-skill.git",
-    "https://github.com/helius-labs/core-ai.git",
-    "https://github.com/HeshamFS/materials-simulation-skills.git",
-    "https://github.com/huifer/Claude-Ally-Health.git",
-    "https://github.com/blader/humanizer.git",
-    "https://github.com/ibelick/ui-skills.git",
-    "https://github.com/Joannis/claude-skills.git",
-    "https://github.com/jthack/ffuf_claude_skill.git",
-    "https://github.com/K-Dense-AI/claude-scientific-skills.git",
-    "https://github.com/Kevin7Qi/codex-collab.git",
-    "https://github.com/komal-SkyNET/claude-skill-homeassistant.git",
-    "https://github.com/kreuzberg-dev/kreuzberg.git",
-    "https://github.com/lackeyjb/playwright-skill.git",
-    "https://github.com/lawvable/awesome-legal-skills.git",
-    "https://github.com/Leonxlnx/taste-skill.git",
-    "https://github.com/wrsmith108/linear-claude-skill.git",
-    "https://github.com/coreyhaines31/marketingskills.git",
-    "https://github.com/massimodeluisa/recursive-decomposition-skill.git",
-    "https://github.com/mattpocock/skills.git",
-    "https://github.com/mcollina/skills.git",
-    "https://github.com/figma/mcp-server-guide.git",
-    "https://github.com/meodai/skill.color-expert.git",
-    "https://github.com/microsoft/skills.git",
-    "https://github.com/more-io/claude-apple-bridges.git",
-    "https://github.com/mukul975/Anthropic-Cybersecurity-Skills.git",
-    "https://github.com/muthuishere/hand-drawn-diagrams.git",
-    "https://github.com/op7418/NanoBanana-PPT-Skills.git",
-    "https://github.com/NeoLabHQ/context-engineering-kit.git",
-    "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
-    "https://github.com/NoizAI/skills.git",
-    "https://github.com/PleasePrompto/notebooklm-skill.git",
-    "https://github.com/NotMyself/claude-win11-speckit-update-skill.git",
-    "https://github.com/PSPDFKit-labs/nutrient-agent-skill.git",
-    "https://github.com/omkamal/pypict-claude-skill.git",
-    "https://github.com/Orchestra-Research/AI-research-SKILLs.git",
-    "https://github.com/Paramchoudhary/ResumeSkills.git",
-    "https://github.com/phuryn/pm-skills.git",
-    "https://github.com/deanpeters/Product-Manager-Skills.git",
-    "https://github.com/prompt-security/clawsec.git",
-    "https://github.com/raintree-technology/apple-hig-skills.git",
-    "https://github.com/rameerez/claude-code-startup-skills.git",
-    "https://github.com/ramzesenok/iOS-Accessibility-Audit-Skill.git",
-    "https://github.com/ReScienceLab/opc-skills.git",
-    "https://github.com/robzolkos/skill-rails-upgrade.git",
-    "https://github.com/Rootly-AI-Labs/Rootly-MCP-server.git",
-    "https://github.com/RoundTable02/tutor-skills.git",
-    "https://github.com/rudrankriyam/app-store-connect-cli-skills.git",
-    "https://github.com/sanjay3290/ai-skills.git",
-    "https://github.com/scarletkc/vexor.git",
-    "https://github.com/SeanZoR/claude-speed-reader.git",
-    "https://github.com/SHADOWPR0/security-bluebook-builder.git",
-    "https://github.com/Shpigford/skills.git",
-    "https://github.com/ShunsukeHayashi/agent-skill-bus.git",
-    "https://github.com/google-labs-code/stitch-skills.git",
-    "https://github.com/obra/superpowers.git",
-    "https://github.com/obra/superpowers-lab.git",
-    "https://github.com/takechanman1228/claude-ecom.git",
-    "https://github.com/testdino-hq/playwright-skill.git",
-    "https://github.com/tinybirdco/tinybird-agent-skills.git",
-    "https://github.com/truongduy2611/app-store-preflight-skills.git",
-    "https://github.com/Xquik-dev/tweetclaw.git",
-    "https://github.com/uucz/moyu.git",
-    "https://github.com/video-db/skills.git",
-    "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep.git",
-    "https://github.com/wrsmith108/varlock-claude-skill.git",
-    "https://github.com/wshuyi/x-article-publisher-skill.git",
-    "https://github.com/op7418/Youtube-clipper-skill.git",
-    "https://github.com/yusufkaraaslan/Skill_Seekers.git",
-    "https://github.com/zechenzhangAGI/AI-research-SKILLs.git",
-    "https://github.com/ZhangHanDong/makepad-skills.git",
-    "https://github.com/zscole/model-hierarchy-skill.git",
-    "https://github.com/zw008/VMware-AIops.git",
-    "https://github.com/zxkane/aws-skills.git"
-  ],
-  "category_exclusions": [
-    "games",
-    "medicine",
-    "law",
-    "game"
+    {
+      "name": "affaan-m-everything-claude-code",
+      "url": "https://github.com/affaan-m/everything-claude-code.git",
+      "branch": null
+    },
+    {
+      "name": "cloudflare-skills",
+      "url": "https://github.com/cloudflare/skills.git",
+      "branch": null
+    },
+    {
+      "name": "supabase-agent-skills",
+      "url": "https://github.com/supabase/agent-skills.git",
+      "branch": null
+    },
+    {
+      "name": "sanity-io-agent-toolkit",
+      "url": "https://github.com/sanity-io/agent-toolkit.git",
+      "branch": null
+    },
+    {
+      "name": "brianrwagner-ai-marketing-skills",
+      "url": "https://github.com/BrianRWagner/ai-marketing-skills.git",
+      "branch": null
+    },
+    {
+      "name": "alinaqi-claude-bootstrap",
+      "url": "https://github.com/alinaqi/claude-bootstrap.git",
+      "branch": null
+    },
+    {
+      "name": "sickn33-antigravity-awesome-skills",
+      "url": "https://github.com/sickn33/antigravity-awesome-skills.git",
+      "branch": null
+    },
+    {
+      "name": "antonbabenko-terraform-skill",
+      "url": "https://github.com/antonbabenko/terraform-skill.git",
+      "branch": null
+    },
+    {
+      "name": "eronred-aso-skills",
+      "url": "https://github.com/Eronred/aso-skills.git",
+      "branch": null
+    },
+    {
+      "name": "avdlee-swiftui-agent-skill",
+      "url": "https://github.com/AvdLee/SwiftUI-Agent-Skill.git",
+      "branch": null
+    },
+    {
+      "name": "voltagent-awesome-claude-code-subagents",
+      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents.git",
+      "branch": null
+    },
+    {
+      "name": "shadowpr0-beautiful-prose",
+      "url": "https://github.com/SHADOWPR0/beautiful_prose.git",
+      "branch": null
+    },
+    {
+      "name": "behisecc-vibesec-skill",
+      "url": "https://github.com/BehiSecc/VibeSec-Skill.git",
+      "branch": null
+    },
+    {
+      "name": "bitwize-music-studio-claude-ai-music-skills",
+      "url": "https://github.com/bitwize-music-studio/claude-ai-music-skills.git",
+      "branch": null
+    },
+    {
+      "name": "everyinc-charlie-cfo-skill",
+      "url": "https://github.com/EveryInc/charlie-cfo-skill.git",
+      "branch": null
+    },
+    {
+      "name": "charlie85270-dorothy",
+      "url": "https://github.com/Charlie85270/Dorothy.git",
+      "branch": null
+    },
+    {
+      "name": "agricidaniel-claude-seo",
+      "url": "https://github.com/AgriciDaniel/claude-seo.git",
+      "branch": null
+    },
+    {
+      "name": "firecrawl-cli",
+      "url": "https://github.com/firecrawl/cli.git",
+      "branch": null
+    },
+    {
+      "name": "cloudai-x-threejs-skills",
+      "url": "https://github.com/CloudAI-X/threejs-skills.git",
+      "branch": null
+    },
+    {
+      "name": "coderabbitai-skills",
+      "url": "https://github.com/coderabbitai/skills.git",
+      "branch": null
+    },
+    {
+      "name": "conorluddy-ios-simulator-skill",
+      "url": "https://github.com/conorluddy/ios-simulator-skill.git",
+      "branch": null
+    },
+    {
+      "name": "netlify-context-and-tools",
+      "url": "https://github.com/netlify/context-and-tools.git",
+      "branch": null
+    },
+    {
+      "name": "smixs-creative-director-skill",
+      "url": "https://github.com/smixs/creative-director-skill.git",
+      "branch": null
+    },
+    {
+      "name": "deusyu-translate-book",
+      "url": "https://github.com/deusyu/translate-book.git",
+      "branch": null
+    },
+    {
+      "name": "digidai-product-manager-skills",
+      "url": "https://github.com/Digidai/product-manager-skills.git",
+      "branch": null
+    },
+    {
+      "name": "duckdb-duckdb-skills",
+      "url": "https://github.com/duckdb/duckdb-skills.git",
+      "branch": null
+    },
+    {
+      "name": "efremidze-swift-patterns-skill",
+      "url": "https://github.com/efremidze/swift-patterns-skill.git",
+      "branch": null
+    },
+    {
+      "name": "ehmo-platform-design-skills",
+      "url": "https://github.com/ehmo/platform-design-skills.git",
+      "branch": null
+    },
+    {
+      "name": "cosmoblk-email-marketing-bible",
+      "url": "https://github.com/CosmoBlk/email-marketing-bible.git",
+      "branch": null
+    },
+    {
+      "name": "ethos-link-rails-conventions",
+      "url": "https://github.com/ethos-link/rails-conventions.git",
+      "branch": null
+    },
+    {
+      "name": "ognjengt-founder-skills",
+      "url": "https://github.com/ognjengt/founder-skills.git",
+      "branch": null
+    },
+    {
+      "name": "frmoretto-clarity-gate",
+      "url": "https://github.com/frmoretto/clarity-gate.git",
+      "branch": null
+    },
+    {
+      "name": "zarazhangrui-frontend-slides",
+      "url": "https://github.com/zarazhangrui/frontend-slides.git",
+      "branch": null
+    },
+    {
+      "name": "fvadicamo-dev-agent-skills",
+      "url": "https://github.com/fvadicamo/dev-agent-skills.git",
+      "branch": null
+    },
+    {
+      "name": "google-gemini-gemini-skills",
+      "url": "https://github.com/google-gemini/gemini-skills.git",
+      "branch": null
+    },
+    {
+      "name": "gokapso-agent-skills",
+      "url": "https://github.com/gokapso/agent-skills.git",
+      "branch": null
+    },
+    {
+      "name": "greensock-gsap-skills",
+      "url": "https://github.com/greensock/gsap-skills.git",
+      "branch": null
+    },
+    {
+      "name": "garrytan-gstack",
+      "url": "https://github.com/garrytan/gstack.git",
+      "branch": null
+    },
+    {
+      "name": "hanfang-claude-memory-skill",
+      "url": "https://github.com/hanfang/claude-memory-skill.git",
+      "branch": null
+    },
+    {
+      "name": "helius-labs-core-ai",
+      "url": "https://github.com/helius-labs/core-ai.git",
+      "branch": null
+    },
+    {
+      "name": "heshamfs-materials-simulation-skills",
+      "url": "https://github.com/HeshamFS/materials-simulation-skills.git",
+      "branch": null
+    },
+    {
+      "name": "huifer-claude-ally-health",
+      "url": "https://github.com/huifer/Claude-Ally-Health.git",
+      "branch": null
+    },
+    {
+      "name": "blader-humanizer",
+      "url": "https://github.com/blader/humanizer.git",
+      "branch": null
+    },
+    {
+      "name": "ibelick-ui-skills",
+      "url": "https://github.com/ibelick/ui-skills.git",
+      "branch": null
+    },
+    {
+      "name": "joannis-claude-skills",
+      "url": "https://github.com/Joannis/claude-skills.git",
+      "branch": null
+    },
+    {
+      "name": "jthack-ffuf-claude-skill",
+      "url": "https://github.com/jthack/ffuf_claude_skill.git",
+      "branch": null
+    },
+    {
+      "name": "k-dense-ai-claude-scientific-skills",
+      "url": "https://github.com/K-Dense-AI/claude-scientific-skills.git",
+      "branch": null
+    },
+    {
+      "name": "kevin7qi-codex-collab",
+      "url": "https://github.com/Kevin7Qi/codex-collab.git",
+      "branch": null
+    },
+    {
+      "name": "komal-skynet-claude-skill-homeassistant",
+      "url": "https://github.com/komal-SkyNET/claude-skill-homeassistant.git",
+      "branch": null
+    },
+    {
+      "name": "kreuzberg-dev-kreuzberg",
+      "url": "https://github.com/kreuzberg-dev/kreuzberg.git",
+      "branch": null
+    },
+    {
+      "name": "lackeyjb-playwright-skill",
+      "url": "https://github.com/lackeyjb/playwright-skill.git",
+      "branch": null
+    },
+    {
+      "name": "lawvable-awesome-legal-skills",
+      "url": "https://github.com/lawvable/awesome-legal-skills.git",
+      "branch": null
+    },
+    {
+      "name": "leonxlnx-taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill.git",
+      "branch": null
+    },
+    {
+      "name": "wrsmith108-linear-claude-skill",
+      "url": "https://github.com/wrsmith108/linear-claude-skill.git",
+      "branch": null
+    },
+    {
+      "name": "coreyhaines31-marketingskills",
+      "url": "https://github.com/coreyhaines31/marketingskills.git",
+      "branch": null
+    },
+    {
+      "name": "massimodeluisa-recursive-decomposition-skill",
+      "url": "https://github.com/massimodeluisa/recursive-decomposition-skill.git",
+      "branch": null
+    },
+    {
+      "name": "mattpocock-skills",
+      "url": "https://github.com/mattpocock/skills.git",
+      "branch": null
+    },
+    {
+      "name": "mcollina-skills",
+      "url": "https://github.com/mcollina/skills.git",
+      "branch": null
+    },
+    {
+      "name": "figma-mcp-server-guide",
+      "url": "https://github.com/figma/mcp-server-guide.git",
+      "branch": null
+    },
+    {
+      "name": "meodai-skill-color-expert",
+      "url": "https://github.com/meodai/skill.color-expert.git",
+      "branch": null
+    },
+    {
+      "name": "microsoft-skills",
+      "url": "https://github.com/microsoft/skills.git",
+      "branch": null
+    },
+    {
+      "name": "more-io-claude-apple-bridges",
+      "url": "https://github.com/more-io/claude-apple-bridges.git",
+      "branch": null
+    },
+    {
+      "name": "mukul975-anthropic-cybersecurity-skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills.git",
+      "branch": null
+    },
+    {
+      "name": "muthuishere-hand-drawn-diagrams",
+      "url": "https://github.com/muthuishere/hand-drawn-diagrams.git",
+      "branch": null
+    },
+    {
+      "name": "op7418-nanobanana-ppt-skills",
+      "url": "https://github.com/op7418/NanoBanana-PPT-Skills.git",
+      "branch": null
+    },
+    {
+      "name": "neolabhq-context-engineering-kit",
+      "url": "https://github.com/NeoLabHQ/context-engineering-kit.git",
+      "branch": null
+    },
+    {
+      "name": "nextlevelbuilder-ui-ux-pro-max-skill",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
+      "branch": null
+    },
+    {
+      "name": "noizai-skills",
+      "url": "https://github.com/NoizAI/skills.git",
+      "branch": null
+    },
+    {
+      "name": "pleaseprompto-notebooklm-skill",
+      "url": "https://github.com/PleasePrompto/notebooklm-skill.git",
+      "branch": null
+    },
+    {
+      "name": "notmyself-claude-win11-speckit-update-skill",
+      "url": "https://github.com/NotMyself/claude-win11-speckit-update-skill.git",
+      "branch": null
+    },
+    {
+      "name": "pspdfkit-labs-nutrient-agent-skill",
+      "url": "https://github.com/PSPDFKit-labs/nutrient-agent-skill.git",
+      "branch": null
+    },
+    {
+      "name": "omkamal-pypict-claude-skill",
+      "url": "https://github.com/omkamal/pypict-claude-skill.git",
+      "branch": null
+    },
+    {
+      "name": "orchestra-research-ai-research-skills",
+      "url": "https://github.com/Orchestra-Research/AI-research-SKILLs.git",
+      "branch": null
+    },
+    {
+      "name": "paramchoudhary-resumeskills",
+      "url": "https://github.com/Paramchoudhary/ResumeSkills.git",
+      "branch": null
+    },
+    {
+      "name": "phuryn-pm-skills",
+      "url": "https://github.com/phuryn/pm-skills.git",
+      "branch": null
+    },
+    {
+      "name": "deanpeters-product-manager-skills",
+      "url": "https://github.com/deanpeters/Product-Manager-Skills.git",
+      "branch": null
+    },
+    {
+      "name": "prompt-security-clawsec",
+      "url": "https://github.com/prompt-security/clawsec.git",
+      "branch": null
+    },
+    {
+      "name": "raintree-technology-apple-hig-skills",
+      "url": "https://github.com/raintree-technology/apple-hig-skills.git",
+      "branch": null
+    },
+    {
+      "name": "rameerez-claude-code-startup-skills",
+      "url": "https://github.com/rameerez/claude-code-startup-skills.git",
+      "branch": null
+    },
+    {
+      "name": "ramzesenok-ios-accessibility-audit-skill",
+      "url": "https://github.com/ramzesenok/iOS-Accessibility-Audit-Skill.git",
+      "branch": null
+    },
+    {
+      "name": "resciencelab-opc-skills",
+      "url": "https://github.com/ReScienceLab/opc-skills.git",
+      "branch": null
+    },
+    {
+      "name": "robzolkos-skill-rails-upgrade",
+      "url": "https://github.com/robzolkos/skill-rails-upgrade.git",
+      "branch": null
+    },
+    {
+      "name": "rootly-ai-labs-rootly-mcp-server",
+      "url": "https://github.com/Rootly-AI-Labs/Rootly-MCP-server.git",
+      "branch": null
+    },
+    {
+      "name": "roundtable02-tutor-skills",
+      "url": "https://github.com/RoundTable02/tutor-skills.git",
+      "branch": null
+    },
+    {
+      "name": "rudrankriyam-app-store-connect-cli-skills",
+      "url": "https://github.com/rudrankriyam/app-store-connect-cli-skills.git",
+      "branch": null
+    },
+    {
+      "name": "sanjay3290-ai-skills",
+      "url": "https://github.com/sanjay3290/ai-skills.git",
+      "branch": null
+    },
+    {
+      "name": "scarletkc-vexor",
+      "url": "https://github.com/scarletkc/vexor.git",
+      "branch": null
+    },
+    {
+      "name": "seanzor-claude-speed-reader",
+      "url": "https://github.com/SeanZoR/claude-speed-reader.git",
+      "branch": null
+    },
+    {
+      "name": "shadowpr0-security-bluebook-builder",
+      "url": "https://github.com/SHADOWPR0/security-bluebook-builder.git",
+      "branch": null
+    },
+    {
+      "name": "shpigford-skills",
+      "url": "https://github.com/Shpigford/skills.git",
+      "branch": null
+    },
+    {
+      "name": "shunsukehayashi-agent-skill-bus",
+      "url": "https://github.com/ShunsukeHayashi/agent-skill-bus.git",
+      "branch": null
+    },
+    {
+      "name": "google-labs-code-stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills.git",
+      "branch": null
+    },
+    {
+      "name": "obra-superpowers",
+      "url": "https://github.com/obra/superpowers.git",
+      "branch": null
+    },
+    {
+      "name": "obra-superpowers-lab",
+      "url": "https://github.com/obra/superpowers-lab.git",
+      "branch": null
+    },
+    {
+      "name": "takechanman1228-claude-ecom",
+      "url": "https://github.com/takechanman1228/claude-ecom.git",
+      "branch": null
+    },
+    {
+      "name": "testdino-hq-playwright-skill",
+      "url": "https://github.com/testdino-hq/playwright-skill.git",
+      "branch": null
+    },
+    {
+      "name": "tinybirdco-tinybird-agent-skills",
+      "url": "https://github.com/tinybirdco/tinybird-agent-skills.git",
+      "branch": null
+    },
+    {
+      "name": "truongduy2611-app-store-preflight-skills",
+      "url": "https://github.com/truongduy2611/app-store-preflight-skills.git",
+      "branch": null
+    },
+    {
+      "name": "xquik-dev-tweetclaw",
+      "url": "https://github.com/Xquik-dev/tweetclaw.git",
+      "branch": null
+    },
+    {
+      "name": "uucz-moyu",
+      "url": "https://github.com/uucz/moyu.git",
+      "branch": null
+    },
+    {
+      "name": "video-db-skills",
+      "url": "https://github.com/video-db/skills.git",
+      "branch": null
+    },
+    {
+      "name": "wanshuiyin-auto-claude-code-research-in-sleep",
+      "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep.git",
+      "branch": null
+    },
+    {
+      "name": "wrsmith108-varlock-claude-skill",
+      "url": "https://github.com/wrsmith108/varlock-claude-skill.git",
+      "branch": null
+    },
+    {
+      "name": "wshuyi-x-article-publisher-skill",
+      "url": "https://github.com/wshuyi/x-article-publisher-skill.git",
+      "branch": null
+    },
+    {
+      "name": "op7418-youtube-clipper-skill",
+      "url": "https://github.com/op7418/Youtube-clipper-skill.git",
+      "branch": null
+    },
+    {
+      "name": "yusufkaraaslan-skill-seekers",
+      "url": "https://github.com/yusufkaraaslan/Skill_Seekers.git",
+      "branch": null
+    },
+    {
+      "name": "zechenzhangagi-ai-research-skills",
+      "url": "https://github.com/zechenzhangAGI/AI-research-SKILLs.git",
+      "branch": null
+    },
+    {
+      "name": "zhanghandong-makepad-skills",
+      "url": "https://github.com/ZhangHanDong/makepad-skills.git",
+      "branch": null
+    },
+    {
+      "name": "zscole-model-hierarchy-skill",
+      "url": "https://github.com/zscole/model-hierarchy-skill.git",
+      "branch": null
+    },
+    {
+      "name": "zw008-vmware-aiops",
+      "url": "https://github.com/zw008/VMware-AIops.git",
+      "branch": null
+    },
+    {
+      "name": "zxkane-aws-skills",
+      "url": "https://github.com/zxkane/aws-skills.git",
+      "branch": null
+    }
   ]
 }

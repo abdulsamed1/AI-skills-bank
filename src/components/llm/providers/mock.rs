@@ -1,7 +1,7 @@
 use crate::components::llm::config::LlmClientConfig;
 use crate::components::llm::error::LlmError;
 use crate::components::llm::provider::LlmProvider;
-use crate::components::llm::types::{LlmClassificationResponse, SubHubSuggestion};
+use crate::components::llm::types::{LlmClassificationResponse, SubHubSuggestion, LlmClassificationContext};
 use async_trait::async_trait;
 
 pub struct MockProvider {
@@ -21,8 +21,8 @@ impl LlmProvider for MockProvider {
         skill_id: &str,
         description: &str,
         abstract_text: Option<&str>,
+        _context: &LlmClassificationContext,
     ) -> Result<LlmClassificationResponse, LlmError> {
-        // Allow tests to force provider failure via env var `LLM_MOCK_FAIL=1`.
         if std::env::var("LLM_MOCK_FAIL")
             .map(|v| {
                 let vl = v.to_ascii_lowercase();
@@ -35,7 +35,6 @@ impl LlmProvider for MockProvider {
             ));
         }
 
-        // Deterministic mock: choose sub_hub based on simple keywords for tests
         let mut suggestions = Vec::new();
 
         if skill_id.to_lowercase().contains("rust")

@@ -1,4 +1,4 @@
-use crate::components::llm::types::LlmClassificationResponse;
+use crate::components::llm::types::{LlmClassificationResponse, LlmClassificationContext};
 use crate::components::llm::error::LlmError;
 use async_trait::async_trait;
 
@@ -9,17 +9,19 @@ pub trait LlmProvider: Send + Sync {
         skill_id: &str,
         description: &str,
         abstract_text: Option<&str>,
+        context: &LlmClassificationContext,
     ) -> Result<LlmClassificationResponse, LlmError>;
 
     /// Optional batch classification. Default implementation calls `classify` for each item.
     async fn classify_batch(
         &self,
         items: &[(String, String, Option<String>)],
+        context: &LlmClassificationContext,
     ) -> Result<Vec<LlmClassificationResponse>, LlmError> {
         let mut out = Vec::with_capacity(items.len());
         for (skill_id, description, abstract_text) in items.iter() {
             let resp = self
-                .classify(skill_id, description, abstract_text.as_deref())
+                .classify(skill_id, description, abstract_text.as_deref(), context)
                 .await?;
             out.push(resp);
         }

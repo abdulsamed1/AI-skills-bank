@@ -136,9 +136,52 @@ pub async fn aggregate_to_output(
     // Apply any explicit manual overrides first (highest precedence)
     apply_manual_overrides(repo_root, &manual_overrides, &mut skills);
 
-    // LLM classification (primary). Honor the `LLM_ENABLED` env flag to allow
-    // disabling LLM classification for debugging or offline runs. If disabled
-    // or if classification errors occur, fall back to deterministic keyword rules.
+    // Load category exclusions from environment
+    let exclusions_env = env::var("SKILL_MANAGE_EXCLUSIONS").unwrap_or_default();
+    let excluded_cats: Vec<String> = exclusions_env
+        .split(';')
+        .map(|s| s.trim().to_lowercase())
+        .filter(|s| !s.is_empty())
+        .collect();
+
+    // Pre-filter skills against exclusions
+    for skill in skills.iter_mut() {
+        if skill.match_score.unwrap_or(0) >= 100 {
+            continue;
+        }
+
+        let norm_text = format!("{} {}", skill.name, skill.description).to_lowercase();
+        // Simple tokenization for exclusion check
+        let tokens: HashSet<String> = norm_text
+            .split_whitespace()
+            .map(|s| s.trim_matches(|c: char| !c.is_alphanumeric()).to_string())
+            .filter(|s| !s.is_empty())
+            .collect();
+
+        if rules::is_excluded(&norm_text, &tokens) {
+            skill.hub = "excluded".to_string();
+            skill.sub_hub = "excluded".to_string();
+            skill.match_score = Some(100); // Mark as fully handled
+        }
+    }
+
+    // Build LLM classification context
+    let mut context = crate::components::llm::types::LlmClassificationContext {
+        valid_hubs: rules::VALID_HUBS.iter().map(|s| s.to_string()).collect(),
+        excluded_categories: excluded_cats,
+        ..Default::default()
+    };
+    
+    // Collect all unique sub-hubs from definitions
+    let mut all_sub_hubs = HashSet::new();
+    for hub_def in rules::SUB_HUB_DEFINITIONS.values() {
+        for sub_hub in hub_def.sub_hubs.keys() {
+            all_sub_hubs.insert(sub_hub.to_string());
+        }
+    }
+    context.valid_sub_hubs = all_sub_hubs.into_iter().collect();
+
+    // LLM classification (primary). Honor the `LLM_ENABLED` env flag.
     let llm_enabled = env::var("LLM_ENABLED")
         .ok()
         .map(|v| {
@@ -148,11 +191,9 @@ pub async fn aggregate_to_output(
         .unwrap_or(true);
 
     if llm_enabled {
-        if let Err(e) = classify_skills_with_llm(repo_root, &mut skills).await {
-            // classification errors are non-fatal; fallback to rules for all remaining skills
-            eprintln!("LLM classification failed: {}. Falling back to keyword rules.", e);
+        if let Err(e) = classify_skills_with_llm(repo_root, &mut skills, &context).await {
+            eprintln!("LLM classification system error: {}. Falling back to keywords for all unclassified skills.", e);
             for skill in skills.iter_mut() {
-                // don't override manual overrides (those have match_score >= 100)
                 if skill.match_score.unwrap_or(0) >= 100 {
                     continue;
                 }
@@ -160,7 +201,6 @@ pub async fn aggregate_to_output(
             }
         }
     } else {
-        eprintln!("LLM disabled via LLM_ENABLED env var; using deterministic rules.");
         for skill in skills.iter_mut() {
             if skill.match_score.unwrap_or(0) >= 100 {
                 continue;
@@ -395,6 +435,7 @@ fn apply_manual_overrides(
 async fn classify_skills_with_llm(
     _repo_root: &Path,
     skills: &mut [SkillMetadata],
+    context: &crate::components::llm::types::LlmClassificationContext,
 ) -> Result<(), SkillManageError> {
     // Load LLM client config from env; if absent, return an error so caller
     // falls back to deterministic rules.
@@ -465,6 +506,7 @@ async fn classify_skills_with_llm(
         skill_id: &str,
         description: &str,
         abstract_text: Option<&str>,
+        context: &crate::components::llm::types::LlmClassificationContext,
         max_retries: u32,
         initial_backoff_ms: u64,
         max_backoff_ms: u64,
@@ -472,7 +514,7 @@ async fn classify_skills_with_llm(
         let attempts = if max_retries == 0 { 1 } else { max_retries };
         for attempt in 0..attempts {
             match provider
-                .classify(skill_id, description, abstract_text)
+                .classify(skill_id, description, abstract_text, context)
                 .await
             {
                 Ok(resp) => return Ok(resp),
@@ -518,10 +560,10 @@ async fn classify_skills_with_llm(
         ))
     }
 
-    // Build list of skills that need classification (cache miss and low confidence)
+    // Build list of skills that need classification (cache miss and not already handled)
     let mut to_classify: Vec<(usize, String, String, Option<String>, String)> = Vec::new();
     for (idx, skill) in skills.iter_mut().enumerate() {
-        if skill.match_score.unwrap_or(0) >= 90 {
+        if skill.match_score.unwrap_or(0) >= 100 {
             continue;
         }
 
@@ -559,13 +601,14 @@ async fn classify_skills_with_llm(
         async fn classify_batch_with_retry(
             provider: &dyn crate::components::llm::LlmProvider,
             items: &[(String, String, Option<String>)],
+            context: &crate::components::llm::types::LlmClassificationContext,
             max_retries: u32,
             initial_backoff_ms: u64,
             max_backoff_ms: u64,
         ) -> Result<Vec<crate::components::llm::LlmClassificationResponse>, SkillManageError> {
             let attempts = if max_retries == 0 { 1 } else { max_retries };
             for attempt in 0..attempts {
-                match provider.classify_batch(items).await {
+                match provider.classify_batch(items, context).await {
                     Ok(resps) => return Ok(resps),
                     Err(e) => {
                         if let crate::components::llm::LlmError::RateLimited { retry_after } = &e {
@@ -619,6 +662,7 @@ async fn classify_skills_with_llm(
             let batch_result = classify_batch_with_retry(
                 &*provider,
                 &items,
+                context,
                 max_retries,
                 initial_backoff_ms,
                 max_backoff_ms,
@@ -639,7 +683,7 @@ async fn classify_skills_with_llm(
                         crate::components::llm::insert_into_map(&mut cache, key.clone(), resp);
                     }
                 }
-                Ok(resps) => {
+                Ok(_resps) => {
                     // unexpected length; fall back to per-item
                     for (j, (_idx, name, description, abstract_text, key)) in chunk.iter().enumerate() {
                         let resp = classify_with_retry(
@@ -647,20 +691,29 @@ async fn classify_skills_with_llm(
                             name,
                             description,
                             abstract_text.as_deref(),
+                            context,
                             max_retries,
                             initial_backoff_ms,
                             max_backoff_ms,
                         )
-                        .await?;
+                        .await;
 
-                        if let Some(top) = resp.ranked_suggestions.first() {
-                            let skill = &mut skills[chunk[j].0];
-                            skill.hub = top.hub.clone();
-                            skill.sub_hub = top.sub_hub.clone();
-                            skill.match_score = Some(top.confidence);
-                            skill.phase = Some(phase_for_hub(&skill.hub));
+                        match resp {
+                            Ok(resp) => {
+                                if let Some(top) = resp.ranked_suggestions.first() {
+                                    let skill = &mut skills[chunk[j].0];
+                                    skill.hub = top.hub.clone();
+                                    skill.sub_hub = top.sub_hub.clone();
+                                    skill.match_score = Some(top.confidence);
+                                    skill.phase = Some(phase_for_hub(&skill.hub));
+                                }
+                                crate::components::llm::insert_into_map(&mut cache, key.clone(), resp);
+                            }
+                            Err(_) => {
+                                // Fallback to keyword rules for this specific skill
+                                rules::apply_rules(&mut skills[chunk[j].0]);
+                            }
                         }
-                        crate::components::llm::insert_into_map(&mut cache, key.clone(), resp);
                     }
                 }
                 Err(_e) => {
@@ -671,23 +724,30 @@ async fn classify_skills_with_llm(
                             name,
                             description,
                             abstract_text.as_deref(),
+                            context,
                             max_retries,
                             initial_backoff_ms,
                             max_backoff_ms,
                         )
-                        .await?;
+                        .await;
 
-                        if let Some(top) = resp.ranked_suggestions.first() {
-                            let skill = &mut skills[*idx];
-                            skill.hub = top.hub.clone();
-                            skill.sub_hub = top.sub_hub.clone();
-                            skill.match_score = Some(top.confidence);
-                            skill.phase = Some(phase_for_hub(&skill.hub));
+                        match resp {
+                            Ok(resp) => {
+                                if let Some(top) = resp.ranked_suggestions.first() {
+                                    let skill = &mut skills[*idx];
+                                    skill.hub = top.hub.clone();
+                                    skill.sub_hub = top.sub_hub.clone();
+                                    skill.match_score = Some(top.confidence);
+                                    skill.phase = Some(phase_for_hub(&skill.hub));
+                                }
+                                crate::components::llm::insert_into_map(&mut cache, key.clone(), resp);
+                            }
+                            Err(_) => {
+                                // Fallback to keyword rules for this specific skill
+                                rules::apply_rules(&mut skills[*idx]);
+                            }
                         }
-                        // Insert cache by key
-                        crate::components::llm::insert_into_map(&mut cache, key.clone(), resp);
                     }
-                    // After per-item fallback above, continue to next chunk
                 }
             }
         }

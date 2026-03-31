@@ -100,15 +100,24 @@ impl SyncScope {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-struct SetupConfig {
-    version: u32,
-    repo_root: String,
-    workspace_root: String,
-    sync_scope: SyncScope,
-    tools: Vec<String>,
-    repositories: Vec<String>,
+pub struct SetupConfig {
+    #[serde(default)]
+    pub version: u32,
+    #[serde(default)]
+    pub repo_root: String,
+    #[serde(default)]
+    pub workspace_root: String,
+    #[serde(default = "default_sync_scope")]
+    pub sync_scope: SyncScope,
+    #[serde(default)]
+    pub tools: Vec<String>,
+    pub repositories: Vec<Repository>,
     #[serde(default = "default_category_exclusions")]
-    category_exclusions: Vec<String>,
+    pub category_exclusions: Vec<String>,
+}
+
+fn default_sync_scope() -> SyncScope {
+    SyncScope::Both
 }
 
 impl SetupConfig {
@@ -421,8 +430,8 @@ fn print_config_summary(config: &SetupConfig) {
         .collect::<Vec<_>>();
     println!("  Tools: {}", tool_labels.join(", "));
     println!("  Repositories: {}", config.repositories.len());
-    for repo in &config.repositories {
-        println!("    - {}", repo);
+    for (idx, repo) in config.repositories.iter().enumerate() {
+        println!("    {:2}. {} ({})", idx + 1, repo.name, repo.url);
     }
     println!("  Excluded categories: {}", config.category_exclusions.join(", "));
     println!();
@@ -479,7 +488,7 @@ fn run_setup_wizard(repo_root: &Path) -> Result<SetupConfig> {
         .interact()
         .context("Failed to choose repository input mode")?;
 
-    let repositories = match source_index {
+    let repositories_raw = match source_index {
         0 => collect_repo_urls(&theme)?,
         1 => {
             let path_input: String = Input::with_theme(&theme)
@@ -492,7 +501,10 @@ fn run_setup_wizard(repo_root: &Path) -> Result<SetupConfig> {
         _ => Vec::new(),
     };
 
-    let repositories = dedupe_urls(repositories);
+    let urls = dedupe_urls(repositories_raw);
+    let manifest = build_manifest_from_urls(&urls);
+    let repositories = manifest.repositories;
+
     let default_exclusions = default_category_exclusions().join(", ");
     let exclusion_input: String = Input::with_theme(&theme)
         .with_prompt("Excluded categories (comma-separated, editable any time)")
@@ -1043,12 +1055,14 @@ fn add_repo(config: &mut SetupConfig, repo_url: &str) -> Result<()> {
     let exists = config
         .repositories
         .iter()
-        .any(|r| normalized_repo_key(r) == new_key);
+        .any(|r| normalized_repo_key(&r.url) == new_key);
 
     if !exists {
-        config.repositories.push(trimmed.to_string());
-        config.repositories = dedupe_urls(config.repositories.clone());
-        println!("Added repository: {}", trimmed);
+        let manifest = build_manifest_from_urls(&[trimmed.to_string()]);
+        if let Some(new_repo) = manifest.repositories.first() {
+            config.repositories.push(new_repo.clone());
+            println!("Added repository: {}", trimmed);
+        }
     } else {
         println!("Repository already exists in setup: {}", trimmed);
     }
@@ -1056,12 +1070,13 @@ fn add_repo(config: &mut SetupConfig, repo_url: &str) -> Result<()> {
     Ok(())
 }
 
-fn prepare_manifest(repo_root: &Path, configured_urls: &[String]) -> Result<Option<RepoManifest>> {
+fn prepare_manifest(repo_root: &Path, repositories: &[Repository]) -> Result<Option<RepoManifest>> {
     let manifest_path = repo_root.join(".skill-manage-cli-config.json");
 
-    if !configured_urls.is_empty() {
-        let urls = dedupe_urls(configured_urls.to_vec());
-        let manifest = build_manifest_from_urls(&urls);
+    if !repositories.is_empty() {
+        let manifest = RepoManifest {
+            repositories: repositories.to_vec(),
+        };
         write_manifest_file(&manifest_path, &manifest)?;
         return Ok(Some(manifest));
     }
@@ -1368,12 +1383,6 @@ fn auto_config_from_manifest(repo_root: &Path) -> Result<Option<SetupConfig>> {
         return Ok(None);
     }
 
-    let repositories = manifest
-        .repositories
-        .iter()
-        .map(|r| r.url.clone())
-        .collect::<Vec<_>>();
-
     let workspace_root = workspace_root_from_repo_root(repo_root);
     let tools = TOOL_DEFS.iter().map(|t| t.key.to_string()).collect::<Vec<_>>();
 
@@ -1383,7 +1392,7 @@ fn auto_config_from_manifest(repo_root: &Path) -> Result<Option<SetupConfig>> {
         workspace_root: workspace_root.to_string_lossy().to_string(),
         sync_scope: SyncScope::Both,
         tools,
-        repositories,
+        repositories: manifest.repositories,
         category_exclusions: default_category_exclusions(),
     };
 
