@@ -4,7 +4,9 @@ This document provides guidance for AI agents on discovering and loading skills 
 
 ## Overview
 
-Skills are organized hierarchically by **hub** (domain) and **sub_hub** (specialty). The canonical source of truth for each skill is its **SKILL.md file** located in the source repository (`lib/`).
+Skills are organized hierarchically by **hub** (12 domains) and **sub_hub** (40+ specialties). The canonical source of truth for each skill is its **SKILL.md file** located in the source repository (`lib/`).
+
+The pipeline uses a **hybrid classification system**: fast keyword rules handle obvious routing, while an LLM-powered classifier provides semantic understanding for ambiguous skills. Skills that are irrelevant are excluded by either mechanism.
 
 Agents must **never hallucinate** about skill capabilities—always load the authoritative SKILL.md from the file path provided in the routing manifest.
 
@@ -308,9 +310,53 @@ If a skill_id in routing.csv no longer exists in lib/:
 
 ## Glossary
 
-- **Hub:** Top-level domain (e.g., marketing, backend, testing)
-- **Sub-Hub:** Specialty within a hub (e.g., marketing/content, marketing/email)
+- **Hub:** Top-level domain. One of: `programming`, `frontend`, `backend`, `testing`, `ai`, `business`, `marketing`, `mobile`, `design`, `systems`, `data`, `security`
+- **Sub-Hub:** Specialty within a hub (e.g., `marketing/content`, `backend/databases`)
 - **Skill:** Individual agent capability defined by a SKILL.md file
 - **Routing CSV:** Lightweight manifest linking skill_id → src_path
 - **SKILL.md:** Authoritative frontmatter + documentation for a skill
-- **Source of Truth:** The skill-manage source repo (`lib/`) is canonical; all aggregated files are derived.
+- **Source of Truth:** The skill-manage source repo (`lib/`) is canonical; all aggregated files are derived
+- **Hybrid Classification:** Dual-stage pipeline (keyword rules + LLM semantic analysis) that routes skills to hubs
+- **Excluded:** Skills flagged as irrelevant by either keyword rules (Step A) or LLM classification (Step B) are dropped from output
+
+---
+
+## Classification Pipeline (for Agent Developers)
+
+Understanding how skills are classified helps agents interpret routing confidence:
+
+```
+ SKILL.md (8000+ across 100+ repos)
+        │
+  ┌─────┴─────┐
+  │ YAML Parse │  Extract name, description, triggers
+  └─────┬─────┘
+        │
+  ┌─────┴─────┐
+  │   Dedup    │  By name OR description (catches cross-repo clones)
+  └─────┬─────┘
+        │
+  ┌─────┴────────────────────────┐
+  │ Hybrid Exclusion + Classify  │
+  │ Step A: Keyword pre-filter   │  Fast, free, catches obvious junk
+  │ Step B: LLM semantic route    │  Can also return hub="excluded"
+  └─────┬────────────────────────┘
+        │
+  ┌─────┴─────┐
+  │  Output   │  routing.csv, per-hub manifests
+  └───────────┘
+```
+
+### Hub Taxonomy (12 domains)
+
+`programming` · `frontend` · `backend` · `testing` · `ai` · `business` · `marketing` · `mobile` · `design` · `systems` · `data` · `security`
+
+### Environment Variables (for LLM classification)
+
+| Variable | Description |
+|---|---|
+| `LLM_ENABLED` | Set `false` to disable LLM and use keyword-only routing |
+| `LLM_PROVIDER` | `gemini`, `openai`, or `mock` |
+| `LLM_API_KEY` | API key for the configured provider |
+| `LLM_CACHE_PATH` | Override path for persistent classification cache |
+| `SKILL_MANAGE_EXCLUSIONS` | Semicolon-separated category exclusion overrides |

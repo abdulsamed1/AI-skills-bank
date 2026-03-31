@@ -212,6 +212,9 @@ pub async fn aggregate_to_output(
     // Then apply persisted routing only for low-confidence items.
     apply_existing_assignments(repo_root, &existing_assignments, &mut skills);
 
+    // Final cleanup: Drop all skills that were explicitly excluded by Code Rules (Step A) or LLM (Step B)
+    skills.retain(|s| s.hub != "excluded");
+
     skills.sort_by(|a, b| {
         b.match_score
             .unwrap_or(100)

@@ -18,14 +18,19 @@ pub struct HubDefinition {
 static TOKEN_REGEX: Lazy<Regex> = Lazy::new(|| Regex::new(r"[a-z0-9]+").unwrap());
 
 pub static VALID_HUBS: &[&str] = &[
-    "backend",
+    "programming",
     "frontend",
-    "ai",
+    "backend",
     "testing",
-    "mobile",
+    "ai",
     "business",
     "marketing",
-    "programming",
+    "mobile",
+    "design",
+    "systems",
+    "data",
+    "security",
+    "excluded",
 ];
 
 pub static CSV_COLUMNS: &[&str] = &[
@@ -1030,9 +1035,8 @@ pub fn apply_rules(meta: &mut SkillMetadata) -> bool {
     );
     let (normalized, tokens) = normalize_text(&full_text);
 
-    if is_excluded(&normalized, &tokens) {
-        return false;
-    }
+    // Exclusions are now handled exclusively by `native_pipeline.rs` 
+    // to allow for hybrid LLM exclusion + tracking before final drop.
 
     // Force Cloudflare-related skills into backend/serverless-edge only when
     // the Cloudflare signal is explicit in name/tags/path and there is no

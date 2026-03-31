@@ -21,7 +21,7 @@ async fn test_sync_logic() -> Result<(), Box<dyn std::error::Error>> {
     fs::write(other_dir.join("README.md"), "not a skill")?;
 
     // Initialize Syncer
-    let progress = Arc::new(ProgressManager::new(false, false, Arc::new(Theme::new())));
+    let progress = Arc::new(ProgressManager::new(false, false, Arc::new(Theme::new()), None));
     let syncer = Syncer::new(progress);
 
     // Change current directory to include lib/ (we'd need to mock the path in Syncer)

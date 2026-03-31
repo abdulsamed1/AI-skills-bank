@@ -6,7 +6,7 @@ use std::sync::Arc;
 
 #[tokio::test]
 async fn test_fetcher_ui_less_mode() {
-    let progress = Arc::new(ProgressManager::new(false, false, Arc::new(Theme::new())));
+    let progress = Arc::new(ProgressManager::new(false, false, Arc::new(Theme::new()), None));
     let manifest = RepoManifest {
         repositories: vec![Repository {
             name: "test-repo".to_string(),

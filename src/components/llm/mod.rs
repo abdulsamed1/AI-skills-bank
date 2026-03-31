@@ -6,8 +6,8 @@ pub mod tls;
 pub mod providers;
 pub mod cache;
 
-#[cfg(test)]
-pub mod tests;
+// #[cfg(test)]
+// pub mod tests;
 
 pub use provider::LlmProvider;
 pub use types::{LlmClassificationResponse, SubHubSuggestion};

@@ -386,12 +386,20 @@ impl Aggregator {
             })
             .collect();
 
-        let mut seen = HashSet::new();
+        let mut seen_names = HashSet::new();
+        let mut seen_descriptions = HashSet::new();
         let mut unique_results = Vec::new();
+
         for meta in results {
-            let key = meta.name.to_lowercase();
-            if !seen.insert(key) {
-                // eprintln!("Warning: Duplicate skill_id found: '{}'. Skipping {}", meta.name, meta.path.display());
+            let name_key = meta.name.to_lowercase();
+            let desc_key = meta.description.trim().to_lowercase();
+
+            // Skip if we've seen this exact name before
+            if !seen_names.insert(name_key) {
+                continue;
+            }
+            // Skip if we've seen this exact description before (different name, same content)
+            if !desc_key.is_empty() && !seen_descriptions.insert(desc_key) {
                 continue;
             }
             unique_results.push(meta);

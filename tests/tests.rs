@@ -1,9 +1,10 @@
 #[cfg(test)]
 mod tests {
-    use crate::components::llm::config::LlmClientConfig;
-    use crate::components::llm::provider::LlmProvider;
-    use crate::components::llm::providers::MockProvider;
-    use crate::components::llm::tls;
+    use skill_manage::components::llm::config::LlmClientConfig;
+    use skill_manage::components::llm::provider::LlmProvider;
+    use skill_manage::components::llm::providers::MockProvider;
+    use skill_manage::components::llm::types::LlmClassificationContext;
+    use skill_manage::components::llm::tls;
     use std::env;
     use once_cell::sync::Lazy;
     use std::sync::Mutex;
@@ -24,7 +25,7 @@ mod tests {
 
         let provider = MockProvider::new(cfg).expect("mock provider created");
         let resp = provider
-            .classify("example-rust-skill", "A skill about Rust", Some("Abstract mentioning Rust."))
+            .classify("example-rust-skill", "A skill about Rust", Some("Abstract mentioning Rust."), &LlmClassificationContext::default())
             .await
             .expect("classification ok");
 
@@ -48,8 +49,8 @@ mod tests {
     #[test]
     fn cache_roundtrip_and_key_generation() -> Result<(), Box<dyn std::error::Error>> {
         use tempfile::tempdir;
-        use crate::components::llm::cache::{key_for_skill, load_cache, save_cache, insert_into_map, cache_metrics};
-        use crate::components::llm::types::{LlmClassificationResponse, SubHubSuggestion};
+        use skill_manage::components::llm::cache::{key_for_skill, load_cache, save_cache, insert_into_map, cache_metrics};
+        use skill_manage::components::llm::types::{LlmClassificationResponse, SubHubSuggestion};
 
         let _guard = ENV_LOCK.lock().unwrap();
         let dir = tempdir()?;
@@ -89,7 +90,7 @@ mod tests {
     fn cache_corrupt_file_handling() -> Result<(), Box<dyn std::error::Error>> {
         use tempfile::tempdir;
         use std::fs;
-        use crate::components::llm::cache::load_cache;
+        use skill_manage::components::llm::cache::load_cache;
 
         let _guard = ENV_LOCK.lock().unwrap();
         let dir = tempdir()?;
@@ -129,7 +130,7 @@ content
         fs::write(src.join("SKILL.md"), skill_md)?;
 
         let output = root.path().join("skills-aggregated");
-        let skills = crate::components::native_pipeline::aggregate_to_output(root.path(), &output, None, false, false).await?;
+        let skills = skill_manage::components::native_pipeline::aggregate_to_output(root.path(), &output, None::<&std::collections::HashSet<String>>, false, false).await?;
 
         assert_eq!(skills.len(), 1);
         assert_eq!(skills[0].hub, "programming");
@@ -164,7 +165,7 @@ content
         fs::write(src.join("SKILL.md"), skill_md)?;
 
         let output = root.path().join("skills-aggregated");
-        let skills = crate::components::native_pipeline::aggregate_to_output(root.path(), &output, None, false, false).await?;
+        let skills = skill_manage::components::native_pipeline::aggregate_to_output(root.path(), &output, None::<&std::collections::HashSet<String>>, false, false).await?;
 
         assert_eq!(skills.len(), 1);
         assert_eq!(skills[0].hub, "programming");
@@ -207,14 +208,14 @@ content
 
         // First run: populate cache (mock provider behaves normally)
         env::remove_var("LLM_MOCK_FAIL");
-        let skills1 = crate::components::native_pipeline::aggregate_to_output(root.path(), &output, None, false, false).await?;
+        let skills1 = skill_manage::components::native_pipeline::aggregate_to_output(root.path(), &output, None::<&std::collections::HashSet<String>>, false, false).await?;
         assert_eq!(skills1.len(), 1);
         assert_eq!(skills1[0].hub, "programming");
         assert_eq!(skills1[0].sub_hub, "rust");
 
         // Now simulate provider failing, but cache should be consulted and avoid provider call
         env::set_var("LLM_MOCK_FAIL", "1");
-        let skills2 = crate::components::native_pipeline::aggregate_to_output(root.path(), &output, None, false, false).await?;
+        let skills2 = skill_manage::components::native_pipeline::aggregate_to_output(root.path(), &output, None::<&std::collections::HashSet<String>>, false, false).await?;
         assert_eq!(skills2.len(), 1);
         assert_eq!(skills2[0].hub, "programming");
         assert_eq!(skills2[0].sub_hub, "rust");

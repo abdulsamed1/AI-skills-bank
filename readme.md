@@ -2,12 +2,12 @@
 
 # skill-manage
 
-Unified, visual, multi-tool skill routing platform for AI workflows.
+High-performance skill aggregation, classification & routing platform for AI agents.
 
-[![Node](https://img.shields.io/badge/node-%3E%3D18-2f7d32?style=for-the-badge)](https://nodejs.org/)
 [![Rust](https://img.shields.io/badge/rust-1.70%2B-ce422b?style=for-the-badge)](https://www.rust-lang.org/)
-[![License](https://img.shields.io/badge/license-MIT-1f6feb?style=for-the-badge)](./cli/package.json)
-[![CLI](https://img.shields.io/badge/cli-ready-16a34a?style=for-the-badge)](./cli/README.md)
+[![License](https://img.shields.io/badge/license-MIT-1f6feb?style=for-the-badge)](./LICENSE)
+[![CLI](https://img.shields.io/badge/cli-ready-16a34a?style=for-the-badge)]()
+[![TUI](https://img.shields.io/badge/tui-ratatui-6e56cf?style=for-the-badge)]()
 
 </div>
 
@@ -15,14 +15,16 @@ Unified, visual, multi-tool skill routing platform for AI workflows.
 
 ## 📖 Overview
 
-**skill-manage** aggregates skills (workflows, tasks, specialized agents) from distributed repositories and provides a unified routing system for AI agents to discover, load, and invoke them efficiently.
+**skill-manage** aggregates skills (workflows, tasks, specialized agents) from 100+ distributed repositories and provides a unified routing system for AI agents to discover, load, and invoke them efficiently.
 
 ### Core Design Principles
 
 - **Source-of-Truth Loading**: Agents load canonical `SKILL.md` files directly from source repositories, not from catalogs. This eliminates hallucination risks and optimizes token usage.
-- **Smart Routing**: Lightweight routing CSVs enable fast skill discovery by trigger/keyword matching with relevance scoring.
-- **Multi-Tool Support**: Skills sync to all major AI tools: GitHub Copilot, Claude Code, Cursor, Gemini CLI, and more.
+- **Hybrid Classification**: A dual-stage pipeline combines fast keyword rules (Step A) with LLM-powered semantic classification (Step B) to route skills into 12 domain hubs and 40+ sub-hubs.
+- **Smart Deduplication**: Skills are deduplicated by **name OR description** — catching both exact collisions and cross-repo clones with different names but identical content.
+- **Multi-Tool Support**: Skills sync to all major AI tools: GitHub Copilot, Claude Code, Cursor, Gemini CLI, Antigravity, OpenCode, Codex, and Windsurf.
 - **Token Efficiency**: Load minimal metadata first, then source files on-demand—not batch-loading entire catalogs.
+- **Interactive TUI**: A rich terminal UI (powered by Ratatui) provides real-time dashboard, skill explorer, and pipeline monitoring.
 
 ---
 
@@ -41,6 +43,9 @@ cargo run --release
 
 # Or run all steps in sequence
 cargo run --release -- run
+
+# Launch the interactive TUI
+cargo run --release -- tui
 ```
 
 ### 3. Individual Commands
@@ -56,7 +61,6 @@ cargo run --release -- doctor
 cargo run --release -- release-gate
 
 # Cleanup legacy duplicate repos (legacy locations: src/, repos/)
-# Removes legacy directories only when a verified `lib/` counterpart exists.
 cargo run --release -- cleanup-legacy-duplicates
 ```
 
@@ -91,7 +95,7 @@ This launches an interactive wizard to configure:
 ```bash
 cargo run --release -- aggregate
 ```
-Collects and routes skills from configured repositories to `skills-aggregated/`.
+Collects, deduplicates, classifies and routes skills from configured repositories to `skills-aggregated/`.
 
 **Sync to Tools**
 ```bash
@@ -112,6 +116,12 @@ cargo run --release -- add-repo <URL>
 cargo run --release -- run
 ```
 
+**Interactive TUI**
+```bash
+cargo run --release -- tui
+```
+Launches a real-time terminal dashboard with skill explorer, hub statistics, and LLM classification progress.
+
 **Validate**
 ```bash
 cargo run --release -- doctor
@@ -120,9 +130,7 @@ cargo run --release -- release-gate
 
 **Cleanup legacy duplicate repos**
 ```bash
-# Cleanup old duplicate repos (legacy locations: src/, repos/)
 cargo run --release -- cleanup-legacy-duplicates
-```
 ```
 
 ---
@@ -141,6 +149,24 @@ Generated during aggregation:
 - **`skills-aggregated/subhub-index.json`** — Hub and sub-hub registry
 - **`skills-aggregated/.skill-lock.json`** — Aggregation metadata and lock (timestamps, repo state)
 - **Per-subhub `skills-manifest.json`** — Skill metadata and triggers
+- **`skills-aggregated/hub-manifests.csv`** — Master index of all skills across all hubs
+
+---
+
+## 🌐 Environment Variables
+
+- `skill-manage\.env-example`
+
+| Variable | Default | Description |
+|---|---|---|
+| `LLM_ENABLED` | `true` | Enable/disable LLM classification (set `false` for keyword-only) |
+| `LLM_PROVIDER` | — | LLM provider: `gemini`, `openai`, or `mock` |
+| `LLM_API_KEY` | — | API key for the configured LLM provider |
+| `LLM_API_URL` | Provider default | Custom API endpoint URL |
+| `LLM_MODEL` | `gpt-4o-mini` | Model name (OpenAI provider) |
+| `LLM_CACHE_PATH` | `~/.skill-manage/llm-classifications.json` | Persistent cache for classifications |
+| `LLM_CA_CERT_PATH` | — | Custom CA certificate for HTTPS pinning |
+| `SKILL_MANAGE_EXCLUSIONS` | — | Semicolon-separated category exclusion overrides |
 
 ---
 
@@ -148,15 +174,61 @@ Generated during aggregation:
 
 Sync skills to any of these destinations:
 
-| Tool | Project | Global | Docs |
-|---|---|---|---|
-| **GitHub Copilot** | `.github/skills/` | `~/.copilot/skills/` | [Copilot Skills](https://github.com/features/copilot) |
-| **Cursor** | `.cursor/skills/` | `~/.cursor/skills/` | [Cursor Skills](https://docs.cursor.sh/) |
-| **Claude Code** (Windsurf) | `.windsurf/skills/` | `~/.codeium/windsurf/skills/` | [Cascade Skills](https://docs.codeium.com/windsurf) |
-| **VS Code Gemini** | `.gemini/skills/` | `~/.gemini/skills/` | [Gemini CLI Skills](https://ai.google.dev) |
-| **Antigravity** | `.agent/skills/` | `~/.gemini/antigravity/skills/` | [Antigravity Skills](https://google.ai/antigravity) |
-| **OpenCode** | `.opencode/skills/` | `~/.config/opencode/skills/` | OpenCode Skills |
-| **Codex** | `.agents/skills/` | `~/.agents/skills/` | Codex Skills |
+| Tool | Project | Global |
+|---|---|---|
+| **Claude** | `.claude/skills/` | `~/.claude/skills/` |
+| **Code (Codex)** | `.agents/skills/` | `~/.agents/skills/` |
+| **GitHub Copilot** | `.github/skills/` | `~/.copilot/skills/` |
+| **Cursor** | `.cursor/skills/` | `~/.cursor/skills/` |
+| **Gemini** | `.gemini/skills/` | `~/.gemini/skills/` |
+| **Antigravity** | `.agent/skills/` | `~/.gemini/antigravity/skills/` |
+| **OpenCode** | `.opencode/skills/` | `~/.config/opencode/skills/` |
+| **Windsurf** | `.windsurf/skills/` | `~/.codeium/windsurf/skills/` |
+
+---
+
+## 🏗️ Classification Architecture
+
+The aggregation pipeline processes 8000+ `SKILL.md` files through a multi-stage classification system:
+
+```
+ SKILL.md files (8000+)
+        │
+        ▼
+ ┌──────────────┐
+ │  YAML Parse   │  Extract name, description, triggers
+ └──────┬───────┘
+        │
+        ▼
+ ┌──────────────┐
+ │  Keyword      │  Fast token-based routing to hub/sub-hub
+ │  Rules        │  (fallback if LLM unavailable)
+ └──────┬───────┘
+        │
+        ▼
+ ┌──────────────┐
+ │  Dedup        │  Name OR Description HashSet
+ │  (two-key)    │  Catches cross-repo clones
+ └──────┬───────┘
+        │
+        ▼
+ ┌──────────────────────────────────┐
+ │  Hybrid Exclusion + LLM Classify │
+ │  Step A: Keyword pre-filter      │
+ │  Step B: LLM semantic classify   │
+ │         (can return "excluded")  │
+ └──────┬───────────────────────────┘
+        │
+        ▼
+ ┌──────────────┐
+ │  Output       │  routing.csv, per-hub manifests,
+ │  Artifacts    │  skills-index.json
+ └──────────────┘
+```
+
+### Hub Taxonomy (12 domains)
+
+`programming` · `frontend` · `backend` · `testing` · `ai` · `business` · `marketing` · `mobile` · `design` · `systems` · `data` · `security`
 
 ---
 
