@@ -2,6 +2,60 @@
 .env
 .env.*
 *.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.envrc
+
+# Keys, Certificates, and Credentials
+*.key
+*.pem
+*.keystore
+*.cer
+*.crt
+*.p12
+*.pfx
+*.asc
+*.ovpn
+auth.json
+credentials.json
+client_secret.json
+aws-credentials.json
+gcp-credentials.json
+*.publishsettings
+
+# Security tokens and local passwords
+*secret*
+*credential*
+*token*
+id_rsa
+id_rsa.pub
+id_dsa
+id_ed25519
+known_hosts
+
+# Application Data & Databases
+*.sqlite
+*.sqlite3
+*.db
+*.db3
+*.s3db
+*.sl3
+*.rdb
+dump.rdb
+*.sql
+*.psql
+*.dump
+
+# Application Local Config
+*.local.yml
+*.local.yaml
+*.local.json
+local.js
+local.json
+secrets.yml
+secrets.json
 
 # Node and package manager artifacts
 node_modules/
