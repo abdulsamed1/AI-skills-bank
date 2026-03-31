@@ -54,4 +54,6 @@ pub enum Commands {
     },
     /// Run diagnostic checks on the skills bank
     Doctor,
+    /// Launch the interactive Terminal User Interface (TUI)
+    Tui,
 }

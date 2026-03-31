@@ -285,6 +285,11 @@ async fn run() -> Result<()> {
         "release-gate" | "gate" => {
             run_release_gate(&repo_root)?;
         }
+        "tui" => {
+            let config = ensure_config(&repo_root, &config_path)?;
+            apply_exclusion_env(Some(&config));
+            skill_manage::tui::run_tui(&repo_root, config.repositories).await?;
+        }
         _ => {
             print_help();
             bail!("Unknown command: {}", args[1]);
@@ -309,6 +314,7 @@ fn print_help() {
     println!("    skill-manage add-repo <URL>     # add repo then run targeted pipeline");
     println!("    skill-manage doctor             # run diagnostics");
     println!("    skill-manage release-gate       # enforce production readiness checks");
+    println!("    skill-manage tui                # launch interactive terminal UI");
     println!("    skill-manage --help");
     println!("    skill-manage --version");
 }
@@ -666,7 +672,7 @@ async fn run_fetch(repo_root: &Path, manifest: RepoManifest) -> Result<()> {
     let _guard = pushd(repo_root)?;
 
     let theme = Arc::new(Theme::new());
-    let progress = Arc::new(ProgressManager::new(true, false, Arc::clone(&theme)));
+    let progress = Arc::new(ProgressManager::new(true, false, Arc::clone(&theme), None));
     let fetcher = Fetcher::with_manifest(manifest, progress);
     let result = fetcher
         .fetch(false)

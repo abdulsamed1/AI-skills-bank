@@ -334,6 +334,9 @@ impl Aggregator {
         }
 
         let spinner = self.progress.create_spinner("Scanning skills...");
+        if let Some(reporter) = &self.progress.reporter {
+            reporter.report(0, 100, "Scanning for SKILL.md files...".to_string());
+        }
 
         let mut paths: Vec<PathBuf> = source_roots
             .iter()
@@ -356,10 +359,11 @@ impl Aggregator {
         // Ensure deterministic traversal order across OS/filesystems.
         paths.sort_by(|a, b| a.to_string_lossy().cmp(&b.to_string_lossy()));
 
-        spinner.set_message(format!(
-            "Found {} SKILL.md files. Applying rules...",
-            paths.len()
-        ));
+        let msg = format!("Found {} SKILL.md files. Applying rules...", paths.len());
+        spinner.set_message(msg.clone());
+        if let Some(reporter) = &self.progress.reporter {
+            reporter.report(20, 100, msg);
+        }
 
         let results: Vec<SkillMetadata> = paths
             .par_iter()

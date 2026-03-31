@@ -3,15 +3,20 @@ use indicatif::{MultiProgress, ProgressBar, ProgressDrawTarget, ProgressStyle};
 use std::sync::Arc;
 use std::time::Duration;
 
+pub trait ProgressReporter: Send + Sync {
+    fn report(&self, value: u64, total: u64, msg: String);
+}
+
 pub struct ProgressManager {
     multi: Option<MultiProgress>,
     theme: Arc<Theme>,
     pub silent: bool,
+    pub reporter: Option<Arc<dyn ProgressReporter>>,
 }
 
 impl ProgressManager {
     /// Create a new ProgressManager. If enabled is false or silent is true, all methods will return dummy bars.
-    pub fn new(enabled: bool, silent: bool, theme: Arc<Theme>) -> Self {
+    pub fn new(enabled: bool, silent: bool, theme: Arc<Theme>, reporter: Option<Arc<dyn ProgressReporter>>) -> Self {
         let multi = if enabled && !silent {
             Some(MultiProgress::with_draw_target(ProgressDrawTarget::stderr()))
         } else {
@@ -22,6 +27,7 @@ impl ProgressManager {
             multi,
             theme,
             silent,
+            reporter,
         }
     }
 

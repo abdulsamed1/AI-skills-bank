@@ -107,8 +107,8 @@ pub async fn aggregate_to_output(
     let manual_overrides = load_manual_overrides(repo_root)?;
 
     let theme = Arc::new(Theme::new());
-    let progress = Arc::new(ProgressManager::new(show_progress, false, Arc::clone(&theme)));
-    let aggregator = Aggregator::new(progress);
+    let progress = Arc::new(ProgressManager::new(show_progress, false, Arc::clone(&theme), None));
+    let aggregator = Aggregator::new(Arc::clone(&progress));
 
     let result = aggregator.aggregate(false).await?;
     let mut skills = match result {
@@ -191,7 +191,7 @@ pub async fn aggregate_to_output(
         .unwrap_or(true);
 
     if llm_enabled {
-        if let Err(e) = classify_skills_with_llm(repo_root, &mut skills, &context).await {
+        if let Err(e) = classify_skills_with_llm(repo_root, &mut skills, &context, &progress).await {
             eprintln!("LLM classification system error: {}. Falling back to keywords for all unclassified skills.", e);
             for skill in skills.iter_mut() {
                 if skill.match_score.unwrap_or(0) >= 100 {
@@ -436,6 +436,7 @@ async fn classify_skills_with_llm(
     _repo_root: &Path,
     skills: &mut [SkillMetadata],
     context: &crate::components::llm::types::LlmClassificationContext,
+    progress: &ProgressManager,
 ) -> Result<(), SkillManageError> {
     // Load LLM client config from env; if absent, return an error so caller
     // falls back to deterministic rules.
@@ -650,7 +651,19 @@ async fn classify_skills_with_llm(
         }
 
         // Process in chunks
-        for chunk in to_classify.chunks(batch_size) {
+        let total_tc = to_classify.len();
+        for (chunk_idx, chunk) in to_classify.chunks(batch_size).enumerate() {
+            let current_tc = (chunk_idx + 1) * batch_size;
+            let current_count = if current_tc > total_tc { total_tc } else { current_tc };
+
+            if let Some(reporter) = &progress.reporter {
+                reporter.report(
+                    current_count as u64,
+                    total_tc as u64,
+                    format!("Classifying batch {}/{}...", chunk_idx + 1, (total_tc + batch_size - 1) / batch_size),
+                );
+            }
+
             let items: Vec<(String, String, Option<String>)> = chunk
                 .iter()
                 .map(|(_, name, description, abstract_text, _key)| {
@@ -658,7 +671,7 @@ async fn classify_skills_with_llm(
                 })
                 .collect();
 
-            // Try batch classification
+            // Try batch classification (logic remains same...)
             let batch_result = classify_batch_with_retry(
                 &*provider,
                 &items,
