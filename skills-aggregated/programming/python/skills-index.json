@@ -53,6 +53,7 @@
     "omero-integration",
     "pipecat-friday-agent",
     "pydeseq2",
+    "python",
     "python-development-python-scaffold",
     "python-ocr-backend-integration",
     "python-packaging",
@@ -67,8 +68,7 @@
     "tinybird-python-sdk-guidelines",
     "using-tmux-for-interactive-commands",
     "xvary-stock-research",
-    "zarr-python",
-    "python"
+    "zarr-python"
   ],
   "sub_hub": "python"
 }

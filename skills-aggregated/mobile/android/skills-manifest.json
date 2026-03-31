@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774912689,
+  "generated_at_unix": 1774993465,
   "hub": "mobile",
   "skills": [
     {
@@ -9,6 +9,14 @@
       "skill_id": "analyzing-android-malware-with-apktool",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/analyzing-android-malware-with-apktool/SKILL.md",
       "triggers": "Android;APK;apktool;jadx;androguard;mobile-malware;static-analysis;reverse-engineering"
+    },
+    {
+      "description": "Material Design 3 and Android platform guidelines. Use when building Android apps with Jetpack Compose or XML layouts, implementing Material You, navigation, or accessibility. Triggers on tasks involving Android UI, Compose components, dynamic color, or Material Design compliance.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "android-design-guidelines",
+      "src_path": "lib/ehmo-platform-design-skills/skills/android/SKILL.md",
+      "triggers": "android;design;guidelines"
     },
     {
       "description": "Android Java development with MVVM, ViewBinding, and Espresso testing",
@@ -41,14 +49,6 @@
       "skill_id": "reverse-engineering-android-malware-with-jadx",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/reverse-engineering-android-malware-with-jadx/SKILL.md",
       "triggers": "malware;Android;reverse-engineering;JADX;mobile-malware"
-    },
-    {
-      "description": "Material Design 3 and Android platform guidelines. Use when building Android apps with Jetpack Compose or XML layouts, implementing Material You, navigation, or accessibility. Triggers on tasks involving Android UI, Compose components, dynamic color, or Material Design compliance.",
-      "phase": 5,
-      "score": 95,
-      "skill_id": "android-design-guidelines",
-      "src_path": "lib/ehmo-platform-design-skills/skills/android/SKILL.md",
-      "triggers": "android;design;guidelines"
     }
   ],
   "sub_hub": "android",

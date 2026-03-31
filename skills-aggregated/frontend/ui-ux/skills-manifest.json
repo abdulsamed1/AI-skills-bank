@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774912689,
+  "generated_at_unix": 1774993465,
   "hub": "frontend",
   "skills": [
     {
@@ -505,22 +505,6 @@
       "skill_id": "frontend-ui-dark-ts",
       "src_path": "lib/antigravity-awesome-skills/skills/frontend-ui-dark-ts/SKILL.md",
       "triggers": "frontend;ui;dark;ts"
-    },
-    {
-      "description": "Game audio principles. Sound design, music integration, adaptive audio systems.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "game-audio",
-      "src_path": "lib/antigravity-awesome-skills/skills/game-development/game-audio/SKILL.md",
-      "triggers": "game;audio"
-    },
-    {
-      "description": "Game design principles. GDD structure, balancing, player psychology, progression.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "game-design",
-      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-indie-game-dev/skills/game-development/game-design/SKILL.md",
-      "triggers": "game;design"
     },
     {
       "description": "Analyze and engineer protein glycosylation. Scan sequences for N-glycosylation sequons (N-X-S/T), predict O-glycosylation hotspots, and access curated glycoengineering tools (NetOGlyc, GlycoShield, GlycoWorkbench). For glycoprotein engineering, therapeutic antibody optimization, and vaccine design.",

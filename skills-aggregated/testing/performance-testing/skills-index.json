@@ -1,5 +1,5 @@
 {
-  "count": 96,
+  "count": 95,
   "hub": "testing",
   "skills": [
     "3d-web-experience",
@@ -68,7 +68,6 @@
     "postgresql",
     "postgresql-optimization",
     "projection-patterns",
-    "pufferlib",
     "python-performance-optimization",
     "qdrant-vector-search",
     "react-component-performance",
@@ -96,7 +95,7 @@
     "unreal-engine-cpp-pro",
     "vector-index-tuning",
     "vercel-react-best-practices",
-    "vr-ar",
+    "web-perf",
     "web-performance-optimization"
   ],
   "sub_hub": "performance-testing"

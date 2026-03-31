@@ -9,21 +9,13 @@ use crate::utils::theme::Theme;
 use serde::{Deserialize, Serialize};
 use serde_json::json;
 use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet};
-<<<<<<< HEAD
-=======
-use std::hash::{Hash, Hasher};
-use std::collections::hash_map::DefaultHasher;
->>>>>>> 2ae9461d2f62e312556cb3c11376599da51715fb
+
 use std::path::{Path, PathBuf};
 use std::sync::Arc;
 use std::time::{SystemTime, UNIX_EPOCH};
 use std::process::Command;
 use walkdir::WalkDir;
-<<<<<<< HEAD
 // `crate::components::llm` referenced via fully-qualified paths where needed
-=======
-use crate::components::llm;
->>>>>>> 2ae9461d2f62e312556cb3c11376599da51715fb
 use std::env;
 use tokio::time::sleep;
 use std::time::Duration as StdDuration;
@@ -430,6 +422,14 @@ async fn classify_skills_with_llm(
             crate::components::llm::MockProvider::new(config.clone())
                 .map_err(|e| SkillManageError::ConfigError(e.to_string()))?,
         ),
+        "gemini" => Box::new(
+            crate::components::llm::GeminiProvider::new(config.clone())
+                .map_err(|e| SkillManageError::ConfigError(e.to_string()))?,
+        ),
+        "groq" => Box::new(
+            crate::components::llm::GroqProvider::new(config.clone())
+                .map_err(|e| SkillManageError::ConfigError(e.to_string()))?,
+        ),
         other => {
             return Err(SkillManageError::ConfigError(format!(
                 "Unknown LLM provider: {}",
@@ -457,6 +457,7 @@ async fn classify_skills_with_llm(
 
     // Load existing cache (ok to be empty)
     let mut cache = crate::components::llm::load_cache()?;
+    println!("DEBUG: Found {} skills in total to classify", skills.len());
 
     // Helper performs classify with retries/backoff
     async fn classify_with_retry(

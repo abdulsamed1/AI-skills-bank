@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774912689,
+  "generated_at_unix": 1774993465,
   "hub": "testing",
   "skills": [
     {
@@ -491,6 +491,14 @@
       "triggers": "aws;cdk;development"
     },
     {
+      "description": "Automated compliance checking against CIS, PCI-DSS, HIPAA, and SOC 2 benchmarks",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "aws-compliance-checker",
+      "src_path": "lib/antigravity-awesome-skills/skills/security/aws-compliance-checker/SKILL.md",
+      "triggers": "[aws, compliance, audit, cis, pci-dss, hipaa, kiro-cli]"
+    },
+    {
       "description": "AWS cost optimization, monitoring, and operational excellence expert. Use when analyzing AWS bills, estimating costs, setting up CloudWatch alarms, querying logs, auditing CloudTrail activity, or assessing security posture. Essential when user mentions AWS costs, spending, billing, budget, pricing, CloudWatch, observability, monitoring, alerting, CloudTrail, audit, or wants to optimize AWS infrastructure costs and operational efficiency.",
       "phase": 3,
       "score": 100,
@@ -499,12 +507,36 @@
       "triggers": "aws;cost;operations"
     },
     {
+      "description": "IAM policy review, hardening, and least privilege implementation",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "aws-iam-best-practices",
+      "src_path": "lib/antigravity-awesome-skills/skills/security/aws-iam-best-practices/SKILL.md",
+      "triggers": "[aws, iam, security, access-control, kiro-cli, least-privilege]"
+    },
+    {
       "description": "Configure AWS MCP servers for documentation search and API access. Use when setting up AWS MCP, configuring AWS documentation tools, troubleshooting MCP connectivity, or when user mentions aws-mcp, awsdocs, uvx setup, or MCP server configuration. Covers both Full AWS MCP Server (with uvx + credentials) and lightweight Documentation MCP (no auth required).",
       "phase": 3,
       "score": 100,
       "skill_id": "aws-mcp-setup",
       "src_path": "lib/zxkane-aws-skills/plugins/aws-common/skills/aws-mcp-setup/SKILL.md",
       "triggers": "aws;mcp;setup"
+    },
+    {
+      "description": "Automate AWS secrets rotation for RDS, API keys, and credentials",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "aws-secrets-rotation",
+      "src_path": "lib/antigravity-awesome-skills/skills/security/aws-secrets-rotation/SKILL.md",
+      "triggers": "[aws, secrets-manager, security, automation, kiro-cli, credentials]"
+    },
+    {
+      "description": "Comprehensive AWS security posture assessment using AWS CLI and security best practices",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "aws-security-audit",
+      "src_path": "lib/antigravity-awesome-skills/skills/security/aws-security-audit/SKILL.md",
+      "triggers": "[aws, security, audit, compliance, kiro-cli, security-assessment]"
     },
     {
       "description": "AWS development with infrastructure automation and cloud architecture patterns",
@@ -849,6 +881,14 @@
       "skill_id": "cloud-penetration-testing",
       "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-security-engineer/skills/cloud-penetration-testing/SKILL.md",
       "triggers": "cloud;penetration;testing"
+    },
+    {
+      "description": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure-as-code (Terraform, Pulumi). Use for any Cloudflare development task. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "cloudflare",
+      "src_path": "lib/skills/skills/cloudflare/SKILL.md",
+      "triggers": "cloudflare"
     },
     {
       "description": "Deep audit before GitHub push: removes junk files, dead code, security holes, and optimization issues. Checks every file line-by-line for production readiness.",
@@ -4723,6 +4763,14 @@
       "triggers": "RAG;Pinecone;Vector Database;Managed Service;Serverless;Hybrid Search;Production;Auto-Scaling;Low Latency;Recommendations"
     },
     {
+      "description": "Battle-tested Playwright patterns for E2E, API, component, visual, accessibility, and security testing. Covers locators, assertions, fixtures, network mocking, auth flows, debugging, and framework recipes for React, Next.js, Vue, and Angular. TypeScript and JavaScript.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "playwright-core",
+      "src_path": "lib/testdino-hq-playwright-skill/core/SKILL.md",
+      "triggers": "playwright;core"
+    },
+    {
       "description": "Perform Porter's Five Forces analysis — competitive rivalry, supplier power, buyer power, threat of substitutes, and threat of new entrants. Use when analyzing industry dynamics, assessing competitive forces, or evaluating market attractiveness.",
       "phase": 3,
       "score": 100,
@@ -4985,6 +5033,14 @@
       "skill_id": "securing-serverless-functions",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/securing-serverless-functions/SKILL.md",
       "triggers": "serverless-security;aws-lambda;azure-functions;function-hardening;supply-chain"
+    },
+    {
+      "description": "OWASP security patterns, secrets management, security testing",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "security",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/security/SKILL.md",
+      "triggers": "security"
     },
     {
       "description": "Comprehensive security auditing workflow covering web application testing, API security, penetration testing, vulnerability scanning, and security hardening.",
@@ -5425,54 +5481,6 @@
       "skill_id": "wordpress-penetration-testing",
       "src_path": "lib/antigravity-awesome-skills/skills/wordpress-penetration-testing/SKILL.md",
       "triggers": "wordpress;penetration;testing"
-    },
-    {
-      "description": "Automated compliance checking against CIS, PCI-DSS, HIPAA, and SOC 2 benchmarks",
-      "phase": 3,
-      "score": 95,
-      "skill_id": "aws-compliance-checker",
-      "src_path": "lib/antigravity-awesome-skills/skills/security/aws-compliance-checker/SKILL.md",
-      "triggers": "[aws, compliance, audit, cis, pci-dss, hipaa, kiro-cli]"
-    },
-    {
-      "description": "IAM policy review, hardening, and least privilege implementation",
-      "phase": 3,
-      "score": 95,
-      "skill_id": "aws-iam-best-practices",
-      "src_path": "lib/antigravity-awesome-skills/skills/security/aws-iam-best-practices/SKILL.md",
-      "triggers": "[aws, iam, security, access-control, kiro-cli, least-privilege]"
-    },
-    {
-      "description": "Automate AWS secrets rotation for RDS, API keys, and credentials",
-      "phase": 3,
-      "score": 95,
-      "skill_id": "aws-secrets-rotation",
-      "src_path": "lib/antigravity-awesome-skills/skills/security/aws-secrets-rotation/SKILL.md",
-      "triggers": "[aws, secrets-manager, security, automation, kiro-cli, credentials]"
-    },
-    {
-      "description": "Comprehensive AWS security posture assessment using AWS CLI and security best practices",
-      "phase": 3,
-      "score": 95,
-      "skill_id": "aws-security-audit",
-      "src_path": "lib/antigravity-awesome-skills/skills/security/aws-security-audit/SKILL.md",
-      "triggers": "[aws, security, audit, compliance, kiro-cli, security-assessment]"
-    },
-    {
-      "description": "Battle-tested Playwright patterns for E2E, API, component, visual, accessibility, and security testing. Covers locators, assertions, fixtures, network mocking, auth flows, debugging, and framework recipes for React, Next.js, Vue, and Angular. TypeScript and JavaScript.",
-      "phase": 3,
-      "score": 95,
-      "skill_id": "playwright-core",
-      "src_path": "lib/testdino-hq-playwright-skill/core/SKILL.md",
-      "triggers": "playwright;core"
-    },
-    {
-      "description": "OWASP security patterns, secrets management, security testing",
-      "phase": 3,
-      "score": 95,
-      "skill_id": "security",
-      "src_path": "lib/alinaqi-claude-bootstrap/skills/security/SKILL.md",
-      "triggers": "security"
     }
   ],
   "sub_hub": "security",

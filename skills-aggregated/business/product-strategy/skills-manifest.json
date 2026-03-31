@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774912689,
+  "generated_at_unix": 1774993465,
   "hub": "business",
   "skills": [
     {
@@ -123,6 +123,14 @@
       "triggers": "problem;statement"
     },
     {
+      "description": "Create a comprehensive product strategy using the 9-section Product Strategy Canvas — vision, segments, costs, value propositions, trade-offs, metrics, growth, capabilities, and defensibility. Use when building a product strategy, creating a strategic plan, or defining product direction.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "product-strategy",
+      "src_path": "lib/pm-skills/pm-product-strategy/skills/product-strategy/SKILL.md",
+      "triggers": "product;strategy"
+    },
+    {
       "description": "Run an end-to-end product strategy session across positioning, discovery, and roadmap planning. Use when a team needs validated direction before committing to execution.",
       "phase": 5,
       "score": 100,
@@ -161,14 +169,6 @@
       "skill_id": "value-prop-statements",
       "src_path": "lib/pm-skills/pm-marketing-growth/skills/value-prop-statements/SKILL.md",
       "triggers": "value;prop;statements"
-    },
-    {
-      "description": "Create a comprehensive product strategy using the 9-section Product Strategy Canvas — vision, segments, costs, value propositions, trade-offs, metrics, growth, capabilities, and defensibility. Use when building a product strategy, creating a strategic plan, or defining product direction.",
-      "phase": 5,
-      "score": 95,
-      "skill_id": "product-strategy",
-      "src_path": "lib/pm-skills/pm-product-strategy/skills/product-strategy/SKILL.md",
-      "triggers": "product;strategy"
     }
   ],
   "sub_hub": "product-strategy",

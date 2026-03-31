@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774912689,
+  "generated_at_unix": 1774993465,
   "hub": "mobile",
   "skills": [
     {
@@ -17,6 +17,14 @@
       "skill_id": "ios-debugger-agent",
       "src_path": "lib/antigravity-awesome-skills/skills/ios-debugger-agent/SKILL.md",
       "triggers": "ios;debugger;agent"
+    },
+    {
+      "description": "Apple Human Interface Guidelines for iPhone. Use when building, reviewing, or refactoring SwiftUI/UIKit interfaces for iOS. Triggers on tasks involving iPhone UI, iOS components, accessibility, Dynamic Type, Dark Mode, or HIG compliance.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "ios-design-guidelines",
+      "src_path": "lib/ehmo-platform-design-skills/skills/ios/SKILL.md",
+      "triggers": "ios;design;guidelines"
     },
     {
       "description": "Develop native iOS applications with Swift/SwiftUI. Masters iOS 18, SwiftUI, UIKit integration, Core Data, networking, and App Store optimization.",
@@ -73,14 +81,6 @@
       "skill_id": "wendy-swift",
       "src_path": "lib/Joannis-claude-skills/wendy-swift/SKILL.md",
       "triggers": "wendy;swift"
-    },
-    {
-      "description": "Apple Human Interface Guidelines for iPhone. Use when building, reviewing, or refactoring SwiftUI/UIKit interfaces for iOS. Triggers on tasks involving iPhone UI, iOS components, accessibility, Dynamic Type, Dark Mode, or HIG compliance.",
-      "phase": 5,
-      "score": 95,
-      "skill_id": "ios-design-guidelines",
-      "src_path": "lib/ehmo-platform-design-skills/skills/ios/SKILL.md",
-      "triggers": "ios;design;guidelines"
     }
   ],
   "sub_hub": "ios",

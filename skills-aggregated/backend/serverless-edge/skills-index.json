@@ -1,13 +1,18 @@
 {
-  "count": 6,
+  "count": 11,
   "hub": "backend",
   "skills": [
+    "agents-sdk",
     "aws-serverless",
     "azure-cloud-migrate",
+    "building-ai-agent-on-cloudflare",
+    "building-mcp-server-on-cloudflare",
     "cloudflare-d1",
     "cloudflare-workers-expert",
     "hono",
-    "latchbio-integration"
+    "latchbio-integration",
+    "workers-best-practices",
+    "wrangler"
   ],
   "sub_hub": "serverless-edge"
 }

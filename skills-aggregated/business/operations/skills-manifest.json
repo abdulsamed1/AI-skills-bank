@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774912689,
+  "generated_at_unix": 1774993464,
   "hub": "business",
   "skills": [
     {
@@ -929,14 +929,6 @@
       "skill_id": "asc-ppp-pricing",
       "src_path": "lib/rudrankriyam-app-store-connect-cli-skills/skills/asc-ppp-pricing/SKILL.md",
       "triggers": "asc;ppp;pricing"
-    },
-    {
-      "description": "Determine whether an app is ready to submit, then drive the App Store release flow with asc, including first-time submission fixes for availability, in-app purchases, subscriptions, Game Center, and App Privacy.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "asc-release-flow",
-      "src_path": "lib/rudrankriyam-app-store-connect-cli-skills/skills/asc-release-flow/SKILL.md",
-      "triggers": "asc;release;flow"
     },
     {
       "description": "Reconcile App Store Connect subscriptions and in-app purchases with RevenueCat products, entitlements, offerings, and packages using asc and RevenueCat MCP. Use when setting up or syncing subscription catalogs across ASC and RevenueCat.",
@@ -4059,14 +4051,6 @@
       "triggers": "full;stack;orchestration;full;stack"
     },
     {
-      "description": "Game development orchestrator. Routes to platform-specific skills based on project needs.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "game-development",
-      "src_path": "lib/antigravity-awesome-skills/skills/game-development/SKILL.md",
-      "triggers": "game;development"
-    },
-    {
       "description": "When to use: ['Web applications and APIs', 'Need any runtime or library', 'Complex services with multiple endpoints', 'Stateless containerized workloads']",
       "phase": 5,
       "score": 100,
@@ -4945,14 +4929,6 @@
       "skill_id": "improve-codebase-architecture",
       "src_path": "lib/mattpocock-skills/improve-codebase-architecture/SKILL.md",
       "triggers": "improve;codebase;architecture"
-    },
-    {
-      "description": "When the user wants to create, plan, or optimize App Store In-App Events — the event cards that appear on the Today tab, search results, and your product page. Use when the user mentions \"in-app event\", \"App Store event\", \"event card\", \"Today tab\", \"live event\", \"challenge\", \"game event\", \"seasonal event card\", or wants visibility beyond organic search. For general ASO, see aso-audit. For seasonal keyword strategy, see seasonal-aso.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "in-app-events",
-      "src_path": "lib/aso-skills/skills/in-app-events/SKILL.md",
-      "triggers": "in;app;events"
     },
     {
       "description": "Expert SRE incident responder specializing in rapid problem resolution, modern observability, and comprehensive incident management.",
@@ -6083,14 +6059,6 @@
       "triggers": "multi;cloud;architecture"
     },
     {
-      "description": "Multiplayer game development principles. Architecture, networking, synchronization.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "multiplayer",
-      "src_path": "lib/antigravity-awesome-skills/skills/game-development/multiplayer/SKILL.md",
-      "triggers": "multiplayer"
-    },
-    {
       "description": "Validate n8n expression syntax and fix common errors. Use when writing n8n expressions, using {{}} syntax, accessing $json/$node variables, troubleshooting expression errors, or working with webhook data in workflows.",
       "phase": 5,
       "score": 100,
@@ -6273,14 +6241,6 @@
       "skill_id": "nonlinear-solvers",
       "src_path": "lib/HeshamFS-materials-simulation-skills/skills/core-numerical/nonlinear-solvers/SKILL.md",
       "triggers": "nonlinear;solvers"
-    },
-    {
-      "description": "Define a North Star Metric and 3-5 supporting input metrics that form a metrics constellation. Classify the business game (Attention, Transaction, Productivity) and validate against 7 criteria for an effective North Star. Use when choosing a North Star Metric, setting up a metrics framework, learning about the North Star Framework, or deciding what to measure.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "north-star-metric",
-      "src_path": "lib/pm-skills/pm-marketing-growth/skills/north-star-metric/SKILL.md",
-      "triggers": "north;star;metric"
     },
     {
       "description": "Interact with Google NotebookLM to query documentation with Gemini's source-grounded answers. Each question opens a fresh browser session, retrieves the answer exclusively from your uploaded documents, and closes.",
@@ -7595,6 +7555,14 @@
       "triggers": "Optimization;Bitsandbytes;Quantization;8-Bit;4-Bit;Memory Optimization;QLoRA;NF4;INT8;HuggingFace;Efficient Inference"
     },
     {
+      "description": "Using superposition-driven annealing to predict chaotic market oscillations in high-frequency trading domains.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "quantum-predictor",
+      "src_path": "src/unclassified/Quantum-Predictor/SKILL.md",
+      "triggers": "quantum;predictor"
+    },
+    {
       "description": "Quantum physics simulation library for open quantum systems. Use when studying master equations, Lindblad dynamics, decoherence, quantum optics, or cavity QED. Best for physics research, open system dynamics, and educational simulations. NOT for circuit-based quantum computing—use qiskit, cirq, or pennylane for quantum algorithms and hardware execution.",
       "phase": 5,
       "score": 100,
@@ -8345,14 +8313,6 @@
       "skill_id": "sglang",
       "src_path": "lib/Orchestra-Research-AI-research-SKILLs/12-inference-serving/sglang/SKILL.md",
       "triggers": "Inference Serving;SGLang;Structured Generation;RadixAttention;Prefix Caching;Constrained Decoding;Agents;JSON Output;Fast Inference;Production Scale"
-    },
-    {
-      "description": "Expert guide for writing efficient GLSL shaders (Vertex/Fragment) for web and game engines, covering syntax, uniforms, and common effects.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "shader-programming-glsl",
-      "src_path": "lib/antigravity-awesome-skills/skills/shader-programming-glsl/SKILL.md",
-      "triggers": "shader;programming;glsl"
     },
     {
       "description": "Model interpretability and explainability using SHAP (SHapley Additive exPlanations). Use this skill when explaining machine learning model predictions, computing feature importance, generating SHAP plots (waterfall, beeswarm, bar, scatter, force, heatmap), debugging models, analyzing model bias or fairness, comparing models, or implementing explainable AI. Works with tree-based models (XGBoost, LightGBM, Random Forest), deep learning (TensorFlow, PyTorch), linear models, and any black-box model.",
@@ -9561,14 +9521,6 @@
       "skill_id": "workshop-facilitation",
       "src_path": "lib/Product-Manager-Skills/skills/workshop-facilitation/SKILL.md",
       "triggers": "workshop;facilitation"
-    },
-    {
-      "description": "Create and manage generative game zones for Dorothy's Pokemon-style world. Use this skill when creating, updating, or designing game worlds via MCP tools.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "world-builder",
-      "src_path": "lib/Charlie85270-Dorothy/skills/world-builder/SKILL.md",
-      "triggers": "world;builder"
     },
     {
       "description": "Automate Wrike project management via Rube MCP (Composio): create tasks/folders, manage projects, assign work, and track progress. Always search tools first for current schemas.",

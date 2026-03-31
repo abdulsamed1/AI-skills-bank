@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774912689,
+  "generated_at_unix": 1774993465,
   "hub": "programming",
   "skills": [
     {
@@ -411,6 +411,14 @@
       "triggers": "pydeseq2"
     },
     {
+      "description": "Python development with ruff, mypy, pytest - TDD and type safety",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "python",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/python/SKILL.md",
+      "triggers": "python"
+    },
+    {
       "description": "You are a Python project architecture expert specializing in scaffolding production-ready Python applications. Generate complete project structures with modern tooling (uv, FastAPI, Django), type hint",
       "phase": 1,
       "score": 100,
@@ -529,14 +537,6 @@
       "skill_id": "zarr-python",
       "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/zarr-python/SKILL.md",
       "triggers": "zarr;python"
-    },
-    {
-      "description": "Python development with ruff, mypy, pytest - TDD and type safety",
-      "phase": 1,
-      "score": 95,
-      "skill_id": "python",
-      "src_path": "lib/alinaqi-claude-bootstrap/skills/python/SKILL.md",
-      "triggers": "python"
     }
   ],
   "sub_hub": "python",

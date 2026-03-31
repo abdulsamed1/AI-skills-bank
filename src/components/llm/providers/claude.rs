@@ -21,21 +21,7 @@ impl ClaudeProvider {
     }
 }
 
-fn extract_json_substring(s: &str) -> Option<String> {
-    if let Some(start) = s.find("```") {
-        if let Some(end) = s.rfind("```") {
-            if end > start {
-                return Some(s[start + 3..end].trim().to_string());
-            }
-        }
-    }
-    if let Some(first) = s.find('{') {
-        if let Some(last) = s.rfind('}') {
-            return Some(s[first..=last].to_string());
-        }
-    }
-    None
-}
+use crate::components::llm::provider::extract_json_substring;
 
 #[async_trait]
 impl LlmProvider for ClaudeProvider {

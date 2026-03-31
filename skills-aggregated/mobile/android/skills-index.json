@@ -3,11 +3,11 @@
   "hub": "mobile",
   "skills": [
     "analyzing-android-malware-with-apktool",
+    "android-design-guidelines",
     "android-java",
     "android-kotlin",
     "earllm-build",
-    "reverse-engineering-android-malware-with-jadx",
-    "android-design-guidelines"
+    "reverse-engineering-android-malware-with-jadx"
   ],
   "sub_hub": "android"
 }

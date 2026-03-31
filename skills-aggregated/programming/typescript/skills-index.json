@@ -22,11 +22,11 @@
     "tech-stack:add-typescript-best-practices",
     "tinybird-typescript-sdk-guidelines",
     "trigger-dev",
+    "typescript",
     "typescript-advanced-types",
     "typescript-magician",
     "typescript-pro",
-    "zustand-store-ts",
-    "typescript"
+    "zustand-store-ts"
   ],
   "sub_hub": "typescript"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774912689,
+  "generated_at_unix": 1774993464,
   "hub": "backend",
   "skills": [
     {
@@ -177,14 +177,6 @@
       "skill_id": "extraction-pipeline-patterns",
       "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/skills/extraction-pipeline-patterns/SKILL.md",
       "triggers": "extraction;pipeline;patterns"
-    },
-    {
-      "description": "Game art principles. Visual style selection, asset pipeline, animation workflow.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "game-art",
-      "src_path": "lib/antigravity-awesome-skills/skills/game-development/game-art/SKILL.md",
-      "triggers": "game;art"
     },
     {
       "description": "Google Gemini CLI code review with Gemini 2.5 Pro, 1M token context, CI/CD integration",
@@ -425,6 +417,14 @@
       "skill_id": "research-refine-pipeline",
       "src_path": "lib/wanshuiyin-Auto-claude-code-research-in-sleep/skills/research-refine-pipeline/SKILL.md",
       "triggers": "research;refine;pipeline"
+    },
+    {
+      "description": "Build sandboxed applications for secure code execution. Load when building AI code execution, code interpreters, CI/CD systems, interactive dev environments, or executing untrusted code. Covers Sandbox SDK lifecycle, commands, files, code interpreter, and preview URLs. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "sandbox-sdk",
+      "src_path": "lib/skills/skills/sandbox-sdk/SKILL.md",
+      "triggers": "sandbox;sdk"
     },
     {
       "description": "Standard single-cell RNA-seq analysis pipeline. Use for QC, normalization, dimensionality reduction (PCA/UMAP/t-SNE), clustering, differential expression, and visualization. Best for exploratory scRNA-seq analysis with established workflows. For deep learning models use scvi-tools; for data format questions use anndata.",

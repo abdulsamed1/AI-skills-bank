@@ -1,5 +1,5 @@
 {
-  "count": 684,
+  "count": 685,
   "hub": "testing",
   "skills": [
     "007",
@@ -63,8 +63,12 @@
     "auth-implementation-patterns",
     "automating-ioc-enrichment",
     "aws-cdk-development",
+    "aws-compliance-checker",
     "aws-cost-operations",
+    "aws-iam-best-practices",
     "aws-mcp-setup",
+    "aws-secrets-rotation",
+    "aws-security-audit",
     "aws-skills",
     "azd-deployment",
     "azure-compliance",
@@ -108,6 +112,7 @@
     "clerk-auth",
     "cloud-architect",
     "cloud-penetration-testing",
+    "cloudflare",
     "codebase-audit-pre-push",
     "codebase-cleanup-deps-audit",
     "collecting-indicators-of-compromise",
@@ -592,6 +597,7 @@
     "performing-yara-rule-development-for-detection",
     "phantom",
     "pinecone",
+    "playwright-core",
     "porters-five-forces",
     "prioritizing-vulnerabilities-with-cvss-scoring",
     "privacy-by-design",
@@ -625,6 +631,7 @@
     "securing-kubernetes-on-cloud",
     "securing-remote-access-to-ot-environment",
     "securing-serverless-functions",
+    "security",
     "security-audit",
     "security-auditor",
     "security-bluebook-builder",
@@ -679,13 +686,7 @@
     "vulnerability-scanner",
     "wireshark-analysis",
     "wordpress",
-    "wordpress-penetration-testing",
-    "aws-compliance-checker",
-    "aws-iam-best-practices",
-    "aws-secrets-rotation",
-    "aws-security-audit",
-    "playwright-core",
-    "security"
+    "wordpress-penetration-testing"
   ],
   "sub_hub": "security"
 }

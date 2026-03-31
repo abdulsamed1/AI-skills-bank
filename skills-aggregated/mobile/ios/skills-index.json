@@ -4,14 +4,14 @@
   "skills": [
     "app-store-preflight-skills",
     "ios-debugger-agent",
+    "ios-design-guidelines",
     "ios-developer",
     "reverse-engineering-ios-app-with-frida",
     "swift-concurrency-expert",
     "swift-nio",
     "update-swiftui-apis",
     "wendy",
-    "wendy-swift",
-    "ios-design-guidelines"
+    "wendy-swift"
   ],
   "sub_hub": "ios"
 }

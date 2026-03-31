@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774912689,
+  "generated_at_unix": 1774993465,
   "subhubs": [
     {
       "hub": "ai",
@@ -58,13 +58,13 @@
     {
       "hub": "backend",
       "path": "backend/serverless-edge",
-      "skills_count": 6,
+      "skills_count": 11,
       "sub_hub": "serverless-edge"
     },
     {
       "hub": "business",
       "path": "business/operations",
-      "skills_count": 1214,
+      "skills_count": 1208,
       "sub_hub": "operations"
     },
     {
@@ -94,7 +94,7 @@
     {
       "hub": "frontend",
       "path": "frontend/ui-ux",
-      "skills_count": 158,
+      "skills_count": 156,
       "sub_hub": "ui-ux"
     },
     {
@@ -214,13 +214,13 @@
     {
       "hub": "testing",
       "path": "testing/performance-testing",
-      "skills_count": 96,
+      "skills_count": 95,
       "sub_hub": "performance-testing"
     },
     {
       "hub": "testing",
       "path": "testing/security",
-      "skills_count": 684,
+      "skills_count": 685,
       "sub_hub": "security"
     },
     {

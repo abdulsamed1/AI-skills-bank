@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774912689,
+  "generated_at_unix": 1774993465,
   "hub": "programming",
   "skills": [
     {
@@ -163,6 +163,14 @@
       "triggers": "trigger;dev"
     },
     {
+      "description": "TypeScript strict mode with eslint and jest",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "typescript",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/typescript/SKILL.md",
+      "triggers": "typescript"
+    },
+    {
       "description": "Comprehensive guidance for mastering TypeScript's advanced type system including generics, conditional types, mapped types, template literal types, and utility types for building robust, type-safe applications.",
       "phase": 1,
       "score": 100,
@@ -193,14 +201,6 @@
       "skill_id": "zustand-store-ts",
       "src_path": "lib/antigravity-awesome-skills/skills/zustand-store-ts/SKILL.md",
       "triggers": "zustand;store;ts"
-    },
-    {
-      "description": "TypeScript strict mode with eslint and jest",
-      "phase": 1,
-      "score": 95,
-      "skill_id": "typescript",
-      "src_path": "lib/alinaqi-claude-bootstrap/skills/typescript/SKILL.md",
-      "triggers": "typescript"
     }
   ],
   "sub_hub": "typescript",

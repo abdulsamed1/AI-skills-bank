@@ -1,7 +1,15 @@
 {
-  "generated_at_unix": 1774912689,
+  "generated_at_unix": 1774993464,
   "hub": "backend",
   "skills": [
+    {
+      "description": "Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, or chat applications. Covers Agent class, state management, callable RPC, Workflows integration, and React hooks. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "agents-sdk",
+      "src_path": "lib/skills/skills/agents-sdk/SKILL.md",
+      "triggers": "agents;sdk"
+    },
     {
       "description": "Proper Lambda function structure with error handling",
       "phase": 2,
@@ -17,6 +25,22 @@
       "skill_id": "azure-cloud-migrate",
       "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-cloud-migrate/SKILL.md",
       "triggers": "azure;cloud;migrate"
+    },
+    {
+      "description": "Builds AI agents on Cloudflare using the Agents SDK with state management, real-time WebSockets, scheduled tasks, tool integration, and chat capabilities. Generates production-ready agent code deployed to Workers. Use when: user wants to \"build an agent\", \"AI agent\", \"chat agent\", \"stateful agent\", mentions \"Agents SDK\", needs \"real-time AI\", \"WebSocket AI\", or asks about agent \"state management\", \"scheduled tasks\", or \"tool calling\". Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "building-ai-agent-on-cloudflare",
+      "src_path": "lib/skills/skills/building-ai-agent-on-cloudflare/SKILL.md",
+      "triggers": "building;ai;agent;on;cloudflare"
+    },
+    {
+      "description": "Builds remote MCP (Model Context Protocol) servers on Cloudflare Workers with tools, OAuth authentication, and production deployment. Generates server code, configures auth providers, and deploys to Workers. Use when: user wants to \"build MCP server\", \"create MCP tools\", \"remote MCP\", \"deploy MCP\", add \"OAuth to MCP\", or mentions Model Context Protocol on Cloudflare. Also triggers on \"MCP authentication\" or \"MCP deployment\". Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "building-mcp-server-on-cloudflare",
+      "src_path": "lib/skills/skills/building-mcp-server-on-cloudflare/SKILL.md",
+      "triggers": "building;mcp;server;on;cloudflare"
     },
     {
       "description": "Cloudflare D1 SQLite database with Workers, Drizzle ORM, migrations",
@@ -49,6 +73,22 @@
       "skill_id": "latchbio-integration",
       "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/latchbio-integration/SKILL.md",
       "triggers": "latchbio;integration"
+    },
+    {
+      "description": "Reviews and authors Cloudflare Workers code against production best practices. Load when writing new Workers, reviewing Worker code, configuring wrangler.jsonc, or checking for common Workers anti-patterns (streaming, floating promises, global state, secrets, bindings, observability). Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "workers-best-practices",
+      "src_path": "lib/skills/skills/workers-best-practices/SKILL.md",
+      "triggers": "workers;best;practices"
+    },
+    {
+      "description": "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflows, Pipelines, and Secrets Store. Load before running wrangler commands to ensure correct syntax and best practices. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "wrangler",
+      "src_path": "lib/skills/skills/wrangler/SKILL.md",
+      "triggers": "wrangler"
     }
   ],
   "sub_hub": "serverless-edge",

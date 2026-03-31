@@ -8,6 +8,7 @@
     "localization",
     "odoo-ecommerce-configurator",
     "seasonal-aso",
+    "seo",
     "seo-aeo-best-practices",
     "seo-authority-builder",
     "seo-cannibalization-detector",
@@ -31,8 +32,7 @@
     "seo-snippet-hunter",
     "seo-structure-architect",
     "site-architecture",
-    "web-content",
-    "seo"
+    "web-content"
   ],
   "sub_hub": "seo"
 }

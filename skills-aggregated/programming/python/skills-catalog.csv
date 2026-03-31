@@ -50,6 +50,7 @@ n8n-code-python,"Write Python code in n8n Code nodes. Use when writing Python in
 omero-integration,"Microscopy data management platform. Access images via Python, retrieve datasets, analyze pixels, manage ROIs/annotations, batch processing, for high-content screening and microscopy workflows.",100,1
 pipecat-friday-agent,"Build a low-latency, Iron Man-inspired tactical voice assistant (F.R.I.D.A.Y.) using Pipecat, Gemini, and OpenAI.",100,1
 pydeseq2,"Differential gene expression analysis (Python DESeq2). Identify DE genes from bulk RNA-seq counts, Wald tests, FDR correction, volcano/MA plots, for RNA-seq analysis.",100,1
+python,"Python development with ruff, mypy, pytest - TDD and type safety",100,1
 python-development-python-scaffold,"You are a Python project architecture expert specializing in scaffolding production-ready Python applications. Generate complete project structures with modern tooling (uv, FastAPI, Django), type hint",100,1
 python-ocr-backend-integration,python ocr uackend integration,100,1
 python-packaging,"Comprehensive guide to creating, structuring, and distributing Python packages using modern packaging tools, pyproject.toml, and publishing to PyPI.",100,1
@@ -65,4 +66,3 @@ tinybird-python-sdk-guidelines,"Tinybird Python SDK for defining datasources, pi
 using-tmux-for-interactive-commands,"Use when you need to run interactive CLI tools (vim, git rebase -i, Python REPL, etc.) that require real-time input/output - provides tmux-based approach for controlling interactive sessions through detached sessions and send-keys",100,1
 xvary-stock-research,"Thesis-driven equity analysis from public SEC EDGAR and market data; /analyze, /score, /compare workflows with bundled Python tools (Claude Code, Cursor, Codex).",100,1
 zarr-python,"Chunked N-D arrays for cloud storage. Compressed arrays, parallel I/O, S3/GCS integration, NumPy/Dask/Xarray compatible, for large-scale scientific computing pipelines.",100,1
-python,"Python development with ruff, mypy, pytest - TDD and type safety",95,1

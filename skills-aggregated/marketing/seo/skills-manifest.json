@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774912689,
+  "generated_at_unix": 1774993465,
   "hub": "marketing",
   "skills": [
     {
@@ -49,6 +49,14 @@
       "skill_id": "seasonal-aso",
       "src_path": "lib/aso-skills/skills/seasonal-aso/SKILL.md",
       "triggers": "seasonal;aso"
+    },
+    {
+      "description": "Run a broad SEO audit across technical SEO, on-page SEO, schema, sitemaps, content quality, AI search readiness, and GEO. Use as the umbrella skill when the user asks for a full SEO analysis or strategy.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "seo",
+      "src_path": "lib/antigravity-awesome-skills/skills/seo/SKILL.md",
+      "triggers": "seo"
     },
     {
       "description": "SEO and AEO best practices for metadata, Open Graph, sitemaps, robots.txt, hreflang, JSON-LD structured data, EEAT, and content optimized for search engines and AI answer surfaces. Use this skill when implementing page SEO, technical SEO, schema markup, international SEO, AI-overview readiness, or improving content for Google, ChatGPT, Perplexity, and similar assistants.",
@@ -241,14 +249,6 @@
       "skill_id": "web-content",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/web-content/SKILL.md",
       "triggers": "web;content"
-    },
-    {
-      "description": "Run a broad SEO audit across technical SEO, on-page SEO, schema, sitemaps, content quality, AI search readiness, and GEO. Use as the umbrella skill when the user asks for a full SEO analysis or strategy.",
-      "phase": 5,
-      "score": 95,
-      "skill_id": "seo",
-      "src_path": "lib/antigravity-awesome-skills/skills/seo/SKILL.md",
-      "triggers": "seo"
     }
   ],
   "sub_hub": "seo",

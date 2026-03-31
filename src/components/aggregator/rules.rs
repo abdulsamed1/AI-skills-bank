@@ -592,7 +592,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
 });
 
 pub static DEFAULT_EXCLUSION_PATTERNS: &[&str] = &[
-   "game",
+    "game",
     "legal",
     "medical",
     "hospital",
