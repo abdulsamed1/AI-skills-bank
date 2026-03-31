@@ -1057,7 +1057,7 @@ fn add_repo(config: &mut SetupConfig, repo_url: &str) -> Result<()> {
 }
 
 fn prepare_manifest(repo_root: &Path, configured_urls: &[String]) -> Result<Option<RepoManifest>> {
-    let manifest_path = repo_root.join("repos.json");
+    let manifest_path = repo_root.join(".skill-manage-cli-config.json");
 
     if !configured_urls.is_empty() {
         let urls = dedupe_urls(configured_urls.to_vec());
@@ -1171,11 +1171,11 @@ fn load_repo_urls_from_json(path: &Path) -> Result<Vec<String>> {
 "#;
         let _ = fs::write(path, stub);
         
-        println!("\n[INFO] repos.json created at: {}", path.display());
+        println!("\n[INFO] .skill-manage-cli-config.json created at: {}", path.display());
         println!("Please edit the file and add your repository URLs, then re-run the setup.");
         println!("Format: Add GitHub URLs to the 'repositories' array.\n");
         
-        bail!("repos.json was created. Please add your repositories and re-run setup.");
+        bail!(".skill-manage-cli-config.json was created. Please add your repositories and re-run setup.");
     }
     
     let content = fs::read_to_string(path)
@@ -1356,7 +1356,7 @@ fn ensure_config(repo_root: &Path, config_path: &Path) -> Result<SetupConfig> {
 }
 
 fn auto_config_from_manifest(repo_root: &Path) -> Result<Option<SetupConfig>> {
-    let manifest_path = repo_root.join("repos.json");
+    let manifest_path = repo_root.join(".skill-manage-cli-config.json");
     if !manifest_path.exists() {
         return Ok(None);
     }
@@ -1410,9 +1410,9 @@ fn tool_by_key(key: &str) -> Option<&'static ToolDef> {
 fn resolve_input_path(repo_root: &Path, input: &str) -> PathBuf {
     let trimmed = input.trim();
     
-    // Auto-detect repos.json if input is empty or looks like a short name
-    if trimmed.is_empty() || trimmed.eq_ignore_ascii_case("repos.json") || trimmed.eq_ignore_ascii_case("repos") {
-        let candidates = [repo_root.join("repos.json")];
+    // Auto-detect .skill-manage-cli-config.json if input is empty or looks like a short name
+    if trimmed.is_empty() || trimmed.eq_ignore_ascii_case(".skill-manage-cli-config.json") || trimmed.eq_ignore_ascii_case("repos") {
+        let candidates = [repo_root.join(".skill-manage-cli-config.json")];
         
         for candidate in &candidates {
             if candidate.exists() {
@@ -1422,14 +1422,14 @@ fn resolve_input_path(repo_root: &Path, input: &str) -> PathBuf {
         
         // Also check in current directory
         if let Ok(cwd) = env::current_dir() {
-            let cwd_candidate = cwd.join("repos.json");
+            let cwd_candidate = cwd.join(".skill-manage-cli-config.json");
             if cwd_candidate.exists() {
                 return cwd_candidate;
             }
         }
         
-        // Default to repo_root/repos.json if none exist
-        return repo_root.join("repos.json");
+        // Default to repo_root/.skill-manage-cli-config.json if none exist
+        return repo_root.join(".skill-manage-cli-config.json");
     }
     
     let path = PathBuf::from(trimmed);

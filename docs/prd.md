@@ -84,7 +84,7 @@ The core differentiator is the intersection of massive skill scale, -pattern gov
 
 ### 3. The Skills Bank Maintainer (Admin/Operations)
 **Persona:** Omar, the repository owner who curates the 1,400+ skills library.
-* **Opening Scene:** Omar has just added 50 new repository URLs to the `repos.json` manifest. Now he needs to regenerate the massive `hub-manifests.csv` and all sub-hub index files.
+* **Opening Scene:** Omar has just added 50 new repository URLs to the `.skill-manage-cli-config.json` manifest. Now he needs to regenerate the massive `hub-manifests.csv` and all sub-hub index files.
 * **Rising Action:** Previously, this PowerShell script took nearly 45 seconds to scan thousands of files, slowing down his daily workflow. He runs the new `skill-manage aggregate` native command.
 * **Climax:** The Rust engine's blazing-fast multi-threaded I/O rips through the 1,400 files, applying the  phase/dependency rules and generating the CSV.
 * **Resolution:** The entire aggregation finishes in under 2 seconds. Omar smiles, realizing that maintaining the project at scale is no longer a chore.
@@ -107,7 +107,7 @@ The core differentiator is the intersection of massive skill scale, -pattern gov
 * **Multi-threaded Aggregation:** The Rust file scanner must utilize parallel processing frameworks (like `rayon`) to achieve the 2-second aggregation target.
 
 ### Supported Feature Set
-* Rust binary implementing `fetch` (reading `repos.json` and cloning missing skill repositories into `lib/`).
+* Rust binary implementing `fetch` (reading `.skill-manage-cli-config.json` and cloning missing skill repositories into `lib/`).
 * Rust binary implementing `sync` (safe file copying/junctioning to global tool directories).
 * Rust binary implementing the heavy `aggregate` engine (keyword scoring, semantic matching, sub-hub routing).
 * The `doctor` diagnostic command for schema validation.
@@ -128,7 +128,7 @@ The core differentiator is the intersection of massive skill scale, -pattern gov
 
 ### Configuration & File System Integrity
 * **Atomic Operations:** Because the tool's primary purpose is fetching and synchronizing thousands of files, it must use atomic file operations. If a `sync` or `fetch` is interrupted (e.g., user hits `Ctrl+C`), it must not leave the target directory in a corrupted or half-written state.
-* **Local State:** Rely on `repos.json` and the `lib/` directory relative to the current working directory for local project execution.
+* **Local State:** Rely on `.skill-manage-cli-config.json` and the `lib/` directory relative to the current working directory for local project execution.
 * **Global Configuration:** Support resolving a global config directory (e.g., `~/.config/skill-manage/`) for user-wide settings, authentication tokens, or cached skill data.
 
 ### Security Constraints
@@ -139,8 +139,8 @@ The core differentiator is the intersection of massive skill scale, -pattern gov
 ## Functional Requirements
 
 ### Repository Management
-* **FR1:** The system can read a local manifest file (e.g., `repos.json`) containing a list of remote repository URLs.
-* **FR2:** The CLI can download (clone) remote repositories from the manifest into a local `lib/` directory.
+* **FR1:** The system can read a local manifest file (e.g., `.skill-manage-cli-config.json`) containing a list of remote repository URLs.
+* **FR2:** The CLI can download (shallow clone) remote repositories from the manifest into a local `lib/` directory.
 * **FR3:** The CLI can detect if a repository has already been downloaded to prevent redundant fetching operations.
 * **FR4:** The CLI can pull the latest updates for previously downloaded repositories.
 
@@ -157,7 +157,7 @@ The core differentiator is the intersection of massive skill scale, -pattern gov
 * **FR12:** The system can generate semantic routing triggers and assign matching score weights for each skill.
 
 ### Diagnostics & Validation
-* **FR13:** The CLI can validate the structural integrity and syntax of the `repos.json` manifest.
+* **FR13:** The CLI can validate the structural integrity and syntax of the `.skill-manage-cli-config.json` manifest.
 * **FR14:** The CLI can verify that all generated CSV and JSON schemas precisely match the required system specification.
 * **FR15:** The system can detect and report broken file paths, missing extensions, or orphaned skills in the routing manifests.
 * **FR16:** The CLI can output clear, actionable error messages pointing the user directly to the schema violation or missing file.

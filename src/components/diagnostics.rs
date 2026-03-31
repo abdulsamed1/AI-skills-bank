@@ -41,17 +41,17 @@ pub trait Check: Sync + Send {
 struct ManifestExistsCheck;
 impl Check for ManifestExistsCheck {
     fn name(&self) -> &str {
-        "Manifest File (repos.json)"
+        "Manifest File (.skill-manage-cli-config.json)"
     }
     fn run(&self) -> DiagnosticStatus {
-        let path = Path::new("repos.json");
+        let path = Path::new(".skill-manage-cli-config.json");
         if path.exists() {
             match RepoManifest::load(path) {
                 Ok(_) => DiagnosticStatus::Pass,
                 Err(e) => DiagnosticStatus::Fail {
                     issues: vec![DiagnosticIssue {
                         description: format!("Found but unparseable: {}", e),
-                        location: Some("repos.json".to_string()),
+                        location: Some(".skill-manage-cli-config.json".to_string()),
                         current: None,
                         should_be: None,
                         why: "Manifest must be valid JSON following the RepoManifest schema"
@@ -63,10 +63,10 @@ impl Check for ManifestExistsCheck {
         } else {
             DiagnosticStatus::Fail {
                 issues: vec![DiagnosticIssue {
-                    description: "repos.json not found".to_string(),
+                    description: ".skill-manage-cli-config.json not found".to_string(),
                     location: None,
                     current: None,
-                    should_be: Some("repos.json in root".to_string()),
+                    should_be: Some(".skill-manage-cli-config.json in root".to_string()),
                     why: "The manifest file defines which skill repositories to manage".to_string(),
                 }],
                 fix: "Create a.skill-manage-cli-config.json manifest in the root".to_string(),
@@ -211,7 +211,7 @@ impl Check for RepoIntegrityCheck {
         "Repository Integrity"
     }
     fn run(&self) -> DiagnosticStatus {
-        let path = Path::new("repos.json");
+        let path = Path::new(".skill-manage-cli-config.json");
         let manifest = match RepoManifest::load(path) {
             Ok(m) => m,
             Err(_) => {
