@@ -22,6 +22,19 @@ impl LlmProvider for MockProvider {
         description: &str,
         abstract_text: Option<&str>,
     ) -> Result<LlmClassificationResponse, LlmError> {
+        // Allow tests to force provider failure via env var `LLM_MOCK_FAIL=1`.
+        if std::env::var("LLM_MOCK_FAIL")
+            .map(|v| {
+                let vl = v.to_ascii_lowercase();
+                vl == "1" || vl == "true" || vl == "yes"
+            })
+            .unwrap_or(false)
+        {
+            return Err(LlmError::ProviderUnavailable(
+                "mock: forced failure via LLM_MOCK_FAIL".to_string(),
+            ));
+        }
+
         // Deterministic mock: choose sub_hub based on simple keywords for tests
         let mut suggestions = Vec::new();
 

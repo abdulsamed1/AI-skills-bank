@@ -137,15 +137,32 @@ pub async fn aggregate_to_output(
     // Apply any explicit manual overrides first (highest precedence)
     apply_manual_overrides(repo_root, &manual_overrides, &mut skills);
 
-    // LLM classification (primary). If an LLM provider is configured via env vars,
-    // attempt to classify skills using the provider and a persistent cache.
-    // On any LLM error or missing provider, fall back to existing keyword rules.
-    if let Err(e) = classify_skills_with_llm(repo_root, &mut skills).await {
-        // classification errors are non-fatal; fallback to rules for all remaining skills
-        // Log via stderr to keep behavior simple in CLI context.
-        eprintln!("LLM classification failed: {}. Falling back to keyword rules.", e);
+    // LLM classification (primary). Honor the `LLM_ENABLED` env flag to allow
+    // disabling LLM classification for debugging or offline runs. If disabled
+    // or if classification errors occur, fall back to deterministic keyword rules.
+    let llm_enabled = env::var("LLM_ENABLED")
+        .ok()
+        .map(|v| {
+            let lo = v.to_ascii_lowercase();
+            !(lo == "false" || lo == "0" || lo == "no" || lo == "off")
+        })
+        .unwrap_or(true);
+
+    if llm_enabled {
+        if let Err(e) = classify_skills_with_llm(repo_root, &mut skills).await {
+            // classification errors are non-fatal; fallback to rules for all remaining skills
+            eprintln!("LLM classification failed: {}. Falling back to keyword rules.", e);
+            for skill in skills.iter_mut() {
+                // don't override manual overrides (those have match_score >= 100)
+                if skill.match_score.unwrap_or(0) >= 100 {
+                    continue;
+                }
+                rules::apply_rules(skill);
+            }
+        }
+    } else {
+        eprintln!("LLM disabled via LLM_ENABLED env var; using deterministic rules.");
         for skill in skills.iter_mut() {
-            // don't override manual overrides (those have match_score >= 100)
             if skill.match_score.unwrap_or(0) >= 100 {
                 continue;
             }
@@ -500,12 +517,10 @@ async fn classify_skills_with_llm(
             continue;
         }
 
-        let mut hasher = DefaultHasher::new();
-        skill.name.hash(&mut hasher);
-        skill.description.hash(&mut hasher);
-        let key = format!("{}:{}", skill.name.to_lowercase(), hasher.finish());
+        // Deterministic cache key: repo+skill_path+content-hash
+        let key = crate::components::llm::key_for_skill(_repo_root, &skill.path, &skill.name, &skill.description);
 
-        if let Some(cached) = cache.get(&key) {
+        if let Some(cached) = crate::components::llm::get_cached_classification(&cache, &key) {
             if let Some(top) = cached.ranked_suggestions.first() {
                 skill.hub = top.hub.clone();
                 skill.sub_hub = top.sub_hub.clone();
@@ -613,7 +628,7 @@ async fn classify_skills_with_llm(
                             skill.match_score = Some(top.confidence);
                             skill.phase = Some(phase_for_hub(&skill.hub));
                         }
-                        cache.insert(key.clone(), resp);
+                        crate::components::llm::insert_into_map(&mut cache, key.clone(), resp);
                     }
                 }
                 Ok(resps) => {
@@ -637,7 +652,7 @@ async fn classify_skills_with_llm(
                             skill.match_score = Some(top.confidence);
                             skill.phase = Some(phase_for_hub(&skill.hub));
                         }
-                        cache.insert(key.clone(), resp);
+                        crate::components::llm::insert_into_map(&mut cache, key.clone(), resp);
                     }
                 }
                 Err(_e) => {
@@ -662,7 +677,7 @@ async fn classify_skills_with_llm(
                             skill.phase = Some(phase_for_hub(&skill.hub));
                         }
                         // Insert cache by key
-                        cache.insert(key.clone(), resp);
+                        crate::components::llm::insert_into_map(&mut cache, key.clone(), resp);
                     }
                     // After per-item fallback above, continue to next chunk
                 }

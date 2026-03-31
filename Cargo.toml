@@ -39,6 +39,7 @@ dialoguer = "0.10"
 reqwest = { version = "0.12", features = ["json", "rustls-tls"] }
 rustls = "0.23"
 rustls-native-certs = "0.8"
+chrono = { version = "0.4", features = ["serde"] }
 
 [dev-dependencies]
 assert_cmd = "2"

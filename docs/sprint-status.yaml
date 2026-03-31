@@ -34,7 +34,7 @@
 # - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
 
 generated: 2026-03-28
-last_updated: 2026-03-30 00:00:00
+last_updated: 2026-03-31 15:35:00
 project: skill-manage
 project_key: NOKEY
 tracking_system: file-system
@@ -117,19 +117,19 @@ development_status:
     status: "in-progress"
     stories:
       - id: "story-07-llm-integration-core"
-        status: "ready-for-dev"
+        status: "done"
         file: "docs/stories/story-07-llm-integration-core.md"
       - id: "story-07-classification-pipeline"
-        status: "backlog"
+        status: "done"
         file: "docs/stories/story-07-classification-pipeline.md"
       - id: "story-07-caching-layer"
-        status: "backlog"
+        status: "review"
         file: "docs/stories/story-07-caching-layer.md"
       - id: "story-07-hybrid-routing"
-        status: "backlog"
+        status: "in-progress"
         file: "docs/stories/story-07-hybrid-routing.md"
       - id: "story-07-llm-error-handling"
-        status: "backlog"
+        status: "done"
         file: "docs/stories/story-07-llm-error-handling.md"
       - id: "story-07-testing-validation"
         status: "backlog"
