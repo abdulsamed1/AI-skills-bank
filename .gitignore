@@ -88,3 +88,6 @@ lib/*
 *lib/
 *skills/
 *docs/stories/
+
+docs/epics.md
+docs/architecture.md
