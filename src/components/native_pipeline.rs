@@ -9,14 +9,12 @@ use crate::utils::theme::Theme;
 use serde::{Deserialize, Serialize};
 use serde_json::json;
 use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet};
-use std::hash::{Hash, Hasher};
-use std::collections::hash_map::DefaultHasher;
 use std::path::{Path, PathBuf};
 use std::sync::Arc;
 use std::time::{SystemTime, UNIX_EPOCH};
 use std::process::Command;
 use walkdir::WalkDir;
-use crate::components::llm;
+// `crate::components::llm` referenced via fully-qualified paths where needed
 use std::env;
 use tokio::time::sleep;
 use std::time::Duration as StdDuration;

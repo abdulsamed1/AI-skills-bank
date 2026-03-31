@@ -47,9 +47,8 @@ mod tests {
 
     #[test]
     fn cache_roundtrip_and_key_generation() -> Result<(), Box<dyn std::error::Error>> {
-        use std::fs;
         use tempfile::tempdir;
-        use crate::components::llm::cache::{cache_file_path, key_for_skill, load_cache, save_cache, insert_into_map, cache_metrics};
+        use crate::components::llm::cache::{key_for_skill, load_cache, save_cache, insert_into_map, cache_metrics};
         use crate::components::llm::types::{LlmClassificationResponse, SubHubSuggestion};
 
         let _guard = ENV_LOCK.lock().unwrap();
