@@ -36,6 +36,9 @@ anyhow = "1"
 url = "2"
 tempfile = "3.27.0"
 dialoguer = "0.10"
+reqwest = { version = "0.12", features = ["json", "rustls-tls"] }
+rustls = "0.23"
+rustls-native-certs = "0.8"
 
 [dev-dependencies]
 assert_cmd = "2"

@@ -4,6 +4,7 @@ pub mod fetcher;
 pub mod manifest;
 pub mod native_pipeline;
 pub mod syncer;
+pub mod llm;
 
 use crate::components::aggregator::SkillMetadata;
 use crate::components::diagnostics::DiagnosticStatus;
