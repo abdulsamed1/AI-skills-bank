@@ -34,7 +34,7 @@
 # - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
 
 generated: 2026-03-28
-last_updated: 2026-03-31 15:35:00
+last_updated: 2026-03-31 16:00:00
 project: skill-manage
 project_key: NOKEY
 tracking_system: file-system
@@ -126,7 +126,7 @@ development_status:
         status: "review"
         file: "docs/stories/story-07-caching-layer.md"
       - id: "story-07-hybrid-routing"
-        status: "in-progress"
+        status: "review"
         file: "docs/stories/story-07-hybrid-routing.md"
       - id: "story-07-llm-error-handling"
         status: "done"
