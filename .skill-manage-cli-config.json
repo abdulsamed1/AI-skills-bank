@@ -9,6 +9,8 @@
     "antigravity"
   ],
   "repositories": [
+    "https://github.com/affaan-m/everything-claude-code.git",
+    "https://github.com/cloudflare/skills.git",
     "https://github.com/supabase/agent-skills.git",
     "https://github.com/sanity-io/agent-toolkit.git",
     "https://github.com/BrianRWagner/ai-marketing-skills.git",
@@ -98,7 +100,6 @@
     "https://github.com/SHADOWPR0/security-bluebook-builder.git",
     "https://github.com/Shpigford/skills.git",
     "https://github.com/ShunsukeHayashi/agent-skill-bus.git",
-    "https://github.com/anthropics/skills.git",
     "https://github.com/google-labs-code/stitch-skills.git",
     "https://github.com/obra/superpowers.git",
     "https://github.com/obra/superpowers-lab.git",

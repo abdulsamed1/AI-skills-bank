@@ -9,11 +9,17 @@ use crate::utils::theme::Theme;
 use serde::{Deserialize, Serialize};
 use serde_json::json;
 use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet};
+use std::hash::{Hash, Hasher};
+use std::collections::hash_map::DefaultHasher;
 use std::path::{Path, PathBuf};
 use std::sync::Arc;
 use std::time::{SystemTime, UNIX_EPOCH};
 use std::process::Command;
 use walkdir::WalkDir;
+use crate::components::llm;
+use std::env;
+use tokio::time::sleep;
+use std::time::Duration as StdDuration;
 
 #[derive(Debug, Clone, Copy)]
 pub enum NativeSyncMode {
@@ -130,6 +136,22 @@ pub async fn aggregate_to_output(
 
     // Apply any explicit manual overrides first (highest precedence)
     apply_manual_overrides(repo_root, &manual_overrides, &mut skills);
+
+    // LLM classification (primary). If an LLM provider is configured via env vars,
+    // attempt to classify skills using the provider and a persistent cache.
+    // On any LLM error or missing provider, fall back to existing keyword rules.
+    if let Err(e) = classify_skills_with_llm(repo_root, &mut skills).await {
+        // classification errors are non-fatal; fallback to rules for all remaining skills
+        // Log via stderr to keep behavior simple in CLI context.
+        eprintln!("LLM classification failed: {}. Falling back to keyword rules.", e);
+        for skill in skills.iter_mut() {
+            // don't override manual overrides (those have match_score >= 100)
+            if skill.match_score.unwrap_or(0) >= 100 {
+                continue;
+            }
+            rules::apply_rules(skill);
+        }
+    }
 
     // Then apply persisted routing only for low-confidence items.
     apply_existing_assignments(repo_root, &existing_assignments, &mut skills);
@@ -352,6 +374,306 @@ fn apply_manual_overrides(
             skill.phase = Some(phase_for_hub(hub));
         }
     }
+}
+
+async fn classify_skills_with_llm(
+    _repo_root: &Path,
+    skills: &mut [SkillMetadata],
+) -> Result<(), SkillManageError> {
+    // Load LLM client config from env; if absent, return an error so caller
+    // falls back to deterministic rules.
+    let config = match crate::components::llm::LlmClientConfig::from_env() {
+        Ok(c) => c,
+        Err(e) => return Err(SkillManageError::ConfigError(e.to_string())),
+    };
+
+    // Create provider instance
+    let provider_name = config.provider.to_ascii_lowercase();
+    let provider: Box<dyn crate::components::llm::LlmProvider> = match provider_name.as_str() {
+        "openai" => Box::new(
+            crate::components::llm::OpenAiProvider::new(config.clone())
+                .map_err(|e| SkillManageError::ConfigError(e.to_string()))?,
+        ),
+        "claude" => Box::new(
+            crate::components::llm::ClaudeProvider::new(config.clone())
+                .map_err(|e| SkillManageError::ConfigError(e.to_string()))?,
+        ),
+        "custom" => Box::new(
+            crate::components::llm::CustomProvider::new(config.clone())
+                .map_err(|e| SkillManageError::ConfigError(e.to_string()))?,
+        ),
+        "mock" => Box::new(
+            crate::components::llm::MockProvider::new(config.clone())
+                .map_err(|e| SkillManageError::ConfigError(e.to_string()))?,
+        ),
+        other => {
+            return Err(SkillManageError::ConfigError(format!(
+                "Unknown LLM provider: {}",
+                other
+            )))
+        }
+    };
+
+    // Retry/backoff configuration
+    let max_retries: u32 = env::var("LLM_MAX_RETRIES")
+        .ok()
+        .and_then(|s| s.parse::<u32>().ok())
+        .filter(|&v| v > 0)
+        .unwrap_or(3);
+
+    let initial_backoff_ms: u64 = env::var("LLM_INITIAL_BACKOFF_MS")
+        .ok()
+        .and_then(|s| s.parse::<u64>().ok())
+        .unwrap_or(500);
+
+    let max_backoff_ms: u64 = env::var("LLM_MAX_BACKOFF_MS")
+        .ok()
+        .and_then(|s| s.parse::<u64>().ok())
+        .unwrap_or(60_000);
+
+    // Load existing cache (ok to be empty)
+    let mut cache = crate::components::llm::load_cache()?;
+
+    // Helper performs classify with retries/backoff
+    async fn classify_with_retry(
+        provider: &dyn crate::components::llm::LlmProvider,
+        skill_id: &str,
+        description: &str,
+        abstract_text: Option<&str>,
+        max_retries: u32,
+        initial_backoff_ms: u64,
+        max_backoff_ms: u64,
+    ) -> Result<crate::components::llm::LlmClassificationResponse, SkillManageError> {
+        let attempts = if max_retries == 0 { 1 } else { max_retries };
+        for attempt in 0..attempts {
+            match provider
+                .classify(skill_id, description, abstract_text)
+                .await
+            {
+                Ok(resp) => return Ok(resp),
+                Err(e) => {
+                    // If rate limited and server provided a retry_after, honor it
+                    if let crate::components::llm::LlmError::RateLimited { retry_after } = &e {
+                        if let Some(secs) = retry_after {
+                            let now_ms = (std::time::SystemTime::now()
+                                .duration_since(UNIX_EPOCH)
+                                .unwrap()
+                                .subsec_millis()) as u64;
+                            let jitter = now_ms % 1000;
+                            let sleep_ms = (secs.saturating_mul(1000)).saturating_add(jitter);
+                            sleep(StdDuration::from_millis(sleep_ms)).await;
+                            continue;
+                        }
+                    }
+
+                    if attempt + 1 >= attempts {
+                        return Err(SkillManageError::ConfigError(e.to_string()));
+                    }
+
+                    // Exponential backoff with simple time-derived jitter
+                    let multiplier = 1u64.checked_shl(attempt as u32).unwrap_or(u64::MAX);
+                    let mut backoff = initial_backoff_ms.saturating_mul(multiplier);
+                    if backoff > max_backoff_ms {
+                        backoff = max_backoff_ms;
+                    }
+                    let now_ms = (std::time::SystemTime::now()
+                        .duration_since(UNIX_EPOCH)
+                        .unwrap()
+                        .subsec_millis()) as u64;
+                    let jitter = if backoff > 1 { now_ms % (backoff / 2 + 1) } else { 0 };
+                    let sleep_ms = backoff / 2 + jitter;
+                    sleep(StdDuration::from_millis(sleep_ms)).await;
+                    continue;
+                }
+            }
+        }
+
+        Err(SkillManageError::ConfigError(
+            "Exceeded retries for LLM classify".to_string(),
+        ))
+    }
+
+    // Build list of skills that need classification (cache miss and low confidence)
+    let mut to_classify: Vec<(usize, String, String, Option<String>, String)> = Vec::new();
+    for (idx, skill) in skills.iter_mut().enumerate() {
+        if skill.match_score.unwrap_or(0) >= 90 {
+            continue;
+        }
+
+        let mut hasher = DefaultHasher::new();
+        skill.name.hash(&mut hasher);
+        skill.description.hash(&mut hasher);
+        let key = format!("{}:{}", skill.name.to_lowercase(), hasher.finish());
+
+        if let Some(cached) = cache.get(&key) {
+            if let Some(top) = cached.ranked_suggestions.first() {
+                skill.hub = top.hub.clone();
+                skill.sub_hub = top.sub_hub.clone();
+                skill.match_score = Some(top.confidence);
+                skill.phase = Some(phase_for_hub(&skill.hub));
+            }
+            continue;
+        }
+
+        to_classify.push((
+            idx,
+            skill.name.clone(),
+            skill.description.clone(),
+            skill.triggers.clone(),
+            key,
+        ));
+    }
+
+    if !to_classify.is_empty() {
+        // Batch size configurable
+        let batch_size: usize = env::var("LLM_BATCH_SIZE")
+            .ok()
+            .and_then(|s| s.parse::<usize>().ok())
+            .filter(|&v| v > 0)
+            .unwrap_or(8);
+
+        // Helper: batch classify with retries/backoff
+        async fn classify_batch_with_retry(
+            provider: &dyn crate::components::llm::LlmProvider,
+            items: &[(String, String, Option<String>)],
+            max_retries: u32,
+            initial_backoff_ms: u64,
+            max_backoff_ms: u64,
+        ) -> Result<Vec<crate::components::llm::LlmClassificationResponse>, SkillManageError> {
+            let attempts = if max_retries == 0 { 1 } else { max_retries };
+            for attempt in 0..attempts {
+                match provider.classify_batch(items).await {
+                    Ok(resps) => return Ok(resps),
+                    Err(e) => {
+                        if let crate::components::llm::LlmError::RateLimited { retry_after } = &e {
+                            if let Some(secs) = retry_after {
+                                let now_ms = (std::time::SystemTime::now()
+                                    .duration_since(UNIX_EPOCH)
+                                    .unwrap()
+                                    .subsec_millis()) as u64;
+                                let jitter = now_ms % 1000;
+                                let sleep_ms = (secs.saturating_mul(1000)).saturating_add(jitter);
+                                sleep(StdDuration::from_millis(sleep_ms)).await;
+                                continue;
+                            }
+                        }
+
+                        if attempt + 1 >= attempts {
+                            return Err(SkillManageError::ConfigError(e.to_string()));
+                        }
+
+                        let multiplier = 1u64.checked_shl(attempt as u32).unwrap_or(u64::MAX);
+                        let mut backoff = initial_backoff_ms.saturating_mul(multiplier);
+                        if backoff > max_backoff_ms {
+                            backoff = max_backoff_ms;
+                        }
+                        let now_ms = (std::time::SystemTime::now()
+                            .duration_since(UNIX_EPOCH)
+                            .unwrap()
+                            .subsec_millis()) as u64;
+                        let jitter = if backoff > 1 { now_ms % (backoff / 2 + 1) } else { 0 };
+                        let sleep_ms = backoff / 2 + jitter;
+                        sleep(StdDuration::from_millis(sleep_ms)).await;
+                        continue;
+                    }
+                }
+            }
+            Err(SkillManageError::ConfigError(
+                "Exceeded retries for LLM batch classify".to_string(),
+            ))
+        }
+
+        // Process in chunks
+        for chunk in to_classify.chunks(batch_size) {
+            let items: Vec<(String, String, Option<String>)> = chunk
+                .iter()
+                .map(|(_, name, description, abstract_text, _key)| {
+                    (name.clone(), description.clone(), abstract_text.clone())
+                })
+                .collect();
+
+            // Try batch classification
+            let batch_result = classify_batch_with_retry(
+                &*provider,
+                &items,
+                max_retries,
+                initial_backoff_ms,
+                max_backoff_ms,
+            )
+            .await;
+
+            match batch_result {
+                Ok(resps) if resps.len() == items.len() => {
+                    for (i, resp) in resps.into_iter().enumerate() {
+                        let (idx, _name, _description, _abstract, key) = &chunk[i];
+                        if let Some(top) = resp.ranked_suggestions.first() {
+                            let skill = &mut skills[*idx];
+                            skill.hub = top.hub.clone();
+                            skill.sub_hub = top.sub_hub.clone();
+                            skill.match_score = Some(top.confidence);
+                            skill.phase = Some(phase_for_hub(&skill.hub));
+                        }
+                        cache.insert(key.clone(), resp);
+                    }
+                }
+                Ok(resps) => {
+                    // unexpected length; fall back to per-item
+                    for (j, (_idx, name, description, abstract_text, key)) in chunk.iter().enumerate() {
+                        let resp = classify_with_retry(
+                            &*provider,
+                            name,
+                            description,
+                            abstract_text.as_deref(),
+                            max_retries,
+                            initial_backoff_ms,
+                            max_backoff_ms,
+                        )
+                        .await?;
+
+                        if let Some(top) = resp.ranked_suggestions.first() {
+                            let skill = &mut skills[chunk[j].0];
+                            skill.hub = top.hub.clone();
+                            skill.sub_hub = top.sub_hub.clone();
+                            skill.match_score = Some(top.confidence);
+                            skill.phase = Some(phase_for_hub(&skill.hub));
+                        }
+                        cache.insert(key.clone(), resp);
+                    }
+                }
+                Err(_e) => {
+                    // Batch failed entirely; fallback to per-item classification
+                    for (idx, name, description, abstract_text, key) in chunk.iter() {
+                        let resp = classify_with_retry(
+                            &*provider,
+                            name,
+                            description,
+                            abstract_text.as_deref(),
+                            max_retries,
+                            initial_backoff_ms,
+                            max_backoff_ms,
+                        )
+                        .await?;
+
+                        if let Some(top) = resp.ranked_suggestions.first() {
+                            let skill = &mut skills[*idx];
+                            skill.hub = top.hub.clone();
+                            skill.sub_hub = top.sub_hub.clone();
+                            skill.match_score = Some(top.confidence);
+                            skill.phase = Some(phase_for_hub(&skill.hub));
+                        }
+                        // Insert cache by key
+                        cache.insert(key.clone(), resp);
+                    }
+                    // After per-item fallback above, continue to next chunk
+                }
+            }
+        }
+    }
+
+    // Persist cache
+    crate::components::llm::save_cache(&cache)?;
+
+    Ok(())
 }
 
 fn compute_git_info(repo_dir: &Path) -> Option<serde_json::Value> {
