@@ -1,7 +1,23 @@
 {
-  "generated_at_unix": 1775075184,
+  "generated_at_unix": 1775078206,
   "hub": "server-side",
   "skills": [
+    {
+      "description": "Integracao completa com Amazon Alexa para criar skills de voz inteligentes, transformar Alexa em assistente com Claude como cerebro (projeto Auri) e integrar com AWS ecosystem (Lambda, DynamoDB, Polly, Transcribe, Lex, Smart Home).",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "amazon-alexa",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/amazon-alexa/SKILL.md",
+      "triggers": "voice;alexa;aws;smart-home;iot"
+    },
+    {
+      "description": "AWS Aurora Serverless v2, RDS Proxy, Data API, connection pooling",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "aws-aurora",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/aws-aurora/SKILL.md",
+      "triggers": "aws;aurora"
+    },
     {
       "description": "Proper Lambda function structure with error handling",
       "phase": 2,
@@ -17,6 +33,14 @@
       "skill_id": "azure-cloud-migrate",
       "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-cloud-migrate/SKILL.md",
       "triggers": "azure;cloud;migrate"
+    },
+    {
+      "description": "Uploads promo videos and content to Cloudflare R2 or AWS S3. Use when the user wants to host promo content for social media or distribution.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "cloud-uploader",
+      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/cloud-uploader/SKILL.md",
+      "triggers": "cloud;uploader"
     },
     {
       "description": "Cloudflare D1 SQLite database with Workers, Drizzle ORM, migrations",
@@ -35,20 +59,52 @@
       "triggers": "cloudflare;workers;expert"
     },
     {
-      "description": "Build ultra-fast web APIs and full-stack apps with Hono — runs on Cloudflare Workers, Deno, Bun, Node.js, and any WinterCG-compatible runtime.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "hono",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/hono/SKILL.md",
-      "triggers": "hono;edge;cloudflare-workers;bun;deno;api;typescript;web-standards"
-    },
-    {
       "description": "Latch platform for bioinformatics workflows. Build pipelines with Latch SDK, @workflow/@task decorators, deploy serverless workflows, LatchFile/LatchDir, Nextflow/Snakemake integration.",
       "phase": 2,
       "score": 100,
       "skill_id": "latchbio-integration",
       "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/latchbio-integration/SKILL.md",
       "triggers": "latchbio;integration"
+    },
+    {
+      "description": "Reference for netlify.toml configuration. Use when configuring build settings, redirects, rewrites, headers, deploy contexts, environment variables, or any site-level configuration. Covers the complete netlify.toml syntax including redirects with splats/conditions, headers, deploy contexts, functions config, and edge functions config.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "netlify-config",
+      "src_path": "lib/netlify-context-and-tools/codex/skills/netlify-config/SKILL.md",
+      "triggers": "netlify;config"
+    },
+    {
+      "description": "Guide for writing Netlify Edge Functions. Use when building middleware, geolocation-based logic, request/response manipulation, authentication checks, A/B testing, or any low-latency edge compute. Covers Deno runtime, context.next() middleware pattern, geolocation, and when to choose edge vs serverless.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "netlify-edge-functions",
+      "src_path": "lib/netlify-context-and-tools/codex/skills/netlify-edge-functions/SKILL.md",
+      "triggers": "netlify;edge;functions"
+    },
+    {
+      "description": "Guide for writing Netlify serverless functions. Use when creating API endpoints, background processing, scheduled tasks, or any server-side logic using Netlify Functions. Covers modern syntax (default export + Config), TypeScript, path routing, background functions, scheduled functions, streaming, and method routing.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "netlify-functions",
+      "src_path": "lib/netlify-context-and-tools/codex/skills/netlify-functions/SKILL.md",
+      "triggers": "netlify;functions"
+    },
+    {
+      "description": "Core Supabase CLI, migrations, RLS, Edge Functions",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "supabase",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/supabase/SKILL.md",
+      "triggers": "supabase"
+    },
+    {
+      "description": "Curated Swift package ecosystem for WendyOS and Linux. Use when developers mention: (1) Swift packages for Linux or ARM64/AMD64, (2) choosing a Swift library, (3) Swift Package Index, (4) swiftpackageindex.com, (5) what Swift library to use, (6) Swift on WendyOS dependencies, (7) edge computing Swift libraries.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "wendy-swift",
+      "src_path": "lib/joannis-claude-skills/wendy-swift/SKILL.md",
+      "triggers": "wendy;swift"
     }
   ],
   "sub_hub": "serverless-edge",

@@ -1,5 +1,5 @@
 {
-  "count": 37,
+  "count": 35,
   "hub": "code-quality",
   "skills": [
     "azure-ai-contentsafety-ts",
@@ -29,9 +29,7 @@
     "fp-ts-pragmatic",
     "fp-types-ref",
     "frontend-mobile-development-component-scaffold",
-    "netlify-functions",
     "react-flow-node-ts",
-    "sveltekit",
     "tech-stack:add-typescript-best-practices",
     "tinybird-typescript-sdk-guidelines",
     "trigger-dev",

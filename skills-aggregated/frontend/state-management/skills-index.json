@@ -1,5 +1,5 @@
 {
-  "count": 45,
+  "count": 39,
   "hub": "frontend",
   "skills": [
     "android-jetpack-compose-expert",
@@ -7,7 +7,6 @@
     "automate-whatsapp",
     "bdi-mental-states",
     "blip-2-vision-language",
-    "checkpoint",
     "click-path-audit",
     "collecting-volatile-evidence-from-compromised-host",
     "context-fundamentals",
@@ -24,13 +23,10 @@
     "hig-components-controls",
     "hig-components-status",
     "hig-patterns",
-    "interview-coach",
     "langgraph",
-    "mamba-architecture",
     "market-pulse",
     "next-step",
     "performing-file-carving-with-foremost",
-    "post-processing",
     "react-flow-architect",
     "react-native-architecture",
     "react-state-management",
@@ -42,9 +38,7 @@
     "swift-patterns",
     "swiftui-expert-skill",
     "swiftui-ui-patterns",
-    "tanstack-query-expert",
     "team-coordination",
-    "terraform-aws-modules",
     "terraform-specialist",
     "zustand-store-ts"
   ],

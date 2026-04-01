@@ -28,7 +28,6 @@ pub static CSV_COLUMNS: &[&str] = &[
 ];
 
 /// Valid hub names derived from SUB_HUB_DEFINITIONS.
-/// Used by diagnostics and LLM classification context.
 pub static VALID_HUBS: &[&str] = &[
     "ai",
     "business",
@@ -86,6 +85,15 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
             negative_keywords: vec!["ui"],
         },
     );
+    code_quality.insert(
+        "code-review",
+        SubHubRule {
+            keywords: vec!["code-review", "code-review-ai-ai-review", "code-review-excellence", "code-review:review-local-changes", "code-review:review-pr", "code-reviewer", "code-simplifier"],
+            anchor_keywords: vec!["code-review", "code-review-ai-ai-review", "code-review-excellence", "code-review:review-local-changes", "code-review:review-pr", "code-reviewer", "code-simplifier"],
+            negative_keywords: vec!["ui"],
+        },
+    );
+    
     code_quality.insert(
         "security",
         SubHubRule {
@@ -167,28 +175,16 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     ai_sub.insert(
         "prompting-factory",
         SubHubRule {
-            keywords: vec!["prompt", "prompt-engineering", "context-compression"],
-            anchor_keywords: vec!["prompt-engineering"],
-            negative_keywords: vec!["ui", "css"],
-        },
-    );
-    ai_sub.insert(
-        "skills-factory",
-        SubHubRule {
-            keywords: vec![
-                "skill-enhancement",
+            keywords: vec!["skill-enhancement",
                 "skills-factory",
                 "llm-skill",
-                "prompt-engineering",
-            ],
-            anchor_keywords: vec![
-                "skill-enhancement",
+                "prompt-engineering", "context-compression", "meta-prompting", "prompt-optimization", "prompt-compression"],
+            anchor_keywords: vec![   "skill-enhancement",
                 "skills-factory",
                 "agent-skill",
                 "llm-skill",
-                "prompt-engineering",
-            ],
-            negative_keywords: vec!["ui", "security", "waf", "ddos", "injection", "vulnerability"],
+                "prompt-engineering"],
+            negative_keywords: vec!["ui", "css"],
         },
     );
     hubs.insert(
@@ -212,7 +208,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
    fe_sub.insert(
         "ui-ux",
         SubHubRule {
-            keywords: vec!["html", "css", "tailwind", "styling", "design-systems", "responsive", "design-system", "component-library", "tokens", "storybook", "html", "css", "tailwind", "styling", "ui-ux", "responsive","ux", "user-experience", "usability","ui", "design", "wireframe", "prototype", "user-interface", "user-experience", "stitch"],
+            keywords: vec!["html", "css", "tailwind", "styling", "design-systems", "responsive", "design-system", "component-library", "tokens", "storybook", "html", "css", "tailwind", "styling", "ui-ux", "responsive","ux", "user-experience", "usability","ui", "design", "wireframe", "prototype", "user-interface", "user-experience", "stitch", "figma"],
             anchor_keywords: vec!["ui", "ux", "design", "css", "tailwind"],
             negative_keywords: vec!["backend", "sql"],
         },
@@ -234,193 +230,389 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     );
 
 
-    // server-side Hub
-    let mut be_sub = HashMap::new();
-    be_sub.insert(
-        "core",
-        SubHubRule {
-            keywords: vec!["node", "hono", "express", "koa", "hapi", "spring", "django", "flask", "fastapi", "api", "rest", "graphql", "openapi", "swagger", "endpoint", "core", "api-development", "api-best-practices", "api-gateway", "api-security", "api-performance", "api-testing", "api-documentation", "api-versioning", "api-error-handling", "api-authentication", "api-authorization", "api-rate-limiting", "api-caching", "api-monitoring", "api-logging", "api-tracing", "api-observability", "api-security", "api-performance", "api-testing", "api-documentation", "api-versioning", "api-error-handling", "api-authentication", "api-authorization", "api-rate-limiting", "api-caching", "api-monitoring", "api-logging", "api-tracing", "api-observability", "web hook", "websocket"],
-            anchor_keywords: vec!["api", "rest", "graphql"],
-            negative_keywords: vec!["html", "sql", "postgres"],
-        },
-    );
-    
-    be_sub.insert(
-        "databases",
-        SubHubRule {
-            keywords: vec!["sql", "postgres", "mongodb", "redis", "nosql", "orm", "supabase", "mysql", "mariadb", "sqlite", "dynamodb", "firestore", "firebase", "prisma", "drizzle", "typeorm", "sequelize", "knex", "sqlx", "diesel", "sqlc", "cache", "redis", "memcached", "caching", "performance", "cache invalidation", "cache strategies", "cache best practices"],
-            anchor_keywords: vec!["sql", "postgres", "database", "cache", "redis"],
-            negative_keywords: vec!["frontend", "ui"],
-        },
-    );
-    be_sub.insert(
-        "microservices",
-        SubHubRule {
-            keywords: vec!["queue", "kafka", "rabbitmq", "messaging","docker", "kubernetes", "k8s", "container", "microservice", "service-mesh", "istio", "distributed systems", "service discovery"],
-            anchor_keywords: vec!["microservice", "docker", "kubernetes"],
-            negative_keywords: vec!["ui", "frontend"],
-        },
-    );
-    be_sub.insert(
-        "serverless-edge",
-        SubHubRule {
-            keywords: vec!["cloudflare", "serverless", "cloudflare workers", "edge computing", "lambda", "faas", "serverless architecture", "serverless best practices", "cf", "hoku", "vercel edge"],
-            anchor_keywords: vec!["serverless", "cloudflare workers"],
-            negative_keywords: vec![
-                "ui",
-                "frontend",
-                "security",
-                "waf",
-                "ddos",
-                "injection",
-                "vulnerability",
-                "pentest",
-                "attack",
-            ],
-        },
-    );
-  
-    hubs.insert(
-        "server-side",
-        HubDefinition {
-            name: "server-side",
-            sub_hubs: be_sub,
-        },
-    );
+// server-side Hub — 8 sub-hubs متخصصة
+let mut be_sub = HashMap::new();
+
+// 1. FRAMEWORKS — اختيار الفريموورك واستخدامه
+be_sub.insert(
+    "frameworks",
+    SubHubRule {
+        keywords: vec![
+            "express", "koa", "hapi", "fastify", "hono", "elysia",
+            "nestjs", "adonisjs",
+            "django", "flask", "fastapi", "litestar", "tornado",
+            "spring", "spring-boot", "quarkus", "micronaut",
+            "rails", "laravel", "phoenix", "gin", "fiber", "echo",
+            "server framework", "backend framework", "web server",
+            "middleware", "routing", "dependency injection",
+        ],
+        anchor_keywords: vec![
+            "express", "fastapi", "django", "flask", "spring", "nestjs",
+            "hono", "gin", "rails", "laravel", "phoenix",
+        ],
+        negative_keywords: vec![
+            "react", "vue", "angular", "nextjs", "html", "css",
+            "sql", "postgres", "database", "docker", "kubernetes",
+            "kafka", "rabbitmq", "serverless", "cloudflare",
+        ],
+    },
+);
+
+// 2. API-DESIGN — تصميم الـ API وعقوده وأنماطه
+be_sub.insert(
+    "api-design",
+    SubHubRule {
+        keywords: vec![
+            "rest", "restful", "graphql", "grpc", "trpc",
+            "openapi", "swagger", "api spec", "api contract",
+            "api gateway", "api versioning", "api documentation",
+            "api design", "api best practices", "api standards",
+            "endpoint", "rate limiting", "throttling",
+            "api authentication", "api authorization",
+            "api error handling", "api pagination",
+            "webhook", "websocket", "sse", "server-sent events",
+            "api security", "api caching", "api monitoring",
+        ],
+        anchor_keywords: vec![
+            "rest", "graphql", "openapi", "swagger", "api design",
+            "api gateway", "webhook", "websocket", "grpc", "trpc",
+        ],
+        negative_keywords: vec![
+            "html", "css", "react", "vue", "sql", "postgres",
+            "docker", "kubernetes", "kafka", "serverless",
+        ],
+    },
+);
+
+// 3. DATABASES — قواعد البيانات والـ ORM والمخططات
+be_sub.insert(
+    "databases",
+    SubHubRule {
+        keywords: vec![
+            "sql", "postgres", "postgresql", "mysql", "mariadb",
+            "sqlite", "oracle", "mssql",
+            "mongodb", "nosql", "dynamodb", "firestore", "firebase",
+            "cassandra", "couchdb", "documentdb",
+            "orm", "prisma", "drizzle", "typeorm", "sequelize",
+            "sqlalchemy", "hibernate", "activerecord",
+            "knex", "sqlx", "diesel", "sqlc",
+            "database migration", "schema design", "database modeling",
+            "transaction", "acid", "indexing", "query optimization",
+            "database replication", "sharding", "partitioning",
+        ],
+        anchor_keywords: vec![
+            "sql", "postgres", "mongodb", "orm", "prisma", "drizzle",
+            "migration", "schema", "database",
+        ],
+        negative_keywords: vec![
+            "frontend", "ui", "css", "react",
+            "redis", "memcached", "cache",  // → caching
+            "kafka", "rabbitmq",            // → messaging
+        ],
+    },
+);
+
+// 4. CACHING — استراتيجيات التخزين المؤقت
+be_sub.insert(
+    "caching",
+    SubHubRule {
+        keywords: vec![
+            "redis", "memcached", "valkey",
+            "cache", "caching", "cache invalidation",
+            "cache strategy", "cache patterns", "cache-aside",
+            "write-through", "write-behind", "read-through",
+            "ttl", "eviction policy", "lru", "lfu",
+            "distributed cache", "cache warming", "cache stampede",
+            "cdn cache", "http cache", "etag", "cache-control",
+            "browser cache", "service worker cache",
+            "in-memory cache", "query cache",
+        ],
+        anchor_keywords: vec![
+            "redis", "memcached", "cache", "caching",
+            "cache invalidation", "ttl", "eviction",
+        ],
+        negative_keywords: vec![
+            "frontend", "ui", "sql", "database", "orm",
+            "kafka", "rabbitmq", "docker", "kubernetes",
+        ],
+    },
+);
+
+// 5. MESSAGING — الأنظمة القائمة على الأحداث والرسائل
+be_sub.insert(
+    "messaging",
+    SubHubRule {
+        keywords: vec![
+            "kafka", "rabbitmq", "sqs", "sns", "pub-sub",
+            "event-driven", "event sourcing", "cqrs",
+            "message queue", "message broker", "message bus",
+            "nats", "activemq", "zeromq", "pulsar",
+            "event streaming", "stream processing",
+            "dead letter queue", "dlq",
+            "saga pattern", "outbox pattern",
+            "async communication", "background jobs",
+            "celery", "bull", "bullmq", "sidekiq", "resque",
+        ],
+        anchor_keywords: vec![
+            "kafka", "rabbitmq", "pub-sub", "event-driven",
+            "message queue", "event sourcing", "cqrs",
+        ],
+        negative_keywords: vec![
+            "ui", "frontend", "css", "sql", "database",
+            "docker", "kubernetes",  // → containers
+        ],
+    },
+);
+
+// 6. CONTAINERS — الحاويات والتنسيق والبنية التحتية
+be_sub.insert(
+    "containers",
+    SubHubRule {
+        keywords: vec![
+            "docker", "docker-compose", "dockerfile",
+            "kubernetes", "k8s", "helm", "kubectl",
+            "container", "containerization", "orchestration",
+            "service mesh", "istio", "envoy", "linkerd",
+            "microservice", "microservices architecture",
+            "distributed systems", "service discovery",
+            "load balancer", "ingress", "sidecar",
+            "pod", "deployment", "statefulset", "configmap",
+            "terraform", "ansible", "infrastructure as code",
+        ],
+        anchor_keywords: vec![
+            "docker", "kubernetes", "k8s", "container",
+            "microservices", "service mesh", "helm",
+        ],
+        negative_keywords: vec![
+            "ui", "frontend", "css", "serverless",
+            "cloudflare workers", "lambda",  // → serverless-edge
+        ],
+    },
+);
+
+// 7. SERVERLESS-EDGE — اللاخادمية وحوسبة الحافة
+be_sub.insert(
+    "serverless-edge",
+    SubHubRule {
+        keywords: vec![
+            "cloudflare", "cloudflare workers", "cloudflare pages",
+            "edge computing", "edge functions",
+            "lambda", "aws lambda", "azure functions",
+            "google cloud functions", "faas",
+            "serverless", "serverless architecture",
+            "serverless framework", "sst", "arc",
+            "vercel edge", "netlify functions", "deno deploy",
+            "wasm", "webassembly at edge",
+            "worker", "hono on workers", "itty-router",
+        ],
+        anchor_keywords: vec![
+            "cloudflare", "serverless", "lambda", "edge computing",
+            "cloudflare workers", "faas", "edge functions",
+        ],
+        negative_keywords: vec![
+            "ui", "frontend", "security", "waf", "ddos",
+            "injection", "vulnerability", "pentest",
+            "sql", "database", "docker", "kubernetes",
+        ],
+    },
+);
+
+// 8. OBSERVABILITY — المراقبة والتتبع والتسجيل
+be_sub.insert(
+    "observability",
+    SubHubRule {
+        keywords: vec![
+            "logging", "log management", "structured logging",
+            "tracing", "distributed tracing", "opentelemetry",
+            "metrics", "monitoring", "alerting",
+            "prometheus", "grafana", "datadog", "newrelic",
+            "sentry", "jaeger", "zipkin", "tempo",
+            "apm", "application performance monitoring",
+            "error tracking", "uptime monitoring",
+            "health check", "sla", "slo", "sli",
+            "observability", "three pillars",
+            "elk", "elasticsearch", "kibana", "logstash",
+            "loki", "fluentd", "splunk",
+        ],
+        anchor_keywords: vec![
+            "prometheus", "grafana", "opentelemetry", "tracing",
+            "logging", "monitoring", "apm", "observability",
+            "distributed tracing", "metrics",
+        ],
+        negative_keywords: vec![
+            "ui", "frontend", "sql", "database",
+            "kafka", "docker", "serverless",
+        ],
+    },
+);
+
+hubs.insert(
+    "server-side",
+    HubDefinition {
+        name: "server-side",
+        sub_hubs: be_sub,
+    },
+);
 
 
     
-    // Business Hub
-    let mut bus_sub = HashMap::new();
-    bus_sub.insert(
-        "strategy",
-        SubHubRule {
-            keywords: vec![
-                "marketing strategy", "brand strategy", "positioning", "audience", "ICP", "ideal persona", "campaign strategy",
-                "product strategy",
-                "go-to-market",
-                "roadmap",
-                "prd",
-                "business model",
-                "value proposition",
-                "marketing strategy", "brand strategy", "positioning", "go-to-market", "campaign strategy",
-                "market analysis",
-                "competitive analysis",
-                "positioning",
-                "stakeholder alignment",
-                "pricing strategy",
-                "porters five forces",
-                "swot",
-                "pestel",
-                "lean canvas",
-                "business case",
-                 "product management",
-                "feature prioritization",
-                "requirements",
-                "user story",
-                "backlog",
-                "mvp",
-                "product discovery",
-                "customer discovery",
-                "north star metric",
-                "feature roadmap",
-                "epic",
-                "jobs to be done",
-                "jtbd",
-                "saas"
-            ],
-            anchor_keywords: vec![
-                "product strategy",
-                "go-to-market",
-                "roadmap",
-                "prd",
-                "business model",
-                "value proposition",
-                "market analysis",
-                "positioning",
-            ],
-            negative_keywords: vec![
-                "react",
-                "nextjs",
-                "api",
-                "sdk",
-                "python",
-                "rust",
-                "golang",
-                "java",
-                "kubernetes",
-                "docker",
-                "sql",
-                "database",
-                "forensic",
-                "malware",
-                "vulnerability",
-                "injection",
-                "exploit",
-                "xss",
-                "csrf",
-                "encryption",
-                "auth",
-                "oauth",
-                "jwt",
-            ],
-        },
-    );
-   
-    bus_sub.insert(
-        "operations",
-        SubHubRule {
-            keywords: vec![
-                "marketing analytics", "google analytics", "conversion rate", "utm", "attribution", "funnel analytics",
-                "email", "newsletter", "email campaign", "email marketing", "mailchimp", "sendgrid", "sales", "funnel", "closing", "deal", "pitch", "cold email", "lead generation", "lead nurturing", "lead scoring", "lead management", "lead qualification", "lead conversion", "lead tracking", "lead nurturing", "lead scoring", "lead management", "lead qualification", "lead conversion", "lead tracking",
-                "business operations",
-                "operational excellence",
-                "operational process",
-                "process improvement",
-                "sop",
-                "standard operating procedure",
-                "workflow optimization",
-                "runbook",
-                "incident management",
-                "service operations",
-                "cost optimization",
-                "capacity planning",
-                "n8n",
-                "zapier",
-                "ai automation",
-                "productivity automation"
-            ],
-            anchor_keywords: vec!["operations", "operational", "sop", "process improvement", "runbook"],
-            negative_keywords: vec![
-                "backend",
-                "api",
-                "sql",
-                "database",
-                "kubernetes",
-                "python",
-                "rust",
-                "malware",
-                "forensic",
-                "vulnerability",
-                "injection",
-                "test"
-            ],
-        },
-    );   bus_sub.insert(
-        "tactical",
-        SubHubRule {
-            keywords: vec!["social", "twitter", "facebook", "instagram", "linkedin", "tiktok", "seo", "search engine optimization", "keyword research", "technical seo", "on-page seo", "serp", "backlinks", "content marketing", "copywriting", "blog", "editorial", "content strategy", "thought leadership", "landing page copy", "content design", "microcopy", "video script", "image", "generate image"],
-            anchor_keywords: vec!["content design", "copywriting"],
-            negative_keywords: vec!["backend", "sql"],
-        },
-    );
-    hubs.insert(
-        "business",
-        HubDefinition {
-            name: "business",
-            sub_hubs: bus_sub,
-        },
-    );
+    // Business Hub - 6 sub-hubs متخصصة
+let mut bus_sub = HashMap::new();
+
+// 1. PRODUCT — إدارة المنتج، roadmap، user stories
+bus_sub.insert(
+    "product",
+    SubHubRule {
+        keywords: vec![
+            "product management", "prd", "roadmap", "feature roadmap",
+            "user story", "backlog", "mvp", "product discovery",
+            "customer discovery", "north star metric", "epic",
+            "jobs to be done", "jtbd", "feature prioritization",
+            "requirements", "acceptance criteria", "sprint", "okr",
+        ],
+        anchor_keywords: vec![
+            "prd", "roadmap", "mvp", "backlog", "product discovery",
+        ],
+        negative_keywords: vec![
+            "react", "api", "sql", "docker", "python", "rust",
+            "vulnerability", "auth",
+        ],
+    },
+);
+
+// 2. STRATEGY — go-to-market، تحليل السوق، نموذج الأعمال
+bus_sub.insert(
+    "strategy",
+    SubHubRule {
+        keywords: vec![
+            "go-to-market", "gtm", "market analysis", "competitive analysis",
+            "positioning", "business model", "value proposition",
+            "pricing strategy", "beachhead", "tam sam som",
+            "porters five forces", "swot", "pestel", "lean canvas",
+            "business case", "stakeholder alignment", "growth strategy",
+            "market segmentation", "icp", "ideal customer profile",
+            "b2b", "b2c", "saas strategy",
+        ],
+        anchor_keywords: vec![
+            "go-to-market", "positioning", "business model",
+            "value proposition", "competitive analysis",
+        ],
+        negative_keywords: vec![
+            "react", "nextjs", "api", "sdk", "python", "rust",
+            "golang", "java", "kubernetes", "docker", "sql",
+            "vulnerability", "injection", "auth", "oauth", "jwt",
+            "backlog", "sprint", "prd",
+        ],
+    },
+);
+
+// 3. MARKETING
+bus_sub.insert(
+    "marketing",
+    SubHubRule {
+        keywords: vec![
+            "seo", "search engine optimization", "keyword research",
+            "technical seo", "on-page seo", "serp", "backlinks",
+            "content marketing", "copywriting", "blog", "editorial",
+            "content strategy", "thought leadership", "landing page copy",
+            "content design", "microcopy", "video script",
+            "social media", "twitter", "facebook", "instagram",
+            "linkedin", "tiktok", "brand strategy", "brand identity",
+            "tone of voice", "messaging", "audience", "campaign strategy",
+            "ad copy", "paid ads", "ppc", "marketing strategy",
+        ],
+        anchor_keywords: vec![
+            "seo", "copywriting", "content marketing", "social media",
+            "brand strategy", "campaign strategy",
+        ],
+        negative_keywords: vec![
+            "backend", "sql", "api", "python", "kubernetes",
+            "vulnerability", "email automation", "crm",
+        ],
+    },
+);
+
+// 4. SALES 
+bus_sub.insert(
+    "sales",
+    SubHubRule {
+        keywords: vec![
+            "sales", "lead generation", "lead nurturing", "lead scoring",
+            "lead qualification", "cold email", "cold outreach",
+            "sales funnel", "closing", "deal", "pitch", "proposal",
+            "crm", "pipeline", "objection handling", "discovery call",
+            "demo", "negotiation", "account management", "upsell",
+            "cross-sell", "churn", "retention", "customer success",
+            "b2b sales", "enterprise sales", "inbound", "outbound",
+        ],
+        anchor_keywords: vec![
+            "lead generation", "sales funnel", "cold email",
+            "crm", "closing", "pitch",
+        ],
+        negative_keywords: vec![
+            "backend", "api", "sql", "kubernetes", "python",
+            "vulnerability", "seo", "content",
+        ],
+    },
+);
+
+// 5. ANALYTICS — قياس الأداء، attribution، تحليل البيانات
+bus_sub.insert(
+    "analytics",
+    SubHubRule {
+        keywords: vec![
+            "google analytics", "ga4", "mixpanel", "amplitude",
+            "utm", "attribution", "conversion rate", "funnel analytics",
+            "cohort analysis", "a/b testing", "split testing",
+            "kpi", "metrics", "dashboard", "reporting",
+            "data driven", "product analytics", "user analytics",
+            "revenue analytics", "ltv", "cac", "arpu", "mrr", "arr",
+            "retention rate", "churn rate", "nps",
+        ],
+        anchor_keywords: vec![
+            "google analytics", "attribution", "conversion rate",
+            "funnel analytics", "kpi", "mrr", "ltv", "cac",
+        ],
+        negative_keywords: vec![
+            "backend", "sql", "database", "api", "python",
+            "machine learning", "vulnerability",
+        ],
+    },
+);
+
+// 6. OPERATIONS
+bus_sub.insert(
+    "operations",
+    SubHubRule {
+        keywords: vec![
+            "sop", "standard operating procedure", "process improvement",
+            "workflow optimization", "runbook", "incident management",
+            "operational excellence", "business operations",
+            "service operations", "cost optimization", "capacity planning",
+            "n8n", "zapier", "make", "ai automation",
+            "productivity automation-ai", "project management",
+            "okr tracking", "team management", "hiring", "onboarding",
+            "email", "newsletter", "email marketing", "mailchimp",
+            "sendgrid", "email campaign", "drip campaign",
+        ],
+        anchor_keywords: vec![
+            "sop", "process improvement", "runbook",
+            "n8n", "zapier", "automation-ai", "email campaign",
+        ],
+        negative_keywords: vec![
+            "backend", "api", "sql", "kubernetes", "python",
+            "rust", "vulnerability", "injection",
+        ],
+    },
+);
+
+hubs.insert(
+    "business",
+    HubDefinition {
+        name: "business",
+        sub_hubs: bus_sub,
+    },
+);
 
     // Mobile Hub
     let mut mob_sub = HashMap::new();
@@ -470,6 +662,13 @@ pub static DEFAULT_EXCLUSION_PATTERNS: &[&str] = &[
     "clothing",
     "food",
     "gym",
+    "job",
+    "jobs",
+    "career",
+    "resume",
+    "cv",
+    "cover-letter",
+    "interview",
     "health",
     "fitness",
     "medicine",
@@ -549,35 +748,43 @@ static ENV_EXCLUSION_PATTERNS: Lazy<Vec<String>> = Lazy::new(|| {
 
 static CANONICAL_SUBHUB_ALIASES: &[(&str, &str, &str)] = &[
     // AI hub
-    ("llm-agents", "ai", "prompting-factory"),
-    ("prompting-factory", "ai", "prompting-factory"),
-    ("prompting-builder", "ai", "prompting-factory"),
-    ("skills-factory", "ai", "skills-factory"),
-    ("data-processing", "ai", "skills-factory"),
-    ("ml-training", "ai", "skills-factory"),
-    // server-side hub (formerly backend)
-    ("core", "server-side", "core"),
-    ("api-design", "server-side", "core"),
-    ("server-side-frameworks", "server-side", "core"),
-    ("databases", "server-side", "databases"),
-    ("microservices", "server-side", "microservices"),
-    ("message-queues", "server-side", "microservices"),
-    ("containerization", "server-side", "microservices"),
-    ("serverless-edge", "server-side", "serverless-edge"),
-    ("caching", "server-side", "databases"),
-    // business hub (absorbs old marketing + business)
-    ("product-strategy", "business", "strategy"),
-    ("product", "business", "strategy"),
-    ("sales", "business", "operations"),
-    ("operations", "business", "operations"),
-    ("strategy", "business", "strategy"),
-    ("content", "business", "tactical"),
-    ("email", "business", "operations"),
-    ("seo", "business", "tactical"),
-    ("social", "business", "tactical"),
-    ("social-media", "business", "tactical"),
-    ("analytics", "business", "operations"),
-    ("go-to-market", "business", "strategy"),
+    ("prompt-engineering", "ai", "prompting-factory"),
+
+  // server-side aliases
+("api-design",            "server-side", "api-design"),
+("api-rest-design",       "server-side", "api-design"),
+("server-side-frameworks","server-side", "frameworks"),
+("backend-frameworks",    "server-side", "frameworks"),
+("databases",             "server-side", "databases"),
+("caching",               "server-side", "caching"),
+("message-queues",        "server-side", "messaging"),
+("event-driven",          "server-side", "messaging"),
+("containerization",      "server-side", "containers"),
+("microservices",         "server-side", "containers"),
+("serverless-edge",       "server-side", "serverless-edge"),
+("monitoring",            "server-side", "observability"),
+("logging",               "server-side", "observability"),
+    
+// business hub 
+("product-strategy", "business", "product"),
+("product", "business", "product"),
+("product-management", "business", "product"),
+("strategy", "business", "strategy"),
+("go-to-market", "business", "strategy"),
+("gtm", "business", "strategy"),
+("marketing", "business", "marketing"),
+("content", "business", "marketing"),
+("seo", "business", "marketing"),
+("social", "business", "marketing"),
+("social-media", "business", "marketing"),
+("brand", "business", "marketing"),
+("sales", "business", "sales"),
+("lead-generation", "business", "sales"),
+("crm", "business", "sales"),
+("analytics", "business", "analytics"),
+("email", "business", "operations"),
+("operations", "business", "operations"),
+("automation", "business", "operations"),
     // frontend hub
     ("ui-ux", "frontend", "ui-ux"),
     ("ux", "frontend", "ui-ux"),
@@ -624,8 +831,8 @@ fn normalize_slug(input: &str) -> String {
 fn default_subhub_for_hub(hub: &str) -> Option<&'static str> {
     match hub {
         "ai" => Some("prompting-factory"),
-        "server-side" => Some("core"),
-        "business" => Some("strategy"),
+        "server-side" => Some("api-design"),  // الافتراضي الأوسع انتشاراً
+        "business" => Some("strategy"),  // الافتراضي الأوسع
         "frontend" => Some("web-frameworks"),
         "mobile" => Some("cross-platform"),
         "code-quality" => Some("testing-qa"),
@@ -963,7 +1170,6 @@ pub fn is_excluded(normalized_text: &str, tokens: &HashSet<String>) -> bool {
         }
 
         // If the character is NOT in any of the above allowed ranges, it's an UNWANTED script/language.
-        // This handles Chinese, Japanese, Russian, Spanish accents, etc.
         return true;
     }
 

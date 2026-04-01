@@ -1,8 +1,7 @@
 {
-  "count": 10,
+  "count": 9,
   "hub": "ai",
   "skills": [
-    "ai-engineering-toolkit",
     "customaize-agent:prompt-engineering",
     "dspy",
     "guidance",
@@ -11,7 +10,21 @@
     "prompt-engineer",
     "prompt-engineering",
     "prompt-engineering-patterns",
-    "skill-optimizer"
+    "skill-optimizer",
+    "skill-authoring-workflow",
+    "skill-builder",
+    "skill-check",
+    "skill-creator",
+    "skill-developer",
+    "skill-improver",
+    "skill-installer",
+    "skill-model-updater",
+    "skill-name",
+    "skill-router",
+    "skill-seekers",
+    "skill-sentinel",
+    "skill-writer"
+    
   ],
   "sub_hub": "prompting-factory"
 }

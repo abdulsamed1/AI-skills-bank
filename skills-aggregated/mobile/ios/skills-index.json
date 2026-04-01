@@ -1,5 +1,5 @@
 {
-  "count": 10,
+  "count": 9,
   "hub": "mobile",
   "skills": [
     "app-store-preflight-skills",
@@ -10,8 +10,7 @@
     "swift-concurrency-expert",
     "swift-nio",
     "update-swiftui-apis",
-    "wendy",
-    "wendy-swift"
+    "wendy"
   ],
   "sub_hub": "ios"
 }

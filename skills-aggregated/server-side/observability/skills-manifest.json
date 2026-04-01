@@ -1,0 +1,560 @@
+{
+  "generated_at_unix": 1775078206,
+  "hub": "server-side",
+  "skills": [
+    {
+      "description": "Transform weak resume bullets into achievement-focused statements with metrics and impact",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "Resume Bullet Writer",
+      "src_path": "lib/paramchoudhary-resumeskills/skills/resume-bullet-writer/SKILL.md",
+      "triggers": "resume;bullet;writer"
+    },
+    {
+      "description": "Find opportunities to add metrics and estimate numbers when exact data unavailable",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "Resume Quantifier",
+      "src_path": "lib/paramchoudhary-resumeskills/skills/resume-quantifier/SKILL.md",
+      "triggers": "resume;quantifier"
+    },
+    {
+      "description": "Fetch any X/Twitter post as clean LLM-friendly JSON. Converts x.com, twitter.com, or adhx.com links into structured data with full article content, author info, and engagement metrics. No scraping or browser required.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "adhx",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/adhx/SKILL.md",
+      "triggers": "adhx"
+    },
+    {
+      "description": "Queries Certificate Transparency logs via crt.sh and pycrtsh to detect phishing domains, unauthorized certificate issuance, and shadow IT. Monitors newly issued certificates for typosquatting and brand impersonation using Levenshtein distance. Use for proactive phishing domain detection and certificate monitoring.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "analyzing-tls-certificate-transparency-logs",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-tls-certificate-transparency-logs/SKILL.md",
+      "triggers": "analyzing;tls;certificate;transparency"
+    },
+    {
+      "description": "Scrape reviews, ratings, and brand mentions from multiple platforms using Apify Actors.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "apify-brand-reputation-monitoring",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/apify-brand-reputation-monitoring/SKILL.md",
+      "triggers": "apify;brand;reputation;monitoring"
+    },
+    {
+      "description": "Track engagement metrics, measure campaign ROI, and analyze content performance across Instagram, Facebook, YouTube, and TikTok.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "apify-content-analytics",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/apify-content-analytics/SKILL.md",
+      "triggers": "apify;content;analytics"
+    },
+    {
+      "description": "Guidance for instrumenting webapps with Azure Application Insights. Provides telemetry patterns, SDK setup, and configuration references. WHEN: how to instrument app, App Insights SDK, telemetry patterns, what is App Insights, Application Insights guidance, instrumentation examples, APM best practices.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "appinsights-instrumentation",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/appinsights-instrumentation/SKILL.md",
+      "triggers": "appinsights;instrumentation"
+    },
+    {
+      "description": "Monitors Certificate Transparency (CT) logs to detect unauthorized certificate issuance, discover subdomains via CT data, and alert on suspicious certificate activity for owned domains. Uses the crt.sh API and direct CT log querying based on RFC 6962 to build continuous monitoring pipelines that catch rogue certificates, track CA behavior, and map the external attack surface. Activates for requests involving certificate transparency monitoring, CT log auditing, subdomain discovery via certificates, or certificate issuance alerting.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "auditing-tls-certificate-transparency-logs",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/auditing-tls-certificate-transparency-logs/SKILL.md",
+      "triggers": "certificate-transparency;CT-logs;crt-sh;subdomain-discovery;TLS-monitoring;RFC-6962"
+    },
+    {
+      "description": "Azure Application Insights SDK for .NET. Application performance monitoring and observability resource management. Use for creating Application Insights components, web tests, workbooks, analytics items, and API keys. Triggers: \"Application Insights\", \"ApplicationInsights\", \"App Insights\", \"APM\", \"application monitoring\", \"web tests\", \"availability tests\", \"workbooks\".",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "azure-mgmt-applicationinsights-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-applicationinsights-dotnet/SKILL.md",
+      "triggers": "azure;mgmt;applicationinsights;dotnet"
+    },
+    {
+      "description": "Azure Resource Manager SDK for Arize AI Observability and Evaluation (.NET). Use when managing Arize AI organizations on Azure via Azure Marketplace, creating/updating/deleting Arize resources, or integrating Arize ML observability into .NET applications. Triggers: \"Arize AI\", \"ML observability\", \"ArizeAIObservabilityEval\", \"Arize organization\".",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "azure-mgmt-arizeaiobservabilityeval-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-arizeaiobservabilityeval-dotnet/SKILL.md",
+      "triggers": "azure;mgmt;arizeaiobservabilityeval;dotnet"
+    },
+    {
+      "description": "Azure Weights & Biases SDK for .NET. ML experiment tracking and model management via Azure Marketplace. Use for creating W&B instances, managing SSO, marketplace integration, and ML observability. Triggers: \"Weights and Biases\", \"W&B\", \"WeightsAndBiases\", \"ML experiment tracking\", \"model registry\", \"experiment management\", \"wandb\".",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "azure-mgmt-weightsandbiases-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-weightsandbiases-dotnet/SKILL.md",
+      "triggers": "azure;mgmt;weightsandbiases;dotnet"
+    },
+    {
+      "description": "Azure Monitor OpenTelemetry Exporter for Java. Export OpenTelemetry traces, metrics, and logs to Azure Monitor/Application Insights. Triggers: \"AzureMonitorExporter java\", \"opentelemetry azure java\", \"application insights java otel\", \"azure monitor tracing java\". Note: This package is DEPRECATED. Migrate to azure-monitor-opentelemetry-autoconfigure.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "azure-monitor-opentelemetry-exporter-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-monitor-opentelemetry-exporter-java/SKILL.md",
+      "triggers": "\"AzureMonitorExporter java\", \"opentelemetry azure java\", \"application insights java otel\", \"azure monitor tracing java\"."
+    },
+    {
+      "description": "Instrument applications with Azure Monitor and OpenTelemetry for JavaScript (@azure/monitor-opentelemetry). Use when adding distributed tracing, metrics, and logs to Node.js applications with Application Insights.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "azure-monitor-opentelemetry-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-monitor-opentelemetry-ts/SKILL.md",
+      "triggers": "azure;monitor;opentelemetry;ts"
+    },
+    {
+      "description": "Builds real-time incident response dashboards in Splunk, Elastic, or Grafana to provide SOC analysts and leadership with situational awareness during active incidents, tracking affected systems, containment status, IOC spread, and response timeline. Use when IR teams need unified visibility during incident coordination and post-incident reporting.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "building-incident-response-dashboard",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-incident-response-dashboard/SKILL.md",
+      "triggers": "soc;dashboard;incident-response;splunk;visualization;situational-awareness;metrics"
+    },
+    {
+      "description": "Post-deploy canary monitoring. Watches the live app for console errors, performance regressions, and page failures using the browse daemon. Takes periodic screenshots, compares against pre-deploy baselines, and alerts on anomalies. Use when: \"monitor deploy\", \"canary\", \"post-deploy check\", \"watch production\", \"verify deploy\". (gstack)",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "canary",
+      "src_path": "lib/garrytan-gstack/canary/SKILL.md",
+      "triggers": "canary"
+    },
+    {
+      "description": "Monitor de performance do Claude Code e sistema local. Diagnostica lentidao, mede CPU/RAM/disco, verifica API latency e gera relatorios de saude do sistema.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "claude-monitor",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/claude-monitor/SKILL.md",
+      "triggers": "monitoring;performance;diagnostics;system-health"
+    },
+    {
+      "description": "Analyzes competitors using web research to provide verified business metrics, actionable leverage strategies, and predicted next moves. Use when user needs competitive intelligence, competitor analysis, market positioning insights, or strategic leverage opportunities.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "competitor-intel",
+      "src_path": "lib/ognjengt-founder-skills/skills/competitor-intel/SKILL.md",
+      "triggers": "competitor;intel"
+    },
+    {
+      "description": "Create a customer journey map across stages, touchpoints, actions, emotions, and metrics. Use when diagnosing a broken experience or aligning a team on the full customer flow.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "customer-journey-map",
+      "src_path": "lib/deanpeters-product-manager-skills/skills/customer-journey-map/SKILL.md",
+      "triggers": "customer;journey;map"
+    },
+    {
+      "description": "Automate Datadog tasks via Rube MCP (Composio): query metrics, search logs, manage monitors/dashboards, create events and downtimes. Always search tools first for current schemas.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "datadog-automation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/datadog-automation/SKILL.md",
+      "triggers": "datadog;automation"
+    },
+    {
+      "description": "Detect abuse of legitimate Windows binaries (LOLBins) used for living off the land attacks. Monitors process creation, command-line arguments, and parent-child relationships to identify suspicious LOLBin execution patterns.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "detecting-living-off-the-land-attacks",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-living-off-the-land-attacks/SKILL.md",
+      "triggers": "lolbins;lotl;fileless-attacks;process-monitoring"
+    },
+    {
+      "description": "Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "devops-troubleshooter",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/devops-troubleshooter/SKILL.md",
+      "triggers": "devops;troubleshooter"
+    },
+    {
+      "description": "You are a debugging expert specializing in setting up comprehensive debugging environments, distributed tracing, and diagnostic tools. Configure debugging workflows, implement tracing solutions, and establish troubleshooting practices for development and production environments.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "distributed-debugging-debug-trace",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/distributed-debugging-debug-trace/SKILL.md",
+      "triggers": "distributed;debugging;debug;trace"
+    },
+    {
+      "description": "Implement distributed tracing with Jaeger and Tempo for request flow visibility across microservices.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "distributed-tracing",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/distributed-tracing/SKILL.md",
+      "triggers": "distributed;tracing"
+    },
+    {
+      "description": "You are an expert error analysis specialist with deep expertise in debugging distributed systems, analyzing production incidents, and implementing comprehensive observability solutions.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "error-debugging-error-analysis",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/error-debugging-error-analysis/SKILL.md",
+      "triggers": "error;debugging;error;analysis"
+    },
+    {
+      "description": "You are an error tracking and observability expert specializing in implementing comprehensive error monitoring solutions. Set up error tracking systems, configure alerts, implement structured logging, and ensure teams can quickly identify and resolve production issues.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "error-debugging-error-trace",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/error-debugging-error-trace/SKILL.md",
+      "triggers": "error;debugging;error;trace"
+    },
+    {
+      "description": "You are an error tracking and observability expert specializing in implementing comprehensive error monitoring solutions. Set up error tracking systems, configure alerts, implement structured logging,",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "error-diagnostics-error-trace",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/error-diagnostics-error-trace/SKILL.md",
+      "triggers": "error;diagnostics;error;trace"
+    },
+    {
+      "description": "Provides guidance for experiment tracking with SwanLab. Use when you need open-source run tracking, local or self-hosted dashboards, and lightweight media logging for ML workflows.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "experiment-tracking-swanlab",
+      "src_path": "lib/orchestra-research-ai-research-skills/13-mlops/swanlab/SKILL.md",
+      "triggers": "MLOps;SwanLab;Experiment Tracking;Open Source;Visualization;PyTorch;Transformers;PyTorch Lightning;Fastai;Self-Hosted"
+    },
+    {
+      "description": "Perform comprehensive exploratory data analysis on scientific data files across 200+ file formats. This skill should be used when analyzing any scientific data file to understand its structure, content, quality, and characteristics. Automatically detects file type and generates detailed markdown reports with format-specific analysis, quality metrics, and downstream analysis recommendations. Covers chemistry, bioinformatics, microscopy, spectroscopy, proteomics, metabolomics, and general scientific data formats.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "exploratory-data-analysis",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/exploratory-data-analysis/SKILL.md",
+      "triggers": "exploratory;data;analysis"
+    },
+    {
+      "description": "Look up SaaS finance metrics, formulas, and benchmarks fast. Use when you need a quick metric definition, formula, or benchmark during analysis.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "finance-metrics-quickref",
+      "src_path": "lib/deanpeters-product-manager-skills/skills/finance-metrics-quickref/SKILL.md",
+      "triggers": "finance;metrics;quickref"
+    },
+    {
+      "description": "Create and manage production-ready Grafana dashboards for comprehensive system observability.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "grafana-dashboards",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/grafana-dashboards/SKILL.md",
+      "triggers": "grafana;dashboards"
+    },
+    {
+      "description": "Implements strategies to reduce SOC alert fatigue by tuning detection rules, consolidating duplicate alerts, implementing risk-based alerting, and measuring alert quality metrics to maintain analyst effectiveness and prevent critical alert dismissal. Use when SOC teams face overwhelming alert volumes, high false positive rates, or declining analyst performance.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-alert-fatigue-reduction",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-alert-fatigue-reduction/SKILL.md",
+      "triggers": "soc;alert-fatigue;tuning;risk-based-alerting;false-positive;siem;detection-engineering"
+    },
+    {
+      "description": "Automates GDPR Data Subject Access Request (DSAR) workflows including identity verification, PII discovery across databases and files using regex and NER, data mapping, response templating per Article 15 requirements, deadline tracking, and audit logging. Covers ICO/EDPB guidance compliance, exemption handling, and scalable batch processing. Use when building or auditing DSAR response capabilities under GDPR/UK GDPR.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-gdpr-data-subject-access-request",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-gdpr-data-subject-access-request/SKILL.md",
+      "triggers": "gdpr;dsar;privacy;pii-discovery;data-subject-rights;compliance;article-15"
+    },
+    {
+      "description": "Configure Fluentd and Fluent Bit for centralized log aggregation, routing, filtering, and enrichment across distributed infrastructure",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-log-forwarding-with-fluentd",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-log-forwarding-with-fluentd/SKILL.md",
+      "triggers": "fluentd;fluent-bit;log-aggregation;log-forwarding;siem;centralized-logging;observability"
+    },
+    {
+      "description": "Implements privileged session monitoring and recording using Privileged Access Management (PAM) solutions, focusing on CyberArk Privileged Session Manager (PSM) and open-source alternatives. Covers session recording configuration, keystroke logging, real-time monitoring, risk-based session analysis, and compliance audit trail generation. Activates for requests involving privileged session recording, PAM session monitoring, CyberArk PSM configuration, administrator activity monitoring, or compliance session auditing.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-privileged-session-monitoring",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-privileged-session-monitoring/SKILL.md",
+      "triggers": "PAM;CyberArk;PSM;privileged-session;session-recording;session-monitoring;compliance"
+    },
+    {
+      "description": "Detects and exploits ransomware kill switch mechanisms including mutex-based execution guards, domain-based kill switches, and registry-based termination checks. Implements proactive mutex vaccination and kill switch domain monitoring to prevent ransomware from executing. Activates for requests involving ransomware kill switch analysis, mutex vaccination, WannaCry-style domain kill switches, or malware execution guard detection.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-ransomware-kill-switch-detection",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-ransomware-kill-switch-detection/SKILL.md",
+      "triggers": "ransomware;kill-switch;mutex;detection;WannaCry;malware-analysis"
+    },
+    {
+      "description": "Tune SIEM detection rules to reduce false positives by analyzing alert volumes, creating whitelists, adjusting thresholds, and measuring detection efficacy metrics in Splunk and Elastic",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-siem-use-case-tuning",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-siem-use-case-tuning/SKILL.md",
+      "triggers": "siem;detection-engineering;false-positive-reduction;splunk;elastic;alert-tuning;soc"
+    },
+    {
+      "description": "Expert SRE incident responder specializing in rapid problem resolution, modern observability, and comprehensive incident management.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "incident-responder",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/incident-responder/SKILL.md",
+      "triggers": "incident;responder"
+    },
+    {
+      "description": "Use when errors occur deep in execution and you need to trace back to find the original trigger - systematically traces bugs backward through call stack, adding instrumentation when needed, to identify source of invalid data or incorrect behavior",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "kaizen:root-cause-tracing",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/kaizen/skills/root-cause-tracing/SKILL.md",
+      "triggers": "kaizen;root;cause;tracing"
+    },
+    {
+      "description": "You are an expert in LLM observability and evaluation. You think in terms of traces, spans, and metrics. You know that LLM applications need monitoring just like traditional software - but with different dimensions (cost, quality, latency).",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "langfuse",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/langfuse/SKILL.md",
+      "triggers": "langfuse"
+    },
+    {
+      "description": "LLM observability platform for tracing, evaluation, and monitoring. Use when debugging LLM applications, evaluating model outputs against datasets, monitoring production systems, or building systematic testing pipelines for AI applications.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "langsmith-observability",
+      "src_path": "lib/orchestra-research-ai-research-skills/17-observability/langsmith/SKILL.md",
+      "triggers": "Observability;LangSmith;Tracing;Evaluation;Monitoring;Debugging;Testing;LLM Ops;Production"
+    },
+    {
+      "description": "Generate a Lean Canvas with problem, solution, metrics, cost structure, UVP, unfair advantage, channels, segments, and revenue. Use when exploring a lean startup canvas, testing a business hypothesis, or modeling a new venture.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "lean-canvas",
+      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/lean-canvas/SKILL.md",
+      "triggers": "lean;canvas"
+    },
+    {
+      "description": "Install and configure the Manifest observability plugin for your agents. Use when setting up telemetry, configuring API keys, or troubleshooting the plugin.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "manifest",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/manifest/SKILL.md",
+      "triggers": "manifest"
+    },
+    {
+      "description": "Medicinal chemistry filters. Apply drug-likeness rules (Lipinski, Veber), PAINS filters, structural alerts, complexity metrics, for compound prioritization and library filtering.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "medchem",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/medchem/SKILL.md",
+      "triggers": "medchem"
+    },
+    {
+      "description": "Define and design a product metrics dashboard with key metrics, data sources, visualization types, and alert thresholds. Use when creating a metrics dashboard, defining KPIs, setting up product analytics, or building a data monitoring plan.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "metrics-dashboard",
+      "src_path": "lib/phuryn-pm-skills/pm-product-discovery/skills/metrics-dashboard/SKILL.md",
+      "triggers": "metrics;dashboard"
+    },
+    {
+      "description": "Neuropixels neural recording analysis. Load SpikeGLX/OpenEphys data, preprocess, motion correction, Kilosort4 spike sorting, quality metrics, Allen/IBL curation, AI-assisted visual analysis, for Neuropixels 1.0/2.0 extracellular electrophysiology. Use when working with neural recordings, spike sorting, extracellular electrophysiology, or when the user mentions Neuropixels, SpikeGLX, Open Ephys, Kilosort, quality metrics, or unit curation.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "neuropixels-analysis",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/neuropixels-analysis/SKILL.md",
+      "triggers": "neuropixels;analysis"
+    },
+    {
+      "description": "Define a North Star Metric and 3-5 supporting input metrics that form a metrics constellation. Classify the business game (Attention, Transaction, Productivity) and validate against 7 criteria for an effective North Star. Use when choosing a North Star Metric, setting up a metrics framework, learning about the North Star Framework, or deciding what to measure.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "north-star-metric",
+      "src_path": "lib/phuryn-pm-skills/pm-marketing-growth/skills/north-star-metric/SKILL.md",
+      "triggers": "north;star;metric"
+    },
+    {
+      "description": "Build production-ready monitoring, logging, and tracing systems. Implements comprehensive observability strategies, SLI/SLO management, and incident response workflows.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "observability-engineer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/observability-engineer/SKILL.md",
+      "triggers": "observability;engineer"
+    },
+    {
+      "description": "You are a monitoring and observability expert specializing in implementing comprehensive monitoring solutions. Set up metrics collection, distributed tracing, log aggregation, and create insightful da",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "observability-monitoring-monitor-setup",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/observability-monitoring-monitor-setup/SKILL.md",
+      "triggers": "observability;monitoring;monitor;setup"
+    },
+    {
+      "description": "You are an SLO (Service Level Objective) expert specializing in implementing reliability standards and error budget-based engineering practices. Design comprehensive SLO frameworks, establish meaningful SLIs, and create monitoring systems that balance reliability with feature velocity.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "observability-monitoring-slo-implement",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/observability-monitoring-slo-implement/SKILL.md",
+      "triggers": "observability;monitoring;slo;implement"
+    },
+    {
+      "description": "Expert performance engineer specializing in modern observability,",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "performance-engineer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/performance-engineer/SKILL.md",
+      "triggers": "performance;engineer"
+    },
+    {
+      "description": "Deploy and operate CAPEv2 sandbox for automated malware analysis with behavioral monitoring, payload extraction, configuration parsing, and anti-evasion capabilities.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "performing-automated-malware-analysis-with-cape",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-automated-malware-analysis-with-cape/SKILL.md",
+      "triggers": "cape;sandbox;automated-analysis;malware-analysis;behavioral-analysis;payload-extraction;cuckoo"
+    },
+    {
+      "description": "SSL/TLS certificate lifecycle management encompasses the full process of requesting, issuing, deploying, monitoring, renewing, and revoking X.509 certificates. Poor certificate management is a leading",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "performing-ssl-certificate-lifecycle-management",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-ssl-certificate-lifecycle-management/SKILL.md",
+      "triggers": "cryptography;ssl;certificates;pki;tls;key-management"
+    },
+    {
+      "description": "Open-source AI observability platform for LLM tracing, evaluation, and monitoring. Use when debugging LLM applications with detailed traces, running evaluations on datasets, or monitoring production AI systems with real-time insights.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "phoenix-observability",
+      "src_path": "lib/orchestra-research-ai-research-skills/17-observability/phoenix/SKILL.md",
+      "triggers": "Observability;Phoenix;Arize;Tracing;Evaluation;Monitoring;LLM Ops;OpenTelemetry"
+    },
+    {
+      "description": "Senior PM agent with 6 knowledge domains, 30+ frameworks, 12 templates, and 32 SaaS metrics with formulas. Pure Markdown, zero scripts.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "product-manager",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/product-manager/SKILL.md",
+      "triggers": "product-management;saas;frameworks;metrics;strategy"
+    },
+    {
+      "description": "PM skill for Claude Code, Codex, Cursor, and Windsurf. Diagnoses SaaS metrics, critiques PRDs, plans roadmaps, runs discovery, coaches PM career transitions, and pressure-tests AI product decisions. Six knowledge domains, 12 templates, 30+ frameworks, and an opinionated interaction style that labels assumptions and names tradeoffs.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "product-manager-skills",
+      "src_path": "lib/digidai-product-manager-skills/SKILL.md",
+      "triggers": "product;manager;skills"
+    },
+    {
+      "description": "Complete guide to Prometheus setup, metric collection, scrape configuration, and recording rules.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "prometheus-configuration",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/prometheus-configuration/SKILL.md",
+      "triggers": "prometheus;configuration"
+    },
+    {
+      "description": "Deep learning framework (PyTorch Lightning). Organize PyTorch code into LightningModules, configure Trainers for multi-GPU/TPU, implement data pipelines, callbacks, logging (W&B, TensorBoard), distributed training (DDP, FSDP, DeepSpeed), for scalable neural network training.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "pytorch-lightning",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/pytorch-lightning/SKILL.md",
+      "triggers": "pytorch;lightning"
+    },
+    {
+      "description": "Build financial models, backtest trading strategies, and analyze market data. Implements risk metrics, portfolio optimization, and statistical arbitrage.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "quant-analyst",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/quant-analyst/SKILL.md",
+      "triggers": "quant;analyst"
+    },
+    {
+      "description": "I bridge the gap between raw documents and LLM understanding. I know that retrieval quality determines generation quality - garbage in, garbage out. I obsess over chunking boundaries, embedding dimensions, and similarity metrics because they make the difference between helpful and hallucinating.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "rag-engineer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/rag-engineer/SKILL.md",
+      "triggers": "rag;engineer"
+    },
+    {
+      "description": "Weekly engineering retrospective. Analyzes commit history, work patterns, and code quality metrics with persistent history and trend tracking. Team-aware: breaks down per-person contributions with praise and growth areas. Use when asked to \"weekly retro\", \"what did we ship\", or \"engineering retrospective\". Proactively suggest at the end of a work week or sprint. (gstack)",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "retro",
+      "src_path": "lib/garrytan-gstack/retro/SKILL.md",
+      "triggers": "retro"
+    },
+    {
+      "description": "Calculate portfolio risk metrics including VaR, CVaR, Sharpe, Sortino, and drawdown analysis. Use when measuring portfolio risk, implementing risk limits, or building risk monitoring systems.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "risk-metrics-calculation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/risk-metrics-calculation/SKILL.md",
+      "triggers": "risk;metrics;calculation"
+    },
+    {
+      "description": "Evaluate SaaS unit economics and capital efficiency. Use when deciding whether the business can scale efficiently or needs correction.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "saas-economics-efficiency-metrics",
+      "src_path": "lib/deanpeters-product-manager-skills/skills/saas-economics-efficiency-metrics/SKILL.md",
+      "triggers": "saas;economics;efficiency;metrics"
+    },
+    {
+      "description": "Calculate SaaS revenue, retention, and growth metrics. Use when diagnosing momentum, churn, expansion, or product-market-fit signals.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "saas-revenue-growth-metrics",
+      "src_path": "lib/deanpeters-product-manager-skills/skills/saas-revenue-growth-metrics/SKILL.md",
+      "triggers": "saas;revenue;growth;metrics"
+    },
+    {
+      "description": "Biological data toolkit. Sequence analysis, alignments, phylogenetic trees, diversity metrics (alpha/beta, UniFrac), ordination (PCoA), PERMANOVA, FASTA/Newick I/O, for microbiome analysis.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "scikit-bio",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/scikit-bio/SKILL.md",
+      "triggers": "scikit;bio"
+    },
+    {
+      "description": "Server management principles and decision-making. Process management, monitoring strategy, and scaling decisions. Teaches thinking, not commands.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "server-management",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/server-management/SKILL.md",
+      "triggers": "server;management"
+    },
+    {
+      "description": "Comprehensive guide to tracking, calculating, and optimizing key performance metrics for different startup business models from seed through Series A.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "startup-metrics-framework",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/startup-metrics-framework/SKILL.md",
+      "triggers": "startup;metrics;framework"
+    },
+    {
+      "description": "Visualize training metrics, debug models with histograms, compare experiments, visualize model graphs, and profile performance with TensorBoard - Google's ML visualization toolkit",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "tensorboard",
+      "src_path": "lib/orchestra-research-ai-research-skills/13-mlops/tensorboard/SKILL.md",
+      "triggers": "MLOps;TensorBoard;Visualization;Training Metrics;Model Debugging;PyTorch;TensorFlow;Experiment Tracking;Performance Profiling"
+    },
+    {
+      "description": "Periodically check WandB metrics during training to catch problems early (NaN, loss divergence, idle GPUs). Avoids wasting GPU hours on broken runs. Use when training is running and you want automated health checks.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "training-check",
+      "src_path": "lib/wanshuiyin-auto-claude-code-research-in-sleep/skills/skills-codex/training-check/SKILL.md",
+      "triggers": "training;check"
+    },
+    {
+      "description": "Track ML experiments with automatic logging, visualize training in real-time, optimize hyperparameters with sweeps, and manage model registry with W&B - collaborative MLOps platform",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "weights-and-biases",
+      "src_path": "lib/orchestra-research-ai-research-skills/13-mlops/weights-and-biases/SKILL.md",
+      "triggers": "MLOps;Weights And Biases;WandB;Experiment Tracking;Hyperparameter Tuning;Model Registry;Collaboration;Real-Time Visualization;PyTorch;TensorFlow;HuggingFace"
+    }
+  ],
+  "sub_hub": "observability",
+  "version": 1
+}

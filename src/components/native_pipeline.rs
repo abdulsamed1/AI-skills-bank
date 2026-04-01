@@ -1146,6 +1146,9 @@ fn write_native_artifacts(
 
     let mut grouped: BTreeMap<(String, String), Vec<SkillMetadata>> = BTreeMap::new();
     for skill in skills {
+        if skill.hub == "excluded" {
+            continue;
+        }
         grouped
             .entry((skill.hub.clone(), skill.sub_hub.clone()))
             .or_default()

@@ -1,0 +1,248 @@
+{
+  "generated_at_unix": 1775078206,
+  "hub": "server-side",
+  "skills": [
+    {
+      "description": "REST API design patterns including resource naming, status codes, pagination, filtering, error responses, versioning, and rate limiting for production APIs.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "api-design",
+      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/api-design/SKILL.md",
+      "triggers": "api;design"
+    },
+    {
+      "description": "Master REST and GraphQL API design principles to build intuitive, scalable, and maintainable APIs that delight developers and stand the test of time.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "api-design-principles",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/api-design-principles/SKILL.md",
+      "triggers": "api;design;principles"
+    },
+    {
+      "description": "API documentation workflow for generating OpenAPI specs, creating developer guides, and maintaining comprehensive API documentation.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "api-documentation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/api-documentation/SKILL.md",
+      "triggers": "api;documentation"
+    },
+    {
+      "description": "Master API documentation with OpenAPI 3.1, AI-powered tools, and modern developer experience practices. Create interactive docs, generate SDKs, and build comprehensive developer portals.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "api-documenter",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/api-documenter/SKILL.md",
+      "triggers": "api;documenter"
+    },
+    {
+      "description": "Builds production-ready REST API endpoints with validation, error handling, authentication, and documentation. Follows best practices for security and scalability.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "api-endpoint-builder",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/api-endpoint-builder/SKILL.md",
+      "triggers": "api;endpoint;builder"
+    },
+    {
+      "description": "API design principles and decision-making. REST vs GraphQL vs tRPC selection, response formats, versioning, pagination.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "api-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/api-patterns/SKILL.md",
+      "triggers": "api;patterns"
+    },
+    {
+      "description": "API security testing workflow for REST and GraphQL APIs covering authentication, authorization, rate limiting, input validation, and security best practices.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "api-security-testing",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/api-security-testing/SKILL.md",
+      "triggers": "api;security;testing"
+    },
+    {
+      "description": "Azure AI Voice Live SDK for .NET. Build real-time voice AI applications with bidirectional WebSocket communication. Use for voice assistants, conversational AI, real-time speech-to-speech, and voice-enabled chatbots. Triggers: \"voice live\", \"real-time voice\", \"VoiceLiveClient\", \"VoiceLiveSession\", \"voice assistant .NET\", \"bidirectional audio\", \"speech-to-speech\".",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "azure-ai-voicelive-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-ai-voicelive-dotnet/SKILL.md",
+      "triggers": "azure;ai;voicelive;dotnet"
+    },
+    {
+      "description": "Configure Azure API Management as an AI Gateway for AI models, MCP tools, and agents. WHEN: semantic caching, token limit, content safety, load balancing, AI model governance, MCP rate limiting, jailbreak detection, add Azure OpenAI backend, add AI Foundry model, test AI gateway, LLM policies, configure AI backend, token metrics, AI cost control, convert API to MCP, import OpenAPI to gateway.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "azure-aigateway",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-aigateway/SKILL.md",
+      "triggers": "azure;aigateway"
+    },
+    {
+      "description": "REST API gateway for ComfyUI servers. Workflow management, job queuing, webhooks, caching, auth, rate limiting, and image delivery (URL + base64).",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "comfyui-gateway",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/comfyui-gateway/SKILL.md",
+      "triggers": "comfyui;api-gateway;image-generation;typescript"
+    },
+    {
+      "description": "Conducts security testing of REST, GraphQL, and gRPC APIs to identify vulnerabilities in authentication, authorization, rate limiting, input validation, and business logic. The tester uses the OWASP API Security Top 10 as the testing framework, combining Burp Suite interception with Postman collections and custom scripts to test endpoint security at every privilege level. Activates for requests involving API security testing, REST API pentest, GraphQL security assessment, or API vulnerability testing.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "conducting-api-security-testing",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/conducting-api-security-testing/SKILL.md",
+      "triggers": "API-security;OWASP-API-Top10;REST;GraphQL;authorization-testing"
+    },
+    {
+      "description": "Search 78 public scientific, biomedical, materials science, and economic databases via their REST APIs and return structured JSON results. Covers physics/astronomy (NASA, NIST, SDSS, SIMBAD, Exoplanet Archive), earth/environment (USGS, NOAA, EPA, OpenWeatherMap), chemistry/drugs (PubChem, ChEMBL, DrugBank, FDA, KEGG, DailyMed, ZINC, BindingDB), materials science (Materials Project, COD), biology/genomics (Reactome, BRENDA, UniProt, STRING, Ensembl, NCBI Gene, GEO, GTEx, PDB, AlphaFold, InterPro, ChEBI, BioGRID, Gene Ontology, QuickGO, NCBI Protein/Taxonomy, dbSNP, SRA, ENA, gnomAD, UCSC Genome, ENCODE, JASPAR, MouseMine, PRIDE, LINCS L1000, Human Protein Atlas, Human Cell Atlas, RummaGEO, Metabolomics Workbench, EMDB, Addgene), disease/clinical (COSMIC, Open Targets, ClinPGx, ClinicalTrials.gov, OMIM, ClinVar, GDC/TCGA, cBioPortal, DisGeNET, GWAS Catalog, Monarch, HPO), regulatory (FDA, USPTO, SEC EDGAR), economics/finance (FRED, BEA, BLS, Federal Reserve, World Bank, ECB, US Treasury, Alpha Vantage, Data Commons), and demographics (US Census, Eurostat, WHO). Use this skill whenever the user wants to look up compounds, drugs, proteins, genes, pathways, enzymes, gene expression, variants, clinical trials, patents, SEC filings, economic indicators, crystal structures, astronomical objects, earthquakes, weather, or any data from a public database API. Also trigger when the user mentions any database by name or asks about molecular properties, drug-target interactions, binding affinities, protein interactions, pathway membership, pharmacogenomics, economic time series, materials properties, commercially available compounds, virtual screening, compound purchasability, chemical libraries, building blocks, cancer genomics, somatic mutations, tumor mutation profiles, nucleotide sequences, genome assemblies, sequencing reads, ENA accessions, INSDC data, or wants to cross-reference entities across sources.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "database-lookup",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/database-lookup/SKILL.md",
+      "triggers": "database;lookup"
+    },
+    {
+      "description": "Django architecture patterns, REST API design with DRF, ORM best practices, caching, signals, middleware, and production-grade Django apps.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "django-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/ja-JP/skills/django-patterns/SKILL.md",
+      "triggers": "django;patterns"
+    },
+    {
+      "description": "You're a developer who has built GraphQL APIs at scale. You've seen the N+1 query problem bring down production servers. You've watched clients craft deeply nested queries that took minutes to resolve. You know that GraphQL's power is also its danger.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "graphql",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/graphql/SKILL.md",
+      "triggers": "graphql"
+    },
+    {
+      "description": "Expert guidance on Hummingbird 2 web framework. Use when developers mention: (1) Hummingbird, HB, or Hummingbird 2, (2) Swift web server or HTTP server, (3) server-side Swift routing or middleware, (4) building REST APIs in Swift, (5) RequestContext or ChildRequestContext, (6) HummingbirdAuth or authentication middleware, (7) HummingbirdWebSocket, (8) HummingbirdFluent or database integration, (9) ResponseGenerator or EditedResponse.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "hummingbird",
+      "src_path": "lib/joannis-claude-skills/hummingbird/SKILL.md",
+      "triggers": "hummingbird"
+    },
+    {
+      "description": "Implements API rate limiting and throttling controls using token bucket, sliding window, and fixed window algorithms to protect against brute force attacks, credential stuffing, resource exhaustion, and API abuse. The engineer configures per-user, per-IP, and per-endpoint rate limits using Redis-backed counters, API gateway plugins, or application middleware, and implements proper HTTP 429 responses with Retry-After headers. Activates for requests involving rate limiting implementation, API throttling setup, request quota management, or API abuse prevention.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-api-rate-limiting-and-throttling",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-api-rate-limiting-and-throttling/SKILL.md",
+      "triggers": "api-security;rate-limiting;throttling;redis;token-bucket;abuse-prevention"
+    },
+    {
+      "description": "Deploy and configure Wazuh SIEM/XDR for endpoint detection including agent management, custom decoder and rule XML creation, alert querying via the Wazuh REST API, and automated response actions.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-endpoint-detection-with-wazuh",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-endpoint-detection-with-wazuh/SKILL.md",
+      "triggers": "siem;xdr;wazuh;endpoint-detection;custom-rules;incident-response"
+    },
+    {
+      "description": "Deploys canary tokens and honeytokens (fake AWS credentials, DNS canaries, document beacons, database records) that trigger alerts when accessed by attackers. Uses the Canarytokens API and custom webhook integrations for breach detection. Use when building deception-based early warning systems for intrusion detection.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-honeytokens-for-breach-detection",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-honeytokens-for-breach-detection/SKILL.md",
+      "triggers": "implementing;honeytokens;for;breach"
+    },
+    {
+      "description": "Automate phishing incident response using Splunk SOAR REST API to create containers, add artifacts, and trigger playbooks",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-soar-playbook-for-phishing",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-soar-playbook-for-phishing/SKILL.md",
+      "triggers": "soar;splunk-phantom;phishing;incident-response"
+    },
+    {
+      "description": "Validate n8n expression syntax and fix common errors. Use when writing n8n expressions, using {{}} syntax, accessing $json/$node variables, troubleshooting expression errors, or working with webhook data in workflows.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "n8n-expression-syntax",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/n8n-expression-syntax/SKILL.md",
+      "triggers": "n8n;expression;syntax"
+    },
+    {
+      "description": "Observe and troubleshoot WhatsApp in Kapso: debug message delivery, inspect webhook deliveries/retries, triage API errors, and run health checks. Use when investigating production issues, message failures, or webhook delivery problems.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "observe-whatsapp",
+      "src_path": "lib/gokapso-agent-skills/skills/observe-whatsapp/SKILL.md",
+      "triggers": "observe;whatsapp"
+    },
+    {
+      "description": "Sync Odoo with WooCommerce: products, inventory, orders, and customers via WooCommerce REST API and Odoo external API.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "odoo-woocommerce-bridge",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/odoo-woocommerce-bridge/SKILL.md",
+      "triggers": "odoo;woocommerce;bridge"
+    },
+    {
+      "description": "Generate and maintain OpenAPI 3.1 specifications from code, design-first specs, and validation patterns. Use when creating API documentation, generating SDKs, or ensuring API contract compliance.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "openapi-spec-generation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/openapi-spec-generation/SKILL.md",
+      "triggers": "openapi;spec;generation"
+    },
+    {
+      "description": "Design and implement production-grade Pakistani payment integrations (JazzCash, Easypaisa, bank/PSP rails, optional Raast) for SaaS with PKR billing, webhook reliability, and reconciliation.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "pakistan-payments-stack",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/pakistan-payments-stack/SKILL.md",
+      "triggers": "saas;payments;pakistan;nextjs;b2b;pkr;reconciliation"
+    },
+    {
+      "description": "Search 10 academic paper databases via their REST APIs to find research papers, preprints, and scholarly articles. Covers biomedical literature (PubMed, PMC full text), preprint servers (bioRxiv, medRxiv, arXiv), multidisciplinary indexes (OpenAlex, Crossref, Semantic Scholar), open access aggregators (CORE, Unpaywall). Use this skill whenever the user wants to search for research papers, find citations, look up articles by DOI or PMID, retrieve abstracts or full text, check open access availability, find preprints, explore citation graphs, search by author or keyword, or access any scholarly literature database. Also trigger when the user mentions PubMed, PMC, bioRxiv, medRxiv, arXiv, OpenAlex, Crossref, Semantic Scholar, CORE, Unpaywall, or asks about paper metadata, citation counts, journal articles, manuscript lookups, literature reviews, or systematic searches. Even if the user just says \"find papers on X\" or \"what's been published about Y\" or \"look up this DOI\", this skill should activate.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "paper-lookup",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/paper-lookup/SKILL.md",
+      "triggers": "paper;lookup"
+    },
+    {
+      "description": "Search and retrieve content from Product Hunt. Get posts, topics, users, and collections via the GraphQL API. Use when user mentions Product Hunt, PH, or product launches.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "producthunt",
+      "src_path": "lib/resciencelab-opc-skills/skills/producthunt/SKILL.md",
+      "triggers": "producthunt"
+    },
+    {
+      "description": "Build Shopify apps, extensions, themes using GraphQL Admin API, Shopify CLI, Polaris UI, and Liquid.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "shopify-development",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/shopify-development/SKILL.md",
+      "triggers": "shopify;development"
+    },
+    {
+      "description": "Expert guidance on Swift library and framework design. Use when developers mention: (1) designing a Swift library or framework, (2) public API design patterns, (3) protocol-oriented architecture or associated types, (4) result builders or DSL design, (5) performance optimization for libraries, (6) @inlinable or @usableFromInline, (7) noncopyable types for APIs, (8) progressive disclosure in API design, (9) ResponseGenerator or builder patterns.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "swift-library-design",
+      "src_path": "lib/joannis-claude-skills/swift-library-design/SKILL.md",
+      "triggers": "swift;library;design"
+    },
+    {
+      "description": "Systematically assessing REST and GraphQL API endpoints against the OWASP API Security Top 10 risks using automated and manual testing techniques.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "testing-api-security-with-owasp-top-10",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/testing-api-security-with-owasp-top-10/SKILL.md",
+      "triggers": "penetration-testing;api-security;owasp;rest-api;graphql;burpsuite;postman"
+    },
+    {
+      "description": "WooCommerce REST API - products, orders, customers, webhooks",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "woocommerce",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/woocommerce/SKILL.md",
+      "triggers": "woocommerce"
+    }
+  ],
+  "sub_hub": "api-design",
+  "version": 1
+}

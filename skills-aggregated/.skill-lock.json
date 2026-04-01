@@ -3,7 +3,7 @@
     "medicine",
     "law"
   ],
-  "generated_at_unix": 1775075204,
+  "generated_at_unix": 1775078214,
   "min_skills_per_subhub": 1,
   "review_band": {
     "candidates": 0,
@@ -238,24 +238,10 @@
     },
     {
       "git": {
-        "head": "03d9f0c3dbf91e0b60582b64ed040c8911ca0174",
-        "porcelain": ""
-      },
-      "name": "greensock-gsap-skills"
-    },
-    {
-      "git": {
         "head": "194a20f0ce10a8bc97b43cd4d55819f3e4d09190",
         "porcelain": ""
       },
       "name": "helius-labs-core-ai"
-    },
-    {
-      "git": {
-        "head": "f4a4e7d3aebc0f945e9a1eb7f1f0e88357f65fd5",
-        "porcelain": ""
-      },
-      "name": "heshamfs-materials-simulation-skills"
     },
     {
       "git": {
@@ -291,13 +277,6 @@
         "porcelain": ""
       },
       "name": "k-dense-ai-claude-scientific-skills"
-    },
-    {
-      "git": {
-        "head": "0f83da8a87eacdd8aa9c3097da627cac477d05be",
-        "porcelain": ""
-      },
-      "name": "kevin7qi-codex-collab"
     },
     {
       "git": {
@@ -361,13 +340,6 @@
         "porcelain": ""
       },
       "name": "microsoft-skills"
-    },
-    {
-      "git": {
-        "head": "327713df3e3ed50064ba4337bc64554d6aea2d4d",
-        "porcelain": ""
-      },
-      "name": "more-io-claude-apple-bridges"
     },
     {
       "git": {
@@ -518,13 +490,6 @@
     },
     {
       "git": {
-        "head": "397110c9fefbc6bd5444277686600aec28063c05",
-        "porcelain": ""
-      },
-      "name": "roundtable02-tutor-skills"
-    },
-    {
-      "git": {
         "head": "6b318827a7dc3b1b3194f2ae1e4f51cfb61d75fb",
         "porcelain": ""
       },
@@ -595,13 +560,6 @@
     },
     {
       "git": {
-        "head": "1609cef55f65e9f643d112cca400ff90ef16b9a1",
-        "porcelain": ""
-      },
-      "name": "smixs-creative-director-skill"
-    },
-    {
-      "git": {
         "head": "a4b12b9153098a030ae772fdb7bc3ff96ef7cc90",
         "porcelain": ""
       },
@@ -662,13 +620,6 @@
         "porcelain": ""
       },
       "name": "zscole-model-hierarchy-skill"
-    },
-    {
-      "git": {
-        "head": "b8185b1b909296f7230300e6cd18c2d8ae416f09",
-        "porcelain": ""
-      },
-      "name": "zw008-vmware-aiops"
     },
     {
       "git": {

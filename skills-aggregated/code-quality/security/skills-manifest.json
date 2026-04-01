@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775075184,
+  "generated_at_unix": 1775078206,
   "hub": "code-quality",
   "skills": [
     {
@@ -153,14 +153,6 @@
       "skill_id": "analyzing-ios-app-security-with-objection",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-ios-app-security-with-objection/SKILL.md",
       "triggers": "mobile-security;ios;objection;frida;owasp-mobile;penetration-testing"
-    },
-    {
-      "description": "Parses Kubernetes API server audit logs (JSON lines) to detect exec-into-pod, secret access, RBAC modifications, privileged pod creation, and anonymous API access. Builds threat detection rules from audit event patterns. Use when investigating Kubernetes cluster compromise or building k8s-specific SIEM detection rules.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "analyzing-kubernetes-audit-logs",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-kubernetes-audit-logs/SKILL.md",
-      "triggers": "analyzing;kubernetes;audit;logs"
     },
     {
       "description": "Uses the Linux Audit framework (auditd) with ausearch and aureport utilities to detect intrusion attempts, unauthorized access, privilege escalation, and suspicious system activity. Covers audit rule configuration, log querying, timeline reconstruction, and integration with SIEM platforms. Activates for requests involving auditd analysis, Linux audit log investigation, ausearch queries, aureport summaries, or host-based intrusion detection on Linux.",
@@ -403,6 +395,22 @@
       "triggers": "antigravity;workflows"
     },
     {
+      "description": "Provide comprehensive techniques for testing REST, SOAP, and GraphQL APIs during bug bounty hunting and penetration testing engagements. Covers vulnerability discovery, authentication bypass, IDOR exploitation, and API-specific attack vectors.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "api-fuzzing-bug-bounty",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/api-fuzzing-bug-bounty/SKILL.md",
+      "triggers": "api;fuzzing;bug;bounty"
+    },
+    {
+      "description": "Implement secure API design patterns including authentication, authorization, input validation, rate limiting, and protection against common API vulnerabilities",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "api-security-best-practices",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/api-security-best-practices/SKILL.md",
+      "triggers": "api;security;best;practices"
+    },
+    {
       "description": "Guidance for using asc cli in this repo (flags, output formats, pagination, auth, and discovery). Use when asked to run or design asc commands or interact with App Store Connect via the CLI.",
       "phase": 1,
       "score": 100,
@@ -587,6 +595,22 @@
       "triggers": "azure;compliance"
     },
     {
+      "description": "Identify Azure cost savings from usage and spending data. USE FOR: optimize Azure costs, reduce Azure spending/expenses, analyze Azure costs, find cost savings, generate cost optimization report, identify orphaned resources to delete, rightsize VMs, reduce waste, optimize Redis costs, optimize storage costs, AKS cost analysis add-on, namespace cost, cost spike, anomaly, budget alert, AKS cost visibility. DO NOT USE FOR: deploying resources (use azure-deploy), general Azure diagnostics (use azure-diagnostics), security issues (use azure-security)",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-cost-optimization",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-cost-optimization/SKILL.md",
+      "triggers": "azure;cost;optimization"
+    },
+    {
+      "description": "Manage Azure DevOps projects, work items, repos, PRs, pipelines, wikis, test plans, security alerts, variable groups, environments/approvals, branch policies, and attachments. Use when user asks to: manage sprints, create/update work items, list repos, create PRs, run pipelines, search code, manage wiki pages, check security alerts, manage variable groups, approve deployments, or configure branch policies. Covers 13 domains with 99 tools via REST API.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-devops",
+      "src_path": "lib/sanjay3290-ai-skills/skills/azure-devops/SKILL.md",
+      "triggers": "azure;devops"
+    },
+    {
       "description": "Architect and provision enterprise Azure infrastructure from workload descriptions. For cloud architects and platform engineers planning networking, identity, security, compliance, and multi-resource topologies with WAF alignment. Generates Bicep or Terraform directly (no azd). WHEN: 'plan Azure infrastructure', 'architect Azure landing zone', 'design hub-spoke network', 'plan multi-region DR topology', 'set up VNets firewalls and private endpoints', 'subscription-scope Bicep deployment'. PREFER azure-prepare FOR app-centric workflows.",
       "phase": 1,
       "score": 100,
@@ -617,14 +641,6 @@
       "skill_id": "azure-resource-manager-mysql-dotnet",
       "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-mysql-dotnet/SKILL.md",
       "triggers": "azure;resource;manager;mysql;dotnet"
-    },
-    {
-      "description": "Azure PostgreSQL Flexible Server SDK for .NET. Database management for PostgreSQL Flexible Server deployments. Use for creating servers, databases, firewall rules, configurations, backups, and high availability. Triggers: \"PostgreSQL\", \"PostgreSqlFlexibleServer\", \"PostgreSQL Flexible Server\", \"Azure Database for PostgreSQL\", \"PostgreSQL database management\", \"PostgreSQL firewall\", \"PostgreSQL backup\", \"Postgres\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-resource-manager-postgresql-dotnet",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-postgresql-dotnet/SKILL.md",
-      "triggers": "azure;resource;manager;postgresql;dotnet"
     },
     {
       "description": "Azure Resource Manager SDK for Azure SQL in .NET. Use for MANAGEMENT PLANE operations: creating/managing SQL servers, databases, elastic pools, firewall rules, and failover groups via Azure Resource Manager. NOT for data plane operations (executing queries) - use Microsoft.Data.SqlClient for that. Triggers: \"SQL server\", \"create SQL database\", \"manage SQL resources\", \"ARM SQL\", \"SqlServerResource\", \"provision Azure SQL\", \"elastic pool\", \"firewall rule\".",
@@ -667,14 +683,6 @@
       "triggers": "backend;security;coder"
     },
     {
-      "description": "X-ray any AI model's behavioral patterns — refusal boundaries, hallucination tendencies, reasoning style, formatting defaults. No API key needed.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "bdistill-behavioral-xray",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bdistill-behavioral-xray/SKILL.md",
-      "triggers": "ai;testing;behavioral-analysis;model-evaluation;red-team;compliance;mcp"
-    },
-    {
       "description": "Identify and exploit authentication and session management vulnerabilities in web applications. Broken authentication consistently ranks in the OWASP Top 10 and can lead to account takeover, identity theft, and unauthorized access to sensitive systems.",
       "phase": 1,
       "score": 100,
@@ -689,6 +697,14 @@
       "skill_id": "browser-extension-builder",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/browser-extension-builder/SKILL.md",
       "triggers": "browser;extension;builder"
+    },
+    {
+      "description": "Build Solana applications with Helius infrastructure. Covers transaction sending (Sender), asset/NFT queries (DAS API), real-time streaming (WebSockets, Laserstream), event pipelines (webhooks), priority fees, wallet analysis, and agent onboarding.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "build",
+      "src_path": "lib/helius-labs-core-ai/helius-cursor/skills/build/SKILL.md",
+      "triggers": "build"
     },
     {
       "description": "Build an automated system to track adversary infrastructure using passive DNS, certificate transparency, WHOIS data, and IP enrichment to map and monitor threat actor command-and-control networks.",
@@ -785,14 +801,6 @@
       "skill_id": "building-soc-escalation-matrix",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-soc-escalation-matrix/SKILL.md",
       "triggers": "soc;escalation;incident-management;severity;sla;triage;tiered-soc"
-    },
-    {
-      "description": "Builds SOC performance metrics and KPI tracking dashboards measuring Mean Time to Detect (MTTD), Mean Time to Respond (MTTR), alert quality ratios, analyst productivity, and detection coverage using SIEM data. Use when SOC leadership needs operational visibility, continuous improvement tracking, or executive-level reporting on security operations effectiveness.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "building-soc-metrics-and-kpi-tracking",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-soc-metrics-and-kpi-tracking/SKILL.md",
-      "triggers": "soc;metrics;kpi;mttd;mttr;dashboard;reporting;continuous-improvement"
     },
     {
       "description": "Build comprehensive threat actor profiles using open-source intelligence (OSINT) techniques to document adversary motivations, capabilities, infrastructure, and TTPs for proactive defense.",
@@ -1243,14 +1251,6 @@
       "triggers": "breach-containment;lateral-movement;network-isolation;credential-revocation;live-response"
     },
     {
-      "description": "Guide for implementing continual learning in AI coding agents — hooks, memory scoping, reflection patterns. Use when setting up learning infrastructure for agents.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "continual-learning",
-      "src_path": "lib/microsoft-skills/.github/skills/continual-learning/SKILL.md",
-      "triggers": "continual;learning"
-    },
-    {
       "description": "Convex reactive backend expert: schema design, TypeScript functions, real-time subscriptions, auth, file storage, scheduling, and deployment.",
       "phase": 1,
       "score": 100,
@@ -1435,6 +1435,14 @@
       "triggers": "ot-security;ics;scada;industrial-control;iec62443;anomaly-detection;machine-learning"
     },
     {
+      "description": "Detect and prevent API enumeration attacks including BOLA and IDOR exploitation by monitoring sequential identifier access patterns and authorization failures.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "detecting-api-enumeration-attacks",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-api-enumeration-attacks/SKILL.md",
+      "triggers": "api-security;enumeration;bola;idor;broken-object-level-authorization;owasp-api-top-10;access-control;rate-limiting"
+    },
+    {
       "description": "Detect and prevent ARP spoofing attacks using ARPWatch, Dynamic ARP Inspection, Wireshark analysis, and custom monitoring scripts to protect against man-in-the-middle interception.",
       "phase": 1,
       "score": 100,
@@ -1497,6 +1505,14 @@
       "skill_id": "detecting-bluetooth-low-energy-attacks",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-bluetooth-low-energy-attacks/SKILL.md",
       "triggers": "ble;bluetooth;ubertooth;nrf-sniffer;gatt;wireless-security;iot-security;replay-attack"
+    },
+    {
+      "description": "Detect and test for OWASP API3:2023 Broken Object Property Level Authorization vulnerabilities including excessive data exposure and mass assignment attacks.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "detecting-broken-object-property-level-authorization",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-broken-object-property-level-authorization/SKILL.md",
+      "triggers": "api-security;bopla;owasp-api3;mass-assignment;excessive-data-exposure;property-level-authorization;api-testing;penetration-testing"
     },
     {
       "description": "Business Email Compromise (BEC) is a sophisticated fraud scheme where attackers impersonate executives, vendors, or trusted partners to trick employees into transferring funds, sharing sensitive data,",
@@ -2035,12 +2051,12 @@
       "triggers": "django;verification"
     },
     {
-      "description": "You are an advanced Docker containerization expert with comprehensive, practical knowledge of container optimization, security hardening, multi-stage builds, orchestration patterns, and production deployment strategies based on current industry best practices.",
+      "description": "Build ASP.NET Core 8+ backend services with EF Core, auth, background jobs, and production API patterns.",
       "phase": 1,
       "score": 100,
-      "skill_id": "docker-expert",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/docker-expert/SKILL.md",
-      "triggers": "docker;expert"
+      "skill_id": "dotnet-backend",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/dotnet-backend/SKILL.md",
+      "triggers": "dotnet;backend"
     },
     {
       "description": "Guides Microsoft Entra ID app registration, OAuth 2.0 authentication, and MSAL integration. USE FOR: create app registration, register Azure AD app, configure OAuth, set up authentication, add API permissions, generate service principal, MSAL example, console app auth, Entra ID setup, Azure AD authentication. DO NOT USE FOR: Azure RBAC or role assignments (use azure-rbac), Key Vault secrets (use azure-keyvault-expiration-audit), Azure resource security (use azure-security).",
@@ -2139,6 +2155,14 @@
       "triggers": "network-security;bgp;routing-security;rpki;route-hijacking"
     },
     {
+      "description": "Tests APIs for Broken Function Level Authorization (BFLA) vulnerabilities where regular users can invoke administrative functions or access privileged API endpoints by directly calling them. The tester identifies admin and privileged endpoints, then attempts to access them with regular user credentials by manipulating HTTP methods, URL paths, and request parameters. Maps to OWASP API5:2023 Broken Function Level Authorization. Activates for requests involving BFLA testing, admin endpoint bypass, function-level access control testing, or API privilege escalation.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "exploiting-broken-function-level-authorization",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/exploiting-broken-function-level-authorization/SKILL.md",
+      "triggers": "api-security;owasp;authorization;bfla;privilege-escalation;access-control"
+    },
+    {
       "description": "Discover and exploit broken link hijacking vulnerabilities by identifying references to expired domains, decommissioned cloud resources, and dead external services that can be claimed by an attacker.",
       "phase": 1,
       "score": 100,
@@ -2161,6 +2185,14 @@
       "skill_id": "exploiting-deeplink-vulnerabilities",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/exploiting-deeplink-vulnerabilities/SKILL.md",
       "triggers": "mobile-security;android;ios;deep-links;owasp-mobile;penetration-testing"
+    },
+    {
+      "description": "Tests APIs for excessive data exposure where endpoints return more data than the client application needs, relying on the frontend to filter sensitive fields. The tester intercepts API responses and analyzes them for leaked PII, internal identifiers, debug information, or sensitive business data that the UI does not display but the API transmits. This maps to OWASP API3:2023 Broken Object Property Level Authorization. Activates for requests involving API data leakage testing, excessive data exposure, response filtering bypass, or API over-fetching.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "exploiting-excessive-data-exposure-in-api",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/exploiting-excessive-data-exposure-in-api/SKILL.md",
+      "triggers": "api-security;owasp;data-exposure;rest-security;pii-leakage"
     },
     {
       "description": "Detecting and exploiting HTTP request smuggling vulnerabilities caused by Content-Length and Transfer-Encoding parsing discrepancies between front-end and back-end servers.",
@@ -2417,14 +2449,6 @@
       "skill_id": "generating-threat-intelligence-reports",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/generating-threat-intelligence-reports/SKILL.md",
       "triggers": "CTI;threat-intelligence;intelligence-products;TLP;PIR;report-writing;NIST-CSF"
-    },
-    {
-      "description": "Find exploitable vulnerabilities in GitHub Actions workflows. Every finding MUST include a concrete exploitation scenario — if you can't build the attack, don't report it.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "gha-security-review",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/gha-security-review/SKILL.md",
-      "triggers": "gha;security;review"
     },
     {
       "description": "Interact with Gmail - search emails, read messages, send emails, create drafts, and manage labels. Use when user asks to: search email, read email, send email, create email draft, mark as read, archive email, star email, or manage Gmail labels. Lightweight alternative to full Google Workspace MCP server with standalone OAuth authentication.",
@@ -2867,6 +2891,14 @@
       "triggers": "phishing;email-security;social-engineering;dmarc;awareness;training;security-culture"
     },
     {
+      "description": "Implement API abuse detection using token bucket, sliding window, and adaptive rate limiting algorithms to prevent DDoS, brute force, and credential stuffing attacks.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "implementing-api-abuse-detection-with-rate-limiting",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-api-abuse-detection-with-rate-limiting/SKILL.md",
+      "triggers": "api-security;rate-limiting;token-bucket;sliding-window;ddos-protection;brute-force-prevention;api-abuse;api-gateway"
+    },
+    {
       "description": "Implements security controls at the API gateway layer including authentication enforcement, rate limiting, request validation, IP allowlisting, TLS termination, and threat protection. The engineer configures API gateways (Kong, AWS API Gateway, Azure APIM, Apigee) to act as a centralized security enforcement point that validates, throttles, and monitors all API traffic before it reaches backend services. Activates for requests involving API gateway security, API management security, gateway authentication, or centralized API protection.",
       "phase": 1,
       "score": 100,
@@ -2881,6 +2913,30 @@
       "skill_id": "implementing-api-key-security-controls",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-api-key-security-controls/SKILL.md",
       "triggers": "api-security;api-keys;credential-management;key-rotation;secret-management"
+    },
+    {
+      "description": "Implement API schema validation using OpenAPI specifications and JSON Schema to enforce input/output contracts and prevent injection, data exposure, and mass assignment attacks.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "implementing-api-schema-validation-security",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-api-schema-validation-security/SKILL.md",
+      "triggers": "api-security;schema-validation;openapi;json-schema;input-validation;data-leakage-prevention;mass-assignment;api-gateway"
+    },
+    {
+      "description": "Implement API Security Posture Management to continuously discover, classify, and score APIs based on risk while enforcing security policies across the API lifecycle.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "implementing-api-security-posture-management",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-api-security-posture-management/SKILL.md",
+      "triggers": "api-security;aspm;api-posture-management;api-discovery;risk-scoring;api-governance;continuous-monitoring;api-inventory"
+    },
+    {
+      "description": "Implement comprehensive API security testing using the 42Crunch platform to perform static audit and dynamic conformance scanning of OpenAPI specifications.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "implementing-api-security-testing-with-42crunch",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-api-security-testing-with-42crunch/SKILL.md",
+      "triggers": "api-security;42crunch;openapi;api-audit;api-scan;conformance-testing;shift-left;ci-cd-security;owasp-api-top-10"
     },
     {
       "description": "Implement API threat protection using Google Apigee policies including JSON/XML threat protection, OAuth 2.0, SpikeArrest, and Advanced API Security for OWASP Top 10 defense.",
@@ -3307,14 +3363,6 @@
       "triggers": "restic;backup;immutable;ransomware;s3;object-lock;worm;recovery"
     },
     {
-      "description": "This skill covers implementing automated security scanning for Infrastructure as Code (IaC) templates using tools like Checkov, tfsec, and KICS. It addresses detecting misconfigurations in Terraform, CloudFormation, Kubernetes manifests, and Helm charts before deployment, establishing policy-based governance, and integrating IaC scanning into CI/CD pipelines to prevent insecure cloud resource provisioning.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "implementing-infrastructure-as-code-security-scanning",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-infrastructure-as-code-security-scanning/SKILL.md",
-      "triggers": "devsecops;cicd;iac-security;checkov;tfsec;terraform;secure-sdlc"
-    },
-    {
       "description": "ISO/IEC 27001:2022 is the international standard for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS). This skill covers the complete",
       "phase": 1,
       "score": 100,
@@ -3345,14 +3393,6 @@
       "skill_id": "implementing-llm-guardrails-for-security",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-llm-guardrails-for-security/SKILL.md",
       "triggers": "LLM-guardrails;NeMo-Guardrails;input-validation;output-filtering;AI-safety"
-    },
-    {
-      "description": "Configure Fluentd and Fluent Bit for centralized log aggregation, routing, filtering, and enrichment across distributed infrastructure",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "implementing-log-forwarding-with-fluentd",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-log-forwarding-with-fluentd/SKILL.md",
-      "triggers": "fluentd;fluent-bit;log-aggregation;log-forwarding;siem;centralized-logging;observability"
     },
     {
       "description": "Implements memory protection mechanisms including DEP (Data Execution Prevention), ASLR (Address Space Layout Randomization), CFG (Control Flow Guard), and other exploit mitigations to prevent memory corruption attacks. Use when hardening endpoints against buffer overflow exploits, ROP chains, and code injection. Activates for requests involving memory protection, exploit mitigation, DEP, ASLR, or CFG configuration.",
@@ -3867,14 +3907,6 @@
       "triggers": "latex;paper;conversion"
     },
     {
-      "description": "Production patterns for Linkerd service mesh - the lightweight, security-first service mesh for Kubernetes.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "linkerd-patterns",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/linkerd-patterns/SKILL.md",
-      "triggers": "linkerd;patterns"
-    },
-    {
       "description": "Execute systematic privilege escalation assessments on Linux systems to identify and exploit misconfigurations, vulnerable services, and security weaknesses that allow elevation from low-privilege user access to root-level control.",
       "phase": 1,
       "score": 100,
@@ -3923,14 +3955,6 @@
       "triggers": "MITRE-ATT&CK;ATT&CK-Navigator;Sigma;D3FEND;TTP;detection-engineering;NIST-CSF"
     },
     {
-      "description": "⚠️ AUTHORIZED USE ONLY > This skill is for educational purposes or authorized security assessments only. > You must have explicit, written permission from the system owner before using this tool. > Misuse of this tool is illegal and strictly prohibited.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "metasploit-framework",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/metasploit-framework/SKILL.md",
-      "triggers": "metasploit;framework"
-    },
-    {
       "description": "Expert in secure mobile coding practices specializing in input validation, WebView security, and mobile-specific security patterns.",
       "phase": 1,
       "score": 100,
@@ -3963,14 +3987,6 @@
       "triggers": "Modbus-TCP;SCADA;ICS-security;deep-packet-inspection;anomaly-detection;OT-monitoring"
     },
     {
-      "description": "Use when the task involves authentication, user signups, logins, password recovery, OAuth providers, role-based access control, or protecting routes and functions. Always use `@netlify/identity`. Never use `netlify-identity-widget` or `gotrue-js` — they are deprecated.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "netlify-identity",
-      "src_path": "lib/netlify-context-and-tools/codex/skills/netlify-identity/SKILL.md",
-      "triggers": "netlify;identity"
-    },
-    {
       "description": "Configure and test common network services (HTTP, HTTPS, SNMP, SMB) for penetration testing lab environments. Enable hands-on practice with service enumeration, log analysis, and security testing against properly configured target systems.",
       "phase": 1,
       "score": 100,
@@ -4001,14 +4017,6 @@
       "skill_id": "notebooklm",
       "src_path": "lib/pleaseprompto-notebooklm-skill/SKILL.md",
       "triggers": "notebooklm"
-    },
-    {
-      "description": "Implements OAuth 2.0/2.1 authorization flows in Fastify applications — configures authorization code with PKCE, client credentials, device flow, refresh token rotation, JWT validation, and token introspection/revocation endpoints. Use when setting up authentication, authorization, login flows, access tokens, API security, or securing Fastify routes with OAuth; also applies when troubleshooting token validation errors, mismatched redirect URIs, CSRF issues, scope problems, or RFC 6749/6750/7636/8252/8628 compliance questions.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "oauth",
-      "src_path": "lib/mcollina-skills/skills/oauth/SKILL.md",
-      "triggers": "oauth, oauth2, security, authentication, authorization, jwt, fastify"
     },
     {
       "description": "Expert in Odoo access control: ir.model.access.csv, record rules (ir.rule), groups, and multi-company security patterns.",
@@ -4083,14 +4091,6 @@
       "triggers": "agentless-scanning;vulnerability-assessment;cloud-security;ssh;wmi;snapshot-analysis;vuls;tenable"
     },
     {
-      "description": "Use AI and LLM-based reasoning to correlate findings across multiple OSINT sources—username enumeration, email lookups, social media profiles, domain records, breach databases, and dark-web mentions—into unified intelligence profiles with confidence scoring and link analysis.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "performing-ai-driven-osint-correlation",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-ai-driven-osint-correlation/SKILL.md",
-      "triggers": "osint;ai-correlation;threat-intelligence;reconnaissance;link-analysis;target-profiling;sherlock;theharvester;spiderfoot;maltego"
-    },
-    {
       "description": "Perform systematic alert triage in Elastic Security SIEM to rapidly classify, prioritize, and investigate security alerts for SOC operations.",
       "phase": 1,
       "score": 100,
@@ -4113,6 +4113,14 @@
       "skill_id": "performing-api-inventory-and-discovery",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-api-inventory-and-discovery/SKILL.md",
       "triggers": "api-security;owasp;api-discovery;shadow-api;inventory;attack-surface"
+    },
+    {
+      "description": "Tests API rate limiting implementations for bypass vulnerabilities by manipulating request headers, IP addresses, HTTP methods, API versions, and encoding schemes to circumvent request throttling controls. The tester identifies rate limit headers, determines enforcement mechanisms, and attempts bypasses including X-Forwarded-For spoofing, parameter pollution, case variation, and endpoint path manipulation. Maps to OWASP API4:2023 Unrestricted Resource Consumption. Activates for requests involving rate limit bypass, API throttling evasion, brute force protection testing, or API abuse prevention assessment.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "performing-api-rate-limiting-bypass",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-api-rate-limiting-bypass/SKILL.md",
+      "triggers": "api-security;owasp;rate-limiting;throttling;brute-force;dos-prevention"
     },
     {
       "description": "Simulates ARP spoofing attacks in authorized lab or pentest environments using arpspoof, Ettercap, and Scapy to demonstrate man-in-the-middle risks, test network detection capabilities, and validate ARP inspection countermeasures.",
@@ -5083,6 +5091,14 @@
       "triggers": "yara;malware-detection;signature-development;threat-hunting;pattern-matching;yara-x;indicator-development"
     },
     {
+      "description": "Build frontend Solana applications with Phantom Connect SDK and Helius infrastructure. Covers React, React Native, and browser SDK integration, transaction signing via Helius Sender, API key proxying, token gating, NFT minting, crypto payments, real-time updates, and secure frontend architecture.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "phantom",
+      "src_path": "lib/helius-labs-core-ai/helius-cursor/skills/phantom/SKILL.md",
+      "triggers": "phantom"
+    },
+    {
       "description": "Managed vector database for production AI applications. Fully managed, auto-scaling, with hybrid search (dense + sparse), metadata filtering, and namespaces. Low latency (<100ms p95). Use for production RAG, recommendation systems, or semantic search at scale. Best for serverless, managed infrastructure.",
       "phase": 1,
       "score": 100,
@@ -5091,28 +5107,12 @@
       "triggers": "RAG;Pinecone;Vector Database;Managed Service;Serverless;Hybrid Search;Production;Auto-Scaling;Low Latency;Recommendations"
     },
     {
-      "description": "Perform Porter's Five Forces analysis — competitive rivalry, supplier power, buyer power, threat of substitutes, and threat of new entrants. Use when analyzing industry dynamics, assessing competitive forces, or evaluating market attractiveness.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "porters-five-forces",
-      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/porters-five-forces/SKILL.md",
-      "triggers": "porters;five;forces"
-    },
-    {
       "description": "The Common Vulnerability Scoring System (CVSS) is the industry standard framework maintained by FIRST (Forum of Incident Response and Security Teams) for assessing vulnerability severity. CVSS v4.0 (r",
       "phase": 1,
       "score": 100,
       "skill_id": "prioritizing-vulnerabilities-with-cvss-scoring",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/prioritizing-vulnerabilities-with-cvss-scoring/SKILL.md",
       "triggers": "vulnerability-management;cve;cvss;risk;prioritization;nist"
-    },
-    {
-      "description": "Use when building apps that collect user data. Ensures privacy protections are built in from the start—data minimization, consent, encryption.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "privacy-by-design",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/privacy-by-design/SKILL.md",
-      "triggers": "privacy;by;design"
     },
     {
       "description": "Processes STIX 2.1 threat intelligence bundles delivered via TAXII 2.1 servers, normalizing objects into platform-native schemas and routing them to appropriate consuming systems. Use when onboarding new TAXII collection endpoints, automating bi-directional intelligence sharing with ISACs, or building pipeline validation for malformed STIX bundles. Activates for requests involving OASIS STIX, TAXII server configuration, MISP TAXII, or Cortex XSOAR feed integrations.",
@@ -5155,14 +5155,6 @@
       "triggers": "rails;conventions"
     },
     {
-      "description": "FREE — God-tier long-context memory for AI agents. Injects 500K-1M clean tokens, auto-summarizes with tone/intent preservation, compresses 14-turn history into 800 tokens.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "recallmax",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/recallmax/SKILL.md",
-      "triggers": "memory;context;rag;summarization;compression;long-context;agent-infrastructure"
-    },
-    {
       "description": "Executes structured recovery from a ransomware incident following NIST and CISA frameworks, including environment isolation, forensic evidence preservation, clean infrastructure rebuild, prioritized system restoration from verified backups, credential reset, and validation against re-infection. Covers Active Directory recovery, database restoration, and application stack rebuild in dependency order. Activates for requests involving ransomware recovery, post-encryption restoration, or disaster recovery from ransomware.",
       "phase": 1,
       "score": 100,
@@ -5201,6 +5193,14 @@
       "skill_id": "researchers-security",
       "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/researchers-security/SKILL.md",
       "triggers": "researchers;security"
+    },
+    {
+      "description": "Reverse engineers malicious Android APK files using JADX decompiler to analyze Java/Kotlin source code, identify malicious functionality including data theft, C2 communication, privilege escalation, and overlay attacks. Examines manifest permissions, receivers, services, and native libraries. Activates for requests involving Android malware analysis, APK reverse engineering, mobile malware investigation, or Android threat analysis.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "reverse-engineering-android-malware-with-jadx",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/reverse-engineering-android-malware-with-jadx/SKILL.md",
+      "triggers": "malware;Android;reverse-engineering;JADX;mobile-malware"
     },
     {
       "description": "Reverse engineers iOS applications using Frida dynamic instrumentation to understand internal logic, extract encryption keys, bypass security controls, and discover hidden functionality without source code access. Use when performing authorized iOS penetration testing, analyzing proprietary protocols, understanding obfuscated logic, or extracting runtime secrets from iOS binaries. Activates for requests involving iOS reverse engineering, Frida iOS hooking, Objective-C/Swift method tracing, or iOS binary analysis.",
@@ -5475,14 +5475,6 @@
       "triggers": "semgrep;rule;creator"
     },
     {
-      "description": "Expert service mesh architect specializing in Istio, Linkerd, and cloud-native networking patterns. Masters traffic management, security policies, observability integration, and multi-cluster mesh con",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "service-mesh-expert",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/service-mesh-expert/SKILL.md",
-      "triggers": "service;mesh;expert"
-    },
-    {
       "description": "Master ShellCheck static analysis configuration and usage for shell script quality. Use when setting up linting infrastructure, fixing code issues, or ensuring script portability.",
       "phase": 1,
       "score": 100,
@@ -5601,6 +5593,14 @@
       "skill_id": "testing-android-intents-for-vulnerabilities",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/testing-android-intents-for-vulnerabilities/SKILL.md",
       "triggers": "mobile-security;android;intents;ipc-security;owasp-mobile;penetration-testing"
+    },
+    {
+      "description": "Tests REST and GraphQL APIs for Broken Object Level Authorization (BOLA/IDOR) vulnerabilities where an authenticated user can access or modify resources belonging to other users by manipulating object identifiers in API requests. The tester intercepts API calls, identifies object ID parameters (numeric IDs, UUIDs, slugs), and systematically replaces them with IDs belonging to other users to determine if the server enforces per-object authorization. This is OWASP API Security Top 10 2023 risk API1. Activates for requests involving BOLA testing, IDOR in APIs, object-level authorization testing, or API access control bypass.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "testing-api-for-broken-object-level-authorization",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/testing-api-for-broken-object-level-authorization/SKILL.md",
+      "triggers": "api-security;owasp;bola;idor;authorization;rest-security"
     },
     {
       "description": "Tests APIs for mass assignment (auto-binding) vulnerabilities where clients can modify object properties they should not have access to by including additional parameters in API requests. The tester identifies writable endpoints, adds undocumented fields to request bodies (role, isAdmin, price, balance), and checks if the server binds these to the data model without filtering. Part of OWASP API3:2023 Broken Object Property Level Authorization. Activates for requests involving mass assignment testing, parameter binding abuse, auto-binding vulnerability, or API over-posting.",
@@ -5739,22 +5739,6 @@
       "triggers": "threat;modeling;expert"
     },
     {
-      "description": "Offers the user an informed choice about how much response depth to consume before answering. Use this skill when the user explicitly wants to control response length, depth, or token budget. TRIGGER when: \"token budget\", \"token count\", \"token usage\", \"token limit\", \"response length\", \"answer depth\", \"short version\", \"brief answer\", \"detailed answer\", \"exhaustive answer\", \"respuesta corta vs larga\", \"cuántos tokens\", \"ahorrar tokens\", \"responde al 50%\", \"dame la versión corta\", \"quiero controlar cuánto usas\", or clear variants where the user is explicitly asking to control answer size or depth. DO NOT TRIGGER when: user has already specified a level in the current session (maintain it), the request is clearly a one-word answer, or \"token\" refers to auth/session/payment tokens rather than response size.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "token-budget-advisor",
-      "src_path": "lib/affaan-m-everything-claude-code/skills/token-budget-advisor/SKILL.md",
-      "triggers": "token;budget;advisor"
-    },
-    {
-      "description": "FREE — Intelligent tool-call reliability wrapper. Monitors, retries, fixes, and learns from tool failures. Auto-recovers from truncated JSON, timeouts, rate limits, and mid-chain failures.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "tool-use-guardian",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/tool-use-guardian/SKILL.md",
-      "triggers": "reliability;tool-use;error-handling;retries;recovery;agent-infrastructure"
-    },
-    {
       "description": "Provide a comprehensive, structured reference for the 100 most critical web application vulnerabilities organized by category. This skill enables systematic vulnerability identification, impact assessment, and remediation guidance across the full spectrum of web security threats.",
       "phase": 1,
       "score": 100,
@@ -5881,6 +5865,14 @@
       "skill_id": "wordpress-penetration-testing",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/wordpress-penetration-testing/SKILL.md",
       "triggers": "wordpress;penetration;testing"
+    },
+    {
+      "description": "WordPress plugin development workflow covering plugin architecture, hooks, admin interfaces, REST API, security best practices, and WordPress 7.0 features: Real-Time Collaboration, AI Connectors, Abilities API, DataViews, and PHP-only blocks.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "wordpress-plugin-development",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/wordpress-plugin-development/SKILL.md",
+      "triggers": "wordpress;plugin;development"
     },
     {
       "description": "X/Twitter API integration for posting tweets, threads, reading timelines, search, and analytics. Covers OAuth auth patterns, rate limits, and platform-native content posting. Use when the user wants to interact with X programmatically.",

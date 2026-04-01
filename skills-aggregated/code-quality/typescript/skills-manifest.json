@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775075184,
+  "generated_at_unix": 1775078206,
   "hub": "code-quality",
   "skills": [
     {
@@ -219,28 +219,12 @@
       "triggers": "frontend;mobile;development;component;scaffold"
     },
     {
-      "description": "Guide for writing Netlify serverless functions. Use when creating API endpoints, background processing, scheduled tasks, or any server-side logic using Netlify Functions. Covers modern syntax (default export + Config), TypeScript, path routing, background functions, scheduled functions, streaming, and method routing.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "netlify-functions",
-      "src_path": "lib/netlify-context-and-tools/codex/skills/netlify-functions/SKILL.md",
-      "triggers": "netlify;functions"
-    },
-    {
       "description": "Create React Flow node components with TypeScript types, handles, and Zustand integration. Use when building custom nodes for React Flow canvas, creating visual workflow editors, or implementing node-based UI components.",
       "phase": 1,
       "score": 100,
       "skill_id": "react-flow-node-ts",
       "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/react-flow-node-ts/SKILL.md",
       "triggers": "react;flow;node;ts"
-    },
-    {
-      "description": "Build full-stack web applications with SvelteKit — file-based routing, SSR, SSG, API routes, and form actions in one framework.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "sveltekit",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/sveltekit/SKILL.md",
-      "triggers": "svelte;sveltekit;fullstack;ssr;ssg;typescript"
     },
     {
       "description": "Setup TypeScript best practices and code style rules in CLAUDE.md",

@@ -1,0 +1,112 @@
+{
+  "generated_at_unix": 1775078206,
+  "hub": "server-side",
+  "skills": [
+    {
+      "description": "Configure a Rails project to work with Conductor (parallel coding agents)",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "conductor-setup",
+      "src_path": "lib/shpigford-skills/conductor-setup/SKILL.md",
+      "triggers": "conductor;setup"
+    },
+    {
+      "description": "../../SKILL.md",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "conventions",
+      "src_path": "lib/ethos-link-rails-conventions/skills/conventions/SKILL.md",
+      "triggers": "conventions"
+    },
+    {
+      "description": "django-access-review",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "django-access-review",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/django-access-review/SKILL.md",
+      "triggers": "django;access;review"
+    },
+    {
+      "description": "Write idiomatic Elixir code with OTP patterns, supervision trees, and Phoenix LiveView. Masters concurrency, fault tolerance, and distributed systems.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "elixir-pro",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/elixir-pro/SKILL.md",
+      "triggers": "elixir;pro"
+    },
+    {
+      "description": "Create production-ready FastAPI projects with async patterns, dependency injection, and comprehensive error handling. Use when building new FastAPI applications or setting up backend API projects.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "fastapi-templates",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/fastapi-templates/SKILL.md",
+      "triggers": "fastapi;templates"
+    },
+    {
+      "description": "Laravel architecture patterns, routing/controllers, Eloquent ORM, service layers, queues, events, caching, and API resources for production apps.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "laravel-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/tr/skills/laravel-patterns/SKILL.md",
+      "triggers": "laravel;patterns"
+    },
+    {
+      "description": "Discover and evaluate Laravel packages via LaraPlugins.io MCP. Use when the user wants to find plugins, check package health, or assess Laravel/PHP compatibility.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "laravel-plugin-discovery",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/laravel-plugin-discovery/SKILL.md",
+      "triggers": "laravel;plugin;discovery"
+    },
+    {
+      "description": "NVIDIA's runtime safety framework for LLM applications. Features jailbreak detection, input/output validation, fact-checking, hallucination detection, PII filtering, toxicity detection. Uses Colang 2.0 DSL for programmable rails. Production-ready, runs on T4 GPU.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "nemo-guardrails",
+      "src_path": "lib/orchestra-research-ai-research-skills/07-safety-alignment/nemo-guardrails/SKILL.md",
+      "triggers": "Safety Alignment;NeMo Guardrails;NVIDIA;Jailbreak Detection;Guardrails;Colang;Runtime Safety;Hallucination Detection;PII Filtering;Production"
+    },
+    {
+      "description": "Create a new Rails project",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "new-rails-project",
+      "src_path": "lib/shpigford-skills/new-rails-project/SKILL.md",
+      "triggers": "new;rails;project"
+    },
+    {
+      "description": "Master PayPal payment integration including Express Checkout, IPN handling, recurring billing, and refund workflows.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "paypal-integration",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/paypal-integration/SKILL.md",
+      "triggers": "paypal;integration"
+    },
+    {
+      "description": "Analyze Rails application upgrade path. Checks current version, finds latest release, fetches upgrade notes and diffs, then performs selective upgrade preserving local customizations.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "rails-upgrade",
+      "src_path": "lib/robzolkos-skill-rails-upgrade/SKILL.md",
+      "triggers": "rails;upgrade"
+    },
+    {
+      "description": "Analyze Rails apps and provide upgrade assessments",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "skill-rails-upgrade",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/skill-rails-upgrade/SKILL.md",
+      "triggers": "skill;rails;upgrade"
+    },
+    {
+      "description": "Guide for building Graph Neural Networks with PyTorch Geometric (PyG). Use this skill whenever the user asks about graph neural networks, GNNs, node classification, link prediction, graph classification, message passing networks, heterogeneous graphs, neighbor sampling, or any task involving torch_geometric / PyG. Also trigger when you see imports from torch_geometric, or the user mentions graph convolutions (GCN, GAT, GraphSAGE, GIN), graph data structures, or working with relational/network data. Even if the user just says 'graph learning' or 'geometric deep learning', use this skill.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "torch-geometric",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/torch-geometric/SKILL.md",
+      "triggers": "torch;geometric"
+    }
+  ],
+  "sub_hub": "frameworks",
+  "version": 1
+}

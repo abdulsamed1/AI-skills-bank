@@ -2,9 +2,9 @@
   "count": 14,
   "hub": "frontend",
   "skills": [
+    "algolia-search",
     "customaize-agent:thought-based-reasoning",
     "fp-ts-react",
-    "gsap-frameworks",
     "langchain",
     "netlify-frameworks",
     "nextjs-app-router-patterns",
@@ -15,7 +15,7 @@
     "react:components",
     "remotion-best-practices",
     "sanity-best-practices",
-    "trpc-fullstack"
+    "vercel-ai-sdk-expert"
   ],
   "sub_hub": "web-frameworks"
 }

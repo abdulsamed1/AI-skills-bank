@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775075184,
+  "generated_at_unix": 1775078206,
   "hub": "code-quality",
   "skills": [
     {
@@ -51,14 +51,6 @@
       "triggers": "adaptyv"
     },
     {
-      "description": "You're a quality engineer who has seen agents that aced benchmarks fail spectacularly in production. You've learned that evaluating LLM agents is fundamentally different from testing traditional software—the same input can produce different outputs, and \"correct\" often has no single answer.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "agent-evaluation",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/agent-evaluation/SKILL.md",
-      "triggers": "agent;evaluation"
-    },
-    {
       "description": "Build production Apache Airflow DAGs with best practices for operators, sensors, testing, and deployment. Use when creating data pipelines, orchestrating workflows, or scheduling batch jobs.",
       "phase": 1,
       "score": 100,
@@ -75,12 +67,12 @@
       "triggers": "android;ui;verification"
     },
     {
-      "description": "When the user wants to set up, interpret, or improve their app analytics and tracking. Also use when the user mentions \"analytics\", \"tracking\", \"metrics\", \"KPIs\", \"App Store Connect analytics\", \"install tracking\", \"funnel\", \"attribution\", or \"how is my app performing\". For A/B testing, see ab-test-store-listing. For retention metrics, see retention-optimization.",
+      "description": "You are an API mocking expert specializing in realistic mock services for development, testing, and demos. Design mocks that simulate real API behavior and enable parallel development.",
       "phase": 1,
       "score": 100,
-      "skill_id": "app-analytics",
-      "src_path": "lib/eronred-aso-skills/skills/app-analytics/SKILL.md",
-      "triggers": "app;analytics"
+      "skill_id": "api-testing-observability-api-mock",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/api-testing-observability-api-mock/SKILL.md",
+      "triggers": "api;testing;observability;api;mock"
     },
     {
       "description": "When the user wants to design, test, or improve their app icon to increase tap-through rate and conversions in App Store search and browse. Use when the user mentions \"app icon\", \"icon design\", \"icon A/B test\", \"icon variants\", \"tap-through rate\", \"icon conversion\", \"icon refresh\", or wants to know what makes a good app icon. For screenshot optimization, see screenshot-optimization. For full listing A/B tests, see ab-test-store-listing.",
@@ -105,14 +97,6 @@
       "skill_id": "aws-penetration-testing",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/aws-penetration-testing/SKILL.md",
       "triggers": "aws;penetration;testing"
-    },
-    {
-      "description": "AI-powered E2E web testing — eyes and hands for AI coding tools. Declarative YAML scenarios, Playwright execution, visual matching (OpenCV + OCR), platform auto-detection (Flutter/React/Vue), learning DB. Install: npx skills add ksgisang/awt-skill --skill awt -g",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "awt-e2e-testing",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/awt-e2e-testing/SKILL.md",
-      "triggers": "awt;e2e;testing"
     },
     {
       "description": "Azure VM and VMSS router for recommendations, pricing, autoscale, orchestration, and connectivity troubleshooting. WHEN: Azure VM, VMSS, scale set, recommend, compare, server, website, burstable, lightweight, VM family, workload, GPU, learning, simulation, dev/test, backend, autoscale, load balancer, Flexible orchestration, Uniform orchestration, cost estimate, connect, refused, Linux, black screen, reset password, reach VM, port 3389, NSG, troubleshoot.",
@@ -153,14 +137,6 @@
       "skill_id": "bash-scripting",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bash-scripting/SKILL.md",
       "triggers": "bash;scripting"
-    },
-    {
-      "description": "Design experiments to test assumptions for an existing product — prototypes, A/B tests, spikes, and other low-effort validation methods. Use when validating assumptions, testing feature ideas cheaply, or planning product experiments.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "brainstorm-experiments-existing",
-      "src_path": "lib/phuryn-pm-skills/pm-product-discovery/skills/brainstorm-experiments-existing/SKILL.md",
-      "triggers": "brainstorm;experiments;existing"
     },
     {
       "description": "Design lean startup experiments (pretotypes) for a new product. Creates XYZ hypotheses and suggests low-effort validation methods like landing pages, explainer videos, and pre-orders. Use when validating a new product idea, creating pretotypes, or testing market demand.",
@@ -475,14 +451,6 @@
       "triggers": "identify;assumptions;existing"
     },
     {
-      "description": "Create a structured customer interview script with JTBD probing questions, warm-up, core exploration, and wrap-up sections. Follows The Mom Test principles — no leading questions, no pitching, focus on past behavior. Use when preparing for user interviews, creating interview guides, or planning discovery research.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "interview-script",
-      "src_path": "lib/phuryn-pm-skills/pm-product-discovery/skills/interview-script/SKILL.md",
-      "triggers": "interview;script"
-    },
-    {
       "description": "21 production-ready scripts for iOS app testing, building, and automation. Provides semantic UI navigation, build automation, accessibility testing, and simulator lifecycle management. Optimized for AI agents with minimal token output.",
       "phase": 1,
       "score": 100,
@@ -497,22 +465,6 @@
       "skill_id": "kotlin-coroutines-expert",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/kotlin-coroutines-expert/SKILL.md",
       "triggers": "kotlin;coroutines;expert"
-    },
-    {
-      "description": "Kotest, MockK, coroutine testi, property-based testing ve Kover coverage ile Kotlin test kalıpları. İdiomatic Kotlin uygulamalarıyla TDD metodolojisini takip eder.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "kotlin-testing",
-      "src_path": "lib/affaan-m-everything-claude-code/docs/tr/skills/kotlin-testing/SKILL.md",
-      "triggers": "kotlin;testing"
-    },
-    {
-      "description": "LLM observability platform for tracing, evaluation, and monitoring. Use when debugging LLM applications, evaluating model outputs against datasets, monitoring production systems, or building systematic testing pipelines for AI applications.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "langsmith-observability",
-      "src_path": "lib/orchestra-research-ai-research-skills/17-observability/langsmith/SKILL.md",
-      "triggers": "Observability;LangSmith;Tracing;Evaluation;Monitoring;Debugging;Testing;LLM Ops;Production"
     },
     {
       "description": "Test-driven development for Laravel with PHPUnit and Pest, factories, database testing, fakes, and coverage targets.",
@@ -563,14 +515,6 @@
       "triggers": "ml;engineer"
     },
     {
-      "description": "Guide for writing Netlify Edge Functions. Use when building middleware, geolocation-based logic, request/response manipulation, authentication checks, A/B testing, or any low-latency edge compute. Covers Deno runtime, context.next() middleware pattern, geolocation, and when to choose edge vs serverless.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "netlify-edge-functions",
-      "src_path": "lib/netlify-context-and-tools/codex/skills/netlify-edge-functions/SKILL.md",
-      "triggers": "netlify;edge;functions"
-    },
-    {
       "description": "Use when working with performance testing review multi agent review",
       "phase": 1,
       "score": 100,
@@ -595,20 +539,20 @@
       "triggers": "pict;test;designer"
     },
     {
-      "description": "Eng manager-mode plan review. Lock in the execution plan — architecture, data flow, diagrams, edge cases, test coverage, performance. Walks through issues interactively with opinionated recommendations. Use when asked to \"review the architecture\", \"engineering review\", or \"lock in the plan\". Proactively suggest when the user has a plan or design doc and is about to start coding — to catch architecture issues before implementation. (gstack)",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "plan-eng-review",
-      "src_path": "lib/garrytan-gstack/plan-eng-review/SKILL.md",
-      "triggers": "plan;eng;review"
-    },
-    {
       "description": "Automates browser interactions for testing and validating your own web applications using playwright-cli. Use when the user needs to navigate their own apps, fill forms, take screenshots, test web application behavior, mock network requests, manage browser sessions, or generate test code. Only use against applications you own or have explicit authorization to test.",
       "phase": 1,
       "score": 100,
       "skill_id": "playwright-cli",
       "src_path": "lib/testdino-hq-playwright-skill/playwright-cli/SKILL.md",
       "triggers": "playwright;cli"
+    },
+    {
+      "description": "Battle-tested Playwright patterns for E2E, API, component, visual, accessibility, and security testing. Covers locators, assertions, fixtures, network mocking, auth flows, debugging, and framework recipes for React, Next.js, Vue, and Angular. TypeScript and JavaScript.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "playwright-core",
+      "src_path": "lib/testdino-hq-playwright-skill/core/SKILL.md",
+      "triggers": "playwright;core"
     },
     {
       "description": "Scaffold, write, debug, and enhance enterprise-grade Playwright E2E tests in Java using Page Object Model, JUnit 5, Allure reporting, and parallel execution.",
@@ -649,14 +593,6 @@
       "skill_id": "pol-probe",
       "src_path": "lib/deanpeters-product-manager-skills/skills/pol-probe/SKILL.md",
       "triggers": "pol;probe"
-    },
-    {
-      "description": "Prioritize assumptions using an Impact × Risk matrix and suggest experiments for each. Use when triaging a list of assumptions, deciding what to test first, or applying the assumption prioritization canvas.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "prioritize-assumptions",
-      "src_path": "lib/phuryn-pm-skills/pm-product-discovery/skills/prioritize-assumptions/SKILL.md",
-      "triggers": "prioritize;assumptions"
     },
     {
       "description": "Provide comprehensive techniques for escalating privileges from a low-privileged user to root/administrator access on compromised Linux and Windows systems. Essential for penetration testing post-exploitation phase and red team operations.",
@@ -713,14 +649,6 @@
       "skill_id": "qa",
       "src_path": "lib/garrytan-gstack/qa/SKILL.md",
       "triggers": "qa"
-    },
-    {
-      "description": "Report-only QA testing. Systematically tests a web application and produces a structured report with health score, screenshots, and repro steps — but never fixes anything. Use when asked to \"just report bugs\", \"qa report only\", or \"test but don't fix\". For the full test-fix-verify loop, use /qa instead. Proactively suggest when the user wants a bug report without any code changes. (gstack)",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "qa-only",
-      "src_path": "lib/garrytan-gstack/qa-only/SKILL.md",
-      "triggers": "qa;only"
     },
     {
       "description": "Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimization. Specializes in Ruby on Rails, gem development, and testing frameworks.",
@@ -931,14 +859,6 @@
       "triggers": "incident-response;ransomware;disaster-recovery;backup;rto;rpo;resilience"
     },
     {
-      "description": "Interactive quiz tutor for Obsidian StudyVault learning. Use when the user wants to: (1) Take a diagnostic assessment of their knowledge, (2) Study or review specific sections/topics, (3) Drill weak areas identified in previous sessions, (4) Check their learning progress or dashboard, or says things like \"quiz me\", \"test me\", \"let's study\", \"/tutor\", \"학습\", \"퀴즈\", \"평가\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "tutor",
-      "src_path": "lib/roundtable02-tutor-skills/skills/tutor/SKILL.md",
-      "triggers": "tutor"
-    },
-    {
       "description": "Visual testing - catch invisible buttons, broken layouts, contrast",
       "phase": 1,
       "score": 100,
@@ -985,14 +905,6 @@
       "skill_id": "wendy-contributing",
       "src_path": "lib/joannis-claude-skills/wendy-contributing/SKILL.md",
       "triggers": "wendy;contributing"
-    },
-    {
-      "description": "Generates AGENTS.md files for repository folders — coding agent context files with build commands, testing instructions, code style, project structure, and boundaries. Only generates where AGENTS.md is missing.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "wiki-agents-md",
-      "src_path": "lib/microsoft-skills/.github/plugins/deep-wiki/skills/wiki-agents-md/SKILL.md",
-      "triggers": "wiki;agents;md"
     }
   ],
   "sub_hub": "testing-qa",

@@ -4,6 +4,6 @@ development,"Comprehensive web, mobile, and backend development workflow bundlin
 flutter-expert,"Master Flutter development with Dart 3, advanced widgets, and multi-platform deployment.",100,4
 mobile-developer,"Develop React Native, Flutter, or native mobile apps with modern architecture patterns. Masters cross-platform development, native integrations, offline sync, and app store optimization.",100,4
 mobile-games,"Mobile game development principles. Touch input, battery, performance, app stores.",100,4
+multi-platform-apps-multi-platform,"Build and deploy the same feature consistently across web, mobile, and desktop platforms using API-first architecture and parallel implementation strategies.",100,4
 performing-mobile-device-forensics-with-cellebrite,"Acquire and analyze mobile device data using Cellebrite UFED and open-source tools to extract communications, location data, and application artifacts.",100,4
 react-native,"React Native mobile patterns, platform-specific code",100,4
-seo-technical,"Technical SEO audit across 9 categories: crawlability, indexability, security, URL structure, mobile, Core Web Vitals, structured data, JavaScript rendering, and IndexNow protocol. Use when user says ""technical SEO"", ""crawl issues"", ""robots.txt"", ""Core Web Vitals"", ""site speed"", or ""security headers"".",100,4

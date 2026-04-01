@@ -1,5 +1,5 @@
 {
-  "count": 89,
+  "count": 93,
   "hub": "code-quality",
   "skills": [
     "agent-framework-azure-ai-py",
@@ -59,6 +59,7 @@
     "hunting-for-defense-evasion-via-timestomping",
     "implementing-mtls-for-zero-trust-services",
     "implementing-network-traffic-baselining",
+    "junta-leiloeiros",
     "m365-agents-py",
     "matlab",
     "modal",
@@ -66,11 +67,13 @@
     "networkx",
     "omero-integration",
     "pipecat-friday-agent",
-    "pydantic-ai",
+    "podcast-generation",
+    "pubmed-database",
     "pydantic-models-py",
     "pydeseq2",
     "python",
     "python-development-python-scaffold",
+    "python-fastapi-development",
     "python-ocr-backend-integration",
     "python-packaging",
     "python-patterns",
@@ -88,6 +91,7 @@
     "sympy",
     "temporal-python-pro",
     "tinybird-python-sdk-guidelines",
+    "uniprot-database",
     "using-tmux-for-interactive-commands",
     "xvary-stock-research",
     "zarr-python"

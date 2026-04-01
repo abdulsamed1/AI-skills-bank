@@ -1,9 +1,8 @@
 {
-  "count": 14,
+  "count": 13,
   "hub": "code-quality",
   "skills": [
     "analyzing-golang-malware-with-ghidra",
-    "azure-deploy",
     "dbos-golang",
     "go-concurrency-patterns",
     "go-playwright",

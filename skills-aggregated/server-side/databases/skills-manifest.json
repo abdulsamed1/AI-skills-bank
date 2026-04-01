@@ -1,15 +1,7 @@
 {
-  "generated_at_unix": 1775075184,
+  "generated_at_unix": 1775078206,
   "hub": "server-side",
   "skills": [
-    {
-      "description": "Analyze Chromium-based browser artifacts using Hindsight to extract browsing history, downloads, cookies, cached content, autofill data, saved passwords, and browser extensions from Chrome, Edge, Brave, and Opera for forensic investigation.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "analyzing-browser-forensics-with-hindsight",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-browser-forensics-with-hindsight/SKILL.md",
-      "triggers": "browser-forensics;hindsight;chrome-forensics;chromium;edge;browsing-history;cookies;downloads;cache;web-artifacts"
-    },
     {
       "description": "Attach a DuckDB database file for use with /duckdb-skills:query. Explores the schema (tables, columns, row counts) and writes a SQL state file so subsequent queries can restore this session automatically via duckdb -init.",
       "phase": 2,
@@ -19,20 +11,20 @@
       "triggers": "attach;db"
     },
     {
-      "description": "Identify Azure cost savings from usage and spending data. USE FOR: optimize Azure costs, reduce Azure spending/expenses, analyze Azure costs, find cost savings, generate cost optimization report, identify orphaned resources to delete, rightsize VMs, reduce waste, optimize Redis costs, optimize storage costs, AKS cost analysis add-on, namespace cost, cost spike, anomaly, budget alert, AKS cost visibility. DO NOT USE FOR: deploying resources (use azure-deploy), general Azure diagnostics (use azure-diagnostics), security issues (use azure-security)",
+      "description": "Manage MongoDB Atlas Organizations as Azure ARM resources using Azure.ResourceManager.MongoDBAtlas SDK. Use when creating, updating, listing, or deleting MongoDB Atlas organizations through Azure Marketplace integration. This SDK manages the Azure-side organization resource, not Atlas clusters/databases directly.",
       "phase": 2,
       "score": 100,
-      "skill_id": "azure-cost-optimization",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-cost-optimization/SKILL.md",
-      "triggers": "azure;cost;optimization"
+      "skill_id": "azure-mgmt-mongodbatlas-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-mongodbatlas-dotnet/SKILL.md",
+      "triggers": "azure;mgmt;mongodbatlas;dotnet"
     },
     {
-      "description": "Azure Resource Manager SDK for Redis in .NET. Use for MANAGEMENT PLANE operations: creating/managing Azure Cache for Redis instances, firewall rules, access keys, patch schedules, linked servers (geo-replication), and private endpoints via Azure Resource Manager. NOT for data plane operations (get/set keys, pub/sub) - use StackExchange.Redis for that. Triggers: \"Redis cache\", \"create Redis\", \"manage Redis\", \"ARM Redis\", \"RedisResource\", \"provision Redis\", \"Azure Cache for Redis\".",
+      "description": "Azure PostgreSQL Flexible Server SDK for .NET. Database management for PostgreSQL Flexible Server deployments. Use for creating servers, databases, firewall rules, configurations, backups, and high availability. Triggers: \"PostgreSQL\", \"PostgreSqlFlexibleServer\", \"PostgreSQL Flexible Server\", \"Azure Database for PostgreSQL\", \"PostgreSQL database management\", \"PostgreSQL firewall\", \"PostgreSQL backup\", \"Postgres\".",
       "phase": 2,
       "score": 100,
-      "skill_id": "azure-resource-manager-redis-dotnet",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-redis-dotnet/SKILL.md",
-      "triggers": "azure;resource;manager;redis;dotnet"
+      "skill_id": "azure-resource-manager-postgresql-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-postgresql-dotnet/SKILL.md",
+      "triggers": "azure;resource;manager;postgresql;dotnet"
     },
     {
       "description": "Azure Storage Services including Blob Storage, File Shares, Queue Storage, Table Storage, and Data Lake. Provides object storage, SMB file shares, async messaging, NoSQL key-value, and big data analytics capabilities. Includes access tiers (hot, cool, archive) and lifecycle management. USE FOR: blob storage, file shares, queue storage, table storage, data lake, upload files, download blobs, storage accounts, access tiers, lifecycle management. DO NOT USE FOR: SQL databases, Cosmos DB (use azure-prepare), messaging with Event Hubs or Service Bus (use azure-messaging).",
@@ -51,14 +43,6 @@
       "triggers": "backend;dev;guidelines"
     },
     {
-      "description": "cache integration",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "cache-integration",
-      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/domains/document-extraction/skills/cache-integration/SKILL.md",
-      "triggers": "cache;integration"
-    },
-    {
       "description": "Provision instant temporary Postgres databases via Claimable Postgres by Neon (pg.new). No login or credit card required. Use for quick Postgres environments and throwaway DATABASE_URL for prototyping.",
       "phase": 2,
       "score": 100,
@@ -73,6 +57,14 @@
       "skill_id": "clickhouse-io",
       "src_path": "lib/affaan-m-everything-claude-code/docs/ja-JP/skills/clickhouse-io/SKILL.md",
       "triggers": "clickhouse;io"
+    },
+    {
+      "description": "Structured content modeling guidance for schema design, content architecture, content reuse, references versus embedded objects, separation of concerns, and taxonomies across Sanity and other headless CMSes. Use this skill when designing or refactoring content types, deciding field shapes, debating reusable versus nested content, planning omnichannel content models, or reviewing whether a schema is too page-shaped or presentation-driven.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "content-modeling-best-practices",
+      "src_path": "lib/sanity-io-agent-toolkit/skills/content-modeling-best-practices/SKILL.md",
+      "triggers": "content;modeling;best;practices"
     },
     {
       "description": "Database development and operations workflow covering SQL, NoSQL, database design, migrations, optimization, and data engineering.",
@@ -123,36 +115,12 @@
       "triggers": "database;optimizer"
     },
     {
-      "description": "All pods run in namespace crs. Use when pods in the crs namespace are in CrashLoopBackOff, OOMKilled, or restarting, multiple services restart simultaneously (cascade failure), or redis is unresponsive or showing AOF warnings.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "debug-buttercup",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/debug-buttercup/SKILL.md",
-      "triggers": "debug;buttercup"
-    },
-    {
       "description": "Django performance code review. Use when asked to \"review Django performance\", \"find N+1 queries\", \"optimize Django\", \"check queryset performance\", \"database performance\", \"Django ORM issues\", or audit Django code for performance problems.",
       "phase": 2,
       "score": 100,
       "skill_id": "django-perf-review",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/django-perf-review/SKILL.md",
       "triggers": "django;perf;review"
-    },
-    {
-      "description": "Expert in Drizzle ORM for TypeScript — schema design, relational queries, migrations, and serverless database integration. Use when building type-safe database layers with Drizzle.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "drizzle-orm-expert",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/drizzle-orm-expert/SKILL.md",
-      "triggers": "drizzle;orm;expert"
-    },
-    {
-      "description": "Extract and analyze browser history, cookies, cache, downloads, and bookmarks from Chrome, Firefox, and Edge for forensic evidence of user web activity.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "extracting-browser-history-artifacts",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/extracting-browser-history-artifacts/SKILL.md",
-      "triggers": "forensics;browser-forensics;chrome;firefox;edge;web-history;artifact-extraction"
     },
     {
       "description": "Create and manage datasets on Hugging Face Hub. Supports initializing repos, defining configs/system prompts, streaming row updates, and SQL-based dataset querying/transformation. Designed to work alongside HF MCP server for comprehensive dataset workflows.",
@@ -195,14 +163,6 @@
       "triggers": "neon;postgres"
     },
     {
-      "description": "Guide for controlling caching on Netlify's CDN. Use when configuring cache headers, setting up stale-while-revalidate, implementing on-demand cache purge, or understanding Netlify's CDN caching behavior. Covers Cache-Control, Netlify-CDN-Cache-Control, cache tags, durable cache, and framework-specific caching patterns.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "netlify-caching",
-      "src_path": "lib/netlify-context-and-tools/codex/skills/netlify-caching/SKILL.md",
-      "triggers": "netlify;caching"
-    },
-    {
       "description": "Guide for using Netlify DB (managed Neon Postgres). Use when the project needs a relational database, structured data storage, SQL queries, or data that will grow over time. Covers provisioning, raw SQL via @netlify/neon, Drizzle ORM integration, migrations, and deploy preview branching. Also covers when to use Netlify Blobs instead.",
       "phase": 2,
       "score": 100,
@@ -211,20 +171,28 @@
       "triggers": "netlify;db"
     },
     {
+      "description": "Expert guide for creating custom Odoo modules. Covers __manifest__.py, model inheritance, ORM patterns, and module structure best practices.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "odoo-module-developer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/odoo-module-developer/SKILL.md",
+      "triggers": "odoo;module;developer"
+    },
+    {
+      "description": "Master Odoo ORM patterns: search, browse, create, write, domain filters, computed fields, and performance-safe query techniques.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "odoo-orm-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/odoo-orm-expert/SKILL.md",
+      "triggers": "odoo;orm;expert"
+    },
+    {
       "description": "Perform forensic analysis of SQLite databases to recover deleted records from freelists and WAL files, decode encoded timestamps, and extract evidence from browser history, messaging apps, and mobile device databases.",
       "phase": 2,
       "score": 100,
       "skill_id": "performing-sqlite-database-forensics",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-sqlite-database-forensics/SKILL.md",
       "triggers": "sqlite;database-forensics;freelist;wal;write-ahead-log;browser-history;mobile-forensics;deleted-records;b-tree;unallocated-space"
-    },
-    {
-      "description": "Execute web cache deception attacks by exploiting path normalization discrepancies between CDN caching layers and origin servers to cache and retrieve sensitive authenticated content.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "performing-web-cache-deception-attack",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-web-cache-deception-attack/SKILL.md",
-      "triggers": "web-cache-deception;cdn-attack;cache-poisoning;path-normalization;cloudflare;cache-key;static-resource"
     },
     {
       "description": "Execute read-only SQL queries against multiple PostgreSQL databases. Use when: (1) querying PostgreSQL databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety.",
@@ -259,6 +227,14 @@
       "triggers": "postgres;patterns"
     },
     {
+      "description": "Design a PostgreSQL-specific schema. Covers best-practices, data types, indexing, constraints, performance patterns, and advanced features",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "postgresql",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/postgresql/SKILL.md",
+      "triggers": "postgresql"
+    },
+    {
       "description": "PostgreSQL database optimization workflow for query tuning, indexing strategies, performance analysis, and production database management.",
       "phase": 2,
       "score": 100,
@@ -273,14 +249,6 @@
       "skill_id": "prisma-expert",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/prisma-expert/SKILL.md",
       "triggers": "prisma;expert"
-    },
-    {
-      "description": "You're a caching specialist who has reduced LLM costs by 90% through strategic caching. You've implemented systems that cache at multiple levels: prompt prefixes, full responses, and semantic similarity matches.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "prompt-caching",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/prompt-caching/SKILL.md",
-      "triggers": "prompt;caching"
     },
     {
       "description": "Run SQL queries against the attached DuckDB database or ad-hoc against files. Accepts raw SQL or natural language questions. Uses DuckDB Friendly SQL idioms.",
@@ -299,12 +267,12 @@
       "triggers": "review"
     },
     {
-      "description": "RNN+Transformer hybrid with O(n) inference. Linear time, infinite context, no KV cache. Train like GPT (parallel), infer like RNN (sequential). Linux Foundation AI project. Production at Windows, Office, NeMo. RWKV-7 (March 2025). Models up to 14B parameters.",
+      "description": "Core skill for the deep research and writing tool. Write scientific manuscripts in full paragraphs (never bullet points). Use two-stage process with (1) section outlines with key points using research-lookup then (2) convert to flowing prose. IMRAD structure, citations (APA/AMA/Vancouver), figures/tables, reporting guidelines (CONSORT/STROBE/PRISMA), for research papers and journal submissions.",
       "phase": 2,
       "score": 100,
-      "skill_id": "rwkv-architecture",
-      "src_path": "lib/orchestra-research-ai-research-skills/01-model-architecture/rwkv/SKILL.md",
-      "triggers": "RWKV;Model Architecture;RNN;Transformer Hybrid;Linear Complexity;Infinite Context;Efficient Inference;Linux Foundation;Alternative Architecture"
+      "skill_id": "scientific-writing",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/scientific-writing/SKILL.md",
+      "triggers": "scientific;writing"
     },
     {
       "description": "Transform slow database queries into lightning-fast operations through systematic optimization, proper indexing, and query plan analysis.",
@@ -339,12 +307,20 @@
       "triggers": "supabase;automation"
     },
     {
-      "description": "Expert guidance on using Valkey and Redis with Swift. Use when developers mention: (1) Valkey or Redis in Swift, (2) valkey-swift library, (3) RESP protocol or RESP3, (4) Redis cluster routing or hash slots, (5) pub/sub or subscriptions, (6) Redis transactions or MULTI/EXEC, (7) caching with Redis.",
+      "description": "Next.js with Supabase and Drizzle ORM",
       "phase": 2,
       "score": 100,
-      "skill_id": "swift-valkey",
-      "src_path": "lib/joannis-claude-skills/swift-valkey/SKILL.md",
-      "triggers": "swift;valkey"
+      "skill_id": "supabase-nextjs",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/supabase-nextjs/SKILL.md",
+      "triggers": "supabase;nextjs"
+    },
+    {
+      "description": "Express/Hono with Supabase and Drizzle ORM",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "supabase-node",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/supabase-node/SKILL.md",
+      "triggers": "supabase;node"
     },
     {
       "description": "Tinybird file formats, SQL rules, optimization patterns, and best practices for datasources, pipes, endpoints, and materialized views.",

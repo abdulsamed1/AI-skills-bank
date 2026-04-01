@@ -1,15 +1,7 @@
 {
-  "generated_at_unix": 1775075184,
+  "generated_at_unix": 1775078206,
   "hub": "ai",
   "skills": [
-    {
-      "description": "6 production-ready AI engineering workflows: prompt evaluation (8-dimension scoring), context budget planning, RAG pipeline design, agent security audit (65-point checklist), eval harness building, and product sense coaching.",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "ai-engineering-toolkit",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/ai-engineering-toolkit/SKILL.md",
-      "triggers": "prompt-engineering;rag;security;evaluation;ai-engineering;llm"
-    },
     {
       "description": "Use this skill when you writing commands, hooks, skills for Agent, or prompts for sub agents or any other LLM interaction, including optimizing prompts, improving LLM outputs, or designing production prompt templates.",
       "phase": 3,

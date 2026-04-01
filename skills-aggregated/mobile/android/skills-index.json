@@ -1,15 +1,12 @@
 {
-  "count": 8,
+  "count": 5,
   "hub": "mobile",
   "skills": [
     "analyzing-android-malware-with-apktool",
     "android-design-guidelines",
     "android-java",
     "android-kotlin",
-    "earllm-build",
-    "hexagonal-architecture",
-    "kotlin-patterns",
-    "reverse-engineering-android-malware-with-jadx"
+    "hexagonal-architecture"
   ],
   "sub_hub": "android"
 }

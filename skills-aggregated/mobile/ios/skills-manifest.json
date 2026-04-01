@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775075184,
+  "generated_at_unix": 1775078206,
   "hub": "mobile",
   "skills": [
     {
@@ -73,14 +73,6 @@
       "skill_id": "wendy",
       "src_path": "lib/joannis-claude-skills/wendy/SKILL.md",
       "triggers": "wendy"
-    },
-    {
-      "description": "Curated Swift package ecosystem for WendyOS and Linux. Use when developers mention: (1) Swift packages for Linux or ARM64/AMD64, (2) choosing a Swift library, (3) Swift Package Index, (4) swiftpackageindex.com, (5) what Swift library to use, (6) Swift on WendyOS dependencies, (7) edge computing Swift libraries.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "wendy-swift",
-      "src_path": "lib/joannis-claude-skills/wendy-swift/SKILL.md",
-      "triggers": "wendy;swift"
     }
   ],
   "sub_hub": "ios",

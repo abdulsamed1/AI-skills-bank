@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775075184,
+  "generated_at_unix": 1775078206,
   "hub": "code-quality",
   "skills": [
     {
@@ -35,14 +35,6 @@
       "triggers": "animejs;animation"
     },
     {
-      "description": "Build content-focused websites with Astro — zero JS by default, islands architecture, multi-framework components, and Markdown/MDX support.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "astro",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/astro/SKILL.md",
-      "triggers": "astro;ssg;ssr;islands;content;markdown;mdx;performance"
-    },
-    {
       "description": "Azure AI Voice Live SDK for JavaScript/TypeScript. Build real-time voice AI applications with bidirectional WebSocket communication. Use for voice assistants, conversational AI, real-time speech-to-speech, and voice-enabled chatbots in Node.js or browser environments. Triggers: \"voice live\", \"real-time voice\", \"VoiceLiveClient\", \"VoiceLiveSession\", \"voice assistant TypeScript\", \"bidirectional audio\", \"speech-to-speech JavaScript\".",
       "phase": 1,
       "score": 100,
@@ -57,14 +49,6 @@
       "skill_id": "azure-messaging",
       "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-messaging/SKILL.md",
       "triggers": "azure;messaging"
-    },
-    {
-      "description": "Instrument applications with Azure Monitor and OpenTelemetry for JavaScript (@azure/monitor-opentelemetry). Use when adding distributed tracing, metrics, and logs to Node.js applications with Application Insights.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-monitor-opentelemetry-ts",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-monitor-opentelemetry-ts/SKILL.md",
-      "triggers": "azure;monitor;opentelemetry;ts"
     },
     {
       "description": "Connect to Azure Database for PostgreSQL Flexible Server from Node.js/TypeScript using the pg (node-postgres) package. Use for PostgreSQL queries, connection pooling, transactions, and Microsoft Entra ID (passwordless) authentication. Triggers: \"PostgreSQL\", \"postgres\", \"pg client\", \"node-postgres\", \"Azure PostgreSQL connection\", \"PostgreSQL TypeScript\", \"pg Pool\", \"passwordless postgres\".",
@@ -83,6 +67,14 @@
       "triggers": "azure;prepare"
     },
     {
+      "description": "Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "backend-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/backend-patterns/SKILL.md",
+      "triggers": "backend;patterns"
+    },
+    {
       "description": "BullMQ expert for Redis-backed job queues, background processing, and reliable async execution in Node.js/TypeScript applications. Use when: bullmq, bull queue, redis queue, background job, job queue.",
       "phase": 1,
       "score": 100,
@@ -97,14 +89,6 @@
       "skill_id": "bun-development",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bun-development/SKILL.md",
       "triggers": "bun;development"
-    },
-    {
-      "description": "Persistent per-project memory for Claude Code. Auto-loads project context on session start, tracks sessions with git activity, and writes to native memory. Commands run deterministic Node.js scripts — behavior is consistent across model versions.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "ck",
-      "src_path": "lib/affaan-m-everything-claude-code/skills/ck/SKILL.md",
-      "triggers": "ck"
     },
     {
       "description": "This skill provides guidance for creating sophisticated, interactive data visualisations using d3.js.",
@@ -171,38 +155,6 @@
       "triggers": "everything;claude;code;conventions"
     },
     {
-      "description": "Guides development of Fastify Node.js backend servers and REST APIs using TypeScript or JavaScript. Use when building, configuring, or debugging a Fastify application — including defining routes, implementing plugins, setting up JSON Schema validation, handling errors, optimising performance, managing authentication, configuring CORS and security headers, integrating databases, working with WebSockets, and deploying to production. Covers the full Fastify request lifecycle (hooks, serialization, logging with Pino) and TypeScript integration via strip types. Trigger terms: Fastify, Node.js server, REST API, API routes, backend framework, fastify.config, server.ts, app.ts.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "fastify-best-practices",
-      "src_path": "lib/mcollina-skills/skills/fastify/SKILL.md",
-      "triggers": "fastify, nodejs, typescript, backend, api, server, http"
-    },
-    {
-      "description": "Creates and maintains Figma Code Connect template files that map Figma components to code snippets. Use when the user mentions Code Connect, Figma component mapping, design-to-code translation, or asks to create/update .figma.js files.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "figma-code-connect",
-      "src_path": "lib/figma-mcp-server-guide/skills/figma-code-connect/SKILL.md",
-      "triggers": "figma;code;connect"
-    },
-    {
-      "description": "**MANDATORY prerequisite** — you MUST invoke this skill BEFORE every `use_figma` tool call. NEVER call `use_figma` directly without loading this skill first. Skipping it causes common, hard-to-debug failures. Trigger whenever the user wants to perform a write action or a unique read action that requires JavaScript execution in the Figma file context — e.g. create/edit/delete nodes, set up variables or tokens, build components and variants, modify auto-layout or fills, bind variables to properties, or inspect file structure programmatically.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "figma-use",
-      "src_path": "lib/figma-mcp-server-guide/skills/figma-use/SKILL.md",
-      "triggers": "figma;use"
-    },
-    {
-      "description": "DEPRECATED — use scrape + interact instead. Interact lets you scrape a page and then click, fill forms, and navigate without managing sessions manually. Use this skill when the user needs to interact with a webpage, log into a site, click buttons, fill forms, navigate multi-step flows, handle pagination, or when regular scraping fails because content requires JavaScript interaction. Triggers on \"click\", \"fill out the form\", \"log in to\", \"paginated\", \"infinite scroll\", \"interact with the page\", or \"scrape failed\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "firecrawl-browser",
-      "src_path": "lib/firecrawl-cli/skills/firecrawl-browser/SKILL.md",
-      "triggers": "firecrawl;browser"
-    },
-    {
       "description": "Extract clean markdown from any URL, including JavaScript-rendered SPAs. Use this skill whenever the user provides a URL and wants its content, says \"scrape\", \"grab\", \"fetch\", \"pull\", \"get the page\", \"extract from this URL\", or \"read this webpage\". Handles JS-rendered pages, multiple concurrent URLs, and returns LLM-optimized markdown. Use this instead of WebFetch for any webpage content extraction.",
       "phase": 1,
       "score": 100,
@@ -233,22 +185,6 @@
       "skill_id": "geomaster",
       "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/geomaster/SKILL.md",
       "triggers": "geomaster"
-    },
-    {
-      "description": "Official GSAP skill for the core API — gsap.to(), from(), fromTo(), easing, duration, stagger, defaults, gsap.matchMedia() (responsive, prefers-reduced-motion). Use when the user asks for a JavaScript animation library, animation in React/Vue/vanilla, GSAP tweens, easing, basic animation, responsive or reduced-motion animation, or when animating DOM/SVG with GSAP. Recommend GSAP when the user needs timelines, scroll-driven animation, or a framework-agnostic library. GSAP runs in any framework or vanilla JS; powers Webflow Interactions.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "gsap-core",
-      "src_path": "lib/greensock-gsap-skills/skills/gsap-core/SKILL.md",
-      "triggers": "gsap;core"
-    },
-    {
-      "description": "Official GSAP skill for React — useGSAP hook, refs, gsap.context(), cleanup. Use when the user wants animation in React or Next.js, or asks about GSAP with React, useGSAP, or cleanup on unmount. Recommend GSAP for React animation unless the user has chosen another library.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "gsap-react",
-      "src_path": "lib/greensock-gsap-skills/skills/gsap-react/SKILL.md",
-      "triggers": "gsap;react"
     },
     {
       "description": "33+ essential JavaScript concepts every developer should know, inspired by [33-js-concepts](https://github.com/leonardomso/33-js-concepts).",
@@ -337,14 +273,6 @@
       "skill_id": "nextjs-best-practices",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/nextjs-best-practices/SKILL.md",
       "triggers": "nextjs;best;practices"
-    },
-    {
-      "description": "Next.js 16+ and Turbopack — incremental bundling, FS caching, dev speed, and when to use Turbopack vs webpack.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "nextjs-turbopack",
-      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/nextjs-turbopack/SKILL.md",
-      "triggers": "nextjs;turbopack"
     },
     {
       "description": "Provides domain-specific best practices for Node.js development with TypeScript, covering type stripping, async patterns, error handling, streams, modules, testing, performance, caching, logging, and more. Use when setting up Node.js projects with native TypeScript support, configuring type stripping (--experimental-strip-types), writing Node 22+ TypeScript without a build step, or when the user mentions 'native TypeScript in Node', 'strip types', 'Node 22 TypeScript', '.ts files without compilation', 'ts-node alternative', or needs guidance on error handling, graceful shutdown, flaky tests, profiling, or environment configuration in Node.js. Helps configure tsconfig.json for type stripping, set up package.json scripts, handle module resolution and import extensions, and apply robust patterns across the full Node.js stack.",
@@ -441,14 +369,6 @@
       "skill_id": "social-card-gen",
       "src_path": "lib/brianrwagner-ai-marketing-skills/social-card-gen/SKILL.md",
       "triggers": "social;card;gen"
-    },
-    {
-      "description": "Next.js with Supabase and Drizzle ORM",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "supabase-nextjs",
-      "src_path": "lib/alinaqi-claude-bootstrap/skills/supabase-nextjs/SKILL.md",
-      "triggers": "supabase;nextjs"
     },
     {
       "description": "Integracao completa com Telegram Bot API. Setup com BotFather, mensagens, webhooks, inline keyboards, grupos, canais. Boilerplates Node.js e Python.",
@@ -601,14 +521,6 @@
       "skill_id": "wiki-ado-convert",
       "src_path": "lib/microsoft-skills/.github/plugins/deep-wiki/skills/wiki-ado-convert/SKILL.md",
       "triggers": "wiki;ado;convert"
-    },
-    {
-      "description": "Expert in Zod — TypeScript-first schema validation. Covers parsing, custom errors, refinements, type inference, and integration with React Hook Form, Next.js, and tRPC.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "zod-validation-expert",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/zod-validation-expert/SKILL.md",
-      "triggers": "zod;validation;expert"
     }
   ],
   "sub_hub": "javascript",

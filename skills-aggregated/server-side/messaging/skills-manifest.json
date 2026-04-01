@@ -1,0 +1,64 @@
+{
+  "generated_at_unix": 1775078206,
+  "hub": "server-side",
+  "skills": [
+    {
+      "description": "AWS serverless and event-driven architecture expert based on Well-Architected Framework. Use when building serverless APIs, Lambda functions, REST APIs, microservices, or async workflows. Covers Lambda with TypeScript/Python, API Gateway (REST/HTTP), DynamoDB, Step Functions, EventBridge, SQS, SNS, and serverless patterns. Essential when user mentions serverless, Lambda, API Gateway, event-driven, async processing, queues, pub/sub, or wants to build scalable serverless applications with AWS best practices.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "aws-serverless-eda",
+      "src_path": "lib/zxkane-aws-skills/plugins/serverless-eda/skills/aws-serverless-eda/SKILL.md",
+      "triggers": "aws;serverless;eda"
+    },
+    {
+      "description": "Azure Event Grid SDK for .NET. Client library for publishing and consuming events with Azure Event Grid. Use for event-driven architectures, pub/sub messaging, CloudEvents, and EventGridEvents. Triggers: \"Event Grid\", \"EventGridPublisherClient\", \"CloudEvent\", \"EventGridEvent\", \"publish events .NET\", \"event-driven\", \"pub/sub\".",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "azure-eventgrid-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-eventgrid-dotnet/SKILL.md",
+      "triggers": "azure;eventgrid;dotnet"
+    },
+    {
+      "description": "Build real-time streaming applications with Azure Event Hubs SDK for Java. Use when implementing event streaming, high-throughput data ingestion, or building event-driven architectures.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "azure-eventhub-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-eventhub-java/SKILL.md",
+      "triggers": "azure;eventhub;java"
+    },
+    {
+      "description": "Azure Service Bus SDK for .NET. Enterprise messaging with queues, topics, subscriptions, and sessions. Use for reliable message delivery, pub/sub patterns, dead letter handling, and background processing. Triggers: \"Service Bus\", \"ServiceBusClient\", \"ServiceBusSender\", \"ServiceBusReceiver\", \"ServiceBusProcessor\", \"message queue\", \"pub/sub .NET\", \"dead letter queue\".",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "azure-servicebus-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-servicebus-dotnet/SKILL.md",
+      "triggers": "azure;servicebus;dotnet"
+    },
+    {
+      "description": "Implement Command Query Responsibility Segregation for scalable architectures. Use when separating read and write models, optimizing query performance, or building event-sourced systems.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "cqrs-implementation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/cqrs-implementation/SKILL.md",
+      "triggers": "cqrs;implementation"
+    },
+    {
+      "description": "Expert in event sourcing, CQRS, and event-driven architecture patterns. Masters event store design, projection building, saga orchestration, and eventual consistency patterns. Use PROACTIVELY for event-sourced systems, audit trail requirements, or complex domain modeling with temporal queries.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "event-sourcing-architect",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/event-sourcing-architect/SKILL.md",
+      "triggers": "event;sourcing;architect"
+    },
+    {
+      "description": "Build read models and projections from event streams. Use when implementing CQRS read sides, building materialized views, or optimizing query performance in event-sourced systems.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "projection-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/projection-patterns/SKILL.md",
+      "triggers": "projection;patterns"
+    }
+  ],
+  "sub_hub": "messaging",
+  "version": 1
+}

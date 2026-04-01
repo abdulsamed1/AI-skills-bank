@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775075184,
+  "generated_at_unix": 1775078206,
   "hub": "code-quality",
   "skills": [
     {
@@ -11,20 +11,20 @@
       "triggers": "agent;teams"
     },
     {
+      "description": "6 production-ready AI engineering workflows: prompt evaluation (8-dimension scoring), context budget planning, RAG pipeline design, agent security audit (65-point checklist), eval harness building, and product sense coaching.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "ai-engineering-toolkit",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/ai-engineering-toolkit/SKILL.md",
+      "triggers": "prompt-engineering;rag;security;evaluation;ai-engineering;llm"
+    },
+    {
       "description": "Define, validate, and run repo-local multi-step automations with `asc workflow` and `.asc/workflow.json`. Use when migrating from lane tools, wiring CI pipelines, or orchestrating repeatable `asc` + shell release flows with hooks, conditionals, and sub-workflows.",
       "phase": 1,
       "score": 100,
       "skill_id": "asc-workflow",
       "src_path": "lib/rudrankriyam-app-store-connect-cli-skills/skills/asc-workflow/SKILL.md",
       "triggers": "asc;workflow"
-    },
-    {
-      "description": "Auto-review pipeline — reads the full CEO, design, and eng review skills from disk and runs them sequentially with auto-decisions using 6 decision principles. Surfaces taste decisions (close approaches, borderline scope, codex disagreements) at a final approval gate. One command, fully reviewed plan out. Use when asked to \"auto review\", \"autoplan\", \"run all reviews\", \"review this plan automatically\", or \"make the decisions for me\". Proactively suggest when the user has a plan file and wants to run the full review gauntlet without answering 15-30 intermediate questions. (gstack)",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "autoplan",
-      "src_path": "lib/garrytan-gstack/autoplan/SKILL.md",
-      "triggers": "autoplan"
     },
     {
       "description": "Master defensive Bash programming techniques for production-grade scripts. Use when writing robust shell scripts, CI/CD pipelines, or system utilities requiring fault tolerance and safety.",
@@ -49,14 +49,6 @@
       "skill_id": "bats-testing-patterns",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bats-testing-patterns/SKILL.md",
       "triggers": "bats;testing;patterns"
-    },
-    {
-      "description": "Builds an automated malware submission and analysis pipeline that collects suspicious files from endpoints and email gateways, submits them to sandbox environments and multi-engine scanners, and generates verdicts with IOCs for SIEM integration. Use when SOC teams need to scale malware analysis beyond manual sandbox submissions for high-volume alert triage.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "building-automated-malware-submission-pipeline",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-automated-malware-submission-pipeline/SKILL.md",
-      "triggers": "soc;malware-analysis;sandbox;automation;virustotal;cuckoo;any-run;pipeline"
     },
     {
       "description": "Design and implement a comprehensive DevSecOps pipeline in GitLab CI/CD integrating SAST, DAST, container scanning, dependency scanning, and secret detection.",
@@ -145,14 +137,6 @@
       "skill_id": "detecting-aws-credential-exposure-with-trufflehog",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-aws-credential-exposure-with-trufflehog/SKILL.md",
       "triggers": "cloud-security;aws;credential-exposure;trufflehog;secrets-detection;devsecops"
-    },
-    {
-      "description": "DevOps e deploy de aplicacoes — Docker, CI/CD com GitHub Actions, AWS Lambda, SAM, Terraform, infraestrutura como codigo e monitoramento.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "devops-deploy",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/devops-deploy/SKILL.md",
-      "triggers": "devops;docker;ci-cd;aws;terraform;github-actions"
     },
     {
       "description": "Provides PyTorch-native distributed LLM pretraining using torchtitan with 4D parallelism (FSDP2, TP, PP, CP). Use when pretraining Llama 3.1, DeepSeek V3, or custom models at scale from 8 to 512+ GPUs with Float8, torch.compile, and distributed checkpointing.",
@@ -323,14 +307,6 @@
       "triggers": "devsecops;cicd;dast;owasp-zap;dynamic-testing;secure-sdlc"
     },
     {
-      "description": "This skill covers integrating Static Application Security Testing (SAST) tools—CodeQL and Semgrep—into GitHub Actions CI/CD pipelines. It addresses configuring automated code scanning on pull requests and pushes, tuning rules to reduce false positives, uploading SARIF results to GitHub Advanced Security, and establishing quality gates that block merges when high-severity vulnerabilities are detected.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "integrating-sast-into-github-actions-pipeline",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/integrating-sast-into-github-actions-pipeline/SKILL.md",
-      "triggers": "devsecops;cicd;sast;codeql;semgrep;secure-sdlc"
-    },
-    {
       "description": "Iterate on a PR until CI passes. Use when you need to fix CI failures, address review feedback, or continuously push fixes until all checks are green. Automates the feedback-fix-push-wait cycle.",
       "phase": 1,
       "score": 100,
@@ -345,6 +321,14 @@
       "skill_id": "jq",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/jq/SKILL.md",
       "triggers": "jq;json;shell;cli;data-transformation;bash"
+    },
+    {
+      "description": "Comprehensive k6 load testing skill for API, browser, and scalability testing. Write realistic load scenarios, analyze results, and integrate with CI/CD.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "k6-load-testing",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/k6-load-testing/SKILL.md",
+      "triggers": "k6;load-testing;performance;api-testing;ci-cd"
     },
     {
       "description": "Land and deploy workflow. Merges the PR, waits for CI and deploy, verifies production health via canary checks. Takes over after /ship creates the PR. Use when: \"merge\", \"land\", \"deploy\", \"merge and verify\", \"land it\", \"ship it to production\". (gstack)",
@@ -395,14 +379,6 @@
       "triggers": "odoo;automated;tests"
     },
     {
-      "description": "Expert guide for Odoo Sales and CRM: pipeline stages, quotation templates, pricelists, sales teams, lead scoring, and forecasting.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "odoo-sales-crm-expert",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/odoo-sales-crm-expert/SKILL.md",
-      "triggers": "odoo;sales;crm;expert"
-    },
-    {
       "description": "Open-source pipeline: fork, sanitize, and package private projects for safe public release. Chains 3 agents (forker, sanitizer, packager). Triggers: '/opensource', 'open source this', 'make this public', 'prepare for open source'.",
       "phase": 1,
       "score": 100,
@@ -417,22 +393,6 @@
       "skill_id": "performing-sca-dependency-scanning-with-snyk",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-sca-dependency-scanning-with-snyk/SKILL.md",
       "triggers": "devsecops;cicd;sca;snyk;dependency-scanning;secure-sdlc"
-    },
-    {
-      "description": "Automate Pipedrive CRM operations including deals, contacts, organizations, activities, notes, and pipeline management via Rube MCP (Composio). Always search tools first for current schemas.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "pipedrive-automation",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/pipedrive-automation/SKILL.md",
-      "triggers": "pipedrive;automation"
-    },
-    {
-      "description": "Production-ready CI/CD configurations for Playwright — GitHub Actions, GitLab CI, CircleCI, Azure DevOps, Jenkins, Docker, parallel sharding, reporting, code coverage, and global setup/teardown.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "playwright-ci",
-      "src_path": "lib/testdino-hq-playwright-skill/ci/SKILL.md",
-      "triggers": "playwright;ci"
     },
     {
       "description": "Workflow 4: Submission rebuttal pipeline. Parses external reviews, enforces coverage and grounding, drafts a safe text-only rebuttal under venue limits, and manages follow-up rounds. Use when user says \"rebuttal\", \"reply to reviewers\", \"ICML rebuttal\", \"OpenReview response\", or wants to answer external reviews safely.",
@@ -467,14 +427,6 @@
       "triggers": "secrets;management"
     },
     {
-      "description": "Automates the full code release pipeline — branch, commit, push, PR, wait for CI, merge, version bump, release, cleanup. Use when the user wants to release code changes, says \"ship it\", or asks to create a release.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "ship",
-      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/ship/SKILL.md",
-      "triggers": "ship"
-    },
-    {
       "description": "Master AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering. Build scalable testing strategies with advanced CI/CD integration.",
       "phase": 1,
       "score": 100,
@@ -497,14 +449,6 @@
       "skill_id": "video-editing",
       "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/video-editing/SKILL.md",
       "triggers": "video;editing"
-    },
-    {
-      "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \"the xlsx in my downloads\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "xlsx",
-      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/xlsx/SKILL.md",
-      "triggers": "xlsx"
     }
   ],
   "sub_hub": "ci-cd",

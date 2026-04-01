@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775075184,
+  "generated_at_unix": 1775078206,
   "hub": "code-quality",
   "skills": [
     {
@@ -139,14 +139,6 @@
       "triggers": "azure;eventgrid;java"
     },
     {
-      "description": "Build real-time streaming applications with Azure Event Hubs SDK for Java. Use when implementing event streaming, high-throughput data ingestion, or building event-driven architectures.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-eventhub-java",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-eventhub-java/SKILL.md",
-      "triggers": "azure;eventhub;java"
-    },
-    {
       "description": "Azure Identity library for Java authentication with Azure services. Use when implementing DefaultAzureCredential, managed identity, service principal, or any Azure authentication pattern in Java applications.",
       "phase": 1,
       "score": 100,
@@ -169,14 +161,6 @@
       "skill_id": "azure-monitor-ingestion-java",
       "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-monitor-ingestion-java/SKILL.md",
       "triggers": "\"LogsIngestionClient java\", \"azure monitor ingestion java\", \"custom logs java\", \"DCR java\", \"data collection rule java\"."
-    },
-    {
-      "description": "Azure Monitor OpenTelemetry Exporter for Java. Export OpenTelemetry traces, metrics, and logs to Azure Monitor/Application Insights. Triggers: \"AzureMonitorExporter java\", \"opentelemetry azure java\", \"application insights java otel\", \"azure monitor tracing java\". Note: This package is DEPRECATED. Migrate to azure-monitor-opentelemetry-autoconfigure.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-monitor-opentelemetry-exporter-java",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-monitor-opentelemetry-exporter-java/SKILL.md",
-      "triggers": "\"AzureMonitorExporter java\", \"opentelemetry azure java\", \"application insights java otel\", \"azure monitor tracing java\"."
     },
     {
       "description": "Azure Monitor Query SDK for Java. Execute Kusto queries against Log Analytics workspaces and query metrics from Azure resources. Triggers: \"LogsQueryClient java\", \"MetricsQueryClient java\", \"kusto query java\", \"log analytics java\", \"azure monitor query java\". Note: This package is deprecated. Migrate to azure-monitor-query-logs and azure-monitor-query-metrics.",
@@ -225,6 +209,14 @@
       "skill_id": "sankhya-dashboard-html-jsp-custom-best-pratices",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/sankhya-dashboard-html-jsp-custom-best-pratices/SKILL.md",
       "triggers": "sankhya;dashboard;jsp;html;sql;best-practices"
+    },
+    {
+      "description": "Spring Boot architecture patterns, REST API design, layered services, data access, caching, async processing, and logging. Use for Java Spring Boot backend work.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "springboot-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/ja-JP/skills/springboot-patterns/SKILL.md",
+      "triggers": "springboot;patterns"
     },
     {
       "description": "Spring Security best practices for authn/authz, validation, CSRF, secrets, headers, rate limiting, and dependency security in Java Spring Boot services.",

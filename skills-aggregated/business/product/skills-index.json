@@ -1,0 +1,33 @@
+{
+  "count": 26,
+  "hub": "business",
+  "skills": [
+    "album-ideas",
+    "analyze-feature-requests",
+    "auri-core",
+    "brainstorm-ideas-new",
+    "create-prd",
+    "epic-breakdown-advisor",
+    "epic-hypothesis",
+    "experiment-plan",
+    "job-stories",
+    "linear",
+    "loki-mode",
+    "outcome-roadmap",
+    "pestel-analysis",
+    "prd-development",
+    "prd-generator",
+    "prd-to-issues",
+    "prd-to-plan",
+    "prioritize-features",
+    "problem-statement",
+    "product-strategy-session",
+    "project-flow-ops",
+    "roadmap-planning",
+    "user-stories",
+    "user-story-mapping",
+    "user-story-splitting",
+    "write-a-prd"
+  ],
+  "sub_hub": "product"
+}

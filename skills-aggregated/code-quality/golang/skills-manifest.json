@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775075184,
+  "generated_at_unix": 1775078206,
   "hub": "code-quality",
   "skills": [
     {
@@ -9,14 +9,6 @@
       "skill_id": "analyzing-golang-malware-with-ghidra",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-golang-malware-with-ghidra/SKILL.md",
       "triggers": "golang;ghidra;reverse-engineering;malware-analysis;binary-analysis;go-malware;disassembly"
-    },
-    {
-      "description": "Execute Azure deployments for ALREADY-PREPARED applications that have existing .azure/deployment-plan.md and infrastructure files. DO NOT use this skill when the user asks to CREATE a new application — use azure-prepare instead. This skill runs azd up, azd deploy, terraform apply, and az deployment commands with built-in error recovery. Requires .azure/deployment-plan.md from azure-prepare and validated status from azure-validate. WHEN: \"run azd up\", \"run azd deploy\", \"execute deployment\", \"push to production\", \"push to cloud\", \"go live\", \"ship it\", \"bicep deploy\", \"terraform apply\", \"publish to Azure\", \"launch on Azure\". DO NOT USE WHEN: \"create and deploy\", \"build and deploy\", \"create a new app\", \"set up infrastructure\", \"create and deploy to Azure using Terraform\" — use azure-prepare for these.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-deploy",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-deploy/SKILL.md",
-      "triggers": "azure;deploy"
     },
     {
       "description": "Guide for building reliable, fault-tolerant Go applications with DBOS durable workflows. Use when adding DBOS to existing Go code, creating workflows and steps, or using queues for concurrency control.",

@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775075184,
+  "generated_at_unix": 1775078206,
   "hub": "mobile",
   "skills": [
     {
@@ -43,6 +43,14 @@
       "triggers": "mobile;games"
     },
     {
+      "description": "Build and deploy the same feature consistently across web, mobile, and desktop platforms using API-first architecture and parallel implementation strategies.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "multi-platform-apps-multi-platform",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/multi-platform-apps-multi-platform/SKILL.md",
+      "triggers": "multi;platform;apps;multi;platform"
+    },
+    {
       "description": "Acquire and analyze mobile device data using Cellebrite UFED and open-source tools to extract communications, location data, and application artifacts.",
       "phase": 4,
       "score": 100,
@@ -57,14 +65,6 @@
       "skill_id": "react-native",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/react-native/SKILL.md",
       "triggers": "react;native"
-    },
-    {
-      "description": "Technical SEO audit across 9 categories: crawlability, indexability, security, URL structure, mobile, Core Web Vitals, structured data, JavaScript rendering, and IndexNow protocol. Use when user says \"technical SEO\", \"crawl issues\", \"robots.txt\", \"Core Web Vitals\", \"site speed\", or \"security headers\".",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "seo-technical",
-      "src_path": "lib/agricidaniel-claude-seo/skills/seo-technical/SKILL.md",
-      "triggers": "seo;technical"
     }
   ],
   "sub_hub": "cross-platform",
