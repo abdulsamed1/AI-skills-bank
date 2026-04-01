@@ -1,5 +1,5 @@
 {
-  "count": 24,
+  "count": 30,
   "hub": "code-quality",
   "skills": [
     "azure-ai-agents-persistent-java",
@@ -16,6 +16,8 @@
     "azure-communication-common-java",
     "azure-communication-sms-java",
     "azure-compute-batch-java",
+    "azure-cosmos-java",
+    "azure-data-tables-java",
     "azure-eventgrid-java",
     "azure-eventhub-java",
     "azure-identity-java",
@@ -23,9 +25,13 @@
     "azure-monitor-ingestion-java",
     "azure-monitor-opentelemetry-exporter-java",
     "azure-monitor-query-java",
+    "azure-security-keyvault-secrets-java",
     "azure-storage-blob-java",
     "java-coding-standards",
-    "java-pro"
+    "jpa-patterns",
+    "springboot-security",
+    "springboot-tdd",
+    "springboot-verification"
   ],
   "sub_hub": "java"
 }

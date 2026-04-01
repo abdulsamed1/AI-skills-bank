@@ -1,17 +1,11 @@
 {
-  "count": 10,
+  "count": 4,
   "hub": "mobile",
   "skills": [
-    "app-store-optimization",
-    "development",
-    "expo-api-routes",
-    "expo-deployment",
-    "expo-dev-client",
     "flutter-dart-code-review",
-    "flutter-expert",
-    "mobile-developer",
     "performing-mobile-device-forensics-with-cellebrite",
-    "react-native"
+    "react-native",
+    "seo-technical"
   ],
   "sub_hub": "cross-platform"
 }

@@ -1,9 +1,17 @@
 {
-  "count": 2,
-  "hub": "backend",
+  "count": 10,
+  "hub": "server-side",
   "skills": [
-    "microservices-patterns",
-    "workflow-orchestration-patterns"
+    "docker-patterns",
+    "entra-agent-id",
+    "implementing-image-provenance-verification-with-cosign",
+    "implementing-kubernetes-network-policy-with-calico",
+    "implementing-opa-gatekeeper-for-policy-enforcement",
+    "mcp:setup-arxiv-mcp",
+    "microsoft-foundry",
+    "nemo-evaluator-sdk",
+    "performing-container-image-hardening",
+    "windows-vm"
   ],
   "sub_hub": "microservices"
 }

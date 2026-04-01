@@ -1,13 +1,12 @@
 skill_id,description,score,phase
-analyzing-android-malware-with-apktool,"Perform static analysis of Android APK malware samples using apktool for decompilation, jadx for Java source recovery, and androguard for permission analysis, manifest inspection, and suspicious API call detection.",100,5
-android-clean-architecture,适用于Android和Kotlin多平台项目的Clean Architecture模式——模块结构、依赖规则、用例、仓库以及数据层模式。,100,5
-android-design-guidelines,"Material Design 3 and Android platform guidelines. Use when building Android apps with Jetpack Compose or XML layouts, implementing Material You, navigation, or accessibility. Triggers on tasks involving Android UI, Compose components, dynamic color, or Material Design compliance.",100,5
-android-java,"Android Java development with MVVM, ViewBinding, and Espresso testing",100,5
-android-kotlin,"Android Kotlin development with Coroutines, Jetpack Compose, Hilt, and MockK testing",100,5
-earllm-build,"Build, maintain, and extend the EarLLM One Android project — a Kotlin/Compose app that connects Bluetooth earbuds to an LLM via voice pipeline.",100,5
-hexagonal-architecture,"Design, implement, and refactor Ports & Adapters systems with clear domain boundaries, dependency inversion, and testable use-case orchestration across TypeScript, Java, Kotlin, and Go services.",100,5
-kotlin-coroutines-flows,Kotlin协程与Flow在Android和KMP中的模式——结构化并发、Flow操作符、StateFlow、错误处理和测试。,100,5
-kotlin-exposed-patterns,JetBrains Exposed ORM 模式，包括 DSL 查询、DAO 模式、事务、HikariCP 连接池、Flyway 迁移和仓库模式。,100,5
-kotlin-ktor-patterns,Ktor 服务器模式，包括路由 DSL、插件、身份验证、Koin DI、kotlinx.serialization、WebSockets 和 testApplication 测试。,100,5
-kotlin-patterns,"Coroutine'ler, null safety ve DSL builder'lar ile sağlam, verimli ve sürdürülebilir Kotlin uygulamaları oluşturmak için idiomatic Kotlin kalıpları, en iyi uygulamalar ve konvansiyonlar.",100,5
-reverse-engineering-android-malware-with-jadx,"Reverse engineers malicious Android APK files using JADX decompiler to analyze Java/Kotlin source code, identify malicious functionality including data theft, C2 communication, privilege escalation, and overlay attacks. Examines manifest permissions, receivers, services, and native libraries. Activates for requests involving Android malware analysis, APK reverse engineering, mobile malware investigation, or Android threat analysis.",100,5
+analyzing-android-malware-with-apktool,"Perform static analysis of Android APK malware samples using apktool for decompilation, jadx for Java source recovery, and androguard for permission analysis, manifest inspection, and suspicious API call detection.",100,4
+android-clean-architecture,适用于Android和Kotlin多平台项目的Clean Architecture模式——模块结构、依赖规则、用例、仓库以及数据层模式。,100,4
+android-design-guidelines,"Material Design 3 and Android platform guidelines. Use when building Android apps with Jetpack Compose or XML layouts, implementing Material You, navigation, or accessibility. Triggers on tasks involving Android UI, Compose components, dynamic color, or Material Design compliance.",100,4
+android-java,"Android Java development with MVVM, ViewBinding, and Espresso testing",100,4
+android-kotlin,"Android Kotlin development with Coroutines, Jetpack Compose, Hilt, and MockK testing",100,4
+hexagonal-architecture,"Design, implement, and refactor Ports & Adapters systems with clear domain boundaries, dependency inversion, and testable use-case orchestration across TypeScript, Java, Kotlin, and Go services.",100,4
+kotlin-coroutines-flows,Kotlin协程与Flow在Android和KMP中的模式——结构化并发、Flow操作符、StateFlow、错误处理和测试。,100,4
+kotlin-exposed-patterns,JetBrains Exposed ORM 模式，包括 DSL 查询、DAO 模式、事务、HikariCP 连接池、Flyway 迁移和仓库模式。,100,4
+kotlin-ktor-patterns,Ktor 服务器模式，包括路由 DSL、插件、身份验证、Koin DI、kotlinx.serialization、WebSockets 和 testApplication 测试。,100,4
+kotlin-patterns,"Coroutine'ler, null safety ve DSL builder'lar ile sağlam, verimli ve sürdürülebilir Kotlin uygulamaları oluşturmak için idiomatic Kotlin kalıpları, en iyi uygulamalar ve konvansiyonlar.",100,4
+reverse-engineering-android-malware-with-jadx,"Reverse engineers malicious Android APK files using JADX decompiler to analyze Java/Kotlin source code, identify malicious functionality including data theft, C2 communication, privilege escalation, and overlay attacks. Examines manifest permissions, receivers, services, and native libraries. Activates for requests involving Android malware analysis, APK reverse engineering, mobile malware investigation, or Android threat analysis.",100,4

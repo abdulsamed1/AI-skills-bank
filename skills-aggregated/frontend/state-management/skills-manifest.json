@@ -1,23 +1,7 @@
 {
-  "generated_at_unix": 1775063596,
+  "generated_at_unix": 1775073184,
   "hub": "frontend",
   "skills": [
-    {
-      "description": "Expert guidance for building modern Android UIs with Jetpack Compose, covering state management, navigation, performance, and Material Design 3.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "android-jetpack-compose-expert",
-      "src_path": "lib/antigravity-awesome-skills/skills/android-jetpack-compose-expert/SKILL.md",
-      "triggers": "android;jetpack;compose;expert"
-    },
-    {
-      "description": "Master modern Angular state management with Signals, NgRx, and RxJS. Use when setting up global state, managing component stores, choosing between state solutions, or migrating from legacy patterns.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "angular-state-management",
-      "src_path": "lib/antigravity-awesome-skills/skills/angular-state-management/SKILL.md",
-      "triggers": "angular;state;management"
-    },
     {
       "description": "Build WhatsApp automations with Kapso workflows: configure WhatsApp triggers, edit workflow graphs, manage executions, deploy functions, and use databases/integrations for state. Use when automating WhatsApp conversations and event handling.",
       "phase": 1,
@@ -27,12 +11,20 @@
       "triggers": "automate;whatsapp"
     },
     {
-      "description": "This skill should be used when the user asks to \"model agent mental states\", \"implement BDI architecture\", \"create belief-desire-intention models\", \"transform RDF to beliefs\", \"build cognitive agent\", or mentions BDI ontology, mental state modeling, rational agency, or neuro-symbolic AI integration.",
+      "description": "Vision-language pre-training framework bridging frozen image encoders and LLMs. Use when you need image captioning, visual question answering, image-text retrieval, or multimodal chat with state-of-the-art zero-shot performance.",
       "phase": 1,
       "score": 100,
-      "skill_id": "bdi-mental-states",
-      "src_path": "lib/antigravity-awesome-skills/skills/bdi-mental-states/SKILL.md",
-      "triggers": "bdi;mental;states"
+      "skill_id": "blip-2-vision-language",
+      "src_path": "lib/orchestra-research-ai-research-skills/18-multimodal/blip-2/SKILL.md",
+      "triggers": "Multimodal;Vision-Language;Image Captioning;VQA;Zero-Shot"
+    },
+    {
+      "description": "Save and resume working state checkpoints. Captures git state, decisions made, and remaining work so you can pick up exactly where you left off — even across Conductor workspace handoffs between branches. Use when asked to \"checkpoint\", \"save progress\", \"where was I\", \"resume\", \"what was I working on\", or \"pick up where I left off\". Proactively suggest when a session is ending, the user is switching context, or before a long break. (gstack)",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "checkpoint",
+      "src_path": "lib/garrytan-gstack/checkpoint/SKILL.md",
+      "triggers": "checkpoint"
     },
     {
       "description": "Trace every user-facing button/touchpoint through its full state change sequence to find bugs where functions individually work but cancel each other out, produce wrong final state, or leave the UI in an inconsistent state. Use when: systematic debugging found no bugs but users report broken buttons, or after any major refactor touching shared state stores.",
@@ -47,39 +39,31 @@
       "phase": 1,
       "score": 100,
       "skill_id": "collecting-volatile-evidence-from-compromised-host",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/collecting-volatile-evidence-from-compromised-host/SKILL.md",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/collecting-volatile-evidence-from-compromised-host/SKILL.md",
       "triggers": "incident-response;dfir;forensics;volatile-evidence;memory-forensics;chain-of-custody"
     },
     {
-      "description": "Context is the complete state available to a language model at inference time. It includes everything the model can attend to when generating responses: system instructions, tool definitions, retrieved documents, message history, and tool outputs.",
+      "description": "Operate customer billing workflows such as subscriptions, refunds, churn triage, billing-portal recovery, and plan analysis using connected billing tools like Stripe. Use when the user needs to help a customer, inspect subscription state, or manage revenue-impacting billing operations.",
       "phase": 1,
       "score": 100,
-      "skill_id": "context-fundamentals",
-      "src_path": "lib/antigravity-awesome-skills/skills/context-fundamentals/SKILL.md",
-      "triggers": "context;fundamentals"
+      "skill_id": "customer-billing-ops",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/customer-billing-ops/SKILL.md",
+      "triggers": "customer;billing;ops"
     },
     {
       "description": "Expert guidance on building Swift database client libraries. Use when developers mention: (1) building a database driver, (2) wire protocol implementation, (3) connection pooling design, (4) state machines for protocol handling, (5) NIO channel handlers for databases, (6) backpressure in result streaming, (7) actor executor alignment with NIO.",
       "phase": 1,
       "score": 100,
       "skill_id": "database-driver-design",
-      "src_path": "lib/Joannis-claude-skills/database-driver-design/SKILL.md",
+      "src_path": "lib/joannis-claude-skills/database-driver-design/SKILL.md",
       "triggers": "database;driver;design"
-    },
-    {
-      "description": "Deploys and configures osquery for real-time endpoint monitoring using SQL-based queries to inspect running processes, open ports, installed software, and system configuration. Use when building visibility into endpoint state, threat hunting across fleet, or implementing compliance monitoring. Activates for requests involving osquery deployment, endpoint visibility, fleet management, or SQL-based endpoint querying.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "deploying-osquery-for-endpoint-monitoring",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/deploying-osquery-for-endpoint-monitoring/SKILL.md",
-      "triggers": "endpoint;osquery;endpoint-monitoring;threat-hunting;fleet-management"
     },
     {
       "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
       "phase": 1,
       "score": 100,
       "skill_id": "dispatching-parallel-agents",
-      "src_path": "lib/antigravity-awesome-skills/skills/dispatching-parallel-agents/SKILL.md",
+      "src_path": "lib/obra-superpowers/skills/dispatching-parallel-agents/SKILL.md",
       "triggers": "dispatching;parallel;agents"
     },
     {
@@ -95,7 +79,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "fpf:actualize",
-      "src_path": "lib/NeoLabHQ-context-engineering-kit/plugins/fpf/skills/actualize/SKILL.md",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/fpf/skills/actualize/SKILL.md",
       "triggers": "fpf;actualize"
     },
     {
@@ -103,16 +87,8 @@
       "phase": 1,
       "score": 100,
       "skill_id": "fpf:status",
-      "src_path": "lib/NeoLabHQ-context-engineering-kit/plugins/fpf/skills/status/SKILL.md",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/fpf/skills/status/SKILL.md",
       "triggers": "fpf;status"
-    },
-    {
-      "description": "Build React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern frontend architecture.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "frontend-developer",
-      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-full-stack-developer/skills/frontend-developer/SKILL.md",
-      "triggers": "frontend;developer"
     },
     {
       "description": "Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices.",
@@ -123,35 +99,43 @@
       "triggers": "frontend;patterns"
     },
     {
-      "description": "Master Godot 4 GDScript patterns including signals, scenes, state machines, and optimization. Use when building Godot games, implementing game systems, or learning GDScript best practices.",
+      "description": "Triage GitHub issues through a label-based state machine with interactive grilling sessions. Use when user wants to triage issues, review incoming bugs or feature requests, prepare issues for an AFK agent, or manage issue workflow.",
       "phase": 1,
       "score": 100,
-      "skill_id": "godot-gdscript-patterns",
-      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-indie-game-dev/skills/godot-gdscript-patterns/SKILL.md",
-      "triggers": "godot;gdscript;patterns"
+      "skill_id": "github-triage",
+      "src_path": "lib/mattpocock-skills/github-triage/SKILL.md",
+      "triggers": "github;triage"
     },
     {
-      "description": "Full job search coaching system — JD decoding, resume, storybank, mock interviews, transcript analysis, comp negotiation. 23 commands, persistent state.",
+      "description": "Apple HIG guidance for selection and input controls including pickers, toggles, sliders, steppers, segmented controls, combo boxes, text fields, text views, labels, token fields, virtual keyboards, rating indicators, and gauges. Use this skill when the user says \"picker or segmented control,\" \"how should my form look,\" \"what keyboard type should I use,\" \"toggle vs checkbox,\" or asks about picker design, toggle, switch, slider, stepper, text field, text input, segmented control, combo box, label, token field, virtual keyboard, rating indicator, gauge, form design, input validation, or control state management. Cross-references: hig-components-menus, hig-components-dialogs, hig-components-search.",
       "phase": 1,
       "score": 100,
-      "skill_id": "interview-coach",
-      "src_path": "lib/antigravity-awesome-skills/skills/interview-coach/SKILL.md",
-      "triggers": "interview;job-search;coaching;career;storybank;negotiation"
+      "skill_id": "hig-components-controls",
+      "src_path": "lib/raintree-technology-apple-hig-skills/skills/hig-components-controls/SKILL.md",
+      "triggers": "hig;components;controls"
     },
     {
-      "description": "You are an expert in building production-grade AI agents with LangGraph. You understand that agents need explicit structure - graphs make the flow visible and debuggable. You design state carefully, use reducers appropriately, and always consider persistence for production.",
+      "description": "Apple HIG guidance for status and progress UI components including progress indicators, status bars, and activity rings. Use this skill when asked about: \"progress indicator\", \"progress bar\", \"loading spinner\", \"status bar\", \"activity ring\", \"progress display\", determinate vs indeterminate progress, loading states, or fitness tracking rings. Also use when the user says \"how do I show loading state,\" \"should I use a spinner or progress bar,\" \"what goes in the status bar,\" or asks about activity indicators. Cross-references: hig-components-system for widgets and complications, hig-inputs for gesture-driven progress controls, hig-technologies for HealthKit and activity ring data integration.",
       "phase": 1,
       "score": 100,
-      "skill_id": "langgraph",
-      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-agent-architect/skills/langgraph/SKILL.md",
-      "triggers": "langgraph"
+      "skill_id": "hig-components-status",
+      "src_path": "lib/raintree-technology-apple-hig-skills/skills/hig-components-status/SKILL.md",
+      "triggers": "hig;components;status"
+    },
+    {
+      "description": "Apple Human Interface Guidelines interaction and UX patterns. Use this skill when the user asks about \"onboarding flow\", \"user onboarding\", \"app launch\", \"loading state\", \"drag and drop\", \"search pattern\", \"settings design\", \"notifications\", \"modality\", \"multitasking\", \"feedback pattern\", \"haptics\", \"undo redo\", \"file management\", data entry, sharing, collaboration, full screen, audio, video, haptic feedback, ratings, printing, help, or account management in Apple apps. Also use when the user says \"how should onboarding work\", \"my app takes too long to load\", \"should I use a modal here\", \"how do I handle errors\", \"when should I ask for permissions\", \"how to show progress\", or \"what's the right way to confirm a delete\". Cross-references: hig-foundations for underlying principles, hig-platforms for platform specifics, hig-components-layout for navigation, hig-components-content for data display.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "hig-patterns",
+      "src_path": "lib/raintree-technology-apple-hig-skills/skills/hig-patterns/SKILL.md",
+      "triggers": "hig;patterns"
     },
     {
       "description": "CRITICAL: Use for Makepad animation system. Triggers on: makepad animation, makepad animator, makepad hover, makepad state, makepad transition, \"from: { all: Forward\", makepad pressed, makepad 动画, makepad 状态, makepad 过渡, makepad 悬停效果",
       "phase": 1,
       "score": 100,
       "skill_id": "makepad-animation",
-      "src_path": "lib/ZhangHanDong-makepad-skills/skills/makepad-animation/SKILL.md",
+      "src_path": "lib/zhanghandong-makepad-skills/skills/makepad-animation/SKILL.md",
       "triggers": "makepad;animation"
     },
     {
@@ -159,7 +143,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "mamba-architecture",
-      "src_path": "lib/Orchestra-Research-AI-research-SKILLs/01-model-architecture/mamba/SKILL.md",
+      "src_path": "lib/orchestra-research-ai-research-skills/01-model-architecture/mamba/SKILL.md",
       "triggers": "Model Architecture;Mamba;State Space Models;SSM;Linear Complexity;Long Context;Efficient Inference;Hardware-Aware;Alternative To Transformers"
     },
     {
@@ -167,7 +151,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "market-pulse",
-      "src_path": "lib/aso-skills/skills/market-pulse/SKILL.md",
+      "src_path": "lib/eronred-aso-skills/skills/market-pulse/SKILL.md",
       "triggers": "market;pulse"
     },
     {
@@ -183,7 +167,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "performing-file-carving-with-foremost",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-file-carving-with-foremost/SKILL.md",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-file-carving-with-foremost/SKILL.md",
       "triggers": "forensics;file-carving;foremost;data-recovery;evidence-recovery;unallocated-space"
     },
     {
@@ -191,39 +175,15 @@
       "phase": 1,
       "score": 100,
       "skill_id": "post-processing",
-      "src_path": "lib/HeshamFS-materials-simulation-skills/skills/simulation-workflow/post-processing/SKILL.md",
+      "src_path": "lib/heshamfs-materials-simulation-skills/skills/simulation-workflow/post-processing/SKILL.md",
       "triggers": "post;processing"
-    },
-    {
-      "description": "Build production-ready ReactFlow applications with hierarchical navigation, performance optimization, and advanced state management.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "react-flow-architect",
-      "src_path": "lib/antigravity-awesome-skills/skills/react-flow-architect/SKILL.md",
-      "triggers": "react;flow;architect"
-    },
-    {
-      "description": "Production-ready patterns for React Native development with Expo, including navigation, state management, native modules, and offline-first architecture.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "react-native-architecture",
-      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-expo-react-native/skills/react-native-architecture/SKILL.md",
-      "triggers": "react;native;architecture"
-    },
-    {
-      "description": "Master modern React state management with Redux Toolkit, Zustand, Jotai, and React Query. Use when setting up global state, managing server state, or choosing between state management solutions.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "react-state-management",
-      "src_path": "lib/antigravity-awesome-skills/skills/react-state-management/SKILL.md",
-      "triggers": "react;state;management"
     },
     {
       "description": "CRITICAL: Use for Robius state management patterns. Triggers on: AppState, persistence, theme switch, 状态管理, Scope::with_data, save state, load state, serde, 状态持久化, 主题切换",
       "phase": 1,
       "score": 100,
       "skill_id": "robius-state-management",
-      "src_path": "lib/ZhangHanDong-makepad-skills/skills/robius-state-management/SKILL.md",
+      "src_path": "lib/zhanghandong-makepad-skills/skills/robius-state-management/SKILL.md",
       "triggers": "robius;state;management"
     },
     {
@@ -231,7 +191,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "sadd:subagent-driven-development",
-      "src_path": "lib/NeoLabHQ-context-engineering-kit/plugins/sadd/skills/subagent-driven-development/SKILL.md",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/sadd/skills/subagent-driven-development/SKILL.md",
       "triggers": "sadd;subagent;driven;development"
     },
     {
@@ -239,7 +199,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "scvelo",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/scvelo/SKILL.md",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/scvelo/SKILL.md",
       "triggers": "scvelo"
     },
     {
@@ -247,7 +207,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "sentence-transformers",
-      "src_path": "lib/Orchestra-Research-AI-research-SKILLs/15-rag/sentence-transformers/SKILL.md",
+      "src_path": "lib/orchestra-research-ai-research-skills/15-rag/sentence-transformers/SKILL.md",
       "triggers": "Sentence Transformers;Embeddings;Semantic Similarity;RAG;Multilingual;Multimodal;Pre-Trained Models;Clustering;Semantic Search;Production"
     },
     {
@@ -263,7 +223,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "stable-diffusion-image-generation",
-      "src_path": "lib/Orchestra-Research-AI-research-SKILLs/18-multimodal/stable-diffusion/SKILL.md",
+      "src_path": "lib/orchestra-research-ai-research-skills/18-multimodal/stable-diffusion/SKILL.md",
       "triggers": "Image Generation;Stable Diffusion;Diffusers;Text-to-Image;Multimodal;Computer Vision"
     },
     {
@@ -279,24 +239,8 @@
       "phase": 1,
       "score": 100,
       "skill_id": "swiftui-expert-skill",
-      "src_path": "lib/AvdLee-SwiftUI-Agent-Skill/swiftui-expert-skill/SKILL.md",
+      "src_path": "lib/avdlee-swiftui-agent-skill/swiftui-expert-skill/SKILL.md",
       "triggers": "swiftui;expert;skill"
-    },
-    {
-      "description": "Apply proven SwiftUI UI patterns for navigation, sheets, async state, and reusable screens.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "swiftui-ui-patterns",
-      "src_path": "lib/antigravity-awesome-skills/skills/swiftui-ui-patterns/SKILL.md",
-      "triggers": "swiftui;ui;patterns"
-    },
-    {
-      "description": "Expert in TanStack Query (React Query) — asynchronous state management. Covers data fetching, stale time configuration, mutations, optimistic updates, and Next.js App Router (SSR) integration.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "tanstack-query-expert",
-      "src_path": "lib/antigravity-awesome-skills/skills/tanstack-query-expert/SKILL.md",
-      "triggers": "tanstack;query;expert"
     },
     {
       "description": "Multi-person projects - shared state, todo claiming, handoffs",
@@ -307,28 +251,12 @@
       "triggers": "team;coordination"
     },
     {
-      "description": "Terraform module creation for AWS — reusable modules, state management, and HCL best practices. Use when building or reviewing Terraform AWS infrastructure.",
+      "description": "Create Zustand stores with TypeScript, subscribeWithSelector middleware, and proper state/action separation. Use when building React state management, creating global stores, or implementing reactive state patterns with Zustand.",
       "phase": 1,
       "score": 100,
-      "skill_id": "terraform-aws-modules",
-      "src_path": "lib/antigravity-awesome-skills/skills/terraform-aws-modules/SKILL.md",
-      "triggers": "terraform;aws;modules"
-    },
-    {
-      "description": "Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise infrastructure patterns.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "terraform-specialist",
-      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-devops-cloud/skills/terraform-specialist/SKILL.md",
-      "triggers": "terraform;specialist"
-    },
-    {
-      "description": "Claiming work is complete without verification is dishonesty, not efficiency. Use when ANY variation of success/completion claims, ANY expression of satisfaction, or ANY positive statement about work state.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "verification-before-completion",
-      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-skill-author/skills/verification-before-completion/SKILL.md",
-      "triggers": "verification;before;completion"
+      "skill_id": "zustand-store-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/zustand-store-ts/SKILL.md",
+      "triggers": "zustand;store;ts"
     }
   ],
   "sub_hub": "state-management",

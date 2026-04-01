@@ -1,23 +1,7 @@
 {
-  "generated_at_unix": 1775063596,
-  "hub": "backend",
+  "generated_at_unix": 1775073184,
+  "hub": "server-side",
   "skills": [
-    {
-      "description": "Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, or chat applications. Covers Agent class, state management, callable RPC, Workflows integration, and React hooks. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "agents-sdk",
-      "src_path": "lib/cloudflare-skills/skills/agents-sdk/SKILL.md",
-      "triggers": "agents;sdk"
-    },
-    {
-      "description": "Proper Lambda function structure with error handling",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "aws-serverless",
-      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-devops-cloud/skills/aws-serverless/SKILL.md",
-      "triggers": "aws;serverless"
-    },
     {
       "description": "Assess and migrate cross-cloud workloads to Azure with migration reports and code conversion guidance. Supports AWS, GCP, and other providers. WHEN: migrate Lambda to Azure Functions, migrate AWS to Azure, Lambda migration assessment, convert AWS serverless to Azure, migration readiness report, migrate from AWS, migrate from GCP, cross-cloud migration.",
       "phase": 2,
@@ -25,30 +9,6 @@
       "skill_id": "azure-cloud-migrate",
       "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-cloud-migrate/SKILL.md",
       "triggers": "azure;cloud;migrate"
-    },
-    {
-      "description": "Builds AI agents on Cloudflare using the Agents SDK with state management, real-time WebSockets, scheduled tasks, tool integration, and chat capabilities. Generates production-ready agent code deployed to Workers. Use when: user wants to \"build an agent\", \"AI agent\", \"chat agent\", \"stateful agent\", mentions \"Agents SDK\", needs \"real-time AI\", \"WebSocket AI\", or asks about agent \"state management\", \"scheduled tasks\", or \"tool calling\". Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "building-ai-agent-on-cloudflare",
-      "src_path": "lib/cloudflare-skills/skills/building-ai-agent-on-cloudflare/SKILL.md",
-      "triggers": "building;ai;agent;on;cloudflare"
-    },
-    {
-      "description": "Builds remote MCP (Model Context Protocol) servers on Cloudflare Workers with tools, OAuth authentication, and production deployment. Generates server code, configures auth providers, and deploys to Workers. Use when: user wants to \"build MCP server\", \"create MCP tools\", \"remote MCP\", \"deploy MCP\", add \"OAuth to MCP\", or mentions Model Context Protocol on Cloudflare. Also triggers on \"MCP authentication\" or \"MCP deployment\". Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "building-mcp-server-on-cloudflare",
-      "src_path": "lib/cloudflare-skills/skills/building-mcp-server-on-cloudflare/SKILL.md",
-      "triggers": "building;mcp;server;on;cloudflare"
-    },
-    {
-      "description": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure-as-code (Terraform, Pulumi). Use for any Cloudflare development task. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "cloudflare",
-      "src_path": "lib/cloudflare-skills/skills/cloudflare/SKILL.md",
-      "triggers": "cloudflare"
     },
     {
       "description": "Cloudflare D1 SQLite database with Workers, Drizzle ORM, migrations",
@@ -59,68 +19,12 @@
       "triggers": "cloudflare;d1"
     },
     {
-      "description": "Expert in Cloudflare Workers and the Edge Computing ecosystem. Covers Wrangler, KV, D1, Durable Objects, and R2 storage.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "cloudflare-workers-expert",
-      "src_path": "lib/antigravity-awesome-skills/skills/cloudflare-workers-expert/SKILL.md",
-      "triggers": "cloudflare;workers;expert"
-    },
-    {
-      "description": "Create and review Cloudflare Durable Objects. Use when building stateful coordination (chat rooms, multiplayer games, booking systems), implementing RPC methods, SQLite storage, alarms, WebSockets, or reviewing DO code for best practices. Covers Workers integration, wrangler config, and testing with Vitest. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "durable-objects",
-      "src_path": "lib/cloudflare-skills/skills/durable-objects/SKILL.md",
-      "triggers": "durable;objects"
-    },
-    {
-      "description": "Build ultra-fast web APIs and full-stack apps with Hono — runs on Cloudflare Workers, Deno, Bun, Node.js, and any WinterCG-compatible runtime.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "hono",
-      "src_path": "lib/antigravity-awesome-skills/skills/hono/SKILL.md",
-      "triggers": "hono;edge;cloudflare-workers;bun;deno;api;typescript;web-standards"
-    },
-    {
       "description": "Latch platform for bioinformatics workflows. Build pipelines with Latch SDK, @workflow/@task decorators, deploy serverless workflows, LatchFile/LatchDir, Nextflow/Snakemake integration.",
       "phase": 2,
       "score": 100,
       "skill_id": "latchbio-integration",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/latchbio-integration/SKILL.md",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/latchbio-integration/SKILL.md",
       "triggers": "latchbio;integration"
-    },
-    {
-      "description": "Build sandboxed applications for secure code execution. Load when building AI code execution, code interpreters, CI/CD systems, interactive dev environments, or executing untrusted code. Covers Sandbox SDK lifecycle, commands, files, code interpreter, and preview URLs. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "sandbox-sdk",
-      "src_path": "lib/cloudflare-skills/skills/sandbox-sdk/SKILL.md",
-      "triggers": "sandbox;sdk"
-    },
-    {
-      "description": "Analyzes web performance using Chrome DevTools MCP. Measures Core Web Vitals (FCP, LCP, TBT, CLS, Speed Index), identifies render-blocking resources, network dependency chains, layout shifts, caching issues, and accessibility gaps. Use when asked to audit, profile, debug, or optimize page load performance, Lighthouse scores, or site speed. Biases towards retrieval from current documentation over pre-trained knowledge.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "web-perf",
-      "src_path": "lib/cloudflare-skills/skills/web-perf/SKILL.md",
-      "triggers": "web;perf"
-    },
-    {
-      "description": "Reviews and authors Cloudflare Workers code against production best practices. Load when writing new Workers, reviewing Worker code, configuring wrangler.jsonc, or checking for common Workers anti-patterns (streaming, floating promises, global state, secrets, bindings, observability). Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "workers-best-practices",
-      "src_path": "lib/cloudflare-skills/skills/workers-best-practices/SKILL.md",
-      "triggers": "workers;best;practices"
-    },
-    {
-      "description": "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflows, Pipelines, and Secrets Store. Load before running wrangler commands to ensure correct syntax and best practices. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "wrangler",
-      "src_path": "lib/cloudflare-skills/skills/wrangler/SKILL.md",
-      "triggers": "wrangler"
     }
   ],
   "sub_hub": "serverless-edge",

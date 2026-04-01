@@ -1,21 +1,15 @@
 {
-  "count": 14,
+  "count": 8,
   "hub": "frontend",
   "skills": [
     "customaize-agent:thought-based-reasoning",
-    "fp-ts-react",
     "gsap-frameworks",
     "langchain",
     "netlify-frameworks",
     "nuxt4-patterns",
-    "react-modernization",
-    "react-patterns",
     "react-web",
     "react:components",
-    "remotion-best-practices",
-    "sanity-best-practices",
-    "trpc-fullstack",
-    "vercel-ai-sdk-expert"
+    "sanity-best-practices"
   ],
   "sub_hub": "web-frameworks"
 }

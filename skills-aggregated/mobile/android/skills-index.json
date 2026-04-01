@@ -1,5 +1,5 @@
 {
-  "count": 12,
+  "count": 11,
   "hub": "mobile",
   "skills": [
     "analyzing-android-malware-with-apktool",
@@ -7,7 +7,6 @@
     "android-design-guidelines",
     "android-java",
     "android-kotlin",
-    "earllm-build",
     "hexagonal-architecture",
     "kotlin-coroutines-flows",
     "kotlin-exposed-patterns",

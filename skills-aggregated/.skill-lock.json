@@ -3,7 +3,7 @@
     "medicine",
     "law"
   ],
-  "generated_at_unix": 1775063604,
+  "generated_at_unix": 1775073196,
   "min_skills_per_subhub": 1,
   "review_band": {
     "candidates": 0,
@@ -14,213 +14,17 @@
   "src_repositories": [
     {
       "git": {
-        "head": "7d6275466d57dbaba0dc0cc5703f5f5cc5fda5ad",
-        "porcelain": ""
-      },
-      "name": "AvdLee-SwiftUI-Agent-Skill"
-    },
-    {
-      "git": {
-        "head": "0590993b35ad51961f65a4d01cf1196dfead05bb",
-        "porcelain": ""
-      },
-      "name": "BehiSecc-VibeSec-Skill"
-    },
-    {
-      "git": {
-        "head": "7b2aa4abfdc53f5125e87dd2d195a198dd506ffb",
-        "porcelain": ""
-      },
-      "name": "Charlie85270-Dorothy"
-    },
-    {
-      "git": {
-        "head": "b1c623076c661fc9b03dac19292e825a5d106823",
-        "porcelain": ""
-      },
-      "name": "CloudAI-X-threejs-skills"
-    },
-    {
-      "git": {
-        "head": "d8565a453255f2fbb493fc0d2e80f1068553e6c3",
-        "porcelain": ""
-      },
-      "name": "Digidai-product-manager-skills"
-    },
-    {
-      "git": {
-        "head": "f4a4e7d3aebc0f945e9a1eb7f1f0e88357f65fd5",
-        "porcelain": ""
-      },
-      "name": "HeshamFS-materials-simulation-skills"
-    },
-    {
-      "git": {
-        "head": "3f6a277e8af7d74d91b448618a7ded045e6fee93",
-        "porcelain": ""
-      },
-      "name": "Joannis-claude-skills"
-    },
-    {
-      "git": {
-        "head": "b58ad7e874f6b8045114f70837a2cd50e0ede5b6",
-        "porcelain": ""
-      },
-      "name": "K-Dense-AI-claude-scientific-skills"
-    },
-    {
-      "git": {
-        "head": "0f83da8a87eacdd8aa9c3097da627cac477d05be",
-        "porcelain": ""
-      },
-      "name": "Kevin7Qi-codex-collab"
-    },
-    {
-      "git": {
-        "head": "f05a85b29ed46f2f20b2024b1d3e97a065e5ced5",
-        "porcelain": ""
-      },
-      "name": "Leonxlnx-taste-skill"
-    },
-    {
-      "git": {
-        "head": "0c18b9abde04ad42f4f62c7e9ead346b7bb39260",
-        "porcelain": ""
-      },
-      "name": "NanoBanana-PPT-Skills"
-    },
-    {
-      "git": {
-        "head": "c4da85aef8c486148c33131e736c896dfa302bf0",
-        "porcelain": ""
-      },
-      "name": "NeoLabHQ-context-engineering-kit"
-    },
-    {
-      "git": {
-        "head": "d1e77a10d03e622fd72f951f8923b81d8f21348a",
-        "porcelain": ""
-      },
-      "name": "NoizAI-skills"
-    },
-    {
-      "git": {
-        "head": "264d00a719dd8ab88ad396cc27ebf55dbb6e1b72",
-        "porcelain": ""
-      },
-      "name": "NotMyself-claude-win11-speckit-update-skill"
-    },
-    {
-      "git": {
-        "head": "4bdd8b53d5dff3c36954acb45ea6814fd9dff43d",
-        "porcelain": ""
-      },
-      "name": "Orchestra-Research-AI-research-SKILLs"
-    },
-    {
-      "git": {
-        "head": "921c9be0b91f10f220f92e10b36355c3c43b74c2",
-        "porcelain": ""
-      },
-      "name": "Paramchoudhary-ResumeSkills"
-    },
-    {
-      "git": {
-        "head": "2a2f27c71c562dd6b6797c8f4d224825d6005c7f",
-        "porcelain": ""
-      },
-      "name": "Product-Manager-Skills"
-    },
-    {
-      "git": {
-        "head": "b18c6e63598f51da5490022546f6cbb7626b9508",
-        "porcelain": ""
-      },
-      "name": "ReScienceLab-opc-skills"
-    },
-    {
-      "git": {
-        "head": "397110c9fefbc6bd5444277686600aec28063c05",
-        "porcelain": ""
-      },
-      "name": "RoundTable02-tutor-skills"
-    },
-    {
-      "git": {
-        "head": "bbf77219c997f3b9ab19ee434e81d36f7ebb1953",
-        "porcelain": ""
-      },
-      "name": "SHADOWPR0-security-bluebook-builder"
-    },
-    {
-      "git": {
-        "head": "9e8be8b7a480668d8b237be3a0428deddcab7302",
-        "porcelain": ""
-      },
-      "name": "SeanZoR-claude-speed-reader"
-    },
-    {
-      "git": {
-        "head": "fce75e7cdf44451cf18ce153ed55cf5ed634f6dc",
-        "porcelain": ""
-      },
-      "name": "Shpigford-skills"
-    },
-    {
-      "git": {
-        "head": "5c22381ff7f5cb36f5bf6b1e0476f0c33b538b41",
-        "porcelain": ""
-      },
-      "name": "ShunsukeHayashi-agent-skill-bus"
-    },
-    {
-      "git": {
-        "head": "f31f077ee0905c95a510a6f34bbd0c3c85b15129",
-        "porcelain": ""
-      },
-      "name": "Youtube-clipper-skill"
-    },
-    {
-      "git": {
-        "head": "187342353fd983ac24dc789645739f0e8d0766c6",
-        "porcelain": ""
-      },
-      "name": "ZhangHanDong-makepad-skills"
-    },
-    {
-      "git": {
-        "head": "b41b2cb5545eb037f4a48a5dbeaaf68d823ee3ae",
+        "head": "401966bc18e937b33c29d474399f067c909fd96e",
         "porcelain": ""
       },
       "name": "affaan-m-everything-claude-code"
     },
     {
       "git": {
-        "head": "760460c221d30d0db904ff28e8fa52af85672255",
-        "porcelain": ""
-      },
-      "name": "agent-skills"
-    },
-    {
-      "git": {
-        "head": "4b1fb10bd707a22cf0cdfad5374ffc885f2ffa8d",
-        "porcelain": ""
-      },
-      "name": "agent-toolkit"
-    },
-    {
-      "git": {
-        "head": "e3a7dc87d4963b37e3439c2c95ec03967f24067c",
+        "head": "0a5aa36e6361dd1a92c9cb0a6fecacc9b776b5a2",
         "porcelain": ""
       },
       "name": "agricidaniel-claude-seo"
-    },
-    {
-      "git": {
-        "head": "f36b34fc539a7a3b801839bfff2c26277fd7ec69",
-        "porcelain": ""
-      },
-      "name": "ai-marketing-skills"
     },
     {
       "git": {
@@ -231,17 +35,24 @@
     },
     {
       "git": {
-        "head": "dffac91d3b437d01b62444da25c5a4f1e00f9047",
-        "porcelain": "M plugins/antigravity-bundle-typescript-javascript/skills/nextjs-app-router-patterns/SKILL.md"
+        "head": "5a68694c647526d95859f972bea3a2ae4e9cdfa7",
+        "porcelain": ""
       },
-      "name": "antigravity-awesome-skills"
+      "name": "antonbabenko-terraform-skill"
     },
     {
       "git": {
-        "head": "15d9e62c2701b460e5cfb2e0cab32a072a99baca",
+        "head": "9c2b1747772266325d91ac489d50ec34cc78823c",
         "porcelain": ""
       },
-      "name": "aso-skills"
+      "name": "avdlee-swiftui-agent-skill"
+    },
+    {
+      "git": {
+        "head": "0590993b35ad51961f65a4d01cf1196dfead05bb",
+        "porcelain": ""
+      },
+      "name": "behisecc-vibesec-skill"
     },
     {
       "git": {
@@ -252,31 +63,31 @@
     },
     {
       "git": {
-        "head": "12881abf6671c4ab62eceeb56f911b752f9fd6d2",
+        "head": "8b3a17889fbf12bedae20974a3c9f9de746ed754",
         "porcelain": ""
       },
       "name": "blader-humanizer"
     },
     {
       "git": {
-        "head": "429f61bc0eb728cbc88db22cb1b1b1be6f21cafb",
+        "head": "f36b34fc539a7a3b801839bfff2c26277fd7ec69",
         "porcelain": ""
       },
-      "name": "charlie-cfo-skill"
+      "name": "brianrwagner-ai-marketing-skills"
     },
     {
       "git": {
-        "head": "6838c4b8d2d1294b8571d133aafeab6700b5dd50",
+        "head": "7b2aa4abfdc53f5125e87dd2d195a198dd506ffb",
         "porcelain": ""
       },
-      "name": "cli"
+      "name": "charlie85270-dorothy"
     },
     {
       "git": {
-        "head": "ed57ea9dcb5d520f6ed055d3b1418993ed1ae593",
+        "head": "b1c623076c661fc9b03dac19292e825a5d106823",
         "porcelain": ""
       },
-      "name": "cloudflare-skills"
+      "name": "cloudai-x-threejs-skills"
     },
     {
       "git": {
@@ -294,13 +105,6 @@
     },
     {
       "git": {
-        "head": "d388e4bc413d3931c3182f80a3b8c414f3e74ef4",
-        "porcelain": ""
-      },
-      "name": "context-and-tools"
-    },
-    {
-      "git": {
         "head": "7c8c087486c29290b982820d719e1c4a556c0053",
         "porcelain": ""
       },
@@ -315,13 +119,10 @@
     },
     {
       "git": {
-        "head": "1609cef55f65e9f643d112cca400ff90ef16b9a1",
+        "head": "2a2f27c71c562dd6b6797c8f4d224825d6005c7f",
         "porcelain": ""
       },
-      "name": "creative-director-skill"
-    },
-    {
-      "name": "creem"
+      "name": "deanpeters-product-manager-skills"
     },
     {
       "git": {
@@ -332,7 +133,14 @@
     },
     {
       "git": {
-        "head": "f6114c786311232360c30856432b4014ebd3604c",
+        "head": "d8565a453255f2fbb493fc0d2e80f1068553e6c3",
+        "porcelain": ""
+      },
+      "name": "digidai-product-manager-skills"
+    },
+    {
+      "git": {
+        "head": "d62c2cec1933aff8d178494bc478c98db5caf37d",
         "porcelain": ""
       },
       "name": "duckdb-duckdb-skills"
@@ -353,10 +161,24 @@
     },
     {
       "git": {
+        "head": "15d9e62c2701b460e5cfb2e0cab32a072a99baca",
+        "porcelain": ""
+      },
+      "name": "eronred-aso-skills"
+    },
+    {
+      "git": {
         "head": "393994a0e3e098445af057ecc126f0fb9815c3c3",
         "porcelain": ""
       },
       "name": "ethos-link-rails-conventions"
+    },
+    {
+      "git": {
+        "head": "429f61bc0eb728cbc88db22cb1b1b1be6f21cafb",
+        "porcelain": ""
+      },
+      "name": "everyinc-charlie-cfo-skill"
     },
     {
       "git": {
@@ -367,10 +189,17 @@
     },
     {
       "git": {
-        "head": "1d2907706697fa48e8487deec58275c520276f16",
+        "head": "6838c4b8d2d1294b8571d133aafeab6700b5dd50",
         "porcelain": ""
       },
-      "name": "founder-skills"
+      "name": "firecrawl-cli"
+    },
+    {
+      "git": {
+        "head": "88eaf21b0e38c95959429a1a5f9b4cec72f01a43",
+        "porcelain": ""
+      },
+      "name": "frmoretto-clarity-gate"
     },
     {
       "git": {
@@ -381,17 +210,10 @@
     },
     {
       "git": {
-        "head": "7ea6ead9fa88ba439002a6dc1d7409649b45e9f5",
+        "head": "6169273d16b7ab8690943241fa802e5a1ca85305",
         "porcelain": ""
       },
       "name": "garrytan-gstack"
-    },
-    {
-      "git": {
-        "head": "51f1bedafbd15776826dae6242482b2017f2e568",
-        "porcelain": ""
-      },
-      "name": "gemini-skills"
     },
     {
       "git": {
@@ -399,6 +221,13 @@
         "porcelain": ""
       },
       "name": "gokapso-agent-skills"
+    },
+    {
+      "git": {
+        "head": "5b655a47ac6d03a2d96d6e64ca051b6a7fe62296",
+        "porcelain": ""
+      },
+      "name": "google-gemini-gemini-skills"
     },
     {
       "git": {
@@ -416,24 +245,73 @@
     },
     {
       "git": {
-        "head": "1c76f2daf43bb5576d83673530507776144b4e01",
+        "head": "194a20f0ce10a8bc97b43cd4d55819f3e4d09190",
         "porcelain": ""
       },
       "name": "helius-labs-core-ai"
     },
     {
       "git": {
-        "head": "12a116957d36d7602aff2bb709ea8416c05b07d8",
+        "head": "f4a4e7d3aebc0f945e9a1eb7f1f0e88357f65fd5",
         "porcelain": ""
       },
-      "name": "komal-SkyNET-claude-skill-homeassistant"
+      "name": "heshamfs-materials-simulation-skills"
     },
     {
       "git": {
-        "head": "d7bd7e5f3ff94cd04dc11908da172699c1e58032",
+        "head": "27c2603b4973980ee46a435ff3f242966d9f205e",
         "porcelain": ""
       },
-      "name": "kreuzberg-dev-kreuzberg"
+      "name": "huifer-claude-ally-health"
+    },
+    {
+      "git": {
+        "head": "95d0e08524b9f287c32696760725ae32c0f59791",
+        "porcelain": ""
+      },
+      "name": "ibelick-ui-skills"
+    },
+    {
+      "git": {
+        "head": "3f6a277e8af7d74d91b448618a7ded045e6fee93",
+        "porcelain": ""
+      },
+      "name": "joannis-claude-skills"
+    },
+    {
+      "git": {
+        "head": "50fd4af4d8bd60cfc48fd84eda1720fbd718857d",
+        "porcelain": ""
+      },
+      "name": "jthack-ffuf-claude-skill"
+    },
+    {
+      "git": {
+        "head": "b58ad7e874f6b8045114f70837a2cd50e0ede5b6",
+        "porcelain": ""
+      },
+      "name": "k-dense-ai-claude-scientific-skills"
+    },
+    {
+      "git": {
+        "head": "0f83da8a87eacdd8aa9c3097da627cac477d05be",
+        "porcelain": ""
+      },
+      "name": "kevin7qi-codex-collab"
+    },
+    {
+      "git": {
+        "head": "12a116957d36d7602aff2bb709ea8416c05b07d8",
+        "porcelain": ""
+      },
+      "name": "komal-skynet-claude-skill-homeassistant"
+    },
+    {
+      "git": {
+        "head": "bb7e920d376022958214e349ef25498a2644e189",
+        "porcelain": ""
+      },
+      "name": "lackeyjb-playwright-skill"
     },
     {
       "git": {
@@ -444,6 +322,13 @@
     },
     {
       "git": {
+        "head": "f05a85b29ed46f2f20b2024b1d3e97a065e5ced5",
+        "porcelain": ""
+      },
+      "name": "leonxlnx-taste-skill"
+    },
+    {
+      "git": {
         "head": "1780d46a73e485cbad4d0a48c019475d8be9193e",
         "porcelain": ""
       },
@@ -451,7 +336,7 @@
     },
     {
       "git": {
-        "head": "eebfb3c99aa955d4928192fab5de247d36633502",
+        "head": "651eab033bdf8f7fd535c274f8cbe839075aba5e",
         "porcelain": ""
       },
       "name": "mattpocock-skills"
@@ -465,13 +350,6 @@
     },
     {
       "git": {
-        "head": "512f1c770037f8bb4a86748df54e219716d64414",
-        "porcelain": ""
-      },
-      "name": "mcp-server-guide"
-    },
-    {
-      "git": {
         "head": "b9aa298a7dafcedd651cb3338a444d28aa39e924",
         "porcelain": ""
       },
@@ -479,7 +357,7 @@
     },
     {
       "git": {
-        "head": "a8af0844e5f1a50c042851f1506d364b1c8557a2",
+        "head": "82d644390f8daa0659de7df91382b5a5bcf5a809",
         "porcelain": ""
       },
       "name": "microsoft-skills"
@@ -494,9 +372,9 @@
     {
       "git": {
         "head": "2c88b96cf758c8a742c5b683e02c01e84497034f",
-        "porcelain": "D skills/hunting-for-living-off-the-land-binaries/SKILL.md"
+        "porcelain": ""
       },
-      "name": "mukul975-Anthropic-Cybersecurity-Skills"
+      "name": "mukul975-anthropic-cybersecurity-skills"
     },
     {
       "git": {
@@ -504,6 +382,13 @@
         "porcelain": ""
       },
       "name": "muthuishere-hand-drawn-diagrams"
+    },
+    {
+      "git": {
+        "head": "c4da85aef8c486148c33131e736c896dfa302bf0",
+        "porcelain": ""
+      },
+      "name": "neolabhq-context-engineering-kit"
     },
     {
       "git": {
@@ -521,10 +406,38 @@
     },
     {
       "git": {
+        "head": "d1e77a10d03e622fd72f951f8923b81d8f21348a",
+        "porcelain": ""
+      },
+      "name": "noizai-skills"
+    },
+    {
+      "git": {
+        "head": "264d00a719dd8ab88ad396cc27ebf55dbb6e1b72",
+        "porcelain": ""
+      },
+      "name": "notmyself-claude-win11-speckit-update-skill"
+    },
+    {
+      "git": {
+        "head": "dd237283dbfe466e11bd4be55acf14ecb8f6636e",
+        "porcelain": ""
+      },
+      "name": "obra-superpowers"
+    },
+    {
+      "git": {
         "head": "59389b1506e2d476980ee05c7c98c2f5e211fcb1",
         "porcelain": ""
       },
       "name": "obra-superpowers-lab"
+    },
+    {
+      "git": {
+        "head": "1d2907706697fa48e8487deec58275c520276f16",
+        "porcelain": ""
+      },
+      "name": "ognjengt-founder-skills"
     },
     {
       "git": {
@@ -535,6 +448,34 @@
     },
     {
       "git": {
+        "head": "0c18b9abde04ad42f4f62c7e9ead346b7bb39260",
+        "porcelain": ""
+      },
+      "name": "op7418-nanobanana-ppt-skills"
+    },
+    {
+      "git": {
+        "head": "f31f077ee0905c95a510a6f34bbd0c3c85b15129",
+        "porcelain": ""
+      },
+      "name": "op7418-youtube-clipper-skill"
+    },
+    {
+      "git": {
+        "head": "22bca4dbc2a8319f0819d053b30045e467985eff",
+        "porcelain": ""
+      },
+      "name": "orchestra-research-ai-research-skills"
+    },
+    {
+      "git": {
+        "head": "921c9be0b91f10f220f92e10b36355c3c43b74c2",
+        "porcelain": ""
+      },
+      "name": "paramchoudhary-resumeskills"
+    },
+    {
+      "git": {
         "head": "36ccefdc6c2e00d7c0c12cb0a52bf93e8ec50da4",
         "porcelain": ""
       },
@@ -542,10 +483,24 @@
     },
     {
       "git": {
+        "head": "eea5cb28ba79ab8b078a1eaa44ce9ec44f75dbf8",
+        "porcelain": ""
+      },
+      "name": "pleaseprompto-notebooklm-skill"
+    },
+    {
+      "git": {
         "head": "e0083353cffaf72d76fb758c431f15649065aac9",
         "porcelain": ""
       },
       "name": "prompt-security-clawsec"
+    },
+    {
+      "git": {
+        "head": "f0b1a149e21aff221f1dfb5f8a89e5f2db56eda7",
+        "porcelain": ""
+      },
+      "name": "raintree-technology-apple-hig-skills"
     },
     {
       "git": {
@@ -559,7 +514,14 @@
         "head": "8214fbf61e3ab6ff71e880061bfb5ee581414fac",
         "porcelain": ""
       },
-      "name": "ramzesenok-iOS-Accessibility-Audit-Skill"
+      "name": "ramzesenok-ios-accessibility-audit-skill"
+    },
+    {
+      "git": {
+        "head": "c2ab0cbd3fa06eea5e58cee88a206968f8dfa4dc",
+        "porcelain": ""
+      },
+      "name": "resciencelab-opc-skills"
     },
     {
       "git": {
@@ -570,10 +532,24 @@
     },
     {
       "git": {
+        "head": "397110c9fefbc6bd5444277686600aec28063c05",
+        "porcelain": ""
+      },
+      "name": "roundtable02-tutor-skills"
+    },
+    {
+      "git": {
         "head": "6b318827a7dc3b1b3194f2ae1e4f51cfb61d75fb",
         "porcelain": ""
       },
       "name": "rudrankriyam-app-store-connect-cli-skills"
+    },
+    {
+      "git": {
+        "head": "cb0512e6d1eb4fae31a1f9e2721c1419ed7a949c",
+        "porcelain": ""
+      },
+      "name": "sanity-io-agent-toolkit"
     },
     {
       "git": {
@@ -584,10 +560,52 @@
     },
     {
       "git": {
-        "head": "6a07b837c488f918170096bb13a94f938d900bb7",
+        "head": "8e57d3397b39a457d183a95923ec723421a41319",
         "porcelain": ""
       },
-      "name": "sickn33-antigravity-awesome-skills"
+      "name": "scarletkc-vexor"
+    },
+    {
+      "git": {
+        "head": "9e8be8b7a480668d8b237be3a0428deddcab7302",
+        "porcelain": ""
+      },
+      "name": "seanzor-claude-speed-reader"
+    },
+    {
+      "git": {
+        "head": "bf44efb7f9706f8f563af3b6913a3784c7c52a12",
+        "porcelain": ""
+      },
+      "name": "shadowpr0-beautiful-prose"
+    },
+    {
+      "git": {
+        "head": "bbf77219c997f3b9ab19ee434e81d36f7ebb1953",
+        "porcelain": ""
+      },
+      "name": "shadowpr0-security-bluebook-builder"
+    },
+    {
+      "git": {
+        "head": "fce75e7cdf44451cf18ce153ed55cf5ed634f6dc",
+        "porcelain": ""
+      },
+      "name": "shpigford-skills"
+    },
+    {
+      "git": {
+        "head": "5c22381ff7f5cb36f5bf6b1e0476f0c33b538b41",
+        "porcelain": ""
+      },
+      "name": "shunsukehayashi-agent-skill-bus"
+    },
+    {
+      "git": {
+        "head": "1609cef55f65e9f643d112cca400ff90ef16b9a1",
+        "porcelain": ""
+      },
+      "name": "smixs-creative-director-skill"
     },
     {
       "git": {
@@ -608,7 +626,7 @@
         "head": "a33c7fbc1a4684f2732267c12a106ee8ad853d53",
         "porcelain": ""
       },
-      "name": "tinybird-agent-skills"
+      "name": "tinybirdco-tinybird-agent-skills"
     },
     {
       "git": {
@@ -619,17 +637,24 @@
     },
     {
       "git": {
-        "head": "dd562a9aac0637272e41d209de0ed567c3464a84",
+        "head": "48204315033182370c28882b93b35130650101c5",
         "porcelain": ""
       },
       "name": "uucz-moyu"
     },
     {
       "git": {
-        "head": "cac10dd229b9a65a230b617a014e73ce2ae91ac2",
+        "head": "705d210f173adb24c8b8c59782616e2e7520687c",
         "porcelain": ""
       },
-      "name": "wanshuiyin-Auto-claude-code-research-in-sleep"
+      "name": "wanshuiyin-auto-claude-code-research-in-sleep"
+    },
+    {
+      "git": {
+        "head": "348a435345b7ddafb4d1002d41d9e2ef3f5b6992",
+        "porcelain": ""
+      },
+      "name": "wrsmith108-varlock-claude-skill"
     },
     {
       "git": {
@@ -640,10 +665,17 @@
     },
     {
       "git": {
-        "head": "d381315340bbdb3c53fb174da799a2cc4e8d9d4b",
+        "head": "c29fad606c5723dd0dc476c6732993a1837d6bba",
         "porcelain": ""
       },
-      "name": "yusufkaraaslan-Skill_Seekers"
+      "name": "yusufkaraaslan-skill-seekers"
+    },
+    {
+      "git": {
+        "head": "187342353fd983ac24dc789645739f0e8d0766c6",
+        "porcelain": ""
+      },
+      "name": "zhanghandong-makepad-skills"
     },
     {
       "git": {
@@ -654,10 +686,10 @@
     },
     {
       "git": {
-        "head": "217972034f0e4313896eb2af0612d29e516108b0",
+        "head": "b8185b1b909296f7230300e6cd18c2d8ae416f09",
         "porcelain": ""
       },
-      "name": "zw008-VMware-AIops"
+      "name": "zw008-vmware-aiops"
     },
     {
       "git": {

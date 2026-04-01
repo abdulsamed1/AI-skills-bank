@@ -1,141 +1,149 @@
 {
-  "generated_at_unix": 1775063596,
+  "generated_at_unix": 1775073184,
   "hub": "code-quality",
   "skills": [
     {
-      "description": "Azure AI Voice Live SDK for JavaScript/TypeScript. Build real-time voice AI applications with bidirectional WebSocket communication.",
+      "description": "Analyze text and images for harmful content using Azure AI Content Safety (@azure-rest/ai-content-safety). Use when moderating user-generated content, detecting hate speech, violence, sexual content, or self-harm, or managing custom blocklists.",
       "phase": 1,
       "score": 100,
-      "skill_id": "azure-ai-voicelive-ts",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-ai-voicelive-ts/SKILL.md",
-      "triggers": "azure;ai;voicelive;ts"
+      "skill_id": "azure-ai-contentsafety-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-ai-contentsafety-ts/SKILL.md",
+      "triggers": "azure;ai;contentsafety;ts"
     },
     {
-      "description": "Azure Cosmos DB JavaScript/TypeScript SDK (@azure/cosmos) for data plane operations. Use for CRUD operations on documents, queries, bulk operations, and container management.",
+      "description": "Extract text, tables, and structured data from documents using Azure Document Intelligence (@azure-rest/ai-document-intelligence). Use when processing invoices, receipts, IDs, forms, or building custom document models.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-document-intelligence-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-ai-document-intelligence-ts/SKILL.md",
+      "triggers": "azure;ai;document;intelligence;ts"
+    },
+    {
+      "description": "Build AI applications using Azure AI Projects SDK for JavaScript (@azure/ai-projects). Use when working with Foundry project clients, agents, connections, deployments, datasets, indexes, evaluations, or getting OpenAI clients.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-projects-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-ai-projects-ts/SKILL.md",
+      "triggers": "azure;ai;projects;ts"
+    },
+    {
+      "description": "Build translation applications using Azure Translation SDKs for JavaScript (@azure-rest/ai-translation-text, @azure-rest/ai-translation-document). Use when implementing text translation, transliteration, language detection, or batch document translation.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-translation-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-ai-translation-ts/SKILL.md",
+      "triggers": "azure;ai;translation;ts"
+    },
+    {
+      "description": "Build applications using Azure App Configuration SDK for JavaScript (@azure/app-configuration). Use when working with configuration settings, feature flags, Key Vault references, dynamic refresh, or centralized configuration management.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-appconfiguration-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-appconfiguration-ts/SKILL.md",
+      "triggers": "azure;appconfiguration;ts"
+    },
+    {
+      "description": "Azure Cosmos DB JavaScript/TypeScript SDK (@azure/cosmos) for data plane operations. Use for CRUD operations on documents, queries, bulk operations, and container management. Triggers: \"Cosmos DB\", \"@azure/cosmos\", \"CosmosClient\", \"document CRUD\", \"NoSQL queries\", \"bulk operations\", \"partition key\", \"container.items\".",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-cosmos-ts",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-cosmos-ts/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-cosmos-ts/SKILL.md",
       "triggers": "azure;cosmos;ts"
     },
     {
-      "description": "Azure Blob Storage JavaScript/TypeScript SDK (@azure/storage-blob) for blob operations. Use for uploading, downloading, listing, and managing blobs and containers.",
+      "description": "Build event streaming applications using Azure Event Hubs SDK for JavaScript (@azure/event-hubs). Use when implementing high-throughput event ingestion, real-time analytics, IoT telemetry, or event-driven architectures with partitioned consumers.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-eventhub-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-eventhub-ts/SKILL.md",
+      "triggers": "azure;eventhub;ts"
+    },
+    {
+      "description": "Authenticate to Azure services using Azure Identity library for JavaScript (@azure/identity). Use when configuring authentication with DefaultAzureCredential, managed identity, service principals, or interactive browser login.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-identity-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-identity-ts/SKILL.md",
+      "triggers": "azure;identity;ts"
+    },
+    {
+      "description": "Manage cryptographic keys using Azure Key Vault Keys SDK for JavaScript (@azure/keyvault-keys). Use when creating, encrypting/decrypting, signing, or rotating keys.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-keyvault-keys-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-keyvault-keys-ts/SKILL.md",
+      "triggers": "azure;keyvault;keys;ts"
+    },
+    {
+      "description": "Manage secrets using Azure Key Vault Secrets SDK for JavaScript (@azure/keyvault-secrets). Use when storing and retrieving application secrets or configuration values.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-keyvault-secrets-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-keyvault-secrets-ts/SKILL.md",
+      "triggers": "azure;keyvault;secrets;ts"
+    },
+    {
+      "description": "Build search applications using Azure AI Search SDK for JavaScript (@azure/search-documents). Use when creating/managing indexes, implementing vector/hybrid search, semantic ranking, or building agentic retrieval with knowledge bases.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-search-documents-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-search-documents-ts/SKILL.md",
+      "triggers": "azure;search;documents;ts"
+    },
+    {
+      "description": "Build messaging applications using Azure Service Bus SDK for JavaScript (@azure/service-bus). Use when implementing queues, topics/subscriptions, message sessions, dead-letter handling, or enterprise messaging patterns.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-servicebus-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-servicebus-ts/SKILL.md",
+      "triggers": "azure;servicebus;ts"
+    },
+    {
+      "description": "Azure Blob Storage JavaScript/TypeScript SDK (@azure/storage-blob) for blob operations. Use for uploading, downloading, listing, and managing blobs and containers. Supports block blobs, append blobs, page blobs, SAS tokens, and streaming. Triggers: \"blob storage\", \"@azure/storage-blob\", \"BlobServiceClient\", \"ContainerClient\", \"upload blob\", \"download blob\", \"SAS token\", \"block blob\".",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-storage-blob-ts",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-storage-blob-ts/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-storage-blob-ts/SKILL.md",
       "triggers": "azure;storage;blob;ts"
     },
     {
-      "description": "Azure File Share JavaScript/TypeScript SDK (@azure/storage-file-share) for SMB file share operations.",
+      "description": "Azure File Share JavaScript/TypeScript SDK (@azure/storage-file-share) for SMB file share operations. Use for creating shares, managing directories, uploading/downloading files, and handling file metadata. Supports Azure Files SMB protocol scenarios. Triggers: \"file share\", \"@azure/storage-file-share\", \"ShareServiceClient\", \"ShareClient\", \"SMB\", \"Azure Files\".",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-storage-file-share-ts",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-storage-file-share-ts/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-storage-file-share-ts/SKILL.md",
       "triggers": "azure;storage;file;share;ts"
     },
     {
-      "description": "Azure Queue Storage JavaScript/TypeScript SDK (@azure/storage-queue) for message queue operations. Use for sending, receiving, peeking, and deleting messages in queues.",
+      "description": "Azure Queue Storage JavaScript/TypeScript SDK (@azure/storage-queue) for message queue operations. Use for sending, receiving, peeking, and deleting messages in queues. Supports visibility timeout, message encoding, and batch operations. Triggers: \"queue storage\", \"@azure/storage-queue\", \"QueueServiceClient\", \"QueueClient\", \"send message\", \"receive message\", \"dequeue\", \"visibility timeout\".",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-storage-queue-ts",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-storage-queue-ts/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-storage-queue-ts/SKILL.md",
       "triggers": "azure;storage;queue;ts"
     },
     {
-      "description": "Guide for building reliable, fault-tolerant TypeScript applications with DBOS durable workflows. Use when adding DBOS to existing TypeScript code, creating workflows and steps, or using queues for concurrency control.",
+      "description": "Build real-time messaging applications using Azure Web PubSub SDKs for JavaScript (@azure/web-pubsub, @azure/web-pubsub-client). Use when implementing WebSocket-based real-time features, pub/sub messaging, group chat, or live notifications.",
       "phase": 1,
       "score": 100,
-      "skill_id": "dbos-typescript",
-      "src_path": "lib/antigravity-awesome-skills/skills/dbos-typescript/SKILL.md",
-      "triggers": "dbos;typescript"
+      "skill_id": "azure-web-pubsub-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-web-pubsub-ts/SKILL.md",
+      "triggers": "azure;web;pubsub;ts"
     },
     {
-      "description": "Practical async patterns using TaskEither - clean pipelines instead of try/catch hell, with real API examples",
+      "description": "Guide for writing Netlify serverless functions. Use when creating API endpoints, background processing, scheduled tasks, or any server-side logic using Netlify Functions. Covers modern syntax (default export + Config), TypeScript, path routing, background functions, scheduled functions, streaming, and method routing.",
       "phase": 1,
       "score": 100,
-      "skill_id": "fp-async",
-      "src_path": "lib/antigravity-awesome-skills/skills/fp-async/SKILL.md",
-      "triggers": "fp-ts;typescript;async;error-handling;practical;promises;api;fetch"
+      "skill_id": "netlify-functions",
+      "src_path": "lib/netlify-context-and-tools/codex/skills/netlify-functions/SKILL.md",
+      "triggers": "netlify;functions"
     },
     {
-      "description": "Everyday data transformations using functional patterns - arrays, objects, grouping, aggregation, and null-safe access",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "fp-data-transforms",
-      "src_path": "lib/antigravity-awesome-skills/skills/fp-data-transforms/SKILL.md",
-      "triggers": "functional-code-quality;typescript;data-transformation;fp-ts;arrays;objects;grouping;aggregation;null-safety"
-    },
-    {
-      "description": "Stop throwing everywhere - handle errors as values using Either and TaskEither for cleaner, more predictable code",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "fp-errors",
-      "src_path": "lib/antigravity-awesome-skills/skills/fp-errors/SKILL.md",
-      "triggers": "fp-ts;error-handling;either;task-either;typescript;validation;practical"
-    },
-    {
-      "description": "A practical, jargon-free guide to functional code-quality - the 80/20 approach that gets results without the academic overhead",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "fp-pragmatic",
-      "src_path": "lib/antigravity-awesome-skills/skills/fp-pragmatic/SKILL.md",
-      "triggers": "fp-ts;functional-code-quality;typescript;pragmatic;beginner-friendly;best-practices"
-    },
-    {
-      "description": "Practical patterns for using fp-ts with React - hooks, state, forms, data fetching. Works with React 18/19, Next.js 14/15.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "fp-react",
-      "src_path": "lib/antigravity-awesome-skills/skills/fp-react/SKILL.md",
-      "triggers": "fp-ts;react;typescript;hooks;state-management;forms;data-fetching;remote-data;react-19;next-js"
-    },
-    {
-      "description": "Comprehensive guide for refactoring imperative TypeScript code to fp-ts functional patterns",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "fp-refactor",
-      "src_path": "lib/antigravity-awesome-skills/skills/fp-refactor/SKILL.md",
-      "triggers": "fp-ts;refactoring;functional-code-quality;typescript;migration;either;option;task;reader"
-    },
-    {
-      "description": "Handle errors as values using fp-ts Either and TaskEither for cleaner, more predictable TypeScript code. Use when implementing error handling patterns with fp-ts.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "fp-ts-errors",
-      "src_path": "lib/antigravity-awesome-skills/skills/fp-ts-errors/SKILL.md",
-      "triggers": "fp;ts;errors"
-    },
-    {
-      "description": "A practical, jargon-free guide to fp-ts functional code-quality - the 80/20 approach that gets results without the academic overhead. Use when writing TypeScript with fp-ts library.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "fp-ts-pragmatic",
-      "src_path": "lib/antigravity-awesome-skills/skills/fp-ts-pragmatic/SKILL.md",
-      "triggers": "fp;ts;pragmatic"
-    },
-    {
-      "description": "Quick reference for fp-ts types. Use when user asks which type to use, needs Option/Either/Task decision help, or wants fp-ts imports.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "fp-types-ref",
-      "src_path": "lib/antigravity-awesome-skills/skills/fp-types-ref/SKILL.md",
-      "triggers": "fp-ts;typescript;quick-reference;option;either;task"
-    },
-    {
-      "description": "You are a React component architecture expert specializing in scaffolding production-ready, accessible, and performant components. Generate complete component implementations with TypeScript, tests, s",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "frontend-mobile-development-component-scaffold",
-      "src_path": "lib/antigravity-awesome-skills/skills/frontend-mobile-development-component-scaffold/SKILL.md",
-      "triggers": "frontend;mobile;development;component;scaffold"
-    },
-    {
-      "description": "Create React Flow node components following established patterns with proper TypeScript types and store integration.",
+      "description": "Create React Flow node components with TypeScript types, handles, and Zustand integration. Use when building custom nodes for React Flow canvas, creating visual workflow editors, or implementing node-based UI components.",
       "phase": 1,
       "score": 100,
       "skill_id": "react-flow-node-ts",
-      "src_path": "lib/antigravity-awesome-skills/skills/react-flow-node-ts/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/react-flow-node-ts/SKILL.md",
       "triggers": "react;flow;node;ts"
     },
     {
@@ -143,7 +151,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "tech-stack:add-typescript-best-practices",
-      "src_path": "lib/NeoLabHQ-context-engineering-kit/plugins/tech-stack/skills/add-typescript-best-practices/SKILL.md",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/tech-stack/skills/add-typescript-best-practices/SKILL.md",
       "triggers": "tech;stack;add;typescript;best"
     },
     {
@@ -151,16 +159,8 @@
       "phase": 1,
       "score": 100,
       "skill_id": "tinybird-typescript-sdk-guidelines",
-      "src_path": "lib/tinybird-agent-skills/skills/tinybird-typescript-sdk-guidelines/SKILL.md",
+      "src_path": "lib/tinybirdco-tinybird-agent-skills/skills/tinybird-typescript-sdk-guidelines/SKILL.md",
       "triggers": "tinybird;typescript;sdk;guidelines"
-    },
-    {
-      "description": "You are a Trigger.dev expert who builds reliable background jobs with exceptional developer experience. You understand that Trigger.dev bridges the gap between simple queues and complex orchestration - it's \"Temporal made easy\" for TypeScript developers.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "trigger-dev",
-      "src_path": "lib/antigravity-awesome-skills/skills/trigger-dev/SKILL.md",
-      "triggers": "trigger;dev"
     },
     {
       "description": "TypeScript strict mode with eslint and jest",
@@ -171,36 +171,12 @@
       "triggers": "typescript"
     },
     {
-      "description": "Comprehensive guidance for mastering TypeScript's advanced type system including generics, conditional types, mapped types, template literal types, and utility types for building robust, type-safe applications.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "typescript-advanced-types",
-      "src_path": "lib/antigravity-awesome-skills/skills/typescript-advanced-types/SKILL.md",
-      "triggers": "typescript;advanced;types"
-    },
-    {
       "description": "Designs complex generic types, refactors `any` types to strict alternatives, creates type guards and utility types, and resolves TypeScript compiler errors. Use when the user asks about TypeScript (TS) types, generics, type inference, type guards, removing `any` types, strict typing, type errors, `infer`, `extends`, conditional types, mapped types, template literal types, branded/opaque types, or utility types like `Partial`, `Record`, `ReturnType`, and `Awaited`.",
       "phase": 1,
       "score": 100,
       "skill_id": "typescript-magician",
       "src_path": "lib/mcollina-skills/skills/typescript-magician/SKILL.md",
       "triggers": "typescript, types, generics, type-safety, advanced-typescript"
-    },
-    {
-      "description": "Master TypeScript with advanced types, generics, and strict type safety. Handles complex type systems, decorators, and enterprise-grade patterns.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "typescript-pro",
-      "src_path": "lib/antigravity-awesome-skills/skills/typescript-pro/SKILL.md",
-      "triggers": "typescript;pro"
-    },
-    {
-      "description": "Create Zustand stores following established patterns with proper TypeScript types and middleware.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "zustand-store-ts",
-      "src_path": "lib/antigravity-awesome-skills/skills/zustand-store-ts/SKILL.md",
-      "triggers": "zustand;store;ts"
     }
   ],
   "sub_hub": "typescript",

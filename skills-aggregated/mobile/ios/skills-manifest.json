@@ -1,10 +1,10 @@
 {
-  "generated_at_unix": 1775063596,
+  "generated_at_unix": 1775073184,
   "hub": "mobile",
   "skills": [
     {
       "description": "Scan an iOS/macOS Xcode project for common App Store rejection patterns before submission. Use when preparing an app for App Store review, after receiving a rejection from Apple, or when auditing metadata, subscriptions, privacy manifests, entitlements, or design compliance. Integrates with the asc CLI for metadata inspection.",
-      "phase": 5,
+      "phase": 4,
       "score": 100,
       "skill_id": "app-store-preflight-skills",
       "src_path": "lib/truongduy2611-app-store-preflight-skills/SKILL.md",
@@ -12,98 +12,74 @@
     },
     {
       "description": "苹果FoundationModels框架用于设备上的LLM——文本生成、使用@Generable进行引导生成、工具调用，以及在iOS 26+中的快照流。",
-      "phase": 5,
+      "phase": 4,
       "score": 100,
       "skill_id": "foundation-models-on-device",
       "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/foundation-models-on-device/SKILL.md",
       "triggers": "foundation;models;on;device"
     },
     {
-      "description": "Debug the current iOS project on a booted simulator with XcodeBuildMCP.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "ios-debugger-agent",
-      "src_path": "lib/antigravity-awesome-skills/skills/ios-debugger-agent/SKILL.md",
-      "triggers": "ios;debugger;agent"
-    },
-    {
       "description": "Apple Human Interface Guidelines for iPhone. Use when building, reviewing, or refactoring SwiftUI/UIKit interfaces for iOS. Triggers on tasks involving iPhone UI, iOS components, accessibility, Dynamic Type, Dark Mode, or HIG compliance.",
-      "phase": 5,
+      "phase": 4,
       "score": 100,
       "skill_id": "ios-design-guidelines",
       "src_path": "lib/ehmo-platform-design-skills/skills/ios/SKILL.md",
       "triggers": "ios;design;guidelines"
     },
     {
-      "description": "Develop native iOS applications with Swift/SwiftUI. Masters iOS 18, SwiftUI, UIKit integration, Core Data, networking, and App Store optimization.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "ios-developer",
-      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-mobile-developer/skills/ios-developer/SKILL.md",
-      "triggers": "ios;developer"
-    },
-    {
-      "description": "Reverse engineers iOS applications using Frida dynamic instrumentation to understand internal logic, extract encryption keys, bypass security controls, and discover hidden functionality without source code access. Use when performing authorized iOS penetration testing, analyzing proprietary protocols, understanding obfuscated logic, or extracting runtime secrets from iOS binaries. Activates for requests involving iOS reverse engineering, Frida iOS hooking, Objective-C/Swift method tracing, or iOS binary analysis.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "reverse-engineering-ios-app-with-frida",
-      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/reverse-engineering-ios-app-with-frida/SKILL.md",
-      "triggers": "mobile-security;ios;frida;reverse-engineering;owasp-mobile;penetration-testing"
-    },
-    {
       "description": "在 Swift 中使用 actor 实现线程安全的数据持久化——基于内存缓存与文件支持的存储，通过设计消除数据竞争。",
-      "phase": 5,
+      "phase": 4,
       "score": 100,
       "skill_id": "swift-actor-persistence",
       "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/swift-actor-persistence/SKILL.md",
       "triggers": "swift;actor;persistence"
     },
     {
+      "description": "Expert guidance on Swift Concurrency best practices, patterns, and implementation. Use when developers mention: (1) Swift Concurrency, async/await, actors, or tasks, (2) modern concurrency patterns or structured concurrency, (3) migrating to Swift 6 or strict concurrency checking, (4) data races or thread safety issues, (5) refactoring closures to async/await, (6) @MainActor, Sendable, or actor isolation, (7) concurrent code architecture or performance, (8) concurrency-related linter warnings, (9) AsyncSequence, AsyncStream, or task groups, (10) nonisolated, @preconcurrency, or @unchecked Sendable.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "swift-concurrency",
+      "src_path": "lib/joannis-claude-skills/swift-concurrency/SKILL.md",
+      "triggers": "swift;concurrency"
+    },
+    {
       "description": "Swift 6.2 可接近的并发性 — 默认单线程，@concurrent 用于显式后台卸载，隔离一致性用于主 actor 类型。",
-      "phase": 5,
+      "phase": 4,
       "score": 100,
       "skill_id": "swift-concurrency-6-2",
       "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/swift-concurrency-6-2/SKILL.md",
       "triggers": "swift;concurrency;6;2"
     },
     {
-      "description": "Review and fix Swift concurrency issues such as actor isolation and Sendable violations.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "swift-concurrency-expert",
-      "src_path": "lib/antigravity-awesome-skills/skills/swift-concurrency-expert/SKILL.md",
-      "triggers": "swift;concurrency;expert"
-    },
-    {
       "description": "Expert guidance on SwiftNIO best practices, patterns, and implementation. Use when developers mention: (1) SwiftNIO, NIO, ByteBuffer, Channel, ChannelPipeline, ChannelHandler, EventLoop, NIOAsyncChannel, or NIOFileSystem, (2) EventLoopFuture, ServerBootstrap, or DatagramBootstrap, (3) TCP/UDP server or client implementation, (4) ByteToMessageDecoder or wire protocol codecs, (5) binary protocol parsing or serialization, (6) blocking the event loop issues.",
-      "phase": 5,
+      "phase": 4,
       "score": 100,
       "skill_id": "swift-nio",
-      "src_path": "lib/Joannis-claude-skills/swift-nio/SKILL.md",
+      "src_path": "lib/joannis-claude-skills/swift-nio/SKILL.md",
       "triggers": "swift;nio"
     },
     {
       "description": "Scan Apple's SwiftUI documentation for deprecated APIs and update the SwiftUI Expert Skill with modern replacements. Use when asked to \"update latest APIs\", \"refresh deprecated SwiftUI APIs\", \"check for new SwiftUI deprecations\", \"scan for API changes\", or after a new iOS/Xcode release. Requires the Sosumi MCP to be available.",
-      "phase": 5,
+      "phase": 4,
       "score": 100,
       "skill_id": "update-swiftui-apis",
-      "src_path": "lib/AvdLee-SwiftUI-Agent-Skill/.agents/skills/update-swiftui-apis/SKILL.md",
+      "src_path": "lib/avdlee-swiftui-agent-skill/.agents/skills/update-swiftui-apis/SKILL.md",
       "triggers": "update;swiftui;apis"
     },
     {
       "description": "Expert guidance on building and deploying apps to WendyOS edge devices. Use when developers mention: (1) Wendy or WendyOS, (2) wendy CLI commands, (3) wendy.json or entitlements, (4) deploying apps to edge devices, (5) remote debugging Swift on ARM64, (6) NVIDIA Jetson or Raspberry Pi apps, (7) cross-compiling Swift for ARM64.",
-      "phase": 5,
+      "phase": 4,
       "score": 100,
       "skill_id": "wendy",
-      "src_path": "lib/Joannis-claude-skills/wendy/SKILL.md",
+      "src_path": "lib/joannis-claude-skills/wendy/SKILL.md",
       "triggers": "wendy"
     },
     {
       "description": "Curated Swift package ecosystem for WendyOS and Linux. Use when developers mention: (1) Swift packages for Linux or ARM64/AMD64, (2) choosing a Swift library, (3) Swift Package Index, (4) swiftpackageindex.com, (5) what Swift library to use, (6) Swift on WendyOS dependencies, (7) edge computing Swift libraries.",
-      "phase": 5,
+      "phase": 4,
       "score": 100,
       "skill_id": "wendy-swift",
-      "src_path": "lib/Joannis-claude-skills/wendy-swift/SKILL.md",
+      "src_path": "lib/joannis-claude-skills/wendy-swift/SKILL.md",
       "triggers": "wendy;swift"
     }
   ],

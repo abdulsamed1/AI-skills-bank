@@ -1,25 +1,13 @@
 {
-  "count": 18,
+  "count": 6,
   "hub": "code-quality",
   "skills": [
     "analyzing-golang-malware-with-ghidra",
-    "beachhead-segment",
-    "dbos-golang",
-    "go-concurrency-patterns",
-    "go-mode",
-    "go-rod-master",
+    "azure-deploy",
     "golang-patterns",
-    "golang-pro",
-    "growth-loops",
-    "grpc-golang",
-    "gtm-motions",
-    "gtm-strategy",
-    "idea-discovery-robot",
-    "ideal-customer-profile",
-    "identify-assumptions-new",
-    "micro-saas-launcher",
-    "sred-work-summary",
-    "temporal-golang-pro"
+    "golang-testing",
+    "pre-mortem",
+    "what-if-oracle"
   ],
   "sub_hub": "golang"
 }

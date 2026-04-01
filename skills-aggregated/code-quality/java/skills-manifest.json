@@ -1,93 +1,93 @@
 {
-  "generated_at_unix": 1775063596,
+  "generated_at_unix": 1775073184,
   "hub": "code-quality",
   "skills": [
     {
-      "description": "Azure AI Agents Persistent SDK for Java. Low-level SDK for creating and managing AI agents with threads, messages, runs, and tools.",
+      "description": "Azure AI Agents Persistent SDK for Java. Low-level SDK for creating and managing AI agents with threads, messages, runs, and tools. Triggers: \"PersistentAgentsClient\", \"persistent agents java\", \"agent threads java\", \"agent runs java\", \"streaming agents java\".",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-ai-agents-persistent-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-ai-agents-persistent-java/SKILL.md",
-      "triggers": "azure;ai;agents;persistent;java"
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-ai-agents-persistent-java/SKILL.md",
+      "triggers": "\"PersistentAgentsClient\", \"persistent agents java\", \"agent threads java\", \"agent runs java\", \"streaming agents java\"."
     },
     {
       "description": "Build anomaly detection applications with Azure AI Anomaly Detector SDK for Java. Use when implementing univariate/multivariate anomaly detection, time-series analysis, or AI-powered monitoring.",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-ai-anomalydetector-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-ai-anomalydetector-java/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-ai-anomalydetector-java/SKILL.md",
       "triggers": "azure;ai;anomalydetector;java"
     },
     {
-      "description": "Build content moderation applications using the Azure AI Content Safety SDK for Java.",
+      "description": "Build content moderation applications with Azure AI Content Safety SDK for Java. Use when implementing text/image analysis, blocklist management, or harm detection for hate, violence, sexual content, and self-harm.",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-ai-contentsafety-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-ai-contentsafety-java/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-ai-contentsafety-java/SKILL.md",
       "triggers": "azure;ai;contentsafety;java"
     },
     {
-      "description": "Build document analysis applications using the Azure AI Document Intelligence SDK for Java.",
+      "description": "Build document analysis applications with Azure Document Intelligence (Form Recognizer) SDK for Java. Use when extracting text, tables, key-value pairs from documents, receipts, invoices, or building custom document models.",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-ai-formrecognizer-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-ai-formrecognizer-java/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-ai-formrecognizer-java/SKILL.md",
       "triggers": "azure;ai;formrecognizer;java"
     },
     {
-      "description": "Azure AI Projects SDK for Java. High-level SDK for Azure AI Foundry project management including connections, datasets, indexes, and evaluations.",
+      "description": "Azure AI Projects SDK for Java. High-level SDK for Azure AI Foundry project management including connections, datasets, indexes, and evaluations. Triggers: \"AIProjectClient java\", \"azure ai projects java\", \"Foundry project java\", \"ConnectionsClient\", \"DatasetsClient\", \"IndexesClient\".",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-ai-projects-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-ai-projects-java/SKILL.md",
-      "triggers": "azure;ai;projects;java"
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-ai-projects-java/SKILL.md",
+      "triggers": "\"AIProjectClient java\", \"azure ai projects java\", \"Foundry project java\", \"ConnectionsClient\", \"DatasetsClient\", \"IndexesClient\"."
     },
     {
       "description": "Build image analysis applications with Azure AI Vision SDK for Java. Use when implementing image captioning, OCR text extraction, object detection, tagging, or smart cropping.",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-ai-vision-imageanalysis-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-ai-vision-imageanalysis-java/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-ai-vision-imageanalysis-java/SKILL.md",
       "triggers": "azure;ai;vision;imageanalysis;java"
     },
     {
-      "description": "Azure AI VoiceLive SDK for Java. Real-time bidirectional voice conversations with AI assistants using WebSocket.",
+      "description": "Azure AI VoiceLive SDK for Java. Real-time bidirectional voice conversations with AI assistants using WebSocket. Triggers: \"VoiceLiveClient java\", \"voice assistant java\", \"real-time voice java\", \"audio streaming java\", \"voice activity detection java\".",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-ai-voicelive-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-ai-voicelive-java/SKILL.md",
-      "triggers": "azure;ai;voicelive;java"
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-ai-voicelive-java/SKILL.md",
+      "triggers": "\"VoiceLiveClient java\", \"voice assistant java\", \"real-time voice java\", \"audio streaming java\", \"voice activity detection java\"."
     },
     {
-      "description": "Azure App Configuration SDK for Java. Centralized application configuration management with key-value settings, feature flags, and snapshots.",
+      "description": "Azure App Configuration SDK for Java. Centralized application configuration management with key-value settings, feature flags, and snapshots. Triggers: \"ConfigurationClient java\", \"app configuration java\", \"feature flag java\", \"configuration setting java\", \"azure config java\".",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-appconfiguration-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-appconfiguration-java/SKILL.md",
-      "triggers": "azure;appconfiguration;java"
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-appconfiguration-java/SKILL.md",
+      "triggers": "\"ConfigurationClient java\", \"app configuration java\", \"feature flag java\", \"configuration setting java\", \"azure config java\"."
     },
     {
-      "description": "Build server-side call automation workflows including IVR systems, call routing, recording, and AI-powered interactions.",
+      "description": "Build call automation workflows with Azure Communication Services Call Automation Java SDK. Use when implementing IVR systems, call routing, call recording, DTMF recognition, text-to-speech, or AI-powered call flows.",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-communication-callautomation-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-communication-callautomation-java/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-communication-callautomation-java/SKILL.md",
       "triggers": "azure;communication;callautomation;java"
     },
     {
-      "description": "⚠️ DEPRECATED: This SDK has been renamed to Call Automation. For new projects, use azure-communication-callautomation instead. This skill is for maintaining legacy code only.",
+      "description": "Azure Communication Services CallingServer (legacy) Java SDK. Note - This SDK is deprecated. Use azure-communication-callautomation instead for new projects. Only use this skill when maintaining legacy code.",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-communication-callingserver-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-communication-callingserver-java/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-communication-callingserver-java/SKILL.md",
       "triggers": "azure;communication;callingserver;java"
     },
     {
-      "description": "Build real-time chat applications with thread management, messaging, participants, and read receipts.",
+      "description": "Build real-time chat applications with Azure Communication Services Chat Java SDK. Use when implementing chat threads, messaging, participants, read receipts, typing notifications, or real-time chat features.",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-communication-chat-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-communication-chat-java/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-communication-chat-java/SKILL.md",
       "triggers": "azure;communication;chat;java"
     },
     {
@@ -95,7 +95,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "azure-communication-common-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-communication-common-java/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-communication-common-java/SKILL.md",
       "triggers": "azure;communication;common;java"
     },
     {
@@ -103,23 +103,39 @@
       "phase": 1,
       "score": 100,
       "skill_id": "azure-communication-sms-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-communication-sms-java/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-communication-sms-java/SKILL.md",
       "triggers": "azure;communication;sms;java"
     },
     {
-      "description": "Azure Batch SDK for Java. Run large-scale parallel and HPC batch jobs with pools, jobs, tasks, and compute nodes.",
+      "description": "Azure Batch SDK for Java. Run large-scale parallel and HPC batch jobs with pools, jobs, tasks, and compute nodes. Triggers: \"BatchClient java\", \"azure batch java\", \"batch pool java\", \"batch job java\", \"HPC java\", \"parallel computing java\".",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-compute-batch-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-compute-batch-java/SKILL.md",
-      "triggers": "azure;compute;batch;java"
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-compute-batch-java/SKILL.md",
+      "triggers": "\"BatchClient java\", \"azure batch java\", \"batch pool java\", \"batch job java\", \"HPC java\", \"parallel computing java\"."
+    },
+    {
+      "description": "Azure Cosmos DB SDK for Java. NoSQL database operations with global distribution, multi-model support, and reactive patterns. Triggers: \"CosmosClient java\", \"CosmosAsyncClient\", \"cosmos database java\", \"cosmosdb java\", \"document database java\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-cosmos-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-cosmos-java/SKILL.md",
+      "triggers": "\"CosmosClient java\", \"CosmosAsyncClient\", \"cosmos database java\", \"cosmosdb java\", \"document database java\"."
+    },
+    {
+      "description": "Build table storage applications with Azure Tables SDK for Java. Use when working with Azure Table Storage or Cosmos DB Table API for NoSQL key-value data, schemaless storage, or structured data at scale.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-data-tables-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-data-tables-java/SKILL.md",
+      "triggers": "azure;data;tables;java"
     },
     {
       "description": "Build event-driven applications with Azure Event Grid SDK for Java. Use when publishing events, implementing pub/sub patterns, or integrating with Azure services via events.",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-eventgrid-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-eventgrid-java/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-eventgrid-java/SKILL.md",
       "triggers": "azure;eventgrid;java"
     },
     {
@@ -127,15 +143,15 @@
       "phase": 1,
       "score": 100,
       "skill_id": "azure-eventhub-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-eventhub-java/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-eventhub-java/SKILL.md",
       "triggers": "azure;eventhub;java"
     },
     {
-      "description": "Authenticate Java applications with Azure services using Microsoft Entra ID (Azure AD).",
+      "description": "Azure Identity library for Java authentication with Azure services. Use when implementing DefaultAzureCredential, managed identity, service principal, or any Azure authentication pattern in Java applications.",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-identity-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-identity-java/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-identity-java/SKILL.md",
       "triggers": "azure;identity;java"
     },
     {
@@ -143,39 +159,47 @@
       "phase": 1,
       "score": 100,
       "skill_id": "azure-messaging-webpubsub-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-messaging-webpubsub-java/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-messaging-webpubsub-java/SKILL.md",
       "triggers": "azure;messaging;webpubsub;java"
     },
     {
-      "description": "Azure Monitor Ingestion SDK for Java. Send custom logs to Azure Monitor via Data Collection Rules (DCR) and Data Collection Endpoints (DCE).",
+      "description": "Azure Monitor Ingestion SDK for Java. Send custom logs to Azure Monitor via Data Collection Rules (DCR) and Data Collection Endpoints (DCE). Triggers: \"LogsIngestionClient java\", \"azure monitor ingestion java\", \"custom logs java\", \"DCR java\", \"data collection rule java\".",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-monitor-ingestion-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-monitor-ingestion-java/SKILL.md",
-      "triggers": "azure;monitor;ingestion;java"
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-monitor-ingestion-java/SKILL.md",
+      "triggers": "\"LogsIngestionClient java\", \"azure monitor ingestion java\", \"custom logs java\", \"DCR java\", \"data collection rule java\"."
     },
     {
-      "description": "Azure Monitor OpenTelemetry Exporter for Java. Export OpenTelemetry traces, metrics, and logs to Azure Monitor/Application Insights.",
+      "description": "Azure Monitor OpenTelemetry Exporter for Java. Export OpenTelemetry traces, metrics, and logs to Azure Monitor/Application Insights. Triggers: \"AzureMonitorExporter java\", \"opentelemetry azure java\", \"application insights java otel\", \"azure monitor tracing java\". Note: This package is DEPRECATED. Migrate to azure-monitor-opentelemetry-autoconfigure.",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-monitor-opentelemetry-exporter-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-monitor-opentelemetry-exporter-java/SKILL.md",
-      "triggers": "azure;monitor;opentelemetry;exporter;java"
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-monitor-opentelemetry-exporter-java/SKILL.md",
+      "triggers": "\"AzureMonitorExporter java\", \"opentelemetry azure java\", \"application insights java otel\", \"azure monitor tracing java\"."
     },
     {
-      "description": "Azure Monitor Query SDK for Java. Execute Kusto queries against Log Analytics workspaces and query metrics from Azure resources.",
+      "description": "Azure Monitor Query SDK for Java. Execute Kusto queries against Log Analytics workspaces and query metrics from Azure resources. Triggers: \"LogsQueryClient java\", \"MetricsQueryClient java\", \"kusto query java\", \"log analytics java\", \"azure monitor query java\". Note: This package is deprecated. Migrate to azure-monitor-query-logs and azure-monitor-query-metrics.",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-monitor-query-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-monitor-query-java/SKILL.md",
-      "triggers": "azure;monitor;query;java"
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-monitor-query-java/SKILL.md",
+      "triggers": "\"LogsQueryClient java\", \"MetricsQueryClient java\", \"kusto query java\", \"log analytics java\", \"azure monitor query java\"."
     },
     {
-      "description": "Build blob storage applications using the Azure Storage Blob SDK for Java.",
+      "description": "Azure Key Vault Secrets Java SDK for secret management. Use when storing, retrieving, or managing passwords, API keys, connection strings, or other sensitive configuration data.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-security-keyvault-secrets-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-security-keyvault-secrets-java/SKILL.md",
+      "triggers": "azure;security;keyvault;secrets;java"
+    },
+    {
+      "description": "Build blob storage applications with Azure Storage Blob SDK for Java. Use when uploading, downloading, or managing files in Azure Blob Storage, working with containers, or implementing streaming data operations.",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-storage-blob-java",
-      "src_path": "lib/antigravity-awesome-skills/skills/azure-storage-blob-java/SKILL.md",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-storage-blob-java/SKILL.md",
       "triggers": "azure;storage;blob;java"
     },
     {
@@ -187,12 +211,36 @@
       "triggers": "java;coding;standards"
     },
     {
-      "description": "Master Java 21+ with modern features like virtual threads, pattern matching, and Spring Boot 3.x. Expert in the latest Java ecosystem including GraalVM, Project Loom, and cloud-native patterns.",
+      "description": "JPA/Hibernate patterns for entity design, relationships, query optimization, transactions, auditing, indexing, pagination, and pooling in Spring Boot.",
       "phase": 1,
       "score": 100,
-      "skill_id": "java-pro",
-      "src_path": "lib/antigravity-awesome-skills/skills/java-pro/SKILL.md",
-      "triggers": "java;pro"
+      "skill_id": "jpa-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/ja-JP/skills/jpa-patterns/SKILL.md",
+      "triggers": "jpa;patterns"
+    },
+    {
+      "description": "Spring Security best practices for authn/authz, validation, CSRF, secrets, headers, rate limiting, and dependency security in Java Spring Boot services.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "springboot-security",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/ja-JP/skills/springboot-security/SKILL.md",
+      "triggers": "springboot;security"
+    },
+    {
+      "description": "Test-driven development for Spring Boot using JUnit 5, Mockito, MockMvc, Testcontainers, and JaCoCo. Use when adding features, fixing bugs, or refactoring.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "springboot-tdd",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/ja-JP/skills/springboot-tdd/SKILL.md",
+      "triggers": "springboot;tdd"
+    },
+    {
+      "description": "Verification loop for Spring Boot projects: build, static analysis, tests with coverage, security scans, and diff review before release or PR.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "springboot-verification",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/ja-JP/skills/springboot-verification/SKILL.md",
+      "triggers": "springboot;verification"
     }
   ],
   "sub_hub": "java",

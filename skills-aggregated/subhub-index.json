@@ -1,239 +1,143 @@
 {
-  "generated_at_unix": 1775063596,
+  "generated_at_unix": 1775073184,
   "subhubs": [
     {
       "hub": "ai",
       "path": "ai/prompting-factory",
-      "skills_count": 10,
-      "sub_hub": "prompting-factory"
-    },
-    {
-      "hub": "ai",
-      "path": "ai/skills-factory",
-      "skills_count": 13,
-      "sub_hub": "skills-factory"
-    },
-    {
-      "hub": "backend",
-      "path": "backend/core",
-      "skills_count": 146,
-      "sub_hub": "core"
-    },
-    {
-      "hub": "backend",
-      "path": "backend/caching",
-      "skills_count": 12,
-      "sub_hub": "caching"
-    },
-    {
-      "hub": "backend",
-      "path": "backend/ci-cd",
-      "skills_count": 64,
-      "sub_hub": "ci-cd"
-    },
-    {
-      "hub": "backend",
-      "path": "backend/containerization",
-      "skills_count": 24,
-      "sub_hub": "containerization"
-    },
-    {
-      "hub": "backend",
-      "path": "backend/databases",
-      "skills_count": 33,
-      "sub_hub": "databases"
-    },
-    {
-      "hub": "backend",
-      "path": "backend/microservices",
-      "skills_count": 2,
-      "sub_hub": "microservices"
-    },
-    {
-      "hub": "backend",
-      "path": "backend/server-side-frameworks",
       "skills_count": 6,
-      "sub_hub": "server-side-frameworks"
-    },
-    {
-      "hub": "backend",
-      "path": "backend/serverless-edge",
-      "skills_count": 15,
-      "sub_hub": "serverless-edge"
+      "sub_hub": "prompting-factory"
     },
     {
       "hub": "business",
       "path": "business/operations",
-      "skills_count": 1271,
+      "skills_count": 913,
       "sub_hub": "operations"
     },
     {
       "hub": "business",
-      "path": "business/product",
-      "skills_count": 44,
-      "sub_hub": "product"
-    },
-    {
-      "hub": "business",
-      "path": "business/product-strategy",
-      "skills_count": 21,
-      "sub_hub": "product-strategy"
-    },
-    {
-      "hub": "business",
-      "path": "business/sales",
-      "skills_count": 6,
-      "sub_hub": "sales"
-    },
-    {
-      "hub": "frontend",
-      "path": "frontend/state-management",
-      "skills_count": 41,
-      "sub_hub": "state-management"
-    },
-    {
-      "hub": "frontend",
-      "path": "frontend/ui-ux",
-      "skills_count": 164,
-      "sub_hub": "ui-ux"
-    },
-    {
-      "hub": "frontend",
-      "path": "frontend/web-frameworks",
-      "skills_count": 14,
-      "sub_hub": "web-frameworks"
-    },
-    {
-      "hub": "marketing",
-      "path": "marketing/analytics",
-      "skills_count": 3,
-      "sub_hub": "analytics"
-    },
-    {
-      "hub": "marketing",
-      "path": "marketing/content",
-      "skills_count": 11,
-      "sub_hub": "content"
-    },
-    {
-      "hub": "marketing",
-      "path": "marketing/email",
-      "skills_count": 20,
-      "sub_hub": "email"
-    },
-    {
-      "hub": "marketing",
-      "path": "marketing/seo",
-      "skills_count": 32,
-      "sub_hub": "seo"
-    },
-    {
-      "hub": "marketing",
-      "path": "marketing/social-media",
-      "skills_count": 30,
-      "sub_hub": "social-media"
-    },
-    {
-      "hub": "marketing",
-      "path": "marketing/strategy",
-      "skills_count": 13,
+      "path": "business/strategy",
+      "skills_count": 42,
       "sub_hub": "strategy"
     },
     {
-      "hub": "mobile",
-      "path": "mobile/android",
-      "skills_count": 12,
-      "sub_hub": "android"
-    },
-    {
-      "hub": "mobile",
-      "path": "mobile/cross-platform",
-      "skills_count": 10,
-      "sub_hub": "cross-platform"
-    },
-    {
-      "hub": "mobile",
-      "path": "mobile/ios",
-      "skills_count": 13,
-      "sub_hub": "ios"
+      "hub": "business",
+      "path": "business/tactical",
+      "skills_count": 9,
+      "sub_hub": "tactical"
     },
     {
       "hub": "code-quality",
-      "path": "code-quality/core-concepts",
-      "skills_count": 12,
-      "sub_hub": "core-concepts"
+      "path": "code-quality/ci-cd",
+      "skills_count": 42,
+      "sub_hub": "ci-cd"
     },
     {
       "hub": "code-quality",
       "path": "code-quality/golang",
-      "skills_count": 18,
+      "skills_count": 6,
       "sub_hub": "golang"
     },
     {
       "hub": "code-quality",
       "path": "code-quality/java",
-      "skills_count": 24,
+      "skills_count": 30,
       "sub_hub": "java"
     },
     {
       "hub": "code-quality",
       "path": "code-quality/javascript",
-      "skills_count": 65,
+      "skills_count": 46,
       "sub_hub": "javascript"
     },
     {
       "hub": "code-quality",
       "path": "code-quality/python",
-      "skills_count": 68,
+      "skills_count": 73,
       "sub_hub": "python"
     },
     {
       "hub": "code-quality",
       "path": "code-quality/rust",
-      "skills_count": 14,
+      "skills_count": 12,
       "sub_hub": "rust"
     },
     {
       "hub": "code-quality",
-      "path": "code-quality/typescript",
-      "skills_count": 25,
-      "sub_hub": "typescript"
-    },
-    {
-      "hub": "testing",
-      "path": "testing/automation testing",
-      "skills_count": 161,
-      "sub_hub": "automation testing"
-    },
-    {
-      "hub": "testing",
-      "path": "testing/e2e-testing",
-      "skills_count": 8,
-      "sub_hub": "e2e-testing"
-    },
-    {
-      "hub": "testing",
-      "path": "testing/performance-testing",
-      "skills_count": 96,
-      "sub_hub": "performance-testing"
-    },
-    {
-      "hub": "testing",
-      "path": "testing/security",
-      "skills_count": 703,
+      "path": "code-quality/security",
+      "skills_count": 629,
       "sub_hub": "security"
     },
     {
-      "hub": "testing",
-      "path": "testing/unit-testing",
-      "skills_count": 6,
-      "sub_hub": "unit-testing"
+      "hub": "code-quality",
+      "path": "code-quality/testing-qa",
+      "skills_count": 83,
+      "sub_hub": "testing-qa"
     },
     {
-      "hub": "marketing",
-      "path": "marketing/content-design",
-      "skills_count": 0,
-      "sub_hub": "content-design"
+      "hub": "code-quality",
+      "path": "code-quality/typescript",
+      "skills_count": 22,
+      "sub_hub": "typescript"
+    },
+    {
+      "hub": "frontend",
+      "path": "frontend/state-management",
+      "skills_count": 32,
+      "sub_hub": "state-management"
+    },
+    {
+      "hub": "frontend",
+      "path": "frontend/ui-ux",
+      "skills_count": 98,
+      "sub_hub": "ui-ux"
+    },
+    {
+      "hub": "frontend",
+      "path": "frontend/web-frameworks",
+      "skills_count": 8,
+      "sub_hub": "web-frameworks"
+    },
+    {
+      "hub": "mobile",
+      "path": "mobile/android",
+      "skills_count": 11,
+      "sub_hub": "android"
+    },
+    {
+      "hub": "mobile",
+      "path": "mobile/cross-platform",
+      "skills_count": 4,
+      "sub_hub": "cross-platform"
+    },
+    {
+      "hub": "mobile",
+      "path": "mobile/ios",
+      "skills_count": 10,
+      "sub_hub": "ios"
+    },
+    {
+      "hub": "server-side",
+      "path": "server-side/core",
+      "skills_count": 84,
+      "sub_hub": "core"
+    },
+    {
+      "hub": "server-side",
+      "path": "server-side/databases",
+      "skills_count": 25,
+      "sub_hub": "databases"
+    },
+    {
+      "hub": "server-side",
+      "path": "server-side/microservices",
+      "skills_count": 10,
+      "sub_hub": "microservices"
+    },
+    {
+      "hub": "server-side",
+      "path": "server-side/serverless-edge",
+      "skills_count": 3,
+      "sub_hub": "serverless-edge"
     }
   ],
   "version": 1
