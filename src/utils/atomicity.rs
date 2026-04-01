@@ -149,12 +149,18 @@ pub fn create_link_atomic(src: &Path, dest: &Path) -> Result<(), SkillManageErro
     #[cfg(windows)]
     {
         let src_abs = std::fs::canonicalize(src)?;
+        let src_str = src_abs.to_string_lossy().to_string();
+        // Standard Windows junctions do not support the \\?\ extended prefix
+        // provided by canonicalize(), which causes many tools to see the
+        // junction as empty or "File Not Found".
+        let src_clean = src_str.trim_start_matches(r"\\?\");
+        
         let dest_abs = if temp_dest.is_absolute() {
             temp_dest.clone()
         } else {
             std::env::current_dir()?.join(&temp_dest)
         };
-        junction::create(&src_abs, &dest_abs)?;
+        junction::create(std::path::Path::new(src_clean), &dest_abs)?;
     }
 
     #[cfg(unix)]

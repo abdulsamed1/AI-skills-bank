@@ -927,36 +927,31 @@ pub fn sync_output_to_targets(
         // If the destination already exists and is a reparse point (junction/symlink),
         // skip syncing to avoid copying into an existing junction that may point
         // back to the source (which causes recursive copy errors) or to external paths.
-        // Prefer reading symlink metadata first (doesn't follow links). This is
-        // important because `Path::exists()` follows symlinks and can return false
-        // if the link target is inaccessible — but the link itself still exists.
+        // Handle existing reparse points (junctions/symlinks)
         #[cfg(windows)]
         {
             use std::os::windows::fs::MetadataExt;
-            match std::fs::symlink_metadata(target) {
-                Ok(md) => {
-                    const FILE_ATTRIBUTE_REPARSE_POINT: u32 = 0x0400;
-                    if (md.file_attributes() & FILE_ATTRIBUTE_REPARSE_POINT) != 0 {
-                        _logger.warn(&format!("Skipping sync for {}: destination is a junction/reparse-point", target.display()));
+            if let Ok(md) = std::fs::symlink_metadata(target) {
+                const FILE_ATTRIBUTE_REPARSE_POINT: u32 = 0x0400;
+                if (md.file_attributes() & FILE_ATTRIBUTE_REPARSE_POINT) != 0 {
+                    // Only skip if we are in Copy mode to avoid accidental recursion.
+                    // For Link-based modes (including Auto), we want to proceed so
+                    // create_link_atomic can replace the link.
+                    if matches!(mode, NativeSyncMode::Copy) {
+                        _logger.warn(&format!("Skipping Copy-sync for {}: destination is a junction/reparse-point", target.display()));
                         continue;
                     }
-                }
-                Err(_) => {
-                    // If we cannot read metadata, fall back to `exists()` below.
                 }
             }
         }
         #[cfg(not(windows))]
         {
-            match std::fs::symlink_metadata(target) {
-                    Ok(md) if md.file_type().is_symlink() => {
-                        _logger.warn(&format!("Skipping sync for {}: destination is a symlink", target.display()));
+            if let Ok(md) = std::fs::symlink_metadata(target) {
+                if md.file_type().is_symlink() {
+                    if matches!(mode, NativeSyncMode::Copy) {
+                        _logger.warn(&format!("Skipping Copy-sync for {}: destination is a symlink", target.display()));
                         continue;
                     }
-                Ok(_) => {}
-                Err(_e) => {
-                    _logger.warn(&format!("Skipping sync for {}: unable to inspect target metadata", target.display()));
-                    continue;
                 }
             }
         }
@@ -986,15 +981,30 @@ pub fn sync_output_to_targets(
                 create_link_atomic(source_root, target)?;
             }
             NativeSyncMode::Auto => {
-                // To make the CLI safe to run for non-admin users across platforms
-                // (especially Windows where creating junctions/symlinks may require
-                // elevated privileges or developer mode), default `Auto` to copy-only
-                // behavior. This avoids attempts to create junctions/symlinks that can
-                // fail under restricted permissions. Users who want link-based
-                // deployment can explicitly use `NativeSyncMode::Junction` or
-                // `NativeSyncMode::SymbolicLink` via future CLI flags.
-                sync_dir_atomic(source_root, target)?;
-                used_copy = true;
+                // ── Auto Strategy: Try Link, Fallback to Copy ──
+                //
+                //  skills-aggregated/   ──(junction)──▶  ~/.gemini/skills/
+                //                       ──(junction)──▶  ~/.cursor/skills/
+                //                       ──(junction)──▶  ~/.claude/skills/
+                //
+                // Prefer directory links (Junctions on Windows, Symlinks on
+                // Unix) so every tool points at the single aggregated output.
+                // Only fall back to a full copy when linking fails — e.g. the
+                // target lives on a different volume, or the OS denies the
+                // privilege.
+                match create_link_atomic(source_root, target) {
+                    Ok(()) => {
+                        // Link created successfully — no copy needed.
+                    }
+                    Err(link_err) => {
+                        _logger.warn(&format!(
+                            "Linking failed for {}: {}. Falling back to copy.",
+                            target.display(), link_err
+                        ));
+                        sync_dir_atomic(source_root, target)?;
+                        used_copy = true;
+                    }
+                }
             }
         }
 
