@@ -65,13 +65,24 @@ cargo run --release -- cleanup-legacy-duplicates
 ```
 
 ---
+## Core Logic & CLI
+- **[src/](./src/)** — Rust source code containing the TUI, fetcher, aggregator, and sync components.
+- **[Cargo.toml](./Cargo.toml)** — Rust manifest defining project metadata and dependencies.
+- **[.skill-manage-cli-config.json](./.skill-manage-cli-config.json)** — User-specific configuration for sync targets and repository lists.
 
-## 📚 Documentation
+### Outputs & Aggregation
+- **[skills-aggregated/](./skills-aggregated/)** — The generated "Single Source of Truth" containing routed skill hubs and `routing.csv`.
+- **[lib/](./lib/)** — Canonical cache directory for cloned external skill repositories.
 
-- **[Agent Skill Loading Guide](./AGENTS.md)** — How agents discover and load skills (routing, token budget, anti-hallucination gates)
-- **[Agent Architecture](./docs/agent-skill-loading-architecture.md)** — Full technical specification (routing strategy, file roles, examples)
-- **[Project Context](./docs/project-context.md)** — Project structure and conventions
-- **[Epics & Roadmap](./docs/epics.md)** — Backlog and planned work
+### Documentation
+- **[readme.md](./readme.md)** — Main platform documentation and quick-start guide.
+- **[AGENTS.md](./AGENTS.md)** — Instruction manual for AI agents on how to discover and load skills.
+
+### Tooling & Maintenance
+- **[tests/](./tests/)** — Integration testing suite for the pipeline and TUI components.
+- **[archive/](./archive/)** — Legacy PowerShell scripts from the original PoC phase.
+- **[package.json](./package.json)** — Node.js manifest for `npx` distribution support.
+- **[.agent/](./.agent/)** — Local agent instructions and project-specific skills.
 
 ---
 
