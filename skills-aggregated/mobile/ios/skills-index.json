@@ -1,12 +1,15 @@
 {
-  "count": 10,
+  "count": 13,
   "hub": "mobile",
   "skills": [
     "app-store-preflight-skills",
+    "foundation-models-on-device",
     "ios-debugger-agent",
     "ios-design-guidelines",
     "ios-developer",
     "reverse-engineering-ios-app-with-frida",
+    "swift-actor-persistence",
+    "swift-concurrency-6-2",
     "swift-concurrency-expert",
     "swift-nio",
     "update-swiftui-apis",

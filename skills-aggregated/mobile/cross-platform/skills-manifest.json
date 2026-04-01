@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774993465,
+  "generated_at_unix": 1775063596,
   "hub": "mobile",
   "skills": [
     {
@@ -41,6 +41,14 @@
       "skill_id": "expo-dev-client",
       "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-expo-react-native/skills/expo-dev-client/SKILL.md",
       "triggers": "expo;dev;client"
+    },
+    {
+      "description": "库无关的Flutter/Dart代码审查清单，涵盖Widget最佳实践、状态管理模式（BLoC、Riverpod、Provider、GetX、MobX、Signals）、Dart惯用法、性能、可访问性、安全性和整洁架构。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "flutter-dart-code-review",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/flutter-dart-code-review/SKILL.md",
+      "triggers": "flutter;dart;code;review"
     },
     {
       "description": "Master Flutter development with Dart 3, advanced widgets, and multi-platform deployment.",

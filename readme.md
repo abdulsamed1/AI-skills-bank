@@ -228,7 +228,7 @@ The aggregation pipeline processes 8000+ `SKILL.md` files through a multi-stage 
 
 ### Hub Taxonomy (12 domains)
 
-`programming` · `frontend` · `backend` · `testing` · `ai` · `business` · `marketing` · `mobile` · `design` · `systems` · `data` · `security`
+`code-quality` · `frontend` · `backend` · `testing` · `ai` · `business` · `marketing` · `mobile` · `design` · `systems` · `data` · `security`
 
 ---
 

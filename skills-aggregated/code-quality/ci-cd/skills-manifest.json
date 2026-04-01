@@ -1,0 +1,520 @@
+{
+  "generated_at_unix": 1775063596,
+  "hub": "backend",
+  "skills": [
+    {
+      "description": "Claude Code Agent Teams - default team-based development with strict TDD pipeline enforcement",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "agent-teams",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/agent-teams/SKILL.md",
+      "triggers": "agent;teams"
+    },
+    {
+      "description": "Define, validate, and run repo-local multi-step automations with `asc workflow` and `.asc/workflow.json`. Use when migrating from lane tools, wiring CI pipelines, or orchestrating repeatable `asc` + shell release flows with hooks, conditionals, and sub-workflows.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "asc-workflow",
+      "src_path": "lib/rudrankriyam-app-store-connect-cli-skills/skills/asc-workflow/SKILL.md",
+      "triggers": "asc;workflow"
+    },
+    {
+      "description": "Auto-review pipeline — reads the full CEO, design, and eng review skills from disk and runs them sequentially with auto-decisions using 6 decision principles. Surfaces taste decisions (close approaches, borderline scope, codex disagreements) at a final approval gate. One command, fully reviewed plan out. Use when asked to \"auto review\", \"autoplan\", \"run all reviews\", \"review this plan automatically\", or \"make the decisions for me\". Proactively suggest when the user has a plan file and wants to run the full review gauntlet without answering 15-30 intermediate questions. (gstack)",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "autoplan",
+      "src_path": "lib/garrytan-gstack/autoplan/SKILL.md",
+      "triggers": "autoplan"
+    },
+    {
+      "description": "Master defensive Bash code-quality techniques for production-grade scripts. Use when writing robust shell scripts, CI/CD pipelines, or system utilities requiring fault tolerance and safety.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "bash-defensive-patterns",
+      "src_path": "lib/antigravity-awesome-skills/skills/bash-defensive-patterns/SKILL.md",
+      "triggers": "bash;defensive;patterns"
+    },
+    {
+      "description": "Master of defensive Bash scripting for production automation, CI/CD pipelines, and system utilities. Expert in safe, portable, and testable shell scripts.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "bash-pro",
+      "src_path": "lib/antigravity-awesome-skills/skills/bash-pro/SKILL.md",
+      "triggers": "bash;pro"
+    },
+    {
+      "description": "Feature development pipeline - research, plan, track, and implement major features.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "build",
+      "src_path": "lib/Shpigford-skills/build/SKILL.md",
+      "triggers": "build"
+    },
+    {
+      "description": "Builds an automated malware submission and analysis pipeline that collects suspicious files from endpoints and email gateways, submits them to sandbox environments and multi-engine scanners, and generates verdicts with IOCs for SIEM integration. Use when SOC teams need to scale malware analysis beyond manual sandbox submissions for high-volume alert triage.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "building-automated-malware-submission-pipeline",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/building-automated-malware-submission-pipeline/SKILL.md",
+      "triggers": "soc;malware-analysis;sandbox;automation;virustotal;cuckoo;any-run;pipeline"
+    },
+    {
+      "description": "Design and implement a comprehensive DevSecOps pipeline in GitLab CI/CD integrating SAST, DAST, container scanning, dependency scanning, and secret detection.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "building-devsecops-pipeline-with-gitlab-ci",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/building-devsecops-pipeline-with-gitlab-ci/SKILL.md",
+      "triggers": "gitlab-ci;devsecops;sast;dast;container-scanning;dependency-scanning;secret-detection;cicd-security"
+    },
+    {
+      "description": "You are a workflow automation expert specializing in creating efficient CI/CD pipelines, GitHub Actions workflows, and automated development processes. Design and implement automation that reduces manual work, improves consistency, and accelerates delivery while maintaining quality and security.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "cicd-automation-workflow-automate",
+      "src_path": "lib/antigravity-awesome-skills/skills/cicd-automation-workflow-automate/SKILL.md",
+      "triggers": "cicd;automation;workflow;automate"
+    },
+    {
+      "description": "Cloud infrastructure and DevOps workflow covering AWS, Azure, GCP, Kubernetes, Terraform, CI/CD, monitoring, and cloud-native development.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "cloud-devops",
+      "src_path": "lib/antigravity-awesome-skills/skills/cloud-devops/SKILL.md",
+      "triggers": "cloud;devops"
+    },
+    {
+      "description": "OpenAI Codex CLI code review with GPT-5.2-Codex, CI/CD integration",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "codex-review",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/codex-review/SKILL.md",
+      "triggers": "codex;review"
+    },
+    {
+      "description": "The fundamental architecture of computer use agents: observe screen, reason about next action, execute action, repeat. This loop integrates vision models with action execution through an iterative pipeline.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "computer-use-agents",
+      "src_path": "lib/antigravity-awesome-skills/skills/computer-use-agents/SKILL.md",
+      "triggers": "computer;use;agents"
+    },
+    {
+      "description": "You are a data pipeline architecture expert specializing in scalable, reliable, and cost-effective data pipelines for batch and streaming data processing.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "data-engineering-data-pipeline",
+      "src_path": "lib/antigravity-awesome-skills/skills/data-engineering-data-pipeline/SKILL.md",
+      "triggers": "data;engineering;data;pipeline"
+    },
+    {
+      "description": "Expert guidance for distributed training with DeepSpeed - ZeRO optimization stages, pipeline parallelism, FP16/BF16/FP8, 1-bit Adam, sparse attention",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "deepspeed",
+      "src_path": "lib/Orchestra-Research-AI-research-SKILLs/08-distributed-training/deepspeed/SKILL.md",
+      "triggers": "DeepSpeed;Distributed Training;ZeRO;Pipeline Parallelism;Mixed Precision;Optimization;Microsoft;Large-Scale Training;FP16;FP8"
+    },
+    {
+      "description": "Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "deployment-engineer",
+      "src_path": "lib/antigravity-awesome-skills/skills/deployment-engineer/SKILL.md",
+      "triggers": "deployment;engineer"
+    },
+    {
+      "description": "Deployment workflows, CI/CD pipeline patterns, Docker containerization, health checks, rollback strategies, and production readiness checklists for web applications. Use when setting up deployment infrastructure or planning releases.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "deployment-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/.kiro/skills/deployment-patterns/SKILL.md",
+      "triggers": "deployment;patterns"
+    },
+    {
+      "description": "Architecture patterns for multi-stage CI/CD pipelines with approval gates and deployment strategies.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "deployment-pipeline-design",
+      "src_path": "lib/antigravity-awesome-skills/skills/deployment-pipeline-design/SKILL.md",
+      "triggers": "deployment;pipeline;design"
+    },
+    {
+      "description": "Detecting exposed AWS credentials in source code repositories, CI/CD pipelines, and configuration files using TruffleHog, git-secrets, and AWS-native detection mechanisms to prevent credential theft and unauthorized account access.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "detecting-aws-credential-exposure-with-trufflehog",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/detecting-aws-credential-exposure-with-trufflehog/SKILL.md",
+      "triggers": "cloud-security;aws;credential-exposure;trufflehog;secrets-detection;devsecops"
+    },
+    {
+      "description": "DevOps e deploy de aplicacoes — Docker, CI/CD com GitHub Actions, AWS Lambda, SAM, Terraform, infraestrutura como codigo e monitoramento.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "devops-deploy",
+      "src_path": "lib/antigravity-awesome-skills/skills/devops-deploy/SKILL.md",
+      "triggers": "devops;docker;ci-cd;aws;terraform;github-actions"
+    },
+    {
+      "description": "Provides PyTorch-native distributed LLM pretraining using torchtitan with 4D parallelism (FSDP2, TP, PP, CP). Use when pretraining Llama 3.1, DeepSeek V3, or custom models at scale from 8 to 512+ GPUs with Float8, torch.compile, and distributed checkpointing.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "distributed-llm-pretraining-torchtitan",
+      "src_path": "lib/Orchestra-Research-AI-research-SKILLs/01-model-architecture/torchtitan/SKILL.md",
+      "triggers": "Model Architecture;Distributed Training;TorchTitan;FSDP2;Tensor Parallel;Pipeline Parallel;Context Parallel;Float8;Llama;Pretraining"
+    },
+    {
+      "description": "DNAnexus cloud genomics platform. Build apps/applets, manage data (upload/download), dxpy Python SDK, run workflows, FASTQ/BAM/VCF, for genomics pipeline development and execution.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "dnanexus-integration",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/dnanexus-integration/SKILL.md",
+      "triggers": "dnanexus;integration"
+    },
+    {
+      "description": "Helps understand and write EAS workflow YAML files for Expo projects. Use this skill when the user asks about CI/CD or workflows in an Expo or EAS context, mentions .eas/workflows/, or wants help with EAS build pipelines or deployment automation.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "expo-cicd-workflows",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-expo-react-native/skills/expo-cicd-workflows/SKILL.md",
+      "triggers": "expo;cicd;workflows"
+    },
+    {
+      "description": "extraction pipeline patterns",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "extraction-pipeline-patterns",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/skills/extraction-pipeline-patterns/SKILL.md",
+      "triggers": "extraction;pipeline;patterns"
+    },
+    {
+      "description": "Game art principles. Visual style selection, asset pipeline, animation workflow.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "game-art",
+      "src_path": "lib/antigravity-awesome-skills/skills/game-development/game-art/SKILL.md",
+      "triggers": "game;art"
+    },
+    {
+      "description": "Google Gemini CLI code review with Gemini 2.5 Pro, 1M token context, CI/CD integration",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "gemini-review",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/gemini-review/SKILL.md",
+      "triggers": "gemini;review"
+    },
+    {
+      "description": "Master Git hooks setup with Husky, lint-staged, pre-commit framework, and commitlint. Automate code quality gates, formatting, linting, and commit message enforcement before code reaches CI.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "git-hooks-automation",
+      "src_path": "lib/antigravity-awesome-skills/skills/git-hooks-automation/SKILL.md",
+      "triggers": "git;hooks;automation"
+    },
+    {
+      "description": "Automate GitHub repositories, issues, pull requests, branches, CI/CD, and permissions via Rube MCP (Composio). Manage code workflows, review PRs, search code, and handle deployments programmatically.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "github-automation",
+      "src_path": "lib/antigravity-awesome-skills/skills/github-automation/SKILL.md",
+      "triggers": "github;automation"
+    },
+    {
+      "description": "Merges GitHub Pull Requests after validating pre-merge checklist. Use when user wants to merge PR, close PR, finalize PR, complete merge, approve and merge, or execute merge. Runs pre-merge validation (tests, lint, CI, comments), confirms with user, merges with proper format, handles post-merge cleanup.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "github-pr-merge",
+      "src_path": "lib/fvadicamo-dev-agent-skills/skills/github-pr-merge/SKILL.md",
+      "triggers": "github;pr;merge"
+    },
+    {
+      "description": "Comprehensive GitLab CI/CD pipeline patterns for automated testing, building, and deployment.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "gitlab-ci-patterns",
+      "src_path": "lib/antigravity-awesome-skills/skills/gitlab-ci-patterns/SKILL.md",
+      "triggers": "gitlab;ci;patterns"
+    },
+    {
+      "description": "Workflow 1: Full idea discovery pipeline. Orchestrates research-lit → idea-creator → novelty-check → research-review to go from a broad research direction to validated, pilot-tested ideas. Use when user says \"找idea全流程\", \"idea discovery pipeline\", \"从零开始找方向\", or wants the complete idea exploration workflow.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "idea-discovery",
+      "src_path": "lib/wanshuiyin-Auto-claude-code-research-in-sleep/skills/idea-discovery/SKILL.md",
+      "triggers": "idea;discovery"
+    },
+    {
+      "description": "image preprocessing pipeline",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "image-preprocessing-pipeline",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/domains/ocr-integration/skills/image-preprocessing-pipeline/SKILL.md",
+      "triggers": "image;preprocessing;pipeline"
+    },
+    {
+      "description": "Integrates Static Application Security Testing (SAST), Dynamic Application Security Testing (DAST), and Software Composition Analysis (SCA) into CI/CD pipelines using open-source tools. Covers Semgrep for SAST, Trivy for SCA and container scanning, OWASP ZAP for DAST, and Gitleaks for secrets detection. Activates for requests involving DevSecOps pipeline setup, automated security scanning in CI/CD, SAST/DAST/SCA integration, or shift-left security implementation.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-devsecops-security-scanning",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-devsecops-security-scanning/SKILL.md",
+      "triggers": "devsecops;SAST;DAST;SCA;semgrep;trivy;owasp-zap;gitleaks;CI-CD;shift-left"
+    },
+    {
+      "description": "This skill covers implementing Open Policy Agent (OPA) and Gatekeeper for policy-as-code enforcement in Kubernetes and CI/CD pipelines. It addresses writing Rego policies, deploying OPA Gatekeeper as a Kubernetes admission controller, testing policies in development, and integrating policy evaluation into deployment pipelines.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-policy-as-code-with-open-policy-agent",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-policy-as-code-with-open-policy-agent/SKILL.md",
+      "triggers": "devsecops;cicd;opa;gatekeeper;policy-as-code;kubernetes;secure-sdlc"
+    },
+    {
+      "description": "This skill covers implementing Gitleaks for detecting and preventing hardcoded secrets in git repositories. It addresses configuring pre-commit hooks, CI/CD pipeline integration, custom rule authoring for organization-specific secrets, baseline management for existing repositories, and remediation workflows for exposed credentials.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-secret-scanning-with-gitleaks",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-secret-scanning-with-gitleaks/SKILL.md",
+      "triggers": "devsecops;cicd;secret-scanning;gitleaks;pre-commit;secure-sdlc"
+    },
+    {
+      "description": "Integrate gitleaks and trufflehog into CI/CD pipelines to detect leaked secrets before deployment",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-secrets-scanning-in-ci-cd",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-secrets-scanning-in-ci-cd/SKILL.md",
+      "triggers": "secrets-scanning;gitleaks;trufflehog;ci-cd"
+    },
+    {
+      "description": "Implements Sigstore-based software signing and verification using Cosign keyless signing, Rekor transparency log verification, and Fulcio certificate authority integration to establish cryptographic provenance for container images, binaries, and software artifacts. The practitioner configures OIDC-based identity binding, verifies signing events against the Rekor transparency log, and integrates signing workflows into CI/CD pipelines. Activates for requests involving software supply chain signing, keyless container signing, Sigstore deployment, or artifact provenance verification.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-sigstore-for-software-signing",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-sigstore-for-software-signing/SKILL.md",
+      "triggers": "sigstore;cosign;rekor;fulcio;software-signing;supply-chain;keyless-signing;OIDC;transparency-log"
+    },
+    {
+      "description": "Implement software supply chain integrity verification for container builds using the in-toto framework to create cryptographically signed attestations across CI/CD pipeline steps.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-supply-chain-security-with-in-toto",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-supply-chain-security-with-in-toto/SKILL.md",
+      "triggers": "in-toto;supply-chain-security;attestation;slsa;sigstore;container-security;cncf;provenance;sbom"
+    },
+    {
+      "description": "[Extended thinking: This workflow implements a sophisticated debugging and resolution pipeline that leverages AI-assisted debugging tools and observability platforms to systematically diagnose and res",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "incident-response-smart-fix",
+      "src_path": "lib/antigravity-awesome-skills/skills/incident-response-smart-fix/SKILL.md",
+      "triggers": "incident;response;smart;fix"
+    },
+    {
+      "description": "This skill covers integrating OWASP ZAP (Zed Attack Proxy) for Dynamic Application Security Testing in CI/CD pipelines. It addresses configuring baseline, full, and API scans against running applications, interpreting ZAP findings, tuning scan policies, and establishing DAST quality gates in GitHub Actions and GitLab CI.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "integrating-dast-with-owasp-zap-in-pipeline",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/integrating-dast-with-owasp-zap-in-pipeline/SKILL.md",
+      "triggers": "devsecops;cicd;dast;owasp-zap;dynamic-testing;secure-sdlc"
+    },
+    {
+      "description": "This skill covers integrating Static Application Security Testing (SAST) tools—CodeQL and Semgrep—into GitHub Actions CI/CD pipelines. It addresses configuring automated code scanning on pull requests and pushes, tuning rules to reduce false positives, uploading SARIF results to GitHub Advanced Security, and establishing quality gates that block merges when high-severity vulnerabilities are detected.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "integrating-sast-into-github-actions-pipeline",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/integrating-sast-into-github-actions-pipeline/SKILL.md",
+      "triggers": "devsecops;cicd;sast;codeql;semgrep;secure-sdlc"
+    },
+    {
+      "description": "Iterate on a PR until CI passes. Use when you need to fix CI failures, address review feedback, or continuously push fixes until all checks are green. Automates the feedback-fix-push-wait cycle.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "iterate-pr",
+      "src_path": "lib/antigravity-awesome-skills/skills/iterate-pr/SKILL.md",
+      "triggers": "iterate;pr"
+    },
+    {
+      "description": "Expert jq usage for JSON querying, filtering, transformation, and pipeline integration. Practical patterns for real shell workflows.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "jq",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/jq/SKILL.md",
+      "triggers": "jq;json;shell;cli;data-transformation;bash"
+    },
+    {
+      "description": "Land and deploy workflow. Merges the PR, waits for CI and deploy, verifies production health via canary checks. Takes over after /ship creates the PR. Use when: \"merge\", \"land\", \"deploy\", \"merge and verify\", \"land it\", \"ship it to production\". (gstack)",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "land-and-deploy",
+      "src_path": "lib/garrytan-gstack/land-and-deploy/SKILL.md",
+      "triggers": "land;and;deploy"
+    },
+    {
+      "description": "AI-native lead intelligence and outreach pipeline. Replaces Apollo, Clay, and ZoomInfo with agent-powered signal scoring, mutual ranking, warm path discovery, and personalized outreach. Use when the user wants to find, qualify, and reach high-value contacts.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "lead-intelligence",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/lead-intelligence/SKILL.md",
+      "triggers": "lead;intelligence"
+    },
+    {
+      "description": "Design and implement a complete ML pipeline for: $ARGUMENTS",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "machine-learning-ops-ml-pipeline",
+      "src_path": "lib/antigravity-awesome-skills/skills/machine-learning-ops-ml-pipeline/SKILL.md",
+      "triggers": "machine;learning;ops;ml;pipeline"
+    },
+    {
+      "description": "CRITICAL: Use for Makepad packaging and deployment. Triggers on: deploy, package, APK, IPA, 打包, 部署, cargo-packager, cargo-makepad, WASM, Android, iOS, distribution, installer, .deb, .dmg, .nsis, GitHub Actions, CI, action, marketplace",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "makepad-deployment",
+      "src_path": "lib/ZhangHanDong-makepad-skills/skills/makepad-deployment/SKILL.md",
+      "triggers": "makepad;deployment"
+    },
+    {
+      "description": "Complete end-to-end MLOps pipeline orchestration from data preparation through model deployment.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "ml-pipeline-workflow",
+      "src_path": "lib/antigravity-awesome-skills/skills/ml-pipeline-workflow/SKILL.md",
+      "triggers": "ml;pipeline;workflow"
+    },
+    {
+      "description": "Handles git and GitHub operations using the gh CLI. Use when the user asks about pull requests (PRs), GitHub issues, repo management, branching, merging, rebasing, cherry-picking, merge conflict resolution, commit history cleanup, pre-commit hook debugging, GitHub Actions workflows, or releases. Covers creating and reviewing PRs, watching CI checks, interactive rebasing, branch cleanup, submodule management, and repository archaeology with git log/blame/bisect.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "octocat",
+      "src_path": "lib/mcollina-skills/skills/octocat/SKILL.md",
+      "triggers": "git, github, gh-cli, version-control, merge-conflicts, pull-requests"
+    },
+    {
+      "description": "Expert guide for Odoo Sales and CRM: pipeline stages, quotation templates, pricelists, sales teams, lead scoring, and forecasting.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "odoo-sales-crm-expert",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-odoo-erp/skills/odoo-sales-crm-expert/SKILL.md",
+      "triggers": "odoo;sales;crm;expert"
+    },
+    {
+      "description": "Open-source pipeline: fork, sanitize, and package private projects for safe public release. Chains 3 agents (forker, sanitizer, packager). Triggers: '/opensource', 'open source this', 'make this public', 'prepare for open source'.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "opensource-pipeline",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/opensource-pipeline/SKILL.md",
+      "triggers": "opensource;pipeline"
+    },
+    {
+      "description": "Workflow 3: Full paper writing pipeline. Orchestrates paper-plan → paper-figure → paper-write → paper-compile → auto-paper-improvement-loop to go from a narrative report to a polished, submission-ready PDF. Use when user says \"写论文全流程\", \"write paper pipeline\", \"从报告到PDF\", \"paper writing\", or wants the complete paper generation workflow.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "paper-writing",
+      "src_path": "lib/wanshuiyin-Auto-claude-code-research-in-sleep/skills/paper-writing/SKILL.md",
+      "triggers": "paper;writing"
+    },
+    {
+      "description": "This skill covers implementing Software Composition Analysis (SCA) using Snyk to detect vulnerable open-source dependencies in CI/CD pipelines. It addresses scanning package manifests and lockfiles, automated fix pull request generation, license compliance checking, continuous monitoring of deployed applications, and integration with GitHub, GitLab, and Jenkins pipelines.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "performing-sca-dependency-scanning-with-snyk",
+      "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/performing-sca-dependency-scanning-with-snyk/SKILL.md",
+      "triggers": "devsecops;cicd;sca;snyk;dependency-scanning;secure-sdlc"
+    },
+    {
+      "description": "Automate Pipedrive CRM operations including deals, contacts, organizations, activities, notes, and pipeline management via Rube MCP (Composio). Always search tools first for current schemas.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "pipedrive-automation",
+      "src_path": "lib/antigravity-awesome-skills/skills/pipedrive-automation/SKILL.md",
+      "triggers": "pipedrive;automation"
+    },
+    {
+      "description": "Production-ready CI/CD configurations for Playwright — GitHub Actions, GitLab CI, CircleCI, Azure DevOps, Jenkins, Docker, parallel sharding, reporting, code coverage, and global setup/teardown.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "playwright-ci",
+      "src_path": "lib/testdino-hq-playwright-skill/ci/SKILL.md",
+      "triggers": "playwright;ci"
+    },
+    {
+      "description": "基于RFC驱动的多智能体DAG执行模式，包含质量门、合并队列和工作单元编排。",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "ralphinho-rfc-pipeline",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/ralphinho-rfc-pipeline/SKILL.md",
+      "triggers": "ralphinho;rfc;pipeline"
+    },
+    {
+      "description": "Workflow 4: Submission rebuttal pipeline. Parses external reviews, enforces coverage and grounding, drafts a safe text-only rebuttal under venue limits, and manages follow-up rounds. Use when user says \"rebuttal\", \"reply to reviewers\", \"ICML rebuttal\", \"OpenReview response\", or wants to answer external reviews safely.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "rebuttal",
+      "src_path": "lib/wanshuiyin-Auto-claude-code-research-in-sleep/skills/rebuttal/SKILL.md",
+      "triggers": "rebuttal"
+    },
+    {
+      "description": "Full research pipeline: Workflow 1 (idea discovery) → implementation → Workflow 2 (auto review loop). Goes from a broad research direction all the way to a submission-ready paper. Use when user says \"全流程\", \"full pipeline\", \"从找idea到投稿\", \"end-to-end research\", or wants the complete autonomous research lifecycle.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "research-pipeline",
+      "src_path": "lib/wanshuiyin-Auto-claude-code-research-in-sleep/skills/research-pipeline/SKILL.md",
+      "triggers": "research;pipeline"
+    },
+    {
+      "description": "Run an end-to-end workflow that chains `research-refine` and `experiment-plan`. Use when the user wants a one-shot pipeline from vague research direction to focused final proposal plus detailed experiment roadmap, or asks to \"串起来\", build a pipeline, do it end-to-end, or generate both the method and experiment plan together.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "research-refine-pipeline",
+      "src_path": "lib/wanshuiyin-Auto-claude-code-research-in-sleep/skills/research-refine-pipeline/SKILL.md",
+      "triggers": "research;refine;pipeline"
+    },
+    {
+      "description": "Standard single-cell RNA-seq analysis pipeline. Use for QC, normalization, dimensionality reduction (PCA/UMAP/t-SNE), clustering, differential expression, and visualization. Best for exploratory scRNA-seq analysis with established workflows. For deep learning models use scvi-tools; for data format questions use anndata.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "scanpy",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/scanpy/SKILL.md",
+      "triggers": "scanpy"
+    },
+    {
+      "description": "Secure secrets management practices for CI/CD pipelines using Vault, AWS Secrets Manager, and other tools.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "secrets-management",
+      "src_path": "lib/antigravity-awesome-skills/skills/secrets-management/SKILL.md",
+      "triggers": "secrets;management"
+    },
+    {
+      "description": "Automates the full code release pipeline — branch, commit, push, PR, wait for CI, merge, version bump, release, cleanup. Use when the user wants to release code changes, says \"ship it\", or asks to create a release.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "ship",
+      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/ship/SKILL.md",
+      "triggers": "ship"
+    },
+    {
+      "description": "Trains large language models (2B-462B parameters) using NVIDIA Megatron-Core with advanced parallelism strategies. Use when training models >1B parameters, need maximum GPU efficiency (47% MFU on H100), or require tensor/pipeline/sequence/context/expert parallelism. Production-ready framework used for Nemotron, LLaMA, DeepSeek.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "training-llms-megatron",
+      "src_path": "lib/Orchestra-Research-AI-research-SKILLs/08-distributed-training/megatron-core/SKILL.md",
+      "triggers": "Megatron-Core;Large-Scale Training;NVIDIA;Tensor Parallelism;Pipeline Parallelism;Model Parallelism;H100;Distributed Training;Production"
+    },
+    {
+      "description": "AI-assisted video editing workflows for cutting, structuring, and augmenting real footage. Covers the full pipeline from raw capture through FFmpeg, Remotion, ElevenLabs, fal.ai, and final polish in Descript or CapCut. Use when the user wants to edit video, cut footage, create vlogs, or build video content.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "video-editing",
+      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/video-editing/SKILL.md",
+      "triggers": "video;editing"
+    },
+    {
+      "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \"the xlsx in my downloads\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "xlsx",
+      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/xlsx/SKILL.md",
+      "triggers": "xlsx"
+    }
+  ],
+  "sub_hub": "ci-cd",
+  "version": 1
+}

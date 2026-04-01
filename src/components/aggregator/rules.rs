@@ -17,21 +17,6 @@ pub struct HubDefinition {
 
 static TOKEN_REGEX: Lazy<Regex> = Lazy::new(|| Regex::new(r"[a-z0-9]+").unwrap());
 
-pub static VALID_HUBS: &[&str] = &[
-    "programming",
-    "frontend",
-    "backend",
-    "testing",
-    "ai",
-    "business",
-    "marketing",
-    "mobile",
-    "design",
-    "systems",
-    "data",
-    "security",
-    "excluded",
-];
 
 pub static CSV_COLUMNS: &[&str] = &[
     // Minimal critical manifest columns used by downstream tooling.
@@ -39,31 +24,88 @@ pub static CSV_COLUMNS: &[&str] = &[
     "sub_hub",
     "skill_id",
     "description",
-    "outputs",
+];
+
+/// Valid hub names derived from SUB_HUB_DEFINITIONS.
+/// Used by diagnostics and LLM classification context.
+pub static VALID_HUBS: &[&str] = &[
+    "ai",
+    "business",
+    "code-quality",
+    "frontend",
+    "mobile",
+    "server-side",
 ];
 
 pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Lazy::new(|| {
     let mut hubs = HashMap::new();
 
-    // Programming Hub
-    let mut prog_sub = HashMap::new();
-    prog_sub.insert(
-        "core-concepts",
+    // code-quality Hub
+    let mut code_quality = HashMap::new();
+
+   code_quality.insert(
+        "testing-qa",
         SubHubRule {
-            keywords: vec!["programming concepts", "data structures", "algorithms", "complexity"],
-            anchor_keywords: vec!["programming concepts", "data structures", "algorithms"],
-            negative_keywords: vec!["framework", "library", "tooling"],
+            keywords: vec![
+                "optimize-performance",
+                "optimize-code",
+                "web-performance-optimization",
+                "core-web-vitals",
+                "performance-optimization",
+                "performance-tuning",
+                "performance-metrics",
+                "performance-monitoring",
+                "performance-analysis",
+                "performance-testing",
+                "performance-benchmarking",
+                "performance-profiling",
+                "performance-optimization-with-llm",
+                "debugging",
+                "debug",
+                "troubleshooting",
+                "troubleshoot",
+                "error-diagnostics-debug",
+                "testing",
+                "test",
+                "unit-test",
+                "integration-test",
+                "cypress",
+                "playwright","unit", "jest", "mocha", "pytest", "unittest",
+           "e2e", "end-to-end", "cypress", "playwright", "selenium" ],
+            anchor_keywords: vec!["testing", "test", "qa"],
+            negative_keywords: vec!["marketing", "seo", "business", "odoo"],
         },
     );
-    prog_sub.insert(
-        "java-script",
+    
+    code_quality.insert(
+        "ci-cd",
+        SubHubRule {
+            keywords: vec!["ci", "cd", "github-actions", "jenkins", "pipeline"],
+            anchor_keywords: vec!["ci", "cd", "pipeline", "github-actions", "jenkins", "github actions", "jenkins pipeline", "github actions pipeline"],
+            negative_keywords: vec!["ui"],
+        },
+    );
+    code_quality.insert(
+        "security",
+        SubHubRule {
+            keywords: vec!["html-injection","auth", "session", "login", "password", "security", "oauth", "jwt", "encryption", "pentest", "infrastructure", "firewall", "network", "vpn", "waf", "vulnerability", "vulnerabilities", "cve", "scanning", "auditing", "red-team", "ddos", "attack", "zero trust", "sqli", "sql injection", "threat", "browser isolation", "injection", "exploit", "xss", "csrf", "hardening", "kms", "key management", "cryptography", "cyber-security", "cybersecurity", "cyber attack", "cyber-attack"],
+            anchor_keywords: vec!["auth", "oauth", "jwt", "security", "pentest", "vulnerability", "vulnerabilities", "infrastructure", "firewall", "red-team", "waf", "ddos", "zero trust", "injection", "exploit", "xss", "csrf", "encryption", "kms", "key management", "threat"],
+            negative_keywords: vec!["marketing", "seo"],
+        },
+    );
+    code_quality.insert(
+        "javascript",
         SubHubRule {
             keywords: vec!["javascript", "js", "es6", "node", "npm", "v8"],
             anchor_keywords: vec!["javascript", "js", "es6"],
-            negative_keywords: vec!["programming concepts", "data structures"],
+            negative_keywords: vec![
+                "code-quality concepts", "data structures",
+                "seo", "crawl", "crawlability", "indexability",
+                "core-web-vitals",
+            ],
         },
     );
-    prog_sub.insert(
+    code_quality.insert(
         "typescript",
         SubHubRule {
             keywords: vec!["typescript", "tsconfig", "tsx", "type-system", "ts"],
@@ -71,7 +113,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
             negative_keywords: vec!["python", "rust", "golang"],
         },
     );
-    prog_sub.insert(
+    code_quality.insert(
         "python",
         SubHubRule {
             keywords: vec!["python", "py", "django", "fastapi", "pandas", "numpy"],
@@ -79,7 +121,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
             negative_keywords: vec!["typescript", "rust"],
         },
     );
-    prog_sub.insert(
+    code_quality.insert(
         "rust",
         SubHubRule {
             keywords: vec!["rust", "cargo", "ownership", "lifetimes"],
@@ -87,15 +129,23 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
             negative_keywords: vec!["python", "typescript"],
         },
     );
-    prog_sub.insert(
+    code_quality.insert(
         "golang",
         SubHubRule {
             keywords: vec!["golang", "go", "goroutine", "channels"],
             anchor_keywords: vec!["golang", "go"],
-            negative_keywords: vec!["python", "rust"],
+            negative_keywords: vec![
+                "python", "rust",
+                "go-to-market", "gtm", "market", "marketing",
+                "beachhead", "growth-loop", "customer-profile",
+                "product-discovery", "product-launch", "saas",
+                "stock", "equity", "sred",
+                "brainstorm", "ideation",
+                "robot", "robotics", "embodied",
+            ],
         },
     );
-    prog_sub.insert(
+    code_quality.insert(
         "java",
         SubHubRule {
             keywords: vec!["java", "spring", "maven", "jvm"],
@@ -104,10 +154,10 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
         },
     );
     hubs.insert(
-        "programming",
+        "code-quality",
         HubDefinition {
-            name: "programming",
-            sub_hubs: prog_sub,
+            name: "code-quality",
+            sub_hubs: code_quality,
         },
     );
 
@@ -183,36 +233,12 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     );
 
 
-    // Backend Hub
+    // server-side Hub
     let mut be_sub = HashMap::new();
     be_sub.insert(
-        "server-side-frameworks",
+        "core",
         SubHubRule {
-            keywords: vec!["node", "hono", "express", "koa", "hapi", "spring", "django", "flask", "fastapi"],
-            anchor_keywords: vec!["express", "spring", "django", "fastapi"],
-            negative_keywords: vec!["html", "sql", "postgres"],
-        },
-    );
-    be_sub.insert(
-        "ci-cd",
-        SubHubRule {
-            keywords: vec!["ci", "cd", "github-actions", "jenkins", "pipeline"],
-            anchor_keywords: vec!["ci", "cd", "pipeline"],
-            negative_keywords: vec!["ui"],
-        },
-    );
-    be_sub.insert(
-        "containerization",
-        SubHubRule {
-            keywords: vec!["docker", "kubernetes", "k8s", "container"],
-            anchor_keywords: vec!["docker", "kubernetes"],
-            negative_keywords: vec!["marketing"],
-        },
-    );
-    be_sub.insert(
-        "api-design",
-        SubHubRule {
-            keywords: vec!["api", "rest", "graphql", "openapi", "swagger", "endpoint", "api-design", "api-development", "api-best-practices", "api-gateway", "api-security", "api-performance", "api-testing", "api-documentation", "api-versioning", "api-error-handling", "api-authentication", "api-authorization", "api-rate-limiting", "api-caching", "api-monitoring", "api-logging", "api-tracing", "api-observability", "api-security", "api-performance", "api-testing", "api-documentation", "api-versioning", "api-error-handling", "api-authentication", "api-authorization", "api-rate-limiting", "api-caching", "api-monitoring", "api-logging", "api-tracing", "api-observability", "web hook", "websocket"],
+            keywords: vec!["node", "hono", "express", "koa", "hapi", "spring", "django", "flask", "fastapi", "api", "rest", "graphql", "openapi", "swagger", "endpoint", "core", "api-development", "api-best-practices", "api-gateway", "api-security", "api-performance", "api-testing", "api-documentation", "api-versioning", "api-error-handling", "api-authentication", "api-authorization", "api-rate-limiting", "api-caching", "api-monitoring", "api-logging", "api-tracing", "api-observability", "api-security", "api-performance", "api-testing", "api-documentation", "api-versioning", "api-error-handling", "api-authentication", "api-authorization", "api-rate-limiting", "api-caching", "api-monitoring", "api-logging", "api-tracing", "api-observability", "web hook", "websocket"],
             anchor_keywords: vec!["api", "rest", "graphql"],
             negative_keywords: vec!["html", "sql", "postgres"],
         },
@@ -221,16 +247,16 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     be_sub.insert(
         "databases",
         SubHubRule {
-            keywords: vec!["sql", "postgres", "mongodb", "redis", "nosql", "orm", "supabase", "mysql", "mariadb", "sqlite", "dynamodb", "firestore", "firebase", "prisma", "drizzle", "typeorm", "sequelize", "knex", "sqlx", "diesel", "sqlc"],
-            anchor_keywords: vec!["sql", "postgres", "database"],
+            keywords: vec!["sql", "postgres", "mongodb", "redis", "nosql", "orm", "supabase", "mysql", "mariadb", "sqlite", "dynamodb", "firestore", "firebase", "prisma", "drizzle", "typeorm", "sequelize", "knex", "sqlx", "diesel", "sqlc", "cache", "redis", "memcached", "caching", "performance", "cache invalidation", "cache strategies", "cache best practices"],
+            anchor_keywords: vec!["sql", "postgres", "database", "cache", "redis"],
             negative_keywords: vec!["frontend", "ui"],
         },
     );
     be_sub.insert(
         "microservices",
         SubHubRule {
-            keywords: vec!["microservice", "service-mesh", "istio", "distributed systems", "service discovery"],
-            anchor_keywords: vec!["microservice", "architecture"],
+            keywords: vec!["queue", "kafka", "rabbitmq", "messaging","docker", "kubernetes", "k8s", "container", "microservice", "service-mesh", "istio", "distributed systems", "service discovery"],
+            anchor_keywords: vec!["microservice", "docker", "kubernetes"],
             negative_keywords: vec!["ui", "frontend"],
         },
     );
@@ -252,101 +278,31 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
             ],
         },
     );
-    be_sub.insert(
-        "caching",
-        SubHubRule {
-            keywords: vec!["cache", "redis", "memcached", "caching", "performance", "cache invalidation", "cache strategies", "cache best practices"],
-            anchor_keywords: vec!["cache", "redis"],
-            negative_keywords: vec!["frontend", "ui"],
-        },
-    );
-    be_sub.insert(
-        "message-queues",
-        SubHubRule {
-            keywords: vec!["queue", "kafka", "rabbitmq", "messaging", "async"],
-            anchor_keywords: vec!["kafka", "rabbitmq"],
-            negative_keywords: vec!["ui", "frontend"],
-        },
-    );
+  
     hubs.insert(
-        "backend",
+        "server-side",
         HubDefinition {
-            name: "backend",
+            name: "server-side",
             sub_hubs: be_sub,
         },
     );
 
-    // 5. Testing Hub
-    let mut test_sub = HashMap::new();
-    test_sub.insert(
-        "automation testing",
-        SubHubRule {
-            keywords: vec![
-                "testing",
-                "test",
-                "unit-test",
-                "integration-test",
-                "cypress",
-                "playwright",
-            ],
-            anchor_keywords: vec!["testing", "test", "qa"],
-            negative_keywords: vec!["marketing"],
-        },
-    );
-    test_sub.insert(
-        "unit-testing",
-        SubHubRule {
-            keywords: vec!["unit", "jest", "mocha", "pytest", "unittest"],
-            anchor_keywords: vec!["unit", "jest"],
-            negative_keywords: vec!["integration"],
-        },
-    );
-    test_sub.insert(
-        "e2e-testing",
-        SubHubRule {
-            keywords: vec!["e2e", "end-to-end", "cypress", "playwright", "selenium"],
-            anchor_keywords: vec!["e2e", "cypress", "playwright"],
-            negative_keywords: vec!["unit"],
-        },
-    );
-    test_sub.insert(
-        "performance-testing",
-        SubHubRule {
-            keywords: vec!["performance", "load-testing", "k6", "jmeter", "benchmark"],
-            anchor_keywords: vec!["performance", "load-testing"],
-            negative_keywords: vec!["unit"],
-        },
-    );
-    test_sub.insert(
-        "security",
-        SubHubRule {
-            keywords: vec!["auth", "session", "login", "password", "security", "oauth", "jwt", "encryption", "pentest", "infrastructure", "firewall", "network", "vpn", "waf", "vulnerability", "vulnerabilities", "cve", "scanning", "auditing", "red-team", "ddos", "attack", "zero trust", "zero-trust", "sqli", "sql injection", "threat", "browser isolation", "injection", "exploit", "xss", "csrf", "hardening", "kms", "key management", "cryptography"],
-            anchor_keywords: vec!["auth", "oauth", "jwt", "security", "pentest", "vulnerability", "vulnerabilities", "infrastructure", "firewall", "red-team", "waf", "ddos", "zero trust", "injection", "exploit", "xss", "csrf", "encryption", "kms", "key management", "threat"],
-            negative_keywords: vec!["marketing", "seo"],
-        },
-    );
-    hubs.insert(
-        "testing",
-        HubDefinition {
-            name: "testing",
-            sub_hubs: test_sub,
-        },
-    );
 
     
     // Business Hub
     let mut bus_sub = HashMap::new();
     bus_sub.insert(
-        "product-strategy",
+        "strategy",
         SubHubRule {
             keywords: vec![
+                "marketing strategy", "brand strategy", "positioning", "audience", "ICP", "ideal persona", "campaign strategy",
                 "product strategy",
                 "go-to-market",
-                "go to market",
                 "roadmap",
                 "prd",
                 "business model",
                 "value proposition",
+                "marketing strategy", "brand strategy", "positioning", "go-to-market", "campaign strategy",
                 "market analysis",
                 "competitive analysis",
                 "positioning",
@@ -357,6 +313,20 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
                 "pestel",
                 "lean canvas",
                 "business case",
+                 "product management",
+                "feature prioritization",
+                "requirements",
+                "user story",
+                "backlog",
+                "mvp",
+                "product discovery",
+                "customer discovery",
+                "north star metric",
+                "feature roadmap",
+                "epic",
+                "jobs to be done",
+                "jtbd",
+                "saas"
             ],
             anchor_keywords: vec![
                 "product strategy",
@@ -395,60 +365,13 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
             ],
         },
     );
-    bus_sub.insert(
-        "product",
-        SubHubRule {
-            keywords: vec![
-                "product management",
-                "feature prioritization",
-                "requirements",
-                "user story",
-                "backlog",
-                "mvp",
-                "product discovery",
-                "customer discovery",
-                "north star metric",
-                "feature roadmap",
-                "epic",
-                "jobs to be done",
-                "jtbd",
-                "saas"
-            ],
-            anchor_keywords: vec![
-                "saas",
-                "product management",
-                "requirements",
-                "backlog",
-                "product discovery",
-                "feature prioritization",
-                "jtbd",
-            ],
-            negative_keywords: vec![
-                "sales",
-                "api",
-                "backend",
-                "security",
-                "python",
-                "rust",
-                "kubernetes",
-                "sql",
-                "forensic",
-                "malware",
-            ],
-        },
-    );
-    bus_sub.insert(
-        "sales",
-        SubHubRule {
-            keywords: vec!["sales", "funnel", "closing", "deal", "pitch"],
-            anchor_keywords: vec!["sales"],
-            negative_keywords: vec!["product"],
-        },
-    );
+   
     bus_sub.insert(
         "operations",
         SubHubRule {
             keywords: vec![
+                "marketing analytics", "google analytics", "conversion rate", "utm", "attribution", "funnel analytics",
+                "email", "newsletter", "email campaign", "email marketing", "mailchimp", "sendgrid", "sales", "funnel", "closing", "deal", "pitch", "cold email", "lead generation", "lead nurturing", "lead scoring", "lead management", "lead qualification", "lead conversion", "lead tracking", "lead nurturing", "lead scoring", "lead management", "lead qualification", "lead conversion", "lead tracking",
                 "business operations",
                 "operational excellence",
                 "operational process",
@@ -482,80 +405,19 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
                 "test"
             ],
         },
+    );   bus_sub.insert(
+        "tactical",
+        SubHubRule {
+            keywords: vec!["social", "twitter", "facebook", "instagram", "linkedin", "tiktok", "seo", "search engine optimization", "keyword research", "technical seo", "on-page seo", "serp", "backlinks", "content marketing", "copywriting", "blog", "editorial", "content strategy", "thought leadership", "landing page copy", "content design", "microcopy", "video script", "image", "generate image"],
+            anchor_keywords: vec!["content design", "copywriting"],
+            negative_keywords: vec!["backend", "sql"],
+        },
     );
     hubs.insert(
         "business",
         HubDefinition {
             name: "business",
             sub_hubs: bus_sub,
-        },
-    );
-
-
-    // Marketing Hub
-    let mut mark_sub = HashMap::new();
-      mark_sub.insert(
-        "content-design",
-        SubHubRule {
-            keywords: vec!["content design", "microcopy", "video script", "image", "generate image"],
-            anchor_keywords: vec!["content design", "copywriting"],
-            negative_keywords: vec!["backend", "sql"],
-        },
-    );
- 
-    mark_sub.insert(
-        "strategy",
-        SubHubRule {
-            keywords: vec!["marketing strategy", "brand strategy", "positioning", "audience", "go-to-market", "gTM strategy", "campaign strategy"],
-            anchor_keywords: vec!["marketing strategy", "brand strategy", "positioning", "go-to-market", "campaign strategy"],
-            negative_keywords: vec!["python", "rust", "security", "vulnerability", "injection", "forensic", "malware", "microscopy"],
-        },
-    );
-    mark_sub.insert(
-        "content",
-        SubHubRule {
-            keywords: vec!["content marketing", "copywriting", "blog", "editorial", "content strategy", "thought leadership", "landing page copy"],
-            anchor_keywords: vec!["content marketing", "copywriting", "blog", "editorial"],
-            negative_keywords: vec!["backend", "database", "security", "vulnerability", "vulnerabilities", "injection", "exploit", "forensic", "malware", "microscopy", "dataset", "sdk", "api", "python", "rust", "java", "kubernetes"],
-        },
-    );
-    mark_sub.insert(
-        "email",
-        SubHubRule {
-            keywords: vec!["email", "newsletter", "email campaign", "email marketing", "mailchimp", "sendgrid"],
-            anchor_keywords: vec!["email", "newsletter", "email marketing"],
-            negative_keywords: vec!["database", "backend", "security", "vulnerability", "forensic", "malware", "sdk", "api"],
-        },
-    );
-    mark_sub.insert(
-        "seo",
-        SubHubRule {
-            keywords: vec!["seo", "search engine optimization", "keyword research", "technical seo", "on-page seo", "serp", "backlinks"],
-            anchor_keywords: vec!["seo", "search engine optimization", "serp", "keyword research"],
-            negative_keywords: vec!["python", "backend", "security", "vulnerability", "malware", "forensic"],
-        },
-    );
-    mark_sub.insert(
-        "social-media",
-        SubHubRule {
-            keywords: vec!["social", "twitter", "facebook", "instagram", "linkedin", "tiktok"],
-            anchor_keywords: vec!["social", "twitter"],
-            negative_keywords: vec!["backend", "database"],
-        },
-    );
-    mark_sub.insert(
-        "analytics",
-        SubHubRule {
-            keywords: vec!["marketing analytics", "google analytics", "conversion rate", "utm", "attribution", "funnel analytics"],
-            anchor_keywords: vec!["marketing analytics", "google analytics", "conversion rate", "utm", "attribution"],
-            negative_keywords: vec!["backend", "security", "vulnerability", "malware", "forensic"],
-        },
-    );
-    hubs.insert(
-        "marketing",
-        HubDefinition {
-            name: "marketing",
-            sub_hubs: mark_sub,
         },
     );
 
@@ -597,13 +459,11 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
 });
 
 pub static DEFAULT_EXCLUSION_PATTERNS: &[&str] = &[
-    "game",
     "legal",
     "medical",
     "hospital",
     "patient",
     "clinical",
-    "games",
     "clothing",
     "food",
     "gym",
@@ -632,7 +492,10 @@ pub static DEFAULT_EXCLUSION_PATTERNS: &[&str] = &[
     "astrology",
     "biology",
     "chemistry",
-    "physics"
+    "physics",
+    "games",
+    "game-development",
+    "gaming"
 ];
 
 static ENV_EXCLUSION_PATTERNS: Lazy<Vec<String>> = Lazy::new(|| {
@@ -658,53 +521,61 @@ static ENV_EXCLUSION_PATTERNS: Lazy<Vec<String>> = Lazy::new(|| {
 });
 
 static CANONICAL_SUBHUB_ALIASES: &[(&str, &str, &str)] = &[
+    // AI hub
     ("llm-agents", "ai", "prompting-factory"),
     ("prompting-factory", "ai", "prompting-factory"),
     ("prompting-builder", "ai", "prompting-factory"),
     ("skills-factory", "ai", "skills-factory"),
     ("data-processing", "ai", "skills-factory"),
     ("ml-training", "ai", "skills-factory"),
-    ("api-design", "backend", "api-design"),
-    ("server-side-frameworks", "backend", "server-side-frameworks"),
-    ("databases", "backend", "databases"),
-    ("microservices", "backend", "microservices"),
-    ("message-queues", "backend", "message-queues"),
-    ("ci-cd", "backend", "ci-cd"),
-    ("containerization", "backend", "containerization"),
-    ("serverless-edge", "backend", "serverless-edge"),
-    ("caching", "backend", "caching"),
-    ("product-strategy", "business", "product-strategy"),
-    ("product", "business", "product"),
-    ("sales", "business", "sales"),
+    // server-side hub (formerly backend)
+    ("core", "server-side", "core"),
+    ("api-design", "server-side", "core"),
+    ("server-side-frameworks", "server-side", "core"),
+    ("databases", "server-side", "databases"),
+    ("microservices", "server-side", "microservices"),
+    ("message-queues", "server-side", "microservices"),
+    ("containerization", "server-side", "microservices"),
+    ("serverless-edge", "server-side", "serverless-edge"),
+    ("caching", "server-side", "databases"),
+    // business hub (absorbs old marketing + business)
+    ("product-strategy", "business", "strategy"),
+    ("product", "business", "strategy"),
+    ("sales", "business", "operations"),
     ("operations", "business", "operations"),
+    ("strategy", "business", "strategy"),
+    ("content", "business", "tactical"),
+    ("email", "business", "operations"),
+    ("seo", "business", "tactical"),
+    ("social", "business", "tactical"),
+    ("social-media", "business", "tactical"),
+    ("analytics", "business", "operations"),
+    ("go-to-market", "business", "strategy"),
+    // frontend hub
     ("ui-ux", "frontend", "ui-ux"),
     ("ux", "frontend", "ui-ux"),
     ("react-nextjs", "frontend", "web-frameworks"),
     ("web-basics", "frontend", "web-frameworks"),
     ("web-frameworks", "frontend", "web-frameworks"),
     ("state-management", "frontend", "state-management"),
-    ("strategy", "marketing", "strategy"),
-    ("content", "marketing", "content"),
-    ("email", "marketing", "email"),
-    ("seo", "marketing", "seo"),
-    ("social", "marketing", "social-media"),
-    ("social-media", "marketing", "social-media"),
-    ("analytics", "marketing", "analytics"),
+    // mobile hub
     ("cross-platform", "mobile", "cross-platform"),
     ("ios", "mobile", "ios"),
     ("android", "mobile", "android"),
-    ("typescript", "programming", "typescript"),
-    ("python", "programming", "python"),
-    ("rust", "programming", "rust"),
-    ("golang", "programming", "golang"),
-    ("java", "programming", "java"),
-    ("automation", "testing", "automation testing"),
-    ("automation-testing", "testing", "automation testing"),
-    ("unit-testing", "testing", "unit-testing"),
-    ("e2e-testing", "testing", "e2e-testing"),
-    ("performance-testing", "testing", "performance-testing"),
-    ("security", "testing", "security"),
-    ("core", "testing", "security"),
+    // code-quality hub
+    ("typescript", "code-quality", "typescript"),
+    ("python", "code-quality", "python"),
+    ("rust", "code-quality", "rust"),
+    ("golang", "code-quality", "golang"),
+    ("java", "code-quality", "java"),
+    ("javascript", "code-quality", "javascript"),
+    // Legacy testing/security → code-quality
+    ("automation", "code-quality", "testing-qa"),
+    ("automation-testing", "code-quality", "testing-qa"),
+    ("unit-testing", "code-quality", "testing-qa"),
+    ("e2e-testing", "code-quality", "testing-qa"),
+    ("performance-testing", "code-quality", "testing-qa"),
+    ("security", "code-quality", "security"),
 ];
 
 fn normalize_slug(input: &str) -> String {
@@ -726,13 +597,11 @@ fn normalize_slug(input: &str) -> String {
 fn default_subhub_for_hub(hub: &str) -> Option<&'static str> {
     match hub {
         "ai" => Some("prompting-factory"),
-        "backend" => Some("api-design"),
-        "business" => Some("product-strategy"),
+        "server-side" => Some("core"),
+        "business" => Some("strategy"),
         "frontend" => Some("web-frameworks"),
-        "marketing" => Some("strategy"),
         "mobile" => Some("cross-platform"),
-        "programming" => Some("typescript"),
-        "testing" => Some("automation testing"),
+        "code-quality" => Some("testing-qa"),
         _ => None,
     }
 }
@@ -741,8 +610,32 @@ fn canonicalize_assignment(hub: &str, sub_hub: &str) -> Option<(String, String)>
     let hub_norm = normalize_slug(hub);
     let sub_norm = normalize_slug(sub_hub);
 
+    // Legacy "security" hub → code-quality/security
     if hub_norm == "security" {
-        return Some(("testing".to_string(), "security".to_string()));
+        return Some(("code-quality".to_string(), "security".to_string()));
+    }
+    // Legacy "testing" hub → code-quality/testing-qa
+    if hub_norm == "testing" {
+        return Some(("code-quality".to_string(), "testing-qa".to_string()));
+    }
+    // Legacy "marketing" hub → business/tactical
+    if hub_norm == "marketing" {
+        let canonical_sub = match sub_norm.as_str() {
+            "strategy" => "strategy",
+            "seo" | "content" | "social" | "social-media" => "tactical",
+            "email" | "analytics" | "sales" => "operations",
+            _ => "tactical",
+        };
+        return Some(("business".to_string(), canonical_sub.to_string()));
+    }
+    // Legacy "backend" hub → server-side
+    if hub_norm == "backend" {
+        let canonical_sub = match sub_norm.as_str() {
+            "api-design" => "core",
+            "" => "core",
+            other => other,
+        };
+        return Some(("server-side".to_string(), canonical_sub.to_string()));
     }
 
     if !sub_norm.is_empty() {
@@ -781,6 +674,12 @@ fn infer_from_path(meta: &SkillMetadata) -> Option<(String, String)> {
     let components = path_components(meta);
     if components.is_empty() {
         return None;
+    }
+
+    // Guard: pm-go-to-market paths are business/strategy, not golang
+    let is_gtm_path = components.iter().any(|c| c.contains("go-to-market"));
+    if is_gtm_path {
+        return Some(("business".to_string(), "strategy".to_string()));
     }
 
     // Antigravity's `skill-*` and `writing-skills` packs are meta AI skill
@@ -876,16 +775,13 @@ fn matched_keyword_hits(normalized_text: &str, tokens: &HashSet<String>, rule: &
 
 fn hub_match_priority(hub: &str) -> usize {
     match hub {
-        // Prefer technical/security hubs first to avoid generic business/marketing matches.
-        "testing" => 0,
-        "backend" => 1,
-        "programming" => 2,
-        "frontend" => 3,
-        "ai" => 4,
-        "mobile" => 5,
-        "design" => 6,
-        "marketing" => 7,
-        "business" => 8,
+        // Prefer technical hubs first to avoid generic business matches.
+        "code-quality" => 0,
+        "server-side" => 1,
+        "frontend" => 2,
+        "ai" => 3,
+        "mobile" => 4,
+        "business" => 5,
         _ => 99,
     }
 }
@@ -1042,13 +938,17 @@ pub fn apply_rules(meta: &mut SkillMetadata) -> bool {
     // the Cloudflare signal is explicit in name/tags/path and there is no
     // obvious security context that should route to testing/security.
     let cloudflare_signal_text = format!(
-        "{} {} {}",
+        "{} {}",
         meta.name,
-        meta.triggers.clone().unwrap_or_default(),
-        meta.path.to_string_lossy()
+        meta.triggers.clone().unwrap_or_default()
     );
     let (cloudflare_norm, cloudflare_tokens) = normalize_text(&cloudflare_signal_text);
-    let found_cloudflare_signal = cloudflare_tokens.contains("cloudflare")
+    
+    let path_str = meta.path.to_string_lossy().replace('\\', "/");
+    let is_in_skills_repo = path_str.contains("lib/skills/") || path_str.contains("lib/cloudflare");
+
+    let found_cloudflare_signal = is_in_skills_repo 
+        || cloudflare_tokens.contains("cloudflare")
         || cloudflare_norm.contains("cloudflare")
         || cloudflare_norm.contains("cloudflare-workers");
 
@@ -1064,7 +964,14 @@ pub fn apply_rules(meta: &mut SkillMetadata) -> bool {
         || normalized.contains("browser isolation");
 
     if found_cloudflare_signal && !security_context {
-        meta.hub = "backend".to_string();
+        meta.hub = "server-side".to_string();
+        meta.sub_hub = "serverless-edge".to_string();
+        // If it was explicitly forced by being in the skills repo, give it 100
+        meta.match_score = Some(100);
+    } else if is_in_skills_repo && security_context && meta.name == "cloudflare" {
+        // Special case: The master "cloudflare" skill mentions WAF/DDoS, so it usually trips
+        // security_context, but we strictly want it in serverless-edge.
+        meta.hub = "server-side".to_string();
         meta.sub_hub = "serverless-edge".to_string();
         meta.match_score = Some(100);
     } else if let Some((hub, sub_hub)) = canonicalize_assignment(&meta.hub, &meta.sub_hub) {
@@ -1098,16 +1005,13 @@ pub fn apply_rules(meta: &mut SkillMetadata) -> bool {
     }
 
     meta.phase = Some(match meta.hub.as_str() {
-        "programming" => 1,
+        "code-quality" => 1,
         "frontend" => 1,
-        "backend" => 2,
-        "testing" => 3,
-        "ai" => 4,
-        "business" => 5,
-        "marketing" => 5,
-        "design" => 5,
-        "mobile" => 5,
-        _ => 6,
+        "server-side" => 2,
+        "ai" => 3,
+        "business" => 4,
+        "mobile" => 4,
+        _ => 5,
     });
 
     true
@@ -1168,7 +1072,7 @@ mod tests {
 
         let kept = apply_rules(&mut meta);
         assert!(kept);
-        assert_eq!(meta.hub, "testing");
+        assert_eq!(meta.hub, "code-quality");
         assert_eq!(meta.sub_hub, "security");
     }
 
@@ -1210,7 +1114,7 @@ mod tests {
         let kept = apply_rules(&mut meta);
         assert!(kept);
         assert_eq!(meta.hub, "business");
-        assert_eq!(meta.sub_hub, "product-strategy");
+        assert_eq!(meta.sub_hub, "strategy");
     }
 
     #[test]
@@ -1230,7 +1134,8 @@ mod tests {
 
         let kept = apply_rules(&mut meta);
         assert!(kept);
-        assert!(!(meta.hub == "business" && meta.sub_hub == "product-strategy"));
+        assert!(!(meta.hub == "business" && meta.sub_hub == "strategy") || meta.sub_hub != "strategy",
+            "Security skill should NOT route to business/strategy, got hub={} sub_hub={}", meta.hub, meta.sub_hub);
     }
 
     #[test]

@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774993464,
+  "generated_at_unix": 1775063596,
   "hub": "business",
   "skills": [
     {
@@ -25,6 +25,22 @@
       "skill_id": "20-andruia-niche-intelligence",
       "src_path": "lib/antigravity-awesome-skills/skills/20-andruia-niche-intelligence/SKILL.md",
       "triggers": "20;andruia;niche;intelligence"
+    },
+    {
+      "description": "2D game development principles. Sprites, tilemaps, physics, camera.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "2d-games",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-indie-game-dev/skills/game-development/2d-games/SKILL.md",
+      "triggers": "2d;games"
+    },
+    {
+      "description": "3D game development principles. Rendering, shaders, physics, cameras.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "3d-games",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-indie-game-dev/skills/game-development/3d-games/SKILL.md",
+      "triggers": "3d;games"
     },
     {
       "description": "Format CVs for academic positions with publications, grants, and teaching",
@@ -251,6 +267,22 @@
       "triggers": "advanced;evaluation"
     },
     {
+      "description": "Advogado criminalista especializado em Maria da Penha, violencia domestica, feminicidio, direito penal brasileiro, medidas protetivas, inquerito policial e acao penal.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "advogado-criminal",
+      "src_path": "lib/antigravity-awesome-skills/skills/advogado-criminal/SKILL.md",
+      "triggers": "legal;brazilian-law;criminal-law;portuguese"
+    },
+    {
+      "description": "Advogado especialista em todas as areas do Direito brasileiro: familia, criminal, trabalhista, tributario, consumidor, imobiliario, empresarial, civil e constitucional.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "advogado-especialista",
+      "src_path": "lib/antigravity-awesome-skills/skills/advogado-especialista/SKILL.md",
+      "triggers": "legal;brazilian-law;multi-domain;portuguese"
+    },
+    {
       "description": "Autonomous DevSecOps & FinOps Guardrails. Orchestrates Gemini 3 Flash to audit Linux Kernel patches, Terraform cost drifts, and K8s compliance.",
       "phase": 5,
       "score": 100,
@@ -265,6 +297,22 @@
       "skill_id": "aeo-optimization",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/aeo-optimization/SKILL.md",
       "triggers": "aeo;optimization"
+    },
+    {
+      "description": "编码代理（Claude Code、Aider、Codex等）在自定义任务上的直接比较，包含通过率、成本、时间和一致性指标",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "agent-eval",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/agent-eval/SKILL.md",
+      "triggers": "agent;eval"
+    },
+    {
+      "description": "设计和优化AI代理的动作空间、工具定义和观察格式，以提高完成率。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "agent-harness-construction",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/agent-harness-construction/SKILL.md",
+      "triggers": "agent;harness;construction"
     },
     {
       "description": "Manage multiple local CLI agents via tmux sessions (start/stop/monitor/assign) with cron-friendly scheduling.",
@@ -299,12 +347,28 @@
       "triggers": "orchestration;multi-agent;workflow;automation"
     },
     {
+      "description": "Add x402 payment execution to AI agents — per-task budgets, spending controls, and non-custodial wallets via MCP tools. Use when agents need to pay for APIs, services, or other agents.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "agent-payment-x402",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/agent-payment-x402/SKILL.md",
+      "triggers": "agent;payment;x402"
+    },
+    {
       "description": "Skill for discovering and researching autonomous AI agents, tools, and ecosystems using the AgentFolio directory.",
       "phase": 5,
       "score": 100,
       "skill_id": "agentfolio",
       "src_path": "lib/antigravity-awesome-skills/skills/agentfolio/SKILL.md",
       "triggers": "agentfolio"
+    },
+    {
+      "description": "Operate as an agentic engineer using eval-first execution, decomposition, and cost-aware model routing. Use when AI agents perform most implementation work and humans enforce quality and risk controls.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "agentic-engineering",
+      "src_path": "lib/affaan-m-everything-claude-code/.kiro/skills/agentic-engineering/SKILL.md",
+      "triggers": "agentic;engineering"
     },
     {
       "description": "This skill should be used when the user asks to \"create AGENTS.md\", \"update AGENTS.md\", \"maintain agent docs\", \"set up CLAUDE.md\", or needs to keep agent instructions concise. Enforces research-backed best practices for minimal, high-signal agent documentation.",
@@ -353,6 +417,14 @@
       "skill_id": "ai-engineer",
       "src_path": "lib/antigravity-awesome-skills/skills/ai-engineer/SKILL.md",
       "triggers": "ai;engineer"
+    },
+    {
+      "description": "团队中人工智能代理生成大部分实施输出的工程运营模型。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "ai-first-engineering",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/ai-first-engineering/SKILL.md",
+      "triggers": "ai;first;engineering"
     },
     {
       "description": "Convert human-written CLAUDE.md into AI-native structured-label format. Battle-tested across 4 models. Same rules, fewer tokens, higher compliance.",
@@ -419,6 +491,14 @@
       "triggers": "airtable;automation"
     },
     {
+      "description": "The AI native file format. EXIF for AI — stamps every file with trust scores, source provenance, and compliance metadata. Embeds into 20+ formats (DOCX, PDF, images, code). EU AI Act, SOX, HIPAA auditing.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "akf-trust-metadata",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/akf-trust-metadata/SKILL.md",
+      "triggers": "trust;metadata;provenance;compliance;file-format;ai-native"
+    },
+    {
       "description": "Creates visual concepts for album artwork and generates AI art prompts. Use during planning for concept discussion, or after all tracks are Final for actual artwork generation.",
       "phase": 5,
       "score": 100,
@@ -443,12 +523,12 @@
       "triggers": "album;dashboard"
     },
     {
-      "description": "Access AlphaFold 200M+ AI-predicted protein structures. Retrieve structures by UniProt ID, download PDB/mmCIF files, analyze confidence metrics (pLDDT, PAE), for drug discovery and structural biology.",
+      "description": "Access 20+ years of global financial data: equities, options, forex, crypto, commodities, economic indicators, and 50+ technical indicators.",
       "phase": 5,
       "score": 100,
-      "skill_id": "alphafold-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/alphafold-database/SKILL.md",
-      "triggers": "alphafold;database"
+      "skill_id": "alpha-vantage",
+      "src_path": "lib/antigravity-awesome-skills/skills/alpha-vantage/SKILL.md",
+      "triggers": "alpha;vantage"
     },
     {
       "description": "Understand the PM-to-Director transition through altitude and horizon thinking. Use when diagnosing scope, time-horizon, or leadership-level gaps.",
@@ -711,7 +791,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "ansoff-matrix",
-      "src_path": "lib/pm-skills/pm-product-strategy/skills/ansoff-matrix/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/ansoff-matrix/SKILL.md",
       "triggers": "ansoff;matrix"
     },
     {
@@ -835,6 +915,14 @@
       "triggers": "architect;review"
     },
     {
+      "description": "在Claude Code会话期间，将做出的架构决策捕获为结构化的架构决策记录（ADR）。自动检测决策时刻，记录上下文、考虑的替代方案和理由。维护一个ADR日志，以便未来的开发人员理解代码库为何以当前方式构建。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "architecture-decision-records",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/architecture-decision-records/SKILL.md",
+      "triggers": "architecture;decision;records"
+    },
+    {
       "description": "Master proven backend architecture patterns including Clean Architecture, Hexagonal Architecture, and Domain-Driven Design to build maintainable, testable, and scalable systems.",
       "phase": 5,
       "score": 100,
@@ -931,6 +1019,14 @@
       "triggers": "asc;ppp;pricing"
     },
     {
+      "description": "Determine whether an app is ready to submit, then drive the App Store release flow with asc, including first-time submission fixes for availability, in-app purchases, subscriptions, Game Center, and App Privacy.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "asc-release-flow",
+      "src_path": "lib/rudrankriyam-app-store-connect-cli-skills/skills/asc-release-flow/SKILL.md",
+      "triggers": "asc;release;flow"
+    },
+    {
       "description": "Reconcile App Store Connect subscriptions and in-app purchases with RevenueCat products, entitlements, offerings, and packages using asc and RevenueCat MCP. Use when setting up or syncing subscription catalogs across ASC and RevenueCat.",
       "phase": 5,
       "score": 100,
@@ -1003,6 +1099,22 @@
       "triggers": "aso;audit"
     },
     {
+      "description": "Rédaction d'assignations en référé devant le tribunal de commerce ou des activités économiques pour le droit de communication d'un associé. Utiliser ce skill quand l'utilisateur demande de rédiger, préparer ou créer une assignation en référé fondée sur l'article L. 238-1 du code de commerce pour obtenir la communication forcée de documents sociaux (comptes annuels, rapports de gestion, PV d'assemblées, etc.) lorsqu'un dirigeant refuse ou fait obstruction à la communication de ces documents à un associé.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "assignation-refere-communication-associe-selim-brihi",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/assignation-refere-communication-associe-selim-brihi/SKILL.md",
+      "triggers": "assignation;refere;communication;associe;selim"
+    },
+    {
+      "description": "Rédaction d'assignations en référé devant le tribunal de commerce ou des activités économiques pour le recouvrement de créances commerciales. Utiliser ce skill quand l'utilisateur demande de rédiger, préparer ou créer une assignation en référé pour obtenir le paiement d'une créance impayée (factures, prestations de services, ventes de marchandises, etc.) lorsque le débiteur n'a pas honoré ses obligations de paiement et qu'il n'existe pas de contestation sérieuse.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "assignation-refere-recouvrement-creance-selim-brihi",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/assignation-refere-recouvrement-creance-selim-brihi/SKILL.md",
+      "triggers": "assignation;refere;recouvrement;creance;selim"
+    },
+    {
       "description": "Transform audio recordings into professional Markdown documentation with intelligent summaries using LLM integration",
       "phase": 5,
       "score": 100,
@@ -1051,12 +1163,28 @@
       "triggers": "Agents;AutoGPT;Autonomous Agents;Workflow Automation;Visual Builder;AI Platform"
     },
     {
+      "description": "Transform Claude Code into a fully autonomous agent system with persistent memory, scheduled operations, computer use, and task queuing. Replaces standalone agent frameworks (Hermes, AutoGPT) by leveraging Claude Code's native crons, dispatch, MCP tools, and memory. Use when the user wants continuous autonomous operation, scheduled tasks, or a self-directing agent loop.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "autonomous-agent-harness",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/autonomous-agent-harness/SKILL.md",
+      "triggers": "autonomous;agent;harness"
+    },
+    {
       "description": "You are an agent architect who has learned the hard lessons of autonomous AI. You've seen the gap between impressive demos and production disasters. You know that a 95% success rate per step means only 60% by step 10.",
       "phase": 5,
       "score": 100,
       "skill_id": "autonomous-agents",
       "src_path": "lib/antigravity-awesome-skills/skills/autonomous-agents/SKILL.md",
       "triggers": "autonomous;agents"
+    },
+    {
+      "description": "自主Claude代码循环的模式与架构——从简单的顺序管道到基于RFC的多智能体有向无环图系统。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "autonomous-loops",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/autonomous-loops/SKILL.md",
+      "triggers": "autonomous;loops"
     },
     {
       "description": "Optimal ViewModel and Wizard creation patterns for Avalonia using Zafiro and ReactiveUI.",
@@ -1563,28 +1691,12 @@
       "triggers": "binary;analysis;patterns"
     },
     {
-      "description": "Query BindingDB for measured drug-target binding affinities (Ki, Kd, IC50, EC50). Search by target (UniProt ID), compound (SMILES/name), or pathogen. Essential for drug discovery, lead optimization, polypharmacology analysis, and structure-activity relationship (SAR) studies.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "bindingdb-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/bindingdb-database/SKILL.md",
-      "triggers": "bindingdb;database"
-    },
-    {
       "description": "Comprehensive molecular biology toolkit. Use for sequence manipulation, file parsing (FASTA/GenBank/PDB), phylogenetics, and programmatic NCBI/PubMed access (Bio.Entrez). Best for batch processing, custom bioinformatics pipelines, BLAST automation. For quick lookups use gget; for multi-service integration use bioservices.",
       "phase": 5,
       "score": 100,
       "skill_id": "biopython",
       "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/biopython/SKILL.md",
       "triggers": "biopython"
-    },
-    {
-      "description": "Efficient database search tool for bioRxiv preprint server. Use this skill when searching for life sciences preprints by keywords, authors, date ranges, or categories, retrieving paper metadata, downloading PDFs, or conducting literature reviews.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "biorxiv-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/biorxiv-database/SKILL.md",
-      "triggers": "biorxiv;database"
     },
     {
       "description": "Automate Bitbucket repositories, pull requests, branches, issues, and workspace management via Rube MCP (Composio). Always search tools first for current schemas.",
@@ -1611,11 +1723,11 @@
       "triggers": "blockrun"
     },
     {
-      "description": "Turn a one-line objective into a step-by-step construction plan any coding agent can execute cold. Each step has a self-contained context brief — a fresh agent in a new session can pick up any step without reading prior steps.",
+      "description": "将单行目标转化为多会话、多代理工程项目的分步构建计划。每个步骤包含独立的上下文简介，以便新代理能直接执行。包括对抗性审查门、依赖图、并行步骤检测、反模式目录和计划突变协议。触发条件：当用户请求复杂多PR任务的计划、蓝图或路线图，或描述需要多个会话的工作时。不触发条件：任务可在单个PR或少于3个工具调用中完成，或用户说“直接执行”时。origin: community",
       "phase": 5,
       "score": 100,
       "skill_id": "blueprint",
-      "src_path": "lib/antigravity-awesome-skills/skills/blueprint/SKILL.md",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/blueprint/SKILL.md",
       "triggers": "blueprint"
     },
     {
@@ -1631,7 +1743,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "brainstorm-ideas-existing",
-      "src_path": "lib/pm-skills/pm-product-discovery/skills/brainstorm-ideas-existing/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-product-discovery/skills/brainstorm-ideas-existing/SKILL.md",
       "triggers": "brainstorm;ideas;existing"
     },
     {
@@ -1639,7 +1751,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "brainstorm-okrs",
-      "src_path": "lib/pm-skills/pm-execution/skills/brainstorm-okrs/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-execution/skills/brainstorm-okrs/SKILL.md",
       "triggers": "brainstorm;okrs"
     },
     {
@@ -1665,14 +1777,6 @@
       "skill_id": "brand-guidelines-anthropic",
       "src_path": "lib/antigravity-awesome-skills/skills/brand-guidelines-anthropic/SKILL.md",
       "triggers": "brand;guidelines;anthropic"
-    },
-    {
-      "description": "To access Anthropic's official brand identity and style resources, use this skill.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "brand-guidelines-community",
-      "src_path": "lib/antigravity-awesome-skills/skills/brand-guidelines-community/SKILL.md",
-      "triggers": "brand;guidelines;community"
     },
     {
       "description": "Systematically finds and fixes bugs using proven debugging techniques. Traces from symptoms to root cause, implements fixes, and prevents regression.",
@@ -1835,6 +1939,22 @@
       "triggers": "calendly;automation"
     },
     {
+      "description": "Use this skill to monitor a deployed URL for regressions after deploys, merges, or dependency upgrades.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "canary-watch",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/canary-watch/SKILL.md",
+      "triggers": "canary;watch"
+    },
+    {
+      "description": "Generate templated responses for common legal inquiries and identify when situations require individualized attention. Use when responding to routine legal questions — data subject requests, vendor inquiries, NDA requests, discovery holds — or when managing response templates.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "canned-responses-anthropic",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/canned-responses-anthropic/SKILL.md",
+      "triggers": "canned;responses;anthropic"
+    },
+    {
       "description": "Automate Canva tasks via Rube MCP (Composio): designs, exports, folders, brand templates, autofill. Always search tools first for current schemas.",
       "phase": 5,
       "score": 100,
@@ -1843,20 +1963,20 @@
       "triggers": "canva;automation"
     },
     {
-      "description": "Safety guardrails for destructive commands. Warns before rm -rf, DROP TABLE, force-push, git reset --hard, kubectl delete, and similar destructive operations. User can override each warning. Use when touching prod, debugging live systems, or working in a shared environment. Use when asked to \"be careful\", \"safety mode\", \"prod mode\", or \"careful mode\".",
+      "description": "Safety guardrails for destructive commands. Warns before rm -rf, DROP TABLE, force-push, git reset --hard, kubectl delete, and similar destructive operations. User can override each warning. Use when touching prod, debugging live systems, or working in a shared environment. Use when asked to \"be careful\", \"safety mode\", \"prod mode\", or \"careful mode\". (gstack)",
       "phase": 5,
       "score": 100,
       "skill_id": "careful",
-      "src_path": "lib/gstack/careful/SKILL.md",
+      "src_path": "lib/garrytan-gstack/careful/SKILL.md",
       "triggers": "careful"
     },
     {
-      "description": "Query cBioPortal for cancer genomics data including somatic mutations, copy number alterations, gene expression, and survival data across hundreds of cancer studies. Essential for cancer target validation, oncogene/tumor suppressor analysis, and patient-level genomic profiling.",
+      "description": "用于管理承运商组合、协商运费、跟踪承运商绩效、分配货运以及维护战略承运商关系的编码专业知识。基于拥有15年以上经验的运输经理提供的信息。包括记分卡框架、RFP流程、市场情报和合规性审查。适用于管理承运商、协商费率、评估承运商绩效或制定货运策略时使用。license: Apache-2.0",
       "phase": 5,
       "score": 100,
-      "skill_id": "cbioportal-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/cbioportal-database/SKILL.md",
-      "triggers": "cbioportal;database"
+      "skill_id": "carrier-relationship-management",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/carrier-relationship-management/SKILL.md",
+      "triggers": "carrier;relationship;management"
     },
     {
       "description": "Development skill from everything-claude-code",
@@ -1873,14 +1993,6 @@
       "skill_id": "cc-skill-project-guidelines-example",
       "src_path": "lib/antigravity-awesome-skills/skills/cc-skill-project-guidelines-example/SKILL.md",
       "triggers": "cc;skill;project;guidelines;example"
-    },
-    {
-      "description": "Development skill from everything-claude-code",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "cc-skill-strategic-compact",
-      "src_path": "lib/antigravity-awesome-skills/skills/cc-skill-strategic-compact/SKILL.md",
-      "triggers": "cc;skill;strategic;compact"
     },
     {
       "description": "Query the CELLxGENE Census (61M+ cells) programmatically. Use when you need expression data across tissues, diseases, or cell types from the largest curated single-cell atlas. Best for population-scale queries, reference atlas comparisons. For analyzing your own data use scanpy or scvi-tools.",
@@ -1921,14 +2033,6 @@
       "skill_id": "chat-with-anyone",
       "src_path": "lib/NoizAI-skills/skills/chat-with-anyone/SKILL.md",
       "triggers": "chat;with;anyone"
-    },
-    {
-      "description": "Query ChEMBL bioactive molecules and drug discovery data. Search compounds by structure/properties, retrieve bioactivity data (IC50, Ki), find inhibitors, perform SAR studies, for medicinal chemistry.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "chembl-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/chembl-database/SKILL.md",
-      "triggers": "chembl;database"
     },
     {
       "description": "Expert in building Chrome Extensions using Manifest V3. Covers background scripts, service workers, content scripts, and cross-context communication.",
@@ -1993,6 +2097,14 @@
       "skill_id": "claude-code-guide",
       "src_path": "lib/antigravity-awesome-skills/skills/claude-code-guide/SKILL.md",
       "triggers": "claude;code;guide"
+    },
+    {
+      "description": "通过Claude DevFleet协调多智能体编码任务——规划项目、在隔离的工作树中并行调度智能体、监控进度并读取结构化报告。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "claude-devfleet",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/claude-devfleet/SKILL.md",
+      "triggers": "claude;devfleet"
     },
     {
       "description": "Diagnose and fix Claude in Chrome MCP extension connectivity issues. Use when mcp__claude-in-chrome__* tools fail, return \"Browser extension is not connected\", or behave erratically.",
@@ -2211,23 +2323,23 @@
       "triggers": "code;simplifier"
     },
     {
-      "description": "You are a technical debt expert specializing in identifying, quantifying, and prioritizing technical debt in software projects. Analyze the codebase to uncover debt, assess its impact, and create acti",
+      "description": "分析一个陌生的代码库，并生成一个结构化的入门指南，包括架构图、关键入口点、规范和一个起始的CLAUDE.md文件。适用于加入新项目或首次在代码仓库中设置Claude Code时。",
       "phase": 5,
       "score": 100,
-      "skill_id": "codebase-cleanup-tech-debt",
-      "src_path": "lib/antigravity-awesome-skills/skills/codebase-cleanup-tech-debt/SKILL.md",
-      "triggers": "codebase;cleanup;tech;debt"
+      "skill_id": "codebase-onboarding",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/codebase-onboarding/SKILL.md",
+      "triggers": "codebase;onboarding"
     },
     {
-      "description": "OpenAI Codex CLI wrapper — three modes. Code review: independent diff review via codex review with pass/fail gate. Challenge: adversarial mode that tries to break your code. Consult: ask codex anything with session continuity for follow-ups. The \"200 IQ autistic developer\" second opinion. Use when asked to \"codex review\", \"codex challenge\", \"ask codex\", \"second opinion\", or \"consult codex\".",
+      "description": "OpenAI Codex CLI wrapper — three modes. Code review: independent diff review via codex review with pass/fail gate. Challenge: adversarial mode that tries to break your code. Consult: ask codex anything with session continuity for follow-ups. The \"200 IQ autistic developer\" second opinion. Use when asked to \"codex review\", \"codex challenge\", \"ask codex\", \"second opinion\", or \"consult codex\". (gstack)",
       "phase": 5,
       "score": 100,
       "skill_id": "codex",
-      "src_path": "lib/gstack/codex/SKILL.md",
+      "src_path": "lib/garrytan-gstack/codex/SKILL.md",
       "triggers": "codex"
     },
     {
-      "description": "Delegate tasks to Codex — run prompts, code review, research, pair programming, or any collaboration mode. Use when the user asks to use Codex, send work to Codex, have Codex review/investigate/implement something, or collaborate with Codex. Also use proactively when you want external feedback, a second opinion, or a fresh pair of eyes on code, architecture, or decisions.",
+      "description": "Delegate tasks to Codex — run prompts, code review, research, pair code-quality, or any collaboration mode. Use when the user asks to use Codex, send work to Codex, have Codex review/investigate/implement something, or collaborate with Codex. Also use proactively when you want external feedback, a second opinion, or a fresh pair of eyes on code, architecture, or decisions.",
       "phase": 5,
       "score": 100,
       "skill_id": "codex-collab",
@@ -2247,7 +2359,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "cohort-analysis",
-      "src_path": "lib/pm-skills/pm-data-analytics/skills/cohort-analysis/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-data-analytics/skills/cohort-analysis/SKILL.md",
       "triggers": "cohort;analysis"
     },
     {
@@ -2411,6 +2523,14 @@
       "triggers": "configure"
     },
     {
+      "description": "Everything Claude Code のインタラクティブなインストーラー — スキルとルールの選択とインストールをユーザーレベルまたはプロジェクトレベルのディレクトリへガイドし、パスを検証し、必要に応じてインストールされたファイルを最適化します。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "configure-ecc",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/ja-JP/skills/configure-ecc/SKILL.md",
+      "triggers": "configure;ecc"
+    },
+    {
       "description": "A Certificate Authority (CA) is the trust anchor in a PKI hierarchy, responsible for issuing, signing, and revoking digital certificates. This skill covers building a two-tier CA hierarchy (Root CA +",
       "phase": 5,
       "score": 100,
@@ -2447,7 +2567,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "connect-chrome",
-      "src_path": "lib/gstack/.agents/skills/gstack-connect-chrome/SKILL.md",
+      "src_path": "lib/garrytan-gstack/connect-chrome/SKILL.md",
       "triggers": "connect;chrome"
     },
     {
@@ -2481,6 +2601,14 @@
       "skill_id": "context-agent",
       "src_path": "lib/antigravity-awesome-skills/skills/context-agent/SKILL.md",
       "triggers": "context;session-management;continuity;memory"
+    },
+    {
+      "description": "审核Claude Code上下文窗口在代理、技能、MCP服务器和规则中的消耗情况。识别膨胀、冗余组件，并提供优先的令牌节省建议。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "context-budget",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/context-budget/SKILL.md",
+      "triggers": "context;budget"
     },
     {
       "description": "When agent sessions generate millions of tokens of conversation history, compression becomes mandatory. The naive approach is aggressive compression to minimize tokens per request.",
@@ -2563,6 +2691,38 @@
       "triggers": "context;window;management"
     },
     {
+      "description": "具有质量门、评估和恢复控制的连续自主代理循环模式。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "continuous-agent-loop",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/continuous-agent-loop/SKILL.md",
+      "triggers": "continuous;agent;loop"
+    },
+    {
+      "description": "Claude Codeセッションから再利用可能なパターンを自動的に抽出し、将来の使用のために学習済みスキルとして保存します。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "continuous-learning",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/ja-JP/skills/continuous-learning/SKILL.md",
+      "triggers": "continuous;learning"
+    },
+    {
+      "description": "フックを介してセッションを観察し、信頼度スコアリング付きのアトミックなインスティンクトを作成し、スキル/コマンド/エージェントに進化させるインスティンクトベースの学習システム。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "continuous-learning-v2",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/ja-JP/skills/continuous-learning-v2/SKILL.md",
+      "triggers": "continuous;learning;v2"
+    },
+    {
+      "description": "Review contracts against your organization's negotiation playbook, flagging deviations and generating redline suggestions. Use when reviewing vendor contracts, customer agreements, or any commercial agreement where you need clause-by-clause analysis against standard positions.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "contract-review-anthropic",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/contract-review-anthropic/SKILL.md",
+      "triggers": "contract;review;anthropic"
+    },
+    {
       "description": "../../SKILL.md",
       "phase": 5,
       "score": 100,
@@ -2595,6 +2755,14 @@
       "triggers": "convertkit;automation"
     },
     {
+      "description": "Guide for drafting cookie policies compliant with GDPR and the ePrivacy Directive. Includes CNIL 2020 recommendations, a reference template, and best practices. Use when drafting or revising a cookie policy for a website or application.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "cookie-policy-malik-taiar",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/politique-cookies-malik-taiar/SKILL.md",
+      "triggers": "cookie;policy;malik;taiar"
+    },
+    {
       "description": "GitHub Copilot Coding Agent をパイプラインに統合。Issue に @copilot をアサインして自動 Draft PR 生成。Triggers: copilot, コーパイロット, @copilot, coding agent, copilot pr",
       "phase": 5,
       "score": 100,
@@ -2611,20 +2779,20 @@
       "triggers": "copy;editing"
     },
     {
-      "description": "Access COSMIC cancer mutation database. Query somatic mutations, Cancer Gene Census, mutational signatures, gene fusions, for cancer research and precision oncology. Requires authentication.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "cosmic-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/cosmic-database/SKILL.md",
-      "triggers": "cosmic;database"
-    },
-    {
       "description": "Strategies and patterns for optimizing cloud costs across AWS, Azure, and GCP.",
       "phase": 5,
       "score": 100,
       "skill_id": "cost-optimization",
       "src_path": "lib/antigravity-awesome-skills/skills/cost-optimization/SKILL.md",
       "triggers": "cost;optimization"
+    },
+    {
+      "description": "基于C++核心指南（isocpp.github.io）的C++编码标准。在编写、审查或重构C++代码时使用，以强制实施现代、安全和惯用的实践。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "cpp-coding-standards",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/cpp-coding-standards/SKILL.md",
+      "triggers": "cpp;coding;standards"
     },
     {
       "description": "When the user wants to monitor, triage, or reduce their app's crash rate — including setting up Crashlytics, prioritizing which crashes to fix first, interpreting crash data, and understanding how crashes affect App Store ranking. Use when the user mentions \"crash\", \"crashlytics\", \"crash rate\", \"ANR\", \"app not responding\", \"crash-free sessions\", \"crash-free users\", \"symbolication\", \"stability\", \"firebase crashes\", \"app crashing\", or \"crash report\". For overall analytics setup, see app-analytics.",
@@ -2779,11 +2947,11 @@
       "triggers": "customize"
     },
     {
-      "description": "Codified expertise for customs documentation, tariff classification, duty optimisation, restricted party screening, and regulatory compliance across multiple jurisdictions.",
+      "description": "海关文件、关税分类、关税优化、受限方筛查以及多司法管辖区法规合规的编码化专业知识。由拥有15年以上经验的贸易合规专家提供。包括HS分类逻辑、Incoterms应用、自贸协定利用以及罚款减免。适用于处理海关清关、关税分类、贸易合规、进出口文件或关税优化时使用。license: Apache-2.0",
       "phase": 5,
       "score": 100,
       "skill_id": "customs-trade-compliance",
-      "src_path": "lib/antigravity-awesome-skills/skills/customs-trade-compliance/SKILL.md",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/customs-trade-compliance/SKILL.md",
       "triggers": "customs;trade;compliance"
     },
     {
@@ -2851,6 +3019,14 @@
       "triggers": "data;scientist"
     },
     {
+      "description": "构建一个全自动化的AI驱动数据收集代理，适用于任何公共来源——招聘网站、价格信息、新闻、GitHub、体育赛事等任何内容。按计划进行抓取，使用免费LLM（Gemini Flash）丰富数据，将结果存储在Notion/Sheets/Supabase中，并从用户反馈中学习。完全免费在GitHub Actions上运行。适用于用户希望自动监控、收集或跟踪任何公共数据的场景。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "data-scraper-agent",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/data-scraper-agent/SKILL.md",
+      "triggers": "data;scraper;agent"
+    },
+    {
       "description": "Transform raw data into compelling narratives that drive decisions and inspire action.",
       "phase": 5,
       "score": 100,
@@ -2881,14 +3057,6 @@
       "skill_id": "database-schema",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/database-schema/SKILL.md",
       "triggers": "database;schema"
-    },
-    {
-      "description": "Work with Data Commons, a platform providing programmatic access to public statistical data from global sources. Use this skill when working with demographic data, economic indicators, health statistics, environmental data, or any public datasets available through Data Commons. Applicable for querying population statistics, GDP figures, unemployment rates, disease prevalence, geographic entity resolution, and exploring relationships between statistical entities.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "datacommons-client",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/datacommons-client/SKILL.md",
-      "triggers": "datacommons;client"
     },
     {
       "description": "Automate Datadog tasks via Rube MCP (Composio): query metrics, search logs, manage monitors/dashboards, create events and downtimes. Always search tools first for current schemas.",
@@ -2961,14 +3129,6 @@
       "skill_id": "deckset",
       "src_path": "lib/Joannis-claude-skills/deckset/SKILL.md",
       "triggers": "deckset"
-    },
-    {
-      "description": "Run autonomous research tasks that plan, search, read, and synthesize information into comprehensive reports.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "deep-research",
-      "src_path": "lib/antigravity-awesome-skills/skills/deep-research/SKILL.md",
-      "triggers": "deep;research"
     },
     {
       "description": "Molecular ML with diverse featurizers and pre-built datasets. Use for property prediction (ADMET, toxicity) with traditional ML or GNNs when you want extensive featurization options and MoleculeNet benchmarks. Best for quick experiments with pre-trained models, diverse molecular representations. For graph-first PyTorch workflows use torchdrug; for benchmark datasets use pytdc.",
@@ -3179,6 +3339,14 @@
       "triggers": "distributed;tracing"
     },
     {
+      "description": "Multi-agent orchestration using dmux (tmux pane manager for AI agents). Patterns for parallel agent workflows across Claude Code, Codex, OpenCode, and other harnesses. Use when running multiple agent sessions in parallel or coordinating multi-agent development workflows.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "dmux-workflows",
+      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/dmux-workflows/SKILL.md",
+      "triggers": "dmux;workflows"
+    },
+    {
       "description": "Apply writing rules to any documentation that humans will read. Makes your writing clearer, stronger, and more professional.",
       "phase": 5,
       "score": 100,
@@ -3203,11 +3371,11 @@
       "triggers": "document;hunter"
     },
     {
-      "description": "Post-ship documentation update. Reads all project docs, cross-references the diff, updates README/ARCHITECTURE/CONTRIBUTING/CLAUDE.md to match what shipped, polishes CHANGELOG voice, cleans up TODOS, and optionally bumps VERSION. Use when asked to \"update the docs\", \"sync documentation\", or \"post-ship docs\". Proactively suggest after a PR is merged or code is shipped.",
+      "description": "Post-ship documentation update. Reads all project docs, cross-references the diff, updates README/ARCHITECTURE/CONTRIBUTING/CLAUDE.md to match what shipped, polishes CHANGELOG voice, cleans up TODOS, and optionally bumps VERSION. Use when asked to \"update the docs\", \"sync documentation\", or \"post-ship docs\". Proactively suggest after a PR is merged or code is shipped. (gstack)",
       "phase": 5,
       "score": 100,
       "skill_id": "document-release",
-      "src_path": "lib/gstack/document-release/SKILL.md",
+      "src_path": "lib/garrytan-gstack/document-release/SKILL.md",
       "triggers": "document;release"
     },
     {
@@ -3235,6 +3403,22 @@
       "triggers": "docx;official"
     },
     {
+      "description": "Toolkit for comprehensive document reading, editing, and creation with visual quality control. Use to work with Word documents (.docx files) for: (1) Reading or extracting content from existing DOCX files, (2) Creating new Word documents with professional formatting, (3) Editing documents requiring precise typography and layout, or any other DOCX reading or generation tasks.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "docx-processing-openai",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/docx-processing-openai/SKILL.md",
+      "triggers": "docx;processing;openai"
+    },
+    {
+      "description": "Searches, replaces, and reads text in Word documents. Use when the user asks to edit, search, or extract text from .docx files.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "docx-processing-superdoc",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/docx-processing-superdoc/SKILL.md",
+      "triggers": "docx;processing;superdoc"
+    },
+    {
       "description": "Search domains, compare prices, find promo codes, get purchase recommendations. Use when user wants to buy a domain, check domain prices, find domain deals, compare registrars, or search for .ai/.com domains.",
       "phase": 5,
       "score": 100,
@@ -3259,11 +3443,19 @@
       "triggers": "dotnet;backend;patterns"
     },
     {
+      "description": "GDPR Data Protection Impact Assessment (DPIA) guidance under Article 35 GDPR, EDPB Guidelines WP 248 rev.01, EDPB Opinion 28/2024 (AI), and national SA blacklists/whitelists. Triggers: \"DPIA\", \"DSFA\", \"Datenschutz-Folgenabschätzung\", \"impact assessment\", \"Art. 35\", \"do I need a DPIA\", descriptions of new high-risk processing (profiling, AI, biometrics, large-scale monitoring, special category data), Art. 36 prior consultation questions, national blacklist/whitelist queries.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "dpia-sentinel-oliver-schmidt-prietz",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/dpia-sentinel-oliver-schmidt-prietz/SKILL.md",
+      "triggers": "dpia;sentinel;oliver;schmidt;prietz"
+    },
+    {
       "description": "Draft a detailed Non-Disclosure Agreement between two parties covering information types, jurisdiction, and clauses needing legal review. Use when creating confidentiality agreements or preparing an NDA for a partnership.",
       "phase": 5,
       "score": 100,
       "skill_id": "draft-nda",
-      "src_path": "lib/pm-skills/pm-toolkit/skills/draft-nda/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-toolkit/skills/draft-nda/SKILL.md",
       "triggers": "draft;nda"
     },
     {
@@ -3281,14 +3473,6 @@
       "skill_id": "dropbox-automation",
       "src_path": "lib/antigravity-awesome-skills/skills/dropbox-automation/SKILL.md",
       "triggers": "dropbox;automation"
-    },
-    {
-      "description": "Access and analyze comprehensive drug information from the DrugBank database including drug properties, interactions, targets, pathways, chemical structures, and pharmacology data. This skill should be used when working with pharmaceutical data, drug discovery research, pharmacology studies, drug-drug interaction analysis, target identification, chemical similarity searches, ADMET predictions, or any task requiring detailed drug and drug target information from DrugBank.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "drugbank-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/drugbank-database/SKILL.md",
-      "triggers": "drugbank;database"
     },
     {
       "description": "Provides expertise for analyzing DWARF debug files and understanding the DWARF debug format/standard (v3-v5). Triggers when understanding DWARF information, interacting with DWARF files, answering DWARF-related questions, or working with code that parses DWARF data.",
@@ -3387,12 +3571,20 @@
       "triggers": "employment;contract;templates"
     },
     {
-      "description": "Codified expertise for electricity and gas procurement, tariff optimisation, demand charge management, renewable PPA evaluation, and multi-facility energy cost management.",
+      "description": "电力与燃气采购、电价优化、需量电费管理、可再生能源购电协议评估及多设施能源成本管理的编码化专业知识。基于能源采购经理在大型工商业用户中超过15年的经验。包括市场结构分析、对冲策略、负荷分析和可持续性报告框架。适用于采购能源、优化电价、管理需量电费、评估购电协议或制定能源策略时使用。license: Apache-2.0",
       "phase": 5,
       "score": 100,
       "skill_id": "energy-procurement",
-      "src_path": "lib/antigravity-awesome-skills/skills/energy-procurement/SKILL.md",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/energy-procurement/SKILL.md",
       "triggers": "energy;procurement"
+    },
+    {
+      "description": "通过可观测性、安全边界和生命周期管理来操作长期运行的代理工作负载。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "enterprise-agent-ops",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/enterprise-agent-ops/SKILL.md",
+      "triggers": "enterprise;agent;ops"
     },
     {
       "description": "Guide developers through setting up development environments with proper tools, dependencies, and configurations",
@@ -3451,14 +3643,6 @@
       "triggers": "error;detective"
     },
     {
-      "description": "You are an expert error analysis specialist with deep expertise in debugging distributed systems, analyzing production incidents, and implementing comprehensive observability solutions.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "error-diagnostics-error-analysis",
-      "src_path": "lib/antigravity-awesome-skills/skills/error-diagnostics-error-analysis/SKILL.md",
-      "triggers": "error;diagnostics;error;analysis"
-    },
-    {
       "description": "You are an error tracking and observability expert specializing in implementing comprehensive error monitoring solutions. Set up error tracking systems, configure alerts, implement structured logging,",
       "phase": 5,
       "score": 100,
@@ -3499,6 +3683,14 @@
       "triggers": "etetoolkit"
     },
     {
+      "description": "Formal evaluation framework for Claude Code sessions implementing eval-driven development (EDD) principles",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "eval-harness",
+      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/eval-harness/SKILL.md",
+      "triggers": "eval;harness"
+    },
+    {
       "description": "Evaluates NVIDIA Cosmos Policy on LIBERO and RoboCasa simulation environments. Use when setting up cosmos-policy for robot manipulation evaluation, running headless GPU evaluations with EGL rendering, or profiling inference latency on cluster or local GPU machines.",
       "phase": 5,
       "score": 100,
@@ -3521,6 +3713,14 @@
       "skill_id": "evolution",
       "src_path": "lib/ZhangHanDong-makepad-skills/skills/evolution/SKILL.md",
       "triggers": "evolution"
+    },
+    {
+      "description": "Neural search via Exa MCP for web, code, and company research. Use when the user needs web search, code examples, company intel, people lookup, or AI-powered deep research with Exa's neural search engine.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "exa-search",
+      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/exa-search/SKILL.md",
+      "triggers": "exa;search"
     },
     {
       "description": "Use when you have a written implementation plan to execute in a separate session with review checkpoints",
@@ -3641,6 +3841,14 @@
       "skill_id": "extractor-selection-and-fallback",
       "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/domains/document-extraction/skills/extractor-selection-and-fallback/SKILL.md",
       "triggers": "extractor;selection;and;fallback"
+    },
+    {
+      "description": "Unified media generation via fal.ai MCP — image, video, and audio. Covers text-to-image (Nano Banana), text/image-to-video (Seedance, Kling, Veo 3), text-to-speech (CSM-1B), and video-to-audio (ThinkSound). Use when the user wants to generate images, videos, or audio with AI.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "fal-ai-media",
+      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/fal-ai-media/SKILL.md",
+      "triggers": "fal;ai;media"
     },
     {
       "description": "Text-to-speech and speech-to-text using fal.ai audio models",
@@ -3783,7 +3991,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "finding-duplicate-functions",
-      "src_path": "lib/superpowers-lab/skills/finding-duplicate-functions/SKILL.md",
+      "src_path": "lib/obra-superpowers-lab/skills/finding-duplicate-functions/SKILL.md",
       "triggers": "finding;duplicate;functions"
     },
     {
@@ -4003,11 +4211,11 @@
       "triggers": "framework;migration;legacy;modernize"
     },
     {
-      "description": "Restrict file edits to a specific directory for the session. Blocks Edit and Write outside the allowed path. Use when debugging to prevent accidentally \"fixing\" unrelated code, or when you want to scope changes to one module. Use when asked to \"freeze\", \"restrict edits\", \"only edit this folder\", or \"lock down edits\".",
+      "description": "Restrict file edits to a specific directory for the session. Blocks Edit and Write outside the allowed path. Use when debugging to prevent accidentally \"fixing\" unrelated code, or when you want to scope changes to one module. Use when asked to \"freeze\", \"restrict edits\", \"only edit this folder\", or \"lock down edits\". (gstack)",
       "phase": 5,
       "score": 100,
       "skill_id": "freeze",
-      "src_path": "lib/gstack/freeze/SKILL.md",
+      "src_path": "lib/garrytan-gstack/freeze/SKILL.md",
       "triggers": "freeze"
     },
     {
@@ -4027,11 +4235,11 @@
       "triggers": "freshservice;automation"
     },
     {
-      "description": "Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files.",
+      "description": "Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. Use when the user wants to build a presentation, convert a PPT/PPTX to web, or create slides for a talk/pitch. Helps non-designers discover their aesthetic through visual exploration rather than abstract choices.",
       "phase": 5,
       "score": 100,
       "skill_id": "frontend-slides",
-      "src_path": "lib/antigravity-awesome-skills/skills/frontend-slides/SKILL.md",
+      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/frontend-slides/SKILL.md",
       "triggers": "frontend;slides"
     },
     {
@@ -4049,6 +4257,14 @@
       "skill_id": "full-stack-orchestration-full-stack-feature",
       "src_path": "lib/antigravity-awesome-skills/skills/full-stack-orchestration-full-stack-feature/SKILL.md",
       "triggers": "full;stack;orchestration;full;stack"
+    },
+    {
+      "description": "Game development orchestrator. Routes to platform-specific skills based on project needs.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "game-development",
+      "src_path": "lib/antigravity-awesome-skills/skills/game-development/SKILL.md",
+      "triggers": "game;development"
     },
     {
       "description": "When to use: ['Web applications and APIs', 'Need any runtime or library', 'Complex services with multiple endpoints', 'Stateless containerized workloads']",
@@ -4075,6 +4291,14 @@
       "triggers": "gdpr;data;handling"
     },
     {
+      "description": "Draft GDPR/DSGVO-compliant privacy notices as .docx for any EU/EEA jurisdiction and audience. Use when user asks to create a privacy policy/notice, mentions \"Datenschutzerklärung\", \"politique de confidentialité\", \"privacy notice\", needs Art. 13/14 disclosures, AI Act transparency, cookie policy, or notices for applicants (\"Bewerber-Datenschutz\"), employees (\"Beschäftigten-Datenschutz\"), B2B partners, or B2C customers. Covers DE (DSGVO+BDSG+TDDDG), FR (RGPD+LIL+LCEN), AT, IT, ES, NL, BE, IE, UK GDPR. Five notice types: Website/App, Applicant, Employee, Business Partner, B2C Customer.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "gdpr-privacy-notice-eu-oliver-schmidt-prietz",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/gdpr-privacy-notice-eu-oliver-schmidt-prietz/SKILL.md",
+      "triggers": "gdpr;privacy;notice;eu;oliver"
+    },
+    {
       "description": "Generate or edit images using AI models (FLUX, Nano Banana 2). Use for general-purpose image generation including photos, illustrations, artwork, visual assets, concept art, and any image that is not a technical diagram or schematic. For flowcharts, circuits, pathways, and technical diagrams, use the scientific-schematics skill instead.",
       "phase": 5,
       "score": 100,
@@ -4097,14 +4321,6 @@
       "skill_id": "genre-creator",
       "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/genre-creator/SKILL.md",
       "triggers": "genre;creator"
-    },
-    {
-      "description": "Access NCBI GEO for gene expression/genomics data. Search/download microarray and RNA-seq datasets (GSE, GSM, GPL), retrieve SOFT/Matrix files, for transcriptomics and expression analysis.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "geo-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/geo-database/SKILL.md",
-      "triggers": "geo;database"
     },
     {
       "description": "Generative Engine Optimization for AI search engines (ChatGPT, Claude, Perplexity).",
@@ -4203,6 +4419,14 @@
       "triggers": "git;pushing"
     },
     {
+      "description": "Git workflow patterns including branching strategies, commit conventions, merge vs rebase, conflict resolution, and collaborative development best practices for teams of all sizes.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "git-workflow",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/git-workflow/SKILL.md",
+      "triggers": "git;workflow"
+    },
+    {
       "description": "Analyze a GitHub issue and create a detailed technical specification",
       "phase": 5,
       "score": 100,
@@ -4299,14 +4523,6 @@
       "triggers": "gitlab;automation"
     },
     {
-      "description": "Query gnomAD (Genome Aggregation Database) for population allele frequencies, variant constraint scores (pLI, LOEUF), and loss-of-function intolerance. Essential for variant pathogenicity interpretation, rare disease genetics, and identifying loss-of-function intolerant genes.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "gnomad-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/gnomad-database/SKILL.md",
-      "triggers": "gnomad;database"
-    },
-    {
       "description": "分析健康目标数据、识别目标模式、评估目标进度,并提供个性化目标管理建议。支持与营养、运动、睡眠等健康数据的关联分析。",
       "phase": 5,
       "score": 100,
@@ -4359,7 +4575,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "grammar-check",
-      "src_path": "lib/pm-skills/pm-toolkit/skills/grammar-check/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-toolkit/skills/grammar-check/SKILL.md",
       "triggers": "grammar;check"
     },
     {
@@ -4383,7 +4599,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "gsap-plugins",
-      "src_path": "lib/gsap-skills/skills/gsap-plugins/SKILL.md",
+      "src_path": "lib/greensock-gsap-skills/skills/gsap-plugins/SKILL.md",
       "triggers": "gsap;plugins"
     },
     {
@@ -4391,7 +4607,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "gsap-scrolltrigger",
-      "src_path": "lib/gsap-skills/skills/gsap-scrolltrigger/SKILL.md",
+      "src_path": "lib/greensock-gsap-skills/skills/gsap-scrolltrigger/SKILL.md",
       "triggers": "gsap;scrolltrigger"
     },
     {
@@ -4399,7 +4615,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "gsap-timeline",
-      "src_path": "lib/gsap-skills/skills/gsap-timeline/SKILL.md",
+      "src_path": "lib/greensock-gsap-skills/skills/gsap-timeline/SKILL.md",
       "triggers": "gsap;timeline"
     },
     {
@@ -4407,7 +4623,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "gsap-utils",
-      "src_path": "lib/gsap-skills/skills/gsap-utils/SKILL.md",
+      "src_path": "lib/greensock-gsap-skills/skills/gsap-utils/SKILL.md",
       "triggers": "gsap;utils"
     },
     {
@@ -4415,32 +4631,16 @@
       "phase": 5,
       "score": 100,
       "skill_id": "gstack-upgrade",
-      "src_path": "lib/gstack/gstack-upgrade/SKILL.md",
+      "src_path": "lib/garrytan-gstack/gstack-upgrade/SKILL.md",
       "triggers": "gstack;upgrade"
     },
     {
-      "description": "Query GTEx (Genotype-Tissue Expression) portal for tissue-specific gene expression, eQTLs (expression quantitative trait loci), and sQTLs. Essential for linking GWAS variants to gene regulation, understanding tissue-specific expression, and interpreting non-coding variant effects.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "gtex-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/gtex-database/SKILL.md",
-      "triggers": "gtex;database"
-    },
-    {
-      "description": "Full safety mode: destructive command warnings + directory-scoped edits. Combines /careful (warns before rm -rf, DROP TABLE, force-push, etc.) with /freeze (blocks edits outside a specified directory). Use for maximum safety when touching prod or debugging live systems. Use when asked to \"guard mode\", \"full safety\", \"lock it down\", or \"maximum safety\".",
+      "description": "Full safety mode: destructive command warnings + directory-scoped edits. Combines /careful (warns before rm -rf, DROP TABLE, force-push, etc.) with /freeze (blocks edits outside a specified directory). Use for maximum safety when touching prod or debugging live systems. Use when asked to \"guard mode\", \"full safety\", \"lock it down\", or \"maximum safety\". (gstack)",
       "phase": 5,
       "score": 100,
       "skill_id": "guard",
-      "src_path": "lib/gstack/guard/SKILL.md",
+      "src_path": "lib/garrytan-gstack/guard/SKILL.md",
       "triggers": "guard"
-    },
-    {
-      "description": "Query NHGRI-EBI GWAS Catalog for SNP-trait associations. Search variants by rs ID, disease/trait, gene, retrieve p-values and summary statistics, for genetic epidemiology and polygenic risk scores.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "gwas-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/gwas-database/SKILL.md",
-      "triggers": "gwas;database"
     },
     {
       "description": "Create hand-drawn Excalidraw diagrams, flows, explainers, wireframes, and page mockups. Default to monochrome sketch output; allow restrained color only for page mockups when the user explicitly wants webpage-like fidelity.",
@@ -4465,6 +4665,14 @@
       "skill_id": "health-trend-analyzer",
       "src_path": "lib/antigravity-awesome-skills/skills/health-trend-analyzer/SKILL.md",
       "triggers": "health;trend;analyzer"
+    },
+    {
+      "description": "Clinical Decision Support System (CDSS) development patterns. Drug interaction checking, dose validation, clinical scoring (NEWS2, qSOFA), alert severity classification, and integration into EMR workflows.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "healthcare-cdss-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/healthcare-cdss-patterns/SKILL.md",
+      "triggers": "healthcare;cdss;patterns"
     },
     {
       "description": "<!-- Generated from helius-skills/helius/SKILL.md — do not edit -->",
@@ -4555,14 +4763,6 @@
       "triggers": "histolab"
     },
     {
-      "description": "Access Human Metabolome Database (220K+ metabolites). Search by name/ID/structure, retrieve chemical properties, biomarker data, NMR/MS spectra, pathways, for metabolomics and identification.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "hmdb-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/hmdb-database/SKILL.md",
-      "triggers": "hmdb;database"
-    },
-    {
       "description": "hocr parsing and conversion",
       "phase": 5,
       "score": 100,
@@ -4627,6 +4827,14 @@
       "triggers": "hubspot;integration"
     },
     {
+      "description": "Run local evaluations for Hugging Face Hub models with inspect-ai or lighteval.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "hugging-face-community-evals",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/hugging-face-community-evals/SKILL.md",
+      "triggers": "hugging;face;community;evals"
+    },
+    {
       "description": "Publish and manage research papers on Hugging Face Hub. Supports creating paper pages, linking papers to models/datasets, claiming authorship, and generating professional markdown-based research articles.",
       "phase": 5,
       "score": 100,
@@ -4635,11 +4843,19 @@
       "triggers": "hugging;face;paper;publisher"
     },
     {
+      "description": "Train or fine-tune vision models on Hugging Face Jobs for detection, classification, and SAM or SAM2 segmentation.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "hugging-face-vision-trainer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/hugging-face-vision-trainer/SKILL.md",
+      "triggers": "hugging;face;vision;trainer"
+    },
+    {
       "description": "Remove signs of AI-generated writing from text. Use when editing or reviewing text to make it sound more natural and human-written. Based on Wikipedia's comprehensive \"Signs of AI writing\" guide. Detects and fixes patterns including: inflated symbolism, promotional language, superficial -ing analyses, vague attributions, em dash overuse, rule of three, AI vocabulary words, negative parallelisms, and excessive conjunctive phrases.",
       "phase": 5,
       "score": 100,
       "skill_id": "humanizer",
-      "src_path": "lib/humanizer/SKILL.md",
+      "src_path": "lib/blader-humanizer/SKILL.md",
       "triggers": "humanizer"
     },
     {
@@ -4931,6 +5147,14 @@
       "triggers": "improve;codebase;architecture"
     },
     {
+      "description": "When the user wants to create, plan, or optimize App Store In-App Events — the event cards that appear on the Today tab, search results, and your product page. Use when the user mentions \"in-app event\", \"App Store event\", \"event card\", \"Today tab\", \"live event\", \"challenge\", \"game event\", \"seasonal event card\", or wants visibility beyond organic search. For general ASO, see aso-audit. For seasonal keyword strategy, see seasonal-aso.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "in-app-events",
+      "src_path": "lib/aso-skills/skills/in-app-events/SKILL.md",
+      "triggers": "in;app;events"
+    },
+    {
       "description": "Expert SRE incident responder specializing in rapid problem resolution, modern observability, and comprehensive incident management.",
       "phase": 5,
       "score": 100,
@@ -4991,7 +5215,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "install-duckdb",
-      "src_path": "lib/duckdb-skills/skills/install-duckdb/SKILL.md",
+      "src_path": "lib/duckdb-duckdb-skills/skills/install-duckdb/SKILL.md",
       "triggers": "install;duckdb"
     },
     {
@@ -5027,20 +5251,28 @@
       "triggers": "internal;comms;anthropic"
     },
     {
-      "description": "To write internal communications, use this skill for:",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "internal-comms-community",
-      "src_path": "lib/antigravity-awesome-skills/skills/internal-comms-community/SKILL.md",
-      "triggers": "internal;comms;community"
-    },
-    {
-      "description": "Codified expertise for demand forecasting, safety stock optimisation, replenishment planning, and promotional lift estimation at multi-location retailers.",
+      "description": "为多地点零售商提供需求预测、安全库存优化、补货规划及促销提升估算的编码化专业知识。基于拥有15年以上管理数百个SKU经验的需求规划师的专业知识。包括预测方法选择、ABC/XYZ分析、季节性过渡管理及供应商谈判框架。适用于预测需求、设定安全库存、规划补货、管理促销或优化库存水平时使用。license: Apache-2.0",
       "phase": 5,
       "score": 100,
       "skill_id": "inventory-demand-planning",
-      "src_path": "lib/antigravity-awesome-skills/skills/inventory-demand-planning/SKILL.md",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/inventory-demand-planning/SKILL.md",
       "triggers": "inventory;demand;planning"
+    },
+    {
+      "description": "Create and update pitch decks, one-pagers, investor memos, accelerator applications, financial models, and fundraising materials. Use when the user needs investor-facing documents, projections, use-of-funds tables, milestone plans, or materials that must stay internally consistent across multiple fundraising assets.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "investor-materials",
+      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/investor-materials/SKILL.md",
+      "triggers": "investor;materials"
+    },
+    {
+      "description": "Draft cold emails, warm intro blurbs, follow-ups, update emails, and investor communications for fundraising. Use when the user wants outreach to angels, VCs, strategic investors, or accelerators and needs concise, personalized, investor-facing messaging.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "investor-outreach",
+      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/investor-outreach/SKILL.md",
+      "triggers": "investor;outreach"
     },
     {
       "description": "Interact with GitHub issues - create, list, and view issues.",
@@ -5059,7 +5291,7 @@
       "triggers": "istio;traffic;management"
     },
     {
-      "description": "Ralph Wiggum loops - self-referential TDD iteration until tests pass",
+      "description": "TDD iteration loops using Claude Code Stop hooks - runs tests after each response, feeds failures back automatically",
       "phase": 5,
       "score": 100,
       "skill_id": "iterative-development",
@@ -5067,12 +5299,12 @@
       "triggers": "iterative;development"
     },
     {
-      "description": "Query JASPAR for transcription factor binding site (TFBS) profiles (PWMs/PFMs). Search by TF name, species, or class; scan DNA sequences for TF binding sites; compare matrices; essential for regulatory genomics, motif analysis, and GWAS regulatory variant interpretation.",
+      "description": "サブエージェントのコンテキスト問題を解決するために、コンテキスト取得を段階的に洗練するパターン",
       "phase": 5,
       "score": 100,
-      "skill_id": "jaspar-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/jaspar-database/SKILL.md",
-      "triggers": "jaspar;database"
+      "skill_id": "iterative-retrieval",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/ja-JP/skills/iterative-retrieval/SKILL.md",
+      "triggers": "iterative;retrieval"
     },
     {
       "description": "Automate Jira tasks via Rube MCP (Composio): issues, projects, sprints, boards, comments, users. Always search tools first for current schemas.",
@@ -5203,12 +5435,28 @@
       "triggers": "langfuse"
     },
     {
+      "description": "Discover and evaluate Laravel packages via LaraPlugins.io MCP. Use when the user wants to find plugins, check package health, or assess Laravel/PHP compatibility.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "laravel-plugin-discovery",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/laravel-plugin-discovery/SKILL.md",
+      "triggers": "laravel;plugin;discovery"
+    },
+    {
       "description": "last30days — SNS・Web横断30日間リサーチ",
       "phase": 5,
       "score": 100,
       "skill_id": "last30days",
       "src_path": "lib/ShunsukeHayashi-agent-skill-bus/skills/last30days/SKILL.md",
       "triggers": "last30days"
+    },
+    {
+      "description": "Manage project learnings. Review, search, prune, and export what gstack has learned across sessions. Use when asked to \"what have we learned\", \"show learnings\", \"prune stale learnings\", or \"export learnings\". Proactively suggest when the user asks about past patterns or wonders \"didn't we fix this before?\"",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "learn",
+      "src_path": "lib/garrytan-gstack/learn/SKILL.md",
+      "triggers": "learn"
     },
     {
       "description": "Refactor legacy codebases, migrate outdated frameworks, and implement gradual modernization. Handles technical debt, dependency updates, and backward compatibility.",
@@ -5225,6 +5473,14 @@
       "skill_id": "legal-advisor",
       "src_path": "lib/antigravity-awesome-skills/skills/legal-advisor/SKILL.md",
       "triggers": "legal;advisor"
+    },
+    {
+      "description": "Assess and classify legal risks using a severity-by-likelihood framework with escalation criteria. Use when evaluating contract risk, assessing deal exposure, classifying issues by severity, or determining whether a matter needs senior counsel or outside legal review.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "legal-risk-assessment-anthropic",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/legal-risk-assessment-anthropic/SKILL.md",
+      "triggers": "legal;risk;assessment;anthropic"
     },
     {
       "description": "Avaliacao pericial de imoveis em leilao. Valor de mercado, liquidacao forcada, ABNT NBR 14653, metodos comparativo/renda/custo, CUB e margem de seguranca.",
@@ -5249,6 +5505,14 @@
       "skill_id": "leiloeiro-ia",
       "src_path": "lib/antigravity-awesome-skills/skills/leiloeiro-ia/SKILL.md",
       "triggers": "auction;ai-analysis;real-estate;brazilian"
+    },
+    {
+      "description": "Analise juridica de leiloes: nulidades, bem de familia, alienacao fiduciaria, CPC arts 829-903, Lei 9514/97, onus reais, embargos e jurisprudencia.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "leiloeiro-juridico",
+      "src_path": "lib/antigravity-awesome-skills/skills/leiloeiro-juridico/SKILL.md",
+      "triggers": "legal;auction-law;brazilian;judicial"
     },
     {
       "description": "Analise de mercado imobiliario para leiloes. Liquidez, desagio tipico, ROI, estrategias de saida (flip/reforma/renda), Selic 2025 e benchmark CDI/FII.",
@@ -5443,11 +5707,11 @@
       "triggers": "local;llm;expert"
     },
     {
-      "description": "Codified expertise for handling freight exceptions, shipment delays, damages, losses, and carrier disputes. Informed by logistics professionals with 15+ years operational experience.",
+      "description": "针对货运异常、货物延误、损坏、丢失和承运商纠纷的编码化专业知识，由拥有15年以上运营经验的物流专业人士提供。包括升级协议、承运商特定行为、索赔程序和判断框架。在处理运输异常、货运索赔、交付问题或承运商纠纷时使用。license: Apache-2.0",
       "phase": 5,
       "score": 100,
       "skill_id": "logistics-exception-management",
-      "src_path": "lib/antigravity-awesome-skills/skills/logistics-exception-management/SKILL.md",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/logistics-exception-management/SKILL.md",
       "triggers": "logistics;exception;management"
     },
     {
@@ -5591,7 +5855,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "market-sizing",
-      "src_path": "lib/pm-skills/pm-market-research/skills/market-sizing/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-market-research/skills/market-sizing/SKILL.md",
       "triggers": "market;sizing"
     },
     {
@@ -5679,7 +5943,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "mcp-cli",
-      "src_path": "lib/superpowers-lab/skills/mcp-cli/SKILL.md",
+      "src_path": "lib/obra-superpowers-lab/skills/mcp-cli/SKILL.md",
       "triggers": "mcp;cli"
     },
     {
@@ -5723,6 +5987,14 @@
       "triggers": "medchem"
     },
     {
+      "description": "Prepare structured briefings for meetings with legal relevance and track resulting action items. Use when preparing for contract negotiations, board meetings, compliance reviews, or any meeting where legal context, background research, or action tracking is needed.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "meeting-briefing-anthropic",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/meeting-briefing-anthropic/SKILL.md",
+      "triggers": "meeting;briefing;anthropic"
+    },
+    {
       "description": "Generate a pre-meeting prep brief in Claude Code. Researches participants, pulls vault context, builds agenda, surfaces sharp questions. Use when user says \"prep for this meeting,\" \"I have a call with,\" \"meeting tomorrow with,\" or \"prep brief for [name/company].\"",
       "phase": 5,
       "score": 100,
@@ -5739,11 +6011,11 @@
       "triggers": "memory;forensics"
     },
     {
-      "description": "Cross-language patterns for memory-safe programming including RAII, ownership, smart pointers, and resource management.",
+      "description": "Cross-language patterns for memory-safe code-quality including RAII, ownership, smart pointers, and resource management.",
       "phase": 5,
       "score": 100,
       "skill_id": "memory-safety-patterns",
-      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-systems-programming/skills/memory-safety-patterns/SKILL.md",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-systems-code-quality/skills/memory-safety-patterns/SKILL.md",
       "triggers": "memory;safety;patterns"
     },
     {
@@ -5785,6 +6057,14 @@
       "skill_id": "microsoft-azure-webjobs-extensions-authentication-events-dotnet",
       "src_path": "lib/antigravity-awesome-skills/skills/microsoft-azure-webjobs-extensions-authentication-events-dotnet/SKILL.md",
       "triggers": "microsoft;azure;webjobs;extensions;authentication"
+    },
+    {
+      "description": "Understand Microsoft technologies by querying official documentation. Use whenever the user asks how something works, wants tutorials, needs configuration options, limits, quotas, or best practices for any Microsoft technology (Azure, .NET, M365, Windows, Power Platform, etc.)—even if they don't mention \"docs.\" If the question is about understanding a concept rather than writing code, this is the right skill.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "microsoft-docs",
+      "src_path": "lib/microsoft-skills/.github/skills/microsoft-docs/SKILL.md",
+      "triggers": "microsoft;docs"
     },
     {
       "description": "Automate Microsoft Teams tasks via Rube MCP (Composio): send messages, manage channels, create meetings, handle chats, and search messages. Always search tools first for current schemas.",
@@ -5931,14 +6211,6 @@
       "triggers": "molykit"
     },
     {
-      "description": "Query the Monarch Initiative knowledge graph for disease-gene-phenotype associations across species. Integrates OMIM, ORPHANET, HPO, ClinVar, and model organism databases. Use for rare disease gene discovery, phenotype-to-gene mapping, cross-species disease modeling, and HPO term lookup.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "monarch-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/monarch-database/SKILL.md",
-      "triggers": "monarch;database"
-    },
-    {
       "description": "Automate Monday.com work management including boards, items, columns, groups, subitems, and updates via Rube MCP (Composio). Always search tools first for current schemas.",
       "phase": 5,
       "score": 100,
@@ -6059,6 +6331,14 @@
       "triggers": "multi;cloud;architecture"
     },
     {
+      "description": "Multiplayer game development principles. Architecture, networking, synchronization.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "multiplayer",
+      "src_path": "lib/antigravity-awesome-skills/skills/game-development/multiplayer/SKILL.md",
+      "triggers": "multiplayer"
+    },
+    {
       "description": "Validate n8n expression syntax and fix common errors. Use when writing n8n expressions, using {{}} syntax, accessing $json/$node variables, troubleshooting expression errors, or working with webhook data in workflows.",
       "phase": 5,
       "score": 100,
@@ -6121,6 +6401,14 @@
       "skill_id": "nanogpt",
       "src_path": "lib/Orchestra-Research-AI-research-SKILLs/01-model-architecture/nanogpt/SKILL.md",
       "triggers": "Model Architecture;NanoGPT;GPT-2;Educational;Andrej Karpathy;Transformer;Minimalist;From Scratch;Training"
+    },
+    {
+      "description": "Guide to review incoming one-way (unilateral) commercial NDAs in a jurisdiction-agnostic way, from either a Recipient or Discloser perspective (user-selected), producing a clause-by-clause issue log with preferred redlines, fallbacks, rationales, owners, and deadlines.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "nda-review-jamie-tso",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/nda-review-jamie-tso/SKILL.md",
+      "triggers": "nda;review;jamie;tso"
     },
     {
       "description": "GPU-accelerated data curation for LLM training. Supports text/image/video/audio. Features fuzzy deduplication (16× faster), quality filtering (30+ heuristics), semantic deduplication, PII redaction, NSFW detection. Scales across GPUs with RAPIDS. Use for preparing high-quality training datasets, cleaning web data, or deduplicating large corpora.",
@@ -6227,6 +6515,14 @@
       "triggers": "nft;standards"
     },
     {
+      "description": "NIL (Name, Image, and Likeness) contract analysis for NCAA student-athletes from the athlete's perspective. Use when user says 'review this NIL contract', 'analyze this NIL deal', 'check this athlete agreement', 'review my NIL agreement', or uploads a PDF NIL contract for review. Identifies red flags, missing protections, and compliance issues. Produces a structured review memorandum with negotiation positions. Do NOT use for general contract review, employment agreements, non-NIL endorsements, or brand-side deal analysis.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "nil-contract-analysis-samir-patel",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/nil-contract-analysis-samir-patel/SKILL.md",
+      "triggers": "nil;contract;analysis;samir;patel"
+    },
+    {
       "description": "Provides guidance for interpreting and manipulating neural network internals using nnsight with optional NDIF remote execution. Use when needing to run interpretability experiments on massive models (70B+) without local GPU resources, or when working with any PyTorch architecture.",
       "phase": 5,
       "score": 100,
@@ -6243,12 +6539,28 @@
       "triggers": "nonlinear;solvers"
     },
     {
+      "description": "Define a North Star Metric and 3-5 supporting input metrics that form a metrics constellation. Classify the business game (Attention, Transaction, Productivity) and validate against 7 criteria for an effective North Star. Use when choosing a North Star Metric, setting up a metrics framework, learning about the North Star Framework, or deciding what to measure.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "north-star-metric",
+      "src_path": "lib/phuryn-pm-skills/pm-marketing-growth/skills/north-star-metric/SKILL.md",
+      "triggers": "north;star;metric"
+    },
+    {
       "description": "Interact with Google NotebookLM to query documentation with Gemini's source-grounded answers. Each question opens a fresh browser session, retrieves the answer exclusively from your uploaded documents, and closes.",
       "phase": 5,
       "score": 100,
       "skill_id": "notebooklm",
       "src_path": "lib/antigravity-awesome-skills/skills/notebooklm/SKILL.md",
       "triggers": "notebooklm"
+    },
+    {
+      "description": "Guide pour la rédaction de notifications de licenciement conformes au droit du travail français. Utiliser ce skill quand l'utilisateur demande de rédiger, préparer, créer ou éditer une lettre de notification de licenciement, notamment pour faute grave, faute lourde ou motif personnel. Le skill guide la collecte d'informations précises et la rédaction d'une notification juridiquement solide avec tous les éléments obligatoires du droit français.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "notification-licenciement-selim-brihi",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/notification-licenciement-selim-brihi/SKILL.md",
+      "triggers": "notification;licenciement;selim;brihi"
     },
     {
       "description": "Automate Notion tasks via Rube MCP (Composio): pages, databases, blocks, comments, users. Always search tools first for current schemas.",
@@ -6291,11 +6603,11 @@
       "triggers": "numerical;stability"
     },
     {
-      "description": "Process documents with Nutrient DWS. Use when the user wants to generate PDFs from HTML or URLs, convert Office/images/PDFs, assemble or split packets, OCR scans, extract text/tables/key-value pairs, redact PII, watermark, sign, fill forms, optimize PDFs, or produce compliance outputs like PDF/A or PDF/UA. Triggers include convert to PDF, merge these PDFs, OCR this scan, extract tables, redact PII, sign this PDF, make this PDF/A, or linearize for web delivery.",
+      "description": "Nutrient DWS API を使用してドキュメントの処理、変換、OCR、抽出、編集、署名、フォーム入力を行います。PDF、DOCX、XLSX、PPTX、HTML、画像に対応しています。",
       "phase": 5,
       "score": 100,
       "skill_id": "nutrient-document-processing",
-      "src_path": "lib/nutrient-agent-skill/nutrient-document-processing/SKILL.md",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/ja-JP/skills/nutrient-document-processing/SKILL.md",
       "triggers": "nutrient;document;processing"
     },
     {
@@ -6587,22 +6899,6 @@
       "triggers": "open;notebook"
     },
     {
-      "description": "Query and analyze scholarly literature using the OpenAlex database. This skill should be used when searching for academic papers, analyzing research trends, finding works by authors or institutions, tracking citations, discovering open access publications, or conducting bibliometric analysis across 240M+ scholarly works. Use for literature searches, research output analysis, citation analysis, and academic database queries.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "openalex-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/openalex-database/SKILL.md",
-      "triggers": "openalex;database"
-    },
-    {
-      "description": "Query Open Targets Platform for target-disease associations, drug target discovery, tractability/safety data, genetics/omics evidence, known drugs, for therapeutic target identification.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "opentargets-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/opentargets-database/SKILL.md",
-      "triggers": "opentargets;database"
-    },
-    {
       "description": "Build an Opportunity Solution Tree from outcomes to opportunities, solutions, and tests. Use when a stakeholder request needs problem framing before you decide what to build.",
       "phase": 5,
       "score": 100,
@@ -6779,12 +7075,12 @@
       "triggers": "paywall;upgrade;cro"
     },
     {
-      "description": "Access RCSB PDB for 3D protein/nucleic acid structures. Search by text/sequence/structure, download coordinates (PDB/mmCIF), retrieve metadata, for structural biology and drug discovery.",
+      "description": "PC and console game development principles. Engine selection, platform features, optimization strategies.",
       "phase": 5,
       "score": 100,
-      "skill_id": "pdb-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/pdb-database/SKILL.md",
-      "triggers": "pdb;database"
+      "skill_id": "pc-games",
+      "src_path": "lib/antigravity-awesome-skills/skills/game-development/pc-games/SKILL.md",
+      "triggers": "pc;games"
     },
     {
       "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
@@ -7027,12 +7323,28 @@
       "triggers": "eric-zimmerman;ez-tools;kape;mftecmd;pecmd;lecmd;jlecmd;registry-forensics;windows-forensics;timeline-explorer;dfir;artifact-analysis"
     },
     {
+      "description": "现代 Perl 5.36+ 的惯用法、最佳实践和约定，用于构建稳健、可维护的 Perl 应用程序。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "perl-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/perl-patterns/SKILL.md",
+      "triggers": "perl;patterns"
+    },
+    {
       "description": "You believe the best tools come from real problems. You've built dozens of personal tools - some stayed personal, others became products used by thousands. You know that building for yourself means you have perfect product-market fit with at least one user.",
       "phase": 5,
       "score": 100,
       "skill_id": "personal-tool-builder",
       "src_path": "lib/antigravity-awesome-skills/skills/personal-tool-builder/SKILL.md",
       "triggers": "personal;tool;builder"
+    },
+    {
+      "description": "Use when debugging any bug. Enforces a 5-phase protocol where code edits are blocked until root cause is confirmed. Prevents premature fix attempts.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "phase-gated-debugging",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/phase-gated-debugging/SKILL.md",
+      "triggers": "phase;gated;debugging"
     },
     {
       "description": "Open-source AI observability platform for LLM tracing, evaluation, and monitoring. Use when debugging LLM applications with detailed traces, running evaluations on datasets, or monitoring production AI systems with real-time insights.",
@@ -7075,11 +7387,11 @@
       "triggers": "plaid;fintech"
     },
     {
-      "description": "CEO/founder-mode plan review. Rethink the problem, find the 10-star product, challenge premises, expand scope when it creates a better product. Four modes: SCOPE EXPANSION (dream big), SELECTIVE EXPANSION (hold scope + cherry-pick expansions), HOLD SCOPE (maximum rigor), SCOPE REDUCTION (strip to essentials). Use when asked to \"think bigger\", \"expand scope\", \"strategy review\", \"rethink this\", or \"is this ambitious enough\". Proactively suggest when the user is questioning scope or ambition of a plan, or when the plan feels like it could be thinking bigger.",
+      "description": "CEO/founder-mode plan review. Rethink the problem, find the 10-star product, challenge premises, expand scope when it creates a better product. Four modes: SCOPE EXPANSION (dream big), SELECTIVE EXPANSION (hold scope + cherry-pick expansions), HOLD SCOPE (maximum rigor), SCOPE REDUCTION (strip to essentials). Use when asked to \"think bigger\", \"expand scope\", \"strategy review\", \"rethink this\", or \"is this ambitious enough\". Proactively suggest when the user is questioning scope or ambition of a plan, or when the plan feels like it could be thinking bigger. (gstack)",
       "phase": 5,
       "score": 100,
       "skill_id": "plan-ceo-review",
-      "src_path": "lib/gstack/plan-ceo-review/SKILL.md",
+      "src_path": "lib/garrytan-gstack/plan-ceo-review/SKILL.md",
       "triggers": "plan;ceo;review"
     },
     {
@@ -7097,6 +7409,14 @@
       "skill_id": "plan-writing",
       "src_path": "lib/antigravity-awesome-skills/skills/plan-writing/SKILL.md",
       "triggers": "plan;writing"
+    },
+    {
+      "description": "使用Plankton进行编写时代码质量强制执行——通过钩子在每次文件编辑时自动格式化、代码检查和Claude驱动的修复。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "plankton-code-quality",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/plankton-code-quality/SKILL.md",
+      "triggers": "plankton;code;quality"
     },
     {
       "description": "Work like Manus: Use persistent markdown files as your \"working memory on disk.\"",
@@ -7295,7 +7615,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "prioritization-frameworks",
-      "src_path": "lib/pm-skills/pm-execution/skills/prioritization-frameworks/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-execution/skills/prioritization-frameworks/SKILL.md",
       "triggers": "prioritization;frameworks"
     },
     {
@@ -7311,8 +7631,16 @@
       "phase": 5,
       "score": 100,
       "skill_id": "privacy-policy",
-      "src_path": "lib/pm-skills/pm-toolkit/skills/privacy-policy/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-toolkit/skills/privacy-policy/SKILL.md",
       "triggers": "privacy;policy"
+    },
+    {
+      "description": "Guide for drafting privacy policies compliant with GDPR. Includes CNIL 2020 recommendations, a reference template, and best practices. Use when drafting or revising a privacy policy for a website or application.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "privacy-policy-malik-taiar",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/politique-confidentialite-malik-taiar/SKILL.md",
+      "triggers": "privacy;policy;malik;taiar"
     },
     {
       "description": "Guide teams through MITRE's Problem Framing Canvas. Use when you need a clearer problem statement before jumping to solutions.",
@@ -7331,11 +7659,19 @@
       "triggers": "product;hunt;launch;plan"
     },
     {
+      "description": "Use this skill to validate the \"why\" before building, run product diagnostics, and convert vague ideas into specs.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "product-lens",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/product-lens/SKILL.md",
+      "triggers": "product;lens"
+    },
+    {
       "description": "Brainstorm 5 unique, memorable product names with rationale aligned to brand values and target audience. Use when naming a new product, rebranding, or exploring product name ideas.",
       "phase": 5,
       "score": 100,
       "skill_id": "product-name",
-      "src_path": "lib/pm-skills/pm-marketing-growth/skills/product-name/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-marketing-growth/skills/product-name/SKILL.md",
       "triggers": "product;name"
     },
     {
@@ -7343,7 +7679,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "product-vision",
-      "src_path": "lib/pm-skills/pm-product-strategy/skills/product-vision/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/product-vision/SKILL.md",
       "triggers": "product;vision"
     },
     {
@@ -7355,11 +7691,11 @@
       "triggers": "production;code;audit"
     },
     {
-      "description": "Codified expertise for production scheduling, job sequencing, line balancing, changeover optimisation, and bottleneck resolution in discrete and batch manufacturing.",
+      "description": "为离散和批量制造中的生产调度、作业排序、产线平衡、换模优化和瓶颈解决提供编码化专业知识。基于拥有15年以上经验的生产调度师的知识。包括约束理论/鼓-缓冲-绳、快速换模、设备综合效率分析、中断响应框架以及企业资源计划/制造执行系统交互模式。适用于调度生产、解决瓶颈、优化换模、应对中断或平衡制造产线时。license: Apache-2.0",
       "phase": 5,
       "score": 100,
       "skill_id": "production-scheduling",
-      "src_path": "lib/antigravity-awesome-skills/skills/production-scheduling/SKILL.md",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/production-scheduling/SKILL.md",
       "triggers": "production;scheduling"
     },
     {
@@ -7393,6 +7729,14 @@
       "skill_id": "project-development",
       "src_path": "lib/antigravity-awesome-skills/skills/project-development/SKILL.md",
       "triggers": "project;development"
+    },
+    {
+      "description": "プロジェクトガイドラインスキル（例）",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "project-guidelines-example",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/ja-JP/skills/project-guidelines-example/SKILL.md",
+      "triggers": "project;guidelines;example"
     },
     {
       "description": "Audit a project and recommend the highest-value skills to add or update.",
@@ -7483,7 +7827,7 @@
       "triggers": "pymatgen"
     },
     {
-      "description": "Bayesian modeling with PyMC. Build hierarchical models, MCMC (NUTS), variational inference, LOO/WAIC comparison, posterior checks, for probabilistic programming and inference.",
+      "description": "Bayesian modeling with PyMC. Build hierarchical models, MCMC (NUTS), variational inference, LOO/WAIC comparison, posterior checks, for probabilistic code-quality and inference.",
       "phase": 5,
       "score": 100,
       "skill_id": "pymc",
@@ -7523,6 +7867,14 @@
       "triggers": "pytorch;lightning"
     },
     {
+      "description": "PyTorch深度学习模式与最佳实践，用于构建稳健、高效且可复现的训练流程、模型架构和数据加载。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "pytorch-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/pytorch-patterns/SKILL.md",
+      "triggers": "pytorch;patterns"
+    },
+    {
       "description": "IBM quantum computing framework. Use when targeting IBM Quantum hardware, working with Qiskit Runtime for production workloads, or needing IBM optimization tools. Best for IBM hardware execution, quantum error mitigation, and enterprise quantum computing. For Google hardware use cirq; for gradient-based quantum ML use pennylane; for open quantum system simulations use qutip.",
       "phase": 5,
       "score": 100,
@@ -7531,11 +7883,11 @@
       "triggers": "qiskit"
     },
     {
-      "description": "Codified expertise for quality control, non-conformance investigation, root cause analysis, corrective action, and supplier quality management in regulated manufacturing.",
+      "description": "为受监管制造业中的质量控制、不合格调查、根本原因分析、纠正措施和供应商质量管理提供编码化专业知识。基于在FDA、IATF 16949和AS9100环境中拥有15年以上经验的质量工程师的见解。包括不合格报告生命周期管理、纠正与预防措施系统、统计过程控制解释和审核方法。适用于调查不合格、进行根本原因分析、管理纠正与预防措施、解释统计过程控制数据或处理供应商质量问题。license: Apache-2.0",
       "phase": 5,
       "score": 100,
       "skill_id": "quality-nonconformance",
-      "src_path": "lib/antigravity-awesome-skills/skills/quality-nonconformance/SKILL.md",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/quality-nonconformance/SKILL.md",
       "triggers": "quality;nonconformance"
     },
     {
@@ -7553,14 +7905,6 @@
       "skill_id": "quantizing-models-bitsandbytes",
       "src_path": "lib/Orchestra-Research-AI-research-SKILLs/10-optimization/bitsandbytes/SKILL.md",
       "triggers": "Optimization;Bitsandbytes;Quantization;8-Bit;4-Bit;Memory Optimization;QLoRA;NF4;INT8;HuggingFace;Efficient Inference"
-    },
-    {
-      "description": "Using superposition-driven annealing to predict chaotic market oscillations in high-frequency trading domains.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "quantum-predictor",
-      "src_path": "src/unclassified/Quantum-Predictor/SKILL.md",
-      "triggers": "quantum;predictor"
     },
     {
       "description": "Quantum physics simulation library for open quantum systems. Use when studying master equations, Lindblad dynamics, decoherence, quantum optics, or cavity QED. Best for physics research, open system dynamics, and educational simulations. NOT for circuit-based quantum computing—use qiskit, cirq, or pennylane for quantum algorithms and hardware execution.",
@@ -7615,7 +7959,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "read-file",
-      "src_path": "lib/duckdb-skills/skills/read-file/SKILL.md",
+      "src_path": "lib/duckdb-duckdb-skills/skills/read-file/SKILL.md",
       "triggers": "read;file"
     },
     {
@@ -7623,7 +7967,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "read-memories",
-      "src_path": "lib/duckdb-skills/skills/read-memories/SKILL.md",
+      "src_path": "lib/duckdb-duckdb-skills/skills/read-memories/SKILL.md",
       "triggers": "read;memories"
     },
     {
@@ -7691,6 +8035,14 @@
       "triggers": "reflexion;reflect"
     },
     {
+      "description": "选择在解析结构化文本时使用正则表达式还是大型语言模型的决策框架——从正则表达式开始，仅在低置信度的边缘情况下添加大型语言模型。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "regex-vs-llm-structured-text",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/regex-vs-llm-structured-text/SKILL.md",
+      "triggers": "regex;vs;llm;structured;text"
+    },
+    {
       "description": "registry implementation",
       "phase": 5,
       "score": 100,
@@ -7719,7 +8071,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "release-notes",
-      "src_path": "lib/pm-skills/pm-execution/skills/release-notes/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-execution/skills/release-notes/SKILL.md",
       "triggers": "release;notes"
     },
     {
@@ -7747,6 +8099,14 @@
       "triggers": "render;automation"
     },
     {
+      "description": "Cross-stack source code asset audit — classifies every file, detects embedded third-party libraries, and delivers actionable four-level verdicts per module with interactive HTML reports.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "repo-scan",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/repo-scan/SKILL.md",
+      "triggers": "repo;scan"
+    },
+    {
       "description": "Create a detailed refactor plan with tiny commits via user interview, then file it as a GitHub issue. Use when user wants to plan a refactor, create a refactoring RFC, or break a refactor into safe incremental steps.",
       "phase": 5,
       "score": 100,
@@ -7761,6 +8121,14 @@
       "skill_id": "requesthunt",
       "src_path": "lib/ReScienceLab-opc-skills/skills/requesthunt/SKILL.md",
       "triggers": "requesthunt"
+    },
+    {
+      "description": "Rédaction de requêtes devant le Conseil de prud'hommes pour contester un licenciement pour faute grave. Utiliser ce skill quand l'utilisateur demande de rédiger une requête CPH, contester un licenciement pour faute grave, préparer une saisine du CPH pour un litige lié à un licenciement, ou créer un document de contestation de licenciement en droit du travail français.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "requete-cph-licenciement-faute-grave-selim-brihi",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/requete-cph-licenciement-faute-grave-selim-brihi/SKILL.md",
+      "triggers": "requete;cph;licenciement;faute;grave"
     },
     {
       "description": "Search and analyze research papers, find related work, summarize key ideas. Use when user says \"find papers\", \"related work\", \"literature review\", \"what does this paper say\", or needs to understand academic papers.",
@@ -7891,19 +8259,19 @@
       "triggers": "retention;optimization"
     },
     {
-      "description": "Weekly engineering retrospective. Analyzes commit history, work patterns, and code quality metrics with persistent history and trend tracking. Team-aware: breaks down per-person contributions with praise and growth areas. Use when asked to \"weekly retro\", \"what did we ship\", or \"engineering retrospective\". Proactively suggest at the end of a work week or sprint.",
+      "description": "Weekly engineering retrospective. Analyzes commit history, work patterns, and code quality metrics with persistent history and trend tracking. Team-aware: breaks down per-person contributions with praise and growth areas. Use when asked to \"weekly retro\", \"what did we ship\", or \"engineering retrospective\". Proactively suggest at the end of a work week or sprint. (gstack)",
       "phase": 5,
       "score": 100,
       "skill_id": "retro",
-      "src_path": "lib/gstack/retro/SKILL.md",
+      "src_path": "lib/garrytan-gstack/retro/SKILL.md",
       "triggers": "retro"
     },
     {
-      "description": "Codified expertise for returns authorisation, receipt and inspection, disposition decisions, refund processing, fraud detection, and warranty claims management.",
+      "description": "用于退货授权、接收与检验、处置决策、退款处理、欺诈检测以及保修索赔管理的标准化专业知识。基于拥有15年以上经验的退货运营经理的见解。包括分级框架、处置经济学、欺诈模式识别和供应商回收流程。适用于处理产品退货、逆向物流、退款决策、退货欺诈检测或保修索赔时使用。license: Apache-2.0",
       "phase": 5,
       "score": 100,
       "skill_id": "returns-reverse-logistics",
-      "src_path": "lib/antigravity-awesome-skills/skills/returns-reverse-logistics/SKILL.md",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/returns-reverse-logistics/SKILL.md",
       "triggers": "returns;reverse;logistics"
     },
     {
@@ -7943,7 +8311,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "review-resume",
-      "src_path": "lib/pm-skills/pm-toolkit/skills/review-resume/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-toolkit/skills/review-resume/SKILL.md",
       "triggers": "review;resume"
     },
     {
@@ -7985,6 +8353,14 @@
       "skill_id": "robius-matrix-integration",
       "src_path": "lib/ZhangHanDong-makepad-skills/skills/robius-matrix-integration/SKILL.md",
       "triggers": "robius;matrix;integration"
+    },
+    {
+      "description": "扫描技能以提取跨领域原则并将其提炼为规则——追加、修订或创建新的规则文件",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "rules-distill",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/rules-distill/SKILL.md",
+      "triggers": "rules;distill"
     },
     {
       "description": "Deploy and run ML experiments on local or remote GPU servers. Use when user says \"run experiment\", \"deploy to server\", \"跑实验\", or needs to launch training jobs.",
@@ -8059,6 +8435,14 @@
       "triggers": "sadd;tree;of;thoughts"
     },
     {
+      "description": "Use this skill to prevent destructive operations when working on production systems or running agents autonomously.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "safety-guard",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/safety-guard/SKILL.md",
+      "triggers": "safety;guard"
+    },
+    {
       "description": "Patterns for managing distributed transactions and long-running business processes.",
       "phase": 5,
       "score": 100,
@@ -8083,6 +8467,14 @@
       "triggers": "persona;startups;agi;yc;fundraising"
     },
     {
+      "description": "Multi-agent adversarial verification with convergence loop. Two independent review agents must both pass before output ships.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "santa-method",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/santa-method/SKILL.md",
+      "triggers": "santa;method"
+    },
+    {
       "description": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section.",
       "phase": 5,
       "score": 100,
@@ -8091,7 +8483,7 @@
       "triggers": "scaffold;exercises"
     },
     {
-      "description": "Master enterprise-grade Scala development with functional programming, distributed systems, and big data processing. Expert in Apache Pekko, Akka, Spark, ZIO/Cats Effect, and reactive architectures.",
+      "description": "Master enterprise-grade Scala development with functional code-quality, distributed systems, and big data processing. Expert in Apache Pekko, Akka, Spark, ZIO/Cats Effect, and reactive architectures.",
       "phase": 5,
       "score": 100,
       "skill_id": "scala-pro",
@@ -8203,6 +8595,14 @@
       "triggers": "seaborn"
     },
     {
+      "description": "Research-before-coding workflow. Search for existing tools, libraries, and patterns before writing custom code. Systematizes the \"search for existing solutions before implementing\" approach. Use when starting new features or adding functionality.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "search-first",
+      "src_path": "lib/affaan-m-everything-claude-code/.kiro/skills/search-first/SKILL.md",
+      "triggers": "search;first"
+    },
+    {
       "description": "Expert web researcher using advanced search techniques and",
       "phase": 5,
       "score": 100,
@@ -8295,7 +8695,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "setup-deploy",
-      "src_path": "lib/gstack/setup-deploy/SKILL.md",
+      "src_path": "lib/garrytan-gstack/setup-deploy/SKILL.md",
       "triggers": "setup;deploy"
     },
     {
@@ -8313,6 +8713,14 @@
       "skill_id": "sglang",
       "src_path": "lib/Orchestra-Research-AI-research-SKILLs/12-inference-serving/sglang/SKILL.md",
       "triggers": "Inference Serving;SGLang;Structured Generation;RadixAttention;Prefix Caching;Constrained Decoding;Agents;JSON Output;Fast Inference;Production Scale"
+    },
+    {
+      "description": "Expert guide for writing efficient GLSL shaders (Vertex/Fragment) for web and game engines, covering syntax, uniforms, and common effects.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "shader-code-quality-glsl",
+      "src_path": "lib/antigravity-awesome-skills/skills/shader-code-quality-glsl/SKILL.md",
+      "triggers": "shader;code-quality;glsl"
     },
     {
       "description": "Model interpretability and explainability using SHAP (SHapley Additive exPlanations). Use this skill when explaining machine learning model predictions, computing feature importance, generating SHAP plots (waterfall, beeswarm, bar, scatter, force, heatmap), debugging models, analyzing model bias or fairness, comparing models, or implementing explainable AI. Works with tree-based models (XGBoost, LightGBM, Random Forest), deep learning (TensorFlow, PyTorch), linear models, and any black-box model.",
@@ -8395,6 +8803,30 @@
       "triggers": "skill;builder"
     },
     {
+      "description": "Visualize whether skills, rules, and agent definitions are actually followed — auto-generates scenarios at 3 prompt strictness levels, runs agents, classifies behavioral sequences, and reports compliance rates with full tool call timelines",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "skill-comply",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/skill-comply/SKILL.md",
+      "triggers": "skill;comply"
+    },
+    {
+      "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "skill-creator-anthropic",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/skill-creator-anthropic/SKILL.md",
+      "triggers": "skill;creator;anthropic"
+    },
+    {
+      "description": "Guide for creating effective skills. Use when users want to create a new skill (or update an existing skill) that extends the model's capabilities with specialized knowledge, workflows, or tool integrations.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "skill-creator-openai",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/skill-creator-openai/SKILL.md",
+      "triggers": "skill;creator;openai"
+    },
+    {
       "description": "Updates model references across all skill files when new Claude models are released. Use when Anthropic releases new Claude models to keep skills current.",
       "phase": 5,
       "score": 100,
@@ -8409,6 +8841,14 @@
       "skill_id": "skill-name",
       "src_path": "lib/ReScienceLab-opc-skills/template/SKILL.md",
       "triggers": "skill;name"
+    },
+    {
+      "description": "用于审计Claude技能和命令的质量。支持快速扫描（仅变更技能）和全面盘点模式，采用顺序子代理批量评估。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "skill-stocktake",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/skill-stocktake/SKILL.md",
+      "triggers": "skill;stocktake"
     },
     {
       "description": "Analyze skin health data, identify skin problem patterns, assess skin health status. Supports correlation analysis with nutrition, chronic diseases, and medication data.",
@@ -8527,7 +8967,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "sprint-plan",
-      "src_path": "lib/pm-skills/pm-execution/skills/sprint-plan/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-execution/skills/sprint-plan/SKILL.md",
       "triggers": "sprint;plan"
     },
     {
@@ -8551,7 +8991,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "stakeholder-map",
-      "src_path": "lib/pm-skills/pm-execution/skills/stakeholder-map/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-execution/skills/stakeholder-map/SKILL.md",
       "triggers": "stakeholder;map"
     },
     {
@@ -8611,6 +9051,14 @@
       "triggers": "storyboard"
     },
     {
+      "description": "Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary auto-compaction.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "strategic-compact",
+      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/strategic-compact/SKILL.md",
+      "triggers": "strategic;compact"
+    },
+    {
       "description": "Automate Stripe tasks via Rube MCP (Composio): customers, charges, subscriptions, invoices, products, refunds. Always search tools first for current schemas.",
       "phase": 5,
       "score": 100,
@@ -8639,7 +9087,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "summarize-meeting",
-      "src_path": "lib/pm-skills/pm-execution/skills/summarize-meeting/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-execution/skills/summarize-meeting/SKILL.md",
       "triggers": "summarize;meeting"
     },
     {
@@ -8695,7 +9143,7 @@
       "phase": 5,
       "score": 100,
       "skill_id": "swot-analysis",
-      "src_path": "lib/pm-skills/pm-product-strategy/skills/swot-analysis/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/swot-analysis/SKILL.md",
       "triggers": "swot;analysis"
     },
     {
@@ -8769,6 +9217,14 @@
       "skill_id": "tdd:fix-tests",
       "src_path": "lib/NeoLabHQ-context-engineering-kit/plugins/tdd/skills/fix-tests/SKILL.md",
       "triggers": "tdd;fix;tests"
+    },
+    {
+      "description": "用于组合和派遣并行团队的交互式代理选择器",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "team-builder",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/team-builder/SKILL.md",
+      "triggers": "team;builder"
     },
     {
       "description": "You are a GitHub issue resolution expert specializing in systematic bug investigation, feature implementation, and collaborative development workflows. Your expertise spans issue triage, root cause an",
@@ -8875,20 +9331,20 @@
       "triggers": "tinybird;cli;guidelines"
     },
     {
+      "description": "Expert tmux session, window, and pane management for terminal multiplexing, persistent remote workflows, and shell scripting automation.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "tmux",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/tmux/SKILL.md",
+      "triggers": "tmux;terminal;multiplexer;sessions;shell;remote;automation"
+    },
+    {
       "description": "Automate Todoist task management, projects, sections, filtering, and bulk operations via Rube MCP (Composio). Always search tools first for current schemas.",
       "phase": 5,
       "score": 100,
       "skill_id": "todoist-automation",
       "src_path": "lib/antigravity-awesome-skills/skills/todoist-automation/SKILL.md",
       "triggers": "todoist;automation"
-    },
-    {
-      "description": "Graph Neural Networks (PyG). Node/graph classification, link prediction, GCN, GAT, GraphSAGE, heterogeneous graphs, molecular property prediction, for geometric deep learning.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "torch-geometric",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/torch-geometric/SKILL.md",
-      "triggers": "torch;geometric"
     },
     {
       "description": "PyTorch-native graph neural networks for molecules and proteins. Use when building custom GNN architectures for drug discovery, protein modeling, or knowledge graph reasoning. Best for custom model development, protein property prediction, retrosynthesis. For pre-trained models and diverse featurizers use deepchem; for benchmark datasets use pytdc.",
@@ -9067,12 +9523,20 @@
       "triggers": "clean-code;clean-architecture;solid;code-review;craftsmanship;uncle-bob"
     },
     {
-      "description": "Clear the freeze boundary set by /freeze, allowing edits to all directories again. Use when you want to widen edit scope without ending the session. Use when asked to \"unfreeze\", \"unlock edits\", \"remove freeze\", or \"allow all edits\".",
+      "description": "Clear the freeze boundary set by /freeze, allowing edits to all directories again. Use when you want to widen edit scope without ending the session. Use when asked to \"unfreeze\", \"unlock edits\", \"remove freeze\", or \"allow all edits\". (gstack)",
       "phase": 5,
       "score": 100,
       "skill_id": "unfreeze",
-      "src_path": "lib/gstack/unfreeze/SKILL.md",
+      "src_path": "lib/garrytan-gstack/unfreeze/SKILL.md",
       "triggers": "unfreeze"
+    },
+    {
+      "description": "Build Unity games with optimized C# scripts, efficient rendering, and proper asset management. Masters Unity 6 LTS, URP/HDRP pipelines, and cross-platform deployment.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "unity-developer",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-indie-game-dev/skills/unity-developer/SKILL.md",
+      "triggers": "unity;developer"
     },
     {
       "description": "Production patterns for Unity's Data-Oriented Technology Stack (DOTS) including Entity Component System, Job System, and Burst Compiler.",
@@ -9139,14 +9603,6 @@
       "triggers": "using;superpowers"
     },
     {
-      "description": "Access USPTO APIs for patent/trademark searches, examination history (PEDS), assignments, citations, office actions, TSDR, for IP analysis and prior art searches.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "uspto-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/uspto-database/SKILL.md",
-      "triggers": "uspto;database"
-    },
-    {
       "description": "Comprehensive guide to using uv, an extremely fast Python package installer and resolver written in Rust, for modern Python project management and dependency workflows.",
       "phase": 5,
       "score": 100,
@@ -9187,6 +9643,14 @@
       "triggers": "varlock;claude;skill"
     },
     {
+      "description": "Rent, manage, and destroy GPU instances on vast.ai. Use when user says \"rent gpu\", \"vast.ai\", \"rent a server\", \"cloud gpu\", or needs on-demand GPU without owning hardware.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "vast-gpu",
+      "src_path": "lib/wanshuiyin-Auto-claude-code-research-in-sleep/skills/vast-gpu/SKILL.md",
+      "triggers": "vast;gpu"
+    },
+    {
       "description": "Audit your Obsidian vault in Claude Code — finds stale drafts, empty folders, duplicate filenames, and incomplete files. Saves a dated report.",
       "phase": 5,
       "score": 100,
@@ -9209,6 +9673,14 @@
       "skill_id": "vercel-automation",
       "src_path": "lib/antigravity-awesome-skills/skills/vercel-automation/SKILL.md",
       "triggers": "vercel;automation"
+    },
+    {
+      "description": "A comprehensive verification system for Claude Code sessions.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "verification-loop",
+      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/verification-loop/SKILL.md",
+      "triggers": "verification;loop"
     },
     {
       "description": "Captures human source verification for tracks, timestamps it, and updates track files. Use when sources need human review before generation.",
@@ -9235,6 +9707,14 @@
       "triggers": "vexor;cli"
     },
     {
+      "description": "Psychological compatibility matching — find cofounders, collaborators, and friends through validated psychometrics",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "viboscope",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/viboscope/SKILL.md",
+      "triggers": "matching;psychology;compatibility;networking;collaboration"
+    },
+    {
       "description": "Translate and dub videos from one language to another, replacing the original audio with TTS while keeping the video intact.",
       "phase": 5,
       "score": 100,
@@ -9243,12 +9723,12 @@
       "triggers": "video;translation"
     },
     {
-      "description": "Video and audio perception, indexing, and editing. Ingest files/URLs/live streams, build visual/spoken indexes, search with timestamps, edit timelines, add overlays/subtitles, generate media, and create real-time alerts.",
+      "description": "视频与音频的查看、理解与行动。查看：从本地文件、URL、RTSP/直播源或实时录制桌面获取内容；返回实时上下文和可播放流链接。理解：提取帧，构建视觉/语义/时间索引，并通过时间戳和自动剪辑搜索片段。行动：转码和标准化（编解码器、帧率、分辨率、宽高比），执行时间线编辑（字幕、文本/图像叠加、品牌化、音频叠加、配音、翻译），生成媒体资源（图像、音频、视频），并为直播流或桌面捕获的事件创建实时警报。",
       "phase": 5,
       "score": 100,
       "skill_id": "videodb",
-      "src_path": "lib/antigravity-awesome-skills/skills/videodb/SKILL.md",
-      "triggers": "[video, editing, transcription, subtitles, search, streaming, ai-generation, media, live-streams, desktop-capture]"
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/videodb/SKILL.md",
+      "triggers": "videodb"
     },
     {
       "description": "Upload, stream, search, edit, transcribe, and generate AI video and audio using the VideoDB SDK.",
@@ -9265,6 +9745,14 @@
       "skill_id": "viral-generator-builder",
       "src_path": "lib/antigravity-awesome-skills/skills/viral-generator-builder/SKILL.md",
       "triggers": "viral;generator;builder"
+    },
+    {
+      "description": "将签证申请文件（图片）翻译成英文，并创建包含原文和译文的双语PDF",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "visa-doc-translate",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/visa-doc-translate/SKILL.md",
+      "triggers": "visa;doc;translate"
     },
     {
       "description": "VMware family entry point and AI-powered VM lifecycle operations. Start here for any VMware/vSphere/ESXi task — routes to the right skill. Directly handles: power on/off, snapshot, clone, migrate, deploy OVA/template, guest operations, cluster management, plan/apply workflows, and vCenter alarm management (list, acknowledge, reset triggered alarms). Use when user asks to \"power on/off a VM\", \"deploy from OVA\", \"clone a VM\", \"create a cluster\", \"run a command inside a VM\", \"batch deploy VMs\", \"migrate a VM\", \"acknowledge alarm\", \"reset alarm\", or any VMware/vSphere/ESXi operation. Run \"vmware-aiops hub status\" to see all installed family members.",
@@ -9353,6 +9841,14 @@
       "skill_id": "web-artifacts-builder",
       "src_path": "lib/antigravity-awesome-skills/skills/web-artifacts-builder/SKILL.md",
       "triggers": "web;artifacts;builder"
+    },
+    {
+      "description": "Web browser game development principles. Framework selection, WebGPU, optimization, PWA.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "web-games",
+      "src_path": "lib/antigravity-awesome-skills/skills/game-development/web-games/SKILL.md",
+      "triggers": "web;games"
     },
     {
       "description": "Stripe Checkout, subscriptions, webhooks, customer portal",
@@ -9523,6 +10019,14 @@
       "triggers": "workshop;facilitation"
     },
     {
+      "description": "Create and manage generative game zones for Dorothy's Pokemon-style world. Use this skill when creating, updating, or designing game worlds via MCP tools.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "world-builder",
+      "src_path": "lib/Charlie85270-Dorothy/skills/world-builder/SKILL.md",
+      "triggers": "world;builder"
+    },
+    {
       "description": "Automate Wrike project management via Rube MCP (Composio): create tasks/folders, manage projects, assign work, and track progress. Always search tools first for current schemas.",
       "phase": 5,
       "score": 100,
@@ -9547,20 +10051,28 @@
       "triggers": "writer"
     },
     {
-      "description": "Use this skill to create high-quality academic papers, literature reviews, grant proposals, clinical reports, and other research and scientific documents backed by comprehensive research and real, verifiable citations. Use this skill whenever the user asks for written output such as a report, paper...etc.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "writing",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/writing/SKILL.md",
-      "triggers": "writing"
-    },
-    {
       "description": "Unless otherwise stated by the user or existing template",
       "phase": 5,
       "score": 100,
       "skill_id": "xlsx-official",
       "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-documents-presentations/skills/xlsx-official/SKILL.md",
       "triggers": "xlsx;official"
+    },
+    {
+      "description": "Professional Excel spreadsheet creation with a focus on aesthetics and data analysis. Use when creating spreadsheets for organizing, analyzing, and presenting structured data in a clear and professional format.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "xlsx-processing-manus",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/xlsx-processing-manus/SKILL.md",
+      "triggers": "xlsx;processing;manus"
+    },
+    {
+      "description": "Toolkit for comprehensive Spreadsheet reading, creation, editing, and analysis with visual quality control. Use to work with spreadsheets (.xlsx, .xlsm, .csv, .tsv) for: (1) Creating new spreadsheets with formulas and formatting, (2) Reading or analyzing tabular data, (3) Modifying existing spreadsheets while preserving formulas, (4) Building financial models with proper formatting, (5) Data visualization with in-sheet charts, or any other spreadsheet tasks.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "xlsx-processing-openai",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/xlsx-processing-openai/SKILL.md",
+      "triggers": "xlsx;processing;openai"
     },
     {
       "description": "Agente que simula Yann LeCun — inventor das Convolutional Neural Networks, Chief AI Scientist da Meta, Prêmio Turing 2018.",
@@ -9641,14 +10153,6 @@
       "skill_id": "zendesk-automation",
       "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-revops-crm-automation/skills/zendesk-automation/SKILL.md",
       "triggers": "zendesk;automation"
-    },
-    {
-      "description": "Access ZINC (230M+ purchasable compounds). Search by ZINC ID/SMILES, similarity searches, 3D-ready structures for docking, analog discovery, for virtual screening and drug discovery.",
-      "phase": 5,
-      "score": 100,
-      "skill_id": "zinc-database",
-      "src_path": "lib/K-Dense-AI-claude-scientific-skills/scientific-skills/zinc-database/SKILL.md",
-      "triggers": "zinc;database"
     },
     {
       "description": "Automate Zoho CRM tasks via Rube MCP (Composio): create/update records, search contacts, manage leads, and convert leads. Always search tools first for current schemas.",

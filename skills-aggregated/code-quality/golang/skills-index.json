@@ -1,0 +1,25 @@
+{
+  "count": 18,
+  "hub": "code-quality",
+  "skills": [
+    "analyzing-golang-malware-with-ghidra",
+    "beachhead-segment",
+    "dbos-golang",
+    "go-concurrency-patterns",
+    "go-mode",
+    "go-rod-master",
+    "golang-patterns",
+    "golang-pro",
+    "growth-loops",
+    "grpc-golang",
+    "gtm-motions",
+    "gtm-strategy",
+    "idea-discovery-robot",
+    "ideal-customer-profile",
+    "identify-assumptions-new",
+    "micro-saas-launcher",
+    "sred-work-summary",
+    "temporal-golang-pro"
+  ],
+  "sub_hub": "golang"
+}

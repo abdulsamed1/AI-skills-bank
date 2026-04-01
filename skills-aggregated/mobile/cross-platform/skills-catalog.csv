@@ -4,6 +4,7 @@ development,"Comprehensive web, mobile, and backend development workflow bundlin
 expo-api-routes,Guidelines for creating API routes in Expo Router with EAS Hosting,100,5
 expo-deployment,Deploy Expo apps to production,100,5
 expo-dev-client,Build and distribute Expo development clients locally or via TestFlight,100,5
+flutter-dart-code-review,库无关的Flutter/Dart代码审查清单，涵盖Widget最佳实践、状态管理模式（BLoC、Riverpod、Provider、GetX、MobX、Signals）、Dart惯用法、性能、可访问性、安全性和整洁架构。,100,5
 flutter-expert,"Master Flutter development with Dart 3, advanced widgets, and multi-platform deployment.",100,5
 mobile-developer,"Develop React Native, Flutter, or native mobile apps with modern architecture patterns. Masters cross-platform development, native integrations, offline sync, and app store optimization.",100,5
 performing-mobile-device-forensics-with-cellebrite,"Acquire and analyze mobile device data using Cellebrite UFED and open-source tools to extract communications, location data, and application artifacts.",100,5

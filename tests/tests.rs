@@ -31,7 +31,7 @@ mod tests {
 
         assert!(!resp.ranked_suggestions.is_empty());
         let first = &resp.ranked_suggestions[0];
-        assert_eq!(first.hub, "programming");
+        assert_eq!(first.hub, "code-quality");
         assert_eq!(first.sub_hub, "rust");
         assert!(first.confidence >= 75);
     }
@@ -71,7 +71,7 @@ mod tests {
 
         // Insert and save
         let mut m: std::collections::HashMap<String, LlmClassificationResponse> = std::collections::HashMap::new();
-        let suggestion = SubHubSuggestion { hub: "programming".to_string(), sub_hub: "rust".to_string(), confidence: 90, reasoning: None };
+        let suggestion = SubHubSuggestion { hub: "code-quality".to_string(), sub_hub: "rust".to_string(), confidence: 90, reasoning: None };
         let resp = LlmClassificationResponse { ranked_suggestions: vec![suggestion] };
         insert_into_map(&mut m, key1.clone(), resp.clone());
         save_cache(&m)?;
@@ -133,7 +133,7 @@ content
         let skills = skill_manage::components::native_pipeline::aggregate_to_output(root.path(), &output, None::<&std::collections::HashSet<String>>, false, false).await?;
 
         assert_eq!(skills.len(), 1);
-        assert_eq!(skills[0].hub, "programming");
+        assert_eq!(skills[0].hub, "code-quality");
         assert_eq!(skills[0].sub_hub, "rust");
 
         env::remove_var("LLM_ENABLED");
@@ -168,7 +168,7 @@ content
         let skills = skill_manage::components::native_pipeline::aggregate_to_output(root.path(), &output, None::<&std::collections::HashSet<String>>, false, false).await?;
 
         assert_eq!(skills.len(), 1);
-        assert_eq!(skills[0].hub, "programming");
+        assert_eq!(skills[0].hub, "code-quality");
         assert_eq!(skills[0].sub_hub, "rust");
 
         env::remove_var("LLM_PROVIDER");
@@ -210,14 +210,14 @@ content
         env::remove_var("LLM_MOCK_FAIL");
         let skills1 = skill_manage::components::native_pipeline::aggregate_to_output(root.path(), &output, None::<&std::collections::HashSet<String>>, false, false).await?;
         assert_eq!(skills1.len(), 1);
-        assert_eq!(skills1[0].hub, "programming");
+        assert_eq!(skills1[0].hub, "code-quality");
         assert_eq!(skills1[0].sub_hub, "rust");
 
         // Now simulate provider failing, but cache should be consulted and avoid provider call
         env::set_var("LLM_MOCK_FAIL", "1");
         let skills2 = skill_manage::components::native_pipeline::aggregate_to_output(root.path(), &output, None::<&std::collections::HashSet<String>>, false, false).await?;
         assert_eq!(skills2.len(), 1);
-        assert_eq!(skills2[0].hub, "programming");
+        assert_eq!(skills2[0].hub, "code-quality");
         assert_eq!(skills2[0].sub_hub, "rust");
 
         // Cleanup env

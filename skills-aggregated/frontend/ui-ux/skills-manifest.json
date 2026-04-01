@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774993465,
+  "generated_at_unix": 1775063596,
   "hub": "frontend",
   "skills": [
     {
@@ -73,14 +73,6 @@
       "skill_id": "architecture",
       "src_path": "lib/antigravity-awesome-skills/skills/architecture/SKILL.md",
       "triggers": "architecture"
-    },
-    {
-      "description": "Comprehensive patterns for creating, maintaining, and managing Architecture Decision Records (ADRs) that capture the context and rationale behind significant technical decisions.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "architecture-decision-records",
-      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-architecture-design/skills/architecture-decision-records/SKILL.md",
-      "triggers": "architecture;decision;records"
     },
     {
       "description": "Orchestrate iOS screenshot automation with xcodebuild/simctl for build-run, AXe for UI actions, JSON settings and plan files, Koubou-based framing (`asc screenshots frame`), and screenshot upload (`asc screenshots upload`). Use when users ask for automated screenshot capture, AXe-driven simulator flows, frame composition, or screenshot-to-upload pipelines.",
@@ -231,8 +223,16 @@
       "phase": 1,
       "score": 100,
       "skill_id": "color-expert",
-      "src_path": "lib/meodai-skill.color-expert/SKILL.md",
+      "src_path": "lib/meodai-skill-color-expert/SKILL.md",
       "triggers": "color;expert"
+    },
+    {
+      "description": "KMP项目中的Compose Multiplatform和Jetpack Compose模式——状态管理、导航、主题化、性能优化和平台特定UI。",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "compose-multiplatform-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/compose-multiplatform-patterns/SKILL.md",
+      "triggers": "compose;multiplatform;patterns"
     },
     {
       "description": "Structured content modeling guidance for schema design, content architecture, content reuse, references versus embedded objects, separation of concerns, and taxonomies across Sanity and other headless CMSes. Use this skill when designing or refactoring content types, deciding field shapes, debating reusable versus nested content, planning omnichannel content models, or reviewing whether a schema is too page-shaped or presentation-driven.",
@@ -299,12 +299,20 @@
       "triggers": "[ddd, strategic-design, bounded-context, ubiquitous-language]"
     },
     {
-      "description": "Design consultation: understands your product, researches the landscape, proposes a complete design system (aesthetic, typography, color, layout, spacing, motion), and generates font+color preview pages. Creates DESIGN.md as your project's design source of truth. For existing sites, use /plan-design-review to infer the system instead. Use when asked to \"design system\", \"brand guidelines\", or \"create DESIGN.md\". Proactively suggest when starting a new project's UI with no existing design system or DESIGN.md.",
+      "description": "Design consultation: understands your product, researches the landscape, proposes a complete design system (aesthetic, typography, color, layout, spacing, motion), and generates font+color preview pages. Creates DESIGN.md as your project's design source of truth. For existing sites, use /plan-design-review to infer the system instead. Use when asked to \"design system\", \"brand guidelines\", or \"create DESIGN.md\". Proactively suggest when starting a new project's UI with no existing design system or DESIGN.md. (gstack)",
       "phase": 1,
       "score": 100,
       "skill_id": "design-consultation",
-      "src_path": "lib/gstack/design-consultation/SKILL.md",
+      "src_path": "lib/garrytan-gstack/design-consultation/SKILL.md",
       "triggers": "design;consultation"
+    },
+    {
+      "description": "Design finalization: takes an approved AI mockup from /design-shotgun and generates production-quality Pretext-native HTML/CSS. Text actually reflows, heights are computed, layouts are dynamic. 30KB overhead, zero deps. Smart API routing: picks the right Pretext patterns for each design type. Use when: \"finalize this design\", \"turn this mockup into HTML\", \"implement this design\", or after /design-shotgun approves a direction. Proactively suggest when user has approved a design in /design-shotgun. (gstack)",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "design-html",
+      "src_path": "lib/garrytan-gstack/design-html/SKILL.md",
+      "triggers": "design;html"
     },
     {
       "description": "Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files",
@@ -323,12 +331,20 @@
       "triggers": "design;orchestration"
     },
     {
-      "description": "Designer's eye QA: finds visual inconsistency, spacing issues, hierarchy problems, AI slop patterns, and slow interactions — then fixes them. Iteratively fixes issues in source code, committing each fix atomically and re-verifying with before/after screenshots. For plan-mode design review (before implementation), use /plan-design-review. Use when asked to \"audit the design\", \"visual QA\", \"check if it looks good\", or \"design polish\". Proactively suggest when the user mentions visual inconsistencies or wants to polish the look of a live site.",
+      "description": "Designer's eye QA: finds visual inconsistency, spacing issues, hierarchy problems, AI slop patterns, and slow interactions — then fixes them. Iteratively fixes issues in source code, committing each fix atomically and re-verifying with before/after screenshots. For plan-mode design review (before implementation), use /plan-design-review. Use when asked to \"audit the design\", \"visual QA\", \"check if it looks good\", or \"design polish\". Proactively suggest when the user mentions visual inconsistencies or wants to polish the look of a live site. (gstack)",
       "phase": 1,
       "score": 100,
       "skill_id": "design-review",
-      "src_path": "lib/gstack/design-review/SKILL.md",
+      "src_path": "lib/garrytan-gstack/design-review/SKILL.md",
       "triggers": "design;review"
+    },
+    {
+      "description": "Design shotgun: generate multiple AI design variants, open a comparison board, collect structured feedback, and iterate. Standalone design exploration you can run anytime. Use when: \"explore designs\", \"show me options\", \"design variants\", \"visual brainstorm\", or \"I don't like how this looks\". Proactively suggest when the user describes a UI feature but hasn't seen what it could look like. (gstack)",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "design-shotgun",
+      "src_path": "lib/garrytan-gstack/design-shotgun/SKILL.md",
+      "triggers": "design;shotgun"
     },
     {
       "description": "Curated micro-interactions and design details that add \"magic\" and personality to websites and apps.",
@@ -337,6 +353,14 @@
       "skill_id": "design-spells",
       "src_path": "lib/antigravity-awesome-skills/skills/design-spells/SKILL.md",
       "triggers": "design;spells"
+    },
+    {
+      "description": "Use this skill to generate or audit design systems, check visual consistency, and review PRs that touch styling.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "design-system",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/design-system/SKILL.md",
+      "triggers": "design;system"
     },
     {
       "description": "Senior UI/UX Engineer. Architect digital interfaces overriding default LLM biases. Enforces metric-based rules, strict component architecture, CSS hardware acceleration, and balanced design engineering.",
@@ -447,7 +471,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "figma-create-design-system-rules",
-      "src_path": "lib/mcp-server-guide/skills/figma-create-design-system-rules/SKILL.md",
+      "src_path": "lib/figma-mcp-server-guide/skills/figma-create-design-system-rules/SKILL.md",
       "triggers": "figma;create;design;system;rules"
     },
     {
@@ -455,7 +479,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "figma-create-new-file",
-      "src_path": "lib/mcp-server-guide/skills/figma-create-new-file/SKILL.md",
+      "src_path": "lib/figma-mcp-server-guide/skills/figma-create-new-file/SKILL.md",
       "triggers": "figma;create;new;file"
     },
     {
@@ -463,7 +487,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "figma-generate-design",
-      "src_path": "lib/mcp-server-guide/skills/figma-generate-design/SKILL.md",
+      "src_path": "lib/figma-mcp-server-guide/skills/figma-generate-design/SKILL.md",
       "triggers": "figma;generate;design"
     },
     {
@@ -471,7 +495,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "figma-generate-library",
-      "src_path": "lib/mcp-server-guide/skills/figma-generate-library/SKILL.md",
+      "src_path": "lib/figma-mcp-server-guide/skills/figma-generate-library/SKILL.md",
       "triggers": "figma;generate;library"
     },
     {
@@ -479,7 +503,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "figma-implement-design",
-      "src_path": "lib/mcp-server-guide/skills/figma-implement-design/SKILL.md",
+      "src_path": "lib/figma-mcp-server-guide/skills/figma-implement-design/SKILL.md",
       "triggers": "figma;implement;design"
     },
     {
@@ -507,6 +531,30 @@
       "triggers": "frontend;ui;dark;ts"
     },
     {
+      "description": "Game audio principles. Sound design, music integration, adaptive audio systems.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "game-audio",
+      "src_path": "lib/antigravity-awesome-skills/skills/game-development/game-audio/SKILL.md",
+      "triggers": "game;audio"
+    },
+    {
+      "description": "Game design principles. GDD structure, balancing, player psychology, progression.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "game-design",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-indie-game-dev/skills/game-development/game-design/SKILL.md",
+      "triggers": "game;design"
+    },
+    {
+      "description": "GAN-inspired Generator-Evaluator agent harness for building high-quality applications autonomously. Based on Anthropic's March 2026 harness design paper.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "gan-style-harness",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/gan-style-harness/SKILL.md",
+      "triggers": "gan;style;harness"
+    },
+    {
       "description": "Analyze and engineer protein glycosylation. Scan sequences for N-glycosylation sequons (N-X-S/T), predict O-glycosylation hotspots, and access curated glycoengineering tools (NetOGlyc, GlycoShield, GlycoWorkbench). For glycoprotein engineering, therapeutic antibody optimization, and vaccine design.",
       "phase": 1,
       "score": 100,
@@ -515,12 +563,12 @@
       "triggers": "glycoengineering"
     },
     {
-      "description": "Check for .claude/apple-design-context.md before asking questions. Use existing context and only ask for information not already covered.",
+      "description": "EMR/EHR development patterns for healthcare applications. Clinical safety, encounter workflows, prescription generation, clinical decision support integration, and accessibility-first UI for medical data entry.",
       "phase": 1,
       "score": 100,
-      "skill_id": "hig-components-controls",
-      "src_path": "lib/antigravity-awesome-skills/skills/hig-components-controls/SKILL.md",
-      "triggers": "hig;components;controls"
+      "skill_id": "healthcare-emr-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/healthcare-emr-patterns/SKILL.md",
+      "triggers": "healthcare;emr;patterns"
     },
     {
       "description": "Apple Human Interface Guidelines for layout and navigation components.",
@@ -529,14 +577,6 @@
       "skill_id": "hig-components-layout",
       "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-apple-platform-design/skills/hig-components-layout/SKILL.md",
       "triggers": "hig;components;layout"
-    },
-    {
-      "description": "Check for .claude/apple-design-context.md before asking questions. Use existing context and only ask for information not already covered.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "hig-components-menus",
-      "src_path": "lib/antigravity-awesome-skills/skills/hig-components-menus/SKILL.md",
-      "triggers": "hig;components;menus"
     },
     {
       "description": "Apple HIG guidance for status and progress UI components including progress indicators, status bars, and activity rings.",
@@ -593,14 +633,6 @@
       "skill_id": "hig-project-context",
       "src_path": "lib/antigravity-awesome-skills/skills/hig-project-context/SKILL.md",
       "triggers": "hig;project;context"
-    },
-    {
-      "description": "Check for .claude/apple-design-context.md before asking questions. Use existing context and only ask for information not already covered.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "hig-technologies",
-      "src_path": "lib/antigravity-awesome-skills/skills/hig-technologies/SKILL.md",
-      "triggers": "hig;technologies"
     },
     {
       "description": "Teaches the AI to design like a high-end agency. Defines the exact fonts, spacing, shadows, card structures, and animations that make a website feel expensive. Blocks all the common defaults that make AI designs look cheap or generic.",
@@ -681,6 +713,14 @@
       "skill_id": "lean-ux-canvas",
       "src_path": "lib/Product-Manager-Skills/skills/lean-ux-canvas/SKILL.md",
       "triggers": "lean;ux;canvas"
+    },
+    {
+      "description": "iOS 26 液态玻璃设计系统 — 适用于 SwiftUI、UIKit 和 WidgetKit 的动态玻璃材质，具有模糊、反射和交互式变形效果。",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "liquid-glass-design",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/liquid-glass-design/SKILL.md",
+      "triggers": "liquid;glass;design"
     },
     {
       "description": "You are an AI assistant development expert specializing in creating intelligent conversational interfaces, chatbots, and AI-powered applications. Design comprehensive AI assistant solutions with natur",
@@ -775,7 +815,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "metrics-dashboard",
-      "src_path": "lib/pm-skills/pm-product-discovery/skills/metrics-dashboard/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-product-discovery/skills/metrics-dashboard/SKILL.md",
       "triggers": "metrics;dashboard"
     },
     {
@@ -843,11 +883,11 @@
       "triggers": "observability;monitoring;slo;implement"
     },
     {
-      "description": "YC Office Hours — two modes. Startup mode: six forcing questions that expose demand reality, status quo, desperate specificity, narrowest wedge, observation, and future-fit. Builder mode: design thinking brainstorming for side projects, hackathons, learning, and open source. Saves a design doc. Use when asked to \"brainstorm this\", \"I have an idea\", \"help me think through this\", \"office hours\", or \"is this worth building\". Proactively suggest when the user describes a new product idea or is exploring whether something is worth building — before any code is written. Use before /plan-ceo-review or /plan-eng-review.",
+      "description": "YC Office Hours — two modes. Startup mode: six forcing questions that expose demand reality, status quo, desperate specificity, narrowest wedge, observation, and future-fit. Builder mode: design thinking brainstorming for side projects, hackathons, learning, and open source. Saves a design doc. Use when asked to \"brainstorm this\", \"I have an idea\", \"help me think through this\", \"office hours\", or \"is this worth building\". Proactively invoke this skill (do NOT answer directly) when the user describes a new product idea, asks whether something is worth building, wants to think through design decisions for something that doesn't exist yet, or is exploring a concept before any code is written. Use before /plan-ceo-review or /plan-eng-review. (gstack)",
       "phase": 1,
       "score": 100,
       "skill_id": "office-hours",
-      "src_path": "lib/gstack/office-hours/SKILL.md",
+      "src_path": "lib/garrytan-gstack/office-hours/SKILL.md",
       "triggers": "office;hours"
     },
     {
@@ -867,6 +907,14 @@
       "triggers": "parameter;optimization"
     },
     {
+      "description": "Toolkit for comprehensive PDF reading, reviwing, and creation with visual quality control. Use to work with PDFs (.pdf files) for: (1) Reading or extracting content from existing PDFs, (2) Creating new PDF documents with professional formatting, (3) Generating reports, documents, or layouts that require precise typography and design, or any other PDF reading or generation tasks.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "pdf-processing-openai",
+      "src_path": "lib/lawvable-awesome-legal-skills/skills/pdf-processing-openai/SKILL.md",
+      "triggers": "pdf;processing;openai"
+    },
+    {
       "description": "Conduct systematic access reviews and certifications to ensure users have appropriate access rights aligned with their roles. This skill covers review campaign design, reviewer selection, risk-based p",
       "phase": 1,
       "score": 100,
@@ -875,11 +923,11 @@
       "triggers": "iam;identity;access-control;access-review;certification;compliance;governance"
     },
     {
-      "description": "Designer's eye plan review — interactive, like CEO and Eng review. Rates each design dimension 0-10, explains what would make it a 10, then fixes the plan to get there. Works in plan mode. For live site visual audits, use /design-review. Use when asked to \"review the design plan\" or \"design critique\". Proactively suggest when the user has a plan with UI/UX components that should be reviewed before implementation.",
+      "description": "Designer's eye plan review — interactive, like CEO and Eng review. Rates each design dimension 0-10, explains what would make it a 10, then fixes the plan to get there. Works in plan mode. For live site visual audits, use /design-review. Use when asked to \"review the design plan\" or \"design critique\". Proactively suggest when the user has a plan with UI/UX components that should be reviewed before implementation. (gstack)",
       "phase": 1,
       "score": 100,
       "skill_id": "plan-design-review",
-      "src_path": "lib/gstack/plan-design-review/SKILL.md",
+      "src_path": "lib/garrytan-gstack/plan-design-review/SKILL.md",
       "triggers": "plan;design;review"
     },
     {
@@ -1039,7 +1087,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "shadcn-ui",
-      "src_path": "lib/stitch-skills/skills/shadcn-ui/SKILL.md",
+      "src_path": "lib/google-labs-code-stitch-skills/skills/shadcn-ui/SKILL.md",
       "triggers": "shadcn;ui"
     },
     {
@@ -1063,7 +1111,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "stitch-design",
-      "src_path": "lib/stitch-skills/skills/stitch-design/SKILL.md",
+      "src_path": "lib/google-labs-code-stitch-skills/skills/stitch-design/SKILL.md",
       "triggers": "stitch;design"
     },
     {
@@ -1089,6 +1137,14 @@
       "skill_id": "subscription-lifecycle",
       "src_path": "lib/aso-skills/skills/subscription-lifecycle/SKILL.md",
       "triggers": "subscription;lifecycle"
+    },
+    {
+      "description": "SwiftUI 架构模式，使用 @Observable 进行状态管理，视图组合，导航，性能优化，以及现代 iOS/macOS UI 最佳实践。",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "swiftui-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/swiftui-patterns/SKILL.md",
+      "triggers": "swiftui;patterns"
     },
     {
       "description": "Build production-ready design systems with Tailwind CSS, including design tokens, component variants, responsive patterns, and accessibility.",
@@ -1121,6 +1177,14 @@
       "skill_id": "telegram-bot-builder",
       "src_path": "lib/antigravity-awesome-skills/skills/telegram-bot-builder/SKILL.md",
       "triggers": "telegram;bot;builder"
+    },
+    {
+      "description": "You build apps where 800M+ Telegram users already are. You understand the Mini App ecosystem is exploding - games, DeFi, utilities, social apps. You know TON blockchain and how to monetize with crypto. You design for the Telegram UX paradigm, not traditional web.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "telegram-mini-app",
+      "src_path": "lib/antigravity-awesome-skills/skills/telegram-mini-app/SKILL.md",
+      "triggers": "telegram;mini;app"
     },
     {
       "description": "Apple Human Interface Guidelines for Apple TV. Use when building tvOS apps with focus-based navigation, Siri Remote input, or living room viewing experiences. Triggers on tasks involving Apple TV, tvOS, 10-foot UI, or media playback.",
@@ -1191,7 +1255,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "user-stories",
-      "src_path": "lib/pm-skills/pm-execution/skills/user-stories/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-execution/skills/user-stories/SKILL.md",
       "triggers": "user;stories"
     },
     {
@@ -1199,7 +1263,7 @@
       "phase": 1,
       "score": 100,
       "skill_id": "value-proposition",
-      "src_path": "lib/pm-skills/pm-product-strategy/skills/value-proposition/SKILL.md",
+      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/value-proposition/SKILL.md",
       "triggers": "value;proposition"
     },
     {

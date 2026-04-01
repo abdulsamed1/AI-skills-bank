@@ -1,5 +1,5 @@
 {
-  "count": 13,
+  "count": 14,
   "hub": "frontend",
   "skills": [
     "customaize-agent:thought-based-reasoning",
@@ -7,6 +7,7 @@
     "gsap-frameworks",
     "langchain",
     "netlify-frameworks",
+    "nuxt4-patterns",
     "react-modernization",
     "react-patterns",
     "react-web",

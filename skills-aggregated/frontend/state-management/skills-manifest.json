@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774993465,
+  "generated_at_unix": 1775063596,
   "hub": "frontend",
   "skills": [
     {
@@ -35,12 +35,12 @@
       "triggers": "bdi;mental;states"
     },
     {
-      "description": "Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices.",
+      "description": "Trace every user-facing button/touchpoint through its full state change sequence to find bugs where functions individually work but cancel each other out, produce wrong final state, or leave the UI in an inconsistent state. Use when: systematic debugging found no bugs but users report broken buttons, or after any major refactor touching shared state stores.",
       "phase": 1,
       "score": 100,
-      "skill_id": "cc-skill-frontend-patterns",
-      "src_path": "lib/antigravity-awesome-skills/skills/cc-skill-frontend-patterns/SKILL.md",
-      "triggers": "cc;skill;frontend;patterns"
+      "skill_id": "click-path-audit",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/click-path-audit/SKILL.md",
+      "triggers": "click;path;audit"
     },
     {
       "description": "Collect volatile forensic evidence from a compromised system following order of volatility, preserving memory, network connections, processes, and system state before they are lost.",
@@ -113,6 +113,22 @@
       "skill_id": "frontend-developer",
       "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-full-stack-developer/skills/frontend-developer/SKILL.md",
       "triggers": "frontend;developer"
+    },
+    {
+      "description": "Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "frontend-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/frontend-patterns/SKILL.md",
+      "triggers": "frontend;patterns"
+    },
+    {
+      "description": "Master Godot 4 GDScript patterns including signals, scenes, state machines, and optimization. Use when building Godot games, implementing game systems, or learning GDScript best practices.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "godot-gdscript-patterns",
+      "src_path": "lib/antigravity-awesome-skills/plugins/antigravity-bundle-indie-game-dev/skills/godot-gdscript-patterns/SKILL.md",
+      "triggers": "godot;gdscript;patterns"
     },
     {
       "description": "Full job search coaching system — JD decoding, resume, storybank, mock interviews, transcript analysis, comp negotiation. 23 commands, persistent state.",

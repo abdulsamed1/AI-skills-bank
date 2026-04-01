@@ -1,2 +1,0 @@
-skill_id,description,src_path
-google-analytics-automation,"Automate Google Analytics tasks via Rube MCP (Composio): run reports, list accounts/properties, funnels, pivots, key events. Always search tools first for current schemas.",lib/antigravity-awesome-skills/skills/google-analytics-automation/SKILL.md

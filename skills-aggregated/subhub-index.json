@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774993465,
+  "generated_at_unix": 1775063596,
   "subhubs": [
     {
       "hub": "ai",
@@ -15,32 +15,32 @@
     },
     {
       "hub": "backend",
-      "path": "backend/api-design",
-      "skills_count": 152,
-      "sub_hub": "api-design"
+      "path": "backend/core",
+      "skills_count": 146,
+      "sub_hub": "core"
     },
     {
       "hub": "backend",
       "path": "backend/caching",
-      "skills_count": 11,
+      "skills_count": 12,
       "sub_hub": "caching"
     },
     {
       "hub": "backend",
       "path": "backend/ci-cd",
-      "skills_count": 58,
+      "skills_count": 64,
       "sub_hub": "ci-cd"
     },
     {
       "hub": "backend",
       "path": "backend/containerization",
-      "skills_count": 23,
+      "skills_count": 24,
       "sub_hub": "containerization"
     },
     {
       "hub": "backend",
       "path": "backend/databases",
-      "skills_count": 32,
+      "skills_count": 33,
       "sub_hub": "databases"
     },
     {
@@ -52,25 +52,25 @@
     {
       "hub": "backend",
       "path": "backend/server-side-frameworks",
-      "skills_count": 5,
+      "skills_count": 6,
       "sub_hub": "server-side-frameworks"
     },
     {
       "hub": "backend",
       "path": "backend/serverless-edge",
-      "skills_count": 11,
+      "skills_count": 15,
       "sub_hub": "serverless-edge"
     },
     {
       "hub": "business",
       "path": "business/operations",
-      "skills_count": 1208,
+      "skills_count": 1271,
       "sub_hub": "operations"
     },
     {
       "hub": "business",
       "path": "business/product",
-      "skills_count": 40,
+      "skills_count": 44,
       "sub_hub": "product"
     },
     {
@@ -82,37 +82,37 @@
     {
       "hub": "business",
       "path": "business/sales",
-      "skills_count": 5,
+      "skills_count": 6,
       "sub_hub": "sales"
     },
     {
       "hub": "frontend",
       "path": "frontend/state-management",
-      "skills_count": 39,
+      "skills_count": 41,
       "sub_hub": "state-management"
     },
     {
       "hub": "frontend",
       "path": "frontend/ui-ux",
-      "skills_count": 156,
+      "skills_count": 164,
       "sub_hub": "ui-ux"
     },
     {
       "hub": "frontend",
       "path": "frontend/web-frameworks",
-      "skills_count": 13,
+      "skills_count": 14,
       "sub_hub": "web-frameworks"
     },
     {
       "hub": "marketing",
       "path": "marketing/analytics",
-      "skills_count": 1,
+      "skills_count": 3,
       "sub_hub": "analytics"
     },
     {
       "hub": "marketing",
       "path": "marketing/content",
-      "skills_count": 9,
+      "skills_count": 11,
       "sub_hub": "content"
     },
     {
@@ -124,13 +124,13 @@
     {
       "hub": "marketing",
       "path": "marketing/seo",
-      "skills_count": 31,
+      "skills_count": 32,
       "sub_hub": "seo"
     },
     {
       "hub": "marketing",
       "path": "marketing/social-media",
-      "skills_count": 28,
+      "skills_count": 30,
       "sub_hub": "social-media"
     },
     {
@@ -142,67 +142,67 @@
     {
       "hub": "mobile",
       "path": "mobile/android",
-      "skills_count": 6,
+      "skills_count": 12,
       "sub_hub": "android"
     },
     {
       "hub": "mobile",
       "path": "mobile/cross-platform",
-      "skills_count": 9,
+      "skills_count": 10,
       "sub_hub": "cross-platform"
     },
     {
       "hub": "mobile",
       "path": "mobile/ios",
-      "skills_count": 10,
+      "skills_count": 13,
       "sub_hub": "ios"
     },
     {
-      "hub": "programming",
-      "path": "programming/core-concepts",
-      "skills_count": 11,
+      "hub": "code-quality",
+      "path": "code-quality/core-concepts",
+      "skills_count": 12,
       "sub_hub": "core-concepts"
     },
     {
-      "hub": "programming",
-      "path": "programming/golang",
-      "skills_count": 19,
+      "hub": "code-quality",
+      "path": "code-quality/golang",
+      "skills_count": 18,
       "sub_hub": "golang"
     },
     {
-      "hub": "programming",
-      "path": "programming/java",
-      "skills_count": 23,
+      "hub": "code-quality",
+      "path": "code-quality/java",
+      "skills_count": 24,
       "sub_hub": "java"
     },
     {
-      "hub": "programming",
-      "path": "programming/java-script",
-      "skills_count": 58,
-      "sub_hub": "java-script"
+      "hub": "code-quality",
+      "path": "code-quality/javascript",
+      "skills_count": 65,
+      "sub_hub": "javascript"
     },
     {
-      "hub": "programming",
-      "path": "programming/python",
-      "skills_count": 67,
+      "hub": "code-quality",
+      "path": "code-quality/python",
+      "skills_count": 68,
       "sub_hub": "python"
     },
     {
-      "hub": "programming",
-      "path": "programming/rust",
-      "skills_count": 13,
+      "hub": "code-quality",
+      "path": "code-quality/rust",
+      "skills_count": 14,
       "sub_hub": "rust"
     },
     {
-      "hub": "programming",
-      "path": "programming/typescript",
+      "hub": "code-quality",
+      "path": "code-quality/typescript",
       "skills_count": 25,
       "sub_hub": "typescript"
     },
     {
       "hub": "testing",
       "path": "testing/automation testing",
-      "skills_count": 148,
+      "skills_count": 161,
       "sub_hub": "automation testing"
     },
     {
@@ -214,13 +214,13 @@
     {
       "hub": "testing",
       "path": "testing/performance-testing",
-      "skills_count": 95,
+      "skills_count": 96,
       "sub_hub": "performance-testing"
     },
     {
       "hub": "testing",
       "path": "testing/security",
-      "skills_count": 685,
+      "skills_count": 703,
       "sub_hub": "security"
     },
     {

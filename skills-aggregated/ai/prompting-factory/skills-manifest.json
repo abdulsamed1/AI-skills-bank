@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774993464,
+  "generated_at_unix": 1775063596,
   "hub": "ai",
   "skills": [
     {
@@ -19,12 +19,12 @@
       "triggers": "customaize;agent;prompt;engineering"
     },
     {
-      "description": "Build complex AI systems with declarative programming, optimize prompts automatically, create modular RAG systems and agents with DSPy - Stanford NLP's framework for systematic LM programming",
+      "description": "Build complex AI systems with declarative code-quality, optimize prompts automatically, create modular RAG systems and agents with DSPy - Stanford NLP's framework for systematic LM code-quality",
       "phase": 4,
       "score": 100,
       "skill_id": "dspy",
       "src_path": "lib/Orchestra-Research-AI-research-SKILLs/16-prompt-engineering/dspy/SKILL.md",
-      "triggers": "Prompt Engineering;DSPy;Declarative Programming;RAG;Agents;Prompt Optimization;LM Programming;Stanford NLP;Automatic Optimization;Modular AI"
+      "triggers": "Prompt Engineering;DSPy;Declarative code-quality;RAG;Agents;Prompt Optimization;LM code-quality;Stanford NLP;Automatic Optimization;Modular AI"
     },
     {
       "description": "Control LLM output with regex and grammars, guarantee valid JSON/XML/code generation, enforce structured formats, and build multi-step workflows with Guidance - Microsoft Research's constrained generation framework",

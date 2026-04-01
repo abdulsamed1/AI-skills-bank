@@ -1,5 +1,5 @@
 {
-  "count": 9,
+  "count": 10,
   "hub": "mobile",
   "skills": [
     "app-store-optimization",
@@ -7,6 +7,7 @@
     "expo-api-routes",
     "expo-deployment",
     "expo-dev-client",
+    "flutter-dart-code-review",
     "flutter-expert",
     "mobile-developer",
     "performing-mobile-device-forensics-with-cellebrite",

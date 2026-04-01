@@ -1,0 +1,32 @@
+{
+  "count": 25,
+  "hub": "code-quality",
+  "skills": [
+    "azure-ai-voicelive-ts",
+    "azure-cosmos-ts",
+    "azure-storage-blob-ts",
+    "azure-storage-file-share-ts",
+    "azure-storage-queue-ts",
+    "dbos-typescript",
+    "fp-async",
+    "fp-data-transforms",
+    "fp-errors",
+    "fp-pragmatic",
+    "fp-react",
+    "fp-refactor",
+    "fp-ts-errors",
+    "fp-ts-pragmatic",
+    "fp-types-ref",
+    "frontend-mobile-development-component-scaffold",
+    "react-flow-node-ts",
+    "tech-stack:add-typescript-best-practices",
+    "tinybird-typescript-sdk-guidelines",
+    "trigger-dev",
+    "typescript",
+    "typescript-advanced-types",
+    "typescript-magician",
+    "typescript-pro",
+    "zustand-store-ts"
+  ],
+  "sub_hub": "typescript"
+}

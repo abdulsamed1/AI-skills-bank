@@ -555,5 +555,11 @@
       "url": "https://github.com/zxkane/aws-skills.git",
       "branch": null
     }
-  ]
+  ],
+  "tools": [
+    "antigravity",
+    "copilot",
+    "gemini"
+  ],
+  "sync_scope": "both"
 }

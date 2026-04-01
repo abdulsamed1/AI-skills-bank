@@ -1,9 +1,0 @@
-skill_id,description,score,phase
-e2e-testing,"End-to-end testing workflow with Playwright for browser automation, visual regression, cross-browser testing, and CI/CD integration.",100,3
-go-playwright,"Expert capability for robust, stealthy, and efficient browser automation using Playwright Go.",100,3
-implementing-end-to-end-encryption-for-messaging,"End-to-end encryption (E2EE) ensures that only the communicating parties can read messages, with no intermediary (including the server) able to decrypt them. This skill implements a simplified version",100,3
-playwright-java,"Scaffold, write, debug, and enhance enterprise-grade Playwright E2E tests in Java using Page Object Model, JUnit 5, Allure reporting, and parallel execution.",100,3
-playwright-migration,"Step-by-step migration guides for moving to Playwright from Cypress or Selenium/WebDriver — command mappings, architecture changes, and incremental adoption strategies.",100,3
-playwright-pom,"Page Object Model patterns for Playwright — when to use POM, how to structure page objects, and when fixtures or helpers are a better fit.",100,3
-playwright-skill,"IMPORTANT - Path Resolution: This skill can be installed in different locations (plugin system, manual installation, global, or project-specific). Before executing any commands, determine the skill directory based on where you loaded this SKILL.md file, and use that path in all commands below.",100,3
-screenshots,"Generate marketing screenshots of your app using Playwright. Use when the user wants to create screenshots for Product Hunt, social media, landing pages, or documentation.",100,3

@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1774993465,
+  "generated_at_unix": 1775063596,
   "hub": "mobile",
   "skills": [
     {
@@ -9,6 +9,14 @@
       "skill_id": "app-store-preflight-skills",
       "src_path": "lib/truongduy2611-app-store-preflight-skills/SKILL.md",
       "triggers": "app;store;preflight;skills"
+    },
+    {
+      "description": "苹果FoundationModels框架用于设备上的LLM——文本生成、使用@Generable进行引导生成、工具调用，以及在iOS 26+中的快照流。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "foundation-models-on-device",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/foundation-models-on-device/SKILL.md",
+      "triggers": "foundation;models;on;device"
     },
     {
       "description": "Debug the current iOS project on a booted simulator with XcodeBuildMCP.",
@@ -41,6 +49,22 @@
       "skill_id": "reverse-engineering-ios-app-with-frida",
       "src_path": "lib/mukul975-Anthropic-Cybersecurity-Skills/skills/reverse-engineering-ios-app-with-frida/SKILL.md",
       "triggers": "mobile-security;ios;frida;reverse-engineering;owasp-mobile;penetration-testing"
+    },
+    {
+      "description": "在 Swift 中使用 actor 实现线程安全的数据持久化——基于内存缓存与文件支持的存储，通过设计消除数据竞争。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "swift-actor-persistence",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/swift-actor-persistence/SKILL.md",
+      "triggers": "swift;actor;persistence"
+    },
+    {
+      "description": "Swift 6.2 可接近的并发性 — 默认单线程，@concurrent 用于显式后台卸载，隔离一致性用于主 actor 类型。",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "swift-concurrency-6-2",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/swift-concurrency-6-2/SKILL.md",
+      "triggers": "swift;concurrency;6;2"
     },
     {
       "description": "Review and fix Swift concurrency issues such as actor isolation and Sendable violations.",

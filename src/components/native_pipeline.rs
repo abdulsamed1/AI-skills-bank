@@ -133,37 +133,13 @@ pub async fn aggregate_to_output(
         });
     }
 
-    // Apply any explicit manual overrides first (highest precedence)
-    apply_manual_overrides(repo_root, &manual_overrides, &mut skills);
-
-    // Load category exclusions from environment
+    // Load category exclusions from environment early so context can use it
     let exclusions_env = env::var("SKILL_MANAGE_EXCLUSIONS").unwrap_or_default();
     let excluded_cats: Vec<String> = exclusions_env
         .split(';')
         .map(|s| s.trim().to_lowercase())
         .filter(|s| !s.is_empty())
         .collect();
-
-    // Pre-filter skills against exclusions
-    for skill in skills.iter_mut() {
-        if skill.match_score.unwrap_or(0) >= 100 {
-            continue;
-        }
-
-        let norm_text = format!("{} {}", skill.name, skill.description).to_lowercase();
-        // Simple tokenization for exclusion check
-        let tokens: HashSet<String> = norm_text
-            .split_whitespace()
-            .map(|s| s.trim_matches(|c: char| !c.is_alphanumeric()).to_string())
-            .filter(|s| !s.is_empty())
-            .collect();
-
-        if rules::is_excluded(&norm_text, &tokens) {
-            skill.hub = "excluded".to_string();
-            skill.sub_hub = "excluded".to_string();
-            skill.match_score = Some(100); // Mark as fully handled
-        }
-    }
 
     // Build LLM classification context
     let mut context = crate::components::llm::types::LlmClassificationContext {
@@ -181,7 +157,8 @@ pub async fn aggregate_to_output(
     }
     context.valid_sub_hubs = all_sub_hubs.into_iter().collect();
 
-    // LLM classification (primary). Honor the `LLM_ENABLED` env flag.
+    // 1. LLM classification (PRIMARY PROPOSER)
+    // Runs before manual overrides, so it operates on raw skills.
     let llm_enabled = env::var("LLM_ENABLED")
         .ok()
         .map(|v| {
@@ -209,7 +186,32 @@ pub async fn aggregate_to_output(
         }
     }
 
-    // Then apply persisted routing only for low-confidence items.
+    // 2. Apply explicit manual overrides (Highest User Precedence)
+    // This overwrites LLM classifications if there's a match.
+    apply_manual_overrides(repo_root, &manual_overrides, &mut skills);
+
+    // 3. Pre-filter skills against static hardcoded exclusions (Regulatory Gate)
+    // Runs after LLM to ensure excluded tags always "win".
+    for skill in skills.iter_mut() {
+        if skill.hub == "excluded" {
+            continue;
+        }
+
+        let norm_text = format!("{} {}", skill.name, skill.description).to_lowercase();
+        let tokens: HashSet<String> = norm_text
+            .split_whitespace()
+            .map(|s| s.trim_matches(|c: char| !c.is_alphanumeric()).to_string())
+            .filter(|s| !s.is_empty())
+            .collect();
+
+        if rules::is_excluded(&norm_text, &tokens) {
+            skill.hub = "excluded".to_string();
+            skill.sub_hub = "excluded".to_string();
+            skill.match_score = Some(100);
+        }
+    }
+
+    // 4. Apply persisted routing only for low-confidence items.
     apply_existing_assignments(repo_root, &existing_assignments, &mut skills);
 
     // Final cleanup: Drop all skills that were explicitly excluded by Code Rules (Step A) or LLM (Step B)
@@ -236,7 +238,7 @@ fn normalize_path_key(input: &str) -> String {
 
 fn phase_for_hub(hub: &str) -> u32 {
     match hub {
-        "programming" => 1,
+        "code-quality" => 1,
         "frontend" => 1,
         "backend" => 2,
         "testing" => 3,
@@ -998,6 +1000,50 @@ pub fn sync_output_to_targets(
 
         if rewrite_absolute && used_copy {
             rewrite_routing_csv_to_absolute(source_root, target)?;
+        }
+        
+        let _ = ensure_main_hub_routers(target);
+    }
+
+    Ok(())
+}
+
+fn ensure_main_hub_routers(target_path: &Path) -> Result<(), SkillManageError> {
+    let iter = match std::fs::read_dir(target_path) {
+        Ok(it) => it,
+        Err(_) => return Ok(()),
+    };
+
+    for entry in iter.flatten() {
+        if let Ok(ft) = entry.file_type() {
+            if ft.is_dir() {
+                let hub_name = entry.file_name();
+                let hub_name_str = hub_name.to_string_lossy();
+                
+                if hub_name_str.starts_with('.') {
+                    continue;
+                }
+
+                let hub_path = entry.path();
+                let skill_path = hub_path.join("SKILL.md");
+                if !skill_path.exists() {
+                    let content = format!(r#"---
+name: {}
+description: Main router for the {} hub. For story/epic requests, route to multiple sub-hubs when needed.
+---
+
+1. List available sub-folders in this hub.
+2. For simple requests: choose the single best sub-hub.
+3. For story/epic or multi-part requests: choose all relevant sub-hubs and process them sequentially.
+4. In each chosen sub-hub: open SKILL.md, read routing.csv, select 1-2 skills per sub-problem.
+5. Merge selected skills into one implementation plan and avoid duplicate/overlapping skills.
+"#, hub_name_str, hub_name_str);
+
+                    std::fs::write(&skill_path, content).map_err(|e| {
+                        SkillManageError::ConfigError(format!("Failed to write SKILL.md router: {}", e))
+                    })?;
+                }
+            }
         }
     }
 

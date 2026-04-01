@@ -1,12 +1,12 @@
 {
-  "count": 39,
+  "count": 41,
   "hub": "frontend",
   "skills": [
     "android-jetpack-compose-expert",
     "angular-state-management",
     "automate-whatsapp",
     "bdi-mental-states",
-    "cc-skill-frontend-patterns",
+    "click-path-audit",
     "collecting-volatile-evidence-from-compromised-host",
     "context-fundamentals",
     "database-driver-design",
@@ -16,6 +16,8 @@
     "fpf:actualize",
     "fpf:status",
     "frontend-developer",
+    "frontend-patterns",
+    "godot-gdscript-patterns",
     "interview-coach",
     "langgraph",
     "makepad-animation",

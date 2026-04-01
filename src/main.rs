@@ -131,7 +131,7 @@ impl SetupConfig {
 }
 
 fn default_category_exclusions() -> Vec<String> {
-    vec!["games".to_string(), "medicine".to_string(), "law".to_string()]
+    vec!["medicine".to_string(), "law".to_string()]
 }
 
 fn normalize_exclusion_category(raw: &str) -> String {
@@ -1351,8 +1351,18 @@ fn load_config(path: &Path) -> Result<Option<SetupConfig>> {
 
     let content = fs::read_to_string(path)
         .with_context(|| format!("Failed to read config file: {}", path.display()))?;
-    let config: SetupConfig = serde_json::from_str(&content)
+    let mut config: SetupConfig = serde_json::from_str(&content)
         .with_context(|| format!("Invalid config JSON in {}", path.display()))?;
+
+    // Infer paths if missing from config (e.g. legacy configs or bad manually-edited ones)
+    if config.repo_root.is_empty() {
+        if let Ok(discovered) = discover_repo_root() {
+            config.repo_root = discovered.to_string_lossy().to_string();
+        }
+    }
+    if config.workspace_root.is_empty() {
+        config.workspace_root = config.repo_root.clone();
+    }
 
     Ok(Some(config))
 }

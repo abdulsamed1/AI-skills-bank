@@ -88,7 +88,7 @@ When discovering and selecting skills from routing.csv, follow these rules:
 4. Present top 3-4 sub-hub candidates to user with explanations
 5. **Never guess** — wait for clarification if no clear winner
 - **Example:** User says "I need help with analytics"
-  - Candidates: `marketing/analytics` (growth metrics), `backend/databases` (data systems)
+  - Candidates: `business/strategy` (growth metrics), `server-side/databases` (data systems)
   - Present both options: "Do you mean marketing metrics/tracking or data pipeline?"
   - Load matching sub-hub only
 
@@ -99,22 +99,22 @@ When discovering and selecting skills from routing.csv, follow these rules:
 **Action:**
 1. **Decompose the mission:** Break down into distinct sub-problems (authentication, database, frontend form, error handling, testing, etc.)
 2. **Map each sub-problem to a hub/sub-hub:** 
-   - Auth → testing/security
-   - DB schema → backend/databases
+   - Auth → code-quality/security
+   - DB schema → server-side/databases
    - UI form → frontend/frameworks
-   - Error handling → backend/api-design or testing/automation
+   - Error handling → code-quality/testing-qa
    - Each mapping is independent; use routing.csv from each candidate
-3. **Select 1 skill per distinct sub-problem** (recommend 3-5 skills total, up to 10)
+3. **Select 1 skill per distinct sub-problem** (recommend +5 skills total, up to 10)
 4. **Ensure no skill overlap:** Each skill should address a unique sub-problem (not duplicate effort)
 5. **Load all selected skills sequentially:** Use src_path from each routing.csv entry, parse SKILL.md frontmatter
 6. **Merge execution:** Combine skills into a unified plan that respects dependencies and hand-offs
 - **Example:** "Build a product checkout system"
   - Sub-problems:
-    - API design (backend/api-design) → pick `rest-api-best-practices`
-    - Database schema (backend/databases) → pick `sql-modeling`
-    - Payment handling (backend/api-design or security) → pick `pci-compliance` or `payment-api-integration`
-    - Frontend form (frontend/frameworks + frontend/state-management) → pick 2 skills: `react-form-patterns`, `zustand-state`
-    - E2E testing (testing/e2e-testing) → pick `playwright-automation`
+    - API design (server-side/core) → pick `rest-api-best-practices`
+    - Database schema (server-side/databases) → pick `sql-modeling`
+    - Payment handling (server-side/core or security) → pick `pci-compliance` or `payment-api-integration`
+    - Frontend form (frontend/web-frameworks + frontend/state-management) → pick 2 skills: `react-form-patterns`, `zustand-state`
+    - E2E testing → code-quality/e2e → pick `playwright-automation`
   - Total: 5 skills covering checkout pipeline
   - Load all SKILL.md files, merge their guidance into one coherent plan
 
@@ -175,7 +175,7 @@ For faster discovery, agents may load `skills-index.json` to get a pre-indexed v
 
 ```json
 {
-  "hub": "marketing",
+  "hub": "business",
   "sub_hub": "content",
   "total_skills": 42,
   "skills": [
@@ -212,7 +212,7 @@ All skills in a specific specialty:
 skills-aggregated/{hub}/{sub_hub}/routing.csv
 ```
 
-Example: `skills-aggregated/marketing/content/routing.csv` → content-focused skills.
+Example: `skills-aggregated/business/content/routing.csv` → content-focused skills.
 
 ### By Hub + Sub-Hub Search
 
@@ -310,8 +310,8 @@ If a skill_id in routing.csv no longer exists in lib/:
 
 ## Glossary
 
-- **Hub:** Top-level domain. One of: `programming`, `frontend`, `backend`, `testing`, `ai`, `business`, `marketing`, `mobile`, `design`, `systems`, `data`, `security`
-- **Sub-Hub:** Specialty within a hub (e.g., `marketing/content`, `backend/databases`)
+- **Hub:** Top-level domain. One of: `code-quality`, `frontend`, `server-side`, `ai`, `business`, `mobile`
+- **Sub-Hub:** Specialty within a hub (e.g., `business/content`, `server-side/databases`)
 - **Skill:** Individual agent capability defined by a SKILL.md file
 - **Routing CSV:** Lightweight manifest linking skill_id → src_path
 - **SKILL.md:** Authoritative frontmatter + documentation for a skill
@@ -346,10 +346,6 @@ Understanding how skills are classified helps agents interpret routing confidenc
   │  Output   │  routing.csv, per-hub manifests
   └───────────┘
 ```
-
-### Hub Taxonomy (12 domains)
-
-`programming` · `frontend` · `backend` · `testing` · `ai` · `business` · `marketing` · `mobile` · `design` · `systems` · `data` · `security`
 
 ### Environment Variables (for LLM classification)
 

@@ -44,17 +44,17 @@ impl LlmProvider for MockProvider {
                 .unwrap_or(false)
         {
             suggestions.push(SubHubSuggestion {
-                hub: "programming".to_string(),
+                hub: "code-quality".to_string(),
                 sub_hub: "rust".to_string(),
                 confidence: 95,
                 reasoning: Some("mock: matched rust token".to_string()),
             });
         } else {
             suggestions.push(SubHubSuggestion {
-                hub: "programming".to_string(),
+                hub: "code-quality".to_string(),
                 sub_hub: "core-concepts".to_string(),
                 confidence: 75,
-                reasoning: Some("mock: default programming".to_string()),
+                reasoning: Some("mock: default code-quality".to_string()),
             });
         }
 

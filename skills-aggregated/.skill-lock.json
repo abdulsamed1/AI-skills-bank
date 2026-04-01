@@ -1,43 +1,9 @@
 {
   "exclude_categories": [
-    "game",
-    "legal",
-    "medical",
-    "hospital",
-    "patient",
-    "clinical",
-    "games",
-    "clothing",
-    "food",
-    "gym",
-    "health",
-    "fitness",
     "medicine",
-    "law",
-    "sports",
-    "entertainment",
-    "music",
-    "art",
-    "history",
-    "geography",
-    "philosophy",
-    "religion",
-    "social-sciences",
-    "natural-sciences",
-    "literature",
-    "culture",
-    "politics",
-    "psychology",
-    "sociology",
-    "anthropology",
-    "archaeology",
-    "astronomy",
-    "astrology",
-    "biology",
-    "chemistry",
-    "physics"
+    "law"
   ],
-  "generated_at_unix": 1774993472,
+  "generated_at_unix": 1775063604,
   "min_skills_per_subhub": 1,
   "review_band": {
     "candidates": 0,
@@ -48,7 +14,7 @@
   "src_repositories": [
     {
       "git": {
-        "head": "1363b6aecf26551a60d5dbdf71525385619346d3",
+        "head": "7d6275466d57dbaba0dc0cc5703f5f5cc5fda5ad",
         "porcelain": ""
       },
       "name": "AvdLee-SwiftUI-Agent-Skill"
@@ -62,7 +28,7 @@
     },
     {
       "git": {
-        "head": "902b4ff0a593b5f32b641314d24a19ffbc331e59",
+        "head": "7b2aa4abfdc53f5125e87dd2d195a198dd506ffb",
         "porcelain": ""
       },
       "name": "Charlie85270-Dorothy"
@@ -76,7 +42,7 @@
     },
     {
       "git": {
-        "head": "f6bc7084df742640cd28b87775dd6daacfa5affd",
+        "head": "d8565a453255f2fbb493fc0d2e80f1068553e6c3",
         "porcelain": ""
       },
       "name": "Digidai-product-manager-skills"
@@ -97,7 +63,7 @@
     },
     {
       "git": {
-        "head": "71add644263a56368f8680d68df504c6674dc1e5",
+        "head": "b58ad7e874f6b8045114f70837a2cd50e0ede5b6",
         "porcelain": ""
       },
       "name": "K-Dense-AI-claude-scientific-skills"
@@ -111,7 +77,7 @@
     },
     {
       "git": {
-        "head": "90d6ec745ffbde8adb798541cf752f9ee57d0a9a",
+        "head": "f05a85b29ed46f2f20b2024b1d3e97a065e5ced5",
         "porcelain": ""
       },
       "name": "Leonxlnx-taste-skill"
@@ -125,7 +91,7 @@
     },
     {
       "git": {
-        "head": "d2bb7a8f1d50557aeca48da8a4371cd69d697c80",
+        "head": "c4da85aef8c486148c33131e736c896dfa302bf0",
         "porcelain": ""
       },
       "name": "NeoLabHQ-context-engineering-kit"
@@ -146,7 +112,7 @@
     },
     {
       "git": {
-        "head": "a7289540d33f78df20dc9b27808fdf096cf1b3a4",
+        "head": "4bdd8b53d5dff3c36954acb45ea6814fd9dff43d",
         "porcelain": ""
       },
       "name": "Orchestra-Research-AI-research-SKILLs"
@@ -167,7 +133,7 @@
     },
     {
       "git": {
-        "head": "87c96800c0affdcabf6174814951e40ac3954cac",
+        "head": "b18c6e63598f51da5490022546f6cbb7626b9508",
         "porcelain": ""
       },
       "name": "ReScienceLab-opc-skills"
@@ -202,7 +168,7 @@
     },
     {
       "git": {
-        "head": "e4fefb5d97ffa3e0154a2982d162044e4f804a26",
+        "head": "5c22381ff7f5cb36f5bf6b1e0476f0c33b538b41",
         "porcelain": ""
       },
       "name": "ShunsukeHayashi-agent-skill-bus"
@@ -223,6 +189,13 @@
     },
     {
       "git": {
+        "head": "b41b2cb5545eb037f4a48a5dbeaaf68d823ee3ae",
+        "porcelain": ""
+      },
+      "name": "affaan-m-everything-claude-code"
+    },
+    {
+      "git": {
         "head": "760460c221d30d0db904ff28e8fa52af85672255",
         "porcelain": ""
       },
@@ -237,6 +210,13 @@
     },
     {
       "git": {
+        "head": "e3a7dc87d4963b37e3439c2c95ec03967f24067c",
+        "porcelain": ""
+      },
+      "name": "agricidaniel-claude-seo"
+    },
+    {
+      "git": {
         "head": "f36b34fc539a7a3b801839bfff2c26277fd7ec69",
         "porcelain": ""
       },
@@ -244,7 +224,7 @@
     },
     {
       "git": {
-        "head": "24cfe58fc34df03c7113c5b0bcefecd830f24ae5",
+        "head": "966314452b1c667cf6b8c9376b1bf29312a8c43b",
         "porcelain": ""
       },
       "name": "alinaqi-claude-bootstrap"
@@ -272,6 +252,13 @@
     },
     {
       "git": {
+        "head": "12881abf6671c4ab62eceeb56f911b752f9fd6d2",
+        "porcelain": ""
+      },
+      "name": "blader-humanizer"
+    },
+    {
+      "git": {
         "head": "429f61bc0eb728cbc88db22cb1b1b1be6f21cafb",
         "porcelain": ""
       },
@@ -279,17 +266,17 @@
     },
     {
       "git": {
-        "head": "c701ef56739c790d873e8245df64969dfd5f9b23",
-        "porcelain": ""
-      },
-      "name": "claude-seo"
-    },
-    {
-      "git": {
         "head": "6838c4b8d2d1294b8571d133aafeab6700b5dd50",
         "porcelain": ""
       },
       "name": "cli"
+    },
+    {
+      "git": {
+        "head": "ed57ea9dcb5d520f6ed055d3b1418993ed1ae593",
+        "porcelain": ""
+      },
+      "name": "cloudflare-skills"
     },
     {
       "git": {
@@ -314,6 +301,20 @@
     },
     {
       "git": {
+        "head": "7c8c087486c29290b982820d719e1c4a556c0053",
+        "porcelain": ""
+      },
+      "name": "coreyhaines31-marketingskills"
+    },
+    {
+      "git": {
+        "head": "df9903ce1f94061993a6d7afc561f9e0ea3e3485",
+        "porcelain": ""
+      },
+      "name": "cosmoblk-email-marketing-bible"
+    },
+    {
+      "git": {
         "head": "1609cef55f65e9f643d112cca400ff90ef16b9a1",
         "porcelain": ""
       },
@@ -334,7 +335,7 @@
         "head": "f6114c786311232360c30856432b4014ebd3604c",
         "porcelain": ""
       },
-      "name": "duckdb-skills"
+      "name": "duckdb-duckdb-skills"
     },
     {
       "git": {
@@ -352,17 +353,17 @@
     },
     {
       "git": {
-        "head": "df9903ce1f94061993a6d7afc561f9e0ea3e3485",
-        "porcelain": ""
-      },
-      "name": "email-marketing-bible"
-    },
-    {
-      "git": {
         "head": "393994a0e3e098445af057ecc126f0fb9815c3c3",
         "porcelain": ""
       },
       "name": "ethos-link-rails-conventions"
+    },
+    {
+      "git": {
+        "head": "500e8738438ed1204eaf23e61280d872f47534fd",
+        "porcelain": ""
+      },
+      "name": "figma-mcp-server-guide"
     },
     {
       "git": {
@@ -380,6 +381,13 @@
     },
     {
       "git": {
+        "head": "7ea6ead9fa88ba439002a6dc1d7409649b45e9f5",
+        "porcelain": ""
+      },
+      "name": "garrytan-gstack"
+    },
+    {
+      "git": {
         "head": "51f1bedafbd15776826dae6242482b2017f2e568",
         "porcelain": ""
       },
@@ -394,31 +402,24 @@
     },
     {
       "git": {
+        "head": "6c0cbdb909b7d256c8b9b3854c8c8f87aab2c140",
+        "porcelain": ""
+      },
+      "name": "google-labs-code-stitch-skills"
+    },
+    {
+      "git": {
         "head": "03d9f0c3dbf91e0b60582b64ed040c8911ca0174",
         "porcelain": ""
       },
-      "name": "gsap-skills"
+      "name": "greensock-gsap-skills"
     },
     {
       "git": {
-        "head": "4f435e45c517822014a852804c3da57bab121516",
-        "porcelain": ""
-      },
-      "name": "gstack"
-    },
-    {
-      "git": {
-        "head": "990d2fc4a20648168b3b4e000e3d2f7bd990d890",
+        "head": "1c76f2daf43bb5576d83673530507776144b4e01",
         "porcelain": ""
       },
       "name": "helius-labs-core-ai"
-    },
-    {
-      "git": {
-        "head": "12881abf6671c4ab62eceeb56f911b752f9fd6d2",
-        "porcelain": ""
-      },
-      "name": "humanizer"
     },
     {
       "git": {
@@ -429,10 +430,17 @@
     },
     {
       "git": {
-        "head": "75ffe324def3af46bb28962e118cacc5740ec0e0",
+        "head": "d7bd7e5f3ff94cd04dc11908da172699c1e58032",
         "porcelain": ""
       },
       "name": "kreuzberg-dev-kreuzberg"
+    },
+    {
+      "git": {
+        "head": "3faf7161ea4dbe55bb93e86ec4aa4e2703d4746b",
+        "porcelain": ""
+      },
+      "name": "lawvable-awesome-legal-skills"
     },
     {
       "git": {
@@ -450,7 +458,7 @@
     },
     {
       "git": {
-        "head": "3667450b424b9334f96fe730edec21378f2cf269",
+        "head": "317db7c0a9bf71a8d3a4c23ad599895f86d60503",
         "porcelain": ""
       },
       "name": "mcollina-skills"
@@ -467,11 +475,11 @@
         "head": "b9aa298a7dafcedd651cb3338a444d28aa39e924",
         "porcelain": ""
       },
-      "name": "meodai-skill.color-expert"
+      "name": "meodai-skill-color-expert"
     },
     {
       "git": {
-        "head": "c6a6d1a7164ea9ed28648beb8d81d94efe50007f",
+        "head": "a8af0844e5f1a50c042851f1506d364b1c8557a2",
         "porcelain": ""
       },
       "name": "microsoft-skills"
@@ -485,7 +493,7 @@
     },
     {
       "git": {
-        "head": "8dc2a4f9c705407c180d980159a38c8cae52ee04",
+        "head": "2c88b96cf758c8a742c5b683e02c01e84497034f",
         "porcelain": "D skills/hunting-for-living-off-the-land-binaries/SKILL.md"
       },
       "name": "mukul975-Anthropic-Cybersecurity-Skills"
@@ -499,6 +507,13 @@
     },
     {
       "git": {
+        "head": "9bf77b3309f90e8163075f74ae9d39f321f2948b",
+        "porcelain": ""
+      },
+      "name": "netlify-context-and-tools"
+    },
+    {
+      "git": {
         "head": "4255c218a6762c945a782701fd38dfb24fc10064",
         "porcelain": ""
       },
@@ -506,10 +521,10 @@
     },
     {
       "git": {
-        "head": "4d150575a5bb852306a9b72c78a97a62557651ed",
+        "head": "59389b1506e2d476980ee05c7c98c2f5e211fcb1",
         "porcelain": ""
       },
-      "name": "nutrient-agent-skill"
+      "name": "obra-superpowers-lab"
     },
     {
       "git": {
@@ -523,7 +538,14 @@
         "head": "36ccefdc6c2e00d7c0c12cb0a52bf93e8ec50da4",
         "porcelain": ""
       },
-      "name": "pm-skills"
+      "name": "phuryn-pm-skills"
+    },
+    {
+      "git": {
+        "head": "e0083353cffaf72d76fb758c431f15649065aac9",
+        "porcelain": ""
+      },
+      "name": "prompt-security-clawsec"
     },
     {
       "git": {
@@ -562,24 +584,10 @@
     },
     {
       "git": {
-        "head": "ed57ea9dcb5d520f6ed055d3b1418993ed1ae593",
+        "head": "6a07b837c488f918170096bb13a94f938d900bb7",
         "porcelain": ""
       },
-      "name": "skills"
-    },
-    {
-      "git": {
-        "head": "ad0b5cc5d5c3569e12a3105b0dee7409c3227e1b",
-        "porcelain": ""
-      },
-      "name": "stitch-skills"
-    },
-    {
-      "git": {
-        "head": "59389b1506e2d476980ee05c7c98c2f5e211fcb1",
-        "porcelain": ""
-      },
-      "name": "superpowers-lab"
+      "name": "sickn33-antigravity-awesome-skills"
     },
     {
       "git": {
@@ -610,9 +618,6 @@
       "name": "truongduy2611-app-store-preflight-skills"
     },
     {
-      "name": "unclassified"
-    },
-    {
       "git": {
         "head": "dd562a9aac0637272e41d209de0ed567c3464a84",
         "porcelain": ""
@@ -621,7 +626,7 @@
     },
     {
       "git": {
-        "head": "5f3df55dd14987e1e678965926ea8a64f4b0c137",
+        "head": "cac10dd229b9a65a230b617a014e73ce2ae91ac2",
         "porcelain": ""
       },
       "name": "wanshuiyin-Auto-claude-code-research-in-sleep"
@@ -631,7 +636,7 @@
         "head": "eb3197d1d8579556aea5018d5c0b141d55fc2df6",
         "porcelain": ""
       },
-      "name": "x-article-publisher-skill"
+      "name": "wshuyi-x-article-publisher-skill"
     },
     {
       "git": {
