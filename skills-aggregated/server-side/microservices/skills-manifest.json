@@ -1,7 +1,15 @@
 {
-  "generated_at_unix": 1775073184,
+  "generated_at_unix": 1775075184,
   "hub": "server-side",
   "skills": [
+    {
+      "description": "Actorization converts existing software into reusable serverless applications compatible with the Apify platform. Actors are programs packaged as Docker images that accept well-defined JSON input, perform an action, and optionally produce structured JSON output.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "apify-actorization",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/apify-actorization/SKILL.md",
+      "triggers": "apify;actorization"
+    },
     {
       "description": "Docker and Docker Compose patterns for local development, container security, networking, volume strategies, and multi-service orchestration. Use when setting up containerized development environments or reviewing Docker configurations.",
       "phase": 2,
@@ -17,6 +25,22 @@
       "skill_id": "entra-agent-id",
       "src_path": "lib/microsoft-skills/.github/skills/entra-agent-id/SKILL.md",
       "triggers": "\"agent identity\", \"agent id\", \"Agent Identity Blueprint\", \"BlueprintPrincipal\", \"entra agent\", \"agent identity provisioning\", \"Graph agent identity\", \"entra sidecar\", \"agent id sidecar\", \"auth sidecar\", \"3P agent\", \"third-party agent identity\", \"polyglot agent auth\"."
+    },
+    {
+      "description": "Complete guide to implementing GitOps workflows with ArgoCD and Flux for automated Kubernetes deployments.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "gitops-workflow",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/gitops-workflow/SKILL.md",
+      "triggers": "gitops;workflow"
+    },
+    {
+      "description": "Comprehensive guidance for creating, organizing, and managing Helm charts for packaging and deploying Kubernetes applications.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "helm-chart-scaffolding",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/helm-chart-scaffolding/SKILL.md",
+      "triggers": "helm;chart;scaffolding"
     },
     {
       "description": "Sign and verify container image provenance using Sigstore Cosign with keyless OIDC-based signing, attestations, and Kubernetes admission enforcement.",
@@ -43,6 +67,38 @@
       "triggers": "opa;gatekeeper;kubernetes;admission-control;policy-as-code;rego"
     },
     {
+      "description": "Step-by-step guidance for creating production-ready Kubernetes manifests including Deployments, Services, ConfigMaps, Secrets, and PersistentVolumeClaims.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "k8s-manifest-generator",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/k8s-manifest-generator/SKILL.md",
+      "triggers": "k8s;manifest;generator"
+    },
+    {
+      "description": "Comprehensive guide for implementing NetworkPolicy, PodSecurityPolicy, RBAC, and Pod Security Standards in Kubernetes.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "k8s-security-policies",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/k8s-security-policies/SKILL.md",
+      "triggers": "k8s;security;policies"
+    },
+    {
+      "description": "Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise container orchestration.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "kubernetes-architect",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/kubernetes-architect/SKILL.md",
+      "triggers": "kubernetes;architect"
+    },
+    {
+      "description": "Kubernetes deployment workflow for container orchestration, Helm charts, service mesh, and production-ready K8s configurations.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "kubernetes-deployment",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/kubernetes-deployment/SKILL.md",
+      "triggers": "kubernetes;deployment"
+    },
+    {
       "description": "Guide for setup arXiv paper search MCP server using Docker MCP",
       "phase": 2,
       "score": 100,
@@ -65,6 +121,14 @@
       "skill_id": "nemo-evaluator-sdk",
       "src_path": "lib/orchestra-research-ai-research-skills/11-evaluation/nemo-evaluator/SKILL.md",
       "triggers": "Evaluation;NeMo;NVIDIA;Benchmarking;MMLU;HumanEval;Multi-Backend;Slurm;Docker;Reproducible;Enterprise"
+    },
+    {
+      "description": "Production-ready Docker and docker-compose setup for Odoo with PostgreSQL, persistent volumes, environment-based configuration, and Nginx reverse proxy.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "odoo-docker-deployment",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/odoo-docker-deployment/SKILL.md",
+      "triggers": "odoo;docker;deployment"
     },
     {
       "description": "This skill covers hardening container images by minimizing attack surface, removing unnecessary packages, implementing multi-stage builds, configuring non-root users, and applying CIS Docker Benchmark recommendations to produce secure production-ready images.",

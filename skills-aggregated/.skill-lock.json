@@ -3,7 +3,7 @@
     "medicine",
     "law"
   ],
-  "generated_at_unix": 1775073196,
+  "generated_at_unix": 1775075204,
   "min_skills_per_subhub": 1,
   "review_band": {
     "candidates": 0,
@@ -308,17 +308,17 @@
     },
     {
       "git": {
+        "head": "42ac9cddd209300bf31b1afc91c779b0706e7019",
+        "porcelain": ""
+      },
+      "name": "kreuzberg-dev-kreuzberg"
+    },
+    {
+      "git": {
         "head": "bb7e920d376022958214e349ef25498a2644e189",
         "porcelain": ""
       },
       "name": "lackeyjb-playwright-skill"
-    },
-    {
-      "git": {
-        "head": "3faf7161ea4dbe55bb93e86ec4aa4e2703d4746b",
-        "porcelain": ""
-      },
-      "name": "lawvable-awesome-legal-skills"
     },
     {
       "git": {
@@ -455,13 +455,6 @@
     },
     {
       "git": {
-        "head": "f31f077ee0905c95a510a6f34bbd0c3c85b15129",
-        "porcelain": ""
-      },
-      "name": "op7418-youtube-clipper-skill"
-    },
-    {
-      "git": {
         "head": "22bca4dbc2a8319f0819d053b30045e467985eff",
         "porcelain": ""
       },
@@ -487,13 +480,6 @@
         "porcelain": ""
       },
       "name": "pleaseprompto-notebooklm-skill"
-    },
-    {
-      "git": {
-        "head": "e0083353cffaf72d76fb758c431f15649065aac9",
-        "porcelain": ""
-      },
-      "name": "prompt-security-clawsec"
     },
     {
       "git": {
@@ -602,6 +588,13 @@
     },
     {
       "git": {
+        "head": "1a3d92b6f8c9b485a43d89abc2b97e3788fe49d1",
+        "porcelain": ""
+      },
+      "name": "sickn33-antigravity-awesome-skills"
+    },
+    {
+      "git": {
         "head": "1609cef55f65e9f643d112cca400ff90ef16b9a1",
         "porcelain": ""
       },
@@ -651,13 +644,6 @@
     },
     {
       "git": {
-        "head": "348a435345b7ddafb4d1002d41d9e2ef3f5b6992",
-        "porcelain": ""
-      },
-      "name": "wrsmith108-varlock-claude-skill"
-    },
-    {
-      "git": {
         "head": "eb3197d1d8579556aea5018d5c0b141d55fc2df6",
         "porcelain": ""
       },
@@ -669,13 +655,6 @@
         "porcelain": ""
       },
       "name": "yusufkaraaslan-skill-seekers"
-    },
-    {
-      "git": {
-        "head": "187342353fd983ac24dc789645739f0e8d0766c6",
-        "porcelain": ""
-      },
-      "name": "zhanghandong-makepad-skills"
     },
     {
       "git": {

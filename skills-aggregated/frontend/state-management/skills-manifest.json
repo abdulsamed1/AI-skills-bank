@@ -1,7 +1,23 @@
 {
-  "generated_at_unix": 1775073184,
+  "generated_at_unix": 1775075184,
   "hub": "frontend",
   "skills": [
+    {
+      "description": "Expert guidance for building modern Android UIs with Jetpack Compose, covering state management, navigation, performance, and Material Design 3.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "android-jetpack-compose-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/android-jetpack-compose-expert/SKILL.md",
+      "triggers": "android;jetpack;compose;expert"
+    },
+    {
+      "description": "Master modern Angular state management with Signals, NgRx, and RxJS. Use when setting up global state, managing component stores, choosing between state solutions, or migrating from legacy patterns.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "angular-state-management",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/angular-state-management/SKILL.md",
+      "triggers": "angular;state;management"
+    },
     {
       "description": "Build WhatsApp automations with Kapso workflows: configure WhatsApp triggers, edit workflow graphs, manage executions, deploy functions, and use databases/integrations for state. Use when automating WhatsApp conversations and event handling.",
       "phase": 1,
@@ -9,6 +25,14 @@
       "skill_id": "automate-whatsapp",
       "src_path": "lib/gokapso-agent-skills/skills/automate-whatsapp/SKILL.md",
       "triggers": "automate;whatsapp"
+    },
+    {
+      "description": "This skill should be used when the user asks to \"model agent mental states\", \"implement BDI architecture\", \"create belief-desire-intention models\", \"transform RDF to beliefs\", \"build cognitive agent\", or mentions BDI ontology, mental state modeling, rational agency, or neuro-symbolic AI integration.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "bdi-mental-states",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bdi-mental-states/SKILL.md",
+      "triggers": "bdi;mental;states"
     },
     {
       "description": "Vision-language pre-training framework bridging frozen image encoders and LLMs. Use when you need image captioning, visual question answering, image-text retrieval, or multimodal chat with state-of-the-art zero-shot performance.",
@@ -41,6 +65,14 @@
       "skill_id": "collecting-volatile-evidence-from-compromised-host",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/collecting-volatile-evidence-from-compromised-host/SKILL.md",
       "triggers": "incident-response;dfir;forensics;volatile-evidence;memory-forensics;chain-of-custody"
+    },
+    {
+      "description": "Context is the complete state available to a language model at inference time. It includes everything the model can attend to when generating responses: system instructions, tool definitions, retrieved documents, message history, and tool outputs.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "context-fundamentals",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/context-fundamentals/SKILL.md",
+      "triggers": "context;fundamentals"
     },
     {
       "description": "Operate customer billing workflows such as subscriptions, refunds, churn triage, billing-portal recovery, and plan analysis using connected billing tools like Stripe. Use when the user needs to help a customer, inspect subscription state, or manage revenue-impacting billing operations.",
@@ -91,6 +123,14 @@
       "triggers": "fpf;status"
     },
     {
+      "description": "Build React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern frontend architecture.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "frontend-developer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/frontend-developer/SKILL.md",
+      "triggers": "frontend;developer"
+    },
+    {
       "description": "Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices.",
       "phase": 1,
       "score": 100,
@@ -105,6 +145,14 @@
       "skill_id": "github-triage",
       "src_path": "lib/mattpocock-skills/github-triage/SKILL.md",
       "triggers": "github;triage"
+    },
+    {
+      "description": "Master Godot 4 GDScript patterns including signals, scenes, state machines, and optimization. Use when building Godot games, implementing game systems, or learning GDScript best practices.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "godot-gdscript-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/godot-gdscript-patterns/SKILL.md",
+      "triggers": "godot;gdscript;patterns"
     },
     {
       "description": "Apple HIG guidance for selection and input controls including pickers, toggles, sliders, steppers, segmented controls, combo boxes, text fields, text views, labels, token fields, virtual keyboards, rating indicators, and gauges. Use this skill when the user says \"picker or segmented control,\" \"how should my form look,\" \"what keyboard type should I use,\" \"toggle vs checkbox,\" or asks about picker design, toggle, switch, slider, stepper, text field, text input, segmented control, combo box, label, token field, virtual keyboard, rating indicator, gauge, form design, input validation, or control state management. Cross-references: hig-components-menus, hig-components-dialogs, hig-components-search.",
@@ -131,12 +179,20 @@
       "triggers": "hig;patterns"
     },
     {
-      "description": "CRITICAL: Use for Makepad animation system. Triggers on: makepad animation, makepad animator, makepad hover, makepad state, makepad transition, \"from: { all: Forward\", makepad pressed, makepad 动画, makepad 状态, makepad 过渡, makepad 悬停效果",
+      "description": "Full job search coaching system — JD decoding, resume, storybank, mock interviews, transcript analysis, comp negotiation. 23 commands, persistent state.",
       "phase": 1,
       "score": 100,
-      "skill_id": "makepad-animation",
-      "src_path": "lib/zhanghandong-makepad-skills/skills/makepad-animation/SKILL.md",
-      "triggers": "makepad;animation"
+      "skill_id": "interview-coach",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/interview-coach/SKILL.md",
+      "triggers": "interview;job-search;coaching;career;storybank;negotiation"
+    },
+    {
+      "description": "You are an expert in building production-grade AI agents with LangGraph. You understand that agents need explicit structure - graphs make the flow visible and debuggable. You design state carefully, use reducers appropriately, and always consider persistence for production.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "langgraph",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/langgraph/SKILL.md",
+      "triggers": "langgraph"
     },
     {
       "description": "State-space model with O(n) complexity vs Transformers' O(n²). 5× faster inference, million-token sequences, no KV cache. Selective SSM with hardware-aware design. Mamba-1 (d_state=16) and Mamba-2 (d_state=128, multi-head). Models 130M-2.8B on HuggingFace.",
@@ -179,12 +235,28 @@
       "triggers": "post;processing"
     },
     {
-      "description": "CRITICAL: Use for Robius state management patterns. Triggers on: AppState, persistence, theme switch, 状态管理, Scope::with_data, save state, load state, serde, 状态持久化, 主题切换",
+      "description": "Build production-ready ReactFlow applications with hierarchical navigation, performance optimization, and advanced state management.",
       "phase": 1,
       "score": 100,
-      "skill_id": "robius-state-management",
-      "src_path": "lib/zhanghandong-makepad-skills/skills/robius-state-management/SKILL.md",
-      "triggers": "robius;state;management"
+      "skill_id": "react-flow-architect",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/react-flow-architect/SKILL.md",
+      "triggers": "react;flow;architect"
+    },
+    {
+      "description": "Production-ready patterns for React Native development with Expo, including navigation, state management, native modules, and offline-first architecture.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "react-native-architecture",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/react-native-architecture/SKILL.md",
+      "triggers": "react;native;architecture"
+    },
+    {
+      "description": "Master modern React state management with Redux Toolkit, Zustand, Jotai, and React Query. Use when setting up global state, managing server state, or choosing between state management solutions.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "react-state-management",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/react-state-management/SKILL.md",
+      "triggers": "react;state;management"
     },
     {
       "description": "Use when executing implementation plans with independent tasks in the current session or facing 3+ independent issues that can be investigated without shared state or dependencies - dispatches fresh subagent for each task with code review between tasks, enabling fast iteration with quality gates",
@@ -243,12 +315,44 @@
       "triggers": "swiftui;expert;skill"
     },
     {
+      "description": "Apply proven SwiftUI UI patterns for navigation, sheets, async state, and reusable screens.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "swiftui-ui-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/swiftui-ui-patterns/SKILL.md",
+      "triggers": "swiftui;ui;patterns"
+    },
+    {
+      "description": "Expert in TanStack Query (React Query) — asynchronous state management. Covers data fetching, stale time configuration, mutations, optimistic updates, and Next.js App Router (SSR) integration.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "tanstack-query-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/tanstack-query-expert/SKILL.md",
+      "triggers": "tanstack;query;expert"
+    },
+    {
       "description": "Multi-person projects - shared state, todo claiming, handoffs",
       "phase": 1,
       "score": 100,
       "skill_id": "team-coordination",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/team-coordination/SKILL.md",
       "triggers": "team;coordination"
+    },
+    {
+      "description": "Terraform module creation for AWS — reusable modules, state management, and HCL best practices. Use when building or reviewing Terraform AWS infrastructure.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "terraform-aws-modules",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/terraform-aws-modules/SKILL.md",
+      "triggers": "terraform;aws;modules"
+    },
+    {
+      "description": "Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise infrastructure patterns.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "terraform-specialist",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/terraform-specialist/SKILL.md",
+      "triggers": "terraform;specialist"
     },
     {
       "description": "Create Zustand stores with TypeScript, subscribeWithSelector middleware, and proper state/action separation. Use when building React state management, creating global stores, or implementing reactive state patterns with Zustand.",

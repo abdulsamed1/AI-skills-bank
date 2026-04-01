@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775073184,
+  "generated_at_unix": 1775075184,
   "hub": "code-quality",
   "skills": [
     {
@@ -11,12 +11,36 @@
       "triggers": "agentic;development"
     },
     {
+      "description": "Algorithmic philosophies are computational aesthetic movements that are then expressed through code. Output .md files (philosophy), .html files (interactive viewer), and .js files (generative algorithms).",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "algorithmic-art",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/algorithmic-art/SKILL.md",
+      "triggers": "algorithmic;art"
+    },
+    {
       "description": "Perform static analysis of malicious PDF documents using peepdf, pdfid, and pdf-parser to extract embedded JavaScript, shellcode, and suspicious objects.",
       "phase": 1,
       "score": 100,
       "skill_id": "analyzing-malicious-pdf-with-peepdf",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-malicious-pdf-with-peepdf/SKILL.md",
       "triggers": "malware-analysis;pdf;peepdf;pdfid;pdf-parser;static-analysis;reverse-engineering;dfir"
+    },
+    {
+      "description": "Advanced JavaScript animation library skill for creating complex, high-performance web animations.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "animejs-animation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/animejs-animation/SKILL.md",
+      "triggers": "animejs;animation"
+    },
+    {
+      "description": "Build content-focused websites with Astro — zero JS by default, islands architecture, multi-framework components, and Markdown/MDX support.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "astro",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/astro/SKILL.md",
+      "triggers": "astro;ssg;ssr;islands;content;markdown;mdx;performance"
     },
     {
       "description": "Azure AI Voice Live SDK for JavaScript/TypeScript. Build real-time voice AI applications with bidirectional WebSocket communication. Use for voice assistants, conversational AI, real-time speech-to-speech, and voice-enabled chatbots in Node.js or browser environments. Triggers: \"voice live\", \"real-time voice\", \"VoiceLiveClient\", \"VoiceLiveSession\", \"voice assistant TypeScript\", \"bidirectional audio\", \"speech-to-speech JavaScript\".",
@@ -59,6 +83,22 @@
       "triggers": "azure;prepare"
     },
     {
+      "description": "BullMQ expert for Redis-backed job queues, background processing, and reliable async execution in Node.js/TypeScript applications. Use when: bullmq, bull queue, redis queue, background job, job queue.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "bullmq-specialist",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bullmq-specialist/SKILL.md",
+      "triggers": "bullmq;specialist"
+    },
+    {
+      "description": "Fast, modern JavaScript/TypeScript development with the Bun runtime, inspired by [oven-sh/bun](https://github.com/oven-sh/bun).",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "bun-development",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bun-development/SKILL.md",
+      "triggers": "bun;development"
+    },
+    {
       "description": "Persistent per-project memory for Claude Code. Auto-loads project context on session start, tracks sessions with git activity, and writes to native memory. Commands run deterministic Node.js scripts — behavior is consistent across model versions.",
       "phase": 1,
       "score": 100,
@@ -67,12 +107,28 @@
       "triggers": "ck"
     },
     {
+      "description": "This skill provides guidance for creating sophisticated, interactive data visualisations using d3.js.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "claude-d3js-skill",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/claude-d3js-skill/SKILL.md",
+      "triggers": "claude;d3js;skill"
+    },
+    {
       "description": "Universal coding standards, best practices, and patterns for TypeScript, JavaScript, React, and Node.js development.",
       "phase": 1,
       "score": 100,
       "skill_id": "coding-standards",
       "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/coding-standards/SKILL.md",
       "triggers": "coding;standards"
+    },
+    {
+      "description": "Automatically fetch latest library/framework documentation for Claude Code via Context7 API. Use when you need up-to-date documentation for libraries and frameworks or asking about React, Next.js, Prisma, or any other popular library.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "context7-auto-research",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/context7-auto-research/SKILL.md",
+      "triggers": "context7;auto;research"
     },
     {
       "description": "Build applications powered by GitHub Copilot using the Copilot SDK. Use when creating programmatic integrations with Copilot across Node.js/TypeScript, Python, Go, or .NET. Covers session management, custom tools, streaming, hooks, MCP servers, BYOK providers, session persistence, custom agents, skills, and deployment patterns. Requires GitHub Copilot CLI installed and a GitHub Copilot subscription (unless using BYOK).",
@@ -89,6 +145,14 @@
       "skill_id": "deobfuscating-javascript-malware",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/deobfuscating-javascript-malware/SKILL.md",
       "triggers": "malware;JavaScript;deobfuscation;web-malware;script-analysis"
+    },
+    {
+      "description": "Specialized skill for building production-ready Discord bots. Covers Discord.js (JavaScript) and Pycord (Python), gateway intents, slash commands, interactive components, rate limiting, and sharding.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "discord-bot-architect",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/discord-bot-architect/SKILL.md",
+      "triggers": "discord;bot;architect"
     },
     {
       "description": "Use up-to-date library and framework docs via Context7 MCP instead of training data. Activates for setup questions, API references, code examples, or when the user names a framework (e.g. React, Next.js, Prisma).",
@@ -147,6 +211,14 @@
       "triggers": "firecrawl;scrape"
     },
     {
+      "description": "Functional programming patterns for Node.js/Deno backend development using fp-ts, ReaderTaskEither, and functional dependency injection",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "fp-backend",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/fp-backend/SKILL.md",
+      "triggers": "fp-ts;typescript;backend;functional-programming;node;deno;dependency-injection;reader-task-either"
+    },
+    {
       "description": "Use this skill when building applications with Gemini models, Gemini API, working with multimodal content (text, images, audio, video), implementing function calling, using structured outputs, or needing current model specifications. Covers SDK usage (google-genai for Python, @google/genai for JavaScript/TypeScript, com.google.genai:google-genai for Java, google.golang.org/genai for Go), model selection, and API capabilities.",
       "phase": 1,
       "score": 100,
@@ -179,6 +251,46 @@
       "triggers": "gsap;react"
     },
     {
+      "description": "33+ essential JavaScript concepts every developer should know, inspired by [33-js-concepts](https://github.com/leonardomso/33-js-concepts).",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "javascript-mastery",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/javascript-mastery/SKILL.md",
+      "triggers": "javascript;mastery"
+    },
+    {
+      "description": "Master modern JavaScript with ES6+, async patterns, and Node.js APIs. Handles promises, event loops, and browser/Node compatibility.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "javascript-pro",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/javascript-pro/SKILL.md",
+      "triggers": "javascript;pro"
+    },
+    {
+      "description": "Comprehensive guide for implementing robust testing strategies in JavaScript/TypeScript applications using modern testing frameworks and best practices.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "javascript-testing-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/javascript-testing-patterns/SKILL.md",
+      "triggers": "javascript;testing;patterns"
+    },
+    {
+      "description": "You are a TypeScript project architecture expert specializing in scaffolding production-ready Node.js and frontend applications. Generate complete project structures with modern tooling (pnpm, Vite, N",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "javascript-typescript-typescript-scaffold",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/javascript-typescript-typescript-scaffold/SKILL.md",
+      "triggers": "javascript;typescript;typescript;scaffold"
+    },
+    {
+      "description": "Extract text, tables, metadata, and images from 91+ document formats (PDF, Office, images, HTML, email, archives, academic) using Kreuzberg. Use when writing code that calls Kreuzberg APIs in Python, Node.js/TypeScript, Rust, or CLI. Covers installation, extraction (sync/async), configuration (OCR, chunking, output format), batch processing, error handling, and plugins.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "kreuzberg",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/skills/kreuzberg/SKILL.md",
+      "triggers": "kreuzberg"
+    },
+    {
       "description": "Configures ESLint v9 flat config and neostandard for JavaScript and TypeScript projects, including migrating from legacy `.eslintrc*` files or the `standard` package. Use when you need to set up or fix linting with `eslint.config.js` or `eslint.config.mjs`, troubleshoot lint errors, configure neostandard rules, migrate from `.eslintrc` to flat config, or integrate linting into CI pipelines and pre-commit hooks.",
       "phase": 1,
       "score": 100,
@@ -193,6 +305,38 @@
       "skill_id": "m365-agents-ts",
       "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/m365-agents-ts/SKILL.md",
       "triggers": "m365;agents;ts"
+    },
+    {
+      "description": "Comprehensive guide for mastering modern JavaScript (ES6+) features, functional programming patterns, and best practices for writing clean, maintainable, and performant code.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "modern-javascript-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/modern-javascript-patterns/SKILL.md",
+      "triggers": "modern;javascript;patterns"
+    },
+    {
+      "description": "Write JavaScript code in n8n Code nodes. Use when writing JavaScript in n8n, using $input/$json/$node syntax, making HTTP requests with $helpers, working with dates using DateTime, troubleshooting Code node errors, or choosing between Code node modes.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "n8n-code-javascript",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/n8n-code-javascript/SKILL.md",
+      "triggers": "n8n;code;javascript"
+    },
+    {
+      "description": "You are an expert in Nest.js with deep knowledge of enterprise-grade Node.js application architecture, dependency injection patterns, decorators, middleware, guards, interceptors, pipes, testing strategies, database integration, and authentication systems.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "nestjs-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/nestjs-expert/SKILL.md",
+      "triggers": "nestjs;expert"
+    },
+    {
+      "description": "Next.js App Router principles. Server Components, data fetching, routing patterns.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "nextjs-best-practices",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/nextjs-best-practices/SKILL.md",
+      "triggers": "nextjs;best;practices"
     },
     {
       "description": "Next.js 16+ and Turbopack — incremental bundling, FS caching, dev speed, and when to use Turbopack vs webpack.",
@@ -219,12 +363,52 @@
       "triggers": "nodejs;backend"
     },
     {
+      "description": "Comprehensive guidance for building scalable, maintainable, and production-ready Node.js backend applications with modern frameworks, architectural patterns, and best practices.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "nodejs-backend-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/nodejs-backend-patterns/SKILL.md",
+      "triggers": "nodejs;backend;patterns"
+    },
+    {
+      "description": "Node.js development principles and decision-making. Framework selection, async patterns, security, and architecture. Teaches thinking, not copying.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "nodejs-best-practices",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/nodejs-best-practices/SKILL.md",
+      "triggers": "nodejs;best;practices"
+    },
+    {
       "description": "Debugs native module crashes, optimizes V8 performance, configures node-gyp builds, writes N-API/node-addon-api bindings, and diagnoses libuv event loop issues in Node.js. Use when working with C++ addons, native modules, binding.gyp, node-gyp errors, segfaults, memory leaks in native code, V8 optimization/deoptimization, libuv thread pool tuning, N-API or NAN bindings, build system failures, or any Node.js internals below the JavaScript layer.",
       "phase": 1,
       "score": 100,
       "skill_id": "nodejs-core",
       "src_path": "lib/mcollina-skills/skills/nodejs-core/SKILL.md",
       "triggers": "nodejs, v8, libuv, cpp, native-addons, performance, debugging, internals"
+    },
+    {
+      "description": "Expert on Odoo's external JSON-RPC and XML-RPC APIs. Covers authentication, model calls, record CRUD, and real-world integration examples in Python, JavaScript, and curl.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "odoo-rpc-api",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/odoo-rpc-api/SKILL.md",
+      "triggers": "odoo;rpc;api"
+    },
+    {
+      "description": "This guide covers essential PDF processing operations using Python libraries and command-line tools. For advanced features, JavaScript libraries, and detailed examples, see reference.md. If you need to fill out a PDF form, read forms.md and follow its instructions.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "pdf-official",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/pdf-official/SKILL.md",
+      "triggers": "pdf;official"
+    },
+    {
+      "description": "Comprehensive performance optimization guide for React and Next.js applications, maintained by Vercel. Use when writing new React components or Next.js pages, implementing data fetching (client or server-side), or reviewing code for performance issues.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "react-best-practices",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/react-best-practices/SKILL.md",
+      "triggers": "react;best;practices"
     },
     {
       "description": "Reddit API with PRAW (Python) and Snoowrap (Node.js)",
@@ -243,12 +427,12 @@
       "triggers": "remotion, video, react, animation, composition, three.js, lottie"
     },
     {
-      "description": "Perform language and framework specific security best-practice reviews and suggest improvements. Trigger only when the user explicitly requests security best practices guidance, a security review/report, or secure-by-default coding help. Trigger only for supported languages (python, javascript/typescript, go). Do not trigger for general code review, debugging, or non-security tasks.",
+      "description": "Client-side tracking with Analytics.js. Include track, identify, page, and group calls. Anonymous ID persists until identify merges with user.",
       "phase": 1,
       "score": 100,
-      "skill_id": "security-review-openai",
-      "src_path": "lib/lawvable-awesome-legal-skills/skills/security-review-openai/SKILL.md",
-      "triggers": "security;review;openai"
+      "skill_id": "segment-cdp",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/segment-cdp/SKILL.md",
+      "triggers": "segment;cdp"
     },
     {
       "description": "Generate platform-specific social post variants (Twitter/X, LinkedIn, Reddit) from one source input. Works with or without Node.js script. Includes platform reasoning, quality review, and guardrails against cross-posting spam.",
@@ -265,6 +449,14 @@
       "skill_id": "supabase-nextjs",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/supabase-nextjs/SKILL.md",
       "triggers": "supabase;nextjs"
+    },
+    {
+      "description": "Integracao completa com Telegram Bot API. Setup com BotFather, mensagens, webhooks, inline keyboards, grupos, canais. Boilerplates Node.js e Python.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "telegram",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/telegram/SKILL.md",
+      "triggers": "messaging;telegram;bots;webhooks"
     },
     {
       "description": "Three.js animation - keyframe animation, skeletal animation, morph targets, animation mixing. Use when animating objects, playing GLTF animations, creating procedural motion, or blending animations.",
@@ -339,12 +531,44 @@
       "triggers": "threejs;shaders"
     },
     {
+      "description": "Create 3D scenes, interactive experiences, and visual effects using Three.js. Use when user requests 3D graphics, WebGL experiences, 3D visualizations, animations, or interactive 3D elements.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "threejs-skills",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/threejs-skills/SKILL.md",
+      "triggers": "threejs;skills"
+    },
+    {
       "description": "Three.js textures - texture types, UV mapping, environment maps, texture settings. Use when working with images, UV coordinates, cubemaps, HDR environments, or texture optimization.",
       "phase": 1,
       "score": 100,
       "skill_id": "threejs-textures",
       "src_path": "lib/cloudai-x-threejs-skills/skills/threejs-textures/SKILL.md",
       "triggers": "threejs;textures"
+    },
+    {
+      "description": "Run Hugging Face models in JavaScript or TypeScript with Transformers.js in Node.js or the browser.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "transformers-js",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/transformers-js/SKILL.md",
+      "triggers": "transformers;js"
+    },
+    {
+      "description": "TypeScript and JavaScript expert with deep knowledge of type-level programming, performance optimization, monorepo management, migration strategies, and modern tooling.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "typescript-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/typescript-expert/SKILL.md",
+      "triggers": "typescript;expert"
+    },
+    {
+      "description": "Expert knowledge for deploying to Vercel with Next.js Use when: vercel, deploy, deployment, hosting, production.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "vercel-deployment",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/vercel-deployment/SKILL.md",
+      "triggers": "vercel;deployment"
     },
     {
       "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.",
@@ -363,12 +587,28 @@
       "triggers": "vertex;ai;api;dev"
     },
     {
+      "description": "Integracao com WhatsApp Business Cloud API (Meta). Mensagens, templates, webhooks HMAC-SHA256, automacao de atendimento. Boilerplates Node.js e Python.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "whatsapp-cloud-api",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/whatsapp-cloud-api/SKILL.md",
+      "triggers": "messaging;whatsapp;meta;webhooks"
+    },
+    {
       "description": "Converts VitePress/GFM wiki markdown to Azure DevOps Wiki-compatible format. Generates a Node.js build script that transforms Mermaid syntax, strips front matter, fixes links, and outputs ADO-compatible copies to dist/ado-wiki/.",
       "phase": 1,
       "score": 100,
       "skill_id": "wiki-ado-convert",
       "src_path": "lib/microsoft-skills/.github/plugins/deep-wiki/skills/wiki-ado-convert/SKILL.md",
       "triggers": "wiki;ado;convert"
+    },
+    {
+      "description": "Expert in Zod — TypeScript-first schema validation. Covers parsing, custom errors, refinements, type inference, and integration with React Hook Form, Next.js, and tRPC.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "zod-validation-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/zod-validation-expert/SKILL.md",
+      "triggers": "zod;validation;expert"
     }
   ],
   "sub_hub": "javascript",

@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775073184,
+  "generated_at_unix": 1775075184,
   "hub": "mobile",
   "skills": [
     {
@@ -9,14 +9,6 @@
       "skill_id": "analyzing-android-malware-with-apktool",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-android-malware-with-apktool/SKILL.md",
       "triggers": "Android;APK;apktool;jadx;androguard;mobile-malware;static-analysis;reverse-engineering"
-    },
-    {
-      "description": "适用于Android和Kotlin多平台项目的Clean Architecture模式——模块结构、依赖规则、用例、仓库以及数据层模式。",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "android-clean-architecture",
-      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/android-clean-architecture/SKILL.md",
-      "triggers": "android;clean;architecture"
     },
     {
       "description": "Material Design 3 and Android platform guidelines. Use when building Android apps with Jetpack Compose or XML layouts, implementing Material You, navigation, or accessibility. Triggers on tasks involving Android UI, Compose components, dynamic color, or Material Design compliance.",
@@ -43,36 +35,20 @@
       "triggers": "android;kotlin"
     },
     {
+      "description": "Build, maintain, and extend the EarLLM One Android project — a Kotlin/Compose app that connects Bluetooth earbuds to an LLM via voice pipeline.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "earllm-build",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/earllm-build/SKILL.md",
+      "triggers": "android;kotlin;bluetooth;llm;voice"
+    },
+    {
       "description": "Design, implement, and refactor Ports & Adapters systems with clear domain boundaries, dependency inversion, and testable use-case orchestration across TypeScript, Java, Kotlin, and Go services.",
       "phase": 4,
       "score": 100,
       "skill_id": "hexagonal-architecture",
       "src_path": "lib/affaan-m-everything-claude-code/skills/hexagonal-architecture/SKILL.md",
       "triggers": "hexagonal;architecture"
-    },
-    {
-      "description": "Kotlin协程与Flow在Android和KMP中的模式——结构化并发、Flow操作符、StateFlow、错误处理和测试。",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "kotlin-coroutines-flows",
-      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/kotlin-coroutines-flows/SKILL.md",
-      "triggers": "kotlin;coroutines;flows"
-    },
-    {
-      "description": "JetBrains Exposed ORM 模式，包括 DSL 查询、DAO 模式、事务、HikariCP 连接池、Flyway 迁移和仓库模式。",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "kotlin-exposed-patterns",
-      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/kotlin-exposed-patterns/SKILL.md",
-      "triggers": "kotlin;exposed;patterns"
-    },
-    {
-      "description": "Ktor 服务器模式，包括路由 DSL、插件、身份验证、Koin DI、kotlinx.serialization、WebSockets 和 testApplication 测试。",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "kotlin-ktor-patterns",
-      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/kotlin-ktor-patterns/SKILL.md",
-      "triggers": "kotlin;ktor;patterns"
     },
     {
       "description": "Coroutine'ler, null safety ve DSL builder'lar ile sağlam, verimli ve sürdürülebilir Kotlin uygulamaları oluşturmak için idiomatic Kotlin kalıpları, en iyi uygulamalar ve konvansiyonlar.",

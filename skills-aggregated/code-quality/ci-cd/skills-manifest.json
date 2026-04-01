@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775073184,
+  "generated_at_unix": 1775075184,
   "hub": "code-quality",
   "skills": [
     {
@@ -27,6 +27,30 @@
       "triggers": "autoplan"
     },
     {
+      "description": "Master defensive Bash programming techniques for production-grade scripts. Use when writing robust shell scripts, CI/CD pipelines, or system utilities requiring fault tolerance and safety.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "bash-defensive-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bash-defensive-patterns/SKILL.md",
+      "triggers": "bash;defensive;patterns"
+    },
+    {
+      "description": "Master of defensive Bash scripting for production automation, CI/CD pipelines, and system utilities. Expert in safe, portable, and testable shell scripts.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "bash-pro",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bash-pro/SKILL.md",
+      "triggers": "bash;pro"
+    },
+    {
+      "description": "Master Bash Automated Testing System (Bats) for comprehensive shell script testing. Use when writing tests for shell scripts, CI/CD pipelines, or requiring test-driven development of shell utilities.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "bats-testing-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bats-testing-patterns/SKILL.md",
+      "triggers": "bats;testing;patterns"
+    },
+    {
       "description": "Builds an automated malware submission and analysis pipeline that collects suspicious files from endpoints and email gateways, submits them to sandbox environments and multi-engine scanners, and generates verdicts with IOCs for SIEM integration. Use when SOC teams need to scale malware analysis beyond manual sandbox submissions for high-volume alert triage.",
       "phase": 1,
       "score": 100,
@@ -43,6 +67,22 @@
       "triggers": "gitlab-ci;devsecops;sast;dast;container-scanning;dependency-scanning;secret-detection;cicd-security"
     },
     {
+      "description": "You are a workflow automation expert specializing in creating efficient CI/CD pipelines, GitHub Actions workflows, and automated development processes. Design and implement automation that reduces manual work, improves consistency, and accelerates delivery while maintaining quality and security.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "cicd-automation-workflow-automate",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/cicd-automation-workflow-automate/SKILL.md",
+      "triggers": "cicd;automation;workflow;automate"
+    },
+    {
+      "description": "Cloud infrastructure and DevOps workflow covering AWS, Azure, GCP, Kubernetes, Terraform, CI/CD, monitoring, and cloud-native development.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "cloud-devops",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/cloud-devops/SKILL.md",
+      "triggers": "cloud;devops"
+    },
+    {
       "description": "OpenAI Codex CLI code review with GPT-5.2-Codex, CI/CD integration",
       "phase": 1,
       "score": 100,
@@ -51,12 +91,20 @@
       "triggers": "codex;review"
     },
     {
-      "description": "LLM API 使用成本优化模式 —— 基于任务复杂度的模型路由、预算跟踪、重试逻辑和提示缓存。",
+      "description": "The fundamental architecture of computer use agents: observe screen, reason about next action, execute action, repeat. This loop integrates vision models with action execution through an iterative pipeline.",
       "phase": 1,
       "score": 100,
-      "skill_id": "cost-aware-llm-pipeline",
-      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/cost-aware-llm-pipeline/SKILL.md",
-      "triggers": "cost;aware;llm;pipeline"
+      "skill_id": "computer-use-agents",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/computer-use-agents/SKILL.md",
+      "triggers": "computer;use;agents"
+    },
+    {
+      "description": "You are a data pipeline architecture expert specializing in scalable, reliable, and cost-effective data pipelines for batch and streaming data processing.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "data-engineering-data-pipeline",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/data-engineering-data-pipeline/SKILL.md",
+      "triggers": "data;engineering;data;pipeline"
     },
     {
       "description": "Expert guidance for distributed training with DeepSpeed - ZeRO optimization stages, pipeline parallelism, FP16/BF16/FP8, 1-bit Adam, sparse attention",
@@ -67,6 +115,14 @@
       "triggers": "DeepSpeed;Distributed Training;ZeRO;Pipeline Parallelism;Mixed Precision;Optimization;Microsoft;Large-Scale Training;FP16;FP8"
     },
     {
+      "description": "Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "deployment-engineer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/deployment-engineer/SKILL.md",
+      "triggers": "deployment;engineer"
+    },
+    {
       "description": "Deployment workflows, CI/CD pipeline patterns, Docker containerization, health checks, rollback strategies, and production readiness checklists for web applications. Use when setting up deployment infrastructure or planning releases.",
       "phase": 1,
       "score": 100,
@@ -75,12 +131,28 @@
       "triggers": "deployment;patterns"
     },
     {
+      "description": "Architecture patterns for multi-stage CI/CD pipelines with approval gates and deployment strategies.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "deployment-pipeline-design",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/deployment-pipeline-design/SKILL.md",
+      "triggers": "deployment;pipeline;design"
+    },
+    {
       "description": "Detecting exposed AWS credentials in source code repositories, CI/CD pipelines, and configuration files using TruffleHog, git-secrets, and AWS-native detection mechanisms to prevent credential theft and unauthorized account access.",
       "phase": 1,
       "score": 100,
       "skill_id": "detecting-aws-credential-exposure-with-trufflehog",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-aws-credential-exposure-with-trufflehog/SKILL.md",
       "triggers": "cloud-security;aws;credential-exposure;trufflehog;secrets-detection;devsecops"
+    },
+    {
+      "description": "DevOps e deploy de aplicacoes — Docker, CI/CD com GitHub Actions, AWS Lambda, SAM, Terraform, infraestrutura como codigo e monitoramento.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "devops-deploy",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/devops-deploy/SKILL.md",
+      "triggers": "devops;docker;ci-cd;aws;terraform;github-actions"
     },
     {
       "description": "Provides PyTorch-native distributed LLM pretraining using torchtitan with 4D parallelism (FSDP2, TP, PP, CP). Use when pretraining Llama 3.1, DeepSeek V3, or custom models at scale from 8 to 512+ GPUs with Float8, torch.compile, and distributed checkpointing.",
@@ -99,12 +171,60 @@
       "triggers": "dnanexus;integration"
     },
     {
+      "description": "Helps understand and write EAS workflow YAML files for Expo projects. Use this skill when the user asks about CI/CD or workflows in an Expo or EAS context, mentions .eas/workflows/, or wants help with EAS build pipelines or deployment automation.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "expo-cicd-workflows",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/expo-cicd-workflows/SKILL.md",
+      "triggers": "expo;cicd;workflows"
+    },
+    {
+      "description": "extraction pipeline patterns",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "extraction-pipeline-patterns",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/skills/extraction-pipeline-patterns/SKILL.md",
+      "triggers": "extraction;pipeline;patterns"
+    },
+    {
+      "description": "Game art principles. Visual style selection, asset pipeline, animation workflow.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "game-art",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/game-development/game-art/SKILL.md",
+      "triggers": "game;art"
+    },
+    {
       "description": "Google Gemini CLI code review with Gemini 2.5 Pro, 1M token context, CI/CD integration",
       "phase": 1,
       "score": 100,
       "skill_id": "gemini-review",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/gemini-review/SKILL.md",
       "triggers": "gemini;review"
+    },
+    {
+      "description": "Master Git hooks setup with Husky, lint-staged, pre-commit framework, and commitlint. Automate code quality gates, formatting, linting, and commit message enforcement before code reaches CI.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git-hooks-automation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/git-hooks-automation/SKILL.md",
+      "triggers": "git;hooks;automation"
+    },
+    {
+      "description": "Production-ready GitHub Actions workflow patterns for testing, building, and deploying applications.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "github-actions-templates",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/github-actions-templates/SKILL.md",
+      "triggers": "github;actions;templates"
+    },
+    {
+      "description": "Automate GitHub repositories, issues, pull requests, branches, CI/CD, and permissions via Rube MCP (Composio). Manage code workflows, review PRs, search code, and handle deployments programmatically.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "github-automation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/github-automation/SKILL.md",
+      "triggers": "github;automation"
     },
     {
       "description": "Merges GitHub Pull Requests after validating pre-merge checklist. Use when user wants to merge PR, close PR, finalize PR, complete merge, approve and merge, or execute merge. Runs pre-merge validation (tests, lint, CI, comments), confirms with user, merges with proper format, handles post-merge cleanup.",
@@ -115,12 +235,20 @@
       "triggers": "github;pr;merge"
     },
     {
-      "description": "Workflow 1: Full idea discovery pipeline. Orchestrates research-lit → idea-creator → novelty-check → research-review to go from a broad research direction to validated, pilot-tested ideas. Use when user says \"找idea全流程\", \"idea discovery pipeline\", \"从零开始找方向\", or wants the complete idea exploration workflow.",
+      "description": "Comprehensive GitLab CI/CD pipeline patterns for automated testing, building, and deployment.",
       "phase": 1,
       "score": 100,
-      "skill_id": "idea-discovery",
-      "src_path": "lib/wanshuiyin-auto-claude-code-research-in-sleep/skills/idea-discovery/SKILL.md",
-      "triggers": "idea;discovery"
+      "skill_id": "gitlab-ci-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/gitlab-ci-patterns/SKILL.md",
+      "triggers": "gitlab;ci;patterns"
+    },
+    {
+      "description": "image preprocessing pipeline",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "image-preprocessing-pipeline",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/domains/ocr-integration/skills/image-preprocessing-pipeline/SKILL.md",
+      "triggers": "image;preprocessing;pipeline"
     },
     {
       "description": "Integrates Static Application Security Testing (SAST), Dynamic Application Security Testing (DAST), and Software Composition Analysis (SCA) into CI/CD pipelines using open-source tools. Covers Semgrep for SAST, Trivy for SCA and container scanning, OWASP ZAP for DAST, and Gitleaks for secrets detection. Activates for requests involving DevSecOps pipeline setup, automated security scanning in CI/CD, SAST/DAST/SCA integration, or shift-left security implementation.",
@@ -179,6 +307,14 @@
       "triggers": "in-toto;supply-chain-security;attestation;slsa;sigstore;container-security;cncf;provenance;sbom"
     },
     {
+      "description": "[Extended thinking: This workflow implements a sophisticated debugging and resolution pipeline that leverages AI-assisted debugging tools and observability platforms to systematically diagnose and res",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "incident-response-smart-fix",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/incident-response-smart-fix/SKILL.md",
+      "triggers": "incident;response;smart;fix"
+    },
+    {
       "description": "This skill covers integrating OWASP ZAP (Zed Attack Proxy) for Dynamic Application Security Testing in CI/CD pipelines. It addresses configuring baseline, full, and API scans against running applications, interpreting ZAP findings, tuning scan policies, and establishing DAST quality gates in GitHub Actions and GitLab CI.",
       "phase": 1,
       "score": 100,
@@ -193,6 +329,22 @@
       "skill_id": "integrating-sast-into-github-actions-pipeline",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/integrating-sast-into-github-actions-pipeline/SKILL.md",
       "triggers": "devsecops;cicd;sast;codeql;semgrep;secure-sdlc"
+    },
+    {
+      "description": "Iterate on a PR until CI passes. Use when you need to fix CI failures, address review feedback, or continuously push fixes until all checks are green. Automates the feedback-fix-push-wait cycle.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "iterate-pr",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/iterate-pr/SKILL.md",
+      "triggers": "iterate;pr"
+    },
+    {
+      "description": "Expert jq usage for JSON querying, filtering, transformation, and pipeline integration. Practical patterns for real shell workflows.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "jq",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/jq/SKILL.md",
+      "triggers": "jq;json;shell;cli;data-transformation;bash"
     },
     {
       "description": "Land and deploy workflow. Merges the PR, waits for CI and deploy, verifies production health via canary checks. Takes over after /ship creates the PR. Use when: \"merge\", \"land\", \"deploy\", \"merge and verify\", \"land it\", \"ship it to production\". (gstack)",
@@ -211,12 +363,20 @@
       "triggers": "lead;intelligence"
     },
     {
-      "description": "CRITICAL: Use for Makepad packaging and deployment. Triggers on: deploy, package, APK, IPA, 打包, 部署, cargo-packager, cargo-makepad, WASM, Android, iOS, distribution, installer, .deb, .dmg, .nsis, GitHub Actions, CI, action, marketplace",
+      "description": "Design and implement a complete ML pipeline for: $ARGUMENTS",
       "phase": 1,
       "score": 100,
-      "skill_id": "makepad-deployment",
-      "src_path": "lib/zhanghandong-makepad-skills/skills/makepad-deployment/SKILL.md",
-      "triggers": "makepad;deployment"
+      "skill_id": "machine-learning-ops-ml-pipeline",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/machine-learning-ops-ml-pipeline/SKILL.md",
+      "triggers": "machine;learning;ops;ml;pipeline"
+    },
+    {
+      "description": "Complete end-to-end MLOps pipeline orchestration from data preparation through model deployment.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "ml-pipeline-workflow",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/ml-pipeline-workflow/SKILL.md",
+      "triggers": "ml;pipeline;workflow"
     },
     {
       "description": "Handles git and GitHub operations using the gh CLI. Use when the user asks about pull requests (PRs), GitHub issues, repo management, branching, merging, rebasing, cherry-picking, merge conflict resolution, commit history cleanup, pre-commit hook debugging, GitHub Actions workflows, or releases. Covers creating and reviewing PRs, watching CI checks, interactive rebasing, branch cleanup, submodule management, and repository archaeology with git log/blame/bisect.",
@@ -227,20 +387,28 @@
       "triggers": "git, github, gh-cli, version-control, merge-conflicts, pull-requests"
     },
     {
+      "description": "Write and run Odoo automated tests using TransactionCase, HttpCase, and browser tour tests. Covers test data setup, mocking, and CI integration.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "odoo-automated-tests",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/odoo-automated-tests/SKILL.md",
+      "triggers": "odoo;automated;tests"
+    },
+    {
+      "description": "Expert guide for Odoo Sales and CRM: pipeline stages, quotation templates, pricelists, sales teams, lead scoring, and forecasting.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "odoo-sales-crm-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/odoo-sales-crm-expert/SKILL.md",
+      "triggers": "odoo;sales;crm;expert"
+    },
+    {
       "description": "Open-source pipeline: fork, sanitize, and package private projects for safe public release. Chains 3 agents (forker, sanitizer, packager). Triggers: '/opensource', 'open source this', 'make this public', 'prepare for open source'.",
       "phase": 1,
       "score": 100,
       "skill_id": "opensource-pipeline",
       "src_path": "lib/affaan-m-everything-claude-code/skills/opensource-pipeline/SKILL.md",
       "triggers": "opensource;pipeline"
-    },
-    {
-      "description": "Workflow 3: Full paper writing pipeline. Orchestrates paper-plan → paper-figure → paper-write → paper-compile → auto-paper-improvement-loop to go from a narrative report to a polished, submission-ready PDF. Use when user says \"写论文全流程\", \"write paper pipeline\", \"从报告到PDF\", \"paper writing\", or wants the complete paper generation workflow.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "paper-writing",
-      "src_path": "lib/wanshuiyin-auto-claude-code-research-in-sleep/skills/paper-writing/SKILL.md",
-      "triggers": "paper;writing"
     },
     {
       "description": "This skill covers implementing Software Composition Analysis (SCA) using Snyk to detect vulnerable open-source dependencies in CI/CD pipelines. It addresses scanning package manifests and lockfiles, automated fix pull request generation, license compliance checking, continuous monitoring of deployed applications, and integration with GitHub, GitLab, and Jenkins pipelines.",
@@ -251,6 +419,14 @@
       "triggers": "devsecops;cicd;sca;snyk;dependency-scanning;secure-sdlc"
     },
     {
+      "description": "Automate Pipedrive CRM operations including deals, contacts, organizations, activities, notes, and pipeline management via Rube MCP (Composio). Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "pipedrive-automation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/pipedrive-automation/SKILL.md",
+      "triggers": "pipedrive;automation"
+    },
+    {
       "description": "Production-ready CI/CD configurations for Playwright — GitHub Actions, GitLab CI, CircleCI, Azure DevOps, Jenkins, Docker, parallel sharding, reporting, code coverage, and global setup/teardown.",
       "phase": 1,
       "score": 100,
@@ -259,36 +435,12 @@
       "triggers": "playwright;ci"
     },
     {
-      "description": "基于RFC驱动的多智能体DAG执行模式，包含质量门、合并队列和工作单元编排。",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "ralphinho-rfc-pipeline",
-      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/ralphinho-rfc-pipeline/SKILL.md",
-      "triggers": "ralphinho;rfc;pipeline"
-    },
-    {
       "description": "Workflow 4: Submission rebuttal pipeline. Parses external reviews, enforces coverage and grounding, drafts a safe text-only rebuttal under venue limits, and manages follow-up rounds. Use when user says \"rebuttal\", \"reply to reviewers\", \"ICML rebuttal\", \"OpenReview response\", or wants to answer external reviews safely.",
       "phase": 1,
       "score": 100,
       "skill_id": "rebuttal",
       "src_path": "lib/wanshuiyin-auto-claude-code-research-in-sleep/skills/rebuttal/SKILL.md",
       "triggers": "rebuttal"
-    },
-    {
-      "description": "Full research pipeline: Workflow 1 (idea discovery) → implementation → Workflow 2 (auto review loop). Goes from a broad research direction all the way to a submission-ready paper. Use when user says \"全流程\", \"full pipeline\", \"从找idea到投稿\", \"end-to-end research\", or wants the complete autonomous research lifecycle.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "research-pipeline",
-      "src_path": "lib/wanshuiyin-auto-claude-code-research-in-sleep/skills/research-pipeline/SKILL.md",
-      "triggers": "research;pipeline"
-    },
-    {
-      "description": "Run an end-to-end workflow that chains `research-refine` and `experiment-plan`. Use when the user wants a one-shot pipeline from vague research direction to focused final proposal plus detailed experiment roadmap, or asks to \"串起来\", build a pipeline, do it end-to-end, or generate both the method and experiment plan together.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "research-refine-pipeline",
-      "src_path": "lib/wanshuiyin-auto-claude-code-research-in-sleep/skills/research-refine-pipeline/SKILL.md",
-      "triggers": "research;refine;pipeline"
     },
     {
       "description": "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'revenue operations,' 'lead scoring,' 'lead routing,' 'MQL,' 'SQL,' 'pipeline stages,' 'deal desk,' 'CRM automation,' 'marketing-to-sales handoff,' 'data hygiene,' 'leads aren't getting to sales,' 'pipeline management,' 'lead qualification,' or 'when should marketing hand off to sales.' Use this for anything involving the systems and processes that connect marketing to revenue. For cold outreach emails, see cold-email. For email drip campaigns, see email-sequence. For pricing decisions, see pricing-strategy.",
@@ -307,12 +459,28 @@
       "triggers": "scanpy"
     },
     {
+      "description": "Secure secrets management practices for CI/CD pipelines using Vault, AWS Secrets Manager, and other tools.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "secrets-management",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/secrets-management/SKILL.md",
+      "triggers": "secrets;management"
+    },
+    {
       "description": "Automates the full code release pipeline — branch, commit, push, PR, wait for CI, merge, version bump, release, cleanup. Use when the user wants to release code changes, says \"ship it\", or asks to create a release.",
       "phase": 1,
       "score": 100,
       "skill_id": "ship",
       "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/ship/SKILL.md",
       "triggers": "ship"
+    },
+    {
+      "description": "Master AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering. Build scalable testing strategies with advanced CI/CD integration.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "test-automator",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/test-automator/SKILL.md",
+      "triggers": "test;automator"
     },
     {
       "description": "Trains large language models (2B-462B parameters) using NVIDIA Megatron-Core with advanced parallelism strategies. Use when training models >1B parameters, need maximum GPU efficiency (47% MFU on H100), or require tensor/pipeline/sequence/context/expert parallelism. Production-ready framework used for Nemotron, LLaMA, DeepSeek.",

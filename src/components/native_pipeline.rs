@@ -197,7 +197,8 @@ pub async fn aggregate_to_output(
             continue;
         }
 
-        let norm_text = format!("{} {}", skill.name, skill.description).to_lowercase();
+        let path_str = skill.path.to_string_lossy();
+        let norm_text = format!("{} {} {}", skill.name, skill.description, path_str).to_lowercase();
         let tokens: HashSet<String> = norm_text
             .split_whitespace()
             .map(|s| s.trim_matches(|c: char| !c.is_alphanumeric()).to_string())

@@ -1,14 +1,46 @@
 {
-  "generated_at_unix": 1775073184,
+  "generated_at_unix": 1775075184,
   "hub": "mobile",
   "skills": [
     {
-      "description": "库无关的Flutter/Dart代码审查清单，涵盖Widget最佳实践、状态管理模式（BLoC、Riverpod、Provider、GetX、MobX、Signals）、Dart惯用法、性能、可访问性、安全性和整洁架构。",
+      "description": "Complete App Store Optimization (ASO) toolkit for researching, optimizing, and tracking mobile app performance on Apple App Store and Google Play Store",
       "phase": 4,
       "score": 100,
-      "skill_id": "flutter-dart-code-review",
-      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/flutter-dart-code-review/SKILL.md",
-      "triggers": "flutter;dart;code;review"
+      "skill_id": "app-store-optimization",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/app-store-optimization/SKILL.md",
+      "triggers": "app;store;optimization"
+    },
+    {
+      "description": "Comprehensive web, mobile, and backend development workflow bundling frontend, backend, full-stack, and mobile development skills for end-to-end application delivery.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "development",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/development/SKILL.md",
+      "triggers": "development"
+    },
+    {
+      "description": "Master Flutter development with Dart 3, advanced widgets, and multi-platform deployment.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "flutter-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/flutter-expert/SKILL.md",
+      "triggers": "flutter;expert"
+    },
+    {
+      "description": "Develop React Native, Flutter, or native mobile apps with modern architecture patterns. Masters cross-platform development, native integrations, offline sync, and app store optimization.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "mobile-developer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/mobile-developer/SKILL.md",
+      "triggers": "mobile;developer"
+    },
+    {
+      "description": "Mobile game development principles. Touch input, battery, performance, app stores.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "mobile-games",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/game-development/mobile-games/SKILL.md",
+      "triggers": "mobile;games"
     },
     {
       "description": "Acquire and analyze mobile device data using Cellebrite UFED and open-source tools to extract communications, location data, and application artifacts.",

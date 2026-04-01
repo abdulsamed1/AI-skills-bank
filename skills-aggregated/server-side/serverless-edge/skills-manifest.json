@@ -1,7 +1,15 @@
 {
-  "generated_at_unix": 1775073184,
+  "generated_at_unix": 1775075184,
   "hub": "server-side",
   "skills": [
+    {
+      "description": "Proper Lambda function structure with error handling",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "aws-serverless",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/aws-serverless/SKILL.md",
+      "triggers": "aws;serverless"
+    },
     {
       "description": "Assess and migrate cross-cloud workloads to Azure with migration reports and code conversion guidance. Supports AWS, GCP, and other providers. WHEN: migrate Lambda to Azure Functions, migrate AWS to Azure, Lambda migration assessment, convert AWS serverless to Azure, migration readiness report, migrate from AWS, migrate from GCP, cross-cloud migration.",
       "phase": 2,
@@ -17,6 +25,22 @@
       "skill_id": "cloudflare-d1",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/cloudflare-d1/SKILL.md",
       "triggers": "cloudflare;d1"
+    },
+    {
+      "description": "Expert in Cloudflare Workers and the Edge Computing ecosystem. Covers Wrangler, KV, D1, Durable Objects, and R2 storage.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "cloudflare-workers-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/cloudflare-workers-expert/SKILL.md",
+      "triggers": "cloudflare;workers;expert"
+    },
+    {
+      "description": "Build ultra-fast web APIs and full-stack apps with Hono — runs on Cloudflare Workers, Deno, Bun, Node.js, and any WinterCG-compatible runtime.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "hono",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/hono/SKILL.md",
+      "triggers": "hono;edge;cloudflare-workers;bun;deno;api;typescript;web-standards"
     },
     {
       "description": "Latch platform for bioinformatics workflows. Build pipelines with Latch SDK, @workflow/@task decorators, deploy serverless workflows, LatchFile/LatchDir, Nextflow/Snakemake integration.",

@@ -1,12 +1,20 @@
 {
-  "count": 6,
+  "count": 14,
   "hub": "code-quality",
   "skills": [
     "analyzing-golang-malware-with-ghidra",
     "azure-deploy",
+    "dbos-golang",
+    "go-concurrency-patterns",
+    "go-playwright",
+    "go-rod-master",
     "golang-patterns",
+    "golang-pro",
     "golang-testing",
+    "grpc-golang",
     "pre-mortem",
+    "scroll-experience",
+    "temporal-golang-pro",
     "what-if-oracle"
   ],
   "sub_hub": "golang"

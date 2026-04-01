@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775073184,
+  "generated_at_unix": 1775075184,
   "hub": "code-quality",
   "skills": [
     {
@@ -203,12 +203,12 @@
       "triggers": "azure;storage;blob;java"
     },
     {
-      "description": "Spring Bootサービス向けのJavaコーディング標準：命名、不変性、Optional使用、ストリーム、例外、ジェネリクス、プロジェクトレイアウト。",
+      "description": "Master Java 21+ with modern features like virtual threads, pattern matching, and Spring Boot 3.x. Expert in the latest Java ecosystem including GraalVM, Project Loom, and cloud-native patterns.",
       "phase": 1,
       "score": 100,
-      "skill_id": "java-coding-standards",
-      "src_path": "lib/affaan-m-everything-claude-code/docs/ja-JP/skills/java-coding-standards/SKILL.md",
-      "triggers": "java;coding;standards"
+      "skill_id": "java-pro",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/java-pro/SKILL.md",
+      "triggers": "java;pro"
     },
     {
       "description": "JPA/Hibernate patterns for entity design, relationships, query optimization, transactions, auditing, indexing, pagination, and pooling in Spring Boot.",
@@ -217,6 +217,14 @@
       "skill_id": "jpa-patterns",
       "src_path": "lib/affaan-m-everything-claude-code/docs/ja-JP/skills/jpa-patterns/SKILL.md",
       "triggers": "jpa;patterns"
+    },
+    {
+      "description": "This skill should be used when the user asks for patterns, best practices, creation, or fixing of Sankhya dashboards using HTML, JSP, Java, and SQL.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "sankhya-dashboard-html-jsp-custom-best-pratices",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/sankhya-dashboard-html-jsp-custom-best-pratices/SKILL.md",
+      "triggers": "sankhya;dashboard;jsp;html;sql;best-practices"
     },
     {
       "description": "Spring Security best practices for authn/authz, validation, CSRF, secrets, headers, rate limiting, and dependency security in Java Spring Boot services.",

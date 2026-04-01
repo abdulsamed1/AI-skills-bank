@@ -1,5 +1,5 @@
 {
-  "count": 12,
+  "count": 18,
   "hub": "code-quality",
   "skills": [
     "azure-cosmos-rust",
@@ -9,11 +9,17 @@
     "azure-keyvault-keys-rust",
     "azure-keyvault-secrets-rust",
     "azure-storage-blob-rust",
+    "bevy-ecs-expert",
     "huggingface-tokenizers",
+    "makepad-skills",
     "qdrant-vector-search",
     "reverse-engineering-rust-malware",
+    "rust-async-patterns",
     "rust-patterns",
-    "wendy-lite"
+    "rust-pro",
+    "systems-programming-rust-project",
+    "wendy-lite",
+    "zeroize-audit"
   ],
   "sub_hub": "rust"
 }

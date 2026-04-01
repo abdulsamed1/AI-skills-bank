@@ -1,5 +1,5 @@
 {
-  "count": 30,
+  "count": 31,
   "hub": "code-quality",
   "skills": [
     "azure-ai-agents-persistent-java",
@@ -27,8 +27,9 @@
     "azure-monitor-query-java",
     "azure-security-keyvault-secrets-java",
     "azure-storage-blob-java",
-    "java-coding-standards",
+    "java-pro",
     "jpa-patterns",
+    "sankhya-dashboard-html-jsp-custom-best-pratices",
     "springboot-security",
     "springboot-tdd",
     "springboot-verification"

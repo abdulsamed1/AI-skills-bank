@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775073184,
+  "generated_at_unix": 1775075184,
   "hub": "code-quality",
   "skills": [
     {
@@ -49,6 +49,14 @@
       "skill_id": "astropy",
       "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/astropy/SKILL.md",
       "triggers": "astropy"
+    },
+    {
+      "description": "Comprehensive guidance for implementing asynchronous Python applications using asyncio, concurrent programming patterns, and async/await for building high-performance, non-blocking systems.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "async-python-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/async-python-patterns/SKILL.md",
+      "triggers": "async;python;patterns"
     },
     {
       "description": "Azure AI Content Safety SDK for Python. Use for detecting harmful content in text and images with multi-severity classification. Triggers: \"azure-ai-contentsafety\", \"ContentSafetyClient\", \"content moderation\", \"harmful content\", \"text analysis\", \"image analysis\".",
@@ -347,12 +355,28 @@
       "triggers": "bioservices"
     },
     {
+      "description": "Guide for building reliable, fault-tolerant Python applications with DBOS durable workflows. Use when adding DBOS to existing Python code, creating workflows and steps, or using queues for concurrency control.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "dbos-python",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/dbos-python/SKILL.md",
+      "triggers": "dbos;python"
+    },
+    {
       "description": "Detect unauthorized SaaS and cloud service usage (shadow IT) by analyzing proxy logs, DNS query logs, and netflow data using Python pandas for traffic pattern analysis and domain classification.",
       "phase": 1,
       "score": 100,
       "skill_id": "detecting-shadow-it-cloud-usage",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-shadow-it-cloud-usage/SKILL.md",
       "triggers": "shadow-IT;SaaS-discovery;proxy-logs;DNS-analysis;netflow;cloud-security;pandas"
+    },
+    {
+      "description": "Build high-performance async APIs with FastAPI, SQLAlchemy 2.0, and Pydantic V2. Master microservices, WebSockets, and modern Python async patterns.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "fastapi-pro",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/fastapi-pro/SKILL.md",
+      "triggers": "fastapi;pro"
     },
     {
       "description": "Create FastAPI routers with CRUD operations, authentication dependencies, and proper response models. Use when building REST API endpoints, creating new routes, implementing CRUD operations, or adding authenticated endpoints in FastAPI applications.",
@@ -393,6 +417,22 @@
       "skill_id": "hosted-agents-v2-py",
       "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/hosted-agents-v2-py/SKILL.md",
       "triggers": "\"ImageBasedHostedAgentDefinition\", \"hosted agent\", \"container agent\","
+    },
+    {
+      "description": "Build or edit Gradio apps, layouts, components, and chat interfaces in Python.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "hugging-face-gradio",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/hugging-face-gradio/SKILL.md",
+      "triggers": "hugging;face;gradio"
+    },
+    {
+      "description": "Track ML experiments with Trackio using Python logging, alerts, and CLI metric retrieval.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "hugging-face-trackio",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/hugging-face-trackio/SKILL.md",
+      "triggers": "hugging;face;trackio"
     },
     {
       "description": "Detect NTFS timestamp manipulation (MITRE T1070.006) by comparing $STANDARD_INFORMATION vs $FILE_NAME timestamps in the MFT. Uses analyzeMFT and Python to identify files with anomalous temporal patterns indicating anti-forensic timestomping activity.",
@@ -443,6 +483,14 @@
       "triggers": "modal"
     },
     {
+      "description": "Write Python code in n8n Code nodes. Use when writing Python in n8n, using _input/_json/_node syntax, working with standard library, or need to understand Python limitations in n8n Code nodes.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "n8n-code-python",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/n8n-code-python/SKILL.md",
+      "triggers": "n8n;code;python"
+    },
+    {
       "description": "Comprehensive toolkit for creating, analyzing, and visualizing complex networks and graphs in Python. Use when working with network/graph data structures, analyzing relationships between entities, computing graph algorithms (shortest paths, centrality, clustering), detecting communities, generating synthetic networks, or visualizing network topologies. Applicable to social networks, biological networks, transportation systems, citation networks, and any domain involving pairwise relationships.",
       "phase": 1,
       "score": 100,
@@ -457,6 +505,22 @@
       "skill_id": "omero-integration",
       "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/omero-integration/SKILL.md",
       "triggers": "omero;integration"
+    },
+    {
+      "description": "Build a low-latency, Iron Man-inspired tactical voice assistant (F.R.I.D.A.Y.) using Pipecat, Gemini, and OpenAI.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "pipecat-friday-agent",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/pipecat-friday-agent/SKILL.md",
+      "triggers": "pipecat;voice;gemini;openai;python"
+    },
+    {
+      "description": "Build production-ready AI agents with PydanticAI — type-safe tool use, structured outputs, dependency injection, and multi-model support.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "pydantic-ai",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/pydantic-ai/SKILL.md",
+      "triggers": "pydantic-ai;ai-agents;llm;openai;anthropic;gemini;tool-use;structured-output;python"
     },
     {
       "description": "Create Pydantic models following the multi-model pattern with Base, Create, Update, Response, and InDB variants. Use when defining API request/response schemas, database models, or data validation in Python applications using Pydantic v2.",
@@ -483,12 +547,60 @@
       "triggers": "python"
     },
     {
+      "description": "You are a Python project architecture expert specializing in scaffolding production-ready Python applications. Generate complete project structures with modern tooling (uv, FastAPI, Django), type hint",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "python-development-python-scaffold",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/python-development-python-scaffold/SKILL.md",
+      "triggers": "python;development;python;scaffold"
+    },
+    {
+      "description": "python ocr uackend integration",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "python-ocr-backend-integration",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/domains/ocr-integration/skills/python-ocr-backend-integration/SKILL.md",
+      "triggers": "python;ocr;backend;integration"
+    },
+    {
+      "description": "Comprehensive guide to creating, structuring, and distributing Python packages using modern packaging tools, pyproject.toml, and publishing to PyPI.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "python-packaging",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/python-packaging/SKILL.md",
+      "triggers": "python;packaging"
+    },
+    {
       "description": "Python-specific design patterns and best practices including protocols, dataclasses, context managers, decorators, async/await, type hints, and package organization. Use when working with Python code to apply Pythonic patterns.",
       "phase": 1,
       "score": 100,
       "skill_id": "python-patterns",
       "src_path": "lib/affaan-m-everything-claude-code/.kiro/skills/python-patterns/SKILL.md",
       "triggers": "python;patterns"
+    },
+    {
+      "description": "Profile and optimize Python code using cProfile, memory profilers, and performance best practices. Use when debugging slow Python code, optimizing bottlenecks, or improving application performance.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "python-performance-optimization",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/python-performance-optimization/SKILL.md",
+      "triggers": "python;performance;optimization"
+    },
+    {
+      "description": "python plugin wrapper",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "python-plugin-wrapper",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/domains/plugin-system/skills/python-plugin-wrapper/SKILL.md",
+      "triggers": "python;plugin;wrapper"
+    },
+    {
+      "description": "Master Python 3.12+ with modern features, async programming, performance optimization, and production-ready practices. Expert in the latest Python ecosystem including uv, ruff, pydantic, and FastAPI.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "python-pro",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/python-pro/SKILL.md",
+      "triggers": "python;pro"
     },
     {
       "description": "Interact with Zotero reference management libraries using the pyzotero Python client. Retrieve, create, update, and delete items, collections, tags, and attachments via the Zotero Web API v3. Use this skill when working with Zotero libraries programmatically, managing bibliographic references, exporting citations, searching library contents, uploading PDF attachments, or building research automation workflows that integrate with Zotero.",
@@ -563,6 +675,14 @@
       "triggers": "sympy"
     },
     {
+      "description": "Master Temporal workflow orchestration with Python SDK. Implements durable workflows, saga patterns, and distributed transactions. Covers async/await, testing strategies, and production deployment.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "temporal-python-pro",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/temporal-python-pro/SKILL.md",
+      "triggers": "temporal;python;pro"
+    },
+    {
       "description": "Tinybird Python SDK for defining datasources, pipes, and queries in Python. Use when working with tinybird-sdk, Python Tinybird projects, or data ingestion and queries in Python.",
       "phase": 1,
       "score": 100,
@@ -577,6 +697,14 @@
       "skill_id": "using-tmux-for-interactive-commands",
       "src_path": "lib/obra-superpowers-lab/skills/using-tmux-for-interactive-commands/SKILL.md",
       "triggers": "using;tmux;for;interactive;commands"
+    },
+    {
+      "description": "Thesis-driven equity analysis from public SEC EDGAR and market data; /analyze, /score, /compare workflows with bundled Python tools (Claude Code, Cursor, Codex).",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "xvary-stock-research",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/xvary-stock-research/SKILL.md",
+      "triggers": "xvary;stock;research"
     },
     {
       "description": "Chunked N-D arrays for cloud storage. Compressed arrays, parallel I/O, S3/GCS integration, NumPy/Dask/Xarray compatible, for large-scale scientific computing pipelines.",

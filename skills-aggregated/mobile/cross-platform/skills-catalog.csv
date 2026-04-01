@@ -1,5 +1,9 @@
 skill_id,description,score,phase
-flutter-dart-code-review,库无关的Flutter/Dart代码审查清单，涵盖Widget最佳实践、状态管理模式（BLoC、Riverpod、Provider、GetX、MobX、Signals）、Dart惯用法、性能、可访问性、安全性和整洁架构。,100,4
+app-store-optimization,"Complete App Store Optimization (ASO) toolkit for researching, optimizing, and tracking mobile app performance on Apple App Store and Google Play Store",100,4
+development,"Comprehensive web, mobile, and backend development workflow bundling frontend, backend, full-stack, and mobile development skills for end-to-end application delivery.",100,4
+flutter-expert,"Master Flutter development with Dart 3, advanced widgets, and multi-platform deployment.",100,4
+mobile-developer,"Develop React Native, Flutter, or native mobile apps with modern architecture patterns. Masters cross-platform development, native integrations, offline sync, and app store optimization.",100,4
+mobile-games,"Mobile game development principles. Touch input, battery, performance, app stores.",100,4
 performing-mobile-device-forensics-with-cellebrite,"Acquire and analyze mobile device data using Cellebrite UFED and open-source tools to extract communications, location data, and application artifacts.",100,4
 react-native,"React Native mobile patterns, platform-specific code",100,4
 seo-technical,"Technical SEO audit across 9 categories: crawlability, indexability, security, URL structure, mobile, Core Web Vitals, structured data, JavaScript rendering, and IndexNow protocol. Use when user says ""technical SEO"", ""crawl issues"", ""robots.txt"", ""Core Web Vitals"", ""site speed"", or ""security headers"".",100,4

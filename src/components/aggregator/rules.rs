@@ -89,7 +89,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     code_quality.insert(
         "security",
         SubHubRule {
-            keywords: vec!["html-injection","auth", "session", "login", "password", "security", "oauth", "jwt", "encryption", "pentest", "infrastructure", "firewall", "network", "vpn", "waf", "vulnerability", "vulnerabilities", "cve", "scanning", "auditing", "red-team", "ddos", "attack", "zero trust", "sqli", "sql injection", "threat", "browser isolation", "injection", "exploit", "xss", "csrf", "hardening", "kms", "key management", "cryptography", "cyber-security", "cybersecurity", "cyber attack", "cyber-attack"],
+            keywords: vec!["malicious","html-injection","auth", "session", "login", "password", "security", "oauth", "jwt", "encryption", "pentest", "infrastructure", "firewall", "network", "vpn", "waf", "vulnerability", "vulnerabilities", "cve", "scanning", "auditing", "red-team", "ddos", "attack", "zero trust", "sqli", "sql injection", "threat", "browser isolation", "injection", "exploit", "xss", "csrf", "hardening", "kms", "key management", "cryptography", "cyber-security", "cybersecurity", "cyber attack", "cyber-attack"],
             anchor_keywords: vec!["auth", "oauth", "jwt", "security", "pentest", "vulnerability", "vulnerabilities", "infrastructure", "firewall", "red-team", "waf", "ddos", "zero trust", "injection", "exploit", "xss", "csrf", "encryption", "kms", "key management", "threat"],
             negative_keywords: vec!["marketing", "seo"],
         },
@@ -494,9 +494,16 @@ pub static DEFAULT_EXCLUSION_PATTERNS: &[&str] = &[
     "biology",
     "chemistry",
     "physics",
+    "game",
     "games",
     "game-development",
     "gaming",
+    "unreal-engine",
+    "unity-3d",
+    "blender",
+    "3d",
+    "threejs",
+    "three.js",
     "chinese",
     "japanese",
     "korean",
@@ -513,6 +520,9 @@ pub static DEFAULT_EXCLUSION_PATTERNS: &[&str] = &[
     "marathi",
     "tamil",
     "urdu",
+    "zh-cn",
+    "zh-tw",
+    "simplified-chinese",
 ];
 
 static ENV_EXCLUSION_PATTERNS: Lazy<Vec<String>> = Lazy::new(|| {
@@ -919,11 +929,44 @@ pub fn get_score_for_subhub(
 }
 
 pub fn is_excluded(normalized_text: &str, tokens: &HashSet<String>) -> bool {
+    // 1. Keyword-based exclusions (Blacklist)
     for pattern in ENV_EXCLUSION_PATTERNS.iter() {
         if tokens.contains(pattern.as_str()) || normalized_text.contains(pattern) {
             return true;
         }
     }
+
+    // 2. Strict Language/Script filtering (Allowlist approach)
+    // We strictly allow ONLY Basic Latin (English), Arabic characters, and common punctuation/numbers.
+    // This blocks CJK, Cyrillic, Spanish (accented), French (accented), etc.
+    for c in normalized_text.chars() {
+        // Allow whitespace, digits, and standard ASCII punctuation
+        if c.is_ascii_whitespace() || c.is_ascii_punctuation() || c.is_ascii_digit() {
+            continue;
+        }
+
+        let u = c as u32;
+
+        // Basic Latin (A-Z, a-z)
+        if (u >= 0x0041 && u <= 0x005A) || (u >= 0x0061 && u <= 0x007A) {
+            continue;
+        }
+
+        // Arabic block (\u0600-\u06FF)
+        if u >= 0x0600 && u <= 0x06FF {
+            continue;
+        }
+
+        // Arabic Supplement and Extended blocks
+        if (u >= 0x0750 && u <= 0x077F) || (u >= 0x08A0 && u <= 0x08FF) {
+            continue;
+        }
+
+        // If the character is NOT in any of the above allowed ranges, it's an UNWANTED script/language.
+        // This handles Chinese, Japanese, Russian, Spanish accents, etc.
+        return true;
+    }
+
     false
 }
 

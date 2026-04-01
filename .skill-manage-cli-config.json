@@ -1,6 +1,4 @@
 {
-  "repo_root": "C:\\Users\\ASUS\\production\\skill-manage\\",
-  "workspace_root": "C:\\Users\\ASUS\\production\\temp_sync\\",
   "repositories": [
     {
       "name": "affaan-m-everything-claude-code",
@@ -558,11 +556,4 @@
       "branch": null
     }
   ]
-  ,
-  "tools": [
-    "antigravity",
-    "copilot",
-    "gemini"
-  ],
-  "sync_scope": "local"
 }

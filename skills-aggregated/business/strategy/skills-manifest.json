@@ -1,7 +1,15 @@
 {
-  "generated_at_unix": 1775073184,
+  "generated_at_unix": 1775075184,
   "hub": "business",
   "skills": [
+    {
+      "description": "Analyze competitor strategies, content, pricing, ads, and market positioning across Google Maps, Booking.com, Facebook, Instagram, YouTube, and TikTok.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "apify-competitor-intelligence",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/apify-competitor-intelligence/SKILL.md",
+      "triggers": "apify;competitor;intelligence"
+    },
     {
       "description": "When the user wants to create or update their app marketing context document. Also use when the user mentions \"app context\", \"marketing brief\", \"app positioning\", or when starting any ASO or app marketing project. This is the foundation skill — all other skills check for this context first.",
       "phase": 4,
@@ -9,6 +17,14 @@
       "skill_id": "app-marketing-context",
       "src_path": "lib/eronred-aso-skills/skills/app-marketing-context/SKILL.md",
       "triggers": "app;marketing;context"
+    },
+    {
+      "description": "Auri: assistente de voz inteligente (Alexa + Claude claude-opus-4-20250805). Visao do produto, persona Vitoria Neural, stack AWS, modelo Free/Pro/Business/Enterprise, roadmap 4 fases, GTM, north star WAC e analise competitiva.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "auri-core",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/skills/auri-core/SKILL.md",
+      "triggers": "voice-assistant;product-vision;alexa;aws"
     },
     {
       "description": "Identify the first beachhead market segment for a product launch. Evaluates segments against burning pain, willingness to pay, winnable market share, and referral potential. Use when choosing a first market, targeting an initial customer segment, or planning market entry strategy.",
@@ -41,6 +57,14 @@
       "skill_id": "competitive-battlecard",
       "src_path": "lib/phuryn-pm-skills/pm-go-to-market/skills/competitive-battlecard/SKILL.md",
       "triggers": "competitive;battlecard"
+    },
+    {
+      "description": "Comprehensive frameworks for analyzing competition, identifying differentiation opportunities, and developing winning market positioning strategies.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "competitive-landscape",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/competitive-landscape/SKILL.md",
+      "triggers": "competitive;landscape"
     },
     {
       "description": "When the user wants to analyze competitors' App Store strategy, find keyword gaps, or understand competitive positioning. Also use when the user mentions \"competitor analysis\", \"competitive research\", \"keyword gap\", \"what are my competitors doing\", or \"compare my app to\". For keyword-specific research, see keyword-research. For metadata writing, see metadata-optimization.",
@@ -313,6 +337,14 @@
       "skill_id": "startup-canvas",
       "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/startup-canvas/SKILL.md",
       "triggers": "startup;canvas"
+    },
+    {
+      "description": "Comprehensive guide to tracking, calculating, and optimizing key performance metrics for different startup business models from seed through Series A.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "startup-metrics-framework",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/startup-metrics-framework/SKILL.md",
+      "triggers": "startup;metrics;framework"
     },
     {
       "description": "Generate value proposition statements for marketing, sales, and onboarding from existing value propositions. Use when writing marketing copy, creating sales messaging, or crafting onboarding messages.",

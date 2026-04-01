@@ -1,9 +1,12 @@
 {
-  "count": 3,
+  "count": 6,
   "hub": "server-side",
   "skills": [
+    "aws-serverless",
     "azure-cloud-migrate",
     "cloudflare-d1",
+    "cloudflare-workers-expert",
+    "hono",
     "latchbio-integration"
   ],
   "sub_hub": "serverless-edge"

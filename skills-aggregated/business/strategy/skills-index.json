@@ -1,12 +1,15 @@
 {
-  "count": 42,
+  "count": 46,
   "hub": "business",
   "skills": [
+    "apify-competitor-intelligence",
     "app-marketing-context",
+    "auri-core",
     "beachhead-segment",
     "business-model",
     "company-research",
     "competitive-battlecard",
+    "competitive-landscape",
     "competitor-analysis",
     "competitor-intel",
     "content-idea-generator",
@@ -41,6 +44,7 @@
     "roadmap-planning",
     "seo-plan",
     "startup-canvas",
+    "startup-metrics-framework",
     "value-prop-statements",
     "value-proposition",
     "write-a-prd"

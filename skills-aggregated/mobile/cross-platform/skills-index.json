@@ -1,8 +1,12 @@
 {
-  "count": 4,
+  "count": 8,
   "hub": "mobile",
   "skills": [
-    "flutter-dart-code-review",
+    "app-store-optimization",
+    "development",
+    "flutter-expert",
+    "mobile-developer",
+    "mobile-games",
     "performing-mobile-device-forensics-with-cellebrite",
     "react-native",
     "seo-technical"

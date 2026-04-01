@@ -1,7 +1,15 @@
 {
-  "generated_at_unix": 1775073184,
+  "generated_at_unix": 1775075184,
   "hub": "code-quality",
   "skills": [
+    {
+      "description": "Security audit, hardening, threat modeling (STRIDE/PASTA), Red/Blue Team, OWASP checks, code review, incident response, and infrastructure security for any project.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "007",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/007/SKILL.md",
+      "triggers": "security;audit;owasp;threat-modeling;hardening;pentest"
+    },
     {
       "description": "This skill helps Claude write secure web applications. Use this when working on any web application or when a user requests a scan or audit to ensure security best practices are followed.",
       "phase": 1,
@@ -9,6 +17,22 @@
       "skill_id": "VibeSec-Skill",
       "src_path": "lib/behisecc-vibesec-skill/SKILL.md",
       "triggers": "vibesec;skill"
+    },
+    {
+      "description": "Audits GitHub Actions workflows for security vulnerabilities in AI agent integrations including Claude Code Action, Gemini CLI, OpenAI Codex, and GitHub AI Inference. Detects attack vectors where attacker-controlled input reaches. AI agents running in CI/CD pipelines.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "agentic-actions-auditor",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/agentic-actions-auditor/SKILL.md",
+      "triggers": "agentic;actions;auditor"
+    },
+    {
+      "description": "Email infrastructure for AI agents. Create accounts, send/receive emails, manage webhooks, and check karma balance via the AgentMail API.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "agentmail",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/agentmail/SKILL.md",
+      "triggers": "agentmail"
     },
     {
       "description": "Parses API Gateway access logs (AWS API Gateway, Kong, Nginx) to detect BOLA/IDOR attacks, rate limit bypass, credential scanning, and injection attempts. Uses pandas for statistical analysis of request patterns and anomaly detection. Use when investigating API abuse or building API-specific threat detection rules.",
@@ -355,6 +379,30 @@
       "triggers": "soc;splunk;windows-events;sysmon;event-logs;mitre-attack;active-directory"
     },
     {
+      "description": "Master AngularJS to Angular migration, including hybrid apps, component conversion, dependency injection changes, and routing migration.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "angular-migration",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/angular-migration/SKILL.md",
+      "triggers": "angular;migration"
+    },
+    {
+      "description": "AUTHORIZED USE ONLY: This skill contains dual-use security techniques. Before proceeding with any bypass or analysis: > 1.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "anti-reversing-techniques",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/anti-reversing-techniques/SKILL.md",
+      "triggers": "anti;reversing;techniques"
+    },
+    {
+      "description": "Orchestrate multiple Antigravity skills through guided workflows for SaaS MVP delivery, security audits, AI agent builds, and browser QA.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "antigravity-workflows",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/antigravity-workflows/SKILL.md",
+      "triggers": "antigravity;workflows"
+    },
+    {
       "description": "Guidance for using asc cli in this repo (flags, output formats, pagination, auth, and discovery). Use when asked to run or design asc commands or interact with App Store Connect via the CLI.",
       "phase": 1,
       "score": 100,
@@ -369,6 +417,30 @@
       "skill_id": "atlassian",
       "src_path": "lib/sanjay3290-ai-skills/skills/atlassian/SKILL.md",
       "triggers": "atlassian"
+    },
+    {
+      "description": "Build comprehensive attack trees to visualize threat paths. Use when mapping attack scenarios, identifying defense gaps, or communicating security risks to stakeholders.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "attack-tree-construction",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/attack-tree-construction/SKILL.md",
+      "triggers": "attack;tree;construction"
+    },
+    {
+      "description": "Enables ultra-granular, line-by-line code analysis to build deep architectural context before vulnerability or bug finding.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "audit-context-building",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/audit-context-building/SKILL.md",
+      "triggers": "audit;context;building"
+    },
+    {
+      "description": "Expert security auditor for AI Skills and Bundles. Performs non-intrusive static analysis to identify malicious patterns, data leaks, system stability risks, and obfuscated payloads across Windows, macOS, Linux/Unix, and Mobile (Android/iOS).",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "audit-skills",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/skills/audit-skills/SKILL.md",
+      "triggers": "security;audit;skills;bundles;cross-platform"
     },
     {
       "description": "Systematically audit AWS S3 bucket permissions to identify publicly accessible buckets, overly permissive ACLs, misconfigured bucket policies, and missing encryption settings using AWS CLI, S3audit, and Prowler to enforce least-privilege data access controls.",
@@ -419,6 +491,14 @@
       "triggers": "cloud-security;terraform;infrastructure-as-code;checkov;tfsec;policy-as-code"
     },
     {
+      "description": "Build secure, scalable authentication and authorization systems using industry-standard patterns and modern best practices.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "auth-implementation-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/auth-implementation-patterns/SKILL.md",
+      "triggers": "auth;implementation;patterns"
+    },
+    {
       "description": "Automates the enrichment of raw indicators of compromise with multi-source threat intelligence context using SOAR platforms, Python pipelines, or TIP playbooks to reduce analyst triage time and standardize enrichment outputs. Use when building automated enrichment workflows integrated with SIEM alerts, email submission pipelines, or bulk IOC processing from threat feeds. Activates for requests involving SOAR enrichment, Cortex XSOAR, Splunk SOAR, TheHive, Python enrichment pipelines, or automated IOC processing.",
       "phase": 1,
       "score": 100,
@@ -435,6 +515,14 @@
       "triggers": "aws;cdk;development"
     },
     {
+      "description": "Automated compliance checking against CIS, PCI-DSS, HIPAA, and SOC 2 benchmarks",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "aws-compliance-checker",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/security/aws-compliance-checker/SKILL.md",
+      "triggers": "[aws, compliance, audit, cis, pci-dss, hipaa, kiro-cli]"
+    },
+    {
       "description": "AWS cost optimization, monitoring, and operational excellence expert. Use when analyzing AWS bills, estimating costs, setting up CloudWatch alarms, querying logs, auditing CloudTrail activity, or assessing security posture. Essential when user mentions AWS costs, spending, billing, budget, pricing, CloudWatch, observability, monitoring, alerting, CloudTrail, audit, or wants to optimize AWS infrastructure costs and operational efficiency.",
       "phase": 1,
       "score": 100,
@@ -443,12 +531,52 @@
       "triggers": "aws;cost;operations"
     },
     {
+      "description": "IAM policy review, hardening, and least privilege implementation",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "aws-iam-best-practices",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/security/aws-iam-best-practices/SKILL.md",
+      "triggers": "[aws, iam, security, access-control, kiro-cli, least-privilege]"
+    },
+    {
       "description": "Configure AWS MCP servers for documentation search and API access. Use when setting up AWS MCP, configuring AWS documentation tools, troubleshooting MCP connectivity, or when user mentions aws-mcp, awsdocs, uvx setup, or MCP server configuration. Covers both Full AWS MCP Server (with uvx + credentials) and lightweight Documentation MCP (no auth required).",
       "phase": 1,
       "score": 100,
       "skill_id": "aws-mcp-setup",
       "src_path": "lib/zxkane-aws-skills/plugins/aws-common/skills/aws-mcp-setup/SKILL.md",
       "triggers": "aws;mcp;setup"
+    },
+    {
+      "description": "Automate AWS secrets rotation for RDS, API keys, and credentials",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "aws-secrets-rotation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/security/aws-secrets-rotation/SKILL.md",
+      "triggers": "[aws, secrets-manager, security, automation, kiro-cli, credentials]"
+    },
+    {
+      "description": "Comprehensive AWS security posture assessment using AWS CLI and security best practices",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "aws-security-audit",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/security/aws-security-audit/SKILL.md",
+      "triggers": "[aws, security, audit, compliance, kiro-cli, security-assessment]"
+    },
+    {
+      "description": "AWS development with infrastructure automation and cloud architecture patterns",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "aws-skills",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/aws-skills/SKILL.md",
+      "triggers": "aws;skills"
+    },
+    {
+      "description": "Deploy containerized frontend + backend applications to Azure Container Apps with remote builds, managed identity, and idempotent infrastructure.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azd-deployment",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/azd-deployment/SKILL.md",
+      "triggers": "azd;deployment"
     },
     {
       "description": "Run Azure compliance and security audits with azqr plus Key Vault expiration checks. Covers best-practice assessment, resource review, policy/compliance validation, and security posture checks. WHEN: compliance scan, security audit, BEFORE running azqr (compliance cli tool), Azure best practices, Key Vault expiration check, expired certificates, expiring secrets, orphaned resources, compliance assessment.",
@@ -529,6 +657,38 @@
       "skill_id": "azure-security-keyvault-keys-java",
       "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-security-keyvault-keys-java/SKILL.md",
       "triggers": "azure;security;keyvault;keys;java"
+    },
+    {
+      "description": "Expert in secure backend coding practices specializing in input validation, authentication, and API security. Use PROACTIVELY for backend security implementations or security code reviews.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "backend-security-coder",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/backend-security-coder/SKILL.md",
+      "triggers": "backend;security;coder"
+    },
+    {
+      "description": "X-ray any AI model's behavioral patterns — refusal boundaries, hallucination tendencies, reasoning style, formatting defaults. No API key needed.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "bdistill-behavioral-xray",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bdistill-behavioral-xray/SKILL.md",
+      "triggers": "ai;testing;behavioral-analysis;model-evaluation;red-team;compliance;mcp"
+    },
+    {
+      "description": "Identify and exploit authentication and session management vulnerabilities in web applications. Broken authentication consistently ranks in the OWASP Top 10 and can lead to account takeover, identity theft, and unauthorized access to sensitive systems.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "broken-authentication",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/broken-authentication/SKILL.md",
+      "triggers": "broken;authentication"
+    },
+    {
+      "description": "You extend the browser to give users superpowers. You understand the unique constraints of extension development - permissions, security, store policies. You build extensions that people install and actually use daily. You know the difference between a toy and a tool.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "browser-extension-builder",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/browser-extension-builder/SKILL.md",
+      "triggers": "browser;extension;builder"
     },
     {
       "description": "Build an automated system to track adversary infrastructure using passive DNS, certificate transparency, WHOIS data, and IP enrichment to map and monitor threat actor command-and-control networks.",
@@ -715,12 +875,92 @@
       "triggers": "soc;vulnerability-scanning;nessus;qualys;openvas;cvss;remediation;patch-management"
     },
     {
+      "description": "Execute comprehensive web application security testing using Burp Suite's integrated toolset, including HTTP traffic interception and modification, request analysis and replay, automated vulnerability scanning, and manual testing workflows.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "burp-suite-testing",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/burp-suite-testing/SKILL.md",
+      "triggers": "burp;suite;testing"
+    },
+    {
+      "description": "Searches and explores Burp Suite project files (.burp) from the command line. Use when searching response headers or bodies with regex patterns, extracting security audit findings, dumping proxy history or site map data, or analyzing HTTP traffic captured in a Burp project.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "burpsuite-project-parser",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/burpsuite-project-parser/SKILL.md",
+      "triggers": "burpsuite;project;parser"
+    },
+    {
       "description": "Discovering and accessing unprotected pages, APIs, and administrative interfaces by enumerating URLs and bypassing authentication controls during authorized security assessments.",
       "phase": 1,
       "score": 100,
       "skill_id": "bypassing-authentication-with-forced-browsing",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/bypassing-authentication-with-forced-browsing/SKILL.md",
       "triggers": "penetration-testing;authentication-bypass;forced-browsing;ffuf;directory-enumeration;owasp"
+    },
+    {
+      "description": "This skill ensures all code follows security best practices and identifies potential vulnerabilities. Use when implementing authentication or authorization, handling user input or file uploads, or creating new API endpoints.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "cc-skill-security-review",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/cc-skill-security-review/SKILL.md",
+      "triggers": "cc;skill;security;review"
+    },
+    {
+      "description": "Common AWS CDK patterns and constructs for building cloud infrastructure with TypeScript, Python, or Java. Use when designing reusable CDK stacks and L3 constructs.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "cdk-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/cdk-patterns/SKILL.md",
+      "triggers": "cdk;patterns"
+    },
+    {
+      "description": "Expert patterns for Clerk auth implementation, middleware, organizations, webhooks, and user sync Use when: adding authentication, clerk auth, user authentication, sign in, sign up.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "clerk-auth",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/clerk-auth/SKILL.md",
+      "triggers": "clerk;auth"
+    },
+    {
+      "description": "Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC (Terraform/OpenTofu/CDK), FinOps cost optimization, and modern architectural patterns.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "cloud-architect",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/cloud-architect/SKILL.md",
+      "triggers": "cloud;architect"
+    },
+    {
+      "description": "Conduct comprehensive security assessments of cloud infrastructure across Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP).",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "cloud-penetration-testing",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/cloud-penetration-testing/SKILL.md",
+      "triggers": "cloud;penetration;testing"
+    },
+    {
+      "description": "Comprehensive checklist for conducting thorough code reviews covering functionality, security, performance, and maintainability",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "code-review-checklist",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/code-review-checklist/SKILL.md",
+      "triggers": "code;review;checklist"
+    },
+    {
+      "description": "Deep audit before GitHub push: removes junk files, dead code, security holes, and optimization issues. Checks every file line-by-line for production readiness.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "codebase-audit-pre-push",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/codebase-audit-pre-push/SKILL.md",
+      "triggers": "codebase;audit;pre;push"
+    },
+    {
+      "description": "You are a dependency security expert specializing in vulnerability scanning, license compliance, and supply chain security. Analyze project dependencies for known vulnerabilities, licensing issues, outdated packages, and provide actionable remediation strategies.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "codebase-cleanup-deps-audit",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/codebase-cleanup-deps-audit/SKILL.md",
+      "triggers": "codebase;cleanup;deps;audit"
     },
     {
       "description": "Systematically collects, categorizes, and distributes indicators of compromise (IOCs) during and after security incidents to enable detection, blocking, and threat intelligence sharing. Covers network, host, email, and behavioral indicators using STIX/TAXII formats and threat intelligence platforms. Activates for requests involving IOC collection, indicator extraction, threat indicator sharing, compromise indicators, STIX export, or IOC enrichment.",
@@ -1011,6 +1251,14 @@
       "triggers": "continual;learning"
     },
     {
+      "description": "Convex reactive backend expert: schema design, TypeScript functions, real-time subscriptions, auth, file storage, scheduling, and deployment.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "convex",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/convex/SKILL.md",
+      "triggers": "convex"
+    },
+    {
       "description": "Correlates security events in IBM QRadar SIEM using AQL (Ariel Query Language), custom rules, building blocks, and offense management to detect multi-stage attacks across network, endpoint, and application log sources. Use when SOC analysts need to investigate QRadar offenses, build correlation rules, or tune detection logic for reducing false positives.",
       "phase": 1,
       "score": 100,
@@ -1043,6 +1291,14 @@
       "triggers": "creating;skills"
     },
     {
+      "description": "CISO operacional enterprise para gestao total de credenciais e segredos.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "cred-omega",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/cred-omega/SKILL.md",
+      "triggers": "credentials;secrets;security;api-keys;vault"
+    },
+    {
       "description": "Centralized API key management from Access.txt",
       "phase": 1,
       "score": 100,
@@ -1057,6 +1313,22 @@
       "skill_id": "cso",
       "src_path": "lib/garrytan-gstack/cso/SKILL.md",
       "triggers": "cso"
+    },
+    {
+      "description": "You are a cloud cost optimization expert specializing in reducing infrastructure expenses while maintaining performance and reliability. Analyze cloud spending, identify savings opportunities, and implement cost-effective architectures across AWS, Azure, and GCP.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "database-cloud-optimization-cost-optimize",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/database-cloud-optimization-cost-optimize/SKILL.md",
+      "triggers": "database;cloud;optimization;cost;optimize"
+    },
+    {
+      "description": "Migration monitoring, CDC, and observability infrastructure",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "database-migrations-migration-observability",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/database-migrations-migration-observability/SKILL.md",
+      "triggers": "database, cdc, debezium, kafka, prometheus, grafana, monitoring"
     },
     {
       "description": "Systematically deobfuscate multi-layer PowerShell malware using AST analysis, dynamic tracing, and tools like PSDecode and PowerDecode to reveal hidden payloads and C2 infrastructure.",
@@ -1739,6 +2011,14 @@
       "triggers": "dflow"
     },
     {
+      "description": "Security-focused code review for PRs, commits, and diffs.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "differential-review",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/differential-review/SKILL.md",
+      "triggers": "differential;review"
+    },
+    {
       "description": "Django security best practices, authentication, authorization, CSRF protection, SQL injection prevention, XSS prevention, and secure deployment configurations.",
       "phase": 1,
       "score": 100,
@@ -1755,6 +2035,14 @@
       "triggers": "django;verification"
     },
     {
+      "description": "You are an advanced Docker containerization expert with comprehensive, practical knowledge of container optimization, security hardening, multi-stage builds, orchestration patterns, and production deployment strategies based on current industry best practices.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "docker-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/docker-expert/SKILL.md",
+      "triggers": "docker;expert"
+    },
+    {
       "description": "Guides Microsoft Entra ID app registration, OAuth 2.0 authentication, and MSAL integration. USE FOR: create app registration, register Azure AD app, configure OAuth, set up authentication, add API permissions, generate service principal, MSAL example, console app auth, Entra ID setup, Azure AD authentication. DO NOT USE FOR: Azure RBAC or role assignments (use azure-rbac), Key Vault secrets (use azure-keyvault-expiration-audit), Azure resource security (use azure-security).",
       "phase": 1,
       "score": 100,
@@ -1763,12 +2051,28 @@
       "triggers": "entra;app;registration"
     },
     {
+      "description": "Master the complete penetration testing lifecycle from reconnaissance through reporting. This skill covers the five stages of ethical hacking methodology, essential tools, attack techniques, and professional reporting for authorized security assessments.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "ethical-hacking-methodology",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/ethical-hacking-methodology/SKILL.md",
+      "triggers": "ethical;hacking;methodology"
+    },
+    {
       "description": "Evaluates and selects Threat Intelligence Platform (TIP) products based on organizational requirements including feed integration capability, STIX/TAXII support, workflow automation, analyst interface, and total cost of ownership. Use when conducting a TIP procurement, migrating between TIP solutions, or assessing whether the current TIP meets program maturity requirements. Activates for requests involving ThreatConnect, MISP, OpenCTI, Anomali, EclecticIQ, or TIP procurement decisions.",
       "phase": 1,
       "score": 100,
       "skill_id": "evaluating-threat-intelligence-platforms",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/evaluating-threat-intelligence-platforms/SKILL.md",
       "triggers": "TIP;ThreatConnect;MISP;OpenCTI;Anomali;EclecticIQ;STIX-TAXII;CTI-program;procurement"
+    },
+    {
+      "description": "Design and implement event stores for event-sourced systems. Use when building event sourcing infrastructure, choosing event store technologies, or implementing event persistence patterns.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "event-store-design",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/event-store-design/SKILL.md",
+      "triggers": "event;store;design"
     },
     {
       "description": "Executes authorized attack simulations against Active Directory environments to identify misconfigurations, weak credentials, dangerous privilege paths, and exploitable trust relationships that could lead to domain compromise. The tester uses BloodHound for attack path analysis, Mimikatz for credential extraction, and Impacket for protocol-level attacks including Kerberoasting, AS-REP Roasting, and delegation abuse. Activates for requests involving Active Directory pentest, AD attack simulation, domain compromise testing, or Kerberos attack assessment.",
@@ -2035,12 +2339,44 @@
       "triggers": "malware;IOC-extraction;threat-intelligence;indicators;detection"
     },
     {
+      "description": "Identify and exploit file path traversal (directory traversal) vulnerabilities that allow attackers to read arbitrary files on the server, potentially including sensitive configuration files, credentials, and source code.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "file-path-traversal",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/file-path-traversal/SKILL.md",
+      "triggers": "file;path;traversal"
+    },
+    {
+      "description": "Careful about security and performance. Never trusts file extensions. Knows that large uploads need special handling. Prefers presigned URLs over server proxying.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "file-uploads",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/file-uploads/SKILL.md",
+      "triggers": "file;uploads"
+    },
+    {
+      "description": "Find bugs, security vulnerabilities, and code quality issues in local branch changes. Use when asked to review changes, find bugs, security review, or audit code on the current branch.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "find-bugs",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/find-bugs/SKILL.md",
+      "triggers": "find;bugs"
+    },
+    {
       "description": "Firebase Firestore, Auth, Storage, real-time listeners, security rules",
       "phase": 1,
       "score": 100,
       "skill_id": "firebase",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/firebase/SKILL.md",
       "triggers": "firebase"
+    },
+    {
+      "description": "Expert firmware analyst specializing in embedded systems, IoT security, and hardware reverse engineering.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "firmware-analyst",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/firmware-analyst/SKILL.md",
+      "triggers": "firmware;analyst"
     },
     {
       "description": "Review and create distinctive, production-grade frontend interfaces with high design quality and design system compliance. Evaluates using three pillars: frictionless insight-to-action, quality craft, and trustworthy building. USE FOR: PR reviews, design reviews, accessibility audits, design system compliance checks, creative frontend design, UI code review, component reviews, responsive design checks, theme testing, and creating memorable UI. DO NOT USE FOR: Backend API reviews, database schema reviews, infrastructure or DevOps work, pure business logic without UI, or non-frontend code.",
@@ -2051,12 +2387,20 @@
       "triggers": "frontend;design;review"
     },
     {
-      "description": "Elite incident response and legal compliance guidance for data breaches under GDPR Articles 33 & 34. Use when: (1) User reports a data breach or security incident, (2) User asks about breach notification obligations or deadlines, (3) User mentions \"72 hours\", Art. 33, Art. 34, or notification requirements, (4) Discussion involves security incidents affecting personal data, (5) User needs breach risk assessment using ENISA methodology, (6) User mentions \"Data Breach\" or \"Incident\" or \"Data Leakage\" or \"Ransomeware\" or \"Exfiltration\", (7) User needs to determine Controller vs Processor obligations, (8) Cross-border breach scenarios requiring Lead SA determination, (9) User needs a mitigation playbook or immediate response recommendations, (10) User needs to generate audit-ready breach documentation (.docx).",
+      "description": "You are a frontend security specialist focusing on Cross-Site Scripting (XSS) vulnerability detection and prevention. Analyze React, Vue, Angular, and vanilla JavaScript code to identify injection poi",
       "phase": 1,
       "score": 100,
-      "skill_id": "gdpr-breach-sentinel-oliver-schmidt-prietz",
-      "src_path": "lib/lawvable-awesome-legal-skills/skills/gdpr-breach-sentinel-oliver-schmidt-prietz/SKILL.md",
-      "triggers": "gdpr;breach;sentinel;oliver;schmidt"
+      "skill_id": "frontend-mobile-security-xss-scan",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/frontend-mobile-security-xss-scan/SKILL.md",
+      "triggers": "frontend;mobile;security;xss;scan"
+    },
+    {
+      "description": "Expert in secure frontend coding practices specializing in XSS prevention, output sanitization, and client-side security patterns.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "frontend-security-coder",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/frontend-security-coder/SKILL.md",
+      "triggers": "frontend;security;coder"
     },
     {
       "description": "Use this skill when building real-time, bidirectional streaming applications with the Gemini Live API. Covers WebSocket-based audio/video/text streaming, voice activity detection (VAD), native audio features, function calling, session management, ephemeral tokens for client-side auth, and all Live API configuration options. SDKs covered - google-genai (Python), @google/genai (JavaScript/TypeScript).",
@@ -2075,6 +2419,14 @@
       "triggers": "CTI;threat-intelligence;intelligence-products;TLP;PIR;report-writing;NIST-CSF"
     },
     {
+      "description": "Find exploitable vulnerabilities in GitHub Actions workflows. Every finding MUST include a concrete exploitation scenario — if you can't build the attack, don't report it.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "gha-security-review",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/gha-security-review/SKILL.md",
+      "triggers": "gha;security;review"
+    },
+    {
       "description": "Interact with Gmail - search emails, read messages, send emails, create drafts, and manage labels. Use when user asks to: search email, read email, send email, create email draft, mark as read, archive email, star email, or manage Gmail labels. Lightweight alternative to full Google Workspace MCP server with standalone OAuth authentication.",
       "phase": 1,
       "score": 100,
@@ -2083,12 +2435,28 @@
       "triggers": "gmail"
     },
     {
+      "description": "Lightweight Gmail integration with standalone OAuth authentication. No MCP server required.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "gmail-automation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/gmail-automation/SKILL.md",
+      "triggers": "gmail;automation"
+    },
+    {
       "description": "Interact with Google Calendar - list calendars, view events, create/update/delete events, and find free time. Use when user asks to: check calendar, schedule a meeting, create an event, find available time, list upcoming events, delete or update a calendar event, or respond to meeting invitations. Lightweight alternative to full Google Workspace MCP server with standalone OAuth authentication.",
       "phase": 1,
       "score": 100,
       "skill_id": "google-calendar",
       "src_path": "lib/sanjay3290-ai-skills/skills/google-calendar/SKILL.md",
       "triggers": "google;calendar"
+    },
+    {
+      "description": "Lightweight Google Calendar integration with standalone OAuth authentication. No MCP server required.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "google-calendar-automation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/google-calendar-automation/SKILL.md",
+      "triggers": "google;calendar;automation"
     },
     {
       "description": "Interact with Google Chat - list spaces, send messages, read conversations, and manage DMs. Use when user asks to: send a message on Google Chat, read chat messages, list chat spaces, find a chat room, send a DM, or create a new chat space. Lightweight alternative to full Google Workspace MCP server with standalone OAuth authentication.",
@@ -2107,12 +2475,28 @@
       "triggers": "google;docs"
     },
     {
+      "description": "Lightweight Google Docs integration with standalone OAuth authentication. No MCP server required.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "google-docs-automation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/google-docs-automation/SKILL.md",
+      "triggers": "google;docs;automation"
+    },
+    {
       "description": "Interact with Google Drive - search files, find folders, list contents, download files, upload files, create folders, move, copy, rename, and trash files. Use when user asks to: search Google Drive, find a file/folder, list Drive contents, download or upload files, create folders, move files, or organize Drive content. Lightweight integration with standalone OAuth authentication supporting full read/write access.",
       "phase": 1,
       "score": 100,
       "skill_id": "google-drive",
       "src_path": "lib/sanjay3290-ai-skills/skills/google-drive/SKILL.md",
       "triggers": "google;drive"
+    },
+    {
+      "description": "Lightweight Google Drive integration with standalone OAuth authentication. No MCP server required. Full read/write access.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "google-drive-automation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/google-drive-automation/SKILL.md",
+      "triggers": "google;drive;automation"
     },
     {
       "description": "Read and write Google Sheets spreadsheets - get content, update cells, append rows, fetch specific ranges, search for spreadsheets, and view metadata. Use when user asks to: read a spreadsheet, update cells, add data to Google Sheets, find a spreadsheet, check sheet contents, export spreadsheet data, or get cell values. Lightweight integration with standalone OAuth authentication supporting full read/write access.",
@@ -2123,12 +2507,36 @@
       "triggers": "google;sheets"
     },
     {
+      "description": "Lightweight Google Sheets integration with standalone OAuth authentication. No MCP server required. Full read/write access.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "google-sheets-automation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/google-sheets-automation/SKILL.md",
+      "triggers": "google;sheets;automation"
+    },
+    {
       "description": "Read and write Google Slides presentations - get text, find presentations, create presentations, add slides, replace text, and manage slide content. Use when user asks to: read a presentation, create slides, find slides, add a slide, replace text in a presentation, or manage presentation content. Lightweight integration with standalone OAuth authentication supporting full read/write access.",
       "phase": 1,
       "score": 100,
       "skill_id": "google-slides",
       "src_path": "lib/sanjay3290-ai-skills/skills/google-slides/SKILL.md",
       "triggers": "google;slides"
+    },
+    {
+      "description": "Lightweight Google Slides integration with standalone OAuth authentication. No MCP server required. Full read/write access.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "google-slides-automation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/google-slides-automation/SKILL.md",
+      "triggers": "google;slides;automation"
+    },
+    {
+      "description": "Master modern GraphQL with federation, performance optimization, and enterprise security. Build scalable schemas, implement advanced caching, and design real-time systems.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "graphql-architect",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/graphql-architect/SKILL.md",
+      "triggers": "graphql;architect"
     },
     {
       "description": "Hardening Docker containers for production involves applying security best practices aligned with CIS Docker Benchmark v1.8.0 to minimize attack surface, prevent privilege escalation, and enforce leas",
@@ -2169,6 +2577,14 @@
       "skill_id": "healthcare-phi-compliance",
       "src_path": "lib/affaan-m-everything-claude-code/skills/healthcare-phi-compliance/SKILL.md",
       "triggers": "healthcare;phi;compliance"
+    },
+    {
+      "description": "Identify and exploit HTML injection vulnerabilities that allow attackers to inject malicious HTML content into web applications. This vulnerability enables attackers to modify page appearance, create phishing pages, and steal user credentials through injected forms.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "html-injection-testing",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/html-injection-testing/SKILL.md",
+      "triggers": "html;injection;testing"
     },
     {
       "description": "Proactively hunts for Advanced Persistent Threat (APT) activity within enterprise environments using hypothesis-driven searches across endpoint telemetry, network logs, and memory artifacts. Use when conducting scheduled threat hunting cycles, investigating anomalous behavior flagged by UEBA, or validating that known APT TTPs are not present in the environment. Activates for requests involving MITRE ATT&CK, Velociraptor, osquery, Zeek, or threat hunting playbooks.",
@@ -2425,6 +2841,14 @@
       "skill_id": "hunting-for-webshell-activity",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/hunting-for-webshell-activity/SKILL.md",
       "triggers": "threat-hunting;mitre-attack;webshell;persistence;web-server;t1505;proactive-detection"
+    },
+    {
+      "description": "Provide systematic methodologies for identifying and exploiting Insecure Direct Object Reference (IDOR) vulnerabilities in web applications.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "idor-testing",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/idor-testing/SKILL.md",
+      "triggers": "idor;testing"
     },
     {
       "description": "AES (Advanced Encryption Standard) is a symmetric block cipher standardized by NIST (FIPS 197) used to protect classified and sensitive data. This skill covers implementing AES-256 encryption in GCM m",
@@ -3355,6 +3779,14 @@
       "triggers": "zero-trust;hashicorp;boundary;privileged-access;vault;identity-aware-proxy;session-recording;just-in-time-access"
     },
     {
+      "description": "You are an Inngest expert who builds reliable background processing without managing infrastructure. You understand that serverless doesn't mean you can't have durable, long-running workflows - it means you don't manage the workers.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "inngest",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/inngest/SKILL.md",
+      "triggers": "inngest"
+    },
+    {
       "description": "Connect WhatsApp to your product with Kapso: onboard customers with setup links, detect connections, receive events via webhooks, and send messages/templates/media. Also manage WhatsApp Flows (create/update/publish, data endpoints, encryption). Use when integrating WhatsApp end-to-end.",
       "phase": 1,
       "score": 100,
@@ -3395,12 +3827,28 @@
       "triggers": "Infrastructure;GPU Cloud;Training;Inference;Lambda Labs"
     },
     {
+      "description": "Senior Laravel Engineer role for production-grade, maintainable, and idiomatic Laravel solutions. Focuses on clean architecture, security, performance, and modern standards (Laravel 10/11+).",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "laravel-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/laravel-expert/SKILL.md",
+      "triggers": "laravel;expert"
+    },
+    {
       "description": "Laravel security best practices for authn/authz, validation, CSRF, mass assignment, file uploads, secrets, rate limiting, and secure deployment.",
       "phase": 1,
       "score": 100,
       "skill_id": "laravel-security",
       "src_path": "lib/affaan-m-everything-claude-code/docs/tr/skills/laravel-security/SKILL.md",
       "triggers": "laravel;security"
+    },
+    {
+      "description": "Security auditor for Laravel applications. Analyzes code for vulnerabilities, misconfigurations, and insecure practices using OWASP standards and Laravel security best practices.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "laravel-security-audit",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/laravel-security-audit/SKILL.md",
+      "triggers": "laravel;security;audit"
     },
     {
       "description": "Verification loop for Laravel projects: env checks, linting, static analysis, tests with coverage, security scans, and deployment readiness.",
@@ -3411,12 +3859,52 @@
       "triggers": "laravel;verification"
     },
     {
+      "description": "This skill should be used when the user asks to convert an academic paper in LaTeX from one format (e.g., Springer, IPOL) to another format (e.g., MDPI, IEEE, Nature). It automates extraction, injection, fixing formatting, and compiling.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "latex-paper-conversion",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/latex-paper-conversion/SKILL.md",
+      "triggers": "latex;paper;conversion"
+    },
+    {
+      "description": "Production patterns for Linkerd service mesh - the lightweight, security-first service mesh for Kubernetes.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "linkerd-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/linkerd-patterns/SKILL.md",
+      "triggers": "linkerd;patterns"
+    },
+    {
+      "description": "Execute systematic privilege escalation assessments on Linux systems to identify and exploit misconfigurations, vulnerable services, and security weaknesses that allow elevation from low-privilege user access to root-level control.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "linux-privilege-escalation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/linux-privilege-escalation/SKILL.md",
+      "triggers": "linux;privilege;escalation"
+    },
+    {
+      "description": "Provide production-ready shell script templates for common Linux system administration tasks including backups, monitoring, user management, log analysis, and automation. These scripts serve as building blocks for security operations and penetration testing environments.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "linux-shell-scripting",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/linux-shell-scripting/SKILL.md",
+      "triggers": "linux;shell;scripting"
+    },
+    {
       "description": "Microsoft 365 Agents SDK for .NET. Build multichannel agents for Teams/M365/Copilot Studio with ASP.NET Core hosting, AgentApplication routing, and MSAL-based auth. Triggers: \"Microsoft 365 Agents SDK\", \"Microsoft.Agents\", \"AddAgentApplicationOptions\", \"AgentApplication\", \"AddAgentAspNetAuthentication\", \"Copilot Studio client\", \"IAgentHttpAdapter\".",
       "phase": 1,
       "score": 100,
       "skill_id": "m365-agents-dotnet",
       "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/m365-agents-dotnet/SKILL.md",
       "triggers": "m365;agents;dotnet"
+    },
+    {
+      "description": "Expert malware analyst specializing in defensive malware research, threat intelligence, and incident response. Masters sandbox analysis, behavioral analysis, and malware family identification.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "malware-analyst",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/malware-analyst/SKILL.md",
+      "triggers": "malware;analyst"
     },
     {
       "description": "Manages the end-to-end cyber threat intelligence lifecycle from planning and direction through collection, processing, analysis, dissemination, and feedback to ensure intelligence products meet stakeholder requirements and continuously improve. Use when establishing or maturing a CTI program, defining intelligence requirements with business stakeholders, or building feedback loops between intelligence consumers and producers. Activates for requests involving CTI program maturity, intelligence requirements, PIRs, or intelligence lifecycle management.",
@@ -3433,6 +3921,22 @@
       "skill_id": "mapping-mitre-attack-techniques",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/mapping-mitre-attack-techniques/SKILL.md",
       "triggers": "MITRE-ATT&CK;ATT&CK-Navigator;Sigma;D3FEND;TTP;detection-engineering;NIST-CSF"
+    },
+    {
+      "description": "⚠️ AUTHORIZED USE ONLY > This skill is for educational purposes or authorized security assessments only. > You must have explicit, written permission from the system owner before using this tool. > Misuse of this tool is illegal and strictly prohibited.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "metasploit-framework",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/metasploit-framework/SKILL.md",
+      "triggers": "metasploit;framework"
+    },
+    {
+      "description": "Expert in secure mobile coding practices specializing in input validation, WebView security, and mobile-specific security patterns.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "mobile-security-coder",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/mobile-security-coder/SKILL.md",
+      "triggers": "mobile;security;coder"
     },
     {
       "description": "Serverless GPU cloud platform for running ML workloads. Use when you need on-demand GPU access without infrastructure management, deploying ML models as APIs, or running batch jobs with automatic scaling.",
@@ -3467,6 +3971,30 @@
       "triggers": "netlify;identity"
     },
     {
+      "description": "Configure and test common network services (HTTP, HTTPS, SNMP, SMB) for penetration testing lab environments. Enable hands-on practice with service enumeration, log analysis, and security testing against properly configured target systems.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "network-101",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/network-101/SKILL.md",
+      "triggers": "network;101"
+    },
+    {
+      "description": "Expert network engineer specializing in modern cloud networking, security architectures, and performance optimization.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "network-engineer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/network-engineer/SKILL.md",
+      "triggers": "network;engineer"
+    },
+    {
+      "description": "Expert integration of Supabase Auth with Next.js App Router Use when: supabase auth next, authentication next.js, login supabase, auth middleware, protected route.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "nextjs-supabase-auth",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/nextjs-supabase-auth/SKILL.md",
+      "triggers": "nextjs;supabase;auth"
+    },
+    {
       "description": "Use this skill to query your Google NotebookLM notebooks directly from Claude Code for source-grounded, citation-backed answers from Gemini. Browser automation, library management, persistent auth. Drastically reduced hallucinations through document-only responses.",
       "phase": 1,
       "score": 100,
@@ -3483,12 +4011,44 @@
       "triggers": "oauth, oauth2, security, authentication, authorization, jwt, fastify"
     },
     {
+      "description": "Expert in Odoo access control: ir.model.access.csv, record rules (ir.rule), groups, and multi-company security patterns.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "odoo-security-rules",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/odoo-security-rules/SKILL.md",
+      "triggers": "odoo;security;rules"
+    },
+    {
       "description": "Build Solana applications combining OKX DEX aggregation, token intelligence, and market data with Helius infrastructure. Covers DEX swaps (500+ liquidity sources), token discovery, smart money signals, meme token analysis, transaction submission via Sender, fee optimization, shred-level streaming via LaserStream, and wallet intelligence.",
       "phase": 1,
       "score": 100,
       "skill_id": "okx",
       "src_path": "lib/helius-labs-core-ai/helius-cursor/skills/okx/SKILL.md",
       "triggers": "okx"
+    },
+    {
+      "description": "Master PCI DSS (Payment Card Industry Data Security Standard) compliance for secure payment processing and handling of cardholder data.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "pci-compliance",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/pci-compliance/SKILL.md",
+      "triggers": "pci;compliance"
+    },
+    {
+      "description": "Provide a comprehensive checklist for planning, executing, and following up on penetration tests. Ensure thorough preparation, proper scoping, and effective remediation of discovered vulnerabilities.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "pentest-checklist",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/pentest-checklist/SKILL.md",
+      "triggers": "pentest;checklist"
+    },
+    {
+      "description": "Provide a comprehensive command reference for penetration testing tools including network scanning, exploitation, password cracking, and web application testing. Enable quick command lookup during security assessments.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "pentest-commands",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/pentest-commands/SKILL.md",
+      "triggers": "pentest;commands"
     },
     {
       "description": "Enumerate and audit Active Directory forest trust relationships using impacket for SID filtering analysis, trust key extraction, cross-forest SID history abuse detection, and inter-realm Kerberos ticket assessment.",
@@ -4523,14 +5083,6 @@
       "triggers": "yara;malware-detection;signature-development;threat-hunting;pattern-matching;yara-x;indicator-development"
     },
     {
-      "description": "全面的Perl安全指南，涵盖污染模式、输入验证、安全进程执行、DBI参数化查询、Web安全（XSS/SQLi/CSRF）以及perlcritic安全策略。",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "perl-security",
-      "src_path": "lib/affaan-m-everything-claude-code/docs/zh-CN/skills/perl-security/SKILL.md",
-      "triggers": "perl;security"
-    },
-    {
       "description": "Managed vector database for production AI applications. Fully managed, auto-scaling, with hybrid search (dense + sparse), metadata filtering, and namespaces. Low latency (<100ms p95). Use for production RAG, recommendation systems, or semantic search at scale. Best for serverless, managed infrastructure.",
       "phase": 1,
       "score": 100,
@@ -4555,6 +5107,14 @@
       "triggers": "vulnerability-management;cve;cvss;risk;prioritization;nist"
     },
     {
+      "description": "Use when building apps that collect user data. Ensures privacy protections are built in from the start—data minimization, consent, encryption.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "privacy-by-design",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/privacy-by-design/SKILL.md",
+      "triggers": "privacy;by;design"
+    },
+    {
       "description": "Processes STIX 2.1 threat intelligence bundles delivered via TAXII 2.1 servers, normalizing objects into platform-native schemas and routing them to appropriate consuming systems. Use when onboarding new TAXII collection endpoints, automating bi-directional intelligence sharing with ISACs, or building pipeline validation for malformed STIX bundles. Activates for requests involving OASIS STIX, TAXII server configuration, MISP TAXII, or Cortex XSOAR feed integrations.",
       "phase": 1,
       "score": 100,
@@ -4571,20 +5131,20 @@
       "triggers": "MITRE-ATT&CK;threat-actor;APT;CrowdStrike;Mandiant;attribution;kill-chain;NIST-CSF"
     },
     {
-      "description": "Security audit enforcement for AI agents. Automated security scans and health verification.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "prompt-agent",
-      "src_path": "lib/prompt-security-clawsec/skills/prompt-agent/SKILL.md",
-      "triggers": "prompt;agent"
-    },
-    {
       "description": "Meta's 86M prompt injection and jailbreak detector. Filters malicious prompts and third-party data for LLM apps. 99%+ TPR, <1% FPR. Fast (<2ms GPU). Multilingual (8 languages). Deploy with HuggingFace or batch processing for RAG security.",
       "phase": 1,
       "score": 100,
       "skill_id": "prompt-guard",
       "src_path": "lib/orchestra-research-ai-research-skills/07-safety-alignment/prompt-guard/SKILL.md",
       "triggers": "Safety Alignment;Prompt Injection;Jailbreak Detection;Meta;Input Validation;Security;Content Filtering;Multilingual"
+    },
+    {
+      "description": "Comprehensive techniques for capturing, analyzing, and documenting network protocols for security research, interoperability, and debugging.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "protocol-reverse-engineering",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/protocol-reverse-engineering/SKILL.md",
+      "triggers": "protocol;reverse;engineering"
     },
     {
       "description": "Rails 8.x application architecture, implementation, and review guidance for production codebases. Use when building or reviewing Ruby on Rails 8 features across models, controllers, routes, Hotwire, jobs, APIs, performance, security, and testing. Trigger for requests mentioning Rails 8, Active Record, Active Job, GoodJob, Solid Queue, Turbo/Stimulus, REST resources, migrations, code quality, naming, and production readiness.",
@@ -4595,6 +5155,14 @@
       "triggers": "rails;conventions"
     },
     {
+      "description": "FREE — God-tier long-context memory for AI agents. Injects 500K-1M clean tokens, auto-summarizes with tone/intent preservation, compresses 14-turn history into 800 tokens.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "recallmax",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/recallmax/SKILL.md",
+      "triggers": "memory;context;rag;summarization;compression;long-context;agent-infrastructure"
+    },
+    {
       "description": "Executes structured recovery from a ransomware incident following NIST and CISA frameworks, including environment isolation, forensic evidence preservation, clean infrastructure rebuild, prioritized system restoration from verified backups, credential reset, and validation against re-infection. Covers Active Directory recovery, database restoration, and application stack rebuild in dependency order. Activates for requests involving ransomware recovery, post-encryption restoration, or disaster recovery from ransomware.",
       "phase": 1,
       "score": 100,
@@ -4603,12 +5171,20 @@
       "triggers": "ransomware;recovery;incident-response;backup;defense"
     },
     {
-      "description": "Adversarial verification for AI-generated legal content with systematic fact-checking, source validation, and quality control. Use when User requests verification of legal documents, fact-checking of regulatory content, red team review, or quality assurance before distribution to clients/stakeholders. Provides structured verification reports with severity-categorized errors, verified sources, and distribution readiness assessment.",
+      "description": "Red team tactics principles based on MITRE ATT&CK. Attack phases, detection evasion, reporting.",
       "phase": 1,
       "score": 100,
-      "skill_id": "red-team-verifier-patrick-munro",
-      "src_path": "lib/lawvable-awesome-legal-skills/skills/red-team-verifier-patrick-munro/SKILL.md",
-      "triggers": "red;team;verifier;patrick;munro"
+      "skill_id": "red-team-tactics",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/red-team-tactics/SKILL.md",
+      "triggers": "red;team;tactics"
+    },
+    {
+      "description": "Implement proven methodologies and tool workflows from top security researchers for effective reconnaissance, vulnerability discovery, and bug bounty hunting. Automate common tasks while maintaining thorough coverage of attack surfaces.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "red-team-tools",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/red-team-tools/SKILL.md",
+      "triggers": "red;team;tools"
     },
     {
       "description": "This skill provides step-by-step procedures for identifying and remediating Amazon S3 bucket misconfigurations that expose sensitive data to unauthorized access. It covers enabling S3 Block Public Access at account and bucket levels, auditing bucket policies and ACLs, enforcing encryption, configuring access logging, and deploying automated remediation using AWS Config and Lambda.",
@@ -4633,6 +5209,30 @@
       "skill_id": "reverse-engineering-ios-app-with-frida",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/reverse-engineering-ios-app-with-frida/SKILL.md",
       "triggers": "mobile-security;ios;frida;reverse-engineering;owasp-mobile;penetration-testing"
+    },
+    {
+      "description": "Design and implement multi-tenant SaaS architectures with row-level security, tenant-scoped queries, shared-schema isolation, and safe cross-tenant admin patterns in PostgreSQL and TypeScript.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "saas-multi-tenant",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/saas-multi-tenant/SKILL.md",
+      "triggers": "multi-tenancy;saas;row-level-security;postgresql;tenant-isolation"
+    },
+    {
+      "description": "Use when planning or building a SaaS MVP from scratch. Provides a structured roadmap covering tech stack, architecture, auth, payments, and launch checklist.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "saas-mvp-launcher",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/saas-mvp-launcher/SKILL.md",
+      "triggers": "saas;mvp;launcher"
+    },
+    {
+      "description": "Static Application Security Testing (SAST) tool setup, configuration, and custom rule creation for comprehensive security scanning across multiple programming languages.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "sast-configuration",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/sast-configuration/SKILL.md",
+      "triggers": "sast;configuration"
     },
     {
       "description": "Scan container images for known vulnerabilities using Anchore Grype with SBOM-based matching and configurable severity thresholds.",
@@ -4681,6 +5281,14 @@
       "skill_id": "scanning-network-with-nmap-advanced",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/scanning-network-with-nmap-advanced/SKILL.md",
       "triggers": "network-security;nmap;port-scanning;service-enumeration;reconnaissance"
+    },
+    {
+      "description": "Master essential security scanning tools for network discovery, vulnerability assessment, web application testing, wireless security, and compliance validation. This skill covers tool selection, configuration, and practical usage across different scanning categories.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "scanning-tools",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/scanning-tools/SKILL.md",
+      "triggers": "scanning;tools"
     },
     {
       "description": "Securing API Gateway endpoints with AWS WAF by configuring managed rule groups for OWASP Top 10 protection, creating custom rate limiting rules, implementing bot control, setting up IP reputation filtering, and monitoring WAF metrics for security effectiveness.",
@@ -4779,12 +5387,52 @@
       "triggers": "security"
     },
     {
+      "description": "Comprehensive security auditing workflow covering web application testing, API security, penetration testing, vulnerability scanning, and security hardening.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "security-audit",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/security-audit/SKILL.md",
+      "triggers": "security;audit"
+    },
+    {
+      "description": "Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "security-auditor",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/security-auditor/SKILL.md",
+      "triggers": "security;auditor"
+    },
+    {
       "description": "Create or refine a concise, normative security policy (\"Blue Book\") for sensitive applications. Use when users need a threat model, data classification rules, auth/session policy, logging and audit requirements, retention/deletion expectations, incident response, or security gates for apps handling PII/PHI/financial data.",
       "phase": 1,
       "score": 100,
       "skill_id": "security-bluebook-builder",
       "src_path": "lib/shadowpr0-security-bluebook-builder/SKILL.md",
       "triggers": "security;bluebook;builder"
+    },
+    {
+      "description": "You are a compliance expert specializing in regulatory requirements for software systems including GDPR, HIPAA, SOC2, PCI-DSS, and other industry standards. Perform comprehensive compliance audits and provide implementation guidance for achieving and maintaining compliance.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "security-compliance-compliance-check",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/security-compliance-compliance-check/SKILL.md",
+      "triggers": "security;compliance;compliance;check"
+    },
+    {
+      "description": "security limits dos protection",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "security-limits-dos-protection",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/skills/security-limits-dos-protection/SKILL.md",
+      "triggers": "security;limits;dos;protection"
+    },
+    {
+      "description": "Derive security requirements from threat models and business context. Use when translating threats into actionable requirements, creating security user stories, or building security test cases.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "security-requirement-extraction",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/security-requirement-extraction/SKILL.md",
+      "triggers": "security;requirement;extraction"
     },
     {
       "description": "Use this skill when adding authentication, handling user input, working with secrets, creating API endpoints, or implementing payment/sensitive features. Provides comprehensive security checklist and patterns.",
@@ -4795,12 +5443,60 @@
       "triggers": "security;review"
     },
     {
-      "description": "AgentShield を使用して、Claude Code の設定（.claude/ ディレクトリ）のセキュリティ脆弱性、設定ミス、インジェクションリスクをスキャンします。CLAUDE.md、settings.json、MCP サーバー、フック、エージェント定義をチェックします。",
+      "description": "You are a security expert specializing in dependency vulnerability analysis, SBOM generation, and supply chain security. Scan project dependencies across multiple ecosystems to identify vulnerabilities, assess risks, and provide automated remediation strategies.",
       "phase": 1,
       "score": 100,
-      "skill_id": "security-scan",
-      "src_path": "lib/affaan-m-everything-claude-code/docs/ja-JP/skills/security-scan/SKILL.md",
-      "triggers": "security;scan"
+      "skill_id": "security-scanning-security-dependencies",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/security-scanning-security-dependencies/SKILL.md",
+      "triggers": "security;scanning;security;dependencies"
+    },
+    {
+      "description": "Coordinate multi-layer security scanning and hardening across application, infrastructure, and compliance controls.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "security-scanning-security-hardening",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/security-scanning-security-hardening/SKILL.md",
+      "triggers": "security;scanning;security;hardening"
+    },
+    {
+      "description": "Static Application Security Testing (SAST) for code vulnerability analysis across multiple languages and frameworks",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "security-scanning-security-sast",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/security-scanning-security-sast/SKILL.md",
+      "triggers": "security;scanning;security;sast"
+    },
+    {
+      "description": "Creates custom Semgrep rules for detecting security vulnerabilities, bug patterns, and code patterns. Use when writing Semgrep rules or building custom static analysis detections.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "semgrep-rule-creator",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/semgrep-rule-creator/SKILL.md",
+      "triggers": "semgrep;rule;creator"
+    },
+    {
+      "description": "Expert service mesh architect specializing in Istio, Linkerd, and cloud-native networking patterns. Masters traffic management, security policies, observability integration, and multi-cluster mesh con",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "service-mesh-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/service-mesh-expert/SKILL.md",
+      "triggers": "service;mesh;expert"
+    },
+    {
+      "description": "Master ShellCheck static analysis configuration and usage for shell script quality. Use when setting up linting infrastructure, fixing code issues, or ensuring script portability.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "shellcheck-configuration",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/shellcheck-configuration/SKILL.md",
+      "triggers": "shellcheck;configuration"
+    },
+    {
+      "description": "Scan agent skills for security issues before adoption. Detects prompt injection, malicious code, excessive permissions, secret exposure, and supply chain risks.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "skill-scanner",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/skill-scanner/SKILL.md",
+      "triggers": "skill;scanner"
     },
     {
       "description": "Multi-cloud orchestration for ML workloads with automatic cost optimization. Use when you need to run training or batch jobs across multiple clouds, leverage spot instances with auto-recovery, or optimize GPU costs across providers.",
@@ -4811,12 +5507,60 @@
       "triggers": "Infrastructure;Multi-Cloud;Orchestration;GPU;Cost Optimization;SkyPilot"
     },
     {
-      "description": "Drift detection + baseline integrity guard for agent workspace files with automatic alerting support",
+      "description": "Conduct comprehensive security assessments of SMTP (Simple Mail Transfer Protocol) servers to identify vulnerabilities including open relays, user enumeration, weak authentication, and misconfiguration.",
       "phase": 1,
       "score": 100,
-      "skill_id": "soul-guardian",
-      "src_path": "lib/prompt-security-clawsec/skills/soul-guardian/SKILL.md",
-      "triggers": "soul;guardian"
+      "skill_id": "smtp-penetration-testing",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/smtp-penetration-testing/SKILL.md",
+      "triggers": "smtp;penetration;testing"
+    },
+    {
+      "description": "Comprehensive Snowflake development assistant covering SQL best practices, data pipeline design (Dynamic Tables, Streams, Tasks, Snowpipe), Cortex AI functions, Cortex Agents, Snowpark Python, dbt integration, performance tuning, and security hardening.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "snowflake-development",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/snowflake-development/SKILL.md",
+      "triggers": "snowflake;development"
+    },
+    {
+      "description": "Master smart contract security best practices, vulnerability prevention, and secure Solidity development patterns.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "solidity-security",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/solidity-security/SKILL.md",
+      "triggers": "solidity;security"
+    },
+    {
+      "description": "Provide systematic methodologies for automated SQL injection detection and exploitation using SQLMap.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "sqlmap-database-pentesting",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/sqlmap-database-pentesting/SKILL.md",
+      "triggers": "sqlmap;database;pentesting"
+    },
+    {
+      "description": "Conduct comprehensive SSH security assessments including enumeration, credential attacks, vulnerability exploitation, tunneling techniques, and post-exploitation activities. This skill covers the complete methodology for testing SSH service security.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "ssh-penetration-testing",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/ssh-penetration-testing/SKILL.md",
+      "triggers": "ssh;penetration;testing"
+    },
+    {
+      "description": "Apply STRIDE methodology to systematically identify threats. Use when analyzing system security, conducting threat modeling sessions, or creating security documentation.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "stride-analysis-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/stride-analysis-patterns/SKILL.md",
+      "triggers": "stride;analysis;patterns"
+    },
+    {
+      "description": "Identifies dependencies at heightened risk of exploitation or takeover. Use when assessing supply chain attack surface, evaluating dependency health, or scoping security engagements.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "supply-chain-risk-auditor",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/supply-chain-risk-auditor/SKILL.md",
+      "triggers": "supply;chain;risk;auditor"
     },
     {
       "description": "Audit SwiftUI iOS feature code for accessibility against WCAG 2.2 Level A/AA and return patch-ready fixes. Use when reviewing SwiftUI views/screens (including auth, forms, settings, and custom controls) and you need both standards traceability (WCAG + WCAG2Mobile interpretation) and practical, minimal code changes in a concise priority-grouped Markdown format with user follow-up checks for code-indeterminate behavior.",
@@ -4825,6 +5569,22 @@
       "skill_id": "swiftui-wcag-accessibility-auditor",
       "src_path": "lib/ramzesenok-ios-accessibility-audit-skill/swiftui-wcag-accessibility-auditor/SKILL.md",
       "triggers": "swiftui;wcag;accessibility;auditor"
+    },
+    {
+      "description": "Terraform infrastructure as code workflow for provisioning cloud resources, creating reusable modules, and managing infrastructure at scale.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "terraform-infrastructure",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/terraform-infrastructure/SKILL.md",
+      "triggers": "terraform;infrastructure"
+    },
+    {
+      "description": "Production-ready Terraform module patterns for AWS, Azure, and GCP infrastructure.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "terraform-module-library",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/terraform-module-library/SKILL.md",
+      "triggers": "terraform;module;library"
     },
     {
       "description": "Use when working with Terraform or OpenTofu - creating modules, writing tests (native test framework, Terratest), setting up CI/CD pipelines, reviewing configurations, choosing between testing approaches, debugging state issues, implementing security scanning (trivy, checkov), or making infrastructure-as-code architecture decisions",
@@ -4963,12 +5723,44 @@
       "triggers": "api-security;websocket;cswsh;real-time;injection;authentication"
     },
     {
+      "description": "Map identified threats to appropriate security controls and mitigations. Use when prioritizing security investments, creating remediation plans, or validating control effectiveness.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "threat-mitigation-mapping",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/threat-mitigation-mapping/SKILL.md",
+      "triggers": "threat;mitigation;mapping"
+    },
+    {
+      "description": "Expert in threat modeling methodologies, security architecture review, and risk assessment. Masters STRIDE, PASTA, attack trees, and security requirement extraction. Use PROACTIVELY for security architecture reviews, threat identification, or building secure-by-design systems.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "threat-modeling-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/threat-modeling-expert/SKILL.md",
+      "triggers": "threat;modeling;expert"
+    },
+    {
       "description": "Offers the user an informed choice about how much response depth to consume before answering. Use this skill when the user explicitly wants to control response length, depth, or token budget. TRIGGER when: \"token budget\", \"token count\", \"token usage\", \"token limit\", \"response length\", \"answer depth\", \"short version\", \"brief answer\", \"detailed answer\", \"exhaustive answer\", \"respuesta corta vs larga\", \"cuántos tokens\", \"ahorrar tokens\", \"responde al 50%\", \"dame la versión corta\", \"quiero controlar cuánto usas\", or clear variants where the user is explicitly asking to control answer size or depth. DO NOT TRIGGER when: user has already specified a level in the current session (maintain it), the request is clearly a one-word answer, or \"token\" refers to auth/session/payment tokens rather than response size.",
       "phase": 1,
       "score": 100,
       "skill_id": "token-budget-advisor",
       "src_path": "lib/affaan-m-everything-claude-code/skills/token-budget-advisor/SKILL.md",
       "triggers": "token;budget;advisor"
+    },
+    {
+      "description": "FREE — Intelligent tool-call reliability wrapper. Monitors, retries, fixes, and learns from tool failures. Auto-recovers from truncated JSON, timeouts, rate limits, and mid-chain failures.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "tool-use-guardian",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/tool-use-guardian/SKILL.md",
+      "triggers": "reliability;tool-use;error-handling;retries;recovery;agent-infrastructure"
+    },
+    {
+      "description": "Provide a comprehensive, structured reference for the 100 most critical web application vulnerabilities organized by category. This skill enables systematic vulnerability identification, impact assessment, and remediation guidance across the full spectrum of web security threats.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "top-web-vulnerabilities",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/top-web-vulnerabilities/SKILL.md",
+      "triggers": "top;web;vulnerabilities"
     },
     {
       "description": "Threat actor infrastructure tracking involves monitoring and mapping adversary-controlled assets including command-and-control (C2) servers, phishing domains, exploit kit hosts, bulletproof hosting, a",
@@ -5011,12 +5803,28 @@
       "triggers": "ssvc;vulnerability-triage;cisa;vulnerability-prioritization;decision-tree;cvss;remediation;risk-management"
     },
     {
-      "description": "Framework for assessing IT service providers, technology vendors, and third-party partners. Creates structured risk assessments across financial, operational, compliance, security, and reputational dimensions with regulatory checklists (GDPR, DORA, NIS2, SOX). Use when: (1) Evaluating new vendors or technology providers, (2) Conducting third-party risk assessments for procurement, (3) Performing critical vendor due diligence for regulatory compliance, (4) Creating vendor onboarding documentation, (5) Establishing ongoing vendor monitoring processes, (6) Assessing vendor concentration risk, or (7) Generating executive-level vendor risk reports.",
+      "description": "You are an Upstash QStash expert who builds reliable serverless messaging without infrastructure management. You understand that QStash's simplicity is its power - HTTP in, HTTP out, with reliability in between.",
       "phase": 1,
       "score": 100,
-      "skill_id": "vendor-due-diligence-patrick-munro",
-      "src_path": "lib/lawvable-awesome-legal-skills/skills/vendor-due-diligence-patrick-munro/SKILL.md",
-      "triggers": "vendor;due;diligence;patrick;munro"
+      "skill_id": "upstash-qstash",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/upstash-qstash/SKILL.md",
+      "triggers": "upstash;qstash"
+    },
+    {
+      "description": "Find similar vulnerabilities and bugs across codebases using pattern-based analysis. Use when hunting bug variants, building CodeQL/Semgrep queries, analyzing security vulnerabilities, or performing systematic code audits after finding an initial issue.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "variant-analysis",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/variant-analysis/SKILL.md",
+      "triggers": "variant;analysis"
+    },
+    {
+      "description": "Optimize vector index performance for latency, recall, and memory. Use when tuning HNSW parameters, selecting quantization strategies, or scaling vector search infrastructure.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "vector-index-tuning",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/vector-index-tuning/SKILL.md",
+      "triggers": "vector;index;tuning"
     },
     {
       "description": "Provides guidance for training LLMs with reinforcement learning using verl (Volcano Engine RL). Use when implementing RLHF, GRPO, PPO, or other RL algorithms for LLM post-training at scale with flexible infrastructure backends.",
@@ -5025,6 +5833,54 @@
       "skill_id": "verl-rl-training",
       "src_path": "lib/orchestra-research-ai-research-skills/06-post-training/verl/SKILL.md",
       "triggers": "Reinforcement Learning;RLHF;GRPO;PPO;Post-Training;Distributed Training"
+    },
+    {
+      "description": "Human review workflow for AI-generated GitHub projects with spec-based feedback, security review, and follow-up PRs from the Vibers service.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "vibers-code-review",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/vibers-code-review/SKILL.md",
+      "triggers": "vibers;code;review"
+    },
+    {
+      "description": "Advanced vulnerability analysis principles. OWASP 2025, Supply Chain Security, attack surface mapping, risk prioritization.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "vulnerability-scanner",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/vulnerability-scanner/SKILL.md",
+      "triggers": "vulnerability;scanner"
+    },
+    {
+      "description": "Provide systematic methodologies for discovering and exploiting privilege escalation vulnerabilities on Windows systems during penetration testing engagements.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "windows-privilege-escalation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/windows-privilege-escalation/SKILL.md",
+      "triggers": "windows;privilege;escalation"
+    },
+    {
+      "description": "Execute comprehensive network traffic analysis using Wireshark to capture, filter, and examine network packets for security investigations, performance optimization, and troubleshooting.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "wireshark-analysis",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/wireshark-analysis/SKILL.md",
+      "triggers": "wireshark;analysis"
+    },
+    {
+      "description": "Complete WordPress development workflow covering theme development, plugin creation, WooCommerce integration, performance optimization, and security hardening. Includes WordPress 7.0 features: Real-Time Collaboration, AI Connectors, Abilities API, DataViews, and PHP-only blocks.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "wordpress",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/wordpress/SKILL.md",
+      "triggers": "wordpress"
+    },
+    {
+      "description": "Assess WordPress installations for common vulnerabilities and WordPress 7.0 attack surfaces.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "wordpress-penetration-testing",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/wordpress-penetration-testing/SKILL.md",
+      "triggers": "wordpress;penetration;testing"
     },
     {
       "description": "X/Twitter API integration for posting tweets, threads, reading timelines, search, and analytics. Covers OAuth auth patterns, rate limits, and platform-native content posting. Use when the user wants to interact with X programmatically.",
