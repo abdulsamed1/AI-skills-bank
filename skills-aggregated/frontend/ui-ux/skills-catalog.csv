@@ -1,4 +1,5 @@
 skill_id,description,score,phase
+stitch-loop,Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern,100,1
 Creative Portfolio Resume,Balance visual design with ATS compatibility for creative roles,100,1
 accessibility-compliance-accessibility-audit,"You are an accessibility expert specializing in WCAG compliance, inclusive design, and assistive technology compatibility. Conduct audits, identify barriers, and provide remediation guidance.",100,1
 angular-ui-patterns,"Modern Angular UI patterns for loading states, error handling, and data display. Use when building UI components, handling async data, or managing component states.",100,1

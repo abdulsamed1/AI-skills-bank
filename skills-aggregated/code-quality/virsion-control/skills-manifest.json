@@ -11,6 +11,38 @@
       "triggers": "address;github;comments"
     },
     {
+      "description": "Creates git commits following Conventional Commits format with type/scope/subject. Use when user wants to commit changes, create commit, save work, or stage and commit. Enforces project-specific conventions from CLAUDE.md.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git-commit",
+      "src_path": "lib/fvadicamo-dev-agent-skills/skills/git-commit/SKILL.md",
+      "triggers": "git;commit"
+    },
+    {
+      "description": "Creates GitHub Pull Requests with automated validation and task tracking. Use when user wants to create PR, open pull request, submit for review, or check if ready for PR. Analyzes commits, validates task completion, generates Conventional Commits title and description, suggests labels. NOTE - for merging existing PRs, use github-pr-merge instead.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "github-pr-creation",
+      "src_path": "lib/fvadicamo-dev-agent-skills/skills/github-pr-creation/SKILL.md",
+      "triggers": "github;pr;creation"
+    },
+    {
+      "description": "Merges GitHub Pull Requests after validating pre-merge checklist. Use when user wants to merge PR, close PR, finalize PR, complete merge, approve and merge, or execute merge. Runs pre-merge validation (tests, lint, CI, comments), confirms with user, merges with proper format, handles post-merge cleanup.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "github-pr-merge",
+      "src_path": "lib/fvadicamo-dev-agent-skills/skills/github-pr-merge/SKILL.md",
+      "triggers": "github;pr;merge"
+    },
+    {
+      "description": "Handles PR review comments and feedback resolution. Use when user wants to resolve PR comments, handle review feedback, fix review comments, address PR review, check review status, respond to reviewer, verify PR readiness, review PR comments, analyze review feedback, evaluate PR comments, assess review suggestions, or triage PR comments. Fetches comments via GitHub CLI, classifies by severity, applies fixes with user confirmation, commits with proper format, replies to threads.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "github-pr-review",
+      "src_path": "lib/fvadicamo-dev-agent-skills/skills/github-pr-review/SKILL.md",
+      "triggers": "github;pr;review"
+    },
+    {
       "description": "Build Azure AI Foundry agents using the Microsoft Agent Framework Python SDK (agent-framework-azure-ai). Use when creating persistent agents with AzureAIAgentsProvider, using hosted tools (code interpreter, file search, web search), integrating MCP servers, managing conversation threads, or implementing streaming responses. Covers function tools, structured outputs, and multi-tool agents.",
       "phase": 1,
       "score": 100,

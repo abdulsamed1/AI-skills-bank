@@ -3,6 +3,14 @@
   "hub": "code-quality",
   "skills": [
     {
+      "description": "Master TDD orchestrator specializing in red-green-refactor discipline, multi-agent workflow coordination, and comprehensive test-driven development practices.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "tdd-orchestrator",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/tdd-orchestrator/SKILL.md",
+      "triggers": "tdd;orchestrator"
+    },
+    {
       "description": "Analyze A/B test results with statistical significance, sample size validation, confidence intervals, and ship/extend/stop recommendations. Use when evaluating experiment results, checking if a test reached significance, interpreting split test data, or deciding whether to ship a variant.",
       "phase": 1,
       "score": 100,

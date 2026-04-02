@@ -47,6 +47,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
         "testing-qa",
         SubHubRule {
             keywords: vec![
+                "tdd-orchestrator",
                 "optimize-performance",
                 "optimize-code",
                 "web-performance-optimization",
@@ -67,12 +68,13 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
                 "error-diagnostics-debug",
                 "testing",
                 "test",
+                "tdd",
                 "unit-test",
                 "integration-test",
                 "cypress",
                 "playwright","unit", "jest", "mocha", "pytest", "unittest",
            "e2e", "end-to-end", "cypress", "playwright", "selenium" ],
-            anchor_keywords: vec!["testing", "test", "qa"],
+            anchor_keywords: vec!["tdd-orchestrator","testing", "test", "qa"],
             negative_keywords: vec!["marketing", "seo", "business", "odoo"],
         },
     );
@@ -80,8 +82,16 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     code_quality.insert(
         "virsion-control",
         SubHubRule {
-            keywords: vec!["git", "CI/CD integration", "code review", "github", "gitlab", "bitbucket", "virsion-control", "ci-cd", "version-control"],
-            anchor_keywords: vec!["git", "github", "gitlab", "bitbucket", "virsion-control", "version-control"],
+            keywords: vec![ "git-commit",
+    "github-pr-creation",
+    "github-pr-merge",
+    "github-pr-review",
+    "git", "CI/CD integration", "code review", "github", "gitlab", "bitbucket", "virsion-control", "ci-cd", "version-control"],
+            anchor_keywords: vec![ "git-commit",
+    "github-pr-creation",
+    "github-pr-merge",
+    "github-pr-review",
+    "git", "github", "gitlab", "bitbucket", "virsion-control", "version-control"],
             negative_keywords: vec!["ui"],
         },
     );
@@ -180,6 +190,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
         "prompting-factory",
         SubHubRule {
             keywords: vec![
+              
                 "skill-enhancement", "skills-factory", "llm-skill", "agent-skill",
                 "prompt-engineering", "context-compression", "meta-prompting", "prompt-optimization",
                 "prompt-compression", "prompt", "skill-authoring", "skill-reviewer",
@@ -196,7 +207,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
                 "agent", "multi-agent", "llm", "crewai", "agent-tool",
                 "tool-builder", "ai-agents", "ml-pipeline", "ml-ops"
             ],
-            negative_keywords: vec!["ui", "css", "html", "tailwind", "figma"],
+            negative_keywords: vec!["stitch", "tdd-orchestrator", "testing-qa", "ai-seo", "SEO and AEO", "Optimize content","ui", "css", "html", "tailwind", "figma"],
         },
     );
     hubs.insert(
@@ -263,7 +274,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     );
 
 
-// server-side Hub — 8 sub-hubs متخصصة
+// server-side Hub 
 let mut be_sub = HashMap::new();
 
 
@@ -481,37 +492,30 @@ hubs.insert(
 
 
     
-    // Business Hub - 6 sub-hubs متخصصة
+    // Business Hub 
 let mut bus_sub = HashMap::new();
 
-// 1. PRODUCT — إدارة المنتج، roadmap، user stories
+
+//  STRATEGY — go-to-market، تحليل السوق، نموذج الأعمال
 bus_sub.insert(
-    "product",
+    "business-strategy",
     SubHubRule {
         keywords: vec![
+             "google analytics", "ga4", "mixpanel", "amplitude",
+            "utm", "attribution", "conversion rate", "funnel analytics",
+            "cohort analysis", "a/b testing", "split testing",
+            "kpi", "metrics", "dashboard", "reporting",
+            "data driven", "product analytics", "user analytics",
+            "revenue analytics", "ltv", "cac", "arpu", "mrr", "arr",
+            "retention rate", "churn rate", "nps", "tracking",
+            "measurement", "analytics-tracking", "insights-dashboard",
             "product management", "prd", "roadmap", "feature roadmap",
-            "user story", "backlog", "mvp", "product discovery",
+            "user story", "backlog", "mvp", "product discovery","case-study",
             "customer discovery", "north star metric", "epic",
+            "risk-assessment",
             "jobs to be done", "jtbd", "feature prioritization",
             "requirements", "acceptance criteria", "sprint", "okr",
-            "product-strategy", "product strategy", "positioning",
-        ],
-        anchor_keywords: vec![
-            "prd", "roadmap", "mvp", "backlog", "product discovery",
             "product-strategy", "product strategy",
-        ],
-        negative_keywords: vec![
-            "react", "api", "sql", "docker", "python", "rust",
-            "vulnerability", "auth",
-        ],
-    },
-);
-
-// 2. STRATEGY — go-to-market، تحليل السوق، نموذج الأعمال
-bus_sub.insert(
-    "strategy",
-    SubHubRule {
-        keywords: vec![
             "go-to-market", "gtm", "market analysis", "competitive analysis",
             "positioning", "business model", "value proposition",
             "pricing strategy", "beachhead", "tam sam som",
@@ -521,6 +525,10 @@ bus_sub.insert(
             "b2b", "b2c", "saas strategy",
         ],
         anchor_keywords: vec![
+             "google analytics", "attribution", "conversion rate",
+            "funnel analytics", "kpi", "mrr", "ltv", "cac", "metrics", "dashboard", "analytics",
+             "prd", "roadmap", "mvp", "backlog", "product discovery",
+            "product-strategy", "product strategy",
             "go-to-market", "positioning", "business model",
             "value proposition", "competitive analysis",
         ],
@@ -529,16 +537,19 @@ bus_sub.insert(
             "golang", "java", "kubernetes", "docker", "sql",
             "vulnerability", "injection", "auth", "oauth", "jwt",
             "backlog", "sprint", "prd",
+        
+     
         ],
     },
 );
 
-// 3. MARKETING
+//  MARKETING
 bus_sub.insert(
     "marketing",
     SubHubRule {
         keywords: vec![
-            "seo", "search engine optimization", "keyword research",
+            "aeo-optimization",
+            "ai-seo", "SEO and AEO", "Optimize content", "seo", "search engine optimization", "keyword research",
             "technical seo", "on-page seo", "serp", "backlinks",
             "content marketing", "copywriting", "blog", "editorial",
             "content strategy", "thought leadership", "landing page copy",
@@ -559,7 +570,7 @@ bus_sub.insert(
     },
 );
 
-// 4. SALES 
+//  SALES 
 bus_sub.insert(
     "sales",
     SubHubRule {
@@ -571,6 +582,7 @@ bus_sub.insert(
             "demo", "negotiation", "account management", "upsell",
             "cross-sell", "churn", "retention", "customer success",
             "b2b sales", "enterprise sales", "inbound", "outbound",
+            "sales-strategy", "sales strategy",
         ],
         anchor_keywords: vec![
             "lead generation", "sales funnel", "cold email",
@@ -583,34 +595,10 @@ bus_sub.insert(
     },
 );
 
-// 5. ANALYTICS — قياس الأداء، attribution، تحليل البيانات
-bus_sub.insert(
-    "analytics",
-    SubHubRule {
-        keywords: vec![
-            "google analytics", "ga4", "mixpanel", "amplitude",
-            "utm", "attribution", "conversion rate", "funnel analytics",
-            "cohort analysis", "a/b testing", "split testing",
-            "kpi", "metrics", "dashboard", "reporting",
-            "data driven", "product analytics", "user analytics",
-            "revenue analytics", "ltv", "cac", "arpu", "mrr", "arr",
-            "retention rate", "churn rate", "nps", "tracking",
-            "measurement", "analytics-tracking", "insights-dashboard"
-        ],
-        anchor_keywords: vec![
-            "google analytics", "attribution", "conversion rate",
-            "funnel analytics", "kpi", "mrr", "ltv", "cac", "metrics", "dashboard", "analytics"
-        ],
-        negative_keywords: vec![
-            "backend", "sql", "database", "api", "python",
-            "machine learning", "vulnerability",
-        ],
-    },
-);
 
-// 6. OPERATIONS
+
 bus_sub.insert(
-    "operations",
+    "business-management",
     SubHubRule {
         keywords: vec![
             "sop", "standard operating procedure", "process improvement",
@@ -621,7 +609,7 @@ bus_sub.insert(
             "productivity automation-ai", "project management",
             "okr tracking", "team management", "onboarding",
             "email", "newsletter", "email marketing", "mailchimp",
-            "sendgrid", "email campaign", "drip campaign",
+            "sendgrid", "email campaign", "drip campaign","odoo","crm","salesforce"
         ],
         anchor_keywords: vec![
             "sop", "process improvement", "runbook",
@@ -811,24 +799,22 @@ static CANONICAL_SUBHUB_ALIASES: &[(&str, &str, &str)] = &[
     ("logging",               "server-side", "observability"),
     
     // business hub 
-    ("product-strategy", "business", "product"),
-    ("product-management", "business", "product"),
-    ("strategy",         "business", "strategy"),
-    ("go-to-market",     "business", "strategy"),
-    ("gtm",              "business", "strategy"),
+    ("product-strategy", "business", "business-strategy"),
+    ("product-management", "business", "business-strategy"),
+    ("strategy",         "business", "business-strategy"),
+    ("go-to-market",     "business", "business-strategy"),
+    ("gtm",              "business", "business-strategy"),
     ("marketing",        "business", "marketing"),
-    ("tactical",         "business", "marketing"),
+    ("tactical",         "business", "business-strategy"),
     ("content",          "business", "marketing"),
     ("seo",              "business", "marketing"),
     ("social-media",     "business", "marketing"),
     ("brand",            "business", "marketing"),
-    ("sales",            "business", "sales"),
-    ("lead-generation",  "business", "sales"),
-    ("crm",              "business", "sales"),
-    ("analytics",        "business", "analytics"),
-    ("email",            "business", "operations"),
-    ("operations",       "business", "operations"),
-    ("automation",       "business", "operations"),
+    ("sales",            "business", "business-strategy"),
+    ("lead-generation",  "business", "business-strategy"),
+    ("crm",              "business", "business-strategy"),
+    ("analytics",        "business", "business-strategy"),
+    ("email",            "business", "sales"),
 
     // frontend hub
     ("ui-ux",             "frontend", "ui-ux"),

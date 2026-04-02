@@ -2,6 +2,7 @@
   "count": 102,
   "hub": "code-quality",
   "skills": [
+    "tdd-orchestrator",
     "ab-test-analysis",
     "ab-test-store-listing",
     "acquisition-channel-advisor",

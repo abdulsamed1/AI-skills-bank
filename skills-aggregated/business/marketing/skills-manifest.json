@@ -3,6 +3,22 @@
   "hub": "business",
   "skills": [
     {
+      "description": "SEO and AEO best practices for metadata, Open Graph, sitemaps, robots.txt, hreflang, JSON-LD structured data, EEAT, and content optimized for search engines and AI answer surfaces. Use this skill when implementing page SEO, technical SEO, schema markup, international SEO, AI-overview readiness, or improving content for Google, ChatGPT, Perplexity, and similar assistants.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "seo-aeo-best-practices",
+      "src_path": "lib/sanity-io-agent-toolkit/skills/seo-aeo-best-practices/SKILL.md",
+      "triggers": "seo;aeo"
+    },
+    {
+      "description": "Optimize content for AI Overviews (formerly SGE), ChatGPT web search, Perplexity, and other AI-powered search experiences. Generative Engine Optimization (GEO) analysis including brand mention signals, AI crawler accessibility, llms.txt compliance, passage-level citability scoring, and platform-specific optimization. Use when user says \"AI Overviews\", \"SGE\", \"GEO\", \"AI search\", \"LLM optimization\", \"Perplexity\", \"AI citations\", \"ChatGPT search\", or \"AI visibility\".",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "seo-geo",
+      "src_path": "lib/agricidaniel-claude-seo/skills/seo-geo/SKILL.md",
+      "triggers": "seo;geo"
+    },
+    {
       "description": "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,' 'GEO,' 'LLMO,' 'answer engine optimization,' 'generative engine optimization,' 'LLM optimization,' 'AI Overviews,' 'optimize for ChatGPT,' 'optimize for Perplexity,' 'AI citations,' 'AI visibility,' 'zero-click search,' 'how do I show up in AI answers,' 'LLM mentions,' or 'optimize for Claude/Gemini.' Use this whenever someone wants their content to be cited or surfaced by AI assistants and AI search engines. For traditional technical and on-page SEO audits, see seo-audit. For structured data implementation, see schema-markup.",
       "phase": 4,
       "score": 100,

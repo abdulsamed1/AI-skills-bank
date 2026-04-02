@@ -3,6 +3,14 @@
   "hub": "frontend",
   "skills": [
     {
+      "description": "Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "stitch-loop",
+      "src_path": "lib/google-labs-code-stitch-skills/skills/stitch-loop/SKILL.md",
+      "triggers": "stitch;loop"
+    },
+    {
       "description": "Balance visual design with ATS compatibility for creative roles",
       "phase": 1,
       "score": 100,

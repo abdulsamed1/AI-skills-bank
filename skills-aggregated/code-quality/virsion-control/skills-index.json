@@ -2,6 +2,10 @@
   "count": 223,
   "hub": "code-quality",
   "skills": [
+    "git-commit",
+    "github-pr-creation",
+    "github-pr-merge",
+    "github-pr-review",
     "address-github-comments",
     "agent-framework-azure-ai-py",
     "agents-v2-py",
