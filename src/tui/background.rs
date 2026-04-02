@@ -1,13 +1,12 @@
-use crate::components::aggregator::{Aggregator, SkillMetadata};
+use crate::components::aggregator::Aggregator;
 use crate::components::manifest::Repository;
 use crate::tui::action::Action;
 use crate::utils::progress::ProgressManager;
 use crate::utils::theme::Theme;
 use crate::utils::progress::ProgressReporter;
-use std::path::{Path, PathBuf};
+use std::path::Path;
 use std::sync::Arc;
 use std::sync::mpsc::Sender;
-use tokio::runtime::Runtime;
 use std::thread;
 
 pub fn spawn_background_worker(

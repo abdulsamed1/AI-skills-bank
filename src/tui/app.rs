@@ -2,10 +2,8 @@ use crate::components::aggregator::SkillMetadata;
 use crate::components::manifest::Repository;
 use crate::tui::action::Action;
 use crate::tui::views;
-use ratatui::{
-    layout::Rect,
-    Frame,
-};
+use ratatui::Frame;
+
 use std::collections::HashMap;
 use std::path::Path;
 

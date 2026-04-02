@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "server-side",
   "skills": [
     {
@@ -51,68 +51,12 @@
       "triggers": "apify;content;analytics"
     },
     {
-      "description": "Guidance for instrumenting webapps with Azure Application Insights. Provides telemetry patterns, SDK setup, and configuration references. WHEN: how to instrument app, App Insights SDK, telemetry patterns, what is App Insights, Application Insights guidance, instrumentation examples, APM best practices.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "appinsights-instrumentation",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/appinsights-instrumentation/SKILL.md",
-      "triggers": "appinsights;instrumentation"
-    },
-    {
       "description": "Monitors Certificate Transparency (CT) logs to detect unauthorized certificate issuance, discover subdomains via CT data, and alert on suspicious certificate activity for owned domains. Uses the crt.sh API and direct CT log querying based on RFC 6962 to build continuous monitoring pipelines that catch rogue certificates, track CA behavior, and map the external attack surface. Activates for requests involving certificate transparency monitoring, CT log auditing, subdomain discovery via certificates, or certificate issuance alerting.",
       "phase": 2,
       "score": 100,
       "skill_id": "auditing-tls-certificate-transparency-logs",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/auditing-tls-certificate-transparency-logs/SKILL.md",
       "triggers": "certificate-transparency;CT-logs;crt-sh;subdomain-discovery;TLS-monitoring;RFC-6962"
-    },
-    {
-      "description": "Azure Application Insights SDK for .NET. Application performance monitoring and observability resource management. Use for creating Application Insights components, web tests, workbooks, analytics items, and API keys. Triggers: \"Application Insights\", \"ApplicationInsights\", \"App Insights\", \"APM\", \"application monitoring\", \"web tests\", \"availability tests\", \"workbooks\".",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "azure-mgmt-applicationinsights-dotnet",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-applicationinsights-dotnet/SKILL.md",
-      "triggers": "azure;mgmt;applicationinsights;dotnet"
-    },
-    {
-      "description": "Azure Resource Manager SDK for Arize AI Observability and Evaluation (.NET). Use when managing Arize AI organizations on Azure via Azure Marketplace, creating/updating/deleting Arize resources, or integrating Arize ML observability into .NET applications. Triggers: \"Arize AI\", \"ML observability\", \"ArizeAIObservabilityEval\", \"Arize organization\".",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "azure-mgmt-arizeaiobservabilityeval-dotnet",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-arizeaiobservabilityeval-dotnet/SKILL.md",
-      "triggers": "azure;mgmt;arizeaiobservabilityeval;dotnet"
-    },
-    {
-      "description": "Azure Weights & Biases SDK for .NET. ML experiment tracking and model management via Azure Marketplace. Use for creating W&B instances, managing SSO, marketplace integration, and ML observability. Triggers: \"Weights and Biases\", \"W&B\", \"WeightsAndBiases\", \"ML experiment tracking\", \"model registry\", \"experiment management\", \"wandb\".",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "azure-mgmt-weightsandbiases-dotnet",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-weightsandbiases-dotnet/SKILL.md",
-      "triggers": "azure;mgmt;weightsandbiases;dotnet"
-    },
-    {
-      "description": "Azure Monitor OpenTelemetry Exporter for Java. Export OpenTelemetry traces, metrics, and logs to Azure Monitor/Application Insights. Triggers: \"AzureMonitorExporter java\", \"opentelemetry azure java\", \"application insights java otel\", \"azure monitor tracing java\". Note: This package is DEPRECATED. Migrate to azure-monitor-opentelemetry-autoconfigure.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "azure-monitor-opentelemetry-exporter-java",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-monitor-opentelemetry-exporter-java/SKILL.md",
-      "triggers": "\"AzureMonitorExporter java\", \"opentelemetry azure java\", \"application insights java otel\", \"azure monitor tracing java\"."
-    },
-    {
-      "description": "Instrument applications with Azure Monitor and OpenTelemetry for JavaScript (@azure/monitor-opentelemetry). Use when adding distributed tracing, metrics, and logs to Node.js applications with Application Insights.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "azure-monitor-opentelemetry-ts",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-monitor-opentelemetry-ts/SKILL.md",
-      "triggers": "azure;monitor;opentelemetry;ts"
-    },
-    {
-      "description": "Builds real-time incident response dashboards in Splunk, Elastic, or Grafana to provide SOC analysts and leadership with situational awareness during active incidents, tracking affected systems, containment status, IOC spread, and response timeline. Use when IR teams need unified visibility during incident coordination and post-incident reporting.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "building-incident-response-dashboard",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-incident-response-dashboard/SKILL.md",
-      "triggers": "soc;dashboard;incident-response;splunk;visualization;situational-awareness;metrics"
     },
     {
       "description": "Post-deploy canary monitoring. Watches the live app for console errors, performance regressions, and page failures using the browse daemon. Takes periodic screenshots, compares against pre-deploy baselines, and alerts on anomalies. Use when: \"monitor deploy\", \"canary\", \"post-deploy check\", \"watch production\", \"verify deploy\". (gstack)",
@@ -299,6 +243,14 @@
       "triggers": "incident;responder"
     },
     {
+      "description": "[Extended thinking: This workflow implements a sophisticated debugging and resolution pipeline that leverages AI-assisted debugging tools and observability platforms to systematically diagnose and res",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "incident-response-smart-fix",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/incident-response-smart-fix/SKILL.md",
+      "triggers": "incident;response;smart;fix"
+    },
+    {
       "description": "Use when errors occur deep in execution and you need to trace back to find the original trigger - systematically traces bugs backward through call stack, adding instrumentation when needed, to identify source of invalid data or incorrect behavior",
       "phase": 2,
       "score": 100,
@@ -345,14 +297,6 @@
       "skill_id": "medchem",
       "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/medchem/SKILL.md",
       "triggers": "medchem"
-    },
-    {
-      "description": "Define and design a product metrics dashboard with key metrics, data sources, visualization types, and alert thresholds. Use when creating a metrics dashboard, defining KPIs, setting up product analytics, or building a data monitoring plan.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "metrics-dashboard",
-      "src_path": "lib/phuryn-pm-skills/pm-product-discovery/skills/metrics-dashboard/SKILL.md",
-      "triggers": "metrics;dashboard"
     },
     {
       "description": "Neuropixels neural recording analysis. Load SpikeGLX/OpenEphys data, preprocess, motion correction, Kilosort4 spike sorting, quality metrics, Allen/IBL curation, AI-assisted visual analysis, for Neuropixels 1.0/2.0 extracellular electrophysiology. Use when working with neural recordings, spike sorting, extracellular electrophysiology, or when the user mentions Neuropixels, SpikeGLX, Open Ephys, Kilosort, quality metrics, or unit curation.",
@@ -475,14 +419,6 @@
       "triggers": "rag;engineer"
     },
     {
-      "description": "Weekly engineering retrospective. Analyzes commit history, work patterns, and code quality metrics with persistent history and trend tracking. Team-aware: breaks down per-person contributions with praise and growth areas. Use when asked to \"weekly retro\", \"what did we ship\", or \"engineering retrospective\". Proactively suggest at the end of a work week or sprint. (gstack)",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "retro",
-      "src_path": "lib/garrytan-gstack/retro/SKILL.md",
-      "triggers": "retro"
-    },
-    {
       "description": "Calculate portfolio risk metrics including VaR, CVaR, Sharpe, Sortino, and drawdown analysis. Use when measuring portfolio risk, implementing risk limits, or building risk monitoring systems.",
       "phase": 2,
       "score": 100,
@@ -521,22 +457,6 @@
       "skill_id": "server-management",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/server-management/SKILL.md",
       "triggers": "server;management"
-    },
-    {
-      "description": "Comprehensive guide to tracking, calculating, and optimizing key performance metrics for different startup business models from seed through Series A.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "startup-metrics-framework",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/startup-metrics-framework/SKILL.md",
-      "triggers": "startup;metrics;framework"
-    },
-    {
-      "description": "Visualize training metrics, debug models with histograms, compare experiments, visualize model graphs, and profile performance with TensorBoard - Google's ML visualization toolkit",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "tensorboard",
-      "src_path": "lib/orchestra-research-ai-research-skills/13-mlops/tensorboard/SKILL.md",
-      "triggers": "MLOps;TensorBoard;Visualization;Training Metrics;Model Debugging;PyTorch;TensorFlow;Experiment Tracking;Performance Profiling"
     },
     {
       "description": "Periodically check WandB metrics during training to catch problems early (NaN, loss divergence, idle GPUs). Avoids wasting GPU hours on broken runs. Use when training is running and you want automated health checks.",

@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "code-quality",
   "skills": [
     {
@@ -33,38 +33,6 @@
       "skill_id": "animejs-animation",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/animejs-animation/SKILL.md",
       "triggers": "animejs;animation"
-    },
-    {
-      "description": "Azure AI Voice Live SDK for JavaScript/TypeScript. Build real-time voice AI applications with bidirectional WebSocket communication. Use for voice assistants, conversational AI, real-time speech-to-speech, and voice-enabled chatbots in Node.js or browser environments. Triggers: \"voice live\", \"real-time voice\", \"VoiceLiveClient\", \"VoiceLiveSession\", \"voice assistant TypeScript\", \"bidirectional audio\", \"speech-to-speech JavaScript\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-ai-voicelive-ts",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-ai-voicelive-ts/SKILL.md",
-      "triggers": "azure;ai;voicelive;ts"
-    },
-    {
-      "description": "Troubleshoot and resolve issues with Azure Messaging SDKs for Event Hubs and Service Bus. Covers connection failures, authentication errors, message processing issues, and SDK configuration problems. WHEN: event hub SDK error, service bus SDK issue, messaging connection failure, AMQP error, event processor host issue, message lock lost, message lock expired, lock renewal, lock renewal batch, send timeout, receiver disconnected, SDK troubleshooting, azure messaging SDK, event hub consumer, service bus queue issue, topic subscription error, enable logging event hub, service bus logging, eventhub python, servicebus java, eventhub javascript, servicebus dotnet, event hub checkpoint, event hub not receiving messages, service bus dead letter, batch processing lock, session lock expired, idle timeout, connection inactive, link detach, slow reconnect, session error, duplicate events, offset reset, receive batch.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-messaging",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-messaging/SKILL.md",
-      "triggers": "azure;messaging"
-    },
-    {
-      "description": "Connect to Azure Database for PostgreSQL Flexible Server from Node.js/TypeScript using the pg (node-postgres) package. Use for PostgreSQL queries, connection pooling, transactions, and Microsoft Entra ID (passwordless) authentication. Triggers: \"PostgreSQL\", \"postgres\", \"pg client\", \"node-postgres\", \"Azure PostgreSQL connection\", \"PostgreSQL TypeScript\", \"pg Pool\", \"passwordless postgres\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-postgres-ts",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-postgres-ts/SKILL.md",
-      "triggers": "azure;postgres;ts"
-    },
-    {
-      "description": "Prepare Azure apps for deployment (infra Bicep/Terraform, azure.yaml, Dockerfiles). Use for create/modernize or create+deploy; not cross-cloud migration (use azure-cloud-migrate). WHEN: \"create app\", \"build web app\", \"create API\", \"create serverless HTTP API\", \"create frontend\", \"create back end\", \"build a service\", \"modernize application\", \"update application\", \"add authentication\", \"add caching\", \"host on Azure\", \"create and deploy\", \"deploy to Azure\", \"deploy to Azure using Terraform\", \"deploy to Azure App Service\", \"deploy to Azure App Service using Terraform\", \"deploy to Azure Container Apps\", \"deploy to Azure Container Apps using Terraform\", \"generate Terraform\", \"generate Bicep\", \"function app\", \"timer trigger\", \"service bus trigger\", \"event-driven function\", \"containerized Node.js app\", \"social media app\", \"static portfolio website\", \"todo list with frontend and API\", \"prepare my Azure application to use Key Vault\", \"managed identity\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-prepare",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-prepare/SKILL.md",
-      "triggers": "azure;prepare"
     },
     {
       "description": "Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes.",
@@ -115,14 +83,6 @@
       "triggers": "context7;auto;research"
     },
     {
-      "description": "Build applications powered by GitHub Copilot using the Copilot SDK. Use when creating programmatic integrations with Copilot across Node.js/TypeScript, Python, Go, or .NET. Covers session management, custom tools, streaming, hooks, MCP servers, BYOK providers, session persistence, custom agents, skills, and deployment patterns. Requires GitHub Copilot CLI installed and a GitHub Copilot subscription (unless using BYOK).",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "copilot-sdk",
-      "src_path": "lib/microsoft-skills/.github/skills/copilot-sdk/SKILL.md",
-      "triggers": "copilot;sdk"
-    },
-    {
       "description": "Deobfuscates malicious JavaScript code used in web-based attacks, phishing pages, and dropper scripts by reversing encoding layers, eval chains, string manipulation, and control flow obfuscation to reveal the original malicious logic. Activates for requests involving JavaScript malware analysis, script deobfuscation, web skimmer analysis, or obfuscated dropper investigation.",
       "phase": 1,
       "score": 100,
@@ -153,6 +113,14 @@
       "skill_id": "everything-claude-code-conventions",
       "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/everything-claude-code/SKILL.md",
       "triggers": "everything;claude;code;conventions"
+    },
+    {
+      "description": "Creates and maintains Figma Code Connect template files that map Figma components to code snippets. Use when the user mentions Code Connect, Figma component mapping, design-to-code translation, or asks to create/update .figma.js files.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "figma-code-connect",
+      "src_path": "lib/figma-mcp-server-guide/skills/figma-code-connect/SKILL.md",
+      "triggers": "figma;code;connect"
     },
     {
       "description": "Extract clean markdown from any URL, including JavaScript-rendered SPAs. Use this skill whenever the user provides a URL and wants its content, says \"scrape\", \"grab\", \"fetch\", \"pull\", \"get the page\", \"extract from this URL\", or \"read this webpage\". Handles JS-rendered pages, multiple concurrent URLs, and returns LLM-optimized markdown. Use this instead of WebFetch for any webpage content extraction.",
@@ -233,14 +201,6 @@
       "skill_id": "linting-neostandard-eslint9",
       "src_path": "lib/mcollina-skills/skills/linting-neostandard-eslint9/SKILL.md",
       "triggers": "linting, neostandard, eslint, eslint9, flat-config, javascript, typescript"
-    },
-    {
-      "description": "Microsoft 365 Agents SDK for TypeScript/Node.js. Build multichannel agents for Teams/M365/Copilot Studio with AgentApplication routing, Express hosting, streaming responses, and Copilot Studio client integration. Triggers: \"Microsoft 365 Agents SDK\", \"@microsoft/agents-hosting\", \"AgentApplication\", \"startServer\", \"streamingResponse\", \"Copilot Studio client\", \"@microsoft/agents-copilotstudio-client\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "m365-agents-ts",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/m365-agents-ts/SKILL.md",
-      "triggers": "m365;agents;ts"
     },
     {
       "description": "Comprehensive guide for mastering modern JavaScript (ES6+) features, functional programming patterns, and best practices for writing clean, maintainable, and performant code.",
@@ -491,14 +451,6 @@
       "triggers": "vercel;deployment"
     },
     {
-      "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "vercel-react-best-practices",
-      "src_path": "lib/charlie85270-dorothy/.agents/skills/vercel-react-best-practices/SKILL.md",
-      "triggers": "vercel;react;best;practices"
-    },
-    {
       "description": "Guides the usage of Gemini API on Google Cloud Vertex AI with the Gen AI SDK. Use when the user asks about using Gemini in an enterprise environment or explicitly mentions Vertex AI. Covers SDK usage (Python, JS/TS, Go, Java, C#), capabilities like Live API, tools, multimedia generation, caching, and batch prediction.",
       "phase": 1,
       "score": 100,
@@ -513,14 +465,6 @@
       "skill_id": "whatsapp-cloud-api",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/whatsapp-cloud-api/SKILL.md",
       "triggers": "messaging;whatsapp;meta;webhooks"
-    },
-    {
-      "description": "Converts VitePress/GFM wiki markdown to Azure DevOps Wiki-compatible format. Generates a Node.js build script that transforms Mermaid syntax, strips front matter, fixes links, and outputs ADO-compatible copies to dist/ado-wiki/.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "wiki-ado-convert",
-      "src_path": "lib/microsoft-skills/.github/plugins/deep-wiki/skills/wiki-ado-convert/SKILL.md",
-      "triggers": "wiki;ado;convert"
     }
   ],
   "sub_hub": "javascript",

@@ -1,11 +1,8 @@
 {
-  "count": 7,
+  "count": 4,
   "hub": "server-side",
   "skills": [
     "aws-serverless-eda",
-    "azure-eventgrid-dotnet",
-    "azure-eventhub-java",
-    "azure-servicebus-dotnet",
     "cqrs-implementation",
     "event-sourcing-architect",
     "projection-patterns"

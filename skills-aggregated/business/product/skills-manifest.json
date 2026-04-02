@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "business",
   "skills": [
     {
@@ -19,6 +19,14 @@
       "triggers": "analyze;feature;requests"
     },
     {
+      "description": "Generate an Ansoff Matrix analysis mapping growth strategies across market penetration, market development, product development, and diversification. Use when considering growth options, planning market expansion, or evaluating strategic growth paths.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "ansoff-matrix",
+      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/ansoff-matrix/SKILL.md",
+      "triggers": "ansoff;matrix"
+    },
+    {
       "description": "Auri: assistente de voz inteligente (Alexa + Claude claude-opus-4-20250805). Visao do produto, persona Vitoria Neural, stack AWS, modelo Free/Pro/Business/Enterprise, roadmap 4 fases, GTM, north star WAC e analise competitiva.",
       "phase": 4,
       "score": 100,
@@ -33,6 +41,22 @@
       "skill_id": "brainstorm-ideas-new",
       "src_path": "lib/phuryn-pm-skills/pm-product-discovery/skills/brainstorm-ideas-new/SKILL.md",
       "triggers": "brainstorm;ideas;new"
+    },
+    {
+      "description": "Generate a Business Model Canvas with all 9 building blocks. Use when creating a business model, documenting how a business creates value, or analyzing an existing business model.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "business-model",
+      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/business-model/SKILL.md",
+      "triggers": "business;model"
+    },
+    {
+      "description": "Create a company research brief with executive quotes, product strategy, and org context. Use when preparing for interviews, competitive analysis, partnerships, or market-entry work.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "company-research",
+      "src_path": "lib/deanpeters-product-manager-skills/skills/company-research/SKILL.md",
+      "triggers": "company;research"
     },
     {
       "description": "Create a Product Requirements Document using a comprehensive 8-section template covering problem, objectives, segments, value propositions, solution, and release planning. Use when writing a PRD, documenting product requirements, preparing a feature spec, or reviewing an existing PRD.",
@@ -59,14 +83,6 @@
       "triggers": "epic;hypothesis"
     },
     {
-      "description": "Turn a refined research proposal or method idea into a detailed, claim-driven experiment roadmap. Use after `research-refine`, or when the user asks for a detailed experiment plan, ablation matrix, evaluation protocol, run order, compute budget, or paper-ready validation that supports the core problem, novelty, simplicity, and any LLM / VLM / Diffusion / RL-based contribution.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "experiment-plan",
-      "src_path": "lib/wanshuiyin-auto-claude-code-research-in-sleep/skills/experiment-plan/SKILL.md",
-      "triggers": "experiment;plan"
-    },
-    {
       "description": "Create job stories using the 'When [situation], I want to [motivation], so I can [outcome]' format with detailed acceptance criteria. Use when writing job stories, creating JTBD-style backlog items, or expressing user situations and motivations.",
       "phase": 4,
       "score": 100,
@@ -81,14 +97,6 @@
       "skill_id": "linear",
       "src_path": "lib/joannis-claude-skills/linear/SKILL.md",
       "triggers": "linear"
-    },
-    {
-      "description": "Version 2.35.0 | PRD to Production | Zero Human Intervention > Research-enhanced: OpenAI SDK, DeepMind, Anthropic, AWS Bedrock, Agent SDK, HN Production (2025)",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "loki-mode",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/loki-mode/SKILL.md",
-      "triggers": "loki;mode"
     },
     {
       "description": "Transform an output-focused roadmap into an outcome-focused one that communicates strategic intent. Rewrites initiatives as outcome statements reflecting user and business impacts. Use when shifting to outcome roadmaps, making a roadmap more strategic, or rewriting feature lists as outcomes.",
@@ -107,6 +115,14 @@
       "triggers": "pestel;analysis"
     },
     {
+      "description": "Perform a PESTLE analysis covering Political, Economic, Social, Technological, Legal, and Environmental factors. Use when assessing the macro environment, doing strategic planning, or evaluating external factors affecting your business.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "pestle-analysis",
+      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/pestle-analysis/SKILL.md",
+      "triggers": "pestle;analysis"
+    },
+    {
       "description": "Build a structured PRD that connects problem, users, solution, and success criteria. Use when turning discovery notes into an engineering-ready document for a major initiative.",
       "phase": 4,
       "score": 100,
@@ -121,14 +137,6 @@
       "skill_id": "prd-generator",
       "src_path": "lib/ognjengt-founder-skills/skills/prd-generator/SKILL.md",
       "triggers": "prd;generator"
-    },
-    {
-      "description": "Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices. Use when user wants to convert a PRD to issues, create implementation tickets, or break down a PRD into work items.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "prd-to-issues",
-      "src_path": "lib/mattpocock-skills/prd-to-issues/SKILL.md",
-      "triggers": "prd;to;issues"
     },
     {
       "description": "Turn a PRD into a multi-phase implementation plan using tracer-bullet vertical slices, saved as a local Markdown file in ./plans/. Use when user wants to break down a PRD, create an implementation plan, plan phases from a PRD, or mentions \"tracer bullets\".",
@@ -163,12 +171,12 @@
       "triggers": "product;strategy;session"
     },
     {
-      "description": "Operate execution flow across GitHub and Linear by triaging issues and pull requests, linking active work, and keeping GitHub public-facing while Linear remains the internal execution layer. Use when the user wants backlog control, PR triage, or GitHub-to-Linear coordination.",
+      "description": "Brainstorm an inspiring, achievable, and emotional product vision that motivates teams and aligns stakeholders. Use when defining or refining a product vision, creating a vision statement, or aligning the team around a shared direction.",
       "phase": 4,
       "score": 100,
-      "skill_id": "project-flow-ops",
-      "src_path": "lib/affaan-m-everything-claude-code/skills/project-flow-ops/SKILL.md",
-      "triggers": "project;flow;ops"
+      "skill_id": "product-vision",
+      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/product-vision/SKILL.md",
+      "triggers": "product;vision"
     },
     {
       "description": "Plan a strategic roadmap across prioritization, epic definition, stakeholder alignment, and sequencing. Use when turning strategy into a release plan that teams can execute.",
@@ -177,6 +185,14 @@
       "skill_id": "roadmap-planning",
       "src_path": "lib/deanpeters-product-manager-skills/skills/roadmap-planning/SKILL.md",
       "triggers": "roadmap;planning"
+    },
+    {
+      "description": "Generate a Startup Canvas combining Product Strategy (9 sections) and Business Model (costs + revenue) for a new product. An alternative to BMC and Lean Canvas that separates strategy from business model. Use when launching a new product or evaluating a startup concept.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "startup-canvas",
+      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/startup-canvas/SKILL.md",
+      "triggers": "startup;canvas"
     },
     {
       "description": "Create user stories following the 3 C's (Card, Conversation, Confirmation) and INVEST criteria with descriptions, design links, and acceptance criteria. Use when writing user stories, breaking down features into backlog items, or defining acceptance criteria.",

@@ -1,15 +1,16 @@
 {
-  "count": 8,
+  "count": 9,
   "hub": "business",
   "skills": [
+    "close-automation",
     "cold-email",
     "frontend-slides",
-    "investor-materials",
-    "investor-outreach",
+    "hubspot-automation",
     "odoo-sales-crm-expert",
     "pipedrive-automation",
     "sales-automator",
-    "sales-enablement"
+    "sales-enablement",
+    "zoho-crm-automation"
   ],
   "sub_hub": "sales"
 }

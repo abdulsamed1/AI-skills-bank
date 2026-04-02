@@ -202,6 +202,7 @@ impl Drop for DirGuard {
 
 #[tokio::main(flavor = "current_thread")]
 async fn main() {
+    dotenvy::dotenv().ok();
     if let Err(err) = run().await {
         eprintln!("\n[ERROR] {err:#}");
         std::process::exit(1);

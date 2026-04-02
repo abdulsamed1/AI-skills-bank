@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "business",
   "skills": [
     {
@@ -107,6 +107,14 @@
       "triggers": "download;video"
     },
     {
+      "description": "Comprehensive, data-backed email marketing knowledge base. 908 sources, 4,798 insights. Use when reviewing email setups, building automation flows, diagnosing deliverability, writing email copy, selecting platforms, or pulling benchmarks. Covers strategy, flows, deliverability, copywriting, segmentation, compliance, cold email, and 19 industry playbooks.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "email-marketing-bible",
+      "src_path": "lib/cosmoblk-email-marketing-bible/SKILL.md",
+      "triggers": "email;marketing;bible"
+    },
+    {
       "description": "Extracts up to 50 highly relevant SEO keywords from text. Use when user wants to generate or extract keywords for given text.",
       "phase": 4,
       "score": 100,
@@ -201,14 +209,6 @@
       "skill_id": "seo",
       "src_path": "lib/agricidaniel-claude-seo/skills/seo/SKILL.md",
       "triggers": "seo"
-    },
-    {
-      "description": "SEO and AEO best practices for metadata, Open Graph, sitemaps, robots.txt, hreflang, JSON-LD structured data, EEAT, and content optimized for search engines and AI answer surfaces. Use this skill when implementing page SEO, technical SEO, schema markup, international SEO, AI-overview readiness, or improving content for Google, ChatGPT, Perplexity, and similar assistants.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "seo-aeo-best-practices",
-      "src_path": "lib/sanity-io-agent-toolkit/skills/seo-aeo-best-practices/SKILL.md",
-      "triggers": "seo;aeo;best;practices"
     },
     {
       "description": "Full website SEO audit with parallel subagent delegation. Crawls up to 500 pages, detects business type, delegates to 10 specialists (7 core + 3 conditional), generates health score. Use when user says audit, full SEO check, analyze my site, or website health check.",
@@ -321,14 +321,6 @@
       "skill_id": "seo-fundamentals",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/seo-fundamentals/SKILL.md",
       "triggers": "seo;fundamentals"
-    },
-    {
-      "description": "Optimize content for AI Overviews (formerly SGE), ChatGPT web search, Perplexity, and other AI-powered search experiences. Generative Engine Optimization (GEO) analysis including brand mention signals, AI crawler accessibility, llms.txt compliance, passage-level citability scoring, and platform-specific optimization. Use when user says \"AI Overviews\", \"SGE\", \"GEO\", \"AI search\", \"LLM optimization\", \"Perplexity\", \"AI citations\", \"ChatGPT search\", or \"AI visibility\".",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "seo-geo",
-      "src_path": "lib/agricidaniel-claude-seo/skills/seo-geo/SKILL.md",
-      "triggers": "seo;geo"
     },
     {
       "description": "Hreflang and international SEO audit, validation, and generation. Detects common mistakes, validates language/region codes, and generates correct hreflang implementations. Use when user says \"hreflang\", \"i18n SEO\", \"international SEO\", \"multi-language\", \"multi-region\", or \"language tags\".",

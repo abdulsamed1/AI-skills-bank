@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "server-side",
   "skills": [
     {
@@ -11,28 +11,12 @@
       "triggers": "browser-forensics;hindsight;chrome-forensics;chromium;edge;browsing-history;cookies;downloads;cache;web-artifacts"
     },
     {
-      "description": "Azure Resource Manager SDK for Redis in .NET. Use for MANAGEMENT PLANE operations: creating/managing Azure Cache for Redis instances, firewall rules, access keys, patch schedules, linked servers (geo-replication), and private endpoints via Azure Resource Manager. NOT for data plane operations (get/set keys, pub/sub) - use StackExchange.Redis for that. Triggers: \"Redis cache\", \"create Redis\", \"manage Redis\", \"ARM Redis\", \"RedisResource\", \"provision Redis\", \"Azure Cache for Redis\".",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "azure-resource-manager-redis-dotnet",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-redis-dotnet/SKILL.md",
-      "triggers": "azure;resource;manager;redis;dotnet"
-    },
-    {
       "description": "cache integration",
       "phase": 2,
       "score": 100,
       "skill_id": "cache-integration",
       "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/domains/document-extraction/skills/cache-integration/SKILL.md",
       "triggers": "cache;integration"
-    },
-    {
-      "description": "Anthropic Claude API patterns for Python and TypeScript. Covers Messages API, streaming, tool use, vision, extended thinking, batches, prompt caching, and Claude Agent SDK. Use when building applications with the Claude API or Anthropic SDKs.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "claude-api",
-      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/claude-api/SKILL.md",
-      "triggers": "claude;api"
     },
     {
       "description": "Context optimization extends the effective capacity of limited context windows through strategic compression, masking, caching, and partitioning. The goal is not to magically increase context windows but to make better use of available capacity.",
@@ -113,14 +97,6 @@
       "skill_id": "pwa-development",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/pwa-development/SKILL.md",
       "triggers": "pwa;development"
-    },
-    {
-      "description": "RNN+Transformer hybrid with O(n) inference. Linear time, infinite context, no KV cache. Train like GPT (parallel), infer like RNN (sequential). Linux Foundation AI project. Production at Windows, Office, NeMo. RWKV-7 (March 2025). Models up to 14B parameters.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "rwkv-architecture",
-      "src_path": "lib/orchestra-research-ai-research-skills/01-model-architecture/rwkv/SKILL.md",
-      "triggers": "RWKV;Model Architecture;RNN;Transformer Hybrid;Linear Complexity;Infinite Context;Efficient Inference;Linux Foundation;Alternative Architecture"
     },
     {
       "description": "Optimize Apache Spark jobs with partitioning, caching, shuffle optimization, and memory tuning. Use when improving Spark performance, debugging slow jobs, or scaling data processing pipelines.",

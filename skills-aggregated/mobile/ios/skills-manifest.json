@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "mobile",
   "skills": [
     {
@@ -11,12 +11,20 @@
       "triggers": "app;store;preflight;skills"
     },
     {
-      "description": "Debug the current iOS project on a booted simulator with XcodeBuildMCP.",
+      "description": "Create a new App Store Connect app record via browser automation. Use when there is no public API for app creation and you need an agent to drive the New App form.",
+      "phase": 5,
+      "score": 100,
+      "skill_id": "asc-app-create-ui",
+      "src_path": "lib/rudrankriyam-app-store-connect-cli-skills/skills/asc-app-create-ui/SKILL.md",
+      "triggers": "asc;app;create;ui"
+    },
+    {
+      "description": "Build, archive, export, and manage Xcode version/build numbers with asc and xcodebuild before uploading to App Store Connect. Use when you need to create an IPA or PKG for upload.",
       "phase": 4,
       "score": 100,
-      "skill_id": "ios-debugger-agent",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/ios-debugger-agent/SKILL.md",
-      "triggers": "ios;debugger;agent"
+      "skill_id": "asc-xcode-build",
+      "src_path": "lib/rudrankriyam-app-store-connect-cli-skills/skills/asc-xcode-build/SKILL.md",
+      "triggers": "asc;xcode;build"
     },
     {
       "description": "Apple Human Interface Guidelines for iPhone. Use when building, reviewing, or refactoring SwiftUI/UIKit interfaces for iOS. Triggers on tasks involving iPhone UI, iOS components, accessibility, Dynamic Type, Dark Mode, or HIG compliance.",
@@ -35,12 +43,20 @@
       "triggers": "ios;developer"
     },
     {
-      "description": "Expert guidance on Swift Concurrency best practices, patterns, and implementation. Use when developers mention: (1) Swift Concurrency, async/await, actors, or tasks, (2) modern concurrency patterns or structured concurrency, (3) migrating to Swift 6 or strict concurrency checking, (4) data races or thread safety issues, (5) refactoring closures to async/await, (6) @MainActor, Sendable, or actor isolation, (7) concurrent code architecture or performance, (8) concurrency-related linter warnings, (9) AsyncSequence, AsyncStream, or task groups, (10) nonisolated, @preconcurrency, or @unchecked Sendable.",
+      "description": "Build, refactor, or review SwiftUI macOS menubar apps that use Tuist.",
       "phase": 4,
       "score": 100,
-      "skill_id": "swift-concurrency",
-      "src_path": "lib/joannis-claude-skills/swift-concurrency/SKILL.md",
-      "triggers": "swift;concurrency"
+      "skill_id": "macos-menubar-tuist-app",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/macos-menubar-tuist-app/SKILL.md",
+      "triggers": "macos;menubar;tuist;app"
+    },
+    {
+      "description": "Scaffold, build, sign, and package SwiftPM macOS apps without Xcode projects.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "macos-spm-app-packaging",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/macos-spm-app-packaging/SKILL.md",
+      "triggers": "macos;spm;app;packaging"
     },
     {
       "description": "Review and fix Swift concurrency issues such as actor isolation and Sendable violations.",
@@ -59,12 +75,36 @@
       "triggers": "swift;nio"
     },
     {
-      "description": "Scan Apple's SwiftUI documentation for deprecated APIs and update the SwiftUI Expert Skill with modern replacements. Use when asked to \"update latest APIs\", \"refresh deprecated SwiftUI APIs\", \"check for new SwiftUI deprecations\", \"scan for API changes\", or after a new iOS/Xcode release. Requires the Sosumi MCP to be available.",
+      "description": "Implement or review SwiftUI Liquid Glass APIs with correct fallbacks and modifier order.",
       "phase": 4,
       "score": 100,
-      "skill_id": "update-swiftui-apis",
-      "src_path": "lib/avdlee-swiftui-agent-skill/.agents/skills/update-swiftui-apis/SKILL.md",
-      "triggers": "update;swiftui;apis"
+      "skill_id": "swiftui-liquid-glass",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/swiftui-liquid-glass/SKILL.md",
+      "triggers": "swiftui;liquid;glass"
+    },
+    {
+      "description": "Audit SwiftUI performance issues from code review and profiling evidence.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "swiftui-performance-audit",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/swiftui-performance-audit/SKILL.md",
+      "triggers": "swiftui;performance;audit"
+    },
+    {
+      "description": "Refactor SwiftUI views into smaller components with stable, explicit data flow.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "swiftui-view-refactor",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/swiftui-view-refactor/SKILL.md",
+      "triggers": "swiftui;view;refactor"
+    },
+    {
+      "description": "Audit SwiftUI iOS feature code for accessibility against WCAG 2.2 Level A/AA and return patch-ready fixes. Use when reviewing SwiftUI views/screens (including auth, forms, settings, and custom controls) and you need both standards traceability (WCAG + WCAG2Mobile interpretation) and practical, minimal code changes in a concise priority-grouped Markdown format with user follow-up checks for code-indeterminate behavior.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "swiftui-wcag-accessibility-auditor",
+      "src_path": "lib/ramzesenok-ios-accessibility-audit-skill/swiftui-wcag-accessibility-auditor/SKILL.md",
+      "triggers": "swiftui;wcag;accessibility;auditor"
     },
     {
       "description": "Expert guidance on building and deploying apps to WendyOS edge devices. Use when developers mention: (1) Wendy or WendyOS, (2) wendy CLI commands, (3) wendy.json or entitlements, (4) deploying apps to edge devices, (5) remote debugging Swift on ARM64, (6) NVIDIA Jetson or Raspberry Pi apps, (7) cross-compiling Swift for ARM64.",

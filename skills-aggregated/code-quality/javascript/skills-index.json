@@ -1,26 +1,22 @@
 {
-  "count": 65,
+  "count": 58,
   "hub": "code-quality",
   "skills": [
     "agentic-development",
     "algorithmic-art",
     "analyzing-malicious-pdf-with-peepdf",
     "animejs-animation",
-    "azure-ai-voicelive-ts",
-    "azure-messaging",
-    "azure-postgres-ts",
-    "azure-prepare",
     "backend-patterns",
     "bullmq-specialist",
     "bun-development",
     "claude-d3js-skill",
     "coding-standards",
     "context7-auto-research",
-    "copilot-sdk",
     "deobfuscating-javascript-malware",
     "discord-bot-architect",
     "documentation-lookup",
     "everything-claude-code-conventions",
+    "figma-code-connect",
     "firecrawl-scrape",
     "fp-backend",
     "gemini-api-dev",
@@ -31,7 +27,6 @@
     "javascript-typescript-typescript-scaffold",
     "kreuzberg",
     "linting-neostandard-eslint9",
-    "m365-agents-ts",
     "modern-javascript-patterns",
     "n8n-code-javascript",
     "nestjs-expert",
@@ -63,10 +58,8 @@
     "transformers-js",
     "typescript-expert",
     "vercel-deployment",
-    "vercel-react-best-practices",
     "vertex-ai-api-dev",
-    "whatsapp-cloud-api",
-    "wiki-ado-convert"
+    "whatsapp-cloud-api"
   ],
   "sub_hub": "javascript"
 }

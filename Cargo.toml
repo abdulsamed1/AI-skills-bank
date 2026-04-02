@@ -41,6 +41,7 @@ rustls = "0.23"
 rustls-native-certs = "0.8"
 chrono = { version = "0.4", features = ["serde"] }
 ratatui = "0.29"
+dotenvy = "0.15"
 
 [dev-dependencies]
 assert_cmd = "2"

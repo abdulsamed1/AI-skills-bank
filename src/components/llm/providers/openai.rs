@@ -23,28 +23,6 @@ impl OpenAiProvider {
     fn get_model(&self) -> String {
         std::env::var("LLM_MODEL").unwrap_or_else(|_| "gpt-4o-mini".to_string())
     }
-
-    fn build_system_prompt(&self, context: &LlmClassificationContext, is_batch: bool) -> String {
-        let mut prompt = "You are a classification assistant.\n".to_string();
-        prompt.push_str("Valid Hubs: ");
-        prompt.push_str(&context.valid_hubs.join(", "));
-        prompt.push_str("\nValid Sub-Hubs: ");
-        prompt.push_str(&context.valid_sub_hubs.join(", "));
-        prompt.push_str("\nExcluded Categories: ");
-        prompt.push_str(&context.excluded_categories.join(", "));
-        prompt.push_str("\n\nInstructions:\n");
-        prompt.push_str("1. Classify the skill metadata provided.\n");
-        prompt.push_str("2. If a skill matches an Excluded Category, return 'excluded' for both hub and sub_hub.\n");
-        prompt.push_str("3. Use the provided Valid Hubs and Sub-Hubs otherwise.\n");
-        if is_batch {
-            prompt.push_str("4. Return a JSON array of objects (one per skill).\n");
-        } else {
-            prompt.push_str("4. Return a JSON object with 'ranked_suggestions' array.\n");
-        }
-        prompt.push_str("Each object: {\"hub\":..., \"sub_hub\":..., \"confidence\":0-100, \"reasoning\":...}.\n");
-        prompt.push_str("Return ONLY valid JSON.");
-        prompt
-    }
 }
 
 #[async_trait]
@@ -62,7 +40,7 @@ impl LlmProvider for OpenAiProvider {
             .as_deref()
             .unwrap_or("https://api.openai.com/v1/chat/completions");
 
-        let system_prompt = self.build_system_prompt(context, false);
+        let system_prompt = crate::components::llm::build_classification_prompt(context, false);
 
         let user_payload = serde_json::json!({
             "skill_id": skill_id,
@@ -157,7 +135,7 @@ impl LlmProvider for OpenAiProvider {
             .as_deref()
             .unwrap_or("https://api.openai.com/v1/chat/completions");
 
-        let system_prompt = self.build_system_prompt(context, true);
+        let system_prompt = crate::components::llm::build_classification_prompt(context, true);
 
         let payload_items: Vec<serde_json::Value> = items
             .iter()

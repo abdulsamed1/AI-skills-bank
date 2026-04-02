@@ -1,14 +1,7 @@
 {
-  "count": 18,
+  "count": 11,
   "hub": "code-quality",
   "skills": [
-    "azure-cosmos-rust",
-    "azure-eventhub-rust",
-    "azure-identity-rust",
-    "azure-keyvault-certificates-rust",
-    "azure-keyvault-keys-rust",
-    "azure-keyvault-secrets-rust",
-    "azure-storage-blob-rust",
     "bevy-ecs-expert",
     "huggingface-tokenizers",
     "makepad-skills",

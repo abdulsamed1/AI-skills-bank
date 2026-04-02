@@ -1,15 +1,20 @@
 {
-  "count": 9,
+  "count": 14,
   "hub": "mobile",
   "skills": [
     "app-store-preflight-skills",
-    "ios-debugger-agent",
+    "asc-app-create-ui",
+    "asc-xcode-build",
     "ios-design-guidelines",
     "ios-developer",
-    "swift-concurrency",
+    "macos-menubar-tuist-app",
+    "macos-spm-app-packaging",
     "swift-concurrency-expert",
     "swift-nio",
-    "update-swiftui-apis",
+    "swiftui-liquid-glass",
+    "swiftui-performance-audit",
+    "swiftui-view-refactor",
+    "swiftui-wcag-accessibility-auditor",
     "wendy"
   ],
   "sub_hub": "ios"

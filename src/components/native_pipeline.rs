@@ -197,13 +197,13 @@ pub async fn aggregate_to_output(
             continue;
         }
 
-        let path_str = skill.path.to_string_lossy();
-        let norm_text = format!("{} {} {}", skill.name, skill.description, path_str).to_lowercase();
-        let tokens: HashSet<String> = norm_text
-            .split_whitespace()
-            .map(|s| s.trim_matches(|c: char| !c.is_alphanumeric()).to_string())
-            .filter(|s| !s.is_empty())
-            .collect();
+        let full_text = format!("{} {} {}", skill.name, skill.description, skill.path.to_string_lossy());
+        let (norm_text, tokens) = rules::normalize_text(&full_text);
+
+        // EXTRA TRACING
+        if skill.name.to_lowercase().contains("resume") || skill.name.to_lowercase().contains("game") {
+             println!("DEBUG: Processing skill: '{}' | Excluded? {}", skill.name, rules::is_excluded(&norm_text, &tokens));
+        }
 
         if rules::is_excluded(&norm_text, &tokens) {
             skill.hub = "excluded".to_string();
@@ -213,7 +213,33 @@ pub async fn aggregate_to_output(
     }
 
     // 4. Apply persisted routing only for low-confidence items.
-    apply_existing_assignments(repo_root, &existing_assignments, &mut skills);
+    let mut migrations = Vec::new();
+    for skill in skills.iter_mut() {
+        if let Some((prev_hub, prev_sub)) = existing_assignments.by_skill.get(&skill.name) {
+            let score = skill.match_score.unwrap_or(0);
+            
+            // If the new rule matched with confidence (>= 70) and it's DIFFERENT 
+            // from the previous assignment, log it as a Migration.
+            if score >= 70 && (prev_hub != &skill.hub || prev_sub != &skill.sub_hub) {
+                migrations.push(format!(
+                    "Migrated `{}`: {}/{} -> {}/{} (score: {})",
+                    skill.name, prev_hub, prev_sub, skill.hub, skill.sub_hub, score
+                ));
+            } else if score < 70 {
+                // Otherwise fallback to existing if we have zero confidence.
+                skill.hub = prev_hub.clone();
+                skill.sub_hub = prev_sub.clone();
+                skill.match_score = Some(60); 
+            }
+        }
+    }
+
+    if !migrations.is_empty() {
+        let migration_path = output_dir.join("migration_delta.log");
+        let content = migrations.join("\n");
+        let _ = std::fs::write(migration_path, content);
+        println!("INFO: {} skills migrated to new hubs based on refined rules.", migrations.len());
+    }
 
     // Final cleanup: Drop all skills that were explicitly excluded by Code Rules (Step A) or LLM (Step B)
     skills.retain(|s| s.hub != "excluded");
@@ -575,7 +601,7 @@ async fn classify_skills_with_llm(
         }
 
         // Deterministic cache key: repo+skill_path+content-hash
-        let key = crate::components::llm::key_for_skill(_repo_root, &skill.path, &skill.name, &skill.description);
+        let key = crate::components::llm::key_for_skill(_repo_root, &skill.path, &skill.name, &skill.description, skill.content_body.as_deref());
 
         if let Some(cached) = crate::components::llm::get_cached_classification(&cache, &key) {
             if let Some(top) = cached.ranked_suggestions.first() {
@@ -591,7 +617,7 @@ async fn classify_skills_with_llm(
             idx,
             skill.name.clone(),
             skill.description.clone(),
-            skill.triggers.clone(),
+            skill.content_body.clone(),
             key,
         ));
     }

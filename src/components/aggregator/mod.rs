@@ -28,6 +28,8 @@ pub struct SkillMetadata {
     pub required: Option<String>,
     #[serde(default)]
     pub action: Option<String>,
+    #[serde(default)]
+    pub content_body: Option<String>,
 }
 
 #[derive(Debug, Serialize)]
@@ -307,6 +309,21 @@ impl Aggregator {
         let required = get_string("required").or_else(|| Some("true".to_string()));
         let action = get_string("action").or_else(|| Some("invoke".to_string()));
 
+        let text_body = body_part.trim();
+        let content_body = if text_body.is_empty() {
+            None
+        } else {
+            let mut end_idx = 1500;
+            if text_body.len() < end_idx {
+                end_idx = text_body.len();
+            } else {
+                while !text_body.is_char_boundary(end_idx) && end_idx > 0 {
+                    end_idx -= 1;
+                }
+            }
+            Some(text_body[..end_idx].to_string())
+        };
+
         Ok(SkillMetadata {
             name,
             description,
@@ -318,6 +335,7 @@ impl Aggregator {
             phase,
             required,
             action,
+            content_body,
         })
     }
 

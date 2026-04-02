@@ -1,5 +1,5 @@
 {
-  "count": 8,
+  "count": 7,
   "hub": "mobile",
   "skills": [
     "app-store-optimization",
@@ -7,7 +7,6 @@
     "flutter-expert",
     "mobile-developer",
     "mobile-games",
-    "multi-platform-apps-multi-platform",
     "performing-mobile-device-forensics-with-cellebrite",
     "react-native"
   ],

@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "server-side",
   "skills": [
     {
@@ -9,30 +9,6 @@
       "skill_id": "aws-serverless-eda",
       "src_path": "lib/zxkane-aws-skills/plugins/serverless-eda/skills/aws-serverless-eda/SKILL.md",
       "triggers": "aws;serverless;eda"
-    },
-    {
-      "description": "Azure Event Grid SDK for .NET. Client library for publishing and consuming events with Azure Event Grid. Use for event-driven architectures, pub/sub messaging, CloudEvents, and EventGridEvents. Triggers: \"Event Grid\", \"EventGridPublisherClient\", \"CloudEvent\", \"EventGridEvent\", \"publish events .NET\", \"event-driven\", \"pub/sub\".",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "azure-eventgrid-dotnet",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-eventgrid-dotnet/SKILL.md",
-      "triggers": "azure;eventgrid;dotnet"
-    },
-    {
-      "description": "Build real-time streaming applications with Azure Event Hubs SDK for Java. Use when implementing event streaming, high-throughput data ingestion, or building event-driven architectures.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "azure-eventhub-java",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-eventhub-java/SKILL.md",
-      "triggers": "azure;eventhub;java"
-    },
-    {
-      "description": "Azure Service Bus SDK for .NET. Enterprise messaging with queues, topics, subscriptions, and sessions. Use for reliable message delivery, pub/sub patterns, dead letter handling, and background processing. Triggers: \"Service Bus\", \"ServiceBusClient\", \"ServiceBusSender\", \"ServiceBusReceiver\", \"ServiceBusProcessor\", \"message queue\", \"pub/sub .NET\", \"dead letter queue\".",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "azure-servicebus-dotnet",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-servicebus-dotnet/SKILL.md",
-      "triggers": "azure;servicebus;dotnet"
     },
     {
       "description": "Implement Command Query Responsibility Segregation for scalable architectures. Use when separating read and write models, optimizing query performance, or building event-sourced systems.",

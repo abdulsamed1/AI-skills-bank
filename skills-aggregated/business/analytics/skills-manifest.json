@@ -1,7 +1,23 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "business",
   "skills": [
+    {
+      "description": "When the user wants to plan, design, or implement an A/B test or experiment. Also use when the user mentions \"A/B test,\" \"split test,\" \"experiment,\" \"test this change,\" \"variant copy,\" \"multivariate test,\" \"hypothesis,\" \"should I test this,\" \"which version is better,\" \"test two versions,\" \"statistical significance,\" or \"how long should I run this test.\" Use this whenever someone is comparing two approaches and wants to measure which performs better. For tracking implementation, see analytics-tracking. For page-level conversion optimization, see page-cro.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "ab-test-setup",
+      "src_path": "lib/coreyhaines31-marketingskills/skills/ab-test-setup/SKILL.md",
+      "triggers": "ab;test;setup"
+    },
+    {
+      "description": "Shows a structured progress dashboard for an album with percentage complete per phase, blocking items, and status breakdown. Use for a quick visual overview of album progress.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "album-dashboard",
+      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/album-dashboard/SKILL.md",
+      "triggers": "album;dashboard"
+    },
     {
       "description": "When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions \"set up tracking,\" \"GA4,\" \"Google Analytics,\" \"conversion tracking,\" \"event tracking,\" \"UTM parameters,\" \"tag manager,\" \"GTM,\" \"analytics implementation,\" \"tracking plan,\" \"how do I measure this,\" \"track conversions,\" \"attribution,\" \"Mixpanel,\" \"Segment,\" \"are my events firing,\" or \"analytics isn't working.\" Use this whenever someone asks how to know if something is working or wants to measure marketing results. For A/B test measurement, see ab-test-setup.",
       "phase": 4,
@@ -17,6 +33,14 @@
       "skill_id": "app-analytics",
       "src_path": "lib/eronred-aso-skills/skills/app-analytics/SKILL.md",
       "triggers": "app;analytics"
+    },
+    {
+      "description": "Builds real-time incident response dashboards in Splunk, Elastic, or Grafana to provide SOC analysts and leadership with situational awareness during active incidents, tracking affected systems, containment status, IOC spread, and response timeline. Use when IR teams need unified visibility during incident coordination and post-incident reporting.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "building-incident-response-dashboard",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-incident-response-dashboard/SKILL.md",
+      "triggers": "soc;dashboard;incident-response;splunk;visualization;situational-awareness;metrics"
     },
     {
       "description": "Builds SOC performance metrics and KPI tracking dashboards measuring Mean Time to Detect (MTTD), Mean Time to Respond (MTTR), alert quality ratios, analyst productivity, and detection coverage using SIEM data. Use when SOC leadership needs operational visibility, continuous improvement tracking, or executive-level reporting on security operations effectiveness.",
@@ -43,12 +67,12 @@
       "triggers": "charlie"
     },
     {
-      "description": "Multi-source deep research using firecrawl and exa MCPs. Searches the web, synthesizes findings, and delivers cited reports with source attribution. Use when the user wants thorough research on any topic with evidence and citations.",
+      "description": "Build a real-time support chat system with a floating widget for users and an admin dashboard for support staff. Use when the user wants live chat, customer support chat, real-time messaging, or in-app support.",
       "phase": 4,
       "score": 100,
-      "skill_id": "deep-research",
-      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/deep-research/SKILL.md",
-      "triggers": "deep;research"
+      "skill_id": "chat-widget",
+      "src_path": "lib/shpigford-skills/chat-widget/SKILL.md",
+      "triggers": "chat;widget"
     },
     {
       "description": "Claude-powered ecommerce business review toolkit for D2C stores. Single command: review. Analyzes order transaction data across multiple time periods (30d/90d/365d), produces KPI trees with health signals, structured findings, and concrete action plans. Triggers on: \"ecommerce review\", \"store review\", \"store health\", \"revenue analysis\", \"customer analysis\", \"product analysis\", \"business review\".",
@@ -75,12 +99,36 @@
       "triggers": "kpi;dashboard;design"
     },
     {
-      "description": "Conduct market research, competitive analysis, investor due diligence, and industry intelligence with source attribution and decision-oriented summaries. Use when the user wants market sizing, competitor comparisons, fund research, technology scans, or research that informs business decisions.",
+      "description": "Master comprehensive evaluation strategies for LLM applications, from automated metrics to human evaluation and A/B testing.",
       "phase": 4,
       "score": 100,
-      "skill_id": "market-research",
-      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/market-research/SKILL.md",
-      "triggers": "market;research"
+      "skill_id": "llm-evaluation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/llm-evaluation/SKILL.md",
+      "triggers": "llm;evaluation"
+    },
+    {
+      "description": "Define and design a product metrics dashboard with key metrics, data sources, visualization types, and alert thresholds. Use when creating a metrics dashboard, defining KPIs, setting up product analytics, or building a data monitoring plan.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "metrics-dashboard",
+      "src_path": "lib/phuryn-pm-skills/pm-product-discovery/skills/metrics-dashboard/SKILL.md",
+      "triggers": "metrics;dashboard"
+    },
+    {
+      "description": "PostHog analytics, event tracking, feature flags, dashboards",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "posthog-analytics",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/posthog-analytics/SKILL.md",
+      "triggers": "posthog;analytics"
+    },
+    {
+      "description": "Weekly engineering retrospective. Analyzes commit history, work patterns, and code quality metrics with persistent history and trend tracking. Team-aware: breaks down per-person contributions with praise and growth areas. Use when asked to \"weekly retro\", \"what did we ship\", or \"engineering retrospective\". Proactively suggest at the end of a work week or sprint. (gstack)",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "retro",
+      "src_path": "lib/garrytan-gstack/retro/SKILL.md",
+      "triggers": "retro"
     },
     {
       "description": "When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions \"signup conversions,\" \"registration friction,\" \"signup form optimization,\" \"free trial signup,\" \"reduce signup dropoff,\" \"account creation flow,\" \"people aren't signing up,\" \"signup abandonment,\" \"trial conversion rate,\" \"nobody completes registration,\" \"too many steps to sign up,\" or \"simplify our signup.\" Use this whenever the user has a signup or registration flow that isn't performing. For post-signup onboarding, see onboarding-cro. For lead capture forms (not account creation), see form-cro.",
@@ -89,6 +137,22 @@
       "skill_id": "signup-flow-cro",
       "src_path": "lib/coreyhaines31-marketingskills/skills/signup-flow-cro/SKILL.md",
       "triggers": "signup;flow;cro"
+    },
+    {
+      "description": "Comprehensive guide to tracking, calculating, and optimizing key performance metrics for different startup business models from seed through Series A.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "startup-metrics-framework",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/startup-metrics-framework/SKILL.md",
+      "triggers": "startup;metrics;framework"
+    },
+    {
+      "description": "Visualize training metrics, debug models with histograms, compare experiments, visualize model graphs, and profile performance with TensorBoard - Google's ML visualization toolkit",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "tensorboard",
+      "src_path": "lib/orchestra-research-ai-research-skills/13-mlops/tensorboard/SKILL.md",
+      "triggers": "MLOps;TensorBoard;Visualization;Training Metrics;Model Debugging;PyTorch;TensorFlow;Experiment Tracking;Performance Profiling"
     }
   ],
   "sub_hub": "analytics",

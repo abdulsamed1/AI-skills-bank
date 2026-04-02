@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "mobile",
   "skills": [
     {
@@ -41,14 +41,6 @@
       "skill_id": "mobile-games",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/game-development/mobile-games/SKILL.md",
       "triggers": "mobile;games"
-    },
-    {
-      "description": "Build and deploy the same feature consistently across web, mobile, and desktop platforms using API-first architecture and parallel implementation strategies.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "multi-platform-apps-multi-platform",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/multi-platform-apps-multi-platform/SKILL.md",
-      "triggers": "multi;platform;apps;multi;platform"
     },
     {
       "description": "Acquire and analyze mobile device data using Cellebrite UFED and open-source tools to extract communications, location data, and application artifacts.",

@@ -5,7 +5,6 @@
     "algolia-search",
     "customaize-agent:thought-based-reasoning",
     "fp-ts-react",
-    "langchain",
     "netlify-frameworks",
     "nextjs-app-router-patterns",
     "react-component-performance",
@@ -15,6 +14,7 @@
     "react:components",
     "remotion-best-practices",
     "sanity-best-practices",
+    "ui-ux-pro-max",
     "vercel-ai-sdk-expert"
   ],
   "sub_hub": "web-frameworks"

@@ -2,7 +2,6 @@ skill_id,description,score,phase
 amazon-alexa,"Integracao completa com Amazon Alexa para criar skills de voz inteligentes, transformar Alexa em assistente com Claude como cerebro (projeto Auri) e integrar com AWS ecosystem (Lambda, DynamoDB, Polly, Transcribe, Lex, Smart Home).",100,2
 aws-aurora,"AWS Aurora Serverless v2, RDS Proxy, Data API, connection pooling",100,2
 aws-serverless,Proper Lambda function structure with error handling,100,2
-azure-cloud-migrate,"Assess and migrate cross-cloud workloads to Azure with migration reports and code conversion guidance. Supports AWS, GCP, and other providers. WHEN: migrate Lambda to Azure Functions, migrate AWS to Azure, Lambda migration assessment, convert AWS serverless to Azure, migration readiness report, migrate from AWS, migrate from GCP, cross-cloud migration.",100,2
 cloud-uploader,Uploads promo videos and content to Cloudflare R2 or AWS S3. Use when the user wants to host promo content for social media or distribution.,100,2
 cloudflare-d1,"Cloudflare D1 SQLite database with Workers, Drizzle ORM, migrations",100,2
 cloudflare-workers-expert,"Expert in Cloudflare Workers and the Edge Computing ecosystem. Covers Wrangler, KV, D1, Durable Objects, and R2 storage.",100,2

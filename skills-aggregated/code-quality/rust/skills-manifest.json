@@ -1,63 +1,7 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "code-quality",
   "skills": [
-    {
-      "description": "Azure Cosmos DB SDK for Rust (NoSQL API). Use for document CRUD, queries, containers, and globally distributed data. Triggers: \"cosmos db rust\", \"CosmosClient rust\", \"container\", \"document rust\", \"NoSQL rust\", \"partition key\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-cosmos-rust",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-cosmos-rust/SKILL.md",
-      "triggers": "\"cosmos db rust\", \"CosmosClient rust\", \"container\", \"document rust\", \"NoSQL rust\", \"partition key\"."
-    },
-    {
-      "description": "Azure Event Hubs SDK for Rust. Use for sending and receiving events, streaming data ingestion. Triggers: \"event hubs rust\", \"ProducerClient rust\", \"ConsumerClient rust\", \"send event rust\", \"streaming rust\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-eventhub-rust",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-eventhub-rust/SKILL.md",
-      "triggers": "\"event hubs rust\", \"ProducerClient rust\", \"ConsumerClient rust\", \"send event rust\", \"streaming rust\"."
-    },
-    {
-      "description": "Azure Identity SDK for Rust authentication. Use for DeveloperToolsCredential, ManagedIdentityCredential, ClientSecretCredential, and token-based authentication. Triggers: \"azure-identity\", \"DeveloperToolsCredential\", \"authentication rust\", \"managed identity rust\", \"credential rust\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-identity-rust",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-identity-rust/SKILL.md",
-      "triggers": "\"azure-identity\", \"DeveloperToolsCredential\", \"authentication rust\", \"managed identity rust\", \"credential rust\"."
-    },
-    {
-      "description": "Azure Key Vault Certificates SDK for Rust. Use for creating, importing, and managing certificates. Triggers: \"keyvault certificates rust\", \"CertificateClient rust\", \"create certificate rust\", \"import certificate rust\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-keyvault-certificates-rust",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-keyvault-certificates-rust/SKILL.md",
-      "triggers": "\"keyvault certificates rust\", \"CertificateClient rust\", \"create certificate rust\", \"import certificate rust\"."
-    },
-    {
-      "description": "Azure Key Vault Keys SDK for Rust. Use for creating, managing, and using cryptographic keys. Triggers: \"keyvault keys rust\", \"KeyClient rust\", \"create key rust\", \"encrypt rust\", \"sign rust\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-keyvault-keys-rust",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-keyvault-keys-rust/SKILL.md",
-      "triggers": "\"keyvault keys rust\", \"KeyClient rust\", \"create key rust\", \"encrypt rust\", \"sign rust\"."
-    },
-    {
-      "description": "Azure Key Vault Secrets SDK for Rust. Use for storing and retrieving secrets, passwords, and API keys. Triggers: \"keyvault secrets rust\", \"SecretClient rust\", \"get secret rust\", \"set secret rust\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-keyvault-secrets-rust",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-keyvault-secrets-rust/SKILL.md",
-      "triggers": "\"keyvault secrets rust\", \"SecretClient rust\", \"get secret rust\", \"set secret rust\"."
-    },
-    {
-      "description": "Azure Blob Storage SDK for Rust. Use for uploading, downloading, and managing blobs and containers. Triggers: \"blob storage rust\", \"BlobClient rust\", \"upload blob rust\", \"download blob rust\", \"container rust\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-storage-blob-rust",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-storage-blob-rust/SKILL.md",
-      "triggers": "\"blob storage rust\", \"BlobClient rust\", \"upload blob rust\", \"download blob rust\", \"container rust\"."
-    },
     {
       "description": "Master Bevy's Entity Component System (ECS) in Rust, covering Systems, Queries, Resources, and parallel scheduling.",
       "phase": 1,

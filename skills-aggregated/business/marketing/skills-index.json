@@ -1,5 +1,5 @@
 {
-  "count": 59,
+  "count": 58,
   "hub": "business",
   "skills": [
     "ai-seo",
@@ -15,6 +15,7 @@
     "copy-editing",
     "customer-research",
     "download-video",
+    "email-marketing-bible",
     "keyword-extractor",
     "lead-magnet-generator",
     "lead-magnets",
@@ -27,7 +28,6 @@
     "schema-markup",
     "screenshots",
     "seo",
-    "seo-aeo-best-practices",
     "seo-audit",
     "seo-authority-builder",
     "seo-backlinks",
@@ -42,7 +42,6 @@
     "seo-firecrawl",
     "seo-forensic-incident-response",
     "seo-fundamentals",
-    "seo-geo",
     "seo-hreflang",
     "seo-image-gen",
     "seo-images",

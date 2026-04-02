@@ -78,18 +78,22 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     );
     
     code_quality.insert(
-        "ci-cd",
+        "virsion-control",
         SubHubRule {
-            keywords: vec!["ci", "cd", "github-actions", "jenkins", "pipeline"],
-            anchor_keywords: vec!["ci", "cd", "pipeline", "github-actions", "jenkins", "github actions", "jenkins pipeline", "github actions pipeline"],
+            keywords: vec!["git", "CI/CD integration", "code review", "github", "gitlab", "bitbucket", "virsion-control", "ci-cd", "version-control"],
+            anchor_keywords: vec!["git", "github", "gitlab", "bitbucket", "virsion-control", "version-control"],
             negative_keywords: vec!["ui"],
         },
     );
     code_quality.insert(
         "code-review",
         SubHubRule {
-            keywords: vec!["code-review", "code-review-ai-ai-review", "code-review-excellence", "code-review:review-local-changes", "code-review:review-pr", "code-reviewer", "code-simplifier"],
-            anchor_keywords: vec!["code-review", "code-review-ai-ai-review", "code-review-excellence", "code-review:review-local-changes", "code-review:review-pr", "code-reviewer", "code-simplifier"],
+            keywords: vec![
+                "code-review", "ai-review", "review-local-changes", "review-pr", 
+                "code-reviewer", "code-simplifier", "clean-code", "refactoring", 
+                "bob-craft", "review-standards", "uncle-bob", "solid-principles"
+            ],
+            anchor_keywords: vec!["code-review", "review-pr", "clean-code", "refactoring", "bob-craft"],
             negative_keywords: vec!["ui"],
         },
     );
@@ -175,16 +179,24 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     ai_sub.insert(
         "prompting-factory",
         SubHubRule {
-            keywords: vec!["skill-enhancement",
-                "skills-factory",
-                "llm-skill",
-                "prompt-engineering", "context-compression", "meta-prompting", "prompt-optimization", "prompt-compression"],
-            anchor_keywords: vec![   "skill-enhancement",
-                "skills-factory",
-                "agent-skill",
-                "llm-skill",
-                "prompt-engineering"],
-            negative_keywords: vec!["ui", "css"],
+            keywords: vec![
+                "skill-enhancement", "skills-factory", "llm-skill", "agent-skill",
+                "prompt-engineering", "context-compression", "meta-prompting", "prompt-optimization",
+                "prompt-compression", "prompt", "skill-authoring", "skill-reviewer",
+                "skill-creator", "skill-writer", "skill-optimizer", "prompt-patterns",
+                "agent", "agents", "multi-agent", "agent-tool", "tool-builder",
+                "ai-agents", "ai-native", "llm-application",
+                "llm", "agent-harness", "gan-style", "memory-systems",
+                "crewai", "swarm", "orchestration-agent", "agent-handoff",
+                "function-calling", "mcp-tools",
+                "machine-learning-ops", "ml-pipeline", "ml-ops"
+            ],
+            anchor_keywords: vec![
+                "skill", "agent-skill", "prompt-engineering", "prompt", "skills-factory",
+                "agent", "multi-agent", "llm", "crewai", "agent-tool",
+                "tool-builder", "ai-agents", "ml-pipeline", "ml-ops"
+            ],
+            negative_keywords: vec!["ui", "css", "html", "tailwind", "figma"],
         },
     );
     hubs.insert(
@@ -210,7 +222,28 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
         SubHubRule {
             keywords: vec!["html", "css", "tailwind", "styling", "design-systems", "responsive", "design-system", "component-library", "tokens", "storybook", "html", "css", "tailwind", "styling", "ui-ux", "responsive","ux", "user-experience", "usability","ui", "design", "wireframe", "prototype", "user-interface", "user-experience", "stitch", "figma"],
             anchor_keywords: vec!["ui", "ux", "design", "css", "tailwind"],
-            negative_keywords: vec!["backend", "sql"],
+            negative_keywords: vec![
+                "backend", "sql",
+                // Block AI/Agent skills from matching on "design"
+                "agent", "agents", "multi-agent", "llm", "autonomous", "crewai",
+                "swarm", "orchestration-agent", "function-calling", "mcp",
+                "agent-tool", "tool-builder", "ai-native", "agent-harness",
+                "gan-style", "memory-systems", "machine-learning", "ml-pipeline",
+                // Block Architecture/Backend skills from matching on "design"
+                "architect", "architecture", "software-architecture", "ddd",
+                "domain-driven", "bounded-context", "database-architect",
+                "nosql", "dynamodb", "cassandra", "mongodb",
+                "temporal", "workflow-orchestration",
+                // Block Security/IAM skills from matching on "design"
+                "identity-governance", "incident-response", "playbook",
+                "iga", "iam", "jml", "provisioning", "privileged-access",
+                "access-review", "certification", "recertification",
+                "cybersecurity", "cyber-security", "envelope-encryption",
+                // Block Business skills
+                "team-composition", "hiring", "equity-allocation",
+                // Block EDA/hardware design
+                "design-space-exploration", "dse", "eda", "parameter-tuning",
+            ],
         },
     );
     fe_sub.insert(
@@ -233,34 +266,10 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
 // server-side Hub — 8 sub-hubs متخصصة
 let mut be_sub = HashMap::new();
 
-// 1. FRAMEWORKS — اختيار الفريموورك واستخدامه
-be_sub.insert(
-    "frameworks",
-    SubHubRule {
-        keywords: vec![
-            "express", "koa", "hapi", "fastify", "hono", "elysia",
-            "nestjs", "adonisjs",
-            "django", "flask", "fastapi", "litestar", "tornado",
-            "spring", "spring-boot", "quarkus", "micronaut",
-            "rails", "laravel", "phoenix", "gin", "fiber", "echo",
-            "server framework", "backend framework", "web server",
-            "middleware", "routing", "dependency injection",
-        ],
-        anchor_keywords: vec![
-            "express", "fastapi", "django", "flask", "spring", "nestjs",
-            "hono", "gin", "rails", "laravel", "phoenix",
-        ],
-        negative_keywords: vec![
-            "react", "vue", "angular", "nextjs", "html", "css",
-            "sql", "postgres", "database", "docker", "kubernetes",
-            "kafka", "rabbitmq", "serverless", "cloudflare",
-        ],
-    },
-);
 
-// 2. API-DESIGN — تصميم الـ API وعقوده وأنماطه
+// architect — تصميم الـ API وعقوده وأنماطه والمعمارية
 be_sub.insert(
-    "api-design",
+    "architect",
     SubHubRule {
         keywords: vec![
             "rest", "restful", "graphql", "grpc", "trpc",
@@ -272,14 +281,30 @@ be_sub.insert(
             "api error handling", "api pagination",
             "webhook", "websocket", "sse", "server-sent events",
             "api security", "api caching", "api monitoring",
+            "architecture", "system design", "ddd", "bounded contexts",
+            "adr", "architectural decisions", "software architecture",
+            "system architecture", "microservices", "monolith",
+            "event-driven architecture", "serverless architecture",
+            "hexagonal architecture", "clean architecture",
+            "onion architecture", "modular monolith",
+            "domain-driven design", "strategic design",
+            "express", "koa", "hapi", "fastify", "hono", "elysia",
+            "nestjs", "adonisjs",
+            "django", "flask", "fast api", "litestar", "tornado",
+            "spring", "spring-boot", "quarkus", "micronaut",
+            "rails", "laravel", "phoenix", "gin", "fiber", "echo",
+            "server framework", "backend framework", "server",
+            "middleware", "routing", "dependency injection"
+            
         ],
         anchor_keywords: vec![
             "rest", "graphql", "openapi", "swagger", "api design",
             "api gateway", "webhook", "websocket", "grpc", "trpc",
+            "architecture", "system design", "ddd",
+            "clean architecture", "microservices", "software architecture",
         ],
         negative_keywords: vec![
-            "html", "css", "react", "vue", "sql", "postgres",
-            "docker", "kubernetes", "kafka", "serverless",
+            "html", "css", "react"
         ],
     },
 );
@@ -469,9 +494,11 @@ bus_sub.insert(
             "customer discovery", "north star metric", "epic",
             "jobs to be done", "jtbd", "feature prioritization",
             "requirements", "acceptance criteria", "sprint", "okr",
+            "product-strategy", "product strategy", "positioning",
         ],
         anchor_keywords: vec![
             "prd", "roadmap", "mvp", "backlog", "product discovery",
+            "product-strategy", "product strategy",
         ],
         negative_keywords: vec![
             "react", "api", "sql", "docker", "python", "rust",
@@ -567,11 +594,12 @@ bus_sub.insert(
             "kpi", "metrics", "dashboard", "reporting",
             "data driven", "product analytics", "user analytics",
             "revenue analytics", "ltv", "cac", "arpu", "mrr", "arr",
-            "retention rate", "churn rate", "nps",
+            "retention rate", "churn rate", "nps", "tracking",
+            "measurement", "analytics-tracking", "insights-dashboard"
         ],
         anchor_keywords: vec![
             "google analytics", "attribution", "conversion rate",
-            "funnel analytics", "kpi", "mrr", "ltv", "cac",
+            "funnel analytics", "kpi", "mrr", "ltv", "cac", "metrics", "dashboard", "analytics"
         ],
         negative_keywords: vec![
             "backend", "sql", "database", "api", "python",
@@ -591,7 +619,7 @@ bus_sub.insert(
             "service operations", "cost optimization", "capacity planning",
             "n8n", "zapier", "make", "ai automation",
             "productivity automation-ai", "project management",
-            "okr tracking", "team management", "hiring", "onboarding",
+            "okr tracking", "team management", "onboarding",
             "email", "newsletter", "email marketing", "mailchimp",
             "sendgrid", "email campaign", "drip campaign",
         ],
@@ -601,7 +629,7 @@ bus_sub.insert(
         ],
         negative_keywords: vec![
             "backend", "api", "sql", "kubernetes", "python",
-            "rust", "vulnerability", "injection",
+            "rust", "vulnerability", "injection","ATS", "Cover Letter", "Resume"
         ],
     },
 );
@@ -627,8 +655,12 @@ hubs.insert(
     mob_sub.insert(
         "ios",
         SubHubRule {
-            keywords: vec!["ios", "swift", "objective-c", "xcode"],
-            anchor_keywords: vec!["ios", "swift"],
+            keywords: vec![
+                "ios", "swift", "objective-c", "xcode", "swiftui", 
+                "uikit", "core-data", "combine", "xcode-project",
+                "ios-development", "apple-platform"
+            ],
+            anchor_keywords: vec!["ios", "swift", "swiftui", "xcode"],
             negative_keywords: vec!["android"],
         },
     );
@@ -662,13 +694,6 @@ pub static DEFAULT_EXCLUSION_PATTERNS: &[&str] = &[
     "clothing",
     "food",
     "gym",
-    "job",
-    "jobs",
-    "career",
-    "resume",
-    "cv",
-    "cover-letter",
-    "interview",
     "health",
     "fitness",
     "medicine",
@@ -693,14 +718,7 @@ pub static DEFAULT_EXCLUSION_PATTERNS: &[&str] = &[
     "biology",
     "chemistry",
     "physics",
-    "game",
-    "games",
-    "game-development",
-    "gaming",
-    "unreal-engine",
-    "unity-3d",
     "blender",
-    "3d",
     "threejs",
     "three.js",
     "chinese",
@@ -722,25 +740,49 @@ pub static DEFAULT_EXCLUSION_PATTERNS: &[&str] = &[
     "zh-cn",
     "zh-tw",
     "simplified-chinese",
+    "resume",
+    "CV",
+    "Cover Letter",
+    "ATS",
+    "CV Builder",
+    "Portfolio",
+    "Resume",
+    "cover-letter",
+    "interview",
+    "unreal-engine",
+    "unity-3d",
+    "unity-developer",
+    "unity-ecs-patterns",
+    "unreal-engine-cpp-pro",
+    "3d-web-experience",
+    "3d-games",
+    "2d-games",
+    "game",
+    "games",
+    "unity-3d",
+    "game-development",
+    "game-engine",
+    "web-game",
+    "web-games",
+    "gaming",    
 ];
 
 static ENV_EXCLUSION_PATTERNS: Lazy<Vec<String>> = Lazy::new(|| {
     let mut out = Vec::new();
 
+    // 1. Add all hardcoded default patterns
+    for p in DEFAULT_EXCLUSION_PATTERNS {
+        out.push(p.to_lowercase());
+    }
+
+    // 2. Merge patterns from the environment variable (if any)
     if let Ok(raw) = env::var("SKILL_MANAGE_EXCLUSIONS") {
-        for p in raw.split(';') {
-            let val = normalize_slug(p);
-            if !val.is_empty() {
+        for p in raw.split(|c| c == ';' || c == ',') {
+            let val = p.trim().to_lowercase();
+            if !val.is_empty() && !out.contains(&val) {
                 out.push(val);
             }
         }
-    }
-
-    if out.is_empty() {
-        return DEFAULT_EXCLUSION_PATTERNS
-            .iter()
-            .map(|s| s.to_string())
-            .collect::<Vec<_>>();
     }
 
     out
@@ -749,68 +791,80 @@ static ENV_EXCLUSION_PATTERNS: Lazy<Vec<String>> = Lazy::new(|| {
 static CANONICAL_SUBHUB_ALIASES: &[(&str, &str, &str)] = &[
     // AI hub
     ("prompt-engineering", "ai", "prompting-factory"),
+    ("skills-factory",    "ai", "prompting-factory"),
+    ("agent-skills",       "ai", "prompting-factory"),
 
-  // server-side aliases
-("api-design",            "server-side", "api-design"),
-("api-rest-design",       "server-side", "api-design"),
-("server-side-frameworks","server-side", "frameworks"),
-("backend-frameworks",    "server-side", "frameworks"),
-("databases",             "server-side", "databases"),
-("caching",               "server-side", "caching"),
-("message-queues",        "server-side", "messaging"),
-("event-driven",          "server-side", "messaging"),
-("containerization",      "server-side", "containers"),
-("microservices",         "server-side", "containers"),
-("serverless-edge",       "server-side", "serverless-edge"),
-("monitoring",            "server-side", "observability"),
-("logging",               "server-side", "observability"),
+    // server-side aliases
+    ("backend",               "server-side", "frameworks"), // Generic backend → frameworks
+    ("architect",            "server-side", "architect"),
+    ("api-rest-design",       "server-side", "architect"),
+    ("server-side-frameworks","server-side", "frameworks"),
+    ("backend-frameworks",    "server-side", "frameworks"),
+    ("databases",             "server-side", "databases"),
+    ("caching",               "server-side", "caching"),
+    ("message-queues",        "server-side", "messaging"),
+    ("event-driven",          "server-side", "messaging"),
+    ("containerization",      "server-side", "containers"),
+    ("microservices",         "server-side", "containers"),
+    ("serverless-edge",       "server-side", "serverless-edge"),
+    ("monitoring",            "server-side", "observability"),
+    ("logging",               "server-side", "observability"),
     
-// business hub 
-("product-strategy", "business", "product"),
-("product", "business", "product"),
-("product-management", "business", "product"),
-("strategy", "business", "strategy"),
-("go-to-market", "business", "strategy"),
-("gtm", "business", "strategy"),
-("marketing", "business", "marketing"),
-("content", "business", "marketing"),
-("seo", "business", "marketing"),
-("social", "business", "marketing"),
-("social-media", "business", "marketing"),
-("brand", "business", "marketing"),
-("sales", "business", "sales"),
-("lead-generation", "business", "sales"),
-("crm", "business", "sales"),
-("analytics", "business", "analytics"),
-("email", "business", "operations"),
-("operations", "business", "operations"),
-("automation", "business", "operations"),
+    // business hub 
+    ("product-strategy", "business", "product"),
+    ("product-management", "business", "product"),
+    ("strategy",         "business", "strategy"),
+    ("go-to-market",     "business", "strategy"),
+    ("gtm",              "business", "strategy"),
+    ("marketing",        "business", "marketing"),
+    ("tactical",         "business", "marketing"),
+    ("content",          "business", "marketing"),
+    ("seo",              "business", "marketing"),
+    ("social-media",     "business", "marketing"),
+    ("brand",            "business", "marketing"),
+    ("sales",            "business", "sales"),
+    ("lead-generation",  "business", "sales"),
+    ("crm",              "business", "sales"),
+    ("analytics",        "business", "analytics"),
+    ("email",            "business", "operations"),
+    ("operations",       "business", "operations"),
+    ("automation",       "business", "operations"),
+
     // frontend hub
-    ("ui-ux", "frontend", "ui-ux"),
-    ("ux", "frontend", "ui-ux"),
-    ("react-nextjs", "frontend", "web-frameworks"),
-    ("web-basics", "frontend", "web-frameworks"),
-    ("web-frameworks", "frontend", "web-frameworks"),
-    ("state-management", "frontend", "state-management"),
+    ("ui-ux",             "frontend", "ui-ux"),
+    ("ux",                "frontend", "ui-ux"),
+    ("react-nextjs",      "frontend", "web-frameworks"),
+    ("web-basics",        "frontend", "web-frameworks"),
+    ("web-frameworks",    "frontend", "web-frameworks"),
+    ("state-management",  "frontend", "state-management"),
+
     // mobile hub
-    ("cross-platform", "mobile", "cross-platform"),
-    ("ios", "mobile", "ios"),
-    ("android", "mobile", "android"),
+    ("mobile",            "mobile", "cross-platform"),
+    ("cross-platform",    "mobile", "cross-platform"),
+    ("ios",               "mobile", "ios"),
+    ("android",           "mobile", "android"),
+
     // code-quality hub
-    ("typescript", "code-quality", "typescript"),
-    ("python", "code-quality", "python"),
-    ("rust", "code-quality", "rust"),
-    ("golang", "code-quality", "golang"),
-    ("java", "code-quality", "java"),
-    ("javascript", "code-quality", "javascript"),
-    // Legacy testing/security → code-quality
-    ("automation", "code-quality", "testing-qa"),
-    ("automation-testing", "code-quality", "testing-qa"),
-    ("unit-testing", "code-quality", "testing-qa"),
-    ("e2e-testing", "code-quality", "testing-qa"),
-    ("performance-testing", "code-quality", "testing-qa"),
-    ("security", "code-quality", "security"),
-];
+    ("typescript",        "code-quality", "typescript"),
+    ("python",            "code-quality", "python"),
+    ("rust",              "code-quality", "rust"),
+    ("golang",            "code-quality", "golang"),
+    ("java",              "code-quality", "java"),
+    ("javascript",        "code-quality", "javascript"),
+    ("security",          "code-quality", "security"),
+    ("testing",           "code-quality", "testing-qa"),
+    ("testing-qa",        "code-quality", "testing-qa"),
+    ("automation-testing","code-quality", "testing-qa"),
+    ("unit-testing",      "code-quality", "testing-qa"),
+    ("e2e-testing",       "code-quality", "testing-qa"),
+    ("code-review",       "code-quality", "code-review"),
+    ("ci-cd",             "code-quality", "virsion-control"),
+    ("performance-code",      "code-quality", "code-quality"),
+    ("git",               "code-quality", "virsion-control"),
+    ("github",            "code-quality", "virsion-control"),
+    ("gitlab",            "code-quality", "virsion-control"),
+    ("bitbucket",         "code-quality", "virsion-control"),
+    ];
 
 fn normalize_slug(input: &str) -> String {
     let mut out = String::with_capacity(input.len());
@@ -831,7 +885,7 @@ fn normalize_slug(input: &str) -> String {
 fn default_subhub_for_hub(hub: &str) -> Option<&'static str> {
     match hub {
         "ai" => Some("prompting-factory"),
-        "server-side" => Some("api-design"),  // الافتراضي الأوسع انتشاراً
+        "server-side" => Some("architect"),  // الافتراضي الأوسع انتشاراً
         "business" => Some("strategy"),  // الافتراضي الأوسع
         "frontend" => Some("web-frameworks"),
         "mobile" => Some("cross-platform"),
@@ -844,34 +898,7 @@ fn canonicalize_assignment(hub: &str, sub_hub: &str) -> Option<(String, String)>
     let hub_norm = normalize_slug(hub);
     let sub_norm = normalize_slug(sub_hub);
 
-    // Legacy "security" hub → code-quality/security
-    if hub_norm == "security" {
-        return Some(("code-quality".to_string(), "security".to_string()));
-    }
-    // Legacy "testing" hub → code-quality/testing-qa
-    if hub_norm == "testing" {
-        return Some(("code-quality".to_string(), "testing-qa".to_string()));
-    }
-    // Legacy "marketing" hub → business/tactical
-    if hub_norm == "marketing" {
-        let canonical_sub = match sub_norm.as_str() {
-            "strategy" => "strategy",
-            "seo" | "content" | "social" | "social-media" => "tactical",
-            "email" | "analytics" | "sales" => "operations",
-            _ => "tactical",
-        };
-        return Some(("business".to_string(), canonical_sub.to_string()));
-    }
-    // Legacy "backend" hub → server-side
-    if hub_norm == "backend" {
-        let canonical_sub = match sub_norm.as_str() {
-            "api-design" => "core",
-            "" => "core",
-            other => other,
-        };
-        return Some(("server-side".to_string(), canonical_sub.to_string()));
-    }
-
+    // 1. Check for explicit aliases (Sub-hub is the primary key for aliases)
     if !sub_norm.is_empty() {
         for (alias, canon_hub, canon_sub) in CANONICAL_SUBHUB_ALIASES {
             if sub_norm == *alias {
@@ -880,9 +907,19 @@ fn canonicalize_assignment(hub: &str, sub_hub: &str) -> Option<(String, String)>
         }
     }
 
+    // 2. Check if the hub its self is a known sub-hub alias (e.g. "ios" given as hub)
+    if !hub_norm.is_empty() {
+        for (alias, canon_hub, canon_sub) in CANONICAL_SUBHUB_ALIASES {
+            if hub_norm == *alias {
+                return Some(((*canon_hub).to_string(), (*canon_sub).to_string()));
+            }
+        }
+    }
+
+    // 3. Fallback to definitions with default sub-hub
     if !hub_norm.is_empty() {
         if let Some(hub_def) = SUB_HUB_DEFINITIONS.get(hub_norm.as_str()) {
-            if sub_norm.is_empty() {
+            if sub_norm.is_empty() || !hub_def.sub_hubs.contains_key(sub_norm.as_str()) {
                 if let Some(default_sub) = default_subhub_for_hub(hub_norm.as_str()) {
                     return Some((hub_norm, default_sub.to_string()));
                 }
@@ -1126,9 +1163,9 @@ pub fn get_score_for_subhub(
             }
         }
         if anchor_hit {
-            score += 3;
+            score += 5;
         } else {
-            score -= 3;
+            score -= 15; // Harder penalty for missing anchors in specific technical hubs
         }
     }
 
@@ -1136,9 +1173,40 @@ pub fn get_score_for_subhub(
 }
 
 pub fn is_excluded(normalized_text: &str, tokens: &HashSet<String>) -> bool {
-    // 1. Keyword-based exclusions (Blacklist)
+    /*
+        Exclusion Matcher Branching
+        --------------------------
+        1. Substring: pattern.contains(' ') -> check normalized_text.contains(pattern)
+        2. Strict: length < 4 -> check tokens.contains(pattern)
+        3. Mixed: default -> check normalized_text.contains(pattern) || tokens.contains(pattern)
+    */
+
+    // 1. Keyword-based exclusions (Integrated Defaults + Config)
     for pattern in ENV_EXCLUSION_PATTERNS.iter() {
-        if tokens.contains(pattern.as_str()) || normalized_text.contains(pattern) {
+        let mut matched = false;
+        // Multi-word patterns (e.g. "Cover Letter", "Unity 3D") must match as substrings
+        if pattern.contains(' ') || pattern.contains('.') {
+            if normalized_text.contains(pattern) {
+                matched = true;
+            }
+        } else if pattern.len() < 4 {
+            // Short patterns (e.g. "CV", "ATS") must match as exact tokens to avoid substrings
+            // like "ats" matching "stats" or "cats".
+            if tokens.contains(pattern) {
+                matched = true;
+            }
+        } else {
+            // Default case: match anywhere
+            if tokens.contains(pattern) || normalized_text.contains(pattern) {
+                matched = true;
+            }
+        }
+
+        if matched {
+            // Only print for known "problem" skills to avoid flood
+            if normalized_text.contains("resume") || normalized_text.contains("game") {
+                println!("DEBUG: Excluding skill because it matches pattern: '{}' (text start: {:.50})", pattern, normalized_text);
+            }
             return true;
         }
     }

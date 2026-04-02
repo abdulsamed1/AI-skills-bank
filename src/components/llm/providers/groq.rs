@@ -25,30 +25,6 @@ impl GroqProvider {
         env::var("LLM_MODEL")
             .unwrap_or_else(|_| "llama-3.3-70b-versatile".to_string())
     }
-
-    fn build_system_prompt(&self, context: &LlmClassificationContext, is_batch: bool) -> String {
-        let mut prompt = "You are a classification assistant.\n".to_string();
-        prompt.push_str("Valid Hubs: ");
-        prompt.push_str(&context.valid_hubs.join(", "));
-        prompt.push_str("\nValid Sub-Hubs: ");
-        prompt.push_str(&context.valid_sub_hubs.join(", "));
-        prompt.push_str("\nExcluded Categories: ");
-        prompt.push_str(&context.excluded_categories.join(", "));
-        prompt.push_str("\n\nInstructions:\n");
-        prompt.push_str("1. Classify the skill metadata provided.\n");
-        prompt.push_str("2. If a skill clearly matches one of the Excluded Categories, return 'excluded' as the hub and 'excluded' as the sub_hub.\n");
-        prompt.push_str("3. Otherwise, use the Valid Hubs and Valid Sub-Hubs provided.\n");
-        
-        if is_batch {
-            prompt.push_str("4. Return a JSON array of objects (one for each skill in input order).\n");
-        } else {
-            prompt.push_str("4. Return a JSON object with a 'ranked_suggestions' key.\n");
-        }
-        
-        prompt.push_str("Each object must have: {\"hub\":..., \"sub_hub\":..., \"confidence\":0-100, \"reasoning\":...}.\n");
-        prompt.push_str("Return ONLY valid JSON. No commentary.");
-        prompt
-    }
 }
 
 #[async_trait]
@@ -66,7 +42,7 @@ impl LlmProvider for GroqProvider {
             .clone()
             .unwrap_or_else(|| "https://api.groq.com/openai/v1/chat/completions".to_string());
 
-        let system_prompt = self.build_system_prompt(context, false);
+        let system_prompt = crate::components::llm::build_classification_prompt(context, false);
 
         let user_payload = serde_json::json!({
             "skill_id": skill_id,
@@ -161,7 +137,7 @@ impl LlmProvider for GroqProvider {
             .clone()
             .unwrap_or_else(|| "https://api.groq.com/openai/v1/chat/completions".to_string());
 
-        let system_prompt = self.build_system_prompt(context, true);
+        let system_prompt = crate::components::llm::build_classification_prompt(context, true);
 
         let payload_items: Vec<serde_json::Value> = items
             .iter()

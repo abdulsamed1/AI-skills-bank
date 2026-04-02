@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "server-side",
   "skills": [
     {
@@ -41,14 +41,6 @@
       "skill_id": "fastapi-templates",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/fastapi-templates/SKILL.md",
       "triggers": "fastapi;templates"
-    },
-    {
-      "description": "Laravel architecture patterns, routing/controllers, Eloquent ORM, service layers, queues, events, caching, and API resources for production apps.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "laravel-patterns",
-      "src_path": "lib/affaan-m-everything-claude-code/docs/tr/skills/laravel-patterns/SKILL.md",
-      "triggers": "laravel;patterns"
     },
     {
       "description": "Discover and evaluate Laravel packages via LaraPlugins.io MCP. Use when the user wants to find plugins, check package health, or assess Laravel/PHP compatibility.",
@@ -105,6 +97,14 @@
       "skill_id": "torch-geometric",
       "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/torch-geometric/SKILL.md",
       "triggers": "torch;geometric"
+    },
+    {
+      "description": "Master workflow orchestration architecture with Temporal, covering fundamental design decisions, resilience patterns, and best practices for building reliable distributed systems.",
+      "phase": 6,
+      "score": 100,
+      "skill_id": "workflow-orchestration-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/workflow-orchestration-patterns/SKILL.md",
+      "triggers": "workflow;orchestration;patterns"
     }
   ],
   "sub_hub": "frameworks",

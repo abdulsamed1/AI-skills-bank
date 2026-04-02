@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "frontend",
   "skills": [
     {
@@ -19,30 +19,6 @@
       "triggers": "accessibility;compliance;accessibility;audit"
     },
     {
-      "description": "You are an expert in the interface between LLMs and the outside world. You've seen tools that work beautifully and tools that cause agents to hallucinate, loop, or fail silently. The difference is almost always in the design, not the implementation.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "agent-tool-builder",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/agent-tool-builder/SKILL.md",
-      "triggers": "agent;tool;builder"
-    },
-    {
-      "description": "I build AI systems that can act autonomously while remaining controllable. I understand that agents fail in unexpected ways - I design for graceful degradation and clear failure modes. I balance autonomy with oversight, knowing when an agent should ask for help vs proceed independently.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "ai-agents-architect",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/ai-agents-architect/SKILL.md",
-      "triggers": "ai;agents;architect"
-    },
-    {
-      "description": "Design spec with 98 rules for building CLI tools that AI agents can safely use. Covers structured JSON output, error handling, input contracts, safety guardrails, exit codes, and agent self-description.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "ai-native-cli",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/ai-native-cli/SKILL.md",
-      "triggers": "ai;native;cli"
-    },
-    {
       "description": "Modern Angular UI patterns for loading states, error handling, and data display. Use when building UI components, handling async data, or managing component states.",
       "phase": 1,
       "score": 100,
@@ -59,36 +35,12 @@
       "triggers": "antigravity;design;expert"
     },
     {
-      "description": "Architectural decision-making framework. Requirements analysis, trade-off evaluation, ADR documentation. Use when making architecture decisions or analyzing system design.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "architecture",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/architecture/SKILL.md",
-      "triggers": "architecture"
-    },
-    {
-      "description": "Create a new App Store Connect app record via browser automation. Use when there is no public API for app creation and you need an agent to drive the New App form.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "asc-app-create-ui",
-      "src_path": "lib/rudrankriyam-app-store-connect-cli-skills/skills/asc-app-create-ui/SKILL.md",
-      "triggers": "asc;app;create;ui"
-    },
-    {
       "description": "Orchestrate iOS screenshot automation with xcodebuild/simctl for build-run, AXe for UI actions, JSON settings and plan files, Koubou-based framing (`asc screenshots frame`), and screenshot upload (`asc screenshots upload`). Use when users ask for automated screenshot capture, AXe-driven simulator flows, frame composition, or screenshot-to-upload pipelines.",
       "phase": 1,
       "score": 100,
       "skill_id": "asc-shots-pipeline",
       "src_path": "lib/rudrankriyam-app-store-connect-cli-skills/skills/asc-shots-pipeline/SKILL.md",
       "triggers": "asc;shots;pipeline"
-    },
-    {
-      "description": "Design patterns for building autonomous coding agents, inspired by [Cline](https://github.com/cline/cline) and [OpenAI Codex](https://github.com/openai/codex).",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "autonomous-agent-patterns",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/autonomous-agent-patterns/SKILL.md",
-      "triggers": "autonomous;agent;patterns"
     },
     {
       "description": "Guidelines for modern Avalonia UI layout using Zafiro.Avalonia, emphasizing shared styles, generic components, and avoiding XAML redundancy.",
@@ -105,14 +57,6 @@
       "skill_id": "avalonia-zafiro-development",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/avalonia-zafiro-development/SKILL.md",
       "triggers": "avalonia;zafiro;development"
-    },
-    {
-      "description": "AWS DynamoDB single-table design, GSI patterns, SDK v3 TypeScript/Python",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "aws-dynamodb",
-      "src_path": "lib/alinaqi-claude-bootstrap/skills/aws-dynamodb/SKILL.md",
-      "triggers": "aws;dynamodb"
     },
     {
       "description": "Validates animation durations, enforces typography scale, checks component accessibility, and prevents layout anti-patterns in Tailwind CSS projects. Use when building UI components, reviewing CSS utilities, styling React views, or enforcing design consistency.",
@@ -137,22 +81,6 @@
       "skill_id": "brand-guidelines",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/brand-guidelines/SKILL.md",
       "triggers": "brand;guidelines"
-    },
-    {
-      "description": "Builds comprehensive identity governance and lifecycle management processes including joiner-mover-leaver automation, role mining, access request workflows, periodic recertification, and orphaned account remediation using IGA platforms. Activates for requests involving identity lifecycle management, JML processes, role-based access provisioning, or identity governance program design.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "building-identity-governance-lifecycle-process",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-identity-governance-lifecycle-process/SKILL.md",
-      "triggers": "identity-governance;lifecycle-management;JML;access-provisioning;RBAC;IGA"
-    },
-    {
-      "description": "Designs and documents structured incident response playbooks that define step-by-step procedures for specific incident types aligned with NIST SP 800-61r3 and SANS PICERL frameworks. Covers playbook structure, decision trees, escalation criteria, RACI matrices, and integration with SOAR platforms. Activates for requests involving IR playbook creation, incident response procedure documentation, response runbook development, or SOAR playbook design.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "building-incident-response-playbook",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-incident-response-playbook/SKILL.md",
-      "triggers": "IR-playbook;runbook;NIST-800-61;SOAR-integration;response-procedures"
     },
     {
       "description": "Complete guide for building beautiful apps with Expo Router. Covers fundamentals, styling, components, navigation, animations, patterns, and native tabs.",
@@ -195,22 +123,6 @@
       "triggers": "ckm;ui;styling"
     },
     {
-      "description": "Transform the agent into a Cloud Solution Architect following Azure Architecture Center best practices. Use when designing cloud architectures, reviewing system designs, selecting architecture styles, applying cloud design patterns, making technology choices, or conducting Well-Architected Framework reviews.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "cloud-solution-architect",
-      "src_path": "lib/microsoft-skills/.github/skills/cloud-solution-architect/SKILL.md",
-      "triggers": "cloud;solution;architect"
-    },
-    {
-      "description": "You are a code refactoring expert specializing in clean code principles, SOLID design patterns, and modern software engineering best practices. Analyze and refactor the provided code to improve its quality, maintainability, and performance.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "code-refactoring-refactor-clean",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/code-refactoring-refactor-clean/SKILL.md",
-      "triggers": "code;refactoring;refactor;clean"
-    },
-    {
       "description": "Use when working with color naming, color theory, color spaces, color definitions, or any task involving color knowledge - palettes, ramps, gradients, conversions, accessibility, perceptual matching, pigment mixing, print-vs-screen color, CSS color syntax, or historical color terminology. Use this skill whenever the user is choosing, comparing, generating, naming, converting, or explaining colors, even if they do not explicitly ask for \"color theory.\"",
       "phase": 1,
       "score": 100,
@@ -227,14 +139,6 @@
       "triggers": "core;components"
     },
     {
-      "description": "You are an expert in designing collaborative AI agent teams with CrewAI. You think in terms of roles, responsibilities, and delegation. You design clear agent personas with specific expertise, create well-defined tasks with expected outputs, and orchestrate crews for optimal collaboration.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "crewai",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/crewai/SKILL.md",
-      "triggers": "crewai"
-    },
-    {
       "description": "Analyzes landing pages and provides detailed CRO (Conversion Rate Optimization) recommendations. Use when user provides a landing page URL or HTML/CSS code and needs optimization advice to maximize conversions, signups, or sales. Extracts page elements, audits against proven CRO principles, and delivers actionable recommendations in report format.",
       "phase": 1,
       "score": 100,
@@ -249,30 +153,6 @@
       "skill_id": "customer-empathy",
       "src_path": "lib/rameerez-claude-code-startup-skills/skills/customer-empathy/SKILL.md",
       "triggers": "customer;empathy"
-    },
-    {
-      "description": "Expert database architect specializing in data layer design from scratch, technology selection, schema modeling, and scalable database architectures.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "database-architect",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/database-architect/SKILL.md",
-      "triggers": "database;architect"
-    },
-    {
-      "description": "Design DDD strategic artifacts including subdomains, bounded contexts, and ubiquitous language for complex business domains.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "ddd-strategic-design",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/ddd-strategic-design/SKILL.md",
-      "triggers": "[ddd, strategic-design, bounded-context, ubiquitous-language]"
-    },
-    {
-      "description": "Generate multiple radically different interface designs for a module using parallel sub-agents. Use when user wants to design an API, explore interface options, compare module shapes, or mentions \"design it twice\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "design-an-interface",
-      "src_path": "lib/mattpocock-skills/design-an-interface/SKILL.md",
-      "triggers": "design;an;interface"
     },
     {
       "description": "Design consultation: understands your product, researches the landscape, proposes a complete design system (aesthetic, typography, color, layout, spacing, motion), and generates font+color preview pages. Creates DESIGN.md as your project's design source of truth. For existing sites, use /plan-design-review to infer the system instead. Use when asked to \"design system\", \"brand guidelines\", or \"create DESIGN.md\". Proactively suggest when starting a new project's UI with no existing design system or DESIGN.md. (gstack)",
@@ -299,14 +179,6 @@
       "triggers": "design;md"
     },
     {
-      "description": "Orchestrates design workflows by routing work through brainstorming, multi-agent review, and execution readiness in the correct order.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "design-orchestration",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/design-orchestration/SKILL.md",
-      "triggers": "design;orchestration"
-    },
-    {
       "description": "Design shotgun: generate multiple AI design variants, open a comparison board, collect structured feedback, and iterate. Standalone design exploration you can run anytime. Use when: \"explore designs\", \"show me options\", \"design variants\", \"visual brainstorm\", or \"I don't like how this looks\". Proactively suggest when the user describes a UI feature but hasn't seen what it could look like. (gstack)",
       "phase": 1,
       "score": 100,
@@ -331,44 +203,12 @@
       "triggers": "design;system"
     },
     {
-      "description": "Senior UI/UX Engineer. Architect digital interfaces overriding default LLM biases. Enforces metric-based rules, strict component architecture, CSS hardware acceleration, and balanced design engineering.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "design-taste-frontend",
-      "src_path": "lib/leonxlnx-taste-skill/skills/taste-skill/SKILL.md",
-      "triggers": "design;taste;frontend"
-    },
-    {
       "description": "Diffusion-based molecular docking. Predict protein-ligand binding poses from PDB/SMILES, confidence scores, virtual screening, for structure-based drug design. Not for affinity prediction.",
       "phase": 1,
       "score": 100,
       "skill_id": "diffdock",
       "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/diffdock/SKILL.md",
       "triggers": "diffdock"
-    },
-    {
-      "description": "Creates comprehensive technical documentation from existing codebases. Analyzes architecture, design patterns, and implementation details to produce long-form technical manuals and ebooks.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "docs-architect",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/docs-architect/SKILL.md",
-      "triggers": "docs;architect"
-    },
-    {
-      "description": "Plan and route Domain-Driven Design work from strategic modeling to tactical implementation and evented architecture patterns.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "domain-driven-design",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/domain-driven-design/SKILL.md",
-      "triggers": "[ddd, domain, bounded-context, architecture]"
-    },
-    {
-      "description": "Autonomous design space exploration loop for computer architecture and EDA. Runs a program, analyzes results, tunes parameters, and iterates until objective is met or timeout. Use when user says \"DSE\", \"design space exploration\", \"sweep parameters\", \"optimize\", \"find best config\", or wants iterative parameter tuning.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "dse-loop",
-      "src_path": "lib/wanshuiyin-auto-claude-code-research-in-sleep/skills/dse-loop/SKILL.md",
-      "triggers": "dse;loop"
     },
     {
       "description": "Transforms vague UI ideas into polished, Stitch-optimized prompts. Enhances specificity, adds UI/UX keywords, injects design system context, and structures output for better generation results.",
@@ -419,46 +259,6 @@
       "triggers": "feature;image"
     },
     {
-      "description": "Automate Figma tasks via Rube MCP (Composio): files, components, design tokens, comments, exports. Always search tools first for current schemas.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "figma-automation",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/figma-automation/SKILL.md",
-      "triggers": "figma;automation"
-    },
-    {
-      "description": "Creates and maintains Figma Code Connect template files that map Figma components to code snippets. Use when the user mentions Code Connect, Figma component mapping, design-to-code translation, or asks to create/update .figma.js files.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "figma-code-connect",
-      "src_path": "lib/figma-mcp-server-guide/skills/figma-code-connect/SKILL.md",
-      "triggers": "figma;code;connect"
-    },
-    {
-      "description": "Generates custom design system rules for the user's codebase. Use when user says \"create design system rules\", \"generate rules for my project\", \"set up design rules\", \"customize design system guidelines\", or wants to establish project-specific conventions for Figma-to-code workflows. Requires Figma MCP server connection.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "figma-create-design-system-rules",
-      "src_path": "lib/figma-mcp-server-guide/skills/figma-create-design-system-rules/SKILL.md",
-      "triggers": "figma;create;design;system;rules"
-    },
-    {
-      "description": "Use this skill alongside figma-use when the task involves translating an application page, view, or multi-section layout into Figma. Triggers: 'write to Figma', 'create in Figma from code', 'push page to Figma', 'take this app/page and build it in Figma', 'create a screen', 'build a landing page in Figma', 'update the Figma screen to match code'. This is the preferred workflow skill whenever the user wants to build or update a full page, screen, or view in Figma from code or a description. Discovers design system components, variables, and styles via search_design_system, imports them, and assembles screens incrementally section-by-section using design system tokens instead of hardcoded values.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "figma-generate-design",
-      "src_path": "lib/figma-mcp-server-guide/skills/figma-generate-design/SKILL.md",
-      "triggers": "figma;generate;design"
-    },
-    {
-      "description": "Translates Figma designs into production-ready application code with 1:1 visual fidelity. Use when implementing UI code from Figma files, when user mentions \"implement design\", \"generate code\", \"implement component\", provides Figma URLs, or asks to build components matching Figma specs. For Figma canvas writes via `use_figma`, use `figma-use`.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "figma-implement-design",
-      "src_path": "lib/figma-mcp-server-guide/skills/figma-implement-design/SKILL.md",
-      "triggers": "figma;implement;design"
-    },
-    {
       "description": "Audit and fix HTML accessibility issues including ARIA labels, keyboard navigation, focus management, color contrast, and form errors. Use when adding interactive controls, forms, dialogs, or reviewing WCAG compliance.",
       "phase": 1,
       "score": 100,
@@ -491,14 +291,6 @@
       "triggers": "frontend;design"
     },
     {
-      "description": "Build dark-themed React applications using Tailwind CSS with custom theming, glassmorphism effects, and Framer Motion animations. Use when creating dashboards, admin panels, or data-rich interfaces with a refined dark aesthetic.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "frontend-ui-dark-ts",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/frontend-ui-dark-ts/SKILL.md",
-      "triggers": "frontend;ui;dark;ts"
-    },
-    {
       "description": "Game audio principles. Sound design, music integration, adaptive audio systems.",
       "phase": 1,
       "score": 100,
@@ -513,14 +305,6 @@
       "skill_id": "game-design",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/game-development/game-design/SKILL.md",
       "triggers": "game;design"
-    },
-    {
-      "description": "GAN-inspired Generator-Evaluator agent harness for building high-quality applications autonomously. Based on Anthropic's March 2026 harness design paper.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "gan-style-harness",
-      "src_path": "lib/affaan-m-everything-claude-code/skills/gan-style-harness/SKILL.md",
-      "triggers": "gan;style;harness"
     },
     {
       "description": "Analyze and engineer protein glycosylation. Scan sequences for N-glycosylation sequons (N-X-S/T), predict O-glycosylation hotspots, and access curated glycoengineering tools (NetOGlyc, GlycoShield, GlycoWorkbench). For glycoprotein engineering, therapeutic antibody optimization, and vaccine design.",
@@ -635,22 +419,6 @@
       "triggers": "imagen"
     },
     {
-      "description": "Implement Just-In-Time (JIT) access provisioning to eliminate standing privileges by granting temporary, time-bound access only when needed. This skill covers JIT architecture design, approval workflo",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "implementing-just-in-time-access-provisioning",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-just-in-time-access-provisioning/SKILL.md",
-      "triggers": "iam;identity;access-control;jit;provisioning;zero-trust;least-privilege"
-    },
-    {
-      "description": "Design and implement Privileged Access Workstations (PAWs) with device hardening, just-in-time access, and integration with CyberArk or BeyondTrust for secure administrative operations.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "implementing-privileged-access-workstation",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-privileged-access-workstation/SKILL.md",
-      "triggers": "privileged-access;PAW;zero-trust;device-hardening;CyberArk;BeyondTrust;just-in-time-access"
-    },
-    {
       "description": "Raw mechanical interfaces fusing Swiss typographic print with military terminal aesthetics. Rigid grids, extreme type scale contrast, utilitarian color, analog degradation effects. For data-heavy dashboards, portfolios, or editorial sites that need to feel like declassified blueprints.",
       "phase": 1,
       "score": 100,
@@ -689,14 +457,6 @@
       "skill_id": "lean-ux-canvas",
       "src_path": "lib/deanpeters-product-manager-skills/skills/lean-ux-canvas/SKILL.md",
       "triggers": "lean;ux;canvas"
-    },
-    {
-      "description": "You are an AI assistant development expert specializing in creating intelligent conversational interfaces, chatbots, and AI-powered applications. Design comprehensive AI assistant solutions with natur",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "llm-application-dev-ai-assistant",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/llm-application-dev-ai-assistant/SKILL.md",
-      "triggers": "llm;application;dev;ai;assistant"
     },
     {
       "description": "Create logos using AI image generation. Discuss style/ratio, generate variations, iterate with user feedback, crop, remove background, and export as SVG. Use when user wants to create a logo, icon, favicon, brand mark, mascot, emblem, or design a logo.",
@@ -739,52 +499,12 @@
       "triggers": "medusa"
     },
     {
-      "description": "Design short-term, long-term, and graph-based memory architectures. Use when building agents that must persist across sessions, needing to maintain entity consistency across conversations, or implementing reasoning over accumulated knowledge.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "memory-systems",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/memory-systems/SKILL.md",
-      "triggers": "memory;systems"
-    },
-    {
       "description": "Clean editorial-style interfaces. Warm monochrome palette, typographic contrast, flat bento grids, muted pastels. No gradients, no heavy shadows.",
       "phase": 1,
       "score": 100,
       "skill_id": "minimalist-ui",
       "src_path": "lib/leonxlnx-taste-skill/skills/minimalist-skill/SKILL.md",
       "triggers": "minimalist;ui"
-    },
-    {
-      "description": "This skill should be used when the user asks to \"design multi-agent system\", \"implement supervisor pattern\", \"create swarm architecture\", \"coordinate multiple agents\", or mentions multi-agent patterns, context isolation, agent handoffs, sub-agents, or parallel agent execution.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "multi-agent-patterns",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/multi-agent-patterns/SKILL.md",
-      "triggers": "multi;agent;patterns"
-    },
-    {
-      "description": "Senior Elite Software Engineer (15+) and Senior Product Designer. Full workflow with planning, architecture, TDD, clean code, and pixel-perfect UX validation.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "nerdzao-elite",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/nerdzao-elite/SKILL.md",
-      "triggers": "nerdzao;elite"
-    },
-    {
-      "description": "Expert guidance for distributed NoSQL databases (Cassandra, DynamoDB). Focuses on mental models, query-first modeling, single-table design, and avoiding hot partitions in high-scale systems.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "nosql-expert",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/nosql-expert/SKILL.md",
-      "triggers": "nosql;expert"
-    },
-    {
-      "description": "Conduct systematic access reviews and certifications to ensure users have appropriate access rights aligned with their roles. This skill covers review campaign design, reviewer selection, risk-based p",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "performing-access-review-and-certification",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-access-review-and-certification/SKILL.md",
-      "triggers": "iam;identity;access-control;access-review;certification;compliance;governance"
     },
     {
       "description": "Create research posters using HTML/CSS that can be exported to PDF or PPTX. Use this skill ONLY when the user explicitly requests PowerPoint/PPTX poster format. For standard research posters, use latex-posters instead. This skill provides modern web-based poster design with responsive layouts and easy visual integration.",
@@ -835,14 +555,6 @@
       "triggers": "redesign;existing;projects"
     },
     {
-      "description": "Design multi-agent architectures for complex tasks. Use when single-agent context limits are exceeded, when tasks decompose naturally into subtasks, or when specializing agents improves quality.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "sadd:multi-agent-patterns",
-      "src_path": "lib/neolabhq-context-engineering-kit/plugins/sadd/skills/multi-agent-patterns/SKILL.md",
-      "triggers": "sadd;multi;agent;patterns"
-    },
-    {
       "description": "Build slide decks and presentations for research talks. Use this for making PowerPoint slides, conference presentations, seminar talks, research presentations, thesis defense slides, or any scientific talk. Provides slide structure, design templates, timing guidance, and visual validation. Works with PowerPoint and LaTeX Beamer.",
       "phase": 1,
       "score": 100,
@@ -875,28 +587,12 @@
       "triggers": "shadcn;ui"
     },
     {
-      "description": "Guide for quality focused software architecture. This skill should be used when users want to write code, design architecture, analyze code, in any case that relates to software development.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "software-architecture",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/software-architecture/SKILL.md",
-      "triggers": "software;architecture"
-    },
-    {
       "description": "Use when adding interactive 3D scenes from Spline.design to web projects, including React embedding and runtime control API.",
       "phase": 1,
       "score": 100,
       "skill_id": "spline-3d-integration",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/spline-3d-integration/SKILL.md",
       "triggers": "spline;3d;integration"
-    },
-    {
-      "description": "Unified entry point for Stitch design work. Handles prompt enhancement (UI/UX keywords, atmosphere), design system synthesis (.stitch/DESIGN.md), and high-fidelity screen generation/editing via Stitch MCP.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "stitch-design",
-      "src_path": "lib/google-labs-code-stitch-skills/skills/stitch-design/SKILL.md",
-      "triggers": "stitch;design"
     },
     {
       "description": "Expert guidance for crafting effective prompts in Google Stitch, the AI-powered UI design tool by Google Labs. This skill helps create precise, actionable prompts that generate high-quality UI designs for web and mobile applications.",
@@ -915,22 +611,6 @@
       "triggers": "tailwind;design;system"
     },
     {
-      "description": "Tailwind CSS v4 principles. CSS-first configuration, container queries, modern patterns, design token architecture.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "tailwind-patterns",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/tailwind-patterns/SKILL.md",
-      "triggers": "tailwind;patterns"
-    },
-    {
-      "description": "Design optimal team structures, hiring plans, compensation strategies, and equity allocation for early-stage startups from pre-seed through Series A.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "team-composition-analysis",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/team-composition-analysis/SKILL.md",
-      "triggers": "team;composition;analysis"
-    },
-    {
       "description": "You build bots that people actually use daily. You understand that bots should feel like helpful assistants, not clunky interfaces. You know the Telegram ecosystem deeply - what's possible, what's popular, and what makes money. You design conversations that feel natural.",
       "phase": 1,
       "score": 100,
@@ -945,14 +625,6 @@
       "skill_id": "telegram-mini-app",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/telegram-mini-app/SKILL.md",
       "triggers": "telegram;mini;app"
-    },
-    {
-      "description": "Build tools that agents can use effectively, including architectural reduction patterns. Use when creating new tools for agent systems, debugging tool-related failures or misuse, or optimizing existing tool sets for better agent performance.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "tool-design",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/tool-design/SKILL.md",
-      "triggers": "tool;design"
     },
     {
       "description": "Apple Human Interface Guidelines for Apple TV. Use when building tvOS apps with focus-based navigation, Siri Remote input, or living room viewing experiences. Triggers on tasks involving Apple TV, tvOS, 10-foot UI, or media playback.",
@@ -979,28 +651,12 @@
       "triggers": "ui;mobile"
     },
     {
-      "description": "Opinionated, evolving constraints to guide agents when building interfaces",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "ui-skills",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/ui-skills/SKILL.md",
-      "triggers": "ui;skills"
-    },
-    {
       "description": "Create interface designs, wireframes, and design systems. Masters user research, accessibility standards, and modern design tools.",
       "phase": 1,
       "score": 100,
       "skill_id": "ui-ux-designer",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/ui-ux-designer/SKILL.md",
       "triggers": "ui;ux;designer"
-    },
-    {
-      "description": "UI/UX design intelligence for web and mobile. Includes 50+ styles, 161 color palettes, 57 font pairings, 161 product types, 99 UX guidelines, and 25 chart types across 10 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, Tailwind, shadcn/ui, and HTML/CSS). Actions: plan, build, create, design, implement, review, fix, improve, optimize, enhance, refactor, and check UI/UX code. Projects: website, landing page, dashboard, admin panel, e-commerce, SaaS, portfolio, blog, and mobile app. Elements: button, modal, navbar, sidebar, card, table, form, and chart. Styles: glassmorphism, claymorphism, minimalism, brutalism, neumorphism, bento grid, dark mode, responsive, skeuomorphism, and flat design. Topics: color systems, accessibility, animation, layout, typography, font pairing, spacing, interaction states, shadow, and gradient. Integrations: shadcn/ui MCP for component search and examples.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "ui-ux-pro-max",
-      "src_path": "lib/nextlevelbuilder-ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max/SKILL.md",
-      "triggers": "ui;ux;pro;max"
     },
     {
       "description": "Rigorous visual validation expert specializing in UI testing, design system compliance, and accessibility verification.",
@@ -1049,30 +705,6 @@
       "skill_id": "watchos-design-guidelines",
       "src_path": "lib/ehmo-platform-design-skills/skills/watchos/SKILL.md",
       "triggers": "watchos;design;guidelines"
-    },
-    {
-      "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "web-design-guidelines",
-      "src_path": "lib/charlie85270-dorothy/.agents/skills/web-design-guidelines/SKILL.md",
-      "triggers": "web;design;guidelines"
-    },
-    {
-      "description": "WordPress theme development workflow covering theme architecture, template hierarchy, custom post types, block editor support, responsive design, and WordPress 7.0 features: DataViews, Pattern Editing, Navigation Overlays, and admin refresh.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "wordpress-theme-development",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/wordpress-theme-development/SKILL.md",
-      "triggers": "wordpress;theme;development"
-    },
-    {
-      "description": "Master workflow orchestration architecture with Temporal, covering fundamental design decisions, resilience patterns, and best practices for building reliable distributed systems.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "workflow-orchestration-patterns",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/workflow-orchestration-patterns/SKILL.md",
-      "triggers": "workflow;orchestration;patterns"
     }
   ],
   "sub_hub": "ui-ux",

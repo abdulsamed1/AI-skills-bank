@@ -1,4 +1,5 @@
 pub mod provider;
+pub mod prompt;
 pub mod types;
 pub mod error;
 pub mod config;
@@ -9,6 +10,7 @@ pub mod cache;
 // #[cfg(test)]
 // pub mod tests;
 
+pub use prompt::build_classification_prompt;
 pub use provider::LlmProvider;
 pub use types::{LlmClassificationResponse, SubHubSuggestion};
 pub use error::LlmError;

@@ -1,11 +1,9 @@
 {
-  "count": 39,
+  "count": 35,
   "hub": "frontend",
   "skills": [
     "android-jetpack-compose-expert",
     "angular-state-management",
-    "automate-whatsapp",
-    "bdi-mental-states",
     "blip-2-vision-language",
     "click-path-audit",
     "collecting-volatile-evidence-from-compromised-host",
@@ -18,7 +16,6 @@
     "fpf:status",
     "frontend-developer",
     "frontend-patterns",
-    "github-triage",
     "godot-gdscript-patterns",
     "hig-components-controls",
     "hig-components-status",
@@ -39,8 +36,7 @@
     "swiftui-expert-skill",
     "swiftui-ui-patterns",
     "team-coordination",
-    "terraform-specialist",
-    "zustand-store-ts"
+    "terraform-specialist"
   ],
   "sub_hub": "state-management"
 }

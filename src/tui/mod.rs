@@ -33,7 +33,7 @@ pub async fn run_tui(repo_root: &Path, repos: Vec<Repository>) -> Result<()> {
         app.load_data(repo_root, repos)?;
         
         // Setup events
-        let mut events = event::EventHandler::new(250);
+        let events = event::EventHandler::new(250);
         let sender = events.sender();
         
         // Create reporter

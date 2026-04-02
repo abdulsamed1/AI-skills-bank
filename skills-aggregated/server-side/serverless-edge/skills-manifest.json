@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "server-side",
   "skills": [
     {
@@ -25,14 +25,6 @@
       "skill_id": "aws-serverless",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/aws-serverless/SKILL.md",
       "triggers": "aws;serverless"
-    },
-    {
-      "description": "Assess and migrate cross-cloud workloads to Azure with migration reports and code conversion guidance. Supports AWS, GCP, and other providers. WHEN: migrate Lambda to Azure Functions, migrate AWS to Azure, Lambda migration assessment, convert AWS serverless to Azure, migration readiness report, migrate from AWS, migrate from GCP, cross-cloud migration.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "azure-cloud-migrate",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-cloud-migrate/SKILL.md",
-      "triggers": "azure;cloud;migrate"
     },
     {
       "description": "Uploads promo videos and content to Cloudflare R2 or AWS S3. Use when the user wants to host promo content for social media or distribution.",

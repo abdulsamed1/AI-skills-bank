@@ -1,11 +1,9 @@
 {
-  "count": 20,
+  "count": 17,
   "hub": "server-side",
   "skills": [
     "analyzing-browser-forensics-with-hindsight",
-    "azure-resource-manager-redis-dotnet",
     "cache-integration",
-    "claude-api",
     "context-optimization",
     "debug-buttercup",
     "extracting-browser-history-artifacts",
@@ -16,7 +14,6 @@
     "performing-web-cache-deception-attack",
     "prompt-caching",
     "pwa-development",
-    "rwkv-architecture",
     "spark-optimization",
     "swift-valkey",
     "transformer-lens-interpretability",

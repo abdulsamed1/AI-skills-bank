@@ -1,16 +1,13 @@
 {
-  "count": 42,
+  "count": 40,
   "hub": "server-side",
   "skills": [
     "attach-db",
-    "azure-mgmt-mongodbatlas-dotnet",
-    "azure-resource-manager-postgresql-dotnet",
-    "azure-storage",
     "backend-dev-guidelines",
     "claimable-postgres",
     "clickhouse-io",
-    "content-modeling-best-practices",
     "database",
+    "database-architect",
     "database-design",
     "database-migration",
     "database-migrations",
@@ -23,6 +20,7 @@
     "mysql",
     "neon-postgres",
     "netlify-db",
+    "nosql-expert",
     "odoo-module-developer",
     "odoo-orm-expert",
     "performing-sqlite-database-forensics",
@@ -35,6 +33,7 @@
     "prisma-expert",
     "query",
     "review",
+    "revops",
     "scientific-writing",
     "sql-optimization-patterns",
     "sql-pro",
@@ -42,7 +41,6 @@
     "supabase-automation",
     "supabase-nextjs",
     "supabase-node",
-    "tinybird",
     "using-neon"
   ],
   "sub_hub": "databases"

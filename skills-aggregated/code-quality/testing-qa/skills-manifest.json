@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "code-quality",
   "skills": [
     {
@@ -9,14 +9,6 @@
       "skill_id": "ab-test-analysis",
       "src_path": "lib/phuryn-pm-skills/pm-data-analytics/skills/ab-test-analysis/SKILL.md",
       "triggers": "ab;test;analysis"
-    },
-    {
-      "description": "When the user wants to plan, design, or implement an A/B test or experiment. Also use when the user mentions \"A/B test,\" \"split test,\" \"experiment,\" \"test this change,\" \"variant copy,\" \"multivariate test,\" \"hypothesis,\" \"should I test this,\" \"which version is better,\" \"test two versions,\" \"statistical significance,\" or \"how long should I run this test.\" Use this whenever someone is comparing two approaches and wants to measure which performs better. For tracking implementation, see analytics-tracking. For page-level conversion optimization, see page-cro.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "ab-test-setup",
-      "src_path": "lib/coreyhaines31-marketingskills/skills/ab-test-setup/SKILL.md",
-      "triggers": "ab;test;setup"
     },
     {
       "description": "When the user wants to A/B test App Store product page elements to improve conversion rate. Also use when the user mentions \"A/B test\", \"product page optimization\", \"test my screenshots\", \"test my icon\", \"conversion rate optimization\", \"CPP\", or \"custom product pages\". For screenshot design, see screenshot-optimization. For metadata optimization, see metadata-optimization.",
@@ -99,44 +91,20 @@
       "triggers": "aws;penetration;testing"
     },
     {
-      "description": "Azure VM and VMSS router for recommendations, pricing, autoscale, orchestration, and connectivity troubleshooting. WHEN: Azure VM, VMSS, scale set, recommend, compare, server, website, burstable, lightweight, VM family, workload, GPU, learning, simulation, dev/test, backend, autoscale, load balancer, Flexible orchestration, Uniform orchestration, cost estimate, connect, refused, Linux, black screen, reset password, reach VM, port 3389, NSG, troubleshoot.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-compute",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-compute/SKILL.md",
-      "triggers": "azure;compute"
-    },
-    {
-      "description": "Run Playwright tests at scale using Azure Playwright Workspaces (formerly Microsoft Playwright Testing). Use when scaling browser tests across cloud-hosted browsers, integrating with CI/CD pipelines, or publishing test results to the Azure portal.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-microsoft-playwright-testing-ts",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-microsoft-playwright-testing-ts/SKILL.md",
-      "triggers": "azure;microsoft;playwright;testing;ts"
-    },
-    {
-      "description": "Azure Resource Manager SDK for Microsoft Playwright Testing in .NET. Use for MANAGEMENT PLANE operations: creating/managing Playwright Testing workspaces, checking name availability, and managing workspace quotas via Azure Resource Manager. NOT for running Playwright tests - use Azure.Developer.MicrosoftPlaywrightTesting.NUnit for that. Triggers: \"Playwright workspace\", \"create Playwright Testing workspace\", \"manage Playwright resources\", \"ARM Playwright\", \"PlaywrightWorkspaceResource\", \"provision Playwright Testing\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-resource-manager-playwright-dotnet",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-playwright-dotnet/SKILL.md",
-      "triggers": "azure;resource;manager;playwright;dotnet"
-    },
-    {
-      "description": "Pre-deployment validation for Azure readiness. Run deep checks on configuration, infrastructure (Bicep or Terraform), RBAC role assignments, managed identity permissions, and prerequisites before deploying. WHEN: validate my app, check deployment readiness, run preflight checks, verify configuration, check if ready to deploy, validate azure.yaml, validate Bicep, test before deploying, troubleshoot deployment errors, validate Azure Functions, validate function app, validate serverless deployment, verify RBAC roles, check role assignments, review managed identity permissions, what-if analysis.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-validate",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-validate/SKILL.md",
-      "triggers": "azure;validate"
-    },
-    {
       "description": "Bash scripting workflow for creating production-ready shell scripts with defensive patterns, error handling, and testing.",
       "phase": 1,
       "score": 100,
       "skill_id": "bash-scripting",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bash-scripting/SKILL.md",
       "triggers": "bash;scripting"
+    },
+    {
+      "description": "Master Bash Automated Testing System (Bats) for comprehensive shell script testing. Use when writing tests for shell scripts, CI/CD pipelines, or requiring test-driven development of shell utilities.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "bats-testing-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bats-testing-patterns/SKILL.md",
+      "triggers": "bats;testing;patterns"
     },
     {
       "description": "Design lean startup experiments (pretotypes) for a new product. Creates XYZ hypotheses and suggests low-effort validation methods like landing pages, explainer videos, and pre-orders. Use when validating a new product idea, creating pretotypes, or testing market demand.",
@@ -171,44 +139,12 @@
       "triggers": "circleci;automation"
     },
     {
-      "description": "Refactor high-complexity React components in Dify frontend. Use when `pnpm analyze-component --json` shows complexity > 50 or lineCount > 300, when the user asks for code splitting, hook extraction, or complexity reduction, or when `pnpm analyze-component` warns to refactor before testing; avoid for simple/well-structured components, third-party wrappers, or when the user explicitly wants testing without refactoring.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "component-refactoring",
-      "src_path": "lib/charlie85270-dorothy/.agents/skills/component-refactoring/SKILL.md",
-      "triggers": "component;refactoring"
-    },
-    {
-      "description": "Generate structured PR descriptions from diffs, add review checklists, risk assessments, and test coverage summaries. Use when the user says \"write a PR description\", \"improve this PR\", \"summarize my changes\", \"PR review\", \"pull request\", or asks to document a diff for reviewers.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "comprehensive-review-pr-enhance",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/comprehensive-review-pr-enhance/SKILL.md",
-      "triggers": "comprehensive;review;pr;enhance"
-    },
-    {
-      "description": "Content experimentation and A/B testing guidance covering experiment design, hypotheses, metrics, sample size, statistical foundations, CMS-managed variants, and common analysis pitfalls. Use this skill when planning experiments, setting up variants, choosing success metrics, interpreting statistical results, or building experimentation workflows in a CMS or frontend stack.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "content-experimentation-best-practices",
-      "src_path": "lib/sanity-io-agent-toolkit/skills/content-experimentation-best-practices/SKILL.md",
-      "triggers": "content;experimentation;best;practices"
-    },
-    {
       "description": "Write modern C# code with advanced features like records, pattern matching, and async/await. Optimizes .NET applications, implements enterprise patterns, and ensures comprehensive testing.",
       "phase": 1,
       "score": 100,
       "skill_id": "csharp-pro",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/csharp-pro/SKILL.md",
       "triggers": "csharp;pro"
-    },
-    {
-      "description": "Evaluate and improve Claude Code commands, skills, and agents. Use when testing prompt effectiveness, validating context engineering choices, or measuring improvement quality.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "customaize-agent:agent-evaluation",
-      "src_path": "lib/neolabhq-context-engineering-kit/plugins/customaize-agent/skills/agent-evaluation/SKILL.md",
-      "triggers": "customaize;agent;agent;evaluation"
     },
     {
       "description": "Create and configure git hooks with intelligent project analysis, suggestions, and automated testing",
@@ -371,28 +307,20 @@
       "triggers": "framework;migration;deps;upgrade"
     },
     {
-      "description": "Orchestrate a comprehensive git workflow from code review through PR creation, leveraging specialized agents for quality assurance, testing, and deployment readiness. This workflow implements modern g",
+      "description": "Production-ready GitHub Actions workflow patterns for testing, building, and deploying applications.",
       "phase": 1,
       "score": 100,
-      "skill_id": "git-pr-workflows-git-workflow",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/git-pr-workflows-git-workflow/SKILL.md",
-      "triggers": "git;pr;workflows;git;workflow"
+      "skill_id": "github-actions-templates",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/github-actions-templates/SKILL.md",
+      "triggers": "github;actions;templates"
     },
     {
-      "description": "Use when adding metadata to commits without changing history, tracking review status, test results, code quality annotations, or supplementing commit messages post-hoc - provides git notes commands and patterns for attaching non-invasive metadata to Git objects.",
+      "description": "Comprehensive GitLab CI/CD pipeline patterns for automated testing, building, and deployment.",
       "phase": 1,
       "score": 100,
-      "skill_id": "git:notes",
-      "src_path": "lib/neolabhq-context-engineering-kit/plugins/git/skills/notes/SKILL.md",
-      "triggers": "git;notes"
-    },
-    {
-      "description": "Use when working on multiple branches simultaneously, context switching without stashing, reviewing PRs while developing, testing in isolation, or comparing implementations across branches - provides git worktree commands and workflow patterns for parallel development with multiple working directories.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "git:worktrees",
-      "src_path": "lib/neolabhq-context-engineering-kit/plugins/git/skills/worktrees/SKILL.md",
-      "triggers": "git;worktrees"
+      "skill_id": "gitlab-ci-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/gitlab-ci-patterns/SKILL.md",
+      "triggers": "gitlab;ci;patterns"
     },
     {
       "description": "Interview the user relentlessly about a plan or design until reaching shared understanding, resolving each branch of the decision tree. Use when user wants to stress-test a plan, get grilled on their design, or mentions \"grill me\".",
@@ -459,6 +387,14 @@
       "triggers": "ios;simulator;skill"
     },
     {
+      "description": "Comprehensive k6 load testing skill for API, browser, and scalability testing. Write realistic load scenarios, analyze results, and integrate with CI/CD.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "k6-load-testing",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/k6-load-testing/SKILL.md",
+      "triggers": "k6;load-testing;performance;api-testing;ci-cd"
+    },
+    {
       "description": "Expert patterns for Kotlin Coroutines and Flow, covering structured concurrency, error handling, and testing.",
       "phase": 1,
       "score": 100,
@@ -481,22 +417,6 @@
       "skill_id": "leiloeiro-risco",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/leiloeiro-risco/SKILL.md",
       "triggers": "risk-analysis;scoring;stress-test;brazilian"
-    },
-    {
-      "description": "Master comprehensive evaluation strategies for LLM applications, from automated metrics to human evaluation and A/B testing.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "llm-evaluation",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/llm-evaluation/SKILL.md",
-      "triggers": "llm;evaluation"
-    },
-    {
-      "description": "AI-first application patterns, LLM testing, prompt management",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "llm-patterns",
-      "src_path": "lib/alinaqi-claude-bootstrap/skills/llm-patterns/SKILL.md",
-      "triggers": "llm;patterns"
     },
     {
       "description": "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.",
@@ -755,14 +675,6 @@
       "triggers": "tdd"
     },
     {
-      "description": "Master TDD orchestrator specializing in red-green-refactor discipline, multi-agent workflow coordination, and comprehensive test-driven development practices.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "tdd-orchestrator",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/tdd-orchestrator/SKILL.md",
-      "triggers": "tdd;orchestrator"
-    },
-    {
       "description": "Use this skill when writing new features, fixing bugs, or refactoring code. Enforces test-driven development with 80%+ coverage including unit, integration, and E2E tests.",
       "phase": 1,
       "score": 100,
@@ -801,6 +713,14 @@
       "skill_id": "test",
       "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/test/SKILL.md",
       "triggers": "test"
+    },
+    {
+      "description": "Master AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering. Build scalable testing strategies with advanced CI/CD integration.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "test-automator",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/test-automator/SKILL.md",
+      "triggers": "test;automator"
     },
     {
       "description": "Use when implementing any feature or bugfix, before writing implementation code",
@@ -897,14 +817,6 @@
       "skill_id": "webapp-testing",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/webapp-testing/SKILL.md",
       "triggers": "webapp;testing"
-    },
-    {
-      "description": "Expert guidance on contributing to WendyOS: Yocto builds, agent internals, E2E testing, and system architecture. Use when developers mention: (1) building WendyOS images, (2) meta-wendyos layers or bitbake, (3) wendy-agent development or internals, (4) containerd or nerdctl on WendyOS, (5) E2E tests for wendy-agent, (6) Yocto recipes or bbappend files, (7) mDNS/Avahi service configuration, (8) device identity or UUID generation.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "wendy-contributing",
-      "src_path": "lib/joannis-claude-skills/wendy-contributing/SKILL.md",
-      "triggers": "wendy;contributing"
     }
   ],
   "sub_hub": "testing-qa",

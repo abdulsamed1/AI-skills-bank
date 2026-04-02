@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "frontend",
   "skills": [
     {
@@ -25,14 +25,6 @@
       "skill_id": "fp-ts-react",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/fp-ts-react/SKILL.md",
       "triggers": "fp;ts;react"
-    },
-    {
-      "description": "Framework for building LLM-powered applications with agents, chains, and RAG. Supports multiple providers (OpenAI, Anthropic, Google), 500+ integrations, ReAct agents, tool calling, memory management, and vector store retrieval. Use for building chatbots, question-answering systems, autonomous agents, or RAG applications. Best for rapid prototyping and production deployments.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "langchain",
-      "src_path": "lib/orchestra-research-ai-research-skills/14-agents/langchain/SKILL.md",
-      "triggers": "Agents;LangChain;RAG;Tool Calling;ReAct;Memory Management;Vector Stores;LLM Applications;Chatbots;Production"
     },
     {
       "description": "Guide for deploying web frameworks on Netlify. Use when setting up a framework project (Vite/React, Astro, TanStack Start, Next.js, Nuxt, SvelteKit, Remix) for Netlify deployment, configuring adapters or plugins, or troubleshooting framework-specific Netlify integration. Covers what Netlify needs from each framework and how adapters handle server-side rendering.",
@@ -105,6 +97,14 @@
       "skill_id": "sanity-best-practices",
       "src_path": "lib/sanity-io-agent-toolkit/skills/sanity-best-practices/SKILL.md",
       "triggers": "sanity;best;practices"
+    },
+    {
+      "description": "UI/UX design intelligence for web and mobile. Includes 50+ styles, 161 color palettes, 57 font pairings, 161 product types, 99 UX guidelines, and 25 chart types across 10 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, Tailwind, shadcn/ui, and HTML/CSS). Actions: plan, build, create, design, implement, review, fix, improve, optimize, enhance, refactor, and check UI/UX code. Projects: website, landing page, dashboard, admin panel, e-commerce, SaaS, portfolio, blog, and mobile app. Elements: button, modal, navbar, sidebar, card, table, form, and chart. Styles: glassmorphism, claymorphism, minimalism, brutalism, neumorphism, bento grid, dark mode, responsive, skeuomorphism, and flat design. Topics: color systems, accessibility, animation, layout, typography, font pairing, spacing, interaction states, shadow, and gradient. Integrations: shadcn/ui MCP for component search and examples.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "ui-ux-pro-max",
+      "src_path": "lib/nextlevelbuilder-ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max/SKILL.md",
+      "triggers": "ui;ux;pro;max"
     },
     {
       "description": "Expert in the Vercel AI SDK. Covers Core API (generateText, streamText), UI hooks (useChat, useCompletion), tool calling, and streaming UI components with React and Next.js.",

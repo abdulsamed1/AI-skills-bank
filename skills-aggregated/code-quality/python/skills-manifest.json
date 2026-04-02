@@ -1,23 +1,7 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "code-quality",
   "skills": [
-    {
-      "description": "Build Azure AI Foundry agents using the Microsoft Agent Framework Python SDK (agent-framework-azure-ai). Use when creating persistent agents with AzureAIAgentsProvider, using hosted tools (code interpreter, file search, web search), integrating MCP servers, managing conversation threads, or implementing streaming responses. Covers function tools, structured outputs, and multi-tool agents.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "agent-framework-azure-ai-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/agent-framework-azure-ai-py/SKILL.md",
-      "triggers": "agent;framework;azure;ai;py"
-    },
-    {
-      "description": "Build container-based Foundry Agents using Azure AI Projects SDK with ImageBasedHostedAgentDefinition. Use when creating hosted agents that run custom code in Azure AI Foundry with your own container images. Triggers: \"ImageBasedHostedAgentDefinition\", \"hosted agent\", \"container agent\", \"Foundry Agent\", \"create_version\", \"ProtocolVersionRecord\", \"AgentProtocol.RESPONSES\", \"custom agent image\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "agents-v2-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/agents-v2-py/SKILL.md",
-      "triggers": "\"ImageBasedHostedAgentDefinition\", \"hosted agent\", \"container agent\", \"Foundry Agent\","
-    },
     {
       "description": "Parse NetFlow v9 and IPFIX records to detect volumetric anomalies, port scanning, data exfiltration, and C2 beaconing patterns. Uses the Python netflow library to decode flow records, builds traffic baselines, and applies statistical analysis to identify flows with abnormal byte counts, connection durations, and periodic timing patterns.",
       "phase": 1,
@@ -59,294 +43,6 @@
       "triggers": "async;python;patterns"
     },
     {
-      "description": "Azure AI Content Safety SDK for Python. Use for detecting harmful content in text and images with multi-severity classification. Triggers: \"azure-ai-contentsafety\", \"ContentSafetyClient\", \"content moderation\", \"harmful content\", \"text analysis\", \"image analysis\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-ai-contentsafety-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-contentsafety-py/SKILL.md",
-      "triggers": "\"azure-ai-contentsafety\", \"ContentSafetyClient\", \"content moderation\", \"harmful content\", \"text analysis\", \"image analysis\"."
-    },
-    {
-      "description": "Azure AI Content Understanding SDK for Python. Use for multimodal content extraction from documents, images, audio, and video. Triggers: \"azure-ai-contentunderstanding\", \"ContentUnderstandingClient\", \"multimodal analysis\", \"document extraction\", \"video analysis\", \"audio transcription\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-ai-contentunderstanding-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-contentunderstanding-py/SKILL.md",
-      "triggers": "\"azure-ai-contentunderstanding\", \"ContentUnderstandingClient\", \"multimodal analysis\", \"document extraction\", \"video analysis\", \"audio transcription\"."
-    },
-    {
-      "description": "Implement Conversational Language Understanding (CLU) using the azure-ai-language-conversations Python SDK. Use when working with ConversationAnalysisClient to analyze conversation intent and entities, building NLP features, or integrating language understanding into applications.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-ai-language-conversations-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-language-conversations-py/SKILL.md",
-      "triggers": "azure;ai;language;conversations;py"
-    },
-    {
-      "description": "Azure Machine Learning SDK v2 for Python. Use for ML workspaces, jobs, models, datasets, compute, and pipelines. Triggers: \"azure-ai-ml\", \"MLClient\", \"workspace\", \"model registry\", \"training jobs\", \"datasets\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-ai-ml-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-ml-py/SKILL.md",
-      "triggers": "\"azure-ai-ml\", \"MLClient\", \"workspace\", \"model registry\", \"training jobs\", \"datasets\"."
-    },
-    {
-      "description": "Build AI applications using the Azure AI Projects Python SDK (azure-ai-projects). Use when working with Foundry project clients, creating versioned agents with PromptAgentDefinition, running evaluations, managing connections/deployments/datasets/indexes, or using OpenAI-compatible clients. This is the high-level Foundry SDK - for low-level agent operations, use azure-ai-agents-python skill.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-ai-projects-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-projects-py/SKILL.md",
-      "triggers": "azure;ai;projects;py"
-    },
-    {
-      "description": "Azure AI Text Analytics SDK for sentiment analysis, entity recognition, key phrases, language detection, PII, and healthcare NLP. Use for natural language processing on text. Triggers: \"text analytics\", \"sentiment analysis\", \"entity recognition\", \"key phrase\", \"PII detection\", \"TextAnalyticsClient\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-ai-textanalytics-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-textanalytics-py/SKILL.md",
-      "triggers": "\"text analytics\", \"sentiment analysis\", \"entity recognition\", \"key phrase\", \"PII detection\", \"TextAnalyticsClient\"."
-    },
-    {
-      "description": "Azure AI Transcription SDK for Python. Use for real-time and batch speech-to-text transcription with timestamps and diarization. Triggers: \"transcription\", \"speech to text\", \"Azure AI Transcription\", \"TranscriptionClient\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-ai-transcription-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-transcription-py/SKILL.md",
-      "triggers": "\"transcription\", \"speech to text\", \"Azure AI Transcription\", \"TranscriptionClient\"."
-    },
-    {
-      "description": "Azure AI Document Translation SDK for batch translation of documents with format preservation. Use for translating Word, PDF, Excel, PowerPoint, and other document formats at scale. Triggers: \"document translation\", \"batch translation\", \"translate documents\", \"DocumentTranslationClient\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-ai-translation-document-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-translation-document-py/SKILL.md",
-      "triggers": "\"document translation\", \"batch translation\", \"translate documents\", \"DocumentTranslationClient\"."
-    },
-    {
-      "description": "Azure AI Text Translation SDK for real-time text translation, transliteration, language detection, and dictionary lookup. Use for translating text content in applications. Triggers: \"text translation\", \"translator\", \"translate text\", \"transliterate\", \"TextTranslationClient\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-ai-translation-text-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-translation-text-py/SKILL.md",
-      "triggers": "\"text translation\", \"translator\", \"translate text\", \"transliterate\", \"TextTranslationClient\"."
-    },
-    {
-      "description": "Azure AI Vision Image Analysis SDK for captions, tags, objects, OCR, people detection, and smart cropping. Use for computer vision and image understanding tasks. Triggers: \"image analysis\", \"computer vision\", \"OCR\", \"object detection\", \"ImageAnalysisClient\", \"image caption\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-ai-vision-imageanalysis-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-vision-imageanalysis-py/SKILL.md",
-      "triggers": "\"image analysis\", \"computer vision\", \"OCR\", \"object detection\", \"ImageAnalysisClient\", \"image caption\"."
-    },
-    {
-      "description": "Build real-time voice AI applications using Azure AI Voice Live SDK (azure-ai-voicelive). Use this skill when creating Python applications that need real-time bidirectional audio communication with Azure AI, including voice assistants, voice-enabled chatbots, real-time speech-to-speech translation, voice-driven avatars, or any WebSocket-based audio streaming with AI models. Supports Server VAD (Voice Activity Detection), turn-based conversation, function calling, MCP tools, avatar integration, and transcription.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-ai-voicelive-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-voicelive-py/SKILL.md",
-      "triggers": "azure;ai;voicelive;py"
-    },
-    {
-      "description": "Azure App Configuration SDK for Python. Use for centralized configuration management, feature flags, and dynamic settings. Triggers: \"azure-appconfiguration\", \"AzureAppConfigurationClient\", \"feature flags\", \"configuration\", \"key-value settings\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-appconfiguration-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-appconfiguration-py/SKILL.md",
-      "triggers": "\"azure-appconfiguration\", \"AzureAppConfigurationClient\", \"feature flags\", \"configuration\", \"key-value settings\"."
-    },
-    {
-      "description": "Azure Container Registry SDK for Python. Use for managing container images, artifacts, and repositories. Triggers: \"azure-containerregistry\", \"ContainerRegistryClient\", \"container images\", \"docker registry\", \"ACR\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-containerregistry-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-containerregistry-py/SKILL.md",
-      "triggers": "\"azure-containerregistry\", \"ContainerRegistryClient\", \"container images\", \"docker registry\", \"ACR\"."
-    },
-    {
-      "description": "Build Azure Cosmos DB NoSQL services with Python/FastAPI following production-grade patterns. Use when implementing database client setup with dual auth (DefaultAzureCredential + emulator), service layer classes with CRUD operations, partition key strategies, parameterized queries, or TDD patterns for Cosmos. Triggers on phrases like \"Cosmos DB\", \"NoSQL database\", \"document store\", \"add persistence\", \"database service layer\", or \"Python Cosmos SDK\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-cosmos-db-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-cosmos-db-py/SKILL.md",
-      "triggers": "azure;cosmos;db;py"
-    },
-    {
-      "description": "Azure Cosmos DB SDK for Python (NoSQL API). Use for document CRUD, queries, containers, and globally distributed data. Triggers: \"cosmos db\", \"CosmosClient\", \"container\", \"document\", \"NoSQL\", \"partition key\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-cosmos-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-cosmos-py/SKILL.md",
-      "triggers": "\"cosmos db\", \"CosmosClient\", \"container\", \"document\", \"NoSQL\", \"partition key\"."
-    },
-    {
-      "description": "Azure Tables SDK for Python (Storage and Cosmos DB). Use for NoSQL key-value storage, entity CRUD, and batch operations. Triggers: \"table storage\", \"TableServiceClient\", \"TableClient\", \"entities\", \"PartitionKey\", \"RowKey\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-data-tables-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-data-tables-py/SKILL.md",
-      "triggers": "\"table storage\", \"TableServiceClient\", \"TableClient\", \"entities\", \"PartitionKey\", \"RowKey\"."
-    },
-    {
-      "description": "Azure Event Grid SDK for Python. Use for publishing events, handling CloudEvents, and event-driven architectures. Triggers: \"event grid\", \"EventGridPublisherClient\", \"CloudEvent\", \"EventGridEvent\", \"publish events\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-eventgrid-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-eventgrid-py/SKILL.md",
-      "triggers": "\"event grid\", \"EventGridPublisherClient\", \"CloudEvent\", \"EventGridEvent\", \"publish events\"."
-    },
-    {
-      "description": "Azure Event Hubs SDK for Python streaming. Use for high-throughput event ingestion, producers, consumers, and checkpointing. Triggers: \"event hubs\", \"EventHubProducerClient\", \"EventHubConsumerClient\", \"streaming\", \"partitions\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-eventhub-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-eventhub-py/SKILL.md",
-      "triggers": "\"event hubs\", \"EventHubProducerClient\", \"EventHubConsumerClient\", \"streaming\", \"partitions\"."
-    },
-    {
-      "description": "Azure Identity SDK for Python authentication with Microsoft Entra ID. Use for DefaultAzureCredential, managed identity, service principals, and token caching. Triggers: \"azure-identity\", \"DefaultAzureCredential\", \"authentication\", \"managed identity\", \"service principal\", \"credential\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-identity-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-identity-py/SKILL.md",
-      "triggers": "\"azure-identity\", \"DefaultAzureCredential\", \"authentication\", \"managed identity\", \"service principal\", \"credential\"."
-    },
-    {
-      "description": "Azure Key Vault SDK for Python. Use for secrets, keys, and certificates management with secure storage. Triggers: \"key vault\", \"SecretClient\", \"KeyClient\", \"CertificateClient\", \"secrets\", \"encryption keys\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-keyvault-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-keyvault-py/SKILL.md",
-      "triggers": "\"key vault\", \"SecretClient\", \"KeyClient\", \"CertificateClient\", \"secrets\", \"encryption keys\"."
-    },
-    {
-      "description": "Azure Web PubSub Service SDK for Python. Use for real-time messaging, WebSocket connections, and pub/sub patterns. Triggers: \"azure-messaging-webpubsubservice\", \"WebPubSubServiceClient\", \"real-time\", \"WebSocket\", \"pub/sub\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-messaging-webpubsubservice-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-messaging-webpubsubservice-py/SKILL.md",
-      "triggers": "\"azure-messaging-webpubsubservice\", \"WebPubSubServiceClient\", \"real-time\", \"WebSocket\", \"pub/sub\"."
-    },
-    {
-      "description": "Azure API Center Management SDK for Python. Use for managing API inventory, metadata, and governance across your organization. Triggers: \"azure-mgmt-apicenter\", \"ApiCenterMgmtClient\", \"API Center\", \"API inventory\", \"API governance\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-mgmt-apicenter-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-mgmt-apicenter-py/SKILL.md",
-      "triggers": "\"azure-mgmt-apicenter\", \"ApiCenterMgmtClient\", \"API Center\", \"API inventory\", \"API governance\"."
-    },
-    {
-      "description": "Azure API Management SDK for Python. Use for managing APIM services, APIs, products, subscriptions, and policies. Triggers: \"azure-mgmt-apimanagement\", \"ApiManagementClient\", \"APIM\", \"API gateway\", \"API Management\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-mgmt-apimanagement-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-mgmt-apimanagement-py/SKILL.md",
-      "triggers": "\"azure-mgmt-apimanagement\", \"ApiManagementClient\", \"APIM\", \"API gateway\", \"API Management\"."
-    },
-    {
-      "description": "Azure Bot Service Management SDK for Python. Use for creating, managing, and configuring Azure Bot Service resources. Triggers: \"azure-mgmt-botservice\", \"AzureBotService\", \"bot management\", \"conversational AI\", \"bot channels\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-mgmt-botservice-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-mgmt-botservice-py/SKILL.md",
-      "triggers": "\"azure-mgmt-botservice\", \"AzureBotService\", \"bot management\", \"conversational AI\", \"bot channels\"."
-    },
-    {
-      "description": "Azure Fabric Management SDK for Python. Use for managing Microsoft Fabric capacities and resources. Triggers: \"azure-mgmt-fabric\", \"FabricMgmtClient\", \"Fabric capacity\", \"Microsoft Fabric\", \"Power BI capacity\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-mgmt-fabric-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-mgmt-fabric-py/SKILL.md",
-      "triggers": "\"azure-mgmt-fabric\", \"FabricMgmtClient\", \"Fabric capacity\", \"Microsoft Fabric\", \"Power BI capacity\"."
-    },
-    {
-      "description": "Azure Monitor Ingestion SDK for Python. Use for sending custom logs to Log Analytics workspace via Logs Ingestion API. Triggers: \"azure-monitor-ingestion\", \"LogsIngestionClient\", \"custom logs\", \"DCR\", \"data collection rule\", \"Log Analytics\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-monitor-ingestion-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-monitor-ingestion-py/SKILL.md",
-      "triggers": "\"azure-monitor-ingestion\", \"LogsIngestionClient\", \"custom logs\", \"DCR\", \"data collection rule\", \"Log Analytics\"."
-    },
-    {
-      "description": "Azure Monitor OpenTelemetry Exporter for Python. Use for low-level OpenTelemetry export to Application Insights. Triggers: \"azure-monitor-opentelemetry-exporter\", \"AzureMonitorTraceExporter\", \"AzureMonitorMetricExporter\", \"AzureMonitorLogExporter\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-monitor-opentelemetry-exporter-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-monitor-opentelemetry-exporter-py/SKILL.md",
-      "triggers": "\"azure-monitor-opentelemetry-exporter\", \"AzureMonitorTraceExporter\", \"AzureMonitorMetricExporter\", \"AzureMonitorLogExporter\"."
-    },
-    {
-      "description": "Azure Monitor OpenTelemetry Distro for Python. Use for one-line Application Insights setup with auto-instrumentation. Triggers: \"azure-monitor-opentelemetry\", \"configure_azure_monitor\", \"Application Insights\", \"OpenTelemetry distro\", \"auto-instrumentation\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-monitor-opentelemetry-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-monitor-opentelemetry-py/SKILL.md",
-      "triggers": "\"azure-monitor-opentelemetry\", \"configure_azure_monitor\", \"Application Insights\", \"OpenTelemetry distro\", \"auto-instrumentation\"."
-    },
-    {
-      "description": "Azure Monitor Query SDK for Python. Use for querying Log Analytics workspaces and Azure Monitor metrics. Triggers: \"azure-monitor-query\", \"LogsQueryClient\", \"MetricsQueryClient\", \"Log Analytics\", \"Kusto queries\", \"Azure metrics\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-monitor-query-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-monitor-query-py/SKILL.md",
-      "triggers": "\"azure-monitor-query\", \"LogsQueryClient\", \"MetricsQueryClient\", \"Log Analytics\", \"Kusto queries\", \"Azure metrics\"."
-    },
-    {
-      "description": "Azure AI Search SDK for Python. Use for vector search, hybrid search, semantic ranking, indexing, and skillsets. Triggers: \"azure-search-documents\", \"SearchClient\", \"SearchIndexClient\", \"vector search\", \"hybrid search\", \"semantic search\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-search-documents-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-search-documents-py/SKILL.md",
-      "triggers": "\"azure-search-documents\", \"SearchClient\", \"SearchIndexClient\", \"vector search\", \"hybrid search\", \"semantic search\"."
-    },
-    {
-      "description": "Azure Service Bus SDK for Python messaging. Use for queues, topics, subscriptions, and enterprise messaging patterns. Triggers: \"service bus\", \"ServiceBusClient\", \"queue\", \"topic\", \"subscription\", \"message broker\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-servicebus-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-servicebus-py/SKILL.md",
-      "triggers": "\"service bus\", \"ServiceBusClient\", \"queue\", \"topic\", \"subscription\", \"message broker\"."
-    },
-    {
-      "description": "Azure Speech to Text REST API for short audio (Python). Use for simple speech recognition of audio files up to 60 seconds without the Speech SDK. Triggers: \"speech to text REST\", \"short audio transcription\", \"speech recognition REST API\", \"STT REST\", \"recognize speech REST\". DO NOT USE FOR: Long audio (>60 seconds), real-time streaming, batch transcription, custom speech models, speech translation. Use Speech SDK or Batch Transcription API instead.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-speech-to-text-rest-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-speech-to-text-rest-py/SKILL.md",
-      "triggers": "\"speech to text REST\", \"short audio transcription\", \"speech recognition REST API\", \"STT REST\", \"recognize speech REST\"."
-    },
-    {
-      "description": "Azure Blob Storage SDK for Python. Use for uploading, downloading, listing blobs, managing containers, and blob lifecycle. Triggers: \"blob storage\", \"BlobServiceClient\", \"ContainerClient\", \"BlobClient\", \"upload blob\", \"download blob\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-storage-blob-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-storage-blob-py/SKILL.md",
-      "triggers": "\"blob storage\", \"BlobServiceClient\", \"ContainerClient\", \"BlobClient\", \"upload blob\", \"download blob\"."
-    },
-    {
-      "description": "Azure Data Lake Storage Gen2 SDK for Python. Use for hierarchical file systems, big data analytics, and file/directory operations. Triggers: \"data lake\", \"DataLakeServiceClient\", \"FileSystemClient\", \"ADLS Gen2\", \"hierarchical namespace\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-storage-file-datalake-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-storage-file-datalake-py/SKILL.md",
-      "triggers": "\"data lake\", \"DataLakeServiceClient\", \"FileSystemClient\", \"ADLS Gen2\", \"hierarchical namespace\"."
-    },
-    {
-      "description": "Azure Storage File Share SDK for Python. Use for SMB file shares, directories, and file operations in the cloud. Triggers: \"azure-storage-file-share\", \"ShareServiceClient\", \"ShareClient\", \"file share\", \"SMB\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-storage-file-share-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-storage-file-share-py/SKILL.md",
-      "triggers": "\"azure-storage-file-share\", \"ShareServiceClient\", \"ShareClient\", \"file share\", \"SMB\"."
-    },
-    {
-      "description": "Azure Queue Storage SDK for Python. Use for reliable message queuing, task distribution, and asynchronous processing. Triggers: \"queue storage\", \"QueueServiceClient\", \"QueueClient\", \"message queue\", \"dequeue\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-storage-queue-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-storage-queue-py/SKILL.md",
-      "triggers": "\"queue storage\", \"QueueServiceClient\", \"QueueClient\", \"message queue\", \"dequeue\"."
-    },
-    {
       "description": "Unified Python interface to 40+ bioinformatics services. Use when querying multiple databases (UniProt, KEGG, ChEMBL, Reactome) in a single workflow with consistent API. Best for cross-database analysis, ID mapping across services. For quick single-database lookups use gget; for sequence/file manipulation use biopython.",
       "phase": 1,
       "score": 100,
@@ -371,20 +67,20 @@
       "triggers": "shadow-IT;SaaS-discovery;proxy-logs;DNS-analysis;netflow;cloud-security;pandas"
     },
     {
+      "description": "DNAnexus cloud genomics platform. Build apps/applets, manage data (upload/download), dxpy Python SDK, run workflows, FASTQ/BAM/VCF, for genomics pipeline development and execution.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "dnanexus-integration",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/dnanexus-integration/SKILL.md",
+      "triggers": "dnanexus;integration"
+    },
+    {
       "description": "Build high-performance async APIs with FastAPI, SQLAlchemy 2.0, and Pydantic V2. Master microservices, WebSockets, and modern Python async patterns.",
       "phase": 1,
       "score": 100,
       "skill_id": "fastapi-pro",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/fastapi-pro/SKILL.md",
       "triggers": "fastapi;pro"
-    },
-    {
-      "description": "Create FastAPI routers with CRUD operations, authentication dependencies, and proper response models. Use when building REST API endpoints, creating new routes, implementing CRUD operations, or adding authenticated endpoints in FastAPI applications.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "fastapi-router-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/fastapi-router-py/SKILL.md",
-      "triggers": "fastapi;router;py"
     },
     {
       "description": "Framework for computational fluid dynamics simulations using Python. Use when running fluid dynamics simulations including Navier-Stokes equations (2D/3D), shallow water equations, stratified flows, or when analyzing turbulence, vortex dynamics, or geophysical flows. Provides pseudospectral methods with FFT, HPC support, and comprehensive output analysis.",
@@ -411,14 +107,6 @@
       "triggers": "gget"
     },
     {
-      "description": "Build hosted agents using Azure AI Projects SDK with ImageBasedHostedAgentDefinition. Use when creating container-based agents that run custom code in Azure AI Foundry. Triggers: \"ImageBasedHostedAgentDefinition\", \"hosted agent\", \"container agent\", \"create_version\", \"ProtocolVersionRecord\", \"AgentProtocol.RESPONSES\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "hosted-agents-v2-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/hosted-agents-v2-py/SKILL.md",
-      "triggers": "\"ImageBasedHostedAgentDefinition\", \"hosted agent\", \"container agent\","
-    },
-    {
       "description": "Build or edit Gradio apps, layouts, components, and chat interfaces in Python.",
       "phase": 1,
       "score": 100,
@@ -443,14 +131,6 @@
       "triggers": "timestomping;ntfs-forensics;mft-analysis;defense-evasion"
     },
     {
-      "description": "Configures mutual TLS (mTLS) authentication between microservices using Python cryptography library for certificate generation and ssl module for TLS verification. Validates certificate chains, checks expiration, and audits mTLS deployment status. Use when implementing zero-trust service-to-service authentication.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "implementing-mtls-for-zero-trust-services",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-mtls-for-zero-trust-services/SKILL.md",
-      "triggers": "implementing;mtls;for;zero"
-    },
-    {
       "description": "Build network traffic baselines from NetFlow/IPFIX data using Python pandas for statistical analysis, z-score anomaly detection, and hourly/daily traffic pattern profiling",
       "phase": 1,
       "score": 100,
@@ -465,14 +145,6 @@
       "skill_id": "junta-leiloeiros",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/junta-leiloeiros/SKILL.md",
       "triggers": "scraping;brazilian-data;auctioneers;api"
-    },
-    {
-      "description": "Microsoft 365 Agents SDK for Python. Build multichannel agents for Teams/M365/Copilot Studio with aiohttp hosting, AgentApplication routing, streaming responses, and MSAL-based auth. Triggers: \"Microsoft 365 Agents SDK\", \"microsoft_agents\", \"AgentApplication\", \"start_agent_process\", \"TurnContext\", \"Copilot Studio client\", \"CloudAdapter\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "m365-agents-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/m365-agents-py/SKILL.md",
-      "triggers": "m365;agents;py"
     },
     {
       "description": "MATLAB and GNU Octave numerical computing for matrix operations, data analysis, visualization, and scientific computing. Use when writing MATLAB/Octave scripts for linear algebra, signal processing, image processing, differential equations, optimization, statistics, or creating scientific visualizations. Also use when the user needs help with MATLAB syntax, functions, or wants to convert between MATLAB and Python code. Scripts can be executed with MATLAB or the open-source GNU Octave interpreter.",
@@ -523,28 +195,12 @@
       "triggers": "pipecat;voice;gemini;openai;python"
     },
     {
-      "description": "Generate AI-powered podcast-style audio narratives using Azure OpenAI's GPT Realtime Mini model via WebSocket. Use when building text-to-speech features, audio narrative generation, podcast creation from content, or integrating with Azure OpenAI Realtime API for real audio output. Covers full-stack implementation from React frontend to Python FastAPI backend with WebSocket streaming.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "podcast-generation",
-      "src_path": "lib/microsoft-skills/.github/skills/podcast-generation/SKILL.md",
-      "triggers": "podcast;generation"
-    },
-    {
       "description": "Direct REST API access to PubMed. Advanced Boolean/MeSH queries, E-utilities API, batch processing, citation management. For Python workflows, prefer biopython (Bio.Entrez). Use this for direct HTTP/REST work or custom API implementations.",
       "phase": 1,
       "score": 100,
       "skill_id": "pubmed-database",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/pubmed-database/SKILL.md",
       "triggers": "pubmed;database"
-    },
-    {
-      "description": "Create Pydantic models following the multi-model pattern with Base, Create, Update, Response, and InDB variants. Use when defining API request/response schemas, database models, or data validation in Python applications using Pydantic v2.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "pydantic-models-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/pydantic-models-py/SKILL.md",
-      "triggers": "pydantic;models;py"
     },
     {
       "description": "Differential gene expression analysis (Python DESeq2). Identify DE genes from bulk RNA-seq counts, Wald tests, FDR correction, volcano/MA plots, for RNA-seq analysis.",
@@ -705,14 +361,6 @@
       "skill_id": "temporal-python-pro",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/temporal-python-pro/SKILL.md",
       "triggers": "temporal;python;pro"
-    },
-    {
-      "description": "Tinybird Python SDK for defining datasources, pipes, and queries in Python. Use when working with tinybird-sdk, Python Tinybird projects, or data ingestion and queries in Python.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "tinybird-python-sdk-guidelines",
-      "src_path": "lib/tinybirdco-tinybird-agent-skills/skills/tinybird-python-sdk-guidelines/SKILL.md",
-      "triggers": "tinybird;python;sdk;guidelines"
     },
     {
       "description": "Direct REST API access to UniProt. Protein searches, FASTA retrieval, ID mapping, Swiss-Prot/TrEMBL. For Python workflows with multiple databases, prefer bioservices (unified interface to 40+ services). Use this for direct HTTP/REST work or UniProt-specific control.",

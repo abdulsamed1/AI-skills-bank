@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "server-side",
   "skills": [
     {
@@ -19,44 +19,28 @@
       "triggers": "analyzing;kubernetes;audit;logs"
     },
     {
-      "description": "Debug Azure production issues on Azure using AppLens, Azure Monitor, resource health, and safe triage. WHEN: debug production issues, troubleshoot container apps, troubleshoot functions, troubleshoot AKS, kubectl cannot connect, kube-system/CoreDNS failures, pod pending, crashloop, node not ready, upgrade failures, analyze logs, KQL, insights, image pull failures, cold start issues, health probe failures, resource health, root cause of errors.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "azure-diagnostics",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-diagnostics/SKILL.md",
-      "triggers": "azure;diagnostics"
-    },
-    {
-      "description": "List, find, and show Azure resources across subscriptions or resource groups. Handles prompts like \"list websites\", \"list virtual machines\", \"list my VMs\", \"show storage accounts\", \"find container apps\", and \"what resources do I have\". USE FOR: resource inventory, find resources by tag, tag analysis, orphaned resource discovery (not for cost analysis), unattached disks, count resources by type, cross-subscription lookup, and Azure Resource Graph queries. DO NOT USE FOR: deploying/changing resources, cost optimization, or non-Azure clouds.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "azure-resource-lookup",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-resource-lookup/SKILL.md",
-      "triggers": "azure;resource;lookup"
-    },
-    {
-      "description": "Assess and upgrade Azure workloads between plans, tiers, or SKUs within Azure. Generates assessment reports and automates upgrade steps. WHEN: upgrade Consumption to Flex Consumption, upgrade Azure Functions plan, migrate hosting plan, upgrade Functions SKU, move to Flex Consumption, upgrade Azure service tier, change hosting plan, upgrade function app plan, migrate App Service to Container Apps.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "azure-upgrade",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-upgrade/SKILL.md",
-      "triggers": "azure;upgrade"
-    },
-    {
-      "description": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "backend-architect",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/backend-architect/SKILL.md",
-      "triggers": "backend;architect"
-    },
-    {
       "description": "Expert C4 Container-level documentation specialist.",
       "phase": 2,
       "score": 100,
       "skill_id": "c4-container",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/c4-container/SKILL.md",
       "triggers": "c4;container"
+    },
+    {
+      "description": "Cloud infrastructure and DevOps workflow covering AWS, Azure, GCP, Kubernetes, Terraform, CI/CD, monitoring, and cloud-native development.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "cloud-devops",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/cloud-devops/SKILL.md",
+      "triggers": "cloud;devops"
+    },
+    {
+      "description": "Deployment workflows, CI/CD pipeline patterns, Docker containerization, health checks, rollback strategies, and production readiness checklists for web applications. Use when setting up deployment infrastructure or planning releases.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "deployment-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/.kiro/skills/deployment-patterns/SKILL.md",
+      "triggers": "deployment;patterns"
     },
     {
       "description": "You are an advanced Docker containerization expert with comprehensive, practical knowledge of container optimization, security hardening, multi-stage builds, orchestration patterns, and production deployment strategies based on current industry best practices.",
@@ -73,14 +57,6 @@
       "skill_id": "docker-patterns",
       "src_path": "lib/affaan-m-everything-claude-code/.kiro/skills/docker-patterns/SKILL.md",
       "triggers": "docker;patterns"
-    },
-    {
-      "description": "Microsoft Entra Agent ID (preview) for creating OAuth2-capable AI agent identities via Microsoft Graph beta API. Covers Agent Identity Blueprints, BlueprintPrincipals, Agent Identities, required permissions, sponsors, and Workload Identity Federation. Includes Microsoft Entra SDK for AgentID (containerized sidecar) for polyglot agent authentication (Docker/Kubernetes), 3P agent integration, autonomous and interactive agent patterns. Triggers: \"agent identity\", \"agent id\", \"Agent Identity Blueprint\", \"BlueprintPrincipal\", \"entra agent\", \"agent identity provisioning\", \"Graph agent identity\", \"entra sidecar\", \"agent id sidecar\", \"auth sidecar\", \"3P agent\", \"third-party agent identity\", \"polyglot agent auth\".",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "entra-agent-id",
-      "src_path": "lib/microsoft-skills/.github/skills/entra-agent-id/SKILL.md",
-      "triggers": "\"agent identity\", \"agent id\", \"Agent Identity Blueprint\", \"BlueprintPrincipal\", \"entra agent\", \"agent identity provisioning\", \"Graph agent identity\", \"entra sidecar\", \"agent id sidecar\", \"auth sidecar\", \"3P agent\", \"third-party agent identity\", \"polyglot agent auth\"."
     },
     {
       "description": "Complete guide to implementing GitOps workflows with ArgoCD and Flux for automated Kubernetes deployments.",
@@ -129,6 +105,22 @@
       "skill_id": "implementing-opa-gatekeeper-for-policy-enforcement",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-opa-gatekeeper-for-policy-enforcement/SKILL.md",
       "triggers": "opa;gatekeeper;kubernetes;admission-control;policy-as-code;rego"
+    },
+    {
+      "description": "This skill covers implementing Open Policy Agent (OPA) and Gatekeeper for policy-as-code enforcement in Kubernetes and CI/CD pipelines. It addresses writing Rego policies, deploying OPA Gatekeeper as a Kubernetes admission controller, testing policies in development, and integrating policy evaluation into deployment pipelines.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-policy-as-code-with-open-policy-agent",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-policy-as-code-with-open-policy-agent/SKILL.md",
+      "triggers": "devsecops;cicd;opa;gatekeeper;policy-as-code;kubernetes;secure-sdlc"
+    },
+    {
+      "description": "Implements Sigstore-based software signing and verification using Cosign keyless signing, Rekor transparency log verification, and Fulcio certificate authority integration to establish cryptographic provenance for container images, binaries, and software artifacts. The practitioner configures OIDC-based identity binding, verifies signing events against the Rekor transparency log, and integrates signing workflows into CI/CD pipelines. Activates for requests involving software supply chain signing, keyless container signing, Sigstore deployment, or artifact provenance verification.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-sigstore-for-software-signing",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-sigstore-for-software-signing/SKILL.md",
+      "triggers": "sigstore;cosign;rekor;fulcio;software-signing;supply-chain;keyless-signing;OIDC;transparency-log"
     },
     {
       "description": "Comprehensive guide to Istio traffic management for production service mesh deployments.",
@@ -185,22 +177,6 @@
       "skill_id": "mcp:setup-arxiv-mcp",
       "src_path": "lib/neolabhq-context-engineering-kit/plugins/mcp/skills/setup-arxiv-mcp/SKILL.md",
       "triggers": "mcp;setup;arxiv;mcp"
-    },
-    {
-      "description": "Master microservices architecture patterns including service boundaries, inter-service communication, data management, and resilience patterns for building distributed systems.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "microservices-patterns",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/microservices-patterns/SKILL.md",
-      "triggers": "microservices;patterns"
-    },
-    {
-      "description": "Deploy, evaluate, and manage Foundry agents end-to-end: Docker build, ACR push, hosted/prompt agent create, container start, batch eval, prompt optimization, prompt optimizer workflows, agent.yaml, dataset curation from traces. USE FOR: deploy agent to Foundry, hosted agent, create agent, invoke agent, evaluate agent, run batch eval, optimize prompt, improve prompt, prompt optimization, prompt optimizer, improve agent instructions, optimize agent instructions, optimize system prompt, deploy model, Foundry project, RBAC, role assignment, permissions, quota, capacity, region, troubleshoot agent, deployment failure, create dataset from traces, dataset versioning, eval trending, create AI Services, Cognitive Services, create Foundry resource, provision resource, knowledge index, agent monitoring, customize deployment, onboard, availability. DO NOT USE FOR: Azure Functions, App Service, general Azure deploy (use azure-deploy), general Azure prep (use azure-prepare).",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "microsoft-foundry",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/microsoft-foundry/SKILL.md",
-      "triggers": "microsoft;foundry"
     },
     {
       "description": "Evaluates LLMs across 100+ benchmarks from 18+ harnesses (MMLU, HumanEval, GSM8K, safety, VLM) with multi-backend execution. Use when needing scalable evaluation on local Docker, Slurm HPC, or cloud platforms. NVIDIA's enterprise-grade platform with container-first architecture for reproducible benchmarking.",

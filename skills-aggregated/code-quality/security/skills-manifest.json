@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "code-quality",
   "skills": [
     {
@@ -587,92 +587,12 @@
       "triggers": "azd;deployment"
     },
     {
-      "description": "Run Azure compliance and security audits with azqr plus Key Vault expiration checks. Covers best-practice assessment, resource review, policy/compliance validation, and security posture checks. WHEN: compliance scan, security audit, BEFORE running azqr (compliance cli tool), Azure best practices, Key Vault expiration check, expired certificates, expiring secrets, orphaned resources, compliance assessment.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-compliance",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-compliance/SKILL.md",
-      "triggers": "azure;compliance"
-    },
-    {
-      "description": "Identify Azure cost savings from usage and spending data. USE FOR: optimize Azure costs, reduce Azure spending/expenses, analyze Azure costs, find cost savings, generate cost optimization report, identify orphaned resources to delete, rightsize VMs, reduce waste, optimize Redis costs, optimize storage costs, AKS cost analysis add-on, namespace cost, cost spike, anomaly, budget alert, AKS cost visibility. DO NOT USE FOR: deploying resources (use azure-deploy), general Azure diagnostics (use azure-diagnostics), security issues (use azure-security)",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-cost-optimization",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-cost-optimization/SKILL.md",
-      "triggers": "azure;cost;optimization"
-    },
-    {
       "description": "Manage Azure DevOps projects, work items, repos, PRs, pipelines, wikis, test plans, security alerts, variable groups, environments/approvals, branch policies, and attachments. Use when user asks to: manage sprints, create/update work items, list repos, create PRs, run pipelines, search code, manage wiki pages, check security alerts, manage variable groups, approve deployments, or configure branch policies. Covers 13 domains with 99 tools via REST API.",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-devops",
       "src_path": "lib/sanjay3290-ai-skills/skills/azure-devops/SKILL.md",
       "triggers": "azure;devops"
-    },
-    {
-      "description": "Architect and provision enterprise Azure infrastructure from workload descriptions. For cloud architects and platform engineers planning networking, identity, security, compliance, and multi-resource topologies with WAF alignment. Generates Bicep or Terraform directly (no azd). WHEN: 'plan Azure infrastructure', 'architect Azure landing zone', 'design hub-spoke network', 'plan multi-region DR topology', 'set up VNets firewalls and private endpoints', 'subscription-scope Bicep deployment'. PREFER azure-prepare FOR app-centric workflows.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-enterprise-infra-planner",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-enterprise-infra-planner/SKILL.md",
-      "triggers": "azure;enterprise;infra;planner"
-    },
-    {
-      "description": "Azure Identity library for .NET. Authentication library for Azure SDK clients using Microsoft Entra ID. Use for DefaultAzureCredential, managed identity, service principals, and developer credentials. Triggers: \"Azure Identity\", \"DefaultAzureCredential\", \"ManagedIdentityCredential\", \"ClientSecretCredential\", \"authentication .NET\", \"Azure auth\", \"credential chain\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-identity-dotnet",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-identity-dotnet/SKILL.md",
-      "triggers": "azure;identity;dotnet"
-    },
-    {
-      "description": "Plan, create, and configure production-ready Azure Kubernetes Service (AKS) clusters. Covers Day-0 checklist, SKU selection (Automatic vs Standard), networking options (private API server, Azure CNI Overlay, egress configuration), security, and operations (autoscaling, upgrade strategy, cost analysis). WHEN: create AKS environment, provision AKS environment, enable AKS observability, design AKS networking, choose AKS SKU, secure AKS.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-kubernetes",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-kubernetes/SKILL.md",
-      "triggers": "azure;kubernetes"
-    },
-    {
-      "description": "Azure MySQL Flexible Server SDK for .NET. Database management for MySQL Flexible Server deployments. Use for creating servers, databases, firewall rules, configurations, backups, and high availability. Triggers: \"MySQL\", \"MySqlFlexibleServer\", \"MySQL Flexible Server\", \"Azure Database for MySQL\", \"MySQL database management\", \"MySQL firewall\", \"MySQL backup\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-resource-manager-mysql-dotnet",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-mysql-dotnet/SKILL.md",
-      "triggers": "azure;resource;manager;mysql;dotnet"
-    },
-    {
-      "description": "Azure Resource Manager SDK for Azure SQL in .NET. Use for MANAGEMENT PLANE operations: creating/managing SQL servers, databases, elastic pools, firewall rules, and failover groups via Azure Resource Manager. NOT for data plane operations (executing queries) - use Microsoft.Data.SqlClient for that. Triggers: \"SQL server\", \"create SQL database\", \"manage SQL resources\", \"ARM SQL\", \"SqlServerResource\", \"provision Azure SQL\", \"elastic pool\", \"firewall rule\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-resource-manager-sql-dotnet",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-sql-dotnet/SKILL.md",
-      "triggers": "azure;resource;manager;sql;dotnet"
-    },
-    {
-      "description": "Analyze Azure resource groups and generate detailed Mermaid architecture diagrams showing the relationships between individual resources. WHEN: create architecture diagram, visualize Azure resources, show resource relationships, generate Mermaid diagram, analyze resource group, diagram my resources, architecture visualization, resource topology, map Azure infrastructure.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-resource-visualizer",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-resource-visualizer/SKILL.md",
-      "triggers": "azure;resource;visualizer"
-    },
-    {
-      "description": "Azure Key Vault Keys SDK for .NET. Client library for managing cryptographic keys in Azure Key Vault and Managed HSM. Use for key creation, rotation, encryption, decryption, signing, and verification. Triggers: \"Key Vault keys\", \"KeyClient\", \"CryptographyClient\", \"RSA key\", \"EC key\", \"encrypt decrypt .NET\", \"key rotation\", \"HSM\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-security-keyvault-keys-dotnet",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-security-keyvault-keys-dotnet/SKILL.md",
-      "triggers": "azure;security;keyvault;keys;dotnet"
-    },
-    {
-      "description": "Azure Key Vault Keys Java SDK for cryptographic key management. Use when creating, managing, or using RSA/EC keys, performing encrypt/decrypt/sign/verify operations, or working with HSM-backed keys.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-security-keyvault-keys-java",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-security-keyvault-keys-java/SKILL.md",
-      "triggers": "azure;security;keyvault;keys;java"
     },
     {
       "description": "Expert in secure backend coding practices specializing in input validation, authentication, and API security. Use PROACTIVELY for backend security implementations or security code reviews.",
@@ -753,6 +673,30 @@
       "skill_id": "building-detection-rules-with-sigma",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-detection-rules-with-sigma/SKILL.md",
       "triggers": "soc;sigma;detection-rules;siem;mitre-attack;splunk;elastic;sentinel"
+    },
+    {
+      "description": "Design and implement a comprehensive DevSecOps pipeline in GitLab CI/CD integrating SAST, DAST, container scanning, dependency scanning, and secret detection.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "building-devsecops-pipeline-with-gitlab-ci",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-devsecops-pipeline-with-gitlab-ci/SKILL.md",
+      "triggers": "gitlab-ci;devsecops;sast;dast;container-scanning;dependency-scanning;secret-detection;cicd-security"
+    },
+    {
+      "description": "Builds comprehensive identity governance and lifecycle management processes including joiner-mover-leaver automation, role mining, access request workflows, periodic recertification, and orphaned account remediation using IGA platforms. Activates for requests involving identity lifecycle management, JML processes, role-based access provisioning, or identity governance program design.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "building-identity-governance-lifecycle-process",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-identity-governance-lifecycle-process/SKILL.md",
+      "triggers": "identity-governance;lifecycle-management;JML;access-provisioning;RBAC;IGA"
+    },
+    {
+      "description": "Designs and documents structured incident response playbooks that define step-by-step procedures for specific incident types aligned with NIST SP 800-61r3 and SANS PICERL frameworks. Covers playbook structure, decision trees, escalation criteria, RACI matrices, and integration with SOAR platforms. Activates for requests involving IR playbook creation, incident response procedure documentation, response runbook development, or SOAR playbook design.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "building-incident-response-playbook",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-incident-response-playbook/SKILL.md",
+      "triggers": "IR-playbook;runbook;NIST-800-61;SOAR-integration;response-procedures"
     },
     {
       "description": "Build an automated pipeline to defang indicators of compromise (URLs, IPs, domains, emails) for safe sharing and distribute them in STIX format through TAXII feeds and threat intelligence platforms.",
@@ -923,6 +867,14 @@
       "triggers": "cdk;patterns"
     },
     {
+      "description": "You are a workflow automation expert specializing in creating efficient CI/CD pipelines, GitHub Actions workflows, and automated development processes. Design and implement automation that reduces manual work, improves consistency, and accelerates delivery while maintaining quality and security.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "cicd-automation-workflow-automate",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/cicd-automation-workflow-automate/SKILL.md",
+      "triggers": "cicd;automation;workflow;automate"
+    },
+    {
       "description": "Expert patterns for Clerk auth implementation, middleware, organizations, webhooks, and user sync Use when: adding authentication, clerk auth, user authentication, sign in, sign up.",
       "phase": 1,
       "score": 100,
@@ -945,14 +897,6 @@
       "skill_id": "cloud-penetration-testing",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/cloud-penetration-testing/SKILL.md",
       "triggers": "cloud;penetration;testing"
-    },
-    {
-      "description": "Comprehensive checklist for conducting thorough code reviews covering functionality, security, performance, and maintainability",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "code-review-checklist",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/code-review-checklist/SKILL.md",
-      "triggers": "code;review;checklist"
     },
     {
       "description": "Deep audit before GitHub push: removes junk files, dead code, security holes, and optimization issues. Checks every file line-by-line for production readiness.",
@@ -1283,14 +1227,6 @@
       "triggers": "cpg;analysis"
     },
     {
-      "description": "Guide for creating Claude Code skills following Anthropic's official best practices. Use when user wants to create a new skill, build a skill, write SKILL.md, update an existing skill, or needs skill creation guidelines. Provides structure, frontmatter fields, naming conventions, and new features like dynamic context injection and subagent execution.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "creating-skills",
-      "src_path": "lib/fvadicamo-dev-agent-skills/skills/creating-skills/SKILL.md",
-      "triggers": "creating;skills"
-    },
-    {
       "description": "CISO operacional enterprise para gestao total de credenciais e segredos.",
       "phase": 1,
       "score": 100,
@@ -1473,6 +1409,14 @@
       "skill_id": "detecting-aws-cloudtrail-anomalies",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-aws-cloudtrail-anomalies/SKILL.md",
       "triggers": "cloud-security;aws;cloudtrail;anomaly-detection;threat-detection;boto3"
+    },
+    {
+      "description": "Detecting exposed AWS credentials in source code repositories, CI/CD pipelines, and configuration files using TruffleHog, git-secrets, and AWS-native detection mechanisms to prevent credential theft and unauthorized account access.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "detecting-aws-credential-exposure-with-trufflehog",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-aws-credential-exposure-with-trufflehog/SKILL.md",
+      "triggers": "cloud-security;aws;credential-exposure;trufflehog;secrets-detection;devsecops"
     },
     {
       "description": "Automate AWS GuardDuty threat detection findings processing using EventBridge and Lambda to enable real-time incident response, automatic quarantine of compromised resources, and security notification workflows.",
@@ -2059,14 +2003,6 @@
       "triggers": "dotnet;backend"
     },
     {
-      "description": "Guides Microsoft Entra ID app registration, OAuth 2.0 authentication, and MSAL integration. USE FOR: create app registration, register Azure AD app, configure OAuth, set up authentication, add API permissions, generate service principal, MSAL example, console app auth, Entra ID setup, Azure AD authentication. DO NOT USE FOR: Azure RBAC or role assignments (use azure-rbac), Key Vault secrets (use azure-keyvault-expiration-audit), Azure resource security (use azure-security).",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "entra-app-registration",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/entra-app-registration/SKILL.md",
-      "triggers": "entra;app;registration"
-    },
-    {
       "description": "Master the complete penetration testing lifecycle from reconnaissance through reporting. This skill covers the five stages of ethical hacking methodology, essential tools, attack techniques, and professional reporting for authorized security assessments.",
       "phase": 1,
       "score": 100,
@@ -2409,14 +2345,6 @@
       "skill_id": "firmware-analyst",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/firmware-analyst/SKILL.md",
       "triggers": "firmware;analyst"
-    },
-    {
-      "description": "Review and create distinctive, production-grade frontend interfaces with high design quality and design system compliance. Evaluates using three pillars: frictionless insight-to-action, quality craft, and trustworthy building. USE FOR: PR reviews, design reviews, accessibility audits, design system compliance checks, creative frontend design, UI code review, component reviews, responsive design checks, theme testing, and creating memorable UI. DO NOT USE FOR: Backend API reviews, database schema reviews, infrastructure or DevOps work, pure business logic without UI, or non-frontend code.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "frontend-design-review",
-      "src_path": "lib/microsoft-skills/.github/skills/frontend-design-review/SKILL.md",
-      "triggers": "frontend;design;review"
     },
     {
       "description": "You are a frontend security specialist focusing on Cross-Site Scripting (XSS) vulnerability detection and prevention. Analyze React, Vue, Angular, and vanilla JavaScript code to identify injection poi",
@@ -3171,6 +3099,14 @@
       "triggers": "device-posture;zero-trust;endpoint-compliance;crowdstrike-zta;intune;conditional-access;jamf"
     },
     {
+      "description": "Integrates Static Application Security Testing (SAST), Dynamic Application Security Testing (DAST), and Software Composition Analysis (SCA) into CI/CD pipelines using open-source tools. Covers Semgrep for SAST, Trivy for SCA and container scanning, OWASP ZAP for DAST, and Gitleaks for secrets detection. Activates for requests involving DevSecOps pipeline setup, automated security scanning in CI/CD, SAST/DAST/SCA integration, or shift-left security implementation.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "implementing-devsecops-security-scanning",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-devsecops-security-scanning/SKILL.md",
+      "triggers": "devsecops;SAST;DAST;SCA;semgrep;trivy;owasp-zap;gitleaks;CI-CD;shift-left"
+    },
+    {
       "description": "The Diamond Model of Intrusion Analysis provides a structured framework for analyzing cyber intrusions by examining four core features - Adversary, Capability, Infrastructure, and Victim. This skill covers implementing the Diamond Model programmatically to classify and correlate intrusion events, build activity threads, and generate pivot-ready intelligence.",
       "phase": 1,
       "score": 100,
@@ -3371,6 +3307,14 @@
       "triggers": "compliance;governance;iso27001;isms;risk-management;certification"
     },
     {
+      "description": "Implement Just-In-Time (JIT) access provisioning to eliminate standing privileges by granting temporary, time-bound access only when needed. This skill covers JIT architecture design, approval workflo",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "implementing-just-in-time-access-provisioning",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-just-in-time-access-provisioning/SKILL.md",
+      "triggers": "iam;identity;access-control;jit;provisioning;zero-trust;least-privilege"
+    },
+    {
       "description": "JSON Web Tokens (JWT) defined in RFC 7519 are compact, URL-safe tokens used for authentication and authorization in web applications. This skill covers implementing secure JWT signing with HMAC-SHA256",
       "phase": 1,
       "score": 100,
@@ -3555,6 +3499,14 @@
       "triggers": "iam;identity;access-control;privileged-access;pam;cyberark"
     },
     {
+      "description": "Design and implement Privileged Access Workstations (PAWs) with device hardening, just-in-time access, and integration with CyberArk or BeyondTrust for secure administrative operations.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "implementing-privileged-access-workstation",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-privileged-access-workstation/SKILL.md",
+      "triggers": "privileged-access;PAW;zero-trust;device-hardening;CyberArk;BeyondTrust;just-in-time-access"
+    },
+    {
       "description": "Deploy and configure Proofpoint Email Protection as a secure email gateway to detect and block phishing, malware, BEC, and spam before messages reach user inboxes.",
       "phase": 1,
       "score": 100,
@@ -3619,6 +3571,14 @@
       "triggers": "tetragon;ebpf;runtime-security;kubernetes;cilium;container-security;observability;kernel-security;cncf"
     },
     {
+      "description": "This skill covers deploying HashiCorp Vault for centralized secrets management across cloud environments, including dynamic secret generation for databases and cloud providers, transit encryption, PKI certificate management, and Kubernetes integration. It addresses eliminating hardcoded credentials from application code and CI/CD pipelines by implementing short-lived, automatically rotated secrets.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "implementing-secrets-management-with-vault",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-secrets-management-with-vault/SKILL.md",
+      "triggers": "hashicorp-vault;secrets-management;dynamic-secrets;credential-rotation;zero-trust"
+    },
+    {
       "description": "Implements security chaos engineering experiments that deliberately disable or degrade security controls to verify detection and response capabilities. Tests WAF bypass, firewall rule removal, log pipeline disruption, and EDR disablement scenarios using boto3 and subprocess. Use when validating SOC detection coverage and resilience.",
       "phase": 1,
       "score": 100,
@@ -3681,6 +3641,14 @@
       "skill_id": "implementing-stix-taxii-feed-integration",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-stix-taxii-feed-integration/SKILL.md",
       "triggers": "threat-intelligence;cti;ioc;mitre-attack;stix;taxii;feed-integration;oasis"
+    },
+    {
+      "description": "Implement software supply chain integrity verification for container builds using the in-toto framework to create cryptographically signed attestations across CI/CD pipeline steps.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "implementing-supply-chain-security-with-in-toto",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-supply-chain-security-with-in-toto/SKILL.md",
+      "triggers": "in-toto;supply-chain-security;attestation;slsa;sigstore;container-security;cncf;provenance;sbom"
     },
     {
       "description": "Configure rsyslog for centralized log collection with TLS encryption, custom templates, and log rotation. Generates server and client configuration files with GnuTLS stream drivers, x509 certificate authentication, per-host log segregation, and reliable queue settings for high-availability syslog infrastructure.",
@@ -3827,12 +3795,12 @@
       "triggers": "inngest"
     },
     {
-      "description": "Connect WhatsApp to your product with Kapso: onboard customers with setup links, detect connections, receive events via webhooks, and send messages/templates/media. Also manage WhatsApp Flows (create/update/publish, data endpoints, encryption). Use when integrating WhatsApp end-to-end.",
+      "description": "This skill covers integrating OWASP ZAP (Zed Attack Proxy) for Dynamic Application Security Testing in CI/CD pipelines. It addresses configuring baseline, full, and API scans against running applications, interpreting ZAP findings, tuning scan policies, and establishing DAST quality gates in GitHub Actions and GitLab CI.",
       "phase": 1,
       "score": 100,
-      "skill_id": "integrate-whatsapp",
-      "src_path": "lib/gokapso-agent-skills/skills/integrate-whatsapp/SKILL.md",
-      "triggers": "integrate;whatsapp"
+      "skill_id": "integrating-dast-with-owasp-zap-in-pipeline",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/integrating-dast-with-owasp-zap-in-pipeline/SKILL.md",
+      "triggers": "devsecops;cicd;dast;owasp-zap;dynamic-testing;secure-sdlc"
     },
     {
       "description": "Investigates insider threat indicators including data exfiltration attempts, unauthorized access patterns, policy violations, and pre-departure behaviors using SIEM analytics, DLP alerts, and HR data correlation. Use when SOC teams receive insider threat referrals from HR, detect anomalous data movement by employees, or need to build investigation timelines for potential insider threats.",
@@ -3865,14 +3833,6 @@
       "skill_id": "lambda-labs-gpu-cloud",
       "src_path": "lib/orchestra-research-ai-research-skills/09-infrastructure/lambda-labs/SKILL.md",
       "triggers": "Infrastructure;GPU Cloud;Training;Inference;Lambda Labs"
-    },
-    {
-      "description": "Senior Laravel Engineer role for production-grade, maintainable, and idiomatic Laravel solutions. Focuses on clean architecture, security, performance, and modern standards (Laravel 10/11+).",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "laravel-expert",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/laravel-expert/SKILL.md",
-      "triggers": "laravel;expert"
     },
     {
       "description": "Laravel security best practices for authn/authz, validation, CSRF, mass assignment, file uploads, secrets, rate limiting, and secure deployment.",
@@ -3921,14 +3881,6 @@
       "skill_id": "linux-shell-scripting",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/linux-shell-scripting/SKILL.md",
       "triggers": "linux;shell;scripting"
-    },
-    {
-      "description": "Microsoft 365 Agents SDK for .NET. Build multichannel agents for Teams/M365/Copilot Studio with ASP.NET Core hosting, AgentApplication routing, and MSAL-based auth. Triggers: \"Microsoft 365 Agents SDK\", \"Microsoft.Agents\", \"AddAgentApplicationOptions\", \"AgentApplication\", \"AddAgentAspNetAuthentication\", \"Copilot Studio client\", \"IAgentHttpAdapter\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "m365-agents-dotnet",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/m365-agents-dotnet/SKILL.md",
-      "triggers": "m365;agents;dotnet"
     },
     {
       "description": "Expert malware analyst specializing in defensive malware research, threat intelligence, and incident response. Masters sandbox analysis, behavioral analysis, and malware family identification.",
@@ -4057,6 +4009,14 @@
       "skill_id": "pentest-commands",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/pentest-commands/SKILL.md",
       "triggers": "pentest;commands"
+    },
+    {
+      "description": "Conduct systematic access reviews and certifications to ensure users have appropriate access rights aligned with their roles. This skill covers review campaign design, reviewer selection, risk-based p",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "performing-access-review-and-certification",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-access-review-and-certification/SKILL.md",
+      "triggers": "iam;identity;access-control;access-review;certification;compliance;governance"
     },
     {
       "description": "Enumerate and audit Active Directory forest trust relationships using impacket for SID filtering analysis, trust key extraction, cross-forest SID history abuse detection, and inter-realm Kerberos ticket assessment.",
@@ -5147,14 +5107,6 @@
       "triggers": "protocol;reverse;engineering"
     },
     {
-      "description": "Rails 8.x application architecture, implementation, and review guidance for production codebases. Use when building or reviewing Ruby on Rails 8 features across models, controllers, routes, Hotwire, jobs, APIs, performance, security, and testing. Trigger for requests mentioning Rails 8, Active Record, Active Job, GoodJob, Solid Queue, Turbo/Stimulus, REST resources, migrations, code quality, naming, and production readiness.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "rails-conventions",
-      "src_path": "lib/ethos-link-rails-conventions/SKILL.md",
-      "triggers": "rails;conventions"
-    },
-    {
       "description": "Executes structured recovery from a ransomware incident following NIST and CISA frameworks, including environment isolation, forensic evidence preservation, clean infrastructure rebuild, prioritized system restoration from verified backups, credential reset, and validation against re-infection. Covers Active Directory recovery, database restoration, and application stack rebuild in dependency order. Activates for requests involving ransomware recovery, post-encryption restoration, or disaster recovery from ransomware.",
       "phase": 1,
       "score": 100,
@@ -5555,14 +5507,6 @@
       "triggers": "supply;chain;risk;auditor"
     },
     {
-      "description": "Audit SwiftUI iOS feature code for accessibility against WCAG 2.2 Level A/AA and return patch-ready fixes. Use when reviewing SwiftUI views/screens (including auth, forms, settings, and custom controls) and you need both standards traceability (WCAG + WCAG2Mobile interpretation) and practical, minimal code changes in a concise priority-grouped Markdown format with user follow-up checks for code-indeterminate behavior.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "swiftui-wcag-accessibility-auditor",
-      "src_path": "lib/ramzesenok-ios-accessibility-audit-skill/swiftui-wcag-accessibility-auditor/SKILL.md",
-      "triggers": "swiftui;wcag;accessibility;auditor"
-    },
-    {
       "description": "Terraform infrastructure as code workflow for provisioning cloud resources, creating reusable modules, and managing infrastructure at scale.",
       "phase": 1,
       "score": 100,
@@ -5819,14 +5763,6 @@
       "triggers": "Reinforcement Learning;RLHF;GRPO;PPO;Post-Training;Distributed Training"
     },
     {
-      "description": "Human review workflow for AI-generated GitHub projects with spec-based feedback, security review, and follow-up PRs from the Vibers service.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "vibers-code-review",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/vibers-code-review/SKILL.md",
-      "triggers": "vibers;code;review"
-    },
-    {
       "description": "Advanced vulnerability analysis principles. OWASP 2025, Supply Chain Security, attack surface mapping, risk prioritization.",
       "phase": 1,
       "score": 100,
@@ -5865,14 +5801,6 @@
       "skill_id": "wordpress-penetration-testing",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/wordpress-penetration-testing/SKILL.md",
       "triggers": "wordpress;penetration;testing"
-    },
-    {
-      "description": "WordPress plugin development workflow covering plugin architecture, hooks, admin interfaces, REST API, security best practices, and WordPress 7.0 features: Real-Time Collaboration, AI Connectors, Abilities API, DataViews, and PHP-only blocks.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "wordpress-plugin-development",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/wordpress-plugin-development/SKILL.md",
-      "triggers": "wordpress;plugin;development"
     },
     {
       "description": "X/Twitter API integration for posting tweets, threads, reading timelines, search, and analytics. Covers OAuth auth patterns, rate limits, and platform-native content posting. Use when the user wants to interact with X programmatically.",

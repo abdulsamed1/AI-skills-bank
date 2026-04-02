@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "business",
   "skills": [
     {
@@ -17,22 +17,6 @@
       "skill_id": "beachhead-segment",
       "src_path": "lib/phuryn-pm-skills/pm-go-to-market/skills/beachhead-segment/SKILL.md",
       "triggers": "beachhead;segment"
-    },
-    {
-      "description": "Generate a Business Model Canvas with all 9 building blocks. Use when creating a business model, documenting how a business creates value, or analyzing an existing business model.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "business-model",
-      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/business-model/SKILL.md",
-      "triggers": "business;model"
-    },
-    {
-      "description": "Create a company research brief with executive quotes, product strategy, and org context. Use when preparing for interviews, competitive analysis, partnerships, or market-entry work.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "company-research",
-      "src_path": "lib/deanpeters-product-manager-skills/skills/company-research/SKILL.md",
-      "triggers": "company;research"
     },
     {
       "description": "Comprehensive frameworks for analyzing competition, identifying differentiation opportunities, and developing winning market positioning strategies.",
@@ -169,14 +153,6 @@
       "skill_id": "startup-analyst",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/startup-analyst/SKILL.md",
       "triggers": "startup;analyst"
-    },
-    {
-      "description": "Generate a Startup Canvas combining Product Strategy (9 sections) and Business Model (costs + revenue) for a new product. An alternative to BMC and Lean Canvas that separates strategy from business model. Use when launching a new product or evaluating a startup concept.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "startup-canvas",
-      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/startup-canvas/SKILL.md",
-      "triggers": "startup;canvas"
     },
     {
       "description": "Generate value proposition statements for marketing, sales, and onboarding from existing value propositions. Use when writing marketing copy, creating sales messaging, or crafting onboarding messages.",

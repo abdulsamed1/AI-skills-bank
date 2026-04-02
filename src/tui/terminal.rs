@@ -5,7 +5,7 @@ use crossterm::{
 };
 use ratatui::backend::CrosstermBackend;
 use ratatui::Terminal;
-use std::io::{self, stdout};
+use std::io::stdout;
 
 pub fn init() -> Result<Terminal<CrosstermBackend<std::io::Stdout>>> {
     stdout().execute(EnterAlternateScreen)?;

@@ -1,53 +1,53 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "subhubs": [
     {
       "hub": "ai",
       "path": "ai/prompting-factory",
-      "skills_count": 9,
+      "skills_count": 182,
       "sub_hub": "prompting-factory"
     },
     {
       "hub": "business",
       "path": "business/analytics",
-      "skills_count": 11,
+      "skills_count": 19,
       "sub_hub": "analytics"
     },
     {
       "hub": "business",
       "path": "business/marketing",
-      "skills_count": 59,
+      "skills_count": 58,
       "sub_hub": "marketing"
     },
     {
       "hub": "business",
       "path": "business/operations",
-      "skills_count": 1159,
+      "skills_count": 928,
       "sub_hub": "operations"
     },
     {
       "hub": "business",
       "path": "business/product",
-      "skills_count": 26,
+      "skills_count": 28,
       "sub_hub": "product"
     },
     {
       "hub": "business",
       "path": "business/sales",
-      "skills_count": 8,
+      "skills_count": 9,
       "sub_hub": "sales"
     },
     {
       "hub": "business",
       "path": "business/strategy",
-      "skills_count": 23,
+      "skills_count": 20,
       "sub_hub": "strategy"
     },
     {
       "hub": "code-quality",
-      "path": "code-quality/ci-cd",
-      "skills_count": 56,
-      "sub_hub": "ci-cd"
+      "path": "code-quality/code-review",
+      "skills_count": 26,
+      "sub_hub": "code-review"
     },
     {
       "hub": "code-quality",
@@ -58,55 +58,61 @@
     {
       "hub": "code-quality",
       "path": "code-quality/java",
-      "skills_count": 30,
+      "skills_count": 5,
       "sub_hub": "java"
     },
     {
       "hub": "code-quality",
       "path": "code-quality/javascript",
-      "skills_count": 65,
+      "skills_count": 58,
       "sub_hub": "javascript"
     },
     {
       "hub": "code-quality",
       "path": "code-quality/python",
-      "skills_count": 93,
+      "skills_count": 49,
       "sub_hub": "python"
     },
     {
       "hub": "code-quality",
       "path": "code-quality/rust",
-      "skills_count": 18,
+      "skills_count": 11,
       "sub_hub": "rust"
     },
     {
       "hub": "code-quality",
       "path": "code-quality/security",
-      "skills_count": 735,
+      "skills_count": 726,
       "sub_hub": "security"
     },
     {
       "hub": "code-quality",
       "path": "code-quality/testing-qa",
-      "skills_count": 113,
+      "skills_count": 102,
       "sub_hub": "testing-qa"
     },
     {
       "hub": "code-quality",
       "path": "code-quality/typescript",
-      "skills_count": 35,
+      "skills_count": 17,
       "sub_hub": "typescript"
+    },
+    {
+      "hub": "code-quality",
+      "path": "code-quality/virsion-control",
+      "skills_count": 223,
+      "sub_hub": "virsion-control"
     },
     {
       "hub": "frontend",
       "path": "frontend/state-management",
-      "skills_count": 39,
+      "skills_count": 35,
       "sub_hub": "state-management"
     },
     {
       "hub": "frontend",
       "path": "frontend/ui-ux",
-      "skills_count": 134,
+      "skills_count": 88,
       "sub_hub": "ui-ux"
     },
     {
@@ -124,37 +130,37 @@
     {
       "hub": "mobile",
       "path": "mobile/cross-platform",
-      "skills_count": 8,
+      "skills_count": 7,
       "sub_hub": "cross-platform"
     },
     {
       "hub": "mobile",
       "path": "mobile/ios",
-      "skills_count": 9,
+      "skills_count": 14,
       "sub_hub": "ios"
     },
     {
       "hub": "server-side",
-      "path": "server-side/api-design",
-      "skills_count": 30,
-      "sub_hub": "api-design"
+      "path": "server-side/architect",
+      "skills_count": 77,
+      "sub_hub": "architect"
     },
     {
       "hub": "server-side",
       "path": "server-side/caching",
-      "skills_count": 20,
+      "skills_count": 17,
       "sub_hub": "caching"
     },
     {
       "hub": "server-side",
       "path": "server-side/containers",
-      "skills_count": 31,
+      "skills_count": 28,
       "sub_hub": "containers"
     },
     {
       "hub": "server-side",
       "path": "server-side/databases",
-      "skills_count": 42,
+      "skills_count": 40,
       "sub_hub": "databases"
     },
     {
@@ -166,19 +172,19 @@
     {
       "hub": "server-side",
       "path": "server-side/messaging",
-      "skills_count": 7,
+      "skills_count": 4,
       "sub_hub": "messaging"
     },
     {
       "hub": "server-side",
       "path": "server-side/observability",
-      "skills_count": 69,
+      "skills_count": 59,
       "sub_hub": "observability"
     },
     {
       "hub": "server-side",
       "path": "server-side/serverless-edge",
-      "skills_count": 13,
+      "skills_count": 12,
       "sub_hub": "serverless-edge"
     }
   ],

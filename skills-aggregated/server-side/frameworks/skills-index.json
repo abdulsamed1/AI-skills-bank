@@ -7,14 +7,14 @@
     "django-access-review",
     "elixir-pro",
     "fastapi-templates",
-    "laravel-patterns",
     "laravel-plugin-discovery",
     "nemo-guardrails",
     "new-rails-project",
     "paypal-integration",
     "rails-upgrade",
     "skill-rails-upgrade",
-    "torch-geometric"
+    "torch-geometric",
+    "workflow-orchestration-patterns"
   ],
   "sub_hub": "frameworks"
 }

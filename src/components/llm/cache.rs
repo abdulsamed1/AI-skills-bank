@@ -78,6 +78,7 @@ pub fn key_for_skill(
     skill_path: &Path,
     name: &str,
     description: &str,
+    content_body: Option<&str>,
 ) -> String {
     // repo origin via `git remote get-url origin` when possible
     let repo_origin = std::process::Command::new("git")
@@ -111,7 +112,13 @@ pub fn key_for_skill(
         out
     };
 
-    let payload = format!("{}|{}|{}", repo_origin, relative, normalize(&format!("{}|{}", name, description)));
+    let mut hash_payload = format!("{}|{}", name, description);
+    if std::env::var("LLM_CACHE_COMPAT").unwrap_or_default() != "v1" {
+        if let Some(body) = content_body {
+            hash_payload.push_str(&format!("|{}", body));
+        }
+    }
+    let payload = format!("{}|{}|{}", repo_origin, relative, normalize(&hash_payload));
     let mut hasher = Sha256::new();
     hasher.update(payload.as_bytes());
     let digest = hasher.finalize();

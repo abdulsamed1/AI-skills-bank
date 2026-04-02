@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "server-side",
   "skills": [
     {
@@ -9,30 +9,6 @@
       "skill_id": "attach-db",
       "src_path": "lib/duckdb-duckdb-skills/skills/attach-db/SKILL.md",
       "triggers": "attach;db"
-    },
-    {
-      "description": "Manage MongoDB Atlas Organizations as Azure ARM resources using Azure.ResourceManager.MongoDBAtlas SDK. Use when creating, updating, listing, or deleting MongoDB Atlas organizations through Azure Marketplace integration. This SDK manages the Azure-side organization resource, not Atlas clusters/databases directly.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "azure-mgmt-mongodbatlas-dotnet",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-mongodbatlas-dotnet/SKILL.md",
-      "triggers": "azure;mgmt;mongodbatlas;dotnet"
-    },
-    {
-      "description": "Azure PostgreSQL Flexible Server SDK for .NET. Database management for PostgreSQL Flexible Server deployments. Use for creating servers, databases, firewall rules, configurations, backups, and high availability. Triggers: \"PostgreSQL\", \"PostgreSqlFlexibleServer\", \"PostgreSQL Flexible Server\", \"Azure Database for PostgreSQL\", \"PostgreSQL database management\", \"PostgreSQL firewall\", \"PostgreSQL backup\", \"Postgres\".",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "azure-resource-manager-postgresql-dotnet",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-postgresql-dotnet/SKILL.md",
-      "triggers": "azure;resource;manager;postgresql;dotnet"
-    },
-    {
-      "description": "Azure Storage Services including Blob Storage, File Shares, Queue Storage, Table Storage, and Data Lake. Provides object storage, SMB file shares, async messaging, NoSQL key-value, and big data analytics capabilities. Includes access tiers (hot, cool, archive) and lifecycle management. USE FOR: blob storage, file shares, queue storage, table storage, data lake, upload files, download blobs, storage accounts, access tiers, lifecycle management. DO NOT USE FOR: SQL databases, Cosmos DB (use azure-prepare), messaging with Event Hubs or Service Bus (use azure-messaging).",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "azure-storage",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-storage/SKILL.md",
-      "triggers": "azure;storage"
     },
     {
       "description": "You are a senior backend engineer operating production-grade services under strict architectural and reliability constraints. Use when routes, controllers, services, repositories, express middleware, or prisma database access.",
@@ -59,20 +35,20 @@
       "triggers": "clickhouse;io"
     },
     {
-      "description": "Structured content modeling guidance for schema design, content architecture, content reuse, references versus embedded objects, separation of concerns, and taxonomies across Sanity and other headless CMSes. Use this skill when designing or refactoring content types, deciding field shapes, debating reusable versus nested content, planning omnichannel content models, or reviewing whether a schema is too page-shaped or presentation-driven.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "content-modeling-best-practices",
-      "src_path": "lib/sanity-io-agent-toolkit/skills/content-modeling-best-practices/SKILL.md",
-      "triggers": "content;modeling;best;practices"
-    },
-    {
       "description": "Database development and operations workflow covering SQL, NoSQL, database design, migrations, optimization, and data engineering.",
       "phase": 2,
       "score": 100,
       "skill_id": "database",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/database/SKILL.md",
       "triggers": "database"
+    },
+    {
+      "description": "Expert database architect specializing in data layer design from scratch, technology selection, schema modeling, and scalable database architectures.",
+      "phase": 6,
+      "score": 100,
+      "skill_id": "database-architect",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/database-architect/SKILL.md",
+      "triggers": "database;architect"
     },
     {
       "description": "Database design principles and decision-making. Schema design, indexing strategy, ORM selection, serverless databases.",
@@ -171,6 +147,14 @@
       "triggers": "netlify;db"
     },
     {
+      "description": "Expert guidance for distributed NoSQL databases (Cassandra, DynamoDB). Focuses on mental models, query-first modeling, single-table design, and avoiding hot partitions in high-scale systems.",
+      "phase": 6,
+      "score": 100,
+      "skill_id": "nosql-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/nosql-expert/SKILL.md",
+      "triggers": "nosql;expert"
+    },
+    {
       "description": "Expert guide for creating custom Odoo modules. Covers __manifest__.py, model inheritance, ORM patterns, and module structure best practices.",
       "phase": 2,
       "score": 100,
@@ -267,6 +251,14 @@
       "triggers": "review"
     },
     {
+      "description": "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'revenue operations,' 'lead scoring,' 'lead routing,' 'MQL,' 'SQL,' 'pipeline stages,' 'deal desk,' 'CRM automation,' 'marketing-to-sales handoff,' 'data hygiene,' 'leads aren't getting to sales,' 'pipeline management,' 'lead qualification,' or 'when should marketing hand off to sales.' Use this for anything involving the systems and processes that connect marketing to revenue. For cold outreach emails, see cold-email. For email drip campaigns, see email-sequence. For pricing decisions, see pricing-strategy.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "revops",
+      "src_path": "lib/coreyhaines31-marketingskills/skills/revops/SKILL.md",
+      "triggers": "revops"
+    },
+    {
       "description": "Core skill for the deep research and writing tool. Write scientific manuscripts in full paragraphs (never bullet points). Use two-stage process with (1) section outlines with key points using research-lookup then (2) convert to flowing prose. IMRAD structure, citations (APA/AMA/Vancouver), figures/tables, reporting guidelines (CONSORT/STROBE/PRISMA), for research papers and journal submissions.",
       "phase": 2,
       "score": 100,
@@ -321,14 +313,6 @@
       "skill_id": "supabase-node",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/supabase-node/SKILL.md",
       "triggers": "supabase;node"
-    },
-    {
-      "description": "Tinybird file formats, SQL rules, optimization patterns, and best practices for datasources, pipes, endpoints, and materialized views.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "tinybird",
-      "src_path": "lib/tinybirdco-tinybird-agent-skills/skills/tinybird-best-practices/SKILL.md",
-      "triggers": "tinybird"
     },
     {
       "description": "Neon is a serverless Postgres platform that separates compute and storage to offer autoscaling, branching, instant restore, and scale-to-zero. It's fully compatible with Postgres and works with any language, framework, or ORM that supports Postgres.",

@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775078206,
+  "generated_at_unix": 1775164951,
   "hub": "frontend",
   "skills": [
     {
@@ -17,22 +17,6 @@
       "skill_id": "angular-state-management",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/angular-state-management/SKILL.md",
       "triggers": "angular;state;management"
-    },
-    {
-      "description": "Build WhatsApp automations with Kapso workflows: configure WhatsApp triggers, edit workflow graphs, manage executions, deploy functions, and use databases/integrations for state. Use when automating WhatsApp conversations and event handling.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "automate-whatsapp",
-      "src_path": "lib/gokapso-agent-skills/skills/automate-whatsapp/SKILL.md",
-      "triggers": "automate;whatsapp"
-    },
-    {
-      "description": "This skill should be used when the user asks to \"model agent mental states\", \"implement BDI architecture\", \"create belief-desire-intention models\", \"transform RDF to beliefs\", \"build cognitive agent\", or mentions BDI ontology, mental state modeling, rational agency, or neuro-symbolic AI integration.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "bdi-mental-states",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bdi-mental-states/SKILL.md",
-      "triggers": "bdi;mental;states"
     },
     {
       "description": "Vision-language pre-training framework bridging frozen image encoders and LLMs. Use when you need image captioning, visual question answering, image-text retrieval, or multimodal chat with state-of-the-art zero-shot performance.",
@@ -129,14 +113,6 @@
       "skill_id": "frontend-patterns",
       "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/frontend-patterns/SKILL.md",
       "triggers": "frontend;patterns"
-    },
-    {
-      "description": "Triage GitHub issues through a label-based state machine with interactive grilling sessions. Use when user wants to triage issues, review incoming bugs or feature requests, prepare issues for an AFK agent, or manage issue workflow.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "github-triage",
-      "src_path": "lib/mattpocock-skills/github-triage/SKILL.md",
-      "triggers": "github;triage"
     },
     {
       "description": "Master Godot 4 GDScript patterns including signals, scenes, state machines, and optimization. Use when building Godot games, implementing game systems, or learning GDScript best practices.",
@@ -305,14 +281,6 @@
       "skill_id": "terraform-specialist",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/terraform-specialist/SKILL.md",
       "triggers": "terraform;specialist"
-    },
-    {
-      "description": "Create Zustand stores with TypeScript, subscribeWithSelector middleware, and proper state/action separation. Use when building React state management, creating global stores, or implementing reactive state patterns with Zustand.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "zustand-store-ts",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/zustand-store-ts/SKILL.md",
-      "triggers": "zustand;store;ts"
     }
   ],
   "sub_hub": "state-management",

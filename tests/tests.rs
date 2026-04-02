@@ -64,8 +64,8 @@ mod tests {
         // Key generation sanity
         let repo_root = dir.path();
         let skill_path = repo_root.join("lib/owner/skill/SKILL.md");
-        let key1 = key_for_skill(repo_root, &skill_path, "My Skill", "A short description");
-        let key2 = key_for_skill(repo_root, &skill_path, "My Skill", "A short description");
+        let key1 = key_for_skill(repo_root, &skill_path, "My Skill", "A short description", None);
+        let key2 = key_for_skill(repo_root, &skill_path, "My Skill", "A short description", None);
         assert_eq!(key1, key2);
         assert_eq!(key1.len(), 64);
 

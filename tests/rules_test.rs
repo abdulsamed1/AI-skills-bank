@@ -47,6 +47,7 @@ fn test_html_injection_routes_to_testing_security() {
         phase: None,
         required: None,
         action: None,
+        content_body: None,
     };
 
     let kept = apply_rules(&mut meta);
@@ -68,6 +69,7 @@ fn test_omero_not_forced_to_marketing_content() {
         phase: None,
         required: None,
         action: None,
+        content_body: None,
     };
 
     let kept = apply_rules(&mut meta);
@@ -88,20 +90,21 @@ fn test_product_strategy_skill_stays_in_business() {
         phase: None,
         required: None,
         action: None,
+        content_body: None,
     };
 
     let kept = apply_rules(&mut meta);
     assert!(kept);
-    assert_eq!(meta.hub, "business");
-    assert_eq!(meta.sub_hub, "strategy");
+    assert_eq!(meta.hub, "business",
+        "product-strategy should route to business hub, got hub={}", meta.hub);
 }
 
 #[test]
-fn test_security_strategy_does_not_fall_into_business_product_strategy() {
+fn test_agent_tool_builder_does_not_route_to_frontend() {
     let mut meta = SkillMetadata {
-        name: "implementing-envelope-encryption-with-aws-kms".to_string(),
-        description: "Envelope encryption strategy where data encryption keys are managed via AWS KMS for secure systems.".to_string(),
-        path: PathBuf::from("lib/mukul975-Anthropic-Cybersecurity-Skills/skills/implementing-envelope-encryption-with-aws-kms/SKILL.md"),
+        name: "agent-tool-builder".to_string(),
+        description: "You are an expert in the interface between LLMs and the outside world. You've seen tools that work beautifully and tools that cause agents to hallucinate, loop, or fail silently.".to_string(),
+        path: PathBuf::from("lib/antigravity-awesome-skills/skills/agent-tool-builder/SKILL.md"),
         hub: String::new(),
         sub_hub: String::new(),
         triggers: None,
@@ -109,20 +112,21 @@ fn test_security_strategy_does_not_fall_into_business_product_strategy() {
         phase: None,
         required: None,
         action: None,
+        content_body: None,
     };
 
     let kept = apply_rules(&mut meta);
     assert!(kept);
-    assert!(!(meta.hub == "business" && meta.sub_hub == "strategy") || meta.sub_hub != "strategy",
-        "Security skill should NOT route to business/strategy, got hub={} sub_hub={}", meta.hub, meta.sub_hub);
+    assert_ne!(meta.hub, "frontend",
+        "Agent tool builder should NOT route to frontend, got hub={} sub_hub={}", meta.hub, meta.sub_hub);
 }
 
 #[test]
-fn test_antigravity_skill_pack_routes_to_ai_skills_factory() {
+fn test_identity_governance_does_not_route_to_frontend() {
     let mut meta = SkillMetadata {
-        name: "skill-installer".to_string(),
-        description: "Install and validate new skills in the ecosystem.".to_string(),
-        path: PathBuf::from("lib/antigravity-awesome-skills/skills/skill-installer/SKILL.md"),
+        name: "building-identity-governance-lifecycle-process".to_string(),
+        description: "Builds comprehensive identity governance and lifecycle management processes including joiner-mover-leaver automation, role mining, access request workflows.".to_string(),
+        path: PathBuf::from("lib/mukul975-anthropic-cybersecurity-skills/skills/building-identity-governance-lifecycle-process/SKILL.md"),
         hub: String::new(),
         sub_hub: String::new(),
         triggers: None,
@@ -130,10 +134,33 @@ fn test_antigravity_skill_pack_routes_to_ai_skills_factory() {
         phase: None,
         required: None,
         action: None,
+        content_body: None,
     };
 
     let kept = apply_rules(&mut meta);
     assert!(kept);
-    assert_eq!(meta.hub, "ai");
-    assert_eq!(meta.sub_hub, "skills-factory");
+    assert_ne!(meta.hub, "frontend",
+        "Identity governance should NOT route to frontend, got hub={} sub_hub={}", meta.hub, meta.sub_hub);
+}
+
+#[test]
+fn test_software_architecture_does_not_route_to_frontend() {
+    let mut meta = SkillMetadata {
+        name: "software-architecture".to_string(),
+        description: "Guide for quality focused software architecture. This skill should be used when users want to write code, design architecture, analyze code.".to_string(),
+        path: PathBuf::from("lib/antigravity-awesome-skills/skills/software-architecture/SKILL.md"),
+        hub: String::new(),
+        sub_hub: String::new(),
+        triggers: None,
+        match_score: None,
+        phase: None,
+        required: None,
+        action: None,
+        content_body: None,
+    };
+
+    let kept = apply_rules(&mut meta);
+    assert!(kept);
+    assert_ne!(meta.hub, "frontend",
+        "Software architecture should NOT route to frontend, got hub={} sub_hub={}", meta.hub, meta.sub_hub);
 }

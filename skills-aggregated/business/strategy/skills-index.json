@@ -1,11 +1,9 @@
 {
-  "count": 23,
+  "count": 20,
   "hub": "business",
   "skills": [
     "apify-competitor-intelligence",
     "beachhead-segment",
-    "business-model",
-    "company-research",
     "competitive-landscape",
     "competitor-analysis",
     "content-idea-generator",
@@ -23,7 +21,6 @@
     "positioning-workshop",
     "recommendation-canvas",
     "startup-analyst",
-    "startup-canvas",
     "value-prop-statements"
   ],
   "sub_hub": "strategy"
