@@ -491,31 +491,24 @@ hubs.insert(
 );
 
 
-    
-    // Business Hub 
+
+// ── BUSINESS HUB ──────────────────────────────────────────────
 let mut bus_sub = HashMap::new();
 
-
-//  STRATEGY — go-to-market، تحليل السوق، نموذج الأعمال
+// 1. STRATEGY — product, GTM, analytics, business model
 bus_sub.insert(
     "business-strategy",
     SubHubRule {
         keywords: vec![
-             "google analytics", "ga4", "mixpanel", "amplitude",
-            "utm", "attribution", "conversion rate", "funnel analytics",
-            "cohort analysis", "a/b testing", "split testing",
-            "kpi", "metrics", "dashboard", "reporting",
-            "data driven", "product analytics", "user analytics",
-            "revenue analytics", "ltv", "cac", "arpu", "mrr", "arr",
-            "retention rate", "churn rate", "nps", "tracking",
-            "measurement", "analytics-tracking", "insights-dashboard",
+            // Product Management
             "product management", "prd", "roadmap", "feature roadmap",
-            "user story", "backlog", "mvp", "product discovery","case-study",
+            "user story", "backlog", "mvp", "product discovery",
             "customer discovery", "north star metric", "epic",
-            "risk-assessment",
             "jobs to be done", "jtbd", "feature prioritization",
             "requirements", "acceptance criteria", "sprint", "okr",
             "product-strategy", "product strategy",
+            "case-study", "risk-assessment",
+            // Go-to-Market & Business Model
             "go-to-market", "gtm", "market analysis", "competitive analysis",
             "positioning", "business model", "value proposition",
             "pricing strategy", "beachhead", "tam sam som",
@@ -523,101 +516,159 @@ bus_sub.insert(
             "business case", "stakeholder alignment", "growth strategy",
             "market segmentation", "icp", "ideal customer profile",
             "b2b", "b2c", "saas strategy",
+            // Analytics & Metrics
+            "google analytics", "ga4", "mixpanel", "amplitude",
+            "utm", "attribution", "conversion rate", "funnel analytics",
+            "cohort analysis", "a/b testing", "split testing",
+            "kpi", "metrics", "dashboard", "reporting",
+            "data driven", "product analytics", "user analytics",
+            "revenue analytics", "ltv", "cac", "arpu", "mrr", "arr",
+            "retention rate", "churn rate", "nps", "tracking",
+            "measurement", "analytics-tracking", "insights-dashboard",
         ],
         anchor_keywords: vec![
-             "google analytics", "attribution", "conversion rate",
-            "funnel analytics", "kpi", "mrr", "ltv", "cac", "metrics", "dashboard", "analytics",
-             "prd", "roadmap", "mvp", "backlog", "product discovery",
-            "product-strategy", "product strategy",
-            "go-to-market", "positioning", "business model",
-            "value proposition", "competitive analysis",
+            "go-to-market", "product strategy", "product-strategy",
+            "business model", "value proposition", "competitive analysis",
+            "prd", "roadmap", "mvp", "product discovery",
+            "kpi", "mrr", "ltv", "cac", "analytics", "metrics", "dashboard",
+            "google analytics", "attribution", "conversion rate",
         ],
         negative_keywords: vec![
             "react", "nextjs", "api", "sdk", "python", "rust",
             "golang", "java", "kubernetes", "docker", "sql",
             "vulnerability", "injection", "auth", "oauth", "jwt",
-            "backlog", "sprint", "prd",
-        
-     
+            "seo", "copywriting", "social media", "brand",
+            "cold email", "sales funnel", "lead generation",
+            "n8n", "zapier", "sop", "runbook",
         ],
     },
 );
 
-//  MARKETING
+// 2. MARKETING — SEO/AEO, content, social media, brand, paid ads
 bus_sub.insert(
     "marketing",
     SubHubRule {
         keywords: vec![
-            "aeo-optimization",
-            "ai-seo", "SEO and AEO", "Optimize content", "seo", "search engine optimization", "keyword research",
-            "technical seo", "on-page seo", "serp", "backlinks",
+            // SEO & AEO
+            "seo", "aeo", "ai-seo", "aeo-optimization",
+            "search engine optimization", "keyword research",
+            "technical seo", "on-page seo", "off-page seo",
+            "serp", "backlinks", "link building", "crawlability",
+            "indexability", "core-web-vitals", "schema markup",
+            "featured snippet", "voice search",
+            // Content Marketing
             "content marketing", "copywriting", "blog", "editorial",
             "content strategy", "thought leadership", "landing page copy",
             "content design", "microcopy", "video script",
+            "content calendar", "content creation", "ghostwriting",
+            "newsletter content", "email copywriting",
+            // Social Media & Brand
             "social media", "twitter", "facebook", "instagram",
-            "linkedin", "tiktok", "brand strategy", "brand identity",
-            "tone of voice", "messaging", "audience", "campaign strategy",
-            "ad copy", "paid ads", "ppc", "marketing strategy",
+            "linkedin", "tiktok", "youtube", "brand strategy",
+            "brand identity", "tone of voice", "messaging",
+            "audience", "community management", "influencer",
+            // Paid & Campaign
+            "campaign strategy", "ad copy", "paid ads", "ppc",
+            "google ads", "meta ads", "facebook ads", "marketing strategy",
+            "growth marketing", "demand generation", "pr", "press release",
         ],
         anchor_keywords: vec![
-            "seo", "copywriting", "content marketing", "social media",
-            "brand strategy", "campaign strategy",
+            "seo", "aeo", "ai-seo", "copywriting", "content marketing",
+            "social media", "brand strategy", "campaign strategy",
+            "keyword research", "backlinks", "paid ads", "ppc",
         ],
         negative_keywords: vec![
-            "backend", "sql", "api", "python", "kubernetes",
-            "vulnerability", "email automation", "crm",
+            "backend", "sql", "api", "python", "kubernetes", "docker",
+            "vulnerability", "injection", "auth",
+            "crm", "sales funnel", "cold email", "lead generation",
+            "n8n", "zapier", "sop", "runbook",
+            "go-to-market", "product strategy", "business model",
         ],
     },
 );
 
-//  SALES 
+// 3. SALES — lead gen, CRM, funnel, outreach, customer success
 bus_sub.insert(
     "sales",
     SubHubRule {
         keywords: vec![
-            "sales", "lead generation", "lead nurturing", "lead scoring",
+            // Lead Generation & Outreach
+            "lead generation", "lead nurturing", "lead scoring",
             "lead qualification", "cold email", "cold outreach",
-            "sales funnel", "closing", "deal", "pitch", "proposal",
-            "crm", "pipeline", "objection handling", "discovery call",
-            "demo", "negotiation", "account management", "upsell",
-            "cross-sell", "churn", "retention", "customer success",
-            "b2b sales", "enterprise sales", "inbound", "outbound",
-            "sales-strategy", "sales strategy",
+            "cold calling", "prospecting", "outbound", "inbound",
+            "email sequence", "drip sequence", "follow-up",
+            // Sales Process
+            "sales funnel", "sales pipeline", "closing", "deal",
+            "pitch", "pitch deck", "proposal", "contract",
+            "objection handling", "discovery call", "demo",
+            "negotiation", "sales strategy", "sales-strategy",
+            "b2b sales", "enterprise sales", "smb sales",
+            // CRM & Account Management
+            "crm", "salesforce", "hubspot", "pipedrive", "zoho",
+            "account management", "upsell", "cross-sell",
+            "customer success", "churn", "retention", "renewal",
+            "nrr", "expansion revenue", "customer onboarding",
+            // Revenue
+            "revenue operations", "revops", "sales ops",
+            "quota", "commission", "incentive", "forecast",
         ],
         anchor_keywords: vec![
-            "lead generation", "sales funnel", "cold email",
-            "crm", "closing", "pitch",
+            "lead generation", "sales funnel", "cold email", "cold outreach",
+            "crm", "closing", "pitch", "sales pipeline",
+            "customer success", "b2b sales", "revenue operations",
         ],
         negative_keywords: vec![
-            "backend", "api", "sql", "kubernetes", "python",
-            "vulnerability", "seo", "content",
+            "backend", "api", "sql", "kubernetes", "python", "docker",
+            "vulnerability", "seo", "content marketing", "copywriting",
+            "social media", "n8n", "zapier", "sop", "runbook",
+            "product strategy", "business model", "go-to-market",
         ],
     },
 );
 
-
-
+// 4. OPERATIONS — SOPs, automation, project mgmt, email campaigns, business tools
 bus_sub.insert(
-    "business-management",
+    "business-operations",
     SubHubRule {
         keywords: vec![
+            // Process & SOPs
             "sop", "standard operating procedure", "process improvement",
-            "workflow optimization", "runbook", "incident management",
+            "workflow optimization", "runbook", "playbook",
             "operational excellence", "business operations",
             "service operations", "cost optimization", "capacity planning",
-            "n8n", "zapier", "make", "ai automation",
-            "productivity automation-ai", "project management",
-            "okr tracking", "team management", "onboarding",
-            "email", "newsletter", "email marketing", "mailchimp",
-            "sendgrid", "email campaign", "drip campaign","odoo","crm","salesforce"
+            "process documentation", "knowledge base", "wiki",
+            // Automation & Tools
+            "n8n", "zapier", "make", "integromat", "automate",
+            "ai automation", "workflow automation", "no-code automation",
+            "productivity", "automation-ai",
+            "odoo", "erp", "notion", "airtable", "monday",
+            // Project & Team Management
+            "project management", "okr tracking", "team management",
+            "onboarding", "offboarding", "hiring", "hr ops",
+            "resource planning", "capacity management",
+            "incident management", "change management",
+            // Email & Communication Ops
+            "email campaign", "email marketing", "newsletter",
+            "mailchimp", "sendgrid", "klaviyo", "active campaign",
+            "drip campaign", "transactional email", "email automation",
+            // Finance & Admin
+            "invoicing", "billing", "accounting", "bookkeeping",
+            "budgeting", "financial reporting", "sred", "tax",
         ],
         anchor_keywords: vec![
-            "sop", "process improvement", "runbook",
-            "n8n", "zapier", "automation-ai", "email campaign",
+            "sop", "process improvement", "runbook", "workflow optimization",
+            "n8n", "zapier", "automation-ai", "no-code automation",
+            "email campaign", "email marketing", "mailchimp",
+            "project management", "okr tracking",
+            "odoo", "erp",
         ],
         negative_keywords: vec![
             "backend", "api", "sql", "kubernetes", "python",
-            "rust", "vulnerability", "injection","ATS", "Cover Letter", "Resume"
+            "rust", "golang", "vulnerability", "injection",
+            "seo", "copywriting", "social media", "brand",
+            "cold email", "sales funnel", "lead generation", "crm",
+            "go-to-market", "product strategy", "analytics",
+            "ATS", "Cover Letter", "Resume",
         ],
     },
 );
@@ -798,23 +849,46 @@ static CANONICAL_SUBHUB_ALIASES: &[(&str, &str, &str)] = &[
     ("monitoring",            "server-side", "observability"),
     ("logging",               "server-side", "observability"),
     
-    // business hub 
-    ("product-strategy", "business", "business-strategy"),
-    ("product-management", "business", "business-strategy"),
-    ("strategy",         "business", "business-strategy"),
-    ("go-to-market",     "business", "business-strategy"),
-    ("gtm",              "business", "business-strategy"),
-    ("marketing",        "business", "marketing"),
-    ("tactical",         "business", "business-strategy"),
-    ("content",          "business", "marketing"),
-    ("seo",              "business", "marketing"),
-    ("social-media",     "business", "marketing"),
-    ("brand",            "business", "marketing"),
-    ("sales",            "business", "business-strategy"),
-    ("lead-generation",  "business", "business-strategy"),
-    ("crm",              "business", "business-strategy"),
-    ("analytics",        "business", "business-strategy"),
-    ("email",            "business", "sales"),
+  // business hub
+("product-strategy",      "business", "business-strategy"),
+("product-management",    "business", "business-strategy"),
+("strategy",              "business", "business-strategy"),
+("go-to-market",          "business", "business-strategy"),
+("gtm",                   "business", "business-strategy"),
+("business-strategy",     "business", "business-strategy"),
+("analytics",             "business", "business-strategy"),
+("product-analytics",     "business", "business-strategy"),
+("case-study",            "business", "business-strategy"),
+("risk-assessment",       "business", "business-strategy"),
+
+("marketing",             "business", "marketing"),
+("content",               "business", "marketing"),
+("seo",                   "business", "marketing"),
+("aeo",                   "business", "marketing"),
+("ai-seo",                "business", "marketing"),
+("social-media",          "business", "marketing"),
+("brand",                 "business", "marketing"),
+("copywriting",           "business", "marketing"),
+("campaign",              "business", "marketing"),
+
+("sales",                 "business", "sales"),
+("lead-generation",       "business", "sales"),
+("crm",                   "business", "sales"),
+("cold-email",            "business", "sales"),
+("customer-success",      "business", "sales"),
+("revenue-operations",    "business", "sales"),
+("revops",                "business", "sales"),
+
+("operations",            "business", "business-operations"),
+("business-operations",   "business", "business-operations"),
+("sop",                   "business", "business-operations"),
+("automation-ai",         "business", "business-operations"),
+("email-campaign",        "business", "business-operations"),
+("email-marketing",       "business", "business-operations"),
+("project-management",    "business", "business-operations"),
+("workflow-optimization", "business", "business-operations"),
+("tactical",              "business", "business-operations"),
+("email",                 "business", "business-operations"),
 
     // frontend hub
     ("ui-ux",             "frontend", "ui-ux"),
