@@ -195,6 +195,7 @@ Sync skills to any of these destinations:
 | **Antigravity** | `.agent/skills/` | `~/.gemini/antigravity/skills/` |
 | **OpenCode** | `.opencode/skills/` | `~/.config/opencode/skills/` |
 | **Windsurf** | `.windsurf/skills/` | `~/.codeium/windsurf/skills/` |
+| **Hermes** | `.hermes/skills/skill-manage/` | `~/.hermes/skills/skill-manage/` |
 
 ---
 

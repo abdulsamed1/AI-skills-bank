@@ -97,23 +97,26 @@ pub fn sync_dir_atomic(src: &Path, dest: &Path) -> Result<(), SkillManageError> 
         // skip syncing to prevent recursive or permission-error cases.
         let link_flag = is_link(dest);
         if link_flag {
+            if temp_dest.exists() {
+                let _ = std::fs::remove_dir_all(&temp_dest);
+            }
             return Ok(());
         }
-        std::fs::remove_dir_all(dest)?;
+        // Non-destructive: We do NOT remove `dest` here. 
+    } else {
+        std::fs::create_dir_all(dest)?;
     }
 
-    if let Err(e) = std::fs::rename(&actual_temp_path, dest) {
-        if e.to_string().contains("cross-device") || e.kind() == std::io::ErrorKind::Other {
-            let mut options = fs_extra::dir::CopyOptions::new();
-            options.overwrite = true;
-            fs_extra::dir::move_dir(&actual_temp_path, dest, &options).map_err(|e| {
-                SkillManageError::ConfigError(format!("Cross-device move failed: {}", e))
-            })?;
-        } else {
-            return Err(e.into());
-        }
+    // Perform a merge copy instead of renaming to preserve existing files in `dest`
+    let mut merge_options = fs_extra::dir::CopyOptions::new();
+    merge_options.overwrite = true;
+    merge_options.content_only = true; // Crucial for merging contents inside
+
+    if let Err(e) = fs_extra::dir::copy(&actual_temp_path, dest, &merge_options) {
+        return Err(SkillManageError::ConfigError(format!("Merge copy failed: {}", e)));
     }
 
+    // Cleanup temp directory
     if temp_dest.exists() {
         let _ = std::fs::remove_dir_all(&temp_dest);
     }
