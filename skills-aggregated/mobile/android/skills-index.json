@@ -1,8 +1,7 @@
 {
-  "count": 5,
+  "count": 4,
   "hub": "mobile",
   "skills": [
-    "analyzing-android-malware-with-apktool",
     "android-design-guidelines",
     "android-java",
     "android-kotlin",

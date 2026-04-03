@@ -1,12 +1,11 @@
 {
-  "count": 35,
+  "count": 33,
   "hub": "frontend",
   "skills": [
     "android-jetpack-compose-expert",
     "angular-state-management",
     "blip-2-vision-language",
     "click-path-audit",
-    "collecting-volatile-evidence-from-compromised-host",
     "context-fundamentals",
     "customer-billing-ops",
     "database-driver-design",
@@ -23,7 +22,6 @@
     "langgraph",
     "market-pulse",
     "next-step",
-    "performing-file-carving-with-foremost",
     "react-flow-architect",
     "react-native-architecture",
     "react-state-management",

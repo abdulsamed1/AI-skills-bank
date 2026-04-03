@@ -1,5 +1,5 @@
 {
-  "count": 223,
+  "count": 225,
   "hub": "code-quality",
   "skills": [
     "git-commit",
@@ -191,7 +191,6 @@
     "gitlab-automation",
     "home-assistant-manager",
     "hosted-agents-v2-py",
-    "implementing-secret-scanning-with-gitleaks",
     "issues",
     "jules",
     "llm-app-patterns",
@@ -203,7 +202,6 @@
     "microsoft-foundry",
     "netlify-cli-and-deploy",
     "octocat",
-    "performing-sca-dependency-scanning-with-snyk",
     "podcast-generation",
     "prd-to-issues",
     "preset",

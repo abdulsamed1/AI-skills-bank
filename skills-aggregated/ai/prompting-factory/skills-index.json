@@ -1,5 +1,5 @@
 {
-  "count": 182,
+  "count": 180,
   "hub": "ai",
   "skills": [
     "Executive Resume Writer",
@@ -78,7 +78,6 @@
     "eval-harness",
     "exa-search",
     "experiment-plan",
-    "extracting-config-from-agent-tesla-rat",
     "finding-duplicate-functions",
     "firecrawl-agent",
     "full-output-enforcement",
@@ -93,7 +92,6 @@
     "hierarchical-agent-memory",
     "hosted-agents",
     "hugging-face-tool-builder",
-    "implementing-endpoint-dlp-controls",
     "infinite-gratitude",
     "instructor",
     "integrate-whatsapp",

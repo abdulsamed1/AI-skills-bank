@@ -1,10 +1,9 @@
 {
-  "count": 58,
+  "count": 56,
   "hub": "code-quality",
   "skills": [
     "agentic-development",
     "algorithmic-art",
-    "analyzing-malicious-pdf-with-peepdf",
     "animejs-animation",
     "backend-patterns",
     "bullmq-specialist",
@@ -12,7 +11,6 @@
     "claude-d3js-skill",
     "coding-standards",
     "context7-auto-research",
-    "deobfuscating-javascript-malware",
     "discord-bot-architect",
     "documentation-lookup",
     "everything-claude-code-conventions",

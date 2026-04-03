@@ -1,12 +1,11 @@
 {
-  "count": 11,
+  "count": 10,
   "hub": "code-quality",
   "skills": [
     "bevy-ecs-expert",
     "huggingface-tokenizers",
     "makepad-skills",
     "qdrant-vector-search",
-    "reverse-engineering-rust-malware",
     "rust-async-patterns",
     "rust-patterns",
     "rust-pro",

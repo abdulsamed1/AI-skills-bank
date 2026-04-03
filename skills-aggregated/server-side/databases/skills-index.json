@@ -1,5 +1,5 @@
 {
-  "count": 40,
+  "count": 38,
   "hub": "server-side",
   "skills": [
     "attach-db",
@@ -15,7 +15,6 @@
     "database-optimizer",
     "django-perf-review",
     "hugging-face-datasets",
-    "implementing-pam-for-database-access",
     "mssql",
     "mysql",
     "neon-postgres",
@@ -23,7 +22,6 @@
     "nosql-expert",
     "odoo-module-developer",
     "odoo-orm-expert",
-    "performing-sqlite-database-forensics",
     "postgres",
     "postgres-best-practices",
     "postgres-nio",

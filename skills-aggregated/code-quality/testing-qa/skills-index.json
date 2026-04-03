@@ -1,5 +1,5 @@
 {
-  "count": 102,
+  "count": 100,
   "hub": "code-quality",
   "skills": [
     "tdd-orchestrator",
@@ -58,7 +58,6 @@
     "migrate-to-shoehorn",
     "ml-engineer",
     "performance-testing-review-multi-agent-review",
-    "performing-thick-client-application-penetration-test",
     "pict-test-designer",
     "playwright-cli",
     "playwright-core",
@@ -99,10 +98,8 @@
     "test-scenarios",
     "testing-patterns",
     "testing-qa",
-    "testing-ransomware-recovery-procedures",
     "ui-testing",
     "unit-testing-test-generate",
-    "validating-backup-integrity-for-recovery",
     "web3-testing",
     "webapp-testing"
   ],

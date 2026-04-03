@@ -1,8 +1,7 @@
 {
-  "count": 13,
+  "count": 12,
   "hub": "code-quality",
   "skills": [
-    "analyzing-golang-malware-with-ghidra",
     "dbos-golang",
     "go-concurrency-patterns",
     "go-playwright",

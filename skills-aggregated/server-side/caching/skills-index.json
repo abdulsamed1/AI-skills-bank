@@ -1,17 +1,14 @@
 {
-  "count": 17,
+  "count": 14,
   "hub": "server-side",
   "skills": [
-    "analyzing-browser-forensics-with-hindsight",
     "cache-integration",
     "context-optimization",
     "debug-buttercup",
-    "extracting-browser-history-artifacts",
     "native-data-fetching",
     "netlify-caching",
     "nx-workspace-patterns",
     "ocr-caching-strategy",
-    "performing-web-cache-deception-attack",
     "prompt-caching",
     "pwa-development",
     "spark-optimization",
