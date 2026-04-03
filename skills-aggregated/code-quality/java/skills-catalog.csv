@@ -1,6 +1,0 @@
-skill_id,description,score,phase
-java-pro,"Master Java 21+ with modern features like virtual threads, pattern matching, and Spring Boot 3.x. Expert in the latest Java ecosystem including GraalVM, Project Loom, and cloud-native patterns.",100,1
-jpa-patterns,"JPA/Hibernate patterns for entity design, relationships, query optimization, transactions, auditing, indexing, pagination, and pooling in Spring Boot.",100,1
-sankhya-dashboard-html-jsp-custom-best-pratices,"This skill should be used when the user asks for patterns, best practices, creation, or fixing of Sankhya dashboards using HTML, JSP, Java, and SQL.",100,1
-springboot-security,"Spring Security best practices for authn/authz, validation, CSRF, secrets, headers, rate limiting, and dependency security in Java Spring Boot services.",100,1
-springboot-verification,"Verification loop for Spring Boot projects: build, static analysis, tests with coverage, security scans, and diff review before release or PR.",100,1

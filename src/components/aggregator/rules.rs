@@ -128,14 +128,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
             negative_keywords: vec!["python", "rust", "golang"],
         },
     );
-    code_quality.insert(
-        "python",
-        SubHubRule {
-            keywords: vec!["python", "py", "django", "fastapi", "pandas", "numpy"],
-            anchor_keywords: vec!["python", "fastapi"],
-            negative_keywords: vec!["typescript", "rust"],
-        },
-    );
+ 
     code_quality.insert(
         "rust",
         SubHubRule {
@@ -160,14 +153,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
             ],
         },
     );
-    code_quality.insert(
-        "java",
-        SubHubRule {
-            keywords: vec!["java", "spring", "maven", "jvm"],
-            anchor_keywords: vec!["java", "spring"],
-            negative_keywords: vec!["python", "rust"],
-        },
-    );
+   
     hubs.insert(
         "code-quality",
         HubDefinition {
@@ -182,16 +168,15 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
         "prompting-factory",
         SubHubRule {
             keywords: vec![
-              
+              "CLI tools", "agent systems", "system prompt", "agent prompt", "prompt factory", "prompt-factory",
                 "skill-enhancement", "skills-factory", "llm-skill", "agent-skill",
                 "prompt-engineering", "context-compression", "meta-prompting", "prompt-optimization",
-                "prompt-compression", "prompt", "skill-authoring", "skill-reviewer",
+                "prompt-compression", "skill-authoring", "skill-reviewer",
                 "skill-creator", "skill-writer", "skill-optimizer", "prompt-patterns",
-                "agent", "agents", "multi-agent", "agent-tool", "tool-builder",
-                "ai-agents", "ai-native", "llm-application",
-                "llm", "agent-harness", "gan-style", "memory-systems",
+                "ai API","ai-native", "llm-application",
+                "llm", "agent-harness", "memory-systems",
                 "crewai", "swarm", "orchestration-agent", "agent-handoff",
-                "function-calling", "mcp-tools",
+                "function-calling",
                 "machine-learning-ops", "ml-pipeline", "ml-ops"
             ],
             anchor_keywords: vec![
@@ -199,7 +184,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
                 "agent", "multi-agent", "llm", "crewai", "agent-tool",
                 "tool-builder", "ai-agents", "ml-pipeline", "ml-ops"
             ],
-            negative_keywords: vec!["stitch", "tdd-orchestrator", "testing-qa", "ai-seo", "SEO and AEO", "Optimize content","ui", "css", "html", "tailwind", "figma"],
+            negative_keywords: vec![ "deep-research", "article-writing","postgres","n8n", "WhatsApp", "Generate images", "google", "github", "DevOps","jira", "atlassian", "git", "stitch", "tdd-orchestrator", "testing-qa", "ai-seo", "SEO and AEO", "Optimize content","ui", "css", "html", "tailwind", "figma", "code-quality", "code review", "security", "javascript", "typescript", "rust", "golang"],
         },
     );
     hubs.insert(
@@ -215,7 +200,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     fe_sub.insert(
         "web-frameworks",
         SubHubRule {
-            keywords: vec!["vue", "vuex", "nuxt", "vue3","react", "nextjs", "jsx", "hooks", "tailwind", "angular", "svelte", "ember"],
+            keywords: vec!["state", "redux", "context", "zustand", "management", "react-query", "tanstack-query", "mobx", "recoil","wasp", "vue", "vuex", "nuxt", "vue3","react", "nextjs", "jsx", "hooks", "tailwind", "angular", "svelte", "ember"],
             anchor_keywords: vec!["react", "nextjs", "vue", "nuxt"],
             negative_keywords: vec!["sql", "postgres"],
         },
@@ -224,8 +209,8 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
         "ui-ux",
         SubHubRule {
             keywords: vec!["html", "css", "tailwind", "styling", "design-systems", "responsive", "design-system", "component-library", "tokens", "storybook", "html", "css", "tailwind", "styling", "ui-ux", "responsive","ux", "user-experience", "usability","ui", "design", "wireframe", "prototype", "user-interface", "user-experience", "stitch", "figma"],
-            anchor_keywords: vec!["ui", "ux", "design", "css", "tailwind"],
-            negative_keywords: vec![
+            anchor_keywords: vec!["mobile ui", "ios ui", "android ui", "ui", "ux", "design", "css", "tailwind"],
+            negative_keywords: vec![ 
                 "backend", "sql",
                 // Block AI/Agent skills from matching on "design"
                 "agent", "agents", "multi-agent", "llm", "autonomous", "crewai",
@@ -249,14 +234,6 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
             ],
         },
     );
-    fe_sub.insert(
-        "state-management",
-        SubHubRule {
-            keywords: vec!["state", "redux", "context", "zustand", "management", "react-query", "tanstack-query", "mobx", "recoil"],
-            anchor_keywords: vec!["state", "redux"],
-            negative_keywords: vec!["backend"],
-        },
-    );
     hubs.insert(
         "frontend",
         HubDefinition {
@@ -274,15 +251,15 @@ let mut be_sub = HashMap::new();
 be_sub.insert(
     "architect",
     SubHubRule {
-        keywords: vec![
-            "rest", "restful", "graphql", "grpc", "trpc",
+        keywords: vec![ "python-sdk", "sdk",
+            "rest", "websocket", "restful", "graphql", "grpc", "trpc",
             "openapi", "swagger", "api spec", "api contract",
             "api gateway", "api versioning", "api documentation",
             "api design", "api best practices", "api standards",
             "endpoint", "rate limiting", "throttling",
             "api authentication", "api authorization",
             "api error handling", "api pagination",
-            "webhook", "websocket", "sse", "server-sent events",
+            "webhook", "sse", "server-sent events",
             "api security", "api caching", "api monitoring",
             "architecture", "system design", "ddd", "bounded contexts",
             "adr", "architectural decisions", "software architecture",
@@ -517,6 +494,17 @@ bus_sub.insert(
             "revenue analytics", "ltv", "cac", "arpu", "mrr", "arr",
             "retention rate", "churn rate", "nps", "tracking",
             "measurement", "analytics-tracking", "insights-dashboard",
+            // Operations (migrated)
+            "sop", "standard operating procedure", "process improvement",
+            "workflow optimization", "runbook", "playbook",
+            "operational excellence", "business operations", "service operations",
+            "cost optimization", "capacity planning", "process documentation",
+            "knowledge base", "wiki", "project management", "okr tracking",
+            "resource planning", "capacity management", "incident management",
+            "change management", "onboarding", "offboarding", "hiring",
+            "hr ops", "invoicing", "billing", "accounting", "bookkeeping",
+            "budgeting", "financial reporting", "sred", "tax", "odoo", "erp",
+            "notion", "airtable", "monday",
         ],
         anchor_keywords: vec![
             "go-to-market", "product strategy", "product-strategy",
@@ -524,6 +512,9 @@ bus_sub.insert(
             "prd", "roadmap", "mvp", "product discovery",
             "kpi", "mrr", "ltv", "cac", "analytics", "metrics", "dashboard",
             "google analytics", "attribution", "conversion rate",
+            // operations anchors
+            "sop", "process improvement", "runbook", "project management",
+            "okr tracking", "odoo", "erp", "workflow optimization", "process documentation",
         ],
         negative_keywords: vec![
             "react", "nextjs", "api", "sdk", "python", "rust",
@@ -531,7 +522,6 @@ bus_sub.insert(
             "vulnerability", "injection", "auth", "oauth", "jwt",
             "seo", "copywriting", "social media", "brand",
             "cold email", "sales funnel", "lead generation",
-            "n8n", "zapier", "sop", "runbook",
         ],
     },
 );
@@ -556,6 +546,7 @@ bus_sub.insert(
             "newsletter content", "email copywriting",
             // Social Media & Brand
             "social media", "twitter", "facebook", "instagram",
+            "whatsapp", "telegram", "discord", "reddit", "X",
             "linkedin", "tiktok", "youtube", "brand strategy",
             "brand identity", "tone of voice", "messaging",
             "audience", "community management", "influencer",
@@ -563,17 +554,26 @@ bus_sub.insert(
             "campaign strategy", "ad copy", "paid ads", "ppc",
             "google ads", "meta ads", "facebook ads", "marketing strategy",
             "growth marketing", "demand generation", "pr", "press release",
+            // Operations & Automation (migrated)
+            "n8n", "zapier", "make", "integromat", "automate",
+            "ai automation", "workflow automation", "no-code automation",
+            "productivity", "automation-ai",
+            "email campaign", "email marketing", "newsletter",
+            "mailchimp", "sendgrid", "klaviyo", "active campaign",
+            "drip campaign", "transactional email", "email automation",
+            "notion", "airtable", "monday",
         ],
         anchor_keywords: vec![
             "seo", "aeo", "ai-seo", "copywriting", "content marketing",
             "social media", "brand strategy", "campaign strategy",
             "keyword research", "backlinks", "paid ads", "ppc",
+            // operations anchors
+            "email campaign", "email marketing", "mailchimp", "n8n", "zapier", "automation-ai",
         ],
         negative_keywords: vec![
             "backend", "sql", "api", "python", "kubernetes", "docker",
             "vulnerability", "injection", "auth",
             "crm", "sales funnel", "cold email", "lead generation",
-            "n8n", "zapier", "sop", "runbook",
             "go-to-market", "product strategy", "business model",
         ],
     },
@@ -589,81 +589,41 @@ bus_sub.insert(
             "lead qualification", "cold email", "cold outreach",
             "cold calling", "prospecting", "outbound", "inbound",
             "email sequence", "drip sequence", "follow-up",
+            "sales engagement", "sales automation", "sales outreach",
             // Sales Process
             "sales funnel", "sales pipeline", "closing", "deal",
             "pitch", "pitch deck", "proposal", "contract",
             "objection handling", "discovery call", "demo",
             "negotiation", "sales strategy", "sales-strategy",
             "b2b sales", "enterprise sales", "smb sales",
+            "sales enablement", "sales collateral", "sales playbook",
             // CRM & Account Management
             "crm", "salesforce", "hubspot", "pipedrive", "zoho",
             "account management", "upsell", "cross-sell",
             "customer success", "churn", "retention", "renewal",
             "nrr", "expansion revenue", "customer onboarding",
+            "customer support", "helpdesk", "ticketing system",
             // Revenue
             "revenue operations", "revops", "sales ops",
             "quota", "commission", "incentive", "forecast",
+            // Operations-related
+            "transactional email", "invoicing", "billing", "onboarding", "customer onboarding",
         ],
         anchor_keywords: vec![
             "lead generation", "sales funnel", "cold email", "cold outreach",
             "crm", "closing", "pitch", "sales pipeline",
             "customer success", "b2b sales", "revenue operations",
+            "sales strategy", "sales-strategy",
         ],
         negative_keywords: vec![
             "backend", "api", "sql", "kubernetes", "python", "docker",
             "vulnerability", "seo", "content marketing", "copywriting",
-            "social media", "n8n", "zapier", "sop", "runbook",
-            "product strategy", "business model", "go-to-market",
+            "social media", "product strategy", "business model", "go-to-market",
         ],
     },
 );
 
-// 4. OPERATIONS — SOPs, automation, project mgmt, email campaigns, business tools
-bus_sub.insert(
-    "business-operations",
-    SubHubRule {
-        keywords: vec![
-            // Process & SOPs
-            "sop", "standard operating procedure", "process improvement",
-            "workflow optimization", "runbook", "playbook",
-            "operational excellence", "business operations",
-            "service operations", "cost optimization", "capacity planning",
-            "process documentation", "knowledge base", "wiki",
-            // Automation & Tools
-            "n8n", "zapier", "make", "integromat", "automate",
-            "ai automation", "workflow automation", "no-code automation",
-            "productivity", "automation-ai",
-            "odoo", "erp", "notion", "airtable", "monday",
-            // Project & Team Management
-            "project management", "okr tracking", "team management",
-            "onboarding", "offboarding", "hiring", "hr ops",
-            "resource planning", "capacity management",
-            "incident management", "change management",
-            // Email & Communication Ops
-            "email campaign", "email marketing", "newsletter",
-            "mailchimp", "sendgrid", "klaviyo", "active campaign",
-            "drip campaign", "transactional email", "email automation",
-            // Finance & Admin
-            "invoicing", "billing", "accounting", "bookkeeping",
-            "budgeting", "financial reporting", "sred", "tax",
-        ],
-        anchor_keywords: vec![
-            "sop", "process improvement", "runbook", "workflow optimization",
-            "n8n", "zapier", "automation-ai", "no-code automation",
-            "email campaign", "email marketing", "mailchimp",
-            "project management", "okr tracking",
-            "odoo", "erp",
-        ],
-        negative_keywords: vec![
-            "backend", "api", "sql", "kubernetes", "python",
-            "rust", "golang", "vulnerability", "injection",
-            "seo", "copywriting", "social media", "brand",
-            "cold email", "sales funnel", "lead generation", "crm",
-            "go-to-market", "product strategy", "analytics",
-            "ATS", "Cover Letter", "Resume",
-        ],
-    },
-);
+// business-operations removed: keywords migrated into strategy/marketing/sales
 
 hubs.insert(
     "business",
@@ -780,6 +740,12 @@ pub static DEFAULT_EXCLUSION_PATTERNS: &[&str] = &[
     "Resume",
     "cover-letter",
     "interview",
+    "interview-preparation",
+    "job-search",
+    "hiring",
+    "recruitment",
+    "talent acquisition",
+    "job application",
     "unreal-engine",
     "unity-3d",
     "unity-developer",
@@ -790,7 +756,6 @@ pub static DEFAULT_EXCLUSION_PATTERNS: &[&str] = &[
     "2d-games",
     "game",
     "games",
-    "unity-3d",
     "game-development",
     "game-engine",
     "web-game",
@@ -823,7 +788,7 @@ static CANONICAL_SUBHUB_ALIASES: &[(&str, &str, &str)] = &[
     // AI hub
     ("prompt-engineering", "ai", "prompting-factory"),
     ("skills-factory",    "ai", "prompting-factory"),
-    ("agent-skills",       "ai", "prompting-factory"),
+    ("agent-skills-prompt",       "ai", "prompting-factory"),
 
     // server-side aliases
     ("backend",               "server-side", "frameworks"), // Generic backend → frameworks
@@ -871,16 +836,16 @@ static CANONICAL_SUBHUB_ALIASES: &[(&str, &str, &str)] = &[
 ("revenue-operations",    "business", "sales"),
 ("revops",                "business", "sales"),
 
-("operations",            "business", "business-operations"),
-("business-operations",   "business", "business-operations"),
-("sop",                   "business", "business-operations"),
-("automation-ai",         "business", "business-operations"),
-("email-campaign",        "business", "business-operations"),
-("email-marketing",       "business", "business-operations"),
-("project-management",    "business", "business-operations"),
-("workflow-optimization", "business", "business-operations"),
-("tactical",              "business", "business-operations"),
-("email",                 "business", "business-operations"),
+("operations",            "business", "business-strategy"),
+("business-operations",   "business", "business-strategy"),
+("sop",                   "business", "business-strategy"),
+("automation-ai",         "business", "marketing"),
+("email-campaign",        "business", "marketing"),
+("email-marketing",       "business", "marketing"),
+("project-management",    "business", "business-strategy"),
+("workflow-optimization", "business", "business-strategy"),
+("tactical",              "business", "business-strategy"),
+("email",                 "business", "marketing"),
 
     // frontend hub
     ("ui-ux",             "frontend", "ui-ux"),
@@ -888,7 +853,9 @@ static CANONICAL_SUBHUB_ALIASES: &[(&str, &str, &str)] = &[
     ("react-nextjs",      "frontend", "web-frameworks"),
     ("web-basics",        "frontend", "web-frameworks"),
     ("web-frameworks",    "frontend", "web-frameworks"),
-    ("state-management",  "frontend", "state-management"),
+    ("state-management",  "frontend", "web-frameworks"),
+    ("css",               "frontend", "ui-ux"),
+    ("tailwind",          "frontend", "ui-ux"),
 
     // mobile hub
     ("mobile",            "mobile", "cross-platform"),
@@ -993,6 +960,97 @@ fn path_components(meta: &SkillMetadata) -> Vec<String> {
         .collect()
 }
 
+/// Conflict resolution table: when a skill matches multiple sub-hubs simultaneously,
+/// this defines which sub-hub should take precedence.
+/// Format: (losing_hub, losing_sub_hub, winning_hub, winning_sub_hub)
+static CONFLICT_RESOLUTION: &[(&str, &str, &str, &str)] = &[
+    // Domain specialists always win over language hubs
+    ("code-quality", "python", "code-quality", "security"),
+    ("code-quality", "javascript", "code-quality", "security"),
+    ("code-quality", "typescript", "code-quality", "security"),
+    ("code-quality", "rust", "code-quality", "security"),
+    ("code-quality", "golang", "code-quality", "security"),
+    ("code-quality", "java", "code-quality", "security"),
+    
+    ("code-quality", "python", "code-quality", "testing-qa"),
+    ("code-quality", "javascript", "code-quality", "testing-qa"),
+    ("code-quality", "typescript", "code-quality", "testing-qa"),
+    ("code-quality", "rust", "code-quality", "testing-qa"),
+    
+    ("code-quality", "python", "code-quality", "code-review"),
+    ("code-quality", "javascript", "code-quality", "code-review"),
+];
+
+/// Extracts the repository directory name from a skill path (the segment
+/// immediately following `lib/` or `src/`) and maps known domain signals
+/// to a hub/sub-hub pair. This is intentionally a substring check so that
+/// repo names like "mukul975-anthropic-cybersecurity-skills" are matched.
+fn infer_hub_from_repo_name(path: &std::path::Path) -> Option<(String, String)> {
+    let components: Vec<String> = path
+        .components()
+        .map(|c| c.as_os_str().to_string_lossy().to_lowercase())
+        .collect();
+
+    // Find the repo name: the segment right after `lib` or `src`
+    let repo_name = components
+        .windows(2)
+        .find_map(|w| {
+            if w[0] == "lib" || w[0] == "src" {
+                Some(w[1].clone())
+            } else {
+                None
+            }
+        })?;
+
+    // Security domain — must be checked BEFORE language-specific hubs
+    if repo_name.contains("security")
+        || repo_name.contains("cybersecurity")
+        || repo_name.contains("pentest")
+        || repo_name.contains("vulnerability")
+        || repo_name.contains("vibesec")
+        || repo_name.contains("bluebook")
+    {
+        return Some(("code-quality".to_string(), "security".to_string()));
+    }
+
+    // AI / prompt-engineering domain
+    if repo_name.contains("prompt")
+        || repo_name.contains("agent-skill")
+        || repo_name.contains("llm")
+        || repo_name.contains("ai-skills")
+    {
+        return Some(("ai".to_string(), "prompting-factory".to_string()));
+    }
+
+    // Mobile — iOS
+    if repo_name.contains("swiftui")
+        || repo_name.contains("ios-")
+        || repo_name.contains("-ios")
+        || repo_name.contains("swift-patterns")
+        || repo_name.contains("apple-hig")
+        || repo_name.contains("app-store")
+    {
+        return Some(("mobile".to_string(), "ios".to_string()));
+    }
+
+    // Mobile — Android
+    if repo_name.contains("android") || repo_name.contains("kotlin") {
+        return Some(("mobile".to_string(), "android".to_string()));
+    }
+
+    // Frontend / UI
+    if repo_name.contains("ui-ux") || repo_name.contains("ui-skills") {
+        return Some(("frontend".to_string(), "ui-ux".to_string()));
+    }
+
+    // Testing / QA
+    if repo_name.contains("playwright") || repo_name.contains("testdino") {
+        return Some(("code-quality".to_string(), "testing-qa".to_string()));
+    }
+
+    None
+}
+
 fn infer_from_path(meta: &SkillMetadata) -> Option<(String, String)> {
     let components = path_components(meta);
     if components.is_empty() {
@@ -1015,6 +1073,11 @@ fn infer_from_path(meta: &SkillMetadata) -> Option<(String, String)> {
         .any(|c| (c.starts_with("skill-") && c != "skill-md") || c == "writing-skills");
     if is_antigravity_repo && is_skill_factory_pack {
         return Some(("ai".to_string(), "skills-factory".to_string()));
+    }
+
+    // ── repo-name substring signal (highest confidence) ──
+    if let Some(result) = infer_hub_from_repo_name(&meta.path) {
+        return Some(result);
     }
 
     for (alias, hub, sub_hub) in CANONICAL_SUBHUB_ALIASES {
@@ -1109,6 +1172,32 @@ pub fn hub_match_priority(hub: &str) -> usize {
     }
 }
 
+/// When a skill matches multiple sub-hubs simultaneously, this resolves
+/// the conflict by defining which sub-hub should take precedence.
+fn resolve_conflict<'a>(
+    _normalized_text: &str,
+    _tokens: &HashSet<String>,
+    candidates: &[(&'a str, &'a str)],
+) -> Option<(String, String)> {
+    if candidates.len() <= 1 {
+        return candidates.first().map(|(h, s)| (h.to_string(), s.to_string()));
+    }
+
+    for (lose_hub, lose_sub, win_hub, win_sub) in CONFLICT_RESOLUTION {
+        let has_loser = candidates.iter().any(|(h, s)| h == lose_hub && s == lose_sub);
+        let has_winner = candidates.iter().any(|(h, s)| h == win_hub && s == win_sub);
+        if has_loser && has_winner {
+            return Some((win_hub.to_string(), win_sub.to_string()));
+        }
+    }
+
+    // Fallback: return the one with highest hub priority
+    candidates
+        .iter()
+        .min_by_key(|(h, _)| hub_match_priority(h))
+        .map(|(h, s)| (h.to_string(), s.to_string()))
+}
+
 pub fn infer_from_rules_ranked_with_min(
     normalized_text: &str,
     tokens: &HashSet<String>,
@@ -1116,7 +1205,7 @@ pub fn infer_from_rules_ranked_with_min(
     excluded_hubs: &[&str],
 ) -> Option<(String, String)> {
 
-    let mut best: Option<(i32, usize, usize, String, String)> = None;
+    let mut all_matches: Vec<(i32, usize, usize, String, String)> = Vec::new();
 
     let mut hubs = SUB_HUB_DEFINITIONS.keys().cloned().collect::<Vec<_>>();
     hubs.sort_unstable();
@@ -1143,41 +1232,38 @@ pub fn infer_from_rules_ranked_with_min(
 
                     let hits = matched_keyword_hits(normalized_text, tokens, rule);
                     let priority = hub_match_priority(hub);
-
-                    let is_better = match &best {
-                        None => true,
-                        Some((best_score, best_hits, best_priority, best_hub, best_sub)) => {
-                            score > *best_score
-                                || (score == *best_score && hits > *best_hits)
-                                || (score == *best_score && hits == *best_hits && priority < *best_priority)
-                                || (score == *best_score
-                                    && hits == *best_hits
-                                    && priority == *best_priority
-                                    && (hub < best_hub.as_str()
-                                        || (hub == best_hub.as_str() && sub < best_sub.as_str())))
-                        }
-                    };
-
-                    if is_better {
-                        best = Some((
-                            score,
-                            hits,
-                            priority,
-                            hub.to_string(),
-                            sub.to_string(),
-                        ));
-                    }
+                    all_matches.push((score, hits, priority, hub.to_string(), sub.to_string()));
                 }
             }
         }
     }
 
-    best.and_then(|(_, _, _, hub, sub)| {
-        if let Some((canon_hub, canon_sub)) = canonicalize_assignment(&hub, &sub) {
-            return Some((canon_hub, canon_sub));
-        }
-        Some((hub, sub))
-    })
+    if all_matches.is_empty() {
+        return None;
+    }
+
+    // Sort by score (desc), hits (desc), priority (asc)
+    all_matches.sort_by(|a, b| {
+        b.0.cmp(&a.0)
+            .then_with(|| b.1.cmp(&a.1))
+            .then_with(|| a.2.cmp(&b.2))
+    });
+
+    // Apply conflict resolution when multiple sub-hubs match the top score
+    let top_score = all_matches[0].0;
+    let candidates: Vec<(&str, &str)> = all_matches
+        .iter()
+        .filter(|(s, ..)| *s >= top_score - 5) // include near-ties
+        .map(|(_, _, _, h, s)| (h.as_str(), s.as_str()))
+        .collect();
+
+    let resolved = resolve_conflict(normalized_text, tokens, &candidates)?;
+
+    if let Some((canon_hub, canon_sub)) = canonicalize_assignment(&resolved.0, &resolved.1) {
+        return Some((canon_hub, canon_sub));
+    }
+
+    Some(resolved)
 }
 
 pub fn infer_from_rules_ranked(
@@ -1367,7 +1453,9 @@ pub fn apply_rules(meta: &mut SkillMetadata) -> bool {
     } else if let Some((hub, sub_hub)) = infer_from_path(meta) {
         meta.hub = hub;
         meta.sub_hub = sub_hub;
-        meta.match_score = Some(95);
+        // Repo-name inference is treated as near-deterministic (same tier as
+        // canonicalize_assignment) because it reflects the author's intent.
+        meta.match_score = Some(98);
     } else if let Some((hub, sub_hub)) = infer_from_rules_ranked(&normalized, &tokens) {
         meta.hub = hub;
         meta.sub_hub = sub_hub;

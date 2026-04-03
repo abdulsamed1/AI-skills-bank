@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251384,
   "hub": "code-quality",
   "skills": [
     {
@@ -115,6 +115,14 @@
       "triggers": "comprehensive;review;pr;enhance"
     },
     {
+      "description": "Structured content modeling guidance for schema design, content architecture, content reuse, references versus embedded objects, separation of concerns, and taxonomies across Sanity and other headless CMSes. Use this skill when designing or refactoring content types, deciding field shapes, debating reusable versus nested content, planning omnichannel content models, or reviewing whether a schema is too page-shaped or presentation-driven.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "content-modeling-best-practices",
+      "src_path": "lib/sanity-io-agent-toolkit/skills/content-modeling-best-practices/SKILL.md",
+      "triggers": "content;modeling;best;practices"
+    },
+    {
       "description": "Explore a codebase to find opportunities for architectural improvement, focusing on making the codebase more testable by deepening shallow modules. Use when user wants to improve architecture, find refactoring opportunities, consolidate tightly-coupled modules, or make a codebase more AI-navigable.",
       "phase": 1,
       "score": 100,
@@ -147,28 +155,12 @@
       "triggers": "receiving;code;review"
     },
     {
-      "description": "Create a detailed refactor plan with tiny commits via user interview, then file it as a GitHub issue. Use when user wants to plan a refactor, create a refactoring RFC, or break a refactor into safe incremental steps.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "request-refactor-plan",
-      "src_path": "lib/mattpocock-skills/request-refactor-plan/SKILL.md",
-      "triggers": "request;refactor;plan"
-    },
-    {
       "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
       "phase": 1,
       "score": 100,
       "skill_id": "requesting-code-review",
       "src_path": "lib/obra-superpowers/skills/requesting-code-review/SKILL.md",
       "triggers": "requesting;code;review"
-    },
-    {
-      "description": "Test-driven development for Spring Boot using JUnit 5, Mockito, MockMvc, Testcontainers, and JaCoCo. Use when adding features, fixing bugs, or refactoring.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "springboot-tdd",
-      "src_path": "lib/affaan-m-everything-claude-code/docs/ja-JP/skills/springboot-tdd/SKILL.md",
-      "triggers": "springboot;tdd"
     },
     {
       "description": "Expert guidance on Swift Concurrency best practices, patterns, and implementation. Use when developers mention: (1) Swift Concurrency, async/await, actors, or tasks, (2) modern concurrency patterns or structured concurrency, (3) migrating to Swift 6 or strict concurrency checking, (4) data races or thread safety issues, (5) refactoring closures to async/await, (6) @MainActor, Sendable, or actor isolation, (7) concurrent code architecture or performance, (8) concurrency-related linter warnings, (9) AsyncSequence, AsyncStream, or task groups, (10) nonisolated, @preconcurrency, or @unchecked Sendable.",

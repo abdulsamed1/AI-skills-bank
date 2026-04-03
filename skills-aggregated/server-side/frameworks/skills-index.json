@@ -1,19 +1,7 @@
 {
-  "count": 13,
+  "count": 1,
   "hub": "server-side",
   "skills": [
-    "conductor-setup",
-    "conventions",
-    "django-access-review",
-    "elixir-pro",
-    "fastapi-templates",
-    "laravel-plugin-discovery",
-    "nemo-guardrails",
-    "new-rails-project",
-    "paypal-integration",
-    "rails-upgrade",
-    "skill-rails-upgrade",
-    "torch-geometric",
     "workflow-orchestration-patterns"
   ],
   "sub_hub": "frameworks"

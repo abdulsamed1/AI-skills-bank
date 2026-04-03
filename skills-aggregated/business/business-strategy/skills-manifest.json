@@ -1,14 +1,38 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251384,
   "hub": "business",
   "skills": [
     {
-      "description": "Analyze competitor strategies, content, pricing, ads, and market positioning across Google Maps, Booking.com, Facebook, Instagram, YouTube, and TikTok.",
+      "description": "When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions \"set up tracking,\" \"GA4,\" \"Google Analytics,\" \"conversion tracking,\" \"event tracking,\" \"UTM parameters,\" \"tag manager,\" \"GTM,\" \"analytics implementation,\" \"tracking plan,\" \"how do I measure this,\" \"track conversions,\" \"attribution,\" \"Mixpanel,\" \"Segment,\" \"are my events firing,\" or \"analytics isn't working.\" Use this whenever someone asks how to know if something is working or wants to measure marketing results. For A/B test measurement, see ab-test-setup.",
       "phase": 4,
       "score": 100,
-      "skill_id": "apify-competitor-intelligence",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/apify-competitor-intelligence/SKILL.md",
-      "triggers": "apify;competitor;intelligence"
+      "skill_id": "analytics-tracking",
+      "src_path": "lib/coreyhaines31-marketingskills/skills/analytics-tracking/SKILL.md",
+      "triggers": "analytics;tracking"
+    },
+    {
+      "description": "Generate an Ansoff Matrix analysis mapping growth strategies across market penetration, market development, product development, and diversification. Use when considering growth options, planning market expansion, or evaluating strategic growth paths.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "ansoff-matrix",
+      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/ansoff-matrix/SKILL.md",
+      "triggers": "ansoff;matrix"
+    },
+    {
+      "description": "When the user wants to set up, interpret, or improve their app analytics and tracking. Also use when the user mentions \"analytics\", \"tracking\", \"metrics\", \"KPIs\", \"App Store Connect analytics\", \"install tracking\", \"funnel\", \"attribution\", or \"how is my app performing\". For A/B testing, see ab-test-store-listing. For retention metrics, see retention-optimization.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "app-analytics",
+      "src_path": "lib/eronred-aso-skills/skills/app-analytics/SKILL.md",
+      "triggers": "app;analytics"
+    },
+    {
+      "description": "Auri: assistente de voz inteligente (Alexa + Claude claude-opus-4-20250805). Visao do produto, persona Vitoria Neural, stack AWS, modelo Free/Pro/Business/Enterprise, roadmap 4 fases, GTM, north star WAC e analise competitiva.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "auri-core",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/skills/auri-core/SKILL.md",
+      "triggers": "voice-assistant;product-vision;alexa;aws"
     },
     {
       "description": "Identify the first beachhead market segment for a product launch. Evaluates segments against burning pain, willingness to pay, winnable market share, and referral potential. Use when choosing a first market, targeting an initial customer segment, or planning market entry strategy.",
@@ -19,28 +43,60 @@
       "triggers": "beachhead;segment"
     },
     {
-      "description": "Comprehensive frameworks for analyzing competition, identifying differentiation opportunities, and developing winning market positioning strategies.",
+      "description": "Brainstorm feature ideas for a new product in initial discovery from PM, Designer, and Engineer perspectives. Use when starting product discovery for a new product, exploring features for a startup idea, or doing initial ideation.",
       "phase": 4,
       "score": 100,
-      "skill_id": "competitive-landscape",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/competitive-landscape/SKILL.md",
-      "triggers": "competitive;landscape"
+      "skill_id": "brainstorm-ideas-new",
+      "src_path": "lib/phuryn-pm-skills/pm-product-discovery/skills/brainstorm-ideas-new/SKILL.md",
+      "triggers": "brainstorm;ideas;new"
     },
     {
-      "description": "When the user wants to analyze competitors' App Store strategy, find keyword gaps, or understand competitive positioning. Also use when the user mentions \"competitor analysis\", \"competitive research\", \"keyword gap\", \"what are my competitors doing\", or \"compare my app to\". For keyword-specific research, see keyword-research. For metadata writing, see metadata-optimization.",
+      "description": "Master modern business analysis with AI-powered analytics, real-time dashboards, and data-driven insights. Build comprehensive KPI frameworks, predictive models, and strategic recommendations.",
       "phase": 4,
       "score": 100,
-      "skill_id": "competitor-analysis",
-      "src_path": "lib/eronred-aso-skills/skills/competitor-analysis/SKILL.md",
-      "triggers": "competitor;analysis"
+      "skill_id": "business-analyst",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/business-analyst/SKILL.md",
+      "triggers": "business;analyst"
     },
     {
-      "description": "Generate content ideas rooted in positioning. Use when someone needs \"content ideas,\" \"what should I post,\" \"blog topics,\" \"LinkedIn ideas,\" or is stuck on what to create.",
+      "description": "Generate a Business Model Canvas with all 9 building blocks. Use when creating a business model, documenting how a business creates value, or analyzing an existing business model.",
       "phase": 4,
       "score": 100,
-      "skill_id": "content-idea-generator",
-      "src_path": "lib/brianrwagner-ai-marketing-skills/content-idea-generator/SKILL.md",
-      "triggers": "content;idea;generator"
+      "skill_id": "business-model",
+      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/business-model/SKILL.md",
+      "triggers": "business;model"
+    },
+    {
+      "description": "Your AI CFO for bootstrapped startups, named after Charlie Munger who embodied the principle that capital discipline is a competitive advantage. Provides financial frameworks for cash management, runway calculations, unit economics (LTV:CAC), capital allocation, hiring ROI, burn rate analysis, working capital optimization, and forecasting. Use for questions like \"should we make this hire?\", \"how much runway do we need?\", \"what metrics should I track?\", \"how do I forecast revenue?\", or any strategic financial decision at a self-funded company.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "charlie",
+      "src_path": "lib/everyinc-charlie-cfo-skill/SKILL.md",
+      "triggers": "charlie"
+    },
+    {
+      "description": "Build a real-time support chat system with a floating widget for users and an admin dashboard for support staff. Use when the user wants live chat, customer support chat, real-time messaging, or in-app support.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "chat-widget",
+      "src_path": "lib/shpigford-skills/chat-widget/SKILL.md",
+      "triggers": "chat;widget"
+    },
+    {
+      "description": "Create a Product Requirements Document using a comprehensive 8-section template covering problem, objectives, segments, value propositions, solution, and release planning. Use when writing a PRD, documenting product requirements, preparing a feature spec, or reviewing an existing PRD.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "create-prd",
+      "src_path": "lib/phuryn-pm-skills/pm-execution/skills/create-prd/SKILL.md",
+      "triggers": "create;prd"
+    },
+    {
+      "description": "Frame an epic as a testable hypothesis with target user, expected outcome, and validation method. Use when defining a major initiative before roadmap, discovery, or delivery planning.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "epic-hypothesis",
+      "src_path": "lib/deanpeters-product-manager-skills/skills/epic-hypothesis/SKILL.md",
+      "triggers": "epic;hypothesis"
     },
     {
       "description": "Analyzes the founder's business context to deliver 3 best go-to-market strategies tailored to their current stage, product, and market. Asks up to 10 diagnostic questions when needed to understand product readiness, target market clarity, competitive positioning, and distribution channels. Use when user needs go-to-market strategy, launch planning, market entry strategy, or actionable GTM roadmap.",
@@ -49,6 +105,14 @@
       "skill_id": "go-to-market-plan",
       "src_path": "lib/ognjengt-founder-skills/skills/go-to-market-plan/SKILL.md",
       "triggers": "go;to;market;plan"
+    },
+    {
+      "description": "Automate Google Analytics tasks via Rube MCP (Composio): run reports, list accounts/properties, funnels, pivots, key events. Always search tools first for current schemas.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "google-analytics-automation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/google-analytics-automation/SKILL.md",
+      "triggers": "google;analytics;automation"
     },
     {
       "description": "Identify growth loops (flywheels) for sustainable traction. Evaluates 5 loop types: Viral, Usage, Collaboration, User-Generated, and Referral. Use when designing growth mechanisms, building product-led traction, or understanding how growth loops work.",
@@ -99,12 +163,20 @@
       "triggers": "launch;strategy"
     },
     {
-      "description": "Build a LinkedIn content system for thought leadership. Use when someone needs to establish authority, attract inbound leads, or build a consistent content presence. Covers positioning, content pillars, formats, and posting rhythm.",
+      "description": "Generate a Lean Canvas with problem, solution, metrics, cost structure, UVP, unfair advantage, channels, segments, and revenue. Use when exploring a lean startup canvas, testing a business hypothesis, or modeling a new venture.",
       "phase": 4,
       "score": 100,
-      "skill_id": "linkedin-authority-builder",
-      "src_path": "lib/brianrwagner-ai-marketing-skills/linkedin-authority-builder/SKILL.md",
-      "triggers": "linkedin;authority;builder"
+      "skill_id": "lean-canvas",
+      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/lean-canvas/SKILL.md",
+      "triggers": "lean;canvas"
+    },
+    {
+      "description": "Transform an output-focused roadmap into an outcome-focused one that communicates strategic intent. Rewrites initiatives as outcome statements reflecting user and business impacts. Use when shifting to outcome roadmaps, making a roadmap more strategic, or rewriting feature lists as outcomes.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "outcome-roadmap",
+      "src_path": "lib/phuryn-pm-skills/pm-execution/skills/outcome-roadmap/SKILL.md",
+      "triggers": "outcome;roadmap"
     },
     {
       "description": "Help founders and marketers nail their positioning. Use when someone mentions \"positioning,\" \"value proposition,\" \"who is this for,\" \"how do I describe my product,\" \"messaging,\" \"ICP,\" \"ideal customer,\" or is struggling to articulate what makes their product different.",
@@ -115,36 +187,76 @@
       "triggers": "positioning;basics"
     },
     {
-      "description": "Brainstorm product positioning ideas differentiated from competitors. Identifies top competitors and generates positioning statements with rationale. Use when developing product positioning, differentiating from competitors, or crafting brand positioning strategy.",
+      "description": "PostHog analytics, event tracking, feature flags, dashboards",
       "phase": 4,
       "score": 100,
-      "skill_id": "positioning-ideas",
-      "src_path": "lib/phuryn-pm-skills/pm-marketing-growth/skills/positioning-ideas/SKILL.md",
-      "triggers": "positioning;ideas"
+      "skill_id": "posthog-analytics",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/posthog-analytics/SKILL.md",
+      "triggers": "posthog;analytics"
     },
     {
-      "description": "Create a Geoffrey Moore-style positioning statement. Use when clarifying who you serve, what problem you solve, your category, and why you're different from alternatives.",
+      "description": "Build a structured PRD that connects problem, users, solution, and success criteria. Use when turning discovery notes into an engineering-ready document for a major initiative.",
       "phase": 4,
       "score": 100,
-      "skill_id": "positioning-statement",
-      "src_path": "lib/deanpeters-product-manager-skills/skills/positioning-statement/SKILL.md",
-      "triggers": "positioning;statement"
+      "skill_id": "prd-development",
+      "src_path": "lib/deanpeters-product-manager-skills/skills/prd-development/SKILL.md",
+      "triggers": "prd;development"
     },
     {
-      "description": "Run a positioning workshop that surfaces target customer, unmet need, category, benefits, and differentiation. Use when your product messaging feels fuzzy, generic, or misaligned.",
+      "description": "Generates professional PRD (Product Requirements Document) files optimized for AI coding tools. Takes a rough product idea, asks clarifying questions, and outputs a structured PDF ready to feed into AI coding assistants.",
       "phase": 4,
       "score": 100,
-      "skill_id": "positioning-workshop",
-      "src_path": "lib/deanpeters-product-manager-skills/skills/positioning-workshop/SKILL.md",
-      "triggers": "positioning;workshop"
+      "skill_id": "prd-generator",
+      "src_path": "lib/ognjengt-founder-skills/skills/prd-generator/SKILL.md",
+      "triggers": "prd;generator"
     },
     {
-      "description": "Evaluate an AI product idea across outcomes, hypotheses, risks, and positioning. Use when deciding whether an AI solution deserves investment or recommendation.",
+      "description": "Turn a PRD into a multi-phase implementation plan using tracer-bullet vertical slices, saved as a local Markdown file in ./plans/. Use when user wants to break down a PRD, create an implementation plan, plan phases from a PRD, or mentions \"tracer bullets\".",
       "phase": 4,
       "score": 100,
-      "skill_id": "recommendation-canvas",
-      "src_path": "lib/deanpeters-product-manager-skills/skills/recommendation-canvas/SKILL.md",
-      "triggers": "recommendation;canvas"
+      "skill_id": "prd-to-plan",
+      "src_path": "lib/mattpocock-skills/prd-to-plan/SKILL.md",
+      "triggers": "prd;to;plan"
+    },
+    {
+      "description": "Write a user-centered problem statement with who is blocked, what they are trying to do, why it matters, and how it feels. Use when framing discovery, prioritization, or a PRD.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "problem-statement",
+      "src_path": "lib/deanpeters-product-manager-skills/skills/problem-statement/SKILL.md",
+      "triggers": "problem;statement"
+    },
+    {
+      "description": "Run an end-to-end product strategy session across positioning, discovery, and roadmap planning. Use when a team needs validated direction before committing to execution.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "product-strategy-session",
+      "src_path": "lib/deanpeters-product-manager-skills/skills/product-strategy-session/SKILL.md",
+      "triggers": "product;strategy;session"
+    },
+    {
+      "description": "Brainstorm an inspiring, achievable, and emotional product vision that motivates teams and aligns stakeholders. Use when defining or refining a product vision, creating a vision statement, or aligning the team around a shared direction.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "product-vision",
+      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/product-vision/SKILL.md",
+      "triggers": "product;vision"
+    },
+    {
+      "description": "Plan a strategic roadmap across prioritization, epic definition, stakeholder alignment, and sequencing. Use when turning strategy into a release plan that teams can execute.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "roadmap-planning",
+      "src_path": "lib/deanpeters-product-manager-skills/skills/roadmap-planning/SKILL.md",
+      "triggers": "roadmap;planning"
+    },
+    {
+      "description": "When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions \"signup conversions,\" \"registration friction,\" \"signup form optimization,\" \"free trial signup,\" \"reduce signup dropoff,\" \"account creation flow,\" \"people aren't signing up,\" \"signup abandonment,\" \"trial conversion rate,\" \"nobody completes registration,\" \"too many steps to sign up,\" or \"simplify our signup.\" Use this whenever the user has a signup or registration flow that isn't performing. For post-signup onboarding, see onboarding-cro. For lead capture forms (not account creation), see form-cro.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "signup-flow-cro",
+      "src_path": "lib/coreyhaines31-marketingskills/skills/signup-flow-cro/SKILL.md",
+      "triggers": "signup;flow;cro"
     },
     {
       "description": "Expert startup business analyst specializing in market sizing, financial modeling, competitive analysis, and strategic planning for early-stage companies.",
@@ -155,6 +267,30 @@
       "triggers": "startup;analyst"
     },
     {
+      "description": "Generate a Startup Canvas combining Product Strategy (9 sections) and Business Model (costs + revenue) for a new product. An alternative to BMC and Lean Canvas that separates strategy from business model. Use when launching a new product or evaluating a startup concept.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "startup-canvas",
+      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/startup-canvas/SKILL.md",
+      "triggers": "startup;canvas"
+    },
+    {
+      "description": "Comprehensive guide to tracking, calculating, and optimizing key performance metrics for different startup business models from seed through Series A.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "startup-metrics-framework",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/startup-metrics-framework/SKILL.md",
+      "triggers": "startup;metrics;framework"
+    },
+    {
+      "description": "Create a user story map that lays out activities, steps, tasks, and release slices. Use when planning a workflow, backlog, or MVP around the user journey.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "user-story-mapping",
+      "src_path": "lib/deanpeters-product-manager-skills/skills/user-story-mapping/SKILL.md",
+      "triggers": "user;story;mapping"
+    },
+    {
       "description": "Generate value proposition statements for marketing, sales, and onboarding from existing value propositions. Use when writing marketing copy, creating sales messaging, or crafting onboarding messages.",
       "phase": 4,
       "score": 100,
@@ -163,6 +299,6 @@
       "triggers": "value;prop;statements"
     }
   ],
-  "sub_hub": "strategy",
+  "sub_hub": "business-strategy",
   "version": 1
 }

@@ -83,7 +83,7 @@ const TOOL_DEFS: &[ToolDef] = &[
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "lowercase")]
-enum SyncScope {
+pub enum SyncScope {
     Global,
     Local,
     Both,
@@ -835,6 +835,7 @@ fn normalize_git_remote_identity(url: &str) -> String {
     normalized
 }
 
+#[allow(dead_code)]
 fn run_aggregate_script(repo_root: &Path) -> Result<()> {
     let script = repo_root
         .join("archive")
@@ -862,6 +863,7 @@ fn run_aggregate_script(repo_root: &Path) -> Result<()> {
     run_powershell_command(repo_root, &command).context("Failed while running aggregate script")
 }
 
+#[allow(dead_code)]
 fn run_aggregate_selected(repo_root: &Path, repo_names: &[String], output_dir: &Path) -> Result<()> {
     let script = repo_root
         .join("archive")
@@ -893,6 +895,7 @@ fn run_aggregate_selected(repo_root: &Path, repo_names: &[String], output_dir: &
     run_powershell_command(repo_root, &command).context("Failed while running aggregate script for selected repos")
 }
 
+#[allow(dead_code)]
 fn run_sync_script(repo_root: &Path, targets: &[PathBuf], hubsrc_override: Option<&Path>) -> Result<()> {
     if targets.is_empty() {
         bail!("No sync targets were resolved from setup");
@@ -993,6 +996,7 @@ fn run_release_gate(repo_root: &Path) -> Result<()> {
     Ok(())
 }
 
+#[allow(dead_code)]
 fn run_powershell_command(cwd: &Path, command: &str) -> Result<()> {
     for shell in ["pwsh", "powershell"] {
         let result = Command::new(shell)
@@ -1472,6 +1476,7 @@ fn resolve_input_path(repo_root: &Path, input: &str) -> PathBuf {
     repo_root.join(path)
 }
 
+#[allow(dead_code)]
 fn escape_ps_single(input: &str) -> String {
     input.replace('\'', "''")
 }

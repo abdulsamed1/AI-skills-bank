@@ -1,11 +1,8 @@
 {
-  "count": 4,
+  "count": 1,
   "hub": "mobile",
   "skills": [
-    "android-design-guidelines",
-    "android-java",
-    "android-kotlin",
-    "hexagonal-architecture"
+    "android-design-guidelines"
   ],
   "sub_hub": "android"
 }

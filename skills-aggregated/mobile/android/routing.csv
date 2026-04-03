@@ -1,5 +1,2 @@
 skill_id,description,src_path
 android-design-guidelines,"Material Design 3 and Android platform guidelines. Use when building Android apps with Jetpack Compose or XML layouts, implementing Material You, navigation, or accessibility. Triggers on tasks involving Android UI, Compose components, dynamic color, or Material Design compliance.",lib/ehmo-platform-design-skills/skills/android/SKILL.md
-android-java,"Android Java development with MVVM, ViewBinding, and Espresso testing",lib/alinaqi-claude-bootstrap/skills/android-java/SKILL.md
-android-kotlin,"Android Kotlin development with Coroutines, Jetpack Compose, Hilt, and MockK testing",lib/alinaqi-claude-bootstrap/skills/android-kotlin/SKILL.md
-hexagonal-architecture,"Design, implement, and refactor Ports & Adapters systems with clear domain boundaries, dependency inversion, and testable use-case orchestration across TypeScript, Java, Kotlin, and Go services.",lib/affaan-m-everything-claude-code/skills/hexagonal-architecture/SKILL.md

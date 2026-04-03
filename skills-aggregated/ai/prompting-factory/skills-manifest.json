@@ -1,63 +1,7 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251384,
   "hub": "ai",
   "skills": [
-    {
-      "description": "Create C-suite and VP level resumes emphasizing strategic leadership",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "Executive Resume Writer",
-      "src_path": "lib/paramchoudhary-resumeskills/.agents/skills/executive-resume-writer/SKILL.md",
-      "triggers": "executive;resume;writer"
-    },
-    {
-      "description": "Generate STAR stories, practice questions, and talking points from resume",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "Interview Prep Generator",
-      "src_path": "lib/paramchoudhary-resumeskills/.agents/skills/interview-prep-generator/SKILL.md",
-      "triggers": "interview;prep;generator"
-    },
-    {
-      "description": "Analyze job postings, calculate match scores, identify gaps, and create application strategy",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "Job Description Analyzer",
-      "src_path": "lib/paramchoudhary-resumeskills/.agents/skills/job-description-analyzer/SKILL.md",
-      "triggers": "job;description;analyzer"
-    },
-    {
-      "description": "Optimize LinkedIn profile for searchability, recruiter visibility, and engagement",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "LinkedIn Profile Optimizer",
-      "src_path": "lib/paramchoudhary-resumeskills/.agents/skills/linkedin-profile-optimizer/SKILL.md",
-      "triggers": "linkedin;profile;optimizer"
-    },
-    {
-      "description": "Compare multiple job offers side-by-side with total compensation analysis",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "Offer Comparison Analyzer",
-      "src_path": "lib/paramchoudhary-resumeskills/.agents/skills/offer-comparison-analyzer/SKILL.md",
-      "triggers": "offer;comparison;analyzer"
-    },
-    {
-      "description": "Transform resume bullets into detailed portfolio case studies",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "Portfolio Case Study Writer",
-      "src_path": "lib/paramchoudhary-resumeskills/.agents/skills/portfolio-case-study-writer/SKILL.md",
-      "triggers": "portfolio;case;study;writer"
-    },
-    {
-      "description": "Format professional references properly and prepare reference materials",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "Reference List Builder",
-      "src_path": "lib/paramchoudhary-resumeskills/.agents/skills/reference-list-builder/SKILL.md",
-      "triggers": "reference;list;builder"
-    },
     {
       "description": "This skill should be used when the user asks to \"implement LLM-as-judge\", \"compare model outputs\", \"create evaluation rubrics\", \"mitigate evaluation bias\", or mentions direct scoring, pairwise comparison, position bias, evaluation pipelines, or automated quality assessment.",
       "phase": 3,
@@ -73,14 +17,6 @@
       "skill_id": "agent-manager-skill",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/agent-manager-skill/SKILL.md",
       "triggers": "agent;manager;skill"
-    },
-    {
-      "description": "A hybrid memory system that provides persistent, searchable knowledge management for AI agents (Architecture, Patterns, Decisions).",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "agent-memory-mcp",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/agent-memory-mcp/SKILL.md",
-      "triggers": "agent;memory;mcp"
     },
     {
       "description": "You are a cognitive architect who understands that memory makes agents intelligent. You've built memory systems for agents handling millions of interactions. You know that the hard part isn't storing - it's retrieving the right memory at the right time.",
@@ -195,14 +131,6 @@
       "triggers": "ai;md"
     },
     {
-      "description": "AI and machine learning workflow covering LLM application development, RAG implementation, agent architecture, ML pipelines, and AI-powered features.",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "ai-ml",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/ai-ml/SKILL.md",
-      "triggers": "ai;ml"
-    },
-    {
       "description": "Design spec with 98 rules for building CLI tools that AI agents can safely use. Covers structured JSON output, error handling, input contracts, safety guardrails, exit codes, and agent self-description.",
       "phase": 4,
       "score": 100,
@@ -259,12 +187,12 @@
       "triggers": "article;writing"
     },
     {
-      "description": "Automatically translate and sync App Store metadata (description, keywords, what's new, subtitle) to multiple languages using LLM translation and asc CLI. Use when asked to localize an app's App Store listing, translate app descriptions, or add new languages to App Store Connect.",
+      "description": "Manage Jira issues and Confluence wiki pages in Atlassian Cloud. Use when: (1) searching/creating/updating Jira issues with JQL, (2) searching/reading/creating Confluence pages with CQL, (3) managing Jira workflows, transitions, and comments, (4) browsing Confluence spaces and page hierarchies. Supports OAuth 2.1 via MCP server (recommended) or API token authentication (fallback).",
       "phase": 3,
       "score": 100,
-      "skill_id": "asc-localize-metadata",
-      "src_path": "lib/rudrankriyam-app-store-connect-cli-skills/skills/asc-localize-metadata/SKILL.md",
-      "triggers": "asc;localize;metadata"
+      "skill_id": "atlassian",
+      "src_path": "lib/sanjay3290-ai-skills/skills/atlassian/SKILL.md",
+      "triggers": "atlassian"
     },
     {
       "description": "Transform audio recordings into professional Markdown documentation with intelligent summaries using LLM integration",
@@ -281,6 +209,14 @@
       "skill_id": "auto-review-loop-llm",
       "src_path": "lib/wanshuiyin-auto-claude-code-research-in-sleep/skills/auto-review-loop-llm/SKILL.md",
       "triggers": "auto;review;loop;llm"
+    },
+    {
+      "description": "Auto-fix CodeRabbit review comments - get CodeRabbit review comments from GitHub and fix them interactively or in batch",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "autofix",
+      "src_path": "lib/coderabbitai-skills/skills/autofix/SKILL.md",
+      "triggers": "coderabbit.?autofix;coderabbit.?auto.?fix;autofix.?coderabbit;coderabbit.?fix;fix.?coderabbit;coderabbit.?review;review.?coderabbit;coderabbit.?issues?;show.?coderabbit;get.?coderabbit;cr.?autofix;cr.?fix;cr.?review"
     },
     {
       "description": "Autonomous AI agent platform for building and deploying continuous agents. Use when creating visual workflow agents, deploying persistent autonomous agents, or building complex multi-step AI automation systems.",
@@ -307,14 +243,6 @@
       "triggers": "autonomous;agent;harness"
     },
     {
-      "description": "Design patterns for building autonomous coding agents, inspired by [Cline](https://github.com/cline/cline) and [OpenAI Codex](https://github.com/openai/codex).",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "autonomous-agent-patterns",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/autonomous-agent-patterns/SKILL.md",
-      "triggers": "autonomous;agent;patterns"
-    },
-    {
       "description": "You are an agent architect who has learned the hard lessons of autonomous AI. You've seen the gap between impressive demos and production disasters. You know that a 95% success rate per step means only 60% by step 10.",
       "phase": 3,
       "score": 100,
@@ -337,6 +265,14 @@
       "skill_id": "axolotl",
       "src_path": "lib/orchestra-research-ai-research-skills/03-fine-tuning/axolotl/SKILL.md",
       "triggers": "Fine-Tuning;Axolotl;LLM;LoRA;QLoRA;DPO;KTO;ORPO;GRPO;YAML;HuggingFace;DeepSpeed;Multimodal"
+    },
+    {
+      "description": "Manage Azure DevOps projects, work items, repos, PRs, pipelines, wikis, test plans, security alerts, variable groups, environments/approvals, branch policies, and attachments. Use when user asks to: manage sprints, create/update work items, list repos, create PRs, run pipelines, search code, manage wiki pages, check security alerts, manage variable groups, approve deployments, or configure branch policies. Covers 13 domains with 99 tools via REST API.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "azure-devops",
+      "src_path": "lib/sanjay3290-ai-skills/skills/azure-devops/SKILL.md",
+      "triggers": "azure;devops"
     },
     {
       "description": "Score any MCP server, API, or CLI for agent-readiness using Clarvia AEO (Agent Experience Optimization). Search 15,400+ indexed tools before adding them to your workflow.",
@@ -363,28 +299,20 @@
       "triggers": "coding;agent;router"
     },
     {
+      "description": "Configure a Rails project to work with Conductor (parallel coding agents)",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "conductor-setup",
+      "src_path": "lib/shpigford-skills/conductor-setup/SKILL.md",
+      "triggers": "conductor;setup"
+    },
+    {
       "description": "Create platform-native content systems for X, LinkedIn, TikTok, YouTube, newsletters, and repurposed multi-platform campaigns. Use when the user wants social posts, threads, scripts, content calendars, or one source asset adapted cleanly across platforms.",
       "phase": 3,
       "score": 100,
       "skill_id": "content-engine",
       "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/content-engine/SKILL.md",
       "triggers": "content;engine"
-    },
-    {
-      "description": "Content experimentation and A/B testing guidance covering experiment design, hypotheses, metrics, sample size, statistical foundations, CMS-managed variants, and common analysis pitfalls. Use this skill when planning experiments, setting up variants, choosing success metrics, interpreting statistical results, or building experimentation workflows in a CMS or frontend stack.",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "content-experimentation-best-practices",
-      "src_path": "lib/sanity-io-agent-toolkit/skills/content-experimentation-best-practices/SKILL.md",
-      "triggers": "content;experimentation;best;practices"
-    },
-    {
-      "description": "Structured content modeling guidance for schema design, content architecture, content reuse, references versus embedded objects, separation of concerns, and taxonomies across Sanity and other headless CMSes. Use this skill when designing or refactoring content types, deciding field shapes, debating reusable versus nested content, planning omnichannel content models, or reviewing whether a schema is too page-shaped or presentation-driven.",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "content-modeling-best-practices",
-      "src_path": "lib/sanity-io-agent-toolkit/skills/content-modeling-best-practices/SKILL.md",
-      "triggers": "content;modeling;best;practices"
     },
     {
       "description": "Agente de contexto para continuidade entre sessoes. Salva resumos, decisoes, tarefas pendentes e carrega briefing automatico na sessao seguinte.",
@@ -395,28 +323,12 @@
       "triggers": "context;session-management;continuity;memory"
     },
     {
-      "description": "When agent sessions generate millions of tokens of conversation history, compression becomes mandatory. The naive approach is aggressive compression to minimize tokens per request.",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "context-compression",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/context-compression/SKILL.md",
-      "triggers": "context;compression"
-    },
-    {
       "description": "You're a context engineering specialist who has optimized LLM applications handling millions of conversations. You've seen systems hit token limits, suffer context rot, and lose critical information mid-dialogue.",
       "phase": 3,
       "score": 100,
       "skill_id": "context-window-management",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/context-window-management/SKILL.md",
       "triggers": "context;window;management"
-    },
-    {
-      "description": "Persistent memory systems for LLM conversations including short-term, long-term, and entity-based memory Use when: conversation memory, remember, memory persistence, long-term memory, chat history.",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "conversation-memory",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/conversation-memory/SKILL.md",
-      "triggers": "conversation;memory"
     },
     {
       "description": "Guide for creating Claude Code skills following Anthropic's official best practices. Use when user wants to create a new skill, build a skill, write SKILL.md, update an existing skill, or needs skill creation guidelines. Provides structure, frontmatter fields, naming conventions, and new features like dynamic context injection and subagent execution.",
@@ -523,20 +435,20 @@
       "triggers": "customaize;agent;prompt;engineering"
     },
     {
+      "description": "Fetches the latest news using news-aggregator-skill, formats it into a podcast script in Markdown format, and uses the tts skill to generate a podcast audio file. Use when the user asks to get the latest news and read it out as a podcast.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "daily-news-caster",
+      "src_path": "lib/noizai-skills/skills/daily-news-caster/SKILL.md",
+      "triggers": "daily;news;caster"
+    },
+    {
       "description": "Multi-source deep research using firecrawl and exa MCPs. Searches the web, synthesizes findings, and delivers cited reports with source attribution. Use when the user wants thorough research on any topic with evidence and citations.",
       "phase": 3,
       "score": 100,
       "skill_id": "deep-research",
       "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/deep-research/SKILL.md",
       "triggers": "deep;research"
-    },
-    {
-      "description": "Multiagent AI system for scientific research assistance that automates research workflows from data analysis to publication. This skill should be used when generating research ideas from datasets, developing research methodologies, executing computational experiments, performing literature searches, or generating publication-ready papers in LaTeX format. Supports end-to-end research pipelines with customizable agent orchestration.",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "denario",
-      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/denario/SKILL.md",
-      "triggers": "denario"
     },
     {
       "description": "Orchestrates design workflows by routing work through brainstorming, multi-agent review, and execution readiness in the correct order.",
@@ -571,12 +483,12 @@
       "triggers": "Prompt Engineering;DSPy;Declarative Programming;RAG;Agents;Prompt Optimization;LM Programming;Stanford NLP;Automatic Optimization;Modular AI"
     },
     {
-      "description": "Crypto wallet management across 7 blockchains via EmblemAI Agent Hustle API. Balance checks, token swaps, portfolio analysis, and transaction execution for Solana, Ethereum, Base, BSC, Polygon, Hedera, and Bitcoin.",
+      "description": "Convert documents and text to audio using ElevenLabs text-to-speech. Use this skill when the user wants to create a podcast, narrate a document, read aloud text, generate audio from a file, or convert text to speech.",
       "phase": 3,
       "score": 100,
-      "skill_id": "emblemai-crypto-wallet",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/emblemai-crypto-wallet/SKILL.md",
-      "triggers": "emblemai;crypto;wallet"
+      "skill_id": "elevenlabs",
+      "src_path": "lib/sanjay3290-ai-skills/skills/elevenlabs/SKILL.md",
+      "triggers": "elevenlabs"
     },
     {
       "description": "Use when working with error debugging multi agent review",
@@ -610,7 +522,6 @@
       "src_path": "lib/wanshuiyin-auto-claude-code-research-in-sleep/skills/experiment-plan/SKILL.md",
       "triggers": "experiment;plan"
     },
-    
     {
       "description": "Use when auditing a codebase for semantic duplication - functions that do the same thing but have different names or implementations. Especially useful for LLM-generated codebases where new functions are often created rather than reusing existing ones.",
       "phase": 3,
@@ -692,6 +603,70 @@
       "triggers": "github;pr;review"
     },
     {
+      "description": "Interact with Gmail - search emails, read messages, send emails, create drafts, and manage labels. Use when user asks to: search email, read email, send email, create email draft, mark as read, archive email, star email, or manage Gmail labels. Lightweight alternative to full Google Workspace MCP server with standalone OAuth authentication.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "gmail",
+      "src_path": "lib/sanjay3290-ai-skills/skills/gmail/SKILL.md",
+      "triggers": "gmail"
+    },
+    {
+      "description": "Interact with Google Calendar - list calendars, view events, create/update/delete events, and find free time. Use when user asks to: check calendar, schedule a meeting, create an event, find available time, list upcoming events, delete or update a calendar event, or respond to meeting invitations. Lightweight alternative to full Google Workspace MCP server with standalone OAuth authentication.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "google-calendar",
+      "src_path": "lib/sanjay3290-ai-skills/skills/google-calendar/SKILL.md",
+      "triggers": "google;calendar"
+    },
+    {
+      "description": "Interact with Google Chat - list spaces, send messages, read conversations, and manage DMs. Use when user asks to: send a message on Google Chat, read chat messages, list chat spaces, find a chat room, send a DM, or create a new chat space. Lightweight alternative to full Google Workspace MCP server with standalone OAuth authentication.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "google-chat",
+      "src_path": "lib/sanjay3290-ai-skills/skills/google-chat/SKILL.md",
+      "triggers": "google;chat"
+    },
+    {
+      "description": "Interact with Google Docs - create documents, search by title, read content, and edit text. Use when user asks to: create a Google Doc, find a document, read doc content, add text to a doc, or replace text in a document. Lightweight alternative to full Google Workspace MCP server with standalone OAuth authentication.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "google-docs",
+      "src_path": "lib/sanjay3290-ai-skills/skills/google-docs/SKILL.md",
+      "triggers": "google;docs"
+    },
+    {
+      "description": "Interact with Google Drive - search files, find folders, list contents, download files, upload files, create folders, move, copy, rename, and trash files. Use when user asks to: search Google Drive, find a file/folder, list Drive contents, download or upload files, create folders, move files, or organize Drive content. Lightweight integration with standalone OAuth authentication supporting full read/write access.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "google-drive",
+      "src_path": "lib/sanjay3290-ai-skills/skills/google-drive/SKILL.md",
+      "triggers": "google;drive"
+    },
+    {
+      "description": "Read and write Google Sheets spreadsheets - get content, update cells, append rows, fetch specific ranges, search for spreadsheets, and view metadata. Use when user asks to: read a spreadsheet, update cells, add data to Google Sheets, find a spreadsheet, check sheet contents, export spreadsheet data, or get cell values. Lightweight integration with standalone OAuth authentication supporting full read/write access.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "google-sheets",
+      "src_path": "lib/sanjay3290-ai-skills/skills/google-sheets/SKILL.md",
+      "triggers": "google;sheets"
+    },
+    {
+      "description": "Read and write Google Slides presentations - get text, find presentations, create presentations, add slides, replace text, and manage slide content. Use when user asks to: read a presentation, create slides, find slides, add a slide, replace text in a presentation, or manage presentation content. Lightweight integration with standalone OAuth authentication supporting full read/write access.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "google-slides",
+      "src_path": "lib/sanjay3290-ai-skills/skills/google-slides/SKILL.md",
+      "triggers": "google;slides"
+    },
+    {
+      "description": "Convert documents and text to audio using Google Cloud Text-to-Speech. Use this skill when the user wants to: narrate a document, read aloud text, generate audio from a file, convert text to speech, create a recording of documentation or analysis, create a podcast from a document, or use Google TTS/text-to-speech. Trigger phrases: \"read this aloud\", \"narrate this\", \"create a recording\", \"text to speech\", \"TTS\", \"convert to audio\", \"audio from document\", \"listen to this\", \"generate audio\", \"google tts\", \"create a podcast\".",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "google-tts",
+      "src_path": "lib/sanjay3290-ai-skills/skills/google-tts/SKILL.md",
+      "triggers": "google;tts"
+    },
+    {
       "description": "Control LLM output with regex and grammars, guarantee valid JSON/XML/code generation, enforce structured formats, and build multi-step workflows with Guidance - Microsoft Research's constrained generation framework",
       "phase": 3,
       "score": 100,
@@ -722,6 +697,14 @@
       "skill_id": "hugging-face-tool-builder",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/hugging-face-tool-builder/SKILL.md",
       "triggers": "hugging;face;tool;builder"
+    },
+    {
+      "description": "Generate images using Google Gemini's image generation capabilities. Use this skill when the user needs to create, generate, or produce images for any purpose including UI mockups, icons, illustrations, diagrams, concept art, placeholder images, or visual representations.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "imagen",
+      "src_path": "lib/sanjay3290-ai-skills/skills/imagen/SKILL.md",
+      "triggers": "imagen"
     },
     {
       "description": "Multi-agent research skill for parallel research execution (10 agents, battle-tested with real case studies).",
@@ -772,28 +755,20 @@
       "triggers": "ios;debugger;agent"
     },
     {
+      "description": "Delegate coding tasks to Google Jules AI agent for asynchronous execution. Use when user says: 'have Jules fix', 'delegate to Jules', 'send to Jules', 'ask Jules to', 'check Jules sessions', 'pull Jules results', 'jules add tests', 'jules add docs', 'jules review pr'. Handles: bug fixes, documentation, features, tests, refactoring, code reviews. Works with GitHub repos, creates PRs.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "jules",
+      "src_path": "lib/sanjay3290-ai-skills/skills/jules/SKILL.md",
+      "triggers": "jules"
+    },
+    {
       "description": "Knowledge Watcher",
       "phase": 3,
       "score": 100,
       "skill_id": "knowledge-watcher",
       "src_path": "lib/shunsukehayashi-agent-skill-bus/skills/knowledge-watcher/SKILL.md",
       "triggers": "knowledge;watcher"
-    },
-    {
-      "description": "Framework for building LLM-powered applications with agents, chains, and RAG. Supports multiple providers (OpenAI, Anthropic, Google), 500+ integrations, ReAct agents, tool calling, memory management, and vector store retrieval. Use for building chatbots, question-answering systems, autonomous agents, or RAG applications. Best for rapid prototyping and production deployments.",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "langchain",
-      "src_path": "lib/orchestra-research-ai-research-skills/14-agents/langchain/SKILL.md",
-      "triggers": "Agents;LangChain;RAG;Tool Calling;ReAct;Memory Management;Vector Stores;LLM Applications;Chatbots;Production"
-    },
-    {
-      "description": "Master the LangChain framework for building sophisticated LLM applications with agents, chains, memory, and tool integration.",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "langchain-architecture",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/langchain-architecture/SKILL.md",
-      "triggers": "langchain;architecture"
     },
     {
       "description": "AI-native lead intelligence and outreach pipeline. Replaces Apollo, Clay, and ZoomInfo with agent-powered signal scoring, mutual ranking, warm path discovery, source-derived voice modeling, and channel-specific outreach across email, LinkedIn, and X. Use when the user wants to find, qualify, and reach high-value contacts.",
@@ -810,14 +785,6 @@
       "skill_id": "llama-factory",
       "src_path": "lib/orchestra-research-ai-research-skills/03-fine-tuning/llama-factory/SKILL.md",
       "triggers": "Fine-Tuning;LLaMA Factory;LLM;WebUI;No-Code;QLoRA;LoRA;Multimodal;HuggingFace;Llama;Qwen;Gemma"
-    },
-    {
-      "description": "Meta's 7-8B specialized moderation model for LLM input/output filtering. 6 safety categories - violence/hate, sexual content, weapons, substances, self-harm, criminal planning. 94-95% accuracy. Deploy with vLLM, HuggingFace, Sagemaker. Integrates with NeMo Guardrails.",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "llamaguard",
-      "src_path": "lib/orchestra-research-ai-research-skills/07-safety-alignment/llamaguard/SKILL.md",
-      "triggers": "Safety Alignment;LlamaGuard;Content Moderation;Meta;Guardrails;Safety Classification;Input Filtering;Output Filtering;AI Safety"
     },
     {
       "description": "Data framework for building LLM applications with RAG. Specializes in document ingestion (300+ connectors), indexing, and querying. Features vector indices, query engines, agents, and multi-modal support. Use for document Q&A, chatbots, knowledge retrieval, or building RAG pipelines. Best for data-centric LLM applications.",
@@ -858,14 +825,6 @@
       "skill_id": "llm-ops",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/llm-ops/SKILL.md",
       "triggers": "llm;rag;embeddings;vector-db;fine-tuning"
-    },
-    {
-      "description": "AI-first application patterns, LLM testing, prompt management",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "llm-patterns",
-      "src_path": "lib/alinaqi-claude-bootstrap/skills/llm-patterns/SKILL.md",
-      "triggers": "llm;patterns"
     },
     {
       "description": "Use when improving prompts for any LLM. Applies proven prompt engineering techniques to boost output quality, reduce hallucinations, and cut token usage.",
@@ -988,6 +947,14 @@
       "triggers": "ms;teams;apps"
     },
     {
+      "description": "Execute read-only SQL queries against multiple Microsoft SQL Server databases. Use when: (1) querying MSSQL/SQL Server databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "mssql",
+      "src_path": "lib/sanjay3290-ai-skills/skills/mssql/SKILL.md",
+      "triggers": "mssql"
+    },
+    {
       "description": "Simulate a structured peer-review process using multiple specialized agents to validate designs, surface hidden assumptions, and identify failure modes before implementation.",
       "phase": 3,
       "score": 100,
@@ -1004,6 +971,14 @@
       "triggers": "multi;agent;patterns"
     },
     {
+      "description": "Execute read-only SQL queries against multiple MySQL databases. Use when: (1) querying MySQL databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "mysql",
+      "src_path": "lib/sanjay3290-ai-skills/skills/mysql/SKILL.md",
+      "triggers": "mysql"
+    },
+    {
       "description": "Expert guide for using n8n-mcp MCP tools effectively. Use when searching for nodes, validating configurations, accessing templates, managing workflows, or using any n8n-mcp tool. Provides tool selection guidance, parameter formats, and common patterns.",
       "phase": 3,
       "score": 100,
@@ -1012,12 +987,20 @@
       "triggers": "n8n;mcp;tools;expert"
     },
     {
-      "description": "Observe and troubleshoot WhatsApp in Kapso: debug message delivery, inspect webhook deliveries/retries, triage API errors, and run health checks. Use when investigating production issues, message failures, or webhook delivery problems.",
+      "description": "NVIDIA's runtime safety framework for LLM applications. Features jailbreak detection, input/output validation, fact-checking, hallucination detection, PII filtering, toxicity detection. Uses Colang 2.0 DSL for programmable rails. Production-ready, runs on T4 GPU.",
       "phase": 3,
       "score": 100,
-      "skill_id": "observe-whatsapp",
-      "src_path": "lib/gokapso-agent-skills/skills/observe-whatsapp/SKILL.md",
-      "triggers": "observe;whatsapp"
+      "skill_id": "nemo-guardrails",
+      "src_path": "lib/orchestra-research-ai-research-skills/07-safety-alignment/nemo-guardrails/SKILL.md",
+      "triggers": "Safety Alignment;NeMo Guardrails;NVIDIA;Jailbreak Detection;Guardrails;Colang;Runtime Safety;Hallucination Detection;PII Filtering;Production"
+    },
+    {
+      "description": "Use this skill to query your Google NotebookLM notebooks directly from Claude Code for source-grounded, citation-backed answers from Gemini. Browser automation, library management, persistent auth. Drastically reduced hallucinations through document-only responses.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "notebooklm",
+      "src_path": "lib/pleaseprompto-notebooklm-skill/SKILL.md",
+      "triggers": "notebooklm"
     },
     {
       "description": "Open-source pipeline: fork, sanitize, and package private projects for safe public release. Chains 3 agents (forker, sanitizer, packager). Triggers: '/opensource', 'open source this', 'make this public', 'prepare for open source'.",
@@ -1026,6 +1009,14 @@
       "skill_id": "opensource-pipeline",
       "src_path": "lib/affaan-m-everything-claude-code/skills/opensource-pipeline/SKILL.md",
       "triggers": "opensource;pipeline"
+    },
+    {
+      "description": "Search, read, and manage Outline wiki documents. Use when: (1) searching wiki for documentation, (2) reading wiki pages or articles, (3) listing wiki collections or documents, (4) creating or updating wiki content, (5) exporting documents as markdown. Works with any Outline wiki instance (self-hosted or cloud).",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "outline",
+      "src_path": "lib/sanjay3290-ai-skills/skills/outline/SKILL.md",
+      "triggers": "outline"
     },
     {
       "description": "Guarantee valid JSON/XML/code structure during generation, use Pydantic models for type-safe outputs, support local models (Transformers, vLLM), and maximize inference speed with Outlines - dottxt.ai's structured generation library",
@@ -1052,20 +1043,12 @@
       "triggers": "personal;tool;builder"
     },
     {
-      "description": "Scans lyrics for phrases that may match existing songs using web search and LLM knowledge. Use before release to check for unintentional borrowing.",
+      "description": "Execute read-only SQL queries against multiple PostgreSQL databases. Use when: (1) querying PostgreSQL databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety.",
       "phase": 3,
       "score": 100,
-      "skill_id": "plagiarism-checker",
-      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/plagiarism-checker/SKILL.md",
-      "triggers": "plagiarism;checker"
-    },
-    {
-      "description": "Validates all pre-generation gates before sending tracks to Suno. Checks sources verified, lyrics reviewed, pronunciation resolved, explicit flag set, style prompt complete, and artist names cleared. Use before generating tracks on Suno or when the user says \"pre-gen check\" or \"ready to generate\".",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "pre-generation-check",
-      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/pre-generation-check/SKILL.md",
-      "triggers": "pre;generation;check"
+      "skill_id": "postgres",
+      "src_path": "lib/sanjay3290-ai-skills/skills/postgres/SKILL.md",
+      "triggers": "postgres"
     },
     {
       "description": "Estimate AI-assisted and hybrid human+agent development work with research-backed PERT statistics and calibration feedback loops",
@@ -1114,22 +1097,6 @@
       "skill_id": "prompt-request-bus",
       "src_path": "lib/shunsukehayashi-agent-skill-bus/skills/prompt-request-bus/SKILL.md",
       "triggers": "prompt;request;bus"
-    },
-    {
-      "description": "High-performance reinforcement learning framework optimized for speed and scale. Use when you need fast parallel training, vectorized environments, multi-agent systems, or integration with game environments (Atari, Procgen, NetHack). Achieves 2-10x speedups over standard implementations. For quick prototyping or standard algorithm implementations with extensive documentation, use stable-baselines3 instead.",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "pufferlib",
-      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/pufferlib/SKILL.md",
-      "triggers": "pufferlib"
-    },
-    {
-      "description": "When the user wants to improve their app's star rating, increase ratings volume, optimize when and how they prompt users for a review, or recover from a bad rating period. Use when the user mentions \"app rating\", \"star rating\", \"review prompt\", \"SKStoreReviewRequest\", \"In-App Review API\", \"ask for review\", \"low rating\", \"rating drop\", \"get more reviews\", or \"recover from 1-star\". For responding to reviews, see review-management. For overall ASO health, see aso-audit.",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "rating-prompt-strategy",
-      "src_path": "lib/eronred-aso-skills/skills/rating-prompt-strategy/SKILL.md",
-      "triggers": "rating;prompt;strategy"
     },
     {
       "description": "Execute a task with sub-agent implementation and LLM-as-a-judge verification with automatic retry loop",
@@ -1212,22 +1179,6 @@
       "triggers": "self;improving;skills"
     },
     {
-      "description": "SEO and AEO best practices for metadata, Open Graph, sitemaps, robots.txt, hreflang, JSON-LD structured data, EEAT, and content optimized for search engines and AI answer surfaces. Use this skill when implementing page SEO, technical SEO, schema markup, international SEO, AI-overview readiness, or improving content for Google, ChatGPT, Perplexity, and similar assistants.",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "seo-aeo-best-practices",
-      "src_path": "lib/sanity-io-agent-toolkit/skills/seo-aeo-best-practices/SKILL.md",
-      "triggers": "seo;aeo;best;practices"
-    },
-    {
-      "description": "Optimize content for AI Overviews (formerly SGE), ChatGPT web search, Perplexity, and other AI-powered search experiences. Generative Engine Optimization (GEO) analysis including brand mention signals, AI crawler accessibility, llms.txt compliance, passage-level citability scoring, and platform-specific optimization. Use when user says \"AI Overviews\", \"SGE\", \"GEO\", \"AI search\", \"LLM optimization\", \"Perplexity\", \"AI citations\", \"ChatGPT search\", or \"AI visibility\".",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "seo-geo",
-      "src_path": "lib/agricidaniel-claude-seo/skills/seo-geo/SKILL.md",
-      "triggers": "seo;geo"
-    },
-    {
       "description": "Serves LLMs with high throughput using vLLM's PagedAttention and continuous batching. Use when deploying production LLM APIs, optimizing inference latency/throughput, or serving models with limited GPU memory. Supports OpenAI-compatible endpoints, quantization (GPTQ/AWQ/FP8), and tensor parallelism.",
       "phase": 3,
       "score": 100,
@@ -1300,14 +1251,6 @@
       "triggers": "stable;baselines3"
     },
     {
-      "description": "Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "stitch-loop",
-      "src_path": "lib/google-labs-code-stitch-skills/skills/stitch-loop/SKILL.md",
-      "triggers": "stitch;loop"
-    },
-    {
       "description": "Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary auto-compaction.",
       "phase": 3,
       "score": 100,
@@ -1316,12 +1259,12 @@
       "triggers": "strategic;compact"
     },
     {
-      "description": "Master TDD orchestrator specializing in red-green-refactor discipline, multi-agent workflow coordination, and comprehensive test-driven development practices.",
+      "description": "Write, review, or improve SwiftUI code following best practices for state management, view composition, performance, macOS-specific APIs, and iOS 26+ Liquid Glass adoption. Use when building new SwiftUI features, refactoring existing views, reviewing code quality, or adopting modern SwiftUI patterns.",
       "phase": 3,
       "score": 100,
-      "skill_id": "tdd-orchestrator",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/tdd-orchestrator/SKILL.md",
-      "triggers": "tdd;orchestrator"
+      "skill_id": "swiftui-expert-skill",
+      "src_path": "lib/avdlee-swiftui-agent-skill/swiftui-expert-skill/SKILL.md",
+      "triggers": "swiftui;expert;skill"
     },
     {
       "description": "Reusable template for authoring new Agent Skills with clear triggers, workflow, and I/O contracts.",
@@ -1388,6 +1331,14 @@
       "triggers": "tool;design"
     },
     {
+      "description": "Use this skill whenever the user wants to convert text into speech, generate audio from text, or produce voiceovers. Triggers include: any mention of 'TTS', 'text to speech', 'speak', 'say', 'voice', 'read aloud', 'audio narration', 'voiceover', 'dubbing', or requests to turn written content into spoken audio. Also use when converting EPUB/PDF/SRT/articles to audio, cloning voices from reference audio, controlling emotion or speed in speech, aligning speech to subtitle timelines, or producing per-segment voice-mapped audio.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "tts",
+      "src_path": "lib/noizai-skills/skills/tts/SKILL.md",
+      "triggers": "tts"
+    },
+    {
       "description": "Scan Apple's SwiftUI documentation for deprecated APIs and update the SwiftUI Expert Skill with modern replacements. Use when asked to \"update latest APIs\", \"refresh deprecated SwiftUI APIs\", \"check for new SwiftUI deprecations\", \"scan for API changes\", or after a new iOS/Xcode release. Requires the Sosumi MCP to be available.",
       "phase": 3,
       "score": 100,
@@ -1412,12 +1363,12 @@
       "triggers": "video;editing"
     },
     {
-      "description": "You are a voice AI architect who has shipped production voice agents handling millions of calls. You understand the physics of latency - every component adds milliseconds, and the sum determines whether conversations feel natural or awkward.",
+      "description": "Translate and dub videos from one language to another, replacing the original audio with TTS while keeping the video intact.",
       "phase": 3,
       "score": 100,
-      "skill_id": "voice-agents",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/voice-agents/SKILL.md",
-      "triggers": "voice;agents"
+      "skill_id": "video-translation",
+      "src_path": "lib/noizai-skills/skills/video-translation/SKILL.md",
+      "triggers": "video;translation"
     },
     {
       "description": "Build real-time conversational AI voice engines using async worker pipelines, streaming transcription, LLM agents, and TTS synthesis with interrupt handling and multi-provider support",

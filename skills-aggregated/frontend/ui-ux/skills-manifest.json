@@ -1,23 +1,7 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251385,
   "hub": "frontend",
   "skills": [
-    {
-      "description": "Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "stitch-loop",
-      "src_path": "lib/google-labs-code-stitch-skills/skills/stitch-loop/SKILL.md",
-      "triggers": "stitch;loop"
-    },
-    {
-      "description": "Balance visual design with ATS compatibility for creative roles",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "Creative Portfolio Resume",
-      "src_path": "lib/paramchoudhary-resumeskills/skills/creative-portfolio-resume/SKILL.md",
-      "triggers": "creative;portfolio;resume"
-    },
     {
       "description": "You are an accessibility expert specializing in WCAG compliance, inclusive design, and assistive technology compatibility. Conduct audits, identify barriers, and provide remediation guidance.",
       "phase": 1,
@@ -41,14 +25,6 @@
       "skill_id": "antigravity-design-expert",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/antigravity-design-expert/SKILL.md",
       "triggers": "antigravity;design;expert"
-    },
-    {
-      "description": "Orchestrate iOS screenshot automation with xcodebuild/simctl for build-run, AXe for UI actions, JSON settings and plan files, Koubou-based framing (`asc screenshots frame`), and screenshot upload (`asc screenshots upload`). Use when users ask for automated screenshot capture, AXe-driven simulator flows, frame composition, or screenshot-to-upload pipelines.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "asc-shots-pipeline",
-      "src_path": "lib/rudrankriyam-app-store-connect-cli-skills/skills/asc-shots-pipeline/SKILL.md",
-      "triggers": "asc;shots;pipeline"
     },
     {
       "description": "Guidelines for modern Avalonia UI layout using Zafiro.Avalonia, emphasizing shared styles, generic components, and avoiding XAML redundancy.",
@@ -107,12 +83,20 @@
       "triggers": "canvas;design"
     },
     {
-      "description": "Google quantum computing framework. Use when targeting Google Quantum AI hardware, designing noise-aware circuits, or running quantum characterization experiments. Best for Google hardware, noise modeling, and low-level circuit design. For IBM hardware use qiskit; for quantum ML with autodiff use pennylane; for physics simulations use qutip.",
+      "description": "Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with AI-generated visuals. Actions: design, create, generate banner. Platforms: Facebook, Twitter/X, LinkedIn, YouTube, Instagram, Google Display, website hero, print. Styles: minimalist, gradient, bold typography, photo-based, illustrated, geometric, retro, glassmorphism, 3D, neon, duotone, editorial, collage. Uses ui-ux-pro-max, frontend-design, ai-artist, ai-multimodal skills.",
       "phase": 1,
       "score": 100,
-      "skill_id": "cirq",
-      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/cirq/SKILL.md",
-      "triggers": "cirq"
+      "skill_id": "ckm:banner-design",
+      "src_path": "lib/nextlevelbuilder-ui-ux-pro-max-skill/.claude/skills/banner-design/SKILL.md",
+      "triggers": "ckm;banner;design"
+    },
+    {
+      "description": "Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand compliance, style guides.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "ckm:brand",
+      "src_path": "lib/nextlevelbuilder-ui-ux-pro-max-skill/.claude/skills/brand/SKILL.md",
+      "triggers": "ckm;brand"
     },
     {
       "description": "Create strategic HTML presentations with Chart.js, design tokens, responsive layouts, copywriting formulas, and contextual slide strategies.",
@@ -259,14 +243,6 @@
       "triggers": "expo;ui;swift;ui"
     },
     {
-      "description": "Generate a branded social media image announcing a new feature or update. Analyzes git history, auto-detects brand from codebase (Tailwind, CSS vars, design tokens), replicates UI elements, and captures via Playwright. Use when the user wants to create an announcement image, says 'feature image,' 'announcement graphic,' 'social image for feature,' or wants to visually announce a code change.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "feature-image",
-      "src_path": "lib/shpigford-skills/feature-image/SKILL.md",
-      "triggers": "feature;image"
-    },
-    {
       "description": "Audit and fix HTML accessibility issues including ARIA labels, keyboard navigation, focus management, color contrast, and form errors. Use when adding interactive controls, forms, dialogs, or reviewing WCAG compliance.",
       "phase": 1,
       "score": 100,
@@ -299,108 +275,12 @@
       "triggers": "frontend;design"
     },
     {
-      "description": "Game audio principles. Sound design, music integration, adaptive audio systems.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "game-audio",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/game-development/game-audio/SKILL.md",
-      "triggers": "game;audio"
-    },
-    {
-      "description": "Game design principles. GDD structure, balancing, player psychology, progression.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "game-design",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/game-development/game-design/SKILL.md",
-      "triggers": "game;design"
-    },
-    {
       "description": "Analyze and engineer protein glycosylation. Scan sequences for N-glycosylation sequons (N-X-S/T), predict O-glycosylation hotspots, and access curated glycoengineering tools (NetOGlyc, GlycoShield, GlycoWorkbench). For glycoprotein engineering, therapeutic antibody optimization, and vaccine design.",
       "phase": 1,
       "score": 100,
       "skill_id": "glycoengineering",
       "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/glycoengineering/SKILL.md",
       "triggers": "glycoengineering"
-    },
-    {
-      "description": "EMR/EHR development patterns for healthcare applications. Clinical safety, encounter workflows, prescription generation, clinical decision support integration, and accessibility-first UI for medical data entry.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "healthcare-emr-patterns",
-      "src_path": "lib/affaan-m-everything-claude-code/skills/healthcare-emr-patterns/SKILL.md",
-      "triggers": "healthcare;emr;patterns"
-    },
-    {
-      "description": "Apple HIG guidance for presentation components including alerts, action sheets, popovers, sheets, and digit entry views. Use this skill when the user says \"should I use an alert or a sheet,\" \"how do I show a confirmation dialog,\" \"when should I use a popover,\" \"my modals are annoying users,\" or asks about alert design, action sheet, popover, sheet, modal, dialog, digit entry, confirmation dialog, warning dialog, modal presentation, non-modal content, destructive action confirmation, or overlay UI patterns. Cross-references: hig-components-menus, hig-components-controls, hig-components-search, hig-patterns.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "hig-components-dialogs",
-      "src_path": "lib/raintree-technology-apple-hig-skills/skills/hig-components-dialogs/SKILL.md",
-      "triggers": "hig;components;dialogs"
-    },
-    {
-      "description": "Apple Human Interface Guidelines for layout and navigation components. Use this skill when the user asks about \"sidebar\", \"split view\", \"tab bar\", \"tab view\", \"scroll view\", \"window design\", \"panel\", \"list view\", \"table view\", \"column view\", \"outline view\", \"navigation structure\", \"app layout\", \"boxes\", \"ornaments\", or organizing content hierarchically in Apple apps. Also use when the user says \"how should I organize my app\", \"what navigation pattern should I use\", \"my layout breaks on iPad\", \"how do I build a sidebar\", \"should I use tabs or a sidebar\", or \"my app doesn't adapt to different screen sizes\". Cross-references: hig-foundations for layout/spacing principles, hig-platforms for platform-specific navigation, hig-patterns for multitasking and full-screen, hig-components-content for content display.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "hig-components-layout",
-      "src_path": "lib/raintree-technology-apple-hig-skills/skills/hig-components-layout/SKILL.md",
-      "triggers": "hig;components;layout"
-    },
-    {
-      "description": "Apple HIG guidance for menu and button components including menus, context menus, dock menus, edit menus, the menu bar, toolbars, action buttons, pop-up buttons, pull-down buttons, disclosure controls, and standard buttons. Use this skill when the user says \"how should my buttons look,\" \"what goes in the menu bar,\" \"should I use a context menu or action sheet,\" \"how do I design a toolbar,\" or asks about button design, menu design, context menu, toolbar, menu bar, action button, pop-up button, pull-down button, disclosure control, dock menu, edit menu, or any menu/button component layout and behavior. Cross-references: hig-components-search, hig-components-controls, hig-components-dialogs.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "hig-components-menus",
-      "src_path": "lib/raintree-technology-apple-hig-skills/skills/hig-components-menus/SKILL.md",
-      "triggers": "hig;components;menus"
-    },
-    {
-      "description": "Apple HIG guidance for navigation-related components including search fields, page controls, and path controls. Use this skill when the user says \"how should search work in my app,\" \"I need a breadcrumb,\" \"how do I paginate content,\" or asks about search field, search bar, page control, path control, breadcrumb, navigation component, search UX, search suggestions, search scopes, paginated content navigation, or file path hierarchy display. Cross-references: hig-components-menus, hig-components-controls, hig-components-dialogs, hig-patterns.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "hig-components-search",
-      "src_path": "lib/raintree-technology-apple-hig-skills/skills/hig-components-search/SKILL.md",
-      "triggers": "hig;components;search"
-    },
-    {
-      "description": "Apple HIG guidance for system experience components: widgets, live activities, notifications, complications, home screen quick actions, top shelf, watch faces, app clips, and app shortcuts. Use when asked about: \"widget design\", \"live activity\", \"notification design\", \"complication\", \"home screen quick action\", \"top shelf\", \"watch face\", \"app clip\", \"app shortcut\", \"system experience\". Also use when the user says \"how do I design a widget,\" \"what should my notification look like,\" \"how do Live Activities work,\" \"should I make an App Clip,\" or asks about surfaces outside the main app. Cross-references: hig-components-status for progress in widgets, hig-inputs for interaction patterns, hig-technologies for Siri and system integration.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "hig-components-system",
-      "src_path": "lib/raintree-technology-apple-hig-skills/skills/hig-components-system/SKILL.md",
-      "triggers": "hig;components;system"
-    },
-    {
-      "description": "Apple Human Interface Guidelines design foundations. Use this skill when the user asks about \"HIG color\", \"Apple typography\", \"SF Symbols\", \"dark mode guidelines\", \"accessible design\", \"Apple design foundations\", \"app icon\", \"layout guidelines\", \"materials\", \"motion\", \"privacy\", \"right to left\", \"RTL\", \"inclusive design\", branding, images, spatial layout, or writing style. Also use when the user says \"my colors look wrong in dark mode\", \"what font should I use\", \"is my app accessible enough\", \"how do I support Dynamic Type\", \"what contrast ratio do I need\", \"how do I pick system colors\", or \"my icons don't match the system style\". Cross-references: hig-platforms for platform-specific guidance, hig-patterns for interaction patterns, hig-components-layout for structural components, hig-components-content for display.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "hig-foundations",
-      "src_path": "lib/raintree-technology-apple-hig-skills/skills/hig-foundations/SKILL.md",
-      "triggers": "hig;foundations"
-    },
-    {
-      "description": "Apple HIG guidance for input methods and interaction patterns: gestures, Apple Pencil, keyboards, game controllers, pointers, Digital Crown, eye tracking, focus system, remotes, spatial interactions, gyroscope, accelerometer, and nearby interactions. Use when asked about: \"gesture design\", \"Apple Pencil\", \"keyboard shortcuts\", \"game controller\", \"pointer support\", \"mouse support\", \"trackpad\", \"Digital Crown\", \"eye tracking\", \"visionOS input\", \"focus system\", \"remote control\", \"gyroscope\", \"spatial interaction\". Also use when the user says \"what gestures should I support,\" \"how do I add keyboard shortcuts,\" \"how does input work on Apple TV,\" \"should I support Apple Pencil,\" or asks about input device handling. Cross-references: hig-components-status, hig-components-system, hig-technologies for VoiceOver and Siri.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "hig-inputs",
-      "src_path": "lib/raintree-technology-apple-hig-skills/skills/hig-inputs/SKILL.md",
-      "triggers": "hig;inputs"
-    },
-    {
-      "description": "Apple Human Interface Guidelines for platform-specific design. Use this skill when the user asks about \"designing for iOS\", \"iPad app design\", \"macOS design\", \"tvOS\", \"visionOS\", \"watchOS\", \"Apple platform\", \"which platform\", platform differences, platform-specific conventions, or multi-platform app design. Also use when the user says \"should I design differently for iPad vs iPhone\", \"how does my app work on visionOS\", \"what's different about macOS apps\", \"porting my app to another platform\", \"universal app design\", or \"what input methods does this platform use\". Cross-references: hig-foundations for shared design foundations, hig-patterns for interaction patterns, hig-components-layout for navigation structures, hig-components-content for content display.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "hig-platforms",
-      "src_path": "lib/raintree-technology-apple-hig-skills/skills/hig-platforms/SKILL.md",
-      "triggers": "hig;platforms"
-    },
-    {
-      "description": "Create or update a shared Apple design context document that other HIG skills use to tailor guidance. Use when the user says \"set up my project context,\" \"what platforms am I targeting,\" \"configure HIG settings,\" or when starting a new Apple platform project. Also activates when other HIG skills need project context but none exists yet. This skill creates .claude/apple-design-context.md so that hig-foundations, hig-platforms, hig-components-*, hig-inputs, and hig-technologies can provide targeted advice without repetitive questions.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "hig-project-context",
-      "src_path": "lib/raintree-technology-apple-hig-skills/skills/hig-project-context/SKILL.md",
-      "triggers": "hig;project;context"
     },
     {
       "description": "Teaches the AI to design like a high-end agency. Defines the exact fonts, spacing, shadows, card structures, and animations that make a website feel expensive. Blocks all the common defaults that make AI designs look cheap or generic.",
@@ -419,28 +299,20 @@
       "triggers": "iconsax;library"
     },
     {
-      "description": "Generate images using Google Gemini's image generation capabilities. Use this skill when the user needs to create, generate, or produce images for any purpose including UI mockups, icons, illustrations, diagrams, concept art, placeholder images, or visual representations.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "imagen",
-      "src_path": "lib/sanjay3290-ai-skills/skills/imagen/SKILL.md",
-      "triggers": "imagen"
-    },
-    {
-      "description": "Raw mechanical interfaces fusing Swiss typographic print with military terminal aesthetics. Rigid grids, extreme type scale contrast, utilitarian color, analog degradation effects. For data-heavy dashboards, portfolios, or editorial sites that need to feel like declassified blueprints.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "industrial-brutalist-ui",
-      "src_path": "lib/leonxlnx-taste-skill/skills/brutalist-skill/SKILL.md",
-      "triggers": "industrial;brutalist;ui"
-    },
-    {
       "description": "Apple Human Interface Guidelines for iPad. Use when building iPad-optimized interfaces, implementing multitasking, pointer support, keyboard shortcuts, or responsive layouts. Triggers on tasks involving iPad, Split View, Stage Manager, sidebar navigation, or trackpad support.",
       "phase": 1,
       "score": 100,
       "skill_id": "ipados-design-guidelines",
       "src_path": "lib/ehmo-platform-design-skills/skills/ipados/SKILL.md",
       "triggers": "ipados;design;guidelines"
+    },
+    {
+      "description": "Comprehensive patterns for designing effective Key Performance Indicator (KPI) dashboards that drive business decisions.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "kpi-dashboard-design",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/kpi-dashboard-design/SKILL.md",
+      "triggers": "kpi;dashboard;design"
     },
     {
       "description": "Generates high-converting Next.js/React landing pages with Tailwind CSS. Uses PAS, AIDA, and BAB frameworks for optimized copy/components (Heroes, Features, Pricing). Focuses on Core Web Vitals/SEO.",
@@ -563,6 +435,14 @@
       "triggers": "redesign;existing;projects"
     },
     {
+      "description": "Evaluate scientific claims and evidence quality. Use for assessing experimental design validity, identifying biases and confounders, applying evidence grading frameworks (GRADE, Cochrane Risk of Bias), or teaching critical analysis. Best for understanding evidence quality, identifying flaws. For formal peer review writing use peer-review.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "scientific-critical-thinking",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/scientific-critical-thinking/SKILL.md",
+      "triggers": "scientific;critical;thinking"
+    },
+    {
       "description": "Build slide decks and presentations for research talks. Use this for making PowerPoint slides, conference presentations, seminar talks, research presentations, thesis defense slides, or any scientific talk. Provides slide structure, design templates, timing guidance, and visual validation. Works with PowerPoint and LaTeX Beamer.",
       "phase": 1,
       "score": 100,
@@ -627,14 +507,6 @@
       "triggers": "telegram;bot;builder"
     },
     {
-      "description": "You build apps where 800M+ Telegram users already are. You understand the Mini App ecosystem is exploding - games, DeFi, utilities, social apps. You know TON blockchain and how to monetize with crypto. You design for the Telegram UX paradigm, not traditional web.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "telegram-mini-app",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/telegram-mini-app/SKILL.md",
-      "triggers": "telegram;mini;app"
-    },
-    {
       "description": "Apple Human Interface Guidelines for Apple TV. Use when building tvOS apps with focus-based navigation, Siri Remote input, or living room viewing experiences. Triggers on tasks involving Apple TV, tvOS, 10-foot UI, or media playback.",
       "phase": 1,
       "score": 100,
@@ -667,14 +539,6 @@
       "triggers": "ui;ux;designer"
     },
     {
-      "description": "Rigorous visual validation expert specializing in UI testing, design system compliance, and accessibility verification.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "ui-visual-validator",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/ui-visual-validator/SKILL.md",
-      "triggers": "ui;visual;validator"
-    },
-    {
       "description": "Web UI - glassmorphism, Tailwind, dark mode, accessibility",
       "phase": 1,
       "score": 100,
@@ -689,6 +553,14 @@
       "skill_id": "user-journeys",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/user-journeys/SKILL.md",
       "triggers": "user;journeys"
+    },
+    {
+      "description": "Create user stories following the 3 C's (Card, Conversation, Confirmation) and INVEST criteria with descriptions, design links, and acceptance criteria. Use when writing user stories, breaking down features into backlog items, or defining acceptance criteria.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "user-stories",
+      "src_path": "lib/phuryn-pm-skills/pm-execution/skills/user-stories/SKILL.md",
+      "triggers": "user;stories"
     },
     {
       "description": "Apple Human Interface Guidelines for Apple Vision Pro. Use when building spatial computing apps, implementing eye/hand input, or designing immersive experiences. Triggers on tasks involving visionOS, RealityKit, spatial UI, or mixed reality.",

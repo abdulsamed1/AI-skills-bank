@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251385,
   "hub": "server-side",
   "skills": [
     {
@@ -11,6 +11,14 @@
       "triggers": "Academic Writing;Visualization;Matplotlib;Seaborn;Plotting;Figures;Diagrams;NeurIPS;ICML;ICLR;LaTeX"
     },
     {
+      "description": "A hybrid memory system that provides persistent, searchable knowledge management for AI agents (Architecture, Patterns, Decisions).",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "agent-memory-mcp",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/agent-memory-mcp/SKILL.md",
+      "triggers": "agent;memory;mcp"
+    },
+    {
       "description": "I build AI systems that can act autonomously while remaining controllable. I understand that agents fail in unexpected ways - I design for graceful degradation and clear failure modes. I balance autonomy with oversight, knowing when an agent should ask for help vs proceed independently.",
       "phase": 6,
       "score": 100,
@@ -19,12 +27,12 @@
       "triggers": "ai;agents;architect"
     },
     {
-      "description": "Designs album concepts, tracklist architecture, and thematic planning through 7 structured phases. Use when planning a new album or reworking an existing album concept.",
+      "description": "AI and machine learning workflow covering LLM application development, RAG implementation, agent architecture, ML pipelines, and AI-powered features.",
       "phase": 2,
       "score": 100,
-      "skill_id": "album-conceptualizer",
-      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/album-conceptualizer/SKILL.md",
-      "triggers": "album;conceptualizer"
+      "skill_id": "ai-ml",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/ai-ml/SKILL.md",
+      "triggers": "ai;ml"
     },
     {
       "description": "REST API design patterns including resource naming, status codes, pagination, filtering, error responses, versioning, and rate limiting for production APIs.",
@@ -57,14 +65,6 @@
       "skill_id": "api-documenter",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/api-documenter/SKILL.md",
       "triggers": "api;documenter"
-    },
-    {
-      "description": "Builds production-ready REST API endpoints with validation, error handling, authentication, and documentation. Follows best practices for security and scalability.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "api-endpoint-builder",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/api-endpoint-builder/SKILL.md",
-      "triggers": "api;endpoint;builder"
     },
     {
       "description": "API design principles and decision-making. REST vs GraphQL vs tRPC selection, response formats, versioning, pagination.",
@@ -107,12 +107,36 @@
       "triggers": "architecture;patterns"
     },
     {
+      "description": "Orchestrates end-to-end autonomous AI research projects using a two-loop architecture. The inner loop runs rapid experiment iterations with clear optimization targets. The outer loop synthesizes results, identifies patterns, and steers research direction. Routes to domain-specific skills for execution, supports continuous agent operation via Claude Code /loop and OpenClaw heartbeat, and produces research presentations and papers. Use when starting a research project, running autonomous experiments, or managing a multi-hypothesis research effort.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "autoresearch",
+      "src_path": "lib/orchestra-research-ai-research-skills/0-autoresearch-skill/SKILL.md",
+      "triggers": "Autonomous Research;Two-Loop Architecture;Experiment Orchestration;Research Synthesis;Project Management"
+    },
+    {
+      "description": "AWS serverless and event-driven architecture expert based on Well-Architected Framework. Use when building serverless APIs, Lambda functions, REST APIs, microservices, or async workflows. Covers Lambda with TypeScript/Python, API Gateway (REST/HTTP), DynamoDB, Step Functions, EventBridge, SQS, SNS, and serverless patterns. Essential when user mentions serverless, Lambda, API Gateway, event-driven, async processing, queues, pub/sub, or wants to build scalable serverless applications with AWS best practices.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "aws-serverless-eda",
+      "src_path": "lib/zxkane-aws-skills/plugins/serverless-eda/skills/aws-serverless-eda/SKILL.md",
+      "triggers": "aws;serverless;eda"
+    },
+    {
       "description": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems.",
       "phase": 2,
       "score": 100,
       "skill_id": "backend-architect",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/backend-architect/SKILL.md",
       "triggers": "backend;architect"
+    },
+    {
+      "description": "Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "backend-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/backend-patterns/SKILL.md",
+      "triggers": "backend;patterns"
     },
     {
       "description": "This skill should be used when the user asks to \"model agent mental states\", \"implement BDI architecture\", \"create belief-desire-intention models\", \"transform RDF to beliefs\", \"build cognitive agent\", or mentions BDI ontology, mental state modeling, rational agency, or neuro-symbolic AI integration.",
@@ -169,14 +193,6 @@
       "skill_id": "data-engineering-data-pipeline",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/data-engineering-data-pipeline/SKILL.md",
       "triggers": "data;engineering;data;pipeline"
-    },
-    {
-      "description": "Search 78 public scientific, biomedical, materials science, and economic databases via their REST APIs and return structured JSON results. Covers physics/astronomy (NASA, NIST, SDSS, SIMBAD, Exoplanet Archive), earth/environment (USGS, NOAA, EPA, OpenWeatherMap), chemistry/drugs (PubChem, ChEMBL, DrugBank, FDA, KEGG, DailyMed, ZINC, BindingDB), materials science (Materials Project, COD), biology/genomics (Reactome, BRENDA, UniProt, STRING, Ensembl, NCBI Gene, GEO, GTEx, PDB, AlphaFold, InterPro, ChEBI, BioGRID, Gene Ontology, QuickGO, NCBI Protein/Taxonomy, dbSNP, SRA, ENA, gnomAD, UCSC Genome, ENCODE, JASPAR, MouseMine, PRIDE, LINCS L1000, Human Protein Atlas, Human Cell Atlas, RummaGEO, Metabolomics Workbench, EMDB, Addgene), disease/clinical (COSMIC, Open Targets, ClinPGx, ClinicalTrials.gov, OMIM, ClinVar, GDC/TCGA, cBioPortal, DisGeNET, GWAS Catalog, Monarch, HPO), regulatory (FDA, USPTO, SEC EDGAR), economics/finance (FRED, BEA, BLS, Federal Reserve, World Bank, ECB, US Treasury, Alpha Vantage, Data Commons), and demographics (US Census, Eurostat, WHO). Use this skill whenever the user wants to look up compounds, drugs, proteins, genes, pathways, enzymes, gene expression, variants, clinical trials, patents, SEC filings, economic indicators, crystal structures, astronomical objects, earthquakes, weather, or any data from a public database API. Also trigger when the user mentions any database by name or asks about molecular properties, drug-target interactions, binding affinities, protein interactions, pathway membership, pharmacogenomics, economic time series, materials properties, commercially available compounds, virtual screening, compound purchasability, chemical libraries, building blocks, cancer genomics, somatic mutations, tumor mutation profiles, nucleotide sequences, genome assemblies, sequencing reads, ENA accessions, INSDC data, or wants to cross-reference entities across sources.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "database-lookup",
-      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/database-lookup/SKILL.md",
-      "triggers": "database;lookup"
     },
     {
       "description": "Map relationships between bounded contexts and define integration contracts using DDD context mapping patterns.",
@@ -307,6 +323,14 @@
       "triggers": "Model Architecture;LitGPT;Lightning AI;LLM Implementation;LoRA;QLoRA;Fine-Tuning;Llama;Gemma;Phi;Mistral;Educational"
     },
     {
+      "description": "Master the LangChain framework for building sophisticated LLM applications with agents, chains, memory, and tool integration.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "langchain-architecture",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/langchain-architecture/SKILL.md",
+      "triggers": "langchain;architecture"
+    },
+    {
       "description": "Senior Laravel Engineer role for production-grade, maintainable, and idiomatic Laravel solutions. Focuses on clean architecture, security, performance, and modern standards (Laravel 10/11+).",
       "phase": 2,
       "score": 100,
@@ -363,14 +387,6 @@
       "triggers": "multi;platform;apps;multi;platform"
     },
     {
-      "description": "Multiplayer game development principles. Architecture, networking, synchronization.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "multiplayer",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/game-development/multiplayer/SKILL.md",
-      "triggers": "multiplayer"
-    },
-    {
       "description": "Validate n8n expression syntax and fix common errors. Use when writing n8n expressions, using {{}} syntax, accessing $json/$node variables, troubleshooting expression errors, or working with webhook data in workflows.",
       "phase": 2,
       "score": 100,
@@ -393,6 +409,14 @@
       "skill_id": "nerdzao-elite",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/nerdzao-elite/SKILL.md",
       "triggers": "nerdzao;elite"
+    },
+    {
+      "description": "You are an expert in Nest.js with deep knowledge of enterprise-grade Node.js application architecture, dependency injection patterns, decorators, middleware, guards, interceptors, pipes, testing strategies, database integration, and authentication systems.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "nestjs-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/nestjs-expert/SKILL.md",
+      "triggers": "nestjs;expert"
     },
     {
       "description": "Provides guidance for interpreting and manipulating neural network internals using nnsight with optional NDIF remote execution. Use when needing to run interpretability experiments on massive models (70B+) without local GPU resources, or when working with any PyTorch architecture.",
@@ -425,14 +449,6 @@
       "skill_id": "pakistan-payments-stack",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/pakistan-payments-stack/SKILL.md",
       "triggers": "saas;payments;pakistan;nextjs;b2b;pkr;reconciliation"
-    },
-    {
-      "description": "Search 10 academic paper databases via their REST APIs to find research papers, preprints, and scholarly articles. Covers biomedical literature (PubMed, PMC full text), preprint servers (bioRxiv, medRxiv, arXiv), multidisciplinary indexes (OpenAlex, Crossref, Semantic Scholar), open access aggregators (CORE, Unpaywall). Use this skill whenever the user wants to search for research papers, find citations, look up articles by DOI or PMID, retrieve abstracts or full text, check open access availability, find preprints, explore citation graphs, search by author or keyword, or access any scholarly literature database. Also trigger when the user mentions PubMed, PMC, bioRxiv, medRxiv, arXiv, OpenAlex, Crossref, Semantic Scholar, CORE, Unpaywall, or asks about paper metadata, citation counts, journal articles, manuscript lookups, literature reviews, or systematic searches. Even if the user just says \"find papers on X\" or \"what's been published about Y\" or \"look up this DOI\", this skill should activate.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "paper-lookup",
-      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/paper-lookup/SKILL.md",
-      "triggers": "paper;lookup"
     },
     {
       "description": "plugin architecture patterns",
@@ -499,6 +515,14 @@
       "triggers": "shopify;development"
     },
     {
+      "description": "Technical SEO - robots.txt, sitemap, meta tags, Core Web Vitals",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "site-architecture",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/site-architecture/SKILL.md",
+      "triggers": "site;architecture"
+    },
+    {
       "description": "Guide for quality focused software architecture. This skill should be used when users want to write code, design architecture, analyze code, in any case that relates to software development.",
       "phase": 6,
       "score": 100,
@@ -531,28 +555,12 @@
       "triggers": "ubiquitous;language"
     },
     {
-      "description": "Expert guidance on contributing to WendyOS: Yocto builds, agent internals, E2E testing, and system architecture. Use when developers mention: (1) building WendyOS images, (2) meta-wendyos layers or bitbake, (3) wendy-agent development or internals, (4) containerd or nerdctl on WendyOS, (5) E2E tests for wendy-agent, (6) Yocto recipes or bbappend files, (7) mDNS/Avahi service configuration, (8) device identity or UUID generation.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "wendy-contributing",
-      "src_path": "lib/joannis-claude-skills/wendy-contributing/SKILL.md",
-      "triggers": "wendy;contributing"
-    },
-    {
       "description": "WooCommerce REST API - products, orders, customers, webhooks",
       "phase": 2,
       "score": 100,
       "skill_id": "woocommerce",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/woocommerce/SKILL.md",
       "triggers": "woocommerce"
-    },
-    {
-      "description": "WordPress plugin development workflow covering plugin architecture, hooks, admin interfaces, REST API, security best practices, and WordPress 7.0 features: Real-Time Collaboration, AI Connectors, Abilities API, DataViews, and PHP-only blocks.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "wordpress-plugin-development",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/wordpress-plugin-development/SKILL.md",
-      "triggers": "wordpress;plugin;development"
     },
     {
       "description": "WordPress theme development workflow covering theme architecture, template hierarchy, custom post types, block editor support, responsive design, and WordPress 7.0 features: DataViews, Pattern Editing, Navigation Overlays, and admin refresh.",

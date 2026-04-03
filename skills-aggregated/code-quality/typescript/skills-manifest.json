@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251385,
   "hub": "code-quality",
   "skills": [
     {
@@ -89,6 +89,22 @@
       "skill_id": "frontend-mobile-development-component-scaffold",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/frontend-mobile-development-component-scaffold/SKILL.md",
       "triggers": "frontend;mobile;development;component;scaffold"
+    },
+    {
+      "description": "Guide for writing Netlify serverless functions. Use when creating API endpoints, background processing, scheduled tasks, or any server-side logic using Netlify Functions. Covers modern syntax (default export + Config), TypeScript, path routing, background functions, scheduled functions, streaming, and method routing.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "netlify-functions",
+      "src_path": "lib/netlify-context-and-tools/codex/skills/netlify-functions/SKILL.md",
+      "triggers": "netlify;functions"
+    },
+    {
+      "description": "Modern React patterns and principles. Hooks, composition, performance, TypeScript best practices.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "react-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/react-patterns/SKILL.md",
+      "triggers": "react;patterns"
     },
     {
       "description": "Setup TypeScript best practices and code style rules in CLAUDE.md",

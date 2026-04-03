@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251385,
   "hub": "frontend",
   "skills": [
     {
@@ -35,14 +35,6 @@
       "triggers": "click;path;audit"
     },
     {
-      "description": "Context is the complete state available to a language model at inference time. It includes everything the model can attend to when generating responses: system instructions, tool definitions, retrieved documents, message history, and tool outputs.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "context-fundamentals",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/context-fundamentals/SKILL.md",
-      "triggers": "context;fundamentals"
-    },
-    {
       "description": "Operate customer billing workflows such as subscriptions, refunds, churn triage, billing-portal recovery, and plan analysis using connected billing tools like Stripe. Use when the user needs to help a customer, inspect subscription state, or manage revenue-impacting billing operations.",
       "phase": 1,
       "score": 100,
@@ -67,14 +59,6 @@
       "triggers": "dispatching;parallel;agents"
     },
     {
-      "description": "Flutter development with Riverpod state management, Freezed, go_router, and mocktail testing",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "flutter",
-      "src_path": "lib/alinaqi-claude-bootstrap/skills/flutter/SKILL.md",
-      "triggers": "flutter"
-    },
-    {
       "description": "Reconcile the project's FPF state with recent repository changes",
       "phase": 1,
       "score": 100,
@@ -91,54 +75,6 @@
       "triggers": "fpf;status"
     },
     {
-      "description": "Build React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern frontend architecture.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "frontend-developer",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/frontend-developer/SKILL.md",
-      "triggers": "frontend;developer"
-    },
-    {
-      "description": "Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "frontend-patterns",
-      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/frontend-patterns/SKILL.md",
-      "triggers": "frontend;patterns"
-    },
-    {
-      "description": "Master Godot 4 GDScript patterns including signals, scenes, state machines, and optimization. Use when building Godot games, implementing game systems, or learning GDScript best practices.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "godot-gdscript-patterns",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/godot-gdscript-patterns/SKILL.md",
-      "triggers": "godot;gdscript;patterns"
-    },
-    {
-      "description": "Apple HIG guidance for selection and input controls including pickers, toggles, sliders, steppers, segmented controls, combo boxes, text fields, text views, labels, token fields, virtual keyboards, rating indicators, and gauges. Use this skill when the user says \"picker or segmented control,\" \"how should my form look,\" \"what keyboard type should I use,\" \"toggle vs checkbox,\" or asks about picker design, toggle, switch, slider, stepper, text field, text input, segmented control, combo box, label, token field, virtual keyboard, rating indicator, gauge, form design, input validation, or control state management. Cross-references: hig-components-menus, hig-components-dialogs, hig-components-search.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "hig-components-controls",
-      "src_path": "lib/raintree-technology-apple-hig-skills/skills/hig-components-controls/SKILL.md",
-      "triggers": "hig;components;controls"
-    },
-    {
-      "description": "Apple HIG guidance for status and progress UI components including progress indicators, status bars, and activity rings. Use this skill when asked about: \"progress indicator\", \"progress bar\", \"loading spinner\", \"status bar\", \"activity ring\", \"progress display\", determinate vs indeterminate progress, loading states, or fitness tracking rings. Also use when the user says \"how do I show loading state,\" \"should I use a spinner or progress bar,\" \"what goes in the status bar,\" or asks about activity indicators. Cross-references: hig-components-system for widgets and complications, hig-inputs for gesture-driven progress controls, hig-technologies for HealthKit and activity ring data integration.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "hig-components-status",
-      "src_path": "lib/raintree-technology-apple-hig-skills/skills/hig-components-status/SKILL.md",
-      "triggers": "hig;components;status"
-    },
-    {
-      "description": "Apple Human Interface Guidelines interaction and UX patterns. Use this skill when the user asks about \"onboarding flow\", \"user onboarding\", \"app launch\", \"loading state\", \"drag and drop\", \"search pattern\", \"settings design\", \"notifications\", \"modality\", \"multitasking\", \"feedback pattern\", \"haptics\", \"undo redo\", \"file management\", data entry, sharing, collaboration, full screen, audio, video, haptic feedback, ratings, printing, help, or account management in Apple apps. Also use when the user says \"how should onboarding work\", \"my app takes too long to load\", \"should I use a modal here\", \"how do I handle errors\", \"when should I ask for permissions\", \"how to show progress\", or \"what's the right way to confirm a delete\". Cross-references: hig-foundations for underlying principles, hig-platforms for platform specifics, hig-components-layout for navigation, hig-components-content for data display.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "hig-patterns",
-      "src_path": "lib/raintree-technology-apple-hig-skills/skills/hig-patterns/SKILL.md",
-      "triggers": "hig;patterns"
-    },
-    {
       "description": "You are an expert in building production-grade AI agents with LangGraph. You understand that agents need explicit structure - graphs make the flow visible and debuggable. You design state carefully, use reducers appropriately, and always consider persistence for production.",
       "phase": 1,
       "score": 100,
@@ -153,14 +89,6 @@
       "skill_id": "market-pulse",
       "src_path": "lib/eronred-aso-skills/skills/market-pulse/SKILL.md",
       "triggers": "market;pulse"
-    },
-    {
-      "description": "Analyzes album state and recommends the optimal next action. Use when the user asks \"what should I do next?\" or \"what's left to do?\"",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "next-step",
-      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/next-step/SKILL.md",
-      "triggers": "next;step"
     },
     {
       "description": "Build production-ready ReactFlow applications with hierarchical navigation, performance optimization, and advanced state management.",
@@ -211,36 +139,12 @@
       "triggers": "Sentence Transformers;Embeddings;Semantic Similarity;RAG;Multilingual;Multimodal;Pre-Trained Models;Clustering;Semantic Search;Production"
     },
     {
-      "description": "Runs the session startup procedure - verifies setup, loads config and state, checks skill models, and reports project status. Use at the beginning of a fresh session.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "session-start",
-      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/session-start/SKILL.md",
-      "triggers": "session;start"
-    },
-    {
       "description": "State-of-the-art text-to-image generation with Stable Diffusion models via HuggingFace Diffusers. Use when generating images from text prompts, performing image-to-image translation, inpainting, or building custom diffusion pipelines.",
       "phase": 1,
       "score": 100,
       "skill_id": "stable-diffusion-image-generation",
       "src_path": "lib/orchestra-research-ai-research-skills/18-multimodal/stable-diffusion/SKILL.md",
       "triggers": "Image Generation;Stable Diffusion;Diffusers;Text-to-Image;Multimodal;Computer Vision"
-    },
-    {
-      "description": "Review, refactor, or build SwiftUI features with correct state management, modern API usage, optimal view composition, navigation patterns, performance optimization, and testing best practices.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "swift-patterns",
-      "src_path": "lib/efremidze-swift-patterns-skill/swift-patterns/SKILL.md",
-      "triggers": "swift;patterns"
-    },
-    {
-      "description": "Write, review, or improve SwiftUI code following best practices for state management, view composition, performance, macOS-specific APIs, and iOS 26+ Liquid Glass adoption. Use when building new SwiftUI features, refactoring existing views, reviewing code quality, or adopting modern SwiftUI patterns.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "swiftui-expert-skill",
-      "src_path": "lib/avdlee-swiftui-agent-skill/swiftui-expert-skill/SKILL.md",
-      "triggers": "swiftui;expert;skill"
     },
     {
       "description": "Apply proven SwiftUI UI patterns for navigation, sheets, async state, and reusable screens.",
@@ -257,14 +161,6 @@
       "skill_id": "team-coordination",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/team-coordination/SKILL.md",
       "triggers": "team;coordination"
-    },
-    {
-      "description": "Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise infrastructure patterns.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "terraform-specialist",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/terraform-specialist/SKILL.md",
-      "triggers": "terraform;specialist"
     }
   ],
   "sub_hub": "state-management",

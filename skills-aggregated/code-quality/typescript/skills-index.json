@@ -1,5 +1,5 @@
 {
-  "count": 17,
+  "count": 19,
   "hub": "code-quality",
   "skills": [
     "dbos-typescript",
@@ -13,6 +13,8 @@
     "fp-ts-pragmatic",
     "fp-types-ref",
     "frontend-mobile-development-component-scaffold",
+    "netlify-functions",
+    "react-patterns",
     "tech-stack:add-typescript-best-practices",
     "trigger-dev",
     "typescript",

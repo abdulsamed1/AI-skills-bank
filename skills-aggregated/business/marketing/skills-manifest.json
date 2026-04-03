@@ -1,22 +1,14 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251384,
   "hub": "business",
   "skills": [
     {
-      "description": "SEO and AEO best practices for metadata, Open Graph, sitemaps, robots.txt, hreflang, JSON-LD structured data, EEAT, and content optimized for search engines and AI answer surfaces. Use this skill when implementing page SEO, technical SEO, schema markup, international SEO, AI-overview readiness, or improving content for Google, ChatGPT, Perplexity, and similar assistants.",
+      "description": "AI Engine Optimization - semantic triples, page templates, content clusters for AI citations",
       "phase": 4,
       "score": 100,
-      "skill_id": "seo-aeo-best-practices",
-      "src_path": "lib/sanity-io-agent-toolkit/skills/seo-aeo-best-practices/SKILL.md",
-      "triggers": "seo;aeo"
-    },
-    {
-      "description": "Optimize content for AI Overviews (formerly SGE), ChatGPT web search, Perplexity, and other AI-powered search experiences. Generative Engine Optimization (GEO) analysis including brand mention signals, AI crawler accessibility, llms.txt compliance, passage-level citability scoring, and platform-specific optimization. Use when user says \"AI Overviews\", \"SGE\", \"GEO\", \"AI search\", \"LLM optimization\", \"Perplexity\", \"AI citations\", \"ChatGPT search\", or \"AI visibility\".",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "seo-geo",
-      "src_path": "lib/agricidaniel-claude-seo/skills/seo-geo/SKILL.md",
-      "triggers": "seo;geo"
+      "skill_id": "aeo-optimization",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/aeo-optimization/SKILL.md",
+      "triggers": "aeo;optimization"
     },
     {
       "description": "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,' 'GEO,' 'LLMO,' 'answer engine optimization,' 'generative engine optimization,' 'LLM optimization,' 'AI Overviews,' 'optimize for ChatGPT,' 'optimize for Perplexity,' 'AI citations,' 'AI visibility,' 'zero-click search,' 'how do I show up in AI answers,' 'LLM mentions,' or 'optimize for Claude/Gemini.' Use this whenever someone wants their content to be cited or surfaced by AI assistants and AI search engines. For traditional technical and on-page SEO audits, see seo-audit. For structured data implementation, see schema-markup.",
@@ -33,22 +25,6 @@
       "skill_id": "brand-copywriter",
       "src_path": "lib/ognjengt-founder-skills/skills/brand-copywriter/SKILL.md",
       "triggers": "brand;copywriter"
-    },
-    {
-      "description": "Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with AI-generated visuals. Actions: design, create, generate banner. Platforms: Facebook, Twitter/X, LinkedIn, YouTube, Instagram, Google Display, website hero, print. Styles: minimalist, gradient, bold typography, photo-based, illustrated, geometric, retro, glassmorphism, 3D, neon, duotone, editorial, collage. Uses ui-ux-pro-max, frontend-design, ai-artist, ai-multimodal skills.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "ckm:banner-design",
-      "src_path": "lib/nextlevelbuilder-ui-ux-pro-max-skill/.claude/skills/banner-design/SKILL.md",
-      "triggers": "ckm;banner;design"
-    },
-    {
-      "description": "Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand compliance, style guides.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "ckm:brand",
-      "src_path": "lib/nextlevelbuilder-ui-ux-pro-max-skill/.claude/skills/brand/SKILL.md",
-      "triggers": "ckm;brand"
     },
     {
       "description": "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement. Also use when the user mentions 'alternative page,' 'vs page,' 'competitor comparison,' 'comparison page,' '[Product] vs [Product],' '[Product] alternative,' 'competitive landing pages,' 'how do we compare to X,' 'battle card,' or 'competitor teardown.' Use this for any content that positions your product against competitors. Covers four formats: singular alternative, plural alternatives, you vs competitor, and competitor vs competitor. For sales-specific competitor docs, see sales-enablement.",
@@ -99,28 +75,12 @@
       "triggers": "copy;editing"
     },
     {
-      "description": "When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions \"customer research,\" \"ICP research,\" \"talk to customers,\" \"analyze transcripts,\" \"customer interviews,\" \"survey analysis,\" \"support ticket analysis,\" \"voice of customer,\" \"VOC,\" \"build personas,\" \"customer personas,\" \"jobs to be done,\" \"JTBD,\" \"what do customers say,\" \"what are customers struggling with,\" \"Reddit mining,\" \"G2 reviews,\" \"review mining,\" \"digital watering holes,\" \"community research,\" \"forum research,\" \"competitor reviews,\" \"customer sentiment,\" or \"find out why customers churn/convert/buy.\" Use for both analyzing existing research assets AND gathering new research from online sources. For writing copy informed by research, see copywriting. For acting on research to improve pages, see page-cro.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "customer-research",
-      "src_path": "lib/coreyhaines31-marketingskills/skills/customer-research/SKILL.md",
-      "triggers": "customer;research"
-    },
-    {
       "description": "Download videos from social media URLs (X/Twitter, YouTube, Instagram, TikTok, etc.) using yt-dlp. Use when saving a video locally, extracting content for transcription, or archiving video references.",
       "phase": 4,
       "score": 100,
       "skill_id": "download-video",
       "src_path": "lib/rameerez-claude-code-startup-skills/skills/download-video/SKILL.md",
       "triggers": "download;video"
-    },
-    {
-      "description": "Comprehensive, data-backed email marketing knowledge base. 908 sources, 4,798 insights. Use when reviewing email setups, building automation flows, diagnosing deliverability, writing email copy, selecting platforms, or pulling benchmarks. Covers strategy, flows, deliverability, copywriting, segmentation, compliance, cold email, and 19 industry playbooks.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "email-marketing-bible",
-      "src_path": "lib/cosmoblk-email-marketing-bible/SKILL.md",
-      "triggers": "email;marketing;bible"
     },
     {
       "description": "Extracts up to 50 highly relevant SEO keywords from text. Use when user wants to generate or extract keywords for given text.",
@@ -131,6 +91,14 @@
       "triggers": "keyword;extractor"
     },
     {
+      "description": "When the user wants to discover, evaluate, or prioritize App Store keywords. Also use when the user mentions \"keyword research\", \"find keywords\", \"search volume\", \"keyword difficulty\", \"keyword ideas\", or \"what keywords should I target\". For implementing keywords into metadata, see metadata-optimization. For auditing current keyword performance, see aso-audit.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "keyword-research",
+      "src_path": "lib/eronred-aso-skills/skills/keyword-research/SKILL.md",
+      "triggers": "keyword;research"
+    },
+    {
       "description": "Creates viral lead magnet posts that drive comments and DMs. Produces 2 versions - a quick punchy format and a detailed format with bullet points. Use when user needs social media posts to give away a lead magnet in exchange for engagement.",
       "phase": 4,
       "score": 100,
@@ -139,12 +107,12 @@
       "triggers": "lead;magnet;generator"
     },
     {
-      "description": "When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions \"lead magnet,\" \"gated content,\" \"content upgrade,\" \"downloadable,\" \"ebook,\" \"cheat sheet,\" \"checklist,\" \"template download,\" \"opt-in,\" \"freebie,\" \"PDF download,\" \"resource library,\" \"content offer,\" \"email capture content,\" \"Notion template,\" \"spreadsheet template,\" or \"what should I give away for emails.\" Use this for planning what to create and how to distribute it. For interactive tools as lead magnets, see free-tool-strategy. For writing the actual content, see copywriting. For the email sequence after capture, see email-sequence.",
+      "description": "When the user wants to localize their App Store listing for international markets. Also use when the user mentions \"localization\", \"translate my app\", \"international markets\", \"expand to new countries\", \"localize metadata\", or \"which countries should I target\". For keyword research in specific markets, see keyword-research. For metadata writing, see metadata-optimization.",
       "phase": 4,
       "score": 100,
-      "skill_id": "lead-magnets",
-      "src_path": "lib/coreyhaines31-marketingskills/skills/lead-magnets/SKILL.md",
-      "triggers": "lead;magnets"
+      "skill_id": "localization",
+      "src_path": "lib/eronred-aso-skills/skills/localization/SKILL.md",
+      "triggers": "localization"
     },
     {
       "description": "Expert guide for Odoo eCommerce and Website: product catalog, payment providers, shipping methods, SEO, and order-to-fulfillment workflow.",
@@ -171,28 +139,12 @@
       "triggers": "programmatic;seo"
     },
     {
-      "description": "Generates 15-second vertical promo videos for social media from mastered audio. Use after mastering is complete and before release, when the user wants social media content.",
+      "description": "When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales deck,' 'pitch deck,' 'one-pager,' 'leave-behind,' 'objection handling,' 'deal-specific ROI analysis,' 'demo script,' 'talk track,' 'sales playbook,' 'proposal template,' 'buyer persona card,' 'help my sales team,' 'sales materials,' or 'what should I give my sales reps.' Use this for any document or asset that helps a sales team close deals. For competitor comparison pages and battle cards, see competitor-alternatives. For marketing website copy, see copywriting. For cold outreach emails, see cold-email.",
       "phase": 4,
       "score": 100,
-      "skill_id": "promo-director",
-      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/promo-director/SKILL.md",
-      "triggers": "promo;director"
-    },
-    {
-      "description": "Reviews and iterates on social media copy in album promo/ files. Use after populating promo templates and before release to polish platform-specific posts.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "promo-reviewer",
-      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/promo-reviewer/SKILL.md",
-      "triggers": "promo;reviewer"
-    },
-    {
-      "description": "Generates platform-specific social media copy from album themes, track concepts, and lyrics. Use when promo/ templates need to be populated before release.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "promo-writer",
-      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/promo-writer/SKILL.md",
-      "triggers": "promo;writer"
+      "skill_id": "sales-enablement",
+      "src_path": "lib/coreyhaines31-marketingskills/skills/sales-enablement/SKILL.md",
+      "triggers": "sales;enablement"
     },
     {
       "description": "When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions \"schema markup,\" \"structured data,\" \"JSON-LD,\" \"rich snippets,\" \"schema.org,\" \"FAQ schema,\" \"product schema,\" \"review schema,\" \"breadcrumb schema,\" \"Google rich results,\" \"knowledge panel,\" \"star ratings in search,\" or \"add structured data.\" Use this whenever someone wants their pages to show enhanced results in Google. For broader SEO issues, see seo-audit. For AI search optimization, see ai-seo.",
@@ -219,12 +171,12 @@
       "triggers": "seo"
     },
     {
-      "description": "Full website SEO audit with parallel subagent delegation. Crawls up to 500 pages, detects business type, delegates to 10 specialists (7 core + 3 conditional), generates health score. Use when user says audit, full SEO check, analyze my site, or website health check.",
+      "description": "SEO and AEO best practices for metadata, Open Graph, sitemaps, robots.txt, hreflang, JSON-LD structured data, EEAT, and content optimized for search engines and AI answer surfaces. Use this skill when implementing page SEO, technical SEO, schema markup, international SEO, AI-overview readiness, or improving content for Google, ChatGPT, Perplexity, and similar assistants.",
       "phase": 4,
       "score": 100,
-      "skill_id": "seo-audit",
-      "src_path": "lib/agricidaniel-claude-seo/skills/seo-audit/SKILL.md",
-      "triggers": "seo;audit"
+      "skill_id": "seo-aeo-best-practices",
+      "src_path": "lib/sanity-io-agent-toolkit/skills/seo-aeo-best-practices/SKILL.md",
+      "triggers": "seo;aeo;best;practices"
     },
     {
       "description": "Analyzes content for E-E-A-T signals and suggests improvements to build authority and trust. Identifies missing credibility elements. Use PROACTIVELY for YMYL topics.",
@@ -331,6 +283,14 @@
       "triggers": "seo;fundamentals"
     },
     {
+      "description": "Optimize content for AI Overviews (formerly SGE), ChatGPT web search, Perplexity, and other AI-powered search experiences. Generative Engine Optimization (GEO) analysis including brand mention signals, AI crawler accessibility, llms.txt compliance, passage-level citability scoring, and platform-specific optimization. Use when user says \"AI Overviews\", \"SGE\", \"GEO\", \"AI search\", \"LLM optimization\", \"Perplexity\", \"AI citations\", \"ChatGPT search\", or \"AI visibility\".",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "seo-geo",
+      "src_path": "lib/agricidaniel-claude-seo/skills/seo-geo/SKILL.md",
+      "triggers": "seo;geo"
+    },
+    {
       "description": "Hreflang and international SEO audit, validation, and generation. Detects common mistakes, validates language/region codes, and generates correct hreflang implementations. Use when user says \"hreflang\", \"i18n SEO\", \"international SEO\", \"multi-language\", \"multi-region\", or \"language tags\".",
       "phase": 4,
       "score": 100,
@@ -361,14 +321,6 @@
       "skill_id": "seo-keyword-strategist",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/seo-keyword-strategist/SKILL.md",
       "triggers": "seo;keyword;strategist"
-    },
-    {
-      "description": "Local SEO analysis covering Google Business Profile optimization, NAP consistency, citation health, review signals, local schema markup, location page quality, multi-location SEO, and industry-specific recommendations. Detects business type (brick-and-mortar, SAB, hybrid) and industry vertical (restaurant, healthcare, legal, home services, real estate, automotive). Use when user says \"local SEO\", \"Google Business Profile\", \"GBP\", \"map pack\", \"local pack\", \"citations\", \"NAP consistency\", \"local rankings\", \"service area\", \"multi-location\", or \"local search\".",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "seo-local",
-      "src_path": "lib/agricidaniel-claude-seo/skills/seo-local/SKILL.md",
-      "triggers": "seo;local"
     },
     {
       "description": "Creates optimized meta titles, descriptions, and URL suggestions based on character limits and best practices. Generates compelling, keyword-rich metadata. Use PROACTIVELY for new content.",
@@ -443,20 +395,20 @@
       "triggers": "seo;technical"
     },
     {
-      "description": "Technical SEO - robots.txt, sitemap, meta tags, Core Web Vitals",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "site-architecture",
-      "src_path": "lib/alinaqi-claude-bootstrap/skills/site-architecture/SKILL.md",
-      "triggers": "site;architecture"
-    },
-    {
       "description": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use when the user mentions 'LinkedIn post,' 'Twitter thread,' 'social media,' 'content calendar,' 'social scheduling,' 'engagement,' 'viral content,' 'what should I post,' 'repurpose this content,' 'tweet ideas,' 'LinkedIn carousel,' 'social media strategy,' or 'grow my following.' Use this for any social media content creation, repurposing, or scheduling task. For broader content strategy, see content-strategy.",
       "phase": 4,
       "score": 100,
       "skill_id": "social-content",
       "src_path": "lib/coreyhaines31-marketingskills/skills/social-content/SKILL.md",
       "triggers": "social;content"
+    },
+    {
+      "description": "When the user wants to plan or optimize paid user acquisition campaigns. Also use when the user mentions \"Apple Search Ads\", \"user acquisition\", \"paid ads\", \"UA\", \"ad campaign\", \"install campaign\", \"Facebook ads for apps\", \"TikTok ads\", or \"cost per install\". For organic growth, see aso-audit. For launch-specific UA, see app-launch.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "ua-campaign",
+      "src_path": "lib/eronred-aso-skills/skills/ua-campaign/SKILL.md",
+      "triggers": "ua;campaign"
     },
     {
       "description": "Creates viral social media hooks using proven psychological patterns and trigger words. Use when user needs attention-grabbing openings for posts, threads, videos, or content.",

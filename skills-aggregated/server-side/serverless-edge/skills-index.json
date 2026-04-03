@@ -1,17 +1,14 @@
 {
-  "count": 12,
+  "count": 9,
   "hub": "server-side",
   "skills": [
     "amazon-alexa",
     "aws-aurora",
     "aws-serverless",
-    "cloud-uploader",
     "cloudflare-d1",
     "cloudflare-workers-expert",
     "latchbio-integration",
     "netlify-config",
-    "netlify-edge-functions",
-    "netlify-functions",
     "supabase",
     "wendy-swift"
   ],

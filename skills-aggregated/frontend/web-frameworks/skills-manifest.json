@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251385,
   "hub": "frontend",
   "skills": [
     {
@@ -19,28 +19,20 @@
       "triggers": "customaize;agent;thought;based;reasoning"
     },
     {
-      "description": "Practical patterns for using fp-ts with React - hooks, state, forms, data fetching. Use when building React apps with functional programming patterns. Works with React 18/19, Next.js 14/15.",
+      "description": "Framework for building LLM-powered applications with agents, chains, and RAG. Supports multiple providers (OpenAI, Anthropic, Google), 500+ integrations, ReAct agents, tool calling, memory management, and vector store retrieval. Use for building chatbots, question-answering systems, autonomous agents, or RAG applications. Best for rapid prototyping and production deployments.",
       "phase": 1,
       "score": 100,
-      "skill_id": "fp-ts-react",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/fp-ts-react/SKILL.md",
-      "triggers": "fp;ts;react"
+      "skill_id": "langchain",
+      "src_path": "lib/orchestra-research-ai-research-skills/14-agents/langchain/SKILL.md",
+      "triggers": "Agents;LangChain;RAG;Tool Calling;ReAct;Memory Management;Vector Stores;LLM Applications;Chatbots;Production"
     },
     {
-      "description": "Guide for deploying web frameworks on Netlify. Use when setting up a framework project (Vite/React, Astro, TanStack Start, Next.js, Nuxt, SvelteKit, Remix) for Netlify deployment, configuring adapters or plugins, or troubleshooting framework-specific Netlify integration. Covers what Netlify needs from each framework and how adapters handle server-side rendering.",
+      "description": "Develop React Native, Flutter, or native mobile apps with modern architecture patterns. Masters cross-platform development, native integrations, offline sync, and app store optimization.",
       "phase": 1,
       "score": 100,
-      "skill_id": "netlify-frameworks",
-      "src_path": "lib/netlify-context-and-tools/codex/skills/netlify-frameworks/SKILL.md",
-      "triggers": "netlify;frameworks"
-    },
-    {
-      "description": "Comprehensive patterns for Next.js 14+ App Router architecture, Server Components, and modern full-stack React development.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "nextjs-app-router-patterns",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/nextjs-app-router-patterns/SKILL.md",
-      "triggers": "nextjs;app;router;patterns"
+      "skill_id": "mobile-developer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/mobile-developer/SKILL.md",
+      "triggers": "mobile;developer"
     },
     {
       "description": "Diagnose slow React components and suggest targeted performance fixes.",
@@ -59,12 +51,12 @@
       "triggers": "react;modernization"
     },
     {
-      "description": "Modern React patterns and principles. Hooks, composition, performance, TypeScript best practices.",
+      "description": "React Native mobile patterns, platform-specific code",
       "phase": 1,
       "score": 100,
-      "skill_id": "react-patterns",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/react-patterns/SKILL.md",
-      "triggers": "react;patterns"
+      "skill_id": "react-native",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/react-native/SKILL.md",
+      "triggers": "react;native"
     },
     {
       "description": "React web development with hooks, React Query, Zustand",
@@ -89,30 +81,6 @@
       "skill_id": "remotion-best-practices",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/remotion-best-practices/SKILL.md",
       "triggers": "remotion, video, react, animation, composition"
-    },
-    {
-      "description": "Sanity development best practices for schema design, GROQ queries, TypeGen, Visual Editing, images, Portable Text, Studio structure, localization, migrations, and framework integrations such as Next.js, Nuxt, Astro, Remix, SvelteKit, Angular, Hydrogen, and the App SDK. Use this skill whenever working with Sanity schemas, defineType or defineField, GROQ or defineQuery, content modeling, Presentation or preview setups, Sanity-powered frontend integrations, or when reviewing and fixing a Sanity codebase.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "sanity-best-practices",
-      "src_path": "lib/sanity-io-agent-toolkit/skills/sanity-best-practices/SKILL.md",
-      "triggers": "sanity;best;practices"
-    },
-    {
-      "description": "UI/UX design intelligence for web and mobile. Includes 50+ styles, 161 color palettes, 57 font pairings, 161 product types, 99 UX guidelines, and 25 chart types across 10 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, Tailwind, shadcn/ui, and HTML/CSS). Actions: plan, build, create, design, implement, review, fix, improve, optimize, enhance, refactor, and check UI/UX code. Projects: website, landing page, dashboard, admin panel, e-commerce, SaaS, portfolio, blog, and mobile app. Elements: button, modal, navbar, sidebar, card, table, form, and chart. Styles: glassmorphism, claymorphism, minimalism, brutalism, neumorphism, bento grid, dark mode, responsive, skeuomorphism, and flat design. Topics: color systems, accessibility, animation, layout, typography, font pairing, spacing, interaction states, shadow, and gradient. Integrations: shadcn/ui MCP for component search and examples.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "ui-ux-pro-max",
-      "src_path": "lib/nextlevelbuilder-ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max/SKILL.md",
-      "triggers": "ui;ux;pro;max"
-    },
-    {
-      "description": "Expert in the Vercel AI SDK. Covers Core API (generateText, streamText), UI hooks (useChat, useCompletion), tool calling, and streaming UI components with React and Next.js.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "vercel-ai-sdk-expert",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/vercel-ai-sdk-expert/SKILL.md",
-      "triggers": "vercel;ai;sdk;expert"
     }
   ],
   "sub_hub": "web-frameworks",

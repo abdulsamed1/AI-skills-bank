@@ -243,7 +243,71 @@ The aggregation pipeline processes 8000+ `SKILL.md` files through a multi-stage 
 `code-quality` · `frontend` · `backend` · `testing` · `ai` · `business` · `marketing` · `mobile` · `design` · `systems` · `data` · `security`
 
 ---
+## 🔍 Classification Improvements (v2.0+)
 
+The keyword-based classification system includes three critical enhancements to eliminate false negatives and resolve sub-hub conflicts:
+
+### 1. Repository Name Extraction (Substring Matching)
+
+**Problem:** Repository names like `mukul975-anthropic-cybersecurity-skills` were not being matched because the system used exact token matching (e.g., only matching the token `"security"`, not the full repo name).
+
+**Solution:** Introduced `infer_hub_from_repo_name()` function that:
+- Extracts the repository directory name from the path (the segment right after `lib/` or `src/`)
+- Uses **substring matching** to catch domain signals (e.g., `"cybersecurity-skills"` → matches `"security"`)
+- Runs **before** other inference logic (highest priority)
+- Supports domain keywords:
+  - **Security:** `security`, `cybersecurity`, `pentest`, `vulnerability`, `vibesec`, `bluebook`
+  - **AI:** `prompt`, `agent-skill`, `llm`, `ai-skills`
+  - **Mobile (iOS):** `swiftui`, `ios-`, `-ios`, `swift-patterns`, `apple-hig`, `app-store`
+  - **Mobile (Android):** `android`, `kotlin`
+  - **Frontend/UI:** `ui-ux`, `ui-skills`
+  - **Testing/QA:** `playwright`, `testdino`
+
+**Confidence Score:** 98% (near-deterministic, reflects author intent)
+
+### 2. Sub-Hub Conflict Resolution
+
+**Problem:** When a skill matched multiple sub-hubs (e.g., `python` AND `security` simultaneously), language hubs often won due to their anchor keywords, defeating domain-specialist classification.
+
+**Solution:** Introduced conflict resolution table (`CONFLICT_RESOLUTION`) that:
+- Defines precedence rules when multiple sub-hubs match: `(losing_hub, losing_sub_hub, winning_hub, winning_sub_hub)`
+- Ensures domain specialists always win over languages:
+  - `security` > `python` | `javascript` | `typescript` | `rust` | `golang` | `java`
+  - `testing-qa` > `python` | `javascript` | `typescript` | `rust`
+  - `code-review` > `python` | `javascript`
+- Applied in `resolve_conflict()` function when multiple candidates score within 5 points of the top score
+- Fallback: hub priority ordering if no explicit rule applies
+
+### 3. Confidence Boost for Path-Based Inference
+
+**Problem:** Repository name signals (inferred from path) were scored 95%, allowing lower-confidence LLM results (80%) to potentially override them.
+
+**Solution:** Raised the confidence score for path-based inference from 95 → **98%**
+- Score 98 is now treated as near-deterministic (same tier as explicit `canonicalize_assignment` logic at 100)
+- Only scores ≥ 100 can override it
+- Prevents low-confidence LLM results from contradicting repository metadata
+
+---
+
+## 📊 Example Classification Flow
+
+For a skill in `lib/mukul975-anthropic-cybersecurity-skills/`:
+
+```
+1. apply_rules() called
+   ↓
+2. canonicalize_assignment() → no match (0% confidence)
+   ↓
+3. infer_from_path() called
+   ├─ infer_hub_from_repo_name() extracts "mukul975-anthropic-cybersecurity-skills"
+   ├─ Finds substring match: "cybersecurity"
+   └─ Returns ("code-quality", "security") with 98% confidence
+   ↓
+4. ✓ Final assignment: code-quality / security
+   ✗ LLM classification skipped (98% > 80% threshold)
+```
+
+---
 ## � License
 
 MIT — See [LICENSE](./LICENSE) or [cli/package.json](./cli/package.json)

@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251385,
   "hub": "server-side",
   "skills": [
     {
@@ -17,22 +17,6 @@
       "skill_id": "c4-container",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/c4-container/SKILL.md",
       "triggers": "c4;container"
-    },
-    {
-      "description": "Cloud infrastructure and DevOps workflow covering AWS, Azure, GCP, Kubernetes, Terraform, CI/CD, monitoring, and cloud-native development.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "cloud-devops",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/cloud-devops/SKILL.md",
-      "triggers": "cloud;devops"
-    },
-    {
-      "description": "Deployment workflows, CI/CD pipeline patterns, Docker containerization, health checks, rollback strategies, and production readiness checklists for web applications. Use when setting up deployment infrastructure or planning releases.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "deployment-patterns",
-      "src_path": "lib/affaan-m-everything-claude-code/.kiro/skills/deployment-patterns/SKILL.md",
-      "triggers": "deployment;patterns"
     },
     {
       "description": "You are an advanced Docker containerization expert with comprehensive, practical knowledge of container optimization, security hardening, multi-stage builds, orchestration patterns, and production deployment strategies based on current industry best practices.",

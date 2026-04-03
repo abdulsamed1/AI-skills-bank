@@ -351,6 +351,7 @@ fn load_existing_assignments(output_dir: &Path) -> Result<ExistingAssignments, S
     Ok(out)
 }
 
+#[allow(dead_code)]
 fn apply_existing_assignments(
     repo_root: &Path,
     existing: &ExistingAssignments,
@@ -381,6 +382,7 @@ fn apply_existing_assignments(
         }
     }
 }
+
 
 #[derive(Debug, Deserialize)]
 struct ManualOverrideRow {

@@ -1,15 +1,7 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251384,
   "hub": "code-quality",
   "skills": [
-    {
-      "description": "Comprehensive Python library for astronomy and astrophysics. This skill should be used when working with astronomical data including celestial coordinates, physical units, FITS files, cosmological calculations, time systems, tables, world coordinate systems (WCS), and astronomical data analysis. Use when tasks involve coordinate transformations, unit conversions, FITS file manipulation, cosmological distance calculations, time scale conversions, or astronomical data processing.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "astropy",
-      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/astropy/SKILL.md",
-      "triggers": "astropy"
-    },
     {
       "description": "Comprehensive guidance for implementing asynchronous Python applications using asyncio, concurrent programming patterns, and async/await for building high-performance, non-blocking systems.",
       "phase": 1,
@@ -105,14 +97,6 @@
       "skill_id": "matlab",
       "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/matlab/SKILL.md",
       "triggers": "matlab"
-    },
-    {
-      "description": "Cloud computing platform for running Python on GPUs and serverless infrastructure. Use when deploying AI/ML models, running GPU-accelerated workloads, serving web endpoints, scheduling batch jobs, or scaling Python code to the cloud. Use this skill whenever the user mentions Modal, serverless GPU compute, deploying ML models to the cloud, serving inference endpoints, running batch processing in the cloud, or needs to scale Python workloads beyond their local machine. Also use when the user wants to run code on H100s, A100s, or other cloud GPUs, or needs to create a web API for a model.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "modal",
-      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/modal/SKILL.md",
-      "triggers": "modal"
     },
     {
       "description": "Write Python code in n8n Code nodes. Use when writing Python in n8n, using _input/_json/_node syntax, working with standard library, or need to understand Python limitations in n8n Code nodes.",
@@ -243,14 +227,6 @@
       "triggers": "pyzotero"
     },
     {
-      "description": "Cloud-based quantum chemistry platform with Python API. Preferred for computational chemistry workflows including pKa prediction, geometry optimization, conformer searching, molecular property calculations, protein-ligand docking (AutoDock Vina), and AI protein cofolding (Chai-1, Boltz-1/2). Use when tasks involve quantum chemistry calculations, molecular property prediction, DFT or semiempirical methods, neural network potentials (AIMNet2), protein-ligand binding predictions, or automated computational chemistry pipelines. Provides cloud compute resources with no local setup required.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "rowan",
-      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/rowan/SKILL.md",
-      "triggers": "rowan"
-    },
-    {
       "description": "Machine learning in Python with scikit-learn. Use when working with supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), model evaluation, hyperparameter tuning, preprocessing, or building ML pipelines. Provides comprehensive reference documentation for algorithms, preprocessing techniques, pipelines, and best practices.",
       "phase": 1,
       "score": 100,
@@ -267,14 +243,6 @@
       "triggers": "scikit;survival"
     },
     {
-      "description": "Detects your Python environment and guides you through installing plugin dependencies. Use on first-time setup or when MCP server fails to start.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "setup",
-      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/setup/SKILL.md",
-      "triggers": "setup"
-    },
-    {
       "description": "Process-based discrete-event simulation framework in Python. Use this skill when building simulations of systems with processes, queues, resources, and time-based events such as manufacturing systems, service operations, network traffic, logistics, or any system where entities interact with shared resources over time.",
       "phase": 1,
       "score": 100,
@@ -283,36 +251,12 @@
       "triggers": "simpy"
     },
     {
-      "description": "Statistical models library for Python. Use when you need specific model classes (OLS, GLM, mixed models, ARIMA) with detailed diagnostics, residuals, and inference. Best for econometrics, time series, rigorous inference with coefficient tables. For guided statistical test selection with APA reporting use statistical-analysis.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "statsmodels",
-      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/statsmodels/SKILL.md",
-      "triggers": "statsmodels"
-    },
-    {
       "description": "FastAPI with Supabase and SQLAlchemy/SQLModel",
       "phase": 1,
       "score": 100,
       "skill_id": "supabase-python",
       "src_path": "lib/alinaqi-claude-bootstrap/skills/supabase-python/SKILL.md",
       "triggers": "supabase;python"
-    },
-    {
-      "description": "Use this skill when working with symbolic mathematics in Python. This skill should be used for symbolic computation tasks including solving equations algebraically, performing calculus operations (derivatives, integrals, limits), manipulating algebraic expressions, working with matrices symbolically, physics calculations, number theory problems, geometry computations, and generating executable code from mathematical expressions. Apply this skill when the user needs exact symbolic results rather than numerical approximations, or when working with mathematical formulas that contain variables and parameters.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "sympy",
-      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/sympy/SKILL.md",
-      "triggers": "sympy"
-    },
-    {
-      "description": "Master Temporal workflow orchestration with Python SDK. Implements durable workflows, saga patterns, and distributed transactions. Covers async/await, testing strategies, and production deployment.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "temporal-python-pro",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/temporal-python-pro/SKILL.md",
-      "triggers": "temporal;python;pro"
     },
     {
       "description": "Direct REST API access to UniProt. Protein searches, FASTA retrieval, ID mapping, Swiss-Prot/TrEMBL. For Python workflows with multiple databases, prefer bioservices (unified interface to 40+ services). Use this for direct HTTP/REST work or UniProt-specific control.",

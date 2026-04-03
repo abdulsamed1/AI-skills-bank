@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251385,
   "hub": "mobile",
   "skills": [
     {
@@ -9,30 +9,6 @@
       "skill_id": "android-design-guidelines",
       "src_path": "lib/ehmo-platform-design-skills/skills/android/SKILL.md",
       "triggers": "android;design;guidelines"
-    },
-    {
-      "description": "Android Java development with MVVM, ViewBinding, and Espresso testing",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "android-java",
-      "src_path": "lib/alinaqi-claude-bootstrap/skills/android-java/SKILL.md",
-      "triggers": "android;java"
-    },
-    {
-      "description": "Android Kotlin development with Coroutines, Jetpack Compose, Hilt, and MockK testing",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "android-kotlin",
-      "src_path": "lib/alinaqi-claude-bootstrap/skills/android-kotlin/SKILL.md",
-      "triggers": "android;kotlin"
-    },
-    {
-      "description": "Design, implement, and refactor Ports & Adapters systems with clear domain boundaries, dependency inversion, and testable use-case orchestration across TypeScript, Java, Kotlin, and Go services.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "hexagonal-architecture",
-      "src_path": "lib/affaan-m-everything-claude-code/skills/hexagonal-architecture/SKILL.md",
-      "triggers": "hexagonal;architecture"
     }
   ],
   "sub_hub": "android",

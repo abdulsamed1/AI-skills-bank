@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251385,
   "hub": "mobile",
   "skills": [
     {
@@ -25,30 +25,6 @@
       "skill_id": "flutter-expert",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/flutter-expert/SKILL.md",
       "triggers": "flutter;expert"
-    },
-    {
-      "description": "Develop React Native, Flutter, or native mobile apps with modern architecture patterns. Masters cross-platform development, native integrations, offline sync, and app store optimization.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "mobile-developer",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/mobile-developer/SKILL.md",
-      "triggers": "mobile;developer"
-    },
-    {
-      "description": "Mobile game development principles. Touch input, battery, performance, app stores.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "mobile-games",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/game-development/mobile-games/SKILL.md",
-      "triggers": "mobile;games"
-    },
-    {
-      "description": "React Native mobile patterns, platform-specific code",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "react-native",
-      "src_path": "lib/alinaqi-claude-bootstrap/skills/react-native/SKILL.md",
-      "triggers": "react;native"
     }
   ],
   "sub_hub": "cross-platform",

@@ -1,5 +1,5 @@
 {
-  "count": 26,
+  "count": 25,
   "hub": "code-quality",
   "skills": [
     "angular-best-practices",
@@ -16,13 +16,12 @@
     "code-reviewer",
     "component-refactoring",
     "comprehensive-review-pr-enhance",
+    "content-modeling-best-practices",
     "improve-codebase-architecture",
     "kaizen:kaizen",
     "plan-writing",
     "receiving-code-review",
-    "request-refactor-plan",
     "requesting-code-review",
-    "springboot-tdd",
     "swift-concurrency",
     "tdd:fix-tests",
     "uncle-bob-craft",

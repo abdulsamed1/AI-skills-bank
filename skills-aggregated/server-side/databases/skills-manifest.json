@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251385,
   "hub": "server-side",
   "skills": [
     {
@@ -107,22 +107,6 @@
       "triggers": "hugging;face;datasets"
     },
     {
-      "description": "Execute read-only SQL queries against multiple Microsoft SQL Server databases. Use when: (1) querying MSSQL/SQL Server databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "mssql",
-      "src_path": "lib/sanjay3290-ai-skills/skills/mssql/SKILL.md",
-      "triggers": "mssql"
-    },
-    {
-      "description": "Execute read-only SQL queries against multiple MySQL databases. Use when: (1) querying MySQL databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "mysql",
-      "src_path": "lib/sanjay3290-ai-skills/skills/mysql/SKILL.md",
-      "triggers": "mysql"
-    },
-    {
       "description": "Configure Prisma for Neon with connection pooling.",
       "phase": 2,
       "score": 100,
@@ -161,14 +145,6 @@
       "skill_id": "odoo-orm-expert",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/odoo-orm-expert/SKILL.md",
       "triggers": "odoo;orm;expert"
-    },
-    {
-      "description": "Execute read-only SQL queries against multiple PostgreSQL databases. Use when: (1) querying PostgreSQL databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "postgres",
-      "src_path": "lib/sanjay3290-ai-skills/skills/postgres/SKILL.md",
-      "triggers": "postgres"
     },
     {
       "description": "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.",
@@ -235,14 +211,6 @@
       "triggers": "review"
     },
     {
-      "description": "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'revenue operations,' 'lead scoring,' 'lead routing,' 'MQL,' 'SQL,' 'pipeline stages,' 'deal desk,' 'CRM automation,' 'marketing-to-sales handoff,' 'data hygiene,' 'leads aren't getting to sales,' 'pipeline management,' 'lead qualification,' or 'when should marketing hand off to sales.' Use this for anything involving the systems and processes that connect marketing to revenue. For cold outreach emails, see cold-email. For email drip campaigns, see email-sequence. For pricing decisions, see pricing-strategy.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "revops",
-      "src_path": "lib/coreyhaines31-marketingskills/skills/revops/SKILL.md",
-      "triggers": "revops"
-    },
-    {
       "description": "Core skill for the deep research and writing tool. Write scientific manuscripts in full paragraphs (never bullet points). Use two-stage process with (1) section outlines with key points using research-lookup then (2) convert to flowing prose. IMRAD structure, citations (APA/AMA/Vancouver), figures/tables, reporting guidelines (CONSORT/STROBE/PRISMA), for research papers and journal submissions.",
       "phase": 2,
       "score": 100,
@@ -281,14 +249,6 @@
       "skill_id": "supabase-automation",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/supabase-automation/SKILL.md",
       "triggers": "supabase;automation"
-    },
-    {
-      "description": "Next.js with Supabase and Drizzle ORM",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "supabase-nextjs",
-      "src_path": "lib/alinaqi-claude-bootstrap/skills/supabase-nextjs/SKILL.md",
-      "triggers": "supabase;nextjs"
     },
     {
       "description": "Express/Hono with Supabase and Drizzle ORM",

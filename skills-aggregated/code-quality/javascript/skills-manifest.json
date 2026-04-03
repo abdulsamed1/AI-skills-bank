@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251384,
   "hub": "code-quality",
   "skills": [
     {
@@ -11,28 +11,12 @@
       "triggers": "agentic;development"
     },
     {
-      "description": "Algorithmic philosophies are computational aesthetic movements that are then expressed through code. Output .md files (philosophy), .html files (interactive viewer), and .js files (generative algorithms).",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "algorithmic-art",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/algorithmic-art/SKILL.md",
-      "triggers": "algorithmic;art"
-    },
-    {
       "description": "Advanced JavaScript animation library skill for creating complex, high-performance web animations.",
       "phase": 1,
       "score": 100,
       "skill_id": "animejs-animation",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/animejs-animation/SKILL.md",
       "triggers": "animejs;animation"
-    },
-    {
-      "description": "Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "backend-patterns",
-      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/backend-patterns/SKILL.md",
-      "triggers": "backend;patterns"
     },
     {
       "description": "BullMQ expert for Redis-backed job queues, background processing, and reliable async execution in Node.js/TypeScript applications. Use when: bullmq, bull queue, redis queue, background job, job queue.",
@@ -115,12 +99,28 @@
       "triggers": "firecrawl;scrape"
     },
     {
-      "description": "Functional programming patterns for Node.js/Deno backend development using fp-ts, ReaderTaskEither, and functional dependency injection",
+      "description": "Practical patterns for using fp-ts with React - hooks, state, forms, data fetching. Use when building React apps with functional programming patterns. Works with React 18/19, Next.js 14/15.",
       "phase": 1,
       "score": 100,
-      "skill_id": "fp-backend",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/fp-backend/SKILL.md",
-      "triggers": "fp-ts;typescript;backend;functional-programming;node;deno;dependency-injection;reader-task-either"
+      "skill_id": "fp-ts-react",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/fp-ts-react/SKILL.md",
+      "triggers": "fp;ts;react"
+    },
+    {
+      "description": "Build React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern frontend architecture.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "frontend-developer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/frontend-developer/SKILL.md",
+      "triggers": "frontend;developer"
+    },
+    {
+      "description": "Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "frontend-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/frontend-patterns/SKILL.md",
+      "triggers": "frontend;patterns"
     },
     {
       "description": "Use this skill when building applications with Gemini models, Gemini API, working with multimodal content (text, images, audio, video), implementing function calling, using structured outputs, or needing current model specifications. Covers SDK usage (google-genai for Python, @google/genai for JavaScript/TypeScript, com.google.genai:google-genai for Java, google.golang.org/genai for Go), model selection, and API capabilities.",
@@ -153,14 +153,6 @@
       "skill_id": "javascript-pro",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/javascript-pro/SKILL.md",
       "triggers": "javascript;pro"
-    },
-    {
-      "description": "Comprehensive guide for implementing robust testing strategies in JavaScript/TypeScript applications using modern testing frameworks and best practices.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "javascript-testing-patterns",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/javascript-testing-patterns/SKILL.md",
-      "triggers": "javascript;testing;patterns"
     },
     {
       "description": "You are a TypeScript project architecture expert specializing in scaffolding production-ready Node.js and frontend applications. Generate complete project structures with modern tooling (pnpm, Vite, N",
@@ -203,12 +195,20 @@
       "triggers": "n8n;code;javascript"
     },
     {
-      "description": "You are an expert in Nest.js with deep knowledge of enterprise-grade Node.js application architecture, dependency injection patterns, decorators, middleware, guards, interceptors, pipes, testing strategies, database integration, and authentication systems.",
+      "description": "Guide for deploying web frameworks on Netlify. Use when setting up a framework project (Vite/React, Astro, TanStack Start, Next.js, Nuxt, SvelteKit, Remix) for Netlify deployment, configuring adapters or plugins, or troubleshooting framework-specific Netlify integration. Covers what Netlify needs from each framework and how adapters handle server-side rendering.",
       "phase": 1,
       "score": 100,
-      "skill_id": "nestjs-expert",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/nestjs-expert/SKILL.md",
-      "triggers": "nestjs;expert"
+      "skill_id": "netlify-frameworks",
+      "src_path": "lib/netlify-context-and-tools/codex/skills/netlify-frameworks/SKILL.md",
+      "triggers": "netlify;frameworks"
+    },
+    {
+      "description": "Comprehensive patterns for Next.js 14+ App Router architecture, Server Components, and modern full-stack React development.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "nextjs-app-router-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/nextjs-app-router-patterns/SKILL.md",
+      "triggers": "nextjs;app;router;patterns"
     },
     {
       "description": "Next.js App Router principles. Server Components, data fetching, routing patterns.",
@@ -241,14 +241,6 @@
       "skill_id": "nodejs-backend-patterns",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/nodejs-backend-patterns/SKILL.md",
       "triggers": "nodejs;backend;patterns"
-    },
-    {
-      "description": "Node.js development principles and decision-making. Framework selection, async patterns, security, and architecture. Teaches thinking, not copying.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "nodejs-best-practices",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/nodejs-best-practices/SKILL.md",
-      "triggers": "nodejs;best;practices"
     },
     {
       "description": "Debugs native module crashes, optimizes V8 performance, configures node-gyp builds, writes N-API/node-addon-api bindings, and diagnoses libuv event loop issues in Node.js. Use when working with C++ addons, native modules, binding.gyp, node-gyp errors, segfaults, memory leaks in native code, V8 optimization/deoptimization, libuv thread pool tuning, N-API or NAN bindings, build system failures, or any Node.js internals below the JavaScript layer.",
@@ -299,6 +291,14 @@
       "triggers": "remotion, video, react, animation, composition, three.js, lottie"
     },
     {
+      "description": "Sanity development best practices for schema design, GROQ queries, TypeGen, Visual Editing, images, Portable Text, Studio structure, localization, migrations, and framework integrations such as Next.js, Nuxt, Astro, Remix, SvelteKit, Angular, Hydrogen, and the App SDK. Use this skill whenever working with Sanity schemas, defineType or defineField, GROQ or defineQuery, content modeling, Presentation or preview setups, Sanity-powered frontend integrations, or when reviewing and fixing a Sanity codebase.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "sanity-best-practices",
+      "src_path": "lib/sanity-io-agent-toolkit/skills/sanity-best-practices/SKILL.md",
+      "triggers": "sanity;best;practices"
+    },
+    {
       "description": "Client-side tracking with Analytics.js. Include track, identify, page, and group calls. Anonymous ID persists until identify merges with user.",
       "phase": 1,
       "score": 100,
@@ -315,100 +315,20 @@
       "triggers": "social;card;gen"
     },
     {
+      "description": "Next.js with Supabase and Drizzle ORM",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "supabase-nextjs",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/supabase-nextjs/SKILL.md",
+      "triggers": "supabase;nextjs"
+    },
+    {
       "description": "Integracao completa com Telegram Bot API. Setup com BotFather, mensagens, webhooks, inline keyboards, grupos, canais. Boilerplates Node.js e Python.",
       "phase": 1,
       "score": 100,
       "skill_id": "telegram",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/telegram/SKILL.md",
       "triggers": "messaging;telegram;bots;webhooks"
-    },
-    {
-      "description": "Three.js animation - keyframe animation, skeletal animation, morph targets, animation mixing. Use when animating objects, playing GLTF animations, creating procedural motion, or blending animations.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "threejs-animation",
-      "src_path": "lib/cloudai-x-threejs-skills/skills/threejs-animation/SKILL.md",
-      "triggers": "threejs;animation"
-    },
-    {
-      "description": "Three.js scene setup, cameras, renderer, Object3D hierarchy, coordinate systems. Use when setting up 3D scenes, creating cameras, configuring renderers, managing object hierarchies, or working with transforms.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "threejs-fundamentals",
-      "src_path": "lib/cloudai-x-threejs-skills/skills/threejs-fundamentals/SKILL.md",
-      "triggers": "threejs;fundamentals"
-    },
-    {
-      "description": "Three.js geometry creation - built-in shapes, BufferGeometry, custom geometry, instancing. Use when creating 3D shapes, working with vertices, building custom meshes, or optimizing with instanced rendering.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "threejs-geometry",
-      "src_path": "lib/cloudai-x-threejs-skills/skills/threejs-geometry/SKILL.md",
-      "triggers": "threejs;geometry"
-    },
-    {
-      "description": "Three.js interaction - raycasting, controls, mouse/touch input, object selection. Use when handling user input, implementing click detection, adding camera controls, or creating interactive 3D experiences.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "threejs-interaction",
-      "src_path": "lib/cloudai-x-threejs-skills/skills/threejs-interaction/SKILL.md",
-      "triggers": "threejs;interaction"
-    },
-    {
-      "description": "Three.js lighting - light types, shadows, environment lighting. Use when adding lights, configuring shadows, setting up IBL, or optimizing lighting performance.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "threejs-lighting",
-      "src_path": "lib/cloudai-x-threejs-skills/skills/threejs-lighting/SKILL.md",
-      "triggers": "threejs;lighting"
-    },
-    {
-      "description": "Three.js asset loading - GLTF, textures, images, models, async patterns. Use when loading 3D models, textures, HDR environments, or managing loading progress.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "threejs-loaders",
-      "src_path": "lib/cloudai-x-threejs-skills/skills/threejs-loaders/SKILL.md",
-      "triggers": "threejs;loaders"
-    },
-    {
-      "description": "Three.js materials - PBR, basic, phong, shader materials, material properties. Use when styling meshes, working with textures, creating custom shaders, or optimizing material performance.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "threejs-materials",
-      "src_path": "lib/cloudai-x-threejs-skills/skills/threejs-materials/SKILL.md",
-      "triggers": "threejs;materials"
-    },
-    {
-      "description": "Three.js post-processing - EffectComposer, bloom, DOF, screen effects. Use when adding visual effects, color grading, blur, glow, or creating custom screen-space shaders.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "threejs-postprocessing",
-      "src_path": "lib/cloudai-x-threejs-skills/skills/threejs-postprocessing/SKILL.md",
-      "triggers": "threejs;postprocessing"
-    },
-    {
-      "description": "Three.js shaders - GLSL, ShaderMaterial, uniforms, custom effects. Use when creating custom visual effects, modifying vertices, writing fragment shaders, or extending built-in materials.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "threejs-shaders",
-      "src_path": "lib/cloudai-x-threejs-skills/skills/threejs-shaders/SKILL.md",
-      "triggers": "threejs;shaders"
-    },
-    {
-      "description": "Create 3D scenes, interactive experiences, and visual effects using Three.js. Use when user requests 3D graphics, WebGL experiences, 3D visualizations, animations, or interactive 3D elements.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "threejs-skills",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/threejs-skills/SKILL.md",
-      "triggers": "threejs;skills"
-    },
-    {
-      "description": "Three.js textures - texture types, UV mapping, environment maps, texture settings. Use when working with images, UV coordinates, cubemaps, HDR environments, or texture optimization.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "threejs-textures",
-      "src_path": "lib/cloudai-x-threejs-skills/skills/threejs-textures/SKILL.md",
-      "triggers": "threejs;textures"
     },
     {
       "description": "Run Hugging Face models in JavaScript or TypeScript with Transformers.js in Node.js or the browser.",
@@ -425,6 +345,14 @@
       "skill_id": "typescript-expert",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/typescript-expert/SKILL.md",
       "triggers": "typescript;expert"
+    },
+    {
+      "description": "Expert in the Vercel AI SDK. Covers Core API (generateText, streamText), UI hooks (useChat, useCompletion), tool calling, and streaming UI components with React and Next.js.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "vercel-ai-sdk-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/vercel-ai-sdk-expert/SKILL.md",
+      "triggers": "vercel;ai;sdk;expert"
     },
     {
       "description": "Expert knowledge for deploying to Vercel with Next.js Use when: vercel, deploy, deployment, hosting, production.",

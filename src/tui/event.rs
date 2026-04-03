@@ -7,7 +7,6 @@ use std::time::{Duration, Instant};
 pub struct EventHandler {
     receiver: mpsc::Receiver<Action>,
     sender: mpsc::Sender<Action>,
-    tick_rate: u64,
 }
 
 impl EventHandler {
@@ -44,7 +43,6 @@ impl EventHandler {
         Self {
             receiver,
             sender,
-            tick_rate,
         }
     }
 

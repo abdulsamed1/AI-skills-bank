@@ -2,12 +2,9 @@ skill_id,description,score,phase
 amazon-alexa,"Integracao completa com Amazon Alexa para criar skills de voz inteligentes, transformar Alexa em assistente com Claude como cerebro (projeto Auri) e integrar com AWS ecosystem (Lambda, DynamoDB, Polly, Transcribe, Lex, Smart Home).",100,2
 aws-aurora,"AWS Aurora Serverless v2, RDS Proxy, Data API, connection pooling",100,2
 aws-serverless,Proper Lambda function structure with error handling,100,2
-cloud-uploader,Uploads promo videos and content to Cloudflare R2 or AWS S3. Use when the user wants to host promo content for social media or distribution.,100,2
 cloudflare-d1,"Cloudflare D1 SQLite database with Workers, Drizzle ORM, migrations",100,2
 cloudflare-workers-expert,"Expert in Cloudflare Workers and the Edge Computing ecosystem. Covers Wrangler, KV, D1, Durable Objects, and R2 storage.",100,2
 latchbio-integration,"Latch platform for bioinformatics workflows. Build pipelines with Latch SDK, @workflow/@task decorators, deploy serverless workflows, LatchFile/LatchDir, Nextflow/Snakemake integration.",100,2
 netlify-config,"Reference for netlify.toml configuration. Use when configuring build settings, redirects, rewrites, headers, deploy contexts, environment variables, or any site-level configuration. Covers the complete netlify.toml syntax including redirects with splats/conditions, headers, deploy contexts, functions config, and edge functions config.",100,2
-netlify-edge-functions,"Guide for writing Netlify Edge Functions. Use when building middleware, geolocation-based logic, request/response manipulation, authentication checks, A/B testing, or any low-latency edge compute. Covers Deno runtime, context.next() middleware pattern, geolocation, and when to choose edge vs serverless.",100,2
-netlify-functions,"Guide for writing Netlify serverless functions. Use when creating API endpoints, background processing, scheduled tasks, or any server-side logic using Netlify Functions. Covers modern syntax (default export + Config), TypeScript, path routing, background functions, scheduled functions, streaming, and method routing.",100,2
 supabase,"Core Supabase CLI, migrations, RLS, Edge Functions",100,2
 wendy-swift,"Curated Swift package ecosystem for WendyOS and Linux. Use when developers mention: (1) Swift packages for Linux or ARM64/AMD64, (2) choosing a Swift library, (3) Swift Package Index, (4) swiftpackageindex.com, (5) what Swift library to use, (6) Swift on WendyOS dependencies, (7) edge computing Swift libraries.",100,2

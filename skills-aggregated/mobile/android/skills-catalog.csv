@@ -1,6 +1,2 @@
 skill_id,description,score,phase
-analyzing-android-malware-with-apktool,"Perform static analysis of Android APK malware samples using apktool for decompilation, jadx for Java source recovery, and androguard for permission analysis, manifest inspection, and suspicious API call detection.",100,4
 android-design-guidelines,"Material Design 3 and Android platform guidelines. Use when building Android apps with Jetpack Compose or XML layouts, implementing Material You, navigation, or accessibility. Triggers on tasks involving Android UI, Compose components, dynamic color, or Material Design compliance.",100,4
-android-java,"Android Java development with MVVM, ViewBinding, and Espresso testing",100,4
-android-kotlin,"Android Kotlin development with Coroutines, Jetpack Compose, Hilt, and MockK testing",100,4
-hexagonal-architecture,"Design, implement, and refactor Ports & Adapters systems with clear domain boundaries, dependency inversion, and testable use-case orchestration across TypeScript, Java, Kotlin, and Go services.",100,4

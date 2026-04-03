@@ -1,11 +1,9 @@
 {
-  "count": 20,
+  "count": 18,
   "hub": "server-side",
   "skills": [
     "aegisops-ai",
     "c4-container",
-    "cloud-devops",
-    "deployment-patterns",
     "docker-expert",
     "docker-patterns",
     "gitops-workflow",

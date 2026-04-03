@@ -1,21 +1,17 @@
 {
-  "count": 14,
+  "count": 10,
   "hub": "frontend",
   "skills": [
     "algolia-search",
     "customaize-agent:thought-based-reasoning",
-    "fp-ts-react",
-    "netlify-frameworks",
-    "nextjs-app-router-patterns",
+    "langchain",
+    "mobile-developer",
     "react-component-performance",
     "react-modernization",
-    "react-patterns",
+    "react-native",
     "react-web",
     "react:components",
-    "remotion-best-practices",
-    "sanity-best-practices",
-    "ui-ux-pro-max",
-    "vercel-ai-sdk-expert"
+    "remotion-best-practices"
   ],
   "sub_hub": "web-frameworks"
 }

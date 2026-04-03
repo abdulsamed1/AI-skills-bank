@@ -1,8 +1,7 @@
 {
-  "count": 4,
+  "count": 3,
   "hub": "server-side",
   "skills": [
-    "aws-serverless-eda",
     "cqrs-implementation",
     "event-sourcing-architect",
     "projection-patterns"

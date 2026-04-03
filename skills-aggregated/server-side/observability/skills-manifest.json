@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251385,
   "hub": "server-side",
   "skills": [
     {
@@ -123,14 +123,6 @@
       "triggers": "MLOps;SwanLab;Experiment Tracking;Open Source;Visualization;PyTorch;Transformers;PyTorch Lightning;Fastai;Self-Hosted"
     },
     {
-      "description": "Perform comprehensive exploratory data analysis on scientific data files across 200+ file formats. This skill should be used when analyzing any scientific data file to understand its structure, content, quality, and characteristics. Automatically detects file type and generates detailed markdown reports with format-specific analysis, quality metrics, and downstream analysis recommendations. Covers chemistry, bioinformatics, microscopy, spectroscopy, proteomics, metabolomics, and general scientific data formats.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "exploratory-data-analysis",
-      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/exploratory-data-analysis/SKILL.md",
-      "triggers": "exploratory;data;analysis"
-    },
-    {
       "description": "Look up SaaS finance metrics, formulas, and benchmarks fast. Use when you need a quick metric definition, formula, or benchmark during analysis.",
       "phase": 2,
       "score": 100,
@@ -179,22 +171,6 @@
       "triggers": "langfuse"
     },
     {
-      "description": "LLM observability platform for tracing, evaluation, and monitoring. Use when debugging LLM applications, evaluating model outputs against datasets, monitoring production systems, or building systematic testing pipelines for AI applications.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "langsmith-observability",
-      "src_path": "lib/orchestra-research-ai-research-skills/17-observability/langsmith/SKILL.md",
-      "triggers": "Observability;LangSmith;Tracing;Evaluation;Monitoring;Debugging;Testing;LLM Ops;Production"
-    },
-    {
-      "description": "Generate a Lean Canvas with problem, solution, metrics, cost structure, UVP, unfair advantage, channels, segments, and revenue. Use when exploring a lean startup canvas, testing a business hypothesis, or modeling a new venture.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "lean-canvas",
-      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/lean-canvas/SKILL.md",
-      "triggers": "lean;canvas"
-    },
-    {
       "description": "Install and configure the Manifest observability plugin for your agents. Use when setting up telemetry, configuring API keys, or troubleshooting the plugin.",
       "phase": 2,
       "score": 100,
@@ -203,12 +179,12 @@
       "triggers": "manifest"
     },
     {
-      "description": "Medicinal chemistry filters. Apply drug-likeness rules (Lipinski, Veber), PAINS filters, structural alerts, complexity metrics, for compound prioritization and library filtering.",
+      "description": "Define and design a product metrics dashboard with key metrics, data sources, visualization types, and alert thresholds. Use when creating a metrics dashboard, defining KPIs, setting up product analytics, or building a data monitoring plan.",
       "phase": 2,
       "score": 100,
-      "skill_id": "medchem",
-      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/medchem/SKILL.md",
-      "triggers": "medchem"
+      "skill_id": "metrics-dashboard",
+      "src_path": "lib/phuryn-pm-skills/pm-product-discovery/skills/metrics-dashboard/SKILL.md",
+      "triggers": "metrics;dashboard"
     },
     {
       "description": "Neuropixels neural recording analysis. Load SpikeGLX/OpenEphys data, preprocess, motion correction, Kilosort4 spike sorting, quality metrics, Allen/IBL curation, AI-assisted visual analysis, for Neuropixels 1.0/2.0 extracellular electrophysiology. Use when working with neural recordings, spike sorting, extracellular electrophysiology, or when the user mentions Neuropixels, SpikeGLX, Open Ephys, Kilosort, quality metrics, or unit curation.",
@@ -217,14 +193,6 @@
       "skill_id": "neuropixels-analysis",
       "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/neuropixels-analysis/SKILL.md",
       "triggers": "neuropixels;analysis"
-    },
-    {
-      "description": "Define a North Star Metric and 3-5 supporting input metrics that form a metrics constellation. Classify the business game (Attention, Transaction, Productivity) and validate against 7 criteria for an effective North Star. Use when choosing a North Star Metric, setting up a metrics framework, learning about the North Star Framework, or deciding what to measure.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "north-star-metric",
-      "src_path": "lib/phuryn-pm-skills/pm-marketing-growth/skills/north-star-metric/SKILL.md",
-      "triggers": "north;star;metric"
     },
     {
       "description": "Build production-ready monitoring, logging, and tracing systems. Implements comprehensive observability strategies, SLI/SLO management, and incident response workflows.",
@@ -299,28 +267,12 @@
       "triggers": "pytorch;lightning"
     },
     {
-      "description": "Build financial models, backtest trading strategies, and analyze market data. Implements risk metrics, portfolio optimization, and statistical arbitrage.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "quant-analyst",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/quant-analyst/SKILL.md",
-      "triggers": "quant;analyst"
-    },
-    {
       "description": "I bridge the gap between raw documents and LLM understanding. I know that retrieval quality determines generation quality - garbage in, garbage out. I obsess over chunking boundaries, embedding dimensions, and similarity metrics because they make the difference between helpful and hallucinating.",
       "phase": 2,
       "score": 100,
       "skill_id": "rag-engineer",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/rag-engineer/SKILL.md",
       "triggers": "rag;engineer"
-    },
-    {
-      "description": "Calculate portfolio risk metrics including VaR, CVaR, Sharpe, Sortino, and drawdown analysis. Use when measuring portfolio risk, implementing risk limits, or building risk monitoring systems.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "risk-metrics-calculation",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/risk-metrics-calculation/SKILL.md",
-      "triggers": "risk;metrics;calculation"
     },
     {
       "description": "Evaluate SaaS unit economics and capital efficiency. Use when deciding whether the business can scale efficiently or needs correction.",
@@ -355,12 +307,12 @@
       "triggers": "server;management"
     },
     {
-      "description": "Periodically check WandB metrics during training to catch problems early (NaN, loss divergence, idle GPUs). Avoids wasting GPU hours on broken runs. Use when training is running and you want automated health checks.",
+      "description": "Visualize training metrics, debug models with histograms, compare experiments, visualize model graphs, and profile performance with TensorBoard - Google's ML visualization toolkit",
       "phase": 2,
       "score": 100,
-      "skill_id": "training-check",
-      "src_path": "lib/wanshuiyin-auto-claude-code-research-in-sleep/skills/skills-codex/training-check/SKILL.md",
-      "triggers": "training;check"
+      "skill_id": "tensorboard",
+      "src_path": "lib/orchestra-research-ai-research-skills/13-mlops/tensorboard/SKILL.md",
+      "triggers": "MLOps;TensorBoard;Visualization;Training Metrics;Model Debugging;PyTorch;TensorFlow;Experiment Tracking;Performance Profiling"
     },
     {
       "description": "Track ML experiments with automatic logging, visualize training in real-time, optimize hyperparameters with sweeps, and manage model registry with W&B - collaborative MLOps platform",

@@ -3,7 +3,7 @@
     "medicine",
     "law"
   ],
-  "generated_at_unix": 1775164959,
+  "generated_at_unix": 1775251392,
   "min_skills_per_subhub": 1,
   "review_band": {
     "candidates": 0,
@@ -56,13 +56,6 @@
     },
     {
       "git": {
-        "head": "0ad883a9f985832e213b2fa7e3b32433cf9b74dd",
-        "porcelain": ""
-      },
-      "name": "bitwize-music-studio-claude-ai-music-skills"
-    },
-    {
-      "git": {
         "head": "8b3a17889fbf12bedae20974a3c9f9de746ed754",
         "porcelain": ""
       },
@@ -81,13 +74,6 @@
         "porcelain": ""
       },
       "name": "charlie85270-dorothy"
-    },
-    {
-      "git": {
-        "head": "b1c623076c661fc9b03dac19292e825a5d106823",
-        "porcelain": ""
-      },
-      "name": "cloudai-x-threejs-skills"
     },
     {
       "git": {
@@ -242,13 +228,6 @@
         "porcelain": ""
       },
       "name": "helius-labs-core-ai"
-    },
-    {
-      "git": {
-        "head": "27c2603b4973980ee46a435ff3f242966d9f205e",
-        "porcelain": ""
-      },
-      "name": "huifer-claude-ally-health"
     },
     {
       "git": {
@@ -434,13 +413,6 @@
     },
     {
       "git": {
-        "head": "921c9be0b91f10f220f92e10b36355c3c43b74c2",
-        "porcelain": ""
-      },
-      "name": "paramchoudhary-resumeskills"
-    },
-    {
-      "git": {
         "head": "36ccefdc6c2e00d7c0c12cb0a52bf93e8ec50da4",
         "porcelain": ""
       },
@@ -452,6 +424,13 @@
         "porcelain": ""
       },
       "name": "pleaseprompto-notebooklm-skill"
+    },
+    {
+      "git": {
+        "head": "e0083353cffaf72d76fb758c431f15649065aac9",
+        "porcelain": ""
+      },
+      "name": "prompt-security-clawsec"
     },
     {
       "git": {
@@ -560,13 +539,6 @@
     },
     {
       "git": {
-        "head": "a4b12b9153098a030ae772fdb7bc3ff96ef7cc90",
-        "porcelain": ""
-      },
-      "name": "takechanman1228-claude-ecom"
-    },
-    {
-      "git": {
         "head": "11003e2b63ab7960087bc53aed1f5d49bee2c18a",
         "porcelain": ""
       },
@@ -606,6 +578,13 @@
         "porcelain": ""
       },
       "name": "wshuyi-x-article-publisher-skill"
+    },
+    {
+      "git": {
+        "head": "9d2c3872b44b2c248ef27a537aca45f9fa202b8e",
+        "porcelain": ""
+      },
+      "name": "xquik-dev-tweetclaw"
     },
     {
       "git": {

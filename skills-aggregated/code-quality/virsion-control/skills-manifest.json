@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251385,
   "hub": "code-quality",
   "skills": [
     {
@@ -9,38 +9,6 @@
       "skill_id": "address-github-comments",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/address-github-comments/SKILL.md",
       "triggers": "address;github;comments"
-    },
-    {
-      "description": "Creates git commits following Conventional Commits format with type/scope/subject. Use when user wants to commit changes, create commit, save work, or stage and commit. Enforces project-specific conventions from CLAUDE.md.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "git-commit",
-      "src_path": "lib/fvadicamo-dev-agent-skills/skills/git-commit/SKILL.md",
-      "triggers": "git;commit"
-    },
-    {
-      "description": "Creates GitHub Pull Requests with automated validation and task tracking. Use when user wants to create PR, open pull request, submit for review, or check if ready for PR. Analyzes commits, validates task completion, generates Conventional Commits title and description, suggests labels. NOTE - for merging existing PRs, use github-pr-merge instead.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "github-pr-creation",
-      "src_path": "lib/fvadicamo-dev-agent-skills/skills/github-pr-creation/SKILL.md",
-      "triggers": "github;pr;creation"
-    },
-    {
-      "description": "Merges GitHub Pull Requests after validating pre-merge checklist. Use when user wants to merge PR, close PR, finalize PR, complete merge, approve and merge, or execute merge. Runs pre-merge validation (tests, lint, CI, comments), confirms with user, merges with proper format, handles post-merge cleanup.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "github-pr-merge",
-      "src_path": "lib/fvadicamo-dev-agent-skills/skills/github-pr-merge/SKILL.md",
-      "triggers": "github;pr;merge"
-    },
-    {
-      "description": "Handles PR review comments and feedback resolution. Use when user wants to resolve PR comments, handle review feedback, fix review comments, address PR review, check review status, respond to reviewer, verify PR readiness, review PR comments, analyze review feedback, evaluate PR comments, assess review suggestions, or triage PR comments. Fetches comments via GitHub CLI, classifies by severity, applies fixes with user confirmation, commits with proper format, replies to threads.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "github-pr-review",
-      "src_path": "lib/fvadicamo-dev-agent-skills/skills/github-pr-review/SKILL.md",
-      "triggers": "github;pr;review"
     },
     {
       "description": "Build Azure AI Foundry agents using the Microsoft Agent Framework Python SDK (agent-framework-azure-ai). Use when creating persistent agents with AzureAIAgentsProvider, using hosted tools (code interpreter, file search, web search), integrating MCP servers, managing conversation threads, or implementing streaming responses. Covers function tools, structured outputs, and multi-tool agents.",
@@ -59,14 +27,6 @@
       "triggers": "\"ImageBasedHostedAgentDefinition\", \"hosted agent\", \"container agent\", \"Foundry Agent\","
     },
     {
-      "description": "Generate user-facing App Store release notes from git history since the last tag.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "app-store-changelog",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/app-store-changelog/SKILL.md",
-      "triggers": "app;store;changelog"
-    },
-    {
       "description": "Guidance for instrumenting webapps with Azure Application Insights. Provides telemetry patterns, SDK setup, and configuration references. WHEN: how to instrument app, App Insights SDK, telemetry patterns, what is App Insights, Application Insights guidance, instrumentation examples, APM best practices.",
       "phase": 1,
       "score": 100,
@@ -75,20 +35,12 @@
       "triggers": "appinsights;instrumentation"
     },
     {
-      "description": "Generate engaging, localized App Store release notes (What's New) from git log, bullet points, or free text using canonical metadata under `./metadata`. Optionally pairs with promotional text updates.",
+      "description": "Design patterns for building autonomous coding agents, inspired by [Cline](https://github.com/cline/cline) and [OpenAI Codex](https://github.com/openai/codex).",
       "phase": 1,
       "score": 100,
-      "skill_id": "asc-whats-new-writer",
-      "src_path": "lib/rudrankriyam-app-store-connect-cli-skills/skills/asc-whats-new-writer/SKILL.md",
-      "triggers": "asc;whats;new;writer"
-    },
-    {
-      "description": "Auto-fix CodeRabbit review comments - get CodeRabbit review comments from GitHub and fix them interactively or in batch",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "autofix",
-      "src_path": "lib/coderabbitai-skills/skills/autofix/SKILL.md",
-      "triggers": "coderabbit.?autofix;coderabbit.?auto.?fix;autofix.?coderabbit;coderabbit.?fix;fix.?coderabbit;coderabbit.?review;review.?coderabbit;coderabbit.?issues?;show.?coderabbit;get.?coderabbit;cr.?autofix;cr.?fix;cr.?review"
+      "skill_id": "autonomous-agent-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/autonomous-agent-patterns/SKILL.md",
+      "triggers": "autonomous;agent;patterns"
     },
     {
       "description": "Use for Azure AI: Search, Speech, OpenAI, Document Intelligence. Helps with search, vector/hybrid search, speech-to-text, text-to-speech, transcription, OCR. WHEN: AI Search, query search, vector search, hybrid search, semantic search, speech-to-text, text-to-speech, transcribe, OCR, convert text to speech.",
@@ -123,28 +75,12 @@
       "triggers": "azure;ai;anomalydetector;java"
     },
     {
-      "description": "Build content moderation applications with Azure AI Content Safety SDK for Java. Use when implementing text/image analysis, blocklist management, or harm detection for hate, violence, sexual content, and self-harm.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-ai-contentsafety-java",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-ai-contentsafety-java/SKILL.md",
-      "triggers": "azure;ai;contentsafety;java"
-    },
-    {
       "description": "Azure AI Content Safety SDK for Python. Use for detecting harmful content in text and images with multi-severity classification. Triggers: \"azure-ai-contentsafety\", \"ContentSafetyClient\", \"content moderation\", \"harmful content\", \"text analysis\", \"image analysis\".",
       "phase": 1,
       "score": 100,
       "skill_id": "azure-ai-contentsafety-py",
       "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-contentsafety-py/SKILL.md",
       "triggers": "\"azure-ai-contentsafety\", \"ContentSafetyClient\", \"content moderation\", \"harmful content\", \"text analysis\", \"image analysis\"."
-    },
-    {
-      "description": "Analyze text and images for harmful content using Azure AI Content Safety (@azure-rest/ai-content-safety). Use when moderating user-generated content, detecting hate speech, violence, sexual content, or self-harm, or managing custom blocklists.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-ai-contentsafety-ts",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-ai-contentsafety-ts/SKILL.md",
-      "triggers": "azure;ai;contentsafety;ts"
     },
     {
       "description": "Azure AI Content Understanding SDK for Python. Use for multimodal content extraction from documents, images, audio, and video. Triggers: \"azure-ai-contentunderstanding\", \"ContentUnderstandingClient\", \"multimodal analysis\", \"document extraction\", \"video analysis\", \"audio transcription\".",
@@ -233,14 +169,6 @@
       "skill_id": "azure-ai-projects-ts",
       "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-ai-projects-ts/SKILL.md",
       "triggers": "azure;ai;projects;ts"
-    },
-    {
-      "description": "Azure AI Text Analytics SDK for sentiment analysis, entity recognition, key phrases, language detection, PII, and healthcare NLP. Use for natural language processing on text. Triggers: \"text analytics\", \"sentiment analysis\", \"entity recognition\", \"key phrase\", \"PII detection\", \"TextAnalyticsClient\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-ai-textanalytics-py",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-textanalytics-py/SKILL.md",
-      "triggers": "\"text analytics\", \"sentiment analysis\", \"entity recognition\", \"key phrase\", \"PII detection\", \"TextAnalyticsClient\"."
     },
     {
       "description": "Azure AI Transcription SDK for Python. Use for real-time and batch speech-to-text transcription with timestamps and diarization. Triggers: \"transcription\", \"speech to text\", \"Azure AI Transcription\", \"TranscriptionClient\".",
@@ -497,14 +425,6 @@
       "skill_id": "azure-data-tables-py",
       "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-data-tables-py/SKILL.md",
       "triggers": "\"table storage\", \"TableServiceClient\", \"TableClient\", \"entities\", \"PartitionKey\", \"RowKey\"."
-    },
-    {
-      "description": "Debug Azure production issues on Azure using AppLens, Azure Monitor, resource health, and safe triage. WHEN: debug production issues, troubleshoot container apps, troubleshoot functions, troubleshoot AKS, kubectl cannot connect, kube-system/CoreDNS failures, pod pending, crashloop, node not ready, upgrade failures, analyze logs, KQL, insights, image pull failures, cold start issues, health probe failures, resource health, root cause of errors.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-diagnostics",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-diagnostics/SKILL.md",
-      "triggers": "azure;diagnostics"
     },
     {
       "description": "Architect and provision enterprise Azure infrastructure from workload descriptions. For cloud architects and platform engineers planning networking, identity, security, compliance, and multi-resource topologies with WAF alignment. Generates Bicep or Terraform directly (no azd). WHEN: 'plan Azure infrastructure', 'architect Azure landing zone', 'design hub-spoke network', 'plan multi-region DR topology', 'set up VNets firewalls and private endpoints', 'subscription-scope Bicep deployment'. PREFER azure-prepare FOR app-centric workflows.",
@@ -787,14 +707,6 @@
       "triggers": "\"azure-mgmt-botservice\", \"AzureBotService\", \"bot management\", \"conversational AI\", \"bot channels\"."
     },
     {
-      "description": "Azure Resource Manager SDK for Fabric in .NET. Use for MANAGEMENT PLANE operations: provisioning, scaling, suspending/resuming Microsoft Fabric capacities, checking name availability, and listing SKUs via Azure Resource Manager. Triggers: \"Fabric capacity\", \"create capacity\", \"suspend capacity\", \"resume capacity\", \"Fabric SKU\", \"provision Fabric\", \"ARM Fabric\", \"FabricCapacityResource\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-mgmt-fabric-dotnet",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-fabric-dotnet/SKILL.md",
-      "triggers": "azure;mgmt;fabric;dotnet"
-    },
-    {
       "description": "Azure Fabric Management SDK for Python. Use for managing Microsoft Fabric capacities and resources. Triggers: \"azure-mgmt-fabric\", \"FabricMgmtClient\", \"Fabric capacity\", \"Microsoft Fabric\", \"Power BI capacity\".",
       "phase": 1,
       "score": 100,
@@ -897,14 +809,6 @@
       "skill_id": "azure-postgres-ts",
       "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-postgres-ts/SKILL.md",
       "triggers": "azure;postgres;ts"
-    },
-    {
-      "description": "Prepare Azure apps for deployment (infra Bicep/Terraform, azure.yaml, Dockerfiles). Use for create/modernize or create+deploy; not cross-cloud migration (use azure-cloud-migrate). WHEN: \"create app\", \"build web app\", \"create API\", \"create serverless HTTP API\", \"create frontend\", \"create back end\", \"build a service\", \"modernize application\", \"update application\", \"add authentication\", \"add caching\", \"host on Azure\", \"create and deploy\", \"deploy to Azure\", \"deploy to Azure using Terraform\", \"deploy to Azure App Service\", \"deploy to Azure App Service using Terraform\", \"deploy to Azure Container Apps\", \"deploy to Azure Container Apps using Terraform\", \"generate Terraform\", \"generate Bicep\", \"function app\", \"timer trigger\", \"service bus trigger\", \"event-driven function\", \"containerized Node.js app\", \"social media app\", \"static portfolio website\", \"todo list with frontend and API\", \"prepare my Azure application to use Key Vault\", \"managed identity\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "azure-prepare",
-      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-prepare/SKILL.md",
-      "triggers": "azure;prepare"
     },
     {
       "description": "Check/manage Azure quotas and usage across providers. For deployment planning, capacity validation, region selection. WHEN: \"check quotas\", \"service limits\", \"current usage\", \"request quota increase\", \"quota exceeded\", \"validate capacity\", \"regional availability\", \"provisioning limits\", \"vCPU limit\", \"how many vCPUs available in my subscription\".",
@@ -1307,14 +1211,6 @@
       "triggers": "gh;review;requests"
     },
     {
-      "description": "Master advanced Git techniques to maintain clean history, collaborate effectively, and recover from any situation with confidence.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "git-advanced-workflows",
-      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/git-advanced-workflows/SKILL.md",
-      "triggers": "git;advanced;workflows"
-    },
-    {
       "description": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
       "phase": 1,
       "score": 100,
@@ -1435,14 +1331,6 @@
       "triggers": "git;merge;worktree"
     },
     {
-      "description": "Use when adding metadata to commits without changing history, tracking review status, test results, code quality annotations, or supplementing commit messages post-hoc - provides git notes commands and patterns for attaching non-invasive metadata to Git objects.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "git:notes",
-      "src_path": "lib/neolabhq-context-engineering-kit/plugins/git/skills/notes/SKILL.md",
-      "triggers": "git;notes"
-    },
-    {
       "description": "Use when working on multiple branches simultaneously, context switching without stashing, reviewing PRs while developing, testing in isolation, or comparing implementations across branches - provides git worktree commands and workflow patterns for parallel development with multiple working directories.",
       "phase": 1,
       "score": 100,
@@ -1523,14 +1411,6 @@
       "triggers": "issues"
     },
     {
-      "description": "Delegate coding tasks to Google Jules AI agent for asynchronous execution. Use when user says: 'have Jules fix', 'delegate to Jules', 'send to Jules', 'ask Jules to', 'check Jules sessions', 'pull Jules results', 'jules add tests', 'jules add docs', 'jules review pr'. Handles: bug fixes, documentation, features, tests, refactoring, code reviews. Works with GitHub repos, creates PRs.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "jules",
-      "src_path": "lib/sanjay3290-ai-skills/skills/jules/SKILL.md",
-      "triggers": "jules"
-    },
-    {
       "description": "Production-ready patterns for building LLM applications, inspired by [Dify](https://github.com/langgenius/dify) and industry best practices.",
       "phase": 1,
       "score": 100,
@@ -1595,12 +1475,12 @@
       "triggers": "netlify;cli;and;deploy"
     },
     {
-      "description": "Handles git and GitHub operations using the gh CLI. Use when the user asks about pull requests (PRs), GitHub issues, repo management, branching, merging, rebasing, cherry-picking, merge conflict resolution, commit history cleanup, pre-commit hook debugging, GitHub Actions workflows, or releases. Covers creating and reviewing PRs, watching CI checks, interactive rebasing, branch cleanup, submodule management, and repository archaeology with git log/blame/bisect.",
+      "description": "7-stage super workflow for GitHub repo audit, cleanup, PR review, and competitor analysis",
       "phase": 1,
       "score": 100,
-      "skill_id": "octocat",
-      "src_path": "lib/mcollina-skills/skills/octocat/SKILL.md",
-      "triggers": "git, github, gh-cli, version-control, merge-conflicts, pull-requests"
+      "skill_id": "openclaw-github-repo-commander",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/openclaw-github-repo-commander/SKILL.md",
+      "triggers": "github;git;repository;audit;cleanup;workflow;devtools;automation;code-review;security"
     },
     {
       "description": "Generate AI-powered podcast-style audio narratives using Azure OpenAI's GPT Realtime Mini model via WebSocket. Use when building text-to-speech features, audio narrative generation, podcast creation from content, or integrating with Azure OpenAI Realtime API for real audio output. Covers full-stack implementation from React frontend to Python FastAPI backend with WebSocket streaming.",
@@ -1667,14 +1547,6 @@
       "triggers": "requesthunt"
     },
     {
-      "description": "Configure deployment settings for /land-and-deploy. Detects your deploy platform (Fly.io, Render, Vercel, Netlify, Heroku, GitHub Actions, custom), production URL, health check endpoints, and deploy status commands. Writes the configuration to CLAUDE.md so all future deploys are automatic. Use when: \"setup deploy\", \"configure deployment\", \"set up land-and-deploy\", \"how do I deploy with gstack\", \"add deploy config\".",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "setup-deploy",
-      "src_path": "lib/garrytan-gstack/setup-deploy/SKILL.md",
-      "triggers": "setup;deploy"
-    },
-    {
       "description": "Guide for creating effective skills for AI coding agents working with Azure SDKs and Microsoft Foundry services. Use when creating new skills or updating existing skills.",
       "phase": 1,
       "score": 100,
@@ -1737,14 +1609,6 @@
       "skill_id": "wiki-architect",
       "src_path": "lib/microsoft-skills/.github/plugins/deep-wiki/skills/wiki-architect/SKILL.md",
       "triggers": "wiki;architect"
-    },
-    {
-      "description": "Analyzes git commit history and generates structured changelogs categorized by change type. Use when the user asks about recent changes, wants a changelog, or needs to understand what changed in the repository.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "wiki-changelog",
-      "src_path": "lib/microsoft-skills/.github/plugins/deep-wiki/skills/wiki-changelog/SKILL.md",
-      "triggers": "wiki;changelog"
     },
     {
       "description": "Generates llms.txt and llms-full.txt files for LLM-friendly project documentation following the llms.txt specification. Use when the user wants to create LLM-readable summaries, llms.txt files, or make their wiki accessible to language models.",

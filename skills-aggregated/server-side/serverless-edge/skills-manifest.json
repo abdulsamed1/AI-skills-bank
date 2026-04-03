@@ -1,5 +1,5 @@
 {
-  "generated_at_unix": 1775164951,
+  "generated_at_unix": 1775251385,
   "hub": "server-side",
   "skills": [
     {
@@ -25,14 +25,6 @@
       "skill_id": "aws-serverless",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/aws-serverless/SKILL.md",
       "triggers": "aws;serverless"
-    },
-    {
-      "description": "Uploads promo videos and content to Cloudflare R2 or AWS S3. Use when the user wants to host promo content for social media or distribution.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "cloud-uploader",
-      "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/cloud-uploader/SKILL.md",
-      "triggers": "cloud;uploader"
     },
     {
       "description": "Cloudflare D1 SQLite database with Workers, Drizzle ORM, migrations",
@@ -65,22 +57,6 @@
       "skill_id": "netlify-config",
       "src_path": "lib/netlify-context-and-tools/codex/skills/netlify-config/SKILL.md",
       "triggers": "netlify;config"
-    },
-    {
-      "description": "Guide for writing Netlify Edge Functions. Use when building middleware, geolocation-based logic, request/response manipulation, authentication checks, A/B testing, or any low-latency edge compute. Covers Deno runtime, context.next() middleware pattern, geolocation, and when to choose edge vs serverless.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "netlify-edge-functions",
-      "src_path": "lib/netlify-context-and-tools/codex/skills/netlify-edge-functions/SKILL.md",
-      "triggers": "netlify;edge;functions"
-    },
-    {
-      "description": "Guide for writing Netlify serverless functions. Use when creating API endpoints, background processing, scheduled tasks, or any server-side logic using Netlify Functions. Covers modern syntax (default export + Config), TypeScript, path routing, background functions, scheduled functions, streaming, and method routing.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "netlify-functions",
-      "src_path": "lib/netlify-context-and-tools/codex/skills/netlify-functions/SKILL.md",
-      "triggers": "netlify;functions"
     },
     {
       "description": "Core Supabase CLI, migrations, RLS, Edge Functions",
