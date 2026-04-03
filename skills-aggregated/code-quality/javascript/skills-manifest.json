@@ -19,14 +19,6 @@
       "triggers": "algorithmic;art"
     },
     {
-      "description": "Perform static analysis of malicious PDF documents using peepdf, pdfid, and pdf-parser to extract embedded JavaScript, shellcode, and suspicious objects.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "analyzing-malicious-pdf-with-peepdf",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-malicious-pdf-with-peepdf/SKILL.md",
-      "triggers": "malware-analysis;pdf;peepdf;pdfid;pdf-parser;static-analysis;reverse-engineering;dfir"
-    },
-    {
       "description": "Advanced JavaScript animation library skill for creating complex, high-performance web animations.",
       "phase": 1,
       "score": 100,
@@ -81,14 +73,6 @@
       "skill_id": "context7-auto-research",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/context7-auto-research/SKILL.md",
       "triggers": "context7;auto;research"
-    },
-    {
-      "description": "Deobfuscates malicious JavaScript code used in web-based attacks, phishing pages, and dropper scripts by reversing encoding layers, eval chains, string manipulation, and control flow obfuscation to reveal the original malicious logic. Activates for requests involving JavaScript malware analysis, script deobfuscation, web skimmer analysis, or obfuscated dropper investigation.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "deobfuscating-javascript-malware",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/deobfuscating-javascript-malware/SKILL.md",
-      "triggers": "malware;JavaScript;deobfuscation;web-malware;script-analysis"
     },
     {
       "description": "Specialized skill for building production-ready Discord bots. Covers Discord.js (JavaScript) and Pycord (Python), gateway intents, slash commands, interactive components, rate limiting, and sharding.",

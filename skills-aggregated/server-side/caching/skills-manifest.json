@@ -3,14 +3,6 @@
   "hub": "server-side",
   "skills": [
     {
-      "description": "Analyze Chromium-based browser artifacts using Hindsight to extract browsing history, downloads, cookies, cached content, autofill data, saved passwords, and browser extensions from Chrome, Edge, Brave, and Opera for forensic investigation.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "analyzing-browser-forensics-with-hindsight",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-browser-forensics-with-hindsight/SKILL.md",
-      "triggers": "browser-forensics;hindsight;chrome-forensics;chromium;edge;browsing-history;cookies;downloads;cache;web-artifacts"
-    },
-    {
       "description": "cache integration",
       "phase": 2,
       "score": 100,
@@ -33,14 +25,6 @@
       "skill_id": "debug-buttercup",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/debug-buttercup/SKILL.md",
       "triggers": "debug;buttercup"
-    },
-    {
-      "description": "Extract and analyze browser history, cookies, cache, downloads, and bookmarks from Chrome, Firefox, and Edge for forensic evidence of user web activity.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "extracting-browser-history-artifacts",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/extracting-browser-history-artifacts/SKILL.md",
-      "triggers": "forensics;browser-forensics;chrome;firefox;edge;web-history;artifact-extraction"
     },
     {
       "description": "Use when implementing or debugging ANY network request, API call, or data fetching. Covers fetch API, React Query, SWR, error handling, caching, offline support, and Expo Router data loaders (useLoaderData).",
@@ -73,14 +57,6 @@
       "skill_id": "ocr-caching-strategy",
       "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/domains/ocr-integration/skills/ocr-caching-strategy/SKILL.md",
       "triggers": "ocr;caching;strategy"
-    },
-    {
-      "description": "Execute web cache deception attacks by exploiting path normalization discrepancies between CDN caching layers and origin servers to cache and retrieve sensitive authenticated content.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "performing-web-cache-deception-attack",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-web-cache-deception-attack/SKILL.md",
-      "triggers": "web-cache-deception;cdn-attack;cache-poisoning;path-normalization;cloudflare;cache-key;static-resource"
     },
     {
       "description": "You're a caching specialist who has reduced LLM costs by 90% through strategic caching. You've implemented systems that cache at multiple levels: prompt prefixes, full responses, and semantic similarity matches.",

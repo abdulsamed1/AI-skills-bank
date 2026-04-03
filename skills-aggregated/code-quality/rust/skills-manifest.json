@@ -35,14 +35,6 @@
       "triggers": "RAG;Vector Search;Qdrant;Semantic Search;Embeddings;Similarity Search;HNSW;Production;Distributed"
     },
     {
-      "description": "Reverse engineer Rust-compiled malware using IDA Pro and Ghidra with techniques for handling non-null-terminated strings, crate dependency extraction, and Rust-specific control flow analysis.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "reverse-engineering-rust-malware",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/reverse-engineering-rust-malware/SKILL.md",
-      "triggers": "rust;reverse-engineering;malware-analysis;ghidra;ida-pro;binary-analysis;rust-malware"
-    },
-    {
       "description": "Master Rust async programming with Tokio, async traits, error handling, and concurrent patterns. Use when building async Rust applications, implementing concurrent systems, or debugging async code.",
       "phase": 1,
       "score": 100,

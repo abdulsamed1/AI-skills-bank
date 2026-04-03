@@ -3,14 +3,6 @@
   "hub": "code-quality",
   "skills": [
     {
-      "description": "Reverse engineer Go-compiled malware using Ghidra with specialized scripts for function recovery, string extraction, and type reconstruction in stripped Go binaries.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "analyzing-golang-malware-with-ghidra",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-golang-malware-with-ghidra/SKILL.md",
-      "triggers": "golang;ghidra;reverse-engineering;malware-analysis;binary-analysis;go-malware;disassembly"
-    },
-    {
       "description": "Guide for building reliable, fault-tolerant Go applications with DBOS durable workflows. Use when adding DBOS to existing Go code, creating workflows and steps, or using queues for concurrency control.",
       "phase": 1,
       "score": 100,

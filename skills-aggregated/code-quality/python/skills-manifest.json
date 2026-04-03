@@ -3,30 +3,6 @@
   "hub": "code-quality",
   "skills": [
     {
-      "description": "Parse NetFlow v9 and IPFIX records to detect volumetric anomalies, port scanning, data exfiltration, and C2 beaconing patterns. Uses the Python netflow library to decode flow records, builds traffic baselines, and applies statistical analysis to identify flows with abnormal byte counts, connection durations, and periodic timing patterns.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "analyzing-network-flow-data-with-netflow",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-network-flow-data-with-netflow/SKILL.md",
-      "triggers": "analyzing;network;flow;data"
-    },
-    {
-      "description": "Parse Windows PowerShell Script Block Logs (Event ID 4104) from EVTX files to detect obfuscated commands, encoded payloads, and living-off-the-land techniques. Uses python-evtx to extract and reconstruct multi-block scripts, applies entropy analysis and pattern matching for Base64-encoded commands, Invoke-Expression abuse, download cradles, and AMSI bypass attempts.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "analyzing-powershell-script-block-logging",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-powershell-script-block-logging/SKILL.md",
-      "triggers": "analyzing;powershell;script;block"
-    },
-    {
-      "description": "Parse Windows Prefetch files using the windowsprefetch Python library to reconstruct application execution history, detect renamed or masquerading binaries, and identify suspicious program execution patterns.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "analyzing-windows-prefetch-with-python",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-windows-prefetch-with-python/SKILL.md",
-      "triggers": "digital-forensics;windows;prefetch;execution-history;incident-response;malware-analysis"
-    },
-    {
       "description": "Comprehensive Python library for astronomy and astrophysics. This skill should be used when working with astronomical data including celestial coordinates, physical units, FITS files, cosmological calculations, time systems, tables, world coordinate systems (WCS), and astronomical data analysis. Use when tasks involve coordinate transformations, unit conversions, FITS file manipulation, cosmological distance calculations, time scale conversions, or astronomical data processing.",
       "phase": 1,
       "score": 100,
@@ -57,14 +33,6 @@
       "skill_id": "dbos-python",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/dbos-python/SKILL.md",
       "triggers": "dbos;python"
-    },
-    {
-      "description": "Detect unauthorized SaaS and cloud service usage (shadow IT) by analyzing proxy logs, DNS query logs, and netflow data using Python pandas for traffic pattern analysis and domain classification.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "detecting-shadow-it-cloud-usage",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-shadow-it-cloud-usage/SKILL.md",
-      "triggers": "shadow-IT;SaaS-discovery;proxy-logs;DNS-analysis;netflow;cloud-security;pandas"
     },
     {
       "description": "DNAnexus cloud genomics platform. Build apps/applets, manage data (upload/download), dxpy Python SDK, run workflows, FASTQ/BAM/VCF, for genomics pipeline development and execution.",
@@ -121,22 +89,6 @@
       "skill_id": "hugging-face-trackio",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/hugging-face-trackio/SKILL.md",
       "triggers": "hugging;face;trackio"
-    },
-    {
-      "description": "Detect NTFS timestamp manipulation (MITRE T1070.006) by comparing $STANDARD_INFORMATION vs $FILE_NAME timestamps in the MFT. Uses analyzeMFT and Python to identify files with anomalous temporal patterns indicating anti-forensic timestomping activity.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "hunting-for-defense-evasion-via-timestomping",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/hunting-for-defense-evasion-via-timestomping/SKILL.md",
-      "triggers": "timestomping;ntfs-forensics;mft-analysis;defense-evasion"
-    },
-    {
-      "description": "Build network traffic baselines from NetFlow/IPFIX data using Python pandas for statistical analysis, z-score anomaly detection, and hourly/daily traffic pattern profiling",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "implementing-network-traffic-baselining",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-network-traffic-baselining/SKILL.md",
-      "triggers": "netflow;ipfix;traffic-analysis;baselining;anomaly-detection;pandas;network-monitoring"
     },
     {
       "description": "Coleta e consulta dados de leiloeiros oficiais de todas as 27 Juntas Comerciais do Brasil. Scraper multi-UF, banco SQLite, API FastAPI e exportacao CSV/JSON.",

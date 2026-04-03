@@ -3,14 +3,6 @@
   "hub": "mobile",
   "skills": [
     {
-      "description": "Perform static analysis of Android APK malware samples using apktool for decompilation, jadx for Java source recovery, and androguard for permission analysis, manifest inspection, and suspicious API call detection.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "analyzing-android-malware-with-apktool",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-android-malware-with-apktool/SKILL.md",
-      "triggers": "Android;APK;apktool;jadx;androguard;mobile-malware;static-analysis;reverse-engineering"
-    },
-    {
       "description": "Material Design 3 and Android platform guidelines. Use when building Android apps with Jetpack Compose or XML layouts, implementing Material You, navigation, or accessibility. Triggers on tasks involving Android UI, Compose components, dynamic color, or Material Design compliance.",
       "phase": 4,
       "score": 100,

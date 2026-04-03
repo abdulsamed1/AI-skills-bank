@@ -107,14 +107,6 @@
       "triggers": "hugging;face;datasets"
     },
     {
-      "description": "Deploy privileged access management for database systems including Oracle, SQL Server, PostgreSQL, and MySQL. Covers session proxy configuration, credential vaulting, query auditing, dynamic credentia",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "implementing-pam-for-database-access",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-pam-for-database-access/SKILL.md",
-      "triggers": "iam;identity;access-control;privileged-access;pam;database;dba"
-    },
-    {
       "description": "Execute read-only SQL queries against multiple Microsoft SQL Server databases. Use when: (1) querying MSSQL/SQL Server databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety.",
       "phase": 2,
       "score": 100,
@@ -169,14 +161,6 @@
       "skill_id": "odoo-orm-expert",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/odoo-orm-expert/SKILL.md",
       "triggers": "odoo;orm;expert"
-    },
-    {
-      "description": "Perform forensic analysis of SQLite databases to recover deleted records from freelists and WAL files, decode encoded timestamps, and extract evidence from browser history, messaging apps, and mobile device databases.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "performing-sqlite-database-forensics",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-sqlite-database-forensics/SKILL.md",
-      "triggers": "sqlite;database-forensics;freelist;wal;write-ahead-log;browser-history;mobile-forensics;deleted-records;b-tree;unallocated-space"
     },
     {
       "description": "Execute read-only SQL queries against multiple PostgreSQL databases. Use when: (1) querying PostgreSQL databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety.",

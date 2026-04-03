@@ -451,14 +451,6 @@
       "triggers": "performance;testing;review;multi;agent"
     },
     {
-      "description": "Conduct a thick client application penetration test to identify insecure local storage, hardcoded credentials, DLL hijacking, memory manipulation, and insecure API communication in desktop applications using dnSpy, Procmon, and Burp Suite.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "performing-thick-client-application-penetration-test",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-thick-client-application-penetration-test/SKILL.md",
-      "triggers": "thick-client;desktop-application;dnSpy;Procmon;DLL-hijacking;binary-analysis;API-interception"
-    },
-    {
       "description": "Design comprehensive test cases using PICT (Pairwise Independent Combinatorial Testing) for any piece of requirements or code. Analyzes inputs, generates PICT models with parameters, values, and constraints for valid scenarios using pairwise testing. Outputs the PICT model, markdown table of test cases, and expected results.",
       "phase": 1,
       "score": 100,
@@ -779,14 +771,6 @@
       "triggers": "testing;qa"
     },
     {
-      "description": "Test and validate ransomware recovery procedures including backup restore operations, RTO/RPO target verification, recovery sequencing, and clean restore validation to ensure organizational resilience against destructive ransomware attacks.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "testing-ransomware-recovery-procedures",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/testing-ransomware-recovery-procedures/SKILL.md",
-      "triggers": "incident-response;ransomware;disaster-recovery;backup;rto;rpo;resilience"
-    },
-    {
       "description": "Visual testing - catch invisible buttons, broken layouts, contrast",
       "phase": 1,
       "score": 100,
@@ -801,14 +785,6 @@
       "skill_id": "unit-testing-test-generate",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/unit-testing-test-generate/SKILL.md",
       "triggers": "unit;testing;test;generate"
-    },
-    {
-      "description": "Validate backup integrity through cryptographic hash verification, automated restore testing, corruption detection, and recoverability checks to ensure backups are reliable for disaster recovery and ransomware response scenarios.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "validating-backup-integrity-for-recovery",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/validating-backup-integrity-for-recovery/SKILL.md",
-      "triggers": "incident-response;backup;integrity;hash-verification;restore-testing;disaster-recovery"
     },
     {
       "description": "Master comprehensive testing strategies for smart contracts using Hardhat, Foundry, and advanced testing patterns.",

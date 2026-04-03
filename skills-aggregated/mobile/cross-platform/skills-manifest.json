@@ -43,14 +43,6 @@
       "triggers": "mobile;games"
     },
     {
-      "description": "Acquire and analyze mobile device data using Cellebrite UFED and open-source tools to extract communications, location data, and application artifacts.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "performing-mobile-device-forensics-with-cellebrite",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-mobile-device-forensics-with-cellebrite/SKILL.md",
-      "triggers": "forensics;mobile-forensics;cellebrite;smartphone-analysis;ios-forensics;android-forensics"
-    },
-    {
       "description": "React Native mobile patterns, platform-specific code",
       "phase": 4,
       "score": 100,

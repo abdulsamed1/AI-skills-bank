@@ -163,14 +163,6 @@
       "triggers": "computer;use;agents"
     },
     {
-      "description": "Conducts security testing of REST, GraphQL, and gRPC APIs to identify vulnerabilities in authentication, authorization, rate limiting, input validation, and business logic. The tester uses the OWASP API Security Top 10 as the testing framework, combining Burp Suite interception with Postman collections and custom scripts to test endpoint security at every privilege level. Activates for requests involving API security testing, REST API pentest, GraphQL security assessment, or API vulnerability testing.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "conducting-api-security-testing",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/conducting-api-security-testing/SKILL.md",
-      "triggers": "API-security;OWASP-API-Top10;REST;GraphQL;authorization-testing"
-    },
-    {
       "description": "You are a data pipeline architecture expert specializing in scalable, reliable, and cost-effective data pipelines for batch and streaming data processing.",
       "phase": 2,
       "score": 100,
@@ -307,52 +299,12 @@
       "triggers": "hummingbird"
     },
     {
-      "description": "Implements API rate limiting and throttling controls using token bucket, sliding window, and fixed window algorithms to protect against brute force attacks, credential stuffing, resource exhaustion, and API abuse. The engineer configures per-user, per-IP, and per-endpoint rate limits using Redis-backed counters, API gateway plugins, or application middleware, and implements proper HTTP 429 responses with Retry-After headers. Activates for requests involving rate limiting implementation, API throttling setup, request quota management, or API abuse prevention.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "implementing-api-rate-limiting-and-throttling",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-api-rate-limiting-and-throttling/SKILL.md",
-      "triggers": "api-security;rate-limiting;throttling;redis;token-bucket;abuse-prevention"
-    },
-    {
-      "description": "Deploy and configure Wazuh SIEM/XDR for endpoint detection including agent management, custom decoder and rule XML creation, alert querying via the Wazuh REST API, and automated response actions.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "implementing-endpoint-detection-with-wazuh",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-endpoint-detection-with-wazuh/SKILL.md",
-      "triggers": "siem;xdr;wazuh;endpoint-detection;custom-rules;incident-response"
-    },
-    {
-      "description": "Deploys canary tokens and honeytokens (fake AWS credentials, DNS canaries, document beacons, database records) that trigger alerts when accessed by attackers. Uses the Canarytokens API and custom webhook integrations for breach detection. Use when building deception-based early warning systems for intrusion detection.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "implementing-honeytokens-for-breach-detection",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-honeytokens-for-breach-detection/SKILL.md",
-      "triggers": "implementing;honeytokens;for;breach"
-    },
-    {
       "description": "Implements and trains LLMs using Lightning AI's LitGPT with 20+ pretrained architectures (Llama, Gemma, Phi, Qwen, Mistral). Use when need clean model implementations, educational understanding of architectures, or production fine-tuning with LoRA/QLoRA. Single-file implementations, no abstraction layers.",
       "phase": 2,
       "score": 100,
       "skill_id": "implementing-llms-litgpt",
       "src_path": "lib/orchestra-research-ai-research-skills/01-model-architecture/litgpt/SKILL.md",
       "triggers": "Model Architecture;LitGPT;Lightning AI;LLM Implementation;LoRA;QLoRA;Fine-Tuning;Llama;Gemma;Phi;Mistral;Educational"
-    },
-    {
-      "description": "Configures mutual TLS (mTLS) authentication between microservices using Python cryptography library for certificate generation and ssl module for TLS verification. Validates certificate chains, checks expiration, and audits mTLS deployment status. Use when implementing zero-trust service-to-service authentication.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "implementing-mtls-for-zero-trust-services",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-mtls-for-zero-trust-services/SKILL.md",
-      "triggers": "implementing;mtls;for;zero"
-    },
-    {
-      "description": "Automate phishing incident response using Splunk SOAR REST API to create containers, add artifacts, and trigger playbooks",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "implementing-soar-playbook-for-phishing",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-soar-playbook-for-phishing/SKILL.md",
-      "triggers": "soar;splunk-phantom;phishing;incident-response"
     },
     {
       "description": "Senior Laravel Engineer role for production-grade, maintainable, and idiomatic Laravel solutions. Focuses on clean architecture, security, performance, and modern standards (Laravel 10/11+).",
@@ -569,14 +521,6 @@
       "skill_id": "swift-library-design",
       "src_path": "lib/joannis-claude-skills/swift-library-design/SKILL.md",
       "triggers": "swift;library;design"
-    },
-    {
-      "description": "Systematically assessing REST and GraphQL API endpoints against the OWASP API Security Top 10 risks using automated and manual testing techniques.",
-      "phase": 2,
-      "score": 100,
-      "skill_id": "testing-api-security-with-owasp-top-10",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/testing-api-security-with-owasp-top-10/SKILL.md",
-      "triggers": "penetration-testing;api-security;owasp;rest-api;graphql;burpsuite;postman"
     },
     {
       "description": "Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions \"domain model\" or \"DDD\".",

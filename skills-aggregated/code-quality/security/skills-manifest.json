@@ -3,36 +3,12 @@
   "hub": "code-quality",
   "skills": [
     {
-      "description": "Conducts external reconnaissance using Open Source Intelligence (OSINT) techniques to map an organization's external attack surface without directly interacting with target systems. The tester gathers information from public sources including DNS records, certificate transparency logs, search engines, social media, code repositories, and data breach databases to build a comprehensive target profile. Activates for requests involving OSINT reconnaissance, external footprinting, attack surface mapping, or passive information gathering.",
-      "phase": 4,
-      "score": 100,
-      "skill_id": "conducting-external-reconnaissance-with-osint",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/conducting-external-reconnaissance-with-osint/SKILL.md",
-      "triggers": "OSINT;reconnaissance;attack-surface;footprinting;passive-recon"
-    },
-    {
-      "description": "Extract embedded configuration from Agent Tesla RAT samples including SMTP/FTP/Telegram exfiltration credentials, keylogger settings, and C2 endpoints using .NET decompilation and memory analysis.",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "extracting-config-from-agent-tesla-rat",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/extracting-config-from-agent-tesla-rat/SKILL.md",
-      "triggers": "agent-tesla;rat;config-extraction;dotnet;malware-analysis;keylogger;credential-theft"
-    },
-    {
       "description": "Security audit, hardening, threat modeling (STRIDE/PASTA), Red/Blue Team, OWASP checks, code review, incident response, and infrastructure security for any project.",
       "phase": 1,
       "score": 100,
       "skill_id": "007",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/007/SKILL.md",
       "triggers": "security;audit;owasp;threat-modeling;hardening;pentest"
-    },
-    {
-      "description": "Implements endpoint Data Loss Prevention (DLP) controls to detect and prevent sensitive data exfiltration through email, USB, cloud storage, and printing. Use when deploying DLP agents, creating content inspection policies, or preventing unauthorized data movement from endpoints. Activates for requests involving DLP, data exfiltration prevention, content inspection, or sensitive data protection on endpoints.",
-      "phase": 3,
-      "score": 100,
-      "skill_id": "implementing-endpoint-dlp-controls",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-endpoint-dlp-controls/SKILL.md",
-      "triggers": "endpoint;DLP;data-loss-prevention;data-protection;content-inspection"
     },
     {
       "description": "This skill helps Claude write secure web applications. Use this when working on any web application or when a user requests a scan or audit to ensure security best practices are followed.",
@@ -59,6 +35,14 @@
       "triggers": "agentmail"
     },
     {
+      "description": "Perform static analysis of Android APK malware samples using apktool for decompilation, jadx for Java source recovery, and androguard for permission analysis, manifest inspection, and suspicious API call detection.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "analyzing-android-malware-with-apktool",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-android-malware-with-apktool/SKILL.md",
+      "triggers": "Android;APK;apktool;jadx;androguard;mobile-malware;static-analysis;reverse-engineering"
+    },
+    {
       "description": "Parses API Gateway access logs (AWS API Gateway, Kong, Nginx) to detect BOLA/IDOR attacks, rate limit bypass, credential scanning, and injection attempts. Uses pandas for statistical analysis of request patterns and anomaly detection. Use when investigating API abuse or building API-specific threat detection rules.",
       "phase": 1,
       "score": 100,
@@ -81,6 +65,14 @@
       "skill_id": "analyzing-azure-activity-logs-for-threats",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-azure-activity-logs-for-threats/SKILL.md",
       "triggers": "analyzing;azure;activity;logs"
+    },
+    {
+      "description": "Analyze Chromium-based browser artifacts using Hindsight to extract browsing history, downloads, cookies, cached content, autofill data, saved passwords, and browser extensions from Chrome, Edge, Brave, and Opera for forensic investigation.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "analyzing-browser-forensics-with-hindsight",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-browser-forensics-with-hindsight/SKILL.md",
+      "triggers": "browser-forensics;hindsight;chrome-forensics;chromium;edge;browsing-history;cookies;downloads;cache;web-artifacts"
     },
     {
       "description": "Campaign attribution analysis involves systematically evaluating evidence to determine which threat actor or group is responsible for a cyber operation. This skill covers collecting and weighting attr",
@@ -155,6 +147,14 @@
       "triggers": "ethereum;solidity;smart-contract;slither;mythril;blockchain;defi;audit"
     },
     {
+      "description": "Reverse engineer Go-compiled malware using Ghidra with specialized scripts for function recovery, string extraction, and type reconstruction in stripped Go binaries.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "analyzing-golang-malware-with-ghidra",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-golang-malware-with-ghidra/SKILL.md",
+      "triggers": "golang;ghidra;reverse-engineering;malware-analysis;binary-analysis;go-malware;disassembly"
+    },
+    {
       "description": "Detect and analyze heap spray attacks in memory dumps using Volatility3 plugins to identify NOP sled patterns, shellcode landing zones, and suspicious large allocations in process virtual address space.",
       "phase": 1,
       "score": 100,
@@ -177,6 +177,14 @@
       "skill_id": "analyzing-ios-app-security-with-objection",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-ios-app-security-with-objection/SKILL.md",
       "triggers": "mobile-security;ios;objection;frida;owasp-mobile;penetration-testing"
+    },
+    {
+      "description": "Parses Kubernetes API server audit logs (JSON lines) to detect exec-into-pod, secret access, RBAC modifications, privileged pod creation, and anonymous API access. Builds threat detection rules from audit event patterns. Use when investigating Kubernetes cluster compromise or building k8s-specific SIEM detection rules.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "analyzing-kubernetes-audit-logs",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-kubernetes-audit-logs/SKILL.md",
+      "triggers": "analyzing;kubernetes;audit;logs"
     },
     {
       "description": "Uses the Linux Audit framework (auditd) with ausearch and aureport utilities to detect intrusion attempts, unauthorized access, privilege escalation, and suspicious system activity. Covers audit rule configuration, log querying, timeline reconstruction, and integration with SIEM platforms. Activates for requests involving auditd analysis, Linux audit log investigation, ausearch queries, aureport summaries, or host-based intrusion detection on Linux.",
@@ -211,6 +219,14 @@
       "triggers": "malware;macro;Office;VBA;document-malware"
     },
     {
+      "description": "Perform static analysis of malicious PDF documents using peepdf, pdfid, and pdf-parser to extract embedded JavaScript, shellcode, and suspicious objects.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "analyzing-malicious-pdf-with-peepdf",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-malicious-pdf-with-peepdf/SKILL.md",
+      "triggers": "malware-analysis;pdf;peepdf;pdfid;pdf-parser;static-analysis;reverse-engineering;dfir"
+    },
+    {
       "description": "URLScan.io is a free service for scanning and analyzing suspicious URLs. It captures screenshots, DOM content, HTTP transactions, JavaScript behavior, and network connections of web pages in an isolat",
       "phase": 1,
       "score": 100,
@@ -233,6 +249,14 @@
       "skill_id": "analyzing-memory-dumps-with-volatility",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-memory-dumps-with-volatility/SKILL.md",
       "triggers": "malware;memory-forensics;Volatility;RAM-analysis;incident-response"
+    },
+    {
+      "description": "Parse NetFlow v9 and IPFIX records to detect volumetric anomalies, port scanning, data exfiltration, and C2 beaconing patterns. Uses the Python netflow library to decode flow records, builds traffic baselines, and applies statistical analysis to identify flows with abnormal byte counts, connection durations, and periodic timing patterns.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "analyzing-network-flow-data-with-netflow",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-network-flow-data-with-netflow/SKILL.md",
+      "triggers": "analyzing;network;flow;data"
     },
     {
       "description": "Craft, send, sniff, and dissect network packets using Scapy for protocol analysis, network reconnaissance, and traffic anomaly detection in authorized security testing",
@@ -289,6 +313,14 @@
       "skill_id": "analyzing-powershell-empire-artifacts",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-powershell-empire-artifacts/SKILL.md",
       "triggers": "PowerShell-Empire;threat-hunting;Script-Block-Logging;base64;stager;C2;MITRE-ATT&CK;T1059.001;forensics"
+    },
+    {
+      "description": "Parse Windows PowerShell Script Block Logs (Event ID 4104) from EVTX files to detect obfuscated commands, encoded payloads, and living-off-the-land techniques. Uses python-evtx to extract and reconstruct multi-block scripts, applies entropy analysis and pattern matching for Base64-encoded commands, Invoke-Expression abuse, download cradles, and AMSI bypass attempts.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "analyzing-powershell-script-block-logging",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-powershell-script-block-logging/SKILL.md",
+      "triggers": "analyzing;powershell;script;block"
     },
     {
       "description": "Analyzes encryption algorithms, key management, and file encryption routines used by ransomware families to assess decryption feasibility, identify implementation weaknesses, and support recovery efforts. Covers AES, RSA, ChaCha20, and hybrid encryption schemes. Activates for requests involving ransomware cryptanalysis, encryption analysis, key recovery assessment, or ransomware decryption feasibility.",
@@ -363,6 +395,14 @@
       "triggers": "analyzing;threat;landscape;with"
     },
     {
+      "description": "Queries Certificate Transparency logs via crt.sh and pycrtsh to detect phishing domains, unauthorized certificate issuance, and shadow IT. Monitors newly issued certificates for typosquatting and brand impersonation using Levenshtein distance. Use for proactive phishing domain detection and certificate monitoring.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "analyzing-tls-certificate-transparency-logs",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-tls-certificate-transparency-logs/SKILL.md",
+      "triggers": "analyzing;tls;certificate;transparency"
+    },
+    {
       "description": "Detect typosquatting, homograph phishing, and brand impersonation domains using dnstwist to generate domain permutations and identify registered lookalike domains targeting your organization.",
       "phase": 1,
       "score": 100,
@@ -393,6 +433,14 @@
       "skill_id": "analyzing-windows-event-logs-in-splunk",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-windows-event-logs-in-splunk/SKILL.md",
       "triggers": "soc;splunk;windows-events;sysmon;event-logs;mitre-attack;active-directory"
+    },
+    {
+      "description": "Parse Windows Prefetch files using the windowsprefetch Python library to reconstruct application execution history, detect renamed or masquerading binaries, and identify suspicious program execution patterns.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "analyzing-windows-prefetch-with-python",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-windows-prefetch-with-python/SKILL.md",
+      "triggers": "digital-forensics;windows;prefetch;execution-history;incident-response;malware-analysis"
     },
     {
       "description": "Master AngularJS to Angular migration, including hybrid apps, component conversion, dependency injection changes, and routing migration.",
@@ -521,6 +569,14 @@
       "skill_id": "auditing-terraform-infrastructure-for-security",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/auditing-terraform-infrastructure-for-security/SKILL.md",
       "triggers": "cloud-security;terraform;infrastructure-as-code;checkov;tfsec;policy-as-code"
+    },
+    {
+      "description": "Monitors Certificate Transparency (CT) logs to detect unauthorized certificate issuance, discover subdomains via CT data, and alert on suspicious certificate activity for owned domains. Uses the crt.sh API and direct CT log querying based on RFC 6962 to build continuous monitoring pipelines that catch rogue certificates, track CA behavior, and map the external attack surface. Activates for requests involving certificate transparency monitoring, CT log auditing, subdomain discovery via certificates, or certificate issuance alerting.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "auditing-tls-certificate-transparency-logs",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/auditing-tls-certificate-transparency-logs/SKILL.md",
+      "triggers": "certificate-transparency;CT-logs;crt-sh;subdomain-discovery;TLS-monitoring;RFC-6962"
     },
     {
       "description": "Build secure, scalable authentication and authorization systems using industry-standard patterns and modern best practices.",
@@ -963,6 +1019,22 @@
       "triggers": "threat-intelligence;cti;ioc;mitre-attack;stix;misp;taxii;threat-sharing"
     },
     {
+      "description": "Collect volatile forensic evidence from a compromised system following order of volatility, preserving memory, network connections, processes, and system state before they are lost.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "collecting-volatile-evidence-from-compromised-host",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/collecting-volatile-evidence-from-compromised-host/SKILL.md",
+      "triggers": "incident-response;dfir;forensics;volatile-evidence;memory-forensics;chain-of-custody"
+    },
+    {
+      "description": "Conducts security testing of REST, GraphQL, and gRPC APIs to identify vulnerabilities in authentication, authorization, rate limiting, input validation, and business logic. The tester uses the OWASP API Security Top 10 as the testing framework, combining Burp Suite interception with Postman collections and custom scripts to test endpoint security at every privilege level. Activates for requests involving API security testing, REST API pentest, GraphQL security assessment, or API vulnerability testing.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "conducting-api-security-testing",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/conducting-api-security-testing/SKILL.md",
+      "triggers": "API-security;OWASP-API-Top10;REST;GraphQL;authorization-testing"
+    },
+    {
       "description": "Responds to security incidents in cloud environments (AWS, Azure, GCP) by performing identity-based containment, cloud-native log analysis, resource isolation, and forensic evidence acquisition adapted for ephemeral cloud infrastructure. Activates for requests involving cloud incident response, AWS security incident, Azure compromise, GCP breach, cloud forensics, or cloud identity compromise.",
       "phase": 1,
       "score": 100,
@@ -985,6 +1057,14 @@
       "skill_id": "conducting-domain-persistence-with-dcsync",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/conducting-domain-persistence-with-dcsync/SKILL.md",
       "triggers": "red-team;active-directory;dcsync;persistence;credential-dumping;golden-ticket;mimikatz"
+    },
+    {
+      "description": "Conducts external reconnaissance using Open Source Intelligence (OSINT) techniques to map an organization's external attack surface without directly interacting with target systems. The tester gathers information from public sources including DNS records, certificate transparency logs, search engines, social media, code repositories, and data breach databases to build a comprehensive target profile. Activates for requests involving OSINT reconnaissance, external footprinting, attack surface mapping, or passive information gathering.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "conducting-external-reconnaissance-with-osint",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/conducting-external-reconnaissance-with-osint/SKILL.md",
+      "triggers": "OSINT;reconnaissance;attack-surface;footprinting;passive-recon"
     },
     {
       "description": "Plan and execute a comprehensive red team engagement covering reconnaissance through post-exploitation using MITRE ATT&CK-aligned TTPs to evaluate an organization's detection and response capabilities.",
@@ -1289,6 +1369,14 @@
       "skill_id": "database-migrations-migration-observability",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/database-migrations-migration-observability/SKILL.md",
       "triggers": "database, cdc, debezium, kafka, prometheus, grafana, monitoring"
+    },
+    {
+      "description": "Deobfuscates malicious JavaScript code used in web-based attacks, phishing pages, and dropper scripts by reversing encoding layers, eval chains, string manipulation, and control flow obfuscation to reveal the original malicious logic. Activates for requests involving JavaScript malware analysis, script deobfuscation, web skimmer analysis, or obfuscated dropper investigation.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "deobfuscating-javascript-malware",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/deobfuscating-javascript-malware/SKILL.md",
+      "triggers": "malware;JavaScript;deobfuscation;web-malware;script-analysis"
     },
     {
       "description": "Systematically deobfuscate multi-layer PowerShell malware using AST analysis, dynamic tracing, and tools like PSDecode and PowerDecode to reveal hidden payloads and C2 infrastructure.",
@@ -1691,6 +1779,14 @@
       "triggers": "threat-hunting;mitre-attack;lateral-movement;splunk;siem;proactive-detection;ta0008"
     },
     {
+      "description": "Detect abuse of legitimate Windows binaries (LOLBins) used for living off the land attacks. Monitors process creation, command-line arguments, and parent-child relationships to identify suspicious LOLBin execution patterns.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "detecting-living-off-the-land-attacks",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-living-off-the-land-attacks/SKILL.md",
+      "triggers": "lolbins;lotl;fileless-attacks;process-monitoring"
+    },
+    {
       "description": "Detect Living Off the Land Binaries (LOLBins/LOLBAS) abuse including certutil, regsvr32, mshta, and rundll32 via process telemetry, Sigma rules, and parent-child process analysis",
       "phase": 1,
       "score": 100,
@@ -1897,6 +1993,14 @@
       "skill_id": "detecting-shadow-api-endpoints",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-shadow-api-endpoints/SKILL.md",
       "triggers": "api-security;shadow-apis;api-discovery;undocumented-apis;zombie-apis;api-inventory;attack-surface-management;api-governance"
+    },
+    {
+      "description": "Detect unauthorized SaaS and cloud service usage (shadow IT) by analyzing proxy logs, DNS query logs, and netflow data using Python pandas for traffic pattern analysis and domain classification.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "detecting-shadow-it-cloud-usage",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-shadow-it-cloud-usage/SKILL.md",
+      "triggers": "shadow-IT;SaaS-discovery;proxy-logs;DNS-analysis;netflow;cloud-security;pandas"
     },
     {
       "description": "Spearphishing targets specific individuals using personalized, researched content that bypasses generic spam filters. Email security gateways (SEGs) like Microsoft Defender for Office 365, Proofpoint,",
@@ -2323,6 +2427,22 @@
       "triggers": "zerologon;cve-2020-1472;netlogon;domain-controller;privilege-escalation;active-directory;ms-nrpc"
     },
     {
+      "description": "Extract and analyze browser history, cookies, cache, downloads, and bookmarks from Chrome, Firefox, and Edge for forensic evidence of user web activity.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "extracting-browser-history-artifacts",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/extracting-browser-history-artifacts/SKILL.md",
+      "triggers": "forensics;browser-forensics;chrome;firefox;edge;web-history;artifact-extraction"
+    },
+    {
+      "description": "Extract embedded configuration from Agent Tesla RAT samples including SMTP/FTP/Telegram exfiltration credentials, keylogger settings, and C2 endpoints using .NET decompilation and memory analysis.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "extracting-config-from-agent-tesla-rat",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/extracting-config-from-agent-tesla-rat/SKILL.md",
+      "triggers": "agent-tesla;rat;config-extraction;dotnet;malware-analysis;keylogger;credential-theft"
+    },
+    {
       "description": "Extracts indicators of compromise (IOCs) from malware samples including file hashes, network indicators (IPs, domains, URLs), host artifacts (file paths, registry keys, mutexes), and behavioral patterns for threat intelligence sharing and detection rule creation. Activates for requests involving IOC extraction, threat indicator harvesting, malware indicator collection, or building detection content from samples.",
       "phase": 1,
       "score": 100,
@@ -2643,6 +2763,14 @@
       "triggers": "threat-hunting;dcsync;active-directory;credential-access;t1003.006;mimikatz;windows;dfir"
     },
     {
+      "description": "Detect NTFS timestamp manipulation (MITRE T1070.006) by comparing $STANDARD_INFORMATION vs $FILE_NAME timestamps in the MFT. Uses analyzeMFT and Python to identify files with anomalous temporal patterns indicating anti-forensic timestomping activity.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "hunting-for-defense-evasion-via-timestomping",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/hunting-for-defense-evasion-via-timestomping/SKILL.md",
+      "triggers": "timestomping;ntfs-forensics;mft-analysis;defense-evasion"
+    },
+    {
       "description": "Hunt for DNS-based persistence mechanisms including DNS hijacking, dangling CNAME records, wildcard DNS abuse, and unauthorized zone modifications using passive DNS databases, SecurityTrails API, and DNS audit log analysis.",
       "phase": 1,
       "score": 100,
@@ -2835,6 +2963,14 @@
       "triggers": "cryptography;encryption;aes;data-at-rest;symmetric-encryption"
     },
     {
+      "description": "Implements strategies to reduce SOC alert fatigue by tuning detection rules, consolidating duplicate alerts, implementing risk-based alerting, and measuring alert quality metrics to maintain analyst effectiveness and prevent critical alert dismissal. Use when SOC teams face overwhelming alert volumes, high false positive rates, or declining analyst performance.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-alert-fatigue-reduction",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-alert-fatigue-reduction/SKILL.md",
+      "triggers": "soc;alert-fatigue;tuning;risk-based-alerting;false-positive;siem;detection-engineering"
+    },
+    {
       "description": "Security awareness training is the human layer of phishing defense. An effective anti-phishing training program combines regular simulations, interactive learning modules, metric tracking, and positiv",
       "phase": 1,
       "score": 100,
@@ -2865,6 +3001,14 @@
       "skill_id": "implementing-api-key-security-controls",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-api-key-security-controls/SKILL.md",
       "triggers": "api-security;api-keys;credential-management;key-rotation;secret-management"
+    },
+    {
+      "description": "Implements API rate limiting and throttling controls using token bucket, sliding window, and fixed window algorithms to protect against brute force attacks, credential stuffing, resource exhaustion, and API abuse. The engineer configures per-user, per-IP, and per-endpoint rate limits using Redis-backed counters, API gateway plugins, or application middleware, and implements proper HTTP 429 responses with Retry-After headers. Activates for requests involving rate limiting implementation, API throttling setup, request quota management, or API abuse prevention.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-api-rate-limiting-and-throttling",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-api-rate-limiting-and-throttling/SKILL.md",
+      "triggers": "api-security;rate-limiting;throttling;redis;token-bucket;abuse-prevention"
     },
     {
       "description": "Implement API schema validation using OpenAPI specifications and JSON Schema to enforce input/output contracts and prevent injection, data exposure, and mass assignment attacks.",
@@ -3195,6 +3339,22 @@
       "triggers": "cryptography;encryption;e2e;messaging;signal-protocol"
     },
     {
+      "description": "Deploy and configure Wazuh SIEM/XDR for endpoint detection including agent management, custom decoder and rule XML creation, alert querying via the Wazuh REST API, and automated response actions.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-endpoint-detection-with-wazuh",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-endpoint-detection-with-wazuh/SKILL.md",
+      "triggers": "siem;xdr;wazuh;endpoint-detection;custom-rules;incident-response"
+    },
+    {
+      "description": "Implements endpoint Data Loss Prevention (DLP) controls to detect and prevent sensitive data exfiltration through email, USB, cloud storage, and printing. Use when deploying DLP agents, creating content inspection policies, or preventing unauthorized data movement from endpoints. Activates for requests involving DLP, data exfiltration prevention, content inspection, or sensitive data protection on endpoints.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "implementing-endpoint-dlp-controls",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-endpoint-dlp-controls/SKILL.md",
+      "triggers": "endpoint;DLP;data-loss-prevention;data-protection;content-inspection"
+    },
+    {
       "description": "Envelope encryption is a strategy where data is encrypted with a data encryption key (DEK), and the DEK itself is encrypted with a master key (KEK) managed by AWS KMS. This approach allows encrypting",
       "phase": 1,
       "score": 100,
@@ -3251,6 +3411,14 @@
       "triggers": "cloud-security;gcp;vpc;firewall-rules;network-security;segmentation"
     },
     {
+      "description": "Automates GDPR Data Subject Access Request (DSAR) workflows including identity verification, PII discovery across databases and files using regex and NER, data mapping, response templating per Article 15 requirements, deadline tracking, and audit logging. Covers ICO/EDPB guidance compliance, exemption handling, and scalable batch processing. Use when building or auditing DSAR response capabilities under GDPR/UK GDPR.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-gdpr-data-subject-access-request",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-gdpr-data-subject-access-request/SKILL.md",
+      "triggers": "gdpr;dsar;privacy;pii-discovery;data-subject-rights;compliance;article-15"
+    },
+    {
       "description": "Configure GitHub Advanced Security with CodeQL to perform automated static analysis and vulnerability detection across repositories at enterprise scale.",
       "phase": 1,
       "score": 100,
@@ -3291,6 +3459,14 @@
       "triggers": "ransomware;detection;honeypot;canary;defense;deception"
     },
     {
+      "description": "Deploys canary tokens and honeytokens (fake AWS credentials, DNS canaries, document beacons, database records) that trigger alerts when accessed by attackers. Uses the Canarytokens API and custom webhook integrations for breach detection. Use when building deception-based early warning systems for intrusion detection.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-honeytokens-for-breach-detection",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-honeytokens-for-breach-detection/SKILL.md",
+      "triggers": "implementing;honeytokens;for;breach"
+    },
+    {
       "description": "Deploy and configure Tofino industrial firewalls from Belden/Hirschmann to protect SCADA systems and PLCs using deep packet inspection for OT protocols including Modbus, EtherNet/IP, OPC, and S7comm, enforcing granular access control between ICS security zones.",
       "phase": 1,
       "score": 100,
@@ -3315,12 +3491,28 @@
       "triggers": "ot-security;ics;scada;industrial-control;iec62443;network-segmentation;zones-conduits"
     },
     {
+      "description": "Sign and verify container image provenance using Sigstore Cosign with keyless OIDC-based signing, attestations, and Kubernetes admission enforcement.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-image-provenance-verification-with-cosign",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-image-provenance-verification-with-cosign/SKILL.md",
+      "triggers": "cosign;sigstore;image-signing;supply-chain;provenance;keyless;slsa"
+    },
+    {
       "description": "Implements immutable backup strategy using restic with S3-compatible storage and object lock for ransomware-resistant data protection. Automates backup creation, integrity verification via restic check --read-data, snapshot retention policy enforcement, and restore testing. Integrates with AWS S3 Object Lock, MinIO, and Backblaze B2 for WORM (Write Once Read Many) storage that prevents backup deletion or encryption by ransomware actors.",
       "phase": 1,
       "score": 100,
       "skill_id": "implementing-immutable-backup-with-restic",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-immutable-backup-with-restic/SKILL.md",
       "triggers": "restic;backup;immutable;ransomware;s3;object-lock;worm;recovery"
+    },
+    {
+      "description": "This skill covers implementing automated security scanning for Infrastructure as Code (IaC) templates using tools like Checkov, tfsec, and KICS. It addresses detecting misconfigurations in Terraform, CloudFormation, Kubernetes manifests, and Helm charts before deployment, establishing policy-based governance, and integrating IaC scanning into CI/CD pipelines to prevent insecure cloud resource provisioning.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-infrastructure-as-code-security-scanning",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-infrastructure-as-code-security-scanning/SKILL.md",
+      "triggers": "devsecops;cicd;iac-security;checkov;tfsec;terraform;secure-sdlc"
     },
     {
       "description": "ISO/IEC 27001:2022 is the international standard for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS). This skill covers the complete",
@@ -3347,6 +3539,14 @@
       "triggers": "cryptography;jwt;authentication;token-security;digital-signatures"
     },
     {
+      "description": "Implement Kubernetes network segmentation using Calico NetworkPolicy and GlobalNetworkPolicy for zero-trust pod-to-pod communication.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-kubernetes-network-policy-with-calico",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-kubernetes-network-policy-with-calico/SKILL.md",
+      "triggers": "calico;kubernetes;network-policy;network-segmentation;zero-trust;cni"
+    },
+    {
       "description": "Pod Security Standards (PSS) define three levels of security policies -- Privileged, Baseline, and Restricted -- enforced by the Pod Security Admission (PSA) controller built into Kubernetes 1.25+. PS",
       "phase": 1,
       "score": 100,
@@ -3361,6 +3561,14 @@
       "skill_id": "implementing-llm-guardrails-for-security",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-llm-guardrails-for-security/SKILL.md",
       "triggers": "LLM-guardrails;NeMo-Guardrails;input-validation;output-filtering;AI-safety"
+    },
+    {
+      "description": "Configure Fluentd and Fluent Bit for centralized log aggregation, routing, filtering, and enrichment across distributed infrastructure",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-log-forwarding-with-fluentd",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-log-forwarding-with-fluentd/SKILL.md",
+      "triggers": "fluentd;fluent-bit;log-aggregation;log-forwarding;siem;centralized-logging;observability"
     },
     {
       "description": "Implements memory protection mechanisms including DEP (Data Execution Prevention), ASLR (Address Space Layout Randomization), CFG (Control Flow Guard), and other exploit mitigations to prevent memory corruption attacks. Use when hardening endpoints against buffer overflow exploits, ROP chains, and code injection. Activates for requests involving memory protection, exploit mitigation, DEP, ASLR, or CFG configuration.",
@@ -3385,6 +3593,14 @@
       "skill_id": "implementing-mobile-application-management",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-mobile-application-management/SKILL.md",
       "triggers": "mobile-security;android;ios;mam;enterprise-security;owasp-mobile"
+    },
+    {
+      "description": "Configures mutual TLS (mTLS) authentication between microservices using Python cryptography library for certificate generation and ssl module for TLS verification. Validates certificate chains, checks expiration, and audits mTLS deployment status. Use when implementing zero-trust service-to-service authentication.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-mtls-for-zero-trust-services",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-mtls-for-zero-trust-services/SKILL.md",
+      "triggers": "implementing;mtls;for;zero"
     },
     {
       "description": "This skill covers implementing North American Electric Reliability Corporation Critical Infrastructure Protection (NERC CIP) compliance controls for Bulk Electric System (BES) cyber systems. It addresses asset categorization (CIP-002), electronic security perimeters (CIP-005), system security management (CIP-007), configuration management (CIP-010), supply chain risk management (CIP-013), and the 2025 updates including mandatory MFA for remote access and expanded low-impact asset requirements.",
@@ -3443,12 +3659,28 @@
       "triggers": "network-segmentation;firewall-zones;vlan;microsegmentation;lateral-movement;zero-trust;acl;east-west-traffic;pci-dss"
     },
     {
+      "description": "Build network traffic baselines from NetFlow/IPFIX data using Python pandas for statistical analysis, z-score anomaly detection, and hourly/daily traffic pattern profiling",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "implementing-network-traffic-baselining",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-network-traffic-baselining/SKILL.md",
+      "triggers": "netflow;ipfix;traffic-analysis;baselining;anomaly-detection;pandas;network-monitoring"
+    },
+    {
       "description": "Configure and deploy Palo Alto Networks next-generation firewalls with App-ID, User-ID, zone-based policies, SSL decryption, and threat prevention profiles for enterprise network security.",
       "phase": 1,
       "score": 100,
       "skill_id": "implementing-next-generation-firewall-with-palo-alto",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-next-generation-firewall-with-palo-alto/SKILL.md",
       "triggers": "palo-alto;ngfw;firewall;app-id;user-id;threat-prevention;network-security;ssl-decryption;zone-protection"
+    },
+    {
+      "description": "Enforce Kubernetes admission policies using OPA Gatekeeper with ConstraintTemplates, Rego rules, and the Gatekeeper policy library.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-opa-gatekeeper-for-policy-enforcement",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-opa-gatekeeper-for-policy-enforcement/SKILL.md",
+      "triggers": "opa;gatekeeper;kubernetes;admission-control;policy-as-code;rego"
     },
     {
       "description": "Develop and implement OT-specific incident response playbooks aligned with SANS PICERL framework, IEC 62443, and NIST SP 800-82 that address unique ICS challenges including safety-critical systems, limited downtime tolerance, and coordination between IT SOC, OT engineering, and plant operations teams.",
@@ -3465,6 +3697,14 @@
       "skill_id": "implementing-ot-network-traffic-analysis-with-nozomi",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-ot-network-traffic-analysis-with-nozomi/SKILL.md",
       "triggers": "ot-security;ics;nozomi;guardian;network-monitoring;asset-visibility;anomaly-detection;ndr"
+    },
+    {
+      "description": "Deploy privileged access management for database systems including Oracle, SQL Server, PostgreSQL, and MySQL. Covers session proxy configuration, credential vaulting, query auditing, dynamic credentia",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-pam-for-database-access",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-pam-for-database-access/SKILL.md",
+      "triggers": "iam;identity;access-control;privileged-access;pam;database;dba"
     },
     {
       "description": "Implements passwordless authentication using Microsoft Entra ID with FIDO2 security keys, Windows Hello for Business, Microsoft Authenticator passkeys, and certificate-based authentication to eliminate password-based attacks. Activates for requests involving passwordless deployment, FIDO2 passkey configuration, phishing-resistant MFA, or Microsoft Entra authentication method policies.",
@@ -3515,6 +3755,14 @@
       "triggers": "kubernetes;pod-security-admission;psa;pod-security-standards;admission-controller"
     },
     {
+      "description": "This skill covers implementing Open Policy Agent (OPA) and Gatekeeper for policy-as-code enforcement in Kubernetes and CI/CD pipelines. It addresses writing Rego policies, deploying OPA Gatekeeper as a Kubernetes admission controller, testing policies in development, and integrating policy evaluation into deployment pipelines.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-policy-as-code-with-open-policy-agent",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-policy-as-code-with-open-policy-agent/SKILL.md",
+      "triggers": "devsecops;cicd;opa;gatekeeper;policy-as-code;kubernetes;secure-sdlc"
+    },
+    {
       "description": "Deploy CyberArk Privileged Access Management to discover, vault, rotate, and monitor privileged credentials across enterprise infrastructure. This skill covers vault architecture, session isolation, c",
       "phase": 1,
       "score": 100,
@@ -3529,6 +3777,14 @@
       "skill_id": "implementing-privileged-access-workstation",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-privileged-access-workstation/SKILL.md",
       "triggers": "privileged-access;PAW;zero-trust;device-hardening;CyberArk;BeyondTrust;just-in-time-access"
+    },
+    {
+      "description": "Implements privileged session monitoring and recording using Privileged Access Management (PAM) solutions, focusing on CyberArk Privileged Session Manager (PSM) and open-source alternatives. Covers session recording configuration, keystroke logging, real-time monitoring, risk-based session analysis, and compliance audit trail generation. Activates for requests involving privileged session recording, PAM session monitoring, CyberArk PSM configuration, administrator activity monitoring, or compliance session auditing.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-privileged-session-monitoring",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-privileged-session-monitoring/SKILL.md",
+      "triggers": "PAM;CyberArk;PSM;privileged-session;session-recording;session-monitoring;compliance"
     },
     {
       "description": "Deploy and configure Proofpoint Email Protection as a secure email gateway to detect and block phishing, malware, BEC, and spam before messages reach user inboxes.",
@@ -3553,6 +3809,14 @@
       "skill_id": "implementing-ransomware-backup-strategy",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-ransomware-backup-strategy/SKILL.md",
       "triggers": "ransomware;backup;incident-response;defense;recovery;immutable-storage"
+    },
+    {
+      "description": "Detects and exploits ransomware kill switch mechanisms including mutex-based execution guards, domain-based kill switches, and registry-based termination checks. Implements proactive mutex vaccination and kill switch domain monitoring to prevent ransomware from executing. Activates for requests involving ransomware kill switch analysis, mutex vaccination, WannaCry-style domain kill switches, or malware execution guard detection.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-ransomware-kill-switch-detection",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-ransomware-kill-switch-detection/SKILL.md",
+      "triggers": "ransomware;kill-switch;mutex;detection;WannaCry;malware-analysis"
     },
     {
       "description": "Deploy and configure Rapid7 InsightVM Security Console and Scan Engines for authenticated and unauthenticated vulnerability scanning across enterprise environments.",
@@ -3595,6 +3859,14 @@
       "triggers": "tetragon;ebpf;runtime-security;kubernetes;cilium;container-security;observability;kernel-security;cncf"
     },
     {
+      "description": "This skill covers implementing Gitleaks for detecting and preventing hardcoded secrets in git repositories. It addresses configuring pre-commit hooks, CI/CD pipeline integration, custom rule authoring for organization-specific secrets, baseline management for existing repositories, and remediation workflows for exposed credentials.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "implementing-secret-scanning-with-gitleaks",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-secret-scanning-with-gitleaks/SKILL.md",
+      "triggers": "devsecops;cicd;secret-scanning;gitleaks;pre-commit;secure-sdlc"
+    },
+    {
       "description": "This skill covers deploying HashiCorp Vault for centralized secrets management across cloud environments, including dynamic secret generation for databases and cloud providers, transit encryption, PKI certificate management, and Kubernetes integration. It addresses eliminating hardcoded credentials from application code and CI/CD pipelines by implementing short-lived, automatically rotated secrets.",
       "phase": 1,
       "score": 100,
@@ -3635,6 +3907,14 @@
       "triggers": "semgrep;sast;static-analysis;custom-rules;devsecops;code-security"
     },
     {
+      "description": "Tune SIEM detection rules to reduce false positives by analyzing alert volumes, creating whitelists, adjusting thresholds, and measuring detection efficacy metrics in Splunk and Elastic",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-siem-use-case-tuning",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-siem-use-case-tuning/SKILL.md",
+      "triggers": "siem;detection-engineering;false-positive-reduction;splunk;elastic;alert-tuning;soc"
+    },
+    {
       "description": "Implements SIEM detection use cases by designing correlation rules, threshold alerts, and behavioral analytics mapped to MITRE ATT&CK techniques across Splunk, Elastic, and Sentinel. Use when SOC teams need to expand detection coverage, formalize use case lifecycle management, or build a detection library aligned to organizational threat profile.",
       "phase": 1,
       "score": 100,
@@ -3643,12 +3923,28 @@
       "triggers": "soc;siem;use-cases;detection-engineering;mitre-attack;splunk;elastic;sentinel"
     },
     {
+      "description": "Implements Sigstore-based software signing and verification using Cosign keyless signing, Rekor transparency log verification, and Fulcio certificate authority integration to establish cryptographic provenance for container images, binaries, and software artifacts. The practitioner configures OIDC-based identity binding, verifies signing events against the Rekor transparency log, and integrates signing workflows into CI/CD pipelines. Activates for requests involving software supply chain signing, keyless container signing, Sigstore deployment, or artifact provenance verification.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-sigstore-for-software-signing",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-sigstore-for-software-signing/SKILL.md",
+      "triggers": "sigstore;cosign;rekor;fulcio;software-signing;supply-chain;keyless-signing;OIDC;transparency-log"
+    },
+    {
       "description": "Implements Security Orchestration, Automation, and Response (SOAR) workflows using Splunk SOAR (formerly Phantom) to automate alert triage, IOC enrichment, containment actions, and incident response playbooks. Use when SOC teams need to reduce manual analyst work, standardize response procedures, or integrate multiple security tools into automated workflows.",
       "phase": 1,
       "score": 100,
       "skill_id": "implementing-soar-automation-with-phantom",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-soar-automation-with-phantom/SKILL.md",
       "triggers": "soc;soar;phantom;splunk-soar;automation;playbook;orchestration;incident-response"
+    },
+    {
+      "description": "Automate phishing incident response using Splunk SOAR REST API to create containers, add artifacts, and trigger playbooks",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "implementing-soar-playbook-for-phishing",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-soar-playbook-for-phishing/SKILL.md",
+      "triggers": "soar;splunk-phantom;phishing;incident-response"
     },
     {
       "description": "Implement automated incident response playbooks in Cortex XSOAR to orchestrate security workflows across SOC tools and reduce manual response time.",
@@ -4139,6 +4435,14 @@
       "triggers": "vulnerability-management;cve;authenticated-scanning;credentials;nessus;qualys;risk"
     },
     {
+      "description": "Deploy and operate CAPEv2 sandbox for automated malware analysis with behavioral monitoring, payload extraction, configuration parsing, and anti-evasion capabilities.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "performing-automated-malware-analysis-with-cape",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-automated-malware-analysis-with-cape/SKILL.md",
+      "triggers": "cape;sandbox;automated-analysis;malware-analysis;behavioral-analysis;payload-extraction;cuckoo"
+    },
+    {
       "description": "Perform comprehensive security posture assessment of AWS accounts using ScoutSuite to enumerate resources, identify misconfigurations, and generate actionable security reports.",
       "phase": 1,
       "score": 100,
@@ -4259,6 +4563,14 @@
       "triggers": "performing;container;escape;detection"
     },
     {
+      "description": "This skill covers hardening container images by minimizing attack surface, removing unnecessary packages, implementing multi-stage builds, configuring non-root users, and applying CIS Docker Benchmark recommendations to produce secure production-ready images.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "performing-container-image-hardening",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-container-image-hardening/SKILL.md",
+      "triggers": "devsecops;cicd;container-hardening;docker;cis-benchmark;secure-sdlc"
+    },
+    {
       "description": "Scan container images, filesystems, and Kubernetes manifests for vulnerabilities, misconfigurations, exposed secrets, and license compliance issues using Aqua Security Trivy with SBOM generation and CI/CD integration.",
       "phase": 1,
       "score": 100,
@@ -4377,6 +4689,14 @@
       "skill_id": "performing-false-positive-reduction-in-siem",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-false-positive-reduction-in-siem/SKILL.md",
       "triggers": "siem;false-positive;alert-tuning;detection-engineering;alert-fatigue;soc;correlation"
+    },
+    {
+      "description": "Recover files from disk images and unallocated space using Foremost's header-footer signature carving to extract evidence regardless of file system state.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "performing-file-carving-with-foremost",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-file-carving-with-foremost/SKILL.md",
+      "triggers": "forensics;file-carving;foremost;data-recovery;evidence-recovery;unallocated-space"
     },
     {
       "description": "Performs firmware image extraction and analysis using binwalk to identify embedded filesystems, compressed archives, bootloaders, kernel images, and cryptographic material. Covers entropy analysis for detecting encrypted or compressed regions, recursive extraction of nested archives, SquashFS/CramFS/JFFS2 filesystem mounting, and string analysis for credential and configuration discovery. Activates for requests involving firmware reverse engineering, IoT device analysis, embedded system security assessment, or router/camera firmware extraction.",
@@ -4627,6 +4947,14 @@
       "triggers": "mobile-security;android;ios;certificate-pinning;frida;penetration-testing"
     },
     {
+      "description": "Acquire and analyze mobile device data using Cellebrite UFED and open-source tools to extract communications, location data, and application artifacts.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "performing-mobile-device-forensics-with-cellebrite",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-mobile-device-forensics-with-cellebrite/SKILL.md",
+      "triggers": "forensics;mobile-forensics;cellebrite;smartphone-analysis;ios-forensics;android-forensics"
+    },
+    {
       "description": "Deploy Zeek network security monitor to capture, parse, and analyze network traffic metadata for threat detection, anomaly identification, and forensic investigation.",
       "phase": 1,
       "score": 100,
@@ -4827,6 +5155,14 @@
       "triggers": "ot-security;ics;s7comm;siemens;plc-security;protocol-analysis;scada;vulnerability-assessment"
     },
     {
+      "description": "This skill covers implementing Software Composition Analysis (SCA) using Snyk to detect vulnerable open-source dependencies in CI/CD pipelines. It addresses scanning package manifests and lockfiles, automated fix pull request generation, license compliance checking, continuous monitoring of deployed applications, and integration with GitHub, GitLab, and Jenkins pipelines.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "performing-sca-dependency-scanning-with-snyk",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-sca-dependency-scanning-with-snyk/SKILL.md",
+      "triggers": "devsecops;cicd;sca;snyk;dependency-scanning;secure-sdlc"
+    },
+    {
       "description": "Perform security assessments of SCADA Human-Machine Interface (HMI) systems to identify vulnerabilities in web-based HMIs, thin-client configurations, authentication mechanisms, and communication channels between HMI and PLCs, aligned with IEC 62443 and NIST SP 800-82 guidelines.",
       "phase": 1,
       "score": 100,
@@ -4891,6 +5227,22 @@
       "triggers": "performing;soc2;type2;audit;preparation;compliance;grc"
     },
     {
+      "description": "Perform forensic analysis of SQLite databases to recover deleted records from freelists and WAL files, decode encoded timestamps, and extract evidence from browser history, messaging apps, and mobile device databases.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "performing-sqlite-database-forensics",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-sqlite-database-forensics/SKILL.md",
+      "triggers": "sqlite;database-forensics;freelist;wal;write-ahead-log;browser-history;mobile-forensics;deleted-records;b-tree;unallocated-space"
+    },
+    {
+      "description": "SSL/TLS certificate lifecycle management encompasses the full process of requesting, issuing, deploying, monitoring, renewing, and revoking X.509 certificates. Poor certificate management is a leading",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "performing-ssl-certificate-lifecycle-management",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-ssl-certificate-lifecycle-management/SKILL.md",
+      "triggers": "cryptography;ssl;certificates;pki;tls;key-management"
+    },
+    {
       "description": "Simulates SSL stripping attacks using sslstrip, Bettercap, and mitmproxy in authorized environments to test HSTS enforcement, certificate validation, and HTTPS upgrade mechanisms that protect users from downgrade attacks on encrypted connections.",
       "phase": 1,
       "score": 100,
@@ -4937,6 +5289,14 @@
       "skill_id": "performing-supply-chain-attack-simulation",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-supply-chain-attack-simulation/SKILL.md",
       "triggers": "supply-chain;typosquatting;dependency-confusion;package-verification;pip-audit;PyPI;software-composition-analysis"
+    },
+    {
+      "description": "Conduct a thick client application penetration test to identify insecure local storage, hardcoded credentials, DLL hijacking, memory manipulation, and insecure API communication in desktop applications using dnSpy, Procmon, and Burp Suite.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "performing-thick-client-application-penetration-test",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-thick-client-application-penetration-test/SKILL.md",
+      "triggers": "thick-client;desktop-application;dnSpy;Procmon;DLL-hijacking;binary-analysis;API-interception"
     },
     {
       "description": "Executes Atomic Red Team tests for MITRE ATT&CK technique validation using the atomic-operator Python framework. Loads test definitions from YAML atomics, runs attack simulations, and validates detection coverage. Use when testing SIEM detection rules, validating EDR coverage, or conducting purple team exercises.",
@@ -5033,6 +5393,14 @@
       "skill_id": "performing-web-application-vulnerability-triage",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-web-application-vulnerability-triage/SKILL.md",
       "triggers": "web-application;vulnerability-triage;owasp;dast;sast;burp-suite;zap;false-positive;risk-rating"
+    },
+    {
+      "description": "Execute web cache deception attacks by exploiting path normalization discrepancies between CDN caching layers and origin servers to cache and retrieve sensitive authenticated content.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "performing-web-cache-deception-attack",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-web-cache-deception-attack/SKILL.md",
+      "triggers": "web-cache-deception;cdn-attack;cache-poisoning;path-normalization;cloudflare;cache-key;static-resource"
     },
     {
       "description": "Exploiting web cache mechanisms to serve malicious content to other users by poisoning cached responses through unkeyed headers and parameters during authorized security tests.",
@@ -5185,6 +5553,14 @@
       "skill_id": "reverse-engineering-ios-app-with-frida",
       "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/reverse-engineering-ios-app-with-frida/SKILL.md",
       "triggers": "mobile-security;ios;frida;reverse-engineering;owasp-mobile;penetration-testing"
+    },
+    {
+      "description": "Reverse engineer Rust-compiled malware using IDA Pro and Ghidra with techniques for handling non-null-terminated strings, crate dependency extraction, and Rust-specific control flow analysis.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "reverse-engineering-rust-malware",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/reverse-engineering-rust-malware/SKILL.md",
+      "triggers": "rust;reverse-engineering;malware-analysis;ghidra;ida-pro;binary-analysis;rust-malware"
     },
     {
       "description": "Design and implement multi-tenant SaaS architectures with row-level security, tenant-scoped queries, shared-schema isolation, and safe cross-tenant admin patterns in PostgreSQL and TypeScript.",
@@ -5579,6 +5955,14 @@
       "triggers": "api-security;owasp;mass-assignment;auto-binding;parameter-tampering"
     },
     {
+      "description": "Systematically assessing REST and GraphQL API endpoints against the OWASP API Security Top 10 risks using automated and manual testing techniques.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "testing-api-security-with-owasp-top-10",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/testing-api-security-with-owasp-top-10/SKILL.md",
+      "triggers": "penetration-testing;api-security;owasp;rest-api;graphql;burpsuite;postman"
+    },
+    {
       "description": "Identifying and exploiting Cross-Origin Resource Sharing misconfigurations that allow unauthorized cross-domain data access and credential theft during security assessments.",
       "phase": 1,
       "score": 100,
@@ -5683,6 +6067,14 @@
       "triggers": "mobile-security;android;ios;api-security;authentication;penetration-testing"
     },
     {
+      "description": "Test and validate ransomware recovery procedures including backup restore operations, RTO/RPO target verification, recovery sequencing, and clean restore validation to ensure organizational resilience against destructive ransomware attacks.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "testing-ransomware-recovery-procedures",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/testing-ransomware-recovery-procedures/SKILL.md",
+      "triggers": "incident-response;ransomware;disaster-recovery;backup;rto;rpo;resilience"
+    },
+    {
       "description": "Tests WebSocket API implementations for security vulnerabilities including missing authentication on WebSocket upgrade, Cross-Site WebSocket Hijacking (CSWSH), injection attacks through WebSocket messages, insufficient input validation, denial-of-service via message flooding, and information leakage through WebSocket frames. The tester intercepts WebSocket handshakes and messages using Burp Suite, crafts malicious payloads, and tests for authorization bypass on WebSocket channels. Activates for requests involving WebSocket security testing, WS penetration testing, CSWSH attack, or real-time API security assessment.",
       "phase": 1,
       "score": 100,
@@ -5761,6 +6153,14 @@
       "skill_id": "upstash-qstash",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/upstash-qstash/SKILL.md",
       "triggers": "upstash;qstash"
+    },
+    {
+      "description": "Validate backup integrity through cryptographic hash verification, automated restore testing, corruption detection, and recoverability checks to ensure backups are reliable for disaster recovery and ransomware response scenarios.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "validating-backup-integrity-for-recovery",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/validating-backup-integrity-for-recovery/SKILL.md",
+      "triggers": "incident-response;backup;integrity;hash-verification;restore-testing;disaster-recovery"
     },
     {
       "description": "Find similar vulnerabilities and bugs across codebases using pattern-based analysis. Use when hunting bug variants, building CodeQL/Semgrep queries, analyzing security vulnerabilities, or performing systematic code audits after finding an initial issue.",

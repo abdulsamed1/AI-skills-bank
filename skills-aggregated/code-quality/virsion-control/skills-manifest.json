@@ -1515,14 +1515,6 @@
       "triggers": "\"ImageBasedHostedAgentDefinition\", \"hosted agent\", \"container agent\","
     },
     {
-      "description": "This skill covers implementing Gitleaks for detecting and preventing hardcoded secrets in git repositories. It addresses configuring pre-commit hooks, CI/CD pipeline integration, custom rule authoring for organization-specific secrets, baseline management for existing repositories, and remediation workflows for exposed credentials.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "implementing-secret-scanning-with-gitleaks",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-secret-scanning-with-gitleaks/SKILL.md",
-      "triggers": "devsecops;cicd;secret-scanning;gitleaks;pre-commit;secure-sdlc"
-    },
-    {
       "description": "Interact with GitHub issues - create, list, and view issues.",
       "phase": 1,
       "score": 100,
@@ -1609,14 +1601,6 @@
       "skill_id": "octocat",
       "src_path": "lib/mcollina-skills/skills/octocat/SKILL.md",
       "triggers": "git, github, gh-cli, version-control, merge-conflicts, pull-requests"
-    },
-    {
-      "description": "This skill covers implementing Software Composition Analysis (SCA) using Snyk to detect vulnerable open-source dependencies in CI/CD pipelines. It addresses scanning package manifests and lockfiles, automated fix pull request generation, license compliance checking, continuous monitoring of deployed applications, and integration with GitHub, GitLab, and Jenkins pipelines.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "performing-sca-dependency-scanning-with-snyk",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-sca-dependency-scanning-with-snyk/SKILL.md",
-      "triggers": "devsecops;cicd;sca;snyk;dependency-scanning;secure-sdlc"
     },
     {
       "description": "Generate AI-powered podcast-style audio narratives using Azure OpenAI's GPT Realtime Mini model via WebSocket. Use when building text-to-speech features, audio narrative generation, podcast creation from content, or integrating with Azure OpenAI Realtime API for real audio output. Covers full-stack implementation from React frontend to Python FastAPI backend with WebSocket streaming.",

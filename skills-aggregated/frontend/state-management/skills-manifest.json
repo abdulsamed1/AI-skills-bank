@@ -35,14 +35,6 @@
       "triggers": "click;path;audit"
     },
     {
-      "description": "Collect volatile forensic evidence from a compromised system following order of volatility, preserving memory, network connections, processes, and system state before they are lost.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "collecting-volatile-evidence-from-compromised-host",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/collecting-volatile-evidence-from-compromised-host/SKILL.md",
-      "triggers": "incident-response;dfir;forensics;volatile-evidence;memory-forensics;chain-of-custody"
-    },
-    {
       "description": "Context is the complete state available to a language model at inference time. It includes everything the model can attend to when generating responses: system instructions, tool definitions, retrieved documents, message history, and tool outputs.",
       "phase": 1,
       "score": 100,
@@ -169,14 +161,6 @@
       "skill_id": "next-step",
       "src_path": "lib/bitwize-music-studio-claude-ai-music-skills/skills/next-step/SKILL.md",
       "triggers": "next;step"
-    },
-    {
-      "description": "Recover files from disk images and unallocated space using Foremost's header-footer signature carving to extract evidence regardless of file system state.",
-      "phase": 1,
-      "score": 100,
-      "skill_id": "performing-file-carving-with-foremost",
-      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-file-carving-with-foremost/SKILL.md",
-      "triggers": "forensics;file-carving;foremost;data-recovery;evidence-recovery;unallocated-space"
     },
     {
       "description": "Build production-ready ReactFlow applications with hierarchical navigation, performance optimization, and advanced state management.",
