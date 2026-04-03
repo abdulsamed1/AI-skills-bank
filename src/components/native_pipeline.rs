@@ -18,6 +18,7 @@ use walkdir::WalkDir;
 // `crate::components::llm` referenced via fully-qualified paths where needed
 use std::env;
 use tokio::time::sleep;
+use tokio::sync::{Semaphore, Mutex};
 use std::time::Duration as StdDuration;
 
 #[derive(Debug, Clone, Copy)]
@@ -531,8 +532,14 @@ async fn classify_skills_with_llm(
         .and_then(|s| s.parse::<u64>().ok())
         .unwrap_or(60_000);
 
-    // Load existing cache (ok to be empty)
-    let mut cache = crate::components::llm::load_cache()?;
+    // Load existing cache (ok to be empty) and wrap in an Arc<Mutex<>> for safe concurrent access.
+    let initial_cache = crate::components::llm::load_cache()?;
+    let cache = Arc::new(Mutex::new(initial_cache));
+    // Snapshot the cache for fast synchronous lookups while building the to_classify list
+    let cache_snapshot = {
+        let guard = cache.lock().await;
+        guard.clone()
+    };
     println!("DEBUG: Found {} skills in total to classify", skills.len());
 
     // Helper performs classify with retries/backoff
@@ -605,7 +612,7 @@ async fn classify_skills_with_llm(
         // Deterministic cache key: repo+skill_path+content-hash
         let key = crate::components::llm::key_for_skill(_repo_root, &skill.path, &skill.name, &skill.description, skill.content_body.as_deref());
 
-        if let Some(cached) = crate::components::llm::get_cached_classification(&cache, &key) {
+        if let Some(cached) = crate::components::llm::get_cached_classification(&cache_snapshot, &key) {
             if let Some(top) = cached.ranked_suggestions.first() {
                 skill.hub = top.hub.clone();
                 skill.sub_hub = top.sub_hub.clone();
@@ -684,8 +691,18 @@ async fn classify_skills_with_llm(
             ))
         }
 
-        // Process in chunks
+        // Process in chunks concurrently (bounded)
         let total_tc = to_classify.len();
+        let concurrency: usize = env::var("LLM_CONCURRENCY")
+            .ok()
+            .and_then(|s| s.parse::<usize>().ok())
+            .filter(|&v| v > 0)
+            .unwrap_or(4);
+
+        let semaphore = Arc::new(tokio::sync::Semaphore::new(concurrency));
+        let provider = Arc::new(provider);
+        let mut handles = Vec::new();
+
         for (chunk_idx, chunk) in to_classify.chunks(batch_size).enumerate() {
             let current_tc = (chunk_idx + 1) * batch_size;
             let current_count = if current_tc > total_tc { total_tc } else { current_tc };
@@ -698,110 +715,180 @@ async fn classify_skills_with_llm(
                 );
             }
 
-            let items: Vec<(String, String, Option<String>)> = chunk
-                .iter()
-                .map(|(_, name, description, abstract_text, _key)| {
-                    (name.clone(), description.clone(), abstract_text.clone())
-                })
-                .collect();
+            let chunk_vec: Vec<(usize, String, String, Option<String>, String)> =
+                chunk.iter().cloned().collect();
 
-            // Try batch classification (logic remains same...)
-            let batch_result = classify_batch_with_retry(
-                &*provider,
-                &items,
-                context,
-                max_retries,
-                initial_backoff_ms,
-                max_backoff_ms,
-            )
-            .await;
+            let provider = Arc::clone(&provider);
+            let context = context.clone();
+            let semaphore = Arc::clone(&semaphore);
 
-            match batch_result {
-                Ok(resps) if resps.len() == items.len() => {
-                    for (i, resp) in resps.into_iter().enumerate() {
-                        let (idx, _name, _description, _abstract, key) = &chunk[i];
-                        if let Some(top) = resp.ranked_suggestions.first() {
-                            let skill = &mut skills[*idx];
-                            skill.hub = top.hub.clone();
-                            skill.sub_hub = top.sub_hub.clone();
-                            skill.match_score = Some(top.confidence);
-                            skill.phase = Some(phase_for_hub(&skill.hub));
+            let max_retries = max_retries;
+            let initial_backoff_ms = initial_backoff_ms;
+            let max_backoff_ms = max_backoff_ms;
+
+            let handle = tokio::spawn(async move {
+                let _permit = semaphore.acquire_owned().await.map_err(|_| {
+                    SkillManageError::ConfigError("LLM concurrency semaphore closed".to_string())
+                })?;
+
+                let attempts = if max_retries == 0 { 1 } else { max_retries };
+                // try batch classify with retries
+                let item_payload: Vec<(String, String, Option<String>)> = chunk_vec
+                    .iter()
+                    .map(|(_, name, description, abstract_text, _)| {
+                        (name.clone(), description.clone(), abstract_text.clone())
+                    })
+                    .collect();
+
+                // Attempt batch classification with retry/backoff
+                let mut batch_ok = false;
+                let mut out: Vec<(usize, Option<crate::components::llm::LlmClassificationResponse>, String)> = Vec::new();
+
+                for attempt in 0..attempts {
+                    match (&*provider).classify_batch(&item_payload, &context).await {
+                        Ok(resps) if resps.len() == item_payload.len() => {
+                            for (i, resp) in resps.into_iter().enumerate() {
+                                let (idx, _name, _description, _abstract, key) = &chunk_vec[i];
+                                out.push((*idx, Some(resp), key.clone()));
+                            }
+                            batch_ok = true;
+                            break;
                         }
-                        crate::components::llm::insert_into_map(&mut cache, key.clone(), resp);
+                        Ok(_resps) => {
+                            // unexpected length - break to per-item fallback below
+                            break;
+                        }
+                        Err(e) => {
+                            if let crate::components::llm::LlmError::RateLimited { retry_after } = &e {
+                                if let Some(secs) = retry_after {
+                                    let now_ms = (std::time::SystemTime::now()
+                                        .duration_since(UNIX_EPOCH)
+                                        .unwrap()
+                                        .subsec_millis()) as u64;
+                                    let jitter = now_ms % 1000;
+                                    let sleep_ms = secs.saturating_mul(1000).saturating_add(jitter);
+                                    sleep(StdDuration::from_millis(sleep_ms)).await;
+                                    continue;
+                                }
+                            }
+
+                            if attempt + 1 >= attempts {
+                                break;
+                            }
+
+                            let multiplier = 1u64.checked_shl(attempt as u32).unwrap_or(u64::MAX);
+                            let mut backoff = initial_backoff_ms.saturating_mul(multiplier);
+                            if backoff > max_backoff_ms {
+                                backoff = max_backoff_ms;
+                            }
+                            let now_ms = (std::time::SystemTime::now()
+                                .duration_since(UNIX_EPOCH)
+                                .unwrap()
+                                .subsec_millis()) as u64;
+                            let jitter = if backoff > 1 { now_ms % (backoff / 2 + 1) } else { 0 };
+                            let sleep_ms = backoff / 2 + jitter;
+                            sleep(StdDuration::from_millis(sleep_ms)).await;
+                            continue;
+                        }
                     }
                 }
-                Ok(_resps) => {
-                    // unexpected length; fall back to per-item
-                    for (j, (_idx, name, description, abstract_text, key)) in chunk.iter().enumerate() {
-                        let resp = classify_with_retry(
-                            &*provider,
-                            name,
-                            description,
-                            abstract_text.as_deref(),
-                            context,
-                            max_retries,
-                            initial_backoff_ms,
-                            max_backoff_ms,
-                        )
-                        .await;
 
-                        match resp {
-                            Ok(resp) => {
-                                if let Some(top) = resp.ranked_suggestions.first() {
-                                    let skill = &mut skills[chunk[j].0];
-                                    skill.hub = top.hub.clone();
-                                    skill.sub_hub = top.sub_hub.clone();
-                                    skill.match_score = Some(top.confidence);
-                                    skill.phase = Some(phase_for_hub(&skill.hub));
+                // If batch didn't succeed, fall back to per-item classification with retries
+                if !batch_ok {
+                    for (idx, name, description, abstract_text, key) in chunk_vec.into_iter() {
+                        let mut classified: Option<crate::components::llm::LlmClassificationResponse> = None;
+                        for attempt in 0..attempts {
+                            match (&*provider).classify(&name, &description, abstract_text.as_deref(), &context).await {
+                                Ok(resp) => {
+                                    classified = Some(resp);
+                                    break;
                                 }
-                                crate::components::llm::insert_into_map(&mut cache, key.clone(), resp);
+                                Err(e) => {
+                                    if let crate::components::llm::LlmError::RateLimited { retry_after } = &e {
+                                        if let Some(secs) = retry_after {
+                                            let now_ms = (std::time::SystemTime::now()
+                                                .duration_since(UNIX_EPOCH)
+                                                .unwrap()
+                                                .subsec_millis()) as u64;
+                                            let jitter = now_ms % 1000;
+                                            let sleep_ms = secs.saturating_mul(1000).saturating_add(jitter);
+                                            sleep(StdDuration::from_millis(sleep_ms)).await;
+                                            continue;
+                                        }
+                                    }
+                                    if attempt + 1 >= attempts {
+                                        break;
+                                    }
+                                    let multiplier = 1u64.checked_shl(attempt as u32).unwrap_or(u64::MAX);
+                                    let mut backoff = initial_backoff_ms.saturating_mul(multiplier);
+                                    if backoff > max_backoff_ms {
+                                        backoff = max_backoff_ms;
+                                    }
+                                    let now_ms = (std::time::SystemTime::now()
+                                        .duration_since(UNIX_EPOCH)
+                                        .unwrap()
+                                        .subsec_millis()) as u64;
+                                    let jitter = if backoff > 1 { now_ms % (backoff / 2 + 1) } else { 0 };
+                                    let sleep_ms = backoff / 2 + jitter;
+                                    sleep(StdDuration::from_millis(sleep_ms)).await;
+                                    continue;
+                                }
                             }
-                            Err(_) => {
-                                // Fallback to keyword rules for this specific skill
-                                rules::apply_rules(&mut skills[chunk[j].0]);
+                        }
+                        out.push((idx, classified, key));
+                    }
+                }
+
+                Ok::<_, SkillManageError>(out)
+            });
+
+            handles.push(handle);
+        }
+
+        // Collect results from concurrent tasks and apply them to in-memory skills/cache
+        for h in handles {
+            match h.await {
+                Ok(Ok(items)) => {
+                    for (idx, opt_resp, key) in items {
+                        if let Some(resp) = opt_resp {
+                            // Capture top suggestion locally to avoid holding a borrow across an await
+                            let top_clone = resp.ranked_suggestions.first().cloned();
+
+                            // Insert into shared cache (lock briefly)
+                            {
+                                let mut guard = cache.lock().await;
+                                crate::components::llm::insert_into_map(&mut *guard, key, resp);
                             }
+
+                            // Apply classification to skill using the cloned top suggestion
+                            if let Some(top) = top_clone {
+                                let skill = &mut skills[idx];
+                                skill.hub = top.hub.clone();
+                                skill.sub_hub = top.sub_hub.clone();
+                                skill.match_score = Some(top.confidence);
+                                skill.phase = Some(phase_for_hub(&skill.hub));
+                            }
+                        } else {
+                            // Fallback to keyword rules for this specific skill
+                            rules::apply_rules(&mut skills[idx]);
                         }
                     }
                 }
-                Err(_e) => {
-                    // Batch failed entirely; fallback to per-item classification
-                    for (idx, name, description, abstract_text, key) in chunk.iter() {
-                        let resp = classify_with_retry(
-                            &*provider,
-                            name,
-                            description,
-                            abstract_text.as_deref(),
-                            context,
-                            max_retries,
-                            initial_backoff_ms,
-                            max_backoff_ms,
-                        )
-                        .await;
-
-                        match resp {
-                            Ok(resp) => {
-                                if let Some(top) = resp.ranked_suggestions.first() {
-                                    let skill = &mut skills[*idx];
-                                    skill.hub = top.hub.clone();
-                                    skill.sub_hub = top.sub_hub.clone();
-                                    skill.match_score = Some(top.confidence);
-                                    skill.phase = Some(phase_for_hub(&skill.hub));
-                                }
-                                crate::components::llm::insert_into_map(&mut cache, key.clone(), resp);
-                            }
-                            Err(_) => {
-                                // Fallback to keyword rules for this specific skill
-                                rules::apply_rules(&mut skills[*idx]);
-                            }
-                        }
-                    }
+                Ok(Err(e)) => {
+                    eprintln!("LLM batch task error: {}", e);
+                }
+                Err(join_err) => {
+                    eprintln!("LLM batch task join error: {:?}", join_err);
                 }
             }
         }
     }
 
     // Persist cache
-    crate::components::llm::save_cache(&cache)?;
+    {
+        let guard = cache.lock().await;
+        crate::components::llm::save_cache(&*guard)?;
+    }
 
     Ok(())
 }

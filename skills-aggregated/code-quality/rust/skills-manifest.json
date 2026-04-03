@@ -1,43 +1,1355 @@
 {
-  "generated_at_unix": 1775251384,
+  "generated_at_unix": 1775258542,
   "hub": "code-quality",
   "skills": [
     {
+      "description": "Security audit, hardening, threat modeling (STRIDE/PASTA), Red/Blue Team, OWASP checks, code review, incident response, and infrastructure security for any project.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "007",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/007/SKILL.md",
+      "triggers": "security;audit;owasp;threat-modeling;hardening;pentest"
+    },
+    {
+      "description": "This skill helps Claude write secure web applications. Use this when working on any web application or when a user requests a scan or audit to ensure security best practices are followed.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "VibeSec-Skill",
+      "src_path": "lib/behisecc-vibesec-skill/SKILL.md",
+      "triggers": "vibesec;skill"
+    },
+    {
+      "description": "This skill should be used when the user asks to \"create AGENTS.md\", \"update AGENTS.md\", \"maintain agent docs\", \"set up CLAUDE.md\", or needs to keep agent instructions concise. Enforces research-backed best practices for minimal, high-signal agent documentation.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "agents-md",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/agents-md/SKILL.md",
+      "triggers": "agents;md"
+    },
+    {
+      "description": "You are an AI product engineer who has shipped LLM features to millions of users. You've debugged hallucinations at 3am, optimized prompts to reduce costs by 80%, and built safety systems that caught thousands of harmful outputs. You know that demos are easy and production is hard.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "ai-product",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/ai-product/SKILL.md",
+      "triggers": "ai;product"
+    },
+    {
+      "description": "Assess whether your product work is AI-first or AI-shaped. Use when evaluating AI maturity and choosing the next team capability to build.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "ai-shaped-readiness-advisor",
+      "src_path": "lib/deanpeters-product-manager-skills/skills/ai-shaped-readiness-advisor/SKILL.md",
+      "triggers": "ai;shaped;readiness;advisor"
+    },
+    {
+      "description": "Analyzes malware command-and-control (C2) communication protocols to understand beacon patterns, command structures, data encoding, and infrastructure. Covers HTTP, HTTPS, DNS, and custom protocol C2 analysis for detection development and threat intelligence. Activates for requests involving C2 analysis, beacon detection, C2 protocol reverse engineering, or command-and-control infrastructure mapping.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "analyzing-command-and-control-communication",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-command-and-control-communication/SKILL.md",
+      "triggers": "malware;C2;command-and-control;beacon;protocol-analysis"
+    },
+    {
+      "description": "Analyzes indicators of compromise (IOCs) including IP addresses, domains, file hashes, URLs, and email artifacts to determine maliciousness confidence, campaign attribution, and blocking priority. Use when triaging IOCs from phishing emails, security alerts, or external threat feeds; enriching raw IOCs with multi-source intelligence; or making block/monitor/whitelist decisions. Activates for requests involving VirusTotal, AbuseIPDB, MalwareBazaar, MISP, or IOC enrichment pipelines.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "analyzing-indicators-of-compromise",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-indicators-of-compromise/SKILL.md",
+      "triggers": "IOC;VirusTotal;AbuseIPDB;MalwareBazaar;MISP;threat-intelligence;STIX;NIST-CSF"
+    },
+    {
+      "description": "Perform static analysis of malicious PDF documents using peepdf, pdfid, and pdf-parser to extract embedded JavaScript, shellcode, and suspicious objects.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "analyzing-malicious-pdf-with-peepdf",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-malicious-pdf-with-peepdf/SKILL.md",
+      "triggers": "malware-analysis;pdf;peepdf;pdfid;pdf-parser;static-analysis;reverse-engineering;dfir"
+    },
+    {
+      "description": "Use Sysinternals Autoruns to systematically identify and analyze malware persistence mechanisms across registry keys, scheduled tasks, services, drivers, and startup locations on Windows systems.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "analyzing-malware-persistence-with-autoruns",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-malware-persistence-with-autoruns/SKILL.md",
+      "triggers": "autoruns;persistence;malware-analysis;sysinternals;windows;registry;startup;incident-response"
+    },
+    {
+      "description": "Investigate supply chain attack artifacts including trojanized software updates, compromised build pipelines, and sideloaded dependencies to identify intrusion vectors and scope of compromise.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "analyzing-supply-chain-malware-artifacts",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-supply-chain-malware-artifacts/SKILL.md",
+      "triggers": "supply-chain;malware-analysis;trojanized-software;solarwinds;3cx;dependency-confusion;software-integrity"
+    },
+    {
+      "description": "Analyzes structured and unstructured threat intelligence feeds to extract actionable indicators, adversary tactics, and campaign context. Use when ingesting commercial or open-source CTI feeds, evaluating feed quality, normalizing data into STIX 2.1 format, or enriching existing IOCs with campaign attribution. Activates for requests involving ThreatConnect, Recorded Future, Mandiant Advantage, MISP, AlienVault OTX, or automated feed aggregation pipelines.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "analyzing-threat-intelligence-feeds",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-threat-intelligence-feeds/SKILL.md",
+      "triggers": "STIX;TAXII;MITRE-ATT&CK;IOC;ThreatConnect;Recorded-Future;MISP;CTI;NIST-CSF"
+    },
+    {
+      "description": "Parses and analyzes the Windows Amcache.hve registry hive to extract evidence of program execution, application installation, and driver loading for digital forensics investigations. Uses Eric Zimmerman's AmcacheParser and Timeline Explorer for artifact extraction, SHA-1 hash correlation with threat intel, and timeline reconstruction. Activates for requests involving Amcache forensics, program execution evidence, Windows artifact analysis, or application compatibility cache investigation.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "analyzing-windows-amcache-artifacts",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/analyzing-windows-amcache-artifacts/SKILL.md",
+      "triggers": "amcache;windows-forensics;program-execution;AmcacheParser;eric-zimmerman;timeline-analysis;DFIR"
+    },
+    {
+      "description": "Archive, export, and notarize macOS apps using xcodebuild and asc. Use when you need to prepare a macOS app for distribution outside the App Store with Developer ID signing and Apple notarization.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "asc-notarization",
+      "src_path": "lib/rudrankriyam-app-store-connect-cli-skills/skills/asc-notarization/SKILL.md",
+      "triggers": "asc;notarization"
+    },
+    {
+      "description": "Systematically audit AWS S3 bucket permissions to identify publicly accessible buckets, overly permissive ACLs, misconfigured bucket policies, and missing encryption settings using AWS CLI, S3audit, and Prowler to enforce least-privilege data access controls.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "auditing-aws-s3-bucket-permissions",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/auditing-aws-s3-bucket-permissions/SKILL.md",
+      "triggers": "cloud-security;aws;s3;bucket-permissions;data-protection;access-control"
+    },
+    {
+      "description": "Automates the enrichment of raw indicators of compromise with multi-source threat intelligence context using SOAR platforms, Python pipelines, or TIP playbooks to reduce analyst triage time and standardize enrichment outputs. Use when building automated enrichment workflows integrated with SIEM alerts, email submission pipelines, or bulk IOC processing from threat feeds. Activates for requests involving SOAR enrichment, Cortex XSOAR, Splunk SOAR, TheHive, Python enrichment pipelines, or automated IOC processing.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "automating-ioc-enrichment",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/automating-ioc-enrichment/SKILL.md",
+      "triggers": "SOAR;enrichment;IOC;Cortex-XSOAR;Splunk-SOAR;VirusTotal;automation;CTI;NIST-CSF"
+    },
+    {
+      "description": "You are an agent architect who has learned the hard lessons of autonomous AI. You've seen the gap between impressive demos and production disasters. You know that a 95% success rate per step means only 60% by step 10.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "autonomous-agents",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/autonomous-agents/SKILL.md",
+      "triggers": "autonomous;agents"
+    },
+    {
+      "description": "Azure Cosmos DB SDK for Rust (NoSQL API). Use for document CRUD, queries, containers, and globally distributed data. Triggers: \"cosmos db rust\", \"CosmosClient rust\", \"container\", \"document rust\", \"NoSQL rust\", \"partition key\".",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "azure-cosmos-rust",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-cosmos-rust/SKILL.md",
+      "triggers": "\"cosmos db rust\", \"CosmosClient rust\", \"container\", \"document rust\", \"NoSQL rust\", \"partition key\"."
+    },
+    {
+      "description": "Azure Event Hubs SDK for Rust. Use for sending and receiving events, streaming data ingestion. Triggers: \"event hubs rust\", \"ProducerClient rust\", \"ConsumerClient rust\", \"send event rust\", \"streaming rust\".",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "azure-eventhub-rust",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-eventhub-rust/SKILL.md",
+      "triggers": "\"event hubs rust\", \"ProducerClient rust\", \"ConsumerClient rust\", \"send event rust\", \"streaming rust\"."
+    },
+    {
+      "description": "Azure Identity SDK for Rust authentication. Use for DeveloperToolsCredential, ManagedIdentityCredential, ClientSecretCredential, and token-based authentication. Triggers: \"azure-identity\", \"DeveloperToolsCredential\", \"authentication rust\", \"managed identity rust\", \"credential rust\".",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "azure-identity-rust",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-identity-rust/SKILL.md",
+      "triggers": "\"azure-identity\", \"DeveloperToolsCredential\", \"authentication rust\", \"managed identity rust\", \"credential rust\"."
+    },
+    {
+      "description": "Azure Key Vault Certificates SDK for Rust. Use for creating, importing, and managing certificates. Triggers: \"keyvault certificates rust\", \"CertificateClient rust\", \"create certificate rust\", \"import certificate rust\".",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "azure-keyvault-certificates-rust",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-keyvault-certificates-rust/SKILL.md",
+      "triggers": "\"keyvault certificates rust\", \"CertificateClient rust\", \"create certificate rust\", \"import certificate rust\"."
+    },
+    {
+      "description": "Azure Key Vault Keys SDK for Rust. Use for creating, managing, and using cryptographic keys. Triggers: \"keyvault keys rust\", \"KeyClient rust\", \"create key rust\", \"encrypt rust\", \"sign rust\".",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "azure-keyvault-keys-rust",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-keyvault-keys-rust/SKILL.md",
+      "triggers": "\"keyvault keys rust\", \"KeyClient rust\", \"create key rust\", \"encrypt rust\", \"sign rust\"."
+    },
+    {
+      "description": "Azure Key Vault Secrets SDK for Rust. Use for storing and retrieving secrets, passwords, and API keys. Triggers: \"keyvault secrets rust\", \"SecretClient rust\", \"get secret rust\", \"set secret rust\".",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "azure-keyvault-secrets-rust",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-keyvault-secrets-rust/SKILL.md",
+      "triggers": "\"keyvault secrets rust\", \"SecretClient rust\", \"get secret rust\", \"set secret rust\"."
+    },
+    {
+      "description": "Azure Blob Storage SDK for Rust. Use for uploading, downloading, and managing blobs and containers. Triggers: \"blob storage rust\", \"BlobClient rust\", \"upload blob rust\", \"download blob rust\", \"container rust\".",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "azure-storage-blob-rust",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-storage-blob-rust/SKILL.md",
+      "triggers": "\"blob storage rust\", \"BlobClient rust\", \"upload blob rust\", \"download blob rust\", \"container rust\"."
+    },
+    {
+      "description": "Master of defensive Bash scripting for production automation, CI/CD pipelines, and system utilities. Expert in safe, portable, and testable shell scripts.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "bash-pro",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bash-pro/SKILL.md",
+      "triggers": "bash;pro"
+    },
+    {
+      "description": "Identify the first beachhead market segment for a product launch. Evaluates segments against burning pain, willingness to pay, winnable market share, and referral potential. Use when choosing a first market, targeting an initial customer segment, or planning market entry strategy.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "beachhead-segment",
+      "src_path": "lib/phuryn-pm-skills/pm-go-to-market/skills/beachhead-segment/SKILL.md",
+      "triggers": "beachhead;segment"
+    },
+    {
       "description": "Master Bevy's Entity Component System (ECS) in Rust, covering Systems, Queries, Resources, and parallel scheduling.",
       "phase": 1,
-      "score": 100,
+      "score": 95,
       "skill_id": "bevy-ecs-expert",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bevy-ecs-expert/SKILL.md",
       "triggers": "bevy;ecs;expert"
     },
     {
+      "description": "Build production-ready Web3 applications, smart contracts, and decentralized systems. Implements DeFi protocols, NFT platforms, DAOs, and enterprise blockchain integrations.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "blockchain-developer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/blockchain-developer/SKILL.md",
+      "triggers": "blockchain;developer"
+    },
+    {
+      "description": "Build an automated system to track adversary infrastructure using passive DNS, certificate transparency, WHOIS data, and IP enrichment to map and monitor threat actor command-and-control networks.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "building-adversary-infrastructure-tracking-system",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-adversary-infrastructure-tracking-system/SKILL.md",
+      "triggers": "infrastructure-tracking;passive-dns;c2;whois;threat-actor;pivoting;threat-intelligence;domain-analysis"
+    },
+    {
+      "description": "Builds an automated malware submission and analysis pipeline that collects suspicious files from endpoints and email gateways, submits them to sandbox environments and multi-engine scanners, and generates verdicts with IOCs for SIEM integration. Use when SOC teams need to scale malware analysis beyond manual sandbox submissions for high-volume alert triage.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "building-automated-malware-submission-pipeline",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-automated-malware-submission-pipeline/SKILL.md",
+      "triggers": "soc;malware-analysis;sandbox;automation;virustotal;cuckoo;any-run;pipeline"
+    },
+    {
+      "description": "OpenCTI is an open-source platform for managing cyber threat intelligence knowledge, built on STIX 2.1 as its native data model. This skill covers building an automated IOC enrichment pipeline using O",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "building-ioc-enrichment-pipeline-with-opencti",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-ioc-enrichment-pipeline-with-opencti/SKILL.md",
+      "triggers": "threat-intelligence;cti;ioc;mitre-attack;stix;opencti;enrichment;virustotal"
+    },
+    {
+      "description": "Build comprehensive threat actor profiles using open-source intelligence (OSINT) techniques to document adversary motivations, capabilities, infrastructure, and TTPs for proactive defense.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "building-threat-actor-profile-from-osint",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-threat-actor-profile-from-osint/SKILL.md",
+      "triggers": "osint;threat-actor;profiling;maltego;spiderfoot;attribution;threat-intelligence;reconnaissance"
+    },
+    {
+      "description": "Build automated threat intelligence enrichment pipelines in Splunk Enterprise Security using lookup tables, modular inputs, and the Threat Intelligence Framework.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "building-threat-intelligence-enrichment-in-splunk",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-threat-intelligence-enrichment-in-splunk/SKILL.md",
+      "triggers": "splunk;threat-intelligence;enrichment;ioc;lookup;siem;soc;enterprise-security"
+    },
+    {
+      "description": "Builds automated threat intelligence feed integration pipelines connecting STIX/TAXII feeds, open-source threat intel, and commercial TI platforms into SIEM and security tools for real-time IOC matching and alerting. Use when SOC teams need to operationalize threat intelligence by automating feed ingestion, normalization, scoring, and distribution to detection systems.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "building-threat-intelligence-feed-integration",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-threat-intelligence-feed-integration/SKILL.md",
+      "triggers": "soc;threat-intelligence;stix;taxii;misp;feeds;ioc;siem-integration"
+    },
+    {
+      "description": "Building a Threat Intelligence Platform (TIP) involves deploying and integrating multiple CTI tools into a unified system for collecting, analyzing, enriching, and disseminating threat intelligence. T",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "building-threat-intelligence-platform",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/building-threat-intelligence-platform/SKILL.md",
+      "triggers": "threat-intelligence;cti;ioc;mitre-attack;stix;platform-building;misp;opencti"
+    },
+    {
+      "description": "Open-source embedding database for AI applications. Store embeddings and metadata, perform vector and full-text search, filter by metadata. Simple 4-function API. Scales from notebooks to production clusters. Use for semantic search, RAG applications, or document retrieval. Best for local development and open-source projects.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "chroma",
+      "src_path": "lib/orchestra-research-ai-research-skills/15-rag/chroma/SKILL.md",
+      "triggers": "RAG;Chroma;Vector Database;Embeddings;Semantic Search;Open Source;Self-Hosted;Document Retrieval;Metadata Filtering"
+    },
+    {
+      "description": "Score any MCP server, API, or CLI for agent-readiness using Clarvia AEO (Agent Experience Optimization). Search 15,400+ indexed tools before adding them to your workflow.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "clarvia-aeo-check",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/clarvia-aeo-check/SKILL.md",
+      "triggers": "mcp;aeo;tool-quality;agent-readiness;api-scoring;clarvia"
+    },
+    {
+      "description": "Analyze a repository to generate recommended Claude Code settings.json permissions. Use when setting up a new project, auditing existing settings, or determining which read-only bash commands to allow. Detects tech stack, build tools, and monorepo structure.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "claude-settings-audit",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/skills/claude-settings-audit/SKILL.md",
+      "triggers": "claude;settings;audit"
+    },
+    {
+      "description": "ClawHub reputation checker for ClawSec suite. Enhances guarded skill installer with VirusTotal Code Insight reputation scores and additional safety checks.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "clawsec-clawhub-checker",
+      "src_path": "lib/prompt-security-clawsec/skills/clawsec-clawhub-checker/SKILL.md",
+      "triggers": "clawsec;clawhub;checker"
+    },
+    {
+      "description": "Systematically collects, categorizes, and distributes indicators of compromise (IOCs) during and after security incidents to enable detection, blocking, and threat intelligence sharing. Covers network, host, email, and behavioral indicators using STIX/TAXII formats and threat intelligence platforms. Activates for requests involving IOC collection, indicator extraction, threat indicator sharing, compromise indicators, STIX export, or IOC enrichment.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "collecting-indicators-of-compromise",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/collecting-indicators-of-compromise/SKILL.md",
+      "triggers": "IOC-collection;threat-indicators;STIX-TAXII;MISP;threat-intelligence-sharing"
+    },
+    {
+      "description": "Collect volatile forensic evidence from a compromised system following order of volatility, preserving memory, network connections, processes, and system state before they are lost.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "collecting-volatile-evidence-from-compromised-host",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/collecting-volatile-evidence-from-compromised-host/SKILL.md",
+      "triggers": "incident-response;dfir;forensics;volatile-evidence;memory-forensics;chain-of-custody"
+    },
+    {
+      "description": "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement. Also use when the user mentions 'alternative page,' 'vs page,' 'competitor comparison,' 'comparison page,' '[Product] vs [Product],' '[Product] alternative,' 'competitive landing pages,' 'how do we compare to X,' 'battle card,' or 'competitor teardown.' Use this for any content that positions your product against competitors. Covers four formats: singular alternative, plural alternatives, you vs competitor, and competitor vs competitor. For sales-specific competitor docs, see sales-enablement.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "competitor-alternatives",
+      "src_path": "lib/coreyhaines31-marketingskills/skills/competitor-alternatives/SKILL.md",
+      "triggers": "competitor;alternatives"
+    },
+    {
+      "description": "Conducts external reconnaissance using Open Source Intelligence (OSINT) techniques to map an organization's external attack surface without directly interacting with target systems. The tester gathers information from public sources including DNS records, certificate transparency logs, search engines, social media, code repositories, and data breach databases to build a comprehensive target profile. Activates for requests involving OSINT reconnaissance, external footprinting, attack surface mapping, or passive information gathering.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "conducting-external-reconnaissance-with-osint",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/conducting-external-reconnaissance-with-osint/SKILL.md",
+      "triggers": "OSINT;reconnaissance;attack-surface;footprinting;passive-recon"
+    },
+    {
+      "description": "Conduct internal Active Directory reconnaissance using BloodHound Community Edition to map attack paths, identify privilege escalation chains, and discover misconfigurations in domain environments.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "conducting-internal-reconnaissance-with-bloodhound-ce",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/conducting-internal-reconnaissance-with-bloodhound-ce/SKILL.md",
+      "triggers": "red-team;reconnaissance;bloodhound;active-directory;attack-paths;privilege-escalation;graph-analysis"
+    },
+    {
+      "description": "Responds to malware infections across enterprise endpoints by identifying the malware family, determining infection vectors, assessing spread, and executing eradication procedures. Covers the full lifecycle from detection through containment, analysis, removal, and recovery. Activates for requests involving malware response, malware eradication, trojan removal, worm containment, malware triage, or infected endpoint remediation.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "conducting-malware-incident-response",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/conducting-malware-incident-response/SKILL.md",
+      "triggers": "malware-response;malware-analysis;eradication;endpoint-remediation;MITRE-ATT&CK"
+    },
+    {
+      "description": "Plan and execute authorized vishing (voice phishing) pretext calls to assess employee susceptibility to social engineering and evaluate security awareness controls.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "conducting-social-engineering-pretext-call",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/conducting-social-engineering-pretext-call/SKILL.md",
+      "triggers": "social-engineering;vishing;pretext-call;security-awareness;red-team;phishing;human-risk"
+    },
+    {
+      "description": "config loading precedence",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "config-loading-precedence",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/skills/config-loading-precedence/SKILL.md",
+      "triggers": "config;loading;precedence"
+    },
+    {
+      "description": "Configure AWS Verified Access to provide VPN-less zero trust network access to internal applications using identity and device posture verification with Cedar policy language.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "configuring-aws-verified-access-for-ztna",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/configuring-aws-verified-access-for-ztna/SKILL.md",
+      "triggers": "zero-trust;aws;verified-access;ztna;cedar-policy;vpn-less;identity-verification;device-posture;aws-ram"
+    },
+    {
+      "description": "A Certificate Authority (CA) is the trust anchor in a PKI hierarchy, responsible for issuing, signing, and revoking digital certificates. This skill covers building a two-tier CA hierarchy (Root CA +",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "configuring-certificate-authority-with-openssl",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/configuring-certificate-authority-with-openssl/SKILL.md",
+      "triggers": "cryptography;pki;certificate-authority;openssl;x509"
+    },
+    {
+      "description": "Configure microsegmentation policies to enforce least-privilege workload-to-workload access using tools like VMware NSX, Illumio, and Calico, preventing lateral movement in zero trust architectures.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "configuring-microsegmentation-for-zero-trust",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/configuring-microsegmentation-for-zero-trust/SKILL.md",
+      "triggers": "zero-trust;microsegmentation;network-access;lateral-movement;network-security"
+    },
+    {
+      "description": "Deploy Cisco Duo multi-factor authentication across enterprise applications, VPN, RDP, and SSH access points. This skill covers Duo integration methods, adaptive authentication policies, device trust",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "configuring-multi-factor-authentication-with-duo",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/configuring-multi-factor-authentication-with-duo/SKILL.md",
+      "triggers": "iam;identity;access-control;authentication;mfa;duo;multi-factor"
+    },
+    {
+      "description": "Configuring Zscaler Private Access (ZPA) to replace traditional VPN with zero trust network access by deploying App Connectors, defining application segments, configuring access policies based on user identity and device posture, and integrating with IdPs.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "configuring-zscaler-private-access-for-ztna",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/configuring-zscaler-private-access-for-ztna/SKILL.md",
+      "triggers": "zscaler;zpa;ztna;zero-trust;app-connector;access-policy;sase"
+    },
+    {
+      "description": "Generate content ideas rooted in positioning. Use when someone needs \"content ideas,\" \"what should I post,\" \"blog topics,\" \"LinkedIn ideas,\" or is stuck on what to create.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "content-idea-generator",
+      "src_path": "lib/brianrwagner-ai-marketing-skills/content-idea-generator/SKILL.md",
+      "triggers": "content;idea;generator"
+    },
+    {
+      "description": "Deep-dive into customer empathy and user journey thinking. Use when designing onboarding, improving UX, planning features, or trying to understand how to delight users faster.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "customer-empathy",
+      "src_path": "lib/rameerez-claude-code-startup-skills/skills/customer-empathy/SKILL.md",
+      "triggers": "customer;empathy"
+    },
+    {
+      "description": "Transform debugging from frustrating guesswork into systematic problem-solving with proven strategies, powerful tools, and methodical approaches.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "debugging-strategies",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/debugging-strategies/SKILL.md",
+      "triggers": "debugging;strategies"
+    },
+    {
+      "description": "Deploying Cloudflare Access with Cloudflare Tunnel to provide zero trust access to self-hosted and private applications, configuring identity-aware access policies, device posture checks, and WARP client enrollment for VPN replacement.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "deploying-cloudflare-access-for-zero-trust",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/deploying-cloudflare-access-for-zero-trust/SKILL.md",
+      "triggers": "cloudflare;cloudflare-access;zero-trust;cloudflare-tunnel;warp;ztna;cloudflare-one"
+    },
+    {
+      "description": "Deploying Palo Alto Networks Prisma Access for SASE-based zero trust network access using GlobalProtect agents, ZTNA Connectors, security policy enforcement, and integration with Strata Cloud Manager for unified security management.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "deploying-palo-alto-prisma-access-zero-trust",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/deploying-palo-alto-prisma-access-zero-trust/SKILL.md",
+      "triggers": "prisma-access;palo-alto;ztna;sase;globalprotect;strata-cloud-manager;zero-trust"
+    },
+    {
+      "description": "Deploy a Software-Defined Perimeter using the CSA v2.0 specification with Single Packet Authorization, mutual TLS, and SDP controller/gateway configuration to enforce zero trust network access.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "deploying-software-defined-perimeter",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/deploying-software-defined-perimeter/SKILL.md",
+      "triggers": "zero-trust;sdp;software-defined-perimeter;network-access;ztna"
+    },
+    {
+      "description": "Deploy and configure Tailscale as a WireGuard-based zero trust mesh VPN with identity-aware access controls, ACLs, and exit nodes for secure peer-to-peer connectivity.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "deploying-tailscale-for-zero-trust-vpn",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/deploying-tailscale-for-zero-trust-vpn/SKILL.md",
+      "triggers": "zero-trust;tailscale;wireguard;mesh-vpn;ztna;peer-to-peer;acl;identity-aware;headscale"
+    },
+    {
+      "description": "Business Email Compromise (BEC) is a sophisticated fraud scheme where attackers impersonate executives, vendors, or trusted partners to trick employees into transferring funds, sharing sensitive data,",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "detecting-business-email-compromise",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-business-email-compromise/SKILL.md",
+      "triggers": "phishing;email-security;social-engineering;dmarc;awareness;bec;fraud"
+    },
+    {
+      "description": "Detect DLL side-loading attacks where adversaries place malicious DLLs alongside legitimate applications to hijack execution flow for defense evasion.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "detecting-dll-sideloading-attacks",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-dll-sideloading-attacks/SKILL.md",
+      "triggers": "threat-hunting;mitre-attack;dll-sideloading;defense-evasion;t1574;edr;proactive-detection"
+    },
+    {
+      "description": "Detects and analyzes fileless malware that operates entirely in memory using PowerShell, WMI, .NET reflection, registry-resident payloads, and living-off-the-land binaries (LOLBins) without writing traditional executable files to disk. Activates for requests involving fileless threat detection, in-memory malware investigation, LOLBin abuse analysis, or WMI persistence examination.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "detecting-fileless-malware-techniques",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-fileless-malware-techniques/SKILL.md",
+      "triggers": "malware;fileless;LOLBins;memory-analysis;detection"
+    },
+    {
+      "description": "Detects and analyzes malicious behavior in mobile applications through behavioral analysis, permission abuse detection, network traffic monitoring, and dynamic instrumentation. Use when analyzing suspicious mobile applications for data exfiltration, command-and-control communication, credential stealing, SMS interception, or other malware indicators. Activates for requests involving mobile malware analysis, app behavior monitoring, trojan detection, or suspicious app investigation.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "detecting-mobile-malware-behavior",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-mobile-malware-behavior/SKILL.md",
+      "triggers": "mobile-security;android;ios;malware-analysis;owasp-mobile;penetration-testing"
+    },
+    {
+      "description": "Detects and analyzes process injection techniques used by malware including classic DLL injection, process hollowing, APC injection, thread hijacking, and reflective loading. Uses memory forensics, API monitoring, and behavioral analysis to identify injection artifacts. Activates for requests involving process injection detection, code injection analysis, hollowed process investigation, or in-memory threat detection.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "detecting-process-injection-techniques",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-process-injection-techniques/SKILL.md",
+      "triggers": "malware;process-injection;detection;memory-forensics;defense-evasion"
+    },
+    {
+      "description": "Spearphishing targets specific individuals using personalized, researched content that bypasses generic spam filters. Email security gateways (SEGs) like Microsoft Defender for Office 365, Proofpoint,",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "detecting-spearphishing-with-email-gateway",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/detecting-spearphishing-with-email-gateway/SKILL.md",
+      "triggers": "phishing;email-security;social-engineering;dmarc;awareness;spearphishing;email-gateway"
+    },
+    {
+      "description": "Creates devcontainers with Claude Code, language-specific tooling (Python/Node/Rust/Go), and persistent volumes. Use when adding devcontainer support to a project, setting up isolated development environments, or configuring sandboxed Claude Code workspaces.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "devcontainer-setup",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/devcontainer-setup/SKILL.md",
+      "triggers": "devcontainer;setup"
+    },
+    {
+      "description": "Master Electron desktop app development with secure IPC, contextIsolation, preload scripts, multi-process architecture, electron-builder packaging, code signing, and auto-update.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "electron-development",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/electron-development/SKILL.md",
+      "triggers": "electron;development"
+    },
+    {
+      "description": "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions \"email sequence,\" \"drip campaign,\" \"nurture sequence,\" \"onboarding emails,\" \"welcome sequence,\" \"re-engagement emails,\" \"email automation,\" \"lifecycle emails,\" \"trigger-based emails,\" \"email funnel,\" \"email workflow,\" \"what emails should I send,\" \"welcome series,\" or \"email cadence.\" Use this for any multi-email automated flow. For cold outreach emails, see cold-email. For in-app onboarding, see onboarding-cro.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "email-sequence",
+      "src_path": "lib/coreyhaines31-marketingskills/skills/email-sequence/SKILL.md",
+      "triggers": "email;sequence"
+    },
+    {
+      "description": "Write a clear, empathetic EOL announcement with rationale, customer impact, and next steps. Use when retiring a product, feature, or plan without creating avoidable confusion.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "eol-message",
+      "src_path": "lib/deanpeters-product-manager-skills/skills/eol-message/SKILL.md",
+      "triggers": "eol;message"
+    },
+    {
+      "description": "Executes authorized attack simulations against Active Directory environments to identify misconfigurations, weak credentials, dangerous privilege paths, and exploitable trust relationships that could lead to domain compromise. The tester uses BloodHound for attack path analysis, Mimikatz for credential extraction, and Impacket for protocol-level attacks including Kerberoasting, AS-REP Roasting, and delegation abuse. Activates for requests involving Active Directory pentest, AD attack simulation, domain compromise testing, or Kerberos attack assessment.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "executing-active-directory-attack-simulation",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/executing-active-directory-attack-simulation/SKILL.md",
+      "triggers": "Active-Directory;BloodHound;Mimikatz;Kerberoasting;domain-compromise"
+    },
+    {
+      "description": "Executes comprehensive red team exercises that simulate real-world adversary operations against an organization's people, processes, and technology. The red team operates with stealth as a primary objective, employing the full attack lifecycle from initial reconnaissance through objective completion while testing the organization's detection and response capabilities. This differs from penetration testing by focusing on adversary emulation rather than vulnerability identification. Activates for requests involving red team exercise, adversary simulation, adversary emulation, or full-scope offensive security assessment.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "executing-red-team-exercise",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/executing-red-team-exercise/SKILL.md",
+      "triggers": "red-team;adversary-emulation;MITRE-ATT&CK;Cobalt-Strike;detection-assessment"
+    },
+    {
+      "description": "Analyze existing repositories, maintain structure, setup guardrails and best practices",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "existing-repo",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/existing-repo/SKILL.md",
+      "triggers": "existing;repo"
+    },
+    {
+      "description": "Exploit Kerberos Constrained Delegation misconfigurations in Active Directory to impersonate privileged users via S4U2self and S4U2proxy extensions for lateral movement and privilege escalation.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "exploiting-constrained-delegation-abuse",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/exploiting-constrained-delegation-abuse/SKILL.md",
+      "triggers": "red-team;active-directory;kerberos;constrained-delegation;s4u2proxy;privilege-escalation;lateral-movement"
+    },
+    {
+      "description": "Exploits JWT algorithm confusion vulnerabilities where the server's token verification library accepts the algorithm specified in the JWT header rather than enforcing a fixed algorithm. The tester manipulates the alg header to switch from RS256 to HS256 (using the RSA public key as the HMAC secret), sets alg to none to bypass signature verification, or exploits kid/jku/x5u header injection to supply attacker-controlled keys. Activates for requests involving JWT algorithm confusion, alg none attack, key confusion attack, or JWT signature bypass.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "exploiting-jwt-algorithm-confusion-attack",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/exploiting-jwt-algorithm-confusion-attack/SKILL.md",
+      "triggers": "api-security;jwt;algorithm-confusion;token-forgery;cryptographic-attack"
+    },
+    {
+      "description": "Extracts indicators of compromise (IOCs) from malware samples including file hashes, network indicators (IPs, domains, URLs), host artifacts (file paths, registry keys, mutexes), and behavioral patterns for threat intelligence sharing and detection rule creation. Activates for requests involving IOC extraction, threat indicator harvesting, malware indicator collection, or building detection content from samples.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "extracting-iocs-from-malware-samples",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/extracting-iocs-from-malware-samples/SKILL.md",
+      "triggers": "malware;IOC-extraction;threat-intelligence;indicators;detection"
+    },
+    {
+      "description": "extraction pipeline patterns",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "extraction-pipeline-patterns",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/skills/extraction-pipeline-patterns/SKILL.md",
+      "triggers": "extraction;pipeline;patterns"
+    },
+    {
+      "description": "Careful about security and performance. Never trusts file extensions. Knows that large uploads need special handling. Prefers presigned URLs over server proxying.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "file-uploads",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/file-uploads/SKILL.md",
+      "triggers": "file;uploads"
+    },
+    {
+      "description": "Execute complete FPF cycle from hypothesis generation to decision",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "fpf:propose-hypotheses",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/fpf/skills/propose-hypotheses/SKILL.md",
+      "triggers": "fpf;propose;hypotheses"
+    },
+    {
+      "description": "Review and create distinctive, production-grade frontend interfaces with high design quality and design system compliance. Evaluates using three pillars: frictionless insight-to-action, quality craft, and trustworthy building. USE FOR: PR reviews, design reviews, accessibility audits, design system compliance checks, creative frontend design, UI code review, component reviews, responsive design checks, theme testing, and creating memorable UI. DO NOT USE FOR: Backend API reviews, database schema reviews, infrastructure or DevOps work, pure business logic without UI, or non-frontend code.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "frontend-design-review",
+      "src_path": "lib/microsoft-skills/.github/skills/frontend-design-review/SKILL.md",
+      "triggers": "frontend;design;review"
+    },
+    {
+      "description": "Comprehensive geospatial science skill covering remote sensing, GIS, spatial analysis, machine learning for earth observation, and 30+ scientific domains. Supports satellite imagery processing (Sentinel, Landsat, MODIS, SAR, hyperspectral), vector and raster data operations, spatial statistics, point cloud processing, network analysis, cloud-native workflows (STAC, COG, Planetary Computer), and 8 programming languages (Python, R, Julia, JavaScript, C++, Java, Go, Rust) with 500+ code examples. Use for remote sensing workflows, GIS analysis, spatial ML, Earth observation data processing, terrain analysis, hydrological modeling, marine spatial analysis, atmospheric science, and any geospatial computation task.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "geomaster",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/geomaster/SKILL.md",
+      "triggers": "geomaster"
+    },
+    {
+      "description": "gil management patterns",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "gil-management-patterns",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/domains/plugin-system/skills/gil-management-patterns/SKILL.md",
+      "triggers": "gil;management;patterns"
+    },
+    {
+      "description": "High-performance toolkit for genomic interval analysis in Rust with Python bindings. Use when working with genomic regions, BED files, coverage tracks, overlap detection, tokenization for ML models, or fragment analysis in computational genomics and machine learning applications.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "gtars",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/gtars/SKILL.md",
+      "triggers": "gtars"
+    },
+    {
+      "description": "Hardening Docker containers for production involves applying security best practices aligned with CIS Docker Benchmark v1.8.0 to minimize attack surface, prevent privilege escalation, and enforce leas",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "hardening-docker-containers-for-production",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/hardening-docker-containers-for-production/SKILL.md",
+      "triggers": "containers;docker;security;hardening;CIS-benchmark"
+    },
+    {
+      "description": "Apple HIG guidance for system experience components: widgets, live activities, notifications, complications, home screen quick actions, top shelf, watch faces, app clips, and app shortcuts. Use when asked about: \"widget design\", \"live activity\", \"notification design\", \"complication\", \"home screen quick action\", \"top shelf\", \"watch face\", \"app clip\", \"app shortcut\", \"system experience\". Also use when the user says \"how do I design a widget,\" \"what should my notification look like,\" \"how do Live Activities work,\" \"should I make an App Clip,\" or asks about surfaces outside the main app. Cross-references: hig-components-status for progress in widgets, hig-inputs for interaction patterns, hig-technologies for Siri and system integration.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "hig-components-system",
+      "src_path": "lib/raintree-technology-apple-hig-skills/skills/hig-components-system/SKILL.md",
+      "triggers": "hig;components;system"
+    },
+    {
       "description": "Fast tokenizers optimized for research and production. Rust-based implementation tokenizes 1GB in <20 seconds. Supports BPE, WordPiece, and Unigram algorithms. Train custom vocabularies, track alignments, handle padding/truncation. Integrates seamlessly with transformers. Use when you need high-performance tokenization or custom tokenizer training.",
       "phase": 1,
-      "score": 100,
+      "score": 95,
       "skill_id": "huggingface-tokenizers",
       "src_path": "lib/orchestra-research-ai-research-skills/02-tokenization/huggingface-tokenizers/SKILL.md",
       "triggers": "Tokenization;HuggingFace;BPE;WordPiece;Unigram;Fast Tokenization;Rust;Custom Tokenizer;Alignment Tracking;Production"
     },
     {
+      "description": "Implements application whitelisting using Windows AppLocker to restrict unauthorized software execution on endpoints, reducing attack surface from malware, unauthorized tools, and shadow IT. Use when enforcing application control policies, meeting compliance requirements for software restriction, or preventing execution of unsigned or untrusted binaries. Activates for requests involving AppLocker, application whitelisting, software restriction, or executable control.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-application-whitelisting-with-applocker",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-application-whitelisting-with-applocker/SKILL.md",
+      "triggers": "endpoint;AppLocker;application-whitelisting;windows-security;software-restriction"
+    },
+    {
+      "description": "Configure Microsoft Entra Privileged Identity Management to enforce just-in-time role activation, approval workflows, and access reviews for Azure AD privileged roles.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-azure-ad-privileged-identity-management",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-azure-ad-privileged-identity-management/SKILL.md",
+      "triggers": "azure-ad;pim;entra-id;just-in-time;privileged-roles;identity-governance;zero-trust"
+    },
+    {
+      "description": "Implementing Google's BeyondCorp zero trust access model to eliminate implicit trust from the network perimeter, enforce identity-aware access controls using IAP, Access Context Manager, and Chrome Enterprise Premium for VPN-less secure application access.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-beyondcorp-zero-trust-access-model",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-beyondcorp-zero-trust-access-model/SKILL.md",
+      "triggers": "beyondcorp;zero-trust;google-cloud;iap;identity-aware-proxy;ztna;access-context-manager"
+    },
+    {
+      "description": "Deploys remote browser isolation (RBI) as a core component of a Zero Trust architecture. Implements isolation policies with URL categorization and risk-based routing, content disarming and reconstruction (CDR) for file sanitization, data loss prevention controls within isolated sessions, and integration with Secure Web Gateway and ZTNA platforms. Based on Cloudflare Browser Isolation, Menlo Security, and Zscaler RBI approaches. Use when hardening web access against zero-day exploits, phishing, credential theft, and browser-based data exfiltration.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-browser-isolation-for-zero-trust",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-browser-isolation-for-zero-trust/SKILL.md",
+      "triggers": "browser-isolation;zero-trust;RBI;CDR;URL-categorization;content-disarming;secure-web-gateway"
+    },
+    {
+      "description": "Implement the CISA Zero Trust Maturity Model v2.0 across the five pillars of identity, devices, networks, applications, and data to achieve progressive organizational zero trust maturity.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-cisa-zero-trust-maturity-model",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-cisa-zero-trust-maturity-model/SKILL.md",
+      "triggers": "zero-trust;cisa;maturity-model;federal-compliance;governance;nist-800-207;identity;devices;networks;applications;data-security"
+    },
+    {
+      "description": "This skill covers implementing code signing for build artifacts to ensure integrity and authenticity throughout the software supply chain. It addresses signing binaries, packages, and containers using GPG, Sigstore, and platform-specific signing tools, establishing trust chains, and verifying signatures in deployment pipelines.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-code-signing-for-artifacts",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-code-signing-for-artifacts/SKILL.md",
+      "triggers": "devsecops;cicd;code-signing;supply-chain;sigstore;secure-sdlc"
+    },
+    {
+      "description": "Configure Microsoft Entra ID (Azure AD) Conditional Access policies for zero trust access control. Covers signal-based policy design, device compliance requirements, risk-based authentication, named l",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-conditional-access-policies-azure-ad",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-conditional-access-policies-azure-ad/SKILL.md",
+      "triggers": "iam;identity;access-control;azure-ad;entra-id;conditional-access;zero-trust"
+    },
+    {
+      "description": "Implement secure conduit architecture for OT remote access following IEC 62443 zones and conduits model, deploying jump servers, MFA-enabled gateways, session recording, and approval-based workflows to control vendor and engineer access to industrial control systems without exposing OT networks directly.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-conduit-security-for-ot-remote-access",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-conduit-security-for-ot-remote-access/SKILL.md",
+      "triggers": "ot-security;ics;remote-access;iec62443;jump-server;zero-trust;conduit;mfa"
+    },
+    {
+      "description": "Reduce container attack surface by building application images on Google distroless base images that contain only the application runtime with no shell, package manager, or unnecessary OS utilities.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-container-image-minimal-base-with-distroless",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-container-image-minimal-base-with-distroless/SKILL.md",
+      "triggers": "distroless;container-images;minimal-base;attack-surface;docker;security-hardening;supply-chain;kubernetes"
+    },
+    {
+      "description": "Enforce Kubernetes network segmentation using Calico CNI network policies and global network policies to control pod-to-pod traffic, restrict egress, and implement zero-trust microsegmentation.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-container-network-policies-with-calico",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-container-network-policies-with-calico/SKILL.md",
+      "triggers": "container-security;kubernetes;calico;network-policy;microsegmentation;cni"
+    },
+    {
+      "description": "Integrate AFL++ coverage-guided fuzz testing into CI/CD pipelines to discover memory corruption, input handling, and logic vulnerabilities in C/C++ and compiled applications.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-fuzz-testing-in-cicd-with-aflplusplus",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-fuzz-testing-in-cicd-with-aflplusplus/SKILL.md",
+      "triggers": "aflplusplus;fuzz-testing;cicd;coverage-guided-fuzzing;security-testing;vulnerability-discovery;afl"
+    },
+    {
+      "description": "Implement GCP Binary Authorization to enforce deploy-time security controls that ensure only trusted, attested container images are deployed to Google Kubernetes Engine and Cloud Run.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-gcp-binary-authorization",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-gcp-binary-authorization/SKILL.md",
+      "triggers": "gcp;binary-authorization;container-security;supply-chain;gke;cloud-run;attestation;software-integrity"
+    },
+    {
+      "description": "Implementing and auditing GCP VPC firewall rules to enforce network segmentation, restrict ingress and egress traffic, apply hierarchical firewall policies across the organization, and monitor firewall rule effectiveness using VPC Flow Logs.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-gcp-vpc-firewall-rules",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-gcp-vpc-firewall-rules/SKILL.md",
+      "triggers": "cloud-security;gcp;vpc;firewall-rules;network-security;segmentation"
+    },
+    {
+      "description": "Implements HashiCorp Vault dynamic secrets engines for database credentials, AWS IAM keys, and PKI certificates with automatic generation, lease management, and credential rotation to eliminate static secrets in application configurations. Activates for requests involving Vault secrets engine configuration, dynamic database credentials, ephemeral cloud credentials, or automated secret rotation.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-hashicorp-vault-dynamic-secrets",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-hashicorp-vault-dynamic-secrets/SKILL.md",
+      "triggers": "HashiCorp-Vault;dynamic-secrets;secrets-management;database-credentials;AWS-secrets;PKI"
+    },
+    {
+      "description": "Implement continuous identity verification for zero trust using phishing-resistant MFA (FIDO2/WebAuthn), risk-based conditional access, and identity governance aligned with the CISA Zero Trust Maturity Model.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-identity-verification-for-zero-trust",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-identity-verification-for-zero-trust/SKILL.md",
+      "triggers": "zero-trust;identity;authentication;mfa;identity-verification"
+    },
+    {
+      "description": "Implement Kubernetes network segmentation using Calico NetworkPolicy and GlobalNetworkPolicy for zero-trust pod-to-pod communication.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-kubernetes-network-policy-with-calico",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-kubernetes-network-policy-with-calico/SKILL.md",
+      "triggers": "calico;kubernetes;network-policy;network-segmentation;zero-trust;cni"
+    },
+    {
+      "description": "Implementing microsegmentation using Akamai Guardicore Segmentation to map application dependencies, create granular network policies, visualize east-west traffic flows, and enforce least-privilege communication between workloads across data centers and cloud.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-microsegmentation-with-guardicore",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-microsegmentation-with-guardicore/SKILL.md",
+      "triggers": "microsegmentation;guardicore;akamai;zero-trust;east-west-traffic;network-segmentation;lateral-movement"
+    },
+    {
+      "description": "Configures mutual TLS (mTLS) authentication between microservices using Python cryptography library for certificate generation and ssl module for TLS verification. Validates certificate chains, checks expiration, and audits mTLS deployment status. Use when implementing zero-trust service-to-service authentication.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-mtls-for-zero-trust-services",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-mtls-for-zero-trust-services/SKILL.md",
+      "triggers": "implementing;mtls;for;zero"
+    },
+    {
+      "description": "Implements 802.1X port-based network access control using RADIUS authentication, PacketFence NAC, and switch configurations to enforce identity-based access policies, posture assessment, and automatic VLAN assignment for authorized devices.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-network-access-control",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-network-access-control/SKILL.md",
+      "triggers": "network-security;nac;802.1x;radius;packetfence"
+    },
+    {
+      "description": "Deploy Cisco Identity Services Engine for 802.1X wired and wireless authentication, MAC Authentication Bypass, posture assessment, and dynamic VLAN assignment for network access control.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-network-access-control-with-cisco-ise",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-network-access-control-with-cisco-ise/SKILL.md",
+      "triggers": "cisco-ise;802.1x;nac;radius;network-access-control;posture-assessment;mab;dynamic-vlan;eap-tls"
+    },
+    {
+      "description": "Kubernetes NetworkPolicies provide pod-level network segmentation by defining ingress and egress rules that control traffic flow between pods, namespaces, and external endpoints. Combined with CNI plu",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-network-policies-for-kubernetes",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-network-policies-for-kubernetes/SKILL.md",
+      "triggers": "containers;kubernetes;security;network-policies;microsegmentation"
+    },
+    {
+      "description": "Design and implement network segmentation using firewall security zones, VLANs, ACLs, and microsegmentation policies to restrict lateral movement and enforce least-privilege network access.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-network-segmentation-with-firewall-zones",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-network-segmentation-with-firewall-zones/SKILL.md",
+      "triggers": "network-segmentation;firewall-zones;vlan;microsegmentation;lateral-movement;zero-trust;acl;east-west-traffic;pci-dss"
+    },
+    {
+      "description": "Implements Security Orchestration, Automation, and Response (SOAR) workflows using Splunk SOAR (formerly Phantom) to automate alert triage, IOC enrichment, containment actions, and incident response playbooks. Use when SOC teams need to reduce manual analyst work, standardize response procedures, or integrate multiple security tools into automated workflows.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-soar-automation-with-phantom",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-soar-automation-with-phantom/SKILL.md",
+      "triggers": "soc;soar;phantom;splunk-soar;automation;playbook;orchestration;incident-response"
+    },
+    {
+      "description": "STIX (Structured Threat Information eXpression) and TAXII (Trusted Automated eXchange of Intelligence Information) are OASIS open standards for representing and transporting cyber threat intelligence.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-stix-taxii-feed-integration",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-stix-taxii-feed-integration/SKILL.md",
+      "triggers": "threat-intelligence;cti;ioc;mitre-attack;stix;taxii;feed-integration;oasis"
+    },
+    {
+      "description": "Deploy and configure an OpenTAXII server to share and consume STIX-formatted cyber threat intelligence using the TAXII 2.1 protocol for automated indicator exchange between organizations.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-taxii-server-with-opentaxii",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-taxii-server-with-opentaxii/SKILL.md",
+      "triggers": "taxii;stix;opentaxii;threat-sharing;cti;indicator-exchange;taxii-server;automation"
+    },
+    {
+      "description": "Implement NextDNS as a zero trust DNS filtering layer with encrypted resolution, threat intelligence blocking, privacy protection, and organizational policy enforcement across all endpoints.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-zero-trust-dns-with-nextdns",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-zero-trust-dns-with-nextdns/SKILL.md",
+      "triggers": "zero-trust;dns;nextdns;dns-over-https;dns-over-tls;threat-blocking;dns-filtering;privacy;encrypted-dns"
+    },
+    {
+      "description": "Implementing zero trust access controls for SaaS applications using CASB, SSPM, conditional access policies, OAuth app governance, and session controls to enforce identity verification, device compliance, and data protection for cloud-hosted services.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-zero-trust-for-saas-applications",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-zero-trust-for-saas-applications/SKILL.md",
+      "triggers": "zero-trust;saas-security;casb;sspm;conditional-access;oauth-governance;session-controls"
+    },
+    {
+      "description": "This skill guides organizations through implementing zero trust architecture in cloud environments following NIST SP 800-207 and Google BeyondCorp principles. It covers identity-centric access controls, micro-segmentation, continuous verification, device trust assessment, and deploying Identity-Aware Proxy to eliminate implicit network trust in AWS, Azure, and GCP environments.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-zero-trust-in-cloud",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-zero-trust-in-cloud/SKILL.md",
+      "triggers": "zero-trust;beyondcorp;identity-aware-proxy;micro-segmentation;continuous-verification"
+    },
+    {
+      "description": "Implementing Zero Trust Network Access (ZTNA) in cloud environments by configuring identity-aware proxies, micro-segmentation, continuous verification with conditional access policies, and replacing traditional VPN-based access with BeyondCorp-style architectures across AWS, Azure, and GCP.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-zero-trust-network-access",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-zero-trust-network-access/SKILL.md",
+      "triggers": "cloud-security;zero-trust;ztna;beyondcorp;identity-aware-proxy;micro-segmentation"
+    },
+    {
+      "description": "Implement Zero Trust Network Access using Zscaler Private Access (ZPA) to replace traditional VPN with identity-based, context-aware access to private applications through the Zscaler Zero Trust Exchange.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-zero-trust-network-access-with-zscaler",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-zero-trust-network-access-with-zscaler/SKILL.md",
+      "triggers": "zero-trust;ztna;zscaler;network-access;vpn-replacement"
+    },
+    {
+      "description": "Deploy Google BeyondCorp Enterprise zero trust access controls using Identity-Aware Proxy (IAP), context-aware access policies, device trust validation, and Access Context Manager to enforce identity and posture-based access to GCP resources and internal applications.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-zero-trust-with-beyondcorp",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-zero-trust-with-beyondcorp/SKILL.md",
+      "triggers": "zero-trust;beyondcorp;google-cloud;iap;context-aware-access;device-trust;identity"
+    },
+    {
+      "description": "Implement HashiCorp Boundary for identity-aware zero trust infrastructure access management with dynamic credential brokering, session recording, and Vault integration.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "implementing-zero-trust-with-hashicorp-boundary",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-zero-trust-with-hashicorp-boundary/SKILL.md",
+      "triggers": "zero-trust;hashicorp;boundary;privileged-access;vault;identity-aware-proxy;session-recording;just-in-time-access"
+    },
+    {
+      "description": "[Extended thinking: This workflow implements a sophisticated debugging and resolution pipeline that leverages AI-assisted debugging tools and observability platforms to systematically diagnose and res",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "incident-response-smart-fix",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/incident-response-smart-fix/SKILL.md",
+      "triggers": "incident;response;smart;fix"
+    },
+    {
+      "description": "Intercepts and analyzes HTTP/HTTPS traffic from mobile applications using Burp Suite proxy to identify insecure API communications, authentication flaws, data leakage, and server-side vulnerabilities. Use when performing mobile application penetration testing, assessing API security, or evaluating client-server communication patterns. Activates for requests involving mobile traffic interception, Burp Suite mobile proxy, API security testing, or mobile HTTPS analysis.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "intercepting-mobile-traffic-with-burpsuite",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/intercepting-mobile-traffic-with-burpsuite/SKILL.md",
+      "triggers": "mobile-security;android;ios;burp-suite;traffic-interception;penetration-testing"
+    },
+    {
+      "description": "Investigates phishing email incidents from initial user report through header analysis, URL/attachment detonation, impacted user identification, and containment actions using SOC tools like Splunk, Microsoft Defender, and sandbox analysis platforms. Use when a reported phishing email requires full incident investigation to determine scope and impact.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "investigating-phishing-email-incident",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/investigating-phishing-email-incident/SKILL.md",
+      "triggers": "soc;phishing;incident-response;email-security;splunk;defender;sandbox"
+    },
+    {
+      "description": "Extract text, tables, metadata, and images from 91+ document formats (PDF, Office, images, HTML, email, archives, academic) using Kreuzberg. Use when writing code that calls Kreuzberg APIs in Python, Node.js/TypeScript, Rust, or CLI. Covers installation, extraction (sync/async), configuration (OCR, chunking, output format), batch processing, error handling, and plugins.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "kreuzberg",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/skills/kreuzberg/SKILL.md",
+      "triggers": "kreuzberg"
+    },
+    {
+      "description": "Generate a Lean Canvas with problem, solution, metrics, cost structure, UVP, unfair advantage, channels, segments, and revenue. Use when exploring a lean startup canvas, testing a business hypothesis, or modeling a new venture.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "lean-canvas",
+      "src_path": "lib/phuryn-pm-skills/pm-product-strategy/skills/lean-canvas/SKILL.md",
+      "triggers": "lean;canvas"
+    },
+    {
+      "description": "Review Bitcoin Lightning Network protocol designs, compare channel factory approaches, and analyze Layer 2 scaling tradeoffs. Covers trust models, on-chain footprint, consensus requirements, HTLC/PTLC compatibility, liveness, and watchtower support.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "lightning-architecture-review",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/lightning-architecture-review/SKILL.md",
+      "triggers": "lightning;architecture;review"
+    },
+    {
+      "description": "This category provides reference materials for debugging, code quality, and advanced layout patterns.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "makepad-reference",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/makepad-reference/SKILL.md",
+      "triggers": "makepad;reference"
+    },
+    {
       "description": "Makepad UI development skills for Rust apps: setup, patterns, shaders, packaging, and troubleshooting.",
       "phase": 1,
-      "score": 100,
+      "score": 95,
       "skill_id": "makepad-skills",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/makepad-skills/SKILL.md",
       "triggers": "makepad;skills"
     },
     {
+      "description": "Version: makepad-widgets (dev branch) | Last Updated: 2026-01-19 > > Check for updates: https://crates.io/crates/makepad-widgets",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "makepad-widgets",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/makepad-widgets/SKILL.md",
+      "triggers": "makepad;widgets"
+    },
+    {
+      "description": "This skill covers implementing Okta as a centralized identity provider for cloud environments, configuring SSO integration with AWS, Azure, and GCP, deploying phishing- resistant MFA with Okta FastPass, managing lifecycle automation for user provisioning and deprovisioning, and enforcing adaptive access policies based on device posture and risk signals.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "managing-cloud-identity-with-okta",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/managing-cloud-identity-with-okta/SKILL.md",
+      "triggers": "okta;cloud-identity;single-sign-on;phishing-resistant-mfa;identity-lifecycle"
+    },
+    {
+      "description": "mime detection routing",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "mime-detection-routing",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/skills/mime-detection-routing/SKILL.md",
+      "triggers": "mime;detection;routing"
+    },
+    {
+      "description": "Serverless GPU cloud platform for running ML workloads. Use when you need on-demand GPU access without infrastructure management, deploying ML models as APIs, or running batch jobs with automatic scaling.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "modal-serverless-gpu",
+      "src_path": "lib/orchestra-research-ai-research-skills/09-infrastructure/modal/SKILL.md",
+      "triggers": "Infrastructure;Serverless;GPU;Cloud;Deployment;Modal"
+    },
+    {
+      "description": "CRITICAL: Use for MolyKit AI chat toolkit. Triggers on: BotClient, OpenAI, SSE streaming, AI chat, molykit, PlatformSend, spawn(), ThreadToken, cross-platform async, Chat widget, Messages, PromptInput, Avatar, LLM",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "molykit",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/skills/molykit/SKILL.md",
+      "triggers": "molykit"
+    },
+    {
+      "description": "Configure mutual TLS (mTLS) for zero-trust service-to-service communication. Use when implementing zero-trust networking, certificate management, or securing internal service communication.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "mtls-configuration",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/mtls-configuration/SKILL.md",
+      "triggers": "mtls;configuration"
+    },
+    {
+      "description": "Expert network engineer specializing in modern cloud networking, security architectures, and performance optimization.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "network-engineer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/network-engineer/SKILL.md",
+      "triggers": "network;engineer"
+    },
+    {
+      "description": "ocr uackend management",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "ocr-backend-management",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/skills/ocr-backend-management/SKILL.md",
+      "triggers": "ocr;backend;management"
+    },
+    {
+      "description": "Crafts high-converting outreach messages and email sequences for cold outreach, LinkedIn DMs, and follow-ups. Use when user needs personalized outreach messages that book calls and get replies.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "outreach-specialist",
+      "src_path": "lib/ognjengt-founder-skills/skills/outreach-specialist/SKILL.md",
+      "triggers": "outreach;specialist"
+    },
+    {
+      "description": "Use BloodHound and SharpHound to enumerate Active Directory relationships and identify attack paths from compromised users to Domain Admin.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-active-directory-bloodhound-analysis",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-active-directory-bloodhound-analysis/SKILL.md",
+      "triggers": "bloodhound;active-directory;sharphound;attack-path;ad-enumeration;graph-theory;privilege-escalation"
+    },
+    {
+      "description": "Performing authorized privilege escalation assessments in AWS environments to identify IAM misconfigurations that allow users or roles to elevate their permissions using Pacu, CloudFox, Principal Mapper, and manual IAM policy analysis techniques.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-aws-privilege-escalation-assessment",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-aws-privilege-escalation-assessment/SKILL.md",
+      "triggers": "cloud-security;aws;privilege-escalation;iam;pacu;offensive-security"
+    },
+    {
+      "description": "Monitor for brand impersonation attacks across domains, social media, mobile apps, and dark web channels to detect phishing campaigns, fake sites, and unauthorized brand usage targeting your organization.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-brand-monitoring-for-impersonation",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-brand-monitoring-for-impersonation/SKILL.md",
+      "triggers": "brand-monitoring;impersonation;phishing;domain-monitoring;social-media;brand-protection;threat-intelligence"
+    },
+    {
+      "description": "Perform comprehensive cloud asset inventory and relationship mapping using Cartography to build a Neo4j security graph of infrastructure assets, IAM permissions, and attack paths across AWS, GCP, and Azure.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-cloud-asset-inventory-with-cartography",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-cloud-asset-inventory-with-cartography/SKILL.md",
+      "triggers": "cartography;neo4j;cloud-security;asset-inventory;attack-path;graph-database;cncf;lyft"
+    },
+    {
+      "description": "Docker Bench for Security is an open-source script that checks dozens of common best practices around deploying Docker containers in production. Based on the CIS Docker Benchmark, it audits host confi",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-docker-bench-security-assessment",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-docker-bench-security-assessment/SKILL.md",
+      "triggers": "containers;docker;security;CIS-benchmark;assessment"
+    },
+    {
+      "description": "Indicator lifecycle management tracks IOCs from initial discovery through validation, enrichment, deployment, monitoring, and eventual retirement. This skill covers implementing systematic processes f",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-indicator-lifecycle-management",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-indicator-lifecycle-management/SKILL.md",
+      "triggers": "threat-intelligence;cti;ioc;mitre-attack;stix;indicator-lifecycle;ioc-management"
+    },
+    {
+      "description": "Automates Indicator of Compromise (IOC) enrichment by orchestrating lookups across VirusTotal, AbuseIPDB, Shodan, MISP, and other intelligence sources to provide contextual scoring and disposition recommendations. Use when SOC analysts need rapid multi-source enrichment of IPs, domains, URLs, and file hashes during alert triage or incident investigation.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-ioc-enrichment-automation",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-ioc-enrichment-automation/SKILL.md",
+      "triggers": "soc;ioc;enrichment;automation;virustotal;abuseipdb;shodan;threat-intelligence"
+    },
+    {
+      "description": "Enrich malware file hashes using the VirusTotal API to retrieve detection rates, behavioral analysis, YARA matches, and contextual threat intelligence for incident triage and IOC validation.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-malware-hash-enrichment-with-virustotal",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-malware-hash-enrichment-with-virustotal/SKILL.md",
+      "triggers": "virustotal;malware-analysis;hash-enrichment;ioc;threat-intelligence;triage;api;detection"
+    },
+    {
+      "description": "Malware IOC extraction is the process of analyzing malicious software to identify actionable indicators of compromise including file hashes, network indicators (C2 domains, IP addresses, URLs), regist",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-malware-ioc-extraction",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-malware-ioc-extraction/SKILL.md",
+      "triggers": "threat-intelligence;cti;ioc;mitre-attack;stix;malware-analysis;yara;reverse-engineering"
+    },
+    {
+      "description": "Bypasses SSL/TLS certificate pinning implementations in Android and iOS applications to enable traffic interception during authorized security assessments. Covers OkHttp, TrustManager, NSURLSession, and third-party pinning library bypass techniques using Frida, Objection, and custom scripts. Activates for requests involving certificate pinning bypass, SSL pinning defeat, mobile TLS interception, or proxy-resistant app testing.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-mobile-app-certificate-pinning-bypass",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-mobile-app-certificate-pinning-bypass/SKILL.md",
+      "triggers": "mobile-security;android;ios;certificate-pinning;frida;penetration-testing"
+    },
+    {
+      "description": "Acquire and analyze mobile device data using Cellebrite UFED and open-source tools to extract communications, location data, and application artifacts.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-mobile-device-forensics-with-cellebrite",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-mobile-device-forensics-with-cellebrite/SKILL.md",
+      "triggers": "forensics;mobile-forensics;cellebrite;smartphone-analysis;ios-forensics;android-forensics"
+    },
+    {
+      "description": "Performs OAuth 2.0 scope minimization review to identify over-permissioned third-party application integrations, excessive API scopes, unused token grants, and risky OAuth consent patterns across identity providers and SaaS platforms. Activates for requests involving OAuth scope audit, API permission review, third-party app risk assessment, or consent grant minimization.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-oauth-scope-minimization-review",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-oauth-scope-minimization-review/SKILL.md",
+      "triggers": "OAuth;scope-minimization;API-security;consent-review;third-party-risk;token-audit"
+    },
+    {
+      "description": "Automate OSINT collection using SpiderFoot REST API and CLI for target profiling, module-based reconnaissance, and structured result analysis across 200+ data sources",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-osint-with-spiderfoot",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-osint-with-spiderfoot/SKILL.md",
+      "triggers": "osint;spiderfoot;reconnaissance;threat-intelligence;attack-surface;target-profiling"
+    },
+    {
+      "description": "Conduct systematic reviews of privileged accounts to validate access rights, identify excessive permissions, and enforce least privilege across PAM infrastructure.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-privileged-account-access-review",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-privileged-account-access-review/SKILL.md",
+      "triggers": "pam;access-review;privileged-accounts;least-privilege;compliance;audit;identity-governance"
+    },
+    {
+      "description": "Automates SOC 2 Type II audit preparation including gap assessment against AICPA Trust Services Criteria (CC1-CC9), evidence collection from cloud providers and identity systems, control testing validation, remediation tracking, and continuous compliance monitoring. Covers all five TSC categories (Security, Availability, Processing Integrity, Confidentiality, Privacy) with automated evidence gathering from AWS, Azure, GCP, Okta, GitHub, and Jira. Use when preparing for or maintaining SOC 2 Type II certification.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-soc2-type2-audit-preparation",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-soc2-type2-audit-preparation/SKILL.md",
+      "triggers": "performing;soc2;type2;audit;preparation;compliance;grc"
+    },
+    {
+      "description": "Configure SSL/TLS inspection on network security devices to decrypt, inspect, and re-encrypt HTTPS traffic for threat detection while managing certificates, exemptions, and privacy compliance.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-ssl-tls-inspection-configuration",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-ssl-tls-inspection-configuration/SKILL.md",
+      "triggers": "ssl-inspection;tls-decryption;https-inspection;certificate-management;proxy;man-in-the-middle;network-security;forward-proxy"
+    },
+    {
+      "description": "Performs static analysis of Windows PE (Portable Executable) malware samples using PEStudio to examine file headers, imports, strings, resources, and indicators without executing the binary. Identifies suspicious characteristics including packing, anti-analysis techniques, and malicious imports. Activates for requests involving static malware analysis, PE file inspection, Windows executable analysis, or pre-execution malware triage.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-static-malware-analysis-with-pe-studio",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-static-malware-analysis-with-pe-studio/SKILL.md",
+      "triggers": "malware;static-analysis;PE-analysis;PEStudio;reverse-engineering"
+    },
+    {
+      "description": "Enumerate subdomains of target domains using ProjectDiscovery's Subfinder passive reconnaissance tool to map the attack surface during security assessments.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-subdomain-enumeration-with-subfinder",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-subdomain-enumeration-with-subfinder/SKILL.md",
+      "triggers": "subdomain-enumeration;reconnaissance;bug-bounty;attack-surface;subfinder;passive-recon;osint"
+    },
+    {
+      "description": "Simulate and detect software supply chain attacks including typosquatting detection via Levenshtein distance, dependency confusion testing against private registries, package hash verification with pip, and known vulnerability scanning with pip-audit.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-supply-chain-attack-simulation",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-supply-chain-attack-simulation/SKILL.md",
+      "triggers": "supply-chain;typosquatting;dependency-confusion;package-verification;pip-audit;PyPI;software-composition-analysis"
+    },
+    {
+      "description": "Develop precise YARA rules for malware detection by identifying unique byte patterns, strings, and behavioral indicators in executable files while minimizing false positives.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "performing-yara-rule-development-for-detection",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/performing-yara-rule-development-for-detection/SKILL.md",
+      "triggers": "yara;malware-detection;signature-development;threat-hunting;pattern-matching;yara-x;indicator-development"
+    },
+    {
+      "description": "Design comprehensive test cases using PICT (Pairwise Independent Combinatorial Testing) for any piece of requirements or code. Analyzes inputs, generates PICT models with parameters, values, and constraints for valid scenarios using pairwise testing. Outputs the PICT model, markdown table of test cases, and expected results.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "pict-test-designer",
+      "src_path": "lib/omkamal-pypict-claude-skill/SKILL.md",
+      "triggers": "pict;test;designer"
+    },
+    {
+      "description": "Automates browser interactions for testing and validating your own web applications using playwright-cli. Use when the user needs to navigate their own apps, fill forms, take screenshots, test web application behavior, mock network requests, manage browser sessions, or generate test code. Only use against applications you own or have explicit authorization to test.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "playwright-cli",
+      "src_path": "lib/testdino-hq-playwright-skill/playwright-cli/SKILL.md",
+      "triggers": "playwright;cli"
+    },
+    {
+      "description": "plugin architecture patterns",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "plugin-architecture-patterns",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/skills/plugin-architecture-patterns/SKILL.md",
+      "triggers": "plugin;architecture;patterns"
+    },
+    {
+      "description": "plugin discovery",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "plugin-discovery",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/domains/plugin-system/skills/plugin-discovery/SKILL.md",
+      "triggers": "plugin;discovery"
+    },
+    {
+      "description": "Fast in-memory DataFrame library for datasets that fit in RAM. Use when pandas is too slow but data still fits in memory. Lazy evaluation, parallel execution, Apache Arrow backend. Best for 1-100GB datasets, ETL pipelines, faster pandas replacement. For larger-than-RAM data use dask or vaex.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "polars",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/polars/SKILL.md",
+      "triggers": "polars"
+    },
+    {
+      "description": "python ocr uackend integration",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "python-ocr-backend-integration",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/domains/ocr-integration/skills/python-ocr-backend-integration/SKILL.md",
+      "triggers": "python;ocr;backend;integration"
+    },
+    {
+      "description": "python plugin wrapper",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "python-plugin-wrapper",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/domains/plugin-system/skills/python-plugin-wrapper/SKILL.md",
+      "triggers": "python;plugin;wrapper"
+    },
+    {
       "description": "High-performance vector similarity search engine for RAG and semantic search. Use when building production RAG systems requiring fast nearest neighbor search, hybrid search with filtering, or scalable vector storage with Rust-powered performance.",
       "phase": 1,
-      "score": 100,
+      "score": 95,
       "skill_id": "qdrant-vector-search",
       "src_path": "lib/orchestra-research-ai-research-skills/15-rag/qdrant/SKILL.md",
       "triggers": "RAG;Vector Search;Qdrant;Semantic Search;Embeddings;Similarity Search;HNSW;Production;Distributed"
     },
     {
+      "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "receiving-code-review",
+      "src_path": "lib/obra-superpowers/skills/receiving-code-review/SKILL.md",
+      "triggers": "receiving;code;review"
+    },
+    {
+      "description": "Search and analyze Reddit content using semantic AI search via reddit-insights.com MCP server. Use when you need to: (1) Find user pain points and frustrations for product ideas, (2) Discover niche markets or underserved needs, (3) Research what people really think about products/topics, (4) Find content inspiration from real discussions, (5) Analyze sentiment and trends on Reddit, (6) Validate business ideas with real user feedback. Triggers: reddit search, find pain points, market research, user feedback, what do people think about, reddit trends, niche discovery, product validation.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "reddit-insights",
+      "src_path": "lib/brianrwagner-ai-marketing-skills/reddit-insights/SKILL.md",
+      "triggers": "reddit search, find pain points, market research, user feedback, what do people think about, reddit trends, niche discovery, product validation."
+    },
+    {
+      "description": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,' 'affiliate,' 'ambassador,' 'word of mouth,' 'viral loop,' 'refer a friend,' 'partner program,' 'referral incentive,' 'how to get referrals,' 'customers referring customers,' or 'affiliate payout.' Use this whenever someone wants existing users or partners to bring in new customers. For launch-specific virality, see launch-strategy.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "referral-program",
+      "src_path": "lib/coreyhaines31-marketingskills/skills/referral-program/SKILL.md",
+      "triggers": "referral;program"
+    },
+    {
+      "description": "Reflect on previus response and output, based on Self-refinement framework for iterative improvement with complexity triage and verification",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "reflexion:reflect",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/reflexion/skills/reflect/SKILL.md",
+      "triggers": "reflexion;reflect"
+    },
+    {
+      "description": "Reverse engineer Rust-compiled malware using IDA Pro and Ghidra with techniques for handling non-null-terminated strings, crate dependency extraction, and Rust-specific control flow analysis.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "reverse-engineering-rust-malware",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/reverse-engineering-rust-malware/SKILL.md",
+      "triggers": "rust;reverse-engineering;malware-analysis;ghidra;ida-pro;binary-analysis;rust-malware"
+    },
+    {
+      "description": "Pre-landing PR review. Analyzes diff against the base branch for SQL safety, LLM trust boundary violations, conditional side effects, and other structural issues. Use when asked to \"review this PR\", \"code review\", \"pre-landing review\", or \"check my diff\". Proactively suggest when the user is about to merge or land code changes. (gstack)",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "review",
+      "src_path": "lib/garrytan-gstack/review/SKILL.md",
+      "triggers": "review"
+    },
+    {
+      "description": "When the user wants to analyze, respond to, or improve their app reviews and ratings. Also use when the user mentions \"reviews\", \"ratings\", \"negative reviews\", \"how to get more reviews\", \"review response\", or \"my rating is dropping\". For broader ASO audit, see aso-audit. For retention issues causing bad reviews, see retention-optimization.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "review-management",
+      "src_path": "lib/eronred-aso-skills/skills/review-management/SKILL.md",
+      "triggers": "review;management"
+    },
+    {
       "description": "Master Rust async programming with Tokio, async traits, error handling, and concurrent patterns. Use when building async Rust applications, implementing concurrent systems, or debugging async code.",
       "phase": 1,
-      "score": 100,
+      "score": 95,
       "skill_id": "rust-async-patterns",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/rust-async-patterns/SKILL.md",
       "triggers": "rust;async;patterns"
@@ -45,7 +1357,7 @@
     {
       "description": "Idiomatic Rust patterns, ownership, error handling, traits, concurrency, and best practices for building safe, performant applications.",
       "phase": 1,
-      "score": 100,
+      "score": 95,
       "skill_id": "rust-patterns",
       "src_path": "lib/affaan-m-everything-claude-code/docs/tr/skills/rust-patterns/SKILL.md",
       "triggers": "rust;patterns"
@@ -53,15 +1365,215 @@
     {
       "description": "Master Rust 1.75+ with modern async patterns, advanced type system features, and production-ready systems programming.",
       "phase": 1,
-      "score": 100,
+      "score": 95,
       "skill_id": "rust-pro",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/rust-pro/SKILL.md",
       "triggers": "rust;pro"
     },
     {
+      "description": "Rust testing patterns including unit tests, integration tests, async testing, property-based testing, mocking, and coverage. Follows TDD methodology.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "rust-testing",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/tr/skills/rust-testing/SKILL.md",
+      "triggers": "rust;testing"
+    },
+    {
+      "description": "When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales deck,' 'pitch deck,' 'one-pager,' 'leave-behind,' 'objection handling,' 'deal-specific ROI analysis,' 'demo script,' 'talk track,' 'sales playbook,' 'proposal template,' 'buyer persona card,' 'help my sales team,' 'sales materials,' or 'what should I give my sales reps.' Use this for any document or asset that helps a sales team close deals. For competitor comparison pages and battle cards, see competitor-alternatives. For marketing website copy, see copywriting. For cold outreach emails, see cold-email.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "sales-enablement",
+      "src_path": "lib/coreyhaines31-marketingskills/skills/sales-enablement/SKILL.md",
+      "triggers": "sales;enablement"
+    },
+    {
+      "description": "When the user wants to design, optimize, or evaluate App Store screenshots and preview videos. Also use when the user mentions \"screenshots\", \"app preview\", \"product page design\", \"screenshot design\", \"creative assets\", or \"what should my screenshots show\". For A/B testing screenshots, see ab-test-store-listing. For full ASO audit, see aso-audit.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "screenshot-optimization",
+      "src_path": "lib/eronred-aso-skills/skills/screenshot-optimization/SKILL.md",
+      "triggers": "screenshot;optimization"
+    },
+    {
+      "description": "Expert web researcher using advanced search techniques and",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "search-specialist",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/search-specialist/SKILL.md",
+      "triggers": "search;specialist"
+    },
+    {
+      "description": "Harbor is an open-source container registry that provides security features including vulnerability scanning (integrated Trivy), image signing (Notary/Cosign), RBAC, content trust policies, replicatio",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "securing-container-registry-with-harbor",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/securing-container-registry-with-harbor/SKILL.md",
+      "triggers": "containers;kubernetes;docker;security;registry;harbor"
+    },
+    {
+      "description": "This skill covers hardening GitHub Actions workflows against supply chain attacks, credential theft, and privilege escalation. It addresses pinning actions to SHA digests, minimizing GITHUB_TOKEN permissions, protecting secrets from exfiltration, preventing script injection in workflow expressions, and implementing required reviewers for workflow changes.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "securing-github-actions-workflows",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/securing-github-actions-workflows/SKILL.md",
+      "triggers": "devsecops;cicd;github-actions;supply-chain;workflow-security;secure-sdlc"
+    },
+    {
+      "description": "This skill covers implementing secure remote access to OT/ICS environments for operators, engineers, and vendors while preventing unauthorized access that could compromise industrial operations. It addresses jump server architecture, multi-factor authentication, session recording, privileged access management, vendor remote access controls, and compliance with IEC 62443 and NERC CIP-005 remote access requirements.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "securing-remote-access-to-ot-environment",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/securing-remote-access-to-ot-environment/SKILL.md",
+      "triggers": "ot-security;ics;scada;industrial-control;iec62443;remote-access;jump-server;mfa"
+    },
+    {
+      "description": "Create or refine a concise, normative security policy (\"Blue Book\") for sensitive applications. Use when users need a threat model, data classification rules, auth/session policy, logging and audit requirements, retention/deletion expectations, incident response, or security gates for apps handling PII/PHI/financial data.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "security-bluebook-builder",
+      "src_path": "lib/shadowpr0-security-bluebook-builder/SKILL.md",
+      "triggers": "security;bluebook;builder"
+    },
+    {
+      "description": "security limits dos protection",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "security-limits-dos-protection",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/skills/security-limits-dos-protection/SKILL.md",
+      "triggers": "security;limits;dos;protection"
+    },
+    {
+      "description": "Static Application Security Testing (SAST) for code vulnerability analysis across multiple languages and frameworks",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "security-scanning-security-sast",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/security-scanning-security-sast/SKILL.md",
+      "triggers": "security;scanning;security;sast"
+    },
+    {
+      "description": "Creates custom Semgrep rules for detecting security vulnerabilities, bug patterns, and code patterns. Use when writing Semgrep rules or building custom static analysis detections.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "semgrep-rule-creator",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/semgrep-rule-creator/SKILL.md",
+      "triggers": "semgrep;rule;creator"
+    },
+    {
+      "description": "SEO and AEO best practices for metadata, Open Graph, sitemaps, robots.txt, hreflang, JSON-LD structured data, EEAT, and content optimized for search engines and AI answer surfaces. Use this skill when implementing page SEO, technical SEO, schema markup, international SEO, AI-overview readiness, or improving content for Google, ChatGPT, Perplexity, and similar assistants.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "seo-aeo-best-practices",
+      "src_path": "lib/sanity-io-agent-toolkit/skills/seo-aeo-best-practices/SKILL.md",
+      "triggers": "seo;aeo;best;practices"
+    },
+    {
+      "description": "Analyzes content for E-E-A-T signals and suggests improvements to build authority and trust. Identifies missing credibility elements. Use PROACTIVELY for YMYL topics.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "seo-authority-builder",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/seo-authority-builder/SKILL.md",
+      "triggers": "seo;authority;builder"
+    },
+    {
+      "description": "Content quality and E-E-A-T analysis with AI citation readiness assessment. Use when user says \"content quality\", \"E-E-A-T\", \"content analysis\", \"readability check\", \"thin content\", or \"content audit\".",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "seo-content",
+      "src_path": "lib/agricidaniel-claude-seo/skills/seo-content/SKILL.md",
+      "triggers": "seo;content"
+    },
+    {
+      "description": "Analyzes provided content for quality, E-E-A-T signals, and SEO best practices. Scores content and provides improvement recommendations based on established guidelines.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "seo-content-auditor",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/seo-content-auditor/SKILL.md",
+      "triggers": "seo;content;auditor"
+    },
+    {
+      "description": "Core principles of SEO including E-E-A-T, Core Web Vitals, technical foundations, content quality, and how modern search engines evaluate pages.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "seo-fundamentals",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/seo-fundamentals/SKILL.md",
+      "triggers": "seo;fundamentals"
+    },
+    {
+      "description": "Expert service mesh architect specializing in Istio, Linkerd, and cloud-native networking patterns. Masters traffic management, security policies, observability integration, and multi-cluster mesh con",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "service-mesh-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/service-mesh-expert/SKILL.md",
+      "triggers": "service;mesh;expert"
+    },
+    {
+      "description": "You are a Rust project architecture expert specializing in scaffolding production-ready Rust applications. Generate complete project structures with cargo tooling, proper module organization, testing",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "systems-programming-rust-project",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/systems-programming-rust-project/SKILL.md",
+      "triggers": "systems;programming;rust;project"
+    },
+    {
+      "description": "Tailwind CSS v4 principles. CSS-first configuration, container queries, modern patterns, design token architecture.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "tailwind-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/tailwind-patterns/SKILL.md",
+      "triggers": "tailwind;patterns"
+    },
+    {
+      "description": "Expert in threat modeling methodologies, security architecture review, and risk assessment. Masters STRIDE, PASTA, attack trees, and security requirement extraction. Use PROACTIVELY for security architecture reviews, threat identification, or building secure-by-design systems.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "threat-modeling-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/threat-modeling-expert/SKILL.md",
+      "triggers": "threat;modeling;expert"
+    },
+    {
+      "description": "Threat actor infrastructure tracking involves monitoring and mapping adversary-controlled assets including command-and-control (C2) servers, phishing domains, exploit kit hosts, bulletproof hosting, a",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "tracking-threat-actor-infrastructure",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/tracking-threat-actor-infrastructure/SKILL.md",
+      "triggers": "threat-intelligence;cti;ioc;mitre-attack;stix;infrastructure-tracking;shodan;censys;passive-dns"
+    },
+    {
+      "description": "User experience flows - journey mapping, UX validation, error recovery",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "user-journeys",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/user-journeys/SKILL.md",
+      "triggers": "user;journeys"
+    },
+    {
+      "description": "Comprehensive guide to using uv, an extremely fast Python package installer and resolver written in Rust, for modern Python project management and dependency workflows.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "uv-package-manager",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/uv-package-manager/SKILL.md",
+      "triggers": "uv;package;manager"
+    },
+    {
+      "description": "Advanced vulnerability analysis principles. OWASP 2025, Supply Chain Security, attack surface mapping, risk prioritization.",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "vulnerability-scanner",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/vulnerability-scanner/SKILL.md",
+      "triggers": "vulnerability;scanner"
+    },
+    {
+      "description": "wasm constraints",
+      "phase": 1,
+      "score": 95,
+      "skill_id": "wasm-constraints",
+      "src_path": "lib/kreuzberg-dev-kreuzberg/.ai-rulez/skills/wasm-constraints/SKILL.md",
+      "triggers": "wasm;constraints"
+    },
+    {
       "description": "Expert guidance on building WASM apps for Wendy Lite MCU firmware on ESP32-C6. Use when developers mention: (1) Wendy Lite or wendy-lite, (2) WASM apps on ESP32 or microcontrollers, (3) WendyLite Swift package or import WendyLite, (4) building C/Rust/Swift/Zig apps for ESP32, (5) WAMR runtime on embedded devices, (6) GPIO/I2C/SPI/UART/NeoPixel from WASM, (7) Embedded Swift on WASM or wasm32-none-none-wasm, (8) BLE provisioning on ESP32-C6, (9) uploading WASM binaries to MCU, (10) TLS/networking on ESP32 from Swift.",
       "phase": 1,
-      "score": 100,
+      "score": 95,
       "skill_id": "wendy-lite",
       "src_path": "lib/joannis-claude-skills/wendy-lite/SKILL.md",
       "triggers": "wendy;lite"
@@ -69,7 +1581,7 @@
     {
       "description": "Detects missing zeroization of sensitive data in source code and identifies zeroization removed by compiler optimizations, with assembly-level analysis, and control-flow verification. Use for auditing C/C++/Rust code handling secrets, keys, passwords, or other sensitive data.",
       "phase": 1,
-      "score": 100,
+      "score": 95,
       "skill_id": "zeroize-audit",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/zeroize-audit/SKILL.md",
       "triggers": "zeroize;audit"

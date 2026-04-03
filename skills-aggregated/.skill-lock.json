@@ -3,10 +3,10 @@
     "medicine",
     "law"
   ],
-  "generated_at_unix": 1775251392,
+  "generated_at_unix": 1775258554,
   "min_skills_per_subhub": 1,
   "review_band": {
-    "candidates": 0,
+    "candidates": 2453,
     "max_score": 80,
     "min_score": 40
   },
@@ -158,13 +158,6 @@
         "porcelain": ""
       },
       "name": "ethos-link-rails-conventions"
-    },
-    {
-      "git": {
-        "head": "429f61bc0eb728cbc88db22cb1b1b1be6f21cafb",
-        "porcelain": ""
-      },
-      "name": "everyinc-charlie-cfo-skill"
     },
     {
       "git": {

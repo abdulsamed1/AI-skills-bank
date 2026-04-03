@@ -23,7 +23,7 @@ impl GroqProvider {
 
     fn get_model(&self) -> String {
         env::var("LLM_MODEL")
-            .unwrap_or_else(|_| "llama-3.3-70b-versatile".to_string())
+            .unwrap_or_else(|_| "openai/gpt-oss-120b".to_string())
     }
 }
 

@@ -168,23 +168,22 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
         "prompting-factory",
         SubHubRule {
             keywords: vec![
-              "CLI tools", "agent systems", "system prompt", "agent prompt", "prompt factory", "prompt-factory",
+              "ai CLI tools", "agent systems", "system prompt", "agent prompt", "prompt factory", "prompt-factory",
                 "skill-enhancement", "skills-factory", "llm-skill", "agent-skill",
                 "prompt-engineering", "context-compression", "meta-prompting", "prompt-optimization",
                 "prompt-compression", "skill-authoring", "skill-reviewer",
                 "skill-creator", "skill-writer", "skill-optimizer", "prompt-patterns",
-                "ai API","ai-native", "llm-application",
+               "ai-native", "llm-application",
                 "llm", "agent-harness", "memory-systems",
-                "crewai", "swarm", "orchestration-agent", "agent-handoff",
-                "function-calling",
+                "crewai", "swarm", "agent-handoff",
                 "machine-learning-ops", "ml-pipeline", "ml-ops"
             ],
             anchor_keywords: vec![
-                "skill", "agent-skill", "prompt-engineering", "prompt", "skills-factory",
+                 "prompt-engineering", "prompt", "skills-factory",
                 "agent", "multi-agent", "llm", "crewai", "agent-tool",
                 "tool-builder", "ai-agents", "ml-pipeline", "ml-ops"
             ],
-            negative_keywords: vec![ "deep-research", "article-writing","postgres","n8n", "WhatsApp", "Generate images", "google", "github", "DevOps","jira", "atlassian", "git", "stitch", "tdd-orchestrator", "testing-qa", "ai-seo", "SEO and AEO", "Optimize content","ui", "css", "html", "tailwind", "figma", "code-quality", "code review", "security", "javascript", "typescript", "rust", "golang"],
+            negative_keywords: vec!["MCP", "deep-research", "article-writing","postgres","n8n", "WhatsApp", "Generate images", "google", "github", "DevOps","jira", "atlassian", "git", "stitch", "tdd-orchestrator", "testing-qa", "ai-seo", "SEO and AEO", "Optimize content","ui", "css", "html", "tailwind", "figma", "code-quality", "code review", "security", "javascript", "typescript", "rust", "golang"],
         },
     );
     hubs.insert(
@@ -561,7 +560,7 @@ bus_sub.insert(
             "email campaign", "email marketing", "newsletter",
             "mailchimp", "sendgrid", "klaviyo", "active campaign",
             "drip campaign", "transactional email", "email automation",
-            "notion", "airtable", "monday",
+            "notion", "airtable", "monday", "Google Workspace MCP"
         ],
         anchor_keywords: vec![
             "seo", "aeo", "ai-seo", "copywriting", "content marketing",
@@ -623,7 +622,6 @@ bus_sub.insert(
     },
 );
 
-// business-operations removed: keywords migrated into strategy/marketing/sales
 
 hubs.insert(
     "business",
