@@ -3,12 +3,36 @@
   "hub": "code-quality",
   "skills": [
     {
+      "description": "Conducts external reconnaissance using Open Source Intelligence (OSINT) techniques to map an organization's external attack surface without directly interacting with target systems. The tester gathers information from public sources including DNS records, certificate transparency logs, search engines, social media, code repositories, and data breach databases to build a comprehensive target profile. Activates for requests involving OSINT reconnaissance, external footprinting, attack surface mapping, or passive information gathering.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "conducting-external-reconnaissance-with-osint",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/conducting-external-reconnaissance-with-osint/SKILL.md",
+      "triggers": "OSINT;reconnaissance;attack-surface;footprinting;passive-recon"
+    },
+    {
+      "description": "Extract embedded configuration from Agent Tesla RAT samples including SMTP/FTP/Telegram exfiltration credentials, keylogger settings, and C2 endpoints using .NET decompilation and memory analysis.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "extracting-config-from-agent-tesla-rat",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/extracting-config-from-agent-tesla-rat/SKILL.md",
+      "triggers": "agent-tesla;rat;config-extraction;dotnet;malware-analysis;keylogger;credential-theft"
+    },
+    {
       "description": "Security audit, hardening, threat modeling (STRIDE/PASTA), Red/Blue Team, OWASP checks, code review, incident response, and infrastructure security for any project.",
       "phase": 1,
       "score": 100,
       "skill_id": "007",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/007/SKILL.md",
       "triggers": "security;audit;owasp;threat-modeling;hardening;pentest"
+    },
+    {
+      "description": "Implements endpoint Data Loss Prevention (DLP) controls to detect and prevent sensitive data exfiltration through email, USB, cloud storage, and printing. Use when deploying DLP agents, creating content inspection policies, or preventing unauthorized data movement from endpoints. Activates for requests involving DLP, data exfiltration prevention, content inspection, or sensitive data protection on endpoints.",
+      "phase": 3,
+      "score": 100,
+      "skill_id": "implementing-endpoint-dlp-controls",
+      "src_path": "lib/mukul975-anthropic-cybersecurity-skills/skills/implementing-endpoint-dlp-controls/SKILL.md",
+      "triggers": "endpoint;DLP;data-loss-prevention;data-protection;content-inspection"
     },
     {
       "description": "This skill helps Claude write secure web applications. Use this when working on any web application or when a user requests a scan or audit to ensure security best practices are followed.",

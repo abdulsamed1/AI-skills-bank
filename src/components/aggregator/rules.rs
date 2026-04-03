@@ -82,16 +82,8 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     code_quality.insert(
         "virsion-control",
         SubHubRule {
-            keywords: vec![ "git-commit",
-    "github-pr-creation",
-    "github-pr-merge",
-    "github-pr-review",
-    "git", "CI/CD integration", "code review", "github", "gitlab", "bitbucket", "virsion-control", "ci-cd", "version-control"],
-            anchor_keywords: vec![ "git-commit",
-    "github-pr-creation",
-    "github-pr-merge",
-    "github-pr-review",
-    "git", "github", "gitlab", "bitbucket", "virsion-control", "version-control"],
+            keywords: vec![ "git-commit","github-pr-creation", "github-pr-merge", "github-pr-review", "git", "CI/CD integration", "code review", "github", "gitlab", "bitbucket", "virsion-control", "ci-cd", "version-control"],
+            anchor_keywords: vec![ "git-commit","github-pr-creation", "github-pr-merge", "github-pr-review", "git", "github", "gitlab", "bitbucket", "virsion-control", "version-control"],
             negative_keywords: vec!["ui"],
         },
     );
@@ -111,7 +103,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
     code_quality.insert(
         "security",
         SubHubRule {
-            keywords: vec!["malicious","html-injection","auth", "session", "login", "password", "security", "oauth", "jwt", "encryption", "pentest", "infrastructure", "firewall", "network", "vpn", "waf", "vulnerability", "vulnerabilities", "cve", "scanning", "auditing", "red-team", "ddos", "attack", "zero trust", "sqli", "sql injection", "threat", "browser isolation", "injection", "exploit", "xss", "csrf", "hardening", "kms", "key management", "cryptography", "cyber-security", "cybersecurity", "cyber attack", "cyber-attack"],
+            keywords: vec!["data breach", "exfiltration","credentials", "malicious","html-injection","auth", "session", "login", "password", "security", "oauth", "jwt", "encryption", "pentest", "infrastructure", "firewall", "network", "vpn", "waf", "vulnerability", "vulnerabilities", "cve", "scanning", "auditing", "red-team", "ddos", "attack", "zero trust", "sqli", "sql injection", "threat", "browser isolation", "injection", "exploit", "xss", "csrf", "hardening", "kms", "key management", "cryptography", "cyber-security", "cybersecurity", "cyber attack", "cyber-attack", "prompt injection", "ai-security", "rat", "config-extraction", "malware-analysis", "keylogger", "credential-theft"],
             anchor_keywords: vec!["auth", "oauth", "jwt", "security", "pentest", "vulnerability", "vulnerabilities", "infrastructure", "firewall", "red-team", "waf", "ddos", "zero trust", "injection", "exploit", "xss", "csrf", "encryption", "kms", "key management", "threat"],
             negative_keywords: vec!["marketing", "seo"],
         },
