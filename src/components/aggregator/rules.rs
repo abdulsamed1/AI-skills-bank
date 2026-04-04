@@ -207,7 +207,7 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
    fe_sub.insert(
         "ui-ux",
         SubHubRule {
-            keywords: vec!["html", "css", "tailwind", "styling", "design-systems", "responsive", "design-system", "component-library", "tokens", "storybook", "html", "css", "tailwind", "styling", "ui-ux", "responsive","ux", "user-experience", "usability","ui", "design", "wireframe", "prototype", "user-interface", "user-experience", "stitch", "figma"],
+            keywords: vec![ "tailwind", "styling", "design-systems", "responsive", "design-system", "component-library", "tokens", "storybook", "html", "css", "ui-ux","ux", "usability","ui", "design", "wireframe", "prototype", "user-interface", "user-experience", "stitch", "figma"],
             anchor_keywords: vec!["mobile ui", "ios ui", "android ui", "ui", "ux", "design", "css", "tailwind"],
             negative_keywords: vec![ 
                 "backend", "sql",
@@ -516,7 +516,7 @@ bus_sub.insert(
             "okr tracking", "odoo", "erp", "workflow optimization", "process documentation",
         ],
         negative_keywords: vec![
-            "react", "nextjs", "api", "sdk", "python", "rust",
+            "react", "nextjs", "sdk", "python", "rust",
             "golang", "java", "kubernetes", "docker", "sql",
             "vulnerability", "injection", "auth", "oauth", "jwt",
             "seo", "copywriting", "social media", "brand",
@@ -570,8 +570,8 @@ bus_sub.insert(
             "email campaign", "email marketing", "mailchimp", "n8n", "zapier", "automation-ai",
         ],
         negative_keywords: vec![
-            "backend", "sql", "api", "python", "kubernetes", "docker",
-            "vulnerability", "injection", "auth",
+            "backend", 
+            "vulnerability",
             "crm", "sales funnel", "cold email", "lead generation",
             "go-to-market", "product strategy", "business model",
         ],
@@ -615,7 +615,7 @@ bus_sub.insert(
             "sales strategy", "sales-strategy",
         ],
         negative_keywords: vec![
-            "backend", "api", "sql", "kubernetes", "python", "docker",
+            "backend", "kubernetes", "python", "docker",
             "vulnerability", "seo", "content marketing", "copywriting",
             "social media", "product strategy", "business model", "go-to-market",
         ],
