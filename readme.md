@@ -195,7 +195,7 @@ Sync skills to any of these destinations:
 | **Antigravity** | `.agent/skills/` | `~/.gemini/antigravity/skills/` |
 | **OpenCode** | `.opencode/skills/` | `~/.config/opencode/skills/` |
 | **Windsurf** | `.windsurf/skills/` | `~/.codeium/windsurf/skills/` |
-| **Hermes** | `.hermes/skills/skill-manage/` | `~/.hermes/skills/skill-manage/` |
+| **Hermes** | `.hermes/skills/` | `~/.hermes/skills/` |
 
 ---
 
@@ -237,10 +237,6 @@ The aggregation pipeline processes 8000+ `SKILL.md` files through a multi-stage 
  │  Artifacts    │  skills-index.json
  └──────────────┘
 ```
-
-### Hub Taxonomy (12 domains)
-
-`code-quality` · `frontend` · `backend` · `testing` · `ai` · `business` · `marketing` · `mobile` · `design` · `systems` · `data` · `security`
 
 ---
 ## 🔍 Classification Improvements (v2.0+)

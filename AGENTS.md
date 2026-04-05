@@ -4,7 +4,7 @@ This document provides guidance for AI agents on discovering and loading skills 
 
 ## Overview
 
-Skills are organized hierarchically by **hub** (12 domains) and **sub_hub** (40+ specialties). The canonical source of truth for each skill is its **SKILL.md file** located in the source repository (`lib/`).
+Skills are organized hierarchically by **hub** (domains) and **sub_hub** (specialties). The canonical source of truth for each skill is its **SKILL.md file** located in the source repository (`lib/`).
 
 The pipeline uses a **hybrid classification system**: fast keyword rules handle obvious routing, while an LLM-powered classifier provides semantic understanding for ambiguous skills. Skills that are irrelevant are excluded by either mechanism.
 
@@ -310,7 +310,7 @@ If a skill_id in routing.csv no longer exists in lib/:
 
 ## Glossary
 
-- **Hub:** Top-level domain. One of: `code-quality`, `frontend`, `server-side`, `ai`, `business`, `mobile`
+- **Hub:** Top-level domain. One of: `code-quality`, `frontend`, etc.
 - **Sub-Hub:** Specialty within a hub (e.g., `business/content`, `server-side/databases`)
 - **Skill:** Individual agent capability defined by a SKILL.md file
 - **Routing CSV:** Lightweight manifest linking skill_id → src_path
