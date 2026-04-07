@@ -6,6 +6,7 @@ use crate::components::llm::tls;
 use async_trait::async_trait;
 use serde_json::Value;
 use std::time::Duration;
+use std::env;
 
 pub struct ClaudeProvider {
     pub config: LlmClientConfig,
@@ -15,7 +16,12 @@ pub struct ClaudeProvider {
 impl ClaudeProvider {
     pub fn new(config: LlmClientConfig) -> Result<Self, LlmError> {
         let mut builder = tls::build_client_builder()?;
-        builder = builder.timeout(Duration::from_secs(30));
+        // Allow configurable timeout via LLM_TIMEOUT_SECS, default 120 seconds for batch ops
+        let timeout_secs = env::var("LLM_TIMEOUT_SECS")
+            .ok()
+            .and_then(|s| s.parse::<u64>().ok())
+            .unwrap_or(120);
+        builder = builder.timeout(Duration::from_secs(timeout_secs));
         let client = builder.build().map_err(|e| LlmError::NetworkError(e.to_string()))?;
         Ok(Self { config, client })
     }

@@ -185,7 +185,14 @@ pub fn create_link_atomic(src: &Path, dest: &Path) -> Result<(), SkillManageErro
             #[cfg(unix)]
             std::fs::remove_file(dest)?;
         } else {
-            std::fs::remove_dir_all(dest)?;
+            // Destination exists and is not a link: refuse to replace it to
+            // avoid destructive behavior that would delete user-managed
+            // skills or other files. Caller should handle fallback (e.g.
+            // perform a non-destructive merge copy).
+            return Err(SkillManageError::ConfigError(format!(
+                "Destination {} exists and is not a link; refusing to replace to avoid data loss",
+                dest.display()
+            )));
         }
     }
 

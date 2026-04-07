@@ -1,0 +1,144 @@
+{
+  "generated_at_unix": 1775595087,
+  "hub": "server-side",
+  "skills": [
+    {
+      "description": "Autonomous DevSecOps & FinOps Guardrails. Orchestrates Gemini 3 Flash to audit Linux Kernel patches, Terraform cost drifts, and K8s compliance.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "aegisops-ai",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/aegisops-ai/SKILL.md",
+      "triggers": "aegisops;ai"
+    },
+    {
+      "description": "Expert C4 Container-level documentation specialist.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "c4-container",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/c4-container/SKILL.md",
+      "triggers": "c4;container"
+    },
+    {
+      "description": "You are an advanced Docker containerization expert with comprehensive, practical knowledge of container optimization, security hardening, multi-stage builds, orchestration patterns, and production deployment strategies based on current industry best practices.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "docker-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/docker-expert/SKILL.md",
+      "triggers": "docker;expert"
+    },
+    {
+      "description": "Docker and Docker Compose patterns for local development, container security, networking, volume strategies, and multi-service orchestration. Use when setting up containerized development environments or reviewing Docker configurations.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "docker-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/.kiro/skills/docker-patterns/SKILL.md",
+      "triggers": "docker;patterns"
+    },
+    {
+      "description": "Complete guide to implementing GitOps workflows with ArgoCD and Flux for automated Kubernetes deployments.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "gitops-workflow",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/gitops-workflow/SKILL.md",
+      "triggers": "gitops;workflow"
+    },
+    {
+      "description": "Comprehensive guidance for creating, organizing, and managing Helm charts for packaging and deploying Kubernetes applications.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "helm-chart-scaffolding",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/helm-chart-scaffolding/SKILL.md",
+      "triggers": "helm;chart;scaffolding"
+    },
+    {
+      "description": "Comprehensive guide to Istio traffic management for production service mesh deployments.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "istio-traffic-management",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/istio-traffic-management/SKILL.md",
+      "triggers": "istio;traffic;management"
+    },
+    {
+      "description": "Step-by-step guidance for creating production-ready Kubernetes manifests including Deployments, Services, ConfigMaps, Secrets, and PersistentVolumeClaims.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "k8s-manifest-generator",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/k8s-manifest-generator/SKILL.md",
+      "triggers": "k8s;manifest;generator"
+    },
+    {
+      "description": "Comprehensive guide for implementing NetworkPolicy, PodSecurityPolicy, RBAC, and Pod Security Standards in Kubernetes.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "k8s-security-policies",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/k8s-security-policies/SKILL.md",
+      "triggers": "k8s;security;policies"
+    },
+    {
+      "description": "Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise container orchestration.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "kubernetes-architect",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/kubernetes-architect/SKILL.md",
+      "triggers": "kubernetes;architect"
+    },
+    {
+      "description": "Kubernetes deployment workflow for container orchestration, Helm charts, service mesh, and production-ready K8s configurations.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "kubernetes-deployment",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/kubernetes-deployment/SKILL.md",
+      "triggers": "kubernetes;deployment"
+    },
+    {
+      "description": "Production patterns for Linkerd service mesh - the lightweight, security-first service mesh for Kubernetes.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "linkerd-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/linkerd-patterns/SKILL.md",
+      "triggers": "linkerd;patterns"
+    },
+    {
+      "description": "Guide for setup arXiv paper search MCP server using Docker MCP",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "mcp:setup-arxiv-mcp",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/mcp/skills/setup-arxiv-mcp/SKILL.md",
+      "triggers": "mcp;setup;arxiv;mcp"
+    },
+    {
+      "description": "Production-ready Docker and docker-compose setup for Odoo with PostgreSQL, persistent volumes, environment-based configuration, and Nginx reverse proxy.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "odoo-docker-deployment",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/odoo-docker-deployment/SKILL.md",
+      "triggers": "odoo;docker;deployment"
+    },
+    {
+      "description": "Expert service mesh architect specializing in Istio, Linkerd, and cloud-native networking patterns. Masters traffic management, security policies, observability integration, and multi-cluster mesh con",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "service-mesh-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/service-mesh-expert/SKILL.md",
+      "triggers": "service;mesh;expert"
+    },
+    {
+      "description": "Complete guide to observability patterns for Istio, Linkerd, and service mesh deployments.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "service-mesh-observability",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/service-mesh-observability/SKILL.md",
+      "triggers": "service;mesh;observability"
+    },
+    {
+      "description": "Create, manage, or connect to a headless Windows 11 VM running in Docker with SSH access. Use when the user wants to spin up, stop, restart, or SSH into a Windows VM.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "windows-vm",
+      "src_path": "lib/obra-superpowers-lab/skills/windows-vm/SKILL.md",
+      "triggers": "windows;vm"
+    }
+  ],
+  "sub_hub": "containers",
+  "version": 1
+}

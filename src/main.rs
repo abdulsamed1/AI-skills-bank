@@ -19,6 +19,7 @@ use std::io;
 use std::path::{Path, PathBuf};
 use std::process::Command;
 use std::sync::Arc;
+use walkdir::WalkDir;
 
 const CONFIG_FILE_NAME: &str = ".skill-manage-cli-config.json";
 
@@ -258,9 +259,17 @@ async fn run() -> Result<()> {
             let config = ensure_config(&repo_root, &config_path)?;
             let targets = resolve_sync_targets(&config)?;
             let output_dir = repo_root.join("skills-aggregated");
-            if let Err(native_err) = run_sync_native(&output_dir, &targets) {
-                eprintln!("[ERROR] Native sync failed (no archive fallback): {}", native_err);
-                return Err(native_err);
+            let dry_run = args.iter().any(|arg| arg == "--dry-run") || env::var("SKILL_MANAGE_DRY_RUN").is_ok();
+            
+            if dry_run {
+                println!("\n[DRY-RUN MODE] Preview of aggregated skills that will be synced:\n");
+                run_sync_dry_run(&output_dir, &targets)?;
+                println!("\n[DRY-RUN] No changes made. Run without --dry-run to execute the sync.");
+            } else {
+                if let Err(native_err) = run_sync_native(&output_dir, &targets) {
+                    eprintln!("[ERROR] Native sync failed (no archive fallback): {}", native_err);
+                    return Err(native_err);
+                }
             }
         }
         "cleanup-legacy-duplicates" | "cleanup-legacy" | "cleanup-src-duplicates" | "cleanup-src" => {
@@ -291,6 +300,30 @@ async fn run() -> Result<()> {
             apply_exclusion_env(Some(&config));
             skill_manage::tui::run_tui(&repo_root, config.repositories).await?;
         }
+        "list" | "ls" => {
+            let output_dir = repo_root.join("skills-aggregated");
+            if !output_dir.exists() {
+                eprintln!("Skills not aggregated yet. Run 'skill-manage aggregate' first.");
+                return Ok(());
+            }
+            
+            let filter = args.get(2).map(|s| s.as_str());
+            run_list_skills(&output_dir, filter)?;
+        }
+        "search" => {
+            let output_dir = repo_root.join("skills-aggregated");
+            if !output_dir.exists() {
+                eprintln!("Skills not aggregated yet. Run 'skill-manage aggregate' first.");
+                return Ok(());
+            }
+            
+            let query = if let Some(q) = args.get(2) {
+                q.clone()
+            } else {
+                bail!("Usage: skill-manage search <query>");
+            };
+            run_search_skills(&output_dir, &query)?;
+        }
         _ => {
             print_help();
             bail!("Unknown command: {}", args[1]);
@@ -311,6 +344,10 @@ fn print_help() {
     println!("    skill-manage fetch              # fetch configured repositories only");
     println!("    skill-manage aggregate          # aggregate only");
     println!("    skill-manage sync               # sync only");
+    println!("    skill-manage sync --dry-run     # preview sync without making changes");
+    println!("    skill-manage list               # list all aggregated skills");
+    println!("    skill-manage list <hub>         # list skills in a specific hub (ai, business, etc)");
+    println!("    skill-manage search <query>     # search for skills by name or description");
     println!("    skill-manage cleanup-legacy     # one-time cleanup of legacy repo caches into lib/");
     println!("    skill-manage add-repo <URL>     # add repo then run targeted pipeline");
     println!("    skill-manage doctor             # run diagnostics");
@@ -667,6 +704,280 @@ fn run_sync_native(source_root: &Path, targets: &[PathBuf]) -> Result<()> {
     }
     println!("  native sync targets: {}", targets.len());
     Ok(())
+}
+
+fn run_sync_dry_run(source_root: &Path, targets: &[PathBuf]) -> Result<()> {
+    use std::collections::HashSet;
+    
+    if !source_root.exists() {
+        return Err(anyhow::anyhow!("Source directory not found: {}", source_root.display()));
+    }
+
+    for target in targets {
+        println!("[DRY-RUN] Target: {}", target.display());
+        println!("  Source: {}", source_root.display());
+        
+        // Walk the source and collect all files
+        let mut files_to_sync = Vec::new();
+        for entry in WalkDir::new(source_root)
+            .into_iter()
+            .filter_map(|e| e.ok())
+            .filter(|e| e.file_type().is_file())
+        {
+            let rel_path = entry.path()
+                .strip_prefix(source_root)
+                .unwrap_or_else(|_| entry.path())
+                .to_string_lossy()
+                .replace('\\', "/");
+            files_to_sync.push(rel_path);
+        }
+        
+        if files_to_sync.is_empty() {
+            println!("  → No files to sync (source is empty)");
+        } else {
+            files_to_sync.sort();
+            println!("  Files to be synced ({} total):", files_to_sync.len());
+            for file_rel in &files_to_sync {
+                let dest_file = target.join(file_rel);
+                let status = if dest_file.exists() {
+                    "UPDATE"
+                } else {
+                    "NEW"
+                };
+                println!("    - {} [{}]", file_rel, status);
+            }
+        }
+        
+        // Show existing BMAD/custom files that will be preserved
+        if target.exists() {
+            let synced_files: HashSet<String> = files_to_sync.iter().cloned().collect();
+            let mut existing_preserved = Vec::new();
+            
+            for entry in WalkDir::new(target)
+                .into_iter()
+                .filter_map(|e| e.ok())
+                .filter(|e| e.file_type().is_file())
+            {
+                let rel_path = entry.path()
+                    .strip_prefix(target)
+                    .unwrap_or_else(|_| entry.path())
+                    .to_string_lossy()
+                    .replace('\\', "/");
+                
+                if !synced_files.contains(&rel_path) {
+                    existing_preserved.push(rel_path);
+                }
+            }
+            
+            if !existing_preserved.is_empty() {
+                existing_preserved.sort();
+                println!("  Files to be PRESERVED ({} existing BMAD/custom files):", existing_preserved.len());
+                for (idx, file_rel) in existing_preserved.iter().enumerate() {
+                    if idx >= 5 {
+                        println!("    ... and {} more files", existing_preserved.len() - 5);
+                        break;
+                    }
+                    println!("    - {} [PRESERVED]", file_rel);
+                }
+            }
+        }
+        
+        println!();
+    }
+    
+    Ok(())
+}
+
+/// List all aggregated skills, optionally filtered by hub.
+fn run_list_skills(output_dir: &Path, hub_filter: Option<&str>) -> Result<()> {
+    let mut all_skills = Vec::new();
+    let mut hub_totals: std::collections::HashMap<String, usize> = std::collections::HashMap::new();
+
+    // Scan all hubs
+    for entry in fs::read_dir(output_dir)? {
+        let entry = entry?;
+        let path = entry.path();
+        
+        if !path.is_dir() {
+            continue;
+        }
+        
+        let hub_name = path.file_name().unwrap().to_string_lossy().to_string();
+        
+        // Skip hidden files and non-hub directories
+        if hub_name.starts_with('.') {
+            continue;
+        }
+        
+        // If hub_filter is specified, only process matching hub
+        if let Some(filter) = hub_filter {
+            if !hub_name.eq_ignore_ascii_case(filter) {
+                continue;
+            }
+        }
+        
+        // Scan sub-hubs within this hub
+        if let Ok(sub_entries) = fs::read_dir(&path) {
+            for sub_entry in sub_entries.flatten() {
+                let sub_path = sub_entry.path();
+                if !sub_path.is_dir() {
+                    continue;
+                }
+                
+                let sub_hub_name = sub_path.file_name().unwrap().to_string_lossy().to_string();
+                
+                // Read skills-catalog.csv from this sub-hub
+                let catalog_path = sub_path.join("skills-catalog.csv");
+                if catalog_path.exists() {
+                    if let Ok(content) = fs::read_to_string(&catalog_path) {
+                        for line in content.lines().skip(1) { // Skip header
+                            let parts: Vec<&str> = line.split(',').collect();
+                            if parts.len() >= 2 {
+                                let skill_name = parts[0].trim();
+                                if !skill_name.is_empty() {
+                                    all_skills.push((
+                                        hub_name.clone(),
+                                        sub_hub_name.clone(),
+                                        skill_name.to_string(),
+                                    ));
+                                    *hub_totals.entry(hub_name.clone()).or_insert(0) += 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    if all_skills.is_empty() {
+        if hub_filter.is_some() {
+            println!("No skills found in hub '{}'", hub_filter.unwrap());
+        } else {
+            println!("No skills aggregated yet. Run 'skill-manage aggregate' first.");
+        }
+        return Ok(());
+    }
+
+    // Display results
+    if let Some(filter) = hub_filter {
+        println!("\n╔════════════════════════════════════════════════════════════╗");
+        println!("║  SKILLS IN HUB: {}                          ║", pad_string(filter, 28));
+        println!("╚════════════════════════════════════════════════════════════╝");
+    } else {
+        println!("\n╔════════════════════════════════════════════════════════════╗");
+        println!("║  ALL AGGREGATED SKILLS                                    ║");
+        println!("╚════════════════════════════════════════════════════════════╝");
+    }
+    
+    let mut current_hub = String::new();
+    for (hub, sub_hub, skill_name) in &all_skills {
+        if hub != &current_hub {
+            current_hub = hub.clone();
+            println!("\n📦 {}", hub);
+            println!("  {}", "─".repeat(52));
+        }
+        
+        println!("  ├─ {} ({})", skill_name, sub_hub);
+    }
+    
+    println!("\n\n📊 Summary:");
+    let mut sorted_hubs: Vec<_> = hub_totals.iter().collect();
+    sorted_hubs.sort_by(|a, b| a.0.cmp(b.0));
+    
+    for (hub, count) in sorted_hubs {
+        println!("  {} {} skills", hub, count);
+    }
+    println!("  Total {} skills", all_skills.len());
+    
+    println!("\n💡 Tip: Use 'skill-manage search <query>' to find skills by name.");
+    println!("        Use 'skill-manage list <hub-name>' to filter by hub.\n");
+    
+    Ok(())
+}
+
+/// Search for skills by name or hub.
+fn run_search_skills(output_dir: &Path, query: &str) -> Result<()> {
+    let query_lower = query.to_lowercase();
+    let mut results = Vec::new();
+
+    // Scan all hubs
+    for entry in fs::read_dir(output_dir)? {
+        let entry = entry?;
+        let path = entry.path();
+        
+        if !path.is_dir() {
+            continue;
+        }
+        
+        let hub_name = path.file_name().unwrap().to_string_lossy().to_string();
+        
+        if hub_name.starts_with('.') {
+            continue;
+        }
+        
+        // Scan sub-hubs
+        if let Ok(sub_entries) = fs::read_dir(&path) {
+            for sub_entry in sub_entries.flatten() {
+                let sub_path = sub_entry.path();
+                if !sub_path.is_dir() {
+                    continue;
+                }
+                
+                let sub_hub_name = sub_path.file_name().unwrap().to_string_lossy().to_string();
+                
+                // Read skills-catalog.csv to search for matching skills
+                let catalog_path = sub_path.join("skills-catalog.csv");
+                if catalog_path.exists() {
+                    if let Ok(content) = fs::read_to_string(&catalog_path) {
+                        for line in content.lines().skip(1) { // Skip header
+                            let parts: Vec<&str> = line.split(',').collect();
+                            if parts.len() >= 2 {
+                                let skill_name = parts[0].trim().to_lowercase();
+                                
+                                // Match if skill name, hub name, or sub_hub contains query
+                                if skill_name.contains(&query_lower) || 
+                                   hub_name.to_lowercase().contains(&query_lower) ||
+                                   sub_hub_name.to_lowercase().contains(&query_lower) {
+                                    results.push((
+                                        hub_name.clone(),
+                                        sub_hub_name.clone(),
+                                        parts[0].trim().to_string(),
+                                    ));
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    if results.is_empty() {
+        println!("\n❌ No skills found matching '{}'", query);
+        return Ok(());
+    }
+
+    println!("\n╔════════════════════════════════════════════════════════════╗");
+    println!("║  SEARCH RESULTS FOR: {}                 ║", pad_string(query, 25));
+    println!("╚════════════════════════════════════════════════════════════╝\n");
+    
+    for (hub, sub_hub, skill) in &results {
+        println!("  📌 {}", skill);
+        println!("     └─ Hub: {} → {}", hub, sub_hub);
+    }
+    
+    println!("\n✓ Found {} skill(s)\n", results.len());
+    
+    Ok(())
+}
+
+fn pad_string(s: &str, width: usize) -> String {
+    if s.len() >= width {
+        s[..width].to_string()
+    } else {
+        format!("{}{}", s, " ".repeat(width - s.len()))
+    }
 }
 
 async fn run_fetch(repo_root: &Path, manifest: RepoManifest) -> Result<()> {

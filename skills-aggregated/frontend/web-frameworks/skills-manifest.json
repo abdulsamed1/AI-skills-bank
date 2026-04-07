@@ -1,0 +1,168 @@
+{
+  "generated_at_unix": 1775595087,
+  "hub": "frontend",
+  "skills": [
+    {
+      "description": "Expert patterns for Algolia search implementation, indexing strategies, React InstantSearch, and relevance tuning Use when: adding search to, algolia, instantsearch, search api, search functionality.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "algolia-search",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/algolia-search/SKILL.md",
+      "triggers": "algolia;search"
+    },
+    {
+      "description": "Use when tackling complex reasoning tasks requiring step-by-step logic, multi-step arithmetic, commonsense reasoning, symbolic manipulation, or problems where simple prompting fails - provides comprehensive guide to Chain-of-Thought and related prompting techniques (Zero-shot CoT, Self-Consistency, Tree of Thoughts, Least-to-Most, ReAct, PAL, Reflexion) with templates, decision matrices, and research-backed patterns",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "customaize-agent:thought-based-reasoning",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/customaize-agent/skills/thought-based-reasoning/SKILL.md",
+      "triggers": "customaize;agent;thought;based;reasoning"
+    },
+    {
+      "description": "Practical patterns for using fp-ts with React - hooks, state, forms, data fetching. Works with React 18/19, Next.js 14/15.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "fp-react",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/fp-react/SKILL.md",
+      "triggers": "fp-ts;react;typescript;hooks;state-management;forms;data-fetching;remote-data;react-19;next-js"
+    },
+    {
+      "description": "Practical patterns for using fp-ts with React - hooks, state, forms, data fetching. Use when building React apps with functional programming patterns. Works with React 18/19, Next.js 14/15.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "fp-ts-react",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/fp-ts-react/SKILL.md",
+      "triggers": "fp;ts;react"
+    },
+    {
+      "description": "Build React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern frontend architecture.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "frontend-developer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/frontend-developer/SKILL.md",
+      "triggers": "frontend;developer"
+    },
+    {
+      "description": "Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "frontend-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/.agents/skills/frontend-patterns/SKILL.md",
+      "triggers": "frontend;patterns"
+    },
+    {
+      "description": "Generates high-converting Next.js/React landing pages with Tailwind CSS. Uses PAS, AIDA, and BAB frameworks for optimized copy/components (Heroes, Features, Pricing). Focuses on Core Web Vitals/SEO.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "landing-page-generator",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/landing-page-generator/SKILL.md",
+      "triggers": "nextjs;react;tailwind;landing-page;marketing;seo;cro"
+    },
+    {
+      "description": "Framework for building LLM-powered applications with agents, chains, and RAG. Supports multiple providers (OpenAI, Anthropic, Google), 500+ integrations, ReAct agents, tool calling, memory management, and vector store retrieval. Use for building chatbots, question-answering systems, autonomous agents, or RAG applications. Best for rapid prototyping and production deployments.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "langchain",
+      "src_path": "lib/orchestra-research-ai-research-skills/14-agents/langchain/SKILL.md",
+      "triggers": "Agents;LangChain;RAG;Tool Calling;ReAct;Memory Management;Vector Stores;LLM Applications;Chatbots;Production"
+    },
+    {
+      "description": "Develop React Native, Flutter, or native mobile apps with modern architecture patterns. Masters cross-platform development, native integrations, offline sync, and app store optimization.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "mobile-developer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/mobile-developer/SKILL.md",
+      "triggers": "mobile;developer"
+    },
+    {
+      "description": "Guide for deploying web frameworks on Netlify. Use when setting up a framework project (Vite/React, Astro, TanStack Start, Next.js, Nuxt, SvelteKit, Remix) for Netlify deployment, configuring adapters or plugins, or troubleshooting framework-specific Netlify integration. Covers what Netlify needs from each framework and how adapters handle server-side rendering.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "netlify-frameworks",
+      "src_path": "lib/netlify-context-and-tools/codex/skills/netlify-frameworks/SKILL.md",
+      "triggers": "netlify;frameworks"
+    },
+    {
+      "description": "Diagnose slow React components and suggest targeted performance fixes.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "react-component-performance",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/react-component-performance/SKILL.md",
+      "triggers": "react;component;performance"
+    },
+    {
+      "description": "Build production-ready ReactFlow applications with hierarchical navigation, performance optimization, and advanced state management.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "react-flow-architect",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/react-flow-architect/SKILL.md",
+      "triggers": "react;flow;architect"
+    },
+    {
+      "description": "Master React version upgrades, class to hooks migration, concurrent features adoption, and codemods for automated transformation.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "react-modernization",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/react-modernization/SKILL.md",
+      "triggers": "react;modernization"
+    },
+    {
+      "description": "React Native mobile patterns, platform-specific code",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "react-native",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/react-native/SKILL.md",
+      "triggers": "react;native"
+    },
+    {
+      "description": "Production-ready patterns for React Native development with Expo, including navigation, state management, native modules, and offline-first architecture.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "react-native-architecture",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/react-native-architecture/SKILL.md",
+      "triggers": "react;native;architecture"
+    },
+    {
+      "description": "React and Next.js 14+ application development with App Router, Server Components, TypeScript, Tailwind CSS, and modern frontend patterns.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "react-nextjs-development",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/react-nextjs-development/SKILL.md",
+      "triggers": "react;nextjs;development"
+    },
+    {
+      "description": "Master modern React state management with Redux Toolkit, Zustand, Jotai, and React Query. Use when setting up global state, managing server state, or choosing between state management solutions.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "react-state-management",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/react-state-management/SKILL.md",
+      "triggers": "react;state;management"
+    },
+    {
+      "description": "React web development with hooks, React Query, Zustand",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "react-web",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/react-web/SKILL.md",
+      "triggers": "react;web"
+    },
+    {
+      "description": "Converts Stitch designs into modular Vite and React components using system-level networking and AST-based validation.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "react:components",
+      "src_path": "lib/google-labs-code-stitch-skills/skills/react-components/SKILL.md",
+      "triggers": "react;components"
+    },
+    {
+      "description": "Best practices for Remotion - Video creation in React",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "remotion-best-practices",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/remotion-best-practices/SKILL.md",
+      "triggers": "remotion, video, react, animation, composition"
+    }
+  ],
+  "sub_hub": "web-frameworks",
+  "version": 1
+}

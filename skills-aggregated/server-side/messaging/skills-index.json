@@ -1,0 +1,10 @@
+{
+  "count": 3,
+  "hub": "server-side",
+  "skills": [
+    "cqrs-implementation",
+    "event-sourcing-architect",
+    "projection-patterns"
+  ],
+  "sub_hub": "messaging"
+}

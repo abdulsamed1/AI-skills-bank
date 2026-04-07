@@ -18,7 +18,7 @@ use walkdir::WalkDir;
 // `crate::components::llm` referenced via fully-qualified paths where needed
 use std::env;
 use tokio::time::sleep;
-use tokio::sync::{Semaphore, Mutex};
+use tokio::sync::Mutex;
 use std::time::Duration as StdDuration;
 
 #[derive(Debug, Clone, Copy)]
@@ -542,66 +542,6 @@ async fn classify_skills_with_llm(
     };
     println!("DEBUG: Found {} skills in total to classify", skills.len());
 
-    // Helper performs classify with retries/backoff
-    async fn classify_with_retry(
-        provider: &dyn crate::components::llm::LlmProvider,
-        skill_id: &str,
-        description: &str,
-        abstract_text: Option<&str>,
-        context: &crate::components::llm::types::LlmClassificationContext,
-        max_retries: u32,
-        initial_backoff_ms: u64,
-        max_backoff_ms: u64,
-    ) -> Result<crate::components::llm::LlmClassificationResponse, SkillManageError> {
-        let attempts = if max_retries == 0 { 1 } else { max_retries };
-        for attempt in 0..attempts {
-            match provider
-                .classify(skill_id, description, abstract_text, context)
-                .await
-            {
-                Ok(resp) => return Ok(resp),
-                Err(e) => {
-                    // If rate limited and server provided a retry_after, honor it
-                    if let crate::components::llm::LlmError::RateLimited { retry_after } = &e {
-                        if let Some(secs) = retry_after {
-                            let now_ms = (std::time::SystemTime::now()
-                                .duration_since(UNIX_EPOCH)
-                                .unwrap()
-                                .subsec_millis()) as u64;
-                            let jitter = now_ms % 1000;
-                            let sleep_ms = (secs.saturating_mul(1000)).saturating_add(jitter);
-                            sleep(StdDuration::from_millis(sleep_ms)).await;
-                            continue;
-                        }
-                    }
-
-                    if attempt + 1 >= attempts {
-                        return Err(SkillManageError::ConfigError(e.to_string()));
-                    }
-
-                    // Exponential backoff with simple time-derived jitter
-                    let multiplier = 1u64.checked_shl(attempt as u32).unwrap_or(u64::MAX);
-                    let mut backoff = initial_backoff_ms.saturating_mul(multiplier);
-                    if backoff > max_backoff_ms {
-                        backoff = max_backoff_ms;
-                    }
-                    let now_ms = (std::time::SystemTime::now()
-                        .duration_since(UNIX_EPOCH)
-                        .unwrap()
-                        .subsec_millis()) as u64;
-                    let jitter = if backoff > 1 { now_ms % (backoff / 2 + 1) } else { 0 };
-                    let sleep_ms = backoff / 2 + jitter;
-                    sleep(StdDuration::from_millis(sleep_ms)).await;
-                    continue;
-                }
-            }
-        }
-
-        Err(SkillManageError::ConfigError(
-            "Exceeded retries for LLM classify".to_string(),
-        ))
-    }
-
     // Build list of skills that need classification (cache miss and not already handled)
     let mut to_classify: Vec<(usize, String, String, Option<String>, String)> = Vec::new();
     for (idx, skill) in skills.iter_mut().enumerate() {
@@ -639,57 +579,7 @@ async fn classify_skills_with_llm(
             .filter(|&v| v > 0)
             .unwrap_or(8);
 
-        // Helper: batch classify with retries/backoff
-        async fn classify_batch_with_retry(
-            provider: &dyn crate::components::llm::LlmProvider,
-            items: &[(String, String, Option<String>)],
-            context: &crate::components::llm::types::LlmClassificationContext,
-            max_retries: u32,
-            initial_backoff_ms: u64,
-            max_backoff_ms: u64,
-        ) -> Result<Vec<crate::components::llm::LlmClassificationResponse>, SkillManageError> {
-            let attempts = if max_retries == 0 { 1 } else { max_retries };
-            for attempt in 0..attempts {
-                match provider.classify_batch(items, context).await {
-                    Ok(resps) => return Ok(resps),
-                    Err(e) => {
-                        if let crate::components::llm::LlmError::RateLimited { retry_after } = &e {
-                            if let Some(secs) = retry_after {
-                                let now_ms = (std::time::SystemTime::now()
-                                    .duration_since(UNIX_EPOCH)
-                                    .unwrap()
-                                    .subsec_millis()) as u64;
-                                let jitter = now_ms % 1000;
-                                let sleep_ms = (secs.saturating_mul(1000)).saturating_add(jitter);
-                                sleep(StdDuration::from_millis(sleep_ms)).await;
-                                continue;
-                            }
-                        }
-
-                        if attempt + 1 >= attempts {
-                            return Err(SkillManageError::ConfigError(e.to_string()));
-                        }
-
-                        let multiplier = 1u64.checked_shl(attempt as u32).unwrap_or(u64::MAX);
-                        let mut backoff = initial_backoff_ms.saturating_mul(multiplier);
-                        if backoff > max_backoff_ms {
-                            backoff = max_backoff_ms;
-                        }
-                        let now_ms = (std::time::SystemTime::now()
-                            .duration_since(UNIX_EPOCH)
-                            .unwrap()
-                            .subsec_millis()) as u64;
-                        let jitter = if backoff > 1 { now_ms % (backoff / 2 + 1) } else { 0 };
-                        let sleep_ms = backoff / 2 + jitter;
-                        sleep(StdDuration::from_millis(sleep_ms)).await;
-                        continue;
-                    }
-                }
-            }
-            Err(SkillManageError::ConfigError(
-                "Exceeded retries for LLM batch classify".to_string(),
-            ))
-        }
+        // Batch classification with retries is handled inline within concurrent tasks below
 
         // Process in chunks concurrently (bounded)
         let total_tc = to_classify.len();
@@ -846,9 +736,13 @@ async fn classify_skills_with_llm(
         }
 
         // Collect results from concurrent tasks and apply them to in-memory skills/cache
+        let total_handles = handles.len();
+        let mut completed_handles = 0;
+        
         for h in handles {
             match h.await {
                 Ok(Ok(items)) => {
+                    completed_handles += 1;
                     for (idx, opt_resp, key) in items {
                         if let Some(resp) = opt_resp {
                             // Capture top suggestion locally to avoid holding a borrow across an await
@@ -873,11 +767,23 @@ async fn classify_skills_with_llm(
                             rules::apply_rules(&mut skills[idx]);
                         }
                     }
+                    
+                    if total_handles > 1 && completed_handles % 5 == 0 {
+                        if let Some(reporter) = &progress.reporter {
+                            reporter.report(
+                                completed_handles as u64,
+                                total_handles as u64,
+                                format!("Processing LLM results: {}/{}", completed_handles, total_handles),
+                            );
+                        }
+                    }
                 }
                 Ok(Err(e)) => {
+                    completed_handles += 1;
                     eprintln!("LLM batch task error: {}", e);
                 }
                 Err(join_err) => {
+                    completed_handles += 1;
                     eprintln!("LLM batch task join error: {:?}", join_err);
                 }
             }
@@ -1084,7 +990,19 @@ pub fn sync_output_to_targets(
             NativeSyncMode::Junction => {
                 #[cfg(windows)]
                 {
-                    create_link_atomic(source_root, target)?;
+                    match create_link_atomic(source_root, target) {
+                        Ok(()) => {
+                            // link created successfully
+                        }
+                        Err(link_err) => {
+                            _logger.warn(&format!(
+                                "Junction linking would replace existing target {}: {}. Falling back to non-destructive merge copy.",
+                                target.display(), link_err
+                            ));
+                            sync_dir_atomic(source_root, target)?;
+                            used_copy = true;
+                        }
+                    }
                 }
                 #[cfg(not(windows))]
                 {
@@ -1094,7 +1012,17 @@ pub fn sync_output_to_targets(
                 }
             }
             NativeSyncMode::SymbolicLink => {
-                create_link_atomic(source_root, target)?;
+                match create_link_atomic(source_root, target) {
+                    Ok(()) => {}
+                    Err(link_err) => {
+                        _logger.warn(&format!(
+                            "Symbolic linking failed for {}: {}. Falling back to non-destructive merge copy.",
+                            target.display(), link_err
+                        ));
+                        sync_dir_atomic(source_root, target)?;
+                        used_copy = true;
+                    }
+                }
             }
             NativeSyncMode::Auto => {
                 // ── Auto Strategy: Try Link, Fallback to Copy ──
@@ -1129,6 +1057,43 @@ pub fn sync_output_to_targets(
         }
         
         let _ = ensure_main_hub_routers(target);
+    }
+
+    // ── Post-Sync Cleanup ──
+    // Remove any stale .link.tmp directories left over from atomic rename
+    // operations (e.g. if the rename was interrupted or failed).
+    // This keeps the sync results clean and avoids accumulating temp files.
+    cleanup_temp_link_files(source_root, targets)?;
+
+    Ok(())
+}
+
+/// Cleanup temporary .link.tmp files that may be left over from atomic link creation.
+fn cleanup_temp_link_files(source_root: &Path, targets: &[PathBuf]) -> Result<(), SkillManageError> {
+    // Check source root for any .*.link.tmp subdirectories
+    if let Ok(entries) = std::fs::read_dir(source_root) {
+        for entry in entries.flatten() {
+            if let Ok(name) = entry.file_name().into_string() {
+                if name.ends_with(".link.tmp") && entry.file_type().ok().map(|ft| ft.is_dir()).unwrap_or(false) {
+                    let path = entry.path();
+                    let _ = std::fs::remove_dir_all(&path);
+                }
+            }
+        }
+    }
+
+    // Check each target directory for *.link.tmp subdirectories
+    for target in targets {
+        if let Ok(entries) = std::fs::read_dir(target) {
+            for entry in entries.flatten() {
+                if let Ok(name) = entry.file_name().into_string() {
+                    if name.ends_with(".link.tmp") && entry.file_type().ok().map(|ft| ft.is_dir()).unwrap_or(false) {
+                        let path = entry.path();
+                        let _ = std::fs::remove_dir_all(&path);
+                    }
+                }
+            }
+        }
     }
 
     Ok(())

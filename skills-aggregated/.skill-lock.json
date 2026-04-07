@@ -3,10 +3,10 @@
     "medicine",
     "law"
   ],
-  "generated_at_unix": 1775259036,
+  "generated_at_unix": 1775595094,
   "min_skills_per_subhub": 1,
   "review_band": {
-    "candidates": 2453,
+    "candidates": 0,
     "max_score": 80,
     "min_score": 40
   },

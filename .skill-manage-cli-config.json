@@ -1,4 +1,13 @@
 {
+  "version": 1,
+  "repo_root": "C:\\Users\\ASUS\\production\\skill-manage",
+  "workspace_root": "C:\\Users\\ASUS\\production",
+  "sync_scope": "local",
+  "tools": [
+    "copilot",
+    "gemini",
+    "antigravity"
+  ],
   "repositories": [
     {
       "name": "mukul975-anthropic-cybersecurity-skills",
@@ -556,4 +565,19 @@
       "branch": null
     }
   ]
+  ,
+  "sync": {
+    "mode": "local",
+    "targets": {
+      "Claude": "./.claude/skills/",
+      "GitHub Copilot": "./.github/skills/",
+      "Gemini": "./.gemini/skills/",
+      "Antigravity": "./.agent/skills/"
+    },
+    "preserve_folders": [
+      ".gemini/skills",
+      ".agent/skills",
+      ".github/skills"
+    ]
+  }
 }

@@ -1,0 +1,16 @@
+{
+  "generated_at_unix": 1775595087,
+  "hub": "code-quality",
+  "skills": [
+    {
+      "description": "Python development with ruff, mypy, pytest - TDD and type safety",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "python",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/python/SKILL.md",
+      "triggers": "python"
+    }
+  ],
+  "sub_hub": "python",
+  "version": 1
+}

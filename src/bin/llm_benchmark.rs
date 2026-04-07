@@ -47,7 +47,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                     let dur = start.elapsed();
                     if out.status.success() {
                         // Try to parse skills count from stdout if present
-                        let stdout = String::from_utf8_lossy(&out.stdout);
+                        let _stdout = String::from_utf8_lossy(&out.stdout);
                         // Print a short snippet and duration
                         println!("Result: batch={} concur={} -> time: {:.2?}\n", batch, concur, dur);
                         // Optionally, print captured stdout for debugging

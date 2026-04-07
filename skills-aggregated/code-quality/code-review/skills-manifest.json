@@ -1,0 +1,208 @@
+{
+  "generated_at_unix": 1775595087,
+  "hub": "code-quality",
+  "skills": [
+    {
+      "description": "Angular performance optimization and best practices guide. Use when writing, reviewing, or refactoring Angular code for optimal performance, bundle size, and rendering efficiency.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "angular-best-practices",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/angular-best-practices/SKILL.md",
+      "triggers": "angular;best;practices"
+    },
+    {
+      "description": "This skill embodies the principles of \"Clean Code\" by Robert C. Martin (Uncle Bob). Use it to transform \"code that works\" into \"code that is clean.\"",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "clean-code",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/clean-code/SKILL.md",
+      "triggers": "clean;code"
+    },
+    {
+      "description": "Use when working with code refactoring context restore",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "code-refactoring-context-restore",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/code-refactoring-context-restore/SKILL.md",
+      "triggers": "code;refactoring;context;restore"
+    },
+    {
+      "description": "You are a code refactoring expert specializing in clean code principles, SOLID design patterns, and modern software engineering best practices. Analyze and refactor the provided code to improve its quality, maintainability, and performance.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "code-refactoring-refactor-clean",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/code-refactoring-refactor-clean/SKILL.md",
+      "triggers": "code;refactoring;refactor;clean"
+    },
+    {
+      "description": "You are a technical debt expert specializing in identifying, quantifying, and prioritizing technical debt in software projects. Analyze the codebase to uncover debt, assess its impact, and create acti",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "code-refactoring-tech-debt",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/code-refactoring-tech-debt/SKILL.md",
+      "triggers": "code;refactoring;tech;debt"
+    },
+    {
+      "description": "Mandatory code reviews via /code-review before commits and deploys",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "code-review",
+      "src_path": "lib/alinaqi-claude-bootstrap/skills/code-review/SKILL.md",
+      "triggers": "code;review"
+    },
+    {
+      "description": "You are an expert AI-powered code review specialist combining automated static analysis, intelligent pattern recognition, and modern DevOps practices. Leverage AI tools (GitHub Copilot, Qodo, GPT-5, C",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "code-review-ai-ai-review",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/code-review-ai-ai-review/SKILL.md",
+      "triggers": "code;review;ai;ai;review"
+    },
+    {
+      "description": "Comprehensive checklist for conducting thorough code reviews covering functionality, security, performance, and maintainability",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "code-review-checklist",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/code-review-checklist/SKILL.md",
+      "triggers": "code;review;checklist"
+    },
+    {
+      "description": "Transform code reviews from gatekeeping to knowledge sharing through constructive feedback, systematic analysis, and collaborative improvement.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "code-review-excellence",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/code-review-excellence/SKILL.md",
+      "triggers": "code;review;excellence"
+    },
+    {
+      "description": "Comprehensive review of local uncommitted changes using specialized agents with code improvement suggestions",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "code-review:review-local-changes",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/code-review/skills/review-local-changes/SKILL.md",
+      "triggers": "code;review;review;local;changes"
+    },
+    {
+      "description": "Comprehensive pull request review using specialized agents",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "code-review:review-pr",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/code-review/skills/review-pr/SKILL.md",
+      "triggers": "code;review;review;pr"
+    },
+    {
+      "description": "Elite code review expert specializing in modern AI-powered code",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "code-reviewer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/code-reviewer/SKILL.md",
+      "triggers": "code;reviewer"
+    },
+    {
+      "description": "Refactor high-complexity React components in Dify frontend. Use when `pnpm analyze-component --json` shows complexity > 50 or lineCount > 300, when the user asks for code splitting, hook extraction, or complexity reduction, or when `pnpm analyze-component` warns to refactor before testing; avoid for simple/well-structured components, third-party wrappers, or when the user explicitly wants testing without refactoring.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "component-refactoring",
+      "src_path": "lib/charlie85270-dorothy/.agents/skills/component-refactoring/SKILL.md",
+      "triggers": "component;refactoring"
+    },
+    {
+      "description": "Generate structured PR descriptions from diffs, add review checklists, risk assessments, and test coverage summaries. Use when the user says \"write a PR description\", \"improve this PR\", \"summarize my changes\", \"PR review\", \"pull request\", or asks to document a diff for reviewers.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "comprehensive-review-pr-enhance",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/comprehensive-review-pr-enhance/SKILL.md",
+      "triggers": "comprehensive;review;pr;enhance"
+    },
+    {
+      "description": "Structured content modeling guidance for schema design, content architecture, content reuse, references versus embedded objects, separation of concerns, and taxonomies across Sanity and other headless CMSes. Use this skill when designing or refactoring content types, deciding field shapes, debating reusable versus nested content, planning omnichannel content models, or reviewing whether a schema is too page-shaped or presentation-driven.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "content-modeling-best-practices",
+      "src_path": "lib/sanity-io-agent-toolkit/skills/content-modeling-best-practices/SKILL.md",
+      "triggers": "content;modeling;best;practices"
+    },
+    {
+      "description": "Explore a codebase to find opportunities for architectural improvement, focusing on making the codebase more testable by deepening shallow modules. Use when user wants to improve architecture, find refactoring opportunities, consolidate tightly-coupled modules, or make a codebase more AI-navigable.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "improve-codebase-architecture",
+      "src_path": "lib/mattpocock-skills/improve-codebase-architecture/SKILL.md",
+      "triggers": "improve;codebase;architecture"
+    },
+    {
+      "description": "Use when Code implementation and refactoring, architecturing or designing systems, process and workflow improvements, error handling and validation. Provide tehniquest to avoid over-engineering and apply iterative improvements.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "kaizen:kaizen",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/kaizen/skills/kaizen/SKILL.md",
+      "triggers": "kaizen;kaizen"
+    },
+    {
+      "description": "Structured task planning with clear breakdowns, dependencies, and verification criteria. Use when implementing features, refactoring, or any multi-step work.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "plan-writing",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/plan-writing/SKILL.md",
+      "triggers": "plan;writing"
+    },
+    {
+      "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "receiving-code-review",
+      "src_path": "lib/obra-superpowers/skills/receiving-code-review/SKILL.md",
+      "triggers": "receiving;code;review"
+    },
+    {
+      "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "requesting-code-review",
+      "src_path": "lib/obra-superpowers/skills/requesting-code-review/SKILL.md",
+      "triggers": "requesting;code;review"
+    },
+    {
+      "description": "Expert guidance on Swift Concurrency best practices, patterns, and implementation. Use when developers mention: (1) Swift Concurrency, async/await, actors, or tasks, (2) modern concurrency patterns or structured concurrency, (3) migrating to Swift 6 or strict concurrency checking, (4) data races or thread safety issues, (5) refactoring closures to async/await, (6) @MainActor, Sendable, or actor isolation, (7) concurrent code architecture or performance, (8) concurrency-related linter warnings, (9) AsyncSequence, AsyncStream, or task groups, (10) nonisolated, @preconcurrency, or @unchecked Sendable.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "swift-concurrency",
+      "src_path": "lib/joannis-claude-skills/swift-concurrency/SKILL.md",
+      "triggers": "swift;concurrency"
+    },
+    {
+      "description": "Systematically fix all failing tests after business logic changes or refactoring",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "tdd:fix-tests",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/tdd/skills/fix-tests/SKILL.md",
+      "triggers": "tdd;fix;tests"
+    },
+    {
+      "description": "Use when performing code review, writing or refactoring code, or discussing architecture; complements clean-code and does not replace project linter/formatter.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "uncle-bob-craft",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/uncle-bob-craft/SKILL.md",
+      "triggers": "clean-code;clean-architecture;solid;code-review;craftsmanship;uncle-bob"
+    },
+    {
+      "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "vercel-react-best-practices",
+      "src_path": "lib/charlie85270-dorothy/.agents/skills/vercel-react-best-practices/SKILL.md",
+      "triggers": "vercel;react;best;practices"
+    },
+    {
+      "description": "Human review workflow for AI-generated GitHub projects with spec-based feedback, security review, and follow-up PRs from the Vibers service.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "vibers-code-review",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/vibers-code-review/SKILL.md",
+      "triggers": "vibers;code;review"
+    }
+  ],
+  "sub_hub": "code-review",
+  "version": 1
+}

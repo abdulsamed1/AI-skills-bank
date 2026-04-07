@@ -1,0 +1,1680 @@
+{
+  "generated_at_unix": 1775595087,
+  "hub": "code-quality",
+  "skills": [
+    {
+      "description": "Use when you need to address review or issue comments on an open GitHub Pull Request using the gh CLI.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "address-github-comments",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/address-github-comments/SKILL.md",
+      "triggers": "address;github;comments"
+    },
+    {
+      "description": "Build Azure AI Foundry agents using the Microsoft Agent Framework Python SDK (agent-framework-azure-ai). Use when creating persistent agents with AzureAIAgentsProvider, using hosted tools (code interpreter, file search, web search), integrating MCP servers, managing conversation threads, or implementing streaming responses. Covers function tools, structured outputs, and multi-tool agents.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "agent-framework-azure-ai-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/agent-framework-azure-ai-py/SKILL.md",
+      "triggers": "agent;framework;azure;ai;py"
+    },
+    {
+      "description": "Build container-based Foundry Agents using Azure AI Projects SDK with ImageBasedHostedAgentDefinition. Use when creating hosted agents that run custom code in Azure AI Foundry with your own container images. Triggers: \"ImageBasedHostedAgentDefinition\", \"hosted agent\", \"container agent\", \"Foundry Agent\", \"create_version\", \"ProtocolVersionRecord\", \"AgentProtocol.RESPONSES\", \"custom agent image\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "agents-v2-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/agents-v2-py/SKILL.md",
+      "triggers": "\"ImageBasedHostedAgentDefinition\", \"hosted agent\", \"container agent\", \"Foundry Agent\","
+    },
+    {
+      "description": "Guidance for instrumenting webapps with Azure Application Insights. Provides telemetry patterns, SDK setup, and configuration references. WHEN: how to instrument app, App Insights SDK, telemetry patterns, what is App Insights, Application Insights guidance, instrumentation examples, APM best practices.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "appinsights-instrumentation",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/appinsights-instrumentation/SKILL.md",
+      "triggers": "appinsights;instrumentation"
+    },
+    {
+      "description": "Design patterns for building autonomous coding agents, inspired by [Cline](https://github.com/cline/cline) and [OpenAI Codex](https://github.com/openai/codex).",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "autonomous-agent-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/autonomous-agent-patterns/SKILL.md",
+      "triggers": "autonomous;agent;patterns"
+    },
+    {
+      "description": "Use for Azure AI: Search, Speech, OpenAI, Document Intelligence. Helps with search, vector/hybrid search, speech-to-text, text-to-speech, transcription, OCR. WHEN: AI Search, query search, vector search, hybrid search, semantic search, speech-to-text, text-to-speech, transcribe, OCR, convert text to speech.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-ai/SKILL.md",
+      "triggers": "azure;ai"
+    },
+    {
+      "description": "Azure AI Agents Persistent SDK for .NET. Low-level SDK for creating and managing AI agents with threads, messages, runs, and tools. Use for agent CRUD, conversation threads, streaming responses, function calling, file search, and code interpreter. Triggers: \"PersistentAgentsClient\", \"persistent agents\", \"agent threads\", \"agent runs\", \"streaming agents\", \"function calling agents .NET\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-agents-persistent-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-ai-agents-persistent-dotnet/SKILL.md",
+      "triggers": "azure;ai;agents;persistent;dotnet"
+    },
+    {
+      "description": "Azure AI Agents Persistent SDK for Java. Low-level SDK for creating and managing AI agents with threads, messages, runs, and tools. Triggers: \"PersistentAgentsClient\", \"persistent agents java\", \"agent threads java\", \"agent runs java\", \"streaming agents java\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-agents-persistent-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-ai-agents-persistent-java/SKILL.md",
+      "triggers": "\"PersistentAgentsClient\", \"persistent agents java\", \"agent threads java\", \"agent runs java\", \"streaming agents java\"."
+    },
+    {
+      "description": "Build anomaly detection applications with Azure AI Anomaly Detector SDK for Java. Use when implementing univariate/multivariate anomaly detection, time-series analysis, or AI-powered monitoring.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-anomalydetector-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-ai-anomalydetector-java/SKILL.md",
+      "triggers": "azure;ai;anomalydetector;java"
+    },
+    {
+      "description": "Azure AI Content Safety SDK for Python. Use for detecting harmful content in text and images with multi-severity classification. Triggers: \"azure-ai-contentsafety\", \"ContentSafetyClient\", \"content moderation\", \"harmful content\", \"text analysis\", \"image analysis\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-contentsafety-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-contentsafety-py/SKILL.md",
+      "triggers": "\"azure-ai-contentsafety\", \"ContentSafetyClient\", \"content moderation\", \"harmful content\", \"text analysis\", \"image analysis\"."
+    },
+    {
+      "description": "Azure AI Content Understanding SDK for Python. Use for multimodal content extraction from documents, images, audio, and video. Triggers: \"azure-ai-contentunderstanding\", \"ContentUnderstandingClient\", \"multimodal analysis\", \"document extraction\", \"video analysis\", \"audio transcription\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-contentunderstanding-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-contentunderstanding-py/SKILL.md",
+      "triggers": "\"azure-ai-contentunderstanding\", \"ContentUnderstandingClient\", \"multimodal analysis\", \"document extraction\", \"video analysis\", \"audio transcription\"."
+    },
+    {
+      "description": "Azure AI Document Intelligence SDK for .NET. Extract text, tables, and structured data from documents using prebuilt and custom models. Use for invoice processing, receipt extraction, ID document analysis, and custom document models. Triggers: \"Document Intelligence\", \"DocumentIntelligenceClient\", \"form recognizer\", \"invoice extraction\", \"receipt OCR\", \"document analysis .NET\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-document-intelligence-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-ai-document-intelligence-dotnet/SKILL.md",
+      "triggers": "azure;ai;document;intelligence;dotnet"
+    },
+    {
+      "description": "Extract text, tables, and structured data from documents using Azure Document Intelligence (@azure-rest/ai-document-intelligence). Use when processing invoices, receipts, IDs, forms, or building custom document models.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-document-intelligence-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-ai-document-intelligence-ts/SKILL.md",
+      "triggers": "azure;ai;document;intelligence;ts"
+    },
+    {
+      "description": "Build document analysis applications with Azure Document Intelligence (Form Recognizer) SDK for Java. Use when extracting text, tables, key-value pairs from documents, receipts, invoices, or building custom document models.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-formrecognizer-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-ai-formrecognizer-java/SKILL.md",
+      "triggers": "azure;ai;formrecognizer;java"
+    },
+    {
+      "description": "Implement Conversational Language Understanding (CLU) using the azure-ai-language-conversations Python SDK. Use when working with ConversationAnalysisClient to analyze conversation intent and entities, building NLP features, or integrating language understanding into applications.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-language-conversations-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-language-conversations-py/SKILL.md",
+      "triggers": "azure;ai;language;conversations;py"
+    },
+    {
+      "description": "Azure Machine Learning SDK v2 for Python. Use for ML workspaces, jobs, models, datasets, compute, and pipelines. Triggers: \"azure-ai-ml\", \"MLClient\", \"workspace\", \"model registry\", \"training jobs\", \"datasets\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-ml-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-ml-py/SKILL.md",
+      "triggers": "\"azure-ai-ml\", \"MLClient\", \"workspace\", \"model registry\", \"training jobs\", \"datasets\"."
+    },
+    {
+      "description": "Azure OpenAI SDK for .NET. Client library for Azure OpenAI and OpenAI services. Use for chat completions, embeddings, image generation, audio transcription, and assistants. Triggers: \"Azure OpenAI\", \"AzureOpenAIClient\", \"ChatClient\", \"chat completions .NET\", \"GPT-4\", \"embeddings\", \"DALL-E\", \"Whisper\", \"OpenAI .NET\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-openai-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-ai-openai-dotnet/SKILL.md",
+      "triggers": "azure;ai;openai;dotnet"
+    },
+    {
+      "description": "Azure AI Projects SDK for .NET. High-level client for Azure AI Foundry projects including agents, connections, datasets, deployments, evaluations, and indexes. Use for AI Foundry project management, versioned agents, and orchestration. Triggers: \"AI Projects\", \"AIProjectClient\", \"Foundry project\", \"versioned agents\", \"evaluations\", \"datasets\", \"connections\", \"deployments .NET\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-projects-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-ai-projects-dotnet/SKILL.md",
+      "triggers": "azure;ai;projects;dotnet"
+    },
+    {
+      "description": "Azure AI Projects SDK for Java. High-level SDK for Azure AI Foundry project management including connections, datasets, indexes, and evaluations. Triggers: \"AIProjectClient java\", \"azure ai projects java\", \"Foundry project java\", \"ConnectionsClient\", \"DatasetsClient\", \"IndexesClient\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-projects-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-ai-projects-java/SKILL.md",
+      "triggers": "\"AIProjectClient java\", \"azure ai projects java\", \"Foundry project java\", \"ConnectionsClient\", \"DatasetsClient\", \"IndexesClient\"."
+    },
+    {
+      "description": "Build AI applications using the Azure AI Projects Python SDK (azure-ai-projects). Use when working with Foundry project clients, creating versioned agents with PromptAgentDefinition, running evaluations, managing connections/deployments/datasets/indexes, or using OpenAI-compatible clients. This is the high-level Foundry SDK - for low-level agent operations, use azure-ai-agents-python skill.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-projects-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-projects-py/SKILL.md",
+      "triggers": "azure;ai;projects;py"
+    },
+    {
+      "description": "Build AI applications using Azure AI Projects SDK for JavaScript (@azure/ai-projects). Use when working with Foundry project clients, agents, connections, deployments, datasets, indexes, evaluations, or getting OpenAI clients.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-projects-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-ai-projects-ts/SKILL.md",
+      "triggers": "azure;ai;projects;ts"
+    },
+    {
+      "description": "Azure AI Transcription SDK for Python. Use for real-time and batch speech-to-text transcription with timestamps and diarization. Triggers: \"transcription\", \"speech to text\", \"Azure AI Transcription\", \"TranscriptionClient\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-transcription-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-transcription-py/SKILL.md",
+      "triggers": "\"transcription\", \"speech to text\", \"Azure AI Transcription\", \"TranscriptionClient\"."
+    },
+    {
+      "description": "Azure AI Document Translation SDK for batch translation of documents with format preservation. Use for translating Word, PDF, Excel, PowerPoint, and other document formats at scale. Triggers: \"document translation\", \"batch translation\", \"translate documents\", \"DocumentTranslationClient\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-translation-document-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-translation-document-py/SKILL.md",
+      "triggers": "\"document translation\", \"batch translation\", \"translate documents\", \"DocumentTranslationClient\"."
+    },
+    {
+      "description": "Azure AI Text Translation SDK for real-time text translation, transliteration, language detection, and dictionary lookup. Use for translating text content in applications. Triggers: \"text translation\", \"translator\", \"translate text\", \"transliterate\", \"TextTranslationClient\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-translation-text-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-translation-text-py/SKILL.md",
+      "triggers": "\"text translation\", \"translator\", \"translate text\", \"transliterate\", \"TextTranslationClient\"."
+    },
+    {
+      "description": "Build translation applications using Azure Translation SDKs for JavaScript (@azure-rest/ai-translation-text, @azure-rest/ai-translation-document). Use when implementing text translation, transliteration, language detection, or batch document translation.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-translation-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-ai-translation-ts/SKILL.md",
+      "triggers": "azure;ai;translation;ts"
+    },
+    {
+      "description": "Build image analysis applications with Azure AI Vision SDK for Java. Use when implementing image captioning, OCR text extraction, object detection, tagging, or smart cropping.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-vision-imageanalysis-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-ai-vision-imageanalysis-java/SKILL.md",
+      "triggers": "azure;ai;vision;imageanalysis;java"
+    },
+    {
+      "description": "Azure AI Vision Image Analysis SDK for captions, tags, objects, OCR, people detection, and smart cropping. Use for computer vision and image understanding tasks. Triggers: \"image analysis\", \"computer vision\", \"OCR\", \"object detection\", \"ImageAnalysisClient\", \"image caption\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-vision-imageanalysis-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-vision-imageanalysis-py/SKILL.md",
+      "triggers": "\"image analysis\", \"computer vision\", \"OCR\", \"object detection\", \"ImageAnalysisClient\", \"image caption\"."
+    },
+    {
+      "description": "Azure AI Voice Live SDK for .NET. Build real-time voice AI applications with bidirectional WebSocket communication. Use for voice assistants, conversational AI, real-time speech-to-speech, and voice-enabled chatbots. Triggers: \"voice live\", \"real-time voice\", \"VoiceLiveClient\", \"VoiceLiveSession\", \"voice assistant .NET\", \"bidirectional audio\", \"speech-to-speech\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-voicelive-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-ai-voicelive-dotnet/SKILL.md",
+      "triggers": "azure;ai;voicelive;dotnet"
+    },
+    {
+      "description": "Azure AI VoiceLive SDK for Java. Real-time bidirectional voice conversations with AI assistants using WebSocket. Triggers: \"VoiceLiveClient java\", \"voice assistant java\", \"real-time voice java\", \"audio streaming java\", \"voice activity detection java\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-voicelive-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-ai-voicelive-java/SKILL.md",
+      "triggers": "\"VoiceLiveClient java\", \"voice assistant java\", \"real-time voice java\", \"audio streaming java\", \"voice activity detection java\"."
+    },
+    {
+      "description": "Build real-time voice AI applications using Azure AI Voice Live SDK (azure-ai-voicelive). Use this skill when creating Python applications that need real-time bidirectional audio communication with Azure AI, including voice assistants, voice-enabled chatbots, real-time speech-to-speech translation, voice-driven avatars, or any WebSocket-based audio streaming with AI models. Supports Server VAD (Voice Activity Detection), turn-based conversation, function calling, MCP tools, avatar integration, and transcription.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-voicelive-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-ai-voicelive-py/SKILL.md",
+      "triggers": "azure;ai;voicelive;py"
+    },
+    {
+      "description": "Azure AI Voice Live SDK for JavaScript/TypeScript. Build real-time voice AI applications with bidirectional WebSocket communication. Use for voice assistants, conversational AI, real-time speech-to-speech, and voice-enabled chatbots in Node.js or browser environments. Triggers: \"voice live\", \"real-time voice\", \"VoiceLiveClient\", \"VoiceLiveSession\", \"voice assistant TypeScript\", \"bidirectional audio\", \"speech-to-speech JavaScript\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-ai-voicelive-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-ai-voicelive-ts/SKILL.md",
+      "triggers": "azure;ai;voicelive;ts"
+    },
+    {
+      "description": "Configure Azure API Management as an AI Gateway for AI models, MCP tools, and agents. WHEN: semantic caching, token limit, content safety, load balancing, AI model governance, MCP rate limiting, jailbreak detection, add Azure OpenAI backend, add AI Foundry model, test AI gateway, LLM policies, configure AI backend, token metrics, AI cost control, convert API to MCP, import OpenAPI to gateway.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-aigateway",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-aigateway/SKILL.md",
+      "triggers": "azure;aigateway"
+    },
+    {
+      "description": "Azure App Configuration SDK for Java. Centralized application configuration management with key-value settings, feature flags, and snapshots. Triggers: \"ConfigurationClient java\", \"app configuration java\", \"feature flag java\", \"configuration setting java\", \"azure config java\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-appconfiguration-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-appconfiguration-java/SKILL.md",
+      "triggers": "\"ConfigurationClient java\", \"app configuration java\", \"feature flag java\", \"configuration setting java\", \"azure config java\"."
+    },
+    {
+      "description": "Azure App Configuration SDK for Python. Use for centralized configuration management, feature flags, and dynamic settings. Triggers: \"azure-appconfiguration\", \"AzureAppConfigurationClient\", \"feature flags\", \"configuration\", \"key-value settings\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-appconfiguration-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-appconfiguration-py/SKILL.md",
+      "triggers": "\"azure-appconfiguration\", \"AzureAppConfigurationClient\", \"feature flags\", \"configuration\", \"key-value settings\"."
+    },
+    {
+      "description": "Build applications using Azure App Configuration SDK for JavaScript (@azure/app-configuration). Use when working with configuration settings, feature flags, Key Vault references, dynamic refresh, or centralized configuration management.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-appconfiguration-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-appconfiguration-ts/SKILL.md",
+      "triggers": "azure;appconfiguration;ts"
+    },
+    {
+      "description": "Assess and migrate cross-cloud workloads to Azure with migration reports and code conversion guidance. Supports AWS, GCP, and other providers. WHEN: migrate Lambda to Azure Functions, migrate AWS to Azure, Lambda migration assessment, convert AWS serverless to Azure, migration readiness report, migrate from AWS, migrate from GCP, cross-cloud migration.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-cloud-migrate",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-cloud-migrate/SKILL.md",
+      "triggers": "azure;cloud;migrate"
+    },
+    {
+      "description": "Build call automation workflows with Azure Communication Services Call Automation Java SDK. Use when implementing IVR systems, call routing, call recording, DTMF recognition, text-to-speech, or AI-powered call flows.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-communication-callautomation-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-communication-callautomation-java/SKILL.md",
+      "triggers": "azure;communication;callautomation;java"
+    },
+    {
+      "description": "Azure Communication Services CallingServer (legacy) Java SDK. Note - This SDK is deprecated. Use azure-communication-callautomation instead for new projects. Only use this skill when maintaining legacy code.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-communication-callingserver-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-communication-callingserver-java/SKILL.md",
+      "triggers": "azure;communication;callingserver;java"
+    },
+    {
+      "description": "Build real-time chat applications with Azure Communication Services Chat Java SDK. Use when implementing chat threads, messaging, participants, read receipts, typing notifications, or real-time chat features.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-communication-chat-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-communication-chat-java/SKILL.md",
+      "triggers": "azure;communication;chat;java"
+    },
+    {
+      "description": "Azure Communication Services common utilities for Java. Use when working with CommunicationTokenCredential, user identifiers, token refresh, or shared authentication across ACS services.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-communication-common-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-communication-common-java/SKILL.md",
+      "triggers": "azure;communication;common;java"
+    },
+    {
+      "description": "Send SMS messages with Azure Communication Services SMS Java SDK. Use when implementing SMS notifications, alerts, OTP delivery, bulk messaging, or delivery reports.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-communication-sms-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-communication-sms-java/SKILL.md",
+      "triggers": "azure;communication;sms;java"
+    },
+    {
+      "description": "Run Azure compliance and security audits with azqr plus Key Vault expiration checks. Covers best-practice assessment, resource review, policy/compliance validation, and security posture checks. WHEN: compliance scan, security audit, BEFORE running azqr (compliance cli tool), Azure best practices, Key Vault expiration check, expired certificates, expiring secrets, orphaned resources, compliance assessment.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-compliance",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-compliance/SKILL.md",
+      "triggers": "azure;compliance"
+    },
+    {
+      "description": "Azure VM and VMSS router for recommendations, pricing, autoscale, orchestration, and connectivity troubleshooting. WHEN: Azure VM, VMSS, scale set, recommend, compare, server, website, burstable, lightweight, VM family, workload, GPU, learning, simulation, dev/test, backend, autoscale, load balancer, Flexible orchestration, Uniform orchestration, cost estimate, connect, refused, Linux, black screen, reset password, reach VM, port 3389, NSG, troubleshoot.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-compute",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-compute/SKILL.md",
+      "triggers": "azure;compute"
+    },
+    {
+      "description": "Azure Batch SDK for Java. Run large-scale parallel and HPC batch jobs with pools, jobs, tasks, and compute nodes. Triggers: \"BatchClient java\", \"azure batch java\", \"batch pool java\", \"batch job java\", \"HPC java\", \"parallel computing java\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-compute-batch-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-compute-batch-java/SKILL.md",
+      "triggers": "\"BatchClient java\", \"azure batch java\", \"batch pool java\", \"batch job java\", \"HPC java\", \"parallel computing java\"."
+    },
+    {
+      "description": "Azure Container Registry SDK for Python. Use for managing container images, artifacts, and repositories. Triggers: \"azure-containerregistry\", \"ContainerRegistryClient\", \"container images\", \"docker registry\", \"ACR\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-containerregistry-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-containerregistry-py/SKILL.md",
+      "triggers": "\"azure-containerregistry\", \"ContainerRegistryClient\", \"container images\", \"docker registry\", \"ACR\"."
+    },
+    {
+      "description": "Build Azure Cosmos DB NoSQL services with Python/FastAPI following production-grade patterns. Use when implementing database client setup with dual auth (DefaultAzureCredential + emulator), service layer classes with CRUD operations, partition key strategies, parameterized queries, or TDD patterns for Cosmos. Triggers on phrases like \"Cosmos DB\", \"NoSQL database\", \"document store\", \"add persistence\", \"database service layer\", or \"Python Cosmos SDK\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-cosmos-db-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-cosmos-db-py/SKILL.md",
+      "triggers": "azure;cosmos;db;py"
+    },
+    {
+      "description": "Azure Cosmos DB SDK for Java. NoSQL database operations with global distribution, multi-model support, and reactive patterns. Triggers: \"CosmosClient java\", \"CosmosAsyncClient\", \"cosmos database java\", \"cosmosdb java\", \"document database java\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-cosmos-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-cosmos-java/SKILL.md",
+      "triggers": "\"CosmosClient java\", \"CosmosAsyncClient\", \"cosmos database java\", \"cosmosdb java\", \"document database java\"."
+    },
+    {
+      "description": "Azure Cosmos DB SDK for Python (NoSQL API). Use for document CRUD, queries, containers, and globally distributed data. Triggers: \"cosmos db\", \"CosmosClient\", \"container\", \"document\", \"NoSQL\", \"partition key\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-cosmos-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-cosmos-py/SKILL.md",
+      "triggers": "\"cosmos db\", \"CosmosClient\", \"container\", \"document\", \"NoSQL\", \"partition key\"."
+    },
+    {
+      "description": "Azure Cosmos DB SDK for Rust (NoSQL API). Use for document CRUD, queries, containers, and globally distributed data. Triggers: \"cosmos db rust\", \"CosmosClient rust\", \"container\", \"document rust\", \"NoSQL rust\", \"partition key\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-cosmos-rust",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-cosmos-rust/SKILL.md",
+      "triggers": "\"cosmos db rust\", \"CosmosClient rust\", \"container\", \"document rust\", \"NoSQL rust\", \"partition key\"."
+    },
+    {
+      "description": "Azure Cosmos DB JavaScript/TypeScript SDK (@azure/cosmos) for data plane operations. Use for CRUD operations on documents, queries, bulk operations, and container management. Triggers: \"Cosmos DB\", \"@azure/cosmos\", \"CosmosClient\", \"document CRUD\", \"NoSQL queries\", \"bulk operations\", \"partition key\", \"container.items\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-cosmos-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-cosmos-ts/SKILL.md",
+      "triggers": "azure;cosmos;ts"
+    },
+    {
+      "description": "Identify Azure cost savings from usage and spending data. USE FOR: optimize Azure costs, reduce Azure spending/expenses, analyze Azure costs, find cost savings, generate cost optimization report, identify orphaned resources to delete, rightsize VMs, reduce waste, optimize Redis costs, optimize storage costs, AKS cost analysis add-on, namespace cost, cost spike, anomaly, budget alert, AKS cost visibility. DO NOT USE FOR: deploying resources (use azure-deploy), general Azure diagnostics (use azure-diagnostics), security issues (use azure-security)",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-cost-optimization",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-cost-optimization/SKILL.md",
+      "triggers": "azure;cost;optimization"
+    },
+    {
+      "description": "Build table storage applications with Azure Tables SDK for Java. Use when working with Azure Table Storage or Cosmos DB Table API for NoSQL key-value data, schemaless storage, or structured data at scale.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-data-tables-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-data-tables-java/SKILL.md",
+      "triggers": "azure;data;tables;java"
+    },
+    {
+      "description": "Azure Tables SDK for Python (Storage and Cosmos DB). Use for NoSQL key-value storage, entity CRUD, and batch operations. Triggers: \"table storage\", \"TableServiceClient\", \"TableClient\", \"entities\", \"PartitionKey\", \"RowKey\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-data-tables-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-data-tables-py/SKILL.md",
+      "triggers": "\"table storage\", \"TableServiceClient\", \"TableClient\", \"entities\", \"PartitionKey\", \"RowKey\"."
+    },
+    {
+      "description": "Architect and provision enterprise Azure infrastructure from workload descriptions. For cloud architects and platform engineers planning networking, identity, security, compliance, and multi-resource topologies with WAF alignment. Generates Bicep or Terraform directly (no azd). WHEN: 'plan Azure infrastructure', 'architect Azure landing zone', 'design hub-spoke network', 'plan multi-region DR topology', 'set up VNets firewalls and private endpoints', 'subscription-scope Bicep deployment'. PREFER azure-prepare FOR app-centric workflows.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-enterprise-infra-planner",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-enterprise-infra-planner/SKILL.md",
+      "triggers": "azure;enterprise;infra;planner"
+    },
+    {
+      "description": "Azure Event Grid SDK for .NET. Client library for publishing and consuming events with Azure Event Grid. Use for event-driven architectures, pub/sub messaging, CloudEvents, and EventGridEvents. Triggers: \"Event Grid\", \"EventGridPublisherClient\", \"CloudEvent\", \"EventGridEvent\", \"publish events .NET\", \"event-driven\", \"pub/sub\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-eventgrid-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-eventgrid-dotnet/SKILL.md",
+      "triggers": "azure;eventgrid;dotnet"
+    },
+    {
+      "description": "Build event-driven applications with Azure Event Grid SDK for Java. Use when publishing events, implementing pub/sub patterns, or integrating with Azure services via events.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-eventgrid-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-eventgrid-java/SKILL.md",
+      "triggers": "azure;eventgrid;java"
+    },
+    {
+      "description": "Azure Event Grid SDK for Python. Use for publishing events, handling CloudEvents, and event-driven architectures. Triggers: \"event grid\", \"EventGridPublisherClient\", \"CloudEvent\", \"EventGridEvent\", \"publish events\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-eventgrid-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-eventgrid-py/SKILL.md",
+      "triggers": "\"event grid\", \"EventGridPublisherClient\", \"CloudEvent\", \"EventGridEvent\", \"publish events\"."
+    },
+    {
+      "description": "Azure Event Hubs SDK for .NET. Use for high-throughput event streaming: sending events (EventHubProducerClient, EventHubBufferedProducerClient), receiving events (EventProcessorClient with checkpointing), partition management, and real-time data ingestion. Triggers: \"Event Hubs\", \"event streaming\", \"EventHubProducerClient\", \"EventProcessorClient\", \"send events\", \"receive events\", \"checkpointing\", \"partition\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-eventhub-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-eventhub-dotnet/SKILL.md",
+      "triggers": "azure;eventhub;dotnet"
+    },
+    {
+      "description": "Build real-time streaming applications with Azure Event Hubs SDK for Java. Use when implementing event streaming, high-throughput data ingestion, or building event-driven architectures.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-eventhub-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-eventhub-java/SKILL.md",
+      "triggers": "azure;eventhub;java"
+    },
+    {
+      "description": "Azure Event Hubs SDK for Python streaming. Use for high-throughput event ingestion, producers, consumers, and checkpointing. Triggers: \"event hubs\", \"EventHubProducerClient\", \"EventHubConsumerClient\", \"streaming\", \"partitions\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-eventhub-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-eventhub-py/SKILL.md",
+      "triggers": "\"event hubs\", \"EventHubProducerClient\", \"EventHubConsumerClient\", \"streaming\", \"partitions\"."
+    },
+    {
+      "description": "Azure Event Hubs SDK for Rust. Use for sending and receiving events, streaming data ingestion. Triggers: \"event hubs rust\", \"ProducerClient rust\", \"ConsumerClient rust\", \"send event rust\", \"streaming rust\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-eventhub-rust",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-eventhub-rust/SKILL.md",
+      "triggers": "\"event hubs rust\", \"ProducerClient rust\", \"ConsumerClient rust\", \"send event rust\", \"streaming rust\"."
+    },
+    {
+      "description": "Build event streaming applications using Azure Event Hubs SDK for JavaScript (@azure/event-hubs). Use when implementing high-throughput event ingestion, real-time analytics, IoT telemetry, or event-driven architectures with partitioned consumers.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-eventhub-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-eventhub-ts/SKILL.md",
+      "triggers": "azure;eventhub;ts"
+    },
+    {
+      "description": "Build and deploy GitHub Copilot SDK apps to Azure. WHEN: build copilot app, create copilot app, copilot SDK, @github/copilot-sdk, scaffold copilot project, copilot-powered app, deploy copilot app, host on azure, azure model, BYOM, bring your own model, use my own model, azure openai model, DefaultAzureCredential, self-hosted model, copilot SDK service, chat app with copilot, copilot-sdk-service template, azd init copilot, CopilotClient, createSession, sendAndWait, GitHub Models API.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-hosted-copilot-sdk",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-hosted-copilot-sdk/SKILL.md",
+      "triggers": "azure;hosted;copilot;sdk"
+    },
+    {
+      "description": "Azure Identity library for .NET. Authentication library for Azure SDK clients using Microsoft Entra ID. Use for DefaultAzureCredential, managed identity, service principals, and developer credentials. Triggers: \"Azure Identity\", \"DefaultAzureCredential\", \"ManagedIdentityCredential\", \"ClientSecretCredential\", \"authentication .NET\", \"Azure auth\", \"credential chain\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-identity-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-identity-dotnet/SKILL.md",
+      "triggers": "azure;identity;dotnet"
+    },
+    {
+      "description": "Azure Identity library for Java authentication with Azure services. Use when implementing DefaultAzureCredential, managed identity, service principal, or any Azure authentication pattern in Java applications.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-identity-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-identity-java/SKILL.md",
+      "triggers": "azure;identity;java"
+    },
+    {
+      "description": "Azure Identity SDK for Python authentication with Microsoft Entra ID. Use for DefaultAzureCredential, managed identity, service principals, and token caching. Triggers: \"azure-identity\", \"DefaultAzureCredential\", \"authentication\", \"managed identity\", \"service principal\", \"credential\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-identity-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-identity-py/SKILL.md",
+      "triggers": "\"azure-identity\", \"DefaultAzureCredential\", \"authentication\", \"managed identity\", \"service principal\", \"credential\"."
+    },
+    {
+      "description": "Azure Identity SDK for Rust authentication. Use for DeveloperToolsCredential, ManagedIdentityCredential, ClientSecretCredential, and token-based authentication. Triggers: \"azure-identity\", \"DeveloperToolsCredential\", \"authentication rust\", \"managed identity rust\", \"credential rust\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-identity-rust",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-identity-rust/SKILL.md",
+      "triggers": "\"azure-identity\", \"DeveloperToolsCredential\", \"authentication rust\", \"managed identity rust\", \"credential rust\"."
+    },
+    {
+      "description": "Authenticate to Azure services using Azure Identity library for JavaScript (@azure/identity). Use when configuring authentication with DefaultAzureCredential, managed identity, service principals, or interactive browser login.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-identity-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-identity-ts/SKILL.md",
+      "triggers": "azure;identity;ts"
+    },
+    {
+      "description": "Azure Key Vault Certificates SDK for Rust. Use for creating, importing, and managing certificates. Triggers: \"keyvault certificates rust\", \"CertificateClient rust\", \"create certificate rust\", \"import certificate rust\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-keyvault-certificates-rust",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-keyvault-certificates-rust/SKILL.md",
+      "triggers": "\"keyvault certificates rust\", \"CertificateClient rust\", \"create certificate rust\", \"import certificate rust\"."
+    },
+    {
+      "description": "Azure Key Vault Keys SDK for Rust. Use for creating, managing, and using cryptographic keys. Triggers: \"keyvault keys rust\", \"KeyClient rust\", \"create key rust\", \"encrypt rust\", \"sign rust\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-keyvault-keys-rust",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-keyvault-keys-rust/SKILL.md",
+      "triggers": "\"keyvault keys rust\", \"KeyClient rust\", \"create key rust\", \"encrypt rust\", \"sign rust\"."
+    },
+    {
+      "description": "Manage cryptographic keys using Azure Key Vault Keys SDK for JavaScript (@azure/keyvault-keys). Use when creating, encrypting/decrypting, signing, or rotating keys.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-keyvault-keys-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-keyvault-keys-ts/SKILL.md",
+      "triggers": "azure;keyvault;keys;ts"
+    },
+    {
+      "description": "Azure Key Vault SDK for Python. Use for secrets, keys, and certificates management with secure storage. Triggers: \"key vault\", \"SecretClient\", \"KeyClient\", \"CertificateClient\", \"secrets\", \"encryption keys\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-keyvault-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-keyvault-py/SKILL.md",
+      "triggers": "\"key vault\", \"SecretClient\", \"KeyClient\", \"CertificateClient\", \"secrets\", \"encryption keys\"."
+    },
+    {
+      "description": "Azure Key Vault Secrets SDK for Rust. Use for storing and retrieving secrets, passwords, and API keys. Triggers: \"keyvault secrets rust\", \"SecretClient rust\", \"get secret rust\", \"set secret rust\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-keyvault-secrets-rust",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-keyvault-secrets-rust/SKILL.md",
+      "triggers": "\"keyvault secrets rust\", \"SecretClient rust\", \"get secret rust\", \"set secret rust\"."
+    },
+    {
+      "description": "Manage secrets using Azure Key Vault Secrets SDK for JavaScript (@azure/keyvault-secrets). Use when storing and retrieving application secrets or configuration values.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-keyvault-secrets-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-keyvault-secrets-ts/SKILL.md",
+      "triggers": "azure;keyvault;secrets;ts"
+    },
+    {
+      "description": "Plan, create, and configure production-ready Azure Kubernetes Service (AKS) clusters. Covers Day-0 checklist, SKU selection (Automatic vs Standard), networking options (private API server, Azure CNI Overlay, egress configuration), security, and operations (autoscaling, upgrade strategy, cost analysis). WHEN: create AKS environment, provision AKS environment, enable AKS observability, design AKS networking, choose AKS SKU, secure AKS.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-kubernetes",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-kubernetes/SKILL.md",
+      "triggers": "azure;kubernetes"
+    },
+    {
+      "description": "Query and analyze data in Azure Data Explorer (Kusto/ADX) using KQL for log analytics, telemetry, and time series analysis. WHEN: KQL queries, Kusto database queries, Azure Data Explorer, ADX clusters, log analytics, time series data, IoT telemetry, anomaly detection.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-kusto",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-kusto/SKILL.md",
+      "triggers": "azure;kusto"
+    },
+    {
+      "description": "Azure Maps SDK for .NET. Location-based services including geocoding, routing, rendering, geolocation, and weather. Use for address search, directions, map tiles, IP geolocation, and weather data. Triggers: \"Azure Maps\", \"MapsSearchClient\", \"MapsRoutingClient\", \"MapsRenderingClient\", \"geocoding .NET\", \"route directions\", \"map tiles\", \"geolocation\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-maps-search-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-maps-search-dotnet/SKILL.md",
+      "triggers": "azure;maps;search;dotnet"
+    },
+    {
+      "description": "Troubleshoot and resolve issues with Azure Messaging SDKs for Event Hubs and Service Bus. Covers connection failures, authentication errors, message processing issues, and SDK configuration problems. WHEN: event hub SDK error, service bus SDK issue, messaging connection failure, AMQP error, event processor host issue, message lock lost, message lock expired, lock renewal, lock renewal batch, send timeout, receiver disconnected, SDK troubleshooting, azure messaging SDK, event hub consumer, service bus queue issue, topic subscription error, enable logging event hub, service bus logging, eventhub python, servicebus java, eventhub javascript, servicebus dotnet, event hub checkpoint, event hub not receiving messages, service bus dead letter, batch processing lock, session lock expired, idle timeout, connection inactive, link detach, slow reconnect, session error, duplicate events, offset reset, receive batch.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-messaging",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-messaging/SKILL.md",
+      "triggers": "azure;messaging"
+    },
+    {
+      "description": "Build real-time web applications with Azure Web PubSub SDK for Java. Use when implementing WebSocket-based messaging, live updates, chat applications, or server-to-client push notifications.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-messaging-webpubsub-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-messaging-webpubsub-java/SKILL.md",
+      "triggers": "azure;messaging;webpubsub;java"
+    },
+    {
+      "description": "Azure Web PubSub Service SDK for Python. Use for real-time messaging, WebSocket connections, and pub/sub patterns. Triggers: \"azure-messaging-webpubsubservice\", \"WebPubSubServiceClient\", \"real-time\", \"WebSocket\", \"pub/sub\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-messaging-webpubsubservice-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-messaging-webpubsubservice-py/SKILL.md",
+      "triggers": "\"azure-messaging-webpubsubservice\", \"WebPubSubServiceClient\", \"real-time\", \"WebSocket\", \"pub/sub\"."
+    },
+    {
+      "description": "Azure API Center SDK for .NET. Centralized API inventory management with governance, versioning, and discovery. Use for creating API services, workspaces, APIs, versions, definitions, environments, deployments, and metadata schemas. Triggers: \"API Center\", \"ApiCenterService\", \"ApiCenterWorkspace\", \"ApiCenterApi\", \"API inventory\", \"API governance\", \"API versioning\", \"API catalog\", \"API discovery\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-mgmt-apicenter-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-apicenter-dotnet/SKILL.md",
+      "triggers": "azure;mgmt;apicenter;dotnet"
+    },
+    {
+      "description": "Azure API Center Management SDK for Python. Use for managing API inventory, metadata, and governance across your organization. Triggers: \"azure-mgmt-apicenter\", \"ApiCenterMgmtClient\", \"API Center\", \"API inventory\", \"API governance\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-mgmt-apicenter-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-mgmt-apicenter-py/SKILL.md",
+      "triggers": "\"azure-mgmt-apicenter\", \"ApiCenterMgmtClient\", \"API Center\", \"API inventory\", \"API governance\"."
+    },
+    {
+      "description": "Azure Resource Manager SDK for API Management in .NET. Use for MANAGEMENT PLANE operations: creating/managing APIM services, APIs, products, subscriptions, policies, users, groups, gateways, and backends via Azure Resource Manager. Triggers: \"API Management\", \"APIM service\", \"create APIM\", \"manage APIs\", \"ApiManagementServiceResource\", \"API policies\", \"APIM products\", \"APIM subscriptions\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-mgmt-apimanagement-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-apimanagement-dotnet/SKILL.md",
+      "triggers": "azure;mgmt;apimanagement;dotnet"
+    },
+    {
+      "description": "Azure API Management SDK for Python. Use for managing APIM services, APIs, products, subscriptions, and policies. Triggers: \"azure-mgmt-apimanagement\", \"ApiManagementClient\", \"APIM\", \"API gateway\", \"API Management\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-mgmt-apimanagement-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-mgmt-apimanagement-py/SKILL.md",
+      "triggers": "\"azure-mgmt-apimanagement\", \"ApiManagementClient\", \"APIM\", \"API gateway\", \"API Management\"."
+    },
+    {
+      "description": "Azure Application Insights SDK for .NET. Application performance monitoring and observability resource management. Use for creating Application Insights components, web tests, workbooks, analytics items, and API keys. Triggers: \"Application Insights\", \"ApplicationInsights\", \"App Insights\", \"APM\", \"application monitoring\", \"web tests\", \"availability tests\", \"workbooks\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-mgmt-applicationinsights-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-applicationinsights-dotnet/SKILL.md",
+      "triggers": "azure;mgmt;applicationinsights;dotnet"
+    },
+    {
+      "description": "Azure Resource Manager SDK for Arize AI Observability and Evaluation (.NET). Use when managing Arize AI organizations on Azure via Azure Marketplace, creating/updating/deleting Arize resources, or integrating Arize ML observability into .NET applications. Triggers: \"Arize AI\", \"ML observability\", \"ArizeAIObservabilityEval\", \"Arize organization\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-mgmt-arizeaiobservabilityeval-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-arizeaiobservabilityeval-dotnet/SKILL.md",
+      "triggers": "azure;mgmt;arizeaiobservabilityeval;dotnet"
+    },
+    {
+      "description": "Azure Resource Manager SDK for Bot Service in .NET. Management plane operations for creating and managing Azure Bot resources, channels (Teams, DirectLine, Slack), and connection settings. Triggers: \"Bot Service\", \"BotResource\", \"Azure Bot\", \"DirectLine channel\", \"Teams channel\", \"bot management .NET\", \"create bot\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-mgmt-botservice-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-botservice-dotnet/SKILL.md",
+      "triggers": "azure;mgmt;botservice;dotnet"
+    },
+    {
+      "description": "Azure Bot Service Management SDK for Python. Use for creating, managing, and configuring Azure Bot Service resources. Triggers: \"azure-mgmt-botservice\", \"AzureBotService\", \"bot management\", \"conversational AI\", \"bot channels\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-mgmt-botservice-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-mgmt-botservice-py/SKILL.md",
+      "triggers": "\"azure-mgmt-botservice\", \"AzureBotService\", \"bot management\", \"conversational AI\", \"bot channels\"."
+    },
+    {
+      "description": "Azure Fabric Management SDK for Python. Use for managing Microsoft Fabric capacities and resources. Triggers: \"azure-mgmt-fabric\", \"FabricMgmtClient\", \"Fabric capacity\", \"Microsoft Fabric\", \"Power BI capacity\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-mgmt-fabric-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-mgmt-fabric-py/SKILL.md",
+      "triggers": "\"azure-mgmt-fabric\", \"FabricMgmtClient\", \"Fabric capacity\", \"Microsoft Fabric\", \"Power BI capacity\"."
+    },
+    {
+      "description": "Manage MongoDB Atlas Organizations as Azure ARM resources using Azure.ResourceManager.MongoDBAtlas SDK. Use when creating, updating, listing, or deleting MongoDB Atlas organizations through Azure Marketplace integration. This SDK manages the Azure-side organization resource, not Atlas clusters/databases directly.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-mgmt-mongodbatlas-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-mongodbatlas-dotnet/SKILL.md",
+      "triggers": "azure;mgmt;mongodbatlas;dotnet"
+    },
+    {
+      "description": "Azure Weights & Biases SDK for .NET. ML experiment tracking and model management via Azure Marketplace. Use for creating W&B instances, managing SSO, marketplace integration, and ML observability. Triggers: \"Weights and Biases\", \"W&B\", \"WeightsAndBiases\", \"ML experiment tracking\", \"model registry\", \"experiment management\", \"wandb\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-mgmt-weightsandbiases-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-mgmt-weightsandbiases-dotnet/SKILL.md",
+      "triggers": "azure;mgmt;weightsandbiases;dotnet"
+    },
+    {
+      "description": "Run Playwright tests at scale using Azure Playwright Workspaces (formerly Microsoft Playwright Testing). Use when scaling browser tests across cloud-hosted browsers, integrating with CI/CD pipelines, or publishing test results to the Azure portal.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-microsoft-playwright-testing-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-microsoft-playwright-testing-ts/SKILL.md",
+      "triggers": "azure;microsoft;playwright;testing;ts"
+    },
+    {
+      "description": "Azure Monitor Ingestion SDK for Java. Send custom logs to Azure Monitor via Data Collection Rules (DCR) and Data Collection Endpoints (DCE). Triggers: \"LogsIngestionClient java\", \"azure monitor ingestion java\", \"custom logs java\", \"DCR java\", \"data collection rule java\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-monitor-ingestion-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-monitor-ingestion-java/SKILL.md",
+      "triggers": "\"LogsIngestionClient java\", \"azure monitor ingestion java\", \"custom logs java\", \"DCR java\", \"data collection rule java\"."
+    },
+    {
+      "description": "Azure Monitor Ingestion SDK for Python. Use for sending custom logs to Log Analytics workspace via Logs Ingestion API. Triggers: \"azure-monitor-ingestion\", \"LogsIngestionClient\", \"custom logs\", \"DCR\", \"data collection rule\", \"Log Analytics\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-monitor-ingestion-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-monitor-ingestion-py/SKILL.md",
+      "triggers": "\"azure-monitor-ingestion\", \"LogsIngestionClient\", \"custom logs\", \"DCR\", \"data collection rule\", \"Log Analytics\"."
+    },
+    {
+      "description": "Azure Monitor OpenTelemetry Exporter for Java. Export OpenTelemetry traces, metrics, and logs to Azure Monitor/Application Insights. Triggers: \"AzureMonitorExporter java\", \"opentelemetry azure java\", \"application insights java otel\", \"azure monitor tracing java\". Note: This package is DEPRECATED. Migrate to azure-monitor-opentelemetry-autoconfigure.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-monitor-opentelemetry-exporter-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-monitor-opentelemetry-exporter-java/SKILL.md",
+      "triggers": "\"AzureMonitorExporter java\", \"opentelemetry azure java\", \"application insights java otel\", \"azure monitor tracing java\"."
+    },
+    {
+      "description": "Azure Monitor OpenTelemetry Exporter for Python. Use for low-level OpenTelemetry export to Application Insights. Triggers: \"azure-monitor-opentelemetry-exporter\", \"AzureMonitorTraceExporter\", \"AzureMonitorMetricExporter\", \"AzureMonitorLogExporter\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-monitor-opentelemetry-exporter-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-monitor-opentelemetry-exporter-py/SKILL.md",
+      "triggers": "\"azure-monitor-opentelemetry-exporter\", \"AzureMonitorTraceExporter\", \"AzureMonitorMetricExporter\", \"AzureMonitorLogExporter\"."
+    },
+    {
+      "description": "Azure Monitor OpenTelemetry Distro for Python. Use for one-line Application Insights setup with auto-instrumentation. Triggers: \"azure-monitor-opentelemetry\", \"configure_azure_monitor\", \"Application Insights\", \"OpenTelemetry distro\", \"auto-instrumentation\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-monitor-opentelemetry-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-monitor-opentelemetry-py/SKILL.md",
+      "triggers": "\"azure-monitor-opentelemetry\", \"configure_azure_monitor\", \"Application Insights\", \"OpenTelemetry distro\", \"auto-instrumentation\"."
+    },
+    {
+      "description": "Instrument applications with Azure Monitor and OpenTelemetry for JavaScript (@azure/monitor-opentelemetry). Use when adding distributed tracing, metrics, and logs to Node.js applications with Application Insights.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-monitor-opentelemetry-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-monitor-opentelemetry-ts/SKILL.md",
+      "triggers": "azure;monitor;opentelemetry;ts"
+    },
+    {
+      "description": "Azure Monitor Query SDK for Java. Execute Kusto queries against Log Analytics workspaces and query metrics from Azure resources. Triggers: \"LogsQueryClient java\", \"MetricsQueryClient java\", \"kusto query java\", \"log analytics java\", \"azure monitor query java\". Note: This package is deprecated. Migrate to azure-monitor-query-logs and azure-monitor-query-metrics.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-monitor-query-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-monitor-query-java/SKILL.md",
+      "triggers": "\"LogsQueryClient java\", \"MetricsQueryClient java\", \"kusto query java\", \"log analytics java\", \"azure monitor query java\"."
+    },
+    {
+      "description": "Azure Monitor Query SDK for Python. Use for querying Log Analytics workspaces and Azure Monitor metrics. Triggers: \"azure-monitor-query\", \"LogsQueryClient\", \"MetricsQueryClient\", \"Log Analytics\", \"Kusto queries\", \"Azure metrics\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-monitor-query-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-monitor-query-py/SKILL.md",
+      "triggers": "\"azure-monitor-query\", \"LogsQueryClient\", \"MetricsQueryClient\", \"Log Analytics\", \"Kusto queries\", \"Azure metrics\"."
+    },
+    {
+      "description": "Connect to Azure Database for PostgreSQL Flexible Server from Node.js/TypeScript using the pg (node-postgres) package. Use for PostgreSQL queries, connection pooling, transactions, and Microsoft Entra ID (passwordless) authentication. Triggers: \"PostgreSQL\", \"postgres\", \"pg client\", \"node-postgres\", \"Azure PostgreSQL connection\", \"PostgreSQL TypeScript\", \"pg Pool\", \"passwordless postgres\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-postgres-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-postgres-ts/SKILL.md",
+      "triggers": "azure;postgres;ts"
+    },
+    {
+      "description": "Check/manage Azure quotas and usage across providers. For deployment planning, capacity validation, region selection. WHEN: \"check quotas\", \"service limits\", \"current usage\", \"request quota increase\", \"quota exceeded\", \"validate capacity\", \"regional availability\", \"provisioning limits\", \"vCPU limit\", \"how many vCPUs available in my subscription\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-quotas",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-quotas/SKILL.md",
+      "triggers": "azure;quotas"
+    },
+    {
+      "description": "Helps users find the right Azure RBAC role for an identity with least privilege access, then generate CLI commands and Bicep code to assign it. Also provides guidance on permissions required to grant roles. WHEN: bicep for role assignment, what role should I assign, least privilege role, RBAC role for, role to read blobs, role for managed identity, custom role definition, assign role to identity, what role do I need to grant access, permissions to assign roles.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-rbac",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-rbac/SKILL.md",
+      "triggers": "azure;rbac"
+    },
+    {
+      "description": "List, find, and show Azure resources across subscriptions or resource groups. Handles prompts like \"list websites\", \"list virtual machines\", \"list my VMs\", \"show storage accounts\", \"find container apps\", and \"what resources do I have\". USE FOR: resource inventory, find resources by tag, tag analysis, orphaned resource discovery (not for cost analysis), unattached disks, count resources by type, cross-subscription lookup, and Azure Resource Graph queries. DO NOT USE FOR: deploying/changing resources, cost optimization, or non-Azure clouds.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-resource-lookup",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-resource-lookup/SKILL.md",
+      "triggers": "azure;resource;lookup"
+    },
+    {
+      "description": "Azure Resource Manager SDK for Cosmos DB in .NET. Use for MANAGEMENT PLANE operations: creating/managing Cosmos DB accounts, databases, containers, throughput settings, and RBAC via Azure Resource Manager. NOT for data plane operations (CRUD on documents) - use Microsoft.Azure.Cosmos for that. Triggers: \"Cosmos DB account\", \"create Cosmos account\", \"manage Cosmos resources\", \"ARM Cosmos\", \"CosmosDBAccountResource\", \"provision Cosmos DB\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-resource-manager-cosmosdb-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-cosmosdb-dotnet/SKILL.md",
+      "triggers": "azure;resource;manager;cosmosdb;dotnet"
+    },
+    {
+      "description": "Azure Resource Manager SDK for Durable Task Scheduler in .NET. Use for MANAGEMENT PLANE operations: creating/managing Durable Task Schedulers, Task Hubs, and retention policies via Azure Resource Manager. Triggers: \"Durable Task Scheduler\", \"create scheduler\", \"task hub\", \"DurableTaskSchedulerResource\", \"provision Durable Task\", \"orchestration scheduler\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-resource-manager-durabletask-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-durabletask-dotnet/SKILL.md",
+      "triggers": "azure;resource;manager;durabletask;dotnet"
+    },
+    {
+      "description": "Azure MySQL Flexible Server SDK for .NET. Database management for MySQL Flexible Server deployments. Use for creating servers, databases, firewall rules, configurations, backups, and high availability. Triggers: \"MySQL\", \"MySqlFlexibleServer\", \"MySQL Flexible Server\", \"Azure Database for MySQL\", \"MySQL database management\", \"MySQL firewall\", \"MySQL backup\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-resource-manager-mysql-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-mysql-dotnet/SKILL.md",
+      "triggers": "azure;resource;manager;mysql;dotnet"
+    },
+    {
+      "description": "Azure Resource Manager SDK for Microsoft Playwright Testing in .NET. Use for MANAGEMENT PLANE operations: creating/managing Playwright Testing workspaces, checking name availability, and managing workspace quotas via Azure Resource Manager. NOT for running Playwright tests - use Azure.Developer.MicrosoftPlaywrightTesting.NUnit for that. Triggers: \"Playwright workspace\", \"create Playwright Testing workspace\", \"manage Playwright resources\", \"ARM Playwright\", \"PlaywrightWorkspaceResource\", \"provision Playwright Testing\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-resource-manager-playwright-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-playwright-dotnet/SKILL.md",
+      "triggers": "azure;resource;manager;playwright;dotnet"
+    },
+    {
+      "description": "Azure PostgreSQL Flexible Server SDK for .NET. Database management for PostgreSQL Flexible Server deployments. Use for creating servers, databases, firewall rules, configurations, backups, and high availability. Triggers: \"PostgreSQL\", \"PostgreSqlFlexibleServer\", \"PostgreSQL Flexible Server\", \"Azure Database for PostgreSQL\", \"PostgreSQL database management\", \"PostgreSQL firewall\", \"PostgreSQL backup\", \"Postgres\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-resource-manager-postgresql-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-postgresql-dotnet/SKILL.md",
+      "triggers": "azure;resource;manager;postgresql;dotnet"
+    },
+    {
+      "description": "Azure Resource Manager SDK for Redis in .NET. Use for MANAGEMENT PLANE operations: creating/managing Azure Cache for Redis instances, firewall rules, access keys, patch schedules, linked servers (geo-replication), and private endpoints via Azure Resource Manager. NOT for data plane operations (get/set keys, pub/sub) - use StackExchange.Redis for that. Triggers: \"Redis cache\", \"create Redis\", \"manage Redis\", \"ARM Redis\", \"RedisResource\", \"provision Redis\", \"Azure Cache for Redis\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-resource-manager-redis-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-redis-dotnet/SKILL.md",
+      "triggers": "azure;resource;manager;redis;dotnet"
+    },
+    {
+      "description": "Azure Resource Manager SDK for Azure SQL in .NET. Use for MANAGEMENT PLANE operations: creating/managing SQL servers, databases, elastic pools, firewall rules, and failover groups via Azure Resource Manager. NOT for data plane operations (executing queries) - use Microsoft.Data.SqlClient for that. Triggers: \"SQL server\", \"create SQL database\", \"manage SQL resources\", \"ARM SQL\", \"SqlServerResource\", \"provision Azure SQL\", \"elastic pool\", \"firewall rule\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-resource-manager-sql-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-sql-dotnet/SKILL.md",
+      "triggers": "azure;resource;manager;sql;dotnet"
+    },
+    {
+      "description": "Analyze Azure resource groups and generate detailed Mermaid architecture diagrams showing the relationships between individual resources. WHEN: create architecture diagram, visualize Azure resources, show resource relationships, generate Mermaid diagram, analyze resource group, diagram my resources, architecture visualization, resource topology, map Azure infrastructure.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-resource-visualizer",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-resource-visualizer/SKILL.md",
+      "triggers": "azure;resource;visualizer"
+    },
+    {
+      "description": "Azure AI Search SDK for .NET (Azure.Search.Documents). Use for building search applications with full-text, vector, semantic, and hybrid search. Covers SearchClient (queries, document CRUD), SearchIndexClient (index management), and SearchIndexerClient (indexers, skillsets). Triggers: \"Azure Search .NET\", \"SearchClient\", \"SearchIndexClient\", \"vector search C#\", \"semantic search .NET\", \"hybrid search\", \"Azure.Search.Documents\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-search-documents-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-search-documents-dotnet/SKILL.md",
+      "triggers": "azure;search;documents;dotnet"
+    },
+    {
+      "description": "Azure AI Search SDK for Python. Use for vector search, hybrid search, semantic ranking, indexing, and skillsets. Triggers: \"azure-search-documents\", \"SearchClient\", \"SearchIndexClient\", \"vector search\", \"hybrid search\", \"semantic search\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-search-documents-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-search-documents-py/SKILL.md",
+      "triggers": "\"azure-search-documents\", \"SearchClient\", \"SearchIndexClient\", \"vector search\", \"hybrid search\", \"semantic search\"."
+    },
+    {
+      "description": "Build search applications using Azure AI Search SDK for JavaScript (@azure/search-documents). Use when creating/managing indexes, implementing vector/hybrid search, semantic ranking, or building agentic retrieval with knowledge bases.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-search-documents-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-search-documents-ts/SKILL.md",
+      "triggers": "azure;search;documents;ts"
+    },
+    {
+      "description": "Azure Key Vault Keys SDK for .NET. Client library for managing cryptographic keys in Azure Key Vault and Managed HSM. Use for key creation, rotation, encryption, decryption, signing, and verification. Triggers: \"Key Vault keys\", \"KeyClient\", \"CryptographyClient\", \"RSA key\", \"EC key\", \"encrypt decrypt .NET\", \"key rotation\", \"HSM\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-security-keyvault-keys-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-security-keyvault-keys-dotnet/SKILL.md",
+      "triggers": "azure;security;keyvault;keys;dotnet"
+    },
+    {
+      "description": "Azure Key Vault Keys Java SDK for cryptographic key management. Use when creating, managing, or using RSA/EC keys, performing encrypt/decrypt/sign/verify operations, or working with HSM-backed keys.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-security-keyvault-keys-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-security-keyvault-keys-java/SKILL.md",
+      "triggers": "azure;security;keyvault;keys;java"
+    },
+    {
+      "description": "Azure Key Vault Secrets Java SDK for secret management. Use when storing, retrieving, or managing passwords, API keys, connection strings, or other sensitive configuration data.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-security-keyvault-secrets-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-security-keyvault-secrets-java/SKILL.md",
+      "triggers": "azure;security;keyvault;secrets;java"
+    },
+    {
+      "description": "Azure Service Bus SDK for .NET. Enterprise messaging with queues, topics, subscriptions, and sessions. Use for reliable message delivery, pub/sub patterns, dead letter handling, and background processing. Triggers: \"Service Bus\", \"ServiceBusClient\", \"ServiceBusSender\", \"ServiceBusReceiver\", \"ServiceBusProcessor\", \"message queue\", \"pub/sub .NET\", \"dead letter queue\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-servicebus-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/azure-servicebus-dotnet/SKILL.md",
+      "triggers": "azure;servicebus;dotnet"
+    },
+    {
+      "description": "Azure Service Bus SDK for Python messaging. Use for queues, topics, subscriptions, and enterprise messaging patterns. Triggers: \"service bus\", \"ServiceBusClient\", \"queue\", \"topic\", \"subscription\", \"message broker\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-servicebus-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-servicebus-py/SKILL.md",
+      "triggers": "\"service bus\", \"ServiceBusClient\", \"queue\", \"topic\", \"subscription\", \"message broker\"."
+    },
+    {
+      "description": "Build messaging applications using Azure Service Bus SDK for JavaScript (@azure/service-bus). Use when implementing queues, topics/subscriptions, message sessions, dead-letter handling, or enterprise messaging patterns.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-servicebus-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-servicebus-ts/SKILL.md",
+      "triggers": "azure;servicebus;ts"
+    },
+    {
+      "description": "Azure Speech to Text REST API for short audio (Python). Use for simple speech recognition of audio files up to 60 seconds without the Speech SDK. Triggers: \"speech to text REST\", \"short audio transcription\", \"speech recognition REST API\", \"STT REST\", \"recognize speech REST\". DO NOT USE FOR: Long audio (>60 seconds), real-time streaming, batch transcription, custom speech models, speech translation. Use Speech SDK or Batch Transcription API instead.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-speech-to-text-rest-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-speech-to-text-rest-py/SKILL.md",
+      "triggers": "\"speech to text REST\", \"short audio transcription\", \"speech recognition REST API\", \"STT REST\", \"recognize speech REST\"."
+    },
+    {
+      "description": "Azure Storage Services including Blob Storage, File Shares, Queue Storage, Table Storage, and Data Lake. Provides object storage, SMB file shares, async messaging, NoSQL key-value, and big data analytics capabilities. Includes access tiers (hot, cool, archive) and lifecycle management. USE FOR: blob storage, file shares, queue storage, table storage, data lake, upload files, download blobs, storage accounts, access tiers, lifecycle management. DO NOT USE FOR: SQL databases, Cosmos DB (use azure-prepare), messaging with Event Hubs or Service Bus (use azure-messaging).",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-storage",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-storage/SKILL.md",
+      "triggers": "azure;storage"
+    },
+    {
+      "description": "Build blob storage applications with Azure Storage Blob SDK for Java. Use when uploading, downloading, or managing files in Azure Blob Storage, working with containers, or implementing streaming data operations.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-storage-blob-java",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-java/skills/azure-storage-blob-java/SKILL.md",
+      "triggers": "azure;storage;blob;java"
+    },
+    {
+      "description": "Azure Blob Storage SDK for Python. Use for uploading, downloading, listing blobs, managing containers, and blob lifecycle. Triggers: \"blob storage\", \"BlobServiceClient\", \"ContainerClient\", \"BlobClient\", \"upload blob\", \"download blob\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-storage-blob-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-storage-blob-py/SKILL.md",
+      "triggers": "\"blob storage\", \"BlobServiceClient\", \"ContainerClient\", \"BlobClient\", \"upload blob\", \"download blob\"."
+    },
+    {
+      "description": "Azure Blob Storage SDK for Rust. Use for uploading, downloading, and managing blobs and containers. Triggers: \"blob storage rust\", \"BlobClient rust\", \"upload blob rust\", \"download blob rust\", \"container rust\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-storage-blob-rust",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-rust/skills/azure-storage-blob-rust/SKILL.md",
+      "triggers": "\"blob storage rust\", \"BlobClient rust\", \"upload blob rust\", \"download blob rust\", \"container rust\"."
+    },
+    {
+      "description": "Azure Blob Storage JavaScript/TypeScript SDK (@azure/storage-blob) for blob operations. Use for uploading, downloading, listing, and managing blobs and containers. Supports block blobs, append blobs, page blobs, SAS tokens, and streaming. Triggers: \"blob storage\", \"@azure/storage-blob\", \"BlobServiceClient\", \"ContainerClient\", \"upload blob\", \"download blob\", \"SAS token\", \"block blob\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-storage-blob-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-storage-blob-ts/SKILL.md",
+      "triggers": "azure;storage;blob;ts"
+    },
+    {
+      "description": "Azure Data Lake Storage Gen2 SDK for Python. Use for hierarchical file systems, big data analytics, and file/directory operations. Triggers: \"data lake\", \"DataLakeServiceClient\", \"FileSystemClient\", \"ADLS Gen2\", \"hierarchical namespace\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-storage-file-datalake-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-storage-file-datalake-py/SKILL.md",
+      "triggers": "\"data lake\", \"DataLakeServiceClient\", \"FileSystemClient\", \"ADLS Gen2\", \"hierarchical namespace\"."
+    },
+    {
+      "description": "Azure Storage File Share SDK for Python. Use for SMB file shares, directories, and file operations in the cloud. Triggers: \"azure-storage-file-share\", \"ShareServiceClient\", \"ShareClient\", \"file share\", \"SMB\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-storage-file-share-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-storage-file-share-py/SKILL.md",
+      "triggers": "\"azure-storage-file-share\", \"ShareServiceClient\", \"ShareClient\", \"file share\", \"SMB\"."
+    },
+    {
+      "description": "Azure File Share JavaScript/TypeScript SDK (@azure/storage-file-share) for SMB file share operations. Use for creating shares, managing directories, uploading/downloading files, and handling file metadata. Supports Azure Files SMB protocol scenarios. Triggers: \"file share\", \"@azure/storage-file-share\", \"ShareServiceClient\", \"ShareClient\", \"SMB\", \"Azure Files\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-storage-file-share-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-storage-file-share-ts/SKILL.md",
+      "triggers": "azure;storage;file;share;ts"
+    },
+    {
+      "description": "Azure Queue Storage SDK for Python. Use for reliable message queuing, task distribution, and asynchronous processing. Triggers: \"queue storage\", \"QueueServiceClient\", \"QueueClient\", \"message queue\", \"dequeue\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-storage-queue-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/azure-storage-queue-py/SKILL.md",
+      "triggers": "\"queue storage\", \"QueueServiceClient\", \"QueueClient\", \"message queue\", \"dequeue\"."
+    },
+    {
+      "description": "Azure Queue Storage JavaScript/TypeScript SDK (@azure/storage-queue) for message queue operations. Use for sending, receiving, peeking, and deleting messages in queues. Supports visibility timeout, message encoding, and batch operations. Triggers: \"queue storage\", \"@azure/storage-queue\", \"QueueServiceClient\", \"QueueClient\", \"send message\", \"receive message\", \"dequeue\", \"visibility timeout\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-storage-queue-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-storage-queue-ts/SKILL.md",
+      "triggers": "azure;storage;queue;ts"
+    },
+    {
+      "description": "Assess and upgrade Azure workloads between plans, tiers, or SKUs within Azure. Generates assessment reports and automates upgrade steps. WHEN: upgrade Consumption to Flex Consumption, upgrade Azure Functions plan, migrate hosting plan, upgrade Functions SKU, move to Flex Consumption, upgrade Azure service tier, change hosting plan, upgrade function app plan, migrate App Service to Container Apps.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-upgrade",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-upgrade/SKILL.md",
+      "triggers": "azure;upgrade"
+    },
+    {
+      "description": "Pre-deployment validation for Azure readiness. Run deep checks on configuration, infrastructure (Bicep or Terraform), RBAC role assignments, managed identity permissions, and prerequisites before deploying. WHEN: validate my app, check deployment readiness, run preflight checks, verify configuration, check if ready to deploy, validate azure.yaml, validate Bicep, test before deploying, troubleshoot deployment errors, validate Azure Functions, validate function app, validate serverless deployment, verify RBAC roles, check role assignments, review managed identity permissions, what-if analysis.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-validate",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/azure-validate/SKILL.md",
+      "triggers": "azure;validate"
+    },
+    {
+      "description": "Build real-time messaging applications using Azure Web PubSub SDKs for JavaScript (@azure/web-pubsub, @azure/web-pubsub-client). Use when implementing WebSocket-based real-time features, pub/sub messaging, group chat, or live notifications.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "azure-web-pubsub-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/azure-web-pubsub-ts/SKILL.md",
+      "triggers": "azure;web;pubsub;ts"
+    },
+    {
+      "description": "Create banners using AI image generation. Discuss format/style, generate variations, iterate with user feedback, crop to target ratio. Use when user wants to create a banner, header, hero image, cover image, GitHub banner, Twitter header, or readme banner.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "banner-creator",
+      "src_path": "lib/resciencelab-opc-skills/skills/banner-creator/SKILL.md",
+      "triggers": "banner;creator"
+    },
+    {
+      "description": "Automate Bitbucket repositories, pull requests, branches, issues, and workspace management via Rube MCP (Composio). Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "bitbucket-automation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bitbucket-automation/SKILL.md",
+      "triggers": "bitbucket;automation"
+    },
+    {
+      "description": "Discovers available Azure OpenAI model capacity across regions and projects. Analyzes quota limits, compares availability, and recommends optimal deployment locations based on capacity requirements. USE FOR: find capacity, check quota, where can I deploy, capacity discovery, best region for capacity, multi-project capacity search, quota analysis, model availability, region comparison, check TPM availability. DO NOT USE FOR: actual deployment (hand off to preset or customize after discovery), quota increase requests (direct user to Azure Portal), listing existing deployments.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "capacity",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/capacity/SKILL.md",
+      "triggers": "capacity"
+    },
+    {
+      "description": "Safety guardrails for destructive commands. Warns before rm -rf, DROP TABLE, force-push, git reset --hard, kubectl delete, and similar destructive operations. User can override each warning. Use when touching prod, debugging live systems, or working in a shared environment. Use when asked to \"be careful\", \"safety mode\", \"prod mode\", or \"careful mode\". (gstack)",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "careful",
+      "src_path": "lib/garrytan-gstack/careful/SKILL.md",
+      "triggers": "careful"
+    },
+    {
+      "description": "Transform the agent into a Cloud Solution Architect following Azure Architecture Center best practices. Use when designing cloud architectures, reviewing system designs, selecting architecture styles, applying cloud design patterns, making technology choices, or conducting Well-Architected Framework reviews.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "cloud-solution-architect",
+      "src_path": "lib/microsoft-skills/.github/skills/cloud-solution-architect/SKILL.md",
+      "triggers": "cloud;solution;architect"
+    },
+    {
+      "description": "Git-aware undo by logical work unit (track, phase, or task)",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "conductor-revert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/conductor-revert/SKILL.md",
+      "triggers": "conductor;revert"
+    },
+    {
+      "description": "Build applications powered by GitHub Copilot using the Copilot SDK. Use when creating programmatic integrations with Copilot across Node.js/TypeScript, Python, Go, or .NET. Covers session management, custom tools, streaming, hooks, MCP servers, BYOK providers, session persistence, custom agents, skills, and deployment patterns. Requires GitHub Copilot CLI installed and a GitHub Copilot subscription (unless using BYOK).",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "copilot-sdk",
+      "src_path": "lib/microsoft-skills/.github/skills/copilot-sdk/SKILL.md",
+      "triggers": "copilot;sdk"
+    },
+    {
+      "description": "Create a git branch following Sentry naming conventions. Use when asked to \"create a branch\", \"new branch\", \"start a branch\", \"make a branch\", \"switch to a new branch\", or when starting new work on the default branch.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "create-branch",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/create-branch/SKILL.md",
+      "triggers": "create;branch"
+    },
+    {
+      "description": "Interactive guided deployment flow for Azure OpenAI models with full customization control. Step-by-step selection of model version, SKU (GlobalStandard/Standard/ProvisionedManaged), capacity, RAI policy (content filter), and advanced options (dynamic quota, priority processing, spillover). USE FOR: custom deployment, customize model deployment, choose version, select SKU, set capacity, configure content filter, RAI policy, deployment options, detailed deployment, advanced deployment, PTU deployment, provisioned throughput. DO NOT USE FOR: quick deployment to optimal region (use preset).",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "customize",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/customize/SKILL.md",
+      "triggers": "customize"
+    },
+    {
+      "description": "Unified Azure OpenAI model deployment skill with intelligent intent-based routing. Handles quick preset deployments, fully customized deployments (version/SKU/capacity/RAI policy), and capacity discovery across regions and projects. USE FOR: deploy model, deploy gpt, create deployment, model deployment, deploy openai model, set up model, provision model, find capacity, check model availability, where can I deploy, best region for model, capacity analysis. DO NOT USE FOR: listing existing deployments (use foundry_models_deployments_list MCP tool), deleting deployments, agent creation (use agent/create), project creation (use project/create).",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "deploy-model",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/SKILL.md",
+      "triggers": "deploy;model"
+    },
+    {
+      "description": "Microsoft Entra Agent ID (preview) for creating OAuth2-capable AI agent identities via Microsoft Graph beta API. Covers Agent Identity Blueprints, BlueprintPrincipals, Agent Identities, required permissions, sponsors, and Workload Identity Federation. Includes Microsoft Entra SDK for AgentID (containerized sidecar) for polyglot agent authentication (Docker/Kubernetes), 3P agent integration, autonomous and interactive agent patterns. Triggers: \"agent identity\", \"agent id\", \"Agent Identity Blueprint\", \"BlueprintPrincipal\", \"entra agent\", \"agent identity provisioning\", \"Graph agent identity\", \"entra sidecar\", \"agent id sidecar\", \"auth sidecar\", \"3P agent\", \"third-party agent identity\", \"polyglot agent auth\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "entra-agent-id",
+      "src_path": "lib/microsoft-skills/.github/skills/entra-agent-id/SKILL.md",
+      "triggers": "\"agent identity\", \"agent id\", \"Agent Identity Blueprint\", \"BlueprintPrincipal\", \"entra agent\", \"agent identity provisioning\", \"Graph agent identity\", \"entra sidecar\", \"agent id sidecar\", \"auth sidecar\", \"3P agent\", \"third-party agent identity\", \"polyglot agent auth\"."
+    },
+    {
+      "description": "Guides Microsoft Entra ID app registration, OAuth 2.0 authentication, and MSAL integration. USE FOR: create app registration, register Azure AD app, configure OAuth, set up authentication, add API permissions, generate service principal, MSAL example, console app auth, Entra ID setup, Azure AD authentication. DO NOT USE FOR: Azure RBAC or role assignments (use azure-rbac), Key Vault secrets (use azure-keyvault-expiration-audit), Azure resource security (use azure-security).",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "entra-app-registration",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/entra-app-registration/SKILL.md",
+      "triggers": "entra;app;registration"
+    },
+    {
+      "description": "Create FastAPI routers with CRUD operations, authentication dependencies, and proper response models. Use when building REST API endpoints, creating new routes, implementing CRUD operations, or adding authenticated endpoints in FastAPI applications.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "fastapi-router-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/fastapi-router-py/SKILL.md",
+      "triggers": "fastapi;router;py"
+    },
+    {
+      "description": "Review and create distinctive, production-grade frontend interfaces with high design quality and design system compliance. Evaluates using three pillars: frictionless insight-to-action, quality craft, and trustworthy building. USE FOR: PR reviews, design reviews, accessibility audits, design system compliance checks, creative frontend design, UI code review, component reviews, responsive design checks, theme testing, and creating memorable UI. DO NOT USE FOR: Backend API reviews, database schema reviews, infrastructure or DevOps work, pure business logic without UI, or non-frontend code.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "frontend-design-review",
+      "src_path": "lib/microsoft-skills/.github/skills/frontend-design-review/SKILL.md",
+      "triggers": "frontend;design;review"
+    },
+    {
+      "description": "Build dark-themed React applications using Tailwind CSS with custom theming, glassmorphism effects, and Framer Motion animations. Use when creating dashboards, admin panels, or data-rich interfaces with a refined dark aesthetic.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "frontend-ui-dark-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/frontend-ui-dark-ts/SKILL.md",
+      "triggers": "frontend;ui;dark;ts"
+    },
+    {
+      "description": "Fetch unread GitHub notifications for open PRs where review is requested from a specified team or opened by a team member. Use when asked to \"find PRs I need to review\", \"show my review requests\", \"what needs my review\", \"fetch GitHub review requests\", or \"check team review queue\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "gh-review-requests",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/gh-review-requests/SKILL.md",
+      "triggers": "gh;review;requests"
+    },
+    {
+      "description": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git-guardrails-claude-code",
+      "src_path": "lib/mattpocock-skills/git-guardrails-claude-code/SKILL.md",
+      "triggers": "git;guardrails;claude;code"
+    },
+    {
+      "description": "Master Git hooks setup with Husky, lint-staged, pre-commit framework, and commitlint. Automate code quality gates, formatting, linting, and commit message enforcement before code reaches CI.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git-hooks-automation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/git-hooks-automation/SKILL.md",
+      "triggers": "git;hooks;automation"
+    },
+    {
+      "description": "Orchestrate a comprehensive git workflow from code review through PR creation, leveraging specialized agents for quality assurance, testing, and deployment readiness. This workflow implements modern g",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git-pr-workflows-git-workflow",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/git-pr-workflows-git-workflow/SKILL.md",
+      "triggers": "git;pr;workflows;git;workflow"
+    },
+    {
+      "description": "You are an **expert onboarding specialist and knowledge transfer architect** with deep experience in remote-first organizations, technical team integration, and accelerated learning methodologies. You",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git-pr-workflows-onboard",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/git-pr-workflows-onboard/SKILL.md",
+      "triggers": "git;pr;workflows;onboard"
+    },
+    {
+      "description": "You are a PR optimization expert specializing in creating high-quality pull requests that facilitate efficient code reviews. Generate comprehensive PR descriptions, automate review processes, and ensu",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git-pr-workflows-pr-enhance",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/git-pr-workflows-pr-enhance/SKILL.md",
+      "triggers": "git;pr;workflows;pr;enhance"
+    },
+    {
+      "description": "Stage all changes, create a conventional commit, and push to the remote branch. Use when explicitly asks to push changes (\"push this\", \"commit and push\"), mentions saving work to remote (\"save to github\", \"push to remote\"), or completes a feature and wants to share it.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git-pushing",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/git-pushing/SKILL.md",
+      "triggers": "git;pushing"
+    },
+    {
+      "description": "Git workflow patterns including branching strategies, commit conventions, merge vs rebase, conflict resolution, and collaborative development best practices for teams of all sizes.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git-workflow",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/git-workflow/SKILL.md",
+      "triggers": "git;workflow"
+    },
+    {
+      "description": "Analyze a GitHub issue and create a detailed technical specification",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git:analyze-issue",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/git/skills/analyze-issue/SKILL.md",
+      "triggers": "git;analyze;issue"
+    },
+    {
+      "description": "Add line-specific review comments to pull requests using GitHub CLI API",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git:attach-review-to-pr",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/git/skills/attach-review-to-pr/SKILL.md",
+      "triggers": "git;attach;review;to;pr"
+    },
+    {
+      "description": "Create well-formatted commits with conventional commit messages and emoji",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git:commit",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/git/skills/commit/SKILL.md",
+      "triggers": "git;commit"
+    },
+    {
+      "description": "Compare files and directories between git worktrees or worktree and current branch",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git:compare-worktrees",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/git/skills/compare-worktrees/SKILL.md",
+      "triggers": "git;compare;worktrees"
+    },
+    {
+      "description": "Create pull requests using GitHub CLI with proper templates and formatting",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git:create-pr",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/git/skills/create-pr/SKILL.md",
+      "triggers": "git;create;pr"
+    },
+    {
+      "description": "Create and setup git worktrees for parallel development with automatic dependency installation",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git:create-worktree",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/git/skills/create-worktree/SKILL.md",
+      "triggers": "git;create;worktree"
+    },
+    {
+      "description": "Load all open issues from GitHub and save them as markdown files",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git:load-issues",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/git/skills/load-issues/SKILL.md",
+      "triggers": "git;load;issues"
+    },
+    {
+      "description": "Merge changes from worktrees into current branch with selective file checkout, cherry-picking, interactive patch selection, or manual merge",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git:merge-worktree",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/git/skills/merge-worktree/SKILL.md",
+      "triggers": "git;merge;worktree"
+    },
+    {
+      "description": "Use when working on multiple branches simultaneously, context switching without stashing, reviewing PRs while developing, testing in isolation, or comparing implementations across branches - provides git worktree commands and workflow patterns for parallel development with multiple working directories.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "git:worktrees",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/git/skills/worktrees/SKILL.md",
+      "triggers": "git;worktrees"
+    },
+    {
+      "description": "Use the `gh` CLI for issues, pull requests, Actions runs, and GitHub API queries.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "github",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/github/SKILL.md",
+      "triggers": "github"
+    },
+    {
+      "description": "Automate GitHub repositories, issues, pull requests, branches, CI/CD, and permissions via Rube MCP (Composio). Manage code workflows, review PRs, search code, and handle deployments programmatically.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "github-automation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/github-automation/SKILL.md",
+      "triggers": "github;automation"
+    },
+    {
+      "description": "Convert raw notes, error logs, voice dictation, or screenshots into crisp GitHub-flavored markdown issue reports. Use when the user pastes bug info, error messages, or informal descriptions and wants a structured GitHub issue. Supports images/GIFs for visual evidence.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "github-issue-creator",
+      "src_path": "lib/microsoft-skills/.github/skills/github-issue-creator/SKILL.md",
+      "triggers": "github;issue;creator"
+    },
+    {
+      "description": "Triage GitHub issues through a label-based state machine with interactive grilling sessions. Use when user wants to triage issues, review incoming bugs or feature requests, prepare issues for an AFK agent, or manage issue workflow.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "github-triage",
+      "src_path": "lib/mattpocock-skills/github-triage/SKILL.md",
+      "triggers": "github;triage"
+    },
+    {
+      "description": "Patterns for automating GitHub workflows with AI assistance, inspired by [Gemini CLI](https://github.com/google-gemini/gemini-cli) and modern DevOps practices.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "github-workflow-automation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/github-workflow-automation/SKILL.md",
+      "triggers": "github;workflow;automation"
+    },
+    {
+      "description": "Automate GitLab project management, issues, merge requests, pipelines, branches, and user operations via Rube MCP (Composio). Always search tools first for current schemas.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "gitlab-automation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/gitlab-automation/SKILL.md",
+      "triggers": "gitlab;automation"
+    },
+    {
+      "description": "Expert-level Home Assistant configuration management with efficient deployment workflows (git and rapid scp iteration), remote CLI access via SSH and hass-cli, automation verification protocols, log analysis, reload vs restart optimization, and comprehensive Lovelace dashboard management for tablet-optimized UIs. Includes template patterns, card types, debugging strategies, and real-world examples.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "home-assistant-manager",
+      "src_path": "lib/komal-skynet-claude-skill-homeassistant/SKILL.md",
+      "triggers": "home;assistant;manager"
+    },
+    {
+      "description": "Build hosted agents using Azure AI Projects SDK with ImageBasedHostedAgentDefinition. Use when creating container-based agents that run custom code in Azure AI Foundry. Triggers: \"ImageBasedHostedAgentDefinition\", \"hosted agent\", \"container agent\", \"create_version\", \"ProtocolVersionRecord\", \"AgentProtocol.RESPONSES\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "hosted-agents-v2-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/hosted-agents-v2-py/SKILL.md",
+      "triggers": "\"ImageBasedHostedAgentDefinition\", \"hosted agent\", \"container agent\","
+    },
+    {
+      "description": "Interact with GitHub issues - create, list, and view issues.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "issues",
+      "src_path": "lib/shpigford-skills/issues/SKILL.md",
+      "triggers": "issues"
+    },
+    {
+      "description": "Production-ready patterns for building LLM applications, inspired by [Dify](https://github.com/langgenius/dify) and industry best practices.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "llm-app-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/llm-app-patterns/SKILL.md",
+      "triggers": "llm;app;patterns"
+    },
+    {
+      "description": "Microsoft 365 Agents SDK for .NET. Build multichannel agents for Teams/M365/Copilot Studio with ASP.NET Core hosting, AgentApplication routing, and MSAL-based auth. Triggers: \"Microsoft 365 Agents SDK\", \"Microsoft.Agents\", \"AddAgentApplicationOptions\", \"AgentApplication\", \"AddAgentAspNetAuthentication\", \"Copilot Studio client\", \"IAgentHttpAdapter\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "m365-agents-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/m365-agents-dotnet/SKILL.md",
+      "triggers": "m365;agents;dotnet"
+    },
+    {
+      "description": "Microsoft 365 Agents SDK for Python. Build multichannel agents for Teams/M365/Copilot Studio with aiohttp hosting, AgentApplication routing, streaming responses, and MSAL-based auth. Triggers: \"Microsoft 365 Agents SDK\", \"microsoft_agents\", \"AgentApplication\", \"start_agent_process\", \"TurnContext\", \"Copilot Studio client\", \"CloudAdapter\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "m365-agents-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/m365-agents-py/SKILL.md",
+      "triggers": "m365;agents;py"
+    },
+    {
+      "description": "Microsoft 365 Agents SDK for TypeScript/Node.js. Build multichannel agents for Teams/M365/Copilot Studio with AgentApplication routing, Express hosting, streaming responses, and Copilot Studio client integration. Triggers: \"Microsoft 365 Agents SDK\", \"@microsoft/agents-hosting\", \"AgentApplication\", \"startServer\", \"streamingResponse\", \"Copilot Studio client\", \"@microsoft/agents-copilotstudio-client\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "m365-agents-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/m365-agents-ts/SKILL.md",
+      "triggers": "m365;agents;ts"
+    },
+    {
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP), Node/TypeScript (MCP SDK), or C#/.NET (Microsoft MCP SDK).",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "mcp-builder",
+      "src_path": "lib/microsoft-skills/.github/skills/mcp-builder/SKILL.md",
+      "triggers": "mcp;builder"
+    },
+    {
+      "description": "Microsoft Entra Authentication Events SDK for .NET. Azure Functions triggers for custom authentication extensions. Use for token enrichment, custom claims, attribute collection, and OTP customization in Entra ID. Triggers: \"Authentication Events\", \"WebJobsAuthenticationEventsTrigger\", \"OnTokenIssuanceStart\", \"OnAttributeCollectionStart\", \"custom claims\", \"token enrichment\", \"Entra custom extension\", \"authentication extension\".",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "microsoft-azure-webjobs-extensions-authentication-events-dotnet",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-dotnet/skills/microsoft-azure-webjobs-extensions-authentication-events-dotnet/SKILL.md",
+      "triggers": "microsoft;azure;webjobs;extensions;authentication"
+    },
+    {
+      "description": "Deploy, evaluate, and manage Foundry agents end-to-end: Docker build, ACR push, hosted/prompt agent create, container start, batch eval, prompt optimization, prompt optimizer workflows, agent.yaml, dataset curation from traces. USE FOR: deploy agent to Foundry, hosted agent, create agent, invoke agent, evaluate agent, run batch eval, optimize prompt, improve prompt, prompt optimization, prompt optimizer, improve agent instructions, optimize agent instructions, optimize system prompt, deploy model, Foundry project, RBAC, role assignment, permissions, quota, capacity, region, troubleshoot agent, deployment failure, create dataset from traces, dataset versioning, eval trending, create AI Services, Cognitive Services, create Foundry resource, provision resource, knowledge index, agent monitoring, customize deployment, onboard, availability. DO NOT USE FOR: Azure Functions, App Service, general Azure deploy (use azure-deploy), general Azure prep (use azure-prepare).",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "microsoft-foundry",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/microsoft-foundry/SKILL.md",
+      "triggers": "microsoft;foundry"
+    },
+    {
+      "description": "Guide for using the Netlify CLI and deploying sites. Use when installing the CLI, linking sites, deploying (Git-based or manual), managing environment variables, or running local development. Covers netlify dev, netlify deploy, Git vs non-Git workflows, and environment variable management.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "netlify-cli-and-deploy",
+      "src_path": "lib/netlify-context-and-tools/codex/skills/netlify-cli-and-deploy/SKILL.md",
+      "triggers": "netlify;cli;and;deploy"
+    },
+    {
+      "description": "7-stage super workflow for GitHub repo audit, cleanup, PR review, and competitor analysis",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "openclaw-github-repo-commander",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/openclaw-github-repo-commander/SKILL.md",
+      "triggers": "github;git;repository;audit;cleanup;workflow;devtools;automation;code-review;security"
+    },
+    {
+      "description": "Generate AI-powered podcast-style audio narratives using Azure OpenAI's GPT Realtime Mini model via WebSocket. Use when building text-to-speech features, audio narrative generation, podcast creation from content, or integrating with Azure OpenAI Realtime API for real audio output. Covers full-stack implementation from React frontend to Python FastAPI backend with WebSocket streaming.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "podcast-generation",
+      "src_path": "lib/microsoft-skills/.github/skills/podcast-generation/SKILL.md",
+      "triggers": "podcast;generation"
+    },
+    {
+      "description": "Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices. Use when user wants to convert a PRD to issues, create implementation tickets, or break down a PRD into work items.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "prd-to-issues",
+      "src_path": "lib/mattpocock-skills/prd-to-issues/SKILL.md",
+      "triggers": "prd;to;issues"
+    },
+    {
+      "description": "Intelligently deploys Azure OpenAI models to optimal regions by analyzing capacity across all available regions. Automatically checks current region first and shows alternatives if needed. USE FOR: quick deployment, optimal region, best region, automatic region selection, fast setup, multi-region capacity check, high availability deployment, deploy to best location. DO NOT USE FOR: custom SKU selection (use customize), specific version selection (use customize), custom capacity configuration (use customize), PTU deployments (use customize).",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "preset",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-skills/skills/microsoft-foundry/models/deploy-model/preset/SKILL.md",
+      "triggers": "preset"
+    },
+    {
+      "description": "Operate execution flow across GitHub and Linear by triaging issues and pull requests, linking active work, and keeping GitHub public-facing while Linear remains the internal execution layer. Use when the user wants backlog control, PR triage, or GitHub-to-Linear coordination.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "project-flow-ops",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/project-flow-ops/SKILL.md",
+      "triggers": "project;flow;ops"
+    },
+    {
+      "description": "A comprehensive collection of battle-tested prompts inspired by [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts) and community best practices.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "prompt-library",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/prompt-library/SKILL.md",
+      "triggers": "prompt;library"
+    },
+    {
+      "description": "Create Pydantic models following the multi-model pattern with Base, Create, Update, Response, and InDB variants. Use when defining API request/response schemas, database models, or data validation in Python applications using Pydantic v2.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "pydantic-models-py",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-python/skills/pydantic-models-py/SKILL.md",
+      "triggers": "pydantic;models;py"
+    },
+    {
+      "description": "Create React Flow node components with TypeScript types, handles, and Zustand integration. Use when building custom nodes for React Flow canvas, creating visual workflow editors, or implementing node-based UI components.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "react-flow-node-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/react-flow-node-ts/SKILL.md",
+      "triggers": "react;flow;node;ts"
+    },
+    {
+      "description": "Generate user demand research reports from real user feedback. Scrape and analyze feature requests, complaints, and questions from Reddit, X, and GitHub. Use when user wants to do demand research, find feature requests, analyze user demand, or run RequestHunt queries.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "requesthunt",
+      "src_path": "lib/resciencelab-opc-skills/skills/requesthunt/SKILL.md",
+      "triggers": "requesthunt"
+    },
+    {
+      "description": "Guide for creating effective skills for AI coding agents working with Azure SDKs and Microsoft Foundry services. Use when creating new skills or updating existing skills.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "skill-creator",
+      "src_path": "lib/microsoft-skills/.github/skills/skill-creator/SKILL.md",
+      "triggers": "skill;creator"
+    },
+    {
+      "description": "-Automatically convert documentation websites, GitHub repositories, and PDFs into Claude AI skills in minutes.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "skill-seekers",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/skill-seekers/SKILL.md",
+      "triggers": "skill;seekers"
+    },
+    {
+      "description": "You are a GitHub issue resolution expert specializing in systematic bug investigation, feature implementation, and collaborative development workflows. Your expertise spans issue triage, root cause an",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "team-collaboration-issue",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/team-collaboration-issue/SKILL.md",
+      "triggers": "team;collaboration;issue"
+    },
+    {
+      "description": "Triage a bug or issue by exploring the codebase to find root cause, then create a GitHub issue with a TDD-based fix plan. Use when user reports a bug, wants to file an issue, mentions \"triage\", or wants to investigate and plan a fix for a problem.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "triage-issue",
+      "src_path": "lib/mattpocock-skills/triage-issue/SKILL.md",
+      "triggers": "triage;issue"
+    },
+    {
+      "description": "Use when starting feature work that needs isolation from current workspace or before executing implementation plans - creates isolated git worktrees with smart directory selection and safety verification",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "using-git-worktrees",
+      "src_path": "lib/obra-superpowers/skills/using-git-worktrees/SKILL.md",
+      "triggers": "using;git;worktrees"
+    },
+    {
+      "description": "Use when you need to run interactive CLI tools (vim, git rebase -i, Python REPL, etc.) that require real-time input/output - provides tmux-based approach for controlling interactive sessions through detached sessions and send-keys",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "using-tmux-for-interactive-commands",
+      "src_path": "lib/obra-superpowers-lab/skills/using-tmux-for-interactive-commands/SKILL.md",
+      "triggers": "using;tmux;for;interactive;commands"
+    },
+    {
+      "description": "Secure environment variable management ensuring secrets are never exposed in Claude sessions, terminals, logs, or git commits",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "varlock-claude-skill",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/varlock-claude-skill/SKILL.md",
+      "triggers": "varlock;claude;skill"
+    },
+    {
+      "description": "Converts VitePress/GFM wiki markdown to Azure DevOps Wiki-compatible format. Generates a Node.js build script that transforms Mermaid syntax, strips front matter, fixes links, and outputs ADO-compatible copies to dist/ado-wiki/.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "wiki-ado-convert",
+      "src_path": "lib/microsoft-skills/.github/plugins/deep-wiki/skills/wiki-ado-convert/SKILL.md",
+      "triggers": "wiki;ado;convert"
+    },
+    {
+      "description": "Analyzes code repositories and generates hierarchical documentation structures with onboarding guides. Use when the user wants to create a wiki, generate documentation, map a codebase structure, or understand a project's architecture at a high level.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "wiki-architect",
+      "src_path": "lib/microsoft-skills/.github/plugins/deep-wiki/skills/wiki-architect/SKILL.md",
+      "triggers": "wiki;architect"
+    },
+    {
+      "description": "Generates llms.txt and llms-full.txt files for LLM-friendly project documentation following the llms.txt specification. Use when the user wants to create LLM-readable summaries, llms.txt files, or make their wiki accessible to language models.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "wiki-llms-txt",
+      "src_path": "lib/microsoft-skills/.github/plugins/deep-wiki/skills/wiki-llms-txt/SKILL.md",
+      "triggers": "wiki;llms;txt"
+    },
+    {
+      "description": "Generates rich technical documentation pages with dark-mode Mermaid diagrams, source code citations, and first-principles depth. Use when writing documentation, generating wiki pages, creating technical deep-dives, or documenting specific components or systems.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "wiki-page-writer",
+      "src_path": "lib/microsoft-skills/.github/plugins/deep-wiki/skills/wiki-page-writer/SKILL.md",
+      "triggers": "wiki;page;writer"
+    },
+    {
+      "description": "Answers questions about a code repository using source file analysis. Use when the user asks a question about how something works, wants to understand a component, or needs help navigating the codebase.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "wiki-qa",
+      "src_path": "lib/microsoft-skills/.github/plugins/deep-wiki/skills/wiki-qa/SKILL.md",
+      "triggers": "wiki;qa"
+    },
+    {
+      "description": "Conducts multi-turn iterative deep research on specific topics within a codebase with zero tolerance for shallow analysis. Use when the user wants an in-depth investigation, needs to understand how something works across multiple files, or asks for comprehensive analysis of a specific system or pattern.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "wiki-researcher",
+      "src_path": "lib/microsoft-skills/.github/plugins/deep-wiki/skills/wiki-researcher/SKILL.md",
+      "triggers": "wiki;researcher"
+    },
+    {
+      "description": "Packages generated wiki Markdown into a VitePress static site with dark theme, dark-mode Mermaid diagrams with click-to-zoom, and production build output. Use when the user wants to create a browsable website from generated wiki pages.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "wiki-vitepress",
+      "src_path": "lib/microsoft-skills/.github/plugins/deep-wiki/skills/wiki-vitepress/SKILL.md",
+      "triggers": "wiki;vitepress"
+    },
+    {
+      "description": "Use this skill when implementing tasks according to Conductor's TDD workflow, handling phase checkpoints, managing git commits for tasks, or understanding the verification protocol.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "workflow-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/workflow-patterns/SKILL.md",
+      "triggers": "workflow;patterns"
+    },
+    {
+      "description": "Create Zustand stores with TypeScript, subscribeWithSelector middleware, and proper state/action separation. Use when building React state management, creating global stores, or implementing reactive state patterns with Zustand.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "zustand-store-ts",
+      "src_path": "lib/microsoft-skills/.github/plugins/azure-sdk-typescript/skills/zustand-store-ts/SKILL.md",
+      "triggers": "zustand;store;ts"
+    }
+  ],
+  "sub_hub": "virsion-control",
+  "version": 1
+}
