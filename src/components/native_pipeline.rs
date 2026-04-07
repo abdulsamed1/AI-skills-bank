@@ -1106,9 +1106,11 @@ fn ensure_main_hub_routers(target_path: &Path) -> Result<(), SkillManageError> {
     };
 
     for entry in iter.flatten() {
-        if let Ok(ft) = entry.file_type() {
-            if ft.is_dir() {
-                let hub_name = entry.file_name();
+        let is_dir = entry.file_type().map(|ft| ft.is_dir()).unwrap_or(false)
+            || std::fs::metadata(entry.path()).map(|m| m.is_dir()).unwrap_or(false);
+
+        if is_dir {
+            let hub_name = entry.file_name();
                 let hub_name_str = hub_name.to_string_lossy();
                 
                 if hub_name_str.starts_with('.') {
@@ -1118,24 +1120,56 @@ fn ensure_main_hub_routers(target_path: &Path) -> Result<(), SkillManageError> {
                 let hub_path = entry.path();
                 let skill_path = hub_path.join("SKILL.md");
                 if !skill_path.exists() {
+                    let mut sub_hubs = Vec::new();
+                    if let Ok(sub_iter) = std::fs::read_dir(&hub_path) {
+                        for sub_entry in sub_iter.flatten() {
+                            if let Ok(sub_ft) = sub_entry.file_type() {
+                                if sub_ft.is_dir() && !sub_entry.file_name().to_string_lossy().starts_with('.') {
+                                    sub_hubs.push(sub_entry.file_name().to_string_lossy().into_owned());
+                                }
+                            }
+                        }
+                    }
+                    sub_hubs.sort();
+
+                    let mut table = String::from("| Sub-Hub | Routing |\n|---------|---------|\n");
+                    for sh in &sub_hubs {
+                        table.push_str(&format!("| {} | {}/routing.csv |\n", sh, sh));
+                    }
+
                     let content = format!(r#"---
 name: {}
-description: Main router for the {} hub. For story/epic requests, route to multiple sub-hubs when needed.
+description: |
+  Router for {} skills ({} sub-hubs).
+  DO NOT execute from this file. Follow the steps below to load the real skill.
 ---
 
-1. List available sub-folders in this hub.
-2. For simple requests: choose the single best sub-hub.
-3. For story/epic or multi-part requests: choose all relevant sub-hubs and process them sequentially.
-4. In each chosen sub-hub: open SKILL.md, read routing.csv, select 1-2 skills per sub-problem.
-5. Merge selected skills into one implementation plan and avoid duplicate/overlapping skills.
-"#, hub_name_str, hub_name_str);
+# {} Hub
+
+## Sub-Hubs
+
+{}
+
+## How To Use
+
+1. Match user request to a sub-hub from the table above.
+2. Open `<sub_hub>/routing.csv` in this directory.
+3. Find the `skill_id` row whose `description` best matches the task.
+4. Read the full skill from the `src_path` column (the SKILL.md in `lib/`).
+5. Follow that SKILL.md as the source of truth.
+
+## Anti-Hallucination
+
+- NEVER guess skill behavior from description alone.
+- ALWAYS load the actual SKILL.md from src_path before acting.
+- If ambiguous, present top 3 candidates to the user.
+"#, hub_name_str, hub_name_str, sub_hubs.len(), hub_name_str, table.trim());
 
                     std::fs::write(&skill_path, content).map_err(|e| {
                         SkillManageError::ConfigError(format!("Failed to write SKILL.md router: {}", e))
                     })?;
                 }
             }
-        }
     }
 
     Ok(())
@@ -1397,6 +1431,50 @@ fn write_native_artifacts(
         "subhubs": subhub_index
     });
     write_json_atomic(&output_dir.join("subhub-index.json"), &subhub_json)?;
+
+    let mut hub_info: std::collections::BTreeMap<String, Vec<&SubHubIndexEntry>> = std::collections::BTreeMap::new();
+    for entry in &subhub_index {
+        hub_info.entry(entry.hub.clone()).or_default().push(entry);
+    }
+
+    for (hub, entries) in hub_info {
+        let mut total_skills = 0;
+        let mut table = String::from("| Sub-Hub | Skills | Routing |\n|---------|--------|---------|\n");
+        for entry in &entries {
+            total_skills += entry.skills_count;
+            table.push_str(&format!("| {} | {} | {}/routing.csv |\n", entry.sub_hub, entry.skills_count, entry.sub_hub));
+        }
+
+        let content = format!(r#"---
+name: {}
+description: |
+  Router for {} skills ({} skills across {} sub-hubs).
+  DO NOT execute from this file. Follow the steps below to load the real skill.
+---
+
+# {} Hub
+
+## Sub-Hubs
+
+{}
+
+## How To Use
+
+1. Match user request to a sub-hub from the table above.
+2. Open `<sub_hub>/routing.csv` in this directory.
+3. Find the `skill_id` row whose `description` best matches the task.
+4. Read the full skill from the `src_path` column (the SKILL.md in `lib/`).
+5. Follow that SKILL.md as the source of truth.
+
+## Anti-Hallucination
+
+- NEVER guess skill behavior from description alone.
+- ALWAYS load the actual SKILL.md from src_path before acting.
+- If ambiguous, present top 3 candidates to the user.
+"#, hub, hub, total_skills, entries.len(), hub, table.trim());
+
+        write_file_atomic(&output_dir.join(&hub).join("SKILL.md"), content.as_bytes())?;
+    }
 
     let repo_names = skills
         .iter()
