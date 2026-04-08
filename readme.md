@@ -22,7 +22,7 @@ High-performance skill aggregation, classification & routing platform for AI age
 - **Source-of-Truth Loading**: Agents load canonical `SKILL.md` files directly from source repositories, not from catalogs. This eliminates hallucination risks and optimizes token usage.
 - **Hybrid Classification**: A dual-stage pipeline combines fast keyword rules (Step A) with LLM-powered semantic classification (Step B) to route skills into 12 domain hubs and 40+ sub-hubs.
 - **Smart Deduplication**: Skills are deduplicated by **name OR description** — catching both exact collisions and cross-repo clones with different names but identical content.
-- **Multi-Tool Support**: Skills sync to major AI tools including GitHub Copilot, Claude, free-code (claude-code), Hermes, Cursor, Gemini, Antigravity, OpenCode, Codex, and Windsurf.
+- **Multi-Tool Support**: Skills sync to major AI tools including GitHub Copilot, Claude-code, free-code (claude-code), Hermes, Cursor, Gemini, Antigravity, OpenCode, Codex, and Windsurf.
 - **Token Efficiency**: Load minimal metadata first, then source files on-demand—not batch-loading entire catalogs.
 - **Interactive TUI**: A rich terminal UI (powered by Ratatui) provides real-time dashboard, skill explorer, and pipeline monitoring.
 
