@@ -20,7 +20,7 @@ workflowType: 'prd'
 classification:
   projectType: CLI Tool
   domain: Developer Tools / AI Agent Workflows
-  complexity: Medium
+  complexity: high
   projectContext: brownfield
 ---
 

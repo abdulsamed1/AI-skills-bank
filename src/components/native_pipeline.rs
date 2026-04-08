@@ -1070,29 +1070,37 @@ pub fn sync_output_to_targets(
 
 /// Cleanup temporary .link.tmp files that may be left over from atomic link creation.
 fn cleanup_temp_link_files(source_root: &Path, targets: &[PathBuf]) -> Result<(), SkillManageError> {
-    // Check source root for any .*.link.tmp subdirectories
-    if let Ok(entries) = std::fs::read_dir(source_root) {
-        for entry in entries.flatten() {
-            if let Ok(name) = entry.file_name().into_string() {
-                if name.ends_with(".link.tmp") && entry.file_type().ok().map(|ft| ft.is_dir()).unwrap_or(false) {
-                    let path = entry.path();
-                    let _ = std::fs::remove_dir_all(&path);
-                }
-            }
-        }
-    }
-
-    // Check each target directory for *.link.tmp subdirectories
-    for target in targets {
-        if let Ok(entries) = std::fs::read_dir(target) {
+    fn cleanup_temp_link_files_in_dir(dir: &Path) {
+        if let Ok(entries) = std::fs::read_dir(dir) {
             for entry in entries.flatten() {
                 if let Ok(name) = entry.file_name().into_string() {
-                    if name.ends_with(".link.tmp") && entry.file_type().ok().map(|ft| ft.is_dir()).unwrap_or(false) {
+                    if name.ends_with(".link.tmp")
+                        && entry
+                            .file_type()
+                            .ok()
+                            .map(|ft| ft.is_dir())
+                            .unwrap_or(false)
+                    {
                         let path = entry.path();
                         let _ = std::fs::remove_dir_all(&path);
                     }
                 }
             }
+        }
+    }
+
+    // Check source root and its parent. Temp link dirs are created as siblings
+    // to the destination path, so parent directories must be scanned as well.
+    cleanup_temp_link_files_in_dir(source_root);
+    if let Some(parent) = source_root.parent() {
+        cleanup_temp_link_files_in_dir(parent);
+    }
+
+    // Check each target directory and parent directory for *.link.tmp.
+    for target in targets {
+        cleanup_temp_link_files_in_dir(target);
+        if let Some(parent) = target.parent() {
+            cleanup_temp_link_files_in_dir(parent);
         }
     }
 

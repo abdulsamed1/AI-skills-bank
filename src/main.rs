@@ -39,6 +39,18 @@ const TOOL_DEFS: &[ToolDef] = &[
         local_rel: ".claude/skills",
     },
     ToolDef {
+        key: "free-code",
+        label: "free-code (claude-code)",
+        global_rel: ".free-code-config/skills",
+        local_rel: ".free-code-config/skills",
+    },
+    ToolDef {
+        key: "hermes",
+        label: "Hermes",
+        global_rel: ".hermes/skills",
+        local_rel: ".hermes/skills",
+    },
+    ToolDef {
         key: "code",
         label: "Code (Codex)",
         global_rel: ".agents/skills",
@@ -1647,13 +1659,46 @@ fn cargo_toml_declares_skill_manage(path: &Path) -> bool {
 }
 
 fn workspace_root_from_repo_root(repo_root: &Path) -> PathBuf {
-    let name = repo_root.file_name().and_then(|n| n.to_str()).unwrap_or("");
-    if name.eq_ignore_ascii_case("skill-manage") {
-        if let Some(parent) = repo_root.parent() {
-            return parent.to_path_buf();
-        }
-    }
     repo_root.to_path_buf()
+}
+
+fn env_is_truthy(name: &str) -> bool {
+    std::env::var(name)
+        .map(|v| {
+            matches!(
+                v.trim().to_ascii_lowercase().as_str(),
+                "1" | "true" | "yes" | "on"
+            )
+        })
+        .unwrap_or(false)
+}
+
+fn migrate_legacy_workspace_root(config: &mut SetupConfig) -> bool {
+    if env_is_truthy("SKILL_MANAGE_KEEP_PARENT_WORKSPACE") {
+        return false;
+    }
+
+    let repo_root = PathBuf::from(&config.repo_root);
+    let workspace_root = PathBuf::from(&config.workspace_root);
+    let repo_name = repo_root
+        .file_name()
+        .and_then(|n| n.to_str())
+        .unwrap_or("");
+
+    if !repo_name.eq_ignore_ascii_case("skill-manage") {
+        return false;
+    }
+
+    let Some(parent) = repo_root.parent() else {
+        return false;
+    };
+
+    if workspace_root == parent {
+        config.workspace_root = repo_root.to_string_lossy().to_string();
+        return true;
+    }
+
+    false
 }
 
 fn config_path(repo_root: &Path) -> PathBuf {
@@ -1678,6 +1723,13 @@ fn load_config(path: &Path) -> Result<Option<SetupConfig>> {
     }
     if config.workspace_root.is_empty() {
         config.workspace_root = config.repo_root.clone();
+    }
+
+    if migrate_legacy_workspace_root(&mut config) {
+        eprintln!(
+            "[INFO] Migrated legacy workspace_root from parent directory to repo root. \
+Set SKILL_MANAGE_KEEP_PARENT_WORKSPACE=1 to keep the old behavior."
+        );
     }
 
     Ok(Some(config))

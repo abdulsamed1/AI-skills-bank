@@ -69,3 +69,28 @@ fn test_sync_output_copy_mode() -> Result<(), Box<dyn std::error::Error>> {
 
     Ok(())
 }
+
+#[test]
+fn test_sync_cleanup_removes_stale_link_temp_sibling() -> Result<(), Box<dyn std::error::Error>> {
+    let root = tempdir()?;
+    let source = root.path().join("skills-aggregated");
+    let target = root.path().join(".github").join("skills");
+    let stale_tmp = root.path().join(".github").join("skills.link.tmp");
+
+    fs::create_dir_all(source.join("ai").join("llm-agents"))?;
+    fs::write(
+        source.join("ai").join("llm-agents").join("routing.csv"),
+        "skill_id,triggers,score,src_path\n",
+    )?;
+
+    fs::create_dir_all(&target)?;
+    fs::create_dir_all(&stale_tmp)?;
+    fs::write(stale_tmp.join("leftover.txt"), "stale")?;
+
+    sync_output_to_targets(&source, &[target.clone()], NativeSyncMode::Copy)?;
+
+    assert!(target.join("ai").join("llm-agents").join("routing.csv").exists());
+    assert!(!stale_tmp.exists(), "stale .link.tmp sibling should be removed");
+
+    Ok(())
+}

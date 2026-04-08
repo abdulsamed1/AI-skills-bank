@@ -3,6 +3,16 @@ use std::io::{BufWriter, Write};
 use std::path::Path;
 use tempfile::NamedTempFile;
 
+fn remove_path_best_effort(path: &Path) {
+    if std::fs::symlink_metadata(path).is_err() {
+        return;
+    }
+
+    let _ = std::fs::remove_file(path);
+    let _ = std::fs::remove_dir(path);
+    let _ = std::fs::remove_dir_all(path);
+}
+
 /// Write data to a file atomically by writing to a temporary file and renaming it.
 pub fn write_file_atomic(path: &Path, contents: &[u8]) -> Result<(), SkillManageError> {
     let parent = path.parent().ok_or_else(|| {
@@ -189,6 +199,7 @@ pub fn create_link_atomic(src: &Path, dest: &Path) -> Result<(), SkillManageErro
             // avoid destructive behavior that would delete user-managed
             // skills or other files. Caller should handle fallback (e.g.
             // perform a non-destructive merge copy).
+            remove_path_best_effort(&temp_dest);
             return Err(SkillManageError::ConfigError(format!(
                 "Destination {} exists and is not a link; refusing to replace to avoid data loss",
                 dest.display()
@@ -196,7 +207,14 @@ pub fn create_link_atomic(src: &Path, dest: &Path) -> Result<(), SkillManageErro
         }
     }
 
-    std::fs::rename(&temp_dest, dest)?;
+    if let Err(e) = std::fs::rename(&temp_dest, dest) {
+        remove_path_best_effort(&temp_dest);
+        return Err(SkillManageError::ConfigError(format!(
+            "Failed to finalize link {}: {}",
+            dest.display(),
+            e
+        )));
+    }
 
     Ok(())
 }

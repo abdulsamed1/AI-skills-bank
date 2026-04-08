@@ -22,7 +22,7 @@ High-performance skill aggregation, classification & routing platform for AI age
 - **Source-of-Truth Loading**: Agents load canonical `SKILL.md` files directly from source repositories, not from catalogs. This eliminates hallucination risks and optimizes token usage.
 - **Hybrid Classification**: A dual-stage pipeline combines fast keyword rules (Step A) with LLM-powered semantic classification (Step B) to route skills into 12 domain hubs and 40+ sub-hubs.
 - **Smart Deduplication**: Skills are deduplicated by **name OR description** — catching both exact collisions and cross-repo clones with different names but identical content.
-- **Multi-Tool Support**: Skills sync to all major AI tools: GitHub Copilot, Claude Code, Cursor, Gemini CLI, Antigravity, OpenCode, Codex, and Windsurf.
+- **Multi-Tool Support**: Skills sync to major AI tools including GitHub Copilot, Claude, free-code (claude-code), Hermes, Cursor, Gemini, Antigravity, OpenCode, Codex, and Windsurf.
 - **Token Efficiency**: Load minimal metadata first, then source files on-demand—not batch-loading entire catalogs.
 - **Interactive TUI**: A rich terminal UI (powered by Ratatui) provides real-time dashboard, skill explorer, and pipeline monitoring.
 
@@ -188,6 +188,8 @@ Sync skills to any of these destinations:
 | Tool | Project | Global |
 |---|---|---|
 | **Claude** | `.claude/skills/` | `~/.claude/skills/` |
+| **free-code (claude-code)** | `.free-code-config/skills/` | `~/.free-code-config/skills/` |
+| **Hermes** | `.hermes/skills/` | `~/.hermes/skills/` |
 | **Code (Codex)** | `.agents/skills/` | `~/.agents/skills/` |
 | **GitHub Copilot** | `.github/skills/` | `~/.copilot/skills/` |
 | **Cursor** | `.cursor/skills/` | `~/.cursor/skills/` |
@@ -195,7 +197,6 @@ Sync skills to any of these destinations:
 | **Antigravity** | `.agent/skills/` | `~/.gemini/antigravity/skills/` |
 | **OpenCode** | `.opencode/skills/` | `~/.config/opencode/skills/` |
 | **Windsurf** | `.windsurf/skills/` | `~/.codeium/windsurf/skills/` |
-| **Hermes** | `.hermes/skills/` | `~/.hermes/skills/` |
 
 ---
 

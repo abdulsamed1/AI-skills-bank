@@ -57,3 +57,26 @@ fn test_create_link_atomic() -> Result<(), Box<dyn std::error::Error>> {
     assert!(src.join("skill.txt").exists());
     Ok(())
 }
+
+#[test]
+fn test_create_link_atomic_cleans_temp_on_existing_directory() -> Result<(), Box<dyn std::error::Error>> {
+    let root = tempdir()?;
+    let src = root.path().join("src");
+    let dest = root.path().join("dest");
+    let temp_link_path = root.path().join("dest.link.tmp");
+
+    fs::create_dir_all(&src)?;
+    fs::write(src.join("skill.txt"), "skill data")?;
+
+    // Existing destination simulates local skills directories that should be
+    // preserved and merged, not replaced by a junction/symlink.
+    fs::create_dir_all(&dest)?;
+    fs::write(dest.join("existing.txt"), "keep")?;
+
+    let result = create_link_atomic(&src, &dest);
+    assert!(result.is_err());
+    assert!(!temp_link_path.exists(), "temp link path should be cleaned on failure");
+    assert!(dest.join("existing.txt").exists());
+
+    Ok(())
+}
