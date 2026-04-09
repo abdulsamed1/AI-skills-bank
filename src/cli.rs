@@ -1,8 +1,8 @@
 use clap::{Parser, Subcommand};
 
 #[derive(Parser)]
-#[command(name = "skill-manage")]
-#[command(about = "skill-manage aggregation and sync workflows", long_about = None)]
+#[command(name = "skills-bank")]
+#[command(about = "skills-bank aggregation and sync workflows", long_about = None)]
 pub struct Cli {
     #[command(subcommand)]
     pub command: Commands,
@@ -26,7 +26,7 @@ pub struct Cli {
 
 #[derive(Subcommand, Debug)]
 pub enum Commands {
-    /// Fetch remote repositories from.skill-manage-cli-config.json
+    /// Fetch remote repositories from.skills-bank-cli-config.json
     Fetch {
         /// Only check for updates without downloading
         #[arg(long)]

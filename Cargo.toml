@@ -1,12 +1,12 @@
 [package]
-name = "skill-manage"
+name = "skills-bank"
 version = "0.1.0"
 edition = "2021"
 authors = ["ABDULSAMED"]
 description = "Ultra-lightweight routing layer for AI agent workflows"
 
 [[bin]]
-name = "skill-manage"
+name = "skills-bank"
 path = "src/main.rs"
 
 [dependencies]

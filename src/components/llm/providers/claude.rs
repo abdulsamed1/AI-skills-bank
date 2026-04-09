@@ -67,7 +67,7 @@ impl LlmProvider for ClaudeProvider {
             .post(api_url)
             .header("x-api-key", &self.config.api_key)
             .header("anthropic-version", "2023-06-01")
-            .header("User-Agent", "skill-manage/0.1")
+            .header("User-Agent", "skills-bank/0.1")
             .json(&body)
             .send()
             .await
@@ -167,7 +167,7 @@ impl LlmProvider for ClaudeProvider {
             .post(api_url)
             .header("x-api-key", &self.config.api_key)
             .header("anthropic-version", "2023-06-01")
-            .header("User-Agent", "skill-manage/0.1")
+            .header("User-Agent", "skills-bank/0.1")
             .json(&body)
             .send()
             .await

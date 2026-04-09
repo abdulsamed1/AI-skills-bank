@@ -41,35 +41,35 @@ pub trait Check: Sync + Send {
 struct ManifestExistsCheck;
 impl Check for ManifestExistsCheck {
     fn name(&self) -> &str {
-        "Manifest File (.skill-manage-cli-config.json)"
+        "Manifest File (.skills-bank-cli-config.json)"
     }
     fn run(&self) -> DiagnosticStatus {
-        let path = Path::new(".skill-manage-cli-config.json");
+        let path = Path::new(".skills-bank-cli-config.json");
         if path.exists() {
             match RepoManifest::load(path) {
                 Ok(_) => DiagnosticStatus::Pass,
                 Err(e) => DiagnosticStatus::Fail {
                     issues: vec![DiagnosticIssue {
                         description: format!("Found but unparseable: {}", e),
-                        location: Some(".skill-manage-cli-config.json".to_string()),
+                        location: Some(".skills-bank-cli-config.json".to_string()),
                         current: None,
                         should_be: None,
                         why: "Manifest must be valid JSON following the RepoManifest schema"
                             .to_string(),
                     }],
-                    fix: "Check for JSON syntax errors or unknown fields in.skill-manage-cli-config.json".to_string(),
+                    fix: "Check for JSON syntax errors or unknown fields in.skills-bank-cli-config.json".to_string(),
                 },
             }
         } else {
             DiagnosticStatus::Fail {
                 issues: vec![DiagnosticIssue {
-                    description: ".skill-manage-cli-config.json not found".to_string(),
+                    description: ".skills-bank-cli-config.json not found".to_string(),
                     location: None,
                     current: None,
-                    should_be: Some(".skill-manage-cli-config.json in root".to_string()),
+                    should_be: Some(".skills-bank-cli-config.json in root".to_string()),
                     why: "The manifest file defines which skill repositories to manage".to_string(),
                 }],
-                fix: "Create a.skill-manage-cli-config.json manifest in the root".to_string(),
+                fix: "Create a.skills-bank-cli-config.json manifest in the root".to_string(),
             }
         }
     }
@@ -211,7 +211,7 @@ impl Check for RepoIntegrityCheck {
         "Repository Integrity"
     }
     fn run(&self) -> DiagnosticStatus {
-        let path = Path::new(".skill-manage-cli-config.json");
+        let path = Path::new(".skills-bank-cli-config.json");
         let manifest = match RepoManifest::load(path) {
             Ok(m) => m,
             Err(_) => {
@@ -221,9 +221,9 @@ impl Check for RepoIntegrityCheck {
                         location: None,
                         current: None,
                         should_be: None,
-                        why: "Integrity check requires a valid.skill-manage-cli-config.json".to_string(),
+                        why: "Integrity check requires a valid.skills-bank-cli-config.json".to_string(),
                     }],
-                    fix: "Fix.skill-manage-cli-config.json first".to_string(),
+                    fix: "Fix.skills-bank-cli-config.json first".to_string(),
                 }
             }
         };
@@ -263,10 +263,10 @@ impl Check for MasterRouterCheck {
         // Prefer the dynamic AGENTS.md as the canonical entrypoint.
         let agents_candidates = [
             Path::new("skills-aggregated/AGENTS.md"),
-            Path::new("skill-manage/skills-aggregated/AGENTS.md"),
+            Path::new("skills-bank/skills-aggregated/AGENTS.md"),
             Path::new("AGENTS.md"),
             Path::new("../AGENTS.md"),
-            Path::new("skill-manage/AGENTS.md"),
+            Path::new("skills-bank/AGENTS.md"),
         ];
 
         if agents_candidates.iter().any(|p| p.exists()) {
@@ -276,7 +276,7 @@ impl Check for MasterRouterCheck {
         // Fallback: still accept legacy SKILL.md if present (backward compatibility)
         let candidates = [
             Path::new("skills-aggregated/SKILL.md"),
-            Path::new("skill-manage/skills-aggregated/SKILL.md"),
+            Path::new("skills-bank/skills-aggregated/SKILL.md"),
         ];
 
         let path = candidates.iter().find(|p| p.exists());
@@ -338,7 +338,7 @@ impl Check for V11SubHubRoutingCheck {
     fn run(&self) -> DiagnosticStatus {
         let root_candidates = [
             Path::new("skills-aggregated"),
-            Path::new("skill-manage/skills-aggregated"),
+            Path::new("skills-bank/skills-aggregated"),
         ];
 
         let root = match root_candidates.iter().find(|p| p.exists()) {
@@ -445,7 +445,7 @@ impl Check for V12RoutingSrcPathCheck {
     fn run(&self) -> DiagnosticStatus {
         let root_candidates = [
             Path::new("skills-aggregated"),
-            Path::new("skill-manage/skills-aggregated"),
+            Path::new("skills-bank/skills-aggregated"),
         ];
 
         let root = match root_candidates.iter().find(|p| p.exists()) {
@@ -646,7 +646,7 @@ impl Diagnostics {
         };
 
         let ctx = context!(
-            name => "skill-manage",
+            name => "skills-bank",
             results => results,
             summary => context!(
                 status => overall_status,

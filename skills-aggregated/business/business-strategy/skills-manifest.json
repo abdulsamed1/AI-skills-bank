@@ -5736,7 +5736,7 @@
       "score": 100,
       "skill_id": "skill-installer",
       "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/skill-installer/SKILL.md",
-      "triggers": "skill-management;deployment;validation;installation"
+      "triggers": "skills-bankment;deployment;validation;installation"
     },
     {
       "description": "Clear description of what this skill does and when to use it. Include trigger keywords and contexts inline, e.g. \"Use when user wants to X, Y, or Z.\"",

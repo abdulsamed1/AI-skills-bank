@@ -29,8 +29,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
             println!("Running benchmark: batch={} concurrency={}...", batch, concur);
 
-            // Run the `skill-manage` binary as a subprocess (mirrors typical user flow).
-            let bin_path = PathBuf::from("target").join("debug").join(if cfg!(windows) { "skill-manage.exe" } else { "skill-manage" });
+            // Run the `skills-bank` binary as a subprocess (mirrors typical user flow).
+            let bin_path = PathBuf::from("target").join("debug").join(if cfg!(windows) { "skills-bank.exe" } else { "skills-bank" });
             let start = Instant::now();
             let output = std::process::Command::new(&bin_path)
                 .arg("aggregate")

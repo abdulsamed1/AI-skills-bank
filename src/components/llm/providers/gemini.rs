@@ -72,7 +72,7 @@ impl LlmProvider for GeminiProvider {
             .post(api_url)
             .header("x-goog-api-key", &self.config.api_key)
             .header("Content-Type", "application/json")
-            .header("User-Agent", "skill-manage/0.1")
+            .header("User-Agent", "skills-bank/0.1")
             .json(&body)
             .send()
             .await
@@ -183,7 +183,7 @@ impl LlmProvider for GeminiProvider {
             .post(api_url)
             .header("x-goog-api-key", &self.config.api_key)
             .header("Content-Type", "application/json")
-            .header("User-Agent", "skill-manage/0.1")
+            .header("User-Agent", "skills-bank/0.1")
             .json(&body)
             .send()
             .await

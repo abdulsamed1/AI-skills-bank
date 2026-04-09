@@ -1,6 +1,6 @@
 # Agents
 
-This document provides guidance for AI agents on discovering and loading skills from the skill-manage repository.
+This document provides guidance for AI agents on discovering and loading skills from the skills-bank repository.
 
 ## Overview
 
@@ -304,7 +304,7 @@ If a skill_id in routing.csv no longer exists in lib/:
 | `skills-aggregated/{hub}/{sub_hub}/routing.csv` | Single sub-hub | Primary source for skill discovery |
 | `skills-aggregated/{hub}/{sub_hub}/skills-index.json` | Single sub-hub | Fast index for skills discovery (optional cache) |
 | `skills-aggregated/hub-manifests.csv` | All hubs+sub-hubs | Complete directory of all skills (master index) |
-| `skill-manage/lib/**/SKILL.md` | Source of truth | Authoritative specification per skill |
+| `skills-bank/lib/**/SKILL.md` | Source of truth | Authoritative specification per skill |
 
 ---
 
@@ -315,7 +315,7 @@ If a skill_id in routing.csv no longer exists in lib/:
 - **Skill:** Individual agent capability defined by a SKILL.md file
 - **Routing CSV:** Lightweight manifest linking skill_id → src_path
 - **SKILL.md:** Authoritative frontmatter + documentation for a skill
-- **Source of Truth:** The skill-manage source repo (`lib/`) is canonical; all aggregated files are derived
+- **Source of Truth:** The skills-bank source repo (`lib/`) is canonical; all aggregated files are derived
 - **Hybrid Classification:** Dual-stage pipeline (keyword rules + LLM semantic analysis) that routes skills to hubs
 - **Excluded:** Skills flagged as irrelevant by either keyword rules (Step A) or LLM classification (Step B) are dropped from output
 

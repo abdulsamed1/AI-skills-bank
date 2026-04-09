@@ -1,12 +1,12 @@
 {
-  "name": "skill-manage",
+  "name": "skills-bank",
   "version": "0.1.0",
   "description": "Ultra-lightweight, zero-latency local routing layer for AI agent workflows",
   "type": "module",
-  "main": "bin/skill-manage.js",
+  "main": "bin/skills-bank.js",
   "bin": {
-    "skill-manage": "bin/skill-manage.js",
-    "sm": "bin/skill-manage.js"
+    "skills-bank": "bin/skills-bank.js",
+    "sm": "bin/skills-bank.js"
   },
   "files": [
     "bin",
@@ -24,9 +24,9 @@
   "author": "ABDULSAMED",
   "license": "MIT",
   "optionalDependencies": {
-    "skill-manage-win32-x64": "0.1.0",
-    "skill-manage-darwin-x64": "0.1.0",
-    "skill-manage-darwin-arm64": "0.1.0",
-    "skill-manage-linux-x64": "0.1.0"
+    "skills-bank-win32-x64": "0.1.0",
+    "skills-bank-darwin-x64": "0.1.0",
+    "skills-bank-darwin-arm64": "0.1.0",
+    "skills-bank-linux-x64": "0.1.0"
   }
 }

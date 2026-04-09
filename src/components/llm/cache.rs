@@ -15,7 +15,7 @@ fn default_cache_path() -> Option<PathBuf> {
         return Some(PathBuf::from(p));
     }
     home_dir().map(|mut h| {
-        h.push(".skill-manage");
+        h.push(".skills-bank");
         // ensure dir exists
         let _ = fs::create_dir_all(&h);
         h.push("llm-classifications.json");

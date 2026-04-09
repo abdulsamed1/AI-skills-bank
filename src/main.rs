@@ -21,7 +21,7 @@ use std::process::Command;
 use std::sync::Arc;
 use walkdir::WalkDir;
 
-const CONFIG_FILE_NAME: &str = ".skill-manage-cli-config.json";
+const CONFIG_FILE_NAME: &str = ".skills-bank-cli-config.json";
 
 #[derive(Debug, Clone)]
 struct ToolDef {
@@ -237,7 +237,7 @@ async fn run() -> Result<()> {
             print_help();
         }
         "--version" | "-v" => {
-            println!("skill-manage v0.1.0");
+            println!("skills-bank v0.1.0");
         }
         "setup" | "init" => {
             let config = run_setup_wizard(&repo_root)?;
@@ -255,7 +255,7 @@ async fn run() -> Result<()> {
             if let Some(manifest) = prepare_manifest(&repo_root, &config.repositories)? {
                 run_fetch(&repo_root, manifest).await?;
             } else {
-                bail!("No repositories configured. Run setup or provide.skill-manage-cli-config.json.");
+                bail!("No repositories configured. Run setup or provide.skills-bank-cli-config.json.");
             }
         }
         "aggregate" => {
@@ -315,7 +315,7 @@ async fn run() -> Result<()> {
         "list" | "ls" => {
             let output_dir = repo_root.join("skills-aggregated");
             if !output_dir.exists() {
-                eprintln!("Skills not aggregated yet. Run 'skill-manage aggregate' first.");
+                eprintln!("Skills not aggregated yet. Run 'skills-bank aggregate' first.");
                 return Ok(());
             }
             
@@ -325,14 +325,14 @@ async fn run() -> Result<()> {
         "search" => {
             let output_dir = repo_root.join("skills-aggregated");
             if !output_dir.exists() {
-                eprintln!("Skills not aggregated yet. Run 'skill-manage aggregate' first.");
+                eprintln!("Skills not aggregated yet. Run 'skills-bank aggregate' first.");
                 return Ok(());
             }
             
             let query = if let Some(q) = args.get(2) {
                 q.clone()
             } else {
-                bail!("Usage: skill-manage search <query>");
+                bail!("Usage: skills-bank search <query>");
             };
             run_search_skills(&output_dir, &query)?;
         }
@@ -346,36 +346,36 @@ async fn run() -> Result<()> {
 }
 
 fn print_help() {
-    println!("skill-manage v0.1.0");
+    println!("skills-bank v0.1.0");
     println!("Guided automation for clone -> aggregate -> sync");
     println!();
     println!("USAGE:");
-    println!("    skill-manage                    # guided UI (first run asks setup)");
-    println!("    skill-manage setup              # rerun first-time setup");
-    println!("    skill-manage run                # run full pipeline from saved config");
-    println!("    skill-manage fetch              # fetch configured repositories only");
-    println!("    skill-manage aggregate          # aggregate only");
-    println!("    skill-manage sync               # sync only");
-    println!("    skill-manage sync --dry-run     # preview sync without making changes");
-    println!("    skill-manage list               # list all aggregated skills");
-    println!("    skill-manage list <hub>         # list skills in a specific hub (ai, business, etc)");
-    println!("    skill-manage search <query>     # search for skills by name or description");
-    println!("    skill-manage cleanup-legacy     # one-time cleanup of legacy repo caches into lib/");
-    println!("    skill-manage add-repo <URL>     # add repo then run targeted pipeline");
-    println!("    skill-manage doctor             # run diagnostics");
-    println!("    skill-manage release-gate       # enforce production readiness checks");
-    println!("    skill-manage tui                # launch interactive terminal UI");
-    println!("    skill-manage --help");
-    println!("    skill-manage --version");
+    println!("    skills-bank                    # guided UI (first run asks setup)");
+    println!("    skills-bank setup              # rerun first-time setup");
+    println!("    skills-bank run                # run full pipeline from saved config");
+    println!("    skills-bank fetch              # fetch configured repositories only");
+    println!("    skills-bank aggregate          # aggregate only");
+    println!("    skills-bank sync               # sync only");
+    println!("    skills-bank sync --dry-run     # preview sync without making changes");
+    println!("    skills-bank list               # list all aggregated skills");
+    println!("    skills-bank list <hub>         # list skills in a specific hub (ai, business, etc)");
+    println!("    skills-bank search <query>     # search for skills by name or description");
+    println!("    skills-bank cleanup-legacy     # one-time cleanup of legacy repo caches into lib/");
+    println!("    skills-bank add-repo <URL>     # add repo then run targeted pipeline");
+    println!("    skills-bank doctor             # run diagnostics");
+    println!("    skills-bank release-gate       # enforce production readiness checks");
+    println!("    skills-bank tui                # launch interactive terminal UI");
+    println!("    skills-bank --help");
+    println!("    skills-bank --version");
 }
 
 async fn run_interactive(repo_root: &Path, config_path: &Path) -> Result<()> {
     let mut config = match load_config(config_path)? {
         Some(cfg) => cfg,
         None => {
-            // If.skill-manage-cli-config.json exists, auto-create a default setup and run the pipeline
+            // If.skills-bank-cli-config.json exists, auto-create a default setup and run the pipeline
             if let Some(cfg) = auto_config_from_manifest(repo_root)? {
-                println!("No setup found, but.skill-manage-cli-config.json detected. Creating default setup and running automation...");
+                println!("No setup found, but.skills-bank-cli-config.json detected. Creating default setup and running automation...");
                 save_config(config_path, &cfg)?;
                 apply_exclusion_env(Some(&cfg));
                 run_full_pipeline(&cfg).await?;
@@ -618,7 +618,7 @@ fn collect_repo_urls(theme: &ColorfulTheme) -> Result<Vec<String>> {
 async fn run_full_pipeline(config: &SetupConfig) -> Result<()> {
     apply_exclusion_env(Some(config));
     let repo_root = config.repo_root_path();
-    println!("\n=== skill-manage full automation ===");
+    println!("\n=== skills-bank full automation ===");
 
     if let Some(manifest) = prepare_manifest(&repo_root, &config.repositories)? {
         println!("[1/3] Clone/update repositories (shallow)...");
@@ -866,7 +866,7 @@ fn run_list_skills(output_dir: &Path, hub_filter: Option<&str>) -> Result<()> {
         if hub_filter.is_some() {
             println!("No skills found in hub '{}'", hub_filter.unwrap());
         } else {
-            println!("No skills aggregated yet. Run 'skill-manage aggregate' first.");
+            println!("No skills aggregated yet. Run 'skills-bank aggregate' first.");
         }
         return Ok(());
     }
@@ -902,8 +902,8 @@ fn run_list_skills(output_dir: &Path, hub_filter: Option<&str>) -> Result<()> {
     }
     println!("  Total {} skills", all_skills.len());
     
-    println!("\n💡 Tip: Use 'skill-manage search <query>' to find skills by name.");
-    println!("        Use 'skill-manage list <hub-name>' to filter by hub.\n");
+    println!("\n💡 Tip: Use 'skills-bank search <query>' to find skills by name.");
+    println!("        Use 'skills-bank list <hub-name>' to filter by hub.\n");
     
     Ok(())
 }
@@ -1260,7 +1260,7 @@ fn run_doctor(repo_root: &Path) -> Result<CommandResult> {
 }
 
 fn run_release_gate(repo_root: &Path) -> Result<()> {
-    println!("\n=== skill-manage release gate ===");
+    println!("\n=== skills-bank release gate ===");
 
     let doctor = run_doctor(repo_root)?;
     let health_score = match doctor {
@@ -1405,7 +1405,7 @@ fn add_repo(config: &mut SetupConfig, repo_url: &str) -> Result<()> {
 }
 
 fn prepare_manifest(repo_root: &Path, repositories: &[Repository]) -> Result<Option<RepoManifest>> {
-    let manifest_path = repo_root.join(".skill-manage-cli-config.json");
+    let manifest_path = repo_root.join(".skills-bank-cli-config.json");
 
     if !repositories.is_empty() {
         let manifest = RepoManifest {
@@ -1520,11 +1520,11 @@ fn load_repo_urls_from_json(path: &Path) -> Result<Vec<String>> {
 "#;
         let _ = fs::write(path, stub);
         
-        println!("\n[INFO] .skill-manage-cli-config.json created at: {}", path.display());
+        println!("\n[INFO] .skills-bank-cli-config.json created at: {}", path.display());
         println!("Please edit the file and add your repository URLs, then re-run the setup.");
         println!("Format: Add GitHub URLs to the 'repositories' array.\n");
         
-        bail!(".skill-manage-cli-config.json was created. Please add your repositories and re-run setup.");
+        bail!(".skills-bank-cli-config.json was created. Please add your repositories and re-run setup.");
     }
     
     let content = fs::read_to_string(path)
@@ -1612,7 +1612,7 @@ fn discover_repo_root() -> Result<PathBuf> {
     let mut cursor = Some(cwd.as_path());
     while let Some(path) = cursor {
         candidates.push(path.to_path_buf());
-        candidates.push(path.join("skill-manage"));
+        candidates.push(path.join("skills-bank"));
         cursor = path.parent();
     }
 
@@ -1630,7 +1630,7 @@ fn discover_repo_root() -> Result<PathBuf> {
     }
 
     bail!(
-        "Could not locate the skill-manage root. Run this from inside the repo (e.g. skill-manage/cli)."
+        "Could not locate the skills-bank root. Run this from inside the repo (e.g. skills-bank/cli)."
     )
 }
 
@@ -1652,8 +1652,8 @@ fn cargo_toml_declares_skill_manage(path: &Path) -> bool {
 
     fs::read_to_string(cargo_toml)
         .map(|content| {
-            content.contains("name = \"skill-manage\"")
-                || content.contains("name=\"skill-manage\"")
+            content.contains("name = \"skills-bank\"")
+                || content.contains("name=\"skills-bank\"")
         })
         .unwrap_or(false)
 }
@@ -1685,7 +1685,7 @@ fn migrate_legacy_workspace_root(config: &mut SetupConfig) -> bool {
         .and_then(|n| n.to_str())
         .unwrap_or("");
 
-    if !repo_name.eq_ignore_ascii_case("skill-manage") {
+    if !repo_name.eq_ignore_ascii_case("skills-bank") {
         return false;
     }
 
@@ -1739,9 +1739,9 @@ fn ensure_config(repo_root: &Path, config_path: &Path) -> Result<SetupConfig> {
     match load_config(config_path)? {
         Some(cfg) => Ok(cfg),
         None => {
-            // If a.skill-manage-cli-config.json manifest exists, auto-generate a sensible default config
+            // If a.skills-bank-cli-config.json manifest exists, auto-generate a sensible default config
             if let Some(cfg) = auto_config_from_manifest(repo_root)? {
-                println!("No setup file found, but.skill-manage-cli-config.json detected. Creating default setup and saving it...");
+                println!("No setup file found, but.skills-bank-cli-config.json detected. Creating default setup and saving it...");
                 save_config(config_path, &cfg)?;
                 return Ok(cfg);
             }
@@ -1755,7 +1755,7 @@ fn ensure_config(repo_root: &Path, config_path: &Path) -> Result<SetupConfig> {
 }
 
 fn auto_config_from_manifest(repo_root: &Path) -> Result<Option<SetupConfig>> {
-    let manifest_path = repo_root.join(".skill-manage-cli-config.json");
+    let manifest_path = repo_root.join(".skills-bank-cli-config.json");
     if !manifest_path.exists() {
         return Ok(None);
     }
@@ -1803,9 +1803,9 @@ fn tool_by_key(key: &str) -> Option<&'static ToolDef> {
 fn resolve_input_path(repo_root: &Path, input: &str) -> PathBuf {
     let trimmed = input.trim();
     
-    // Auto-detect .skill-manage-cli-config.json if input is empty or looks like a short name
-    if trimmed.is_empty() || trimmed.eq_ignore_ascii_case(".skill-manage-cli-config.json") || trimmed.eq_ignore_ascii_case("repos") {
-        let candidates = [repo_root.join(".skill-manage-cli-config.json")];
+    // Auto-detect .skills-bank-cli-config.json if input is empty or looks like a short name
+    if trimmed.is_empty() || trimmed.eq_ignore_ascii_case(".skills-bank-cli-config.json") || trimmed.eq_ignore_ascii_case("repos") {
+        let candidates = [repo_root.join(".skills-bank-cli-config.json")];
         
         for candidate in &candidates {
             if candidate.exists() {
@@ -1815,14 +1815,14 @@ fn resolve_input_path(repo_root: &Path, input: &str) -> PathBuf {
         
         // Also check in current directory
         if let Ok(cwd) = env::current_dir() {
-            let cwd_candidate = cwd.join(".skill-manage-cli-config.json");
+            let cwd_candidate = cwd.join(".skills-bank-cli-config.json");
             if cwd_candidate.exists() {
                 return cwd_candidate;
             }
         }
         
-        // Default to repo_root/.skill-manage-cli-config.json if none exist
-        return repo_root.join(".skill-manage-cli-config.json");
+        // Default to repo_root/.skills-bank-cli-config.json if none exist
+        return repo_root.join(".skills-bank-cli-config.json");
     }
     
     let path = PathBuf::from(trimmed);

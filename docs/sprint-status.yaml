@@ -1,8 +1,8 @@
 # last_updated: 2026-03-28 07:41:00
-# project: skill-manage
+# project: skills-bank
 # project_key: NOKEY
 # tracking_system: file-system
-# story_location: skill-manage/docs/stories
+# story_location: skills-bank/docs/stories
 
 # STATUS DEFINITIONS:
 # ==================
@@ -35,10 +35,10 @@
 
 generated: 2026-03-28
 last_updated: 2026-03-31 22:47:00
-project: skill-manage
+project: skills-bank
 project_key: NOKEY
 tracking_system: file-system
-story_location: skill-manage/docs/stories
+story_location: skills-bank/docs/stories
 
 development_status:
   - Epic: "Epic 1: Project Core & Infrastructure"

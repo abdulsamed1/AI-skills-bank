@@ -1,6 +1,6 @@
 <div align="center">
 
-# skill-manage
+# skills-bank
 
 High-performance skill aggregation, classification & routing platform for AI agents.
 
@@ -15,7 +15,7 @@ High-performance skill aggregation, classification & routing platform for AI age
 
 ## 📖 Overview
 
-**skill-manage** aggregates skills (workflows, tasks, specialized agents) from 100+ distributed repositories and provides a unified routing system for AI agents to discover, load, and invoke them efficiently.
+**skills-bank** aggregates skills (workflows, tasks, specialized agents) from 100+ distributed repositories and provides a unified routing system for AI agents to discover, load, and invoke them efficiently.
 
 ### Core Design Principles
 
@@ -32,7 +32,7 @@ High-performance skill aggregation, classification & routing platform for AI age
 
 ### 1. Build the CLI
 ```bash
-cd skill-manage/
+cd skills-bank/
 cargo build --release
 ```
 
@@ -68,7 +68,7 @@ cargo run --release -- cleanup-legacy-duplicates
 ## Core Logic & CLI
 - **[src/](./src/)** — Rust source code containing the TUI, fetcher, aggregator, and sync components.
 - **[Cargo.toml](./Cargo.toml)** — Rust manifest defining project metadata and dependencies.
-- **[.skill-manage-cli-config.json](./.skill-manage-cli-config.json)** — User-specific configuration for sync targets and repository lists.
+- **[.skills-bank-cli-config.json](./.skills-bank-cli-config.json)** — User-specific configuration for sync targets and repository lists.
 
 ### Outputs & Aggregation
 - **[skills-aggregated/](./skills-aggregated/)** — The generated "Single Source of Truth" containing routed skill hubs and `routing.csv`.
@@ -166,7 +166,7 @@ Generated during aggregation:
 
 ## 🌐 Environment Variables
 
-- `skill-manage\.env-example`
+- `skills-bank\.env-example`
 
 | Variable | Default | Description |
 |---|---|---|
@@ -175,7 +175,7 @@ Generated during aggregation:
 | `LLM_API_KEY` | — | API key for the configured LLM provider |
 | `LLM_API_URL` | Provider default | Custom API endpoint URL |
 | `LLM_MODEL` | `gpt-4o-mini` | Model name (OpenAI provider) |
-| `LLM_CACHE_PATH` | `~/.skill-manage/llm-classifications.json` | Persistent cache for classifications |
+| `LLM_CACHE_PATH` | `~/.skills-bank/llm-classifications.json` | Persistent cache for classifications |
 | `LLM_CA_CERT_PATH` | — | Custom CA certificate for HTTPS pinning |
 | `SKILL_MANAGE_EXCLUSIONS` | — | Semicolon-separated category exclusion overrides |
 

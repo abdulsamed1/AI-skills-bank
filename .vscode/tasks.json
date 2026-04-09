@@ -4,7 +4,7 @@
 		{
 			"label": "Analyze aggregation performance",
 			"type": "shell",
-			"command": "cd c:\\Users\\ASUS\\production\\skill-manage && cargo build --release 2>&1 | head -20"
+			"command": "cd c:\\Users\\ASUS\\production\\skills-bank && cargo build --release 2>&1 | head -20"
 		}
 	]
 }

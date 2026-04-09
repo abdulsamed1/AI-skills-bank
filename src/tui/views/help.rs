@@ -42,7 +42,7 @@ pub fn render(app: &mut TuiApp, f: &mut Frame, area: Rect) {
         Line::from("  Enter         : Select item / drill down"),
         Line::from(""),
         Line::from(Span::styled("About", Style::default().add_modifier(Modifier::BOLD).fg(COLORS_ACCENT))),
-        Line::from("  skill-manage v0.1.0"),
+        Line::from("  skills-bank v0.1.0"),
         Line::from("  AI Agent skill routing and classification engine"),
     ];
 

@@ -11,7 +11,7 @@ fn repo_root() -> PathBuf {
 
 #[test]
 fn test_help_includes_release_gate() {
-    let mut cmd = Command::cargo_bin("skill-manage").expect("binary exists");
+    let mut cmd = Command::cargo_bin("skills-bank").expect("binary exists");
     cmd.current_dir(repo_root());
     cmd.arg("--help");
     cmd.assert()
@@ -21,7 +21,7 @@ fn test_help_includes_release_gate() {
 
 #[test]
 fn test_unknown_command_fails() {
-    let mut cmd = Command::cargo_bin("skill-manage").expect("binary exists");
+    let mut cmd = Command::cargo_bin("skills-bank").expect("binary exists");
     cmd.current_dir(repo_root());
     cmd.arg("definitely-not-a-command");
     cmd.assert()
@@ -31,7 +31,7 @@ fn test_unknown_command_fails() {
 
 #[test]
 fn test_doctor_command_executes() {
-    let mut cmd = Command::cargo_bin("skill-manage").expect("binary exists");
+    let mut cmd = Command::cargo_bin("skills-bank").expect("binary exists");
     cmd.current_dir(repo_root());
     cmd.arg("doctor");
     cmd.assert().success();

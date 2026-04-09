@@ -68,7 +68,7 @@ impl LlmProvider for OpenAiProvider {
             .client
             .post(api_url)
             .bearer_auth(&self.config.api_key)
-            .header("User-Agent", "skill-manage/0.1")
+            .header("User-Agent", "skills-bank/0.1")
             .json(&body)
             .send()
             .await
@@ -172,7 +172,7 @@ impl LlmProvider for OpenAiProvider {
             .client
             .post(api_url)
             .bearer_auth(&self.config.api_key)
-            .header("User-Agent", "skill-manage/0.1")
+            .header("User-Agent", "skills-bank/0.1")
             .json(&body)
             .send()
             .await

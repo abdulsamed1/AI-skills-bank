@@ -11,16 +11,16 @@ function platformPackageName() {
   const p = process.platform;
   const a = process.arch;
 
-  if (p === 'win32' && a === 'x64') return 'skill-manage-win32-x64';
-  if (p === 'darwin' && a === 'x64') return 'skill-manage-darwin-x64';
-  if (p === 'darwin' && a === 'arm64') return 'skill-manage-darwin-arm64';
-  if (p === 'linux' && a === 'x64') return 'skill-manage-linux-x64';
+  if (p === 'win32' && a === 'x64') return 'skills-bank-win32-x64';
+  if (p === 'darwin' && a === 'x64') return 'skills-bank-darwin-x64';
+  if (p === 'darwin' && a === 'arm64') return 'skills-bank-darwin-arm64';
+  if (p === 'linux' && a === 'x64') return 'skills-bank-linux-x64';
 
   return null;
 }
 
 function candidateBinaryNames() {
-  const exe = process.platform === 'win32' ? 'skill-manage.exe' : 'skill-manage';
+  const exe = process.platform === 'win32' ? 'skills-bank.exe' : 'skills-bank';
   return [exe, path.join('bin', exe)];
 }
 
@@ -46,7 +46,7 @@ function findPackagedBinary(pkgName) {
 
 function findLocalBinary() {
   const root = process.cwd();
-  const exe = process.platform === 'win32' ? 'skill-manage.exe' : 'skill-manage';
+  const exe = process.platform === 'win32' ? 'skills-bank.exe' : 'skills-bank';
   const candidates = [
     path.join(root, 'target', 'release', exe),
     path.join(root, 'target', 'debug', exe),
@@ -121,7 +121,7 @@ function resolveBinary() {
 function main() {
   const binary = resolveBinary();
   if (!binary) {
-    console.error('[ERROR] Could not locate skill-manage binary for this OS/arch.');
+    console.error('[ERROR] Could not locate skills-bank binary for this OS/arch.');
     console.error(`  platform=${process.platform} arch=${process.arch}`);
     console.error('  Tried optional platform packages and local target/{release,debug}.');
     process.exit(1);
