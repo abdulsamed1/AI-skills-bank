@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "repo_root": "C:\\Users\\ASUS\\production\\skill-manage",
+  "repo_root": "C:\\Users\\ASUS\\production\\skills-bank",
   "workspace_root": "C:\\Users\\ASUS\\production",
   "sync_scope": "local",
   "tools": [
@@ -564,8 +564,7 @@
       "url": "https://github.com/zxkane/aws-skills.git",
       "branch": null
     }
-  ]
-  ,
+  ],
   "sync": {
     "mode": "local",
     "targets": {
