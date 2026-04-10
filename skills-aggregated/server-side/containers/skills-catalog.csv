@@ -10,7 +10,7 @@ k8s-manifest-generator,"Step-by-step guidance for creating production-ready Kube
 k8s-security-policies,"Comprehensive guide for implementing NetworkPolicy, PodSecurityPolicy, RBAC, and Pod Security Standards in Kubernetes.",100,2
 kubernetes-architect,"Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise container orchestration.",100,2
 kubernetes-deployment,"Kubernetes deployment workflow for container orchestration, Helm charts, service mesh, and production-ready K8s configurations.",100,2
-linkerd-patterns,"Production patterns for Linkerd service mesh - the lightweight, security-first service mesh for Kubernetes.",100,2
+linkerd-patterns,"Production patterns for Linkerd service mesh - the Efficient, security-first service mesh for Kubernetes.",100,2
 mcp:setup-arxiv-mcp,Guide for setup arXiv paper search MCP server using Docker MCP,100,2
 odoo-docker-deployment,"Production-ready Docker and docker-compose setup for Odoo with PostgreSQL, persistent volumes, environment-based configuration, and Nginx reverse proxy.",100,2
 service-mesh-expert,"Expert service mesh architect specializing in Istio, Linkerd, and cloud-native networking patterns. Masters traffic management, security policies, observability integration, and multi-cluster mesh con",100,2

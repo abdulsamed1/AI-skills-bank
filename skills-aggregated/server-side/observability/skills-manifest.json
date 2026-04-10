@@ -115,7 +115,7 @@
       "triggers": "error;diagnostics;error;trace"
     },
     {
-      "description": "Provides guidance for experiment tracking with SwanLab. Use when you need open-source run tracking, local or self-hosted dashboards, and lightweight media logging for ML workflows.",
+      "description": "Provides guidance for experiment tracking with SwanLab. Use when you need open-source run tracking, local or self-hosted dashboards, and Efficient media logging for ML workflows.",
       "phase": 2,
       "score": 100,
       "skill_id": "experiment-tracking-swanlab",

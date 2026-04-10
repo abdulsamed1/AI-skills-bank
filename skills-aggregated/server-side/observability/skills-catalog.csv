@@ -13,7 +13,7 @@ distributed-tracing,Implement distributed tracing with Jaeger and Tempo for requ
 error-debugging-error-analysis,"You are an expert error analysis specialist with deep expertise in debugging distributed systems, analyzing production incidents, and implementing comprehensive observability solutions.",100,2
 error-debugging-error-trace,"You are an error tracking and observability expert specializing in implementing comprehensive error monitoring solutions. Set up error tracking systems, configure alerts, implement structured logging, and ensure teams can quickly identify and resolve production issues.",100,2
 error-diagnostics-error-trace,"You are an error tracking and observability expert specializing in implementing comprehensive error monitoring solutions. Set up error tracking systems, configure alerts, implement structured logging,",100,2
-experiment-tracking-swanlab,"Provides guidance for experiment tracking with SwanLab. Use when you need open-source run tracking, local or self-hosted dashboards, and lightweight media logging for ML workflows.",100,2
+experiment-tracking-swanlab,"Provides guidance for experiment tracking with SwanLab. Use when you need open-source run tracking, local or self-hosted dashboards, and Efficient media logging for ML workflows.",100,2
 finance-metrics-quickref,"Look up SaaS finance metrics, formulas, and benchmarks fast. Use when you need a quick metric definition, formula, or benchmark during analysis.",100,2
 grafana-dashboards,Create and manage production-ready Grafana dashboards for comprehensive system observability.,100,2
 hugging-face-trackio,"Track ML experiments with Trackio using Python logging, alerts, and CLI metric retrieval.",100,2

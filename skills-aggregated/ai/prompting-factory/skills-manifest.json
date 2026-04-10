@@ -283,7 +283,7 @@
       "triggers": "github;pr;review"
     },
     {
-      "description": "Interact with Gmail - search emails, read messages, send emails, create drafts, and manage labels. Use when user asks to: search email, read email, send email, create email draft, mark as read, archive email, star email, or manage Gmail labels. Lightweight alternative to full Google Workspace MCP server with standalone OAuth authentication.",
+      "description": "Interact with Gmail - search emails, read messages, send emails, create drafts, and manage labels. Use when user asks to: search email, read email, send email, create email draft, mark as read, archive email, star email, or manage Gmail labels. Efficient alternative to full Google Workspace MCP server with standalone OAuth authentication.",
       "phase": 3,
       "score": 100,
       "skill_id": "gmail",
@@ -291,7 +291,7 @@
       "triggers": "gmail"
     },
     {
-      "description": "Interact with Google Calendar - list calendars, view events, create/update/delete events, and find free time. Use when user asks to: check calendar, schedule a meeting, create an event, find available time, list upcoming events, delete or update a calendar event, or respond to meeting invitations. Lightweight alternative to full Google Workspace MCP server with standalone OAuth authentication.",
+      "description": "Interact with Google Calendar - list calendars, view events, create/update/delete events, and find free time. Use when user asks to: check calendar, schedule a meeting, create an event, find available time, list upcoming events, delete or update a calendar event, or respond to meeting invitations. Efficient alternative to full Google Workspace MCP server with standalone OAuth authentication.",
       "phase": 3,
       "score": 100,
       "skill_id": "google-calendar",
@@ -299,7 +299,7 @@
       "triggers": "google;calendar"
     },
     {
-      "description": "Interact with Google Chat - list spaces, send messages, read conversations, and manage DMs. Use when user asks to: send a message on Google Chat, read chat messages, list chat spaces, find a chat room, send a DM, or create a new chat space. Lightweight alternative to full Google Workspace MCP server with standalone OAuth authentication.",
+      "description": "Interact with Google Chat - list spaces, send messages, read conversations, and manage DMs. Use when user asks to: send a message on Google Chat, read chat messages, list chat spaces, find a chat room, send a DM, or create a new chat space. Efficient alternative to full Google Workspace MCP server with standalone OAuth authentication.",
       "phase": 3,
       "score": 100,
       "skill_id": "google-chat",
@@ -307,7 +307,7 @@
       "triggers": "google;chat"
     },
     {
-      "description": "Interact with Google Docs - create documents, search by title, read content, and edit text. Use when user asks to: create a Google Doc, find a document, read doc content, add text to a doc, or replace text in a document. Lightweight alternative to full Google Workspace MCP server with standalone OAuth authentication.",
+      "description": "Interact with Google Docs - create documents, search by title, read content, and edit text. Use when user asks to: create a Google Doc, find a document, read doc content, add text to a doc, or replace text in a document. Efficient alternative to full Google Workspace MCP server with standalone OAuth authentication.",
       "phase": 3,
       "score": 100,
       "skill_id": "google-docs",
@@ -315,7 +315,7 @@
       "triggers": "google;docs"
     },
     {
-      "description": "Interact with Google Drive - search files, find folders, list contents, download files, upload files, create folders, move, copy, rename, and trash files. Use when user asks to: search Google Drive, find a file/folder, list Drive contents, download or upload files, create folders, move files, or organize Drive content. Lightweight integration with standalone OAuth authentication supporting full read/write access.",
+      "description": "Interact with Google Drive - search files, find folders, list contents, download files, upload files, create folders, move, copy, rename, and trash files. Use when user asks to: search Google Drive, find a file/folder, list Drive contents, download or upload files, create folders, move files, or organize Drive content. Efficient integration with standalone OAuth authentication supporting full read/write access.",
       "phase": 3,
       "score": 100,
       "skill_id": "google-drive",
@@ -323,7 +323,7 @@
       "triggers": "google;drive"
     },
     {
-      "description": "Read and write Google Sheets spreadsheets - get content, update cells, append rows, fetch specific ranges, search for spreadsheets, and view metadata. Use when user asks to: read a spreadsheet, update cells, add data to Google Sheets, find a spreadsheet, check sheet contents, export spreadsheet data, or get cell values. Lightweight integration with standalone OAuth authentication supporting full read/write access.",
+      "description": "Read and write Google Sheets spreadsheets - get content, update cells, append rows, fetch specific ranges, search for spreadsheets, and view metadata. Use when user asks to: read a spreadsheet, update cells, add data to Google Sheets, find a spreadsheet, check sheet contents, export spreadsheet data, or get cell values. Efficient integration with standalone OAuth authentication supporting full read/write access.",
       "phase": 3,
       "score": 100,
       "skill_id": "google-sheets",
@@ -331,7 +331,7 @@
       "triggers": "google;sheets"
     },
     {
-      "description": "Read and write Google Slides presentations - get text, find presentations, create presentations, add slides, replace text, and manage slide content. Use when user asks to: read a presentation, create slides, find slides, add a slide, replace text in a presentation, or manage presentation content. Lightweight integration with standalone OAuth authentication supporting full read/write access.",
+      "description": "Read and write Google Slides presentations - get text, find presentations, create presentations, add slides, replace text, and manage slide content. Use when user asks to: read a presentation, create slides, find slides, add a slide, replace text in a presentation, or manage presentation content. Efficient integration with standalone OAuth authentication supporting full read/write access.",
       "phase": 3,
       "score": 100,
       "skill_id": "google-slides",

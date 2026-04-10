@@ -91,7 +91,7 @@
       "triggers": "kubernetes;deployment"
     },
     {
-      "description": "Production patterns for Linkerd service mesh - the lightweight, security-first service mesh for Kubernetes.",
+      "description": "Production patterns for Linkerd service mesh - the Efficient, security-first service mesh for Kubernetes.",
       "phase": 2,
       "score": 100,
       "skill_id": "linkerd-patterns",

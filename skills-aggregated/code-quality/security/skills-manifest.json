@@ -771,7 +771,7 @@
       "triggers": "[aws, iam, security, access-control, kiro-cli, least-privilege]"
     },
     {
-      "description": "Configure AWS MCP servers for documentation search and API access. Use when setting up AWS MCP, configuring AWS documentation tools, troubleshooting MCP connectivity, or when user mentions aws-mcp, awsdocs, uvx setup, or MCP server configuration. Covers both Full AWS MCP Server (with uvx + credentials) and lightweight Documentation MCP (no auth required).",
+      "description": "Configure AWS MCP servers for documentation search and API access. Use when setting up AWS MCP, configuring AWS documentation tools, troubleshooting MCP connectivity, or when user mentions aws-mcp, awsdocs, uvx setup, or MCP server configuration. Covers both Full AWS MCP Server (with uvx + credentials) and Efficient Documentation MCP (no auth required).",
       "phase": 1,
       "score": 100,
       "skill_id": "aws-mcp-setup",
@@ -2931,7 +2931,7 @@
       "triggers": "CTI;threat-intelligence;intelligence-products;TLP;PIR;report-writing;NIST-CSF"
     },
     {
-      "description": "Lightweight Gmail integration with standalone OAuth authentication. No MCP server required.",
+      "description": "Efficient Gmail integration with standalone OAuth authentication. No MCP server required.",
       "phase": 1,
       "score": 100,
       "skill_id": "gmail-automation",
@@ -2947,7 +2947,7 @@
       "triggers": "golang;patterns"
     },
     {
-      "description": "Lightweight Google Calendar integration with standalone OAuth authentication. No MCP server required.",
+      "description": "Efficient Google Calendar integration with standalone OAuth authentication. No MCP server required.",
       "phase": 1,
       "score": 100,
       "skill_id": "google-calendar-automation",
@@ -2955,7 +2955,7 @@
       "triggers": "google;calendar;automation"
     },
     {
-      "description": "Lightweight Google Docs integration with standalone OAuth authentication. No MCP server required.",
+      "description": "Efficient Google Docs integration with standalone OAuth authentication. No MCP server required.",
       "phase": 1,
       "score": 100,
       "skill_id": "google-docs-automation",
@@ -2963,7 +2963,7 @@
       "triggers": "google;docs;automation"
     },
     {
-      "description": "Lightweight Google Drive integration with standalone OAuth authentication. No MCP server required. Full read/write access.",
+      "description": "Efficient Google Drive integration with standalone OAuth authentication. No MCP server required. Full read/write access.",
       "phase": 1,
       "score": 100,
       "skill_id": "google-drive-automation",
@@ -2971,7 +2971,7 @@
       "triggers": "google;drive;automation"
     },
     {
-      "description": "Lightweight Google Sheets integration with standalone OAuth authentication. No MCP server required. Full read/write access.",
+      "description": "Efficient Google Sheets integration with standalone OAuth authentication. No MCP server required. Full read/write access.",
       "phase": 1,
       "score": 100,
       "skill_id": "google-sheets-automation",
@@ -2979,7 +2979,7 @@
       "triggers": "google;sheets;automation"
     },
     {
-      "description": "Lightweight Google Slides integration with standalone OAuth authentication. No MCP server required. Full read/write access.",
+      "description": "Efficient Google Slides integration with standalone OAuth authentication. No MCP server required. Full read/write access.",
       "phase": 1,
       "score": 100,
       "skill_id": "google-slides-automation",

@@ -95,7 +95,7 @@ aws-cdk-development,"AWS Cloud Development Kit (CDK) expert for building cloud i
 aws-compliance-checker,"Automated compliance checking against CIS, PCI-DSS, HIPAA, and SOC 2 benchmarks",100,1
 aws-cost-operations,"AWS cost optimization, monitoring, and operational excellence expert. Use when analyzing AWS bills, estimating costs, setting up CloudWatch alarms, querying logs, auditing CloudTrail activity, or assessing security posture. Essential when user mentions AWS costs, spending, billing, budget, pricing, CloudWatch, observability, monitoring, alerting, CloudTrail, audit, or wants to optimize AWS infrastructure costs and operational efficiency.",100,1
 aws-iam-best-practices,"IAM policy review, hardening, and least privilege implementation",100,1
-aws-mcp-setup,"Configure AWS MCP servers for documentation search and API access. Use when setting up AWS MCP, configuring AWS documentation tools, troubleshooting MCP connectivity, or when user mentions aws-mcp, awsdocs, uvx setup, or MCP server configuration. Covers both Full AWS MCP Server (with uvx + credentials) and lightweight Documentation MCP (no auth required).",100,1
+aws-mcp-setup,"Configure AWS MCP servers for documentation search and API access. Use when setting up AWS MCP, configuring AWS documentation tools, troubleshooting MCP connectivity, or when user mentions aws-mcp, awsdocs, uvx setup, or MCP server configuration. Covers both Full AWS MCP Server (with uvx + credentials) and Efficient Documentation MCP (no auth required).",100,1
 aws-secrets-rotation,"Automate AWS secrets rotation for RDS, API keys, and credentials",100,1
 aws-security-audit,Comprehensive AWS security posture assessment using AWS CLI and security best practices,100,1
 aws-skills,AWS development with infrastructure automation and cloud architecture patterns,100,1
@@ -365,13 +365,13 @@ frontend-mobile-security-xss-scan,"You are a frontend security specialist focusi
 frontend-security-coder,"Expert in secure frontend coding practices specializing in XSS prevention, output sanitization, and client-side security patterns.",100,1
 gemini-live-api-dev,"Use this skill when building real-time, bidirectional streaming applications with the Gemini Live API. Covers WebSocket-based audio/video/text streaming, voice activity detection (VAD), native audio features, function calling, session management, ephemeral tokens for client-side auth, and all Live API configuration options. SDKs covered - google-genai (Python), @google/genai (JavaScript/TypeScript).",100,1
 generating-threat-intelligence-reports,"Generates structured cyber threat intelligence reports at strategic, operational, and tactical levels tailored to specific audiences including executives, security operations teams, and technical analysts. Use when producing finished intelligence products from raw collection data, creating sector threat briefings, or delivering post-incident intelligence assessments. Activates for requests involving CTI report writing, threat briefings, intelligence products, finished intelligence, or executive security reporting.",100,1
-gmail-automation,Lightweight Gmail integration with standalone OAuth authentication. No MCP server required.,100,1
+gmail-automation,Efficient Gmail integration with standalone OAuth authentication. No MCP server required.,100,1
 golang-patterns,"Go-specific design patterns and best practices including functional options, small interfaces, dependency injection, concurrency patterns, error handling, and package organization. Use when working with Go code to apply idiomatic Go patterns.",100,1
-google-calendar-automation,Lightweight Google Calendar integration with standalone OAuth authentication. No MCP server required.,100,1
-google-docs-automation,Lightweight Google Docs integration with standalone OAuth authentication. No MCP server required.,100,1
-google-drive-automation,Lightweight Google Drive integration with standalone OAuth authentication. No MCP server required. Full read/write access.,100,1
-google-sheets-automation,Lightweight Google Sheets integration with standalone OAuth authentication. No MCP server required. Full read/write access.,100,1
-google-slides-automation,Lightweight Google Slides integration with standalone OAuth authentication. No MCP server required. Full read/write access.,100,1
+google-calendar-automation,Efficient Google Calendar integration with standalone OAuth authentication. No MCP server required.,100,1
+google-docs-automation,Efficient Google Docs integration with standalone OAuth authentication. No MCP server required.,100,1
+google-drive-automation,Efficient Google Drive integration with standalone OAuth authentication. No MCP server required. Full read/write access.,100,1
+google-sheets-automation,Efficient Google Sheets integration with standalone OAuth authentication. No MCP server required. Full read/write access.,100,1
+google-slides-automation,Efficient Google Slides integration with standalone OAuth authentication. No MCP server required. Full read/write access.,100,1
 graphql-architect,"Master modern GraphQL with federation, performance optimization, and enterprise security. Build scalable schemas, implement advanced caching, and design real-time systems.",100,1
 hardening-docker-containers-for-production,"Hardening Docker containers for production involves applying security best practices aligned with CIS Docker Benchmark v1.8.0 to minimize attack surface, prevent privilege escalation, and enforce leas",100,1
 hardening-docker-daemon-configuration,"Harden the Docker daemon by configuring daemon.json with user namespace remapping, TLS authentication, rootless mode, and CIS benchmark controls.",100,1
