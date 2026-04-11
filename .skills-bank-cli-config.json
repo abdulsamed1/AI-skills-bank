@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "repo_root": "C:\\Users\\ASUS\\production\\skills-bank",
-  "workspace_root": "C:\\Users\\ASUS\\production",
+  "repo_root": "skills-bank\\",
+  "workspace_root": "skills-bank\\",
   "sync_scope": "local",
   "tools": [
     "copilot",
