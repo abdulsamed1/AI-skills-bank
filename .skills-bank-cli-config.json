@@ -10,6 +10,12 @@
   ],
   "repositories": [
     {
+
+      "name":"seomachine",
+      "url":"https://github.com/TheCraigHewitt/seomachine.git",
+      "branch":"null"
+    },
+    {
       "name":"awesome-design-systems",
       "url":"https://github.com/alexpate/awesome-design-systems.git"
       ,"branch":null
