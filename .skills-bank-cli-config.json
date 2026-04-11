@@ -9,16 +9,23 @@
     "antigravity"
   ],
   "repositories": [
+        {
+
+      "name":"geo-seo-claude",
+      "url":"https://github.com/zubair-trabzada/geo-seo-claude.git",
+      "branch": null
+    },
+    ,
     {
 
       "name":"seomachine",
       "url":"https://github.com/TheCraigHewitt/seomachine.git",
-      "branch":null
+      "branch": null
     },
     {
       "name":"awesome-design-systems",
       "url":"https://github.com/alexpate/awesome-design-systems.git"
-      ,"branch":null
+      ,"branch": null
     }
     ,
     {
