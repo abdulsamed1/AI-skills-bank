@@ -1,2 +1,0 @@
-skill_id,description,src_path
-android-design-guidelines,"Material Design 3 and Android platform guidelines. Use when building Android apps with Jetpack Compose or XML layouts, implementing Material You, navigation, or accessibility. Triggers on tasks involving Android UI, Compose components, dynamic color, or Material Design compliance.",lib/ehmo-platform-design-skills/skills/android/SKILL.md
