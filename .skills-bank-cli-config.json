@@ -9,6 +9,18 @@
     "antigravity"
   ],
   "repositories": [
+    {
+     "name":"claude-ads.git",
+      "url":"https://github.com/AgriciDaniel/claude-ads.git",
+      "branch": null
+    }
+    ,
+    {
+     "name":"seo-audit-skill",
+      "url":"https://github.com/JeffLi1993/seo-audit-skill.git",
+      "branch": null
+    }
+    ,
         {
 
       "name":"geo-seo-claude",
