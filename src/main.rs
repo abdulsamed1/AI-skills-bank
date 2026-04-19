@@ -3,15 +3,15 @@ use dialoguer::theme::ColorfulTheme;
 use dialoguer::{Input, MultiSelect, Select};
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
-use skill_manage::components::native_pipeline::{
+use skills_bank::components::native_pipeline::{
     aggregate_to_output, sync_output_to_targets, NativeSyncMode,
 };
-use skill_manage::components::diagnostics::Diagnostics;
-use skill_manage::components::fetcher::Fetcher;
-use skill_manage::components::manifest::{RepoManifest, Repository};
-use skill_manage::components::CommandResult;
-use skill_manage::utils::progress::ProgressManager;
-use skill_manage::utils::theme::Theme;
+use skills_bank::components::diagnostics::Diagnostics;
+use skills_bank::components::fetcher::Fetcher;
+use skills_bank::components::manifest::{RepoManifest, Repository};
+use skills_bank::components::CommandResult;
+use skills_bank::utils::progress::ProgressManager;
+use skills_bank::utils::theme::Theme;
 use std::collections::HashSet;
 use std::env;
 use std::fs;
@@ -310,7 +310,7 @@ async fn run() -> Result<()> {
         "tui" => {
             let config = ensure_config(&repo_root, &config_path)?;
             apply_exclusion_env(Some(&config));
-            skill_manage::tui::run_tui(&repo_root, config.repositories).await?;
+            skills_bank::tui::run_tui(&repo_root, config.repositories).await?;
         }
         "list" | "ls" => {
             let output_dir = repo_root.join("skills-aggregated");
@@ -1428,11 +1428,24 @@ fn prepare_manifest(repo_root: &Path, repositories: &[Repository]) -> Result<Opt
 }
 
 fn write_manifest_file(path: &Path, manifest: &RepoManifest) -> Result<()> {
-    let json = serde_json::to_string_pretty(manifest)?;
+    let mut current_val: Value = if path.exists() {
+        let content = fs::read_to_string(path)?;
+        serde_json::from_str(&content).unwrap_or(json!({}))
+    } else {
+        json!({})
+    };
+
+    if let Some(obj) = current_val.as_object_mut() {
+        obj.insert("repositories".to_string(), serde_json::to_value(&manifest.repositories)?);
+    }
+
+    let json = serde_json::to_string_pretty(&current_val)?;
     fs::write(path, json)
         .with_context(|| format!("Failed to write manifest file: {}", path.display()))?;
     Ok(())
 }
+
+use serde_json::json;
 
 fn build_manifest_from_urls(urls: &[String]) -> RepoManifest {
     let mut used_names = HashSet::new();

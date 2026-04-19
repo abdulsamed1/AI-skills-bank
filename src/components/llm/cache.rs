@@ -9,6 +9,7 @@ use std::fs;
 use std::path::{Path, PathBuf};
 use std::sync::atomic::{AtomicUsize, Ordering};
 use std::time::{SystemTime, UNIX_EPOCH};
+use once_cell::sync::Lazy;
 
 fn default_cache_path() -> Option<PathBuf> {
     if let Ok(p) = std::env::var("LLM_CACHE_PATH") {
@@ -80,25 +81,63 @@ pub fn key_for_skill(
     description: &str,
     content_body: Option<&str>,
 ) -> String {
-    // repo origin via `git remote get-url origin` when possible
-    let repo_origin = std::process::Command::new("git")
-        .arg("-C")
-        .arg(repo_root)
-        .arg("remote")
-        .arg("get-url")
-        .arg("origin")
-        .output()
-        .ok()
-        .and_then(|o| String::from_utf8(o.stdout).ok())
-        .map(|s| s.trim().to_string())
-        .filter(|s| !s.is_empty())
-        .unwrap_or_else(|| {
-            repo_root
-                .canonicalize()
-                .ok()
-                .map(|p| p.to_string_lossy().to_string())
-                .unwrap_or_else(|| repo_root.to_string_lossy().to_string())
-        });
+    // Optimization: Cache repo origin to avoid spawning git thousands of times
+    use std::sync::Mutex;
+    static ORIGIN_CACHE: Lazy<Mutex<HashMap<PathBuf, String>>> = Lazy::new(|| Mutex::new(HashMap::new()));
+
+    // Find the actual git root by looking for .git directory upwards from skill_path,
+    // but stop at repo_root.
+    let skill_path_abs = if skill_path.is_absolute() {
+        skill_path.to_path_buf()
+    } else {
+        repo_root.join(skill_path)
+    };
+    
+    let mut actual_git_root = repo_root.to_path_buf();
+    for ancestor in skill_path_abs.ancestors() {
+        if !ancestor.starts_with(repo_root) {
+            break; // Stop if we go above repo_root
+        }
+        if ancestor.join(".git").exists() {
+            actual_git_root = ancestor.to_path_buf();
+            break;
+        }
+    }
+
+    let repo_origin = {
+        let mut cache = ORIGIN_CACHE.lock().unwrap();
+        if let Some(origin) = cache.get(&actual_git_root) {
+            origin.clone()
+        } else {
+            // Read .git/config manually instead of spawning git.exe for massive performance gain
+            let config_path = actual_git_root.join(".git").join("config");
+            let mut found_url = None;
+            
+            if let Ok(content) = std::fs::read_to_string(&config_path) {
+                let mut in_origin = false;
+                for line in content.lines() {
+                    let trimmed = line.trim();
+                    if trimmed == "[remote \"origin\"]" {
+                        in_origin = true;
+                    } else if trimmed.starts_with('[') {
+                        in_origin = false;
+                    } else if in_origin && trimmed.starts_with("url = ") {
+                        found_url = Some(trimmed.strip_prefix("url = ").unwrap().trim().to_string());
+                        break;
+                    } else if in_origin && trimmed.starts_with("url=") {
+                        found_url = Some(trimmed.strip_prefix("url=").unwrap().trim().to_string());
+                        break;
+                    }
+                }
+            }
+
+            let origin = found_url
+                .filter(|s| !s.is_empty())
+                .unwrap_or_else(|| actual_git_root.to_string_lossy().to_string());
+            cache.insert(actual_git_root.clone(), origin.clone());
+            origin
+        }
+    };
 
     let relative = skill_path
         .strip_prefix(repo_root)
