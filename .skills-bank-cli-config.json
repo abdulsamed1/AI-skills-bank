@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "repo_root": "skills-bank\\",
-  "workspace_root": "skills-bank\\",
+  "repo_root": "skills-bank/",
+  "workspace_root": "skills-bank/",
   "sync_scope": "local",
   "tools": [
     "copilot",
@@ -10,36 +10,35 @@
   ],
   "repositories": [
     {
-     "name":"claude-ads.git",
-      "url":"https://github.com/AgriciDaniel/claude-ads.git",
-      "branch": null
-    }
-    ,
-    {
-     "name":"seo-audit-skill",
-      "url":"https://github.com/JeffLi1993/seo-audit-skill.git",
-      "branch": null
-    }
-    ,
-        {
-
-      "name":"geo-seo-claude",
-      "url":"https://github.com/zubair-trabzada/geo-seo-claude.git",
-      "branch": null
-    },
-    ,
-    {
-
-      "name":"seomachine",
-      "url":"https://github.com/TheCraigHewitt/seomachine.git",
+      "name": "claude-ads.git",
+      "url": "https://github.com/AgriciDaniel/claude-ads.git",
       "branch": null
     },
     {
-      "name":"awesome-design-systems",
-      "url":"https://github.com/alexpate/awesome-design-systems.git"
-      ,"branch": null
-    }
-    ,
+      "name": "seo-audit-skill",
+      "url": "https://github.com/JeffLi1993/seo-audit-skill.git",
+      "branch": null
+    },
+    {
+      "name": "geo-seo-claude",
+      "url": "https://github.com/zubair-trabzada/geo-seo-claude.git",
+      "branch": null
+    },
+    {
+      "name": "seomachine",
+      "url": "https://github.com/TheCraigHewitt/seomachine.git",
+      "branch": null
+    },
+    {
+      "name": "awesome-design-systems",
+      "url": "https://github.com/alexpate/awesome-design-systems.git",
+      "branch": null
+    },
+    {
+      "name": "awesome-design",
+      "url": "https://github.com/VoltAgent/awesome-design-md.git",
+      "branch": null
+    },
     {
       "name": "mukul975-anthropic-cybersecurity-skills",
       "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills.git",
