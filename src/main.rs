@@ -1,6 +1,6 @@
 use anyhow::{bail, Context, Result};
 use dialoguer::theme::ColorfulTheme;
-use dialoguer::{Input, MultiSelect, Select};
+use dialoguer::{Confirm, Input, MultiSelect, Select};
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
 use skills_bank::components::native_pipeline::{
@@ -12,7 +12,7 @@ use skills_bank::components::manifest::{RepoManifest, Repository};
 use skills_bank::components::CommandResult;
 use skills_bank::utils::progress::ProgressManager;
 use skills_bank::utils::theme::Theme;
-use std::collections::HashSet;
+use std::collections::{HashMap, HashSet};
 use std::env;
 use std::fs;
 use std::io;
@@ -113,6 +113,18 @@ impl SyncScope {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct SyncConfig {
+    #[serde(default = "default_sync_mode")]
+    pub mode: String,
+    #[serde(default)]
+    pub targets: HashMap<String, String>,
+}
+
+fn default_sync_mode() -> String {
+    "local".to_string()
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct SetupConfig {
     #[serde(default)]
     pub version: u32,
@@ -127,6 +139,8 @@ pub struct SetupConfig {
     pub repositories: Vec<Repository>,
     #[serde(default = "default_category_exclusions")]
     pub category_exclusions: Vec<String>,
+    #[serde(default)]
+    pub sync: Option<SyncConfig>,
 }
 
 fn default_sync_scope() -> SyncScope {
@@ -278,6 +292,20 @@ async fn run() -> Result<()> {
                 run_sync_dry_run(&output_dir, &targets)?;
                 println!("\n[DRY-RUN] No changes made. Run without --dry-run to execute the sync.");
             } else {
+                println!("\nDetected {} sync targets.", targets.len());
+                for t in &targets {
+                    println!("  - {}", t.display());
+                }
+
+                if !Confirm::with_theme(&ColorfulTheme::default())
+                    .with_prompt("Proceed with synchronization?")
+                    .default(true)
+                    .interact()? 
+                {
+                    println!("Sync cancelled.");
+                    return Ok(());
+                }
+
                 if let Err(native_err) = run_sync_native(&output_dir, &targets) {
                     eprintln!("[ERROR] Native sync failed (no archive fallback): {}", native_err);
                     return Err(native_err);
@@ -437,6 +465,21 @@ async fn run_interactive(repo_root: &Path, config_path: &Path) -> Result<()> {
             3 => {
                 let output_dir = repo_root.join("skills-aggregated");
                 let targets = resolve_sync_targets(&config)?;
+
+                println!("\nDetected {} sync targets.", targets.len());
+                for t in &targets {
+                    println!("  - {}", t.display());
+                }
+
+                if !Confirm::with_theme(&theme)
+                    .with_prompt("Proceed with synchronization?")
+                    .default(true)
+                    .interact()? 
+                {
+                    println!("Sync cancelled.");
+                    continue;
+                }
+
                 if let Err(native_err) = run_sync_native(&output_dir, &targets) {
                     eprintln!("[ERROR] Native sync failed (no archive fallback): {}", native_err);
                     return Err(native_err);
@@ -582,6 +625,7 @@ fn run_setup_wizard(repo_root: &Path) -> Result<SetupConfig> {
         tools,
         repositories,
         category_exclusions,
+        sync: None,
     };
 
     println!("\nSetup saved. Running automation now...");
@@ -1351,6 +1395,21 @@ fn resolve_sync_targets(config: &SetupConfig) -> Result<Vec<PathBuf>> {
     let workspace_root = config.workspace_root_path();
     let mut targets = Vec::new();
 
+    // 1. Load from explicit sync.targets in config (if present)
+    if let Some(sync_cfg) = &config.sync {
+        for (_name, path_str) in &sync_cfg.targets {
+            let path = if path_str.starts_with("./") {
+                workspace_root.join(&path_str[2..])
+            } else if path_str.starts_with("~/") {
+                home_dir.join(&path_str[2..])
+            } else {
+                PathBuf::from(path_str)
+            };
+            targets.push(path);
+        }
+    }
+
+    // 2. Load from tool-based defaults
     for key in &config.tools {
         if let Some(tool) = tool_by_key(key) {
             match config.sync_scope {
@@ -1365,12 +1424,22 @@ fn resolve_sync_targets(config: &SetupConfig) -> Result<Vec<PathBuf>> {
     }
 
     let mut seen = HashSet::new();
-    let deduped = targets
-        .into_iter()
-        .filter(|p| seen.insert(p.to_string_lossy().to_lowercase()))
-        .collect::<Vec<_>>();
-
+    let mut deduped = Vec::new();
     
+    for p in targets {
+        // Normalize path to avoid duplicates like ./path and path/
+        if let Ok(canonical) = p.canonicalize() {
+            if seen.insert(canonical.to_string_lossy().to_lowercase()) {
+                deduped.push(p);
+            }
+        } else {
+            // Fallback for non-existent paths (canonicalize fails if path doesn't exist)
+            let normalized = p.to_string_lossy().replace('\\', "/").trim_end_matches('/').to_lowercase();
+            if seen.insert(normalized) {
+                deduped.push(p);
+            }
+        }
+    }
 
     if deduped.is_empty() {
         bail!("No targets were selected. Please rerun setup.");
@@ -1728,14 +1797,16 @@ fn load_config(path: &Path) -> Result<Option<SetupConfig>> {
     let mut config: SetupConfig = serde_json::from_str(&content)
         .with_context(|| format!("Invalid config JSON in {}", path.display()))?;
 
-    // Infer paths if missing from config (e.g. legacy configs or bad manually-edited ones)
-    if config.repo_root.is_empty() {
-        if let Ok(discovered) = discover_repo_root() {
-            config.repo_root = discovered.to_string_lossy().to_string();
+    // Re-discover root to ensure it's dynamic across devices
+    if let Ok(discovered) = discover_repo_root() {
+        let discovered_str = discovered.to_string_lossy().to_string();
+        // If the saved path doesn't exist or we found a valid one, prefer the discovered one
+        if config.repo_root.is_empty() || !Path::new(&config.repo_root).exists() || config.repo_root != discovered_str {
+            config.repo_root = discovered_str.clone();
         }
-    }
-    if config.workspace_root.is_empty() {
-        config.workspace_root = config.repo_root.clone();
+        if config.workspace_root.is_empty() || !Path::new(&config.workspace_root).exists() || config.workspace_root != discovered_str {
+            config.workspace_root = discovered_str;
+        }
     }
 
     if migrate_legacy_workspace_root(&mut config) {
@@ -1791,13 +1862,19 @@ fn auto_config_from_manifest(repo_root: &Path) -> Result<Option<SetupConfig>> {
         tools,
         repositories: manifest.repositories,
         category_exclusions: default_category_exclusions(),
+        sync: None,
     };
 
     Ok(Some(cfg))
 }
 
 fn save_config(path: &Path, config: &SetupConfig) -> Result<()> {
-    let json = serde_json::to_string_pretty(config)?;
+    let mut config_to_save = config.clone();
+    // Save as "." to make it portable across devices
+    config_to_save.repo_root = ".".to_string();
+    config_to_save.workspace_root = ".".to_string();
+
+    let json = serde_json::to_string_pretty(&config_to_save)?;
     fs::write(path, json).with_context(|| format!("Failed to write {}", path.display()))?;
     Ok(())
 }

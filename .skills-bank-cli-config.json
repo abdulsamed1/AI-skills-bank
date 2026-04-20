@@ -1,5 +1,5 @@
 {
-  "repo_root": "c:\\Users\\ASUS\\production\\official-tools\\skills-bank\\",
+  "repo_root": ".",
   "repositories": [
     {
       "branch": null,
@@ -584,11 +584,6 @@
   ],
   "sync": {
     "mode": "local",
-    "preserve_folders": [
-      ".gemini/skills",
-      ".agent/skills",
-      ".github/skills"
-    ],
     "targets": {
       "Antigravity": "./.agent/skills/",
       "Claude": "./.claude/skills/",
@@ -600,8 +595,9 @@
   "tools": [
     "copilot",
     "gemini",
-    "antigravity"
+    "antigravity",
+    "claude"
   ],
   "version": 1,
-  "workspace_root": "c:\\Users\\ASUS\\production\\official-tools\\skills-bank\\"
+  "workspace_root": "."
 }
