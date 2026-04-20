@@ -1,0 +1,16 @@
+{
+  "generated_at_unix": 1776695465,
+  "hub": "mobile",
+  "skills": [
+    {
+      "description": "Material Design 3 and Android platform guidelines. Use when building Android apps with Jetpack Compose or XML layouts, implementing Material You, navigation, or accessibility. Triggers on tasks involving Android UI, Compose components, dynamic color, or Material Design compliance.",
+      "phase": 4,
+      "score": 100,
+      "skill_id": "android-design-guidelines",
+      "src_path": "lib/ehmo-platform-design-skills/skills/android/SKILL.md",
+      "triggers": "android;design;guidelines"
+    }
+  ],
+  "sub_hub": "android",
+  "version": 1
+}

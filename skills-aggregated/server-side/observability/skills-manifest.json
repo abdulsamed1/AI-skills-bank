@@ -1,0 +1,368 @@
+{
+  "generated_at_unix": 1776695465,
+  "hub": "server-side",
+  "skills": [
+    {
+      "description": "Fetch any X/Twitter post as clean LLM-friendly JSON. Converts x.com, twitter.com, or adhx.com links into structured data with full article content, author info, and engagement metrics. No scraping or browser required.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "adhx",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/adhx/SKILL.md",
+      "triggers": "adhx"
+    },
+    {
+      "description": "Scrape reviews, ratings, and brand mentions from multiple platforms using Apify Actors.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "apify-brand-reputation-monitoring",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/apify-brand-reputation-monitoring/SKILL.md",
+      "triggers": "apify;brand;reputation;monitoring"
+    },
+    {
+      "description": "Track engagement metrics, measure campaign ROI, and analyze content performance across Instagram, Facebook, YouTube, and TikTok.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "apify-content-analytics",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/apify-content-analytics/SKILL.md",
+      "triggers": "apify;content;analytics"
+    },
+    {
+      "description": "AWS Bedrock AgentCore comprehensive expert for deploying and managing AI agents at scale. Use when working with any AgentCore service including Gateway, Runtime, Memory, Identity, Code Interpreter, Browser, Observability, Agent Registry, or Evaluations. Covers agent deployment, MCP tool integration, credential management, agent discovery, governance workflows, and automated quality assessment. Essential when user mentions AgentCore, agent runtime, agent registry, agent evaluation, MCP gateway, deploy agent, register MCP server, discover agents, evaluate agent quality, agent credentials, or wants to build, deploy, catalog, or monitor AI agents on AWS.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "aws-agentic-ai",
+      "src_path": "lib/zxkane-aws-skills/plugins/aws-agentic-ai/skills/aws-agentic-ai/SKILL.md",
+      "triggers": "aws;agentic;ai"
+    },
+    {
+      "description": "Post-deploy canary monitoring. Watches the live app for console errors, performance regressions, and page failures using the browse daemon. Takes periodic screenshots, compares against pre-deploy baselines, and alerts on anomalies. Use when: \"monitor deploy\", \"canary\", \"post-deploy check\", \"watch production\", \"verify deploy\". (gstack)",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "canary",
+      "src_path": "lib/garrytan-gstack/canary/SKILL.md",
+      "triggers": "monitor after deploy;canary check;watch for errors post-deploy"
+    },
+    {
+      "description": "Monitor de performance do Claude Code e sistema local. Diagnostica lentidao, mede CPU/RAM/disco, verifica API latency e gera relatorios de saude do sistema.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "claude-monitor",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/claude-monitor/SKILL.md",
+      "triggers": "monitoring;performance;diagnostics;system-health"
+    },
+    {
+      "description": "Analyzes competitors using web research to provide verified business metrics, actionable leverage strategies, and predicted next moves. Use when user needs competitive intelligence, competitor analysis, market positioning insights, or strategic leverage opportunities.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "competitor-intel",
+      "src_path": "lib/ognjengt-founder-skills/skills/competitor-intel/SKILL.md",
+      "triggers": "competitor;intel"
+    },
+    {
+      "description": "Create a customer journey map across stages, touchpoints, actions, emotions, and metrics. Use when diagnosing a broken experience or aligning a team on the full customer flow.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "customer-journey-map",
+      "src_path": "lib/deanpeters-product-manager-skills/skills/customer-journey-map/SKILL.md",
+      "triggers": "customer;journey;map"
+    },
+    {
+      "description": "Build monitoring dashboards that answer real operator questions for Grafana, SigNoz, and similar platforms. Use when turning metrics into a working dashboard instead of a vanity board.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "dashboard-builder",
+      "src_path": "lib/affaan-m-everything-claude-code/skills/dashboard-builder/SKILL.md",
+      "triggers": "dashboard;builder"
+    },
+    {
+      "description": "Automate Datadog tasks via Rube MCP (Composio): query metrics, search logs, manage monitors/dashboards, create events and downtimes. Always search tools first for current schemas.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "datadog-automation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/datadog-automation/SKILL.md",
+      "triggers": "datadog;automation"
+    },
+    {
+      "description": "Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "devops-troubleshooter",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/devops-troubleshooter/SKILL.md",
+      "triggers": "devops;troubleshooter"
+    },
+    {
+      "description": "You are a debugging expert specializing in setting up comprehensive debugging environments, distributed tracing, and diagnostic tools. Configure debugging workflows, implement tracing solutions, and establish troubleshooting practices for development and production environments.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "distributed-debugging-debug-trace",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/distributed-debugging-debug-trace/SKILL.md",
+      "triggers": "distributed;debugging;debug;trace"
+    },
+    {
+      "description": "Implement distributed tracing with Jaeger and Tempo for request flow visibility across microservices.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "distributed-tracing",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/distributed-tracing/SKILL.md",
+      "triggers": "distributed;tracing"
+    },
+    {
+      "description": "You are an expert error analysis specialist with deep expertise in debugging distributed systems, analyzing production incidents, and implementing comprehensive observability solutions.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "error-debugging-error-analysis",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/error-debugging-error-analysis/SKILL.md",
+      "triggers": "error;debugging;error;analysis"
+    },
+    {
+      "description": "You are an error tracking and observability expert specializing in implementing comprehensive error monitoring solutions. Set up error tracking systems, configure alerts, implement structured logging, and ensure teams can quickly identify and resolve production issues.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "error-debugging-error-trace",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/error-debugging-error-trace/SKILL.md",
+      "triggers": "error;debugging;error;trace"
+    },
+    {
+      "description": "You are an error tracking and observability expert specializing in implementing comprehensive error monitoring solutions. Set up error tracking systems, configure alerts, implement structured logging,",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "error-diagnostics-error-trace",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/error-diagnostics-error-trace/SKILL.md",
+      "triggers": "error;diagnostics;error;trace"
+    },
+    {
+      "description": "Provides guidance for experiment tracking with SwanLab. Use when you need open-source run tracking, local or self-hosted dashboards, and lightweight media logging for ML workflows.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "experiment-tracking-swanlab",
+      "src_path": "lib/orchestra-research-ai-research-skills/13-mlops/swanlab/SKILL.md",
+      "triggers": "MLOps;SwanLab;Experiment Tracking;Open Source;Visualization;PyTorch;Transformers;PyTorch Lightning;Fastai;Self-Hosted"
+    },
+    {
+      "description": "Look up SaaS finance metrics, formulas, and benchmarks fast. Use when you need a quick metric definition, formula, or benchmark during analysis.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "finance-metrics-quickref",
+      "src_path": "lib/deanpeters-product-manager-skills/skills/finance-metrics-quickref/SKILL.md",
+      "triggers": "finance;metrics;quickref"
+    },
+    {
+      "description": "Create and manage production-ready Grafana dashboards for comprehensive system observability.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "grafana-dashboards",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/grafana-dashboards/SKILL.md",
+      "triggers": "grafana;dashboards"
+    },
+    {
+      "description": "Track ML experiments with Trackio using Python logging, alerts, and CLI metric retrieval.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "hugging-face-trackio",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/hugging-face-trackio/SKILL.md",
+      "triggers": "hugging;face;trackio"
+    },
+    {
+      "description": "Expert SRE incident responder specializing in rapid problem resolution, modern observability, and comprehensive incident management.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "incident-responder",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/incident-responder/SKILL.md",
+      "triggers": "incident;responder"
+    },
+    {
+      "description": "[Extended thinking: This workflow implements a sophisticated debugging and resolution pipeline that leverages AI-assisted debugging tools and observability platforms to systematically diagnose and res",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "incident-response-smart-fix",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/incident-response-smart-fix/SKILL.md",
+      "triggers": "incident;response;smart;fix"
+    },
+    {
+      "description": "Use when errors occur deep in execution and you need to trace back to find the original trigger - systematically traces bugs backward through call stack, adding instrumentation when needed, to identify source of invalid data or incorrect behavior",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "kaizen:root-cause-tracing",
+      "src_path": "lib/neolabhq-context-engineering-kit/plugins/kaizen/skills/root-cause-tracing/SKILL.md",
+      "triggers": "kaizen;root;cause;tracing"
+    },
+    {
+      "description": "Expert in Langfuse - the open-source LLM observability platform. Covers tracing, prompt management, evaluation, datasets, and integration with LangChain, LlamaIndex, and OpenAI. Essential for debugging, monitoring, and improving LLM applications in production.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "langfuse",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/langfuse/SKILL.md",
+      "triggers": "langfuse"
+    },
+    {
+      "description": "Install and configure the Manifest observability plugin for your agents. Use when setting up telemetry, configuring API keys, or troubleshooting the plugin.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "manifest",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/manifest/SKILL.md",
+      "triggers": "manifest"
+    },
+    {
+      "description": "Define and design a product metrics dashboard with key metrics, data sources, visualization types, and alert thresholds. Use when creating a metrics dashboard, defining KPIs, setting up product analytics, or building a data monitoring plan.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "metrics-dashboard",
+      "src_path": "lib/phuryn-pm-skills/pm-product-discovery/skills/metrics-dashboard/SKILL.md",
+      "triggers": "metrics;dashboard"
+    },
+    {
+      "description": "Guides creation of Monte Carlo monitors via MCP tools, producing monitors-as-code YAML for CI/CD deployment.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "monte-carlo-monitor-creation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/monte-carlo-monitor-creation/SKILL.md",
+      "triggers": "data-observability;monitoring;monte-carlo;monitors-as-code"
+    },
+    {
+      "description": "Expert guide for pushing metadata, lineage, and query logs to Monte Carlo from any data warehouse.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "monte-carlo-push-ingestion",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/monte-carlo-push-ingestion/SKILL.md",
+      "triggers": "data-observability;ingestion;monte-carlo;pycarlo;metadata"
+    },
+    {
+      "description": "Route tasks to specialized AI agents with anti-duplication, quality gates, and 30-minute heartbeat monitoring",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "multi-agent-task-orchestrator",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/multi-agent-task-orchestrator/SKILL.md",
+      "triggers": "multi-agent;orchestration;task-routing;quality-gates;anti-duplication"
+    },
+    {
+      "description": "Neuropixels neural recording analysis. Load SpikeGLX/OpenEphys data, preprocess, motion correction, Kilosort4 spike sorting, quality metrics, Allen/IBL curation, AI-assisted visual analysis, for Neuropixels 1.0/2.0 extracellular electrophysiology. Use when working with neural recordings, spike sorting, extracellular electrophysiology, or when the user mentions Neuropixels, SpikeGLX, Open Ephys, Kilosort, quality metrics, or unit curation.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "neuropixels-analysis",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/neuropixels-analysis/SKILL.md",
+      "triggers": "neuropixels;analysis"
+    },
+    {
+      "description": "Build production-ready monitoring, logging, and tracing systems. Implements comprehensive observability strategies, SLI/SLO management, and incident response workflows.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "observability-engineer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/observability-engineer/SKILL.md",
+      "triggers": "observability;engineer"
+    },
+    {
+      "description": "You are a monitoring and observability expert specializing in implementing comprehensive monitoring solutions. Set up metrics collection, distributed tracing, log aggregation, and create insightful da",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "observability-monitoring-monitor-setup",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/observability-monitoring-monitor-setup/SKILL.md",
+      "triggers": "observability;monitoring;monitor;setup"
+    },
+    {
+      "description": "You are an SLO (Service Level Objective) expert specializing in implementing reliability standards and error budget-based engineering practices. Design comprehensive SLO frameworks, establish meaningful SLIs, and create monitoring systems that balance reliability with feature velocity.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "observability-monitoring-slo-implement",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/observability-monitoring-slo-implement/SKILL.md",
+      "triggers": "observability;monitoring;slo;implement"
+    },
+    {
+      "description": "Expert performance engineer specializing in modern observability,",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "performance-engineer",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/performance-engineer/SKILL.md",
+      "triggers": "performance;engineer"
+    },
+    {
+      "description": "Open-source AI observability platform for LLM tracing, evaluation, and monitoring. Use when debugging LLM applications with detailed traces, running evaluations on datasets, or monitoring production AI systems with real-time insights.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "phoenix-observability",
+      "src_path": "lib/orchestra-research-ai-research-skills/17-observability/phoenix/SKILL.md",
+      "triggers": "Observability;Phoenix;Arize;Tracing;Evaluation;Monitoring;LLM Ops;OpenTelemetry"
+    },
+    {
+      "description": "Senior PM agent with 6 knowledge domains, 30+ frameworks, 12 templates, and 32 SaaS metrics with formulas. Pure Markdown, zero scripts.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "product-manager",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/product-manager/SKILL.md",
+      "triggers": "product-management;saas;frameworks;metrics;strategy"
+    },
+    {
+      "description": "PM skill for Claude Code, Codex, Cursor, and Windsurf. Diagnoses SaaS metrics, critiques PRDs, plans roadmaps, runs discovery, coaches PM career transitions, pressure-tests AI product decisions, and designs PLG growth strategies. Seven knowledge domains, 12 templates, 40+ frameworks, and an opinionated interaction style that labels assumptions and names tradeoffs.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "product-manager-skills",
+      "src_path": "lib/digidai-product-manager-skills/SKILL.md",
+      "triggers": "product;manager;skills"
+    },
+    {
+      "description": "Complete guide to Prometheus setup, metric collection, scrape configuration, and recording rules.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "prometheus-configuration",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/prometheus-configuration/SKILL.md",
+      "triggers": "prometheus;configuration"
+    },
+    {
+      "description": "Deep learning framework (PyTorch Lightning). Organize PyTorch code into LightningModules, configure Trainers for multi-GPU/TPU, implement data pipelines, callbacks, logging (W&B, TensorBoard), distributed training (DDP, FSDP, DeepSpeed), for scalable neural network training.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "pytorch-lightning",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/pytorch-lightning/SKILL.md",
+      "triggers": "pytorch;lightning"
+    },
+    {
+      "description": "Evaluate SaaS unit economics and capital efficiency. Use when deciding whether the business can scale efficiently or needs correction.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "saas-economics-efficiency-metrics",
+      "src_path": "lib/deanpeters-product-manager-skills/skills/saas-economics-efficiency-metrics/SKILL.md",
+      "triggers": "saas;economics;efficiency;metrics"
+    },
+    {
+      "description": "Calculate SaaS revenue, retention, and growth metrics. Use when diagnosing momentum, churn, expansion, or product-market-fit signals.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "saas-revenue-growth-metrics",
+      "src_path": "lib/deanpeters-product-manager-skills/skills/saas-revenue-growth-metrics/SKILL.md",
+      "triggers": "saas;revenue;growth;metrics"
+    },
+    {
+      "description": "Biological data toolkit. Sequence analysis, alignments, phylogenetic trees, diversity metrics (alpha/beta, UniFrac), ordination (PCoA), PERMANOVA, FASTA/Newick I/O, for microbiome analysis.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "scikit-bio",
+      "src_path": "lib/k-dense-ai-claude-scientific-skills/scientific-skills/scikit-bio/SKILL.md",
+      "triggers": "scikit;bio"
+    },
+    {
+      "description": "Server management principles and decision-making. Process management, monitoring strategy, and scaling decisions. Teaches thinking, not commands.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "server-management",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/server-management/SKILL.md",
+      "triggers": "server;management"
+    },
+    {
+      "description": "Visualize training metrics, debug models with histograms, compare experiments, visualize model graphs, and profile performance with TensorBoard - Google's ML visualization toolkit",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "tensorboard",
+      "src_path": "lib/orchestra-research-ai-research-skills/13-mlops/tensorboard/SKILL.md",
+      "triggers": "MLOps;TensorBoard;Visualization;Training Metrics;Model Debugging;PyTorch;TensorFlow;Experiment Tracking;Performance Profiling"
+    },
+    {
+      "description": "Track ML experiments with automatic logging, visualize training in real-time, optimize hyperparameters with sweeps, and manage model registry with W&B - collaborative MLOps platform",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "weights-and-biases",
+      "src_path": "lib/orchestra-research-ai-research-skills/13-mlops/weights-and-biases/SKILL.md",
+      "triggers": "MLOps;Weights And Biases;WandB;Experiment Tracking;Hyperparameter Tuning;Model Registry;Collaboration;Real-Time Visualization;PyTorch;TensorFlow;HuggingFace"
+    }
+  ],
+  "sub_hub": "observability",
+  "version": 1
+}

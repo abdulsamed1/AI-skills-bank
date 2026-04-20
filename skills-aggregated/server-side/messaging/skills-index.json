@@ -1,0 +1,12 @@
+{
+  "count": 5,
+  "hub": "server-side",
+  "skills": [
+    "aws-serverless",
+    "cqrs-implementation",
+    "event-sourcing-architect",
+    "inngest",
+    "projection-patterns"
+  ],
+  "sub_hub": "messaging"
+}

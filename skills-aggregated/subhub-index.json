@@ -1,0 +1,162 @@
+{
+  "generated_at_unix": 1776695465,
+  "subhubs": [
+    {
+      "hub": "ai",
+      "path": "ai/prompting-factory",
+      "skills_count": 101,
+      "sub_hub": "prompting-factory"
+    },
+    {
+      "hub": "business",
+      "path": "business/business-strategy",
+      "skills_count": 859,
+      "sub_hub": "business-strategy"
+    },
+    {
+      "hub": "business",
+      "path": "business/marketing",
+      "skills_count": 89,
+      "sub_hub": "marketing"
+    },
+    {
+      "hub": "business",
+      "path": "business/sales",
+      "skills_count": 14,
+      "sub_hub": "sales"
+    },
+    {
+      "hub": "code-quality",
+      "path": "code-quality/code-review",
+      "skills_count": 25,
+      "sub_hub": "code-review"
+    },
+    {
+      "hub": "code-quality",
+      "path": "code-quality/golang",
+      "skills_count": 13,
+      "sub_hub": "golang"
+    },
+    {
+      "hub": "code-quality",
+      "path": "code-quality/javascript",
+      "skills_count": 46,
+      "sub_hub": "javascript"
+    },
+    {
+      "hub": "code-quality",
+      "path": "code-quality/python",
+      "skills_count": 1,
+      "sub_hub": "python"
+    },
+    {
+      "hub": "code-quality",
+      "path": "code-quality/rust",
+      "skills_count": 9,
+      "sub_hub": "rust"
+    },
+    {
+      "hub": "code-quality",
+      "path": "code-quality/security",
+      "skills_count": 888,
+      "sub_hub": "security"
+    },
+    {
+      "hub": "code-quality",
+      "path": "code-quality/testing-qa",
+      "skills_count": 107,
+      "sub_hub": "testing-qa"
+    },
+    {
+      "hub": "code-quality",
+      "path": "code-quality/typescript",
+      "skills_count": 20,
+      "sub_hub": "typescript"
+    },
+    {
+      "hub": "code-quality",
+      "path": "code-quality/virsion-control",
+      "skills_count": 226,
+      "sub_hub": "virsion-control"
+    },
+    {
+      "hub": "frontend",
+      "path": "frontend/ui-ux",
+      "skills_count": 92,
+      "sub_hub": "ui-ux"
+    },
+    {
+      "hub": "frontend",
+      "path": "frontend/web-frameworks",
+      "skills_count": 23,
+      "sub_hub": "web-frameworks"
+    },
+    {
+      "hub": "mobile",
+      "path": "mobile/android",
+      "skills_count": 1,
+      "sub_hub": "android"
+    },
+    {
+      "hub": "mobile",
+      "path": "mobile/cross-platform",
+      "skills_count": 3,
+      "sub_hub": "cross-platform"
+    },
+    {
+      "hub": "mobile",
+      "path": "mobile/ios",
+      "skills_count": 46,
+      "sub_hub": "ios"
+    },
+    {
+      "hub": "server-side",
+      "path": "server-side/architect",
+      "skills_count": 84,
+      "sub_hub": "architect"
+    },
+    {
+      "hub": "server-side",
+      "path": "server-side/caching",
+      "skills_count": 14,
+      "sub_hub": "caching"
+    },
+    {
+      "hub": "server-side",
+      "path": "server-side/containers",
+      "skills_count": 17,
+      "sub_hub": "containers"
+    },
+    {
+      "hub": "server-side",
+      "path": "server-side/databases",
+      "skills_count": 35,
+      "sub_hub": "databases"
+    },
+    {
+      "hub": "server-side",
+      "path": "server-side/frameworks",
+      "skills_count": 1,
+      "sub_hub": "frameworks"
+    },
+    {
+      "hub": "server-side",
+      "path": "server-side/messaging",
+      "skills_count": 5,
+      "sub_hub": "messaging"
+    },
+    {
+      "hub": "server-side",
+      "path": "server-side/observability",
+      "skills_count": 45,
+      "sub_hub": "observability"
+    },
+    {
+      "hub": "server-side",
+      "path": "server-side/serverless-edge",
+      "skills_count": 10,
+      "sub_hub": "serverless-edge"
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,6 @@
+skill_id,description,score,phase
+aws-serverless,"Specialized skill for building production-ready serverless applications on AWS. Covers Lambda functions, API Gateway, DynamoDB, SQS/SNS event-driven patterns, SAM/CDK deployment, and cold start optimization.",100,2
+cqrs-implementation,"Implement Command Query Responsibility Segregation for scalable architectures. Use when separating read and write models, optimizing query performance, or building event-sourced systems.",100,2
+event-sourcing-architect,"Expert in event sourcing, CQRS, and event-driven architecture patterns. Masters event store design, projection building, saga orchestration, and eventual consistency patterns. Use PROACTIVELY for event-sourced systems, audit trail requirements, or complex domain modeling with temporal queries.",100,2
+inngest,"Inngest expert for serverless-first background jobs, event-driven workflows, and durable execution without managing queues or workers.",100,2
+projection-patterns,"Build read models and projections from event streams. Use when implementing CQRS read sides, building materialized views, or optimizing query performance in event-sourced systems.",100,2

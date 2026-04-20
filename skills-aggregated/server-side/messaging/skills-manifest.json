@@ -1,0 +1,48 @@
+{
+  "generated_at_unix": 1776695465,
+  "hub": "server-side",
+  "skills": [
+    {
+      "description": "Specialized skill for building production-ready serverless applications on AWS. Covers Lambda functions, API Gateway, DynamoDB, SQS/SNS event-driven patterns, SAM/CDK deployment, and cold start optimization.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "aws-serverless",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/aws-serverless/SKILL.md",
+      "triggers": "aws;serverless"
+    },
+    {
+      "description": "Implement Command Query Responsibility Segregation for scalable architectures. Use when separating read and write models, optimizing query performance, or building event-sourced systems.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "cqrs-implementation",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/cqrs-implementation/SKILL.md",
+      "triggers": "cqrs;implementation"
+    },
+    {
+      "description": "Expert in event sourcing, CQRS, and event-driven architecture patterns. Masters event store design, projection building, saga orchestration, and eventual consistency patterns. Use PROACTIVELY for event-sourced systems, audit trail requirements, or complex domain modeling with temporal queries.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "event-sourcing-architect",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/event-sourcing-architect/SKILL.md",
+      "triggers": "event;sourcing;architect"
+    },
+    {
+      "description": "Inngest expert for serverless-first background jobs, event-driven workflows, and durable execution without managing queues or workers.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "inngest",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/inngest/SKILL.md",
+      "triggers": "inngest"
+    },
+    {
+      "description": "Build read models and projections from event streams. Use when implementing CQRS read sides, building materialized views, or optimizing query performance in event-sourced systems.",
+      "phase": 2,
+      "score": 100,
+      "skill_id": "projection-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/projection-patterns/SKILL.md",
+      "triggers": "projection;patterns"
+    }
+  ],
+  "sub_hub": "messaging",
+  "version": 1
+}

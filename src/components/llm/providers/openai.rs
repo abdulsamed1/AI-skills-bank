@@ -165,7 +165,7 @@ impl LlmProvider for OpenAiProvider {
                 {"role": "user", "content": user_content}
             ],
             "temperature": 0.0,
-            "max_tokens": 1500,
+            "max_tokens": 4096,
         });
 
         let resp = self

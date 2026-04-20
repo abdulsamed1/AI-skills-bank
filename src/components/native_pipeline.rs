@@ -571,15 +571,13 @@ async fn classify_skills_with_llm(
         ));
     }
 
-    if !to_classify.is_empty() {
+        if !to_classify.is_empty() {
         // Batch size configurable
         let batch_size: usize = env::var("LLM_BATCH_SIZE")
             .ok()
             .and_then(|s| s.parse::<usize>().ok())
             .filter(|&v| v > 0)
-            .unwrap_or(8);
-
-        // Batch classification with retries is handled inline within concurrent tasks below
+            .unwrap_or(10);
 
         // Process in chunks concurrently (bounded)
         let total_tc = to_classify.len();
@@ -587,30 +585,21 @@ async fn classify_skills_with_llm(
             .ok()
             .and_then(|s| s.parse::<usize>().ok())
             .filter(|&v| v > 0)
-            .unwrap_or(4);
+            .unwrap_or(10);
 
+        let pb = progress.create_main_bar(total_tc as u64, "Classifying skills (LLM)");
         let semaphore = Arc::new(tokio::sync::Semaphore::new(concurrency));
         let provider = Arc::new(provider);
         let mut handles = Vec::new();
 
-        for (chunk_idx, chunk) in to_classify.chunks(batch_size).enumerate() {
-            let current_tc = (chunk_idx + 1) * batch_size;
-            let current_count = if current_tc > total_tc { total_tc } else { current_tc };
-
-            if let Some(reporter) = &progress.reporter {
-                reporter.report(
-                    current_count as u64,
-                    total_tc as u64,
-                    format!("Classifying batch {}/{}...", chunk_idx + 1, (total_tc + batch_size - 1) / batch_size),
-                );
-            }
-
+        for (_chunk_idx, chunk) in to_classify.chunks(batch_size).enumerate() {
             let chunk_vec: Vec<(usize, String, String, Option<String>, String)> =
                 chunk.iter().cloned().collect();
 
             let provider = Arc::clone(&provider);
             let context = context.clone();
             let semaphore = Arc::clone(&semaphore);
+            let pb = pb.clone();
 
             let max_retries = max_retries;
             let initial_backoff_ms = initial_backoff_ms;
@@ -630,6 +619,7 @@ async fn classify_skills_with_llm(
                     })
                     .collect();
 
+                let chunk_len = chunk_vec.len();
                 // Attempt batch classification with retry/backoff
                 let mut batch_ok = false;
                 let mut out: Vec<(usize, Option<crate::components::llm::LlmClassificationResponse>, String)> = Vec::new();
@@ -642,10 +632,11 @@ async fn classify_skills_with_llm(
                                 out.push((*idx, Some(resp), key.clone()));
                             }
                             batch_ok = true;
+                            pb.inc(chunk_len as u64);
                             break;
                         }
-                        Ok(_resps) => {
-                            // unexpected length - break to per-item fallback below
+                        Ok(resps) => {
+                            eprintln!("DEBUG: Batch response length mismatch (expected {}, got {})", item_payload.len(), resps.len());
                             break;
                         }
                         Err(e) => {
@@ -663,6 +654,7 @@ async fn classify_skills_with_llm(
                             }
 
                             if attempt + 1 >= attempts {
+                                eprintln!("DEBUG: Batch failed after {} attempts: {:?}", attempts, e);
                                 break;
                             }
 
@@ -726,6 +718,7 @@ async fn classify_skills_with_llm(
                             }
                         }
                         out.push((idx, classified, key));
+                        pb.inc(1);
                     }
                 }
 
@@ -771,8 +764,8 @@ async fn classify_skills_with_llm(
                     if total_handles > 1 && completed_handles % 5 == 0 {
                         if let Some(reporter) = &progress.reporter {
                             reporter.report(
-                                completed_handles as u64,
-                                total_handles as u64,
+                                (completed_handles * batch_size) as u64,
+                                total_tc as u64,
                                 format!("Processing LLM results: {}/{}", completed_handles, total_handles),
                             );
                         }
@@ -788,6 +781,7 @@ async fn classify_skills_with_llm(
                 }
             }
         }
+        pb.finish_and_clear();
     }
 
     // Persist cache

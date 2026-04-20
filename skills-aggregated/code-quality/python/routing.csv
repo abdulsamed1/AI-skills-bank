@@ -1,0 +1,2 @@
+skill_id,description,src_path
+python,"Python development with ruff, mypy, pytest - TDD and type safety",lib/alinaqi-claude-bootstrap/skills/python/SKILL.md

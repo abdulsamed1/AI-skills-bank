@@ -1,0 +1,18 @@
+skill_id,description,score,phase
+aegisops-ai,"Autonomous DevSecOps & FinOps Guardrails. Orchestrates Gemini 3 Flash to audit Linux Kernel patches, Terraform cost drifts, and K8s compliance.",100,2
+c4-container,Expert C4 Container-level documentation specialist.,100,2
+docker-expert,"You are an advanced Docker containerization expert with comprehensive, practical knowledge of container optimization, security hardening, multi-stage builds, orchestration patterns, and production deployment strategies based on current industry best practices.",100,2
+docker-patterns,"Docker and Docker Compose patterns for local development, container security, networking, volume strategies, and multi-service orchestration. Use when setting up containerized development environments or reviewing Docker configurations.",100,2
+gitops-workflow,Complete guide to implementing GitOps workflows with ArgoCD and Flux for automated Kubernetes deployments.,100,2
+helm-chart-scaffolding,"Comprehensive guidance for creating, organizing, and managing Helm charts for packaging and deploying Kubernetes applications.",100,2
+istio-traffic-management,Comprehensive guide to Istio traffic management for production service mesh deployments.,100,2
+k8s-manifest-generator,"Step-by-step guidance for creating production-ready Kubernetes manifests including Deployments, Services, ConfigMaps, Secrets, and PersistentVolumeClaims.",100,2
+k8s-security-policies,"Comprehensive guide for implementing NetworkPolicy, PodSecurityPolicy, RBAC, and Pod Security Standards in Kubernetes.",100,2
+kubernetes-architect,"Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise container orchestration.",100,2
+kubernetes-deployment,"Kubernetes deployment workflow for container orchestration, Helm charts, service mesh, and production-ready K8s configurations.",100,2
+linkerd-patterns,"Production patterns for Linkerd service mesh - the lightweight, security-first service mesh for Kubernetes.",100,2
+mcp:setup-arxiv-mcp,Guide for setup arXiv paper search MCP server using Docker MCP,100,2
+odoo-docker-deployment,"Production-ready Docker and docker-compose setup for Odoo with PostgreSQL, persistent volumes, environment-based configuration, and Nginx reverse proxy.",100,2
+service-mesh-expert,"Expert service mesh architect specializing in Istio, Linkerd, and cloud-native networking patterns. Masters traffic management, security policies, observability integration, and multi-cluster mesh con",100,2
+service-mesh-observability,"Complete guide to observability patterns for Istio, Linkerd, and service mesh deployments.",100,2
+windows-vm,"Create, manage, or connect to a headless Windows 11 VM running in Docker with SSH access. Use when the user wants to spin up, stop, restart, or SSH into a Windows VM.",100,2

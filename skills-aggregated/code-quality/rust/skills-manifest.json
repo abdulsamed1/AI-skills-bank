@@ -1,0 +1,80 @@
+{
+  "generated_at_unix": 1776695465,
+  "hub": "code-quality",
+  "skills": [
+    {
+      "description": "Master Bevy's Entity Component System (ECS) in Rust, covering Systems, Queries, Resources, and parallel scheduling.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "bevy-ecs-expert",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/bevy-ecs-expert/SKILL.md",
+      "triggers": "bevy;ecs;expert"
+    },
+    {
+      "description": "Fast tokenizers optimized for research and production. Rust-based implementation tokenizes 1GB in <20 seconds. Supports BPE, WordPiece, and Unigram algorithms. Train custom vocabularies, track alignments, handle padding/truncation. Integrates seamlessly with transformers. Use when you need high-performance tokenization or custom tokenizer training.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "huggingface-tokenizers",
+      "src_path": "lib/orchestra-research-ai-research-skills/02-tokenization/huggingface-tokenizers/SKILL.md",
+      "triggers": "Tokenization;HuggingFace;BPE;WordPiece;Unigram;Fast Tokenization;Rust;Custom Tokenizer;Alignment Tracking;Production"
+    },
+    {
+      "description": "Makepad UI development skills for Rust apps: setup, patterns, shaders, packaging, and troubleshooting.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "makepad-skills",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/makepad-skills/SKILL.md",
+      "triggers": "makepad;skills"
+    },
+    {
+      "description": "High-performance vector similarity search engine for RAG and semantic search. Use when building production RAG systems requiring fast nearest neighbor search, hybrid search with filtering, or scalable vector storage with Rust-powered performance.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "qdrant-vector-search",
+      "src_path": "lib/orchestra-research-ai-research-skills/15-rag/qdrant/SKILL.md",
+      "triggers": "RAG;Vector Search;Qdrant;Semantic Search;Embeddings;Similarity Search;HNSW;Production;Distributed"
+    },
+    {
+      "description": "Master Rust async programming with Tokio, async traits, error handling, and concurrent patterns. Use when building async Rust applications, implementing concurrent systems, or debugging async code.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "rust-async-patterns",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/rust-async-patterns/SKILL.md",
+      "triggers": "rust;async;patterns"
+    },
+    {
+      "description": "Idiomatic Rust patterns, ownership, error handling, traits, concurrency, and best practices for building safe, performant applications.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "rust-patterns",
+      "src_path": "lib/affaan-m-everything-claude-code/docs/tr/skills/rust-patterns/SKILL.md",
+      "triggers": "rust;patterns"
+    },
+    {
+      "description": "Master Rust 1.75+ with modern async patterns, advanced type system features, and production-ready systems programming.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "rust-pro",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/rust-pro/SKILL.md",
+      "triggers": "rust;pro"
+    },
+    {
+      "description": "Expert guidance on building WASM apps for Wendy Lite MCU firmware on ESP32-C6. Use when developers mention: (1) Wendy Lite or wendy-lite, (2) WASM apps on ESP32 or microcontrollers, (3) WendyLite Swift package or import WendyLite, (4) building C/Rust/Swift/Zig apps for ESP32, (5) WAMR runtime on embedded devices, (6) GPIO/I2C/SPI/UART/NeoPixel from WASM, (7) Embedded Swift on WASM or wasm32-none-none-wasm, (8) BLE provisioning on ESP32-C6, (9) uploading WASM binaries to MCU, (10) TLS/networking on ESP32 from Swift.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "wendy-lite",
+      "src_path": "lib/joannis-claude-skills/wendy-lite/SKILL.md",
+      "triggers": "wendy;lite"
+    },
+    {
+      "description": "Detects missing zeroization of sensitive data in source code and identifies zeroization removed by compiler optimizations, with assembly-level analysis, and control-flow verification. Use for auditing C/C++/Rust code handling secrets, keys, passwords, or other sensitive data.",
+      "phase": 1,
+      "score": 100,
+      "skill_id": "zeroize-audit",
+      "src_path": "lib/sickn33-antigravity-awesome-skills/plugins/antigravity-awesome-skills-claude/skills/zeroize-audit/SKILL.md",
+      "triggers": "zeroize;audit"
+    }
+  ],
+  "sub_hub": "rust",
+  "version": 1
+}

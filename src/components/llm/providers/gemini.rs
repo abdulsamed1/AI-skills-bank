@@ -174,7 +174,7 @@ impl LlmProvider for GeminiProvider {
             "generationConfig": {
                 "responseMimeType": "application/json",
                 "temperature": 0.0,
-                "maxOutputTokens": 1500
+                "maxOutputTokens": 4096
             }
         });
 

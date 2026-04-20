@@ -42,7 +42,27 @@ Return ONLY valid JSON. No explanation, no markdown.
     );
 
     if is_batch {
-        prompt.push_str(r#"Return a JSON array: [{"hub":"...","sub_hub":"...","confidence":0-100,"reasoning":"one sentence"}]"#);
+        prompt.push_str(r#"
+CRITICAL: You are in BATCH MODE. You must return a JSON ARRAY of objects.
+Each object in the array MUST have a "ranked_suggestions" key containing a list with exactly one classification.
+The length of the output array MUST match the number of input skills.
+
+EXAMPLE OUTPUT FORMAT:
+[
+  {
+    "ranked_suggestions": [
+      { "hub": "code-quality", "sub_hub": "rust", "confidence": 100, "reasoning": "Explicit Rust project" }
+    ]
+  },
+  {
+    "ranked_suggestions": [
+      { "hub": "ai", "sub_hub": "prompt-engineering", "confidence": 90, "reasoning": "Focuses on LLM prompting" }
+    ]
+  }
+]
+
+Return ONLY the JSON array.
+"#);
     } else {
         prompt.push_str(r#"Return: {"ranked_suggestions":[{"hub":"...","sub_hub":"...","confidence":0-100,"reasoning":"one sentence"}]}"#);
     }

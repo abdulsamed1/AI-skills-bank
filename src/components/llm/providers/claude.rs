@@ -151,7 +151,7 @@ impl LlmProvider for ClaudeProvider {
 
         let body = serde_json::json!({
             "model": "claude-3-5-sonnet-20240620",
-            "max_tokens": 1500,
+            "max_tokens": 4096,
             "system": system_prompt,
             "messages": [
                 {
