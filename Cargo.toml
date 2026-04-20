@@ -2,7 +2,7 @@
 name = "skills-bank"
 version = "0.1.0"
 edition = "2021"
-authors = ["ABDULSAMED"]
+default-run = "skills-bank"
 description = "Ultra-lightweight routing layer for AI agent workflows"
 
 [[bin]]

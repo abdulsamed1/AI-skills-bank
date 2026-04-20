@@ -5,7 +5,7 @@
 High-performance skill aggregation, classification & routing platform for AI agents.
 
 [![Rust](https://img.shields.io/badge/rust-1.70%2B-ce422b?style=for-the-badge)](https://www.rust-lang.org/)
-[![License](https://img.shields.io/badge/license-MIT-1f6feb?style=for-the-badge)](./LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-1f6feb?style=for-the-badge)](./package.json)
 [![CLI](https://img.shields.io/badge/cli-ready-16a34a?style=for-the-badge)]()
 [![TUI](https://img.shields.io/badge/tui-ratatui-6e56cf?style=for-the-badge)]()
 
@@ -65,7 +65,7 @@ cargo run --release -- cleanup-legacy-duplicates
 
 # You can monitor it by running 
 cd skills-bank/
-cargo run --release --bin skills-bank -- aggregate 
+cargo run --release -- aggregate 
  # if you wish to see the interactive bar, or simply wait a few minutes for the skills-aggregated/ directory to be fully populated.
 ```
 
@@ -81,7 +81,6 @@ cargo run --release --bin skills-bank -- aggregate
 
 ### Documentation
 - **[readme.md](./readme.md)** — Main platform documentation and quick-start guide.
-- **[AGENTS.md](./AGENTS.md)** — Instruction manual for AI agents on how to discover and load skills.
 
 ### Tooling & Maintenance
 - **[tests/](./tests/)** — Integration testing suite for the pipeline and TUI components.
@@ -310,6 +309,6 @@ For a skill in `lib/mukul975-anthropic-cybersecurity-skills/`:
 ```
 
 ---
-## � License
+## 🛡️ License
 
-MIT — See [LICENSE](./LICENSE) or [cli/package.json](./cli/package.json)
+MIT — See [package.json](./package.json)
