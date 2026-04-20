@@ -62,6 +62,11 @@ cargo run --release -- release-gate
 
 # Cleanup legacy duplicate repos (legacy locations: src/, repos/)
 cargo run --release -- cleanup-legacy-duplicates
+
+# You can monitor it by running 
+cd skills-bank/
+cargo run --release --bin skills-bank -- aggregate 
+ # if you wish to see the interactive bar, or simply wait a few minutes for the skills-aggregated/ directory to be fully populated.
 ```
 
 ---
