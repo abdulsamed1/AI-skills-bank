@@ -165,7 +165,7 @@ impl LlmProvider for OpenAiProvider {
                 {"role": "user", "content": user_content}
             ],
             "temperature": 0.0,
-            "max_tokens": 2000,
+            "max_tokens": 2000
         });
 
         let resp = self
@@ -199,6 +199,27 @@ impl LlmProvider for OpenAiProvider {
                     .and_then(|s| s.parse::<u64>().ok());
                 return Err(LlmError::RateLimited { retry_after });
             }
+            // Recovery: some providers (SambaNova) return valid model output in
+            // error_model_output even when their JSON validator rejects it (400).
+            if status.as_u16() == 400 {
+                if let Ok(err_body) = serde_json::from_str::<serde_json::Value>(&text) {
+                    if let Some(model_output) = err_body.get("error_model_output").and_then(|v| v.as_str()) {
+                        if let Some(json_text) = extract_json_substring(model_output) {
+                            if let Ok(value) = serde_json::from_str::<serde_json::Value>(&json_text) {
+                                if let Some(results) = value.get("results").and_then(|r| r.as_array()) {
+                                    let array_json = serde_json::to_string(results).unwrap_or_else(|_| "[]".to_string());
+                                    if let Ok(parsed) = serde_json::from_str::<Vec<LlmClassificationResponse>>(&array_json) {
+                                        return Ok(parsed);
+                                    }
+                                }
+                            }
+                            if let Ok(parsed) = serde_json::from_str::<Vec<LlmClassificationResponse>>(&json_text) {
+                                return Ok(parsed);
+                            }
+                        }
+                    }
+                }
+            }
             return Err(LlmError::ProviderUnavailable(format!(
                 "OpenAI batch request failed: {} - {}",
                 status, text
@@ -214,11 +235,27 @@ impl LlmProvider for OpenAiProvider {
                 .and_then(|c| c.as_str())
             {
                 if let Some(json_text) = extract_json_substring(content) {
-                    match serde_json::from_str::<Vec<LlmClassificationResponse>>(&json_text) {
-                        Ok(parsed) => return Ok(parsed),
-                        Err(e) => {
-                            eprintln!("DEBUG JSON Parse Error: {}. Raw json_text: {}", e, json_text);
+                    if let Ok(value) = serde_json::from_str::<serde_json::Value>(&json_text) {
+                        if let Some(results) = value.get("results").and_then(|r| r.as_array()) {
+                            // Extract just the results array
+                            let array_json = serde_json::to_string(results).unwrap_or_else(|_| "[]".to_string());
+                            match serde_json::from_str::<Vec<LlmClassificationResponse>>(&array_json) {
+                                Ok(parsed) => return Ok(parsed),
+                                Err(e) => {
+                                    eprintln!("DEBUG JSON Parse Error: {}. Raw json_text: {}", e, json_text);
+                                }
+                            }
+                        } else {
+                            // Fallback if the model still generated just an array
+                            match serde_json::from_str::<Vec<LlmClassificationResponse>>(&json_text) {
+                                Ok(parsed) => return Ok(parsed),
+                                Err(e) => {
+                                    eprintln!("DEBUG JSON Parse Error: Expected 'results' object, got array/other: {}. Raw json_text: {}", e, json_text);
+                                }
+                            }
                         }
+                    } else {
+                        eprintln!("DEBUG JSON Parse Error: Could not parse extracted json_text. Raw: {}", json_text);
                     }
                 } else {
                     eprintln!("DEBUG JSON Parse Error: Could not extract json substring from content: {}", content);

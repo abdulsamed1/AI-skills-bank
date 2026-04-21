@@ -24,7 +24,7 @@ rayon = "1"
 indicatif = "0.17"
 clap = { version = "4", features = ["derive"] }
 thiserror = "1"
-tokio = { version = "1", features = ["macros", "rt", "sync", "process"] }
+tokio = { version = "1", features = ["macros", "rt", "rt-multi-thread", "sync", "process"] }
 junction = "0.2.0"
 home = "0.5"
 serde_yaml = "0.9"

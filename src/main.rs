@@ -227,7 +227,7 @@ impl Drop for DirGuard {
     }
 }
 
-#[tokio::main(flavor = "current_thread")]
+#[tokio::main]
 async fn main() {
     dotenvy::dotenv().ok();
     if let Err(err) = run().await {

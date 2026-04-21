@@ -545,7 +545,7 @@ async fn classify_skills_with_llm(
     // Build list of skills that need classification (cache miss and not already handled)
     let mut to_classify: Vec<(usize, String, String, Option<String>, String)> = Vec::new();
     for (idx, skill) in skills.iter_mut().enumerate() {
-        if skill.match_score.unwrap_or(0) >= 100 {
+        if skill.match_score.unwrap_or(0) >= 90 {
             continue;
         }
 
@@ -640,6 +640,14 @@ async fn classify_skills_with_llm(
                             break;
                         }
                         Err(e) => {
+                            // Circuit breaker: only 410 Gone (model permanently deprecated) — don't retry
+                            if let crate::components::llm::LlmError::ProviderUnavailable(ref msg) = e {
+                                if msg.contains("410") {
+                                    eprintln!("FATAL: Model permanently unavailable (410 Gone): {}. Skipping all LLM.", msg);
+                                    pb.inc(chunk_len as u64);
+                                    return Ok(vec![]);
+                                }
+                            }
                             if let crate::components::llm::LlmError::AuthenticationFailed(text) = &e {
                                 eprintln!("CRITICAL: Authentication Failed. Stopping process: {}", text);
                                 std::process::exit(1);
@@ -691,6 +699,12 @@ async fn classify_skills_with_llm(
                                     break;
                                 }
                                 Err(e) => {
+                                    // Circuit breaker: only 410 Gone — permanent
+                                    if let crate::components::llm::LlmError::ProviderUnavailable(ref msg) = e {
+                                        if msg.contains("410") {
+                                            break;
+                                        }
+                                    }
                                     if let crate::components::llm::LlmError::RateLimited { retry_after } = &e {
                                         if let Some(secs) = retry_after {
                                             let now_ms = (std::time::SystemTime::now()

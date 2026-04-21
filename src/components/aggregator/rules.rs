@@ -138,6 +138,22 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
         },
     );
     code_quality.insert(
+        "python",
+        SubHubRule {
+            keywords: vec!["python", "pip", "virtualenv", "conda", "django", "flask", "fastapi", "pandas", "numpy", "pytorch", "pydantic"],
+            anchor_keywords: vec!["python", "pip", "django", "flask", "fastapi"],
+            negative_keywords: vec!["rust", "typescript", "javascript"],
+        },
+    );
+    code_quality.insert(
+        "java",
+        SubHubRule {
+            keywords: vec!["java", "maven", "gradle", "spring", "spring-boot", "jvm", "junit", "hibernate"],
+            anchor_keywords: vec!["java", "maven", "spring-boot", "jvm"],
+            negative_keywords: vec!["javascript", "typescript", "python"],
+        },
+    );
+    code_quality.insert(
         "golang",
         SubHubRule {
             keywords: vec!["golang", "go", "goroutine", "channels"],
@@ -973,16 +989,33 @@ fn infer_hub_from_repo_name(path: &std::path::Path) -> Option<(String, String)> 
         .map(|c| c.as_os_str().to_string_lossy().to_lowercase())
         .collect();
 
-    // Find the repo name: the segment right after `lib` or `src`
+    // Find the repo name: the segment right after `lib`, `src`, or `skills`
     let repo_name = components
         .windows(2)
         .find_map(|w| {
-            if w[0] == "lib" || w[0] == "src" {
+            if w[0] == "lib" || w[0] == "src" || w[0] == "skills" {
                 Some(w[1].clone())
             } else {
                 None
             }
         })?;
+
+    // BMAD / WDS / CIS Framework skills (local agent skills)
+    if repo_name.starts_with("bmad-testarch") || repo_name.contains("qa") {
+        return Some(("code-quality".to_string(), "testing-qa".to_string()));
+    }
+    if repo_name.starts_with("bmad-agent-dev") || repo_name.starts_with("bmad-quick-dev") || repo_name.starts_with("bmad-code-review") {
+        return Some(("code-quality".to_string(), "code-review".to_string()));
+    }
+    if repo_name.starts_with("wds-") || repo_name.contains("ux") || repo_name.contains("design") {
+        return Some(("frontend".to_string(), "ui-ux".to_string()));
+    }
+    if repo_name.starts_with("bmad-cis") || repo_name.starts_with("bmad-agent-pm") || repo_name.contains("business") || repo_name.contains("strategy") {
+        return Some(("business".to_string(), "business-strategy".to_string()));
+    }
+    if repo_name.starts_with("bmad-") {
+        return Some(("business".to_string(), "operations".to_string())); // Default for other generic bmad workflow skills
+    }
 
     // Security domain — must be checked BEFORE language-specific hubs
     if repo_name.contains("security")
@@ -1026,8 +1059,53 @@ fn infer_hub_from_repo_name(path: &std::path::Path) -> Option<(String, String)> 
     }
 
     // Testing / QA
-    if repo_name.contains("playwright") || repo_name.contains("testdino") {
+    if repo_name.contains("playwright") || repo_name.contains("testdino") || repo_name.contains("testing") || repo_name.contains("jest") || repo_name.contains("cypress") {
         return Some(("code-quality".to_string(), "testing-qa".to_string()));
+    }
+
+    // Cloudflare / Serverless
+    if repo_name.contains("cloudflare") || repo_name.contains("workers-") || repo_name.contains("serverless") {
+        return Some(("server-side".to_string(), "serverless-edge".to_string()));
+    }
+
+    // Docker / Kubernetes / Containers
+    if repo_name.contains("docker") || repo_name.contains("kubernetes") || repo_name.contains("k8s") || repo_name.contains("helm") {
+        return Some(("server-side".to_string(), "containers".to_string()));
+    }
+
+    // Python
+    if repo_name.contains("python") || repo_name.contains("django") || repo_name.contains("flask") || repo_name.contains("fastapi") {
+        return Some(("code-quality".to_string(), "python".to_string()));
+    }
+
+    // Java / Spring
+    if repo_name.contains("java") && !repo_name.contains("javascript") || repo_name.contains("spring-boot") {
+        return Some(("code-quality".to_string(), "java".to_string()));
+    }
+
+    // React / Frontend
+    if repo_name.contains("react") || repo_name.contains("nextjs") || repo_name.contains("vue") || repo_name.contains("angular") {
+        return Some(("frontend".to_string(), "web-frameworks".to_string()));
+    }
+
+    // SEO / Marketing
+    if repo_name.contains("seo") || repo_name.contains("marketing") || repo_name.contains("copywriting") {
+        return Some(("business".to_string(), "marketing".to_string()));
+    }
+
+    // Database
+    if repo_name.contains("postgres") || repo_name.contains("mysql") || repo_name.contains("mongodb") || repo_name.contains("database") {
+        return Some(("server-side".to_string(), "databases".to_string()));
+    }
+
+    // Code review
+    if repo_name.contains("code-review") || repo_name.contains("clean-code") || repo_name.contains("refactor") {
+        return Some(("code-quality".to_string(), "code-review".to_string()));
+    }
+
+    // Git / Version control
+    if repo_name.contains("github") || repo_name.contains("gitlab") || repo_name.contains("ci-cd") {
+        return Some(("code-quality".to_string(), "virsion-control".to_string()));
     }
 
     None
@@ -1456,7 +1534,8 @@ pub fn apply_rules(meta: &mut SkillMetadata) -> bool {
     } else if let Some((hub, sub_hub)) = infer_from_rules_ranked(&normalized, &tokens) {
         meta.hub = hub;
         meta.sub_hub = sub_hub;
-        meta.match_score = Some(80);
+        // High confidence rule match bypasses LLM
+        meta.match_score = Some(95);
     } else if let Some((hub, sub_hub)) =
         infer_from_rules_ranked_with_min(&normalized, &tokens, 4, &["business", "marketing"])
     {
@@ -1464,7 +1543,8 @@ pub fn apply_rules(meta: &mut SkillMetadata) -> bool {
         // back to a generic business bucket.
         meta.hub = hub;
         meta.sub_hub = sub_hub;
-        meta.match_score = Some(70);
+        // Salvage pass still bypasses LLM because LLM APIs are too rate-limited for bulk processing
+        meta.match_score = Some(90);
     } else {
         meta.hub = "business".to_string();
         meta.sub_hub = "operations".to_string();

@@ -212,6 +212,16 @@ impl LlmProvider for GroqProvider {
                 .and_then(|c| c.as_str())
             {
                 if let Some(json_text) = extract_json_substring(content) {
+                    // Try {results: [...]} wrapper first (matches prompt format)
+                    if let Ok(value) = serde_json::from_str::<serde_json::Value>(&json_text) {
+                        if let Some(results) = value.get("results").and_then(|r| r.as_array()) {
+                            let array_json = serde_json::to_string(results).unwrap_or_else(|_| "[]".to_string());
+                            if let Ok(parsed) = serde_json::from_str::<Vec<LlmClassificationResponse>>(&array_json) {
+                                return Ok(parsed);
+                            }
+                        }
+                    }
+                    // Fallback: raw array
                     if let Ok(parsed) = serde_json::from_str::<Vec<LlmClassificationResponse>>(&json_text) {
                         return Ok(parsed);
                     }
