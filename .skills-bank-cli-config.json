@@ -585,10 +585,10 @@
   "sync": {
     "mode": "local",
     "targets": {
-      "Antigravity": "./.agent/skills/",
-      "Claude": "./.claude/skills/",
-      "Gemini": "./.gemini/skills/",
-      "GitHub Copilot": "./.github/skills/"
+      "Antigravity": "C:/Users/ASUS/production/.agent/skills",
+      "Claude": "C:/Users/ASUS/production/.claude/skills/",
+      "Gemini": "C:/Users/ASUS/production/.gemini/skills/",
+      "GitHub Copilot": "C:/Users/ASUS/production/.github/skills/"
     }
   },
   "sync_scope": "local",
