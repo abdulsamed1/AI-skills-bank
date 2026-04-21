@@ -640,6 +640,11 @@ async fn classify_skills_with_llm(
                             break;
                         }
                         Err(e) => {
+                            if let crate::components::llm::LlmError::AuthenticationFailed(text) = &e {
+                                eprintln!("CRITICAL: Authentication Failed. Stopping process: {}", text);
+                                std::process::exit(1);
+                            }
+
                             if let crate::components::llm::LlmError::RateLimited { retry_after } = &e {
                                 if let Some(secs) = retry_after {
                                     let now_ms = (std::time::SystemTime::now()

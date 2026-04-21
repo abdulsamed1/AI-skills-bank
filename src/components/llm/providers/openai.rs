@@ -165,7 +165,7 @@ impl LlmProvider for OpenAiProvider {
                 {"role": "user", "content": user_content}
             ],
             "temperature": 0.0,
-            "max_tokens": 4096,
+            "max_tokens": 2000,
         });
 
         let resp = self
@@ -189,6 +189,9 @@ impl LlmProvider for OpenAiProvider {
         let text = resp.text().await.map_err(|e| LlmError::InvalidResponse(e.to_string()))?;
 
         if !status.is_success() {
+            if status.as_u16() == 401 || status.as_u16() == 403 || status.as_u16() == 402 {
+                return Err(LlmError::AuthenticationFailed(text));
+            }
             if status.as_u16() == 429 {
                 let retry_after = headers
                     .get("retry-after")
@@ -211,10 +214,17 @@ impl LlmProvider for OpenAiProvider {
                 .and_then(|c| c.as_str())
             {
                 if let Some(json_text) = extract_json_substring(content) {
-                    if let Ok(parsed) = serde_json::from_str::<Vec<LlmClassificationResponse>>(&json_text) {
-                        return Ok(parsed);
+                    match serde_json::from_str::<Vec<LlmClassificationResponse>>(&json_text) {
+                        Ok(parsed) => return Ok(parsed),
+                        Err(e) => {
+                            eprintln!("DEBUG JSON Parse Error: {}. Raw json_text: {}", e, json_text);
+                        }
                     }
+                } else {
+                    eprintln!("DEBUG JSON Parse Error: Could not extract json substring from content: {}", content);
                 }
+            } else {
+                eprintln!("DEBUG JSON Parse Error: Response missing choices[0].message.content. Full text: {}", text);
             }
         }
 

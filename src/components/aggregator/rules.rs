@@ -205,25 +205,19 @@ pub static SUB_HUB_DEFINITIONS: Lazy<HashMap<&'static str, HubDefinition>> = Laz
         },
     );
    fe_sub.insert(
-        "ui-ux",
-        SubHubRule {
-            keywords: vec![ "tailwind", "styling", "design-systems", "responsive", "design-system", "component-library", "tokens", "storybook", "html", "css", "ui-ux","ux", "usability","ui", "design", "wireframe", "prototype", "user-interface", "user-experience", "stitch", "figma"],
-            anchor_keywords: vec!["mobile ui", "ios ui", "android ui", "ui", "ux", "design", "css", "tailwind"],
-            negative_keywords: vec![ 
-                "backend", "sql",
-                // Block AI/Agent skills from matching on "design"
-                "agent", "agents", "multi-agent", "llm", "autonomous", "crewai",
-                "swarm", "orchestration-agent", "function-calling", "mcp",
-                "agent-tool", "tool-builder", "ai-native", "agent-harness",
-                "gan-style", "memory-systems", "machine-learning", "ml-pipeline",
-                // Block Architecture/Backend skills from matching on "design"
-                "architect", "architecture", "software-architecture", "ddd",
-                "domain-driven", "bounded-context", "database-architect",
-                "nosql", "dynamodb", "cassandra", "mongodb",
-                "temporal", "workflow-orchestration",
-                // Block Security/IAM skills from matching on "design"
-                "identity-governance", "incident-response", "playbook",
-                "iga", "iam", "jml", "provisioning", "privileged-access",
+       "ui-ux",
+       SubHubRule {
+           keywords: vec![ "Designers Kit", "designers", "design-md","tailwind", "styling", "design-systems", "responsive", "design-system", "component-library", "tokens", "storybook", "html", "css", "ui-ux","ux", "usability","ui", "wireframe", "prototype", "user-interface", "user-experience", "stitch", "figma", "ui Kit", "color system", "typography", "accessibility", "a11y", "dark mode", "light mode", "design-tokens", "responsive design", "mobile ui", "ios ui", "android ui"],
+           anchor_keywords: vec!["mobile ui", "ios ui", "android ui", "ui", "ux", "design", "css", "tailwind"],
+           negative_keywords: vec![
+               "backend", "sql",
+               // Block Architecture/Backend skills from matching on "design"
+               "architect", "architecture", "software-architecture", "ddd",
+               "domain-driven", "bounded-context", "database-architect",
+               "nosql", "dynamodb", "cassandra", "mongodb",
+               "temporal", "workflow-orchestration",
+               // Block Security/IAM skills from matching on "design"
+               "identity-governance", "incident-response", "playbook",                "iga", "iam", "jml", "provisioning", "privileged-access",
                 "access-review", "certification", "recertification",
                 "cybersecurity", "cyber-security", "envelope-encryption",
                 // Block Business skills
@@ -734,7 +728,6 @@ pub static DEFAULT_EXCLUSION_PATTERNS: &[&str] = &[
     "cover letter",
     "ats",
     "cv builder",
-    "portfolio",
     "resume",
     "cover-letter",
     "interview",
@@ -749,16 +742,7 @@ pub static DEFAULT_EXCLUSION_PATTERNS: &[&str] = &[
     "unity-developer",
     "unity-ecs-patterns",
     "unreal-engine-cpp-pro",
-    "3d-web-experience",
-    "3d-games",
-    "2d-games",
-    "game",
-    "games",
-    "game-development",
     "game-engine",
-    "web-game",
-    "web-games",
-    "gaming",    
 ];
 
 static ENV_EXCLUSION_PATTERNS: Lazy<Vec<String>> = Lazy::new(|| {
@@ -1360,6 +1344,21 @@ pub fn is_excluded(normalized_text: &str, tokens: &HashSet<String>) -> bool {
 
         // Basic Latin (A-Z, a-z)
         if (u >= 0x0041 && u <= 0x005A) || (u >= 0x0061 && u <= 0x007A) {
+            continue;
+        }
+        
+        // Latin-1 Supplement and Latin Extended (Accents, special Latin letters)
+        if u >= 0x00A0 && u <= 0x024F {
+            continue;
+        }
+
+        // General Punctuation, Currency, Letterlike Symbols, Number Forms, Arrows, Math Operators, Misc Technical
+        if u >= 0x2000 && u <= 0x2BFF {
+            continue;
+        }
+        
+        // Emojis and Misc Symbols and Pictographs
+        if (u >= 0x2600 && u <= 0x27BF) || (u >= 0x1F000 && u <= 0x1FAFF) {
             continue;
         }
 
