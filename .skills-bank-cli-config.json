@@ -1,6 +1,11 @@
 {
   "repo_root": ".",
   "repositories": [
+        {
+      "branch": null,
+      "name": "seo-toprank",
+      "url": "https://github.com/nowork-studio/toprank.git"
+    },
     {
       "branch": null,
       "name": "claude-ads.git",
