@@ -1,6 +1,13 @@
 {
   "repo_root": ".",
   "repositories": [
+    
+    {
+      "branch": null,
+      "name": "mattpocock-skills",
+      "url": "https://github.com/mattpocock/skills.git"
+    },
+
         {
       "branch": null,
       "name": "seo-toprank",
