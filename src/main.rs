@@ -283,7 +283,7 @@ async fn run() -> Result<()> {
         }
         "sync" => {
             let config = ensure_config(&repo_root, &config_path)?;
-            let targets = resolve_sync_targets(&config)?;
+            let targets = resolve_sync_targets(&repo_root, &config)?;
             let output_dir = repo_root.join("skills-aggregated");
             let dry_run = args.iter().any(|arg| arg == "--dry-run") || env::var("SKILL_MANAGE_DRY_RUN").is_ok();
             
@@ -297,7 +297,8 @@ async fn run() -> Result<()> {
                     println!("  - {}", t.display());
                 }
 
-                if !Confirm::with_theme(&ColorfulTheme::default())
+                let auto_approve = std::env::var("SKILL_MANAGE_YES").map(|v| v == "true" || v == "1").unwrap_or(false);
+                if !auto_approve && !Confirm::with_theme(&ColorfulTheme::default())
                     .with_prompt("Proceed with synchronization?")
                     .default(true)
                     .interact()? 
@@ -464,7 +465,7 @@ async fn run_interactive(repo_root: &Path, config_path: &Path) -> Result<()> {
             }
             3 => {
                 let output_dir = repo_root.join("skills-aggregated");
-                let targets = resolve_sync_targets(&config)?;
+                let targets = resolve_sync_targets(repo_root, &config)?;
 
                 println!("\nDetected {} sync targets.", targets.len());
                 for t in &targets {
@@ -679,7 +680,7 @@ async fn run_full_pipeline(config: &SetupConfig) -> Result<()> {
             }
 
     println!("[3/3] Sync to selected tools...");
-    let targets = resolve_sync_targets(config)?;
+    let targets = resolve_sync_targets(&repo_root, config)?;
     if let Err(native_err) = run_sync_native(&full_output, &targets) {
         eprintln!("[ERROR] Native sync failed (no archive fallback): {}", native_err);
         return Err(native_err);
@@ -721,7 +722,7 @@ async fn run_add_repo_pipeline(
     }
 
     println!("[3/3] Syncing newly aggregated output for {}...", repo_name);
-    let targets = resolve_sync_targets(config)?;
+    let targets = resolve_sync_targets(repo_root, config)?;
     if let Err(native_err) = run_sync_native(&temp_output, &targets) {
         eprintln!("[ERROR] Native targeted sync failed (no archive fallback): {}", native_err);
         return Err(native_err);
@@ -1390,9 +1391,10 @@ fn run_powershell_command(cwd: &Path, command: &str) -> Result<()> {
     bail!("Could not find PowerShell runtime (`pwsh` or `powershell`) in PATH")
 }
 
-fn resolve_sync_targets(config: &SetupConfig) -> Result<Vec<PathBuf>> {
+fn resolve_sync_targets(repo_root: &Path, config: &SetupConfig) -> Result<Vec<PathBuf>> {
     let home_dir = home::home_dir().context("Could not resolve user home directory")?;
     let workspace_root = config.workspace_root_path();
+    let repo_root_canonical = repo_root.canonicalize().unwrap_or_else(|_| repo_root.to_path_buf());
     let mut targets = Vec::new();
 
     // 1. Load from explicit sync.targets in config (if present)
@@ -1427,22 +1429,37 @@ fn resolve_sync_targets(config: &SetupConfig) -> Result<Vec<PathBuf>> {
     let mut deduped = Vec::new();
     
     for p in targets {
-        // Normalize path to avoid duplicates like ./path and path/
-        if let Ok(canonical) = p.canonicalize() {
-            if seen.insert(canonical.to_string_lossy().to_lowercase()) {
-                deduped.push(p);
-            }
-        } else {
-            // Fallback for non-existent paths (canonicalize fails if path doesn't exist)
-            let normalized = p.to_string_lossy().replace('\\', "/").trim_end_matches('/').to_lowercase();
-            if seen.insert(normalized) {
-                deduped.push(p);
-            }
+        // 1. Determine absolute path for comparison
+        let p_abs = if p.is_absolute() { p.clone() } else { repo_root.join(&p) };
+        
+        // 2. Normalize paths for string comparison (lowercase, forward slashes, strip UNC prefix)
+        let normalize = |path: &Path| -> String {
+            path.to_string_lossy()
+                .to_lowercase()
+                .replace('\\', "/")
+                .replace("//?/", "")
+        };
+
+        let p_norm = normalize(&p_abs);
+        let r_norm = normalize(repo_root);
+        let rc_norm = normalize(&repo_root_canonical);
+
+        // 3. Check if target is inside repo_root
+        let is_inside = p_norm.starts_with(&r_norm) || p_norm.starts_with(&rc_norm);
+
+        if is_inside {
+            // Automatically skip any target inside the skills-bank repo itself.
+            continue;
+        }
+
+        // 4. Use normalized absolute path as key for deduplication
+        if seen.insert(p_norm) {
+            deduped.push(p);
         }
     }
 
     if deduped.is_empty() {
-        bail!("No targets were selected. Please rerun setup.");
+        bail!("No external sync targets were selected. Note that targets inside the skills-bank repository are automatically excluded. Please update your config or rerun setup.");
     }
 
     Ok(deduped)

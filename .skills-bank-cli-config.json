@@ -1,14 +1,12 @@
 {
   "repo_root": ".",
   "repositories": [
-    
     {
       "branch": null,
       "name": "mattpocock-skills",
       "url": "https://github.com/mattpocock/skills.git"
     },
-
-        {
+    {
       "branch": null,
       "name": "seo-toprank",
       "url": "https://github.com/nowork-studio/toprank.git"
@@ -327,11 +325,6 @@
       "branch": null,
       "name": "massimodeluisa-recursive-decomposition-skill",
       "url": "https://github.com/massimodeluisa/recursive-decomposition-skill.git"
-    },
-    {
-      "branch": null,
-      "name": "mattpocock-skills",
-      "url": "https://github.com/mattpocock/skills.git"
     },
     {
       "branch": null,

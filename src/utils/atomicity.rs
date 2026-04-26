@@ -118,19 +118,35 @@ pub fn sync_dir_atomic(src: &Path, dest: &Path) -> Result<(), SkillManageError> 
     }
 
     // Perform a merge copy instead of renaming to preserve existing files in `dest`
-    let mut merge_options = fs_extra::dir::CopyOptions::new();
-    merge_options.overwrite = true;
-    merge_options.content_only = true; // Crucial for merging contents inside
-
-    if let Err(e) = fs_extra::dir::copy(&actual_temp_path, dest, &merge_options) {
-        return Err(SkillManageError::ConfigError(format!("Merge copy failed: {}", e)));
-    }
+    let merge_result = merge_copy_recursive(&actual_temp_path, dest);
 
     // Cleanup temp directory
     if temp_dest.exists() {
         let _ = std::fs::remove_dir_all(&temp_dest);
     }
 
+    merge_result
+}
+
+/// Recursively merge contents of src into dest.
+fn merge_copy_recursive(src: &Path, dest: &Path) -> Result<(), SkillManageError> {
+    if !dest.exists() {
+        std::fs::create_dir_all(dest)?;
+    }
+
+    for entry in std::fs::read_dir(src)? {
+        let entry = entry?;
+        let file_type = entry.file_type()?;
+        let src_path = entry.path();
+        let dest_path = dest.join(entry.file_name());
+
+        if file_type.is_dir() {
+            merge_copy_recursive(&src_path, &dest_path)?;
+        } else {
+            // Copy file, overwriting if exists. std::fs::copy handles overwriting.
+            std::fs::copy(&src_path, &dest_path)?;
+        }
+    }
     Ok(())
 }
 

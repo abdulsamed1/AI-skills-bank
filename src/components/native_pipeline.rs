@@ -1458,10 +1458,10 @@ fn write_native_artifacts(
         hub_info.entry(entry.hub.clone()).or_default().push(entry);
     }
 
-    for (hub, entries) in hub_info {
+    for (hub, entries) in &hub_info {
         let mut total_skills = 0;
         let mut table = String::from("| Sub-Hub | Skills | Routing |\n|---------|--------|---------|\n");
-        for entry in &entries {
+        for entry in entries {
             total_skills += entry.skills_count;
             table.push_str(&format!("| {} | {} | {}/routing.csv |\n", entry.sub_hub, entry.skills_count, entry.sub_hub));
         }
@@ -1543,6 +1543,44 @@ description: |
         }
     });
     write_json_atomic(&output_dir.join(".skill-lock.json"), &lock_json)?;
+
+    // Master router: AGENTS.md is the canonical entrypoint for all skill discovery.
+    // It lists all hubs and provides instructions for downstream agents.
+    let mut master_table = String::from("| Hub | Skills | Router |\n|-----|--------|--------|\n");
+    let mut total_master_skills = 0;
+    for (hub, entries) in &hub_info {
+        let hub_skills: usize = entries.iter().map(|e| e.skills_count).sum();
+        total_master_skills += hub_skills;
+        master_table.push_str(&format!("| {} | {} | {}/SKILL.md |\n", hub, hub_skills, hub));
+    }
+
+    let master_content = format!(r#"---
+name: skills-bank
+description: |
+  Master router for all skills bank agents ({} skills across {} hubs).
+  DO NOT execute from this file. Follow the steps below to load the real skill.
+---
+
+# Skills Bank Master Router
+
+## Skill Hubs
+
+{}
+
+## How To Use
+
+1. Match user request to a high-level hub from the table above.
+2. Open `<hub>/SKILL.md` in this directory.
+3. Follow the instructions in that hub's router.
+
+## Anti-Hallucination Guardrails (11 HUBS ONLY)
+
+- NEVER guess skill behavior from description alone.
+- ALWAYS load the actual SKILL.md from src_path before acting.
+- If ambiguous, present top 3 candidates to the user.
+"#, total_master_skills, hub_info.len(), master_table.trim());
+
+    write_file_atomic(&output_dir.join("AGENTS.md"), master_content.as_bytes())?;
 
     write_review_band(repo_root, output_dir, skills)?;
 

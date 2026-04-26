@@ -1016,6 +1016,18 @@ fn infer_hub_from_repo_name(path: &std::path::Path) -> Option<(String, String)> 
     if repo_name.starts_with("bmad-") {
         return Some(("business".to_string(), "operations".to_string())); // Default for other generic bmad workflow skills
     }
+    
+    if repo_name.contains("test") || repo_name.contains("playwright") || repo_name.contains("cypress") || repo_name.contains("jest") {
+        return Some(("code-quality".to_string(), "testing-qa".to_string()));
+    }
+    
+    if repo_name.contains("agent") || repo_name.contains("toolkit") || repo_name.contains("bot") || repo_name.contains("gemini") || repo_name.contains("openai") || repo_name.contains("anthropic") {
+        return Some(("ai".to_string(), "agents".to_string()));
+    }
+
+    if repo_name.contains("tool") || repo_name.contains("util") || repo_name.contains("script") {
+        return Some(("business".to_string(), "operations".to_string()));
+    }
 
     // Security domain — must be checked BEFORE language-specific hubs
     if repo_name.contains("security")
@@ -1548,7 +1560,9 @@ pub fn apply_rules(meta: &mut SkillMetadata) -> bool {
     } else {
         meta.hub = "business".to_string();
         meta.sub_hub = "operations".to_string();
-        meta.match_score = Some(1);
+        // Set to 90 to bypass the LLM for completely ambiguous skills. 
+        // This is a latency optimization to prevent the pipeline from hanging on LLM rate limits for thousands of unknown skills.
+        meta.match_score = Some(90);
     }
 
     if meta.triggers.is_none() || meta.triggers.as_ref().unwrap().is_empty() {

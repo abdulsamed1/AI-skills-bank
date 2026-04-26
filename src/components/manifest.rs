@@ -12,7 +12,7 @@ pub struct Repository {
 }
 
 #[derive(Debug, Serialize, Deserialize, Clone, Default)]
-#[serde(rename_all = "camelCase", deny_unknown_fields)]
+#[serde(rename_all = "camelCase")]
 pub struct RepoManifest {
     pub repositories: Vec<Repository>,
 }
