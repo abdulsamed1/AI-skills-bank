@@ -3,6 +3,11 @@
   "repositories": [
     {
       "branch": null,
+      "name": "taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill.git"
+    },
+    {
+      "branch": null,
       "name": "mattpocock",
       "url": "https://github.com/mattpocock/skills.git"
     },
