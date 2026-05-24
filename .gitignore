@@ -1,0 +1,150 @@
+
+
+# Generated lock snapshot (runtime state)
+skills-aggregated/.skill-lock.json
+
+# External src repositories (local clones)
+lib/*
+*lib/
+*skills/
+*docs/stories/
+docs/epics.md
+skills-aggregated/
+zig-linux-x86_64-0.13.0/
+zig-linux-x86_64-0.13.0.tar.xz
+
+# Environment and secrets
+.env
+.env.*
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.envrc
+
+# Keys, Certificates, and Credentials
+*.key
+*.pem
+*.keystore
+*.cer
+*.crt
+*.p12
+*.pfx
+*.asc
+*.ovpn
+auth.json
+credentials.json
+client_secret.json
+aws-credentials.json
+gcp-credentials.json
+*.publishsettings
+
+# Security tokens and local passwords
+*secret*
+*credential*
+*token*
+id_rsa
+id_rsa.pub
+id_dsa
+id_ed25519
+known_hosts
+
+# Application Data & Databases
+*.sqlite
+*.sqlite3
+*.db
+*.db3
+*.s3db
+*.sl3
+*.rdb
+dump.rdb
+*.sql
+*.psql
+*.dump
+
+# Application Local Config
+*.local.yml
+*.local.yaml
+*.local.json
+local.js
+local.json
+secrets.yml
+secrets.json
+
+# Node and package manager artifacts
+node_modules/
+**/node_modules/
+.pnpm-store/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+.stylelintcache
+lerna-debug.log*
+
+# Build/cache artifacts
+dist/
+build/
+.cache/
+coverage/
+.turbo/
+.next/
+.svelte-kit/
+.docz/
+.docusaurus/
+
+# Rust / Cargo
+target/
+debug/
+**/*.rs.bk
+**/*.pdb
+
+# Local CLI artifacts
+cli/*.tgz
+cli/.npmrc
+
+# Runtime temp files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.pid
+*.seed
+*.pid.lock
+
+# OS Noise
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+$RECYCLE.BIN/
+*.exe
+
+# Editors and IDEs
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+.classpath
+
+# Patch/merge leftovers
+*.orig
+*.rej
+
+# Optional local probes and transient files created during testing
+**/.changed-only-probe.tmp

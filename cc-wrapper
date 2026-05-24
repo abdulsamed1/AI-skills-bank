@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Forwarding wrapper for Zig cc to handle Rust/Cargo target strings
+# Translates --target=x86_64-unknown-linux-gnu to -target x86_64-linux-gnu
+
+ARGS=()
+for arg in "$@"; do
+    if [[ "$arg" == --target=* ]]; then
+        # Extract target and remove '-unknown' which Zig doesn't like
+        TARGET="${arg#--target=}"
+        ZIG_TARGET="${TARGET//-unknown/}"
+        ARGS+=("-target" "$ZIG_TARGET")
+    else
+        ARGS+=("$arg")
+    fi
+done
+
+exec /home/abdu/production/skills-bank/zig-linux-x86_64-0.13.0/zig cc "${ARGS[@]}"
