@@ -3,6 +3,11 @@
   "repositories": [
     {
       "branch": null,
+      "name": "andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills.git"
+    },
+    {
+      "branch": null,
       "name": "gstack",
       "url": "https://github.com/garrytan/gstack.git"
     },
