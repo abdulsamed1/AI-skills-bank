@@ -2,6 +2,14 @@
   "repo_root": ".",
   "repositories": [
     {
+
+      "branch": null,
+      "name": "reactjs-doctor",
+      "url": "https://github.com/millionco/react-doctor.git"
+      
+    }
+    ,
+    {
       "branch": null,
       "name": "andrej-karpathy-skills",
       "url": "https://github.com/multica-ai/andrej-karpathy-skills.git"
