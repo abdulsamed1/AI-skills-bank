@@ -89,20 +89,20 @@
 
 ---
 
-## 🚄 FreeLLMAPI Integration
+## 🚄 [FreeLLMAPI](https://github.com/tashfeenahmed/freellmapi) Integration
 
 ### The Problem: LLM Rate Limits
-When classifying 8000+ skills, your LLM provider will hit rate limits. Individual providers (Groq, OpenAI, Anthropic) each have free-tier limits (e.g., Groq: ~120 requests/min), causing cascading failures during aggregation.
+When classifying 8000+ skills, your LLM provider will hit rate limits. Individual providers (Groq, OpenAI, Anthropic) each have free-tier limits (e.g., Groq: ~120 requests/min), which can cause cascading failures during aggregation.
 
 ### The Solution: FreeLLMAPI
-**FreeLLMAPI** is a unified proxy that aggregates 12+ free LLM providers behind a single OpenAI-compatible endpoint. It automatically falls back when a provider rate-limits, eliminating rate-limit errors during aggregation.
+**[FreeLLMAPI](https://github.com/tashfeenahmed/freellmapi)** is a unified proxy that aggregates 12+ free LLM providers behind a single OpenAI-compatible endpoint. It automatically falls back when a provider rate-limits, eliminating rate-limit errors during aggregation.
 
 ```
 skills-bank (classification)
      │
      ▼
 FreeLLMAPI (unified proxy)
-     │ (automatic fallback / rotation)
+     │ (automatic fallback/rotation)
      ├─ Google Gemini (1,500 RPM)
      ├─ Groq (120 RPM)
      ├─ Cerebras (200 RPM)
@@ -117,9 +117,9 @@ FreeLLMAPI (unified proxy)
 
 **Total capacity:** ~1.3 billion tokens/month (free tier combined)
 
-### Setup FreeLLMAPI
+### Setup [FreeLLMAPI](https://github.com/tashfeenahmed/freellmapi)
 
-You can set up FreeLLMAPI and configure `skills-bank` automatically in a single command:
+You can set up [FreeLLMAPI](https://github.com/tashfeenahmed/freellmapi) and configure `skills-bank` automatically in a single command:
 
 ```bash
 ./setup-freellmapi.sh
