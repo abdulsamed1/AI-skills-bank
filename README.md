@@ -86,29 +86,6 @@
 - **~2GB disk space** (for aggregated skills cache)
 - **Node.js 20+** (optional, only if running FreeLLMAPI locally)
 
----
-
-## 🚀 Quick Start
-
-### 1. Build the CLI
-```bash
-cd skills-bank/
-cargo build --release
-```
-
-### 2. Run Aggregation
-```bash
-# First-time interactive setup
-./target/release/skills-bank setup
-
-# Execute the aggregation pipeline
-./target/release/skills-bank aggregate
-```
-
-### 3. Sync to Your Tools
-```bash
-./target/release/skills-bank sync
-```
 
 ---
 
@@ -142,43 +119,47 @@ FreeLLMAPI (unified proxy)
 
 ### Setup FreeLLMAPI
 
-#### Step 1: Clone & Install
+You can set up FreeLLMAPI and configure `skills-bank` automatically in a single command:
+
 ```bash
-git clone https://github.com/tashfeenahmed/freellmapi.git /tmp/freellmapi
-cd /tmp/freellmapi
-npm install
+./setup-freellmapi.sh
 ```
 
-#### Step 2: Generate Encryption Key
-```bash
-cp .env.example .env
-echo "ENCRYPTION_KEY=$(node -e "console.log(require('crypto').randomBytes(32).toString('hex'))")" >> .env
+This script will:
+1. Detect or clone FreeLLMAPI (into `./freellmapi` or use a sibling `../freellmapi`).
+2. Install all dependencies.
+3. Automatically generate the database, encryption keys, and your unified API key.
+4. Inject/update `skills-bank/.env` with your newly generated unified key and endpoint configuration.
+
+#### Next Steps:
+1. Start FreeLLMAPI:
+   ```bash
+   cd freellmapi && npm run dev
+   ```
+2. Open the dashboard at `http://localhost:5173`.
+3. Add your provider API keys (Google Gemini, Groq, SambaNova, etc.) under the **Keys** tab.
+4. Run `skills-bank` aggregation:
+   ```bash
+   ./target/release/skills-bank aggregate
+   ```
+
+
+cd skills-bank/
+cargo build --release
 ```
 
-#### Step 3: Start FreeLLMAPI Server
+### 2. Run Aggregation
 ```bash
-npm run dev
-```
-This starts:
-- **API Server** on `http://localhost:3001/v1`
-- **Dashboard** on `http://localhost:5173`
+# First-time interactive setup
+./target/release/skills-bank setup
 
-#### Step 4: Add Provider Keys
-1. Open the dashboard at `http://localhost:5173`.
-2. Go to **Keys** tab and add provider API keys (Google Gemini, Groq, SambaNova, etc.).
-3. Copy your **Unified API Key** from the dashboard header (format: `freellmapi-...`).
-
-#### Step 5: Configure skills-bank
-Set the following environment variables (or save to `skills-bank/.env`):
-```bash
-export LLM_PROVIDER=freellmapi
-export LLM_API_KEY="freellmapi-YOUR-UNIFIED-KEY"
-export LLM_API_URL="http://localhost:3001/v1"
-export LLM_MODEL="auto"  # Let freellmapi pick the best model
-```
-Run the aggregation:
-```bash
+# Execute the aggregation pipeline
 ./target/release/skills-bank aggregate
+```
+
+### 3. Sync to Your Tools
+```bash
+./target/release/skills-bank sync
 ```
 
 ---
