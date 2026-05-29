@@ -499,7 +499,7 @@ async fn classify_skills_with_llm(
                 crate::components::llm::ClaudeProvider::new(cfg)
                     .map_err(|e| SkillManageError::ConfigError(e.to_string()))?,
             ),
-            "custom" => Box::new(
+            "custom" | "freellmapi" => Box::new(
                 crate::components::llm::CustomProvider::new(cfg)
                     .map_err(|e| SkillManageError::ConfigError(e.to_string()))?,
             ),
@@ -529,7 +529,7 @@ async fn classify_skills_with_llm(
     let primary_name = config.provider.to_ascii_lowercase();
 
     // Add primary provider
-    let primary_prov = build_provider(config)?;
+    let primary_prov = build_provider(config.clone())?;
     rotation_list.push(primary_prov);
 
     // Track which providers we've already added to avoid duplicates in rotation
@@ -567,26 +567,77 @@ async fn classify_skills_with_llm(
         }
     }
 
-    // 3. Scan remaining candidate_providers if rotation_list is still short or as safety fallback
-    let default_candidates = vec![
-        "openai", "groq", "sambanova", "cerebras", "hyperbolic",
-        "cometapi", "mistral", "github", "openrouter", "vercel",
-        "cloudflare", "bedrock", "claude", "gemini"
-    ];
+    // 3. Skip default fallback providers if using freellmapi or custom proxy providers
+    //    These are designed to handle fallback internally, so we don't want to add direct provider fallbacks
+    let is_proxy_provider = primary_name == "freellmapi" || primary_name == "custom";
 
-    for candidate in default_candidates {
-        let candidate_lower = candidate.to_ascii_lowercase();
-        if added_providers.insert(candidate_lower.clone()) {
-            if let Some(cfg) = crate::components::llm::LlmClientConfig::for_provider(&candidate_lower) {
-                match build_provider(cfg) {
-                    Ok(prov) => rotation_list.push(prov),
-                    Err(e) => eprintln!("WARN: Failed to initialize default fallback provider '{}': {:?}", candidate, e),
+    if !is_proxy_provider {
+        // Only add default candidates if NOT using a proxy provider
+        let default_candidates = vec![
+            "openai", "groq", "sambanova", "cerebras", "hyperbolic",
+            "cometapi", "mistral", "github", "openrouter", "vercel",
+            "cloudflare", "bedrock", "claude", "gemini"
+        ];
+
+        for candidate in default_candidates {
+            let candidate_lower = candidate.to_ascii_lowercase();
+            if added_providers.insert(candidate_lower.clone()) {
+                if let Some(cfg) = crate::components::llm::LlmClientConfig::for_provider(&candidate_lower) {
+                    match build_provider(cfg) {
+                        Ok(prov) => rotation_list.push(prov),
+                        Err(e) => eprintln!("WARN: Failed to initialize default fallback provider '{}': {:?}", candidate, e),
+                    }
                 }
             }
         }
+    } else {
+        eprintln!("ℹ️  Using proxy provider '{}' — skipping direct provider fallbacks. Ensure freellmapi is properly configured and running.", primary_name);
     }
 
-    println!("LLM Rotation/Fallback enabled with {} providers (primary: '{}')", rotation_list.len(), primary_name);
+    println!("LLM Rotation/Fallback enabled with {} providers (primary: '{}', proxy_mode: {})", rotation_list.len(), primary_name, is_proxy_provider);
+
+    // If we're using a proxy provider like FreeLLMAPI, perform a startup health-check
+    if is_proxy_provider {
+        // Build a reqwest client honoring optional CA cert
+        match crate::components::llm::tls::build_client_builder() {
+            Ok(builder) => {
+                let client = match builder.timeout(StdDuration::from_secs(5)).build() {
+                    Ok(c) => c,
+                    Err(e) => return Err(SkillManageError::ConfigError(format!("Failed to build HTTP client for LLM health-check: {}", e))),
+                };
+
+                // Derive a /models health endpoint from configured API URL
+                let api_url = rotation_list
+                    .get(0)
+                    .and_then(|_| Some(config.api_url.clone()))
+                    .flatten()
+                    .unwrap_or_else(|| "http://localhost:3001/v1/chat/completions".to_string());
+
+                let health_url = if api_url.contains("/chat") {
+                    api_url.replace("/chat/completions", "/models")
+                } else if api_url.ends_with("/v1") || api_url.ends_with("/v1/") {
+                    format!("{}/models", api_url.trim_end_matches('/'))
+                } else if api_url.ends_with('/') {
+                    format!("{}models", api_url)
+                } else {
+                    format!("{}/models", api_url)
+                };
+
+                // Perform GET
+                match client.get(&health_url).bearer_auth(&config.api_key).send().await {
+                    Ok(resp) => {
+                        if !resp.status().is_success() {
+                            eprintln!("WARN: FreeLLMAPI health-check returned non-success status {} — continuing (health-check non-fatal)", resp.status());
+                        }
+                    }
+                    Err(e) => {
+                        eprintln!("WARN: FreeLLMAPI health-check request failed: {} — continuing (health-check non-fatal)", e);
+                    }
+                }
+            }
+            Err(e) => return Err(SkillManageError::ConfigError(format!("Failed to build HTTP client for LLM health-check: {}", e))),
+        }
+    }
 
     let provider: Box<dyn crate::components::llm::LlmProvider> = Box::new(crate::components::llm::RotationProvider::new(rotation_list));
 

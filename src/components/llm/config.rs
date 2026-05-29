@@ -12,11 +12,19 @@ pub struct LlmClientConfig {
 
 impl LlmClientConfig {
     pub fn from_env() -> Result<Self, LlmError> {
-        let provider = env::var("LLM_PROVIDER")
-            .or_else(|_| env::var("GV_PROVIDER_PRIMARY"))
-            .unwrap_or_default();
+        // Prefer explicit LLM_PROVIDER, but if FreeLLMAPI env vars are present
+        // force the provider to `freellmapi` so the tool only connects via the proxy.
+        let mut provider = env::var("LLM_PROVIDER").or_else(|_| env::var("GV_PROVIDER_PRIMARY")).unwrap_or_default();
+
+        let freellm_key = env::var("FREELLMAPI_API_KEY").ok();
+        let freellm_url = env::var("FREELLMAPI_URL").ok();
+        if freellm_key.is_some() || freellm_url.is_some() {
+            provider = "freellmapi".to_string();
+        }
+
+        // If no provider was explicitly configured, default to FreeLLMAPI
         if provider.is_empty() {
-            return Err(LlmError::ConfigError("LLM_PROVIDER or GV_PROVIDER_PRIMARY not set".to_string()));
+            provider = "freellmapi".to_string();
         }
 
         let model = env::var("LLM_MODEL").ok();
@@ -65,6 +73,7 @@ impl LlmClientConfig {
             "openai" => env::var("OPENAI_API_KEY").ok(),
             "claude" => env::var("ANTHROPIC_API_KEY").ok(),
             "gemini" => env::var("GEMINI_API_KEY").ok(),
+            "freellmapi" | "custom" => env::var("LLM_API_KEY").ok().or_else(|| env::var("FREELLMAPI_API_KEY").ok()),
             _ => None,
         };
 
@@ -99,6 +108,13 @@ impl LlmClientConfig {
             "openai" => Some("https://api.openai.com/v1/chat/completions".to_string()),
             "claude" => Some("https://api.anthropic.com/v1/messages".to_string()),
             "gemini" => Some("https://generativelanguage.googleapis.com/v1beta/models".to_string()),
+            "freellmapi" | "custom" => {
+                // Support both LLM_API_URL and FREELLMAPI_URL
+                env::var("LLM_API_URL")
+                    .or_else(|_| env::var("FREELLMAPI_URL"))
+                    .ok()
+                    .or_else(|| Some("http://localhost:3001/v1/chat/completions".to_string()))
+            }
             _ => None,
         };
 

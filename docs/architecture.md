@@ -107,6 +107,7 @@ Includes pre-configured testing infrastructure and logging via `tracing` to a `d
 - **Concurrency:** `rayon` for data-parallel task execution in the aggregation engine.
 - **CLI Protocol:** Hybrid output (Human-friendly text by default, `--json` for machine-readability).
 - **Security:** Binary checksum verification (SHA-256) performed by the JS wrapper before execution.
+- **LLM Proxying:** Support for proxying OpenAI-compatible endpoints to enable automated provider failover and rotation (FreeLLMAPI).
 
 **Deferred Decisions (Post-MVP):**
 - **TUI Implementation:** Deferred to Phase 3; the modular Component architecture ensures this won't require a rewrite of core logic.
@@ -126,6 +127,7 @@ We will utilize **Flat File state management** using standard Rust crates like `
 - **User Interface:** Standard CLI using `clap` v4.6.0.
 - **Machine Interface:** Every command supports a `--json` flag to emit structured, schema-validated JSON to `stdout`.
 - **Error Handling:** Standardized POSIX exit codes (0 for success, non-zero for specific failure states) with all error logs directed to `stderr`.
+- **LLM Proxy Protocol**: Configured via `LLM_PROVIDER`, `LLM_API_KEY`, `LLM_API_URL` to route semantic requests. The client dynamically accepts both JSON string responses and serialized JSON objects to handle differing provider output shapes robustly.
 
 ### Infrastructure & Deployment
 - **Build Matrix:** GitHub Actions will target the following platforms:

@@ -105,6 +105,7 @@ The core differentiator is the intersection of massive skill scale, -pattern gov
 * **NPM OS-Detection Wrapper:** JavaScript wrapper to detect os (`win32`, `darwin`, `linux`) and architecture to dynamically invoke the correct binary.
 * **No-Dependency Core:** The native Rust binary must not spawn `pwsh` internally or rely on external script interpreters.
 * **Multi-threaded Aggregation:** The Rust file scanner must utilize parallel processing frameworks (like `rayon`) to achieve the 2-second aggregation target.
+* **FreeLLMAPI Rotation Proxy:** Built-in support for a local proxy that aggregates 12+ free LLM providers to completely bypass API rate limits during bulk semantic classification.
 
 ### Supported Feature Set
 * Rust binary implementing `fetch` (reading `.skills-bank-cli-config.json` and cloning missing skill repositories into `lib/`).
@@ -155,6 +156,8 @@ The core differentiator is the intersection of massive skill scale, -pattern gov
 * **FR10:** The CLI can generate a unified, centralized routing manifest (e.g., `hub-manifests.csv`) containing all parsed skill metadata.
 * **FR11:** The system can apply workflow progression rules (phases, dependencies) to the skills during manifest generation.
 * **FR12:** The system can generate semantic routing triggers and assign matching score weights for each skill.
+* **FR12b:** The system can optionally route classification requests via a local FreeLLMAPI proxy server with configurable concurrency and retry backoffs.
+* **FR12c:** The system can robustly parse both JSON string and JSON object formatting in LLM responses.
 
 ### Diagnostics & Validation
 * **FR13:** The CLI can validate the structural integrity and syntax of the `.skills-bank-cli-config.json` manifest.
