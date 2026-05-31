@@ -3,6 +3,7 @@
 # Generated lock snapshot (runtime state)
 skills-aggregated/.skill-lock.json
 freellmapi/
+
 # External src repositories (local clones)
 lib/*
 *lib/

@@ -605,17 +605,16 @@
   "sync": {
     "mode": "local",
     "targets": {
-      "Antigravity": "/home/abdu/production/.agent/skills/",
-      "GitHub Copilot": "/home/abdu/production/.agents/skills/",
-      "hermes-glass": "/home/abdu/production/glass-vault/config/.hermes/skills",
-      "hermes-opran": "/home/abdu/production/opran-business/.hermes/skills"
+      "Antigravity": "~/production/.agent/skills/",
+      "GitHub Copilot": "~/production/.agents/skills/"
+   , "hermes": "~/production/.hermes/skills"
     }
   },
   "sync_scope": "local",
   "tools": [
     "copilot",
-    "antigravity",
-    "hermes"
+    "antigravity"
+    , "hermes"
   ],
   "version": 1,
   "workspace_root": "."

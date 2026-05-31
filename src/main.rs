@@ -38,8 +38,7 @@ const TOOL_DEFS: &[ToolDef] = &[
         key: "hermes",
         global_rels: &[".hermes/skills"],
         local_rels: &[
-            "opran-business/.hermes/skills",
-            "glass-vault/config/.hermes/skills",
+            ".hermes/skills",
         ],
     },
     ToolDef {
