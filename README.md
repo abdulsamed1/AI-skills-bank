@@ -119,26 +119,20 @@ FreeLLMAPI (unified proxy)
 
 ### Setup [FreeLLMAPI](https://github.com/tashfeenahmed/freellmapi)
 
-You can set up [FreeLLMAPI](https://github.com/tashfeenahmed/freellmapi) and configure `skills-bank` automatically in a single command:
+The entire workspace is consolidated under a **single source of truth** configuration file at `freellmapi/.env`. native Unix symlinks pointing back to this centralized environment file.
 
-```bash
-./setup-freellmapi.sh
-```
+To configure the proxy and automatically seed your provider keys:
 
-This script will:
-1. Detect or clone FreeLLMAPI (into `./freellmapi` or use a sibling `../freellmapi`).
-2. Install all dependencies.
-3. Automatically generate the database, encryption keys, and your unified API key.
-4. Inject/update `skills-bank/.env` with your newly generated unified key and endpoint configuration.
+1. Consolidated environment config is managed centrally at `freellmapi/.env`.
+2. A database seeding script automatically reads upstream provider API keys, encrypts them using FreeLLMAPI's native AES-256-GCM, and seeds them into the SQLite database.
+3. The unified API key is synchronized automatically to `freellmapi`.
 
 #### Next Steps:
 1. Start FreeLLMAPI:
    ```bash
    cd freellmapi && npm run dev
    ```
-2. Open the dashboard at `http://localhost:5173`.
-3. Add your provider API keys (Google Gemini, Groq, SambaNova, etc.) under the **Keys** tab.
-4. Run `skills-bank` aggregation:
+2. Run `skills-bank` aggregation:
    ```bash
    ./target/release/skills-bank aggregate
    ```
@@ -259,7 +253,7 @@ skills-bank/
 
 ## ⚙️ Environment Variables
 
-Copy `.env-example` to `.env` to configure:
+The project loads environment variables via a symlink `skills-bank/.env` pointing to the centralized configuration at `freellmapi/.env`. Update settings inside `freellmapi/.env` to configure:
 
 ### Core Configuration
 ```bash
