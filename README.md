@@ -292,7 +292,7 @@ LLM_INITIAL_BACKOFF_MS=500        # Exponential backoff base duration
 | Agent | Project Local Path | User Global Path |
 |-------|--------------------|------------------|
 | **Claude** | `.claude/skills/` | `~/.claude/skills/` |
-| **Hermes** | `.hermes/skills/` | `~/.hermes/skills/` |
+| **Hermes** | `opran-business/.hermes/skills/`, `glass-vault/config/.hermes/skills/` | `~/.hermes/skills/` |
 | **GitHub Copilot** | `.agents/skills/` | `~/.agents/skills/` |
 | **Cursor** | `.cursor/skills/` | `~/.cursor/skills/` |
 | **Windsurf** | `.windsurf/skills/` | `~/.codeium/windsurf/skills/` |

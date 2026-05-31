@@ -24,45 +24,48 @@ const CONFIG_FILE_NAME: &str = ".skills-bank-cli-config.json";
 #[derive(Debug, Clone)]
 struct ToolDef {
     key: &'static str,
-    global_rel: &'static str,
-    local_rel: &'static str,
+    global_rels: &'static [&'static str],
+    local_rels: &'static [&'static str],
 }
 
 const TOOL_DEFS: &[ToolDef] = &[
     ToolDef {
         key: "claude",
-        global_rel: ".claude/skills",
-        local_rel: ".claude/skills",
+        global_rels: &[".claude/skills"],
+        local_rels: &[".claude/skills"],
     },
     ToolDef {
         key: "hermes",
-        global_rel: ".hermes/skills",
-        local_rel: ".hermes/skills",
+        global_rels: &[".hermes/skills"],
+        local_rels: &[
+            "opran-business/.hermes/skills",
+            "glass-vault/config/.hermes/skills",
+        ],
     },
     ToolDef {
         key: "code",
-        global_rel: ".agents/skills",
-        local_rel: ".agents/skills",
+        global_rels: &[".agents/skills"],
+        local_rels: &[".agents/skills"],
     },
     ToolDef {
         key: "cursor",
-        global_rel: ".cursor/skills",
-        local_rel: ".cursor/skills",
+        global_rels: &[".cursor/skills"],
+        local_rels: &[".cursor/skills"],
     },
     ToolDef {
         key: "antigravity",
-        global_rel: ".agent/skills",
-        local_rel: ".agent/skills",
+        global_rels: &[".agent/skills"],
+        local_rels: &[".agent/skills"],
     },
     ToolDef {
         key: "copilot",
-        global_rel: ".github/skills",
-        local_rel: ".github/skills",
+        global_rels: &[".github/skills"],
+        local_rels: &[".github/skills"],
     },
     ToolDef {
         key: "windsurf",
-        global_rel: ".codeium/windsurf/skills",
-        local_rel: ".windsurf/skills",
+        global_rels: &[".codeium/windsurf/skills"],
+        local_rels: &[".windsurf/skills"],
     },
 ];
 
@@ -979,11 +982,23 @@ fn resolve_sync_targets(repo_root: &Path, config: &SetupConfig) -> Result<Vec<Pa
     for key in &config.tools {
         if let Some(tool) = tool_by_key(key) {
             match config.sync_scope {
-                SyncScope::Global => targets.push(home_dir.join(std::path::Path::new(tool.global_rel))),
-                SyncScope::Local => targets.push(workspace_root.join(std::path::Path::new(tool.local_rel))),
+                SyncScope::Global => {
+                    for rel in tool.global_rels {
+                        targets.push(home_dir.join(std::path::Path::new(rel)));
+                    }
+                }
+                SyncScope::Local => {
+                    for rel in tool.local_rels {
+                        targets.push(workspace_root.join(std::path::Path::new(rel)));
+                    }
+                }
                 SyncScope::Both => {
-                    targets.push(home_dir.join(std::path::Path::new(tool.global_rel)));
-                    targets.push(workspace_root.join(std::path::Path::new(tool.local_rel)));
+                    for rel in tool.global_rels {
+                        targets.push(home_dir.join(std::path::Path::new(rel)));
+                    }
+                    for rel in tool.local_rels {
+                        targets.push(workspace_root.join(std::path::Path::new(rel)));
+                    }
                 }
             }
         }

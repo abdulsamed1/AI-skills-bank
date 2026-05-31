@@ -607,7 +607,8 @@
     "targets": {
       "Antigravity": "/home/abdu/production/.agent/skills/",
       "GitHub Copilot": "/home/abdu/production/.agents/skills/",
-      "hermes": "/home/abdu/production/glass-vault/config/.hermes/skills"
+      "hermes-glass": "/home/abdu/production/glass-vault/config/.hermes/skills",
+      "hermes-opran": "/home/abdu/production/opran-business/.hermes/skills"
     }
   },
   "sync_scope": "local",
