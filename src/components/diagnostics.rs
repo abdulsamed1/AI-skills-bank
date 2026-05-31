@@ -41,35 +41,35 @@ pub trait Check: Sync + Send {
 struct ManifestExistsCheck;
 impl Check for ManifestExistsCheck {
     fn name(&self) -> &str {
-        "Manifest File (.skills-bank-cli-config.json)"
+        "Manifest File (config.json)"
     }
     fn run(&self) -> DiagnosticStatus {
-        let path = Path::new(".skills-bank-cli-config.json");
+        let path = Path::new("config.json");
         if path.exists() {
             match RepoManifest::load(path) {
                 Ok(_) => DiagnosticStatus::Pass,
                 Err(e) => DiagnosticStatus::Fail {
                     issues: vec![DiagnosticIssue {
                         description: format!("Found but unparseable: {}", e),
-                        location: Some(".skills-bank-cli-config.json".to_string()),
+                        location: Some("config.json".to_string()),
                         current: None,
                         should_be: None,
                         why: "Manifest must be valid JSON following the RepoManifest schema"
                             .to_string(),
                     }],
-                    fix: "Check for JSON syntax errors or unknown fields in.skills-bank-cli-config.json".to_string(),
+                    fix: "Check for JSON syntax errors or unknown fields inconfig.json".to_string(),
                 },
             }
         } else {
             DiagnosticStatus::Fail {
                 issues: vec![DiagnosticIssue {
-                    description: ".skills-bank-cli-config.json not found".to_string(),
+                    description: "config.json not found".to_string(),
                     location: None,
                     current: None,
-                    should_be: Some(".skills-bank-cli-config.json in root".to_string()),
+                    should_be: Some("config.json in root".to_string()),
                     why: "The manifest file defines which skill repositories to manage".to_string(),
                 }],
-                fix: "Create a.skills-bank-cli-config.json manifest in the root".to_string(),
+                fix: "Create aconfig.json manifest in the root".to_string(),
             }
         }
     }
@@ -211,7 +211,7 @@ impl Check for RepoIntegrityCheck {
         "Repository Integrity"
     }
     fn run(&self) -> DiagnosticStatus {
-        let path = Path::new(".skills-bank-cli-config.json");
+        let path = Path::new("config.json");
         let manifest = match RepoManifest::load(path) {
             Ok(m) => m,
             Err(_) => {
@@ -221,9 +221,9 @@ impl Check for RepoIntegrityCheck {
                         location: None,
                         current: None,
                         should_be: None,
-                        why: "Integrity check requires a valid.skills-bank-cli-config.json".to_string(),
+                        why: "Integrity check requires a validconfig.json".to_string(),
                     }],
-                    fix: "Fix.skills-bank-cli-config.json first".to_string(),
+                    fix: "Fixconfig.json first".to_string(),
                 }
             }
         };

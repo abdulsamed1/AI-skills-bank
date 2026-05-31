@@ -115,7 +115,7 @@ Includes pre-configured testing infrastructure and logging via `tracing` to a `d
 
 ### Data Architecture
 We will utilize **Flat File state management** using standard Rust crates like `serde_json` and `csv`.
-- **Primary data:** `.skills-bank-cli-config.json` (Source of truth for skill repositories).
+- **Primary data:** `config.json` (Source of truth for skill repositories).
 - **Output data:** `hub-manifests.csv` (The central routing table).
 - **Rationale:** This ensures the tool remains zero-config and human-editable. Performance is maintained through parallel file scanning via `rayon`.
 
@@ -252,7 +252,7 @@ The CLI entrypoint routes subcommands from `cli.rs` to the `App` in `app.rs`. Th
 The only external dependency is the GitHub API / Git protocol for repository fetching.
 
 **Data Flow:**
-`.skills-bank-cli-config.json` → `Fetcher` → `lib/` directory → `Aggregator` → `hub-manifests.csv`.
+`config.json` → `Fetcher` → `lib/` directory → `Aggregator` → `hub-manifests.csv`.
 
 ## Architecture Validation Results
 

@@ -19,7 +19,7 @@ use std::process::Command;
 use std::sync::Arc;
 use walkdir::WalkDir;
 
-const CONFIG_FILE_NAME: &str = ".skills-bank-cli-config.json";
+const CONFIG_FILE_NAME: &str = "config.json";
 
 #[derive(Debug, Clone)]
 struct ToolDef {
@@ -218,7 +218,7 @@ async fn run() -> Result<()> {
             if let Some(manifest) = prepare_manifest(&repo_root, &config.repositories)? {
                 run_fetch(&repo_root, manifest).await?;
             } else {
-                bail!("No repositories configured. Run setup or provide.skills-bank-cli-config.json.");
+                bail!("No repositories configured. Run setup or provideconfig.json.");
             }
         }
         "aggregate" => {
@@ -1069,7 +1069,7 @@ fn add_repo(config: &mut SetupConfig, repo_url: &str) -> Result<()> {
 }
 
 fn prepare_manifest(repo_root: &Path, repositories: &[Repository]) -> Result<Option<RepoManifest>> {
-    let manifest_path = repo_root.join(".skills-bank-cli-config.json");
+    let manifest_path = repo_root.join("config.json");
 
     if !repositories.is_empty() {
         let manifest = RepoManifest {
@@ -1332,9 +1332,9 @@ fn ensure_config(repo_root: &Path, config_path: &Path) -> Result<SetupConfig> {
     match load_config(config_path)? {
         Some(cfg) => Ok(cfg),
         None => {
-            // If a.skills-bank-cli-config.json manifest exists, auto-generate a sensible default config
+            // If aconfig.json manifest exists, auto-generate a sensible default config
             if let Some(cfg) = auto_config_from_manifest(repo_root)? {
-                println!("No setup file found, but.skills-bank-cli-config.json detected. Creating default setup and saving it...");
+                println!("No setup file found, butconfig.json detected. Creating default setup and saving it...");
                 save_config(config_path, &cfg)?;
                 return Ok(cfg);
             }
@@ -1348,7 +1348,7 @@ fn ensure_config(repo_root: &Path, config_path: &Path) -> Result<SetupConfig> {
 }
 
 fn auto_config_from_manifest(repo_root: &Path) -> Result<Option<SetupConfig>> {
-    let manifest_path = repo_root.join(".skills-bank-cli-config.json");
+    let manifest_path = repo_root.join("config.json");
     if !manifest_path.exists() {
         return Ok(None);
     }

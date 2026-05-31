@@ -26,7 +26,7 @@ pub struct Cli {
 
 #[derive(Subcommand, Debug)]
 pub enum Commands {
-    /// Fetch remote repositories from.skills-bank-cli-config.json
+    /// Fetch remote repositories fromconfig.json
     Fetch {
         /// Only check for updates without downloading
         #[arg(long)]

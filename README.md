@@ -241,7 +241,7 @@ skills-bank/
 │   ├── main.rs                      # CLI entry point
 │   └── lib.rs                       # Library root
 ├── Cargo.toml                       # Cargo manifest
-├── .skills-bank-cli-config.json     # User config (repos, sync targets)
+├── config.json     # User config (repos, sync targets)
 ├── skills-aggregated/               # Output directory (generated)
 │   ├── routing.csv                 # Master routing table
 │   ├── hub-manifests.csv           # Hub manifests registry
@@ -286,7 +286,7 @@ LLM_INITIAL_BACKOFF_MS=500        # Exponential backoff base duration
 | Agent | Project Local Path | User Global Path |
 |-------|--------------------|------------------|
 | **Claude** | `.claude/skills/` | `~/.claude/skills/` |
-| **Hermes** | `opran-business/.hermes/skills/`, `glass-vault/config/.hermes/skills/` | `~/.hermes/skills/` |
+| **Hermes** | `.hermes/skills/` | `~/.hermes/skills/` |
 | **GitHub Copilot** | `.agents/skills/` | `~/.agents/skills/` |
 | **Cursor** | `.cursor/skills/` | `~/.cursor/skills/` |
 | **Windsurf** | `.windsurf/skills/` | `~/.codeium/windsurf/skills/` |
