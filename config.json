@@ -3,6 +3,11 @@
   "repositories": [
     {
       "branch": null,
+      "name": "acimo",
+      "url": "https://github.com/AICMO/AiCMO-Marketing-Prompt-Collection.git"
+    },
+    {
+      "branch": null,
       "name": "reactjs-doctor",
       "url": "https://github.com/millionco/react-doctor.git"
     },
