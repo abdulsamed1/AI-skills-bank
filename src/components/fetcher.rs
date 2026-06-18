@@ -47,6 +47,38 @@ impl Fetcher {
         Ok(())
     }
 
+    /// Run a git command asynchronously and return its stdout
+    async fn run_git_command_output(args: &[&str], cwd: &Path) -> Result<String, SkillManageError> {
+        let output = tokio::process::Command::new("git")
+            .args(args)
+            .current_dir(cwd)
+            .env("GIT_TERMINAL_PROMPT", "0")
+            .stdin(std::process::Stdio::null())
+            .output()
+            .await?;
+
+        if !output.status.success() {
+            let stderr = String::from_utf8_lossy(&output.stderr);
+            return Err(SkillManageError::GitError(stderr.to_string()));
+        }
+
+        Ok(String::from_utf8_lossy(&output.stdout).trim().to_string())
+    }
+
+    /// Check if there are updates on the remote repository
+    async fn has_updates(repo_path: &Path, branch: Option<&str>) -> Result<bool, SkillManageError> {
+        if let Some(branch_name) = branch.filter(|b| !b.trim().is_empty()) {
+            Self::run_git_command(&["fetch", "--depth", "1", "origin", branch_name], repo_path).await?;
+        } else {
+            Self::run_git_command(&["fetch", "--depth", "1"], repo_path).await?;
+        }
+
+        let local_head = Self::run_git_command_output(&["rev-parse", "HEAD"], repo_path).await?;
+        let remote_head = Self::run_git_command_output(&["rev-parse", "FETCH_HEAD"], repo_path).await?;
+
+        Ok(local_head != remote_head)
+    }
+
     pub fn normalize_repo_url(url: &str) -> String {
         let mut normalized = url.trim().to_ascii_lowercase();
         normalized = normalized.trim_end_matches('/').to_string();
@@ -167,18 +199,41 @@ impl Fetcher {
                 let mut fetch_result = Ok(());
 
                 if repo_path.exists() {
-                    spinner.set_message(format!("Updating {}...", repo_name));
                     if !dry_run {
-                        if let Err(_e) = Self::pull_repository(&repo_path, branch).await {
-                            let _ = std::fs::remove_dir_all(&repo_path);
-                            if let Err(clone_err) = Self::clone_shallow(&repo_name, &repo_url, branch).await {
-                                fetch_result = Err(clone_err);
-                            } else {
-                                cloned_ref.lock().expect("cloned_ref mutex not poisoned").push(repo_name.clone());
+                        spinner.set_message(format!("Checking for updates: {}...", repo_name));
+                        match Self::has_updates(&repo_path, branch).await {
+                            Ok(true) => {
+                                spinner.set_message(format!("Updating {}...", repo_name));
+                                if let Err(_e) = Self::pull_repository(&repo_path, branch).await {
+                                    let _ = std::fs::remove_dir_all(&repo_path);
+                                    if let Err(clone_err) = Self::clone_shallow(&repo_name, &repo_url, branch).await {
+                                        fetch_result = Err(clone_err);
+                                    } else {
+                                        cloned_ref.lock().expect("cloned_ref mutex not poisoned").push(repo_name.clone());
+                                    }
+                                } else {
+                                    updated_ref.lock().expect("updated_ref mutex not poisoned").push(repo_name.clone());
+                                }
                             }
-                        } else {
-                            updated_ref.lock().expect("updated_ref mutex not poisoned").push(repo_name.clone());
+                            Ok(false) => {
+                                spinner.set_message(format!("Up to date: {}", repo_name));
+                            }
+                            Err(_e) => {
+                                spinner.set_message(format!("Update check failed (falling back): {}...", repo_name));
+                                if let Err(_e) = Self::pull_repository(&repo_path, branch).await {
+                                    let _ = std::fs::remove_dir_all(&repo_path);
+                                    if let Err(clone_err) = Self::clone_shallow(&repo_name, &repo_url, branch).await {
+                                        fetch_result = Err(clone_err);
+                                    } else {
+                                        cloned_ref.lock().expect("cloned_ref mutex not poisoned").push(repo_name.clone());
+                                    }
+                                } else {
+                                    updated_ref.lock().expect("updated_ref mutex not poisoned").push(repo_name.clone());
+                                }
+                            }
                         }
+                    } else {
+                        spinner.set_message(format!("Updating {}...", repo_name));
                     }
                 } else {
                     spinner.set_message(format!("Cloning {} (shallow)...", repo_name));
@@ -224,6 +279,67 @@ impl Fetcher {
             cloned: cloned_data,
             updated: updated_data,
         })
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use tempfile::tempdir;
+
+    async fn run_git(args: &[&str], cwd: &Path) {
+        let status = tokio::process::Command::new("git")
+            .args(args)
+            .current_dir(cwd)
+            .status()
+            .await
+            .unwrap();
+        assert!(status.success());
+    }
+
+    #[tokio::test]
+    async fn test_has_updates_logic() {
+        let temp = tempdir().unwrap();
+        let origin_path = temp.path().join("origin");
+        let clone_path = temp.path().join("clone");
+
+        std::fs::create_dir_all(&origin_path).unwrap();
+
+        // 1. Initialize origin repository
+        run_git(&["init", "-b", "main"], &origin_path).await;
+        run_git(&["config", "user.name", "Test User"], &origin_path).await;
+        run_git(&["config", "user.email", "test@example.com"], &origin_path).await;
+
+        // Write first commit
+        let file_path = origin_path.join("file.txt");
+        std::fs::write(&file_path, "initial").unwrap();
+        run_git(&["add", "file.txt"], &origin_path).await;
+        run_git(&["commit", "-m", "initial commit"], &origin_path).await;
+
+        // 2. Clone repository shallowly
+        let origin_url = format!("file://{}", origin_path.to_str().unwrap());
+        run_git(&["clone", "--depth", "1", &origin_url, clone_path.to_str().unwrap()], &clone_path.parent().unwrap()).await;
+
+        // 3. Verify has_updates is initially false
+        let has_up = Fetcher::has_updates(&clone_path, Some("main")).await.unwrap();
+        assert!(!has_up, "Should not have updates initially");
+
+        // 4. Make a new commit in origin
+        std::fs::write(&file_path, "updated").unwrap();
+        run_git(&["add", "file.txt"], &origin_path).await;
+        run_git(&["commit", "-m", "second commit"], &origin_path).await;
+
+        // 5. Verify has_updates is now true
+        let has_up = Fetcher::has_updates(&clone_path, Some("main")).await.unwrap();
+        assert!(has_up, "Should detect updates after remote changes");
+
+        // 6. Reset clone HEAD to FETCH_HEAD (simulate what pull/update does)
+        let remote_head = Fetcher::run_git_command_output(&["rev-parse", "FETCH_HEAD"], &clone_path).await.unwrap();
+        Fetcher::run_git_command(&["reset", "--hard", &remote_head], &clone_path).await.unwrap();
+
+        // 7. Verify has_updates is false again
+        let has_up = Fetcher::has_updates(&clone_path, Some("main")).await.unwrap();
+        assert!(!has_up, "Should be up to date after update");
     }
 }
 

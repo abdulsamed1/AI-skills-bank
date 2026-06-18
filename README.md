@@ -62,7 +62,7 @@
 ### Aggregation & Deduplication
 - **Parallel Cloning**: Shallow clone optimization (80% faster, lower disk footprint).
 - **Smart Deduplication**: Normalization and Levenshtein-based matching of name OR description catches cross-repo clones.
-- **Incremental Updates**: Uses `git pull` in existing directories to avoid re-cloning.
+- **Incremental Updates**: Checks for remote updates first via `git fetch --depth 1` and compares HEAD with FETCH_HEAD hashes before executing resets, cleans, or pulls, avoiding disk and network overhead on already up-to-date repositories.
 - **Legacy Migration**: Automatic legacy repository directory cleanup.
 
 ### Classification & Routing

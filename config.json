@@ -611,15 +611,15 @@
     "mode": "local",
     "targets": {
       "Antigravity": "~/production/.agent/skills/",
-      "GitHub Copilot": "~/production/.agents/skills/"
-   , "hermes": "~/production/.hermes/skills"
+      "GitHub Copilot": "~/production/.agents/skills/",
+      "hermes": "~/production/.hermes/skills"
     }
   },
   "sync_scope": "local",
   "tools": [
     "copilot",
-    "antigravity"
-    , "hermes"
+    "antigravity",
+    "hermes"
   ],
   "version": 1,
   "workspace_root": "."
