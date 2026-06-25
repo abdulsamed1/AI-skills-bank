@@ -1359,6 +1359,7 @@ description: |
 
 - NEVER guess skill behavior from description alone.
 - ALWAYS load the actual SKILL.md from src_path before acting.
+- ALWAYS list related tools before making calls. This approach ensures more precise and less error-prone execution.
 - If ambiguous, present top 3 candidates to the user.
 "#, hub_name_str, hub_name_str, sub_hubs.len(), hub_name_str, table.trim());
 
@@ -1667,6 +1668,7 @@ description: |
 
 - NEVER guess skill behavior from description alone.
 - ALWAYS load the actual SKILL.md from src_path before acting.
+- ALWAYS list related tools before making calls. This approach ensures more precise and less error-prone execution.
 - If ambiguous, present top 3 candidates to the user.
 "#, hub, hub, total_skills, entries.len(), hub, table.trim());
 
@@ -1753,6 +1755,7 @@ description: |
 
 - NEVER guess skill behavior from description alone.
 - ALWAYS load the actual SKILL.md from src_path before acting.
+- ALWAYS list related tools before making calls. This approach ensures more precise and less error-prone execution.
 - If ambiguous, present top 3 candidates to the user.
 "#, total_master_skills, hub_info.len(), master_table.trim());
 
