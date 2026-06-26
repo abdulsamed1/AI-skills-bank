@@ -742,10 +742,26 @@ async fn classify_skills_with_llm(
 
                 let attempts = if max_retries == 0 { 1 } else { max_retries };
                 // try batch classify with retries
+                let max_body_chars = std::env::var("LLM_MAX_BODY_CHARS")
+                    .ok()
+                    .and_then(|s| s.parse::<usize>().ok())
+                    .unwrap_or(400);
+
                 let item_payload: Vec<(String, String, Option<String>)> = chunk_vec
                     .iter()
                     .map(|(_, name, description, abstract_text, _)| {
-                        (name.clone(), description.clone(), abstract_text.clone())
+                        let truncated = abstract_text.as_ref().map(|a| {
+                            let mut end_idx = max_body_chars;
+                            if a.len() < end_idx {
+                                end_idx = a.len();
+                            } else {
+                                while !a.is_char_boundary(end_idx) && end_idx > 0 {
+                                    end_idx -= 1;
+                                }
+                            }
+                            a[..end_idx].to_string()
+                        });
+                        (name.clone(), description.clone(), truncated)
                     })
                     .collect();
 
@@ -900,6 +916,15 @@ async fn classify_skills_with_llm(
                             // Capture top suggestion locally to avoid holding a borrow across an await
                             let top_clone = resp.ranked_suggestions.first().cloned();
 
+                            // If the LLM returned an unparseable fallback (confidence 0, hub "unclassified"),
+                            // don't cache it — fall back to keyword rules instead.
+                            if let Some(ref top) = top_clone {
+                                if top.confidence == 0 && top.hub == "unclassified" {
+                                    rules::apply_rules(&mut skills[idx]);
+                                    continue;
+                                }
+                            }
+
                             // Insert into shared cache (lock briefly)
                             {
                                 let mut guard = cache.lock().await;
@@ -927,6 +952,14 @@ async fn classify_skills_with_llm(
                                 total_tc as u64,
                                 format!("Processing LLM results: {}/{}", completed_handles, total_handles),
                             );
+                        }
+                    }
+
+                    // Persist cache progressively to avoid losing work on cancellation/failure
+                    {
+                        let guard = cache.lock().await;
+                        if let Err(e) = crate::components::llm::save_cache(&*guard) {
+                            eprintln!("Warning: Failed to save cache progressively: {}", e);
                         }
                     }
                 }

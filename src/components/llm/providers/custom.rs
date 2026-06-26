@@ -77,6 +77,10 @@ impl CustomProvider {
         }
         if !status.is_success() {
             let text = response.text().await.unwrap_or_default();
+            // Transient gateway errors should be retried via the pipeline's backoff logic
+            if status.as_u16() == 502 || status.as_u16() == 503 || status.as_u16() == 504 {
+                return Err(LlmError::ProviderUnavailable(format!("{} Bad Gateway: {}", status.as_u16(), text)));
+            }
             return Err(LlmError::InvalidResponse(format!("{}: {}", status, text)));
         }
 
@@ -133,7 +137,7 @@ Valid sub-hubs (examples): testing-qa, security, performance, product-management
         let messages = vec![
             json!({
                 "role": "system",
-                "content": "You are a classification engine. Output ONLY a single JSON object. No explanation, no markdown, no reasoning text."
+                "content": "You are a JSON classification API. Your entire response must be a single valid JSON object. Do NOT output any reasoning, thinking, analysis, numbered steps, markdown, or explanatory text. Output ONLY the raw JSON object and nothing else."
             }),
             json!({
                 "role": "user",
@@ -175,9 +179,23 @@ Valid sub-hubs (examples): testing-qa, security, performance, product-management
             match self.classify(skill_id, description, abstract_text.as_deref(), _context).await {
                 Ok(result) => results.push(result),
                 Err(e) => {
-                    eprintln!("Batch classify error for {}: {:?}", skill_id, e);
-                    // Return error for batch so caller can retry
-                    return Err(e);
+                    // Transient upstream errors (502/503/504, rate limits) should
+                    // abort the batch immediately so the pipeline retries with backoff.
+                    if matches!(&e, LlmError::ProviderUnavailable(_) | LlmError::RateLimited { .. } | LlmError::Timeout | LlmError::NetworkError(_)) {
+                        eprintln!("Batch classify transient error for {}: {:?}. Aborting batch for retry.", skill_id, e);
+                        return Err(e);
+                    }
+                    // Non-transient errors (InvalidResponse from reasoning models):
+                    // log and insert a fallback so remaining items aren't wasted.
+                    eprintln!("Batch classify parse error for {}: {:?}. Using fallback.", skill_id, e);
+                    results.push(LlmClassificationResponse {
+                        ranked_suggestions: vec![SubHubSuggestion {
+                            hub: "unclassified".to_string(),
+                            sub_hub: "general".to_string(),
+                            confidence: 0,
+                            reasoning: Some("LLM response was not parseable JSON".to_string()),
+                        }],
+                    });
                 }
             }
         }

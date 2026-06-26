@@ -228,4 +228,76 @@ content
 
         Ok(())
     }
+
+    #[tokio::test]
+    async fn test_llm_max_body_chars_respected() -> Result<(), Box<dyn std::error::Error>> {
+        use tempfile::tempdir;
+        use std::fs;
+        use std::env;
+
+        let _guard = ENV_LOCK.lock().unwrap();
+        env::set_var("LLM_PROVIDER", "mock");
+        env::set_var("LLM_API_KEY", "test-key");
+        env::set_var("LLM_MAX_BODY_CHARS", "10");
+
+        let cache_dir = tempdir()?;
+        let cache_file = cache_dir.path().join("llm-cache-chars.json");
+        env::set_var("LLM_CACHE_PATH", cache_file.to_string_lossy().to_string());
+
+        let root = tempdir()?;
+        let src = root.path().join("src").join("demo-chars").join("skills").join("audit-skill");
+        fs::create_dir_all(&src)?;
+
+        // The abstract text contains the word "security", but it is past the 10 character mark.
+        // Truncated to 10 chars, it will be "Abstract m".
+        let skill_md = r#"---
+name: audit
+description: Learn about audit processes.
+---
+
+Abstract mentioning security.
+"#;
+        fs::write(src.join("SKILL.md"), skill_md)?;
+
+        let output = root.path().join("skills-aggregated");
+        let skills = skills_bank::components::native_pipeline::aggregate_to_output(
+            root.path(),
+            &output,
+            None::<&std::collections::HashSet<String>>,
+            false,
+            false,
+        )
+        .await?;
+
+        assert_eq!(skills.len(), 1);
+        // The mock provider returns confidence 75 if "security" is not matched in the abstract.
+        // It returns 95 if "security" is matched.
+        // Since it is truncated to 10 chars, "security" should not match, and confidence should be 75.
+        assert_eq!(skills[0].match_score, Some(75));
+
+        // Let's verify that if we set it to 100, the full body is matched, resulting in 95.
+        env::set_var("LLM_MAX_BODY_CHARS", "100");
+        // Invalidate the cache to force a new request
+        fs::remove_file(&cache_file)?;
+
+        let skills_full = skills_bank::components::native_pipeline::aggregate_to_output(
+            root.path(),
+            &output,
+            None::<&std::collections::HashSet<String>>,
+            false,
+            false,
+        )
+        .await?;
+
+        assert_eq!(skills_full.len(), 1);
+        assert_eq!(skills_full[0].match_score, Some(95));
+
+        // Cleanup env
+        env::remove_var("LLM_PROVIDER");
+        env::remove_var("LLM_API_KEY");
+        env::remove_var("LLM_CACHE_PATH");
+        env::remove_var("LLM_MAX_BODY_CHARS");
+
+        Ok(())
+    }
 }
