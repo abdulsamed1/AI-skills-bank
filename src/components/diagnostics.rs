@@ -382,6 +382,10 @@ impl Check for V11SubHubRoutingCheck {
             if !hub_path.is_dir() {
                 continue;
             }
+            let hub_name = hub_path.file_name().and_then(|s| s.to_str()).unwrap_or("");
+            if hub_name == "lib" || hub_name.starts_with('.') {
+                continue;
+            }
 
             let sub_dirs = match fs::read_dir(&hub_path) {
                 Ok(s) => s,
@@ -391,6 +395,10 @@ impl Check for V11SubHubRoutingCheck {
             for sub_entry in sub_dirs.flatten() {
                 let sub_path = sub_entry.path();
                 if !sub_path.is_dir() {
+                    continue;
+                }
+                let sub_name = sub_path.file_name().and_then(|s| s.to_str()).unwrap_or("");
+                if sub_name == "lib" || sub_name.starts_with('.') {
                     continue;
                 }
 

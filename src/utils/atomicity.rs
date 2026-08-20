@@ -132,48 +132,49 @@ pub fn sync_dir_atomic(src: &Path, dest: &Path) -> Result<(), SkillManageError> 
 
     /// Recursively merge contents of src into dest.
     fn merge_copy_recursive(src: &Path, dest: &Path) -> Result<(), SkillManageError> {
-    if !dest.exists() {
-        std::fs::create_dir_all(dest)?;
-    }
-
-    for entry in std::fs::read_dir(src)? {
-        let entry = entry?;
-        let file_type = entry.file_type()?;
-        let src_path = entry.path();
-        let dest_path = dest.join(entry.file_name());
-
-        if file_type.is_dir() {
-            merge_copy_recursive(&src_path, &dest_path)?;
-        } else {
-            // Copy file, overwriting if exists. std::fs::copy handles overwriting.
-            std::fs::copy(&src_path, &dest_path)?;
+        if !dest.exists() {
+            std::fs::create_dir_all(dest)?;
         }
-    }
 
-    Ok(())
+        for entry in std::fs::read_dir(src)? {
+            let entry = entry?;
+            let src_path = entry.path();
+            let dest_path = dest.join(entry.file_name());
+
+            if src_path.is_dir() {
+                if is_link(&src_path) {
+                    let _ = create_link_atomic_force(&src_path, &dest_path);
+                } else {
+                    merge_copy_recursive(&src_path, &dest_path)?;
+                }
+            } else {
+                std::fs::copy(&src_path, &dest_path)?;
+            }
+        }
+
+        Ok(())
     }
 
     /// Merges the contents of src into dest. For directories, creates a directory link (junction/symlink).
     /// For files, it copies them. This preserves existing items in dest that don't overlap.
     pub fn sync_contents_as_links(src: &Path, dest: &Path) -> Result<(), SkillManageError> {
-    if !dest.exists() {
-        std::fs::create_dir_all(dest)?;
-    }
-
-    for entry in std::fs::read_dir(src)? {
-        let entry = entry?;
-        let file_type = entry.file_type()?;
-        let src_path = entry.path();
-        let dest_path = dest.join(entry.file_name());
-
-        if file_type.is_dir() {
-            create_link_atomic_force(&src_path, &dest_path)?;
-        } else {
-            std::fs::copy(&src_path, &dest_path)?;
+        if !dest.exists() {
+            std::fs::create_dir_all(dest)?;
         }
-    }
 
-    Ok(())
+        for entry in std::fs::read_dir(src)? {
+            let entry = entry?;
+            let src_path = entry.path();
+            let dest_path = dest.join(entry.file_name());
+
+            if src_path.is_dir() {
+                create_link_atomic_force(&src_path, &dest_path)?;
+            } else {
+                std::fs::copy(&src_path, &dest_path)?;
+            }
+        }
+
+        Ok(())
     }
 
 /// Create a directory link (Junction on Windows, Symlink on Unix) atomically.

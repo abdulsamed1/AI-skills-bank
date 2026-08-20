@@ -1796,6 +1796,58 @@ description: |
 
     write_review_band(repo_root, output_dir, skills)?;
 
+    ensure_lib_symlinks(repo_root, output_dir)?;
+
+    Ok(())
+}
+
+fn ensure_lib_symlinks(repo_root: &Path, output_dir: &Path) -> Result<(), SkillManageError> {
+    let lib_dir = repo_root.join("lib");
+    if !lib_dir.is_dir() {
+        return Ok(());
+    }
+
+    // 1. Link output_dir/lib -> repo_root/lib
+    let root_lib_link = output_dir.join("lib");
+    if !root_lib_link.exists() && !crate::utils::atomicity::is_link(&root_lib_link) {
+        let _ = crate::utils::atomicity::create_link_atomic(&lib_dir, &root_lib_link);
+    }
+
+    // 2. Link hub/lib and subhub/lib
+    if let Ok(entries) = std::fs::read_dir(output_dir) {
+        for entry in entries.flatten() {
+            let hub_dir = entry.path();
+            if hub_dir.is_dir() && !crate::utils::atomicity::is_link(&hub_dir) {
+                let hub_name = hub_dir.file_name().and_then(|s| s.to_str()).unwrap_or("");
+                if hub_name == "lib" || hub_name.starts_with('.') {
+                    continue;
+                }
+
+                let hub_lib_link = hub_dir.join("lib");
+                if !hub_lib_link.exists() && !crate::utils::atomicity::is_link(&hub_lib_link) {
+                    let _ = crate::utils::atomicity::create_link_atomic(&lib_dir, &hub_lib_link);
+                }
+
+                if let Ok(sub_entries) = std::fs::read_dir(&hub_dir) {
+                    for sub_entry in sub_entries.flatten() {
+                        let sub_dir = sub_entry.path();
+                        if sub_dir.is_dir() && !crate::utils::atomicity::is_link(&sub_dir) {
+                            let sub_name = sub_dir.file_name().and_then(|s| s.to_str()).unwrap_or("");
+                            if sub_name == "lib" || sub_name.starts_with('.') {
+                                continue;
+                            }
+
+                            let sub_lib_link = sub_dir.join("lib");
+                            if !sub_lib_link.exists() && !crate::utils::atomicity::is_link(&sub_lib_link) {
+                                let _ = crate::utils::atomicity::create_link_atomic(&lib_dir, &sub_lib_link);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     Ok(())
 }
 
