@@ -610,16 +610,18 @@
   "sync": {
     "mode": "local",
     "targets": {
-      "Antigravity": "~/production/.agent/skills/",
-      "GitHub Copilot": "~/production/.agents/skills/",
-      "hermes": "~/production/.hermes/skills"
+      "Antigravity": "~/.agent/skills/",
+      "GitHub Copilot": "~/.agents/skills/",
+      "hermes": "~/.hermes/skills",
+      "opencode": "~/.config/opencode/skills"
     }
   },
   "sync_scope": "local",
   "tools": [
     "copilot",
     "antigravity",
-    "hermes"
+    "hermes",
+    "opencode"
   ],
   "version": 1,
   "workspace_root": "."

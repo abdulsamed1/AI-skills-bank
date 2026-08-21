@@ -66,6 +66,12 @@ const TOOL_DEFS: &[ToolDef] = &[
         global_rels: &[".codeium/windsurf/skills"],
         local_rels: &[".windsurf/skills"],
     },
+    ToolDef {
+        key: "opencode",
+        // ponytail: minimal mapping — opencode discovers ~/.config/opencode/skills/*/SKILL.md and ~/.agents/skills; keep both global/local standard
+        global_rels: &[".config/opencode/skills"],
+        local_rels: &[".opencode/skills"],
+    },
 ];
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -225,7 +231,7 @@ async fn run() -> Result<()> {
             let loaded = load_config(&config_path)?;
             apply_exclusion_env(loaded.as_ref());
             let output_dir = repo_root.join("skills-aggregated");
-            if let Err(native_err) = run_aggregate_native(&repo_root, &output_dir, None, true).await {
+            if let Err(native_err) = run_aggregate_native(&repo_root, &output_dir, None, false).await {
                 eprintln!("[ERROR] Native aggregation failed (no archive fallback): {}", native_err);
                 return Err(native_err);
             }
@@ -357,7 +363,7 @@ async fn run_full_pipeline(config: &SetupConfig) -> Result<()> {
 
     println!("[2/3] Aggregate skills...");
     let full_output = repo_root.join("skills-aggregated");
-            if let Err(native_err) = run_aggregate_native(&repo_root, &full_output, None, true).await {
+            if let Err(native_err) = run_aggregate_native(&repo_root, &full_output, None, false).await {
                 eprintln!("[ERROR] Native aggregation failed (no archive fallback): {}", native_err);
                 return Err(native_err);
             }
@@ -426,7 +432,7 @@ async fn run_aggregate_native(
         output_dir,
         selected_repos,
         write_global_csv,
-        true,
+        false,
     )
     .await
     .context("Native aggregation failed")?;
@@ -1026,8 +1032,15 @@ fn resolve_sync_targets(repo_root: &Path, config: &SetupConfig) -> Result<Vec<Pa
         let is_inside = p_norm.starts_with(&r_norm) || p_norm.starts_with(&rc_norm);
 
         if is_inside {
-            // Automatically skip any target inside the skills-bank repo itself.
-            continue;
+            // ponytail: allow .opencode/skills inside repo — native discovery needs it (4 hubs, 120 tokens)
+            // other inside paths remain excluded to avoid recursive copy into self
+            let allowed_inside = p_norm.ends_with(".opencode/skills")
+                || p_norm.ends_with(".opencode/skill")
+                || p_norm.ends_with("/.opencode/skills")
+                || p_norm.ends_with("/.opencode/skill");
+            if !allowed_inside {
+                continue;
+            }
         }
 
         // 4. Use normalized absolute path as key for deduplication

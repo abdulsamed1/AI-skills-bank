@@ -1114,6 +1114,102 @@ fn rewrite_routing_csv_to_absolute(
     Ok(updated_files)
 }
 
+fn is_hub_only_target(target: &Path) -> bool {
+    // ponytail: all skill sync targets benefit from hub-router-only (4 hubs, 120 tokens vs 3840 skills, 115k tokens)
+    // keep per-skill symlinks only if explicitly requested via SKILL_MANAGE_FULL_SYNC=1
+    if std::env::var("SKILL_MANAGE_FULL_SYNC").ok().as_deref() == Some("1") {
+        return false;
+    }
+    let s = target.to_string_lossy().to_lowercase().replace('\\', "/");
+    s.contains("skills") || s.contains("skill")
+}
+
+fn sync_opencode_hubs_filtered(src: &Path, dest: &Path) -> Result<(), SkillManageError> {
+    // ponytail: hub-router-only copy — 4 SKILL.md + 16 routing.csv, not 3840 per-skill symlinks (120 vs 115k tokens)
+    if !dest.exists() {
+        std::fs::create_dir_all(dest)?;
+    }
+    for name in ["AGENTS.md", "subhub-index.json", ".skill-lock.json", "review-band.json"] {
+        let s = src.join(name);
+        if s.exists() && s.is_file() {
+            let d = dest.join(name);
+            if let Some(parent) = d.parent() {
+                std::fs::create_dir_all(parent)?;
+            }
+            std::fs::copy(&s, &d)?;
+        }
+    }
+    let entries = std::fs::read_dir(src)?;
+    for entry in entries.flatten() {
+        let hub_path = entry.path();
+        let ft = match std::fs::symlink_metadata(&hub_path) {
+            Ok(m) => m.file_type(),
+            Err(_) => continue,
+        };
+        if ft.is_file() {
+            continue;
+        }
+        if ft.is_symlink() {
+            continue;
+        }
+        let hub_name = hub_path.file_name().and_then(|n| n.to_str()).unwrap_or("");
+        if hub_name.starts_with('.') {
+            continue;
+        }
+        // only hubs are directories containing SKILL.md at top level; skip lib etc
+        if !hub_path.join("SKILL.md").exists() {
+            // allow hub without SKILL.md (ensure_main_hub_routers will create)
+            // still process if it has subdirs
+        }
+        let hub_dest = dest.join(hub_name);
+        // ponytail: replace previous hub symlink (from sync_contents_as_links) with real dir for hub-only
+        if crate::utils::atomicity::is_link(&hub_dest) {
+            let _ = std::fs::remove_file(&hub_dest);
+            let _ = std::fs::remove_dir_all(&hub_dest);
+        }
+        std::fs::create_dir_all(&hub_dest)?;
+        let hub_skill = hub_path.join("SKILL.md");
+        if hub_skill.exists() {
+            std::fs::copy(&hub_skill, &hub_dest.join("SKILL.md"))?;
+        }
+        let sub_entries = match std::fs::read_dir(&hub_path) {
+            Ok(it) => it,
+            Err(_) => continue,
+        };
+        for sub_entry in sub_entries.flatten() {
+            let sub_path = sub_entry.path();
+            let sub_ft = match std::fs::symlink_metadata(&sub_path) {
+                Ok(m) => m.file_type(),
+                Err(_) => continue,
+            };
+            if sub_ft.is_file() {
+                continue;
+            }
+            if sub_ft.is_symlink() {
+                continue;
+            }
+            let sub_name = sub_path.file_name().and_then(|n| n.to_str()).unwrap_or("");
+            if sub_name.starts_with('.') || sub_name == "lib" {
+                continue;
+            }
+            let sub_dest = hub_dest.join(sub_name);
+            if crate::utils::atomicity::is_link(&sub_dest) {
+                let _ = std::fs::remove_file(&sub_dest);
+                let _ = std::fs::remove_dir_all(&sub_dest);
+            }
+            std::fs::create_dir_all(&sub_dest)?;
+            let artifacts = ["routing.csv", "skills-catalog.csv", "skills-index.json", "skills-manifest.json"];
+            for art in artifacts {
+                let s = sub_path.join(art);
+                if s.exists() && s.is_file() {
+                    std::fs::copy(&s, &sub_dest.join(art))?;
+                }
+            }
+        }
+    }
+    Ok(())
+}
+
 pub fn sync_output_to_targets(
     source_root: &Path,
     targets: &[PathBuf],
@@ -1187,23 +1283,62 @@ pub fn sync_output_to_targets(
             // If the destination exists as a regular file/dir, proceed normally.
         }
 
-        match mode {
-            NativeSyncMode::Copy => {
-                sync_dir_atomic(source_root, target)?;
-                used_copy = true;
-            }
-            NativeSyncMode::Junction => {
-                #[cfg(windows)]
-                {
+        if is_hub_only_target(target) {
+            // ponytail: hub-router-only — avoids 3840 skill entries (115k tokens) → 4 hubs (120 tokens)
+            sync_opencode_hubs_filtered(source_root, target)?;
+            used_copy = true;
+        } else {
+            match mode {
+                NativeSyncMode::Copy => {
+                    sync_dir_atomic(source_root, target)?;
+                    used_copy = true;
+                }
+                NativeSyncMode::Junction => {
+                    #[cfg(windows)]
+                    {
+                        if force_links {
+                            match sync_contents_as_links(source_root, target) {
+                                Ok(()) => {}
+                                Err(link_err) => {
+                                    _logger.warn(&format!(
+                                        "Junction linking (force) failed for {}: {}. Falling back to copy.",
+                                        target.display(), link_err
+                                    ));
+                                    sync_dir_atomic(source_root, target)?;
+                                }
+                            }
+                        } else {
+                            match sync_contents_as_links(source_root, target) {
+                                Ok(()) => {}
+                                Err(link_err) => {
+                                    _logger.warn(&format!(
+                                        "Junction linking failed for {}: {}. Falling back to non-destructive merge copy.",
+                                        target.display(), link_err
+                                    ));
+                                    sync_dir_atomic(source_root, target)?;
+                                    used_copy = true;
+                                }
+                            }
+                        }
+                    }
+                    #[cfg(not(windows))]
+                    {
+                        return Err(SkillManageError::ConfigError(
+                            "Junction mode is only supported on Windows".to_string(),
+                        ));
+                    }
+                }
+                NativeSyncMode::SymbolicLink => {
                     if force_links {
                         match sync_contents_as_links(source_root, target) {
                             Ok(()) => {}
                             Err(link_err) => {
                                 _logger.warn(&format!(
-                                    "Junction linking (force) failed for {}: {}. Falling back to copy.",
+                                    "Symbolic linking (force) failed for {}: {}. Falling back to copy.",
                                     target.display(), link_err
                                 ));
                                 sync_dir_atomic(source_root, target)?;
+                                used_copy = true;
                             }
                         }
                     } else {
@@ -1211,7 +1346,7 @@ pub fn sync_output_to_targets(
                             Ok(()) => {}
                             Err(link_err) => {
                                 _logger.warn(&format!(
-                                    "Junction linking failed for {}: {}. Falling back to non-destructive merge copy.",
+                                    "Symbolic linking failed for {}: {}. Falling back to non-destructive merge copy.",
                                     target.display(), link_err
                                 ));
                                 sync_dir_atomic(source_root, target)?;
@@ -1220,55 +1355,22 @@ pub fn sync_output_to_targets(
                         }
                     }
                 }
-                #[cfg(not(windows))]
-                {
-                    return Err(SkillManageError::ConfigError(
-                        "Junction mode is only supported on Windows".to_string(),
-                    ));
-                }
-            }
-            NativeSyncMode::SymbolicLink => {
-                if force_links {
+                NativeSyncMode::Auto => {
+                    // ── Auto Strategy: Link Contents, Fallback to Copy ──
+                    //
+                    // Prioritize symbolic links/junctions to save space and improve speed.
+                    // Links the contents (hubs) into the target directory, preserving
+                    // any existing custom skills that reside outside of managed hubs.
                     match sync_contents_as_links(source_root, target) {
                         Ok(()) => {}
                         Err(link_err) => {
                             _logger.warn(&format!(
-                                "Symbolic linking (force) failed for {}: {}. Falling back to copy.",
+                                "Linking contents failed for {}: {}. Falling back to copy.",
                                 target.display(), link_err
                             ));
                             sync_dir_atomic(source_root, target)?;
                             used_copy = true;
                         }
-                    }
-                } else {
-                    match sync_contents_as_links(source_root, target) {
-                        Ok(()) => {}
-                        Err(link_err) => {
-                            _logger.warn(&format!(
-                                "Symbolic linking failed for {}: {}. Falling back to non-destructive merge copy.",
-                                target.display(), link_err
-                            ));
-                            sync_dir_atomic(source_root, target)?;
-                            used_copy = true;
-                        }
-                    }
-                }
-            }
-            NativeSyncMode::Auto => {
-                // ── Auto Strategy: Link Contents, Fallback to Copy ──
-                //
-                // Prioritize symbolic links/junctions to save space and improve speed.
-                // Links the contents (hubs) into the target directory, preserving
-                // any existing custom skills that reside outside of managed hubs.
-                match sync_contents_as_links(source_root, target) {
-                    Ok(()) => {}
-                    Err(link_err) => {
-                        _logger.warn(&format!(
-                            "Linking contents failed for {}: {}. Falling back to copy.",
-                            target.display(), link_err
-                        ));
-                        sync_dir_atomic(source_root, target)?;
-                        used_copy = true;
                     }
                 }
             }
@@ -1385,7 +1487,7 @@ description: |
 1. Match user request to a sub-hub from the table above.
 2. Open `<sub_hub>/routing.csv` in this directory.
 3. Find the `skill_id` row whose `description` best matches the task.
-4. Read the full skill from the `src_path` column (the SKILL.md in `lib/`).
+4. Read the full skill from the `src_path` column (relative to repo root) or directly via `<sub_hub>/<skill_id>/SKILL.md` safe symlink.
 5. Follow that SKILL.md as the source of truth.
 
 ## Anti-Hallucination
@@ -1613,6 +1715,21 @@ fn write_native_artifacts(
         });
         write_json_atomic(&subhub_dir.join("skills-manifest.json"), &manifest_json)?;
 
+        for s in &group_skills {
+            if let Some(skill_dir) = s.path.parent() {
+                // ponytail: resolve to absolute so diff_paths can build portable relative symlink (repo_root + relative skill_dir)
+                let skill_dir_abs = if skill_dir.is_absolute() {
+                    skill_dir.to_path_buf()
+                } else {
+                    repo_root.join(skill_dir)
+                };
+                let link_target = subhub_dir.join(&s.name);
+                if !link_target.exists() && !crate::utils::atomicity::is_link(&link_target) {
+                    let _ = crate::utils::atomicity::create_link_atomic(&skill_dir_abs, &link_target);
+                }
+            }
+        }
+
         // Per-subhub SKILL.md files are no longer generated here. Agents should
         // reference the dynamic `skills-aggregated/AGENTS.md` and routing CSVs.
 
@@ -1694,7 +1811,7 @@ description: |
 1. Match user request to a sub-hub from the table above.
 2. Open `<sub_hub>/routing.csv` in this directory.
 3. Find the `skill_id` row whose `description` best matches the task.
-4. Read the full skill from the `src_path` column (the SKILL.md in `lib/`).
+4. Read the full skill from the `src_path` column (relative to repo root) or directly via `<sub_hub>/<skill_id>/SKILL.md` safe symlink.
 5. Follow that SKILL.md as the source of truth.
 
 ## Anti-Hallucination
@@ -1795,58 +1912,6 @@ description: |
     write_file_atomic(&output_dir.join("AGENTS.md"), master_content.as_bytes())?;
 
     write_review_band(repo_root, output_dir, skills)?;
-
-    ensure_lib_symlinks(repo_root, output_dir)?;
-
-    Ok(())
-}
-
-fn ensure_lib_symlinks(repo_root: &Path, output_dir: &Path) -> Result<(), SkillManageError> {
-    let lib_dir = repo_root.join("lib");
-    if !lib_dir.is_dir() {
-        return Ok(());
-    }
-
-    // 1. Link output_dir/lib -> repo_root/lib
-    let root_lib_link = output_dir.join("lib");
-    if !root_lib_link.exists() && !crate::utils::atomicity::is_link(&root_lib_link) {
-        let _ = crate::utils::atomicity::create_link_atomic(&lib_dir, &root_lib_link);
-    }
-
-    // 2. Link hub/lib and subhub/lib
-    if let Ok(entries) = std::fs::read_dir(output_dir) {
-        for entry in entries.flatten() {
-            let hub_dir = entry.path();
-            if hub_dir.is_dir() && !crate::utils::atomicity::is_link(&hub_dir) {
-                let hub_name = hub_dir.file_name().and_then(|s| s.to_str()).unwrap_or("");
-                if hub_name == "lib" || hub_name.starts_with('.') {
-                    continue;
-                }
-
-                let hub_lib_link = hub_dir.join("lib");
-                if !hub_lib_link.exists() && !crate::utils::atomicity::is_link(&hub_lib_link) {
-                    let _ = crate::utils::atomicity::create_link_atomic(&lib_dir, &hub_lib_link);
-                }
-
-                if let Ok(sub_entries) = std::fs::read_dir(&hub_dir) {
-                    for sub_entry in sub_entries.flatten() {
-                        let sub_dir = sub_entry.path();
-                        if sub_dir.is_dir() && !crate::utils::atomicity::is_link(&sub_dir) {
-                            let sub_name = sub_dir.file_name().and_then(|s| s.to_str()).unwrap_or("");
-                            if sub_name == "lib" || sub_name.starts_with('.') {
-                                continue;
-                            }
-
-                            let sub_lib_link = sub_dir.join("lib");
-                            if !sub_lib_link.exists() && !crate::utils::atomicity::is_link(&sub_lib_link) {
-                                let _ = crate::utils::atomicity::create_link_atomic(&lib_dir, &sub_lib_link);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 
     Ok(())
 }

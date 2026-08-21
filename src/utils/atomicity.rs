@@ -168,9 +168,13 @@ pub fn sync_dir_atomic(src: &Path, dest: &Path) -> Result<(), SkillManageError> 
             let dest_path = dest.join(entry.file_name());
 
             if src_path.is_dir() {
-                create_link_atomic_force(&src_path, &dest_path)?;
+                create_link_atomic_force(&src_path, &dest_path).map_err(|e| {
+                    SkillManageError::ConfigError(format!("Failed to link {:?}: {}", src_path, e))
+                })?;
             } else {
-                std::fs::copy(&src_path, &dest_path)?;
+                std::fs::copy(&src_path, &dest_path).map_err(|e| {
+                    SkillManageError::ConfigError(format!("Failed to copy file {:?}: {}", src_path, e))
+                })?;
             }
         }
 
