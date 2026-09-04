@@ -308,6 +308,19 @@ LLM_INITIAL_BACKOFF_MS=500        # Exponential backoff base duration
   rm -rf ~/.claude/skills/*  # Linux/macOS
   ```
 
+### Issue: Antigravity (AGY) not discovering skills in sub-projects
+- **Problem**: When using a centralized `.agent/skills/` folder outside your current workspace root (where your `.git` is), AGY stops searching at the `.git` root of the active workspace and won't discover the skills.
+- **Solution**: Create a global machine-local configuration file at `~/.gemini/config/skills.json` that explicitly points to your shared skills folder:
+  ```json
+  {
+    "entries": [
+      {
+        "path": "/absolute/path/to/shared/.agent/skills"
+      }
+    ]
+  }
+  ```
+
 ---
 
 ## 🤝 Contributing
