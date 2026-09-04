@@ -1032,15 +1032,8 @@ fn resolve_sync_targets(repo_root: &Path, config: &SetupConfig) -> Result<Vec<Pa
         let is_inside = p_norm.starts_with(&r_norm) || p_norm.starts_with(&rc_norm);
 
         if is_inside {
-            // ponytail: allow .opencode/skills inside repo — native discovery needs it (4 hubs, 120 tokens)
-            // other inside paths remain excluded to avoid recursive copy into self
-            let allowed_inside = p_norm.ends_with(".opencode/skills")
-                || p_norm.ends_with(".opencode/skill")
-                || p_norm.ends_with("/.opencode/skills")
-                || p_norm.ends_with("/.opencode/skill");
-            if !allowed_inside {
-                continue;
-            }
+            // All inside paths excluded to avoid recursive copy into self
+            continue;
         }
 
         // 4. Use normalized absolute path as key for deduplication
