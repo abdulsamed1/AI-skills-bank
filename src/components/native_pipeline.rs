@@ -1115,7 +1115,7 @@ fn rewrite_routing_csv_to_absolute(
 }
 
 fn is_hub_only_target(target: &Path) -> bool {
-    // ponytail: all skill sync targets benefit from hub-router-only (4 hubs, 120 tokens vs 3840 skills, 115k tokens)
+    // : all skill sync targets benefit from hub-router-only (4 hubs, 120 tokens vs 3840 skills, 115k tokens)
     // keep per-skill symlinks only if explicitly requested via SKILL_MANAGE_FULL_SYNC=1
     if std::env::var("SKILL_MANAGE_FULL_SYNC").ok().as_deref() == Some("1") {
         return false;
@@ -1125,7 +1125,7 @@ fn is_hub_only_target(target: &Path) -> bool {
 }
 
 fn sync_opencode_hubs_filtered(src: &Path, dest: &Path) -> Result<(), SkillManageError> {
-    // ponytail: hub-router-only copy — 4 SKILL.md + 16 routing.csv, not 3840 per-skill symlinks (120 vs 115k tokens)
+    // : hub-router-only copy — 4 SKILL.md + 16 routing.csv, not 3840 per-skill symlinks (120 vs 115k tokens)
     if !dest.exists() {
         std::fs::create_dir_all(dest)?;
     }
@@ -1162,7 +1162,7 @@ fn sync_opencode_hubs_filtered(src: &Path, dest: &Path) -> Result<(), SkillManag
             // still process if it has subdirs
         }
         let hub_dest = dest.join(hub_name);
-        // ponytail: replace previous hub symlink (from sync_contents_as_links) with real dir for hub-only
+        // : replace previous hub symlink (from sync_contents_as_links) with real dir for hub-only
         if crate::utils::atomicity::is_link(&hub_dest) {
             let _ = std::fs::remove_file(&hub_dest);
             let _ = std::fs::remove_dir_all(&hub_dest);
@@ -1284,7 +1284,7 @@ pub fn sync_output_to_targets(
         }
 
         if is_hub_only_target(target) {
-            // ponytail: hub-router-only — avoids 3840 skill entries (115k tokens) → 4 hubs (120 tokens)
+            // : hub-router-only — avoids 3840 skill entries (115k tokens) → 4 hubs (120 tokens)
             sync_opencode_hubs_filtered(source_root, target)?;
             used_copy = true;
         } else {
@@ -1717,7 +1717,7 @@ fn write_native_artifacts(
 
         for s in &group_skills {
             if let Some(skill_dir) = s.path.parent() {
-                // ponytail: resolve to absolute so diff_paths can build portable relative symlink (repo_root + relative skill_dir)
+                // : resolve to absolute so diff_paths can build portable relative symlink (repo_root + relative skill_dir)
                 let skill_dir_abs = if skill_dir.is_absolute() {
                     skill_dir.to_path_buf()
                 } else {

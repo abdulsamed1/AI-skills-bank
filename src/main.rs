@@ -68,7 +68,7 @@ const TOOL_DEFS: &[ToolDef] = &[
     },
     ToolDef {
         key: "opencode",
-        // ponytail: minimal mapping — opencode discovers ~/.config/opencode/skills/*/SKILL.md and ~/.agents/skills; keep both global/local standard
+        // : minimal mapping — opencode discovers ~/.config/opencode/skills/*/SKILL.md and ~/.agents/skills; keep both global/local standard
         global_rels: &[".config/opencode/skills"],
         local_rels: &[".opencode/skills"],
     },
