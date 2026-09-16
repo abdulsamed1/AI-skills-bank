@@ -127,22 +127,20 @@ To configure the proxy and automatically seed your provider keys:
 2. A database seeding script automatically reads upstream provider API keys, encrypts them using FreeLLMAPI's native AES-256-GCM, and seeds them into the SQLite database.
 3. The unified API key is synchronized automatically to `freellmapi`.
 
-#### Next Steps:
-1. Start FreeLLMAPI:
-   ```bash
-   cd freellmapi && npm run dev
-   ```
-2. Run `skills-bank` aggregation:
-   ```bash
-   ./target/release/skills-bank aggregate
-   ```
+---
 
+## 🚀 Quick Start
 
-cd skills-bank/
+### 1. Build from Source
+
+```bash
+git clone https://github.com/abdulsamed1/AI-skills-bank.git
+cd AI-skills-bank
 cargo build --release
 ```
 
 ### 2. Run Aggregation
+
 ```bash
 # First-time interactive setup
 ./target/release/skills-bank setup
@@ -152,6 +150,7 @@ cargo build --release
 ```
 
 ### 3. Sync to Your Tools
+
 ```bash
 ./target/release/skills-bank sync
 ```
@@ -336,3 +335,11 @@ LLM_INITIAL_BACKOFF_MS=500        # Exponential backoff base duration
 ## 📄 License
 
 This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
+
+---
+
+<p align="center">
+  <b>Developed by Abdul Samed</b><br/>
+  <a href="https://github.com/abdulsamed1">GitHub Profile</a> • <a href="https://github.com/abdulsamed1/AI-skills-bank/issues">Issue Tracker</a>
+</p>
+

@@ -3,7 +3,14 @@ name = "skills-bank"
 version = "0.1.0"
 edition = "2021"
 default-run = "skills-bank"
-description = "Ultra-lightweight routing layer for AI agent workflows"
+description = "Ultra-lightweight skill aggregation, classification and routing layer for AI agent workflows"
+authors = ["Abdulsamed"]
+license = "MIT"
+repository = "https://github.com/abdulsamed1/AI-skills-bank"
+homepage = "https://github.com/abdulsamed1/AI-skills-bank"
+readme = "README.md"
+keywords = ["ai", "agents", "skills", "routing", "cli"]
+categories = ["command-line-utilities", "development-tools"]
 
 [[bin]]
 name = "skills-bank"
