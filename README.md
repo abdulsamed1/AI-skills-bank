@@ -211,6 +211,191 @@ cargo build --release
  └──────────────┘
 ```
 
+---
+
+```mermaid
+flowchart TD
+
+    subgraph Distribution["Distribution & Runtime Boundary"]
+        NPM["NPM Package / NPX<br/>skills-bank"]
+        Shim["JavaScript Binary Shim<br/>Platform Detection & Binary Launch"]
+        Integrity["SHA-256 Binary Integrity Gate<br/>Verify Before Execution"]
+
+        NPM --> Shim
+        Shim --> Integrity
+    end
+
+    subgraph CLI["Native Rust CLI Engine"]
+        Binary["skills-bank Native Binary<br/>Rust 2024"]
+
+        Clap["CLI Command Router<br/>clap v4"]
+        App["Application State<br/>App = Runtime Source of Truth"]
+
+        FetchCmd["fetch"]
+        SyncCmd["sync"]
+        AggregateCmd["aggregate"]
+        DiagnosticsCmd["diagnostics"]
+
+        Binary --> Clap
+        Clap --> App
+
+        App --> FetchCmd
+        App --> SyncCmd
+        App --> AggregateCmd
+        App --> DiagnosticsCmd
+    end
+
+    Integrity --> Binary
+
+    subgraph RepositoryPipeline["Repository Acquisition Pipeline"]
+        Config[("config.json<br/>Repository Source of Truth")]
+
+        Fetcher["Fetcher<br/>Async Tokio I/O"]
+
+        GitHub["GitHub API / Git Protocol<br/>Remote Repository Source"]
+
+        LocalRepos["Local Repository / Skills Tree<br/>lib/"]
+
+        Config --> Fetcher
+        Fetcher --> GitHub
+        GitHub --> Fetcher
+        Fetcher --> LocalRepos
+    end
+
+    FetchCmd --> Config
+    FetchCmd --> Fetcher
+
+    subgraph Processing["Parallel Skill Processing Engine"]
+        Scanner["Filesystem Scanner<br/>Discover SKILL.md Files"]
+
+        Rayon["Rayon Parallel Iterators<br/>Data-Parallel Processing"]
+
+        Dedup["Smart Deduplication Engine<br/>Canonical Skill Selection"]
+
+        Rules["Aggregation Rules<br/>Classification / Filtering"]
+
+        Manifest["hub-manifests.csv<br/>Central Routing Manifest"]
+
+        LocalRepos --> Scanner
+        Scanner --> Rayon
+        Rayon --> Dedup
+        Dedup --> Rules
+        Rules --> Manifest
+    end
+
+    AggregateCmd --> Scanner
+
+    subgraph Synchronization["Skill Synchronization Layer"]
+        SyncEngine["Synchronizer<br/>Transactional File Operations"]
+
+        Atomic["Atomic Write Boundary<br/>.tmp → fs::rename"]
+
+        PlatformFS["Platform Filesystem Abstraction<br/>Unix Symlinks / Windows Junctions"]
+
+        AgentPaths["Agent-Accessible Skill Paths"]
+
+        SyncCmd --> SyncEngine
+        SyncEngine --> Atomic
+        Atomic --> PlatformFS
+        PlatformFS --> AgentPaths
+    end
+
+    LocalRepos --> SyncEngine
+
+    subgraph Diagnostics["Diagnostics & Validation"]
+        DiagnosticEngine["Diagnostics Engine<br/>Strict Schema Validation"]
+
+        Schema["Skill / Repository Schema Checks"]
+
+        Output["Structured Diagnostic Results"]
+
+        DiagnosticsCmd --> DiagnosticEngine
+        DiagnosticEngine --> Schema
+        Schema --> Output
+    end
+
+    subgraph RuntimeCommunication["Runtime Communication"]
+        Events["tokio::sync::mpsc<br/>Worker Event Channel"]
+
+        Progress["Progress Reporting<br/>Bounded Progress / Spinner"]
+
+        JSON["Machine Output<br/>--json"]
+
+        Human["Human-readable CLI Output"]
+
+        App --> Events
+
+        Fetcher -.-> Events
+        Rayon -.-> Events
+        SyncEngine -.-> Events
+        DiagnosticEngine -.-> Events
+
+        Events --> Progress
+        Events --> JSON
+        Events --> Human
+    end
+
+    subgraph LLM["Optional LLM Proxy Layer"]
+        LLMConfig["LLM Configuration<br/>LLM_PROVIDER / API_KEY / API_URL"]
+
+        Provider["OpenAI-Compatible Endpoint"]
+
+        Failover["Provider Failover / Rotation"]
+
+        LLMConfig --> Failover
+        Failover --> Provider
+    end
+
+    Binary -. "Semantic Requests" .-> LLMConfig
+
+    subgraph State["Portable Local State"]
+        Config
+        Manifest
+    end
+
+    subgraph BuildRelease["Build & Release Infrastructure"]
+        GitHubActions["GitHub Actions<br/>Cross-Platform Build Matrix"]
+
+        Cargo["Cargo Build System<br/>Release Profiles"]
+
+        Dist["cargo-dist<br/>Artifact & GitHub Release Generation"]
+
+        Targets["Windows x86_64<br/>macOS x86_64 / ARM64<br/>Linux x86_64 musl"]
+
+        NPMRegistry["Public NPM Registry"]
+
+        GitHubActions --> Cargo
+        Cargo --> Dist
+        Dist --> Targets
+        Targets --> NPMRegistry
+    end
+
+    subgraph Toolchain["Self-Contained Compilation Toolchain"]
+        Zig["Bundled Zig 0.13.0"]
+        Wrapper["cc-wrapper<br/>Zig cc Compiler Wrapper"]
+        CargoConfig[".cargo/config.toml<br/>Compiler / Linker Configuration"]
+
+        Zig --> Wrapper
+        Wrapper --> CargoConfig
+    end
+
+    CargoConfig --> Cargo
+
+    subgraph Security["Cross-Cutting Security & Reliability"]
+        SHA["SHA-256 Binary Verification"]
+        Atomicity["Filesystem Atomicity"]
+        ExitCodes["POSIX Exit Codes<br/>Machine-readable Failure States"]
+        Streams["stdout / stderr Separation"]
+        NoShell["No Platform Shell Dependency<br/>No PowerShell Runtime"]
+
+        SHA -.-> Integrity
+        Atomicity -.-> Atomic
+        ExitCodes -.-> Binary
+        Streams -.-> CLI
+        NoShell -.-> Binary
+    end
+```
+
 ### Classification Improvements (v2.0+)
 
 1. **Repository Name Substring Matching**:
