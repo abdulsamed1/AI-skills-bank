@@ -1329,19 +1329,9 @@ fn is_hub_only_target(target: &Path) -> bool {
 }
 
 fn sync_opencode_hubs_filtered(src: &Path, dest: &Path) -> Result<(), SkillManageError> {
-    // : hub-router-only copy — 4 SKILL.md + 16 routing.csv, not 3840 per-skill symlinks (120 vs 115k tokens)
+    // ponytail: routing.csv only — 4 SKILL.md + 16 routing.csv, not catalog/index/manifest (dead weight)
     if !dest.exists() {
         std::fs::create_dir_all(dest)?;
-    }
-    for name in ["AGENTS.md", "subhub-index.json", ".skill-lock.json", "review-band.json"] {
-        let s = src.join(name);
-        if s.exists() && s.is_file() {
-            let d = dest.join(name);
-            if let Some(parent) = d.parent() {
-                std::fs::create_dir_all(parent)?;
-            }
-            std::fs::copy(&s, &d)?;
-        }
     }
     let entries = std::fs::read_dir(src)?;
     for entry in entries.flatten() {
@@ -1350,23 +1340,14 @@ fn sync_opencode_hubs_filtered(src: &Path, dest: &Path) -> Result<(), SkillManag
             Ok(m) => m.file_type(),
             Err(_) => continue,
         };
-        if ft.is_file() {
-            continue;
-        }
-        if ft.is_symlink() {
+        if ft.is_file() || ft.is_symlink() {
             continue;
         }
         let hub_name = hub_path.file_name().and_then(|n| n.to_str()).unwrap_or("");
         if hub_name.starts_with('.') {
             continue;
         }
-        // only hubs are directories containing SKILL.md at top level; skip lib etc
-        if !hub_path.join("SKILL.md").exists() {
-            // allow hub without SKILL.md (ensure_main_hub_routers will create)
-            // still process if it has subdirs
-        }
         let hub_dest = dest.join(hub_name);
-        // : replace previous hub symlink (from sync_contents_as_links) with real dir for hub-only
         if crate::utils::atomicity::is_link(&hub_dest) {
             let _ = std::fs::remove_file(&hub_dest);
             let _ = std::fs::remove_dir_all(&hub_dest);
@@ -1386,10 +1367,7 @@ fn sync_opencode_hubs_filtered(src: &Path, dest: &Path) -> Result<(), SkillManag
                 Ok(m) => m.file_type(),
                 Err(_) => continue,
             };
-            if sub_ft.is_file() {
-                continue;
-            }
-            if sub_ft.is_symlink() {
+            if sub_ft.is_file() || sub_ft.is_symlink() {
                 continue;
             }
             let sub_name = sub_path.file_name().and_then(|n| n.to_str()).unwrap_or("");
@@ -1402,12 +1380,9 @@ fn sync_opencode_hubs_filtered(src: &Path, dest: &Path) -> Result<(), SkillManag
                 let _ = std::fs::remove_dir_all(&sub_dest);
             }
             std::fs::create_dir_all(&sub_dest)?;
-            let artifacts = ["routing.csv", "skills-catalog.csv", "skills-index.json", "skills-manifest.json"];
-            for art in artifacts {
-                let s = sub_path.join(art);
-                if s.exists() && s.is_file() {
-                    std::fs::copy(&s, &sub_dest.join(art))?;
-                }
+            let routing = sub_path.join("routing.csv");
+            if routing.exists() && routing.is_file() {
+                std::fs::copy(&routing, &sub_dest.join("routing.csv"))?;
             }
         }
     }
