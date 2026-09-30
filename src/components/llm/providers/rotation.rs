@@ -91,4 +91,68 @@ impl LlmProvider for RotationProvider {
     fn name(&self) -> &'static str {
         "rotation"
     }
+
+    async fn classify_panel(
+        &self,
+        items: &[(String, String, Option<String>)],
+        candidates: &[String],
+        context: &LlmClassificationContext,
+    ) -> Result<Vec<Option<Vec<(String, f64)>>>, LlmError> {
+        if self.providers.is_empty() {
+            return Err(LlmError::ConfigError("No LLM providers configured in rotation".to_string()));
+        }
+
+        let mut errors = Vec::new();
+        for provider in &self.providers {
+            match provider.classify_panel(items, candidates, context).await {
+                Ok(panels) => return Ok(panels),
+                Err(err) => {
+                    eprintln!(
+                        "WARN: Provider '{}' failed classify_panel: {:?}. Trying next...",
+                        provider.name(),
+                        err
+                    );
+                    errors.push(err);
+                }
+            }
+        }
+
+        let rate_limited = errors.iter().find(|e| matches!(e, LlmError::RateLimited { .. }));
+        if let Some(err) = rate_limited {
+            return Err(err.clone());
+        }
+
+        Err(errors.into_iter().next().unwrap_or(LlmError::ConfigError("All providers failed".into())))
+    }
+
+    async fn classify_duplicates(
+        &self,
+        pairs: &[(String, String, String, String)],
+    ) -> Result<Vec<Option<(bool, f64)>>, LlmError> {
+        if self.providers.is_empty() {
+            return Err(LlmError::ConfigError("No LLM providers configured in rotation".to_string()));
+        }
+
+        let mut errors = Vec::new();
+        for provider in &self.providers {
+            match provider.classify_duplicates(pairs).await {
+                Ok(verdicts) => return Ok(verdicts),
+                Err(err) => {
+                    eprintln!(
+                        "WARN: Provider '{}' failed classify_duplicates: {:?}. Trying next...",
+                        provider.name(),
+                        err
+                    );
+                    errors.push(err);
+                }
+            }
+        }
+
+        let rate_limited = errors.iter().find(|e| matches!(e, LlmError::RateLimited { .. }));
+        if let Some(err) = rate_limited {
+            return Err(err.clone());
+        }
+
+        Err(errors.into_iter().next().unwrap_or(LlmError::ConfigError("All providers failed".into())))
+    }
 }

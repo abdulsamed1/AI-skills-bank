@@ -28,6 +28,37 @@ pub trait LlmProvider: Send + Sync {
         Ok(out)
     }
 
+    /// Jev-style boolean relevance panel: one probability per candidate for
+    /// each item, in candidate order. Returns per-item `Some(scores)` on
+    /// strict parse success, `None` when the item abstains (unparseable —
+    /// never a default). Length mismatch is an `Err` like `classify_batch`.
+    /// Default: unsupported (callers fall back to chat classification).
+    /// `candidates` are hub names; pass sub-hub names for the second stage.
+    async fn classify_panel(
+        &self,
+        items: &[(String, String, Option<String>)],
+        candidates: &[String],
+        context: &LlmClassificationContext,
+    ) -> Result<Vec<Option<Vec<(String, f64)>>>, LlmError> {
+        let _ = (items, candidates, context);
+        Err(LlmError::InvalidResponse(
+            "relevance panel not supported by this provider".to_string(),
+        ))
+    }
+
+    /// Pairwise duplicate verdicts for `(name_a, desc_a, name_b, desc_b)` in
+    /// order. Per-pair `Some((duplicate, probability))`, `None` on strict
+    /// parse failure (keep both). Default: unsupported (callers keep all).
+    async fn classify_duplicates(
+        &self,
+        pairs: &[(String, String, String, String)],
+    ) -> Result<Vec<Option<(bool, f64)>>, LlmError> {
+        let _ = pairs;
+        Err(LlmError::InvalidResponse(
+            "duplicate verdicts not supported by this provider".to_string(),
+        ))
+    }
+
     fn name(&self) -> &'static str;
 }
 

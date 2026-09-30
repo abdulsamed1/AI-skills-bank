@@ -27,21 +27,26 @@ fn default_cache_path() -> Option<PathBuf> {
 pub fn cache_file_path() -> Result<PathBuf, SkillManageError> {
     default_cache_path().ok_or_else(|| SkillManageError::ConfigError("Unable to resolve home directory for LLM cache; set LLM_CACHE_PATH".to_string()))
 }
-#[derive(Serialize, Deserialize, Debug)]
-struct CacheFileEntry {
-    classification: LlmClassificationResponse,
+#[derive(Serialize, Deserialize, Debug, Clone)]
+pub struct CacheFileEntry {
+    pub classification: LlmClassificationResponse,
     #[serde(default)]
-    provider_metadata: Option<serde_json::Value>,
+    pub provider_metadata: Option<serde_json::Value>,
     #[serde(default)]
-    repo: Option<String>,
+    pub repo: Option<String>,
     #[serde(default)]
-    skill_path: Option<String>,
+    pub skill_path: Option<String>,
     #[serde(default)]
-    name: Option<String>,
+    pub name: Option<String>,
     #[serde(default)]
-    description_hash: Option<String>,
+    pub description_hash: Option<String>,
     #[serde(default)]
-    inserted_at: Option<String>,
+    pub inserted_at: Option<String>,
+    /// Prompt/decision-rule version that produced this entry. Entries written
+    /// before versioning carry `None` and are treated as stale once a version
+    /// is required, forcing exactly one re-ask instead of silent reuse.
+    #[serde(default)]
+    pub prompt_version: Option<String>,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
@@ -165,6 +170,94 @@ pub fn key_for_skill(
     hex
 }
 
+/// Versioned variant: prefixes the prompt/decision-rule version so prompt or
+/// hub-definition changes invalidate stale entries by key miss (one re-ask,
+/// then warm again). Pass `None` to keep the legacy unversioned key.
+pub fn key_for_skill_versioned(
+    repo_root: &Path,
+    skill_path: &Path,
+    name: &str,
+    description: &str,
+    content_body: Option<&str>,
+    prompt_version: Option<&str>,
+) -> String {
+    let base = key_for_skill(repo_root, skill_path, name, description, content_body);
+    match prompt_version {
+        Some(v) if !v.is_empty() => format!("{}|{}", v, base),
+        _ => base,
+    }
+}
+
+/// TTL in days for cached entries (`LLM_CACHE_TTL_DAYS`, default 7, 0 disables).
+pub fn cache_ttl_days() -> i64 {
+    std::env::var("LLM_CACHE_TTL_DAYS")
+        .ok()
+        .and_then(|s| s.parse::<i64>().ok())
+        .unwrap_or(7)
+}
+
+/// True when the entry may be reused: age is under TTL. Prompt/version
+/// invalidation happens by key miss (the version is part of the key via
+/// `key_for_skill_versioned`), so a version bump costs exactly one re-ask.
+/// Stale assignments must never persist silently (jevgrep cache identity).
+pub fn cache_entry_usable(entry: &CacheFileEntry) -> bool {
+    let ttl = cache_ttl_days();
+    if ttl <= 0 {
+        return true;
+    }
+    let ts = match entry.inserted_at.as_deref() {
+        Some(s) => s,
+        None => return false,
+    };
+    match chrono::DateTime::parse_from_rfc3339(ts) {
+        Ok(t) => (chrono::Utc::now() - t.with_timezone(&chrono::Utc)).num_days() < ttl,
+        Err(_) => false,
+    }
+}
+
+/// Load full entries (classification + metadata) for callers that enforce
+/// version/TTL. Legacy raw-map files load with empty metadata (treated stale
+/// when a version is required).
+pub fn load_cache_entries() -> Result<HashMap<String, CacheFileEntry>, SkillManageError> {
+    let path = cache_file_path()?;
+    if !path.exists() {
+        return Ok(HashMap::new());
+    }
+    let data = fs::read_to_string(&path)?;
+    match serde_json::from_str::<CacheFile>(&data) {
+        Ok(wrapper) => Ok(wrapper.entries),
+        Err(_) => match serde_json::from_str::<HashMap<String, LlmClassificationResponse>>(&data) {
+            Ok(legacy) => Ok(legacy
+                .into_iter()
+                .map(|(k, classification)| {
+                    (
+                        k,
+                        CacheFileEntry {
+                            classification,
+                            provider_metadata: None,
+                            repo: None,
+                            skill_path: None,
+                            name: None,
+                            description_hash: None,
+                            inserted_at: None,
+                            prompt_version: None,
+                        },
+                    )
+                })
+                .collect()),
+            Err(parse_err) => {
+                CACHE_ERRORS.fetch_add(1, Ordering::SeqCst);
+                let ts = SystemTime::now().duration_since(UNIX_EPOCH).map(|d| d.as_secs()).unwrap_or(0);
+                let corrupt_name = format!("{}.corrupt.{}.json", path.file_name().unwrap().to_string_lossy(), ts);
+                let corrupt_path = path.with_file_name(corrupt_name);
+                let _ = fs::rename(&path, &corrupt_path);
+                let _ = fs::write(&path, "{}".as_bytes());
+                Err(SkillManageError::ConfigError(format!("Failed parsing LLM cache {}: {}", path.display(), parse_err)))
+            }
+        },
+    }
+}
+
 /// Return a cloned classification if present; increments metrics counters.
 pub fn get_cached_classification(
     map: &HashMap<String, LlmClassificationResponse>,
@@ -252,6 +345,9 @@ pub fn save_cache(map: &HashMap<String, LlmClassificationResponse>) -> Result<()
     let mut new_entries: HashMap<String, CacheFileEntry> = HashMap::new();
     let now = chrono::Utc::now().to_rfc3339();
     for (k, v) in map.iter() {
+        // Self-describing version: versioned keys look like `ver|hex`
+        // (see key_for_skill_versioned); versions never contain '|'.
+        let key_version = k.split_once('|').map(|(ver, _)| ver.to_string());
         let mut entry = CacheFileEntry {
             classification: v.clone(),
             provider_metadata: None,
@@ -260,6 +356,7 @@ pub fn save_cache(map: &HashMap<String, LlmClassificationResponse>) -> Result<()
             name: None,
             description_hash: None,
             inserted_at: Some(now.clone()),
+            prompt_version: key_version,
         };
 
         if let Some(prev) = existing_entries.remove(k) {

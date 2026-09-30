@@ -113,6 +113,7 @@ impl LlmProvider for OpenAiProvider {
         }
 
         if let Ok(v) = serde_json::from_str::<Value>(&text) {
+            crate::components::llm::cost::record_usage("openai", &v);
             if let Some(content) = v
                 .get("choices")
                 .and_then(|c| c.get(0))
@@ -244,6 +245,7 @@ impl LlmProvider for OpenAiProvider {
         }
 
         if let Ok(v) = serde_json::from_str::<serde_json::Value>(&text) {
+            crate::components::llm::cost::record_usage("openai", &v);
             if let Some(content) = v
                 .get("choices")
                 .and_then(|c| c.get(0))
@@ -274,5 +276,183 @@ impl LlmProvider for OpenAiProvider {
         Err(LlmError::InvalidResponse(
             "Unable to parse OpenAI batch response as classification JSON".into(),
         ))
+    }
+
+    async fn classify_panel(
+        &self,
+        items: &[(String, String, Option<String>)],
+        candidates: &[String],
+        context: &LlmClassificationContext,
+    ) -> Result<Vec<Option<Vec<(String, f64)>>>, LlmError> {
+        if items.is_empty() || candidates.is_empty() {
+            return Ok(vec![]);
+        }
+        let kind = if candidates.iter().all(|c| context.valid_hubs.contains(c)) {
+            "hub"
+        } else {
+            "sub-hub"
+        };
+        let system_prompt =
+            crate::components::llm::relevance::build_panel_prompt(candidates, kind);
+        let payload_items: Vec<serde_json::Value> = items
+            .iter()
+            .map(|(skill_id, description, abstract_text)| {
+                serde_json::json!({
+                    "skill_id": skill_id,
+                    "description": description,
+                    "abstract": abstract_text.clone().unwrap_or_default()
+                })
+            })
+            .collect();
+        let user_content = format!(
+            "Score every candidate for each skill, in order. Skills: {}",
+            serde_json::to_string(&payload_items).unwrap_or_else(|_| "[]".to_string())
+        );
+        let body = serde_json::json!({
+            "model": self.get_model(),
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_content}
+            ],
+            "temperature": 0.0,
+            "max_tokens": 1024,
+        });
+        let v = self.post_chat(body).await?;
+        let val = Self::panel_content(&v)?;
+        // Accept both {"panels":[{"scores":[...]}]} and a bare {"scores":[...]}
+        // (treated as a single-item response) — models behind FreeLLMAPI vary.
+        let panels: Vec<serde_json::Value> = if let Some(arr) = val.get("panels").and_then(|p| p.as_array()) {
+            arr.clone()
+        } else if val.get("scores").is_some() {
+            vec![val.clone()]
+        } else {
+            return Err(LlmError::InvalidResponse(
+                "panel response missing panels array".to_string(),
+            ));
+        };
+        // Fewer panels than items = model didn't follow batch format.
+        // Treat missing items as abstentions (None), not a hard error.
+        let mut out: Vec<Option<Vec<(String, f64)>>> = Vec::with_capacity(items.len());
+        for i in 0..items.len() {
+            out.push(panels.get(i).and_then(|p| {
+                crate::components::llm::relevance::strict_parse_panel(p, candidates)
+            }));
+        }
+        Ok(out)
+    }
+
+    async fn classify_duplicates(
+        &self,
+        pairs: &[(String, String, String, String)],
+    ) -> Result<Vec<Option<(bool, f64)>>, LlmError> {
+        if pairs.is_empty() {
+            return Ok(vec![]);
+        }
+        let system_prompt = crate::components::llm::relevance::build_dedup_prompt();
+        let payload_items: Vec<serde_json::Value> = pairs
+            .iter()
+            .map(|(a_name, a_desc, b_name, b_desc)| {
+                serde_json::json!({
+                    "a_name": a_name, "a_desc": a_desc,
+                    "b_name": b_name, "b_desc": b_desc
+                })
+            })
+            .collect();
+        let user_content = format!(
+            "Judge each pair in order. Pairs: {}",
+            serde_json::to_string(&payload_items).unwrap_or_else(|_| "[]".to_string())
+        );
+        let body = serde_json::json!({
+            "model": self.get_model(),
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_content}
+            ],
+            "temperature": 0.0,
+            "max_tokens": 1024,
+        });
+        let v = self.post_chat(body).await?;
+        let val = Self::panel_content(&v)?;
+        match crate::components::llm::relevance::strict_parse_dedup(&val, pairs.len()) {
+            Some(verdicts) => Ok(verdicts.into_iter().map(Some).collect()),
+            None => Err(LlmError::InvalidResponse(
+                "dedup response failed strict validation".to_string(),
+            )),
+        }
+    }
+}
+
+impl OpenAiProvider {
+    /// Extract the assistant message content and pull out the embedded JSON
+    /// object/array. Shared by panel and verdict calls (both strictly
+    /// validated downstream — extraction is lenient, validation is not).
+    fn panel_content(v: &Value) -> Result<Value, LlmError> {
+        let content = v
+            .get("choices")
+            .and_then(|c| c.get(0))
+            .and_then(|c0| c0.get("message"))
+            .and_then(|m| m.get("content"))
+            .and_then(|c| c.as_str())
+            .ok_or_else(|| {
+                LlmError::InvalidResponse("panel response missing message content".to_string())
+            })?;
+        let json_text = extract_json_substring(content).ok_or_else(|| {
+            LlmError::InvalidResponse("panel response contains no JSON".to_string())
+        })?;
+        serde_json::from_str(&json_text)
+            .map_err(|e| LlmError::InvalidResponse(format!("panel JSON unparsable: {}", e)))
+    }
+
+    /// Shared OpenAI-compatible POST with the pipeline's standard error
+    /// mapping. Records token usage for cost accounting. No 400-recovery:
+    /// panel/verdict calls are strictly validated by contract.
+    async fn post_chat(&self, body: serde_json::Value) -> Result<Value, LlmError> {
+        let api_url = self
+            .config
+            .api_url
+            .as_deref()
+            .unwrap_or("https://api.openai.com/v1/chat/completions");
+        let mut req_builder = self
+            .client
+            .post(api_url)
+            .bearer_auth(&self.config.api_key)
+            .header("User-Agent", "skills-bank/0.1")
+            .json(&body);
+        if self.config.provider.to_ascii_lowercase() == "github" {
+            req_builder = req_builder.header("X-GitHub-Api-Version", "2022-11-28");
+        }
+        let resp = req_builder.send().await.map_err(|e| {
+            if e.is_timeout() {
+                LlmError::Timeout
+            } else {
+                LlmError::NetworkError(e.to_string())
+            }
+        })?;
+        let status = resp.status();
+        let headers = resp.headers().clone();
+        let text = resp
+            .text()
+            .await
+            .map_err(|e| LlmError::InvalidResponse(e.to_string()))?;
+        if !status.is_success() {
+            if status.as_u16() == 401 || status.as_u16() == 403 || status.as_u16() == 402 {
+                return Err(LlmError::AuthenticationFailed(text));
+            }
+            if status.as_u16() == 429 {
+                let retry_after = headers
+                    .get("retry-after")
+                    .and_then(|v| v.to_str().ok())
+                    .and_then(|s| s.parse::<u64>().ok());
+                return Err(LlmError::RateLimited { retry_after });
+            }
+            return Err(LlmError::ProviderUnavailable(format!(
+                "OpenAI request failed: {} - {}",
+                status, text
+            )));
+        }
+        let v: Value = serde_json::from_str(&text)
+            .map_err(|e| LlmError::InvalidResponse(format!("Invalid JSON response: {}", e)))?;
+        crate::components::llm::cost::record_usage("openai", &v);
+        Ok(v)
     }
 }

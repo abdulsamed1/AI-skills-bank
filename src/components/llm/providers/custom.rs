@@ -87,6 +87,8 @@ impl CustomProvider {
         let resp_json: serde_json::Value = response.json().await
             .map_err(|e| LlmError::InvalidResponse(format!("Invalid JSON response: {}", e)))?;
 
+        crate::components::llm::cost::record_usage("custom", &resp_json);
+
         let content_val = resp_json
             .get("choices")
             .and_then(|c| c.get(0))
@@ -205,6 +207,101 @@ Valid sub-hubs (examples): testing-qa, security, performance, product-management
 
     fn name(&self) -> &'static str {
         "custom"
+    }
+
+    async fn classify_panel(
+        &self,
+        items: &[(String, String, Option<String>)],
+        candidates: &[String],
+        context: &LlmClassificationContext,
+    ) -> Result<Vec<Option<Vec<(String, f64)>>>, LlmError> {
+        if items.is_empty() || candidates.is_empty() {
+            return Ok(vec![]);
+        }
+        let kind = if candidates.iter().all(|c| context.valid_hubs.contains(c)) {
+            "hub"
+        } else {
+            "sub-hub"
+        };
+        let system_prompt =
+            crate::components::llm::relevance::build_panel_prompt(candidates, kind);
+        let payload_items: Vec<serde_json::Value> = items
+            .iter()
+            .map(|(skill_id, description, abstract_text)| {
+                serde_json::json!({
+                    "skill_id": skill_id,
+                    "description": description,
+                    "abstract": abstract_text.clone().unwrap_or_default()
+                })
+            })
+            .collect();
+        let messages = vec![
+            json!({"role": "system", "content": system_prompt}),
+            json!({"role": "user", "content": format!(
+                "Score every candidate for each skill, in order. Skills: {}",
+                serde_json::to_string(&payload_items).unwrap_or_else(|_| "[]".to_string())
+            )}),
+        ];
+        let response = self.openai_compat_request(messages).await?;
+        // FreeLLMAPI-fronted models may prefix JSON with reasoning text.
+        let val: serde_json::Value = extract_json_object(&response).ok_or_else(|| {
+            LlmError::InvalidResponse("panel response contains no JSON object".to_string())
+        })?;
+        // Accept both {"panels":[{"scores":[...]}]} and a bare {"scores":[...]}
+        // (treated as a single-item response) — models behind FreeLLMAPI vary.
+        let panels: Vec<serde_json::Value> = if let Some(arr) = val.get("panels").and_then(|p| p.as_array()) {
+            arr.clone()
+        } else if val.get("scores").is_some() {
+            vec![val.clone()]
+        } else {
+            return Err(LlmError::InvalidResponse(
+                "panel response missing panels array".to_string(),
+            ));
+        };
+        // Fewer panels than items = model didn't follow batch format.
+        // Treat missing items as abstentions (None), not a hard error.
+        let mut out: Vec<Option<Vec<(String, f64)>>> = Vec::with_capacity(items.len());
+        for i in 0..items.len() {
+            out.push(panels.get(i).and_then(|p| {
+                crate::components::llm::relevance::strict_parse_panel(p, candidates)
+            }));
+        }
+        Ok(out)
+    }
+
+    async fn classify_duplicates(
+        &self,
+        pairs: &[(String, String, String, String)],
+    ) -> Result<Vec<Option<(bool, f64)>>, LlmError> {
+        if pairs.is_empty() {
+            return Ok(vec![]);
+        }
+        let payload_items: Vec<serde_json::Value> = pairs
+            .iter()
+            .map(|(a_name, a_desc, b_name, b_desc)| {
+                serde_json::json!({
+                    "a_name": a_name, "a_desc": a_desc,
+                    "b_name": b_name, "b_desc": b_desc
+                })
+            })
+            .collect();
+        let messages = vec![
+            json!({"role": "system", "content": crate::components::llm::relevance::build_dedup_prompt()}),
+            json!({"role": "user", "content": format!(
+                "Judge each pair in order. Pairs: {}",
+                serde_json::to_string(&payload_items).unwrap_or_else(|_| "[]".to_string())
+            )}),
+        ];
+        let response = self.openai_compat_request(messages).await?;
+        let val: serde_json::Value = extract_json_object(&response).ok_or_else(|| {
+            LlmError::InvalidResponse("dedup response contains no JSON object".to_string())
+        })?;
+        match crate::components::llm::relevance::strict_parse_dedup(&val, pairs.len()) {
+            Some(verdicts) => Ok(verdicts.into_iter().map(Some).collect()),
+            None => Err(LlmError::InvalidResponse(
+                "dedup response failed strict validation".to_string(),
+            )),
+        }
     }
 }
 

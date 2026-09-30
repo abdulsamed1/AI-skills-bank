@@ -605,6 +605,11 @@
       "branch": null,
       "name": "zxkane-aws-skills",
       "url": "https://github.com/zxkane/aws-skills.git"
+    },
+    {
+      "branch": null,
+      "name": "dzhng-jevgrep",
+      "url": "https://github.com/dzhng/jevgrep.git"
     }
   ],
   "sync": {

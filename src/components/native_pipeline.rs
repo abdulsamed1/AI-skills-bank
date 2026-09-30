@@ -475,9 +475,154 @@ fn apply_manual_overrides(
     }
 }
 
+/// P1: two-stage relevance panel for one chunk.
+///
+/// Stage 1 scores every hub; stage 2 scores the winning hub's sub-hubs.
+/// Returns `(decided, remaining_vec, remaining_payload)`: decided items carry
+/// mapped `LlmClassificationResponse`s for the shared cache/apply path, the
+/// rest flow into the legacy chat batch. Hub-only decisions (sub abstained)
+/// take the hub's default sub with a capped score so persisted routing can
+/// still restore a better previous assignment and no high confidence is ever
+/// claimed for an undecided sub-hub.
+async fn run_panel_for_chunk(
+    provider: &dyn crate::components::llm::LlmProvider,
+    chunk_vec: Vec<(usize, String, String, Option<String>, String)>,
+    item_payload: Vec<(String, String, Option<String>)>,
+    context: &crate::components::llm::types::LlmClassificationContext,
+) -> (
+    Vec<(
+        usize,
+        Option<crate::components::llm::LlmClassificationResponse>,
+        String,
+    )>,
+    Vec<(usize, String, String, Option<String>, String)>,
+    Vec<(String, String, Option<String>)>,
+) {
+    use crate::components::llm::relevance;
+    let empty_out = || {
+        (
+            Vec::new(),
+            chunk_vec.clone(),
+            item_payload.clone(),
+        )
+    };
+    if chunk_vec.is_empty() {
+        return (Vec::new(), chunk_vec, item_payload);
+    }
+    let threshold = relevance::relevance_threshold();
+    let hub_cands = context.valid_hubs.clone();
+
+    // Stage 1: hub panel.
+    let hub_panels = match provider
+        .classify_panel(&item_payload, &hub_cands, context)
+        .await
+    {
+        Ok(p) if p.len() == chunk_vec.len() => p,
+        _ => return empty_out(),
+    };
+    let mut hub_wins: Vec<Option<(String, f64)>> = Vec::with_capacity(chunk_vec.len());
+    for panel in hub_panels {
+        hub_wins.push(panel.and_then(|s| relevance::decide_winner(&s, threshold)));
+    }
+
+    // Group hub-decided positions for stage 2.
+    let mut groups: HashMap<String, Vec<usize>> = HashMap::new();
+    let mut pending: Vec<bool> = vec![false; chunk_vec.len()];
+    for (k, win) in hub_wins.iter().enumerate() {
+        match win {
+            Some((hub, _)) => {
+                groups.entry(hub.clone()).or_default().push(k);
+            }
+            None => pending[k] = true,
+        }
+    }
+
+    let mut decided: Vec<(
+        usize,
+        Option<crate::components::llm::LlmClassificationResponse>,
+        String,
+    )> = Vec::new();
+    let mut remaining_vec = Vec::new();
+    let mut remaining_payload = Vec::new();
+
+    let map_full = |hub: String, sub: String, p: f64| {
+        crate::components::llm::LlmClassificationResponse {
+            ranked_suggestions: vec![
+                crate::components::llm::types::SubHubSuggestion {
+                    hub,
+                    sub_hub: sub,
+                    confidence: (p * 100.0).round().clamp(0.0, 100.0) as u32,
+                    reasoning: Some(format!("relevance panel p={:.2}", p)),
+                },
+            ],
+        }
+    };
+    let map_hub_only = |hub: String, p: f64| {
+        let sub = rules::ensure_valid_hub_subhub(&hub, "").1;
+        let confidence = ((p * 100.0).round() as u32).min(69);
+        crate::components::llm::LlmClassificationResponse {
+            ranked_suggestions: vec![
+                crate::components::llm::types::SubHubSuggestion {
+                    hub,
+                    sub_hub: sub,
+                    confidence,
+                    reasoning: Some(format!(
+                        "relevance panel hub p={:.2}, sub-hub abstained",
+                        p
+                    )),
+                },
+            ],
+        }
+    };
+
+    for (k, is_pending) in pending.iter().enumerate() {
+        if *is_pending {
+            remaining_vec.push(chunk_vec[k].clone());
+            remaining_payload.push(item_payload[k].clone());
+        }
+    }
+
+    for (hub, ks) in groups {
+        let subs: Vec<String> = rules::SUB_HUB_DEFINITIONS
+            .get(hub.as_str())
+            .map(|d| d.sub_hubs.keys().map(|s| s.to_string()).collect())
+            .unwrap_or_default();
+        if subs.is_empty() {
+            // Unknown hub shape: cannot score subs; keep the hub with a
+            // capped score rather than coerce.
+            for &k in &ks {
+                let (idx, _, _, _, key) = &chunk_vec[k];
+                let hub_p = hub_wins[k].as_ref().map(|(_, p)| *p).unwrap_or(0.5);
+                decided.push((*idx, Some(map_hub_only(hub.clone(), hub_p)), key.clone()));
+            }
+            continue;
+        }
+        let sub_items: Vec<(String, String, Option<String>)> =
+            ks.iter().map(|&k| item_payload[k].clone()).collect();
+        let sub_panels = match provider.classify_panel(&sub_items, &subs, context).await {
+            Ok(p) if p.len() == ks.len() => p,
+            _ => vec![None; ks.len()],
+        };
+        for (t, &k) in ks.iter().enumerate() {
+            let (idx, _, _, _, key) = &chunk_vec[k];
+            let hub_p = hub_wins[k].as_ref().map(|(_, p)| *p).unwrap_or(0.5);
+            let resp = match sub_panels[t]
+                .as_ref()
+                .and_then(|s| relevance::decide_winner(s, threshold))
+            {
+                Some((sub, p)) => map_full(hub.clone(), sub, p),
+                None => map_hub_only(hub.clone(), hub_p),
+            };
+            decided.push((*idx, Some(resp), key.clone()));
+        }
+    }
+
+    (decided, remaining_vec, remaining_payload)
+}
+
 async fn classify_skills_with_llm(
     _repo_root: &Path,
-    skills: &mut [SkillMetadata],
+    skills: &mut Vec<SkillMetadata>,
     context: &crate::components::llm::types::LlmClassificationContext,
     progress: &ProgressManager,
 ) -> Result<(), SkillManageError> {
@@ -641,6 +786,14 @@ async fn classify_skills_with_llm(
 
     let provider: Box<dyn crate::components::llm::LlmProvider> = Box::new(crate::components::llm::RotationProvider::new(rotation_list));
 
+    // P2: semantic dedup on Step-A survivors. Bounded candidate pairs, cached
+    // verdicts, drops only on high-confidence duplicate verdicts. Unsupported
+    // providers skip gracefully (keep all). Runs before classification so
+    // near-duplicates never consume classify budget.
+    if crate::components::llm::dedup::enabled() {
+        crate::components::llm::dedup::semantic_dedup_filter(_repo_root, skills, &*provider).await;
+    }
+
     // Retry/backoff configuration
     let max_retries: u32 = env::var("LLM_MAX_RETRIES")
         .ok()
@@ -659,7 +812,16 @@ async fn classify_skills_with_llm(
         .unwrap_or(60_000);
 
     // Load existing cache (ok to be empty) and wrap in an Arc<Mutex<>> for safe concurrent access.
-    let initial_cache = crate::components::llm::load_cache()?;
+    // P3: only version-fresh, TTL-fresh entries load — stale assignments are
+    // re-asked instead of reused, and dropped from the file on next save.
+    let initial_cache = {
+        let entries = crate::components::llm::load_cache_entries()?;
+        entries
+            .into_iter()
+            .filter(|(_, e)| crate::components::llm::cache_entry_usable(e))
+            .map(|(k, e)| (k, e.classification))
+            .collect::<HashMap<String, crate::components::llm::LlmClassificationResponse>>()
+    };
     let cache = Arc::new(Mutex::new(initial_cache));
     // Snapshot the cache for fast synchronous lookups while building the to_classify list
     let cache_snapshot = {
@@ -679,8 +841,16 @@ async fn classify_skills_with_llm(
             continue;
         }
 
-        // Deterministic cache key: repo+skill_path+content-hash
-        let key = crate::components::llm::key_for_skill(_repo_root, &skill.path, &skill.name, &skill.description, skill.content_body.as_deref());
+        // Deterministic versioned cache key: prompt/rule changes invalidate
+        // by miss (one re-ask, then warm again) instead of silent reuse.
+        let key = crate::components::llm::key_for_skill_versioned(
+            _repo_root,
+            &skill.path,
+            &skill.name,
+            &skill.description,
+            skill.content_body.as_deref(),
+            Some(crate::components::llm::relevance::RELEVANCE_PROMPT_VERSION),
+        );
 
         if let Some(cached) = crate::components::llm::get_cached_classification(&cache_snapshot, &key) {
             if let Some(top) = cached.ranked_suggestions.first() {
@@ -722,9 +892,25 @@ async fn classify_skills_with_llm(
         let provider = Arc::new(provider);
         let mut handles = Vec::new();
 
-        for (_chunk_idx, chunk) in to_classify.chunks(batch_size).enumerate() {
-            let chunk_vec: Vec<(usize, String, String, Option<String>, String)> =
-                chunk.iter().cloned().collect();
+        let chunked: Vec<Vec<(usize, String, String, Option<String>, String)>> = to_classify
+            .chunks(batch_size)
+            .map(|c| c.to_vec())
+            .collect();
+        for chunk_vec in chunked {
+            // P3: stop starting new LLM work once the spend budget is
+            // reached; remaining skills fall back to keyword rules instead of
+            // failing the run.
+            if crate::components::llm::cost::budget_exceeded() {
+                eprintln!(
+                    "LLM cost budget reached ({}). Falling back to keyword rules for the remaining chunk.",
+                    crate::components::llm::cost::summary()
+                );
+                for (idx, _, _, _, _) in &chunk_vec {
+                    rules::apply_rules(&mut skills[*idx]);
+                }
+                pb.inc(chunk_vec.len() as u64);
+                continue;
+            }
 
             let provider = Arc::clone(&provider);
             let context = context.clone();
@@ -766,9 +952,22 @@ async fn classify_skills_with_llm(
                     .collect();
 
                 let chunk_len = chunk_vec.len();
+                // P1: Jev-style relevance panel first — cheap per-candidate
+                // probabilities with strict validation and abstention.
+                // Panel-decided items skip the chat batch entirely (their
+                // responses flow through the same cache/apply path below);
+                // abstentions and panel failures fall through to it.
+                let (mut out, chunk_vec, item_payload) = run_panel_for_chunk(
+                    &**provider,
+                    chunk_vec,
+                    item_payload,
+                    &context,
+                )
+                .await;
+                pb.inc((chunk_len - chunk_vec.len()) as u64);
+                let chunk_len = chunk_vec.len();
                 // Attempt batch classification with retry/backoff
                 let mut batch_ok = false;
-                let mut out: Vec<(usize, Option<crate::components::llm::LlmClassificationResponse>, String)> = Vec::new();
 
                 for attempt in 0..attempts {
                     match (&*provider).classify_batch(&item_payload, &context).await {
@@ -788,6 +987,7 @@ async fn classify_skills_with_llm(
                             continue;
                         }
                         Err(e) => {
+                            crate::components::llm::cost::record_error(provider.name());
                             // Circuit breaker: only 410 Gone (model permanently deprecated) — don't retry
                             if let crate::components::llm::LlmError::ProviderUnavailable(ref msg) = e {
                                 if msg.contains("410") {
@@ -852,6 +1052,7 @@ async fn classify_skills_with_llm(
                                     break;
                                 }
                                 Err(e) => {
+                                    crate::components::llm::cost::record_error(provider.name());
                                     // Circuit breaker: only 410 Gone — permanent
                                     if let crate::components::llm::LlmError::ProviderUnavailable(ref msg) = e {
                                         if msg.contains("410") {
@@ -981,6 +1182,9 @@ async fn classify_skills_with_llm(
         let guard = cache.lock().await;
         crate::components::llm::save_cache(&*guard)?;
     }
+
+    // P3: end-of-run spend visibility (previously unmeasured).
+    eprintln!("{}", crate::components::llm::cost::summary());
 
     Ok(())
 }
